@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['validate',['validate',['../classHTMLPurifier__AttrDef__CSS__DenyElementDecorator.html#a2985a1b17d7ce52fc0baaac4d7723891',1,'HTMLPurifier_AttrDef_CSS_DenyElementDecorator\validate()'],['../classHTMLPurifier__AttrDef__CSS__ImportantDecorator.html#a8a9cd2da389c44090b9946f353812d31',1,'HTMLPurifier_AttrDef_CSS_ImportantDecorator\validate()'],['../classHTMLPurifier__AttrDef__CSS__Number.html#a244b9c43b189f376676d2b0b67d1b4cf',1,'HTMLPurifier_AttrDef_CSS_Number\validate()'],['../classHTMLPurifier__AttrDef__CSS.html#ace0c1bcf604a2fd44b62b0564ec1a6de',1,'HTMLPurifier_AttrDef_CSS\validate()'],['../classHTMLPurifier__AttrDef.html#ace1ff1a828cc98b27018cf894d1deca2',1,'HTMLPurifier_AttrDef\validate()'],['../classHTMLPurifier__ConfigSchema__Interchange.html#a2cb158f92d9c3d829654294fc335abc4',1,'HTMLPurifier_ConfigSchema_Interchange\validate()'],['../classHTMLPurifier__ConfigSchema__Validator.html#a162e82d2769eee3772d691a09493534c',1,'HTMLPurifier_ConfigSchema_Validator\validate()'],['../classHTMLPurifier__Length.html#a0dc753e7de3a549edc202958f23e41c3',1,'HTMLPurifier_Length\validate()'],['../classHTMLPurifier__URI.html#a6c6bbc63988cd266c5f264cffce66c55',1,'HTMLPurifier_URI\validate()'],['../classHTMLPurifier__URIScheme.html#af881ccfdd6fc02d661801e401ad3298f',1,'HTMLPurifier_URIScheme\validate()'],['../classValidator.html#a05e34dac507b8d719e7f95f2cd0220bc',1,'Validator\validate()']]],
+  ['validate_2ephp',['validate.php',['../validate_8php.html',1,'']]],
+  ['validate_5fdelete_5fquery',['validate_delete_query',['../validate_8php.html#a6cb78680a29c3df75fc0a7e083fb5b41',1,'validate.php']]],
+  ['validate_5finsert_5fselect_5fquery',['validate_insert_select_query',['../validate_8php.html#ae38b9dcf816905b7fd3c4aeeeb4bfb27',1,'validate.php']]],
+  ['validate_5fquery_5fid',['validate_query_id',['../validate_8php.html#a32e0113d5079fdbd81dc9d69ff2c5ee6',1,'validate.php']]],
+  ['validate_5fschema_5fdoc',['validate_schema_doc',['../validate_8php.html#ae55c7ee778b9cb10a5bf33a3047c5586',1,'validate.php']]],
+  ['validate_5fselect_5fquery',['validate_select_query',['../validate_8php.html#acc6fcea31bae0e5c66af9431bbe89ed3',1,'validate.php']]],
+  ['validate_5fupdate_5fquery',['validate_update_query',['../validate_8php.html#af9c61a8b17e64da32042acf1f10a749e',1,'validate.php']]],
+  ['validate_5fxml_5fquery',['validate_xml_query',['../validate_8php.html#a208d0609e6ad89408ad82c71b30e8611',1,'validate.php']]],
+  ['validateaddress',['ValidateAddress',['../classPHPMailer.html#a67c7355dffd0b46878c2a0cea6dfcb80',1,'PHPMailer']]],
+  ['validatechildren',['validateChildren',['../classHTMLPurifier__ChildDef.html#a2ebe8562f033b0a2ec312b39afa3cbfa',1,'HTMLPurifier_ChildDef']]],
+  ['validatedirective',['validateDirective',['../classHTMLPurifier__ConfigSchema__Validator.html#ac034d0cfdbf458394a152585d4ee016d',1,'HTMLPurifier_ConfigSchema_Validator']]],
+  ['validatedirectivealiases',['validateDirectiveAliases',['../classHTMLPurifier__ConfigSchema__Validator.html#a6030b31bbe3b7581b0c556b7ff894a34',1,'HTMLPurifier_ConfigSchema_Validator']]],
+  ['validatedirectiveallowed',['validateDirectiveAllowed',['../classHTMLPurifier__ConfigSchema__Validator.html#a55e873b0555d61ad85dc0d269d785c2b',1,'HTMLPurifier_ConfigSchema_Validator']]],
+  ['validatedirectivevaluealiases',['validateDirectiveValueAliases',['../classHTMLPurifier__ConfigSchema__Validator.html#a54c46f2ca559c5d40665602a8533f247',1,'HTMLPurifier_ConfigSchema_Validator']]],
+  ['validateid',['validateId',['../classHTMLPurifier__ConfigSchema__Validator.html#a97499d6e2058add5e05dff8e07c5a86b',1,'HTMLPurifier_ConfigSchema_Validator']]],
+  ['validatetoken',['validateToken',['../classHTMLPurifier__AttrValidator.html#a5c322fe3098752902648b4afd3344b92',1,'HTMLPurifier_AttrValidator']]],
+  ['validator',['Validator',['../classValidator.html',1,'']]],
+  ['validatortest',['ValidatorTest',['../classValidatorTest.html',1,'']]],
+  ['verify',['Verify',['../classSMTP.html#ad077e72ba4c447d337eaefb72cb69e44',1,'SMTP']]],
+  ['version',['VERSION',['../classHTMLPurifier.html#a0c6a00193ac814390551621656389a67',1,'HTMLPurifier']]],
+  ['virtualxmldisplayhandler',['VirtualXMLDisplayHandler',['../classVirtualXMLDisplayHandler.html',1,'']]]
+];
