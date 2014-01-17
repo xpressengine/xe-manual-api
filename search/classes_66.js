@@ -7,14 +7,11 @@ var searchData=
   ['fileadminview',['fileAdminView',['../classfileAdminView.html',1,'']]],
   ['filecontroller',['fileController',['../classfileController.html',1,'']]],
   ['filehandler',['FileHandler',['../classFileHandler.html',1,'']]],
-  ['filehandlertest',['FileHandlerTest',['../classFileHandlerTest.html',1,'']]],
   ['filemodel',['fileModel',['../classfileModel.html',1,'']]],
   ['fileobject',['FileObject',['../classFileObject.html',1,'']]],
   ['fileview',['fileView',['../classfileView.html',1,'']]],
   ['firephp',['FirePHP',['../classFirePHP.html',1,'']]],
   ['frontendfilehandler',['FrontEndFileHandler',['../classFrontEndFileHandler.html',1,'']]],
-  ['frontendfilehandlertest',['FrontEndFileHandlerTest',['../classFrontEndFileHandlerTest.html',1,'']]],
   ['ftp',['ftp',['../classftp.html',1,'']]],
-  ['ftpmoduleinstaller',['FTPModuleInstaller',['../classFTPModuleInstaller.html',1,'']]],
-  ['funcinctest',['FuncIncTest',['../classFuncIncTest.html',1,'']]]
+  ['ftpmoduleinstaller',['FTPModuleInstaller',['../classFTPModuleInstaller.html',1,'']]]
 ];

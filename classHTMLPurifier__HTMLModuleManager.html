@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>XpressEngine: HTMLPurifier_HTMLModuleManager Class Reference</title>
+<title>XpressEngine Core: HTMLPurifier_HTMLModuleManager Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">XpressEngine
-   &#160;<span id="projectnumber">1.7.4.beta3</span>
+   <div id="projectname">XpressEngine Core
    </div>
   </td>
  </tr>
@@ -38,11 +37,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
-      <li><a href="examples.html"><span>Examples</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -96,6 +92,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ab4cf47bc757a0945f1f863be6af70817"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHTMLPurifier__HTMLModuleManager.html#ab4cf47bc757a0945f1f863be6af70817">__construct</a> ()</td></tr>
+<tr class="separator:ab4cf47bc757a0945f1f863be6af70817"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac91cb089402a19c3257ddab318d5a315"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHTMLPurifier__HTMLModuleManager.html#ac91cb089402a19c3257ddab318d5a315">registerModule</a> ($<a class="el" href="classmodule.html">module</a>, $overload=false)</td></tr>
 <tr class="separator:ac91cb089402a19c3257ddab318d5a315"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4431aef113f408e637230870a06f1d6a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHTMLPurifier__HTMLModuleManager.html#a4431aef113f408e637230870a06f1d6a">addModule</a> ($<a class="el" href="classmodule.html">module</a>)</td></tr>
@@ -136,6 +134,27 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ac672c14e87065bab6cbc76edcda40315"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHTMLPurifier__HTMLModuleManager.html#ac672c14e87065bab6cbc76edcda40315">$trusted</a> = false</td></tr>
 <tr class="separator:ac672c14e87065bab6cbc76edcda40315"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p>Definition at line <a class="el" href="HTMLModuleManager_8php_source.html#l00003">3</a> of file <a class="el" href="HTMLModuleManager_8php_source.html">HTMLModuleManager.php</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="ab4cf47bc757a0945f1f863be6af70817"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HTMLPurifier_HTMLModuleManager::__construct </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="HTMLModuleManager_8php_source.html#l00056">56</a> of file <a class="el" href="HTMLModuleManager_8php_source.html">HTMLModuleManager.php</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a4431aef113f408e637230870a06f1d6a"></a>
 <div class="memitem">
@@ -151,6 +170,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Adds a module to the current doctype by first registering it, and then tacking it on to the active doctype </p>
+
+<p>Definition at line <a class="el" href="HTMLModuleManager_8php_source.html#l00183">183</a> of file <a class="el" href="HTMLModuleManager_8php_source.html">HTMLModuleManager.php</a>.</p>
 
 </div>
 </div>
@@ -168,6 +189,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Adds a class prefix that <a class="el" href="classHTMLPurifier__HTMLModuleManager.html#ac91cb089402a19c3257ddab318d5a315">registerModule()</a> will use to resolve a string name to a concrete class </p>
+
+<p>Definition at line <a class="el" href="HTMLModuleManager_8php_source.html#l00193">193</a> of file <a class="el" href="HTMLModuleManager_8php_source.html">HTMLModuleManager.php</a>.</p>
 
 </div>
 </div>
@@ -205,6 +228,8 @@ Public Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>Merged <a class="el" href="classHTMLPurifier__ElementDef.html">HTMLPurifier_ElementDef</a> </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>You may notice that modules are getting iterated over twice (once in <a class="el" href="classHTMLPurifier__HTMLModuleManager.html#a5b85d28bdcb0ec465475a078a6b0c982">getElements()</a> and once here). This is because </dd></dl>
 
+<p>Definition at line <a class="el" href="HTMLModuleManager_8php_source.html#l00335">335</a> of file <a class="el" href="HTMLModuleManager_8php_source.html">HTMLModuleManager.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a5b85d28bdcb0ec465475a078a6b0c982"></a>
@@ -222,6 +247,8 @@ Public Attributes</h2></td></tr>
 <p>Retrieves merged element definitions. </p>
 <dl class="section return"><dt>Returns</dt><dd>Array of <a class="el" href="classHTMLPurifier__ElementDef.html">HTMLPurifier_ElementDef</a> </dd></dl>
 
+<p>Definition at line <a class="el" href="HTMLModuleManager_8php_source.html#l00304">304</a> of file <a class="el" href="HTMLModuleManager_8php_source.html">HTMLModuleManager.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a8270448d8f0db95d3edd97e50c39567d"></a>
@@ -238,6 +265,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Takes a module and adds it to the active module collection, registering it if necessary. </p>
+
+<p>Definition at line <a class="el" href="HTMLModuleManager_8php_source.html#l00293">293</a> of file <a class="el" href="HTMLModuleManager_8php_source.html">HTMLModuleManager.php</a>.</p>
 
 </div>
 </div>
@@ -282,6 +311,8 @@ If a string is passed as a module name, different variants will be tested in thi
 </ul>
 </dd></dl>
 
+<p>Definition at line <a class="el" href="HTMLModuleManager_8php_source.html#l00147">147</a> of file <a class="el" href="HTMLModuleManager_8php_source.html">HTMLModuleManager.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a231d31b028783d14a737518593a56ab8"></a>
@@ -305,6 +336,8 @@ If a string is passed as a module name, different variants will be tested in thi
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="HTMLModuleManager_8php_source.html#l00202">202</a> of file <a class="el" href="HTMLModuleManager_8php_source.html">HTMLModuleManager.php</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -319,6 +352,8 @@ If a string is passed as a module name, different variants will be tested in thi
 </div><div class="memdoc">
 <p>Instance of <a class="el" href="classHTMLPurifier__AttrCollections.html">HTMLPurifier_AttrCollections</a> </p>
 
+<p>Definition at line <a class="el" href="HTMLModuleManager_8php_source.html#l00051">51</a> of file <a class="el" href="HTMLModuleManager_8php_source.html">HTMLModuleManager.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ae71132f5eb2e1999b9c2e9d19a00da77"></a>
@@ -331,6 +366,8 @@ If a string is passed as a module name, different variants will be tested in thi
       </table>
 </div><div class="memdoc">
 <p>Instance of <a class="el" href="classHTMLPurifier__AttrTypes.html">HTMLPurifier_AttrTypes</a> </p>
+
+<p>Definition at line <a class="el" href="HTMLModuleManager_8php_source.html#l00019">19</a> of file <a class="el" href="HTMLModuleManager_8php_source.html">HTMLModuleManager.php</a>.</p>
 
 </div>
 </div>
@@ -345,6 +382,8 @@ If a string is passed as a module name, different variants will be tested in thi
 </div><div class="memdoc">
 <p>Instance of <a class="el" href="classHTMLPurifier__ContentSets.html">HTMLPurifier_ContentSets</a> </p>
 
+<p>Definition at line <a class="el" href="HTMLModuleManager_8php_source.html#l00050">50</a> of file <a class="el" href="HTMLModuleManager_8php_source.html">HTMLModuleManager.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="aaeffccf938152286738d5c3466eae2b5"></a>
@@ -357,6 +396,8 @@ If a string is passed as a module name, different variants will be tested in thi
       </table>
 </div><div class="memdoc">
 <p>Instance of current doctype </p>
+
+<p>Definition at line <a class="el" href="HTMLModuleManager_8php_source.html#l00014">14</a> of file <a class="el" href="HTMLModuleManager_8php_source.html">HTMLModuleManager.php</a>.</p>
 
 </div>
 </div>
@@ -371,6 +412,8 @@ If a string is passed as a module name, different variants will be tested in thi
 </div><div class="memdoc">
 <p>Instance of <a class="el" href="classHTMLPurifier__DoctypeRegistry.html">HTMLPurifier_DoctypeRegistry</a> </p>
 
+<p>Definition at line <a class="el" href="HTMLModuleManager_8php_source.html#l00009">9</a> of file <a class="el" href="HTMLModuleManager_8php_source.html">HTMLModuleManager.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a9e6c47d3f347bb0d09116b4ac5fce29e"></a>
@@ -383,6 +426,8 @@ If a string is passed as a module name, different variants will be tested in thi
       </table>
 </div><div class="memdoc">
 <p>Associative array of element name to list of modules that have definitions for the element; this array is dynamically filled. </p>
+
+<p>Definition at line <a class="el" href="HTMLModuleManager_8php_source.html#l00045">45</a> of file <a class="el" href="HTMLModuleManager_8php_source.html">HTMLModuleManager.php</a>.</p>
 
 </div>
 </div>
@@ -397,6 +442,8 @@ If a string is passed as a module name, different variants will be tested in thi
 </div><div class="memdoc">
 <p>Active instances of modules for the specified doctype are indexed, by name, in this array. </p>
 
+<p>Definition at line <a class="el" href="HTMLModuleManager_8php_source.html#l00025">25</a> of file <a class="el" href="HTMLModuleManager_8php_source.html">HTMLModuleManager.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ada129f26d42ceea1c83cd771b0fdb261"></a>
@@ -409,6 +456,8 @@ If a string is passed as a module name, different variants will be tested in thi
       </table>
 </div><div class="memdoc">
 <p>List of prefixes we should use for registering small names </p>
+
+<p>Definition at line <a class="el" href="HTMLModuleManager_8php_source.html#l00048">48</a> of file <a class="el" href="HTMLModuleManager_8php_source.html">HTMLModuleManager.php</a>.</p>
 
 </div>
 </div>
@@ -423,6 +472,8 @@ If a string is passed as a module name, different variants will be tested in thi
 </div><div class="memdoc">
 <p>Array of recognized HTMLPurifier_Module instances, indexed by module's class name. This array is usually lazy loaded, but a user can overload a module by pre-emptively registering it. </p>
 
+<p>Definition at line <a class="el" href="HTMLModuleManager_8php_source.html#l00032">32</a> of file <a class="el" href="HTMLModuleManager_8php_source.html">HTMLModuleManager.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ac672c14e87065bab6cbc76edcda40315"></a>
@@ -435,6 +486,8 @@ If a string is passed as a module name, different variants will be tested in thi
       </table>
 </div><div class="memdoc">
 <p>If set to true, unsafe elements and attributes will be allowed </p>
+
+<p>Definition at line <a class="el" href="HTMLModuleManager_8php_source.html#l00054">54</a> of file <a class="el" href="HTMLModuleManager_8php_source.html">HTMLModuleManager.php</a>.</p>
 
 </div>
 </div>
@@ -449,15 +502,17 @@ If a string is passed as a module name, different variants will be tested in thi
 </div><div class="memdoc">
 <p>List of extra modules that were added by the user using <a class="el" href="classHTMLPurifier__HTMLModuleManager.html#a4431aef113f408e637230870a06f1d6a">addModule()</a>. These get unconditionally merged into the current doctype, whatever it may be. </p>
 
+<p>Definition at line <a class="el" href="HTMLModuleManager_8php_source.html#l00039">39</a> of file <a class="el" href="HTMLModuleManager_8php_source.html">HTMLModuleManager.php</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>classes/security/htmlpurifier/library/HTMLPurifier/HTMLModuleManager.php</li>
+<li>classes/security/htmlpurifier/library/HTMLPurifier/<a class="el" href="HTMLModuleManager_8php_source.html">HTMLModuleManager.php</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Nov 29 2013 15:06:13 for XpressEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 16 2014 18:34:49 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

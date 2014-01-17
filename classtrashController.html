@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>XpressEngine: trashController Class Reference</title>
+<title>XpressEngine Core: trashController Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">XpressEngine
-   &#160;<span id="projectnumber">1.7.4.beta3</span>
+   <div id="projectname">XpressEngine Core
    </div>
   </td>
  </tr>
@@ -38,11 +37,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
-      <li><a href="examples.html"><span>Examples</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -157,9 +153,6 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:aab8f7fe782fee9313b1a84f5a3afd2dd inherit pub_methods_classModuleObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a621ea29505c6ccd4444a06bc1c8554a5 inherit pub_methods_classModuleObject"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleObject.html#a621ea29505c6ccd4444a06bc1c8554a5">proc</a> ()</td></tr>
 <tr class="separator:a621ea29505c6ccd4444a06bc1c8554a5 inherit pub_methods_classModuleObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2d32253956c4b48cd3be7c9845a07bb inherit pub_methods_classModuleObject"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa2d32253956c4b48cd3be7c9845a07bb"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>__get</b> ($name)</td></tr>
-<tr class="separator:aa2d32253956c4b48cd3be7c9845a07bb inherit pub_methods_classModuleObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classObject"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classObject')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classObject.html">Object</a></td></tr>
 <tr class="memitem:a9c1f4bf33208a5c858c0722afce90f30 inherit pub_methods_classObject"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a> ($error=0, $<a class="el" href="classmessage.html">message</a>= 'success')</td></tr>
 <tr class="separator:a9c1f4bf33208a5c858c0722afce90f30 inherit pub_methods_classObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -192,91 +185,73 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:afafb45098e163c179940c7e1ddc67fe2 inherit pub_methods_classObject"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObject.html#afafb45098e163c179940c7e1ddc67fe2">toBoolean</a> ()</td></tr>
 <tr class="separator:afafb45098e163c179940c7e1ddc67fe2 inherit pub_methods_classObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classModuleObject"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classModuleObject')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classModuleObject.html">ModuleObject</a></td></tr>
-<tr class="memitem:abb68807f12d0fde6c9ea78a1a820d250 inherit pub_attribs_classModuleObject"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abb68807f12d0fde6c9ea78a1a820d250"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleObject.html#abb68807f12d0fde6c9ea78a1a820d250">$mid</a> = NULL</td></tr>
-<tr class="memdesc:abb68807f12d0fde6c9ea78a1a820d250 inherit pub_attribs_classModuleObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">string to represent run-time instance of Module (XE Module) <br/></td></tr>
+<tr class="memitem:abb68807f12d0fde6c9ea78a1a820d250 inherit pub_attribs_classModuleObject"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleObject.html#abb68807f12d0fde6c9ea78a1a820d250">$mid</a> = NULL</td></tr>
+<tr class="memdesc:abb68807f12d0fde6c9ea78a1a820d250 inherit pub_attribs_classModuleObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">string to represent run-time instance of Module (XE Module)  <a href="#abb68807f12d0fde6c9ea78a1a820d250">More...</a><br/></td></tr>
 <tr class="separator:abb68807f12d0fde6c9ea78a1a820d250 inherit pub_attribs_classModuleObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2809af79b38269089ba46bc922061ae8 inherit pub_attribs_classModuleObject"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2809af79b38269089ba46bc922061ae8"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleObject.html#a2809af79b38269089ba46bc922061ae8">$module</a> = NULL</td></tr>
-<tr class="memdesc:a2809af79b38269089ba46bc922061ae8 inherit pub_attribs_classModuleObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class name of Xe Module that is identified by mid. <br/></td></tr>
+<tr class="memitem:a2809af79b38269089ba46bc922061ae8 inherit pub_attribs_classModuleObject"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleObject.html#a2809af79b38269089ba46bc922061ae8">$module</a> = NULL</td></tr>
+<tr class="memdesc:a2809af79b38269089ba46bc922061ae8 inherit pub_attribs_classModuleObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class name of Xe Module that is identified by mid.  <a href="#a2809af79b38269089ba46bc922061ae8">More...</a><br/></td></tr>
 <tr class="separator:a2809af79b38269089ba46bc922061ae8 inherit pub_attribs_classModuleObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0da50016ddc31513f563206fdf6f413d inherit pub_attribs_classModuleObject"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0da50016ddc31513f563206fdf6f413d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleObject.html#a0da50016ddc31513f563206fdf6f413d">$module_srl</a> = NULL</td></tr>
-<tr class="memdesc:a0da50016ddc31513f563206fdf6f413d inherit pub_attribs_classModuleObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">integer value to represent a run-time instance of Module (XE Module) <br/></td></tr>
+<tr class="memitem:a0da50016ddc31513f563206fdf6f413d inherit pub_attribs_classModuleObject"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleObject.html#a0da50016ddc31513f563206fdf6f413d">$module_srl</a> = NULL</td></tr>
+<tr class="memdesc:a0da50016ddc31513f563206fdf6f413d inherit pub_attribs_classModuleObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">integer value to represent a run-time instance of Module (XE Module)  <a href="#a0da50016ddc31513f563206fdf6f413d">More...</a><br/></td></tr>
 <tr class="separator:a0da50016ddc31513f563206fdf6f413d inherit pub_attribs_classModuleObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1c9807e77270f2e2abe4f79e1cd2987 inherit pub_attribs_classModuleObject"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac1c9807e77270f2e2abe4f79e1cd2987"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleObject.html#ac1c9807e77270f2e2abe4f79e1cd2987">$module_info</a> = NULL</td></tr>
-<tr class="memdesc:ac1c9807e77270f2e2abe4f79e1cd2987 inherit pub_attribs_classModuleObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">an object containing the module information <br/></td></tr>
+<tr class="memitem:ac1c9807e77270f2e2abe4f79e1cd2987 inherit pub_attribs_classModuleObject"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleObject.html#ac1c9807e77270f2e2abe4f79e1cd2987">$module_info</a> = NULL</td></tr>
+<tr class="memdesc:ac1c9807e77270f2e2abe4f79e1cd2987 inherit pub_attribs_classModuleObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">an object containing the module information  <a href="#ac1c9807e77270f2e2abe4f79e1cd2987">More...</a><br/></td></tr>
 <tr class="separator:ac1c9807e77270f2e2abe4f79e1cd2987 inherit pub_attribs_classModuleObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6bdf7982a5defc9d618c2dd1b700e876 inherit pub_attribs_classModuleObject"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6bdf7982a5defc9d618c2dd1b700e876"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$origin_module_info</b> = NULL</td></tr>
+<tr class="memitem:a6bdf7982a5defc9d618c2dd1b700e876 inherit pub_attribs_classModuleObject"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleObject.html#a6bdf7982a5defc9d618c2dd1b700e876">$origin_module_info</a> = NULL</td></tr>
 <tr class="separator:a6bdf7982a5defc9d618c2dd1b700e876 inherit pub_attribs_classModuleObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0003698bcfe16bb25031435df251715 inherit pub_attribs_classModuleObject"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa0003698bcfe16bb25031435df251715"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleObject.html#aa0003698bcfe16bb25031435df251715">$xml_info</a> = NULL</td></tr>
-<tr class="memdesc:aa0003698bcfe16bb25031435df251715 inherit pub_attribs_classModuleObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">an object containing the module description extracted from XML file <br/></td></tr>
+<tr class="memitem:aa0003698bcfe16bb25031435df251715 inherit pub_attribs_classModuleObject"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleObject.html#aa0003698bcfe16bb25031435df251715">$xml_info</a> = NULL</td></tr>
+<tr class="memdesc:aa0003698bcfe16bb25031435df251715 inherit pub_attribs_classModuleObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">an object containing the module description extracted from XML file  <a href="#aa0003698bcfe16bb25031435df251715">More...</a><br/></td></tr>
 <tr class="separator:aa0003698bcfe16bb25031435df251715 inherit pub_attribs_classModuleObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba24677d5cf457dc33d9af3d8a3b3a14 inherit pub_attribs_classModuleObject"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aba24677d5cf457dc33d9af3d8a3b3a14"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleObject.html#aba24677d5cf457dc33d9af3d8a3b3a14">$module_path</a> = NULL</td></tr>
-<tr class="memdesc:aba24677d5cf457dc33d9af3d8a3b3a14 inherit pub_attribs_classModuleObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">a path to directory where module source code resides <br/></td></tr>
+<tr class="memitem:aba24677d5cf457dc33d9af3d8a3b3a14 inherit pub_attribs_classModuleObject"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleObject.html#aba24677d5cf457dc33d9af3d8a3b3a14">$module_path</a> = NULL</td></tr>
+<tr class="memdesc:aba24677d5cf457dc33d9af3d8a3b3a14 inherit pub_attribs_classModuleObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">a path to directory where module source code resides  <a href="#aba24677d5cf457dc33d9af3d8a3b3a14">More...</a><br/></td></tr>
 <tr class="separator:aba24677d5cf457dc33d9af3d8a3b3a14 inherit pub_attribs_classModuleObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d43905d072c53cd5cd239d706215895 inherit pub_attribs_classModuleObject"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9d43905d072c53cd5cd239d706215895"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleObject.html#a9d43905d072c53cd5cd239d706215895">$act</a> = NULL</td></tr>
-<tr class="memdesc:a9d43905d072c53cd5cd239d706215895 inherit pub_attribs_classModuleObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">a string value to contain the action name <br/></td></tr>
+<tr class="memitem:a9d43905d072c53cd5cd239d706215895 inherit pub_attribs_classModuleObject"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleObject.html#a9d43905d072c53cd5cd239d706215895">$act</a> = NULL</td></tr>
+<tr class="memdesc:a9d43905d072c53cd5cd239d706215895 inherit pub_attribs_classModuleObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">a string value to contain the action name  <a href="#a9d43905d072c53cd5cd239d706215895">More...</a><br/></td></tr>
 <tr class="separator:a9d43905d072c53cd5cd239d706215895 inherit pub_attribs_classModuleObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a632bae853adef8e2ab9596a3a86661 inherit pub_attribs_classModuleObject"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8a632bae853adef8e2ab9596a3a86661"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleObject.html#a8a632bae853adef8e2ab9596a3a86661">$template_path</a> = NULL</td></tr>
-<tr class="memdesc:a8a632bae853adef8e2ab9596a3a86661 inherit pub_attribs_classModuleObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">a path of directory where template files reside <br/></td></tr>
+<tr class="memitem:a8a632bae853adef8e2ab9596a3a86661 inherit pub_attribs_classModuleObject"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleObject.html#a8a632bae853adef8e2ab9596a3a86661">$template_path</a> = NULL</td></tr>
+<tr class="memdesc:a8a632bae853adef8e2ab9596a3a86661 inherit pub_attribs_classModuleObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">a path of directory where template files reside  <a href="#a8a632bae853adef8e2ab9596a3a86661">More...</a><br/></td></tr>
 <tr class="separator:a8a632bae853adef8e2ab9596a3a86661 inherit pub_attribs_classModuleObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6eddf08e627527affc7e835a6d302733 inherit pub_attribs_classModuleObject"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6eddf08e627527affc7e835a6d302733"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleObject.html#a6eddf08e627527affc7e835a6d302733">$template_file</a> = NULL</td></tr>
-<tr class="memdesc:a6eddf08e627527affc7e835a6d302733 inherit pub_attribs_classModuleObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">name of template file <br/></td></tr>
+<tr class="memitem:a6eddf08e627527affc7e835a6d302733 inherit pub_attribs_classModuleObject"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleObject.html#a6eddf08e627527affc7e835a6d302733">$template_file</a> = NULL</td></tr>
+<tr class="memdesc:a6eddf08e627527affc7e835a6d302733 inherit pub_attribs_classModuleObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">name of template file  <a href="#a6eddf08e627527affc7e835a6d302733">More...</a><br/></td></tr>
 <tr class="separator:a6eddf08e627527affc7e835a6d302733 inherit pub_attribs_classModuleObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada660958e777413d332337fba67d657f inherit pub_attribs_classModuleObject"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ada660958e777413d332337fba67d657f"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleObject.html#ada660958e777413d332337fba67d657f">$layout_path</a> = ''</td></tr>
-<tr class="memdesc:ada660958e777413d332337fba67d657f inherit pub_attribs_classModuleObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">a path of directory where layout files reside <br/></td></tr>
+<tr class="memitem:ada660958e777413d332337fba67d657f inherit pub_attribs_classModuleObject"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleObject.html#ada660958e777413d332337fba67d657f">$layout_path</a> = ''</td></tr>
+<tr class="memdesc:ada660958e777413d332337fba67d657f inherit pub_attribs_classModuleObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">a path of directory where layout files reside  <a href="#ada660958e777413d332337fba67d657f">More...</a><br/></td></tr>
 <tr class="separator:ada660958e777413d332337fba67d657f inherit pub_attribs_classModuleObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a1677b06eb7b3ff04ff19e960a64e08 inherit pub_attribs_classModuleObject"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2a1677b06eb7b3ff04ff19e960a64e08"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleObject.html#a2a1677b06eb7b3ff04ff19e960a64e08">$layout_file</a> = ''</td></tr>
-<tr class="memdesc:a2a1677b06eb7b3ff04ff19e960a64e08 inherit pub_attribs_classModuleObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">name of layout file <br/></td></tr>
+<tr class="memitem:a2a1677b06eb7b3ff04ff19e960a64e08 inherit pub_attribs_classModuleObject"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleObject.html#a2a1677b06eb7b3ff04ff19e960a64e08">$layout_file</a> = ''</td></tr>
+<tr class="memdesc:a2a1677b06eb7b3ff04ff19e960a64e08 inherit pub_attribs_classModuleObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">name of layout file  <a href="#a2a1677b06eb7b3ff04ff19e960a64e08">More...</a><br/></td></tr>
 <tr class="separator:a2a1677b06eb7b3ff04ff19e960a64e08 inherit pub_attribs_classModuleObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1fcbb01c627ce5ff104c05f54715bd61 inherit pub_attribs_classModuleObject"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1fcbb01c627ce5ff104c05f54715bd61"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleObject.html#a1fcbb01c627ce5ff104c05f54715bd61">$edited_layout_file</a> = ''</td></tr>
-<tr class="memdesc:a1fcbb01c627ce5ff104c05f54715bd61 inherit pub_attribs_classModuleObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">name of temporary layout files that is modified in an admin mode <br/></td></tr>
+<tr class="memitem:a1fcbb01c627ce5ff104c05f54715bd61 inherit pub_attribs_classModuleObject"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleObject.html#a1fcbb01c627ce5ff104c05f54715bd61">$edited_layout_file</a> = ''</td></tr>
+<tr class="memdesc:a1fcbb01c627ce5ff104c05f54715bd61 inherit pub_attribs_classModuleObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">name of temporary layout files that is modified in an admin mode  <a href="#a1fcbb01c627ce5ff104c05f54715bd61">More...</a><br/></td></tr>
 <tr class="separator:a1fcbb01c627ce5ff104c05f54715bd61 inherit pub_attribs_classModuleObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4efa1b4c623247763e4d56f76c5fb1c inherit pub_attribs_classModuleObject"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad4efa1b4c623247763e4d56f76c5fb1c"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleObject.html#ad4efa1b4c623247763e4d56f76c5fb1c">$stop_proc</a> = false</td></tr>
-<tr class="memdesc:ad4efa1b4c623247763e4d56f76c5fb1c inherit pub_attribs_classModuleObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">a flag to indicating whether to stop the execution of code. <br/></td></tr>
+<tr class="memitem:ad4efa1b4c623247763e4d56f76c5fb1c inherit pub_attribs_classModuleObject"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleObject.html#ad4efa1b4c623247763e4d56f76c5fb1c">$stop_proc</a> = false</td></tr>
+<tr class="memdesc:ad4efa1b4c623247763e4d56f76c5fb1c inherit pub_attribs_classModuleObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">a flag to indicating whether to stop the execution of code.  <a href="#ad4efa1b4c623247763e4d56f76c5fb1c">More...</a><br/></td></tr>
 <tr class="separator:ad4efa1b4c623247763e4d56f76c5fb1c inherit pub_attribs_classModuleObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed2cac16f365c2b463772e3eeb0c1402 inherit pub_attribs_classModuleObject"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aed2cac16f365c2b463772e3eeb0c1402"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$module_config</b> = NULL</td></tr>
+<tr class="memitem:aed2cac16f365c2b463772e3eeb0c1402 inherit pub_attribs_classModuleObject"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleObject.html#aed2cac16f365c2b463772e3eeb0c1402">$module_config</a> = NULL</td></tr>
 <tr class="separator:aed2cac16f365c2b463772e3eeb0c1402 inherit pub_attribs_classModuleObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a783d38cb68310dc6e5a1f6c1cc6c6b84 inherit pub_attribs_classModuleObject"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a783d38cb68310dc6e5a1f6c1cc6c6b84"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$ajaxRequestMethod</b> = array('XMLRPC', 'JSON')</td></tr>
+<tr class="memitem:a783d38cb68310dc6e5a1f6c1cc6c6b84 inherit pub_attribs_classModuleObject"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleObject.html#a783d38cb68310dc6e5a1f6c1cc6c6b84">$ajaxRequestMethod</a> = array('XMLRPC', 'JSON')</td></tr>
 <tr class="separator:a783d38cb68310dc6e5a1f6c1cc6c6b84 inherit pub_attribs_classModuleObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acda88247a161a0ddf878e8f504909329 inherit pub_attribs_classModuleObject"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acda88247a161a0ddf878e8f504909329"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$gzhandler_enable</b> = TRUE</td></tr>
+<tr class="memitem:acda88247a161a0ddf878e8f504909329 inherit pub_attribs_classModuleObject"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleObject.html#acda88247a161a0ddf878e8f504909329">$gzhandler_enable</a> = TRUE</td></tr>
 <tr class="separator:acda88247a161a0ddf878e8f504909329 inherit pub_attribs_classModuleObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classObject"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classObject')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classObject.html">Object</a></td></tr>
-<tr class="memitem:a891a586df36cca119a56bb509f582858 inherit pub_attribs_classObject"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a891a586df36cca119a56bb509f582858"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$error</b> = 0</td></tr>
+<tr class="memitem:a891a586df36cca119a56bb509f582858 inherit pub_attribs_classObject"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObject.html#a891a586df36cca119a56bb509f582858">$error</a> = 0</td></tr>
 <tr class="separator:a891a586df36cca119a56bb509f582858 inherit pub_attribs_classObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af661550c62873d6b6e61f32d68c56973 inherit pub_attribs_classObject"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af661550c62873d6b6e61f32d68c56973"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$message</b> = 'success'</td></tr>
+<tr class="memitem:af661550c62873d6b6e61f32d68c56973 inherit pub_attribs_classObject"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObject.html#af661550c62873d6b6e61f32d68c56973">$message</a> = 'success'</td></tr>
 <tr class="separator:af661550c62873d6b6e61f32d68c56973 inherit pub_attribs_classObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a153e76f6619408780cc2b50cef5100c6 inherit pub_attribs_classObject"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a153e76f6619408780cc2b50cef5100c6"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$variables</b> = array()</td></tr>
+<tr class="memitem:a153e76f6619408780cc2b50cef5100c6 inherit pub_attribs_classObject"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObject.html#a153e76f6619408780cc2b50cef5100c6">$variables</a> = array()</td></tr>
 <tr class="separator:a153e76f6619408780cc2b50cef5100c6 inherit pub_attribs_classObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82ad6bb41d770d91d9d10a97495669d0 inherit pub_attribs_classObject"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a82ad6bb41d770d91d9d10a97495669d0"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$httpStatusCode</b> = NULL</td></tr>
+<tr class="memitem:a82ad6bb41d770d91d9d10a97495669d0 inherit pub_attribs_classObject"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObject.html#a82ad6bb41d770d91d9d10a97495669d0">$httpStatusCode</a> = NULL</td></tr>
 <tr class="separator:a82ad6bb41d770d91d9d10a97495669d0 inherit pub_attribs_classObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>modules/trash/trash.controller.php</li>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p>Definition at line <a class="el" href="trash_8controller_8php_source.html#l00011">11</a> of file <a class="el" href="trash_8controller_8php_source.html">trash.controller.php</a>.</p>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
+<li>modules/trash/<a class="el" href="trash_8controller_8php_source.html">trash.controller.php</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Nov 29 2013 15:06:18 for XpressEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 16 2014 18:35:02 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

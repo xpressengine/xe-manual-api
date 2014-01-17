@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>XpressEngine: ModuleHandler Class Reference</title>
+<title>XpressEngine Core: ModuleHandler Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">XpressEngine
-   &#160;<span id="projectnumber">1.7.4.beta3</span>
+   <div id="projectname">XpressEngine Core
    </div>
   </td>
  </tr>
@@ -38,11 +37,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
-      <li><a href="examples.html"><span>Examples</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -105,7 +101,7 @@ Inheritance diagram for ModuleHandler:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:abfb13533d16d60323823189ccca73237"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleHandler.html#abfb13533d16d60323823189ccca73237">ModuleHandler</a> ($<a class="el" href="classmodule.html">module</a>= '', $act= '', $mid= '', $document_srl= '', $module_srl= '')</td></tr>
+<tr class="memitem:abfb13533d16d60323823189ccca73237"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleHandler.html#abfb13533d16d60323823189ccca73237">ModuleHandler</a> ($<a class="el" href="classmodule.html">module</a>= '', $act= '', $mid= '', $document_srl= '', $<a class="el" href="ko_8install_8php.html#a370bb6450fab1da3e0ed9f484a38b761">module_srl</a>= '')</td></tr>
 <tr class="separator:abfb13533d16d60323823189ccca73237"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a4671c196a893207c38af84c8ee7da8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleHandler.html#a4a4671c196a893207c38af84c8ee7da8">init</a> ()</td></tr>
 <tr class="separator:a4a4671c196a893207c38af84c8ee7da8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -123,8 +119,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0a175bdc5034df0bf4ce66ea0e6e1bf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea2e4d82f816ee25ec97ce2c830e6860"><td class="memItemLeft" align="right" valign="top">&amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleHandler.html#aea2e4d82f816ee25ec97ce2c830e6860">getModuleInstance</a> ($<a class="el" href="classmodule.html">module</a>, $type= 'view', $kind= '')</td></tr>
 <tr class="separator:aea2e4d82f816ee25ec97ce2c830e6860"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75e1eb90149d7f6e38cfd5dc7a9521d4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a75e1eb90149d7f6e38cfd5dc7a9521d4"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>_getModuleFilePath</b> ($<a class="el" href="classmodule.html">module</a>, $type, $kind, &amp;$classPath, &amp;$highClassFile, &amp;$classFile, &amp;$instanceName)</td></tr>
+<tr class="memitem:a75e1eb90149d7f6e38cfd5dc7a9521d4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleHandler.html#a75e1eb90149d7f6e38cfd5dc7a9521d4">_getModuleFilePath</a> ($<a class="el" href="classmodule.html">module</a>, $type, $kind, &amp;$classPath, &amp;$highClassFile, &amp;$classFile, &amp;$instanceName)</td></tr>
 <tr class="separator:a75e1eb90149d7f6e38cfd5dc7a9521d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1b1f9eae91ccd76e6a81c9375c2e673"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleHandler.html#aa1b1f9eae91ccd76e6a81c9375c2e673">triggerCall</a> ($trigger_name, $called_position, &amp;$obj)</td></tr>
 <tr class="separator:aa1b1f9eae91ccd76e6a81c9375c2e673"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -133,42 +128,36 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a24f28ac6c101582f043bef672a9f3b00"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a24f28ac6c101582f043bef672a9f3b00"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleHandler.html#a24f28ac6c101582f043bef672a9f3b00">$module</a> = NULL</td></tr>
-<tr class="memdesc:a24f28ac6c101582f043bef672a9f3b00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Module. <br/></td></tr>
+<tr class="memitem:a24f28ac6c101582f043bef672a9f3b00"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleHandler.html#a24f28ac6c101582f043bef672a9f3b00">$module</a> = NULL</td></tr>
+<tr class="memdesc:a24f28ac6c101582f043bef672a9f3b00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Module.  <a href="#a24f28ac6c101582f043bef672a9f3b00">More...</a><br/></td></tr>
 <tr class="separator:a24f28ac6c101582f043bef672a9f3b00"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae332c92a6ad1e9e823281d708088a0ff"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae332c92a6ad1e9e823281d708088a0ff"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleHandler.html#ae332c92a6ad1e9e823281d708088a0ff">$act</a> = NULL</td></tr>
-<tr class="memdesc:ae332c92a6ad1e9e823281d708088a0ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">action <br/></td></tr>
+<tr class="memitem:ae332c92a6ad1e9e823281d708088a0ff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleHandler.html#ae332c92a6ad1e9e823281d708088a0ff">$act</a> = NULL</td></tr>
+<tr class="memdesc:ae332c92a6ad1e9e823281d708088a0ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">action  <a href="#ae332c92a6ad1e9e823281d708088a0ff">More...</a><br/></td></tr>
 <tr class="separator:ae332c92a6ad1e9e823281d708088a0ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6bb7e9e29c0fb9893d051179281b093e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6bb7e9e29c0fb9893d051179281b093e"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleHandler.html#a6bb7e9e29c0fb9893d051179281b093e">$mid</a> = NULL</td></tr>
-<tr class="memdesc:a6bb7e9e29c0fb9893d051179281b093e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Module ID. <br/></td></tr>
+<tr class="memitem:a6bb7e9e29c0fb9893d051179281b093e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleHandler.html#a6bb7e9e29c0fb9893d051179281b093e">$mid</a> = NULL</td></tr>
+<tr class="memdesc:a6bb7e9e29c0fb9893d051179281b093e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Module ID.  <a href="#a6bb7e9e29c0fb9893d051179281b093e">More...</a><br/></td></tr>
 <tr class="separator:a6bb7e9e29c0fb9893d051179281b093e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf9f6062042025aab6a7e10f6b261909"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acf9f6062042025aab6a7e10f6b261909"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleHandler.html#acf9f6062042025aab6a7e10f6b261909">$document_srl</a> = NULL</td></tr>
-<tr class="memdesc:acf9f6062042025aab6a7e10f6b261909"><td class="mdescLeft">&#160;</td><td class="mdescRight">Document Number. <br/></td></tr>
+<tr class="memitem:acf9f6062042025aab6a7e10f6b261909"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleHandler.html#acf9f6062042025aab6a7e10f6b261909">$document_srl</a> = NULL</td></tr>
+<tr class="memdesc:acf9f6062042025aab6a7e10f6b261909"><td class="mdescLeft">&#160;</td><td class="mdescRight">Document Number.  <a href="#acf9f6062042025aab6a7e10f6b261909">More...</a><br/></td></tr>
 <tr class="separator:acf9f6062042025aab6a7e10f6b261909"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad79751537e64d7bfc7dc6fa4280043b0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad79751537e64d7bfc7dc6fa4280043b0"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleHandler.html#ad79751537e64d7bfc7dc6fa4280043b0">$module_srl</a> = NULL</td></tr>
-<tr class="memdesc:ad79751537e64d7bfc7dc6fa4280043b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Module Number. <br/></td></tr>
+<tr class="memitem:ad79751537e64d7bfc7dc6fa4280043b0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleHandler.html#ad79751537e64d7bfc7dc6fa4280043b0">$module_srl</a> = NULL</td></tr>
+<tr class="memdesc:ad79751537e64d7bfc7dc6fa4280043b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Module Number.  <a href="#ad79751537e64d7bfc7dc6fa4280043b0">More...</a><br/></td></tr>
 <tr class="separator:ad79751537e64d7bfc7dc6fa4280043b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2388e5ef665a5a82efa00c8c894df33c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2388e5ef665a5a82efa00c8c894df33c"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleHandler.html#a2388e5ef665a5a82efa00c8c894df33c">$module_info</a> = NULL</td></tr>
-<tr class="memdesc:a2388e5ef665a5a82efa00c8c894df33c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Module Info. <a class="el" href="classObject.html">Object</a>. <br/></td></tr>
+<tr class="memitem:a2388e5ef665a5a82efa00c8c894df33c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleHandler.html#a2388e5ef665a5a82efa00c8c894df33c">$module_info</a> = NULL</td></tr>
+<tr class="memdesc:a2388e5ef665a5a82efa00c8c894df33c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Module Info. <a class="el" href="classObject.html">Object</a>.  <a href="#a2388e5ef665a5a82efa00c8c894df33c">More...</a><br/></td></tr>
 <tr class="separator:a2388e5ef665a5a82efa00c8c894df33c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad81b78f21e42724e73da6808c561159c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad81b78f21e42724e73da6808c561159c"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleHandler.html#ad81b78f21e42724e73da6808c561159c">$error</a> = NULL</td></tr>
-<tr class="memdesc:ad81b78f21e42724e73da6808c561159c"><td class="mdescLeft">&#160;</td><td class="mdescRight">an error code. <br/></td></tr>
+<tr class="memitem:ad81b78f21e42724e73da6808c561159c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleHandler.html#ad81b78f21e42724e73da6808c561159c">$error</a> = NULL</td></tr>
+<tr class="memdesc:ad81b78f21e42724e73da6808c561159c"><td class="mdescLeft">&#160;</td><td class="mdescRight">an error code.  <a href="#ad81b78f21e42724e73da6808c561159c">More...</a><br/></td></tr>
 <tr class="separator:ad81b78f21e42724e73da6808c561159c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a033e864206ca6a6494af015baa5d2365"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a033e864206ca6a6494af015baa5d2365"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleHandler.html#a033e864206ca6a6494af015baa5d2365">$httpStatusCode</a> = NULL</td></tr>
-<tr class="memdesc:a033e864206ca6a6494af015baa5d2365"><td class="mdescLeft">&#160;</td><td class="mdescRight">http status code. <br/></td></tr>
+<tr class="memitem:a033e864206ca6a6494af015baa5d2365"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleHandler.html#a033e864206ca6a6494af015baa5d2365">$httpStatusCode</a> = NULL</td></tr>
+<tr class="memdesc:a033e864206ca6a6494af015baa5d2365"><td class="mdescLeft">&#160;</td><td class="mdescRight">http status code.  <a href="#a033e864206ca6a6494af015baa5d2365">More...</a><br/></td></tr>
 <tr class="separator:a033e864206ca6a6494af015baa5d2365"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>NAVER (<a href="#" onclick="location.href='mai'+'lto:'+'dev'+'el'+'ope'+'rs'+'@xp'+'re'+'sse'+'ng'+'ine'+'.c'+'om'; return false;">devel<span style="display: none;">.nosp@m.</span>oper<span style="display: none;">.nosp@m.</span>s@xpr<span style="display: none;">.nosp@m.</span>esse<span style="display: none;">.nosp@m.</span>ngine<span style="display: none;">.nosp@m.</span>.com</a>) Handling modules</dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>This class is to excute actions of modules. Constructing an instance without any parameterconstructor, it finds the target module based on <a class="el" href="classContext.html">Context</a>. If there is no act on the found module, excute an action referencing action_forward. </dd></dl>
+
+<p>Definition at line <a class="el" href="ModuleHandler_8class_8php_source.html#l00013">13</a> of file <a class="el" href="ModuleHandler_8class_8php_source.html">ModuleHandler.class.php</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a45c91a72acccf3ee8139538ef5aa1c1d"></a>
 <div class="memitem">
@@ -184,6 +173,66 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>clear error message to Session. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p>Definition at line <a class="el" href="ModuleHandler_8class_8php_source.html#l00749">749</a> of file <a class="el" href="ModuleHandler_8class_8php_source.html">ModuleHandler.class.php</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a75e1eb90149d7f6e38cfd5dc7a9521d4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ModuleHandler::_getModuleFilePath </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$module</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$kind</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;&#160;</td>
+          <td class="paramname"><em>$classPath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;&#160;</td>
+          <td class="paramname"><em>$highClassFile</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;&#160;</td>
+          <td class="paramname"><em>$classFile</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;&#160;</td>
+          <td class="paramname"><em>$instanceName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ModuleHandler_8class_8php_source.html#l01079">1079</a> of file <a class="el" href="ModuleHandler_8class_8php_source.html">ModuleHandler.class.php</a>.</p>
 
 </div>
 </div>
@@ -209,6 +258,8 @@ Public Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string </dd></dl>
 
+<p>Definition at line <a class="el" href="ModuleHandler_8class_8php_source.html#l01162">1162</a> of file <a class="el" href="ModuleHandler_8class_8php_source.html">ModuleHandler.class.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="aa47d0ccb069d65698ade6f44bf6c705f"></a>
@@ -226,6 +277,8 @@ Public Attributes</h2></td></tr>
 <p>set error message to Session. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
+<p>Definition at line <a class="el" href="ModuleHandler_8class_8php_source.html#l00715">715</a> of file <a class="el" href="ModuleHandler_8class_8php_source.html">ModuleHandler.class.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ab3837506079a320e2726079777bb2b3e"></a>
@@ -242,6 +295,8 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>occured error when, set input values to session. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p>Definition at line <a class="el" href="ModuleHandler_8class_8php_source.html#l00763">763</a> of file <a class="el" href="ModuleHandler_8class_8php_source.html">ModuleHandler.class.php</a>.</p>
 
 </div>
 </div>
@@ -266,6 +321,8 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p>Definition at line <a class="el" href="ModuleHandler_8class_8php_source.html#l00778">778</a> of file <a class="el" href="ModuleHandler_8class_8php_source.html">ModuleHandler.class.php</a>.</p>
 
 </div>
 </div>
@@ -310,6 +367,8 @@ Public Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classModuleObject.html">ModuleObject</a> module instance (if failed it returns null) </dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>if there exists a module instance created before, returns it. </dd></dl>
 
+<p>Definition at line <a class="el" href="ModuleHandler_8class_8php_source.html#l00979">979</a> of file <a class="el" href="ModuleHandler_8class_8php_source.html">ModuleHandler.class.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a0a175bdc5034df0bf4ce66ea0e6e1bf2"></a>
@@ -334,6 +393,8 @@ Public Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string path of the module </dd></dl>
 
+<p>Definition at line <a class="el" href="ModuleHandler_8class_8php_source.html#l00966">966</a> of file <a class="el" href="ModuleHandler_8class_8php_source.html">ModuleHandler.class.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a4a4671c196a893207c38af84c8ee7da8"></a>
@@ -350,6 +411,8 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Initialization. It finds the target module based on module, mid, document_srl, and prepares to execute an action </p>
 <dl class="section return"><dt>Returns</dt><dd>boolean true: OK, false: redirected </dd></dl>
+
+<p>Definition at line <a class="el" href="ModuleHandler_8class_8php_source.html#l00106">106</a> of file <a class="el" href="ModuleHandler_8class_8php_source.html">ModuleHandler.class.php</a>.</p>
 
 </div>
 </div>
@@ -407,6 +470,8 @@ Public Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
+<p>Definition at line <a class="el" href="ModuleHandler_8class_8php_source.html#l00035">35</a> of file <a class="el" href="ModuleHandler_8class_8php_source.html">ModuleHandler.class.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a74ad0ae3090eff1da5a6e0e68ce431d0"></a>
@@ -423,6 +488,8 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>get a module instance and execute an action </p>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classModuleObject.html">ModuleObject</a> executed module instance </dd></dl>
+
+<p>Definition at line <a class="el" href="ModuleHandler_8class_8php_source.html#l00298">298</a> of file <a class="el" href="ModuleHandler_8class_8php_source.html">ModuleHandler.class.php</a>.</p>
 
 </div>
 </div>
@@ -466,15 +533,146 @@ Public Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classObject.html">Object</a> </dd></dl>
 
+<p>Definition at line <a class="el" href="ModuleHandler_8class_8php_source.html#l01118">1118</a> of file <a class="el" href="ModuleHandler_8class_8php_source.html">ModuleHandler.class.php</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="ae332c92a6ad1e9e823281d708088a0ff"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ModuleHandler::$act = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>action </p>
+
+<p>Definition at line <a class="el" href="ModuleHandler_8class_8php_source.html#l00017">17</a> of file <a class="el" href="ModuleHandler_8class_8php_source.html">ModuleHandler.class.php</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acf9f6062042025aab6a7e10f6b261909"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ModuleHandler::$document_srl = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Document Number. </p>
+
+<p>Definition at line <a class="el" href="ModuleHandler_8class_8php_source.html#l00019">19</a> of file <a class="el" href="ModuleHandler_8class_8php_source.html">ModuleHandler.class.php</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad81b78f21e42724e73da6808c561159c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ModuleHandler::$error = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>an error code. </p>
+
+<p>Definition at line <a class="el" href="ModuleHandler_8class_8php_source.html#l00022">22</a> of file <a class="el" href="ModuleHandler_8class_8php_source.html">ModuleHandler.class.php</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a033e864206ca6a6494af015baa5d2365"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ModuleHandler::$httpStatusCode = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>http status code. </p>
+
+<p>Definition at line <a class="el" href="ModuleHandler_8class_8php_source.html#l00023">23</a> of file <a class="el" href="ModuleHandler_8class_8php_source.html">ModuleHandler.class.php</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6bb7e9e29c0fb9893d051179281b093e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ModuleHandler::$mid = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Module ID. </p>
+
+<p>Definition at line <a class="el" href="ModuleHandler_8class_8php_source.html#l00018">18</a> of file <a class="el" href="ModuleHandler_8class_8php_source.html">ModuleHandler.class.php</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a24f28ac6c101582f043bef672a9f3b00"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ModuleHandler::$module = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Module. </p>
+
+<p>Definition at line <a class="el" href="ModuleHandler_8class_8php_source.html#l00016">16</a> of file <a class="el" href="ModuleHandler_8class_8php_source.html">ModuleHandler.class.php</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2388e5ef665a5a82efa00c8c894df33c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ModuleHandler::$module_info = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Module Info. <a class="el" href="classObject.html">Object</a>. </p>
+
+<p>Definition at line <a class="el" href="ModuleHandler_8class_8php_source.html#l00021">21</a> of file <a class="el" href="ModuleHandler_8class_8php_source.html">ModuleHandler.class.php</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad79751537e64d7bfc7dc6fa4280043b0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ModuleHandler::$module_srl = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Module Number. </p>
+
+<p>Definition at line <a class="el" href="ModuleHandler_8class_8php_source.html#l00020">20</a> of file <a class="el" href="ModuleHandler_8class_8php_source.html">ModuleHandler.class.php</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>classes/module/ModuleHandler.class.php</li>
+<li>classes/module/<a class="el" href="ModuleHandler_8class_8php_source.html">ModuleHandler.class.php</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Nov 29 2013 15:06:16 for XpressEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 16 2014 18:34:58 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -2,7 +2,7 @@ var searchData=
 [
   ['lang',['Lang',['../classPHPMailer.html#ac0c6b62555ae976a35238681c399bb08',1,'PHPMailer']]],
   ['libxmldisplayerror',['libXmlDisplayError',['../validate_8php.html#a314f82b963781ec88823449af5e5134e',1,'validate.php']]],
-  ['limit',['Limit',['../classLimit.html#a45e8c675dc77b863b87590c76b4113ad',1,'Limit\Limit()'],['../classQuery.html#af2e290d02d3e8c157f9b85b9da1ac08c',1,'Query\limit()']]],
+  ['limit',['limit',['../classQuery.html#af2e290d02d3e8c157f9b85b9da1ac08c',1,'Query\limit()'],['../classLimit.html#a45e8c675dc77b863b87590c76b4113ad',1,'Limit\Limit()']]],
   ['limittag',['LimitTag',['../classLimitTag.html#a9b5dbee572b93d0ae32089e8deed7462',1,'LimitTag']]],
   ['listify',['listify',['../classHTMLPurifier__Language.html#aa4fbc716f45b1c395cb440d32d3e13cd',1,'HTMLPurifier_Language\listify()'],['../classHTMLPurifier__Printer.html#aa2c153067b8607e0124ffc7384427ead',1,'HTMLPurifier_Printer\listify()']]],
   ['listifyattr',['listifyAttr',['../classHTMLPurifier__Printer__HTMLDefinition.html#a647d3a070a1ae44d1284301af2be4f66',1,'HTMLPurifier_Printer_HTMLDefinition']]],
@@ -12,6 +12,7 @@ var searchData=
   ['loadarray',['loadArray',['../classHTMLPurifier__Config.html#a6e4ab9eb2f6a9080713bf09aa3dd3719',1,'HTMLPurifier_Config\loadArray()'],['../classHTMLPurifier__Context.html#a587376773e994720836c5114bbc0f6e3',1,'HTMLPurifier_Context\loadArray()']]],
   ['loadarrayfromform',['loadArrayFromForm',['../classHTMLPurifier__Config.html#a0c79e80b32c02aac6e404b910a178c1a',1,'HTMLPurifier_Config']]],
   ['loaddbinfo',['loadDBInfo',['../classContext.html#af9a710b382c01e18ddabc728d04f5667',1,'Context']]],
+  ['loaddrcomponents',['loadDrComponents',['../classeditorModel.html#a1ad866d4c1ab454b9d0b72c8d3cc29bd',1,'editorModel']]],
   ['loadextension',['loadExtension',['../classPEAR.html#a0c1ee79fa15f1d8ac1b24686a3d3fe44',1,'PEAR\loadExtension($ext)'],['../classPEAR.html#a0c1ee79fa15f1d8ac1b24686a3d3fe44',1,'PEAR\loadExtension($ext)']]],
   ['loadfile',['loadFile',['../classContext.html#a01ddbd076a74f16dc46d3c7b358daea6',1,'Context\loadFile()'],['../classFrontEndFileHandler.html#aeb802ae7b7b315da73ec3be224ce9e9f',1,'FrontEndFileHandler\loadFile()']]],
   ['loadini',['loadIni',['../classHTMLPurifier__Config.html#acf5ebf3cb8b1496c9e0c9e84738acd0d',1,'HTMLPurifier_Config']]],

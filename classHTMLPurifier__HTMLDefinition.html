@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>XpressEngine: HTMLPurifier_HTMLDefinition Class Reference</title>
+<title>XpressEngine Core: HTMLPurifier_HTMLDefinition Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">XpressEngine
-   &#160;<span id="projectnumber">1.7.4.beta3</span>
+   <div id="projectname">XpressEngine Core
    </div>
   </td>
  </tr>
@@ -38,11 +37,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
-      <li><a href="examples.html"><span>Examples</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -146,8 +142,7 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a22beaf3dd6ed19e1f850f3c146c7f2d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a438cd686a28b47fe48222f9895044f8c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHTMLPurifier__HTMLDefinition.html#a438cd686a28b47fe48222f9895044f8c">$doctype</a></td></tr>
 <tr class="separator:a438cd686a28b47fe48222f9895044f8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45e0d16c16636c45f2fbdfa556ec9294"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a45e0d16c16636c45f2fbdfa556ec9294"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$type</b> = 'HTML'</td></tr>
+<tr class="memitem:a45e0d16c16636c45f2fbdfa556ec9294"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHTMLPurifier__HTMLDefinition.html#a45e0d16c16636c45f2fbdfa556ec9294">$type</a> = 'HTML'</td></tr>
 <tr class="separator:a45e0d16c16636c45f2fbdfa556ec9294"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d12dbd6f3c9e01dc952a86c4b9e09ef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHTMLPurifier__HTMLDefinition.html#a7d12dbd6f3c9e01dc952a86c4b9e09ef">$manager</a></td></tr>
 <tr class="separator:a7d12dbd6f3c9e01dc952a86c4b9e09ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -161,8 +156,7 @@ Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a1dbfe7c9745310137dcc02ef3cb4deb8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1dbfe7c9745310137dcc02ef3cb4deb8"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>doSetup</b> ($config)</td></tr>
+<tr class="memitem:a1dbfe7c9745310137dcc02ef3cb4deb8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHTMLPurifier__HTMLDefinition.html#a1dbfe7c9745310137dcc02ef3cb4deb8">doSetup</a> ($config)</td></tr>
 <tr class="separator:a1dbfe7c9745310137dcc02ef3cb4deb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa12330b5553a508f8efb3b946c800630"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHTMLPurifier__HTMLDefinition.html#aa12330b5553a508f8efb3b946c800630">processModules</a> ($config)</td></tr>
 <tr class="separator:aa12330b5553a508f8efb3b946c800630"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -179,6 +173,8 @@ Protected Member Functions</h2></td></tr>
 <p>On the other hand, member variables without the info prefix are used internally by the HTMLDefinition and MUST NOT be used by other HTML <a class="el" href="classPurifier.html">Purifier</a> internals. Many of them, however, are public, and may be edited by userspace code to tweak the behavior of HTMLDefinition.</p>
 <dl class="section note"><dt>Note</dt><dd>This class is inspected by Printer_HTMLDefinition; please update that class if things here change.</dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>Directives that change this object's structure must be in the HTML or Attr namespace! </dd></dl>
+
+<p>Definition at line <a class="el" href="HTMLDefinition_8php_source.html#l00026">26</a> of file <a class="el" href="HTMLDefinition_8php_source.html">HTMLDefinition.php</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a286cbc793229cda4ad235ba4ea058920"></a>
 <div class="memitem">
@@ -193,6 +189,8 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Performs low-cost, preliminary initialization. </p>
+
+<p>Definition at line <a class="el" href="HTMLDefinition_8php_source.html#l00161">161</a> of file <a class="el" href="HTMLDefinition_8php_source.html">HTMLDefinition.php</a>.</p>
 
 </div>
 </div>
@@ -237,6 +235,8 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="HTMLDefinition_8php_source.html#l00102">102</a> of file <a class="el" href="HTMLDefinition_8php_source.html">HTMLDefinition.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="aded195b5eb5eaae383ce7368a5fc581d"></a>
@@ -254,6 +254,8 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Adds a blank element to your HTML definition, for overriding existing behavior </p>
 <dl class="section note"><dt>Note</dt><dd>See <a class="el" href="classHTMLPurifier__HTMLModule.html#a39828170b14dad96be199d8f9bace473">HTMLPurifier_HTMLModule::addBlankElement</a> for detailed parameter and return value descriptions. </dd></dl>
+
+<p>Definition at line <a class="el" href="HTMLDefinition_8php_source.html#l00131">131</a> of file <a class="el" href="HTMLDefinition_8php_source.html">HTMLDefinition.php</a>.</p>
 
 </div>
 </div>
@@ -301,6 +303,34 @@ Protected Member Functions</h2></td></tr>
 <p>Adds a custom element to your HTML definition </p>
 <dl class="section note"><dt>Note</dt><dd>See <a class="el" href="classHTMLPurifier__HTMLModule.html#affb19c170d2cdb5d1a231a73c0501895">HTMLPurifier_HTMLModule::addElement</a> for detailed parameter and return value descriptions. </dd></dl>
 
+<p>Definition at line <a class="el" href="HTMLDefinition_8php_source.html#l00117">117</a> of file <a class="el" href="HTMLDefinition_8php_source.html">HTMLDefinition.php</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1dbfe7c9745310137dcc02ef3cb4deb8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">HTMLPurifier_HTMLDefinition::doSetup </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$config</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="HTMLDefinition_8php_source.html#l00165">165</a> of file <a class="el" href="HTMLDefinition_8php_source.html">HTMLDefinition.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="afd47cf37e7b00258ee79589eb8300f69"></a>
@@ -316,6 +346,8 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Retrieves a reference to the anonymous module, so you can bust out advanced features without having to make your own module. </p>
+
+<p>Definition at line <a class="el" href="HTMLDefinition_8php_source.html#l00142">142</a> of file <a class="el" href="HTMLDefinition_8php_source.html">HTMLDefinition.php</a>.</p>
 
 </div>
 </div>
@@ -343,6 +375,8 @@ Protected Member Functions</h2></td></tr>
 </dl>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000018">Todo:</a></b></dt><dd>Give this its own class, probably static interface </dd></dl>
 
+<p>Definition at line <a class="el" href="HTMLDefinition_8php_source.html#l00392">392</a> of file <a class="el" href="HTMLDefinition_8php_source.html">HTMLDefinition.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="aa12330b5553a508f8efb3b946c800630"></a>
@@ -367,6 +401,8 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Extract out the information from the manager </p>
+
+<p>Definition at line <a class="el" href="HTMLDefinition_8php_source.html#l00180">180</a> of file <a class="el" href="HTMLDefinition_8php_source.html">HTMLDefinition.php</a>.</p>
 
 </div>
 </div>
@@ -393,6 +429,8 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Sets up stuff based on config. We need a better way of doing this. </p>
 
+<p>Definition at line <a class="el" href="HTMLDefinition_8php_source.html#l00220">220</a> of file <a class="el" href="HTMLDefinition_8php_source.html">HTMLDefinition.php</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -407,6 +445,8 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Doctype object </p>
 
+<p>Definition at line <a class="el" href="HTMLDefinition_8php_source.html#l00087">87</a> of file <a class="el" href="HTMLDefinition_8php_source.html">HTMLDefinition.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ab4bac9f9178f0afffbf52261d2957f0f"></a>
@@ -419,6 +459,8 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Associative array of element names to <a class="el" href="classHTMLPurifier__ElementDef.html">HTMLPurifier_ElementDef</a> </p>
+
+<p>Definition at line <a class="el" href="HTMLDefinition_8php_source.html#l00034">34</a> of file <a class="el" href="HTMLDefinition_8php_source.html">HTMLDefinition.php</a>.</p>
 
 </div>
 </div>
@@ -433,6 +475,8 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Indexed list of <a class="el" href="classHTMLPurifier__AttrTransform.html">HTMLPurifier_AttrTransform</a> to be performed after validation. </p>
 
+<p>Definition at line <a class="el" href="HTMLDefinition_8php_source.html#l00071">71</a> of file <a class="el" href="HTMLDefinition_8php_source.html">HTMLDefinition.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a6611f980f1032f5f9ba85c2b2c5eb867"></a>
@@ -445,6 +489,8 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Indexed list of <a class="el" href="classHTMLPurifier__AttrTransform.html">HTMLPurifier_AttrTransform</a> to be performed before validation. </p>
+
+<p>Definition at line <a class="el" href="HTMLDefinition_8php_source.html#l00066">66</a> of file <a class="el" href="HTMLDefinition_8php_source.html">HTMLDefinition.php</a>.</p>
 
 </div>
 </div>
@@ -460,6 +506,8 @@ Protected Member Functions</h2></td></tr>
 <p>String name of element used to wrap inline elements in block context </p>
 <dl class="section note"><dt>Note</dt><dd>This is rarely used except for BLOCKQUOTEs in strict mode </dd></dl>
 
+<p>Definition at line <a class="el" href="HTMLDefinition_8php_source.html#l00056">56</a> of file <a class="el" href="HTMLDefinition_8php_source.html">HTMLDefinition.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a6b30c22edf1203d78746f119ba3292da"></a>
@@ -472,6 +520,8 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Nested lookup array of content set name (Block, Inline) to element name to whether or not it belongs in that content set. </p>
+
+<p>Definition at line <a class="el" href="HTMLDefinition_8php_source.html#l00077">77</a> of file <a class="el" href="HTMLDefinition_8php_source.html">HTMLDefinition.php</a>.</p>
 
 </div>
 </div>
@@ -486,6 +536,8 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Associative array of global attribute name to attribute definition. </p>
 
+<p>Definition at line <a class="el" href="HTMLDefinition_8php_source.html#l00039">39</a> of file <a class="el" href="HTMLDefinition_8php_source.html">HTMLDefinition.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a22beaf3dd6ed19e1f850f3c146c7f2d7"></a>
@@ -498,6 +550,8 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Indexed list of <a class="el" href="classHTMLPurifier__Injector.html">HTMLPurifier_Injector</a> to be used. </p>
+
+<p>Definition at line <a class="el" href="HTMLDefinition_8php_source.html#l00082">82</a> of file <a class="el" href="HTMLDefinition_8php_source.html">HTMLDefinition.php</a>.</p>
 
 </div>
 </div>
@@ -512,6 +566,8 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>String name of parent element HTML will be going into. </p>
 
+<p>Definition at line <a class="el" href="HTMLDefinition_8php_source.html#l00044">44</a> of file <a class="el" href="HTMLDefinition_8php_source.html">HTMLDefinition.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ae715103eaaad56c4d09a9c32db82e022"></a>
@@ -524,6 +580,8 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Definition for parent element, allows parent element to be a tag that's not allowed inside the HTML fragment. </p>
+
+<p>Definition at line <a class="el" href="HTMLDefinition_8php_source.html#l00050">50</a> of file <a class="el" href="HTMLDefinition_8php_source.html">HTMLDefinition.php</a>.</p>
 
 </div>
 </div>
@@ -538,6 +596,8 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Associative array of deprecated tag name to <a class="el" href="classHTMLPurifier__TagTransform.html">HTMLPurifier_TagTransform</a> </p>
 
+<p>Definition at line <a class="el" href="HTMLDefinition_8php_source.html#l00061">61</a> of file <a class="el" href="HTMLDefinition_8php_source.html">HTMLDefinition.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a7d12dbd6f3c9e01dc952a86c4b9e09ef"></a>
@@ -551,15 +611,31 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Instance of <a class="el" href="classHTMLPurifier__HTMLModuleManager.html">HTMLPurifier_HTMLModuleManager</a> </p>
 
+<p>Definition at line <a class="el" href="HTMLDefinition_8php_source.html#l00156">156</a> of file <a class="el" href="HTMLDefinition_8php_source.html">HTMLDefinition.php</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a45e0d16c16636c45f2fbdfa556ec9294"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HTMLPurifier_HTMLDefinition::$type = 'HTML'</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="HTMLDefinition_8php_source.html#l00155">155</a> of file <a class="el" href="HTMLDefinition_8php_source.html">HTMLDefinition.php</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>classes/security/htmlpurifier/library/HTMLPurifier/HTMLDefinition.php</li>
+<li>classes/security/htmlpurifier/library/HTMLPurifier/<a class="el" href="HTMLDefinition_8php_source.html">HTMLDefinition.php</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Nov 29 2013 15:06:13 for XpressEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 16 2014 18:34:47 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

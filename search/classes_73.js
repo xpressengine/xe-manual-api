@@ -1,7 +1,6 @@
 var searchData=
 [
   ['security',['Security',['../classSecurity.html',1,'']]],
-  ['securitytest',['SecurityTest',['../classSecurityTest.html',1,'']]],
   ['selectcolumnstag',['SelectColumnsTag',['../classSelectColumnsTag.html',1,'']]],
   ['selectcolumntag',['SelectColumnTag',['../classSelectColumnTag.html',1,'']]],
   ['selectexpression',['SelectExpression',['../classSelectExpression.html',1,'']]],
@@ -19,9 +18,6 @@ var searchData=
   ['spamfilteradminview',['spamfilterAdminView',['../classspamfilterAdminView.html',1,'']]],
   ['spamfiltercontroller',['spamfilterController',['../classspamfilterController.html',1,'']]],
   ['spamfiltermodel',['spamfilterModel',['../classspamfilterModel.html',1,'']]],
-  ['sqlitedeletetest',['SqliteDeleteTest',['../classSqliteDeleteTest.html',1,'']]],
-  ['sqlitetest',['SqliteTest',['../classSqliteTest.html',1,'']]],
-  ['sqliteupdatetest',['SqliteUpdateTest',['../classSqliteUpdateTest.html',1,'']]],
   ['starexpression',['StarExpression',['../classStarExpression.html',1,'']]],
   ['subquery',['Subquery',['../classSubquery.html',1,'']]],
   ['syntaxerror',['SyntaxError',['../classSyntaxError.html',1,'']]]

@@ -9,9 +9,9 @@ var searchData=
   ['dbmysql_5finnodb',['DBMysql_innodb',['../classDBMysql__innodb.html',1,'']]],
   ['dbmysqlconnectwrapper',['DBMysqlConnectWrapper',['../classDBMysqlConnectWrapper.html',1,'']]],
   ['dbmysqli',['DBMysqli',['../classDBMysqli.html',1,'']]],
+  ['dbmysqli_5finnodb',['DBMysqli_innodb',['../classDBMysqli__innodb.html',1,'']]],
   ['dbmysqliconnectwrapper',['DBMysqliConnectWrapper',['../classDBMysqliConnectWrapper.html',1,'']]],
   ['dbparser',['DBParser',['../classDBParser.html',1,'']]],
-  ['dbtest',['DBTest',['../classDBTest.html',1,'']]],
   ['defaultvalue',['DefaultValue',['../classDefaultValue.html',1,'']]],
   ['deleteexpression',['DeleteExpression',['../classDeleteExpression.html',1,'']]],
   ['displayhandler',['DisplayHandler',['../classDisplayHandler.html',1,'']]],
@@ -22,6 +22,5 @@ var searchData=
   ['documentcontroller',['documentController',['../classdocumentController.html',1,'']]],
   ['documentitem',['documentItem',['../classdocumentItem.html',1,'']]],
   ['documentmodel',['documentModel',['../classdocumentModel.html',1,'']]],
-  ['documentmodeltest',['documentModelTest',['../classdocumentModelTest.html',1,'']]],
   ['documentview',['documentView',['../classdocumentView.html',1,'']]]
 ];

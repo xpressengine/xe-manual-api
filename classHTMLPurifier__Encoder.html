@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>XpressEngine: HTMLPurifier_Encoder Class Reference</title>
+<title>XpressEngine Core: HTMLPurifier_Encoder Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">XpressEngine
-   &#160;<span id="projectnumber">1.7.4.beta3</span>
+   <div id="projectname">XpressEngine Core
    </div>
   </td>
  </tr>
@@ -38,11 +37,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
-      <li><a href="examples.html"><span>Examples</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -106,8 +102,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a4903a5cfecda1c255647e87106cc686b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ce3abe9bf916a9ec35014f23255a408"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHTMLPurifier__Encoder.html#a1ce3abe9bf916a9ec35014f23255a408">unichr</a> ($code)</td></tr>
 <tr class="separator:a1ce3abe9bf916a9ec35014f23255a408"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9526f4471531a5455e5f0e560349226"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac9526f4471531a5455e5f0e560349226"></a>
-static&#160;</td><td class="memItemRight" valign="bottom"><b>iconvAvailable</b> ()</td></tr>
+<tr class="memitem:ac9526f4471531a5455e5f0e560349226"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHTMLPurifier__Encoder.html#ac9526f4471531a5455e5f0e560349226">iconvAvailable</a> ()</td></tr>
 <tr class="separator:ac9526f4471531a5455e5f0e560349226"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6876fc3fbf0ae1ce1d06bd127fb55886"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHTMLPurifier__Encoder.html#a6876fc3fbf0ae1ce1d06bd127fb55886">convertToUTF8</a> ($str, $config, $context)</td></tr>
 <tr class="separator:a6876fc3fbf0ae1ce1d06bd127fb55886"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -132,6 +127,8 @@ Public Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A UTF-8 specific character encoder that handles cleaning and transforming. </p>
 <dl class="section note"><dt>Note</dt><dd>All functions in this class should be static. </dd></dl>
+
+<p>Definition at line <a class="el" href="Encoder_8php_source.html#l00007">7</a> of file <a class="el" href="Encoder_8php_source.html">Encoder.php</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a4903a5cfecda1c255647e87106cc686b"></a>
 <div class="memitem">
@@ -169,6 +166,8 @@ Public Attributes</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>Just for reference, the non-SGML code points are 0 to 31 and 127 to 159, inclusive. However, we allow code points 9, 10 and 13, which are the tab, line feed and carriage return respectively. 128 and above the code points map to multibyte UTF-8 representations.</dd>
 <dd>
 Fallback code adapted from utf8ToUnicode by Henri Sivonen and <a href="#" onclick="location.href='mai'+'lto:'+'hsi'+'vo'+'nen'+'@i'+'ki.'+'fi'; return false;">hsivo<span style="display: none;">.nosp@m.</span>nen@<span style="display: none;">.nosp@m.</span>iki.f<span style="display: none;">.nosp@m.</span>i</a> at <a href="http://iki.fi/hsivonen/php-utf8/">http://iki.fi/hsivonen/php-utf8/</a> under the LGPL license. Notes on what changed are inside, but in general, the original code transformed UTF-8 text into an array of integer Unicode codepoints. Understandably, transforming that back to a string would be somewhat expensive, so the function was modded to directly operate on the string. However, this discourages code reuse, and the logic enumerated here would be useful for any function that needs to be able to understand UTF-8 characters. As of right now, only smart lossless character encoding converters would need that, and I'm probably not going to implement them. Once again, PHP 6 should solve all our problems. </dd></dl>
+
+<p>Definition at line <a class="el" href="Encoder_8php_source.html#l00109">109</a> of file <a class="el" href="Encoder_8php_source.html">Encoder.php</a>.</p>
 
 </div>
 </div>
@@ -212,6 +211,8 @@ Fallback code adapted from utf8ToUnicode by Henri Sivonen and <a href="#" onclic
 <p>Converts a string from UTF-8 based on configuration. </p>
 <dl class="section note"><dt>Note</dt><dd>Currently, this is a lossy conversion, with unexpressable characters being omitted. </dd></dl>
 
+<p>Definition at line <a class="el" href="Encoder_8php_source.html#l00366">366</a> of file <a class="el" href="Encoder_8php_source.html">Encoder.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a60bc1be93b691bc03b1205103c839f7b"></a>
@@ -249,6 +250,8 @@ Fallback code adapted from utf8ToUnicode by Henri Sivonen and <a href="#" onclic
 This is a DUMB function: it has no concept of keeping character entities that the projected character encoding can allow. We could possibly implement a smart version but that would require it to also know which Unicode codepoints the charset supported (not an easy task). </dd>
 <dd>
 Sort of with <a class="el" href="classHTMLPurifier__Encoder.html#a4903a5cfecda1c255647e87106cc686b">cleanUTF8()</a> but it assumes that $str is well-formed UTF-8 </dd></dl>
+
+<p>Definition at line <a class="el" href="Encoder_8php_source.html#l00413">413</a> of file <a class="el" href="Encoder_8php_source.html">Encoder.php</a>.</p>
 
 </div>
 </div>
@@ -290,6 +293,8 @@ Sort of with <a class="el" href="classHTMLPurifier__Encoder.html#a4903a5cfecda1c
 </table>
 </div><div class="memdoc">
 <p>Converts a string to UTF-8 based on configuration. </p>
+
+<p>Definition at line <a class="el" href="Encoder_8php_source.html#l00336">336</a> of file <a class="el" href="Encoder_8php_source.html">Encoder.php</a>.</p>
 
 </div>
 </div>
@@ -338,6 +343,33 @@ Sort of with <a class="el" href="classHTMLPurifier__Encoder.html#a4903a5cfecda1c
 </div><div class="memdoc">
 <p>iconv wrapper which mutes errors and works around bugs. </p>
 
+<p>Definition at line <a class="el" href="Encoder_8php_source.html#l00035">35</a> of file <a class="el" href="Encoder_8php_source.html">Encoder.php</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac9526f4471531a5455e5f0e560349226"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static HTMLPurifier_Encoder::iconvAvailable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="Encoder_8php_source.html#l00325">325</a> of file <a class="el" href="Encoder_8php_source.html">Encoder.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a8daf61530ad6f5219b3a2f2ec6d4de32"></a>
@@ -361,6 +393,8 @@ Sort of with <a class="el" href="classHTMLPurifier__Encoder.html#a4903a5cfecda1c
 </table>
 </div><div class="memdoc">
 <p>Error-handler that mutes errors, alternative to shut-up operator. </p>
+
+<p>Definition at line <a class="el" href="Encoder_8php_source.html#l00020">20</a> of file <a class="el" href="Encoder_8php_source.html">Encoder.php</a>.</p>
 
 </div>
 </div>
@@ -405,6 +439,8 @@ Sort of with <a class="el" href="classHTMLPurifier__Encoder.html#a4903a5cfecda1c
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Array of UTF-8 characters to their corresponding ASCII, which can be used to "undo" any overzealous iconv action. </dd></dl>
 
+<p>Definition at line <a class="el" href="Encoder_8php_source.html#l00498">498</a> of file <a class="el" href="Encoder_8php_source.html">Encoder.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ad491b38d38ff9d9cdb6ea7d67a841de2"></a>
@@ -429,6 +465,8 @@ Sort of with <a class="el" href="classHTMLPurifier__Encoder.html#a4903a5cfecda1c
 </div><div class="memdoc">
 <p>glibc iconv has a known bug where it doesn't handle the magic //IGNORE stanza correctly. In particular, rather than ignore characters, it will return an EILSEQ after consuming some number of characters, and expect you to restart iconv as if it were an E2BIG. Old versions of PHP did not respect the errno, and returned the fragment, so as a result you would see iconv mysteriously truncating output. We can work around this by manually chopping our input into segments of about 8000 characters, as long as PHP ignores the error code. If PHP starts paying attention to the error code, iconv becomes unusable.</p>
 <dl class="section return"><dt>Returns</dt><dd>Error code indicating severity of bug. </dd></dl>
+
+<p>Definition at line <a class="el" href="Encoder_8php_source.html#l00469">469</a> of file <a class="el" href="Encoder_8php_source.html">Encoder.php</a>.</p>
 
 </div>
 </div>
@@ -459,6 +497,8 @@ Sort of with <a class="el" href="classHTMLPurifier__Encoder.html#a4903a5cfecda1c
 While we're going to do code point parsing anyway, a good optimization would be to refuse to translate code points that are non-SGML characters. However, this could lead to duplication. </dd>
 <dd>
 This is very similar to the unichr function in maintenance/generate-entity-file.php (although this is superior, due to its sanity checks). </dd></dl>
+
+<p>Definition at line <a class="el" href="Encoder_8php_source.html#l00288">288</a> of file <a class="el" href="Encoder_8php_source.html">Encoder.php</a>.</p>
 
 </div>
 </div>
@@ -501,6 +541,8 @@ This is very similar to the unichr function in maintenance/generate-entity-file.
 </div><div class="memdoc">
 <p>iconv wrapper which mutes errors, but doesn't work around bugs. </p>
 
+<p>Definition at line <a class="el" href="Encoder_8php_source.html#l00025">25</a> of file <a class="el" href="Encoder_8php_source.html">Encoder.php</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -515,6 +557,8 @@ This is very similar to the unichr function in maintenance/generate-entity-file.
 </div><div class="memdoc">
 <p>No bugs detected in iconv. </p>
 
+<p>Definition at line <a class="el" href="Encoder_8php_source.html#l00445">445</a> of file <a class="el" href="Encoder_8php_source.html">Encoder.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a275b2fb955a479eff7f6a4cdd49fdaf4"></a>
@@ -527,6 +571,8 @@ This is very similar to the unichr function in maintenance/generate-entity-file.
       </table>
 </div><div class="memdoc">
 <p>Iconv truncates output if converting from UTF-8 to another character set with //IGNORE, and a non-encodable character is found </p>
+
+<p>Definition at line <a class="el" href="Encoder_8php_source.html#l00449">449</a> of file <a class="el" href="Encoder_8php_source.html">Encoder.php</a>.</p>
 
 </div>
 </div>
@@ -541,15 +587,17 @@ This is very similar to the unichr function in maintenance/generate-entity-file.
 </div><div class="memdoc">
 <p>Iconv does not support //IGNORE, making it unusable for transcoding purposes </p>
 
+<p>Definition at line <a class="el" href="Encoder_8php_source.html#l00453">453</a> of file <a class="el" href="Encoder_8php_source.html">Encoder.php</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>classes/security/htmlpurifier/library/HTMLPurifier/Encoder.php</li>
+<li>classes/security/htmlpurifier/library/HTMLPurifier/<a class="el" href="Encoder_8php_source.html">Encoder.php</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Nov 29 2013 15:06:13 for XpressEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 16 2014 18:34:47 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -1,7 +1,6 @@
 var searchData=
 [
   ['handler',['Handler',['../classHandler.html',1,'']]],
-  ['helper',['Helper',['../classHelper.html',1,'']]],
   ['hinttabletag',['HintTableTag',['../classHintTableTag.html',1,'']]],
   ['html2text',['Html2Text',['../classHtml2Text.html',1,'']]],
   ['html5',['HTML5',['../classHTML5.html',1,'']]],

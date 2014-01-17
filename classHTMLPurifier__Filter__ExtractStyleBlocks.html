@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>XpressEngine: HTMLPurifier_Filter_ExtractStyleBlocks Class Reference</title>
+<title>XpressEngine Core: HTMLPurifier_Filter_ExtractStyleBlocks Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">XpressEngine
-   &#160;<span id="projectnumber">1.7.4.beta3</span>
+   <div id="projectname">XpressEngine Core
    </div>
   </td>
  </tr>
@@ -38,11 +37,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
-      <li><a href="examples.html"><span>Examples</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -106,6 +102,8 @@ Inheritance diagram for HTMLPurifier_Filter_ExtractStyleBlocks:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a250eeda1ada58dcf5afb6e8e6cd1025e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHTMLPurifier__Filter__ExtractStyleBlocks.html#a250eeda1ada58dcf5afb6e8e6cd1025e">__construct</a> ()</td></tr>
+<tr class="separator:a250eeda1ada58dcf5afb6e8e6cd1025e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7d60f87d1311c0392a763984ec2fbbf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHTMLPurifier__Filter__ExtractStyleBlocks.html#ab7d60f87d1311c0392a763984ec2fbbf">preFilter</a> ($html, $config, $context)</td></tr>
 <tr class="separator:ab7d60f87d1311c0392a763984ec2fbbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ba589f69cc6cbfae5df4d802b203742"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHTMLPurifier__Filter__ExtractStyleBlocks.html#a1ba589f69cc6cbfae5df4d802b203742">cleanCSS</a> ($css, $config, $context)</td></tr>
@@ -118,8 +116,7 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:af3c579b4f5e79ab1784baf5f321daf5c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af3c579b4f5e79ab1784baf5f321daf5c"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$name</b> = 'ExtractStyleBlocks'</td></tr>
+<tr class="memitem:af3c579b4f5e79ab1784baf5f321daf5c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHTMLPurifier__Filter__ExtractStyleBlocks.html#af3c579b4f5e79ab1784baf5f321daf5c">$name</a> = 'ExtractStyleBlocks'</td></tr>
 <tr class="separator:af3c579b4f5e79ab1784baf5f321daf5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classHTMLPurifier__Filter"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classHTMLPurifier__Filter')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classHTMLPurifier__Filter.html">HTMLPurifier_Filter</a></td></tr>
 <tr class="memitem:a5ba5b60834e169792f9005bc75000c21 inherit pub_attribs_classHTMLPurifier__Filter"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHTMLPurifier__Filter.html#a5ba5b60834e169792f9005bc75000c21">$name</a></td></tr>
@@ -135,7 +132,27 @@ Protected Member Functions</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>See tests/HTMLPurifier/Filter/ExtractStyleBlocksTest.php for sample usage.</dd>
 <dd>
 This filter can also be used on stylesheets not included in the document&ndash;something purists would probably prefer. Just directly call HTMLPurifier_Filter_ExtractStyleBlocks-&gt;<a class="el" href="classHTMLPurifier__Filter__ExtractStyleBlocks.html#a1ba589f69cc6cbfae5df4d802b203742">cleanCSS()</a> </dd></dl>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+
+<p>Definition at line <a class="el" href="ExtractStyleBlocks_8php_source.html#l00023">23</a> of file <a class="el" href="ExtractStyleBlocks_8php_source.html">ExtractStyleBlocks.php</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a250eeda1ada58dcf5afb6e8e6cd1025e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HTMLPurifier_Filter_ExtractStyleBlocks::__construct </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ExtractStyleBlocks_8php_source.html#l00034">34</a> of file <a class="el" href="ExtractStyleBlocks_8php_source.html">ExtractStyleBlocks.php</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a1ba589f69cc6cbfae5df4d802b203742"></a>
 <div class="memitem">
 <div class="memproto">
@@ -177,6 +194,8 @@ This filter can also be used on stylesheets not included in the document&ndash;s
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Cleaned CSS </dd></dl>
 
+<p>Definition at line <a class="el" href="ExtractStyleBlocks_8php_source.html#l00076">76</a> of file <a class="el" href="ExtractStyleBlocks_8php_source.html">ExtractStyleBlocks.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ab7d60f87d1311c0392a763984ec2fbbf"></a>
@@ -211,6 +230,8 @@ This filter can also be used on stylesheets not included in the document&ndash;s
 <p>Removes inline &lt;style&gt; tags from HTML, saves them for later use </p>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000015">Todo:</a></b></dt><dd>Extend to indicate non-text/css style blocks </dd></dl>
 
+<p>Definition at line <a class="el" href="ExtractStyleBlocks_8php_source.html#l00053">53</a> of file <a class="el" href="ExtractStyleBlocks_8php_source.html">ExtractStyleBlocks.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ad809def32dc2b07f7765fc9df3757c08"></a>
@@ -242,15 +263,32 @@ This filter can also be used on stylesheets not included in the document&ndash;s
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="ExtractStyleBlocks_8php_source.html#l00045">45</a> of file <a class="el" href="ExtractStyleBlocks_8php_source.html">ExtractStyleBlocks.php</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="af3c579b4f5e79ab1784baf5f321daf5c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HTMLPurifier_Filter_ExtractStyleBlocks::$name = 'ExtractStyleBlocks'</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ExtractStyleBlocks_8php_source.html#l00026">26</a> of file <a class="el" href="ExtractStyleBlocks_8php_source.html">ExtractStyleBlocks.php</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>classes/security/htmlpurifier/library/HTMLPurifier/Filter/ExtractStyleBlocks.php</li>
+<li>classes/security/htmlpurifier/library/HTMLPurifier/Filter/<a class="el" href="ExtractStyleBlocks_8php_source.html">ExtractStyleBlocks.php</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Nov 29 2013 15:06:13 for XpressEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 16 2014 18:34:47 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

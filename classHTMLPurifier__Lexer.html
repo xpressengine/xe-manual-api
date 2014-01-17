@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>XpressEngine: HTMLPurifier_Lexer Class Reference</title>
+<title>XpressEngine Core: HTMLPurifier_Lexer Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">XpressEngine
-   &#160;<span id="projectnumber">1.7.4.beta3</span>
+   <div id="projectname">XpressEngine Core
    </div>
   </td>
  </tr>
@@ -38,11 +37,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
-      <li><a href="examples.html"><span>Examples</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -110,6 +106,8 @@ Inheritance diagram for HTMLPurifier_Lexer:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a3a8cb5fd90a0e9cc65a9d24958884f51"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHTMLPurifier__Lexer.html#a3a8cb5fd90a0e9cc65a9d24958884f51">__construct</a> ()</td></tr>
+<tr class="separator:a3a8cb5fd90a0e9cc65a9d24958884f51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4444f380da614edc88e8d6069f5c5b97"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHTMLPurifier__Lexer.html#a4444f380da614edc88e8d6069f5c5b97">parseData</a> ($string)</td></tr>
 <tr class="separator:a4444f380da614edc88e8d6069f5c5b97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a207733a9dbacd22b2dfce50493122755"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHTMLPurifier__Lexer.html#a207733a9dbacd22b2dfce50493122755">tokenizeHTML</a> ($string, $config, $context)</td></tr>
@@ -160,7 +158,27 @@ Protected Attributes</h2></td></tr>
 </ol>
 </dd></dl>
 <dl class="section user"><dt></dt><dd>However, DOM is helpful in that it makes it easy to move around nodes without a lot of lookaheads to see when a tag is closed. This is a limitation of the token system and some workarounds would be nice. </dd></dl>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+
+<p>Definition at line <a class="el" href="Lexer_8php_source.html#l00042">42</a> of file <a class="el" href="Lexer_8php_source.html">Lexer.php</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a3a8cb5fd90a0e9cc65a9d24958884f51"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HTMLPurifier_Lexer::__construct </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="Lexer_8php_source.html#l00142">142</a> of file <a class="el" href="Lexer_8php_source.html">Lexer.php</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a58d8d2b2a37685a8855268ad4dec0c03"></a>
 <div class="memitem">
 <div class="memproto">
@@ -185,6 +203,8 @@ Protected Attributes</h2></td></tr>
 <p>Callback function for <a class="el" href="classHTMLPurifier__Lexer.html#a592d0852a8e007908b248dcd4647826d">escapeCDATA()</a> that does the work.</p>
 <dl class="section warning"><dt>Warning</dt><dd>Though this is public in order to let the callback happen, calling it directly is not recommended.  $matches PCRE matches array, with index 0 the entire match and 1 the inside of the CDATA section. </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>Escaped internals of the CDATA section. </dd></dl>
+
+<p>Definition at line <a class="el" href="Lexer_8php_source.html#l00253">253</a> of file <a class="el" href="Lexer_8php_source.html">Lexer.php</a>.</p>
 
 </div>
 </div>
@@ -220,6 +240,8 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Concrete lexer. </dd></dl>
 
+<p>Definition at line <a class="el" href="Lexer_8php_source.html#l00068">68</a> of file <a class="el" href="Lexer_8php_source.html">Lexer.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a592d0852a8e007908b248dcd4647826d"></a>
@@ -252,6 +274,8 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>HTML with CDATA sections escaped. </dd></dl>
 
+<p>Definition at line <a class="el" href="Lexer_8php_source.html#l00214">214</a> of file <a class="el" href="Lexer_8php_source.html">Lexer.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ac79e709cfa5ece6d764bff90141005ee"></a>
@@ -277,6 +301,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Special CDATA case that is especially convoluted for &lt;script&gt; </p>
 
+<p>Definition at line <a class="el" href="Lexer_8php_source.html#l00225">225</a> of file <a class="el" href="Lexer_8php_source.html">Lexer.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="abdcd2d9949060713eb7b02d65803dfce"></a>
@@ -294,6 +320,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Takes a string of HTML (fragment or document) and returns the content </p>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000029">Todo:</a></b></dt><dd>Consider making protected </dd></dl>
+
+<p>Definition at line <a class="el" href="Lexer_8php_source.html#l00314">314</a> of file <a class="el" href="Lexer_8php_source.html">Lexer.php</a>.</p>
 
 </div>
 </div>
@@ -329,6 +357,8 @@ Protected Attributes</h2></td></tr>
 <p>Takes a piece of HTML and normalizes it by converting entities, fixing encoding, extracting bits, and other good stuff. </p>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000028">Todo:</a></b></dt><dd>Consider making protected </dd></dl>
 
+<p>Definition at line <a class="el" href="Lexer_8php_source.html#l00263">263</a> of file <a class="el" href="Lexer_8php_source.html">Lexer.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a4444f380da614edc88e8d6069f5c5b97"></a>
@@ -355,6 +385,8 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Parsed character data. </dd></dl>
 
+<p>Definition at line <a class="el" href="Lexer_8php_source.html#l00174">174</a> of file <a class="el" href="Lexer_8php_source.html">Lexer.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a8dfb1f0b3f5a080b48ad72b997dda049"></a>
@@ -379,6 +411,8 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Special Internet Explorer conditional comments should be removed. </p>
+
+<p>Definition at line <a class="el" href="Lexer_8php_source.html#l00236">236</a> of file <a class="el" href="Lexer_8php_source.html">Lexer.php</a>.</p>
 
 </div>
 </div>
@@ -420,6 +454,8 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classHTMLPurifier__Token.html">HTMLPurifier_Token</a> array representation of HTML. </dd></dl>
 
+<p>Definition at line <a class="el" href="Lexer_8php_source.html#l00204">204</a> of file <a class="el" href="Lexer_8php_source.html">Lexer.php</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -452,6 +488,8 @@ Protected Attributes</h2></td></tr>
 <div class="line">            )</div>
 </div><!-- fragment --><p>Most common entity to raw value conversion table for special entities. </p>
 
+<p>Definition at line <a class="el" href="Lexer_8php_source.html#l00149">149</a> of file <a class="el" href="Lexer_8php_source.html">Lexer.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="acd246fb6f67bd3043b18553b04db93ed"></a>
@@ -465,15 +503,17 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Whether or not this lexer implements line-number/column-number tracking. If it does, set to true. </p>
 
+<p>Definition at line <a class="el" href="Lexer_8php_source.html#l00049">49</a> of file <a class="el" href="Lexer_8php_source.html">Lexer.php</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>classes/security/htmlpurifier/library/HTMLPurifier/Lexer.php</li>
+<li>classes/security/htmlpurifier/library/HTMLPurifier/<a class="el" href="Lexer_8php_source.html">Lexer.php</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Nov 29 2013 15:06:13 for XpressEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 16 2014 18:34:49 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>XpressEngine: HTMLPurifier_ElementDef Class Reference</title>
+<title>XpressEngine Core: HTMLPurifier_ElementDef Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">XpressEngine
-   &#160;<span id="projectnumber">1.7.4.beta3</span>
+   <div id="projectname">XpressEngine Core
    </div>
   </td>
  </tr>
@@ -38,11 +37,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
-      <li><a href="examples.html"><span>Examples</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -138,6 +134,8 @@ Public Attributes</h2></td></tr>
 <div class="textblock"><p>Structure that stores an HTML element definition. Used by <a class="el" href="classHTMLPurifier__HTMLDefinition.html">HTMLPurifier_HTMLDefinition</a> and <a class="el" href="classHTMLPurifier__HTMLModule.html">HTMLPurifier_HTMLModule</a>. </p>
 <dl class="section note"><dt>Note</dt><dd>This class is inspected by <a class="el" href="classHTMLPurifier__Printer__HTMLDefinition.html">HTMLPurifier_Printer_HTMLDefinition</a>. Please update that class too. </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>If you add new properties to this class, you MUST update the <a class="el" href="classHTMLPurifier__ElementDef.html#a1b64a7a4cebe332edc6f190a5ac9d84e">mergeIn()</a> method. </dd></dl>
+
+<p>Definition at line <a class="el" href="ElementDef_8php_source.html#l00011">11</a> of file <a class="el" href="ElementDef_8php_source.html">ElementDef.php</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="af9cb4f37c0de548d6240c7c0372a0277"></a>
 <div class="memitem">
@@ -178,6 +176,8 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Low-level factory constructor for creating new standalone element defs </p>
 
+<p>Definition at line <a class="el" href="ElementDef_8php_source.html#l00116">116</a> of file <a class="el" href="ElementDef_8php_source.html">ElementDef.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a1b64a7a4cebe332edc6f190a5ac9d84e"></a>
@@ -195,6 +195,8 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Merges the values of another element definition into this one. Values from the new element def take precedence if a value is not mergeable. </p>
 
+<p>Definition at line <a class="el" href="ElementDef_8php_source.html#l00129">129</a> of file <a class="el" href="ElementDef_8php_source.html">ElementDef.php</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -210,6 +212,8 @@ Public Attributes</h2></td></tr>
 <p>Associative array of attribute name to <a class="el" href="classHTMLPurifier__AttrDef.html">HTMLPurifier_AttrDef</a> </p>
 <dl class="section note"><dt>Note</dt><dd>Before being processed by <a class="el" href="classHTMLPurifier__AttrCollections.html">HTMLPurifier_AttrCollections</a> when modules are finalized during HTMLPurifier_HTMLDefinition-&gt;setup(), this array may also contain an array at index 0 that indicates which attribute collections to load into the full array. It may also contain string indentifiers in lieu of <a class="el" href="classHTMLPurifier__AttrDef.html">HTMLPurifier_AttrDef</a>, see <a class="el" href="classHTMLPurifier__AttrTypes.html">HTMLPurifier_AttrTypes</a> on how they are expanded during HTMLPurifier_HTMLDefinition-&gt;setup() processing. </dd></dl>
 
+<p>Definition at line <a class="el" href="ElementDef_8php_source.html#l00031">31</a> of file <a class="el" href="ElementDef_8php_source.html">ElementDef.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a3085ac6ae100475e1ff86fe94910c12e"></a>
@@ -222,6 +226,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Indexed list of tag's <a class="el" href="classHTMLPurifier__AttrTransform.html">HTMLPurifier_AttrTransform</a> to be done after validation </p>
+
+<p>Definition at line <a class="el" href="ElementDef_8php_source.html#l00041">41</a> of file <a class="el" href="ElementDef_8php_source.html">ElementDef.php</a>.</p>
 
 </div>
 </div>
@@ -236,6 +242,8 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Indexed list of tag's <a class="el" href="classHTMLPurifier__AttrTransform.html">HTMLPurifier_AttrTransform</a> to be done before validation </p>
 
+<p>Definition at line <a class="el" href="ElementDef_8php_source.html#l00036">36</a> of file <a class="el" href="ElementDef_8php_source.html">ElementDef.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a19729d4c2d69e9864a148d0a6b390a36"></a>
@@ -248,6 +256,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>This tag is explicitly auto-closed by the following tags. </p>
+
+<p>Definition at line <a class="el" href="ElementDef_8php_source.html#l00098">98</a> of file <a class="el" href="ElementDef_8php_source.html">ElementDef.php</a>.</p>
 
 </div>
 </div>
@@ -262,6 +272,8 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p><a class="el" href="classHTMLPurifier__ChildDef.html">HTMLPurifier_ChildDef</a> of this tag. </p>
 
+<p>Definition at line <a class="el" href="ElementDef_8php_source.html#l00046">46</a> of file <a class="el" href="ElementDef_8php_source.html">ElementDef.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a629aecb03bfd09763b4f22d6153e845b"></a>
@@ -275,6 +287,8 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Abstract string representation of internal ChildDef rules. See <a class="el" href="classHTMLPurifier__ContentSets.html">HTMLPurifier_ContentSets</a> for how this is parsed and then transformed into an <a class="el" href="classHTMLPurifier__ChildDef.html">HTMLPurifier_ChildDef</a>. </p>
 <dl class="section warning"><dt>Warning</dt><dd>This is a temporary variable that is not available after being processed by HTMLDefinition </dd></dl>
+
+<p>Definition at line <a class="el" href="ElementDef_8php_source.html#l00055">55</a> of file <a class="el" href="ElementDef_8php_source.html">ElementDef.php</a>.</p>
 
 </div>
 </div>
@@ -292,6 +306,8 @@ Public Attributes</h2></td></tr>
 <dd>
 This is a temporary variable that is not available after being processed by HTMLDefinition </dd></dl>
 
+<p>Definition at line <a class="el" href="ElementDef_8php_source.html#l00064">64</a> of file <a class="el" href="ElementDef_8php_source.html">ElementDef.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="abb620edb77a4817b18aeed07343d002b"></a>
@@ -304,6 +320,8 @@ This is a temporary variable that is not available after being processed by HTML
       </table>
 </div><div class="memdoc">
 <p>Does the element have a content model (#PCDATA | Inline)*? This is important for chameleon ins and del processing in <a class="el" href="classHTMLPurifier__ChildDef__Chameleon.html">HTMLPurifier_ChildDef_Chameleon</a>. Dynamically set: modules don't have to worry about this one. </p>
+
+<p>Definition at line <a class="el" href="ElementDef_8php_source.html#l00074">74</a> of file <a class="el" href="ElementDef_8php_source.html">ElementDef.php</a>.</p>
 
 </div>
 </div>
@@ -319,6 +337,8 @@ This is a temporary variable that is not available after being processed by HTML
 <p>Lookup table of tags excluded from all descendants of this tag. </p>
 <dl class="section note"><dt>Note</dt><dd>SGML permits exclusions for all descendants, but this is not possible with DTDs or XML Schemas. W3C has elected to use complicated compositions of content_models to simulate exclusion for children, but we go the simpler, SGML-style route of flat-out exclusions, which correctly apply to all descendants and not just children. Note that the XHTML Modularization Abstract Modules are blithely unaware of such distinctions. </dd></dl>
 
+<p>Definition at line <a class="el" href="ElementDef_8php_source.html#l00093">93</a> of file <a class="el" href="ElementDef_8php_source.html">ElementDef.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="adb1a90d0ca1759f991e69b8e4a7758ce"></a>
@@ -331,6 +351,8 @@ This is a temporary variable that is not available after being processed by HTML
       </table>
 </div><div class="memdoc">
 <p>Whether or not this is a formatting element affected by the "Active Formatting Elements" algorithm. </p>
+
+<p>Definition at line <a class="el" href="ElementDef_8php_source.html#l00111">111</a> of file <a class="el" href="ElementDef_8php_source.html">ElementDef.php</a>.</p>
 
 </div>
 </div>
@@ -345,6 +367,8 @@ This is a temporary variable that is not available after being processed by HTML
 </div><div class="memdoc">
 <p>List of the names of required attributes this element has. Dynamically populated by HTMLPurifier_HTMLDefinition::getElement </p>
 
+<p>Definition at line <a class="el" href="ElementDef_8php_source.html#l00080">80</a> of file <a class="el" href="ElementDef_8php_source.html">ElementDef.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a55b9825b6bf0fcf1757d223fe67b2502"></a>
@@ -357,6 +381,8 @@ This is a temporary variable that is not available after being processed by HTML
       </table>
 </div><div class="memdoc">
 <p>Does the definition work by itself, or is it created solely for the purpose of merging into another definition? </p>
+
+<p>Definition at line <a class="el" href="ElementDef_8php_source.html#l00018">18</a> of file <a class="el" href="ElementDef_8php_source.html">ElementDef.php</a>.</p>
 
 </div>
 </div>
@@ -371,15 +397,17 @@ This is a temporary variable that is not available after being processed by HTML
 </div><div class="memdoc">
 <p>If a foreign element is found in this element, test if it is allowed by this sub-element; if it is, instead of closing the current element, place it inside this element. </p>
 
+<p>Definition at line <a class="el" href="ElementDef_8php_source.html#l00105">105</a> of file <a class="el" href="ElementDef_8php_source.html">ElementDef.php</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>classes/security/htmlpurifier/library/HTMLPurifier/ElementDef.php</li>
+<li>classes/security/htmlpurifier/library/HTMLPurifier/<a class="el" href="ElementDef_8php_source.html">ElementDef.php</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Nov 29 2013 15:06:13 for XpressEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 16 2014 18:34:47 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

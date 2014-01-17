@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>XpressEngine: HTMLPurifier_Language Class Reference</title>
+<title>XpressEngine Core: HTMLPurifier_Language Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">XpressEngine
-   &#160;<span id="projectnumber">1.7.4.beta3</span>
+   <div id="projectname">XpressEngine Core
    </div>
   </td>
  </tr>
@@ -38,11 +37,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
-      <li><a href="examples.html"><span>Examples</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -106,8 +102,7 @@ Inheritance diagram for HTMLPurifier_Language:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae967a044aeccf40e1a720b42974e8486"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae967a044aeccf40e1a720b42974e8486"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>__construct</b> ($config, $context)</td></tr>
+<tr class="memitem:ae967a044aeccf40e1a720b42974e8486"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHTMLPurifier__Language.html#ae967a044aeccf40e1a720b42974e8486">__construct</a> ($config, $context)</td></tr>
 <tr class="separator:ae967a044aeccf40e1a720b42974e8486"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae63620b94eeef941c32b09c81aafae0f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHTMLPurifier__Language.html#ae63620b94eeef941c32b09c81aafae0f">load</a> ()</td></tr>
 <tr class="separator:ae63620b94eeef941c32b09c81aafae0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -134,8 +129,7 @@ Public Attributes</h2></td></tr>
 <tr class="separator:abb0604315d77bc0d8793c695be23a3c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a972e2795bb72936c59aa28d6b893e7e9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHTMLPurifier__Language.html#a972e2795bb72936c59aa28d6b893e7e9">$_loaded</a> = false</td></tr>
 <tr class="separator:a972e2795bb72936c59aa28d6b893e7e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4650de6fad492c6179523ae7ec7ba7d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae4650de6fad492c6179523ae7ec7ba7d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$context</b></td></tr>
+<tr class="memitem:ae4650de6fad492c6179523ae7ec7ba7d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHTMLPurifier__Language.html#ae4650de6fad492c6179523ae7ec7ba7d">$context</a></td></tr>
 <tr class="separator:ae4650de6fad492c6179523ae7ec7ba7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
@@ -145,7 +139,38 @@ Protected Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a language and defines localizable string formatting and other functions, as well as the localized messages for HTML <a class="el" href="classPurifier.html">Purifier</a>. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+
+<p>Definition at line <a class="el" href="Language_8php_source.html#l00007">7</a> of file <a class="el" href="Language_8php_source.html">Language.php</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="ae967a044aeccf40e1a720b42974e8486"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HTMLPurifier_Language::__construct </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$config</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$context</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="Language_8php_source.html#l00048">48</a> of file <a class="el" href="Language_8php_source.html">Language.php</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a50e09a143464f808615cf1db550f033c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -180,6 +205,8 @@ Protected Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>string localised message </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000025">Todo:</a></b></dt><dd>Implement conditionals? Right now, some messages make reference to line numbers, but those aren't always available </dd></dl>
 
+<p>Definition at line <a class="el" href="Language_8php_source.html#l00117">117</a> of file <a class="el" href="Language_8php_source.html">Language.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a768ea5a9eb187163fe2a2fade98e09e5"></a>
@@ -203,6 +230,8 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string localised message </dd></dl>
+
+<p>Definition at line <a class="el" href="Language_8php_source.html#l00084">84</a> of file <a class="el" href="Language_8php_source.html">Language.php</a>.</p>
 
 </div>
 </div>
@@ -228,6 +257,8 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string localised message </dd></dl>
 
+<p>Definition at line <a class="el" href="Language_8php_source.html#l00072">72</a> of file <a class="el" href="Language_8php_source.html">Language.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="aa4fbc716f45b1c395cb440d32d3e13cd"></a>
@@ -244,6 +275,8 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Converts an array list into a string readable representation </p>
+
+<p>Definition at line <a class="el" href="Language_8php_source.html#l00093">93</a> of file <a class="el" href="Language_8php_source.html">Language.php</a>.</p>
 
 </div>
 </div>
@@ -262,6 +295,8 @@ Protected Attributes</h2></td></tr>
 <p>Loads language object with necessary info from factory cache </p>
 <dl class="section note"><dt>Note</dt><dd>This is a lazy loader </dd></dl>
 
+<p>Definition at line <a class="el" href="Language_8php_source.html#l00057">57</a> of file <a class="el" href="Language_8php_source.html">Language.php</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -277,6 +312,8 @@ Protected Attributes</h2></td></tr>
 <p>Has the language object been loaded yet? </p>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000024">Todo:</a></b></dt><dd>Make it private, fix usage in HTMLPurifier_LanguageTest </dd></dl>
 
+<p>Definition at line <a class="el" href="Language_8php_source.html#l00041">41</a> of file <a class="el" href="Language_8php_source.html">Language.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a5d7bd0b73124250f04e8d6848f16c3ff"></a>
@@ -289,6 +326,8 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>ISO 639 language code of language. Prefers shortest possible version </p>
+
+<p>Definition at line <a class="el" href="Language_8php_source.html#l00013">13</a> of file <a class="el" href="Language_8php_source.html">Language.php</a>.</p>
 
 </div>
 </div>
@@ -311,6 +350,22 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Instances of <a class="el" href="classHTMLPurifier__Config.html">HTMLPurifier_Config</a> and <a class="el" href="classHTMLPurifier__Context.html">HTMLPurifier_Context</a> </p>
 
+<p>Definition at line <a class="el" href="Language_8php_source.html#l00046">46</a> of file <a class="el" href="Language_8php_source.html">Language.php</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae4650de6fad492c6179523ae7ec7ba7d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HTMLPurifier_Language::$context</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="Language_8php_source.html#l00046">46</a> of file <a class="el" href="Language_8php_source.html">Language.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="abb0604315d77bc0d8793c695be23a3c7"></a>
@@ -323,6 +378,8 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>True if no message file was found for this language, so English is being used instead. Check this if you'd like to notify the user that they've used a non-supported language. </p>
+
+<p>Definition at line <a class="el" href="Language_8php_source.html#l00035">35</a> of file <a class="el" href="Language_8php_source.html">Language.php</a>.</p>
 
 </div>
 </div>
@@ -337,6 +394,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Array of localizable error codes </p>
 
+<p>Definition at line <a class="el" href="Language_8php_source.html#l00028">28</a> of file <a class="el" href="Language_8php_source.html">Language.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ae37ea0bda359fc0ab33db4d74c267a47"></a>
@@ -349,6 +408,8 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Fallback language code </p>
+
+<p>Definition at line <a class="el" href="Language_8php_source.html#l00018">18</a> of file <a class="el" href="Language_8php_source.html">Language.php</a>.</p>
 
 </div>
 </div>
@@ -363,15 +424,17 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Array of localizable messages </p>
 
+<p>Definition at line <a class="el" href="Language_8php_source.html#l00023">23</a> of file <a class="el" href="Language_8php_source.html">Language.php</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>classes/security/htmlpurifier/library/HTMLPurifier/Language.php</li>
+<li>classes/security/htmlpurifier/library/HTMLPurifier/<a class="el" href="Language_8php_source.html">Language.php</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Nov 29 2013 15:06:13 for XpressEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 16 2014 18:34:49 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

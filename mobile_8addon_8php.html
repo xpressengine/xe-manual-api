@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>XpressEngine: addons/mobile/mobile.addon.php File Reference</title>
+<title>XpressEngine Core: addons/mobile/mobile.addon.php File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">XpressEngine
-   &#160;<span id="projectnumber">1.7.4.beta3</span>
+   <div id="projectname">XpressEngine Core
    </div>
   </td>
  </tr>
@@ -38,11 +37,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
-      <li><a href="examples.html"><span>Examples</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -83,7 +79,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_1233bc0a3e869c10318208e4553a4fcb.html">addons</a></li><li class="navelem"><a class="el" href="dir_7866c41375040a4f520a27a1bb671d47.html">mobile</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_51ff37f79d3067a7bc786b967d60f769.html">addons</a></li><li class="navelem"><a class="el" href="dir_70ce78b64a1bce5621ba3c39dd99b87e.html">mobile</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -96,15 +92,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p><a class="el" href="classMobile.html">Mobile</a> XE add-on.  
 <a href="#details">More...</a></p>
+
+<p><a href="mobile_8addon_8php_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a13d720e0d3597438cb76873850ce4b63"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a13d720e0d3597438cb76873850ce4b63"></a>
-if(<a class="el" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>('<a class="el" href="classmodule.html">module</a>')== <br class="typebreak"/>
-'<a class="el" href="classadmin.html">admin</a>')&#160;</td><td class="memItemRight" valign="bottom"><b>if</b> ($called_position!= 'before_module_proc'&amp;&amp;$called_position!= 'after_module_proc')</td></tr>
+<tr class="memitem:a13d720e0d3597438cb76873850ce4b63"><td class="memItemLeft" align="right" valign="top">if(<a class="el" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>('<a class="el" href="classmodule.html">module</a>')== <br class="typebreak"/>
+'<a class="el" href="classadmin.html">admin</a>')&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mobile_8addon_8php.html#a13d720e0d3597438cb76873850ce4b63">if</a> ($called_position!= 'before_module_proc'&amp;&amp;$called_position!= 'after_module_proc')</td></tr>
 <tr class="separator:a13d720e0d3597438cb76873850ce4b63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e1472c6f1bb5b341e95a632164904d0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2e1472c6f1bb5b341e95a632164904d0"></a>
-if(!<a class="el" href="classmobileXE.html#a462a4900af63aa2bfbcea2168afbe876">mobileXE::getBrowserType</a>())&#160;</td><td class="memItemRight" valign="bottom"><b>$oMobile</b> = &amp;<a class="el" href="classmobileXE.html#a11db662f7f05a929e2559ee6d42fca2c">mobileXE::getInstance</a>()</td></tr>
+<tr class="memitem:a2e1472c6f1bb5b341e95a632164904d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="point__level__icon_8addon_8php.html#a29031816e50a8f742422e671b2bef9b2">if</a>(!<a class="el" href="classmobileXE.html#a462a4900af63aa2bfbcea2168afbe876">mobileXE::getBrowserType</a>())&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mobile_8addon_8php.html#a2e1472c6f1bb5b341e95a632164904d0">$oMobile</a> = &amp;<a class="el" href="classmobileXE.html#a11db662f7f05a929e2559ee6d42fca2c">mobileXE::getInstance</a>()</td></tr>
 <tr class="separator:a2e1472c6f1bb5b341e95a632164904d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -113,10 +109,41 @@ if(!<a class="el" href="classmobileXE.html#a462a4900af63aa2bfbcea2168afbe876">mo
 <p>Time to call</p>
 <p>before_module_proc &gt; call when changing general settings for mobile</p>
 <p>after_module_proc &gt; display mobile content <a class="el" href="classCondition.html">Condition</a> </p>
-</div></div><!-- contents -->
+
+<p>Definition in file <a class="el" href="mobile_8addon_8php_source.html">mobile.addon.php</a>.</p>
+</div><h2 class="groupheader">Variable Documentation</h2>
+<a class="anchor" id="a2e1472c6f1bb5b341e95a632164904d0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="point__level__icon_8addon_8php.html#a29031816e50a8f742422e671b2bef9b2">if</a> (!<a class="el" href="classmobileXE.html#a462a4900af63aa2bfbcea2168afbe876">mobileXE::getBrowserType</a>()) $oMobile = &amp;<a class="el" href="classmobileXE.html#a11db662f7f05a929e2559ee6d42fca2c">mobileXE::getInstance</a>()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mobile_8addon_8php_source.html#l00038">38</a> of file <a class="el" href="mobile_8addon_8php_source.html">mobile.addon.php</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a13d720e0d3597438cb76873850ce4b63"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if (<a class="el" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>('<a class="el" href="classmodule.html">module</a>')== '<a class="el" href="classadmin.html">admin</a>') if($called_position!= 'before_module_proc'&amp;&amp;$called_position!= 'after_module_proc')</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mobile_8addon_8php_source.html#l00027">27</a> of file <a class="el" href="mobile_8addon_8php_source.html">mobile.addon.php</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Nov 29 2013 15:06:08 for XpressEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 16 2014 18:34:28 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

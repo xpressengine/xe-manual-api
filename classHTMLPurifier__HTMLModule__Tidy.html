@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>XpressEngine: HTMLPurifier_HTMLModule_Tidy Class Reference</title>
+<title>XpressEngine Core: HTMLPurifier_HTMLModule_Tidy Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">XpressEngine
-   &#160;<span id="projectnumber">1.7.4.beta3</span>
+   <div id="projectname">XpressEngine Core
    </div>
   </td>
  </tr>
@@ -38,11 +37,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
-      <li><a href="examples.html"><span>Examples</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -176,6 +172,8 @@ Public Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Abstract class for a set of proprietary modules that clean up (tidy) poorly written HTML. </p>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000019">Todo:</a></b></dt><dd>Figure out how to protect some of these methods/properties </dd></dl>
+
+<p>Definition at line <a class="el" href="Tidy_8php_source.html#l00008">8</a> of file <a class="el" href="Tidy_8php_source.html">Tidy.php</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a6afdc4634fb922bf30d1ff3c12bd85e9"></a>
 <div class="memitem">
@@ -198,6 +196,8 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Lookup up table of fixes </dd></dl>
+
+<p>Definition at line <a class="el" href="Tidy_8php_source.html#l00073">73</a> of file <a class="el" href="Tidy_8php_source.html">Tidy.php</a>.</p>
 
 </div>
 </div>
@@ -224,6 +224,8 @@ Public Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>array(string $fix_type, array $fix_parameters) </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>$fix_parameters is type dependant, see <a class="el" href="classHTMLPurifier__HTMLModule__Tidy.html#a6de72c535591cf82e476bc7e1b318b93">populate()</a> for usage of these parameters </dd></dl>
 
+<p>Definition at line <a class="el" href="Tidy_8php_source.html#l00172">172</a> of file <a class="el" href="Tidy_8php_source.html">Tidy.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ad8953241f58e692c30a3453f5a25c0bf"></a>
@@ -239,6 +241,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Defines all fixes the module will perform in a compact associative array of fix name to fix implementation. </p>
+
+<p>Definition at line <a class="el" href="Tidy_8php_source.html#l00203">203</a> of file <a class="el" href="Tidy_8php_source.html">Tidy.php</a>.</p>
 
 </div>
 </div>
@@ -256,6 +260,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Dynamically populates the $fixesForLevel member variable using the fixes array. It may be custom overloaded, used in conjunction with $defaultLevel, or not used at all. </p>
+
+<p>Definition at line <a class="el" href="Tidy_8php_source.html#l00103">103</a> of file <a class="el" href="Tidy_8php_source.html">Tidy.php</a>.</p>
 
 </div>
 </div>
@@ -280,6 +286,8 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
+<p>Definition at line <a class="el" href="Tidy_8php_source.html#l00120">120</a> of file <a class="el" href="Tidy_8php_source.html">Tidy.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a6323f0f69fdfff474a74d06e8f3cd243"></a>
@@ -298,6 +306,8 @@ Public Attributes</h2></td></tr>
 <p>Lazy load constructs the module by determining the necessary fixes to create and then delegating to the <a class="el" href="classHTMLPurifier__HTMLModule__Tidy.html#a6de72c535591cf82e476bc7e1b318b93">populate()</a> function. </p>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000020">Todo:</a></b></dt><dd>Wildcard matching and error reporting when an added or subtracted fix has no effect. </dd></dl>
 
+<p>Definition at line <a class="el" href="Tidy_8php_source.html#l00038">38</a> of file <a class="el" href="Tidy_8php_source.html">Tidy.php</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -311,6 +321,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Default level to place all fixes in. Disabled by default </p>
+
+<p>Definition at line <a class="el" href="Tidy_8php_source.html#l00020">20</a> of file <a class="el" href="Tidy_8php_source.html">Tidy.php</a>.</p>
 
 </div>
 </div>
@@ -330,6 +342,8 @@ Public Attributes</h2></td></tr>
 <div class="line">    )</div>
 </div><!-- fragment --><p>Lists of fixes used by <a class="el" href="classHTMLPurifier__HTMLModule__Tidy.html#a6afdc4634fb922bf30d1ff3c12bd85e9">getFixesForLevel()</a>. Format is: HTMLModule_Tidy-&gt;fixesForLevel[$level] = array('fix-1', 'fix-2'); </p>
 
+<p>Definition at line <a class="el" href="Tidy_8php_source.html#l00026">26</a> of file <a class="el" href="Tidy_8php_source.html">Tidy.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a700db969800293dd50c3b85c29722b80"></a>
@@ -343,15 +357,17 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>List of supported levels. Index zero is a special case "no fixes" level. </p>
 
+<p>Definition at line <a class="el" href="Tidy_8php_source.html#l00015">15</a> of file <a class="el" href="Tidy_8php_source.html">Tidy.php</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>classes/security/htmlpurifier/library/HTMLPurifier/HTMLModule/Tidy.php</li>
+<li>classes/security/htmlpurifier/library/HTMLPurifier/HTMLModule/<a class="el" href="Tidy_8php_source.html">Tidy.php</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Nov 29 2013 15:06:13 for XpressEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 16 2014 18:34:48 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

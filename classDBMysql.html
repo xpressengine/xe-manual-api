@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>XpressEngine: DBMysql Class Reference</title>
+<title>XpressEngine Core: DBMysql Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">XpressEngine
-   &#160;<span id="projectnumber">1.7.4.beta3</span>
+   <div id="projectname">XpressEngine Core
    </div>
   </td>
  </tr>
@@ -38,11 +37,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
-      <li><a href="examples.html"><span>Examples</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -103,7 +99,7 @@ Inheritance diagram for DBMysql:</div>
 <area href="classDBMysql__innodb.html" alt="DBMysql_innodb" shape="rect" coords="0,112,161,136"/>
 <area href="classDBMysqlConnectWrapper.html" alt="DBMysqlConnectWrapper" shape="rect" coords="171,112,332,136"/>
 <area href="classDBMysqli.html" alt="DBMysqli" shape="rect" coords="342,112,503,136"/>
-<area href="classMockDBMysql.html" title="Mock up for Mysql class. " alt="MockDBMysql" shape="rect" coords="513,112,674,136"/>
+<area href="classDBMysqli__innodb.html" alt="DBMysqli_innodb" shape="rect" coords="513,112,674,136"/>
 <area href="classDBMysqliConnectWrapper.html" alt="DBMysqliConnectWrapper" shape="rect" coords="342,168,503,192"/>
 </map>
  </div></div>
@@ -203,6 +199,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a51a1ba94763a8211495eac18d74c80bb inherit pub_methods_classDB"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79cad647912ef780e967819e6346a742 inherit pub_methods_classDB"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDB.html#a79cad647912ef780e967819e6346a742">actFinish</a> ()</td></tr>
 <tr class="separator:a79cad647912ef780e967819e6346a742 inherit pub_methods_classDB"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0adb7f453d6e8ed2e491d6708be7f9ec inherit pub_methods_classDB"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDB.html#a0adb7f453d6e8ed2e491d6708be7f9ec">setQueryLog</a> ($log)</td></tr>
+<tr class="separator:a0adb7f453d6e8ed2e491d6708be7f9ec inherit pub_methods_classDB"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2584546ee78d07a40cc16493f8797cc inherit pub_methods_classDB"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDB.html#af2584546ee78d07a40cc16493f8797cc">setError</a> ($errno=0, $errstr= 'success')</td></tr>
 <tr class="separator:af2584546ee78d07a40cc16493f8797cc inherit pub_methods_classDB"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1433763c6378f1085606424a1bfe27c inherit pub_methods_classDB"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDB.html#ab1433763c6378f1085606424a1bfe27c">isError</a> ()</td></tr>
@@ -276,76 +274,60 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ac95b2047c4c75730e0533be0cccd19d9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac95b2047c4c75730e0533be0cccd19d9"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$prefix</b> = 'xe_'</td></tr>
+<tr class="memitem:ac95b2047c4c75730e0533be0cccd19d9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBMysql.html#ac95b2047c4c75730e0533be0cccd19d9">$prefix</a> = 'xe_'</td></tr>
 <tr class="separator:ac95b2047c4c75730e0533be0cccd19d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c00f6e29c9e4fc4a532f806cf4313c2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2c00f6e29c9e4fc4a532f806cf4313c2"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$comment_syntax</b> = '/* %s */'</td></tr>
+<tr class="memitem:a2c00f6e29c9e4fc4a532f806cf4313c2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBMysql.html#a2c00f6e29c9e4fc4a532f806cf4313c2">$comment_syntax</a> = '/* %s */'</td></tr>
 <tr class="separator:a2c00f6e29c9e4fc4a532f806cf4313c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa93c8f5f14304a16864a0708a3ba41b0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><b>$column_type</b></td></tr>
+<tr class="memitem:aa93c8f5f14304a16864a0708a3ba41b0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBMysql.html#aa93c8f5f14304a16864a0708a3ba41b0">$column_type</a></td></tr>
 <tr class="separator:aa93c8f5f14304a16864a0708a3ba41b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classDB"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classDB')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classDB.html">DB</a></td></tr>
-<tr class="memitem:a082292b9ca3855cbddd3a74e9490ca82 inherit pub_attribs_classDB"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><b>$priority_dbms</b></td></tr>
+<tr class="memitem:a082292b9ca3855cbddd3a74e9490ca82 inherit pub_attribs_classDB"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDB.html#a082292b9ca3855cbddd3a74e9490ca82">$priority_dbms</a></td></tr>
 <tr class="separator:a082292b9ca3855cbddd3a74e9490ca82 inherit pub_attribs_classDB"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca72b9b3a39bb5e5d2e444f20db2c6bb inherit pub_attribs_classDB"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aca72b9b3a39bb5e5d2e444f20db2c6bb"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$count_cache_path</b> = 'files/cache/db'</td></tr>
+<tr class="memitem:aca72b9b3a39bb5e5d2e444f20db2c6bb inherit pub_attribs_classDB"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDB.html#aca72b9b3a39bb5e5d2e444f20db2c6bb">$count_cache_path</a> = 'files/cache/db'</td></tr>
 <tr class="separator:aca72b9b3a39bb5e5d2e444f20db2c6bb inherit pub_attribs_classDB"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85f8f65c37474b0e65d844e1f01f39b0 inherit pub_attribs_classDB"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><b>$cond_operation</b></td></tr>
+<tr class="memitem:a85f8f65c37474b0e65d844e1f01f39b0 inherit pub_attribs_classDB"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDB.html#a85f8f65c37474b0e65d844e1f01f39b0">$cond_operation</a></td></tr>
 <tr class="separator:a85f8f65c37474b0e65d844e1f01f39b0 inherit pub_attribs_classDB"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0a3ae175a659516131cfc6cd615d15c inherit pub_attribs_classDB"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad0a3ae175a659516131cfc6cd615d15c"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$master_db</b> = NULL</td></tr>
+<tr class="memitem:ad0a3ae175a659516131cfc6cd615d15c inherit pub_attribs_classDB"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDB.html#ad0a3ae175a659516131cfc6cd615d15c">$master_db</a> = NULL</td></tr>
 <tr class="separator:ad0a3ae175a659516131cfc6cd615d15c inherit pub_attribs_classDB"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a811a4446882ee9edf0ed846e8926f3 inherit pub_attribs_classDB"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0a811a4446882ee9edf0ed846e8926f3"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$slave_db</b> = NULL</td></tr>
+<tr class="memitem:a0a811a4446882ee9edf0ed846e8926f3 inherit pub_attribs_classDB"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDB.html#a0a811a4446882ee9edf0ed846e8926f3">$slave_db</a> = NULL</td></tr>
 <tr class="separator:a0a811a4446882ee9edf0ed846e8926f3 inherit pub_attribs_classDB"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74e74ee9d3311aa1e8107b8accd05e29 inherit pub_attribs_classDB"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a74e74ee9d3311aa1e8107b8accd05e29"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$result</b> = NULL</td></tr>
+<tr class="memitem:a74e74ee9d3311aa1e8107b8accd05e29 inherit pub_attribs_classDB"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDB.html#a74e74ee9d3311aa1e8107b8accd05e29">$result</a> = NULL</td></tr>
 <tr class="separator:a74e74ee9d3311aa1e8107b8accd05e29 inherit pub_attribs_classDB"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af99d759f7fb3bbadd579d72e686d1cf1 inherit pub_attribs_classDB"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af99d759f7fb3bbadd579d72e686d1cf1"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$errno</b> = 0</td></tr>
+<tr class="memitem:af99d759f7fb3bbadd579d72e686d1cf1 inherit pub_attribs_classDB"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDB.html#af99d759f7fb3bbadd579d72e686d1cf1">$errno</a> = 0</td></tr>
 <tr class="separator:af99d759f7fb3bbadd579d72e686d1cf1 inherit pub_attribs_classDB"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae006f35821aba99713b834fa6a69e55b inherit pub_attribs_classDB"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae006f35821aba99713b834fa6a69e55b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$errstr</b> = ''</td></tr>
+<tr class="memitem:ae006f35821aba99713b834fa6a69e55b inherit pub_attribs_classDB"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDB.html#ae006f35821aba99713b834fa6a69e55b">$errstr</a> = ''</td></tr>
 <tr class="separator:ae006f35821aba99713b834fa6a69e55b inherit pub_attribs_classDB"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32ebabea908efd805a83db48fec3ab52 inherit pub_attribs_classDB"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a32ebabea908efd805a83db48fec3ab52"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$query</b> = ''</td></tr>
+<tr class="memitem:a32ebabea908efd805a83db48fec3ab52 inherit pub_attribs_classDB"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDB.html#a32ebabea908efd805a83db48fec3ab52">$query</a> = ''</td></tr>
 <tr class="separator:a32ebabea908efd805a83db48fec3ab52 inherit pub_attribs_classDB"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9071e31f8241ad644430537f39a16ce inherit pub_attribs_classDB"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac9071e31f8241ad644430537f39a16ce"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$connection</b> = ''</td></tr>
+<tr class="memitem:ac9071e31f8241ad644430537f39a16ce inherit pub_attribs_classDB"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDB.html#ac9071e31f8241ad644430537f39a16ce">$connection</a> = ''</td></tr>
 <tr class="separator:ac9071e31f8241ad644430537f39a16ce inherit pub_attribs_classDB"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5a3fdd4e0078a185dac8c2727fb4f2c inherit pub_attribs_classDB"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af5a3fdd4e0078a185dac8c2727fb4f2c"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$elapsed_time</b> = 0</td></tr>
+<tr class="memitem:af5a3fdd4e0078a185dac8c2727fb4f2c inherit pub_attribs_classDB"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDB.html#af5a3fdd4e0078a185dac8c2727fb4f2c">$elapsed_time</a> = 0</td></tr>
 <tr class="separator:af5a3fdd4e0078a185dac8c2727fb4f2c inherit pub_attribs_classDB"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0483c1bfe18fa5e8bbe7915f9c8187a7 inherit pub_attribs_classDB"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0483c1bfe18fa5e8bbe7915f9c8187a7"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$elapsed_dbclass_time</b> = 0</td></tr>
+<tr class="memitem:a0483c1bfe18fa5e8bbe7915f9c8187a7 inherit pub_attribs_classDB"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDB.html#a0483c1bfe18fa5e8bbe7915f9c8187a7">$elapsed_dbclass_time</a> = 0</td></tr>
 <tr class="separator:a0483c1bfe18fa5e8bbe7915f9c8187a7 inherit pub_attribs_classDB"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39a0eef56f82082ca4c69bcad1f12a31 inherit pub_attribs_classDB"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a39a0eef56f82082ca4c69bcad1f12a31"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$transaction_started</b> = FALSE</td></tr>
+<tr class="memitem:a39a0eef56f82082ca4c69bcad1f12a31 inherit pub_attribs_classDB"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDB.html#a39a0eef56f82082ca4c69bcad1f12a31">$transaction_started</a> = FALSE</td></tr>
 <tr class="separator:a39a0eef56f82082ca4c69bcad1f12a31 inherit pub_attribs_classDB"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac22b6ebcd8f78c2f70646d381f933dc inherit pub_attribs_classDB"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aac22b6ebcd8f78c2f70646d381f933dc"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$is_connected</b> = FALSE</td></tr>
+<tr class="memitem:aac22b6ebcd8f78c2f70646d381f933dc inherit pub_attribs_classDB"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDB.html#aac22b6ebcd8f78c2f70646d381f933dc">$is_connected</a> = FALSE</td></tr>
 <tr class="separator:aac22b6ebcd8f78c2f70646d381f933dc inherit pub_attribs_classDB"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac09dd547a22963632e063c9ab68b7707 inherit pub_attribs_classDB"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac09dd547a22963632e063c9ab68b7707"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$supported_list</b> = array()</td></tr>
+<tr class="memitem:ac09dd547a22963632e063c9ab68b7707 inherit pub_attribs_classDB"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDB.html#ac09dd547a22963632e063c9ab68b7707">$supported_list</a> = array()</td></tr>
 <tr class="separator:ac09dd547a22963632e063c9ab68b7707 inherit pub_attribs_classDB"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9952a27cbf07942e5bb8853ab95b5bdb inherit pub_attribs_classDB"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9952a27cbf07942e5bb8853ab95b5bdb"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$cache_file</b> = 'files/cache/queries/'</td></tr>
+<tr class="memitem:a9952a27cbf07942e5bb8853ab95b5bdb inherit pub_attribs_classDB"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDB.html#a9952a27cbf07942e5bb8853ab95b5bdb">$cache_file</a> = 'files/cache/queries/'</td></tr>
 <tr class="separator:a9952a27cbf07942e5bb8853ab95b5bdb inherit pub_attribs_classDB"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78868b4c2301aa813d9e2d481424f1e8 inherit pub_attribs_classDB"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a78868b4c2301aa813d9e2d481424f1e8"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$db_type</b></td></tr>
+<tr class="memitem:a78868b4c2301aa813d9e2d481424f1e8 inherit pub_attribs_classDB"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDB.html#a78868b4c2301aa813d9e2d481424f1e8">$db_type</a></td></tr>
 <tr class="separator:a78868b4c2301aa813d9e2d481424f1e8 inherit pub_attribs_classDB"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9902aee7d8900a597670fce92c7eb74b inherit pub_attribs_classDB"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9902aee7d8900a597670fce92c7eb74b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$use_prepared_statements</b></td></tr>
+<tr class="memitem:a9902aee7d8900a597670fce92c7eb74b inherit pub_attribs_classDB"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDB.html#a9902aee7d8900a597670fce92c7eb74b">$use_prepared_statements</a></td></tr>
 <tr class="separator:a9902aee7d8900a597670fce92c7eb74b inherit pub_attribs_classDB"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_static_attribs_classDB"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_classDB')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="classDB.html">DB</a></td></tr>
-<tr class="memitem:a6b693edbdcdce5c86f42c050f62d8136 inherit pub_static_attribs_classDB"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6b693edbdcdce5c86f42c050f62d8136"></a>
-static&#160;</td><td class="memItemRight" valign="bottom"><b>$isSupported</b> = FALSE</td></tr>
+<tr class="memitem:a6b693edbdcdce5c86f42c050f62d8136 inherit pub_static_attribs_classDB"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDB.html#a6b693edbdcdce5c86f42c050f62d8136">$isSupported</a> = FALSE</td></tr>
 <tr class="separator:a6b693edbdcdce5c86f42c050f62d8136 inherit pub_static_attribs_classDB"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p>Definition at line <a class="el" href="DBMysql_8class_8php_source.html#l00014">14</a> of file <a class="el" href="DBMysql_8class_8php_source.html">DBMysql.class.php</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="ad11061c47d57c2f346947e0789ecb46b"></a>
 <div class="memitem">
 <div class="memproto">
@@ -367,6 +349,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$isSupported</b> = 
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>resource </dd></dl>
+
+<p>Definition at line <a class="el" href="DBMysql_8class_8php_source.html#l00067">67</a> of file <a class="el" href="DBMysql_8class_8php_source.html">DBMysql.class.php</a>.</p>
 
 </div>
 </div>
@@ -403,6 +387,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$isSupported</b> = 
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>resource </dd></dl>
 
+<p>Definition at line <a class="el" href="DBMysql_8class_8php_source.html#l00182">182</a> of file <a class="el" href="DBMysql_8class_8php_source.html">DBMysql.class.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a660e94bc5cde26859bb95cc428ca92da"></a>
@@ -427,6 +413,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$isSupported</b> = 
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
+<p>Definition at line <a class="el" href="DBMysql_8class_8php_source.html#l00110">110</a> of file <a class="el" href="DBMysql_8class_8php_source.html">DBMysql.class.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a7ad4bfffa35bf75ddafb93767d03a5b7"></a>
@@ -443,6 +431,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$isSupported</b> = 
 </div><div class="memdoc">
 <p><a class="el" href="classDB.html">DB</a> transaction start this method is private </p>
 <dl class="section return"><dt>Returns</dt><dd>boolean </dd></dl>
+
+<p>Definition at line <a class="el" href="DBMysql_8class_8php_source.html#l00150">150</a> of file <a class="el" href="DBMysql_8class_8php_source.html">DBMysql.class.php</a>.</p>
 
 </div>
 </div>
@@ -468,6 +458,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$isSupported</b> = 
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
+<p>Definition at line <a class="el" href="DBMysql_8class_8php_source.html#l00122">122</a> of file <a class="el" href="DBMysql_8class_8php_source.html">DBMysql.class.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a3f720677af37c36b2bc2934dd358a477"></a>
@@ -484,6 +476,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$isSupported</b> = 
 </div><div class="memdoc">
 <p><a class="el" href="classDB.html">DB</a> transaction commit this method is private </p>
 <dl class="section return"><dt>Returns</dt><dd>boolean </dd></dl>
+
+<p>Definition at line <a class="el" href="DBMysql_8class_8php_source.html#l00170">170</a> of file <a class="el" href="DBMysql_8class_8php_source.html">DBMysql.class.php</a>.</p>
 
 </div>
 </div>
@@ -512,6 +506,8 @@ index : primary key, index, unique<br/>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void|object </dd></dl>
+
+<p>Definition at line <a class="el" href="DBMysql_8class_8php_source.html#l00477">477</a> of file <a class="el" href="DBMysql_8class_8php_source.html">DBMysql.class.php</a>.</p>
 
 </div>
 </div>
@@ -548,6 +544,8 @@ index : primary key, index, unique<br/>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>resource </dd></dl>
 
+<p>Definition at line <a class="el" href="DBMysql_8class_8php_source.html#l00603">603</a> of file <a class="el" href="DBMysql_8class_8php_source.html">DBMysql.class.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a29a81acddeeaff54b404dec8377b2d2b"></a>
@@ -582,6 +580,8 @@ index : primary key, index, unique<br/>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>resource </dd></dl>
+
+<p>Definition at line <a class="el" href="DBMysql_8class_8php_source.html#l00565">565</a> of file <a class="el" href="DBMysql_8class_8php_source.html">DBMysql.class.php</a>.</p>
 
 </div>
 </div>
@@ -626,6 +626,8 @@ it supports a method as navigation </p>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classObject.html">Object</a> </dd></dl>
 
+<p>Definition at line <a class="el" href="DBMysql_8class_8php_source.html#l00623">623</a> of file <a class="el" href="DBMysql_8class_8php_source.html">DBMysql.class.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a93657e31e6a8f311aa76668602529e10"></a>
@@ -660,6 +662,8 @@ it supports a method as navigation </p>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>resource </dd></dl>
+
+<p>Definition at line <a class="el" href="DBMysql_8class_8php_source.html#l00582">582</a> of file <a class="el" href="DBMysql_8class_8php_source.html">DBMysql.class.php</a>.</p>
 
 </div>
 </div>
@@ -696,6 +700,8 @@ it supports a method as navigation </p>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array </dd></dl>
 
+<p>Definition at line <a class="el" href="DBMysql_8class_8php_source.html#l00205">205</a> of file <a class="el" href="DBMysql_8class_8php_source.html">DBMysql.class.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a99969f9cdea111207f80faaa8a74c0ab"></a>
@@ -712,6 +718,8 @@ it supports a method as navigation </p>
 </div><div class="memdoc">
 <p><a class="el" href="classDB.html">DB</a> transaction rollback this method is private </p>
 <dl class="section return"><dt>Returns</dt><dd>boolean </dd></dl>
+
+<p>Definition at line <a class="el" href="DBMysql_8class_8php_source.html#l00160">160</a> of file <a class="el" href="DBMysql_8class_8php_source.html">DBMysql.class.php</a>.</p>
 
 </div>
 </div>
@@ -776,6 +784,8 @@ it supports a method as navigation </p>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
+<p>Definition at line <a class="el" href="DBMysql_8class_8php_source.html#l00302">302</a> of file <a class="el" href="DBMysql_8class_8php_source.html">DBMysql.class.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ae17d30f3fd2dbbc29996acdc8c36a00f"></a>
@@ -825,6 +835,8 @@ it supports a method as navigation </p>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
+<p>Definition at line <a class="el" href="DBMysql_8class_8php_source.html#l00383">383</a> of file <a class="el" href="DBMysql_8class_8php_source.html">DBMysql.class.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a9674193c36272fa9ea16c20d91cfbfe5"></a>
@@ -849,6 +861,8 @@ it supports a method as navigation </p>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string </dd></dl>
 
+<p>Definition at line <a class="el" href="DBMysql_8class_8php_source.html#l00132">132</a> of file <a class="el" href="DBMysql_8class_8php_source.html">DBMysql.class.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a58ab5c56561966d486ba54129aed954d"></a>
@@ -865,6 +879,8 @@ it supports a method as navigation </p>
 </div><div class="memdoc">
 <p>Create an instance of this class </p>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classDBMysql.html">DBMysql</a> return <a class="el" href="classDBMysql.html">DBMysql</a> object instance </dd></dl>
+
+<p>Definition at line <a class="el" href="DBMysql_8class_8php_source.html#l00056">56</a> of file <a class="el" href="DBMysql_8class_8php_source.html">DBMysql.class.php</a>.</p>
 
 </div>
 </div>
@@ -890,6 +906,8 @@ it supports a method as navigation </p>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void|object </dd></dl>
 
+<p>Definition at line <a class="el" href="DBMysql_8class_8php_source.html#l00447">447</a> of file <a class="el" href="DBMysql_8class_8php_source.html">DBMysql.class.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a92f43909e6ba226fc7067ddc25594a33"></a>
@@ -913,6 +931,8 @@ it supports a method as navigation </p>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void|object </dd></dl>
+
+<p>Definition at line <a class="el" href="DBMysql_8class_8php_source.html#l00457">457</a> of file <a class="el" href="DBMysql_8class_8php_source.html">DBMysql.class.php</a>.</p>
 
 </div>
 </div>
@@ -938,6 +958,8 @@ it supports a method as navigation </p>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>object </dd></dl>
 
+<p>Definition at line <a class="el" href="DBMysql_8class_8php_source.html#l00677">677</a> of file <a class="el" href="DBMysql_8class_8php_source.html">DBMysql.class.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a0d907e935bcfafa845fd39640dcc60cf"></a>
@@ -962,6 +984,8 @@ it supports a method as navigation </p>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>boolean Returns TRUE on success or FALSE on failure. </dd></dl>
 
+<p>Definition at line <a class="el" href="DBMysql_8class_8php_source.html#l00687">687</a> of file <a class="el" href="DBMysql_8class_8php_source.html">DBMysql.class.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a21acddd922e39574922f60b881add658"></a>
@@ -979,6 +1003,8 @@ it supports a method as navigation </p>
 <p>Get the ID generated in the last query Return next sequence from sequence table This method use only mysql </p>
 <dl class="section return"><dt>Returns</dt><dd>int </dd></dl>
 
+<p>Definition at line <a class="el" href="DBMysql_8class_8php_source.html#l00666">666</a> of file <a class="el" href="DBMysql_8class_8php_source.html">DBMysql.class.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a74c9966448ca4a373407ce6f3a1d7eb0"></a>
@@ -995,6 +1021,8 @@ it supports a method as navigation </p>
 </div><div class="memdoc">
 <p>Constructor </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p>Definition at line <a class="el" href="DBMysql_8class_8php_source.html#l00046">46</a> of file <a class="el" href="DBMysql_8class_8php_source.html">DBMysql.class.php</a>.</p>
 
 </div>
 </div>
@@ -1030,6 +1058,8 @@ it supports a method as navigation </p>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p>Definition at line <a class="el" href="DBMysql_8class_8php_source.html#l00337">337</a> of file <a class="el" href="DBMysql_8class_8php_source.html">DBMysql.class.php</a>.</p>
 
 </div>
 </div>
@@ -1073,6 +1103,8 @@ it supports a method as navigation </p>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
+<p>Definition at line <a class="el" href="DBMysql_8class_8php_source.html#l00401">401</a> of file <a class="el" href="DBMysql_8class_8php_source.html">DBMysql.class.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a926ea6ca10e71ae128be90604b78411f"></a>
@@ -1089,6 +1121,8 @@ it supports a method as navigation </p>
 </div><div class="memdoc">
 <p>Return the sequence value incremented by 1 Auto_increment column only used in the sequence table </p>
 <dl class="section return"><dt>Returns</dt><dd>int </dd></dl>
+
+<p>Definition at line <a class="el" href="DBMysql_8class_8php_source.html#l00243">243</a> of file <a class="el" href="DBMysql_8class_8php_source.html">DBMysql.class.php</a>.</p>
 
 </div>
 </div>
@@ -1113,6 +1147,8 @@ it supports a method as navigation </p>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classDBParser.html">DBParser</a> </dd></dl>
+
+<p>Definition at line <a class="el" href="DBMysql_8class_8php_source.html#l00697">697</a> of file <a class="el" href="DBMysql_8class_8php_source.html">DBMysql.class.php</a>.</p>
 
 </div>
 </div>
@@ -1163,6 +1199,8 @@ it supports a method as navigation </p>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string select paging sql </dd></dl>
 
+<p>Definition at line <a class="el" href="DBMysql_8class_8php_source.html#l00833">833</a> of file <a class="el" href="DBMysql_8class_8php_source.html">DBMysql.class.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a537be41db3f377b088353baa7be50a13"></a>
@@ -1197,6 +1235,8 @@ it supports a method as navigation </p>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>boolean </dd></dl>
+
+<p>Definition at line <a class="el" href="DBMysql_8class_8php_source.html#l00349">349</a> of file <a class="el" href="DBMysql_8class_8php_source.html">DBMysql.class.php</a>.</p>
 
 </div>
 </div>
@@ -1233,6 +1273,8 @@ it supports a method as navigation </p>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>boolean </dd></dl>
 
+<p>Definition at line <a class="el" href="DBMysql_8class_8php_source.html#l00413">413</a> of file <a class="el" href="DBMysql_8class_8php_source.html">DBMysql.class.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a095f2a64a070958c18cb3ebfab3043e5"></a>
@@ -1256,6 +1298,8 @@ it supports a method as navigation </p>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>boolean </dd></dl>
+
+<p>Definition at line <a class="el" href="DBMysql_8class_8php_source.html#l00280">280</a> of file <a class="el" href="DBMysql_8class_8php_source.html">DBMysql.class.php</a>.</p>
 
 </div>
 </div>
@@ -1292,6 +1336,8 @@ it supports a method as navigation </p>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>boolean </dd></dl>
 
+<p>Definition at line <a class="el" href="DBMysql_8class_8php_source.html#l00263">263</a> of file <a class="el" href="DBMysql_8class_8php_source.html">DBMysql.class.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a74f602cacc17d3402cde22eccdc8b46a"></a>
@@ -1315,6 +1361,8 @@ it supports a method as navigation </p>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classObject.html">Object</a> </dd></dl>
+
+<p>Definition at line <a class="el" href="DBMysql_8class_8php_source.html#l00708">708</a> of file <a class="el" href="DBMysql_8class_8php_source.html">DBMysql.class.php</a>.</p>
 
 </div>
 </div>
@@ -1365,6 +1413,8 @@ it supports a method as navigation </p>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classObject.html">Object</a> <a class="el" href="classObject.html">Object</a> with page info containing </dd></dl>
 
+<p>Definition at line <a class="el" href="DBMysql_8class_8php_source.html#l00735">735</a> of file <a class="el" href="DBMysql_8class_8php_source.html">DBMysql.class.php</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -1388,15 +1438,45 @@ it supports a method as navigation </p>
 <div class="line">        <span class="stringliteral">&#39;float&#39;</span> =&gt; <span class="stringliteral">&#39;float&#39;</span>,</div>
 <div class="line">    )</div>
 </div><!-- fragment -->
+<p>Definition at line <a class="el" href="DBMysql_8class_8php_source.html#l00031">31</a> of file <a class="el" href="DBMysql_8class_8php_source.html">DBMysql.class.php</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2c00f6e29c9e4fc4a532f806cf4313c2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DBMysql::$comment_syntax = '/* %s */'</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="DBMysql_8class_8php_source.html#l00022">22</a> of file <a class="el" href="DBMysql_8class_8php_source.html">DBMysql.class.php</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac95b2047c4c75730e0533be0cccd19d9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DBMysql::$prefix = 'xe_'</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="DBMysql_8class_8php_source.html#l00021">21</a> of file <a class="el" href="DBMysql_8class_8php_source.html">DBMysql.class.php</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>classes/db/DBMysql.class.php</li>
+<li>classes/db/<a class="el" href="DBMysql_8class_8php_source.html">DBMysql.class.php</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Nov 29 2013 15:06:10 for XpressEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 16 2014 18:34:39 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

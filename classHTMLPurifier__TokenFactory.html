@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>XpressEngine: HTMLPurifier_TokenFactory Class Reference</title>
+<title>XpressEngine Core: HTMLPurifier_TokenFactory Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">XpressEngine
-   &#160;<span id="projectnumber">1.7.4.beta3</span>
+   <div id="projectname">XpressEngine Core
    </div>
   </td>
  </tr>
@@ -38,11 +37,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
-      <li><a href="examples.html"><span>Examples</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -111,23 +107,21 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a8d28d7ec8c618fec3e847b27615ccce9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8d28d7ec8c618fec3e847b27615ccce9"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$p_end</b></td></tr>
+<tr class="memitem:a8d28d7ec8c618fec3e847b27615ccce9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHTMLPurifier__TokenFactory.html#a8d28d7ec8c618fec3e847b27615ccce9">$p_end</a></td></tr>
 <tr class="separator:a8d28d7ec8c618fec3e847b27615ccce9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a9636ac8d85fb51748a82f3ac5f9687"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4a9636ac8d85fb51748a82f3ac5f9687"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$p_empty</b></td></tr>
+<tr class="memitem:a4a9636ac8d85fb51748a82f3ac5f9687"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHTMLPurifier__TokenFactory.html#a4a9636ac8d85fb51748a82f3ac5f9687">$p_empty</a></td></tr>
 <tr class="separator:a4a9636ac8d85fb51748a82f3ac5f9687"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44d3335320c4d44bb0a9b2af2df70bcb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a44d3335320c4d44bb0a9b2af2df70bcb"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$p_text</b></td></tr>
+<tr class="memitem:a44d3335320c4d44bb0a9b2af2df70bcb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHTMLPurifier__TokenFactory.html#a44d3335320c4d44bb0a9b2af2df70bcb">$p_text</a></td></tr>
 <tr class="separator:a44d3335320c4d44bb0a9b2af2df70bcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac43011acb9be11fad3c5da73f4225b47"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac43011acb9be11fad3c5da73f4225b47"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$p_comment</b></td></tr>
+<tr class="memitem:ac43011acb9be11fad3c5da73f4225b47"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHTMLPurifier__TokenFactory.html#ac43011acb9be11fad3c5da73f4225b47">$p_comment</a></td></tr>
 <tr class="separator:ac43011acb9be11fad3c5da73f4225b47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Factory for token generation.</p>
 <dl class="section note"><dt>Note</dt><dd>Doing some benchmarking indicates that the new operator is much slower than the clone operator (even discounting the cost of the constructor). This class is for that optimization. Other then that, there's not much point as we don't maintain parallel <a class="el" href="classHTMLPurifier__Token.html">HTMLPurifier_Token</a> hierarchies (the main reason why you'd want to use an abstract factory). </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000033">Todo:</a></b></dt><dd>Port DirectLex to use this </dd></dl>
+
+<p>Definition at line <a class="el" href="TokenFactory_8php_source.html#l00014">14</a> of file <a class="el" href="TokenFactory_8php_source.html">TokenFactory.php</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a57bf3f5bda520a043e863aeea6d6c56e"></a>
 <div class="memitem">
@@ -142,6 +136,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Generates blank prototypes for cloning. </p>
+
+<p>Definition at line <a class="el" href="TokenFactory_8php_source.html#l00027">27</a> of file <a class="el" href="TokenFactory_8php_source.html">TokenFactory.php</a>.</p>
 
 </div>
 </div>
@@ -167,6 +163,8 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Generated <a class="el" href="classHTMLPurifier__Token__Comment.html">HTMLPurifier_Token_Comment</a> </dd></dl>
+
+<p>Definition at line <a class="el" href="TokenFactory_8php_source.html#l00086">86</a> of file <a class="el" href="TokenFactory_8php_source.html">TokenFactory.php</a>.</p>
 
 </div>
 </div>
@@ -203,6 +201,8 @@ Public Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Generated <a class="el" href="classHTMLPurifier__Token__Empty.html">HTMLPurifier_Token_Empty</a> </dd></dl>
 
+<p>Definition at line <a class="el" href="TokenFactory_8php_source.html#l00064">64</a> of file <a class="el" href="TokenFactory_8php_source.html">TokenFactory.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a3615bfd0ce60585f890a484eaaaa8977"></a>
@@ -226,6 +226,8 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Generated <a class="el" href="classHTMLPurifier__Token__End.html">HTMLPurifier_Token_End</a> </dd></dl>
+
+<p>Definition at line <a class="el" href="TokenFactory_8php_source.html#l00052">52</a> of file <a class="el" href="TokenFactory_8php_source.html">TokenFactory.php</a>.</p>
 
 </div>
 </div>
@@ -262,6 +264,8 @@ Public Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Generated <a class="el" href="classHTMLPurifier__Token__Start.html">HTMLPurifier_Token_Start</a> </dd></dl>
 
+<p>Definition at line <a class="el" href="TokenFactory_8php_source.html#l00041">41</a> of file <a class="el" href="TokenFactory_8php_source.html">TokenFactory.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="aef47964d68b7912f9585d53a05d41614"></a>
@@ -286,15 +290,74 @@ Public Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Generated <a class="el" href="classHTMLPurifier__Token__Text.html">HTMLPurifier_Token_Text</a> </dd></dl>
 
+<p>Definition at line <a class="el" href="TokenFactory_8php_source.html#l00075">75</a> of file <a class="el" href="TokenFactory_8php_source.html">TokenFactory.php</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="ac43011acb9be11fad3c5da73f4225b47"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HTMLPurifier_TokenFactory::$p_comment</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="TokenFactory_8php_source.html#l00022">22</a> of file <a class="el" href="TokenFactory_8php_source.html">TokenFactory.php</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4a9636ac8d85fb51748a82f3ac5f9687"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HTMLPurifier_TokenFactory::$p_empty</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="TokenFactory_8php_source.html#l00022">22</a> of file <a class="el" href="TokenFactory_8php_source.html">TokenFactory.php</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8d28d7ec8c618fec3e847b27615ccce9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HTMLPurifier_TokenFactory::$p_end</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="TokenFactory_8php_source.html#l00022">22</a> of file <a class="el" href="TokenFactory_8php_source.html">TokenFactory.php</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a44d3335320c4d44bb0a9b2af2df70bcb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HTMLPurifier_TokenFactory::$p_text</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="TokenFactory_8php_source.html#l00022">22</a> of file <a class="el" href="TokenFactory_8php_source.html">TokenFactory.php</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>classes/security/htmlpurifier/library/HTMLPurifier/TokenFactory.php</li>
+<li>classes/security/htmlpurifier/library/HTMLPurifier/<a class="el" href="TokenFactory_8php_source.html">TokenFactory.php</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Nov 29 2013 15:06:14 for XpressEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 16 2014 18:34:51 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

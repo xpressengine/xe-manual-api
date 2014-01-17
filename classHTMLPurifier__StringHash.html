@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>XpressEngine: HTMLPurifier_StringHash Class Reference</title>
+<title>XpressEngine Core: HTMLPurifier_StringHash Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">XpressEngine
-   &#160;<span id="projectnumber">1.7.4.beta3</span>
+   <div id="projectname">XpressEngine Core
    </div>
   </td>
  </tr>
@@ -38,11 +37,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
-      <li><a href="examples.html"><span>Examples</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -113,13 +109,14 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:ab6ca407f3132961a9ac57a0eee2db3f2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab6ca407f3132961a9ac57a0eee2db3f2"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$accessed</b> = array()</td></tr>
+<tr class="memitem:ab6ca407f3132961a9ac57a0eee2db3f2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHTMLPurifier__StringHash.html#ab6ca407f3132961a9ac57a0eee2db3f2">$accessed</a> = array()</td></tr>
 <tr class="separator:ab6ca407f3132961a9ac57a0eee2db3f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This is in almost every respect equivalent to an array except that it keeps track of which keys were accessed.</p>
 <dl class="section warning"><dt>Warning</dt><dd>For the sake of backwards compatibility with early versions of PHP 5, you must not use the $hash[$key] syntax; if you do our version of offsetGet is never called. </dd></dl>
+
+<p>Definition at line <a class="el" href="StringHash_8php_source.html#l00011">11</a> of file <a class="el" href="StringHash_8php_source.html">StringHash.php</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a61503c478028d9c6195ea1e0d1bff070"></a>
 <div class="memitem">
@@ -135,6 +132,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns a lookup array of all array indexes that have been accessed. </p>
 <dl class="section return"><dt>Returns</dt><dd>Array in form array($index =&gt; true). </dd></dl>
+
+<p>Definition at line <a class="el" href="StringHash_8php_source.html#l00027">27</a> of file <a class="el" href="StringHash_8php_source.html">StringHash.php</a>.</p>
 
 </div>
 </div>
@@ -153,6 +152,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Retrieves a value, and logs the access. </p>
 
+<p>Definition at line <a class="el" href="StringHash_8php_source.html#l00018">18</a> of file <a class="el" href="StringHash_8php_source.html">StringHash.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a80ca20a91317f8016d3b86f503f70edf"></a>
@@ -169,15 +170,40 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Resets the access array. </p>
 
+<p>Definition at line <a class="el" href="StringHash_8php_source.html#l00034">34</a> of file <a class="el" href="StringHash_8php_source.html">StringHash.php</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="ab6ca407f3132961a9ac57a0eee2db3f2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">HTMLPurifier_StringHash::$accessed = array()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="StringHash_8php_source.html#l00013">13</a> of file <a class="el" href="StringHash_8php_source.html">StringHash.php</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>classes/security/htmlpurifier/library/HTMLPurifier/StringHash.php</li>
+<li>classes/security/htmlpurifier/library/HTMLPurifier/<a class="el" href="StringHash_8php_source.html">StringHash.php</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Nov 29 2013 15:06:14 for XpressEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 16 2014 18:34:50 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>
