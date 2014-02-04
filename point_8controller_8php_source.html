@@ -23,6 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
+   &#160;<span id="projectnumber">1.7.4</span>
    </div>
   </td>
  </tr>
@@ -79,7 +80,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_2a1abcb1e4424232daafe4d6b5857ef1.html">modules</a></li><li class="navelem"><a class="el" href="dir_1c6997f295fca7c6d9e2c2bc369e59fd.html">point</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_b78503ac06afb93682bd37ea2506bf6c.html">modules</a></li><li class="navelem"><a class="el" href="dir_abcb946f195dd490f9a6215d49f40768.html">point</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -674,7 +675,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;        <a class="code" href="classFileHandler.html#ad90c10a81460f437bc68952427606155">FileHandler::writeFile</a>($cache_filename, $point);</div>
 <div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;</div>
 <div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;        $oCacheHandler = <a class="code" href="classCacheHandler.html#a2fce85cb82ab180ce9d6bcea61a54eec">CacheHandler::getInstance</a>(<span class="stringliteral">&#39;object&#39;</span>, null, <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;        <span class="keywordflow">if</span>($oCacheHandler-&gt;isSupport())</div>
+<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;        <span class="keywordflow">if</span>($new_group_list &amp;&amp; $del_group_list &amp;&amp; $oCacheHandler-&gt;isSupport())</div>
 <div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;        {</div>
 <div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;            $object_key = <span class="stringliteral">&#39;member_groups:&#39;</span> . <a class="code" href="func_8inc_8php.html#ae1a0ad24dbf34de227ffd2eb0d1f8da3">getNumberingPath</a>($member_srl) . $member_srl . <span class="stringliteral">&#39;_0&#39;</span>;</div>
 <div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;            $cache_key = $oCacheHandler-&gt;getGroupKey(<span class="stringliteral">&#39;member&#39;</span>, $object_key);</div>
@@ -682,7 +683,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;        }</div>
 <div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;</div>
 <div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;        $oCacheHandler = <a class="code" href="classCacheHandler.html#a2fce85cb82ab180ce9d6bcea61a54eec">CacheHandler::getInstance</a>(<span class="stringliteral">&#39;object&#39;</span>);</div>
-<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;        <span class="keywordflow">if</span>($oCacheHandler-&gt;isSupport())</div>
+<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;        <span class="keywordflow">if</span>($new_group_list &amp;&amp; $del_group_list &amp;&amp; $oCacheHandler-&gt;isSupport())</div>
 <div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;        {</div>
 <div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;            $object_key = <span class="stringliteral">&#39;member_info:&#39;</span> . <a class="code" href="func_8inc_8php.html#ae1a0ad24dbf34de227ffd2eb0d1f8da3">getNumberingPath</a>($member_srl) . $member_srl;</div>
 <div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;            $cache_key = $oCacheHandler-&gt;getGroupKey(<span class="stringliteral">&#39;member&#39;</span>, $object_key);</div>
@@ -749,12 +750,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classpointController_html_afa504365e28861dc15a905c46e1f29e3"><div class="ttname"><a href="classpointController.html#afa504365e28861dc15a905c46e1f29e3">pointController\triggerBeforeDownloadFile</a></div><div class="ttdeci">triggerBeforeDownloadFile(&amp;$obj)</div><div class="ttdoc">The trigger called before a file is downloaded. </div><div class="ttdef"><b>Definition:</b> <a href="point_8controller_8php_source.html#l00323">point.controller.php:323</a></div></div>
 <div class="ttc" id="classpointController_html_a6773e89c36c2ad9086f1e4628149123c"><div class="ttname"><a href="classpointController.html#a6773e89c36c2ad9086f1e4628149123c">pointController\triggerBeforeDeleteDocument</a></div><div class="ttdeci">triggerBeforeDeleteDocument(&amp;$obj)</div><div class="ttdoc">The trigger which deducts the points related to post comments before deleting the post itself...</div><div class="ttdef"><b>Definition:</b> <a href="point_8controller_8php_source.html#l00137">point.controller.php:137</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_a418bc23855eebc0d90190dd625ac4474"><div class="ttname"><a href="func_8inc_8php.html#a418bc23855eebc0d90190dd625ac4474">executeQuery</a></div><div class="ttdeci">executeQuery($query_id, $args=NULL, $arg_columns=NULL)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00203">func.inc.php:203</a></div></div>
-<div class="ttc" id="classModuleHandler_html_aa1b1f9eae91ccd76e6a81c9375c2e673"><div class="ttname"><a href="classModuleHandler.html#aa1b1f9eae91ccd76e6a81c9375c2e673">ModuleHandler\triggerCall</a></div><div class="ttdeci">triggerCall($trigger_name, $called_position, &amp;$obj)</div><div class="ttdef"><b>Definition:</b> <a href="ModuleHandler_8class_8php_source.html#l01118">ModuleHandler.class.php:1118</a></div></div>
+<div class="ttc" id="classModuleHandler_html_aa1b1f9eae91ccd76e6a81c9375c2e673"><div class="ttname"><a href="classModuleHandler.html#aa1b1f9eae91ccd76e6a81c9375c2e673">ModuleHandler\triggerCall</a></div><div class="ttdeci">triggerCall($trigger_name, $called_position, &amp;$obj)</div><div class="ttdef"><b>Definition:</b> <a href="ModuleHandler_8class_8php_source.html#l01126">ModuleHandler.class.php:1126</a></div></div>
 <div class="ttc" id="validate_8php_html_a83018d9153d17d91fbcf3bc10158d34f"><div class="ttname"><a href="validate_8php.html#a83018d9153d17d91fbcf3bc10158d34f">$i</a></div><div class="ttdeci">$i</div><div class="ttdef"><b>Definition:</b> <a href="validate_8php_source.html#l01856">validate.php:1856</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 16 2014 18:34:27 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 4 2014 20:59:09 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

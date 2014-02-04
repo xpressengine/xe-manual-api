@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['xpressengine',['XpressEngine',['../index.html',1,'']]],
   ['xpressengine',['XpressEngine',['../md_README.html',1,'']]],
   ['xehttprequest',['XEHttpRequest',['../classXEHttpRequest.html',1,'XEHttpRequest'],['../classXEHttpRequest.html#a3e1f642e4aca1862c28eb8b26151ac1c',1,'XEHttpRequest\XEHttpRequest()']]],
   ['xehttprequest_2eclass_2ephp',['XEHttpRequest.class.php',['../XEHttpRequest_8class_8php.html',1,'']]],

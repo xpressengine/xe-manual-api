@@ -23,6 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
+   &#160;<span id="projectnumber">1.7.4</span>
    </div>
   </td>
  </tr>
@@ -79,7 +80,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_2a1abcb1e4424232daafe4d6b5857ef1.html">modules</a></li><li class="navelem"><a class="el" href="dir_742ddd583976b7febb55594b2d0c79ab.html">document</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_b78503ac06afb93682bd37ea2506bf6c.html">modules</a></li><li class="navelem"><a class="el" href="dir_c96a7b4c5248fe78f62784639fa96e50.html">document</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -214,26 +215,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        <span class="keywordflow">if</span>(!$oMemberModel-&gt;isLogged()) <span class="keywordflow">return</span> $this-&gt;<a class="code" href="classModuleObject.html#ac4c2bac7917c3ab3a0e816b99574727c">stop</a>(<span class="stringliteral">&#39;msg_not_logged&#39;</span>);</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <span class="comment">// Get the saved document (module_srl is set to member_srl instead)</span></div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <a class="code" href="adminlogging_8addon_8php.html#a193c1593ceb216e9fb05b0bad01ebbc8">$logged_info</a> = <a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;logged_info&#39;</span>);</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;member_srl = <a class="code" href="adminlogging_8addon_8php.html#a193c1593ceb216e9fb05b0bad01ebbc8">$logged_info</a>-&gt;member_srl;</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;statusList = array($this-&gt;<a class="code" href="classdocument.html#a319eeb35de3ffef5cb32374283b7bf14">getConfigStatus</a>(<span class="stringliteral">&#39;temp&#39;</span>));</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;page = (int)<a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;page&#39;</span>);</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;list_count = 10;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        <a class="code" href="ko_8install_8php.html#afb18aa87e5520385e76377e876e042af">$oDocumentModel</a> = <a class="code" href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a>(<span class="stringliteral">&#39;document&#39;</span>);</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = <a class="code" href="ko_8install_8php.html#afb18aa87e5520385e76377e876e042af">$oDocumentModel</a>-&gt;getDocumentList(<a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>, <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        <a class="code" href="classContext.html#a9f79aa7aecf2e4d8006e517844523fc2">Context::set</a>(<span class="stringliteral">&#39;total_count&#39;</span>, <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;total_count);</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        <a class="code" href="classContext.html#a9f79aa7aecf2e4d8006e517844523fc2">Context::set</a>(<span class="stringliteral">&#39;total_page&#39;</span>, <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;total_page);</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        <a class="code" href="classContext.html#a9f79aa7aecf2e4d8006e517844523fc2">Context::set</a>(<span class="stringliteral">&#39;page&#39;</span>, <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;page);</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        <a class="code" href="classContext.html#a9f79aa7aecf2e4d8006e517844523fc2">Context::set</a>(<span class="stringliteral">&#39;document_list&#39;</span>, <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;data);</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        <a class="code" href="classContext.html#a9f79aa7aecf2e4d8006e517844523fc2">Context::set</a>(<span class="stringliteral">&#39;page_navigation&#39;</span>, <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;page_navigation);</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        $this-&gt;<a class="code" href="classModuleObject.html#a440407bd8b6b16eb03115ad4a5c5835a">setTemplatePath</a>($this-&gt;module_path.<span class="stringliteral">&#39;tpl&#39;</span>);</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        $this-&gt;<a class="code" href="classModuleObject.html#aa38e116023d54d3f5d8f507bb87663f4">setTemplateFile</a>(<span class="stringliteral">&#39;saved_list_popup&#39;</span>);</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    }</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;}</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="comment">/* End of file document.view.php */</span></div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="comment">/* Location: ./modules/document/document.view.php */</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a> = <span class="keyword">new</span> stdClass();</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;member_srl = <a class="code" href="adminlogging_8addon_8php.html#a193c1593ceb216e9fb05b0bad01ebbc8">$logged_info</a>-&gt;member_srl;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;statusList = array($this-&gt;<a class="code" href="classdocument.html#a319eeb35de3ffef5cb32374283b7bf14">getConfigStatus</a>(<span class="stringliteral">&#39;temp&#39;</span>));</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;page = (int)<a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;page&#39;</span>);</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;list_count = 10;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        <a class="code" href="ko_8install_8php.html#afb18aa87e5520385e76377e876e042af">$oDocumentModel</a> = <a class="code" href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a>(<span class="stringliteral">&#39;document&#39;</span>);</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = <a class="code" href="ko_8install_8php.html#afb18aa87e5520385e76377e876e042af">$oDocumentModel</a>-&gt;getDocumentList(<a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>, <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        <a class="code" href="classContext.html#a9f79aa7aecf2e4d8006e517844523fc2">Context::set</a>(<span class="stringliteral">&#39;total_count&#39;</span>, <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;total_count);</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        <a class="code" href="classContext.html#a9f79aa7aecf2e4d8006e517844523fc2">Context::set</a>(<span class="stringliteral">&#39;total_page&#39;</span>, <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;total_page);</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        <a class="code" href="classContext.html#a9f79aa7aecf2e4d8006e517844523fc2">Context::set</a>(<span class="stringliteral">&#39;page&#39;</span>, <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;page);</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        <a class="code" href="classContext.html#a9f79aa7aecf2e4d8006e517844523fc2">Context::set</a>(<span class="stringliteral">&#39;document_list&#39;</span>, <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;data);</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        <a class="code" href="classContext.html#a9f79aa7aecf2e4d8006e517844523fc2">Context::set</a>(<span class="stringliteral">&#39;page_navigation&#39;</span>, <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;page_navigation);</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        $this-&gt;<a class="code" href="classModuleObject.html#a440407bd8b6b16eb03115ad4a5c5835a">setTemplatePath</a>($this-&gt;module_path.<span class="stringliteral">&#39;tpl&#39;</span>);</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        $this-&gt;<a class="code" href="classModuleObject.html#aa38e116023d54d3f5d8f507bb87663f4">setTemplateFile</a>(<span class="stringliteral">&#39;saved_list_popup&#39;</span>);</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    }</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;}</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="comment">/* End of file document.view.php */</span></div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="comment">/* Location: ./modules/document/document.view.php */</span></div>
 <div class="ttc" id="classdocument_html_a319eeb35de3ffef5cb32374283b7bf14"><div class="ttname"><a href="classdocument.html#a319eeb35de3ffef5cb32374283b7bf14">document\getConfigStatus</a></div><div class="ttdeci">getConfigStatus($key)</div><div class="ttdef"><b>Definition:</b> <a href="document_8class_8php_source.html#l00356">document.class.php:356</a></div></div>
 <div class="ttc" id="classModuleObject_html_aa38e116023d54d3f5d8f507bb87663f4"><div class="ttname"><a href="classModuleObject.html#aa38e116023d54d3f5d8f507bb87663f4">ModuleObject\setTemplateFile</a></div><div class="ttdeci">setTemplateFile($filename)</div><div class="ttdef"><b>Definition:</b> <a href="ModuleObject_8class_8php_source.html#l00252">ModuleObject.class.php:252</a></div></div>
 <div class="ttc" id="ko_8install_8php_html_a8d7a87df524e7d6938f66f8e284cdd1e"><div class="ttname"><a href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a></div><div class="ttdeci">$oModuleModel</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00092">ko.install.php:92</a></div></div>
@@ -266,7 +268,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 16 2014 18:34:26 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 4 2014 20:59:06 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

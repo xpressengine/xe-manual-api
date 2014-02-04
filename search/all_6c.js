@@ -34,6 +34,7 @@ var searchData=
   ['limittag',['LimitTag',['../classLimitTag.html',1,'LimitTag'],['../classLimitTag.html#a9b5dbee572b93d0ae32089e8deed7462',1,'LimitTag\LimitTag()']]],
   ['limittag_2eclass_2ephp',['LimitTag.class.php',['../LimitTag_8class_8php.html',1,'']]],
   ['lineno',['LINENO',['../classHTMLPurifier__ErrorCollector.html#a9d60433c835cfa6d3a6f104387d91a38',1,'HTMLPurifier_ErrorCollector']]],
+  ['linkallmoduleinstancestositemap',['linkAllModuleInstancesToSitemap',['../classmenuAdminController.html#a49adc0f822800b87a3419fc4d0d48005',1,'menuAdminController']]],
   ['linkify_2ephp',['Linkify.php',['../Linkify_8php.html',1,'']]],
   ['linktypes_2ephp',['LinkTypes.php',['../LinkTypes_8php.html',1,'']]],
   ['list_2ephp',['List.php',['../ChildDef_2List_8php.html',1,'']]],
@@ -61,9 +62,9 @@ var searchData=
   ['loadskininfo',['loadSkinInfo',['../classmoduleModel.html#af2f585723dfb8b8993f0e884136e45bb',1,'moduleModel']]],
   ['loadxmlfile',['loadXmlFile',['../classXmlParser.html#a3975b17b893e196069963d433046771b',1,'XmlParser']]],
   ['lock',['lock',['../classmoduleController.html#a1395c1be0ebed50078212640fba409be',1,'moduleController']]],
-  ['log',['LOG',['../classFirePHP.html#a40b1d5e20bb864c2dab56d949a6230db',1,'FirePHP\LOG()'],['../classFB.html#a671e5778ffc8be9f80db80f0b736b516',1,'FB\log()'],['../classFirePHP.html#a3ba8a322aba061c4a15965356d92c955',1,'FirePHP\log()'],['../classHTTP__Request2__Observer__Log.html#a253f36793403dd77277fb2e76d19c117',1,'HTTP_Request2_Observer_Log\log()']]],
+  ['log',['log',['../classFB.html#a671e5778ffc8be9f80db80f0b736b516',1,'FB\log()'],['../classFirePHP.html#a3ba8a322aba061c4a15965356d92c955',1,'FirePHP\log()'],['../classHTTP__Request2__Observer__Log.html#a253f36793403dd77277fb2e76d19c117',1,'HTTP_Request2_Observer_Log\log()'],['../classFirePHP.html#a40b1d5e20bb864c2dab56d949a6230db',1,'FirePHP\LOG()']]],
   ['log_2ephp',['Log.php',['../Log_8php.html',1,'']]],
   ['login_5finfo',['login_info',['../classlogin__info.html',1,'']]],
   ['login_5finfo_2eclass_2ephp',['login_info.class.php',['../login__info_8class_8php.html',1,'']]],
-  ['lookup',['LOOKUP',['../classHTMLPurifier__VarParser.html#a72f3c2600fc72784fbad831239a9b789',1,'HTMLPurifier_VarParser\LOOKUP()'],['../classHTMLPurifier__ConfigSchema__InterchangeBuilder.html#a8ecf76e83da57edad0016d3efc98c3ec',1,'HTMLPurifier_ConfigSchema_InterchangeBuilder\lookup()']]]
+  ['lookup',['lookup',['../classHTMLPurifier__ConfigSchema__InterchangeBuilder.html#a8ecf76e83da57edad0016d3efc98c3ec',1,'HTMLPurifier_ConfigSchema_InterchangeBuilder\lookup()'],['../classHTMLPurifier__VarParser.html#a72f3c2600fc72784fbad831239a9b789',1,'HTMLPurifier_VarParser\LOOKUP()']]]
 ];

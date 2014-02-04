@@ -23,6 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
+   &#160;<span id="projectnumber">1.7.4</span>
    </div>
   </td>
  </tr>
@@ -139,9 +140,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <tr class="even"><td class="entry"><a class="el" href="classObject.html#ad6f51071a4048c1fed581748065e4d68">gets</a>()</td><td class="entry"><a class="el" href="classObject.html">Object</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classModuleObject.html#af5456f80bf7bd5d3c20dd6547423a419">getTemplateFile</a>()</td><td class="entry"><a class="el" href="classModuleObject.html">ModuleObject</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classModuleObject.html#a10f29d4a49d7e24bdab4e348633c6609">getTemplatePath</a>()</td><td class="entry"><a class="el" href="classModuleObject.html">ModuleObject</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classObject.html#ad33c509ec041fb43c6e25f8155577925">getVariables</a>()</td><td class="entry"><a class="el" href="classObject.html">Object</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classmenuAdminController.html#ae924a4c2ac50c955e01e9c234d93c767">getXmlTree</a>($source_node, $tree, $site_srl, $domain)</td><td class="entry"><a class="el" href="classmenuAdminController.html">menuAdminController</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classmenuAdminController.html#aa4ab2ac50988120d74af3f15a4beb144">init</a>()</td><td class="entry"><a class="el" href="classmenuAdminController.html">menuAdminController</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classmenuAdminController.html#acebad90c1f5786c406f25e5afdbce1cb">getUnlinkedMenu</a>()</td><td class="entry"><a class="el" href="classmenuAdminController.html">menuAdminController</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classObject.html#ad33c509ec041fb43c6e25f8155577925">getVariables</a>()</td><td class="entry"><a class="el" href="classObject.html">Object</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classmenuAdminController.html#ae924a4c2ac50c955e01e9c234d93c767">getXmlTree</a>($source_node, $tree, $site_srl, $domain)</td><td class="entry"><a class="el" href="classmenuAdminController.html">menuAdminController</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmenuAdminController.html#aa4ab2ac50988120d74af3f15a4beb144">init</a>()</td><td class="entry"><a class="el" href="classmenuAdminController.html">menuAdminController</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classmenuAdminController.html#a49adc0f822800b87a3419fc4d0d48005">linkAllModuleInstancesToSitemap</a>()</td><td class="entry"><a class="el" href="classmenuAdminController.html">menuAdminController</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classmenuAdminController.html#a14bb1d222613177761419783e99b9c30">makeHomemenuCacheFile</a>($menuSrl)</td><td class="entry"><a class="el" href="classmenuAdminController.html">menuAdminController</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classmenuAdminController.html#a1635d4c0dc3ace9e475422f9280e615e">makeXmlFile</a>($menu_srl)</td><td class="entry"><a class="el" href="classmenuAdminController.html">menuAdminController</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classmenu.html#ae8c300e3fc86ad4a834e489d849c69e1">moduleInstall</a>()</td><td class="entry"><a class="el" href="classmenu.html">menu</a></td><td class="entry"></td></tr>
@@ -185,12 +188,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <tr class="even"><td class="entry"><a class="el" href="classModuleObject.html#ac4c2bac7917c3ab3a0e816b99574727c">stop</a>($msg_code)</td><td class="entry"><a class="el" href="classModuleObject.html">ModuleObject</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classObject.html#a409216fd5ab386b1e78e311440113f75">toBool</a>()</td><td class="entry"><a class="el" href="classObject.html">Object</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classObject.html#afafb45098e163c179940c7e1ddc67fe2">toBoolean</a>()</td><td class="entry"><a class="el" href="classObject.html">Object</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classmenuAdminController.html#a2ea5f6b247860c3a92fdb78760b87c81">updateMenuItem</a>($itemInfo)</td><td class="entry"><a class="el" href="classmenuAdminController.html">menuAdminController</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classmenuAdminController.html#a2f19737cbd03a3027664eb559af4776e">updateMenuLayout</a>($layout_srl, $menu_srl_list)</td><td class="entry"><a class="el" href="classmenuAdminController.html">menuAdminController</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classmenuAdminController.html#a7e7dee4ee339e853f91c854f175c0915">updateLinkModule</a>($moduleInfos, $menuSrl)</td><td class="entry"><a class="el" href="classmenuAdminController.html">menuAdminController</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classmenuAdminController.html#a2ea5f6b247860c3a92fdb78760b87c81">updateMenuItem</a>($itemInfo)</td><td class="entry"><a class="el" href="classmenuAdminController.html">menuAdminController</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classmenuAdminController.html#a2f19737cbd03a3027664eb559af4776e">updateMenuLayout</a>($layout_srl, $menu_srl_list)</td><td class="entry"><a class="el" href="classmenuAdminController.html">menuAdminController</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 16 2014 18:34:57 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 4 2014 20:59:49 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

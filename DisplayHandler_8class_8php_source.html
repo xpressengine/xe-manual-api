@@ -23,6 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
+   &#160;<span id="projectnumber">1.7.4</span>
    </div>
   </td>
  </tr>
@@ -79,7 +80,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_35e92cb344fe16f6da0bce789f085c85.html">classes</a></li><li class="navelem"><a class="el" href="dir_0272c64fe11e77ead2367b5d3f1a8049.html">display</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_514a13f88875d2ff7ad77bc475fd83f9.html">classes</a></li><li class="navelem"><a class="el" href="dir_b23c4ae22267baeb717c6dd3bc507e9f.html">display</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -114,12 +115,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="comment">// Extract contents to display by the request method</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;xeVirtualRequestMethod&#39;</span>) == <span class="stringliteral">&#39;xml&#39;</span>)</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            require_once(<span class="stringliteral">&quot;./classes/display/VirtualXMLDisplayHandler.php&quot;</span>);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            require_once(<a class="code" href="config_8inc_8php.html#a5387c7a3f2aa38adf16f324cee88db88">_XE_PATH_</a> . <span class="stringliteral">&quot;classes/display/VirtualXMLDisplayHandler.php&quot;</span>);</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <a class="code" href="classDisplayHandler.html#a5bba2765a13e36d9e147424338fb2a92">$handler</a> = <span class="keyword">new</span> <a class="code" href="classVirtualXMLDisplayHandler.html">VirtualXMLDisplayHandler</a>();</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        }</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code" href="classContext.html#a6912ff86e08ef782a296b77ff1307481">Context::getRequestMethod</a>() == <span class="stringliteral">&#39;XMLRPC&#39;</span>)</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            require_once(<span class="stringliteral">&quot;./classes/display/XMLDisplayHandler.php&quot;</span>);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            require_once(<a class="code" href="config_8inc_8php.html#a5387c7a3f2aa38adf16f324cee88db88">_XE_PATH_</a> . <span class="stringliteral">&quot;classes/display/XMLDisplayHandler.php&quot;</span>);</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <a class="code" href="classDisplayHandler.html#a5bba2765a13e36d9e147424338fb2a92">$handler</a> = <span class="keyword">new</span> <a class="code" href="classXMLDisplayHandler.html">XMLDisplayHandler</a>();</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <span class="keywordflow">if</span>(strpos($_SERVER[<span class="stringliteral">&#39;HTTP_USER_AGENT&#39;</span>], <span class="stringliteral">&#39;MSIE&#39;</span>) !== FALSE)</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            {</div>
@@ -128,17 +129,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        }</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code" href="classContext.html#a6912ff86e08ef782a296b77ff1307481">Context::getRequestMethod</a>() == <span class="stringliteral">&#39;JSON&#39;</span>)</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            require_once(<span class="stringliteral">&quot;./classes/display/JSONDisplayHandler.php&quot;</span>);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            require_once(<a class="code" href="config_8inc_8php.html#a5387c7a3f2aa38adf16f324cee88db88">_XE_PATH_</a> . <span class="stringliteral">&quot;classes/display/JSONDisplayHandler.php&quot;</span>);</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <a class="code" href="classDisplayHandler.html#a5bba2765a13e36d9e147424338fb2a92">$handler</a> = <span class="keyword">new</span> <a class="code" href="classJSONDisplayHandler.html">JSONDisplayHandler</a>();</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        }</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code" href="classContext.html#a6912ff86e08ef782a296b77ff1307481">Context::getRequestMethod</a>() == <span class="stringliteral">&#39;JS_CALLBACK&#39;</span>)</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            require_once(<span class="stringliteral">&quot;./classes/display/JSCallbackDisplayHandler.php&quot;</span>);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            require_once(<a class="code" href="config_8inc_8php.html#a5387c7a3f2aa38adf16f324cee88db88">_XE_PATH_</a> . <span class="stringliteral">&quot;classes/display/JSCallbackDisplayHandler.php&quot;</span>);</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <a class="code" href="classDisplayHandler.html#a5bba2765a13e36d9e147424338fb2a92">$handler</a> = <span class="keyword">new</span> <a class="code" href="classJSCallbackDisplayHandler.html">JSCallbackDisplayHandler</a>();</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        }</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            require_once(<span class="stringliteral">&quot;./classes/display/HTMLDisplayHandler.php&quot;</span>);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            require_once(<a class="code" href="config_8inc_8php.html#a5387c7a3f2aa38adf16f324cee88db88">_XE_PATH_</a> . <span class="stringliteral">&quot;classes/display/HTMLDisplayHandler.php&quot;</span>);</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <a class="code" href="classDisplayHandler.html#a5bba2765a13e36d9e147424338fb2a92">$handler</a> = <span class="keyword">new</span> <a class="code" href="classHTMLDisplayHandler.html">HTMLDisplayHandler</a>();</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        }</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
@@ -445,12 +446,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classContext_html_a90ce25d65fe6c9778421cbb36ab3def5"><div class="ttname"><a href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context\get</a></div><div class="ttdeci">get($key)</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l01752">Context.class.php:1752</a></div></div>
 <div class="ttc" id="classDisplayHandler_html_a16976f3c3f4d8e587c113278731a5562"><div class="ttname"><a href="classDisplayHandler.html#a16976f3c3f4d8e587c113278731a5562">DisplayHandler\$content_size</a></div><div class="ttdeci">$content_size</div><div class="ttdef"><b>Definition:</b> <a href="DisplayHandler_8class_8php_source.html#l00015">DisplayHandler.class.php:15</a></div></div>
 <div class="ttc" id="classDisplayHandler_html_a40cee7b6783514fb596d4e595e5fc0f7"><div class="ttname"><a href="classDisplayHandler.html#a40cee7b6783514fb596d4e595e5fc0f7">DisplayHandler\printContent</a></div><div class="ttdeci">printContent(&amp;$oModule)</div><div class="ttdef"><b>Definition:</b> <a href="DisplayHandler_8class_8php_source.html#l00025">DisplayHandler.class.php:25</a></div></div>
-<div class="ttc" id="classModuleHandler_html_aa1b1f9eae91ccd76e6a81c9375c2e673"><div class="ttname"><a href="classModuleHandler.html#aa1b1f9eae91ccd76e6a81c9375c2e673">ModuleHandler\triggerCall</a></div><div class="ttdeci">triggerCall($trigger_name, $called_position, &amp;$obj)</div><div class="ttdef"><b>Definition:</b> <a href="ModuleHandler_8class_8php_source.html#l01118">ModuleHandler.class.php:1118</a></div></div>
+<div class="ttc" id="classModuleHandler_html_aa1b1f9eae91ccd76e6a81c9375c2e673"><div class="ttname"><a href="classModuleHandler.html#aa1b1f9eae91ccd76e6a81c9375c2e673">ModuleHandler\triggerCall</a></div><div class="ttdeci">triggerCall($trigger_name, $called_position, &amp;$obj)</div><div class="ttdef"><b>Definition:</b> <a href="ModuleHandler_8class_8php_source.html#l01126">ModuleHandler.class.php:1126</a></div></div>
 <div class="ttc" id="classJSCallbackDisplayHandler_html"><div class="ttname"><a href="classJSCallbackDisplayHandler.html">JSCallbackDisplayHandler</a></div><div class="ttdef"><b>Definition:</b> <a href="JSCallbackDisplayHandler_8php_source.html#l00004">JSCallbackDisplayHandler.php:4</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 16 2014 18:34:22 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 4 2014 20:59:00 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

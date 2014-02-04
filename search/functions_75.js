@@ -35,6 +35,7 @@ var searchData=
   ['updateforuniquesitedomain',['updateForUniqueSiteDomain',['../classmodule.html#a935bc2073b87fe979b8c1c7221174448',1,'module']]],
   ['updategroup',['updateGroup',['../classmemberAdminController.html#a7a0ee41a6c2feb436959ab1fcfbb0c7c',1,'memberAdminController']]],
   ['updatelayout',['updateLayout',['../classlayoutAdminController.html#a7eec8ee6d2626ef89b08eb67af6638de',1,'layoutAdminController']]],
+  ['updatelinkmodule',['updateLinkModule',['../classmenuAdminController.html#a7e7dee4ee339e853f91c854f175c0915',1,'menuAdminController']]],
   ['updatemember',['updateMember',['../classmemberController.html#ac1ad3397eda0a695046b023a14d25496',1,'memberController']]],
   ['updatememberpassword',['updateMemberPassword',['../classmemberController.html#aed05d2a367f7e7a5b70fcbd0b4a08e74',1,'memberController']]],
   ['updatemenuitem',['updateMenuItem',['../classmenuAdminController.html#a2ea5f6b247860c3a92fdb78760b87c81',1,'menuAdminController']]],

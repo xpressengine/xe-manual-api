@@ -23,6 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
+   &#160;<span id="projectnumber">1.7.4</span>
    </div>
   </td>
  </tr>
@@ -79,7 +80,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_35e92cb344fe16f6da0bce789f085c85.html">classes</a></li><li class="navelem"><a class="el" href="dir_4df45a6a99f869868e7b6b2c5f77d158.html">security</a></li><li class="navelem"><a class="el" href="dir_21a419d413dc265c50c4e699fd2283d4.html">htmlpurifier</a></li><li class="navelem"><a class="el" href="dir_9e88ed9715bef7e4184fa124fe8ad5c0.html">library</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_514a13f88875d2ff7ad77bc475fd83f9.html">classes</a></li><li class="navelem"><a class="el" href="dir_1aa2d0763fd5718c330a6284e1cf0e17.html">security</a></li><li class="navelem"><a class="el" href="dir_4f9af484f31623572da3288fb7f1550f.html">htmlpurifier</a></li><li class="navelem"><a class="el" href="dir_8241824ae203e27f591bc18f07c928a9.html">library</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -89,193 +90,192 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <a href="HTMLPurifier_8php.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;?php</div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">/* Modified for Doxygen documentation by developers@xpressengine.com. The origin is  &quot;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">    HTML Purifier 4.4.0 - Standards Compliant HTML Filtering</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">    Copyright (C) 2006-2008 Edward Z. Yang</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">    This library is free software; you can redistribute it and/or</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">    modify it under the terms of the GNU Lesser General Public</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">    License as published by the Free Software Foundation; either</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">    version 2.1 of the License, or (at your option) any later version.</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">    This library is distributed in the hope that it will be useful,</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">    but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">    Lesser General Public License for more details.</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">    You should have received a copy of the GNU Lesser General Public</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">    License along with this library; if not, write to the Free Software</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">    Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classHTMLPurifier.html">   55</a></span>&#160;<span class="keyword">class </span><a class="code" href="classHTMLPurifier.html">HTMLPurifier</a></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="classHTMLPurifier.html#a1950375d91cbecb0260bbfc4eca926f0">   59</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classHTMLPurifier.html#a1950375d91cbecb0260bbfc4eca926f0">$version</a> = <span class="stringliteral">&#39;4.4.0&#39;</span>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classHTMLPurifier.html#a0c6a00193ac814390551621656389a67">   62</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="classHTMLPurifier.html#a0c6a00193ac814390551621656389a67">VERSION</a> = <span class="stringliteral">&#39;4.4.0&#39;</span>;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classHTMLPurifier.html#a0cc1609717991f9ac7a42065f0114c33">   65</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classHTMLPurifier.html#a0cc1609717991f9ac7a42065f0114c33">$config</a>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">private</span> $filters = array();</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">private</span> <span class="keyword">static</span> $instance;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="classHTMLPurifier.html#a43bcd3ebc364d2fe66b412df5ce03200">   73</a></span>&#160;    <span class="keyword">protected</span> <a class="code" href="classHTMLPurifier.html#a43bcd3ebc364d2fe66b412df5ce03200">$strategy</a>, <a class="code" href="classHTMLPurifier.html#ae3fac678235d4807eb71825f5a45d3d8">$generator</a>;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="classHTMLPurifier.html#a496b488a6ca3bac2684bc876a027a897">   79</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classHTMLPurifier.html#a496b488a6ca3bac2684bc876a027a897">$context</a>;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="classHTMLPurifier.html#aad4cc7dd37f8e30bbdf78c09b81e8b2a">   89</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="classHTMLPurifier.html#aad4cc7dd37f8e30bbdf78c09b81e8b2a">__construct</a>(<a class="code" href="classHTMLPurifier.html#a0cc1609717991f9ac7a42065f0114c33">$config</a> = null) {</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        $this-&gt;config = <a class="code" href="classHTMLPurifier__Config.html#a063a082504e63d10551ec5472b2a54d9">HTMLPurifier_Config::create</a>(<a class="code" href="classHTMLPurifier.html#a0cc1609717991f9ac7a42065f0114c33">$config</a>);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        $this-&gt;strategy     = <span class="keyword">new</span> <a class="code" href="classHTMLPurifier__Strategy__Core.html">HTMLPurifier_Strategy_Core</a>();</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    }</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
-<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="classHTMLPurifier.html#aa857bddec7c98354aa2e6277202e4206">  101</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="classHTMLPurifier.html#aa857bddec7c98354aa2e6277202e4206">addFilter</a>($filter) {</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        trigger_error(<span class="stringliteral">&#39;HTMLPurifier-&gt;addFilter() is deprecated, use configuration directives in the Filter namespace or Filter.Custom&#39;</span>, E_USER_WARNING);</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        $this-&gt;filters[] = $filter;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    }</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
-<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="classHTMLPurifier.html#a5b1f6f579594aa52ce4c2dd412d9b249">  116</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="classHTMLPurifier.html#a5b1f6f579594aa52ce4c2dd412d9b249">purify</a>($html, <a class="code" href="classHTMLPurifier.html#a0cc1609717991f9ac7a42065f0114c33">$config</a> = null) {</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="comment">// :TODO: make the config merge in, instead of replace</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <a class="code" href="classHTMLPurifier.html#a0cc1609717991f9ac7a42065f0114c33">$config</a> = <a class="code" href="classHTMLPurifier.html#a0cc1609717991f9ac7a42065f0114c33">$config</a> ? <a class="code" href="classHTMLPurifier__Config.html#a063a082504e63d10551ec5472b2a54d9">HTMLPurifier_Config::create</a>(<a class="code" href="classHTMLPurifier.html#a0cc1609717991f9ac7a42065f0114c33">$config</a>) : <a class="code" href="classHTMLPurifier.html#a0cc1609717991f9ac7a42065f0114c33">$this-&gt;config</a>;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="comment">// implementation is partially environment dependant, partially</span></div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="comment">// configuration dependant</span></div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        $lexer = <a class="code" href="classHTMLPurifier__Lexer.html#ac7f8fe627b8b6a4d0e08dcf893c15a9f">HTMLPurifier_Lexer::create</a>(<a class="code" href="classHTMLPurifier.html#a0cc1609717991f9ac7a42065f0114c33">$config</a>);</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <a class="code" href="classHTMLPurifier.html#a496b488a6ca3bac2684bc876a027a897">$context</a> = <span class="keyword">new</span> <a class="code" href="classHTMLPurifier__Context.html">HTMLPurifier_Context</a>();</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="comment">// setup HTML generator</span></div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        $this-&gt;generator = <span class="keyword">new</span> <a class="code" href="classHTMLPurifier__Generator.html">HTMLPurifier_Generator</a>(<a class="code" href="classHTMLPurifier.html#a0cc1609717991f9ac7a42065f0114c33">$config</a>, <a class="code" href="classHTMLPurifier.html#a496b488a6ca3bac2684bc876a027a897">$context</a>);</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <a class="code" href="classHTMLPurifier.html#a496b488a6ca3bac2684bc876a027a897">$context</a>-&gt;register(<span class="stringliteral">&#39;Generator&#39;</span>, $this-&gt;generator);</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <span class="comment">// set up global context variables</span></div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classHTMLPurifier.html#a0cc1609717991f9ac7a42065f0114c33">$config</a>-&gt;get(<span class="stringliteral">&#39;Core.CollectErrors&#39;</span>)) {</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            <span class="comment">// may get moved out if other facilities use it</span></div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            $language_factory = <a class="code" href="classHTMLPurifier__LanguageFactory.html#a488c442bf17292dc832bff6a343667ac">HTMLPurifier_LanguageFactory::instance</a>();</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            $language = $language_factory-&gt;create(<a class="code" href="classHTMLPurifier.html#a0cc1609717991f9ac7a42065f0114c33">$config</a>, <a class="code" href="classHTMLPurifier.html#a496b488a6ca3bac2684bc876a027a897">$context</a>);</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;            <a class="code" href="classHTMLPurifier.html#a496b488a6ca3bac2684bc876a027a897">$context</a>-&gt;register(<span class="stringliteral">&#39;Locale&#39;</span>, $language);</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;            $error_collector = <span class="keyword">new</span> <a class="code" href="classHTMLPurifier__ErrorCollector.html">HTMLPurifier_ErrorCollector</a>(<a class="code" href="classHTMLPurifier.html#a496b488a6ca3bac2684bc876a027a897">$context</a>);</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;            <a class="code" href="classHTMLPurifier.html#a496b488a6ca3bac2684bc876a027a897">$context</a>-&gt;register(<span class="stringliteral">&#39;ErrorCollector&#39;</span>, $error_collector);</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        }</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <span class="comment">// setup id_accumulator context, necessary due to the fact that</span></div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        <span class="comment">// AttrValidator can be called from many places</span></div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        $id_accumulator = <a class="code" href="classHTMLPurifier__IDAccumulator.html#a187720677bc154b2039ae7a3d1dc7967">HTMLPurifier_IDAccumulator::build</a>(<a class="code" href="classHTMLPurifier.html#a0cc1609717991f9ac7a42065f0114c33">$config</a>, <a class="code" href="classHTMLPurifier.html#a496b488a6ca3bac2684bc876a027a897">$context</a>);</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        <a class="code" href="classHTMLPurifier.html#a496b488a6ca3bac2684bc876a027a897">$context</a>-&gt;register(<span class="stringliteral">&#39;IDAccumulator&#39;</span>, $id_accumulator);</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        $html = <a class="code" href="classHTMLPurifier__Encoder.html#a6876fc3fbf0ae1ce1d06bd127fb55886">HTMLPurifier_Encoder::convertToUTF8</a>($html, <a class="code" href="classHTMLPurifier.html#a0cc1609717991f9ac7a42065f0114c33">$config</a>, <a class="code" href="classHTMLPurifier.html#a496b488a6ca3bac2684bc876a027a897">$context</a>);</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <span class="comment">// setup filters</span></div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        $filter_flags = <a class="code" href="classHTMLPurifier.html#a0cc1609717991f9ac7a42065f0114c33">$config</a>-&gt;getBatch(<span class="stringliteral">&#39;Filter&#39;</span>);</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        $custom_filters = $filter_flags[<span class="stringliteral">&#39;Custom&#39;</span>];</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        unset($filter_flags[<span class="stringliteral">&#39;Custom&#39;</span>]);</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        $filters = array();</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        <span class="keywordflow">foreach</span> ($filter_flags as $filter =&gt; $flag) {</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            <span class="keywordflow">if</span> (!$flag) <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;            <span class="keywordflow">if</span> (strpos($filter, <span class="charliteral">&#39;.&#39;</span>) !== <span class="keyword">false</span>) <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            $class = <span class="stringliteral">&quot;HTMLPurifier_Filter_$filter&quot;</span>;</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            $filters[] = <span class="keyword">new</span> $class;</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        }</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        <span class="keywordflow">foreach</span> ($custom_filters as $filter) {</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            <span class="comment">// maybe &quot;HTMLPurifier_Filter_$filter&quot;, but be consistent with AutoFormat</span></div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            $filters[] = $filter;</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        }</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        $filters = array_merge($filters, $this-&gt;filters);</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        <span class="comment">// maybe prepare(), but later</span></div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        <span class="keywordflow">for</span> (<a class="code" href="validate_8php.html#a83018d9153d17d91fbcf3bc10158d34f">$i</a> = 0, $filter_size = count($filters); <a class="code" href="validate_8php.html#a83018d9153d17d91fbcf3bc10158d34f">$i</a> &lt; $filter_size; <a class="code" href="validate_8php.html#a83018d9153d17d91fbcf3bc10158d34f">$i</a>++) {</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;            $html = $filters[<a class="code" href="validate_8php.html#a83018d9153d17d91fbcf3bc10158d34f">$i</a>]-&gt;preFilter($html, <a class="code" href="classHTMLPurifier.html#a0cc1609717991f9ac7a42065f0114c33">$config</a>, <a class="code" href="classHTMLPurifier.html#a496b488a6ca3bac2684bc876a027a897">$context</a>);</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        }</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        <span class="comment">// purified HTML</span></div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        $html =</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            $this-&gt;generator-&gt;generateFromTokens(</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                <span class="comment">// list of tokens</span></div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                $this-&gt;strategy-&gt;execute(</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                    <span class="comment">// list of un-purified tokens</span></div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                    $lexer-&gt;tokenizeHTML(</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                        <span class="comment">// un-purified HTML</span></div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                        $html, <a class="code" href="classHTMLPurifier.html#a0cc1609717991f9ac7a42065f0114c33">$config</a>, <a class="code" href="classHTMLPurifier.html#a496b488a6ca3bac2684bc876a027a897">$context</a></div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                    ),</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                    <a class="code" href="classHTMLPurifier.html#a0cc1609717991f9ac7a42065f0114c33">$config</a>, <a class="code" href="classHTMLPurifier.html#a496b488a6ca3bac2684bc876a027a897">$context</a></div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                )</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;            );</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        <span class="keywordflow">for</span> (<a class="code" href="validate_8php.html#a83018d9153d17d91fbcf3bc10158d34f">$i</a> = $filter_size - 1; <a class="code" href="validate_8php.html#a83018d9153d17d91fbcf3bc10158d34f">$i</a> &gt;= 0; <a class="code" href="validate_8php.html#a83018d9153d17d91fbcf3bc10158d34f">$i</a>--) {</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;            $html = $filters[<a class="code" href="validate_8php.html#a83018d9153d17d91fbcf3bc10158d34f">$i</a>]-&gt;postFilter($html, <a class="code" href="classHTMLPurifier.html#a0cc1609717991f9ac7a42065f0114c33">$config</a>, <a class="code" href="classHTMLPurifier.html#a496b488a6ca3bac2684bc876a027a897">$context</a>);</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        }</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        $html = <a class="code" href="classHTMLPurifier__Encoder.html#a48bca7ecbdec1fde428a95fc2ec8fff9">HTMLPurifier_Encoder::convertFromUTF8</a>($html, <a class="code" href="classHTMLPurifier.html#a0cc1609717991f9ac7a42065f0114c33">$config</a>, <a class="code" href="classHTMLPurifier.html#a496b488a6ca3bac2684bc876a027a897">$context</a>);</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        $this-&gt;context =&amp; <a class="code" href="classHTMLPurifier.html#a496b488a6ca3bac2684bc876a027a897">$context</a>;</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        <span class="keywordflow">return</span> $html;</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    }</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;</div>
-<div class="line"><a name="l00200"></a><span class="lineno"><a class="line" href="classHTMLPurifier.html#a31d7d9b7bde5ec86c462de8b30f87b10">  200</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="classHTMLPurifier.html#a31d7d9b7bde5ec86c462de8b30f87b10">purifyArray</a>($array_of_html, <a class="code" href="classHTMLPurifier.html#a0cc1609717991f9ac7a42065f0114c33">$config</a> = null) {</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        $context_array = array();</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        <span class="keywordflow">foreach</span> ($array_of_html as $key =&gt; $html) {</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;            $array_of_html[$key] = $this-&gt;<a class="code" href="classHTMLPurifier.html#a5b1f6f579594aa52ce4c2dd412d9b249">purify</a>($html, <a class="code" href="classHTMLPurifier.html#a0cc1609717991f9ac7a42065f0114c33">$config</a>);</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;            $context_array[$key] = <a class="code" href="classHTMLPurifier.html#a496b488a6ca3bac2684bc876a027a897">$this-&gt;context</a>;</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        }</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        $this-&gt;context = $context_array;</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        <span class="keywordflow">return</span> $array_of_html;</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    }</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;</div>
-<div class="line"><a name="l00216"></a><span class="lineno"><a class="line" href="classHTMLPurifier.html#a56e73512fe8bbf9d6337e13efed8f78d">  216</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code" href="classHTMLPurifier.html#a56e73512fe8bbf9d6337e13efed8f78d">instance</a>($prototype = null) {</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        <span class="keywordflow">if</span> (!self::$instance || $prototype) {</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;            <span class="keywordflow">if</span> ($prototype instanceof <a class="code" href="classHTMLPurifier.html">HTMLPurifier</a>) {</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;                self::$instance = $prototype;</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;            } elseif ($prototype) {</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;                self::$instance = <span class="keyword">new</span> <a class="code" href="HTMLPurifier_8func_8php.html#a9cbaed512b3193663ebf1f6850f1e654">HTMLPurifier</a>($prototype);</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;            } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                self::$instance = <span class="keyword">new</span> <a class="code" href="HTMLPurifier_8func_8php.html#a9cbaed512b3193663ebf1f6850f1e654">HTMLPurifier</a>();</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;            }</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        }</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        <span class="keywordflow">return</span> self::$instance;</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    }</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;</div>
-<div class="line"><a name="l00232"></a><span class="lineno"><a class="line" href="classHTMLPurifier.html#a90c1a1d29bd1bd822db48e2005e165aa">  232</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code" href="classHTMLPurifier.html#a90c1a1d29bd1bd822db48e2005e165aa">getInstance</a>($prototype = null) {</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classHTMLPurifier.html#a56e73512fe8bbf9d6337e13efed8f78d">HTMLPurifier::instance</a>($prototype);</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    }</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;}</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="comment">// vim: et sw=4 sts=4</span></div>
-<div class="ttc" id="classHTMLPurifier_html_a496b488a6ca3bac2684bc876a027a897"><div class="ttname"><a href="classHTMLPurifier.html#a496b488a6ca3bac2684bc876a027a897">HTMLPurifier\$context</a></div><div class="ttdeci">$context</div><div class="ttdef"><b>Definition:</b> <a href="HTMLPurifier_8php_source.html#l00079">HTMLPurifier.php:79</a></div></div>
-<div class="ttc" id="classHTMLPurifier_html_a31d7d9b7bde5ec86c462de8b30f87b10"><div class="ttname"><a href="classHTMLPurifier.html#a31d7d9b7bde5ec86c462de8b30f87b10">HTMLPurifier\purifyArray</a></div><div class="ttdeci">purifyArray($array_of_html, $config=null)</div><div class="ttdef"><b>Definition:</b> <a href="HTMLPurifier_8php_source.html#l00200">HTMLPurifier.php:200</a></div></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">    HTML Purifier 4.4.0 - Standards Compliant HTML Filtering</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">    Copyright (C) 2006-2008 Edward Z. Yang</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">    This library is free software; you can redistribute it and/or</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">    modify it under the terms of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">    License as published by the Free Software Foundation; either</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">    version 2.1 of the License, or (at your option) any later version.</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">    This library is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">    but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">    Lesser General Public License for more details.</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">    You should have received a copy of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">    License along with this library; if not, write to the Free Software</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">    Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classHTMLPurifier.html">   54</a></span>&#160;<span class="keyword">class </span><a class="code" href="classHTMLPurifier.html">HTMLPurifier</a></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classHTMLPurifier.html#a1950375d91cbecb0260bbfc4eca926f0">   58</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classHTMLPurifier.html#a1950375d91cbecb0260bbfc4eca926f0">$version</a> = <span class="stringliteral">&#39;4.4.0&#39;</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classHTMLPurifier.html#a0c6a00193ac814390551621656389a67">   61</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="classHTMLPurifier.html#a0c6a00193ac814390551621656389a67">VERSION</a> = <span class="stringliteral">&#39;4.4.0&#39;</span>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classHTMLPurifier.html#a0cc1609717991f9ac7a42065f0114c33">   64</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classHTMLPurifier.html#a0cc1609717991f9ac7a42065f0114c33">$config</a>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">private</span> $filters = array();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">private</span> <span class="keyword">static</span> $instance;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classHTMLPurifier.html#a43bcd3ebc364d2fe66b412df5ce03200">   72</a></span>&#160;    <span class="keyword">protected</span> <a class="code" href="classHTMLPurifier.html#a43bcd3ebc364d2fe66b412df5ce03200">$strategy</a>, <a class="code" href="classHTMLPurifier.html#ae3fac678235d4807eb71825f5a45d3d8">$generator</a>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="classHTMLPurifier.html#a496b488a6ca3bac2684bc876a027a897">   78</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classHTMLPurifier.html#a496b488a6ca3bac2684bc876a027a897">$context</a>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="classHTMLPurifier.html#aad4cc7dd37f8e30bbdf78c09b81e8b2a">   88</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="classHTMLPurifier.html#aad4cc7dd37f8e30bbdf78c09b81e8b2a">__construct</a>(<a class="code" href="classHTMLPurifier.html#a0cc1609717991f9ac7a42065f0114c33">$config</a> = null) {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        $this-&gt;config = <a class="code" href="classHTMLPurifier__Config.html#a063a082504e63d10551ec5472b2a54d9">HTMLPurifier_Config::create</a>(<a class="code" href="classHTMLPurifier.html#a0cc1609717991f9ac7a42065f0114c33">$config</a>);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        $this-&gt;strategy     = <span class="keyword">new</span> <a class="code" href="classHTMLPurifier__Strategy__Core.html">HTMLPurifier_Strategy_Core</a>();</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    }</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="classHTMLPurifier.html#aa857bddec7c98354aa2e6277202e4206">  100</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="classHTMLPurifier.html#aa857bddec7c98354aa2e6277202e4206">addFilter</a>($filter) {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        trigger_error(<span class="stringliteral">&#39;HTMLPurifier-&gt;addFilter() is deprecated, use configuration directives in the Filter namespace or Filter.Custom&#39;</span>, E_USER_WARNING);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        $this-&gt;filters[] = $filter;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    }</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="classHTMLPurifier.html#a5b1f6f579594aa52ce4c2dd412d9b249">  115</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="classHTMLPurifier.html#a5b1f6f579594aa52ce4c2dd412d9b249">purify</a>($html, <a class="code" href="classHTMLPurifier.html#a0cc1609717991f9ac7a42065f0114c33">$config</a> = null) {</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <span class="comment">// :TODO: make the config merge in, instead of replace</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <a class="code" href="classHTMLPurifier.html#a0cc1609717991f9ac7a42065f0114c33">$config</a> = <a class="code" href="classHTMLPurifier.html#a0cc1609717991f9ac7a42065f0114c33">$config</a> ? <a class="code" href="classHTMLPurifier__Config.html#a063a082504e63d10551ec5472b2a54d9">HTMLPurifier_Config::create</a>(<a class="code" href="classHTMLPurifier.html#a0cc1609717991f9ac7a42065f0114c33">$config</a>) : <a class="code" href="classHTMLPurifier.html#a0cc1609717991f9ac7a42065f0114c33">$this-&gt;config</a>;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="comment">// implementation is partially environment dependant, partially</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="comment">// configuration dependant</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        $lexer = <a class="code" href="classHTMLPurifier__Lexer.html#ac7f8fe627b8b6a4d0e08dcf893c15a9f">HTMLPurifier_Lexer::create</a>(<a class="code" href="classHTMLPurifier.html#a0cc1609717991f9ac7a42065f0114c33">$config</a>);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <a class="code" href="classHTMLPurifier.html#a496b488a6ca3bac2684bc876a027a897">$context</a> = <span class="keyword">new</span> <a class="code" href="classHTMLPurifier__Context.html">HTMLPurifier_Context</a>();</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <span class="comment">// setup HTML generator</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        $this-&gt;generator = <span class="keyword">new</span> <a class="code" href="classHTMLPurifier__Generator.html">HTMLPurifier_Generator</a>(<a class="code" href="classHTMLPurifier.html#a0cc1609717991f9ac7a42065f0114c33">$config</a>, <a class="code" href="classHTMLPurifier.html#a496b488a6ca3bac2684bc876a027a897">$context</a>);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <a class="code" href="classHTMLPurifier.html#a496b488a6ca3bac2684bc876a027a897">$context</a>-&gt;register(<span class="stringliteral">&#39;Generator&#39;</span>, $this-&gt;generator);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="comment">// set up global context variables</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classHTMLPurifier.html#a0cc1609717991f9ac7a42065f0114c33">$config</a>-&gt;get(<span class="stringliteral">&#39;Core.CollectErrors&#39;</span>)) {</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            <span class="comment">// may get moved out if other facilities use it</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            $language_factory = <a class="code" href="classHTMLPurifier__LanguageFactory.html#a488c442bf17292dc832bff6a343667ac">HTMLPurifier_LanguageFactory::instance</a>();</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            $language = $language_factory-&gt;create(<a class="code" href="classHTMLPurifier.html#a0cc1609717991f9ac7a42065f0114c33">$config</a>, <a class="code" href="classHTMLPurifier.html#a496b488a6ca3bac2684bc876a027a897">$context</a>);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            <a class="code" href="classHTMLPurifier.html#a496b488a6ca3bac2684bc876a027a897">$context</a>-&gt;register(<span class="stringliteral">&#39;Locale&#39;</span>, $language);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;            $error_collector = <span class="keyword">new</span> <a class="code" href="classHTMLPurifier__ErrorCollector.html">HTMLPurifier_ErrorCollector</a>(<a class="code" href="classHTMLPurifier.html#a496b488a6ca3bac2684bc876a027a897">$context</a>);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;            <a class="code" href="classHTMLPurifier.html#a496b488a6ca3bac2684bc876a027a897">$context</a>-&gt;register(<span class="stringliteral">&#39;ErrorCollector&#39;</span>, $error_collector);</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        }</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        <span class="comment">// setup id_accumulator context, necessary due to the fact that</span></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <span class="comment">// AttrValidator can be called from many places</span></div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        $id_accumulator = <a class="code" href="classHTMLPurifier__IDAccumulator.html#a187720677bc154b2039ae7a3d1dc7967">HTMLPurifier_IDAccumulator::build</a>(<a class="code" href="classHTMLPurifier.html#a0cc1609717991f9ac7a42065f0114c33">$config</a>, <a class="code" href="classHTMLPurifier.html#a496b488a6ca3bac2684bc876a027a897">$context</a>);</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        <a class="code" href="classHTMLPurifier.html#a496b488a6ca3bac2684bc876a027a897">$context</a>-&gt;register(<span class="stringliteral">&#39;IDAccumulator&#39;</span>, $id_accumulator);</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        $html = <a class="code" href="classHTMLPurifier__Encoder.html#a6876fc3fbf0ae1ce1d06bd127fb55886">HTMLPurifier_Encoder::convertToUTF8</a>($html, <a class="code" href="classHTMLPurifier.html#a0cc1609717991f9ac7a42065f0114c33">$config</a>, <a class="code" href="classHTMLPurifier.html#a496b488a6ca3bac2684bc876a027a897">$context</a>);</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        <span class="comment">// setup filters</span></div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        $filter_flags = <a class="code" href="classHTMLPurifier.html#a0cc1609717991f9ac7a42065f0114c33">$config</a>-&gt;getBatch(<span class="stringliteral">&#39;Filter&#39;</span>);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        $custom_filters = $filter_flags[<span class="stringliteral">&#39;Custom&#39;</span>];</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        unset($filter_flags[<span class="stringliteral">&#39;Custom&#39;</span>]);</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        $filters = array();</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        <span class="keywordflow">foreach</span> ($filter_flags as $filter =&gt; $flag) {</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            <span class="keywordflow">if</span> (!$flag) <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            <span class="keywordflow">if</span> (strpos($filter, <span class="charliteral">&#39;.&#39;</span>) !== <span class="keyword">false</span>) <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;            $class = <span class="stringliteral">&quot;HTMLPurifier_Filter_$filter&quot;</span>;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            $filters[] = <span class="keyword">new</span> $class;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        }</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        <span class="keywordflow">foreach</span> ($custom_filters as $filter) {</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            <span class="comment">// maybe &quot;HTMLPurifier_Filter_$filter&quot;, but be consistent with AutoFormat</span></div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            $filters[] = $filter;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        }</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        $filters = array_merge($filters, $this-&gt;filters);</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <span class="comment">// maybe prepare(), but later</span></div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        <span class="keywordflow">for</span> (<a class="code" href="validate_8php.html#a83018d9153d17d91fbcf3bc10158d34f">$i</a> = 0, $filter_size = count($filters); <a class="code" href="validate_8php.html#a83018d9153d17d91fbcf3bc10158d34f">$i</a> &lt; $filter_size; <a class="code" href="validate_8php.html#a83018d9153d17d91fbcf3bc10158d34f">$i</a>++) {</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;            $html = $filters[<a class="code" href="validate_8php.html#a83018d9153d17d91fbcf3bc10158d34f">$i</a>]-&gt;preFilter($html, <a class="code" href="classHTMLPurifier.html#a0cc1609717991f9ac7a42065f0114c33">$config</a>, <a class="code" href="classHTMLPurifier.html#a496b488a6ca3bac2684bc876a027a897">$context</a>);</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        }</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        <span class="comment">// purified HTML</span></div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        $html =</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            $this-&gt;generator-&gt;generateFromTokens(</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;                <span class="comment">// list of tokens</span></div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                $this-&gt;strategy-&gt;execute(</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                    <span class="comment">// list of un-purified tokens</span></div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                    $lexer-&gt;tokenizeHTML(</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                        <span class="comment">// un-purified HTML</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                        $html, <a class="code" href="classHTMLPurifier.html#a0cc1609717991f9ac7a42065f0114c33">$config</a>, <a class="code" href="classHTMLPurifier.html#a496b488a6ca3bac2684bc876a027a897">$context</a></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                    ),</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                    <a class="code" href="classHTMLPurifier.html#a0cc1609717991f9ac7a42065f0114c33">$config</a>, <a class="code" href="classHTMLPurifier.html#a496b488a6ca3bac2684bc876a027a897">$context</a></div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                )</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;            );</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        <span class="keywordflow">for</span> (<a class="code" href="validate_8php.html#a83018d9153d17d91fbcf3bc10158d34f">$i</a> = $filter_size - 1; <a class="code" href="validate_8php.html#a83018d9153d17d91fbcf3bc10158d34f">$i</a> &gt;= 0; <a class="code" href="validate_8php.html#a83018d9153d17d91fbcf3bc10158d34f">$i</a>--) {</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;            $html = $filters[<a class="code" href="validate_8php.html#a83018d9153d17d91fbcf3bc10158d34f">$i</a>]-&gt;postFilter($html, <a class="code" href="classHTMLPurifier.html#a0cc1609717991f9ac7a42065f0114c33">$config</a>, <a class="code" href="classHTMLPurifier.html#a496b488a6ca3bac2684bc876a027a897">$context</a>);</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        }</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        $html = <a class="code" href="classHTMLPurifier__Encoder.html#a48bca7ecbdec1fde428a95fc2ec8fff9">HTMLPurifier_Encoder::convertFromUTF8</a>($html, <a class="code" href="classHTMLPurifier.html#a0cc1609717991f9ac7a42065f0114c33">$config</a>, <a class="code" href="classHTMLPurifier.html#a496b488a6ca3bac2684bc876a027a897">$context</a>);</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        $this-&gt;context =&amp; <a class="code" href="classHTMLPurifier.html#a496b488a6ca3bac2684bc876a027a897">$context</a>;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        <span class="keywordflow">return</span> $html;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    }</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;</div>
+<div class="line"><a name="l00199"></a><span class="lineno"><a class="line" href="classHTMLPurifier.html#a31d7d9b7bde5ec86c462de8b30f87b10">  199</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="classHTMLPurifier.html#a31d7d9b7bde5ec86c462de8b30f87b10">purifyArray</a>($array_of_html, <a class="code" href="classHTMLPurifier.html#a0cc1609717991f9ac7a42065f0114c33">$config</a> = null) {</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        $context_array = array();</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        <span class="keywordflow">foreach</span> ($array_of_html as $key =&gt; $html) {</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;            $array_of_html[$key] = $this-&gt;<a class="code" href="classHTMLPurifier.html#a5b1f6f579594aa52ce4c2dd412d9b249">purify</a>($html, <a class="code" href="classHTMLPurifier.html#a0cc1609717991f9ac7a42065f0114c33">$config</a>);</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;            $context_array[$key] = <a class="code" href="classHTMLPurifier.html#a496b488a6ca3bac2684bc876a027a897">$this-&gt;context</a>;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        }</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        $this-&gt;context = $context_array;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        <span class="keywordflow">return</span> $array_of_html;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    }</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;</div>
+<div class="line"><a name="l00215"></a><span class="lineno"><a class="line" href="classHTMLPurifier.html#a56e73512fe8bbf9d6337e13efed8f78d">  215</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code" href="classHTMLPurifier.html#a56e73512fe8bbf9d6337e13efed8f78d">instance</a>($prototype = null) {</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        <span class="keywordflow">if</span> (!self::$instance || $prototype) {</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;            <span class="keywordflow">if</span> ($prototype instanceof <a class="code" href="classHTMLPurifier.html">HTMLPurifier</a>) {</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;                self::$instance = $prototype;</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;            } elseif ($prototype) {</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;                self::$instance = <span class="keyword">new</span> <a class="code" href="HTMLPurifier_8func_8php.html#a9cbaed512b3193663ebf1f6850f1e654">HTMLPurifier</a>($prototype);</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;            } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;                self::$instance = <span class="keyword">new</span> <a class="code" href="HTMLPurifier_8func_8php.html#a9cbaed512b3193663ebf1f6850f1e654">HTMLPurifier</a>();</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;            }</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        }</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        <span class="keywordflow">return</span> self::$instance;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    }</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;</div>
+<div class="line"><a name="l00231"></a><span class="lineno"><a class="line" href="classHTMLPurifier.html#a90c1a1d29bd1bd822db48e2005e165aa">  231</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code" href="classHTMLPurifier.html#a90c1a1d29bd1bd822db48e2005e165aa">getInstance</a>($prototype = null) {</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classHTMLPurifier.html#a56e73512fe8bbf9d6337e13efed8f78d">HTMLPurifier::instance</a>($prototype);</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    }</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;}</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="comment">// vim: et sw=4 sts=4</span></div>
+<div class="ttc" id="classHTMLPurifier_html_a496b488a6ca3bac2684bc876a027a897"><div class="ttname"><a href="classHTMLPurifier.html#a496b488a6ca3bac2684bc876a027a897">HTMLPurifier\$context</a></div><div class="ttdeci">$context</div><div class="ttdef"><b>Definition:</b> <a href="HTMLPurifier_8php_source.html#l00078">HTMLPurifier.php:78</a></div></div>
+<div class="ttc" id="classHTMLPurifier_html_a31d7d9b7bde5ec86c462de8b30f87b10"><div class="ttname"><a href="classHTMLPurifier.html#a31d7d9b7bde5ec86c462de8b30f87b10">HTMLPurifier\purifyArray</a></div><div class="ttdeci">purifyArray($array_of_html, $config=null)</div><div class="ttdef"><b>Definition:</b> <a href="HTMLPurifier_8php_source.html#l00199">HTMLPurifier.php:199</a></div></div>
 <div class="ttc" id="classHTMLPurifier__Generator_html"><div class="ttname"><a href="classHTMLPurifier__Generator.html">HTMLPurifier_Generator</a></div><div class="ttdef"><b>Definition:</b> <a href="Generator_8php_source.html#l00010">Generator.php:10</a></div></div>
-<div class="ttc" id="classHTMLPurifier_html_ae3fac678235d4807eb71825f5a45d3d8"><div class="ttname"><a href="classHTMLPurifier.html#ae3fac678235d4807eb71825f5a45d3d8">HTMLPurifier\$generator</a></div><div class="ttdeci">$generator</div><div class="ttdef"><b>Definition:</b> <a href="HTMLPurifier_8php_source.html#l00073">HTMLPurifier.php:73</a></div></div>
-<div class="ttc" id="classHTMLPurifier_html"><div class="ttname"><a href="classHTMLPurifier.html">HTMLPurifier</a></div><div class="ttdef"><b>Definition:</b> <a href="HTMLPurifier_8php_source.html#l00055">HTMLPurifier.php:55</a></div></div>
+<div class="ttc" id="classHTMLPurifier_html_ae3fac678235d4807eb71825f5a45d3d8"><div class="ttname"><a href="classHTMLPurifier.html#ae3fac678235d4807eb71825f5a45d3d8">HTMLPurifier\$generator</a></div><div class="ttdeci">$generator</div><div class="ttdef"><b>Definition:</b> <a href="HTMLPurifier_8php_source.html#l00072">HTMLPurifier.php:72</a></div></div>
+<div class="ttc" id="classHTMLPurifier_html"><div class="ttname"><a href="classHTMLPurifier.html">HTMLPurifier</a></div><div class="ttdef"><b>Definition:</b> <a href="HTMLPurifier_8php_source.html#l00054">HTMLPurifier.php:54</a></div></div>
 <div class="ttc" id="classHTMLPurifier__Lexer_html_ac7f8fe627b8b6a4d0e08dcf893c15a9f"><div class="ttname"><a href="classHTMLPurifier__Lexer.html#ac7f8fe627b8b6a4d0e08dcf893c15a9f">HTMLPurifier_Lexer\create</a></div><div class="ttdeci">static create($config)</div><div class="ttdef"><b>Definition:</b> <a href="Lexer_8php_source.html#l00068">Lexer.php:68</a></div></div>
 <div class="ttc" id="classHTMLPurifier__Encoder_html_a48bca7ecbdec1fde428a95fc2ec8fff9"><div class="ttname"><a href="classHTMLPurifier__Encoder.html#a48bca7ecbdec1fde428a95fc2ec8fff9">HTMLPurifier_Encoder\convertFromUTF8</a></div><div class="ttdeci">static convertFromUTF8($str, $config, $context)</div><div class="ttdef"><b>Definition:</b> <a href="Encoder_8php_source.html#l00366">Encoder.php:366</a></div></div>
 <div class="ttc" id="classHTMLPurifier__IDAccumulator_html_a187720677bc154b2039ae7a3d1dc7967"><div class="ttname"><a href="classHTMLPurifier__IDAccumulator.html#a187720677bc154b2039ae7a3d1dc7967">HTMLPurifier_IDAccumulator\build</a></div><div class="ttdeci">static build($config, $context)</div><div class="ttdef"><b>Definition:</b> <a href="IDAccumulator_8php_source.html#l00024">IDAccumulator.php:24</a></div></div>
-<div class="ttc" id="classHTMLPurifier_html_a56e73512fe8bbf9d6337e13efed8f78d"><div class="ttname"><a href="classHTMLPurifier.html#a56e73512fe8bbf9d6337e13efed8f78d">HTMLPurifier\instance</a></div><div class="ttdeci">static instance($prototype=null)</div><div class="ttdef"><b>Definition:</b> <a href="HTMLPurifier_8php_source.html#l00216">HTMLPurifier.php:216</a></div></div>
-<div class="ttc" id="classHTMLPurifier_html_a90c1a1d29bd1bd822db48e2005e165aa"><div class="ttname"><a href="classHTMLPurifier.html#a90c1a1d29bd1bd822db48e2005e165aa">HTMLPurifier\getInstance</a></div><div class="ttdeci">static getInstance($prototype=null)</div><div class="ttdef"><b>Definition:</b> <a href="HTMLPurifier_8php_source.html#l00232">HTMLPurifier.php:232</a></div></div>
+<div class="ttc" id="classHTMLPurifier_html_a56e73512fe8bbf9d6337e13efed8f78d"><div class="ttname"><a href="classHTMLPurifier.html#a56e73512fe8bbf9d6337e13efed8f78d">HTMLPurifier\instance</a></div><div class="ttdeci">static instance($prototype=null)</div><div class="ttdef"><b>Definition:</b> <a href="HTMLPurifier_8php_source.html#l00215">HTMLPurifier.php:215</a></div></div>
+<div class="ttc" id="classHTMLPurifier_html_a90c1a1d29bd1bd822db48e2005e165aa"><div class="ttname"><a href="classHTMLPurifier.html#a90c1a1d29bd1bd822db48e2005e165aa">HTMLPurifier\getInstance</a></div><div class="ttdeci">static getInstance($prototype=null)</div><div class="ttdef"><b>Definition:</b> <a href="HTMLPurifier_8php_source.html#l00231">HTMLPurifier.php:231</a></div></div>
 <div class="ttc" id="classHTMLPurifier__Config_html_a063a082504e63d10551ec5472b2a54d9"><div class="ttname"><a href="classHTMLPurifier__Config.html#a063a082504e63d10551ec5472b2a54d9">HTMLPurifier_Config\create</a></div><div class="ttdeci">static create($config, $schema=null)</div><div class="ttdef"><b>Definition:</b> <a href="Config_8php_source.html#l00109">Config.php:109</a></div></div>
 <div class="ttc" id="classHTMLPurifier__Encoder_html_a6876fc3fbf0ae1ce1d06bd127fb55886"><div class="ttname"><a href="classHTMLPurifier__Encoder.html#a6876fc3fbf0ae1ce1d06bd127fb55886">HTMLPurifier_Encoder\convertToUTF8</a></div><div class="ttdeci">static convertToUTF8($str, $config, $context)</div><div class="ttdef"><b>Definition:</b> <a href="Encoder_8php_source.html#l00336">Encoder.php:336</a></div></div>
-<div class="ttc" id="classHTMLPurifier_html_aad4cc7dd37f8e30bbdf78c09b81e8b2a"><div class="ttname"><a href="classHTMLPurifier.html#aad4cc7dd37f8e30bbdf78c09b81e8b2a">HTMLPurifier\__construct</a></div><div class="ttdeci">__construct($config=null)</div><div class="ttdef"><b>Definition:</b> <a href="HTMLPurifier_8php_source.html#l00089">HTMLPurifier.php:89</a></div></div>
+<div class="ttc" id="classHTMLPurifier_html_aad4cc7dd37f8e30bbdf78c09b81e8b2a"><div class="ttname"><a href="classHTMLPurifier.html#aad4cc7dd37f8e30bbdf78c09b81e8b2a">HTMLPurifier\__construct</a></div><div class="ttdeci">__construct($config=null)</div><div class="ttdef"><b>Definition:</b> <a href="HTMLPurifier_8php_source.html#l00088">HTMLPurifier.php:88</a></div></div>
 <div class="ttc" id="classHTMLPurifier__LanguageFactory_html_a488c442bf17292dc832bff6a343667ac"><div class="ttname"><a href="classHTMLPurifier__LanguageFactory.html#a488c442bf17292dc832bff6a343667ac">HTMLPurifier_LanguageFactory\instance</a></div><div class="ttdeci">static instance($prototype=null)</div><div class="ttdef"><b>Definition:</b> <a href="LanguageFactory_8php_source.html#l00057">LanguageFactory.php:57</a></div></div>
 <div class="ttc" id="classHTMLPurifier__ErrorCollector_html"><div class="ttname"><a href="classHTMLPurifier__ErrorCollector.html">HTMLPurifier_ErrorCollector</a></div><div class="ttdef"><b>Definition:</b> <a href="ErrorCollector_8php_source.html#l00007">ErrorCollector.php:7</a></div></div>
-<div class="ttc" id="classHTMLPurifier_html_a1950375d91cbecb0260bbfc4eca926f0"><div class="ttname"><a href="classHTMLPurifier.html#a1950375d91cbecb0260bbfc4eca926f0">HTMLPurifier\$version</a></div><div class="ttdeci">$version</div><div class="ttdef"><b>Definition:</b> <a href="HTMLPurifier_8php_source.html#l00059">HTMLPurifier.php:59</a></div></div>
-<div class="ttc" id="classHTMLPurifier_html_a5b1f6f579594aa52ce4c2dd412d9b249"><div class="ttname"><a href="classHTMLPurifier.html#a5b1f6f579594aa52ce4c2dd412d9b249">HTMLPurifier\purify</a></div><div class="ttdeci">purify($html, $config=null)</div><div class="ttdef"><b>Definition:</b> <a href="HTMLPurifier_8php_source.html#l00116">HTMLPurifier.php:116</a></div></div>
-<div class="ttc" id="classHTMLPurifier_html_a0cc1609717991f9ac7a42065f0114c33"><div class="ttname"><a href="classHTMLPurifier.html#a0cc1609717991f9ac7a42065f0114c33">HTMLPurifier\$config</a></div><div class="ttdeci">$config</div><div class="ttdef"><b>Definition:</b> <a href="HTMLPurifier_8php_source.html#l00065">HTMLPurifier.php:65</a></div></div>
+<div class="ttc" id="classHTMLPurifier_html_a1950375d91cbecb0260bbfc4eca926f0"><div class="ttname"><a href="classHTMLPurifier.html#a1950375d91cbecb0260bbfc4eca926f0">HTMLPurifier\$version</a></div><div class="ttdeci">$version</div><div class="ttdef"><b>Definition:</b> <a href="HTMLPurifier_8php_source.html#l00058">HTMLPurifier.php:58</a></div></div>
+<div class="ttc" id="classHTMLPurifier_html_a5b1f6f579594aa52ce4c2dd412d9b249"><div class="ttname"><a href="classHTMLPurifier.html#a5b1f6f579594aa52ce4c2dd412d9b249">HTMLPurifier\purify</a></div><div class="ttdeci">purify($html, $config=null)</div><div class="ttdef"><b>Definition:</b> <a href="HTMLPurifier_8php_source.html#l00115">HTMLPurifier.php:115</a></div></div>
+<div class="ttc" id="classHTMLPurifier_html_a0cc1609717991f9ac7a42065f0114c33"><div class="ttname"><a href="classHTMLPurifier.html#a0cc1609717991f9ac7a42065f0114c33">HTMLPurifier\$config</a></div><div class="ttdeci">$config</div><div class="ttdef"><b>Definition:</b> <a href="HTMLPurifier_8php_source.html#l00064">HTMLPurifier.php:64</a></div></div>
 <div class="ttc" id="classHTMLPurifier__Context_html"><div class="ttname"><a href="classHTMLPurifier__Context.html">HTMLPurifier_Context</a></div><div class="ttdef"><b>Definition:</b> <a href="Context_8php_source.html#l00010">Context.php:10</a></div></div>
 <div class="ttc" id="HTMLPurifier_8func_8php_html_a9cbaed512b3193663ebf1f6850f1e654"><div class="ttname"><a href="HTMLPurifier_8func_8php.html#a9cbaed512b3193663ebf1f6850f1e654">HTMLPurifier</a></div><div class="ttdeci">HTMLPurifier($html, $config=null)</div><div class="ttdef"><b>Definition:</b> <a href="HTMLPurifier_8func_8php_source.html#l00015">HTMLPurifier.func.php:15</a></div></div>
-<div class="ttc" id="classHTMLPurifier_html_a43bcd3ebc364d2fe66b412df5ce03200"><div class="ttname"><a href="classHTMLPurifier.html#a43bcd3ebc364d2fe66b412df5ce03200">HTMLPurifier\$strategy</a></div><div class="ttdeci">$strategy</div><div class="ttdef"><b>Definition:</b> <a href="HTMLPurifier_8php_source.html#l00073">HTMLPurifier.php:73</a></div></div>
+<div class="ttc" id="classHTMLPurifier_html_a43bcd3ebc364d2fe66b412df5ce03200"><div class="ttname"><a href="classHTMLPurifier.html#a43bcd3ebc364d2fe66b412df5ce03200">HTMLPurifier\$strategy</a></div><div class="ttdeci">$strategy</div><div class="ttdef"><b>Definition:</b> <a href="HTMLPurifier_8php_source.html#l00072">HTMLPurifier.php:72</a></div></div>
 <div class="ttc" id="classHTMLPurifier__Strategy__Core_html"><div class="ttname"><a href="classHTMLPurifier__Strategy__Core.html">HTMLPurifier_Strategy_Core</a></div><div class="ttdef"><b>Definition:</b> <a href="Core_8php_source.html#l00006">Core.php:6</a></div></div>
 <div class="ttc" id="validate_8php_html_a83018d9153d17d91fbcf3bc10158d34f"><div class="ttname"><a href="validate_8php.html#a83018d9153d17d91fbcf3bc10158d34f">$i</a></div><div class="ttdeci">$i</div><div class="ttdef"><b>Definition:</b> <a href="validate_8php_source.html#l01856">validate.php:1856</a></div></div>
-<div class="ttc" id="classHTMLPurifier_html_a0c6a00193ac814390551621656389a67"><div class="ttname"><a href="classHTMLPurifier.html#a0c6a00193ac814390551621656389a67">HTMLPurifier\VERSION</a></div><div class="ttdeci">const VERSION</div><div class="ttdef"><b>Definition:</b> <a href="HTMLPurifier_8php_source.html#l00062">HTMLPurifier.php:62</a></div></div>
-<div class="ttc" id="classHTMLPurifier_html_aa857bddec7c98354aa2e6277202e4206"><div class="ttname"><a href="classHTMLPurifier.html#aa857bddec7c98354aa2e6277202e4206">HTMLPurifier\addFilter</a></div><div class="ttdeci">addFilter($filter)</div><div class="ttdef"><b>Definition:</b> <a href="HTMLPurifier_8php_source.html#l00101">HTMLPurifier.php:101</a></div></div>
+<div class="ttc" id="classHTMLPurifier_html_a0c6a00193ac814390551621656389a67"><div class="ttname"><a href="classHTMLPurifier.html#a0c6a00193ac814390551621656389a67">HTMLPurifier\VERSION</a></div><div class="ttdeci">const VERSION</div><div class="ttdef"><b>Definition:</b> <a href="HTMLPurifier_8php_source.html#l00061">HTMLPurifier.php:61</a></div></div>
+<div class="ttc" id="classHTMLPurifier_html_aa857bddec7c98354aa2e6277202e4206"><div class="ttname"><a href="classHTMLPurifier.html#aa857bddec7c98354aa2e6277202e4206">HTMLPurifier\addFilter</a></div><div class="ttdeci">addFilter($filter)</div><div class="ttdef"><b>Definition:</b> <a href="HTMLPurifier_8php_source.html#l00100">HTMLPurifier.php:100</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 16 2014 18:34:23 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 4 2014 20:59:00 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

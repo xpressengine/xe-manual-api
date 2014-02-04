@@ -23,6 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
+   &#160;<span id="projectnumber">1.7.4</span>
    </div>
   </td>
  </tr>
@@ -79,7 +80,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_35e92cb344fe16f6da0bce789f085c85.html">classes</a></li><li class="navelem"><a class="el" href="dir_54b31a13d1c28fbcc76553bb9d26c4b5.html">cache</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_514a13f88875d2ff7ad77bc475fd83f9.html">classes</a></li><li class="navelem"><a class="el" href="dir_3412c89449c83c86e1699a0ee8fb99b4.html">cache</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -92,107 +93,113 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
 <div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="classCacheApc.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="classCacheApc.html">CacheApc</a> <span class="keyword">extends</span> <a class="code" href="classCacheBase.html">CacheBase</a></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classCacheApc.html#ab175f6bbdebb9ce327c019c3be313331">   17</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classCacheApc.html#ab175f6bbdebb9ce327c019c3be313331">getInstance</a>($opt = null)</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    {</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="PEAR_8php.html#a2af275c3b773e346dac60eefae86e32f">$GLOBALS</a>[<span class="stringliteral">&#39;__CacheApc__&#39;</span>])</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        {</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            <a class="code" href="PEAR_8php.html#a2af275c3b773e346dac60eefae86e32f">$GLOBALS</a>[<span class="stringliteral">&#39;__CacheApc__&#39;</span>] = <span class="keyword">new</span> <a class="code" href="classCacheApc.html#ae75af46358f790955fce6c7fdb99ffdc">CacheApc</a>();</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        }</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="PEAR_8php.html#a2af275c3b773e346dac60eefae86e32f">$GLOBALS</a>[<span class="stringliteral">&#39;__CacheApc__&#39;</span>];</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    }</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classCacheApc.html#ae75af46358f790955fce6c7fdb99ffdc">   31</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classCacheApc.html#ae75af46358f790955fce6c7fdb99ffdc">CacheApc</a>()</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    }</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classCacheApc.html#abd38db973d6d7188606a726d7a5fcc40">   41</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classCacheApc.html#abd38db973d6d7188606a726d7a5fcc40">isSupport</a>()</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">return</span> function_exists(<span class="stringliteral">&#39;apc_add&#39;</span>);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    }</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classCacheApc.html#abdfbacf78bd79a1339b0fd37d97f399e">   56</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classCacheApc.html#abdfbacf78bd79a1339b0fd37d97f399e">put</a>($key, $buff, <a class="code" href="classCacheBase.html#ad4f01a1a34bce91cb38308028252b233">$valid_time</a> = 0)</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    {</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="classCacheBase.html#ad4f01a1a34bce91cb38308028252b233">$valid_time</a> == 0)</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <a class="code" href="classCacheBase.html#ad4f01a1a34bce91cb38308028252b233">$valid_time</a> = <a class="code" href="classCacheBase.html#ad4f01a1a34bce91cb38308028252b233">$this-&gt;valid_time</a>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        }</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">return</span> apc_store(md5(<a class="code" href="config_8inc_8php.html#a5387c7a3f2aa38adf16f324cee88db88">_XE_PATH_</a> . $key), array($_SERVER[<span class="stringliteral">&#39;REQUEST_TIME&#39;</span>], $buff), <a class="code" href="classCacheBase.html#ad4f01a1a34bce91cb38308028252b233">$valid_time</a>);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="classCacheApc.html#ae915c4aded713867d7fab9b691ab5795">   74</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classCacheApc.html#ae915c4aded713867d7fab9b691ab5795">isValid</a>($key, $modified_time = 0)</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        $_key = md5(<a class="code" href="config_8inc_8php.html#a5387c7a3f2aa38adf16f324cee88db88">_XE_PATH_</a> . $key);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a> = apc_fetch($_key, $success);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordflow">if</span>(!$success || !is_array(<a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>))</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        {</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        }</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        unset(<a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>[1]);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keywordflow">if</span>($modified_time &gt; 0 &amp;&amp; $modified_time &gt; <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>[0])</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        {</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            $this-&gt;<a class="code" href="classCacheApc.html#a3fa4d02e32e8495099aca9b1579606cb">_delete</a>($_key);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        }</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    }</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
-<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="classCacheApc.html#ae4b086e28a3b2820174641e964844ceb">  101</a></span>&#160;    <span class="keyword">function</span> <span class="keyword">get</span>($key, $modified_time = 0)</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    {</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        $_key = md5(<a class="code" href="config_8inc_8php.html#a5387c7a3f2aa38adf16f324cee88db88">_XE_PATH_</a> . $key);</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a> = apc_fetch($_key, $success);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="keywordflow">if</span>(!$success || !is_array(<a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>))</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        {</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        }</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keywordflow">if</span>($modified_time &gt; 0 &amp;&amp; $modified_time &gt; <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>[0])</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        {</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            $this-&gt;<a class="code" href="classCacheApc.html#a3fa4d02e32e8495099aca9b1579606cb">_delete</a>($_key);</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        }</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>[1];</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    }</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
-<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="classCacheApc.html#a3fa4d02e32e8495099aca9b1579606cb">  125</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classCacheApc.html#a3fa4d02e32e8495099aca9b1579606cb">_delete</a>($_key)</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    {</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        $this-&gt;<a class="code" href="classCacheApc.html#abdfbacf78bd79a1339b0fd37d97f399e">put</a>($_key, null, 1);</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    }</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
-<div class="line"><a name="l00136"></a><span class="lineno"><a class="line" href="classCacheApc.html#a694a318a017e38de1fa758f557dbcb80">  136</a></span>&#160;    <span class="keyword">function</span> <span class="keyword">delete</span>($key)</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    {</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        $this-&gt;<a class="code" href="classCacheApc.html#a3fa4d02e32e8495099aca9b1579606cb">_delete</a>($key);</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    }</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
-<div class="line"><a name="l00146"></a><span class="lineno"><a class="line" href="classCacheApc.html#ad32f48b59d64b4f71fc0c61744468584">  146</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classCacheApc.html#ad32f48b59d64b4f71fc0c61744468584">truncate</a>()</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    {</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        <span class="keywordflow">return</span> apc_clear_cache(<span class="stringliteral">&#39;user&#39;</span>);</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    }</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;}</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="comment">/* End of file CacheApc.class.php */</span></div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="comment">/* Location: ./classes/cache/CacheApc.class.php */</span></div>
-<div class="ttc" id="classCacheApc_html_ad32f48b59d64b4f71fc0c61744468584"><div class="ttname"><a href="classCacheApc.html#ad32f48b59d64b4f71fc0c61744468584">CacheApc\truncate</a></div><div class="ttdeci">truncate()</div><div class="ttdef"><b>Definition:</b> <a href="CacheApc_8class_8php_source.html#l00146">CacheApc.class.php:146</a></div></div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="classCacheApc.html#a337478fa933fb622e28f28b3baee3433">   11</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <a class="code" href="classCacheApc.html#a337478fa933fb622e28f28b3baee3433">$isSupport</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classCacheApc.html#ab175f6bbdebb9ce327c019c3be313331">   19</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classCacheApc.html#ab175f6bbdebb9ce327c019c3be313331">getInstance</a>($opt = null)</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="PEAR_8php.html#a2af275c3b773e346dac60eefae86e32f">$GLOBALS</a>[<span class="stringliteral">&#39;__CacheApc__&#39;</span>])</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            <a class="code" href="PEAR_8php.html#a2af275c3b773e346dac60eefae86e32f">$GLOBALS</a>[<span class="stringliteral">&#39;__CacheApc__&#39;</span>] = <span class="keyword">new</span> <a class="code" href="classCacheApc.html#ae75af46358f790955fce6c7fdb99ffdc">CacheApc</a>();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        }</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="PEAR_8php.html#a2af275c3b773e346dac60eefae86e32f">$GLOBALS</a>[<span class="stringliteral">&#39;__CacheApc__&#39;</span>];</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    }</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classCacheApc.html#ae75af46358f790955fce6c7fdb99ffdc">   33</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classCacheApc.html#ae75af46358f790955fce6c7fdb99ffdc">CacheApc</a>()</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    }</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classCacheApc.html#abd38db973d6d7188606a726d7a5fcc40">   42</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classCacheApc.html#abd38db973d6d7188606a726d7a5fcc40">isSupport</a>()</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordflow">return</span> self::$isSupport;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classCacheApc.html#abdfbacf78bd79a1339b0fd37d97f399e">   57</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classCacheApc.html#abdfbacf78bd79a1339b0fd37d97f399e">put</a>($key, $buff, <a class="code" href="classCacheBase.html#ad4f01a1a34bce91cb38308028252b233">$valid_time</a> = 0)</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="classCacheBase.html#ad4f01a1a34bce91cb38308028252b233">$valid_time</a> == 0)</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <a class="code" href="classCacheBase.html#ad4f01a1a34bce91cb38308028252b233">$valid_time</a> = <a class="code" href="classCacheBase.html#ad4f01a1a34bce91cb38308028252b233">$this-&gt;valid_time</a>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">return</span> apc_store(md5(<a class="code" href="config_8inc_8php.html#a5387c7a3f2aa38adf16f324cee88db88">_XE_PATH_</a> . $key), array($_SERVER[<span class="stringliteral">&#39;REQUEST_TIME&#39;</span>], $buff), <a class="code" href="classCacheBase.html#ad4f01a1a34bce91cb38308028252b233">$valid_time</a>);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="classCacheApc.html#ae915c4aded713867d7fab9b691ab5795">   75</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classCacheApc.html#ae915c4aded713867d7fab9b691ab5795">isValid</a>($key, $modified_time = 0)</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        $_key = md5(<a class="code" href="config_8inc_8php.html#a5387c7a3f2aa38adf16f324cee88db88">_XE_PATH_</a> . $key);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a> = apc_fetch($_key, $success);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordflow">if</span>(!$success || !is_array(<a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>))</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        unset(<a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>[1]);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordflow">if</span>($modified_time &gt; 0 &amp;&amp; $modified_time &gt; <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>[0])</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        {</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            $this-&gt;<a class="code" href="classCacheApc.html#a3fa4d02e32e8495099aca9b1579606cb">_delete</a>($_key);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="classCacheApc.html#ae4b086e28a3b2820174641e964844ceb">  102</a></span>&#160;    <span class="keyword">function</span> <span class="keyword">get</span>($key, $modified_time = 0)</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    {</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        $_key = md5(<a class="code" href="config_8inc_8php.html#a5387c7a3f2aa38adf16f324cee88db88">_XE_PATH_</a> . $key);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a> = apc_fetch($_key, $success);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="keywordflow">if</span>(!$success || !is_array(<a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>))</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        {</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        }</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="keywordflow">if</span>($modified_time &gt; 0 &amp;&amp; $modified_time &gt; <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>[0])</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        {</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            $this-&gt;<a class="code" href="classCacheApc.html#a3fa4d02e32e8495099aca9b1579606cb">_delete</a>($_key);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        }</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>[1];</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    }</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="classCacheApc.html#a3fa4d02e32e8495099aca9b1579606cb">  126</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classCacheApc.html#a3fa4d02e32e8495099aca9b1579606cb">_delete</a>($_key)</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    {</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        $this-&gt;<a class="code" href="classCacheApc.html#abdfbacf78bd79a1339b0fd37d97f399e">put</a>($_key, null, 1);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    }</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
+<div class="line"><a name="l00137"></a><span class="lineno"><a class="line" href="classCacheApc.html#a694a318a017e38de1fa758f557dbcb80">  137</a></span>&#160;    <span class="keyword">function</span> <span class="keyword">delete</span>($key)</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    {</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        $this-&gt;<a class="code" href="classCacheApc.html#a3fa4d02e32e8495099aca9b1579606cb">_delete</a>($key);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    }</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
+<div class="line"><a name="l00147"></a><span class="lineno"><a class="line" href="classCacheApc.html#ad32f48b59d64b4f71fc0c61744468584">  147</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classCacheApc.html#ad32f48b59d64b4f71fc0c61744468584">truncate</a>()</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    {</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <span class="keywordflow">return</span> apc_clear_cache(<span class="stringliteral">&#39;user&#39;</span>);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    }</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;}</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<a class="code" href="classCacheApc.html#a337478fa933fb622e28f28b3baee3433">CacheApc::$isSupport</a>  = function_exists(<span class="stringliteral">&#39;apc_add&#39;</span>);</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="comment">/* End of file CacheApc.class.php */</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="comment">/* Location: ./classes/cache/CacheApc.class.php */</span></div>
+<div class="ttc" id="classCacheApc_html_ad32f48b59d64b4f71fc0c61744468584"><div class="ttname"><a href="classCacheApc.html#ad32f48b59d64b4f71fc0c61744468584">CacheApc\truncate</a></div><div class="ttdeci">truncate()</div><div class="ttdef"><b>Definition:</b> <a href="CacheApc_8class_8php_source.html#l00147">CacheApc.class.php:147</a></div></div>
 <div class="ttc" id="ko_8install_8php_html_a9008ed94ba185855b1723e367744b87e"><div class="ttname"><a href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a></div><div class="ttdeci">$obj</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00116">ko.install.php:116</a></div></div>
+<div class="ttc" id="classCacheApc_html_a337478fa933fb622e28f28b3baee3433"><div class="ttname"><a href="classCacheApc.html#a337478fa933fb622e28f28b3baee3433">CacheApc\$isSupport</a></div><div class="ttdeci">static $isSupport</div><div class="ttdef"><b>Definition:</b> <a href="CacheApc_8class_8php_source.html#l00011">CacheApc.class.php:11</a></div></div>
 <div class="ttc" id="classCacheBase_html_ad4f01a1a34bce91cb38308028252b233"><div class="ttname"><a href="classCacheBase.html#ad4f01a1a34bce91cb38308028252b233">CacheBase\$valid_time</a></div><div class="ttdeci">$valid_time</div><div class="ttdef"><b>Definition:</b> <a href="CacheHandler_8class_8php_source.html#l00292">CacheHandler.class.php:292</a></div></div>
 <div class="ttc" id="classCacheApc_html"><div class="ttname"><a href="classCacheApc.html">CacheApc</a></div><div class="ttdef"><b>Definition:</b> <a href="CacheApc_8class_8php_source.html#l00009">CacheApc.class.php:9</a></div></div>
-<div class="ttc" id="classCacheApc_html_ae915c4aded713867d7fab9b691ab5795"><div class="ttname"><a href="classCacheApc.html#ae915c4aded713867d7fab9b691ab5795">CacheApc\isValid</a></div><div class="ttdeci">isValid($key, $modified_time=0)</div><div class="ttdef"><b>Definition:</b> <a href="CacheApc_8class_8php_source.html#l00074">CacheApc.class.php:74</a></div></div>
-<div class="ttc" id="classCacheApc_html_ae75af46358f790955fce6c7fdb99ffdc"><div class="ttname"><a href="classCacheApc.html#ae75af46358f790955fce6c7fdb99ffdc">CacheApc\CacheApc</a></div><div class="ttdeci">CacheApc()</div><div class="ttdef"><b>Definition:</b> <a href="CacheApc_8class_8php_source.html#l00031">CacheApc.class.php:31</a></div></div>
+<div class="ttc" id="classCacheApc_html_ae915c4aded713867d7fab9b691ab5795"><div class="ttname"><a href="classCacheApc.html#ae915c4aded713867d7fab9b691ab5795">CacheApc\isValid</a></div><div class="ttdeci">isValid($key, $modified_time=0)</div><div class="ttdef"><b>Definition:</b> <a href="CacheApc_8class_8php_source.html#l00075">CacheApc.class.php:75</a></div></div>
+<div class="ttc" id="classCacheApc_html_ae75af46358f790955fce6c7fdb99ffdc"><div class="ttname"><a href="classCacheApc.html#ae75af46358f790955fce6c7fdb99ffdc">CacheApc\CacheApc</a></div><div class="ttdeci">CacheApc()</div><div class="ttdef"><b>Definition:</b> <a href="CacheApc_8class_8php_source.html#l00033">CacheApc.class.php:33</a></div></div>
 <div class="ttc" id="classCacheBase_html"><div class="ttname"><a href="classCacheBase.html">CacheBase</a></div><div class="ttdef"><b>Definition:</b> <a href="CacheHandler_8class_8php_source.html#l00286">CacheHandler.class.php:286</a></div></div>
 <div class="ttc" id="PEAR_8php_html_a2af275c3b773e346dac60eefae86e32f"><div class="ttname"><a href="PEAR_8php.html#a2af275c3b773e346dac60eefae86e32f">$GLOBALS</a></div><div class="ttdeci">if(!defined('PATH_SEPARATOR')) $GLOBALS['_PEAR_default_error_mode']</div><div class="ttdef"><b>Definition:</b> <a href="PEAR_8php_source.html#l00064">PEAR.php:64</a></div></div>
-<div class="ttc" id="classCacheApc_html_a3fa4d02e32e8495099aca9b1579606cb"><div class="ttname"><a href="classCacheApc.html#a3fa4d02e32e8495099aca9b1579606cb">CacheApc\_delete</a></div><div class="ttdeci">_delete($_key)</div><div class="ttdef"><b>Definition:</b> <a href="CacheApc_8class_8php_source.html#l00125">CacheApc.class.php:125</a></div></div>
+<div class="ttc" id="classCacheApc_html_a3fa4d02e32e8495099aca9b1579606cb"><div class="ttname"><a href="classCacheApc.html#a3fa4d02e32e8495099aca9b1579606cb">CacheApc\_delete</a></div><div class="ttdeci">_delete($_key)</div><div class="ttdef"><b>Definition:</b> <a href="CacheApc_8class_8php_source.html#l00126">CacheApc.class.php:126</a></div></div>
 <div class="ttc" id="config_8inc_8php_html_a5387c7a3f2aa38adf16f324cee88db88"><div class="ttname"><a href="config_8inc_8php.html#a5387c7a3f2aa38adf16f324cee88db88">_XE_PATH_</a></div><div class="ttdeci">const _XE_PATH_</div><div class="ttdef"><b>Definition:</b> <a href="config_8inc_8php_source.html#l00042">config.inc.php:42</a></div></div>
-<div class="ttc" id="classCacheApc_html_abdfbacf78bd79a1339b0fd37d97f399e"><div class="ttname"><a href="classCacheApc.html#abdfbacf78bd79a1339b0fd37d97f399e">CacheApc\put</a></div><div class="ttdeci">put($key, $buff, $valid_time=0)</div><div class="ttdef"><b>Definition:</b> <a href="CacheApc_8class_8php_source.html#l00056">CacheApc.class.php:56</a></div></div>
-<div class="ttc" id="classCacheApc_html_ab175f6bbdebb9ce327c019c3be313331"><div class="ttname"><a href="classCacheApc.html#ab175f6bbdebb9ce327c019c3be313331">CacheApc\getInstance</a></div><div class="ttdeci">getInstance($opt=null)</div><div class="ttdef"><b>Definition:</b> <a href="CacheApc_8class_8php_source.html#l00017">CacheApc.class.php:17</a></div></div>
-<div class="ttc" id="classCacheApc_html_abd38db973d6d7188606a726d7a5fcc40"><div class="ttname"><a href="classCacheApc.html#abd38db973d6d7188606a726d7a5fcc40">CacheApc\isSupport</a></div><div class="ttdeci">isSupport()</div><div class="ttdef"><b>Definition:</b> <a href="CacheApc_8class_8php_source.html#l00041">CacheApc.class.php:41</a></div></div>
+<div class="ttc" id="classCacheApc_html_abdfbacf78bd79a1339b0fd37d97f399e"><div class="ttname"><a href="classCacheApc.html#abdfbacf78bd79a1339b0fd37d97f399e">CacheApc\put</a></div><div class="ttdeci">put($key, $buff, $valid_time=0)</div><div class="ttdef"><b>Definition:</b> <a href="CacheApc_8class_8php_source.html#l00057">CacheApc.class.php:57</a></div></div>
+<div class="ttc" id="classCacheApc_html_ab175f6bbdebb9ce327c019c3be313331"><div class="ttname"><a href="classCacheApc.html#ab175f6bbdebb9ce327c019c3be313331">CacheApc\getInstance</a></div><div class="ttdeci">getInstance($opt=null)</div><div class="ttdef"><b>Definition:</b> <a href="CacheApc_8class_8php_source.html#l00019">CacheApc.class.php:19</a></div></div>
+<div class="ttc" id="classCacheApc_html_abd38db973d6d7188606a726d7a5fcc40"><div class="ttname"><a href="classCacheApc.html#abd38db973d6d7188606a726d7a5fcc40">CacheApc\isSupport</a></div><div class="ttdeci">isSupport()</div><div class="ttdef"><b>Definition:</b> <a href="CacheApc_8class_8php_source.html#l00042">CacheApc.class.php:42</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 16 2014 18:34:22 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 4 2014 20:58:59 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

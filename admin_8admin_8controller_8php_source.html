@@ -23,6 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
+   &#160;<span id="projectnumber">1.7.4</span>
    </div>
   </td>
  </tr>
@@ -79,7 +80,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_2a1abcb1e4424232daafe4d6b5857ef1.html">modules</a></li><li class="navelem"><a class="el" href="dir_8da05efde5bf92b8c46c1179aa491279.html">admin</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_b78503ac06afb93682bd37ea2506bf6c.html">modules</a></li><li class="navelem"><a class="el" href="dir_365210af499c3b5bd3e5c72cf84058dd.html">admin</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -520,7 +521,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;        $db_info-&gt;use_sitelock = ($vars-&gt;use_sitelock) ? $vars-&gt;use_sitelock : <span class="charliteral">&#39;N&#39;</span>;</div>
 <div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;        $db_info-&gt;sitelock_title = $vars-&gt;sitelock_title;</div>
 <div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;        $db_info-&gt;sitelock_message = $vars-&gt;sitelock_message;</div>
-<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;        </div>
+<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;</div>
 <div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;        $whitelist = $vars-&gt;sitelock_whitelist;</div>
 <div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;        $whitelist = preg_replace(<span class="stringliteral">&quot;/[\r|\n|\r\n]+/&quot;</span>,<span class="stringliteral">&quot;,&quot;</span>,$whitelist);</div>
 <div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;        $whitelist = preg_replace(<span class="stringliteral">&quot;/\s+/&quot;</span>,<span class="stringliteral">&quot;&quot;</span>,$whitelist);</div>
@@ -528,41 +529,78 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;        {</div>
 <div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;            $whitelist = <span class="stringliteral">&#39;&#39;</span>;</div>
 <div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;        }</div>
-<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;        $whitelist .= <span class="stringliteral">&#39;,127.0.0.1&#39;</span>;</div>
+<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;        $whitelist .= <span class="stringliteral">&#39;,127.0.0.1,&#39;</span> . $_SERVER[<span class="stringliteral">&#39;REMOTE_ADDR&#39;</span>];</div>
 <div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;        $whitelist = explode(<span class="charliteral">&#39;,&#39;</span>,trim($whitelist, <span class="charliteral">&#39;,&#39;</span>));</div>
 <div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;        $whitelist = array_unique($whitelist);</div>
 <div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;</div>
 <div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="classIpFilter.html#a1efd951aad9eb58b8c394f87078299bc">IpFilter::validate</a>($whitelist)) {</div>
 <div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html">Object</a>(-1, <span class="stringliteral">&#39;msg_invalid_ip&#39;</span>);</div>
 <div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;        }</div>
-<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;        </div>
+<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;</div>
 <div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;        $db_info-&gt;sitelock_whitelist = $whitelist;</div>
-<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;        </div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;</div>
 <div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;        $oInstallController = <a class="code" href="func_8inc_8php.html#aa08f01e3bf130d770b373ca8493e3e9b">getController</a>(<span class="stringliteral">&#39;install&#39;</span>);</div>
 <div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;        <span class="keywordflow">if</span>(!$oInstallController-&gt;makeConfigFile())</div>
 <div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;        {</div>
 <div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html">Object</a>(-1, <span class="stringliteral">&#39;msg_invalid_request&#39;</span>);</div>
 <div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;        }</div>
 <div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;</div>
-<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;        </div>
-<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;        <span class="keywordflow">if</span>(!in_array(<a class="code" href="classContext.html#a6912ff86e08ef782a296b77ff1307481">Context::getRequestMethod</a>(), array(<span class="stringliteral">&#39;XMLRPC&#39;</span>,<span class="stringliteral">&#39;JSON&#39;</span>)))</div>
-<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;        {</div>
-<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;            $returnUrl = <a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;success_return_url&#39;</span>);</div>
-<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;            <span class="keywordflow">if</span>(!$returnUrl) $returnUrl = <a class="code" href="func_8inc_8php.html#aa73dbeb07c5bcac26c24fe4c6b05d8d2">getNotEncodedUrl</a>(<span class="stringliteral">&#39;&#39;</span>, <span class="stringliteral">&#39;act&#39;</span>, <span class="stringliteral">&#39;dispAdminConfigGeneral&#39;</span>);</div>
-<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;            header(<span class="stringliteral">&#39;location:&#39;</span> . $returnUrl);</div>
-<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;            <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;        }</div>
-<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;        </div>
-<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;        </div>
-<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;        </div>
-<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;        </div>
-<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;        </div>
-<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;</div>
-<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;    }</div>
-<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;</div>
-<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;}</div>
-<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;<span class="comment">/* End of file admin.admin.controller.php */</span></div>
-<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;<span class="comment">/* Location: ./modules/admin/admin.admin.controller.php */</span></div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;        <span class="keywordflow">if</span>(!in_array(<a class="code" href="classContext.html#a6912ff86e08ef782a296b77ff1307481">Context::getRequestMethod</a>(), array(<span class="stringliteral">&#39;XMLRPC&#39;</span>,<span class="stringliteral">&#39;JSON&#39;</span>)))</div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;        {</div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;            $returnUrl = <a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;success_return_url&#39;</span>);</div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;            <span class="keywordflow">if</span>(!$returnUrl) $returnUrl = <a class="code" href="func_8inc_8php.html#aa73dbeb07c5bcac26c24fe4c6b05d8d2">getNotEncodedUrl</a>(<span class="stringliteral">&#39;&#39;</span>, <span class="stringliteral">&#39;act&#39;</span>, <span class="stringliteral">&#39;dispAdminConfigGeneral&#39;</span>);</div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;            header(<span class="stringliteral">&#39;location:&#39;</span> . $returnUrl);</div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;            <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;        }</div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;    }</div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;</div>
+<div class="line"><a name="l00526"></a><span class="lineno"><a class="line" href="classadminAdminController.html#aff36b4021e19ccb44ab87043faf13b1a">  526</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classadminAdminController.html#aff36b4021e19ccb44ab87043faf13b1a">procAdminUpdateEmbedWhitelist</a>()</div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;    {</div>
+<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;        $vars = <a class="code" href="classContext.html#a9ddbc79a7ba5892d1ea2d793f6ad52c2">Context::getRequestVars</a>();</div>
+<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;</div>
+<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;        $db_info = Context::getDbInfo();</div>
+<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;</div>
+<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;        $white_object = $vars-&gt;embed_white_object;</div>
+<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;        $white_object = preg_replace(<span class="stringliteral">&quot;/[\r\n|\r|\n]+/&quot;</span>, <span class="stringliteral">&#39;|@|&#39;</span>, $white_object);</div>
+<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;        $white_object = preg_replace(<span class="stringliteral">&quot;/[\s\&#39;\&quot;]+/&quot;</span>, <span class="stringliteral">&#39;&#39;</span>, $white_object);</div>
+<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;        $white_object = explode(<span class="stringliteral">&#39;|@|&#39;</span>, $white_object);</div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;        $white_object = array_unique($white_object);</div>
+<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;</div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;        $white_iframe = $vars-&gt;embed_white_iframe;</div>
+<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;        $white_iframe = preg_replace(<span class="stringliteral">&quot;/[\r\n|\r|\n]+/&quot;</span>, <span class="stringliteral">&#39;|@|&#39;</span>, $white_iframe);</div>
+<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;        $white_iframe = preg_replace(<span class="stringliteral">&quot;/[\s\&#39;\&quot;]+/&quot;</span>, <span class="stringliteral">&#39;&#39;</span>, $white_iframe);</div>
+<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;        $white_iframe = explode(<span class="stringliteral">&#39;|@|&#39;</span>, $white_iframe);</div>
+<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;        $white_iframe = array_unique($white_iframe);</div>
+<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;</div>
+<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;        $whitelist = <span class="keyword">new</span> stdClass;</div>
+<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;        $whitelist-&gt;object = $white_object;</div>
+<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;        $whitelist-&gt;iframe = $white_iframe;</div>
+<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;</div>
+<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;        $db_info-&gt;embed_white_object = $white_object;</div>
+<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;        $db_info-&gt;embed_white_iframe = $white_iframe;</div>
+<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;</div>
+<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;        $oInstallController = <a class="code" href="func_8inc_8php.html#aa08f01e3bf130d770b373ca8493e3e9b">getController</a>(<span class="stringliteral">&#39;install&#39;</span>);</div>
+<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;        <span class="keywordflow">if</span>(!$oInstallController-&gt;makeConfigFile())</div>
+<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;        {</div>
+<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html">Object</a>(-1, <span class="stringliteral">&#39;msg_invalid_request&#39;</span>);</div>
+<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;        }</div>
+<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;</div>
+<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;        require_once(<a class="code" href="config_8inc_8php.html#a5387c7a3f2aa38adf16f324cee88db88">_XE_PATH_</a> . <span class="stringliteral">&#39;classes/security/EmbedFilter.class.php&#39;</span>);</div>
+<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;        $oEmbedFilter = <a class="code" href="classEmbedFilter.html#af8a43e4bc0161225381536c133792463">EmbedFilter::getInstance</a>();</div>
+<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;        $oEmbedFilter-&gt;_makeWhiteDomainList($whitelist);</div>
+<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;</div>
+<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;        <span class="keywordflow">if</span>(!in_array(<a class="code" href="classContext.html#a6912ff86e08ef782a296b77ff1307481">Context::getRequestMethod</a>(), array(<span class="stringliteral">&#39;XMLRPC&#39;</span>,<span class="stringliteral">&#39;JSON&#39;</span>)))</div>
+<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;        {</div>
+<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;            $returnUrl = <a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;success_return_url&#39;</span>);</div>
+<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;            <span class="keywordflow">if</span>(!$returnUrl) $returnUrl = <a class="code" href="func_8inc_8php.html#aa73dbeb07c5bcac26c24fe4c6b05d8d2">getNotEncodedUrl</a>(<span class="stringliteral">&#39;&#39;</span>, <span class="stringliteral">&#39;act&#39;</span>, <span class="stringliteral">&#39;dispAdminConfigGeneral&#39;</span>);</div>
+<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;            header(<span class="stringliteral">&#39;location:&#39;</span> . $returnUrl);</div>
+<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;            <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;        }</div>
+<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;    }</div>
+<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;</div>
+<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;}</div>
+<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;<span class="comment">/* End of file admin.admin.controller.php */</span></div>
+<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;<span class="comment">/* Location: ./modules/admin/admin.admin.controller.php */</span></div>
 <div class="ttc" id="classObject_html"><div class="ttname"><a href="classObject.html">Object</a></div><div class="ttdef"><b>Definition:</b> <a href="Object_8class_8php_source.html#l00009">Object.class.php:9</a></div></div>
 <div class="ttc" id="classFileHandler_html_a55015d030d3773d96281b0fa4bda986e"><div class="ttname"><a href="classFileHandler.html#a55015d030d3773d96281b0fa4bda986e">FileHandler\removeDir</a></div><div class="ttdeci">removeDir($path)</div><div class="ttdef"><b>Definition:</b> <a href="FileHandler_8class_8php_source.html#l00361">FileHandler.class.php:361</a></div></div>
 <div class="ttc" id="ko_8install_8php_html_a8d7a87df524e7d6938f66f8e284cdd1e"><div class="ttname"><a href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a></div><div class="ttdeci">$oModuleModel</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00092">ko.install.php:92</a></div></div>
@@ -594,6 +632,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="ko_8install_8php_html_a67e94494731d99ed23b123e95175bc10"><div class="ttname"><a href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a></div><div class="ttdeci">$args</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00044">ko.install.php:44</a></div></div>
 <div class="ttc" id="classadminAdminController_html_a4d42a0954afb6d20d8f20617f8a5dac6"><div class="ttname"><a href="classadminAdminController.html#a4d42a0954afb6d20d8f20617f8a5dac6">adminAdminController\_insertFavorite</a></div><div class="ttdeci">_insertFavorite($siteSrl, $module, $type= 'module')</div><div class="ttdef"><b>Definition:</b> <a href="admin_8admin_8controller_8php_source.html#l00430">admin.admin.controller.php:430</a></div></div>
 <div class="ttc" id="classObject_html_a9c1f4bf33208a5c858c0722afce90f30"><div class="ttname"><a href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object\Object</a></div><div class="ttdeci">Object($error=0, $message= 'success')</div><div class="ttdef"><b>Definition:</b> <a href="Object_8class_8php_source.html#l00043">Object.class.php:43</a></div></div>
+<div class="ttc" id="classEmbedFilter_html_af8a43e4bc0161225381536c133792463"><div class="ttname"><a href="classEmbedFilter.html#af8a43e4bc0161225381536c133792463">EmbedFilter\getInstance</a></div><div class="ttdeci">getInstance()</div><div class="ttdef"><b>Definition:</b> <a href="EmbedFilter_8class_8php_source.html#l00277">EmbedFilter.class.php:277</a></div></div>
 <div class="ttc" id="classModuleObject_html_ac5126aa7f57a52e7f26b18b9040f5501"><div class="ttname"><a href="classModuleObject.html#ac5126aa7f57a52e7f26b18b9040f5501">ModuleObject\setRedirectUrl</a></div><div class="ttdeci">setRedirectUrl($url= './', $output=NULL)</div><div class="ttdef"><b>Definition:</b> <a href="ModuleObject_8class_8php_source.html#l00060">ModuleObject.class.php:60</a></div></div>
 <div class="ttc" id="ko_8install_8php_html_a0b79a974b91157b79d83cc0be7e3247c"><div class="ttname"><a href="ko_8install_8php.html#a0b79a974b91157b79d83cc0be7e3247c">$siteDesignPath</a></div><div class="ttdeci">$siteDesignPath</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00074">ko.install.php:74</a></div></div>
 <div class="ttc" id="classadminAdminController_html_ab0f984cd55d52455a818323404efb974"><div class="ttname"><a href="classadminAdminController.html#ab0f984cd55d52455a818323404efb974">adminAdminController\updateDefaultDesignInfo</a></div><div class="ttdeci">updateDefaultDesignInfo($vars)</div><div class="ttdef"><b>Definition:</b> <a href="admin_8admin_8controller_8php_source.html#l00151">admin.admin.controller.php:151</a></div></div>
@@ -604,6 +643,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classadminAdminController_html_a70c3ce620fc0791bb2acec0a9dedcc74"><div class="ttname"><a href="classadminAdminController.html#a70c3ce620fc0791bb2acec0a9dedcc74">adminAdminController\makeDefaultDesignFile</a></div><div class="ttdeci">makeDefaultDesignFile($designInfo, $site_srl=0)</div><div class="ttdef"><b>Definition:</b> <a href="admin_8admin_8controller_8php_source.html#l00202">admin.admin.controller.php:202</a></div></div>
 <div class="ttc" id="config_8inc_8php_html_a5387c7a3f2aa38adf16f324cee88db88"><div class="ttname"><a href="config_8inc_8php.html#a5387c7a3f2aa38adf16f324cee88db88">_XE_PATH_</a></div><div class="ttdeci">const _XE_PATH_</div><div class="ttdef"><b>Definition:</b> <a href="config_8inc_8php_source.html#l00042">config.inc.php:42</a></div></div>
 <div class="ttc" id="classFileHandler_html_ac0bd2431461ad2bc04c093bfbb826bea"><div class="ttname"><a href="classFileHandler.html#ac0bd2431461ad2bc04c093bfbb826bea">FileHandler\readFile</a></div><div class="ttdeci">readFile($filename)</div><div class="ttdef"><b>Definition:</b> <a href="FileHandler_8class_8php_source.html#l00127">FileHandler.class.php:127</a></div></div>
+<div class="ttc" id="classadminAdminController_html_aff36b4021e19ccb44ab87043faf13b1a"><div class="ttname"><a href="classadminAdminController.html#aff36b4021e19ccb44ab87043faf13b1a">adminAdminController\procAdminUpdateEmbedWhitelist</a></div><div class="ttdeci">procAdminUpdateEmbedWhitelist()</div><div class="ttdef"><b>Definition:</b> <a href="admin_8admin_8controller_8php_source.html#l00526">admin.admin.controller.php:526</a></div></div>
 <div class="ttc" id="classadminAdminController_html_aeaf185ff2307ca6fcccaf1589b25bc6f"><div class="ttname"><a href="classadminAdminController.html#aeaf185ff2307ca6fcccaf1589b25bc6f">adminAdminController\_deleteFavorite</a></div><div class="ttdeci">_deleteFavorite($favoriteSrl)</div><div class="ttdef"><b>Definition:</b> <a href="admin_8admin_8controller_8php_source.html#l00445">admin.admin.controller.php:445</a></div></div>
 <div class="ttc" id="adminlogging_8addon_8php_html_a193c1593ceb216e9fb05b0bad01ebbc8"><div class="ttname"><a href="adminlogging_8addon_8php.html#a193c1593ceb216e9fb05b0bad01ebbc8">$logged_info</a></div><div class="ttdeci">$logged_info</div><div class="ttdef"><b>Definition:</b> <a href="adminlogging_8addon_8php_source.html#l00012">adminlogging.addon.php:12</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_a5a97b458f9c5b4fe3574671840aee27c"><div class="ttname"><a href="func_8inc_8php.html#a5a97b458f9c5b4fe3574671840aee27c">getNextSequence</a></div><div class="ttdeci">getNextSequence()</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00236">func.inc.php:236</a></div></div>
@@ -623,7 +663,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 16 2014 18:34:25 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 4 2014 20:59:05 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -134,6 +134,7 @@ var searchData=
   ['procadminremoveicons',['procAdminRemoveIcons',['../classadminAdminController.html#a9ddaddf87c06a8ef329ddc0d4305f5d1',1,'adminAdminController']]],
   ['procadmintogglefavorite',['procAdminToggleFavorite',['../classadminAdminController.html#ab7075e4e561ebf87b4d06418638d52ab',1,'adminAdminController']]],
   ['procadminupdateconfig',['procAdminUpdateConfig',['../classadminAdminController.html#a720735446257b930dce48d07c4ac9e4e',1,'adminAdminController']]],
+  ['procadminupdateembedwhitelist',['procAdminUpdateEmbedWhitelist',['../classadminAdminController.html#aff36b4021e19ccb44ab87043faf13b1a',1,'adminAdminController']]],
   ['procadminupdatesitelock',['procAdminUpdateSitelock',['../classadminAdminController.html#a4bbc5bf3f60f108c82b373b4b6fbf8a1',1,'adminAdminController']]],
   ['procattachments',['procAttachments',['../classMail.html#a136e94d3b4ae6cea8944cf05f58754ce',1,'Mail']]],
   ['procautoinstalladminpackageinstall',['procAutoinstallAdminPackageinstall',['../classautoinstallAdminController.html#af38130de594cfb4f33b6812a6a9f874d',1,'autoinstallAdminController']]],

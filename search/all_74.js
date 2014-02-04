@@ -1,7 +1,7 @@
 var searchData=
 [
   ['tools',['Tools',['../md_tools_README.html',1,'']]],
-  ['table',['Table',['../classTable.html',1,'Table'],['../classTable.html#ab93dfd4a90901959b57787798162b318',1,'Table\Table()'],['../classFirePHP.html#a9762ff0d9cc7a3c516ed97108f9a5349',1,'FirePHP\TABLE()'],['../classFB.html#a4ef31cc9b8737898e334e2c77ddad8f4',1,'FB\table()'],['../classFirePHP.html#a715fbc74968e48e204cf0786343b0585',1,'FirePHP\table()']]],
+  ['table',['Table',['../classTable.html',1,'Table'],['../classFB.html#a4ef31cc9b8737898e334e2c77ddad8f4',1,'FB\table()'],['../classFirePHP.html#a715fbc74968e48e204cf0786343b0585',1,'FirePHP\table($Label, $Table)'],['../classFirePHP.html#a9762ff0d9cc7a3c516ed97108f9a5349',1,'FirePHP\TABLE()'],['../classTable.html#ab93dfd4a90901959b57787798162b318',1,'Table\Table()']]],
   ['table_2eclass_2ephp',['Table.class.php',['../Table_8class_8php.html',1,'']]],
   ['table_2ephp',['Table.php',['../Table_8php.html',1,'']]],
   ['tables_2ephp',['Tables.php',['../Tables_8php.html',1,'']]],

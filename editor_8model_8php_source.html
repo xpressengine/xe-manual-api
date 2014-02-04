@@ -23,6 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
+   &#160;<span id="projectnumber">1.7.4</span>
    </div>
   </td>
  </tr>
@@ -79,7 +80,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_2a1abcb1e4424232daafe4d6b5857ef1.html">modules</a></li><li class="navelem"><a class="el" href="dir_3e0d33afb0885655c2bcb6f18cde0c21.html">editor</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_b78503ac06afb93682bd37ea2506bf6c.html">modules</a></li><li class="navelem"><a class="el" href="dir_5e2531a9765114c755aba99167f64167.html">editor</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -695,111 +696,97 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00681"></a><span class="lineno"><a class="line" href="classeditorModel.html#ade91abf13956321e293195f2f14b4e2b">  681</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classeditorModel.html#ade91abf13956321e293195f2f14b4e2b">getComponentXmlInfo</a>($component)</div>
 <div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;    {</div>
 <div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;        $lang_type = <a class="code" href="classContext.html#ae75d6f4064d09e48d0d76614b6997e29">Context::getLangType</a>();</div>
-<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;        <span class="comment">// Get xml file path of the requested components</span></div>
-<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;        $component_path = sprintf(<span class="stringliteral">&#39;%s/components/%s/&#39;</span>, $this-&gt;module_path, $component);</div>
-<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;</div>
-<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;        $xml_file = sprintf(<span class="stringliteral">&#39;%sinfo.xml&#39;</span>, $component_path);</div>
-<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;        $cache_file = sprintf(<span class="stringliteral">&#39;./files/cache/editor/%s.%s.php&#39;</span>, $component, $lang_type);</div>
-<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;        <span class="comment">// Include and return xml file information if cached file exists</span></div>
-<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;        <span class="keywordflow">if</span>(file_exists($cache_file) &amp;&amp; file_exists($xml_file) &amp;&amp; filemtime($cache_file) &gt; filemtime($xml_file))</div>
-<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;        {</div>
-<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;            include($cache_file);</div>
-<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;            <span class="keywordflow">return</span> $xml_info;</div>
-<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;        }</div>
-<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;        <span class="comment">// Parse, cache and then return if the cached file doesn&#39;t exist</span></div>
-<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;        $oParser = <span class="keyword">new</span> <a class="code" href="classXmlParser.html">XmlParser</a>();</div>
-<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;        $xml_doc = $oParser-&gt;loadXmlFile($xml_file);</div>
-<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;        <span class="comment">// Component information listed</span></div>
-<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;        <span class="keywordflow">if</span>($xml_doc-&gt;component-&gt;version &amp;&amp; $xml_doc-&gt;component-&gt;attrs-&gt;version == <span class="stringliteral">&#39;0.2&#39;</span>)</div>
-<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;        {</div>
-<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;            $component_info = <span class="keyword">new</span> stdClass();</div>
-<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;            $component_info-&gt;component_name = $component;</div>
-<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;            $component_info-&gt;title = $xml_doc-&gt;component-&gt;title-&gt;body;</div>
-<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;            $component_info-&gt;description = str_replace(<span class="charliteral">&#39;\n&#39;</span>, <span class="stringliteral">&quot;\n&quot;</span>, $xml_doc-&gt;component-&gt;description-&gt;body);</div>
-<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;            $component_info-&gt;version = $xml_doc-&gt;component-&gt;version-&gt;body;</div>
-<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;            $component_info-&gt;date = $xml_doc-&gt;component-&gt;date-&gt;body;</div>
-<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;            $component_info-&gt;homepage = $xml_doc-&gt;component-&gt;link-&gt;body;</div>
-<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;            $component_info-&gt;license = $xml_doc-&gt;component-&gt;license-&gt;body;</div>
-<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;            $component_info-&gt;license_link = $xml_doc-&gt;component-&gt;license-&gt;attrs-&gt;link;</div>
-<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;</div>
-<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;            $buff = <span class="stringliteral">&#39;&lt;?php if(!defined(&quot;__XE__&quot;)) exit(); &#39;</span>;</div>
-<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;            $buff .= <span class="stringliteral">&#39;$xml_info = new stdClass();&#39;</span>;</div>
-<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;            $buff .= sprintf(<span class="stringliteral">&#39;$xml_info-&gt;component_name = &quot;%s&quot;;&#39;</span>, $component_info-&gt;component_name);</div>
-<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;            $buff .= sprintf(<span class="stringliteral">&#39;$xml_info-&gt;title = &quot;%s&quot;;&#39;</span>, $component_info-&gt;title);</div>
-<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;            $buff .= sprintf(<span class="stringliteral">&#39;$xml_info-&gt;description = &quot;%s&quot;;&#39;</span>, $component_info-&gt;description);</div>
-<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;            $buff .= sprintf(<span class="stringliteral">&#39;$xml_info-&gt;version = &quot;%s&quot;;&#39;</span>, $component_info-&gt;version);</div>
-<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;            $buff .= sprintf(<span class="stringliteral">&#39;$xml_info-&gt;date = &quot;%s&quot;;&#39;</span>, $component_info-&gt;date);</div>
-<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;            $buff .= sprintf(<span class="stringliteral">&#39;$xml_info-&gt;homepage = &quot;%s&quot;;&#39;</span>, $component_info-&gt;homepage);</div>
-<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;            $buff .= sprintf(<span class="stringliteral">&#39;$xml_info-&gt;license = &quot;%s&quot;;&#39;</span>, $component_info-&gt;license);</div>
-<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;            $buff .= sprintf(<span class="stringliteral">&#39;$xml_info-&gt;license_link = &quot;%s&quot;;&#39;</span>, $component_info-&gt;license_link);</div>
-<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;            <span class="comment">// Author information</span></div>
-<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;            <span class="keywordflow">if</span>(!is_array($xml_doc-&gt;component-&gt;author)) $author_list[] = $xml_doc-&gt;component-&gt;author;</div>
-<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;            <span class="keywordflow">else</span> $author_list = $xml_doc-&gt;component-&gt;author;</div>
-<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;</div>
-<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;            <span class="keywordflow">for</span>(<a class="code" href="validate_8php.html#a83018d9153d17d91fbcf3bc10158d34f">$i</a>=0; <a class="code" href="validate_8php.html#a83018d9153d17d91fbcf3bc10158d34f">$i</a> &lt; count($author_list); <a class="code" href="validate_8php.html#a83018d9153d17d91fbcf3bc10158d34f">$i</a>++)</div>
-<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;            {</div>
-<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;                $buff .= <span class="stringliteral">&#39;$xml_info-&gt;author[&#39;</span> . <a class="code" href="validate_8php.html#a83018d9153d17d91fbcf3bc10158d34f">$i</a> .<span class="stringliteral">&#39;]= new stdClass();&#39;</span>;</div>
-<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;                $buff .= sprintf(<span class="stringliteral">&#39;$xml_info-&gt;author[&#39;</span>.<a class="code" href="validate_8php.html#a83018d9153d17d91fbcf3bc10158d34f">$i</a>.<span class="stringliteral">&#39;]-&gt;name = &quot;%s&quot;;&#39;</span>, $author_list[<a class="code" href="validate_8php.html#a83018d9153d17d91fbcf3bc10158d34f">$i</a>]-&gt;name-&gt;body);</div>
-<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;                $buff .= sprintf(<span class="stringliteral">&#39;$xml_info-&gt;author[&#39;</span>.$i.<span class="stringliteral">&#39;]-&gt;email_address = &quot;%s&quot;;&#39;</span>, $author_list[$i]-&gt;attrs-&gt;email_address);</div>
-<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;                $buff .= sprintf(<span class="stringliteral">&#39;$xml_info-&gt;author[&#39;</span>.$i.<span class="stringliteral">&#39;]-&gt;homepage = &quot;%s&quot;;&#39;</span>, $author_list[$i]-&gt;attrs-&gt;link);</div>
-<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;            }</div>
-<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;        }</div>
-<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;        {</div>
-<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;            sscanf($xml_doc-&gt;component-&gt;author-&gt;attrs-&gt;date, <span class="stringliteral">&#39;%d. %d. %d&#39;</span>, $date_obj-&gt;y, $date_obj-&gt;m, $date_obj-&gt;d);</div>
-<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;            $date = sprintf(<span class="stringliteral">&#39;%04d%02d%02d&#39;</span>, $date_obj-&gt;y, $date_obj-&gt;m, $date_obj-&gt;d);</div>
-<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;            $xml_info = <span class="keyword">new</span> stdClass();</div>
-<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;            $xml_info-&gt;component_name = $component;</div>
-<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;            $xml_info-&gt;title = $xml_doc-&gt;component-&gt;title-&gt;body;</div>
-<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;            $xml_info-&gt;description = str_replace(<span class="charliteral">&#39;\n&#39;</span>, <span class="stringliteral">&quot;\n&quot;</span>, $xml_doc-&gt;component-&gt;author-&gt;description-&gt;body);</div>
-<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;            $xml_info-&gt;version = $xml_doc-&gt;component-&gt;attrs-&gt;version;</div>
-<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;            $xml_info-&gt;date = $date;</div>
-<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;            $xml_info-&gt;author-&gt;name = $xml_doc-&gt;component-&gt;author-&gt;name-&gt;body;</div>
-<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;            $xml_info-&gt;author-&gt;email_address = $xml_doc-&gt;component-&gt;author-&gt;attrs-&gt;email_address;</div>
-<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;            $xml_info-&gt;author-&gt;homepage = $xml_doc-&gt;component-&gt;author-&gt;attrs-&gt;link;</div>
+<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;</div>
+<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;        <span class="comment">// Get xml file path of the requested components</span></div>
+<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;        $component_path = sprintf(<span class="stringliteral">&#39;%s/components/%s/&#39;</span>, $this-&gt;module_path, $component);</div>
+<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;</div>
+<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;        $xml_file = sprintf(<span class="stringliteral">&#39;%sinfo.xml&#39;</span>, $component_path);</div>
+<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;        $cache_file = sprintf(<span class="stringliteral">&#39;./files/cache/editor/%s.%s.php&#39;</span>, $component, $lang_type);</div>
+<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;</div>
+<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;        <span class="comment">// Include and return xml file information if cached file exists</span></div>
+<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;        <span class="keywordflow">if</span>(file_exists($cache_file) &amp;&amp; file_exists($xml_file) &amp;&amp; filemtime($cache_file) &gt; filemtime($xml_file))</div>
+<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;        {</div>
+<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;            include($cache_file);</div>
+<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;</div>
+<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;            <span class="keywordflow">return</span> $xml_info;</div>
+<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;        }</div>
+<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;</div>
+<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;        $oParser = <span class="keyword">new</span> <a class="code" href="classXmlParser.html">XmlParser</a>();</div>
+<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;        $xml_doc = $oParser-&gt;loadXmlFile($xml_file);</div>
+<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;</div>
+<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;        <span class="comment">// Component information listed</span></div>
+<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;        $component_info = <span class="keyword">new</span> stdClass;</div>
+<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;        $component_info-&gt;author = array();</div>
+<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;        $component_info-&gt;extra_vars = <span class="keyword">new</span> stdClass;</div>
+<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;        $component_info-&gt;component_name = $component;</div>
+<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;        $component_info-&gt;title = $xml_doc-&gt;component-&gt;title-&gt;body;</div>
+<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;</div>
+<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;        <span class="keywordflow">if</span>($xml_doc-&gt;component-&gt;version)</div>
+<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;        {</div>
+<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;            $component_info-&gt;description = str_replace(<span class="charliteral">&#39;\n&#39;</span>, <span class="stringliteral">&quot;\n&quot;</span>, $xml_doc-&gt;component-&gt;description-&gt;body);</div>
+<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;            $component_info-&gt;version = $xml_doc-&gt;component-&gt;version-&gt;body;</div>
+<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;            $component_info-&gt;date = $xml_doc-&gt;component-&gt;date-&gt;body;</div>
+<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;            $component_info-&gt;homepage = $xml_doc-&gt;component-&gt;link-&gt;body;</div>
+<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;            $component_info-&gt;license = $xml_doc-&gt;component-&gt;license-&gt;body;</div>
+<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;            $component_info-&gt;license_link = $xml_doc-&gt;component-&gt;license-&gt;attrs-&gt;link;</div>
+<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;        }</div>
+<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;        {</div>
+<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;            sscanf($xml_doc-&gt;component-&gt;author-&gt;attrs-&gt;date, <span class="stringliteral">&#39;%d. %d. %d&#39;</span>, $date_obj-&gt;y, $date_obj-&gt;m, $date_obj-&gt;d);</div>
+<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;            $date = sprintf(<span class="stringliteral">&#39;%04d%02d%02d&#39;</span>, $date_obj-&gt;y, $date_obj-&gt;m, $date_obj-&gt;d);</div>
+<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;</div>
+<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;            $component_info-&gt;description = str_replace(<span class="charliteral">&#39;\n&#39;</span>, <span class="stringliteral">&quot;\n&quot;</span>, $xml_doc-&gt;component-&gt;author-&gt;description-&gt;body);</div>
+<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;            $component_info-&gt;version = $xml_doc-&gt;component-&gt;attrs-&gt;version;</div>
+<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;            $component_info-&gt;date = $date;</div>
+<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;</div>
+<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;            $component_info-&gt;author = array();</div>
+<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;            $component_info-&gt;author[0]-&gt;name = $xml_doc-&gt;component-&gt;author-&gt;name-&gt;body;</div>
+<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;            $component_info-&gt;author[0]-&gt;email_address = $xml_doc-&gt;component-&gt;author-&gt;attrs-&gt;email_address;</div>
+<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;            $component_info-&gt;author[0]-&gt;homepage = $xml_doc-&gt;component-&gt;author-&gt;attrs-&gt;link;</div>
+<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;        }</div>
+<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;</div>
+<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;        <span class="comment">// Author information</span></div>
+<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;        $author_list = array();</div>
+<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;        <span class="keywordflow">if</span>(!is_array($xml_doc-&gt;component-&gt;author)) $author_list[] = $xml_doc-&gt;component-&gt;author;</div>
+<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;        <span class="keywordflow">else</span> $author_list = $xml_doc-&gt;component-&gt;author;</div>
+<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;</div>
+<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;        <span class="keywordflow">for</span>(<a class="code" href="validate_8php.html#a83018d9153d17d91fbcf3bc10158d34f">$i</a> = 0; <a class="code" href="validate_8php.html#a83018d9153d17d91fbcf3bc10158d34f">$i</a> &lt; count($author_list); <a class="code" href="validate_8php.html#a83018d9153d17d91fbcf3bc10158d34f">$i</a>++)</div>
+<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;        {</div>
+<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;            $author = <span class="keyword">new</span> stdClass;</div>
+<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;            $author-&gt;name = $author_list[<a class="code" href="validate_8php.html#a83018d9153d17d91fbcf3bc10158d34f">$i</a>]-&gt;name-&gt;body;</div>
+<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;            $author-&gt;email_address = $author_list[<a class="code" href="validate_8php.html#a83018d9153d17d91fbcf3bc10158d34f">$i</a>]-&gt;attrs-&gt;email_address;</div>
+<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;            $author-&gt;homepage = $author_list[<a class="code" href="validate_8php.html#a83018d9153d17d91fbcf3bc10158d34f">$i</a>]-&gt;attrs-&gt;link;</div>
+<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;            $component_info-&gt;author[] = $author;</div>
+<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;        }</div>
 <div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;</div>
-<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;            $buff = <span class="stringliteral">&#39;&lt;?php if(!defined(&quot;__XE__&quot;)) exit(); &#39;</span>;</div>
-<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;            $buff .= <span class="stringliteral">&#39;$xml_info = new stdClass();&#39;</span>;</div>
-<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;            $buff .= sprintf(<span class="stringliteral">&#39;$xml_info-&gt;component_name = &quot;%s&quot;;&#39;</span>, $xml_info-&gt;component_name);</div>
-<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;            $buff .= sprintf(<span class="stringliteral">&#39;$xml_info-&gt;title = &quot;%s&quot;;&#39;</span>, $xml_info-&gt;title);</div>
-<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;            $buff .= sprintf(<span class="stringliteral">&#39;$xml_info-&gt;description = &quot;%s&quot;;&#39;</span>, $xml_info-&gt;description);</div>
-<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;            $buff .= sprintf(<span class="stringliteral">&#39;$xml_info-&gt;version = &quot;%s&quot;;&#39;</span>, $xml_info-&gt;version);</div>
-<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;            $buff .= sprintf(<span class="stringliteral">&#39;$xml_info-&gt;date = &quot;%s&quot;;&#39;</span>, $xml_info-&gt;date);</div>
-<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;            $buff .= sprintf(<span class="stringliteral">&#39;$xml_info-&gt;author[0]-&gt;name = &quot;%s&quot;;&#39;</span>, $xml_info-&gt;author-&gt;name);</div>
-<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;            $buff .= sprintf(<span class="stringliteral">&#39;$xml_info-&gt;author[0]-&gt;email_address = &quot;%s&quot;;&#39;</span>, $xml_info-&gt;author-&gt;email_address);</div>
-<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;            $buff .= sprintf(<span class="stringliteral">&#39;$xml_info-&gt;author[0]-&gt;homepage = &quot;%s&quot;;&#39;</span>, $xml_info-&gt;author-&gt;homepage);</div>
-<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;        }</div>
-<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;        <span class="comment">// List extra variables (text type only for editor component)</span></div>
-<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;        <a class="code" href="ko_8install_8php.html#ae9f3d13d48d464400201d7ec024d3a45">$extra_vars</a> = $xml_doc-&gt;component-&gt;extra_vars-&gt;var;</div>
-<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="ko_8install_8php.html#ae9f3d13d48d464400201d7ec024d3a45">$extra_vars</a>)</div>
-<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;        {</div>
-<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;            <span class="keywordflow">if</span>(!is_array(<a class="code" href="ko_8install_8php.html#ae9f3d13d48d464400201d7ec024d3a45">$extra_vars</a>)) <a class="code" href="ko_8install_8php.html#ae9f3d13d48d464400201d7ec024d3a45">$extra_vars</a> = array(<a class="code" href="ko_8install_8php.html#ae9f3d13d48d464400201d7ec024d3a45">$extra_vars</a>);</div>
-<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;            <span class="keywordflow">foreach</span>(<a class="code" href="ko_8install_8php.html#ae9f3d13d48d464400201d7ec024d3a45">$extra_vars</a> as $key =&gt; $val)</div>
-<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;            {</div>
-<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;                unset(<a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>);</div>
-<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;                $key = $val-&gt;attrs-&gt;name;</div>
-<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;                $title = $val-&gt;title-&gt;body;</div>
-<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;                $description = $val-&gt;description-&gt;body;</div>
-<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;                $xml_info-&gt;extra_vars-&gt;{$key}-&gt;title = $title;</div>
-<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;                $xml_info-&gt;extra_vars-&gt;{$key}-&gt;description = $description;</div>
-<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;</div>
-<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;                $buff .= sprintf(<span class="stringliteral">&#39;$xml_info-&gt;extra_vars-&gt;%s = new stdClass();&#39;</span>, $key);</div>
-<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;                $buff .= sprintf(<span class="stringliteral">&#39;$xml_info-&gt;extra_vars-&gt;%s-&gt;%s = &quot;%s&quot;;&#39;</span>, $key, <span class="stringliteral">&#39;title&#39;</span>, $title);</div>
-<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;                $buff .= sprintf(<span class="stringliteral">&#39;$xml_info-&gt;extra_vars-&gt;%s-&gt;%s = &quot;%s&quot;;&#39;</span>, $key, <span class="stringliteral">&#39;description&#39;</span>, $description);</div>
-<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;            }</div>
-<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;        }</div>
-<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;</div>
-<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;        $buff .= <span class="stringliteral">&#39; ?&gt;&#39;</span>;</div>
-<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;</div>
-<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;        <a class="code" href="classFileHandler.html#ad90c10a81460f437bc68952427606155">FileHandler::writeFile</a>($cache_file, $buff, <span class="stringliteral">&quot;w&quot;</span>);</div>
-<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;</div>
-<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;        unset($xml_info);</div>
-<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;        include($cache_file);</div>
-<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;        <span class="keywordflow">return</span> $xml_info;</div>
-<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;    }</div>
-<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;}</div>
-<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;<span class="comment">/* End of file editor.model.php */</span></div>
-<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;<span class="comment">/* Location: ./modules/editor/editor.model.php */</span></div>
+<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;        <span class="comment">// List extra variables (text type only for editor component)</span></div>
+<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;        <a class="code" href="ko_8install_8php.html#ae9f3d13d48d464400201d7ec024d3a45">$extra_vars</a> = $xml_doc-&gt;component-&gt;extra_vars-&gt;var;</div>
+<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="ko_8install_8php.html#ae9f3d13d48d464400201d7ec024d3a45">$extra_vars</a>)</div>
+<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;        {</div>
+<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;            <span class="keywordflow">if</span>(!is_array(<a class="code" href="ko_8install_8php.html#ae9f3d13d48d464400201d7ec024d3a45">$extra_vars</a>)) <a class="code" href="ko_8install_8php.html#ae9f3d13d48d464400201d7ec024d3a45">$extra_vars</a> = array(<a class="code" href="ko_8install_8php.html#ae9f3d13d48d464400201d7ec024d3a45">$extra_vars</a>);</div>
+<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;</div>
+<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;            <span class="keywordflow">foreach</span>(<a class="code" href="ko_8install_8php.html#ae9f3d13d48d464400201d7ec024d3a45">$extra_vars</a> as $key =&gt; $val)</div>
+<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;            {</div>
+<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;                $key = $val-&gt;attrs-&gt;name;</div>
+<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;                $extra_var = <span class="keyword">new</span> stdClass;</div>
+<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;                $extra_var-&gt;title = $val-&gt;title-&gt;body;</div>
+<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;                $extra_var-&gt;description = $val-&gt;description-&gt;body;</div>
+<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;                $component_info-&gt;extra_vars-&gt;{$key} = $extra_var;</div>
+<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;            }</div>
+<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;        }</div>
+<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;</div>
+<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;        $buff = array();</div>
+<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;        $buff[] = <span class="stringliteral">&#39;&lt;?php if(!defined(\&#39;__XE__\&#39;)) exit();&#39;</span>;</div>
+<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;        $buff[] = <span class="stringliteral">&#39;$xml_info = &#39;</span> . var_export($component_info, TRUE) . <span class="charliteral">&#39;;&#39;</span>;</div>
+<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;        $buff = str_replace(<span class="stringliteral">&#39;stdClass::__set_state&#39;</span>, <span class="stringliteral">&#39;(object)&#39;</span>, implode(PHP_EOL, $buff));</div>
+<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;</div>
+<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;        <a class="code" href="classFileHandler.html#ad90c10a81460f437bc68952427606155">FileHandler::writeFile</a>($cache_file, $buff, <span class="charliteral">&#39;w&#39;</span>);</div>
+<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;</div>
+<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;        <span class="keywordflow">return</span> $component_info;</div>
+<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;    }</div>
+<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;}</div>
+<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;<span class="comment">/* End of file editor.model.php */</span></div>
+<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;<span class="comment">/* Location: ./modules/editor/editor.model.php */</span></div>
 <div class="ttc" id="classObject_html"><div class="ttname"><a href="classObject.html">Object</a></div><div class="ttdef"><b>Definition:</b> <a href="Object_8class_8php_source.html#l00009">Object.class.php:9</a></div></div>
 <div class="ttc" id="ko_8install_8php_html_a8d7a87df524e7d6938f66f8e284cdd1e"><div class="ttname"><a href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a></div><div class="ttdeci">$oModuleModel</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00092">ko.install.php:92</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_aa08f01e3bf130d770b373ca8493e3e9b"><div class="ttname"><a href="func_8inc_8php.html#aa08f01e3bf130d770b373ca8493e3e9b">getController</a></div><div class="ttdeci">getController($module_name)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00090">func.inc.php:90</a></div></div>
@@ -847,7 +834,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 16 2014 18:34:26 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 4 2014 20:59:06 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

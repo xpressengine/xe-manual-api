@@ -23,6 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
+   &#160;<span id="projectnumber">1.7.4</span>
    </div>
   </td>
  </tr>
@@ -79,7 +80,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_2a1abcb1e4424232daafe4d6b5857ef1.html">modules</a></li><li class="navelem"><a class="el" href="dir_5b692976bd7e0169ec7237d81558eba1.html">board</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_b78503ac06afb93682bd37ea2506bf6c.html">modules</a></li><li class="navelem"><a class="el" href="dir_1e243212b1130f5d5629949a97e31947.html">board</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -173,332 +174,355 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;title_color = $oDocument-&gt;get(<span class="stringliteral">&#39;title_color&#39;</span>);</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;title_bold = $oDocument-&gt;get(<span class="stringliteral">&#39;title_bold&#39;</span>);</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            }</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = <a class="code" href="ko_8install_8php.html#aac43fce682d4b7a05df6d3e44c2c54e6">$oDocumentController</a>-&gt;updateDocument($oDocument, <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>);</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            $msg_code = <span class="stringliteral">&#39;success_updated&#39;</span>;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="comment">// insert a new document otherwise</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = <a class="code" href="ko_8install_8php.html#aac43fce682d4b7a05df6d3e44c2c54e6">$oDocumentController</a>-&gt;insertDocument(<a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>, $bAnonymous);</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            $msg_code = <span class="stringliteral">&#39;success_registed&#39;</span>;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;document_srl = <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;get(<span class="stringliteral">&#39;document_srl&#39;</span>);</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            <span class="comment">// send an email to admin user</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;toBool() &amp;&amp; $this-&gt;module_info-&gt;admin_mail)</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            {</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                $oMail = <span class="keyword">new</span> <a class="code" href="classMail.html">Mail</a>();</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                $oMail-&gt;setTitle(<a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;title);</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                $oMail-&gt;setContent( sprintf(<span class="stringliteral">&quot;From : &lt;a href=\&quot;%s\&quot;&gt;%s&lt;/a&gt;&lt;br/&gt;\r\n%s&quot;</span>, <a class="code" href="func_8inc_8php.html#acaf8f155dd27e065b7fb0f5c3f702027">getFullUrl</a>(<span class="stringliteral">&#39;&#39;</span>,<span class="stringliteral">&#39;document_srl&#39;</span>,<a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;document_srl), <a class="code" href="func_8inc_8php.html#acaf8f155dd27e065b7fb0f5c3f702027">getFullUrl</a>(<span class="stringliteral">&#39;&#39;</span>,<span class="stringliteral">&#39;document_srl&#39;</span>,<a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;document_srl), <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;content));</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                $oMail-&gt;setSender(<a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;user_name, <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;email_address);</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                $target_mail = explode(<span class="charliteral">&#39;,&#39;</span>,$this-&gt;module_info-&gt;admin_mail);</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                <span class="keywordflow">for</span>(<a class="code" href="validate_8php.html#a83018d9153d17d91fbcf3bc10158d34f">$i</a>=0;<a class="code" href="validate_8php.html#a83018d9153d17d91fbcf3bc10158d34f">$i</a>&lt;count($target_mail);<a class="code" href="validate_8php.html#a83018d9153d17d91fbcf3bc10158d34f">$i</a>++)</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                {</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                    $email_address = trim($target_mail[<a class="code" href="validate_8php.html#a83018d9153d17d91fbcf3bc10158d34f">$i</a>]);</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                    <span class="keywordflow">if</span>(!$email_address) <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                    $oMail-&gt;setReceiptor($email_address, $email_address);</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                    $oMail-&gt;send();</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                }</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;            }</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        }</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="comment">// if there is an error</span></div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;toBool())</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        {</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        }</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        <span class="comment">// return the results</span></div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        $this-&gt;<a class="code" href="classObject.html#a4f8a7fa8794663b7625fc15c9589797b">add</a>(<span class="stringliteral">&#39;mid&#39;</span>, <a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;mid&#39;</span>));</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        $this-&gt;<a class="code" href="classObject.html#a4f8a7fa8794663b7625fc15c9589797b">add</a>(<span class="stringliteral">&#39;document_srl&#39;</span>, <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;get(<span class="stringliteral">&#39;document_srl&#39;</span>));</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        <span class="comment">// alert a message</span></div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        $this-&gt;<a class="code" href="classModuleObject.html#ac0e69111c80e589a4da7899fc7c75fe5">setMessage</a>($msg_code);</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    }</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
-<div class="line"><a name="l00145"></a><span class="lineno"><a class="line" href="classboardController.html#a3e67502fb41d52a0425f40906029576b">  145</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classboardController.html#a3e67502fb41d52a0425f40906029576b">procBoardDeleteDocument</a>()</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    {</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        <span class="comment">// get the document_srl</span></div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        <a class="code" href="ko_8install_8php.html#a14522e7fff0604a8372c75b4a0fbc0fd">$document_srl</a> = <a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;document_srl&#39;</span>);</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        <span class="comment">// if the document is not existed</span></div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="ko_8install_8php.html#a14522e7fff0604a8372c75b4a0fbc0fd">$document_srl</a>)</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        {</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            <span class="keywordflow">return</span> $this-&gt;doError(<span class="stringliteral">&#39;msg_invalid_document&#39;</span>);</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        }</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        <a class="code" href="ko_8install_8php.html#afb18aa87e5520385e76377e876e042af">$oDocumentModel</a> = &amp;<a class="code" href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a>(<span class="stringliteral">&#39;document&#39;</span>);</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        $oDocument = <a class="code" href="ko_8install_8php.html#afb18aa87e5520385e76377e876e042af">$oDocumentModel</a>-&gt;getDocument(<a class="code" href="ko_8install_8php.html#a14522e7fff0604a8372c75b4a0fbc0fd">$document_srl</a>);</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="comment">// check protect content</span></div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        <span class="keywordflow">if</span>($this-&gt;module_info-&gt;protect_content==<span class="stringliteral">&quot;Y&quot;</span> &amp;&amp; $oDocument-&gt;get(<span class="stringliteral">&#39;comment_count&#39;</span>)&gt;0 &amp;&amp; $this-&gt;grant-&gt;manager==<span class="keyword">false</span>)</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        {</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1, <span class="stringliteral">&#39;msg_protect_content&#39;</span>);</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        }</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <span class="comment">// generate document module controller object</span></div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        <a class="code" href="ko_8install_8php.html#aac43fce682d4b7a05df6d3e44c2c54e6">$oDocumentController</a> = <a class="code" href="func_8inc_8php.html#aa08f01e3bf130d770b373ca8493e3e9b">getController</a>(<span class="stringliteral">&#39;document&#39;</span>);</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        <span class="comment">// delete the document</span></div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = <a class="code" href="ko_8install_8php.html#aac43fce682d4b7a05df6d3e44c2c54e6">$oDocumentController</a>-&gt;deleteDocument(<a class="code" href="ko_8install_8php.html#a14522e7fff0604a8372c75b4a0fbc0fd">$document_srl</a>, $this-&gt;grant-&gt;manager);</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;toBool())</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        {</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>;</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        }</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <span class="comment">// modify list_order if document status is temp</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <span class="keywordflow">if</span>($oDocument-&gt;get(<span class="stringliteral">&#39;status&#39;</span>) == <span class="stringliteral">&#39;TEMP&#39;</span>)</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            {</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;last_update = <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;regdate = date(<span class="stringliteral">&#39;YmdHis&#39;</span>);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;update_order = <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;list_order = (<a class="code" href="func_8inc_8php.html#a5a97b458f9c5b4fe3574671840aee27c">getNextSequence</a>() * -1);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            }</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = <a class="code" href="ko_8install_8php.html#aac43fce682d4b7a05df6d3e44c2c54e6">$oDocumentController</a>-&gt;updateDocument($oDocument, <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            $msg_code = <span class="stringliteral">&#39;success_updated&#39;</span>;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="comment">// insert a new document otherwise</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = <a class="code" href="ko_8install_8php.html#aac43fce682d4b7a05df6d3e44c2c54e6">$oDocumentController</a>-&gt;insertDocument(<a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>, $bAnonymous);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            $msg_code = <span class="stringliteral">&#39;success_registed&#39;</span>;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;document_srl = <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;get(<span class="stringliteral">&#39;document_srl&#39;</span>);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            <span class="comment">// send an email to admin user</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;toBool() &amp;&amp; $this-&gt;module_info-&gt;admin_mail)</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            {</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                $oMail = <span class="keyword">new</span> <a class="code" href="classMail.html">Mail</a>();</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                $oMail-&gt;setTitle(<a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;title);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                $oMail-&gt;setContent( sprintf(<span class="stringliteral">&quot;From : &lt;a href=\&quot;%s\&quot;&gt;%s&lt;/a&gt;&lt;br/&gt;\r\n%s&quot;</span>, <a class="code" href="func_8inc_8php.html#acaf8f155dd27e065b7fb0f5c3f702027">getFullUrl</a>(<span class="stringliteral">&#39;&#39;</span>,<span class="stringliteral">&#39;document_srl&#39;</span>,<a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;document_srl), <a class="code" href="func_8inc_8php.html#acaf8f155dd27e065b7fb0f5c3f702027">getFullUrl</a>(<span class="stringliteral">&#39;&#39;</span>,<span class="stringliteral">&#39;document_srl&#39;</span>,<a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;document_srl), <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;content));</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                $oMail-&gt;setSender(<a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;user_name, <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;email_address);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                $target_mail = explode(<span class="charliteral">&#39;,&#39;</span>,$this-&gt;module_info-&gt;admin_mail);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                <span class="keywordflow">for</span>(<a class="code" href="validate_8php.html#a83018d9153d17d91fbcf3bc10158d34f">$i</a>=0;<a class="code" href="validate_8php.html#a83018d9153d17d91fbcf3bc10158d34f">$i</a>&lt;count($target_mail);<a class="code" href="validate_8php.html#a83018d9153d17d91fbcf3bc10158d34f">$i</a>++)</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                {</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                    $email_address = trim($target_mail[<a class="code" href="validate_8php.html#a83018d9153d17d91fbcf3bc10158d34f">$i</a>]);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                    <span class="keywordflow">if</span>(!$email_address) <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                    $oMail-&gt;setReceiptor($email_address, $email_address);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                    $oMail-&gt;send();</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                }</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            }</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        }</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        <span class="comment">// if there is an error</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;toBool())</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        {</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        }</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        <span class="comment">// return the results</span></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        $this-&gt;<a class="code" href="classObject.html#a4f8a7fa8794663b7625fc15c9589797b">add</a>(<span class="stringliteral">&#39;mid&#39;</span>, <a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;mid&#39;</span>));</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        $this-&gt;<a class="code" href="classObject.html#a4f8a7fa8794663b7625fc15c9589797b">add</a>(<span class="stringliteral">&#39;document_srl&#39;</span>, <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;get(<span class="stringliteral">&#39;document_srl&#39;</span>));</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        <span class="comment">// alert a message</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        $this-&gt;<a class="code" href="classModuleObject.html#ac0e69111c80e589a4da7899fc7c75fe5">setMessage</a>($msg_code);</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    }</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
+<div class="line"><a name="l00152"></a><span class="lineno"><a class="line" href="classboardController.html#a3e67502fb41d52a0425f40906029576b">  152</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classboardController.html#a3e67502fb41d52a0425f40906029576b">procBoardDeleteDocument</a>()</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    {</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        <span class="comment">// get the document_srl</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        <a class="code" href="ko_8install_8php.html#a14522e7fff0604a8372c75b4a0fbc0fd">$document_srl</a> = <a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;document_srl&#39;</span>);</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <span class="comment">// if the document is not existed</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="ko_8install_8php.html#a14522e7fff0604a8372c75b4a0fbc0fd">$document_srl</a>)</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        {</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            <span class="keywordflow">return</span> $this-&gt;doError(<span class="stringliteral">&#39;msg_invalid_document&#39;</span>);</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        }</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        <a class="code" href="ko_8install_8php.html#afb18aa87e5520385e76377e876e042af">$oDocumentModel</a> = &amp;<a class="code" href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a>(<span class="stringliteral">&#39;document&#39;</span>);</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        $oDocument = <a class="code" href="ko_8install_8php.html#afb18aa87e5520385e76377e876e042af">$oDocumentModel</a>-&gt;getDocument(<a class="code" href="ko_8install_8php.html#a14522e7fff0604a8372c75b4a0fbc0fd">$document_srl</a>);</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        <span class="comment">// check protect content</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        <span class="keywordflow">if</span>($this-&gt;module_info-&gt;protect_content==<span class="stringliteral">&quot;Y&quot;</span> &amp;&amp; $oDocument-&gt;get(<span class="stringliteral">&#39;comment_count&#39;</span>)&gt;0 &amp;&amp; $this-&gt;grant-&gt;manager==<span class="keyword">false</span>)</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        {</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1, <span class="stringliteral">&#39;msg_protect_content&#39;</span>);</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        }</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        <span class="comment">// generate document module controller object</span></div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        <a class="code" href="ko_8install_8php.html#aac43fce682d4b7a05df6d3e44c2c54e6">$oDocumentController</a> = <a class="code" href="func_8inc_8php.html#aa08f01e3bf130d770b373ca8493e3e9b">getController</a>(<span class="stringliteral">&#39;document&#39;</span>);</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        <span class="comment">// alert an message</span></div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        $this-&gt;<a class="code" href="classObject.html#a4f8a7fa8794663b7625fc15c9589797b">add</a>(<span class="stringliteral">&#39;mid&#39;</span>, <a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;mid&#39;</span>));</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        $this-&gt;<a class="code" href="classObject.html#a4f8a7fa8794663b7625fc15c9589797b">add</a>(<span class="stringliteral">&#39;page&#39;</span>, <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;get(<span class="stringliteral">&#39;page&#39;</span>));</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        $this-&gt;<a class="code" href="classModuleObject.html#ac0e69111c80e589a4da7899fc7c75fe5">setMessage</a>(<span class="stringliteral">&#39;success_deleted&#39;</span>);</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    }</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
-<div class="line"><a name="l00183"></a><span class="lineno"><a class="line" href="classboardController.html#a8ff91d133ca5ca109b91f218ff306738">  183</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classboardController.html#a8ff91d133ca5ca109b91f218ff306738">procBoardVoteDocument</a>()</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    {</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        <span class="comment">// generate document module controller object</span></div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        <a class="code" href="ko_8install_8php.html#aac43fce682d4b7a05df6d3e44c2c54e6">$oDocumentController</a> = <a class="code" href="func_8inc_8php.html#aa08f01e3bf130d770b373ca8493e3e9b">getController</a>(<span class="stringliteral">&#39;document&#39;</span>);</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        <a class="code" href="ko_8install_8php.html#a14522e7fff0604a8372c75b4a0fbc0fd">$document_srl</a> = <a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;document_srl&#39;</span>);</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="ko_8install_8php.html#aac43fce682d4b7a05df6d3e44c2c54e6">$oDocumentController</a>-&gt;updateVotedCount(<a class="code" href="ko_8install_8php.html#a14522e7fff0604a8372c75b4a0fbc0fd">$document_srl</a>);</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    }</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;</div>
-<div class="line"><a name="l00195"></a><span class="lineno"><a class="line" href="classboardController.html#ab643a9d4d386833e92bc2d7114319fb2">  195</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classboardController.html#ab643a9d4d386833e92bc2d7114319fb2">procBoardInsertComment</a>()</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    {</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        <span class="comment">// check grant</span></div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        <span class="keywordflow">if</span>(!$this-&gt;grant-&gt;write_comment)</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        {</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1, <span class="stringliteral">&#39;msg_not_permitted&#39;</span>);</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        }</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        <a class="code" href="adminlogging_8addon_8php.html#a193c1593ceb216e9fb05b0bad01ebbc8">$logged_info</a> = <a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;logged_info&#39;</span>);</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        <span class="comment">// get the relevant data for inserting comment</span></div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a> = <a class="code" href="classContext.html#a9ddbc79a7ba5892d1ea2d793f6ad52c2">Context::getRequestVars</a>();</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;module_srl = <a class="code" href="classModuleObject.html#a0da50016ddc31513f563206fdf6f413d">$this-&gt;module_srl</a>;</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        <span class="comment">// check if the doument is existed</span></div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        <a class="code" href="ko_8install_8php.html#afb18aa87e5520385e76377e876e042af">$oDocumentModel</a> = <a class="code" href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a>(<span class="stringliteral">&#39;document&#39;</span>);</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        $oDocument = <a class="code" href="ko_8install_8php.html#afb18aa87e5520385e76377e876e042af">$oDocumentModel</a>-&gt;getDocument(<a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;document_srl);</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        <span class="keywordflow">if</span>(!$oDocument-&gt;isExists())</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        {</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1,<span class="stringliteral">&#39;msg_not_founded&#39;</span>);</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        }</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        <span class="comment">// For anonymous use, remove writer&#39;s information and notifying information</span></div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        <span class="keywordflow">if</span>($this-&gt;module_info-&gt;use_anonymous == <span class="charliteral">&#39;Y&#39;</span>)</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        {</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;            $this-&gt;module_info-&gt;admin_mail = <span class="stringliteral">&#39;&#39;</span>;</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;            <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;notify_message = <span class="charliteral">&#39;N&#39;</span>;</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;            <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;member_srl = -1*<a class="code" href="adminlogging_8addon_8php.html#a193c1593ceb216e9fb05b0bad01ebbc8">$logged_info</a>-&gt;member_srl;</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;            <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;email_address = <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;homepage = <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;user_id = <span class="stringliteral">&#39;&#39;</span>;</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;            <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;user_name = <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;nick_name = <span class="stringliteral">&#39;anonymous&#39;</span>;</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;            $bAnonymous = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        }</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        {</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;            $bAnonymous = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        <span class="comment">// delete the document</span></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = <a class="code" href="ko_8install_8php.html#aac43fce682d4b7a05df6d3e44c2c54e6">$oDocumentController</a>-&gt;deleteDocument(<a class="code" href="ko_8install_8php.html#a14522e7fff0604a8372c75b4a0fbc0fd">$document_srl</a>, $this-&gt;grant-&gt;manager);</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;toBool())</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        {</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        }</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        <span class="comment">// alert an message</span></div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        $this-&gt;<a class="code" href="classObject.html#a4f8a7fa8794663b7625fc15c9589797b">add</a>(<span class="stringliteral">&#39;mid&#39;</span>, <a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;mid&#39;</span>));</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        $this-&gt;<a class="code" href="classObject.html#a4f8a7fa8794663b7625fc15c9589797b">add</a>(<span class="stringliteral">&#39;page&#39;</span>, <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;get(<span class="stringliteral">&#39;page&#39;</span>));</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        $this-&gt;<a class="code" href="classModuleObject.html#ac0e69111c80e589a4da7899fc7c75fe5">setMessage</a>(<span class="stringliteral">&#39;success_deleted&#39;</span>);</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    }</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div>
+<div class="line"><a name="l00190"></a><span class="lineno"><a class="line" href="classboardController.html#a8ff91d133ca5ca109b91f218ff306738">  190</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classboardController.html#a8ff91d133ca5ca109b91f218ff306738">procBoardVoteDocument</a>()</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    {</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        <span class="comment">// generate document module controller object</span></div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        <a class="code" href="ko_8install_8php.html#aac43fce682d4b7a05df6d3e44c2c54e6">$oDocumentController</a> = <a class="code" href="func_8inc_8php.html#aa08f01e3bf130d770b373ca8493e3e9b">getController</a>(<span class="stringliteral">&#39;document&#39;</span>);</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        <a class="code" href="ko_8install_8php.html#a14522e7fff0604a8372c75b4a0fbc0fd">$document_srl</a> = <a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;document_srl&#39;</span>);</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="ko_8install_8php.html#aac43fce682d4b7a05df6d3e44c2c54e6">$oDocumentController</a>-&gt;updateVotedCount(<a class="code" href="ko_8install_8php.html#a14522e7fff0604a8372c75b4a0fbc0fd">$document_srl</a>);</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    }</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;</div>
+<div class="line"><a name="l00202"></a><span class="lineno"><a class="line" href="classboardController.html#ab643a9d4d386833e92bc2d7114319fb2">  202</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classboardController.html#ab643a9d4d386833e92bc2d7114319fb2">procBoardInsertComment</a>()</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    {</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        <span class="comment">// check grant</span></div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        <span class="keywordflow">if</span>(!$this-&gt;grant-&gt;write_comment)</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        {</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1, <span class="stringliteral">&#39;msg_not_permitted&#39;</span>);</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        }</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        <a class="code" href="adminlogging_8addon_8php.html#a193c1593ceb216e9fb05b0bad01ebbc8">$logged_info</a> = <a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;logged_info&#39;</span>);</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        <span class="comment">// get the relevant data for inserting comment</span></div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a> = <a class="code" href="classContext.html#a9ddbc79a7ba5892d1ea2d793f6ad52c2">Context::getRequestVars</a>();</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;module_srl = <a class="code" href="classModuleObject.html#a0da50016ddc31513f563206fdf6f413d">$this-&gt;module_srl</a>;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        <span class="keywordflow">if</span>(!$this-&gt;module_info-&gt;use_status) $this-&gt;module_info-&gt;use_status = <span class="stringliteral">&#39;PUBLIC&#39;</span>;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        <span class="keywordflow">if</span>(!is_array($this-&gt;module_info-&gt;use_status))</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        {</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;            $this-&gt;module_info-&gt;use_status = explode(<span class="stringliteral">&#39;|@|&#39;</span>, $this-&gt;module_info-&gt;use_status);</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        }</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        <span class="keywordflow">if</span>(in_array(<span class="stringliteral">&#39;SECRET&#39;</span>, $this-&gt;module_info-&gt;use_status))</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        {</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;            $this-&gt;module_info-&gt;secret = <span class="charliteral">&#39;Y&#39;</span>;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        }</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        {</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;            unset(<a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;is_secret);</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;            $this-&gt;module_info-&gt;secret = <span class="charliteral">&#39;N&#39;</span>;</div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        }</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        <span class="comment">// generate comment  module model object</span></div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        $oCommentModel = <a class="code" href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a>(<span class="stringliteral">&#39;comment&#39;</span>);</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        <span class="comment">// generate comment module controller object</span></div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        $oCommentController = <a class="code" href="func_8inc_8php.html#aa08f01e3bf130d770b373ca8493e3e9b">getController</a>(<span class="stringliteral">&#39;comment&#39;</span>);</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        <span class="comment">// check the comment is existed</span></div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        <span class="comment">// if the comment is not existed, then generate a new sequence</span></div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;comment_srl)</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        {</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;            <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;comment_srl = <a class="code" href="func_8inc_8php.html#a5a97b458f9c5b4fe3574671840aee27c">getNextSequence</a>();</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;            $comment = $oCommentModel-&gt;getComment(<a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;comment_srl, $this-&gt;grant-&gt;manager);</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        }</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        <span class="comment">// if comment_srl is not existed, then insert the comment</span></div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        <span class="keywordflow">if</span>($comment-&gt;comment_srl != <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;comment_srl)</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        {</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;            <span class="comment">// parent_srl is existed</span></div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;parent_srl)</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;            {</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;                $parent_comment = $oCommentModel-&gt;getComment(<a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;parent_srl);</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;                <span class="keywordflow">if</span>(!$parent_comment-&gt;comment_srl)</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;                {</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;                    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1, <span class="stringliteral">&#39;msg_invalid_request&#39;</span>);</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;                }</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;                <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = $oCommentController-&gt;insertComment(<a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>, $bAnonymous);</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;            <span class="comment">// parent_srl is not existed</span></div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;            } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;                <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = $oCommentController-&gt;insertComment(<a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>, $bAnonymous);</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;            }</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        <span class="comment">// update the comment if it is not existed</span></div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;            <span class="comment">// check the grant</span></div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;            <span class="keywordflow">if</span>(!$comment-&gt;isGranted())</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;            {</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1,<span class="stringliteral">&#39;msg_not_permitted&#39;</span>);</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;            }</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        <span class="comment">// check if the doument is existed</span></div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        <a class="code" href="ko_8install_8php.html#afb18aa87e5520385e76377e876e042af">$oDocumentModel</a> = <a class="code" href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a>(<span class="stringliteral">&#39;document&#39;</span>);</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        $oDocument = <a class="code" href="ko_8install_8php.html#afb18aa87e5520385e76377e876e042af">$oDocumentModel</a>-&gt;getDocument(<a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;document_srl);</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        <span class="keywordflow">if</span>(!$oDocument-&gt;isExists())</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        {</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1,<span class="stringliteral">&#39;msg_not_founded&#39;</span>);</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        }</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        <span class="comment">// For anonymous use, remove writer&#39;s information and notifying information</span></div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        <span class="keywordflow">if</span>($this-&gt;module_info-&gt;use_anonymous == <span class="charliteral">&#39;Y&#39;</span>)</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        {</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;            $this-&gt;module_info-&gt;admin_mail = <span class="stringliteral">&#39;&#39;</span>;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;            <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;notify_message = <span class="charliteral">&#39;N&#39;</span>;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;            <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;member_srl = -1*<a class="code" href="adminlogging_8addon_8php.html#a193c1593ceb216e9fb05b0bad01ebbc8">$logged_info</a>-&gt;member_srl;</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;            <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;email_address = <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;homepage = <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;user_id = <span class="stringliteral">&#39;&#39;</span>;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;            <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;user_name = <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;nick_name = <span class="stringliteral">&#39;anonymous&#39;</span>;</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;            $bAnonymous = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        }</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        {</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;            $bAnonymous = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        }</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        <span class="comment">// generate comment  module model object</span></div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        $oCommentModel = <a class="code" href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a>(<span class="stringliteral">&#39;comment&#39;</span>);</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        <span class="comment">// generate comment module controller object</span></div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        $oCommentController = <a class="code" href="func_8inc_8php.html#aa08f01e3bf130d770b373ca8493e3e9b">getController</a>(<span class="stringliteral">&#39;comment&#39;</span>);</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        <span class="comment">// check the comment is existed</span></div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        <span class="comment">// if the comment is not existed, then generate a new sequence</span></div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;comment_srl)</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        {</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;            <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;comment_srl = <a class="code" href="func_8inc_8php.html#a5a97b458f9c5b4fe3574671840aee27c">getNextSequence</a>();</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;            $comment = $oCommentModel-&gt;getComment(<a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;comment_srl, $this-&gt;grant-&gt;manager);</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        }</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        <span class="comment">// if comment_srl is not existed, then insert the comment</span></div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        <span class="keywordflow">if</span>($comment-&gt;comment_srl != <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;comment_srl)</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        {</div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;            <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;parent_srl = $comment-&gt;parent_srl;</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;            <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = $oCommentController-&gt;updateComment(<a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>, $this-&gt;grant-&gt;manager);</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;            $comment_srl = <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;comment_srl;</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        }</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;toBool())</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        {</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>;</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;        }</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;        $this-&gt;<a class="code" href="classModuleObject.html#ac0e69111c80e589a4da7899fc7c75fe5">setMessage</a>(<span class="stringliteral">&#39;success_registed&#39;</span>);</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        $this-&gt;<a class="code" href="classObject.html#a4f8a7fa8794663b7625fc15c9589797b">add</a>(<span class="stringliteral">&#39;mid&#39;</span>, <a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;mid&#39;</span>));</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        $this-&gt;<a class="code" href="classObject.html#a4f8a7fa8794663b7625fc15c9589797b">add</a>(<span class="stringliteral">&#39;document_srl&#39;</span>, <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;document_srl);</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        $this-&gt;<a class="code" href="classObject.html#a4f8a7fa8794663b7625fc15c9589797b">add</a>(<span class="stringliteral">&#39;comment_srl&#39;</span>, <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;comment_srl);</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    }</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;</div>
-<div class="line"><a name="l00292"></a><span class="lineno"><a class="line" href="classboardController.html#af5cfe27b152d9806acf0ced54299b0ea">  292</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classboardController.html#af5cfe27b152d9806acf0ced54299b0ea">procBoardDeleteComment</a>()</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    {</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        <span class="comment">// get the comment_srl</span></div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        $comment_srl = <a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;comment_srl&#39;</span>);</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        <span class="keywordflow">if</span>(!$comment_srl)</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        {</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;            <span class="keywordflow">return</span> $this-&gt;doError(<span class="stringliteral">&#39;msg_invalid_request&#39;</span>);</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;            <span class="comment">// parent_srl is existed</span></div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;parent_srl)</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;            {</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;                $parent_comment = $oCommentModel-&gt;getComment(<a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;parent_srl);</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;                <span class="keywordflow">if</span>(!$parent_comment-&gt;comment_srl)</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;                {</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;                    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1, <span class="stringliteral">&#39;msg_invalid_request&#39;</span>);</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;                }</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;                <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = $oCommentController-&gt;insertComment(<a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>, $bAnonymous);</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;            <span class="comment">// parent_srl is not existed</span></div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;            } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;                <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = $oCommentController-&gt;insertComment(<a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>, $bAnonymous);</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;            }</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        <span class="comment">// update the comment if it is not existed</span></div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;            <span class="comment">// check the grant</span></div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;            <span class="keywordflow">if</span>(!$comment-&gt;isGranted())</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;            {</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1,<span class="stringliteral">&#39;msg_not_permitted&#39;</span>);</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;            }</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;            <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;parent_srl = $comment-&gt;parent_srl;</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;            <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = $oCommentController-&gt;updateComment(<a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>, $this-&gt;grant-&gt;manager);</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;            $comment_srl = <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;comment_srl;</div>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        }</div>
 <div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        <span class="comment">// generate comment  controller object</span></div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        $oCommentController = <a class="code" href="func_8inc_8php.html#aa08f01e3bf130d770b373ca8493e3e9b">getController</a>(<span class="stringliteral">&#39;comment&#39;</span>);</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = $oCommentController-&gt;deleteComment($comment_srl, $this-&gt;grant-&gt;manager);</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;toBool())</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;        {</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>;</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;        }</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        $this-&gt;<a class="code" href="classObject.html#a4f8a7fa8794663b7625fc15c9589797b">add</a>(<span class="stringliteral">&#39;mid&#39;</span>, <a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;mid&#39;</span>));</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;        $this-&gt;<a class="code" href="classObject.html#a4f8a7fa8794663b7625fc15c9589797b">add</a>(<span class="stringliteral">&#39;page&#39;</span>, <a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;page&#39;</span>));</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;        $this-&gt;<a class="code" href="classObject.html#a4f8a7fa8794663b7625fc15c9589797b">add</a>(<span class="stringliteral">&#39;document_srl&#39;</span>, <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;get(<span class="stringliteral">&#39;document_srl&#39;</span>));</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;        $this-&gt;<a class="code" href="classModuleObject.html#ac0e69111c80e589a4da7899fc7c75fe5">setMessage</a>(<span class="stringliteral">&#39;success_deleted&#39;</span>);</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    }</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;</div>
-<div class="line"><a name="l00319"></a><span class="lineno"><a class="line" href="classboardController.html#a8a71a5c163777a169a3e843c2f6dafae">  319</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classboardController.html#a8a71a5c163777a169a3e843c2f6dafae">procBoardDeleteTrackback</a>()</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    {</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        $trackback_srl = <a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;trackback_srl&#39;</span>);</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;        <span class="comment">// generate trackback module controller object</span></div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        $oTrackbackController = <a class="code" href="func_8inc_8php.html#aa08f01e3bf130d770b373ca8493e3e9b">getController</a>(<span class="stringliteral">&#39;trackback&#39;</span>);</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        <span class="keywordflow">if</span>(!$oTrackbackController) <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = $oTrackbackController-&gt;deleteTrackback($trackback_srl, $this-&gt;grant-&gt;manager);</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;toBool())</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        {</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>;</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        }</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        $this-&gt;<a class="code" href="classObject.html#a4f8a7fa8794663b7625fc15c9589797b">add</a>(<span class="stringliteral">&#39;mid&#39;</span>, <a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;mid&#39;</span>));</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        $this-&gt;<a class="code" href="classObject.html#a4f8a7fa8794663b7625fc15c9589797b">add</a>(<span class="stringliteral">&#39;page&#39;</span>, <a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;page&#39;</span>));</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        $this-&gt;<a class="code" href="classObject.html#a4f8a7fa8794663b7625fc15c9589797b">add</a>(<span class="stringliteral">&#39;document_srl&#39;</span>, <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;get(<span class="stringliteral">&#39;document_srl&#39;</span>));</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        $this-&gt;<a class="code" href="classModuleObject.html#ac0e69111c80e589a4da7899fc7c75fe5">setMessage</a>(<span class="stringliteral">&#39;success_deleted&#39;</span>);</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    }</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;</div>
-<div class="line"><a name="l00343"></a><span class="lineno"><a class="line" href="classboardController.html#a0e52095fdfe92ab0533ac33e329e31c6">  343</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classboardController.html#a0e52095fdfe92ab0533ac33e329e31c6">procBoardVerificationPassword</a>()</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    {</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;        <span class="comment">// get the id number of the document and the comment</span></div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;        <a class="code" href="blogapi_8addon_8php.html#a607686ef9f99ea7c42f4f3dd3dbb2b0d">$password</a> = <a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;password&#39;</span>);</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;        <a class="code" href="ko_8install_8php.html#a14522e7fff0604a8372c75b4a0fbc0fd">$document_srl</a> = <a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;document_srl&#39;</span>);</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;        $comment_srl = <a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;comment_srl&#39;</span>);</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;        $oMemberModel = <a class="code" href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a>(<span class="stringliteral">&#39;member&#39;</span>);</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;        <span class="comment">// if the comment exists</span></div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;        <span class="keywordflow">if</span>($comment_srl)</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;        {</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;            <span class="comment">// get the comment information</span></div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;            $oCommentModel = <a class="code" href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a>(<span class="stringliteral">&#39;comment&#39;</span>);</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;            $oComment = $oCommentModel-&gt;getComment($comment_srl);</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;            <span class="keywordflow">if</span>(!$oComment-&gt;isExists())</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;            {</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1, <span class="stringliteral">&#39;msg_invalid_request&#39;</span>);</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;            }</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;toBool())</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        {</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>;</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        }</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;        $this-&gt;<a class="code" href="classModuleObject.html#ac0e69111c80e589a4da7899fc7c75fe5">setMessage</a>(<span class="stringliteral">&#39;success_registed&#39;</span>);</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;        $this-&gt;<a class="code" href="classObject.html#a4f8a7fa8794663b7625fc15c9589797b">add</a>(<span class="stringliteral">&#39;mid&#39;</span>, <a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;mid&#39;</span>));</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;        $this-&gt;<a class="code" href="classObject.html#a4f8a7fa8794663b7625fc15c9589797b">add</a>(<span class="stringliteral">&#39;document_srl&#39;</span>, <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;document_srl);</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;        $this-&gt;<a class="code" href="classObject.html#a4f8a7fa8794663b7625fc15c9589797b">add</a>(<span class="stringliteral">&#39;comment_srl&#39;</span>, <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;comment_srl);</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    }</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;</div>
+<div class="line"><a name="l00315"></a><span class="lineno"><a class="line" href="classboardController.html#af5cfe27b152d9806acf0ced54299b0ea">  315</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classboardController.html#af5cfe27b152d9806acf0ced54299b0ea">procBoardDeleteComment</a>()</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    {</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;        <span class="comment">// get the comment_srl</span></div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        $comment_srl = <a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;comment_srl&#39;</span>);</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        <span class="keywordflow">if</span>(!$comment_srl)</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        {</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;            <span class="keywordflow">return</span> $this-&gt;doError(<span class="stringliteral">&#39;msg_invalid_request&#39;</span>);</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        }</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        <span class="comment">// generate comment  controller object</span></div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        $oCommentController = <a class="code" href="func_8inc_8php.html#aa08f01e3bf130d770b373ca8493e3e9b">getController</a>(<span class="stringliteral">&#39;comment&#39;</span>);</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;        <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = $oCommentController-&gt;deleteComment($comment_srl, $this-&gt;grant-&gt;manager);</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;toBool())</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        {</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>;</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        }</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;        $this-&gt;<a class="code" href="classObject.html#a4f8a7fa8794663b7625fc15c9589797b">add</a>(<span class="stringliteral">&#39;mid&#39;</span>, <a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;mid&#39;</span>));</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        $this-&gt;<a class="code" href="classObject.html#a4f8a7fa8794663b7625fc15c9589797b">add</a>(<span class="stringliteral">&#39;page&#39;</span>, <a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;page&#39;</span>));</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        $this-&gt;<a class="code" href="classObject.html#a4f8a7fa8794663b7625fc15c9589797b">add</a>(<span class="stringliteral">&#39;document_srl&#39;</span>, <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;get(<span class="stringliteral">&#39;document_srl&#39;</span>));</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        $this-&gt;<a class="code" href="classModuleObject.html#ac0e69111c80e589a4da7899fc7c75fe5">setMessage</a>(<span class="stringliteral">&#39;success_deleted&#39;</span>);</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    }</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;</div>
+<div class="line"><a name="l00342"></a><span class="lineno"><a class="line" href="classboardController.html#a8a71a5c163777a169a3e843c2f6dafae">  342</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classboardController.html#a8a71a5c163777a169a3e843c2f6dafae">procBoardDeleteTrackback</a>()</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    {</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;        $trackback_srl = <a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;trackback_srl&#39;</span>);</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;        <span class="comment">// generate trackback module controller object</span></div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;        $oTrackbackController = <a class="code" href="func_8inc_8php.html#aa08f01e3bf130d770b373ca8493e3e9b">getController</a>(<span class="stringliteral">&#39;trackback&#39;</span>);</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;        <span class="keywordflow">if</span>(!$oTrackbackController) <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;        <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = $oTrackbackController-&gt;deleteTrackback($trackback_srl, $this-&gt;grant-&gt;manager);</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;toBool())</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;        {</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>;</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;        }</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;        $this-&gt;<a class="code" href="classObject.html#a4f8a7fa8794663b7625fc15c9589797b">add</a>(<span class="stringliteral">&#39;mid&#39;</span>, <a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;mid&#39;</span>));</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;        $this-&gt;<a class="code" href="classObject.html#a4f8a7fa8794663b7625fc15c9589797b">add</a>(<span class="stringliteral">&#39;page&#39;</span>, <a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;page&#39;</span>));</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;        $this-&gt;<a class="code" href="classObject.html#a4f8a7fa8794663b7625fc15c9589797b">add</a>(<span class="stringliteral">&#39;document_srl&#39;</span>, <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;get(<span class="stringliteral">&#39;document_srl&#39;</span>));</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;        $this-&gt;<a class="code" href="classModuleObject.html#ac0e69111c80e589a4da7899fc7c75fe5">setMessage</a>(<span class="stringliteral">&#39;success_deleted&#39;</span>);</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    }</div>
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;            <span class="comment">// compare the comment password and the user input password</span></div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;            <span class="keywordflow">if</span>(!$oMemberModel-&gt;isValidPassword($oComment-&gt;get(<span class="stringliteral">&#39;password&#39;</span>),<a class="code" href="blogapi_8addon_8php.html#a607686ef9f99ea7c42f4f3dd3dbb2b0d">$password</a>))</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;            {</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1, <span class="stringliteral">&#39;msg_invalid_password&#39;</span>);</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;            }</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;            $oComment-&gt;setGrant();</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;             <span class="comment">// get the document information</span></div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;            <a class="code" href="ko_8install_8php.html#afb18aa87e5520385e76377e876e042af">$oDocumentModel</a> = <a class="code" href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a>(<span class="stringliteral">&#39;document&#39;</span>);</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;            $oDocument = <a class="code" href="ko_8install_8php.html#afb18aa87e5520385e76377e876e042af">$oDocumentModel</a>-&gt;getDocument(<a class="code" href="ko_8install_8php.html#a14522e7fff0604a8372c75b4a0fbc0fd">$document_srl</a>);</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;            <span class="keywordflow">if</span>(!$oDocument-&gt;isExists())</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;            {</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1, <span class="stringliteral">&#39;msg_invalid_request&#39;</span>);</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;            }</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;            <span class="comment">// compare the document password and the user input password</span></div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;            <span class="keywordflow">if</span>(!$oMemberModel-&gt;isValidPassword($oDocument-&gt;get(<span class="stringliteral">&#39;password&#39;</span>),<a class="code" href="blogapi_8addon_8php.html#a607686ef9f99ea7c42f4f3dd3dbb2b0d">$password</a>))</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;            {</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1, <span class="stringliteral">&#39;msg_invalid_password&#39;</span>);</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;            }</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;            $oDocument-&gt;setGrant();</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;        }</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    }</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;</div>
-<div class="line"><a name="l00392"></a><span class="lineno"><a class="line" href="classboardController.html#a1f462e1fe4adab5463f527be6f0dd2b9">  392</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classboardController.html#a1f462e1fe4adab5463f527be6f0dd2b9">triggerMemberMenu</a>(&amp;<a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>)</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;    {</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;        $member_srl = <a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;target_srl&#39;</span>);</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;        <a class="code" href="classModuleObject.html#abb68807f12d0fde6c9ea78a1a820d250">$mid</a> = <a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;cur_mid&#39;</span>);</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;        <span class="keywordflow">if</span>(!$member_srl || !<a class="code" href="classModuleObject.html#abb68807f12d0fde6c9ea78a1a820d250">$mid</a>)</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;        {</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>();</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;        }</div>
+<div class="line"><a name="l00366"></a><span class="lineno"><a class="line" href="classboardController.html#a0e52095fdfe92ab0533ac33e329e31c6">  366</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classboardController.html#a0e52095fdfe92ab0533ac33e329e31c6">procBoardVerificationPassword</a>()</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    {</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;        <span class="comment">// get the id number of the document and the comment</span></div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;        <a class="code" href="blogapi_8addon_8php.html#a607686ef9f99ea7c42f4f3dd3dbb2b0d">$password</a> = <a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;password&#39;</span>);</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;        <a class="code" href="ko_8install_8php.html#a14522e7fff0604a8372c75b4a0fbc0fd">$document_srl</a> = <a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;document_srl&#39;</span>);</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;        $comment_srl = <a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;comment_srl&#39;</span>);</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;        $oMemberModel = <a class="code" href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a>(<span class="stringliteral">&#39;member&#39;</span>);</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;        <span class="comment">// if the comment exists</span></div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;        <span class="keywordflow">if</span>($comment_srl)</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;        {</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;            <span class="comment">// get the comment information</span></div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;            $oCommentModel = <a class="code" href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a>(<span class="stringliteral">&#39;comment&#39;</span>);</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;            $oComment = $oCommentModel-&gt;getComment($comment_srl);</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;            <span class="keywordflow">if</span>(!$oComment-&gt;isExists())</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;            {</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1, <span class="stringliteral">&#39;msg_invalid_request&#39;</span>);</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;            }</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;            <span class="comment">// compare the comment password and the user input password</span></div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;            <span class="keywordflow">if</span>(!$oMemberModel-&gt;isValidPassword($oComment-&gt;get(<span class="stringliteral">&#39;password&#39;</span>),<a class="code" href="blogapi_8addon_8php.html#a607686ef9f99ea7c42f4f3dd3dbb2b0d">$password</a>))</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;            {</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1, <span class="stringliteral">&#39;msg_invalid_password&#39;</span>);</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;            }</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;            $oComment-&gt;setGrant();</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;             <span class="comment">// get the document information</span></div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;            <a class="code" href="ko_8install_8php.html#afb18aa87e5520385e76377e876e042af">$oDocumentModel</a> = <a class="code" href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a>(<span class="stringliteral">&#39;document&#39;</span>);</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;            $oDocument = <a class="code" href="ko_8install_8php.html#afb18aa87e5520385e76377e876e042af">$oDocumentModel</a>-&gt;getDocument(<a class="code" href="ko_8install_8php.html#a14522e7fff0604a8372c75b4a0fbc0fd">$document_srl</a>);</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;            <span class="keywordflow">if</span>(!$oDocument-&gt;isExists())</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;            {</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1, <span class="stringliteral">&#39;msg_invalid_request&#39;</span>);</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;            }</div>
 <div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;</div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;        <a class="code" href="adminlogging_8addon_8php.html#a193c1593ceb216e9fb05b0bad01ebbc8">$logged_info</a> = <a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;logged_info&#39;</span>);</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;        <span class="comment">// get the module information</span></div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;        <a class="code" href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a> = <a class="code" href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a>(<span class="stringliteral">&#39;module&#39;</span>);</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;        $columnList = array(<span class="stringliteral">&#39;module&#39;</span>);</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;        $cur_module_info = <a class="code" href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a>-&gt;getModuleInfoByMid(<a class="code" href="classModuleObject.html#abb68807f12d0fde6c9ea78a1a820d250">$mid</a>, 0, $columnList);</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;        <span class="keywordflow">if</span>($cur_module_info-&gt;module != <span class="stringliteral">&#39;board&#39;</span>)</div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;        {</div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>();</div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;        }</div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;</div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;        <span class="comment">// get the member information</span></div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;        <span class="keywordflow">if</span>($member_srl == <a class="code" href="adminlogging_8addon_8php.html#a193c1593ceb216e9fb05b0bad01ebbc8">$logged_info</a>-&gt;member_srl)</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;        {</div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;            $member_info = <a class="code" href="adminlogging_8addon_8php.html#a193c1593ceb216e9fb05b0bad01ebbc8">$logged_info</a>;</div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;            $oMemberModel = <a class="code" href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a>(<span class="stringliteral">&#39;member&#39;</span>);</div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;            $member_info = $oMemberModel-&gt;getMemberInfoByMemberSrl($member_srl);</div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;        }</div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;</div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;        <span class="keywordflow">if</span>(!$member_info-&gt;user_id)</div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;        {</div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>();</div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;        }</div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;</div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;        <span class="comment">//search</span></div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;        $url = <a class="code" href="func_8inc_8php.html#accd14bda49a1044b4d8dd93f020f11ee">getUrl</a>(<span class="stringliteral">&#39;&#39;</span>,<span class="stringliteral">&#39;mid&#39;</span>,<a class="code" href="classModuleObject.html#abb68807f12d0fde6c9ea78a1a820d250">$mid</a>,<span class="stringliteral">&#39;search_target&#39;</span>,<span class="stringliteral">&#39;nick_name&#39;</span>,<span class="stringliteral">&#39;search_keyword&#39;</span>,$member_info-&gt;nick_name);</div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;        $oMemberController = <a class="code" href="func_8inc_8php.html#aa08f01e3bf130d770b373ca8493e3e9b">getController</a>(<span class="stringliteral">&#39;member&#39;</span>);</div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;        $oMemberController-&gt;addMemberPopupMenu($url, <span class="stringliteral">&#39;cmd_view_own_document&#39;</span>, <span class="stringliteral">&#39;&#39;</span>);</div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;</div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>();</div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;    }</div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;}</div>
-<div class="ttc" id="classboardController_html_ab643a9d4d386833e92bc2d7114319fb2"><div class="ttname"><a href="classboardController.html#ab643a9d4d386833e92bc2d7114319fb2">boardController\procBoardInsertComment</a></div><div class="ttdeci">procBoardInsertComment()</div><div class="ttdoc">insert comments </div><div class="ttdef"><b>Definition:</b> <a href="board_8controller_8php_source.html#l00195">board.controller.php:195</a></div></div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;            <span class="comment">// compare the document password and the user input password</span></div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;            <span class="keywordflow">if</span>(!$oMemberModel-&gt;isValidPassword($oDocument-&gt;get(<span class="stringliteral">&#39;password&#39;</span>),<a class="code" href="blogapi_8addon_8php.html#a607686ef9f99ea7c42f4f3dd3dbb2b0d">$password</a>))</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;            {</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1, <span class="stringliteral">&#39;msg_invalid_password&#39;</span>);</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;            }</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;            $oDocument-&gt;setGrant();</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;        }</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    }</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;</div>
+<div class="line"><a name="l00415"></a><span class="lineno"><a class="line" href="classboardController.html#a1f462e1fe4adab5463f527be6f0dd2b9">  415</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classboardController.html#a1f462e1fe4adab5463f527be6f0dd2b9">triggerMemberMenu</a>(&amp;<a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>)</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;    {</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;        $member_srl = <a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;target_srl&#39;</span>);</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;        <a class="code" href="classModuleObject.html#abb68807f12d0fde6c9ea78a1a820d250">$mid</a> = <a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;cur_mid&#39;</span>);</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;        <span class="keywordflow">if</span>(!$member_srl || !<a class="code" href="classModuleObject.html#abb68807f12d0fde6c9ea78a1a820d250">$mid</a>)</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;        {</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>();</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;        }</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;        <a class="code" href="adminlogging_8addon_8php.html#a193c1593ceb216e9fb05b0bad01ebbc8">$logged_info</a> = <a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;logged_info&#39;</span>);</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;        <span class="comment">// get the module information</span></div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;        <a class="code" href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a> = <a class="code" href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a>(<span class="stringliteral">&#39;module&#39;</span>);</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;        $columnList = array(<span class="stringliteral">&#39;module&#39;</span>);</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;        $cur_module_info = <a class="code" href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a>-&gt;getModuleInfoByMid(<a class="code" href="classModuleObject.html#abb68807f12d0fde6c9ea78a1a820d250">$mid</a>, 0, $columnList);</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;        <span class="keywordflow">if</span>($cur_module_info-&gt;module != <span class="stringliteral">&#39;board&#39;</span>)</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;        {</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>();</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;        }</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;        <span class="comment">// get the member information</span></div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;        <span class="keywordflow">if</span>($member_srl == <a class="code" href="adminlogging_8addon_8php.html#a193c1593ceb216e9fb05b0bad01ebbc8">$logged_info</a>-&gt;member_srl)</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;        {</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;            $member_info = <a class="code" href="adminlogging_8addon_8php.html#a193c1593ceb216e9fb05b0bad01ebbc8">$logged_info</a>;</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;            $oMemberModel = <a class="code" href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a>(<span class="stringliteral">&#39;member&#39;</span>);</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;            $member_info = $oMemberModel-&gt;getMemberInfoByMemberSrl($member_srl);</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;        }</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;        <span class="keywordflow">if</span>(!$member_info-&gt;user_id)</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;        {</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>();</div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;        }</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;        <span class="comment">//search</span></div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;        $url = <a class="code" href="func_8inc_8php.html#accd14bda49a1044b4d8dd93f020f11ee">getUrl</a>(<span class="stringliteral">&#39;&#39;</span>,<span class="stringliteral">&#39;mid&#39;</span>,<a class="code" href="classModuleObject.html#abb68807f12d0fde6c9ea78a1a820d250">$mid</a>,<span class="stringliteral">&#39;search_target&#39;</span>,<span class="stringliteral">&#39;nick_name&#39;</span>,<span class="stringliteral">&#39;search_keyword&#39;</span>,$member_info-&gt;nick_name);</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;        $oMemberController = <a class="code" href="func_8inc_8php.html#aa08f01e3bf130d770b373ca8493e3e9b">getController</a>(<span class="stringliteral">&#39;member&#39;</span>);</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;        $oMemberController-&gt;addMemberPopupMenu($url, <span class="stringliteral">&#39;cmd_view_own_document&#39;</span>, <span class="stringliteral">&#39;&#39;</span>);</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>();</div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;    }</div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;}</div>
+<div class="ttc" id="classboardController_html_ab643a9d4d386833e92bc2d7114319fb2"><div class="ttname"><a href="classboardController.html#ab643a9d4d386833e92bc2d7114319fb2">boardController\procBoardInsertComment</a></div><div class="ttdeci">procBoardInsertComment()</div><div class="ttdoc">insert comments </div><div class="ttdef"><b>Definition:</b> <a href="board_8controller_8php_source.html#l00202">board.controller.php:202</a></div></div>
 <div class="ttc" id="ko_8install_8php_html_a8d7a87df524e7d6938f66f8e284cdd1e"><div class="ttname"><a href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a></div><div class="ttdeci">$oModuleModel</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00092">ko.install.php:92</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_aa08f01e3bf130d770b373ca8493e3e9b"><div class="ttname"><a href="func_8inc_8php.html#aa08f01e3bf130d770b373ca8493e3e9b">getController</a></div><div class="ttdeci">getController($module_name)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00090">func.inc.php:90</a></div></div>
 <div class="ttc" id="classMail_html"><div class="ttname"><a href="classMail.html">Mail</a></div><div class="ttdef"><b>Definition:</b> <a href="Mail_8class_8php_source.html#l00018">Mail.class.php:18</a></div></div>
-<div class="ttc" id="classboardController_html_a1f462e1fe4adab5463f527be6f0dd2b9"><div class="ttname"><a href="classboardController.html#a1f462e1fe4adab5463f527be6f0dd2b9">boardController\triggerMemberMenu</a></div><div class="ttdeci">triggerMemberMenu(&amp;$obj)</div><div class="ttdoc">the trigger for displaying &amp;#39;view document&amp;#39; link when click the user ID </div><div class="ttdef"><b>Definition:</b> <a href="board_8controller_8php_source.html#l00392">board.controller.php:392</a></div></div>
+<div class="ttc" id="classboardController_html_a1f462e1fe4adab5463f527be6f0dd2b9"><div class="ttname"><a href="classboardController.html#a1f462e1fe4adab5463f527be6f0dd2b9">boardController\triggerMemberMenu</a></div><div class="ttdeci">triggerMemberMenu(&amp;$obj)</div><div class="ttdoc">the trigger for displaying &amp;#39;view document&amp;#39; link when click the user ID </div><div class="ttdef"><b>Definition:</b> <a href="board_8controller_8php_source.html#l00415">board.controller.php:415</a></div></div>
 <div class="ttc" id="ko_8install_8php_html_a9008ed94ba185855b1723e367744b87e"><div class="ttname"><a href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a></div><div class="ttdeci">$obj</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00116">ko.install.php:116</a></div></div>
 <div class="ttc" id="ko_8install_8php_html_a73004ce9cd673c1bfafd1dc351134797"><div class="ttname"><a href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a></div><div class="ttdeci">$output</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00008">ko.install.php:8</a></div></div>
 <div class="ttc" id="classObject_html_a4f8a7fa8794663b7625fc15c9589797b"><div class="ttname"><a href="classObject.html#a4f8a7fa8794663b7625fc15c9589797b">Object\add</a></div><div class="ttdeci">add($key, $val)</div><div class="ttdef"><b>Definition:</b> <a href="Object_8class_8php_source.html#l00129">Object.class.php:129</a></div></div>
-<div class="ttc" id="classboardController_html_af5cfe27b152d9806acf0ced54299b0ea"><div class="ttname"><a href="classboardController.html#af5cfe27b152d9806acf0ced54299b0ea">boardController\procBoardDeleteComment</a></div><div class="ttdeci">procBoardDeleteComment()</div><div class="ttdoc">delete the comment </div><div class="ttdef"><b>Definition:</b> <a href="board_8controller_8php_source.html#l00292">board.controller.php:292</a></div></div>
-<div class="ttc" id="classboardController_html_a3e67502fb41d52a0425f40906029576b"><div class="ttname"><a href="classboardController.html#a3e67502fb41d52a0425f40906029576b">boardController\procBoardDeleteDocument</a></div><div class="ttdeci">procBoardDeleteDocument()</div><div class="ttdoc">delete the document </div><div class="ttdef"><b>Definition:</b> <a href="board_8controller_8php_source.html#l00145">board.controller.php:145</a></div></div>
+<div class="ttc" id="classboardController_html_af5cfe27b152d9806acf0ced54299b0ea"><div class="ttname"><a href="classboardController.html#af5cfe27b152d9806acf0ced54299b0ea">boardController\procBoardDeleteComment</a></div><div class="ttdeci">procBoardDeleteComment()</div><div class="ttdoc">delete the comment </div><div class="ttdef"><b>Definition:</b> <a href="board_8controller_8php_source.html#l00315">board.controller.php:315</a></div></div>
+<div class="ttc" id="classboardController_html_a3e67502fb41d52a0425f40906029576b"><div class="ttname"><a href="classboardController.html#a3e67502fb41d52a0425f40906029576b">boardController\procBoardDeleteDocument</a></div><div class="ttdeci">procBoardDeleteDocument()</div><div class="ttdoc">delete the document </div><div class="ttdef"><b>Definition:</b> <a href="board_8controller_8php_source.html#l00152">board.controller.php:152</a></div></div>
 <div class="ttc" id="classModuleObject_html_a0da50016ddc31513f563206fdf6f413d"><div class="ttname"><a href="classModuleObject.html#a0da50016ddc31513f563206fdf6f413d">ModuleObject\$module_srl</a></div><div class="ttdeci">$module_srl</div><div class="ttdoc">integer value to represent a run-time instance of Module (XE Module) </div><div class="ttdef"><b>Definition:</b> <a href="ModuleObject_8class_8php_source.html#l00014">ModuleObject.class.php:14</a></div></div>
 <div class="ttc" id="classModuleObject_html_ac0e69111c80e589a4da7899fc7c75fe5"><div class="ttname"><a href="classModuleObject.html#ac0e69111c80e589a4da7899fc7c75fe5">ModuleObject\setMessage</a></div><div class="ttdeci">setMessage($message, $type=NULL)</div><div class="ttdef"><b>Definition:</b> <a href="ModuleObject_8class_8php_source.html#l00089">ModuleObject.class.php:89</a></div></div>
 <div class="ttc" id="classObject_html_a9c1f4bf33208a5c858c0722afce90f30"><div class="ttname"><a href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object\Object</a></div><div class="ttdeci">Object($error=0, $message= 'success')</div><div class="ttdef"><b>Definition:</b> <a href="Object_8class_8php_source.html#l00043">Object.class.php:43</a></div></div>
@@ -511,7 +535,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="adminlogging_8addon_8php_html_a193c1593ceb216e9fb05b0bad01ebbc8"><div class="ttname"><a href="adminlogging_8addon_8php.html#a193c1593ceb216e9fb05b0bad01ebbc8">$logged_info</a></div><div class="ttdeci">$logged_info</div><div class="ttdef"><b>Definition:</b> <a href="adminlogging_8addon_8php_source.html#l00012">adminlogging.addon.php:12</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_a5a97b458f9c5b4fe3574671840aee27c"><div class="ttname"><a href="func_8inc_8php.html#a5a97b458f9c5b4fe3574671840aee27c">getNextSequence</a></div><div class="ttdeci">getNextSequence()</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00236">func.inc.php:236</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_aecdfcc5332bcf22df01fc21a03b64435"><div class="ttname"><a href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a></div><div class="ttdeci">getModel($module_name)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00145">func.inc.php:145</a></div></div>
-<div class="ttc" id="classboardController_html_a8a71a5c163777a169a3e843c2f6dafae"><div class="ttname"><a href="classboardController.html#a8a71a5c163777a169a3e843c2f6dafae">boardController\procBoardDeleteTrackback</a></div><div class="ttdeci">procBoardDeleteTrackback()</div><div class="ttdoc">delete the tracjback </div><div class="ttdef"><b>Definition:</b> <a href="board_8controller_8php_source.html#l00319">board.controller.php:319</a></div></div>
+<div class="ttc" id="classboardController_html_a8a71a5c163777a169a3e843c2f6dafae"><div class="ttname"><a href="classboardController.html#a8a71a5c163777a169a3e843c2f6dafae">boardController\procBoardDeleteTrackback</a></div><div class="ttdeci">procBoardDeleteTrackback()</div><div class="ttdoc">delete the tracjback </div><div class="ttdef"><b>Definition:</b> <a href="board_8controller_8php_source.html#l00342">board.controller.php:342</a></div></div>
 <div class="ttc" id="classContext_html_a90ce25d65fe6c9778421cbb36ab3def5"><div class="ttname"><a href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context\get</a></div><div class="ttdeci">get($key)</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l01752">Context.class.php:1752</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_ad7b240a38cc63f3a576d4b7c391fda16"><div class="ttname"><a href="func_8inc_8php.html#ad7b240a38cc63f3a576d4b7c391fda16">cut_str</a></div><div class="ttdeci">cut_str($string, $cut_size=0, $tail= '...')</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00454">func.inc.php:454</a></div></div>
 <div class="ttc" id="blogapi_8addon_8php_html_a607686ef9f99ea7c42f4f3dd3dbb2b0d"><div class="ttname"><a href="blogapi_8addon_8php.html#a607686ef9f99ea7c42f4f3dd3dbb2b0d">$password</a></div><div class="ttdeci">$password</div><div class="ttdef"><b>Definition:</b> <a href="blogapi_8addon_8php_source.html#l00048">blogapi.addon.php:48</a></div></div>
@@ -520,13 +544,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="func_8inc_8php_html_acaf8f155dd27e065b7fb0f5c3f702027"><div class="ttname"><a href="func_8inc_8php.html#acaf8f155dd27e065b7fb0f5c3f702027">getFullUrl</a></div><div class="ttdeci">getFullUrl()</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00319">func.inc.php:319</a></div></div>
 <div class="ttc" id="classboard_html"><div class="ttname"><a href="classboard.html">board</a></div><div class="ttdoc">board module high class </div><div class="ttdef"><b>Definition:</b> <a href="board_8class_8php_source.html#l00010">board.class.php:10</a></div></div>
 <div class="ttc" id="validate_8php_html_a83018d9153d17d91fbcf3bc10158d34f"><div class="ttname"><a href="validate_8php.html#a83018d9153d17d91fbcf3bc10158d34f">$i</a></div><div class="ttdeci">$i</div><div class="ttdef"><b>Definition:</b> <a href="validate_8php_source.html#l01856">validate.php:1856</a></div></div>
-<div class="ttc" id="classboardController_html_a0e52095fdfe92ab0533ac33e329e31c6"><div class="ttname"><a href="classboardController.html#a0e52095fdfe92ab0533ac33e329e31c6">boardController\procBoardVerificationPassword</a></div><div class="ttdeci">procBoardVerificationPassword()</div><div class="ttdoc">check the password for document and comment </div><div class="ttdef"><b>Definition:</b> <a href="board_8controller_8php_source.html#l00343">board.controller.php:343</a></div></div>
-<div class="ttc" id="classboardController_html_a8ff91d133ca5ca109b91f218ff306738"><div class="ttname"><a href="classboardController.html#a8ff91d133ca5ca109b91f218ff306738">boardController\procBoardVoteDocument</a></div><div class="ttdeci">procBoardVoteDocument()</div><div class="ttdoc">vote </div><div class="ttdef"><b>Definition:</b> <a href="board_8controller_8php_source.html#l00183">board.controller.php:183</a></div></div>
+<div class="ttc" id="classboardController_html_a0e52095fdfe92ab0533ac33e329e31c6"><div class="ttname"><a href="classboardController.html#a0e52095fdfe92ab0533ac33e329e31c6">boardController\procBoardVerificationPassword</a></div><div class="ttdeci">procBoardVerificationPassword()</div><div class="ttdoc">check the password for document and comment </div><div class="ttdef"><b>Definition:</b> <a href="board_8controller_8php_source.html#l00366">board.controller.php:366</a></div></div>
+<div class="ttc" id="classboardController_html_a8ff91d133ca5ca109b91f218ff306738"><div class="ttname"><a href="classboardController.html#a8ff91d133ca5ca109b91f218ff306738">boardController\procBoardVoteDocument</a></div><div class="ttdeci">procBoardVoteDocument()</div><div class="ttdoc">vote </div><div class="ttdef"><b>Definition:</b> <a href="board_8controller_8php_source.html#l00190">board.controller.php:190</a></div></div>
 <div class="ttc" id="classContext_html_a9ddbc79a7ba5892d1ea2d793f6ad52c2"><div class="ttname"><a href="classContext.html#a9ddbc79a7ba5892d1ea2d793f6ad52c2">Context\getRequestVars</a></div><div class="ttdeci">getRequestVars()</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l01802">Context.class.php:1802</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 16 2014 18:34:25 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 4 2014 20:59:05 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

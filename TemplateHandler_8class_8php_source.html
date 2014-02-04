@@ -23,6 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
+   &#160;<span id="projectnumber">1.7.4</span>
    </div>
   </td>
  </tr>
@@ -79,7 +80,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_35e92cb344fe16f6da0bce789f085c85.html">classes</a></li><li class="navelem"><a class="el" href="dir_0bd81d64791c72e5017a994c23ea4ba8.html">template</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_514a13f88875d2ff7ad77bc475fd83f9.html">classes</a></li><li class="navelem"><a class="el" href="dir_3248636314e3ad3f784ef828381dc58e.html">template</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -175,7 +176,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
 <div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="classTemplateHandler.html#ae2e69591d815bb49316bb85adbaff581">  117</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="classTemplateHandler.html#ae2e69591d815bb49316bb85adbaff581">compile</a>($tpl_path, $tpl_filename, $tpl_file = <span class="stringliteral">&#39;&#39;</span>)</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    {</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        $buff = <span class="stringliteral">&#39;&#39;</span>;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        $buff = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="comment">// store the starting time for debug information</span></div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keywordflow">if</span>(__DEBUG__ == 3)</div>
@@ -218,7 +219,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            }</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        }</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <span class="keywordflow">if</span>(!$buff)</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <span class="keywordflow">if</span>($buff === FALSE)</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        {</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            $buff = $this-&gt;parse();</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;            <span class="keywordflow">if</span>($oCacheHandler-&gt;isSupport())</div>
@@ -832,7 +833,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 16 2014 18:34:24 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 4 2014 20:59:03 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

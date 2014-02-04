@@ -23,6 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
+   &#160;<span id="projectnumber">1.7.4</span>
    </div>
   </td>
  </tr>
@@ -79,7 +80,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_35e92cb344fe16f6da0bce789f085c85.html">classes</a></li><li class="navelem"><a class="el" href="dir_4df45a6a99f869868e7b6b2c5f77d158.html">security</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_514a13f88875d2ff7ad77bc475fd83f9.html">classes</a></li><li class="navelem"><a class="el" href="dir_1aa2d0763fd5718c330a6284e1cf0e17.html">security</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -339,7 +340,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;</div>
 <div class="line"><a name="l00263"></a><span class="lineno"><a class="line" href="classEmbedFilter.html#a62571fb9caf83a1ce168e20887709309">  263</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classEmbedFilter.html#a62571fb9caf83a1ce168e20887709309">EmbedFilter</a>()</div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    {</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        $this-&gt;<a class="code" href="classEmbedFilter.html#ac16e5c98f180cc3d1cbec5da3f0064b7">_makeWhiteDomainList</a>();</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        $this-&gt;<a class="code" href="classEmbedFilter.html#a9957ded7133614407948d1b2bc43a771">_makeWhiteDomainList</a>();</div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;</div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        include <a class="code" href="classFileHandler.html#a6370b3eeddb705be04d9f60902a746e0">FileHandler::getRealPath</a>($this-&gt;whiteUrlCacheFile);</div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        $this-&gt;whiteUrlList = <a class="code" href="classEmbedFilter.html#a3c991ef8c125e62213cc5c686712be8f">$whiteUrlList</a>;</div>
@@ -628,90 +629,125 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;        <span class="keywordflow">return</span> $m[0];</div>
 <div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;    }</div>
 <div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;</div>
-<div class="line"><a name="l00595"></a><span class="lineno"><a class="line" href="classEmbedFilter.html#ac16e5c98f180cc3d1cbec5da3f0064b7">  595</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classEmbedFilter.html#ac16e5c98f180cc3d1cbec5da3f0064b7">_makeWhiteDomainList</a>()</div>
-<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;    {</div>
-<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;        <a class="code" href="classEmbedFilter.html#aad143e16d225c65d096f44b325744c89">$whiteUrlXmlFile</a> = <a class="code" href="classFileHandler.html#a6370b3eeddb705be04d9f60902a746e0">FileHandler::getRealPath</a>($this-&gt;whiteUrlXmlFile);</div>
-<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;        <a class="code" href="classEmbedFilter.html#a2c04bd8059ab27b14923923317ad0756">$whiteUrlCacheFile</a> = <a class="code" href="classFileHandler.html#a6370b3eeddb705be04d9f60902a746e0">FileHandler::getRealPath</a>($this-&gt;whiteUrlCacheFile);</div>
-<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;</div>
-<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;        $isMake = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;        <span class="keywordflow">if</span>(!file_exists(<a class="code" href="classEmbedFilter.html#a2c04bd8059ab27b14923923317ad0756">$whiteUrlCacheFile</a>))</div>
-<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;        {</div>
-<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;            $isMake = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;        }</div>
-<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;        <span class="keywordflow">if</span>(file_exists(<a class="code" href="classEmbedFilter.html#a2c04bd8059ab27b14923923317ad0756">$whiteUrlCacheFile</a>) &amp;&amp; filemtime(<a class="code" href="classEmbedFilter.html#a2c04bd8059ab27b14923923317ad0756">$whiteUrlCacheFile</a>) &lt; filemtime(<a class="code" href="classEmbedFilter.html#aad143e16d225c65d096f44b325744c89">$whiteUrlXmlFile</a>))</div>
-<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;        {</div>
-<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;            $isMake = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;        }</div>
-<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;</div>
-<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;        <span class="keywordflow">if</span>($isMake)</div>
-<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;        {</div>
-<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;            $xmlBuff = <a class="code" href="classFileHandler.html#ac0bd2431461ad2bc04c093bfbb826bea">FileHandler::readFile</a>($this-&gt;whiteUrlXmlFile);</div>
-<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;</div>
-<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;            $xmlParser = <span class="keyword">new</span> <a class="code" href="classXmlParser.html">XmlParser</a>();</div>
-<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;            $domainListObj = $xmlParser-&gt;parse($xmlBuff);</div>
-<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;            $embedDomainList = $domainListObj-&gt;whiteurl-&gt;embed-&gt;domain;</div>
-<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;            $iframeDomainList = $domainListObj-&gt;whiteurl-&gt;iframe-&gt;domain;</div>
-<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;</div>
-<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;            $buff = <span class="stringliteral">&#39;&lt;?php if(!defined(&quot;__XE__&quot;)) exit();&#39;</span>;</div>
-<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;            $buff .= <span class="stringliteral">&#39;$whiteUrlList = array();&#39;</span>;</div>
-<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;            $buff .= <span class="stringliteral">&#39;$whiteIframeUrlList = array();&#39;</span>;</div>
-<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;            <span class="keywordflow">if</span>(is_array($embedDomainList))</div>
-<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;            {</div>
-<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;                <span class="keywordflow">foreach</span>($embedDomainList AS $key =&gt; $value)</div>
-<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;                {</div>
-<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;                    $patternList = $value-&gt;pattern;</div>
-<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;                    <span class="keywordflow">if</span>(is_array($patternList))</div>
-<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;                    {</div>
-<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;                        <span class="keywordflow">foreach</span>($patternList AS $key =&gt; $value)</div>
-<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;                        {</div>
-<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;                            $buff .= sprintf(<span class="stringliteral">&#39;$whiteUrlList[] = \&#39;%s\&#39;;&#39;</span>, $value-&gt;body);</div>
-<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;                        }</div>
-<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;                    }</div>
-<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;                    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;                        $buff .= sprintf(<span class="stringliteral">&#39;$whiteUrlList[] = \&#39;%s\&#39;;&#39;</span>, $patternList-&gt;body);</div>
-<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;                }</div>
-<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;            }</div>
-<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;</div>
-<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;            <span class="keywordflow">if</span>(is_array($iframeDomainList))</div>
-<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;            {</div>
-<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;                <span class="keywordflow">foreach</span>($iframeDomainList AS $key =&gt; $value)</div>
-<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;                {</div>
-<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;                    $patternList = $value-&gt;pattern;</div>
-<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;                    <span class="keywordflow">if</span>(is_array($patternList))</div>
-<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;                    {</div>
-<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;                        <span class="keywordflow">foreach</span>($patternList AS $key =&gt; $value)</div>
-<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;                        {</div>
-<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;                            $buff .= sprintf(<span class="stringliteral">&#39;$whiteIframeUrlList[] = \&#39;%s\&#39;;&#39;</span>, $value-&gt;body);</div>
-<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;                        }</div>
-<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;                    }</div>
-<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;                    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;                        $buff .= sprintf(<span class="stringliteral">&#39;$whiteIframeUrlList[] = \&#39;%s\&#39;;&#39;</span>, $patternList-&gt;body);</div>
-<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;                }</div>
-<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;            }</div>
-<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;</div>
-<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="classContext.html#abf99203a93b0b0de0da3fbeced6ce333">Context::getDefaultUrl</a>())</div>
-<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;            {</div>
-<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;                $buff .= sprintf(<span class="stringliteral">&#39;$whiteIframeUrlList[] = \&#39;%s\&#39;;&#39;</span>, <a class="code" href="classContext.html#abf99203a93b0b0de0da3fbeced6ce333">Context::getDefaultUrl</a>());</div>
-<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;            }</div>
-<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;            $buff .= <span class="stringliteral">&#39;?&gt;&#39;</span>;</div>
-<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;            <a class="code" href="classFileHandler.html#ad90c10a81460f437bc68952427606155">FileHandler::writeFile</a>($this-&gt;whiteUrlCacheFile, $buff);</div>
-<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;        }</div>
-<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;    }</div>
-<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;</div>
-<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;}</div>
-<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;<span class="comment">/* End of file : EmbedFilter.class.php */</span></div>
-<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;<span class="comment">/* Location: ./classes/security/EmbedFilter.class.php */</span></div>
+<div class="line"><a name="l00596"></a><span class="lineno"><a class="line" href="classEmbedFilter.html#a9957ded7133614407948d1b2bc43a771">  596</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classEmbedFilter.html#a9957ded7133614407948d1b2bc43a771">_makeWhiteDomainList</a>($whitelist = NULL)</div>
+<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;    {</div>
+<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;        <a class="code" href="classEmbedFilter.html#aad143e16d225c65d096f44b325744c89">$whiteUrlXmlFile</a> = <a class="code" href="classFileHandler.html#a6370b3eeddb705be04d9f60902a746e0">FileHandler::getRealPath</a>($this-&gt;whiteUrlXmlFile);</div>
+<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;        <a class="code" href="classEmbedFilter.html#a2c04bd8059ab27b14923923317ad0756">$whiteUrlCacheFile</a> = <a class="code" href="classFileHandler.html#a6370b3eeddb705be04d9f60902a746e0">FileHandler::getRealPath</a>($this-&gt;whiteUrlCacheFile);</div>
+<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;</div>
+<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;        $isMake = FALSE;</div>
+<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;        <span class="keywordflow">if</span>(!file_exists(<a class="code" href="classEmbedFilter.html#a2c04bd8059ab27b14923923317ad0756">$whiteUrlCacheFile</a>))</div>
+<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;        {</div>
+<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;            $isMake = TRUE;</div>
+<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;        }</div>
+<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;        <span class="keywordflow">if</span>(file_exists(<a class="code" href="classEmbedFilter.html#a2c04bd8059ab27b14923923317ad0756">$whiteUrlCacheFile</a>) &amp;&amp; filemtime(<a class="code" href="classEmbedFilter.html#a2c04bd8059ab27b14923923317ad0756">$whiteUrlCacheFile</a>) &lt; filemtime(<a class="code" href="classEmbedFilter.html#aad143e16d225c65d096f44b325744c89">$whiteUrlXmlFile</a>))</div>
+<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;        {</div>
+<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;            $isMake = TRUE;</div>
+<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;        }</div>
+<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;</div>
+<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;        <span class="keywordflow">if</span>(gettype($whitelist) == <span class="stringliteral">&#39;array&#39;</span> &amp;&amp; gettype($whitelist[<span class="stringliteral">&#39;object&#39;</span>]) == <span class="stringliteral">&#39;array&#39;</span> &amp;&amp; gettype($whitelist[<span class="stringliteral">&#39;iframe&#39;</span>]) == <span class="stringliteral">&#39;array&#39;</span>)</div>
+<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;        {</div>
+<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;            $isMake = FALSE;</div>
+<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;        }</div>
+<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;</div>
+<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;        <span class="keywordflow">if</span>(isset($whitelist) &amp;&amp; gettype($whitelist) == <span class="stringliteral">&#39;object&#39;</span>)</div>
+<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;        {</div>
+<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;            $isMake = TRUE;</div>
+<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;        }</div>
+<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;</div>
+<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;        <span class="keywordflow">if</span>($isMake)</div>
+<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;        {</div>
+<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;            <a class="code" href="classEmbedFilter.html#a3c991ef8c125e62213cc5c686712be8f">$whiteUrlList</a> = array();</div>
+<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;            <a class="code" href="classEmbedFilter.html#ad1a091dd6db8753f50b269bac16e2868">$whiteIframeUrlList</a> = array();</div>
+<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;</div>
+<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;            <span class="keywordflow">if</span>(gettype($whitelist-&gt;object) == <span class="stringliteral">&#39;array&#39;</span> &amp;&amp; gettype($whitelist-&gt;iframe) == <span class="stringliteral">&#39;array&#39;</span>)</div>
+<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;            {</div>
+<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;                <a class="code" href="classEmbedFilter.html#a3c991ef8c125e62213cc5c686712be8f">$whiteUrlList</a> = $whitelist-&gt;object;</div>
+<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;                <a class="code" href="classEmbedFilter.html#ad1a091dd6db8753f50b269bac16e2868">$whiteIframeUrlList</a> = $whitelist-&gt;iframe;</div>
+<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;            }</div>
+<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;            {</div>
+<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;                $xmlBuff = <a class="code" href="classFileHandler.html#ac0bd2431461ad2bc04c093bfbb826bea">FileHandler::readFile</a>($this-&gt;whiteUrlXmlFile);</div>
+<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;</div>
+<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;                $xmlParser = <span class="keyword">new</span> <a class="code" href="classXmlParser.html">XmlParser</a>();</div>
+<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;                $domainListObj = $xmlParser-&gt;parse($xmlBuff);</div>
+<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;                $embedDomainList = $domainListObj-&gt;whiteurl-&gt;embed-&gt;domain;</div>
+<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;                $iframeDomainList = $domainListObj-&gt;whiteurl-&gt;iframe-&gt;domain;</div>
+<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;                <span class="keywordflow">if</span>(!is_array($embedDomainList)) $embedDomainList = array();</div>
+<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;                <span class="keywordflow">if</span>(!is_array($iframeDomainList)) $iframeDomainList = array();</div>
+<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;</div>
+<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;                <span class="keywordflow">foreach</span>($embedDomainList AS $key =&gt; $value)</div>
+<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;                {</div>
+<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;                    $patternList = $value-&gt;pattern;</div>
+<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;                    <span class="keywordflow">if</span>(is_array($patternList))</div>
+<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;                    {</div>
+<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;                        <span class="keywordflow">foreach</span>($patternList AS $key =&gt; $value)</div>
+<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;                        {</div>
+<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;                            <a class="code" href="classEmbedFilter.html#a3c991ef8c125e62213cc5c686712be8f">$whiteUrlList</a>[] = $value-&gt;body;</div>
+<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;                        }</div>
+<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;                    }</div>
+<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;                    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;                    {</div>
+<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;                        <a class="code" href="classEmbedFilter.html#a3c991ef8c125e62213cc5c686712be8f">$whiteUrlList</a>[] = $patternList-&gt;body;</div>
+<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;                    }</div>
+<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;                }</div>
+<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;</div>
+<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;                <span class="keywordflow">foreach</span>($iframeDomainList AS $key =&gt; $value)</div>
+<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;                {</div>
+<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;                    $patternList = $value-&gt;pattern;</div>
+<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;                    <span class="keywordflow">if</span>(is_array($patternList))</div>
+<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;                    {</div>
+<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;                        <span class="keywordflow">foreach</span>($patternList AS $key =&gt; $value)</div>
+<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;                        {</div>
+<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;                            <a class="code" href="classEmbedFilter.html#ad1a091dd6db8753f50b269bac16e2868">$whiteIframeUrlList</a>[] = $value-&gt;body;</div>
+<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;                        }</div>
+<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;                    }</div>
+<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;                    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;                    {</div>
+<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;                        <a class="code" href="classEmbedFilter.html#ad1a091dd6db8753f50b269bac16e2868">$whiteIframeUrlList</a>[] = $patternList-&gt;body;</div>
+<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;                    }</div>
+<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;                }</div>
+<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;            }</div>
+<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;</div>
+<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;            $db_info = <a class="code" href="classContext.html#a54dd61c7b035a12697db8ca3f1c6849c">Context::getDBInfo</a>();</div>
+<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;</div>
+<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;            <span class="keywordflow">if</span>($db_info-&gt;embed_white_object)</div>
+<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;            {</div>
+<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;                <a class="code" href="classEmbedFilter.html#a3c991ef8c125e62213cc5c686712be8f">$whiteUrlList</a> = array_merge(<a class="code" href="classEmbedFilter.html#a3c991ef8c125e62213cc5c686712be8f">$whiteUrlList</a>, $db_info-&gt;embed_white_object);</div>
+<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;            }</div>
+<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;</div>
+<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;            <span class="keywordflow">if</span>($db_info-&gt;embed_white_iframe)</div>
+<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;            {</div>
+<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;                <a class="code" href="classEmbedFilter.html#ad1a091dd6db8753f50b269bac16e2868">$whiteIframeUrlList</a> = array_merge(<a class="code" href="classEmbedFilter.html#ad1a091dd6db8753f50b269bac16e2868">$whiteIframeUrlList</a>, $db_info-&gt;embed_white_iframe);</div>
+<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;            }</div>
+<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;</div>
+<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;            <a class="code" href="classEmbedFilter.html#a3c991ef8c125e62213cc5c686712be8f">$whiteUrlList</a> = array_unique(<a class="code" href="classEmbedFilter.html#a3c991ef8c125e62213cc5c686712be8f">$whiteUrlList</a>);</div>
+<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;            <a class="code" href="classEmbedFilter.html#ad1a091dd6db8753f50b269bac16e2868">$whiteIframeUrlList</a> = array_unique(<a class="code" href="classEmbedFilter.html#ad1a091dd6db8753f50b269bac16e2868">$whiteIframeUrlList</a>);</div>
+<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;            asort(<a class="code" href="classEmbedFilter.html#a3c991ef8c125e62213cc5c686712be8f">$whiteUrlList</a>);</div>
+<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;            asort(<a class="code" href="classEmbedFilter.html#ad1a091dd6db8753f50b269bac16e2868">$whiteIframeUrlList</a>);</div>
+<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;</div>
+<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;            $buff = array();</div>
+<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;            $buff[] = <span class="stringliteral">&#39;&lt;?php if(!defined(&quot;__XE__&quot;)) exit();&#39;</span>;</div>
+<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;            $buff[] = <span class="stringliteral">&#39;$whiteUrlList = &#39;</span> . var_export(<a class="code" href="classEmbedFilter.html#a3c991ef8c125e62213cc5c686712be8f">$whiteUrlList</a>, TRUE) . <span class="charliteral">&#39;;&#39;</span>;</div>
+<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;            $buff[] = <span class="stringliteral">&#39;$whiteIframeUrlList = &#39;</span> . var_export(<a class="code" href="classEmbedFilter.html#ad1a091dd6db8753f50b269bac16e2868">$whiteIframeUrlList</a>, TRUE) . <span class="charliteral">&#39;;&#39;</span>;</div>
+<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;</div>
+<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;            <a class="code" href="classFileHandler.html#ad90c10a81460f437bc68952427606155">FileHandler::writeFile</a>($this-&gt;whiteUrlCacheFile, implode(PHP_EOL, $buff));</div>
+<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;        }</div>
+<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;    }</div>
+<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;</div>
+<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;}</div>
+<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;<span class="comment">/* End of file : EmbedFilter.class.php */</span></div>
+<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;<span class="comment">/* Location: ./classes/security/EmbedFilter.class.php */</span></div>
 <div class="ttc" id="classEmbedFilter_html_aae7e65cd7dd322d86081df16add1a5ed"><div class="ttname"><a href="classEmbedFilter.html#aae7e65cd7dd322d86081df16add1a5ed">EmbedFilter\$parser</a></div><div class="ttdeci">$parser</div><div class="ttdef"><b>Definition:</b> <a href="EmbedFilter_8class_8php_source.html#l00024">EmbedFilter.class.php:24</a></div></div>
 <div class="ttc" id="classEmbedFilter_html_a75054db2fbd30ab9392bbccf8dec3885"><div class="ttname"><a href="classEmbedFilter.html#a75054db2fbd30ab9392bbccf8dec3885">EmbedFilter\_checkAllowScriptAccess</a></div><div class="ttdeci">_checkAllowScriptAccess($m)</div><div class="ttdef"><b>Definition:</b> <a href="EmbedFilter_8class_8php_source.html#l00548">EmbedFilter.class.php:548</a></div></div>
 <div class="ttc" id="classEmbedFilter_html_aad143e16d225c65d096f44b325744c89"><div class="ttname"><a href="classEmbedFilter.html#aad143e16d225c65d096f44b325744c89">EmbedFilter\$whiteUrlXmlFile</a></div><div class="ttdeci">$whiteUrlXmlFile</div><div class="ttdef"><b>Definition:</b> <a href="EmbedFilter_8class_8php_source.html#l00020">EmbedFilter.class.php:20</a></div></div>
 <div class="ttc" id="classEmbedFilter_html_ada5403255f1d3612afefdc6d35e03d7f"><div class="ttname"><a href="classEmbedFilter.html#ada5403255f1d3612afefdc6d35e03d7f">EmbedFilter\isWhiteIframeDomain</a></div><div class="ttdeci">isWhiteIframeDomain($urlAttribute)</div><div class="ttdef"><b>Definition:</b> <a href="EmbedFilter_8class_8php_source.html#l00511">EmbedFilter.class.php:511</a></div></div>
 <div class="ttc" id="classFileHandler_html_ad90c10a81460f437bc68952427606155"><div class="ttname"><a href="classFileHandler.html#ad90c10a81460f437bc68952427606155">FileHandler\writeFile</a></div><div class="ttdeci">writeFile($filename, $buff, $mode=&quot;w&quot;)</div><div class="ttdef"><b>Definition:</b> <a href="FileHandler_8class_8php_source.html#l00145">FileHandler.class.php:145</a></div></div>
-<div class="ttc" id="classEmbedFilter_html_ac16e5c98f180cc3d1cbec5da3f0064b7"><div class="ttname"><a href="classEmbedFilter.html#ac16e5c98f180cc3d1cbec5da3f0064b7">EmbedFilter\_makeWhiteDomainList</a></div><div class="ttdeci">_makeWhiteDomainList()</div><div class="ttdef"><b>Definition:</b> <a href="EmbedFilter_8class_8php_source.html#l00595">EmbedFilter.class.php:595</a></div></div>
 <div class="ttc" id="classEmbedFilter_html_a3c703c014813fb916c72d95e964a3e0d"><div class="ttname"><a href="classEmbedFilter.html#a3c703c014813fb916c72d95e964a3e0d">EmbedFilter\checkObjectTag</a></div><div class="ttdeci">checkObjectTag(&amp;$content)</div><div class="ttdef"><b>Definition:</b> <a href="EmbedFilter_8class_8php_source.html#l00315">EmbedFilter.class.php:315</a></div></div>
 <div class="ttc" id="classEmbedFilter_html_a6b0bba8c1ef91ae9afe7f26675216cb3"><div class="ttname"><a href="classEmbedFilter.html#a6b0bba8c1ef91ae9afe7f26675216cb3">EmbedFilter\checkEmbedTag</a></div><div class="ttdeci">checkEmbedTag(&amp;$content)</div><div class="ttdef"><b>Definition:</b> <a href="EmbedFilter_8class_8php_source.html#l00363">EmbedFilter.class.php:363</a></div></div>
 <div class="ttc" id="classEmbedFilter_html_ad1a091dd6db8753f50b269bac16e2868"><div class="ttname"><a href="classEmbedFilter.html#ad1a091dd6db8753f50b269bac16e2868">EmbedFilter\$whiteIframeUrlList</a></div><div class="ttdeci">$whiteIframeUrlList</div><div class="ttdef"><b>Definition:</b> <a href="EmbedFilter_8class_8php_source.html#l00023">EmbedFilter.class.php:23</a></div></div>
 <div class="ttc" id="classEmbedFilter_html_ae4ef00ed26254ca247a83d91b021a928"><div class="ttname"><a href="classEmbedFilter.html#ae4ef00ed26254ca247a83d91b021a928">EmbedFilter\$extList</a></div><div class="ttdeci">$extList</div><div class="ttdef"><b>Definition:</b> <a href="EmbedFilter_8class_8php_source.html#l00203">EmbedFilter.class.php:203</a></div></div>
 <div class="ttc" id="classEmbedFilter_html_a62571fb9caf83a1ce168e20887709309"><div class="ttname"><a href="classEmbedFilter.html#a62571fb9caf83a1ce168e20887709309">EmbedFilter\EmbedFilter</a></div><div class="ttdeci">EmbedFilter()</div><div class="ttdef"><b>Definition:</b> <a href="EmbedFilter_8class_8php_source.html#l00263">EmbedFilter.class.php:263</a></div></div>
+<div class="ttc" id="classContext_html_a54dd61c7b035a12697db8ca3f1c6849c"><div class="ttname"><a href="classContext.html#a54dd61c7b035a12697db8ca3f1c6849c">Context\getDBInfo</a></div><div class="ttdeci">getDBInfo()</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l00519">Context.class.php:519</a></div></div>
 <div class="ttc" id="classEmbedFilter_html_ab67db1799d818d46e47006592b4e7695"><div class="ttname"><a href="classEmbedFilter.html#ab67db1799d818d46e47006592b4e7695">EmbedFilter\getWhiteIframeUrlList</a></div><div class="ttdeci">getWhiteIframeUrlList()</div><div class="ttdef"><b>Definition:</b> <a href="EmbedFilter_8class_8php_source.html#l00291">EmbedFilter.class.php:291</a></div></div>
 <div class="ttc" id="classEmbedFilter_html_a2c04bd8059ab27b14923923317ad0756"><div class="ttname"><a href="classEmbedFilter.html#a2c04bd8059ab27b14923923317ad0756">EmbedFilter\$whiteUrlCacheFile</a></div><div class="ttdeci">$whiteUrlCacheFile</div><div class="ttdef"><b>Definition:</b> <a href="EmbedFilter_8class_8php_source.html#l00021">EmbedFilter.class.php:21</a></div></div>
 <div class="ttc" id="classEmbedFilter_html_af8a43e4bc0161225381536c133792463"><div class="ttname"><a href="classEmbedFilter.html#af8a43e4bc0161225381536c133792463">EmbedFilter\getInstance</a></div><div class="ttdeci">getInstance()</div><div class="ttdef"><b>Definition:</b> <a href="EmbedFilter_8class_8php_source.html#l00277">EmbedFilter.class.php:277</a></div></div>
@@ -729,16 +765,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classHtmlParser_html"><div class="ttname"><a href="classHtmlParser.html">HtmlParser</a></div><div class="ttdef"><b>Definition:</b> <a href="htmlparser_8inc_source.html#l00031">htmlparser.inc:31</a></div></div>
 <div class="ttc" id="classEmbedFilter_html_a6bbd35ce27aaa1eda9600f8ee78b9b34"><div class="ttname"><a href="classEmbedFilter.html#a6bbd35ce27aaa1eda9600f8ee78b9b34">EmbedFilter\$mimeTypeList</a></div><div class="ttdeci">$mimeTypeList</div><div class="ttdef"><b>Definition:</b> <a href="EmbedFilter_8class_8php_source.html#l00025">EmbedFilter.class.php:25</a></div></div>
 <div class="ttc" id="classEmbedFilter_html_ae3cc90883fe1fd15c692ab8268ae15b3"><div class="ttname"><a href="classEmbedFilter.html#ae3cc90883fe1fd15c692ab8268ae15b3">EmbedFilter\isWhiteExt</a></div><div class="ttdeci">isWhiteExt($ext)</div><div class="ttdef"><b>Definition:</b> <a href="EmbedFilter_8class_8php_source.html#l00539">EmbedFilter.class.php:539</a></div></div>
-<div class="ttc" id="classContext_html_abf99203a93b0b0de0da3fbeced6ce333"><div class="ttname"><a href="classContext.html#abf99203a93b0b0de0da3fbeced6ce333">Context\getDefaultUrl</a></div><div class="ttdeci">getDefaultUrl()</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l00541">Context.class.php:541</a></div></div>
 <div class="ttc" id="classEmbedFilter_html_a1026957e48eed307ee66c506f54a1847"><div class="ttname"><a href="classEmbedFilter.html#a1026957e48eed307ee66c506f54a1847">EmbedFilter\checkIframeTag</a></div><div class="ttdeci">checkIframeTag(&amp;$content)</div><div class="ttdef"><b>Definition:</b> <a href="EmbedFilter_8class_8php_source.html#l00411">EmbedFilter.class.php:411</a></div></div>
 <div class="ttc" id="classEmbedFilter_html_a12fcd3bdd961d247598d003b537b5e7f"><div class="ttname"><a href="classEmbedFilter.html#a12fcd3bdd961d247598d003b537b5e7f">EmbedFilter\isWhiteDomain</a></div><div class="ttdeci">isWhiteDomain($urlAttribute)</div><div class="ttdef"><b>Definition:</b> <a href="EmbedFilter_8class_8php_source.html#l00492">EmbedFilter.class.php:492</a></div></div>
 <div class="ttc" id="classXmlParser_html"><div class="ttname"><a href="classXmlParser.html">XmlParser</a></div><div class="ttdef"><b>Definition:</b> <a href="XmlParser_8class_8php_source.html#l00038">XmlParser.class.php:38</a></div></div>
+<div class="ttc" id="classEmbedFilter_html_a9957ded7133614407948d1b2bc43a771"><div class="ttname"><a href="classEmbedFilter.html#a9957ded7133614407948d1b2bc43a771">EmbedFilter\_makeWhiteDomainList</a></div><div class="ttdeci">_makeWhiteDomainList($whitelist=NULL)</div><div class="ttdef"><b>Definition:</b> <a href="EmbedFilter_8class_8php_source.html#l00596">EmbedFilter.class.php:596</a></div></div>
 <div class="ttc" id="classEmbedFilter_html_a3c991ef8c125e62213cc5c686712be8f"><div class="ttname"><a href="classEmbedFilter.html#a3c991ef8c125e62213cc5c686712be8f">EmbedFilter\$whiteUrlList</a></div><div class="ttdeci">$whiteUrlList</div><div class="ttdef"><b>Definition:</b> <a href="EmbedFilter_8class_8php_source.html#l00022">EmbedFilter.class.php:22</a></div></div>
 <div class="ttc" id="classEmbedFilter_html"><div class="ttname"><a href="classEmbedFilter.html">EmbedFilter</a></div><div class="ttdef"><b>Definition:</b> <a href="EmbedFilter_8class_8php_source.html#l00006">EmbedFilter.class.php:6</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 16 2014 18:34:23 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 4 2014 20:59:00 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

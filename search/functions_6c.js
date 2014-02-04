@@ -4,6 +4,7 @@ var searchData=
   ['libxmldisplayerror',['libXmlDisplayError',['../validate_8php.html#a314f82b963781ec88823449af5e5134e',1,'validate.php']]],
   ['limit',['limit',['../classQuery.html#af2e290d02d3e8c157f9b85b9da1ac08c',1,'Query\limit()'],['../classLimit.html#a45e8c675dc77b863b87590c76b4113ad',1,'Limit\Limit()']]],
   ['limittag',['LimitTag',['../classLimitTag.html#a9b5dbee572b93d0ae32089e8deed7462',1,'LimitTag']]],
+  ['linkallmoduleinstancestositemap',['linkAllModuleInstancesToSitemap',['../classmenuAdminController.html#a49adc0f822800b87a3419fc4d0d48005',1,'menuAdminController']]],
   ['listify',['listify',['../classHTMLPurifier__Language.html#aa4fbc716f45b1c395cb440d32d3e13cd',1,'HTMLPurifier_Language\listify()'],['../classHTMLPurifier__Printer.html#aa2c153067b8607e0124ffc7384427ead',1,'HTMLPurifier_Printer\listify()']]],
   ['listifyattr',['listifyAttr',['../classHTMLPurifier__Printer__HTMLDefinition.html#a647d3a070a1ae44d1284301af2be4f66',1,'HTMLPurifier_Printer_HTMLDefinition']]],
   ['listifyobjectlist',['listifyObjectList',['../classHTMLPurifier__Printer__HTMLDefinition.html#a6341eb4dcfa1a0539b1fdc50e52ae772',1,'HTMLPurifier_Printer_HTMLDefinition']]],
