@@ -1,7 +1,7 @@
 var searchData=
 [
   ['tools',['Tools',['../md_tools_README.html',1,'']]],
-  ['table',['Table',['../classTable.html',1,'Table'],['../classFB.html#a4ef31cc9b8737898e334e2c77ddad8f4',1,'FB\table()'],['../classFirePHP.html#a715fbc74968e48e204cf0786343b0585',1,'FirePHP\table($Label, $Table)'],['../classFirePHP.html#a9762ff0d9cc7a3c516ed97108f9a5349',1,'FirePHP\TABLE()'],['../classTable.html#ab93dfd4a90901959b57787798162b318',1,'Table\Table()']]],
+  ['table',['Table',['../classTable.html',1,'Table'],['../classTable.html#ab93dfd4a90901959b57787798162b318',1,'Table\Table()'],['../classFirePHP.html#a9762ff0d9cc7a3c516ed97108f9a5349',1,'FirePHP\TABLE()'],['../classFB.html#a4ef31cc9b8737898e334e2c77ddad8f4',1,'FB\table()'],['../classFirePHP.html#a715fbc74968e48e204cf0786343b0585',1,'FirePHP\table()']]],
   ['table_2eclass_2ephp',['Table.class.php',['../Table_8class_8php.html',1,'']]],
   ['table_2ephp',['Table.php',['../Table_8php.html',1,'']]],
   ['tables_2ephp',['Tables.php',['../Tables_8php.html',1,'']]],
@@ -69,7 +69,7 @@ var searchData=
   ['totar',['toTar',['../classtar.html#acfe90e92d12e463da735e3c42e5a74f1',1,'tar']]],
   ['totarstream',['toTarStream',['../classtar.html#a347041e79cbe8f150933afe77f35826f',1,'tar']]],
   ['totext',['toText',['../classPEAR__Exception.html#ad3b5a0285226613b02b1730b2d632bd1',1,'PEAR_Exception']]],
-  ['trace',['TRACE',['../classFirePHP.html#a841a356d45bc848720f6114734e7a5b5',1,'FirePHP\TRACE()'],['../classFB.html#adf98eb31dd993570dff21e8a8b99bf05',1,'FB\trace()'],['../classFirePHP.html#ae8d43717e69baee71971fa037700adfc',1,'FirePHP\trace()']]],
+  ['trace',['trace',['../classFB.html#adf98eb31dd993570dff21e8a8b99bf05',1,'FB\trace()'],['../classFirePHP.html#ae8d43717e69baee71971fa037700adfc',1,'FirePHP\trace($Label)'],['../classFirePHP.html#a841a356d45bc848720f6114734e7a5b5',1,'FirePHP\TRACE()']]],
   ['transcomponent',['transComponent',['../classeditorController.html#a9ef6499da56cf876c70813624ae4a2c0',1,'editorController']]],
   ['transcontent',['transContent',['../classContext.html#a4767b003bd726a994b1bf6bf68a3bb7e',1,'Context']]],
   ['transeditorcomponent',['transEditorComponent',['../classeditorController.html#a278ef1204d8129636bb8d30a0c91c5bb',1,'editorController']]],

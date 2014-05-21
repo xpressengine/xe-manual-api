@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.7.4</span>
+   &#160;<span id="projectnumber">1.7.5</span>
    </div>
   </td>
  </tr>
@@ -731,140 +731,211 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;        <span class="keywordflow">return</span> $this-&gt;setRedirectUrl($returnUrl, <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>);</div>
 <div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;    }</div>
 <div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;</div>
-<div class="line"><a name="l00719"></a><span class="lineno"><a class="line" href="classdocumentAdminController.html#ac0467d27983d60c51c1128765244a36b">  719</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classdocumentAdminController.html#ac0467d27983d60c51c1128765244a36b">procDocumentAdminRestoreTrash</a>()</div>
-<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;    {</div>
-<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;        $trash_srl = <a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;trash_srl&#39;</span>);</div>
-<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;        $this-&gt;restoreTrash($trash_srl);</div>
-<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;    }</div>
-<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;</div>
-<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;    <span class="comment">/*function restoreTrash($trash_srl){</span></div>
-<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;<span class="comment">      $oDB = &amp;DB::getInstance();</span></div>
-<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;<span class="comment">      $oDocumentModel = getModel(&#39;document&#39;);</span></div>
-<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;<span class="comment">      $trash_args-&gt;trash_srl = $trash_srl;</span></div>
-<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;<span class="comment">      $output = executeQuery(&#39;document.getTrash&#39;, $trash_args);</span></div>
-<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;<span class="comment">      if (!$output-&gt;toBool()) {</span></div>
-<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;<span class="comment">      return $output;</span></div>
-<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;<span class="comment">      }</span></div>
-<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;<span class="comment">      $document_args-&gt;document_srl = $output-&gt;data-&gt;document_srl;</span></div>
-<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;<span class="comment">      $document_args-&gt;module_srl = $output-&gt;data-&gt;module_srl;</span></div>
-<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;<span class="comment">      $document_args-&gt;member_srl = $output-&gt;data-&gt;member_srl;</span></div>
-<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;<span class="comment">      $document_args-&gt;ipaddress = $output-&gt;data-&gt;ipaddress;</span></div>
-<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;<span class="comment">      $document_args-&gt;update_order = $output-&gt;data-&gt;update_order;</span></div>
-<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;<span class="comment">      $oDocument = $oDocumentModel-&gt;getDocument($document_args-&gt;document_srl);</span></div>
-<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;<span class="comment">    // begin transaction</span></div>
-<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;<span class="comment">    $oDB-&gt;begin();</span></div>
-<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;<span class="comment">    $output = executeQuery(&#39;document.updateDocument&#39;, $document_args);</span></div>
-<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;<span class="comment">    if (!$output-&gt;toBool()) {</span></div>
-<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;<span class="comment">    $oDB-&gt;rollback();</span></div>
-<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;<span class="comment">    return $output;</span></div>
-<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;<span class="comment">    }</span></div>
-<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;<span class="comment">    $output = executeQuery(&#39;document.deleteTrash&#39;, $trash_args);</span></div>
-<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;<span class="comment">    if (!$output-&gt;toBool()) {</span></div>
-<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;<span class="comment">    $oDB-&gt;rollback();</span></div>
-<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;<span class="comment">    return $output;</span></div>
-<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;<span class="comment">    }</span></div>
-<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;<span class="comment">    // If the post was not temorarily saved, set the attachment&#39;s status to be valid</span></div>
-<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;<span class="comment">    if($oDocument-&gt;hasUploadedFiles() &amp;&amp; $document_args-&gt;member_srl != $document_args-&gt;module_srl) {</span></div>
-<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;<span class="comment">    $args-&gt;upload_target_srl = $oDocument-&gt;document_srl;</span></div>
-<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;<span class="comment">    $args-&gt;isvalid = &#39;Y&#39;;</span></div>
-<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;<span class="comment">    executeQuery(&#39;file.updateFileValid&#39;, $args);</span></div>
-<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;<span class="comment">    }</span></div>
-<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;<span class="comment">    // call a trigger (after)</span></div>
-<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;<span class="comment">    if($output-&gt;toBool()) {</span></div>
-<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;<span class="comment">    $trigger_output = ModuleHandler::triggerCall(&#39;document.restoreTrash&#39;, &#39;after&#39;, $document_args);</span></div>
-<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;<span class="comment">    if(!$trigger_output-&gt;toBool()) {</span></div>
-<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;<span class="comment">    $oDB-&gt;rollback();</span></div>
-<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;<span class="comment">    return $trigger_output;</span></div>
-<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;<span class="comment">    }</span></div>
-<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;<span class="comment">    }</span></div>
-<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;<span class="comment">    // commit</span></div>
-<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;<span class="comment">    $oDB-&gt;commit();</span></div>
-<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;<span class="comment">    return $output;</span></div>
-<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;<span class="comment">    }*/</span></div>
-<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;</div>
-<div class="line"><a name="l00784"></a><span class="lineno"><a class="line" href="classdocumentAdminController.html#a3750ffc8b40a8bbd46f5ac455e65cb37">  784</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classdocumentAdminController.html#a3750ffc8b40a8bbd46f5ac455e65cb37">restoreTrash</a>($originObject)</div>
-<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;    {</div>
-<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;        <span class="keywordflow">if</span>(is_array($originObject)) $originObject = (object)$originObject;</div>
-<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;</div>
-<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;        <a class="code" href="ko_8install_8php.html#aac43fce682d4b7a05df6d3e44c2c54e6">$oDocumentController</a> = <a class="code" href="func_8inc_8php.html#aa08f01e3bf130d770b373ca8493e3e9b">getController</a>(<span class="stringliteral">&#39;document&#39;</span>);</div>
-<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;        <a class="code" href="ko_8install_8php.html#afb18aa87e5520385e76377e876e042af">$oDocumentModel</a> = <a class="code" href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a>(<span class="stringliteral">&#39;document&#39;</span>);</div>
-<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;</div>
-<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;        $oDB = &amp;<a class="code" href="classDB.html#a16f4a668b6429b4b9af5132cbf885213">DB::getInstance</a>();</div>
-<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;        $oDB-&gt;begin();</div>
-<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;</div>
-<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;        <span class="comment">//DB restore</span></div>
-<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;        <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = <a class="code" href="ko_8install_8php.html#aac43fce682d4b7a05df6d3e44c2c54e6">$oDocumentController</a>-&gt;insertDocument($originObject, <span class="keyword">false</span>, <span class="keyword">true</span>, <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;toBool()) <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html">Object</a>(-1, <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;getMessage());</div>
-<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;</div>
-<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;        <span class="comment">//FILE restore</span></div>
-<div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;        $oDocument = <a class="code" href="ko_8install_8php.html#afb18aa87e5520385e76377e876e042af">$oDocumentModel</a>-&gt;getDocument($originObject-&gt;document_srl);</div>
-<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;        <span class="comment">// If the post was not temorarily saved, set the attachment&#39;s status to be valid</span></div>
-<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;        <span class="keywordflow">if</span>($oDocument-&gt;hasUploadedFiles() &amp;&amp; $originObject-&gt;member_srl != $originObject-&gt;module_srl)</div>
-<div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;        {</div>
-<div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;            <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a> = <span class="keyword">new</span> stdClass();</div>
-<div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;            <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;upload_target_srl = $oDocument-&gt;document_srl;</div>
-<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;            <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;isvalid = <span class="charliteral">&#39;Y&#39;</span>;</div>
-<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;            <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = <a class="code" href="func_8inc_8php.html#a418bc23855eebc0d90190dd625ac4474">executeQuery</a>(<span class="stringliteral">&#39;file.updateFileValid&#39;</span>, <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>);</div>
-<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;        }</div>
-<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;</div>
-<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;        <span class="comment">// call a trigger (after)</span></div>
-<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;toBool())</div>
-<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;        {</div>
-<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;            $trigger_output = <a class="code" href="classModuleHandler.html#aa1b1f9eae91ccd76e6a81c9375c2e673">ModuleHandler::triggerCall</a>(<span class="stringliteral">&#39;document.restoreTrash&#39;</span>, <span class="stringliteral">&#39;after&#39;</span>, $originObject);</div>
-<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;            <span class="keywordflow">if</span>(!$trigger_output-&gt;toBool())</div>
-<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;            {</div>
-<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;                $oDB-&gt;rollback();</div>
-<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;                <span class="keywordflow">return</span> $trigger_output;</div>
-<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;            }</div>
-<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;        }</div>
-<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;</div>
-<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;        <span class="comment">// commit</span></div>
-<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;        $oDB-&gt;commit();</div>
-<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html">Object</a>(0, <span class="stringliteral">&#39;success&#39;</span>);</div>
-<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;    }</div>
-<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;</div>
-<div class="line"><a name="l00831"></a><span class="lineno"><a class="line" href="classdocumentAdminController.html#a52981a3af3d6b94661444f65568343ca">  831</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classdocumentAdminController.html#a52981a3af3d6b94661444f65568343ca">emptyTrash</a>($originObject)</div>
-<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;    {</div>
-<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;        $originObject = unserialize($originObject);</div>
-<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;        <span class="keywordflow">if</span>(is_array($originObject)) $originObject = (object) $originObject;</div>
-<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;</div>
-<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;        $oDocument = <span class="keyword">new</span> <a class="code" href="classdocumentItem.html">documentItem</a>();</div>
-<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;        $oDocument-&gt;setAttribute($originObject);</div>
-<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;</div>
-<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;        <a class="code" href="ko_8install_8php.html#aac43fce682d4b7a05df6d3e44c2c54e6">$oDocumentController</a> = <a class="code" href="func_8inc_8php.html#aa08f01e3bf130d770b373ca8493e3e9b">getController</a>(<span class="stringliteral">&#39;document&#39;</span>);</div>
-<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;        <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = <a class="code" href="ko_8install_8php.html#aac43fce682d4b7a05df6d3e44c2c54e6">$oDocumentController</a>-&gt;deleteDocument($oDocument-&gt;get(<span class="stringliteral">&#39;document_srl&#39;</span>), <span class="keyword">true</span>, <span class="keyword">true</span>, $oDocument);</div>
-<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>;</div>
-<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;    }</div>
-<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;}</div>
-<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;<span class="comment">/* End of file document.admin.controller.php */</span></div>
-<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;<span class="comment">/* Location: ./modules/document/document.admin.controller.php */</span></div>
+<div class="line"><a name="l00720"></a><span class="lineno"><a class="line" href="classdocumentAdminController.html#a8dfa5d37621daaba6c66732eb3568730">  720</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classdocumentAdminController.html#a8dfa5d37621daaba6c66732eb3568730">procDocumentAdminMoveToTrash</a>()</div>
+<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;    {</div>
+<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;        <a class="code" href="ko_8install_8php.html#a14522e7fff0604a8372c75b4a0fbc0fd">$document_srl</a> = <a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;document_srl&#39;</span>);</div>
+<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;</div>
+<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;        <a class="code" href="ko_8install_8php.html#afb18aa87e5520385e76377e876e042af">$oDocumentModel</a> = <a class="code" href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a>(<span class="stringliteral">&#39;document&#39;</span>);</div>
+<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;        <a class="code" href="ko_8install_8php.html#aac43fce682d4b7a05df6d3e44c2c54e6">$oDocumentController</a> = <a class="code" href="func_8inc_8php.html#aa08f01e3bf130d770b373ca8493e3e9b">getController</a>(<span class="stringliteral">&#39;document&#39;</span>);</div>
+<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;        $oDocument = <a class="code" href="ko_8install_8php.html#afb18aa87e5520385e76377e876e042af">$oDocumentModel</a>-&gt;getDocument(<a class="code" href="ko_8install_8php.html#a14522e7fff0604a8372c75b4a0fbc0fd">$document_srl</a>, <span class="keyword">false</span>, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;        <span class="keywordflow">if</span>(!$oDocument-&gt;isGranted()) <span class="keywordflow">return</span> $this-&gt;stop(<span class="stringliteral">&#39;msg_not_permitted&#39;</span>);</div>
+<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;    </div>
+<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;        <a class="code" href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a> = <a class="code" href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a>(<span class="stringliteral">&#39;module&#39;</span>);</div>
+<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;        <a class="code" href="ko_8install_8php.html#a5e701819149f6ea0893d4b79010417d3">$module_info</a> = <a class="code" href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a>-&gt;getModuleInfoByDocumentSrl(<a class="code" href="ko_8install_8php.html#a14522e7fff0604a8372c75b4a0fbc0fd">$document_srl</a>);</div>
+<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;</div>
+<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a> = <span class="keyword">new</span> stdClass();</div>
+<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;description = $message_content;</div>
+<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;document_srl = <a class="code" href="ko_8install_8php.html#a14522e7fff0604a8372c75b4a0fbc0fd">$document_srl</a>;</div>
+<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;</div>
+<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;        <a class="code" href="ko_8install_8php.html#aac43fce682d4b7a05df6d3e44c2c54e6">$oDocumentController</a>-&gt;moveDocumentToTrash(<a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>);</div>
+<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;</div>
+<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;        $returnUrl = <a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;success_return_url&#39;</span>);</div>
+<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;        <span class="keywordflow">if</span>(!$returnUrl) </div>
+<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;        {</div>
+<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;            $arrUrl = parse_url(<a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;cur_url&#39;</span>));</div>
+<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;            $query = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;</div>
+<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;            <span class="keywordflow">if</span>($arrUrl[<span class="stringliteral">&#39;query&#39;</span>])</div>
+<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;            {</div>
+<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;                parse_str($arrUrl[<span class="stringliteral">&#39;query&#39;</span>], $arrQuery);</div>
+<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;</div>
+<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;                <span class="comment">// set query</span></div>
+<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;                <span class="keywordflow">if</span>(isset($arrQuery[<span class="stringliteral">&#39;document_srl&#39;</span>]))</div>
+<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;                    unset($arrQuery[<span class="stringliteral">&#39;document_srl&#39;</span>]);</div>
+<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;</div>
+<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;                $searchArgs = <span class="keyword">new</span> stdClass;</div>
+<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;                <span class="keywordflow">foreach</span>($arrQuery as $key=&gt;$val)</div>
+<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;                {</div>
+<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;                    $searchArgs-&gt;{$key} = $val;</div>
+<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;                }</div>
+<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;</div>
+<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;                <span class="keywordflow">if</span>(!isset($searchArgs-&gt;sort_index))</div>
+<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;                    $searchArgs-&gt;sort_index = <a class="code" href="ko_8install_8php.html#a5e701819149f6ea0893d4b79010417d3">$module_info</a>-&gt;order_target;</div>
+<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;</div>
+<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;                <span class="keywordflow">foreach</span>(<a class="code" href="ko_8install_8php.html#a5e701819149f6ea0893d4b79010417d3">$module_info</a> as $key=&gt;$val)</div>
+<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;                {</div>
+<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;                    <span class="keywordflow">if</span>(!isset($searchArgs-&gt;{$key}))</div>
+<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;                        $searchArgs-&gt;{$key} = $val;</div>
+<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;                }</div>
+<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;</div>
+<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;                <a class="code" href="ko_8install_8php.html#afb18aa87e5520385e76377e876e042af">$oDocumentModel</a> = <a class="code" href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a>(<span class="stringliteral">&#39;document&#39;</span>);</div>
+<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;                <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = <a class="code" href="ko_8install_8php.html#afb18aa87e5520385e76377e876e042af">$oDocumentModel</a>-&gt;getDocumentList($searchArgs, <a class="code" href="ko_8install_8php.html#a5e701819149f6ea0893d4b79010417d3">$module_info</a>-&gt;except_notice, TRUE, array(<span class="stringliteral">&#39;document_srl&#39;</span>));</div>
+<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;</div>
+<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;                $cur_page = 1;</div>
+<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;                <span class="keywordflow">if</span>(isset($arrQuery[<span class="stringliteral">&#39;page&#39;</span>])) {</div>
+<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;                    $cur_page = (int)$arrQuery[<span class="stringliteral">&#39;page&#39;</span>];</div>
+<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;                }</div>
+<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;</div>
+<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;</div>
+<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;                <span class="keywordflow">if</span>($cur_page&gt;1 &amp;&amp; count(<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;data) == 0)</div>
+<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;                    $arrQuery[<span class="stringliteral">&#39;page&#39;</span>] = $cur_page - 1;</div>
+<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;</div>
+<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;                $query = <span class="stringliteral">&quot;?&quot;</span>;</div>
+<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;                <span class="keywordflow">foreach</span>($arrQuery as $key=&gt;$val)</div>
+<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;                    $query .= sprintf(<span class="stringliteral">&quot;%s=%s&amp;&quot;</span>, $key, $val);</div>
+<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;                $query = substr($query, 0, -1);</div>
+<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;            }</div>
+<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;            $returnUrl = $arrUrl[<span class="stringliteral">&#39;path&#39;</span>] . $query;</div>
+<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;        }</div>
+<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;</div>
+<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;        $this-&gt;add(<span class="stringliteral">&#39;redirect_url&#39;</span>, $returnUrl);</div>
+<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;    }</div>
+<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;</div>
+<div class="line"><a name="l00794"></a><span class="lineno"><a class="line" href="classdocumentAdminController.html#ac0467d27983d60c51c1128765244a36b">  794</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classdocumentAdminController.html#ac0467d27983d60c51c1128765244a36b">procDocumentAdminRestoreTrash</a>()</div>
+<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;    {</div>
+<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;        $trash_srl = <a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;trash_srl&#39;</span>);</div>
+<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;        $this-&gt;restoreTrash($trash_srl);</div>
+<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;    }</div>
+<div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;</div>
+<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;    <span class="comment">/*function restoreTrash($trash_srl){</span></div>
+<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;<span class="comment">      $oDB = &amp;DB::getInstance();</span></div>
+<div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;<span class="comment">      $oDocumentModel = getModel(&#39;document&#39;);</span></div>
+<div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;<span class="comment">      $trash_args-&gt;trash_srl = $trash_srl;</span></div>
+<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;<span class="comment">      $output = executeQuery(&#39;document.getTrash&#39;, $trash_args);</span></div>
+<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;<span class="comment">      if (!$output-&gt;toBool()) {</span></div>
+<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;<span class="comment">      return $output;</span></div>
+<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;<span class="comment">      }</span></div>
+<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;<span class="comment">      $document_args-&gt;document_srl = $output-&gt;data-&gt;document_srl;</span></div>
+<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;<span class="comment">      $document_args-&gt;module_srl = $output-&gt;data-&gt;module_srl;</span></div>
+<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;<span class="comment">      $document_args-&gt;member_srl = $output-&gt;data-&gt;member_srl;</span></div>
+<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;<span class="comment">      $document_args-&gt;ipaddress = $output-&gt;data-&gt;ipaddress;</span></div>
+<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;<span class="comment">      $document_args-&gt;update_order = $output-&gt;data-&gt;update_order;</span></div>
+<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;<span class="comment">      $oDocument = $oDocumentModel-&gt;getDocument($document_args-&gt;document_srl);</span></div>
+<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;<span class="comment">    // begin transaction</span></div>
+<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;<span class="comment">    $oDB-&gt;begin();</span></div>
+<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;<span class="comment">    $output = executeQuery(&#39;document.updateDocument&#39;, $document_args);</span></div>
+<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;<span class="comment">    if (!$output-&gt;toBool()) {</span></div>
+<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;<span class="comment">    $oDB-&gt;rollback();</span></div>
+<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;<span class="comment">    return $output;</span></div>
+<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;<span class="comment">    }</span></div>
+<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;<span class="comment">    $output = executeQuery(&#39;document.deleteTrash&#39;, $trash_args);</span></div>
+<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;<span class="comment">    if (!$output-&gt;toBool()) {</span></div>
+<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;<span class="comment">    $oDB-&gt;rollback();</span></div>
+<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;<span class="comment">    return $output;</span></div>
+<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;<span class="comment">    }</span></div>
+<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;<span class="comment">    // If the post was not temorarily saved, set the attachment&#39;s status to be valid</span></div>
+<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;<span class="comment">    if($oDocument-&gt;hasUploadedFiles() &amp;&amp; $document_args-&gt;member_srl != $document_args-&gt;module_srl) {</span></div>
+<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;<span class="comment">    $args-&gt;upload_target_srl = $oDocument-&gt;document_srl;</span></div>
+<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;<span class="comment">    $args-&gt;isvalid = &#39;Y&#39;;</span></div>
+<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;<span class="comment">    executeQuery(&#39;file.updateFileValid&#39;, $args);</span></div>
+<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;<span class="comment">    }</span></div>
+<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;<span class="comment">    // call a trigger (after)</span></div>
+<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;<span class="comment">    if($output-&gt;toBool()) {</span></div>
+<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;<span class="comment">    $trigger_output = ModuleHandler::triggerCall(&#39;document.restoreTrash&#39;, &#39;after&#39;, $document_args);</span></div>
+<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;<span class="comment">    if(!$trigger_output-&gt;toBool()) {</span></div>
+<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;<span class="comment">    $oDB-&gt;rollback();</span></div>
+<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;<span class="comment">    return $trigger_output;</span></div>
+<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;<span class="comment">    }</span></div>
+<div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;<span class="comment">    }</span></div>
+<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;<span class="comment">    // commit</span></div>
+<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;<span class="comment">    $oDB-&gt;commit();</span></div>
+<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;<span class="comment">    return $output;</span></div>
+<div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;<span class="comment">    }*/</span></div>
+<div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;</div>
+<div class="line"><a name="l00859"></a><span class="lineno"><a class="line" href="classdocumentAdminController.html#a3750ffc8b40a8bbd46f5ac455e65cb37">  859</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classdocumentAdminController.html#a3750ffc8b40a8bbd46f5ac455e65cb37">restoreTrash</a>($originObject)</div>
+<div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;    {</div>
+<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;        <span class="keywordflow">if</span>(is_array($originObject)) $originObject = (object)$originObject;</div>
+<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;</div>
+<div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;        <a class="code" href="ko_8install_8php.html#aac43fce682d4b7a05df6d3e44c2c54e6">$oDocumentController</a> = <a class="code" href="func_8inc_8php.html#aa08f01e3bf130d770b373ca8493e3e9b">getController</a>(<span class="stringliteral">&#39;document&#39;</span>);</div>
+<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;        <a class="code" href="ko_8install_8php.html#afb18aa87e5520385e76377e876e042af">$oDocumentModel</a> = <a class="code" href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a>(<span class="stringliteral">&#39;document&#39;</span>);</div>
+<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;</div>
+<div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;        $oDB = &amp;<a class="code" href="classDB.html#a16f4a668b6429b4b9af5132cbf885213">DB::getInstance</a>();</div>
+<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;        $oDB-&gt;begin();</div>
+<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;</div>
+<div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;        <span class="comment">//DB restore</span></div>
+<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;        <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = <a class="code" href="ko_8install_8php.html#aac43fce682d4b7a05df6d3e44c2c54e6">$oDocumentController</a>-&gt;insertDocument($originObject, <span class="keyword">false</span>, <span class="keyword">true</span>, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;toBool()) <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html">Object</a>(-1, <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;getMessage());</div>
+<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;</div>
+<div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;        <span class="comment">//FILE restore</span></div>
+<div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;        $oDocument = <a class="code" href="ko_8install_8php.html#afb18aa87e5520385e76377e876e042af">$oDocumentModel</a>-&gt;getDocument($originObject-&gt;document_srl);</div>
+<div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;        <span class="comment">// If the post was not temorarily saved, set the attachment&#39;s status to be valid</span></div>
+<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;        <span class="keywordflow">if</span>($oDocument-&gt;hasUploadedFiles() &amp;&amp; $originObject-&gt;member_srl != $originObject-&gt;module_srl)</div>
+<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;        {</div>
+<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;            <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a> = <span class="keyword">new</span> stdClass();</div>
+<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;            <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;upload_target_srl = $oDocument-&gt;document_srl;</div>
+<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;            <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;isvalid = <span class="charliteral">&#39;Y&#39;</span>;</div>
+<div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;            <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = <a class="code" href="func_8inc_8php.html#a418bc23855eebc0d90190dd625ac4474">executeQuery</a>(<span class="stringliteral">&#39;file.updateFileValid&#39;</span>, <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>);</div>
+<div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;        }</div>
+<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;</div>
+<div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;        <span class="comment">// call a trigger (after)</span></div>
+<div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;toBool())</div>
+<div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;        {</div>
+<div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;            $trigger_output = <a class="code" href="classModuleHandler.html#aa1b1f9eae91ccd76e6a81c9375c2e673">ModuleHandler::triggerCall</a>(<span class="stringliteral">&#39;document.restoreTrash&#39;</span>, <span class="stringliteral">&#39;after&#39;</span>, $originObject);</div>
+<div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;            <span class="keywordflow">if</span>(!$trigger_output-&gt;toBool())</div>
+<div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;            {</div>
+<div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;                $oDB-&gt;rollback();</div>
+<div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;                <span class="keywordflow">return</span> $trigger_output;</div>
+<div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;            }</div>
+<div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;        }</div>
+<div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;</div>
+<div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;        <span class="comment">// commit</span></div>
+<div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;        $oDB-&gt;commit();</div>
+<div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html">Object</a>(0, <span class="stringliteral">&#39;success&#39;</span>);</div>
+<div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;    }</div>
+<div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;</div>
+<div class="line"><a name="l00906"></a><span class="lineno"><a class="line" href="classdocumentAdminController.html#a52981a3af3d6b94661444f65568343ca">  906</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classdocumentAdminController.html#a52981a3af3d6b94661444f65568343ca">emptyTrash</a>($originObject)</div>
+<div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;    {</div>
+<div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;        $originObject = unserialize($originObject);</div>
+<div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;        <span class="keywordflow">if</span>(is_array($originObject)) $originObject = (object) $originObject;</div>
+<div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;</div>
+<div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;        $oDocument = <span class="keyword">new</span> <a class="code" href="classdocumentItem.html">documentItem</a>();</div>
+<div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160;        $oDocument-&gt;setAttribute($originObject);</div>
+<div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;</div>
+<div class="line"><a name="l00914"></a><span class="lineno">  914</span>&#160;        <a class="code" href="ko_8install_8php.html#aac43fce682d4b7a05df6d3e44c2c54e6">$oDocumentController</a> = <a class="code" href="func_8inc_8php.html#aa08f01e3bf130d770b373ca8493e3e9b">getController</a>(<span class="stringliteral">&#39;document&#39;</span>);</div>
+<div class="line"><a name="l00915"></a><span class="lineno">  915</span>&#160;        <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = <a class="code" href="ko_8install_8php.html#aac43fce682d4b7a05df6d3e44c2c54e6">$oDocumentController</a>-&gt;deleteDocument($oDocument-&gt;get(<span class="stringliteral">&#39;document_srl&#39;</span>), <span class="keyword">true</span>, <span class="keyword">true</span>, $oDocument);</div>
+<div class="line"><a name="l00916"></a><span class="lineno">  916</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>;</div>
+<div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160;    }</div>
+<div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160;}</div>
+<div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160;<span class="comment">/* End of file document.admin.controller.php */</span></div>
+<div class="line"><a name="l00920"></a><span class="lineno">  920</span>&#160;<span class="comment">/* Location: ./modules/document/document.admin.controller.php */</span></div>
 <div class="ttc" id="classObject_html"><div class="ttname"><a href="classObject.html">Object</a></div><div class="ttdef"><b>Definition:</b> <a href="Object_8class_8php_source.html#l00009">Object.class.php:9</a></div></div>
 <div class="ttc" id="ko_8install_8php_html_a8d7a87df524e7d6938f66f8e284cdd1e"><div class="ttname"><a href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a></div><div class="ttdeci">$oModuleModel</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00092">ko.install.php:92</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_aa08f01e3bf130d770b373ca8493e3e9b"><div class="ttname"><a href="func_8inc_8php.html#aa08f01e3bf130d770b373ca8493e3e9b">getController</a></div><div class="ttdeci">getController($module_name)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00090">func.inc.php:90</a></div></div>
-<div class="ttc" id="func_8inc_8php_html_ae1a0ad24dbf34de227ffd2eb0d1f8da3"><div class="ttname"><a href="func_8inc_8php.html#ae1a0ad24dbf34de227ffd2eb0d1f8da3">getNumberingPath</a></div><div class="ttdeci">getNumberingPath($no, $size=3)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00936">func.inc.php:936</a></div></div>
+<div class="ttc" id="func_8inc_8php_html_ae1a0ad24dbf34de227ffd2eb0d1f8da3"><div class="ttname"><a href="func_8inc_8php.html#ae1a0ad24dbf34de227ffd2eb0d1f8da3">getNumberingPath</a></div><div class="ttdeci">getNumberingPath($no, $size=3)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00975">func.inc.php:975</a></div></div>
 <div class="ttc" id="classdocumentAdminController_html_a9354a64cd8470838a0cf5705290cb4c5"><div class="ttname"><a href="classdocumentAdminController.html#a9354a64cd8470838a0cf5705290cb4c5">documentAdminController\deleteThumbnailFile</a></div><div class="ttdeci">deleteThumbnailFile($path)</div><div class="ttdef"><b>Definition:</b> <a href="document_8admin_8controller_8php_source.html#l00516">document.admin.controller.php:516</a></div></div>
 <div class="ttc" id="classdocumentAdminController_html_a8f766283de71f7b22d325eb8dd8b4053"><div class="ttname"><a href="classdocumentAdminController.html#a8f766283de71f7b22d325eb8dd8b4053">documentAdminController\procDocumentAdminInsertExtraVar</a></div><div class="ttdeci">procDocumentAdminInsertExtraVar()</div><div class="ttdef"><b>Definition:</b> <a href="document_8admin_8controller_8php_source.html#l00536">document.admin.controller.php:536</a></div></div>
 <div class="ttc" id="classFileHandler_html_aa5969f9fe0ce869fc736c4da384959e9"><div class="ttname"><a href="classFileHandler.html#aa5969f9fe0ce869fc736c4da384959e9">FileHandler\removeFile</a></div><div class="ttdeci">removeFile($filename)</div><div class="ttdef"><b>Definition:</b> <a href="FileHandler_8class_8php_source.html#l00167">FileHandler.class.php:167</a></div></div>
 <div class="ttc" id="ko_8install_8php_html_a9008ed94ba185855b1723e367744b87e"><div class="ttname"><a href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a></div><div class="ttdeci">$obj</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00116">ko.install.php:116</a></div></div>
+<div class="ttc" id="classdocumentAdminController_html_a8dfa5d37621daaba6c66732eb3568730"><div class="ttname"><a href="classdocumentAdminController.html#a8dfa5d37621daaba6c66732eb3568730">documentAdminController\procDocumentAdminMoveToTrash</a></div><div class="ttdeci">procDocumentAdminMoveToTrash()</div><div class="ttdoc">move a document to trash. </div><div class="ttdef"><b>Definition:</b> <a href="document_8admin_8controller_8php_source.html#l00720">document.admin.controller.php:720</a></div></div>
 <div class="ttc" id="ko_8install_8php_html_a73004ce9cd673c1bfafd1dc351134797"><div class="ttname"><a href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a></div><div class="ttdeci">$output</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00008">ko.install.php:8</a></div></div>
 <div class="ttc" id="ko_8install_8php_html_a5e701819149f6ea0893d4b79010417d3"><div class="ttname"><a href="ko_8install_8php.html#a5e701819149f6ea0893d4b79010417d3">$module_info</a></div><div class="ttdeci">$module_info</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00136">ko.install.php:136</a></div></div>
 <div class="ttc" id="classCacheHandler_html_a2fce85cb82ab180ce9d6bcea61a54eec"><div class="ttname"><a href="classCacheHandler.html#a2fce85cb82ab180ce9d6bcea61a54eec">CacheHandler\getInstance</a></div><div class="ttdeci">&amp; getInstance($target= 'object', $info=null, $always_use_file=false)</div><div class="ttdef"><b>Definition:</b> <a href="CacheHandler_8class_8php_source.html#l00031">CacheHandler.class.php:31</a></div></div>
 <div class="ttc" id="classdocumentAdminController_html"><div class="ttname"><a href="classdocumentAdminController.html">documentAdminController</a></div><div class="ttdef"><b>Definition:</b> <a href="document_8admin_8controller_8php_source.html#l00012">document.admin.controller.php:12</a></div></div>
 <div class="ttc" id="classModuleObject_html_ac4c2bac7917c3ab3a0e816b99574727c"><div class="ttname"><a href="classModuleObject.html#ac4c2bac7917c3ab3a0e816b99574727c">ModuleObject\stop</a></div><div class="ttdeci">stop($msg_code)</div><div class="ttdef"><b>Definition:</b> <a href="ModuleObject_8class_8php_source.html#l00227">ModuleObject.class.php:227</a></div></div>
-<div class="ttc" id="classContext_html_ae906c0b1533a8e4ce7836d3665b46288"><div class="ttname"><a href="classContext.html#ae906c0b1533a8e4ce7836d3665b46288">Context\gets</a></div><div class="ttdeci">gets()</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l01768">Context.class.php:1768</a></div></div>
-<div class="ttc" id="func_8inc_8php_html_aa73dbeb07c5bcac26c24fe4c6b05d8d2"><div class="ttname"><a href="func_8inc_8php.html#aa73dbeb07c5bcac26c24fe4c6b05d8d2">getNotEncodedUrl</a></div><div class="ttdeci">getNotEncodedUrl()</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00274">func.inc.php:274</a></div></div>
+<div class="ttc" id="classContext_html_ae906c0b1533a8e4ce7836d3665b46288"><div class="ttname"><a href="classContext.html#ae906c0b1533a8e4ce7836d3665b46288">Context\gets</a></div><div class="ttdeci">gets()</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l01781">Context.class.php:1781</a></div></div>
+<div class="ttc" id="func_8inc_8php_html_aa73dbeb07c5bcac26c24fe4c6b05d8d2"><div class="ttname"><a href="func_8inc_8php.html#aa73dbeb07c5bcac26c24fe4c6b05d8d2">getNotEncodedUrl</a></div><div class="ttdeci">getNotEncodedUrl()</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00313">func.inc.php:313</a></div></div>
 <div class="ttc" id="classdocumentAdminController_html_af6c4d0820de6d6fcbd3d7d2544f97050"><div class="ttname"><a href="classdocumentAdminController.html#af6c4d0820de6d6fcbd3d7d2544f97050">documentAdminController\procDocumentAdminCancelDeclare</a></div><div class="ttdeci">procDocumentAdminCancelDeclare()</div><div class="ttdef"><b>Definition:</b> <a href="document_8admin_8controller_8php_source.html#l00486">document.admin.controller.php:486</a></div></div>
-<div class="ttc" id="classdocumentAdminController_html_ac0467d27983d60c51c1128765244a36b"><div class="ttname"><a href="classdocumentAdminController.html#ac0467d27983d60c51c1128765244a36b">documentAdminController\procDocumentAdminRestoreTrash</a></div><div class="ttdeci">procDocumentAdminRestoreTrash()</div><div class="ttdef"><b>Definition:</b> <a href="document_8admin_8controller_8php_source.html#l00719">document.admin.controller.php:719</a></div></div>
+<div class="ttc" id="classdocumentAdminController_html_ac0467d27983d60c51c1128765244a36b"><div class="ttname"><a href="classdocumentAdminController.html#ac0467d27983d60c51c1128765244a36b">documentAdminController\procDocumentAdminRestoreTrash</a></div><div class="ttdeci">procDocumentAdminRestoreTrash()</div><div class="ttdef"><b>Definition:</b> <a href="document_8admin_8controller_8php_source.html#l00794">document.admin.controller.php:794</a></div></div>
 <div class="ttc" id="ko_8install_8php_html_aaae9128654f5054258982d94a0566987"><div class="ttname"><a href="ko_8install_8php.html#aaae9128654f5054258982d94a0566987">$oModuleController</a></div><div class="ttdeci">$oModuleController</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00134">ko.install.php:134</a></div></div>
-<div class="ttc" id="classContext_html_ae75d6f4064d09e48d0d76614b6997e29"><div class="ttname"><a href="classContext.html#ae75d6f4064d09e48d0d76614b6997e29">Context\getLangType</a></div><div class="ttdeci">getLangType()</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l00927">Context.class.php:927</a></div></div>
+<div class="ttc" id="classContext_html_ae75d6f4064d09e48d0d76614b6997e29"><div class="ttname"><a href="classContext.html#ae75d6f4064d09e48d0d76614b6997e29">Context\getLangType</a></div><div class="ttdeci">getLangType()</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l00930">Context.class.php:930</a></div></div>
 <div class="ttc" id="classdocumentItem_html"><div class="ttname"><a href="classdocumentItem.html">documentItem</a></div><div class="ttdef"><b>Definition:</b> <a href="document_8item_8php_source.html#l00011">document.item.php:11</a></div></div>
 <div class="ttc" id="classdocumentAdminController_html_a9133d1466cbf4baae410f180f8b04e34"><div class="ttname"><a href="classdocumentAdminController.html#a9133d1466cbf4baae410f180f8b04e34">documentAdminController\copyDocumentModule</a></div><div class="ttdeci">copyDocumentModule($document_srl_list, $module_srl, $category_srl)</div><div class="ttdef"><b>Definition:</b> <a href="document_8admin_8controller_8php_source.html#l00216">document.admin.controller.php:216</a></div></div>
 <div class="ttc" id="classdocumentAdminController_html_a9ff3a9934c8bfa4d2ded4287920c0362"><div class="ttname"><a href="classdocumentAdminController.html#a9ff3a9934c8bfa4d2ded4287920c0362">documentAdminController\procDocumentAdminDeleteAllThumbnail</a></div><div class="ttdeci">procDocumentAdminDeleteAllThumbnail()</div><div class="ttdef"><b>Definition:</b> <a href="document_8admin_8controller_8php_source.html#l00502">document.admin.controller.php:502</a></div></div>
@@ -881,27 +952,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="ko_8install_8php_html_afb18aa87e5520385e76377e876e042af"><div class="ttname"><a href="ko_8install_8php.html#afb18aa87e5520385e76377e876e042af">$oDocumentModel</a></div><div class="ttdeci">$oDocumentModel</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00113">ko.install.php:113</a></div></div>
 <div class="ttc" id="classDB_html_a16f4a668b6429b4b9af5132cbf885213"><div class="ttname"><a href="classDB.html#a16f4a668b6429b4b9af5132cbf885213">DB\getInstance</a></div><div class="ttdeci">&amp; getInstance($db_type=NULL)</div><div class="ttdef"><b>Definition:</b> <a href="DB_8class_8php_source.html#l00176">DB.class.php:176</a></div></div>
 <div class="ttc" id="classdocument_html"><div class="ttname"><a href="classdocument.html">document</a></div><div class="ttdoc">document the module&amp;#39;s high class { </div><div class="ttdef"><b>Definition:</b> <a href="document_8class_8php_source.html#l00014">document.class.php:14</a></div></div>
-<div class="ttc" id="classContext_html_a9af9269b04542f7462d27a63226e0ff3"><div class="ttname"><a href="classContext.html#a9af9269b04542f7462d27a63226e0ff3">Context\getLang</a></div><div class="ttdeci">getLang($code)</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l00939">Context.class.php:939</a></div></div>
+<div class="ttc" id="classContext_html_a9af9269b04542f7462d27a63226e0ff3"><div class="ttname"><a href="classContext.html#a9af9269b04542f7462d27a63226e0ff3">Context\getLang</a></div><div class="ttdeci">getLang($code)</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l00942">Context.class.php:942</a></div></div>
 <div class="ttc" id="classdocumentAdminController_html_a037c8e048b5cd6199dd83abbfcb7b92e"><div class="ttname"><a href="classdocumentAdminController.html#a037c8e048b5cd6199dd83abbfcb7b92e">documentAdminController\procDocumentAdminMoveExtraVar</a></div><div class="ttdeci">procDocumentAdminMoveExtraVar()</div><div class="ttdef"><b>Definition:</b> <a href="document_8admin_8controller_8php_source.html#l00600">document.admin.controller.php:600</a></div></div>
 <div class="ttc" id="ko_8install_8php_html_aac43fce682d4b7a05df6d3e44c2c54e6"><div class="ttname"><a href="ko_8install_8php.html#aac43fce682d4b7a05df6d3e44c2c54e6">$oDocumentController</a></div><div class="ttdeci">$oDocumentController</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00114">ko.install.php:114</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_a5a97b458f9c5b4fe3574671840aee27c"><div class="ttname"><a href="func_8inc_8php.html#a5a97b458f9c5b4fe3574671840aee27c">getNextSequence</a></div><div class="ttdeci">getNextSequence()</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00236">func.inc.php:236</a></div></div>
 <div class="ttc" id="classdocumentAdminController_html_aa25a9a3e7a5ba0c15b50cc4d324386bc"><div class="ttname"><a href="classdocumentAdminController.html#aa25a9a3e7a5ba0c15b50cc4d324386bc">documentAdminController\procDocumentAdminInsertAlias</a></div><div class="ttdeci">procDocumentAdminInsertAlias()</div><div class="ttdef"><b>Definition:</b> <a href="document_8admin_8controller_8php_source.html#l00680">document.admin.controller.php:680</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_aecdfcc5332bcf22df01fc21a03b64435"><div class="ttname"><a href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a></div><div class="ttdeci">getModel($module_name)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00145">func.inc.php:145</a></div></div>
 <div class="ttc" id="classFileHandler_html_a07839b4971e9ef40039d23ea65977d69"><div class="ttname"><a href="classFileHandler.html#a07839b4971e9ef40039d23ea65977d69">FileHandler\removeFilesInDir</a></div><div class="ttdeci">removeFilesInDir($path)</div><div class="ttdef"><b>Definition:</b> <a href="FileHandler_8class_8php_source.html#l00436">FileHandler.class.php:436</a></div></div>
-<div class="ttc" id="classContext_html_a90ce25d65fe6c9778421cbb36ab3def5"><div class="ttname"><a href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context\get</a></div><div class="ttdeci">get($key)</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l01752">Context.class.php:1752</a></div></div>
+<div class="ttc" id="classContext_html_a90ce25d65fe6c9778421cbb36ab3def5"><div class="ttname"><a href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context\get</a></div><div class="ttdeci">get($key)</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l01765">Context.class.php:1765</a></div></div>
 <div class="ttc" id="ko_8install_8php_html_ae40aed4d7a99050245e66ca2a82949ed"><div class="ttname"><a href="ko_8install_8php.html#ae40aed4d7a99050245e66ca2a82949ed">$module_srl</a></div><div class="ttdeci">$module_srl</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00108">ko.install.php:108</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_a418bc23855eebc0d90190dd625ac4474"><div class="ttname"><a href="func_8inc_8php.html#a418bc23855eebc0d90190dd625ac4474">executeQuery</a></div><div class="ttdeci">executeQuery($query_id, $args=NULL, $arg_columns=NULL)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00203">func.inc.php:203</a></div></div>
 <div class="ttc" id="classdocumentAdminController_html_a2534cbf35966a4ad561b995b7029bc00"><div class="ttname"><a href="classdocumentAdminController.html#a2534cbf35966a4ad561b995b7029bc00">documentAdminController\moveDocumentModule</a></div><div class="ttdeci">moveDocumentModule($document_srl_list, $module_srl, $category_srl)</div><div class="ttdef"><b>Definition:</b> <a href="document_8admin_8controller_8php_source.html#l00054">document.admin.controller.php:54</a></div></div>
 <div class="ttc" id="classdocumentAdminController_html_a3b1295649c5dff5b1a63a20aef1afa99"><div class="ttname"><a href="classdocumentAdminController.html#a3b1295649c5dff5b1a63a20aef1afa99">documentAdminController\deleteModuleDocument</a></div><div class="ttdeci">deleteModuleDocument($module_srl)</div><div class="ttdef"><b>Definition:</b> <a href="document_8admin_8controller_8php_source.html#l00434">document.admin.controller.php:434</a></div></div>
-<div class="ttc" id="classModuleHandler_html_aa1b1f9eae91ccd76e6a81c9375c2e673"><div class="ttname"><a href="classModuleHandler.html#aa1b1f9eae91ccd76e6a81c9375c2e673">ModuleHandler\triggerCall</a></div><div class="ttdeci">triggerCall($trigger_name, $called_position, &amp;$obj)</div><div class="ttdef"><b>Definition:</b> <a href="ModuleHandler_8class_8php_source.html#l01126">ModuleHandler.class.php:1126</a></div></div>
+<div class="ttc" id="classModuleHandler_html_aa1b1f9eae91ccd76e6a81c9375c2e673"><div class="ttname"><a href="classModuleHandler.html#aa1b1f9eae91ccd76e6a81c9375c2e673">ModuleHandler\triggerCall</a></div><div class="ttdeci">triggerCall($trigger_name, $called_position, &amp;$obj)</div><div class="ttdef"><b>Definition:</b> <a href="ModuleHandler_8class_8php_source.html#l01130">ModuleHandler.class.php:1130</a></div></div>
 <div class="ttc" id="validate_8php_html_a83018d9153d17d91fbcf3bc10158d34f"><div class="ttname"><a href="validate_8php.html#a83018d9153d17d91fbcf3bc10158d34f">$i</a></div><div class="ttdeci">$i</div><div class="ttdef"><b>Definition:</b> <a href="validate_8php_source.html#l01856">validate.php:1856</a></div></div>
-<div class="ttc" id="classdocumentAdminController_html_a3750ffc8b40a8bbd46f5ac455e65cb37"><div class="ttname"><a href="classdocumentAdminController.html#a3750ffc8b40a8bbd46f5ac455e65cb37">documentAdminController\restoreTrash</a></div><div class="ttdeci">restoreTrash($originObject)</div><div class="ttdef"><b>Definition:</b> <a href="document_8admin_8controller_8php_source.html#l00784">document.admin.controller.php:784</a></div></div>
-<div class="ttc" id="classdocumentAdminController_html_a52981a3af3d6b94661444f65568343ca"><div class="ttname"><a href="classdocumentAdminController.html#a52981a3af3d6b94661444f65568343ca">documentAdminController\emptyTrash</a></div><div class="ttdeci">emptyTrash($originObject)</div><div class="ttdef"><b>Definition:</b> <a href="document_8admin_8controller_8php_source.html#l00831">document.admin.controller.php:831</a></div></div>
+<div class="ttc" id="classdocumentAdminController_html_a3750ffc8b40a8bbd46f5ac455e65cb37"><div class="ttname"><a href="classdocumentAdminController.html#a3750ffc8b40a8bbd46f5ac455e65cb37">documentAdminController\restoreTrash</a></div><div class="ttdeci">restoreTrash($originObject)</div><div class="ttdef"><b>Definition:</b> <a href="document_8admin_8controller_8php_source.html#l00859">document.admin.controller.php:859</a></div></div>
+<div class="ttc" id="classdocumentAdminController_html_a52981a3af3d6b94661444f65568343ca"><div class="ttname"><a href="classdocumentAdminController.html#a52981a3af3d6b94661444f65568343ca">documentAdminController\emptyTrash</a></div><div class="ttdeci">emptyTrash($originObject)</div><div class="ttdef"><b>Definition:</b> <a href="document_8admin_8controller_8php_source.html#l00906">document.admin.controller.php:906</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_a1d90f6abc9ca2d1a4500071159ebd4e7"><div class="ttname"><a href="func_8inc_8php.html#a1d90f6abc9ca2d1a4500071159ebd4e7">getClass</a></div><div class="ttdeci">getClass($module_name)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00189">func.inc.php:189</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 4 2014 20:59:06 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed May 21 2014 13:47:27 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

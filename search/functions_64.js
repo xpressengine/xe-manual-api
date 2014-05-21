@@ -244,6 +244,7 @@ var searchData=
   ['dispspamfilteradmindeniedwordlist',['dispSpamfilterAdminDeniedWordList',['../classspamfilterAdminView.html#a1cca57b5c55b8739e21fa3e3a984df72',1,'spamfilterAdminView']]],
   ['disptempsavedlist',['dispTempSavedList',['../classdocumentView.html#a849d0bdc714a0ea2fd23bbe86f2fde6f',1,'documentView']]],
   ['disptrashadminlist',['dispTrashAdminList',['../classtrashAdminView.html#afb1f31836be3cfeda1d8b9e1f5ec9ee0',1,'trashAdminView']]],
+  ['disptrashadminview',['dispTrashAdminView',['../classtrashAdminView.html#a77a13f0633df48ee6802c706d8ccf1de',1,'trashAdminView']]],
   ['dispwidgetadminaddcontent',['dispWidgetAdminAddContent',['../classwidgetAdminView.html#a2f499c5195c994d427e80b9e3cbaa7ef',1,'widgetAdminView']]],
   ['dispwidgetadmindownloadedlist',['dispWidgetAdminDownloadedList',['../classwidgetAdminView.html#ad5defcecf21fb470cb6c3b2e868941a0',1,'widgetAdminView']]],
   ['dispwidgetadmingeneratecode',['dispWidgetAdminGenerateCode',['../classwidgetAdminView.html#ad7ff38d629f723021518ac9ec7a88933',1,'widgetAdminView']]],

@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.7.4</span>
+   &#160;<span id="projectnumber">1.7.5</span>
    </div>
   </td>
  </tr>
@@ -126,7 +126,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            <span class="keywordflow">if</span>($_SESSION[<span class="stringliteral">&#39;file_management&#39;</span>][$file-&gt;file_srl]) $file-&gt;isCarted = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            <span class="keywordflow">else</span> $file-&gt;isCarted = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            $file-&gt;download_url = $oFileModel-&gt;getDownloadUrl($file-&gt;file_srl, $file-&gt;sid);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            $file-&gt;download_url = $oFileModel-&gt;getDownloadUrl($file-&gt;file_srl, $file-&gt;sid, $file-&gt;module_srl);</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;data[$key] = $file;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        }</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
@@ -215,13 +215,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classfileAdminModel_html_a2cff52618c56e1ebae4e392646c859e8"><div class="ttname"><a href="classfileAdminModel.html#a2cff52618c56e1ebae4e392646c859e8">fileAdminModel\getFilesCountByDate</a></div><div class="ttdeci">getFilesCountByDate($date= '')</div><div class="ttdef"><b>Definition:</b> <a href="file_8admin_8model_8php_source.html#l00133">file.admin.model.php:133</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_aecdfcc5332bcf22df01fc21a03b64435"><div class="ttname"><a href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a></div><div class="ttdeci">getModel($module_name)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00145">func.inc.php:145</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_ace5cc06ee6c5d655a1bdcc15846a779e"><div class="ttname"><a href="func_8inc_8php.html#ace5cc06ee6c5d655a1bdcc15846a779e">executeQueryArray</a></div><div class="ttdeci">executeQueryArray($query_id, $args=NULL, $arg_columns=NULL)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00219">func.inc.php:219</a></div></div>
-<div class="ttc" id="classContext_html_a90ce25d65fe6c9778421cbb36ab3def5"><div class="ttname"><a href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context\get</a></div><div class="ttdeci">get($key)</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l01752">Context.class.php:1752</a></div></div>
+<div class="ttc" id="classContext_html_a90ce25d65fe6c9778421cbb36ab3def5"><div class="ttname"><a href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context\get</a></div><div class="ttdeci">get($key)</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l01765">Context.class.php:1765</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_a418bc23855eebc0d90190dd625ac4474"><div class="ttname"><a href="func_8inc_8php.html#a418bc23855eebc0d90190dd625ac4474">executeQuery</a></div><div class="ttdeci">executeQuery($query_id, $args=NULL, $arg_columns=NULL)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00203">func.inc.php:203</a></div></div>
 <div class="ttc" id="classfileAdminModel_html_a2da869c66512ff677a71674030c8637c"><div class="ttname"><a href="classfileAdminModel.html#a2da869c66512ff677a71674030c8637c">fileAdminModel\_makeSearchParam</a></div><div class="ttdeci">_makeSearchParam(&amp;$obj, &amp;$args)</div><div class="ttdef"><b>Definition:</b> <a href="file_8admin_8model_8php_source.html#l00150">file.admin.model.php:150</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 4 2014 20:59:06 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed May 21 2014 13:47:28 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

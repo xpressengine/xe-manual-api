@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>XpressEngine: DB Class Reference</title>
+<title>XpressEngine Core: DB Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">XpressEngine
-   &#160;<span id="projectnumber">1.7.4.beta3</span>
+   <div id="projectname">XpressEngine Core
+   &#160;<span id="projectnumber">1.7.5</span>
    </div>
   </td>
  </tr>
@@ -38,11 +38,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
-      <li><a href="examples.html"><span>Examples</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -101,17 +98,15 @@ Inheritance diagram for DB:</div>
   <img src="classDB.png" usemap="#DB_map" alt=""/>
   <map id="DB_map" name="DB_map">
 <area href="classDBCubrid.html" alt="DBCubrid" shape="rect" coords="0,56,163,80"/>
-<area href="classDBMssql.html" alt="DBMssql" shape="rect" coords="346,56,509,80"/>
-<area href="classDBMysql.html" alt="DBMysql" shape="rect" coords="692,56,855,80"/>
-<area href="classMockDb.html" title="Mock database base class. " alt="MockDb" shape="rect" coords="865,56,1028,80"/>
-<area href="classDBCubridConnectWrapper.html" alt="DBCubridConnectWrapper" shape="rect" coords="173,112,336,136"/>
-<area href="classMockDBCubrid.html" title="Mock up for CUBRID class. " alt="MockDBCubrid" shape="rect" coords="173,168,336,192"/>
-<area href="classDBMssqlConnectWrapper.html" alt="DBMssqlConnectWrapper" shape="rect" coords="519,112,682,136"/>
-<area href="classMockDBMssql.html" title="Mock up for MS SQL class. " alt="MockDBMssql" shape="rect" coords="519,168,682,192"/>
-<area href="classDBMysql__innodb.html" alt="DBMysql_innodb" shape="rect" coords="865,112,1028,136"/>
-<area href="classDBMysqlConnectWrapper.html" alt="DBMysqlConnectWrapper" shape="rect" coords="865,168,1028,192"/>
-<area href="classDBMysqli.html" alt="DBMysqli" shape="rect" coords="865,224,1028,248"/>
-<area href="classMockDBMysql.html" title="Mock up for Mysql class. " alt="MockDBMysql" shape="rect" coords="865,280,1028,304"/>
+<area href="classDBMssql.html" alt="DBMssql" shape="rect" coords="173,56,336,80"/>
+<area href="classDBMysql.html" alt="DBMysql" shape="rect" coords="605,56,768,80"/>
+<area href="classDBCubridConnectWrapper.html" alt="DBCubridConnectWrapper" shape="rect" coords="0,112,163,136"/>
+<area href="classDBMssqlConnectWrapper.html" alt="DBMssqlConnectWrapper" shape="rect" coords="173,112,336,136"/>
+<area href="classDBMysql__innodb.html" alt="DBMysql_innodb" shape="rect" coords="346,112,509,136"/>
+<area href="classDBMysqlConnectWrapper.html" alt="DBMysqlConnectWrapper" shape="rect" coords="519,112,682,136"/>
+<area href="classDBMysqli.html" alt="DBMysqli" shape="rect" coords="692,112,855,136"/>
+<area href="classDBMysqli__innodb.html" alt="DBMysqli_innodb" shape="rect" coords="865,112,1028,136"/>
+<area href="classDBMysqliConnectWrapper.html" alt="DBMysqliConnectWrapper" shape="rect" coords="692,168,855,192"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -141,6 +136,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a51a1ba94763a8211495eac18d74c80bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79cad647912ef780e967819e6346a742"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDB.html#a79cad647912ef780e967819e6346a742">actFinish</a> ()</td></tr>
 <tr class="separator:a79cad647912ef780e967819e6346a742"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0adb7f453d6e8ed2e491d6708be7f9ec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDB.html#a0adb7f453d6e8ed2e491d6708be7f9ec">setQueryLog</a> ($log)</td></tr>
+<tr class="separator:a0adb7f453d6e8ed2e491d6708be7f9ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2584546ee78d07a40cc16493f8797cc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDB.html#af2584546ee78d07a40cc16493f8797cc">setError</a> ($errno=0, $errstr= 'success')</td></tr>
 <tr class="separator:af2584546ee78d07a40cc16493f8797cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1433763c6378f1085606424a1bfe27c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDB.html#ab1433763c6378f1085606424a1bfe27c">isError</a> ()</td></tr>
@@ -214,66 +211,52 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a082292b9ca3855cbddd3a74e9490ca82"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><b>$priority_dbms</b></td></tr>
+<tr class="memitem:a082292b9ca3855cbddd3a74e9490ca82"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDB.html#a082292b9ca3855cbddd3a74e9490ca82">$priority_dbms</a></td></tr>
 <tr class="separator:a082292b9ca3855cbddd3a74e9490ca82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca72b9b3a39bb5e5d2e444f20db2c6bb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aca72b9b3a39bb5e5d2e444f20db2c6bb"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$count_cache_path</b> = 'files/cache/db'</td></tr>
+<tr class="memitem:aca72b9b3a39bb5e5d2e444f20db2c6bb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDB.html#aca72b9b3a39bb5e5d2e444f20db2c6bb">$count_cache_path</a> = 'files/cache/db'</td></tr>
 <tr class="separator:aca72b9b3a39bb5e5d2e444f20db2c6bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85f8f65c37474b0e65d844e1f01f39b0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><b>$cond_operation</b></td></tr>
+<tr class="memitem:a85f8f65c37474b0e65d844e1f01f39b0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDB.html#a85f8f65c37474b0e65d844e1f01f39b0">$cond_operation</a></td></tr>
 <tr class="separator:a85f8f65c37474b0e65d844e1f01f39b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0a3ae175a659516131cfc6cd615d15c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad0a3ae175a659516131cfc6cd615d15c"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$master_db</b> = NULL</td></tr>
+<tr class="memitem:ad0a3ae175a659516131cfc6cd615d15c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDB.html#ad0a3ae175a659516131cfc6cd615d15c">$master_db</a> = NULL</td></tr>
 <tr class="separator:ad0a3ae175a659516131cfc6cd615d15c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a811a4446882ee9edf0ed846e8926f3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0a811a4446882ee9edf0ed846e8926f3"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$slave_db</b> = NULL</td></tr>
+<tr class="memitem:a0a811a4446882ee9edf0ed846e8926f3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDB.html#a0a811a4446882ee9edf0ed846e8926f3">$slave_db</a> = NULL</td></tr>
 <tr class="separator:a0a811a4446882ee9edf0ed846e8926f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74e74ee9d3311aa1e8107b8accd05e29"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a74e74ee9d3311aa1e8107b8accd05e29"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$result</b> = NULL</td></tr>
+<tr class="memitem:a74e74ee9d3311aa1e8107b8accd05e29"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDB.html#a74e74ee9d3311aa1e8107b8accd05e29">$result</a> = NULL</td></tr>
 <tr class="separator:a74e74ee9d3311aa1e8107b8accd05e29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af99d759f7fb3bbadd579d72e686d1cf1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af99d759f7fb3bbadd579d72e686d1cf1"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$errno</b> = 0</td></tr>
+<tr class="memitem:af99d759f7fb3bbadd579d72e686d1cf1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDB.html#af99d759f7fb3bbadd579d72e686d1cf1">$errno</a> = 0</td></tr>
 <tr class="separator:af99d759f7fb3bbadd579d72e686d1cf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae006f35821aba99713b834fa6a69e55b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae006f35821aba99713b834fa6a69e55b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$errstr</b> = ''</td></tr>
+<tr class="memitem:ae006f35821aba99713b834fa6a69e55b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDB.html#ae006f35821aba99713b834fa6a69e55b">$errstr</a> = ''</td></tr>
 <tr class="separator:ae006f35821aba99713b834fa6a69e55b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32ebabea908efd805a83db48fec3ab52"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a32ebabea908efd805a83db48fec3ab52"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$query</b> = ''</td></tr>
+<tr class="memitem:a32ebabea908efd805a83db48fec3ab52"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDB.html#a32ebabea908efd805a83db48fec3ab52">$query</a> = ''</td></tr>
 <tr class="separator:a32ebabea908efd805a83db48fec3ab52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9071e31f8241ad644430537f39a16ce"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac9071e31f8241ad644430537f39a16ce"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$connection</b> = ''</td></tr>
+<tr class="memitem:ac9071e31f8241ad644430537f39a16ce"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDB.html#ac9071e31f8241ad644430537f39a16ce">$connection</a> = ''</td></tr>
 <tr class="separator:ac9071e31f8241ad644430537f39a16ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5a3fdd4e0078a185dac8c2727fb4f2c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af5a3fdd4e0078a185dac8c2727fb4f2c"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$elapsed_time</b> = 0</td></tr>
+<tr class="memitem:af5a3fdd4e0078a185dac8c2727fb4f2c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDB.html#af5a3fdd4e0078a185dac8c2727fb4f2c">$elapsed_time</a> = 0</td></tr>
 <tr class="separator:af5a3fdd4e0078a185dac8c2727fb4f2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0483c1bfe18fa5e8bbe7915f9c8187a7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0483c1bfe18fa5e8bbe7915f9c8187a7"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$elapsed_dbclass_time</b> = 0</td></tr>
+<tr class="memitem:a0483c1bfe18fa5e8bbe7915f9c8187a7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDB.html#a0483c1bfe18fa5e8bbe7915f9c8187a7">$elapsed_dbclass_time</a> = 0</td></tr>
 <tr class="separator:a0483c1bfe18fa5e8bbe7915f9c8187a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39a0eef56f82082ca4c69bcad1f12a31"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a39a0eef56f82082ca4c69bcad1f12a31"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$transaction_started</b> = FALSE</td></tr>
+<tr class="memitem:a39a0eef56f82082ca4c69bcad1f12a31"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDB.html#a39a0eef56f82082ca4c69bcad1f12a31">$transaction_started</a> = FALSE</td></tr>
 <tr class="separator:a39a0eef56f82082ca4c69bcad1f12a31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac22b6ebcd8f78c2f70646d381f933dc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aac22b6ebcd8f78c2f70646d381f933dc"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$is_connected</b> = FALSE</td></tr>
+<tr class="memitem:aac22b6ebcd8f78c2f70646d381f933dc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDB.html#aac22b6ebcd8f78c2f70646d381f933dc">$is_connected</a> = FALSE</td></tr>
 <tr class="separator:aac22b6ebcd8f78c2f70646d381f933dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac09dd547a22963632e063c9ab68b7707"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac09dd547a22963632e063c9ab68b7707"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$supported_list</b> = array()</td></tr>
+<tr class="memitem:ac09dd547a22963632e063c9ab68b7707"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDB.html#ac09dd547a22963632e063c9ab68b7707">$supported_list</a> = array()</td></tr>
 <tr class="separator:ac09dd547a22963632e063c9ab68b7707"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9952a27cbf07942e5bb8853ab95b5bdb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9952a27cbf07942e5bb8853ab95b5bdb"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$cache_file</b> = 'files/cache/queries/'</td></tr>
+<tr class="memitem:a9952a27cbf07942e5bb8853ab95b5bdb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDB.html#a9952a27cbf07942e5bb8853ab95b5bdb">$cache_file</a> = 'files/cache/queries/'</td></tr>
 <tr class="separator:a9952a27cbf07942e5bb8853ab95b5bdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78868b4c2301aa813d9e2d481424f1e8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a78868b4c2301aa813d9e2d481424f1e8"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$db_type</b></td></tr>
+<tr class="memitem:a78868b4c2301aa813d9e2d481424f1e8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDB.html#a78868b4c2301aa813d9e2d481424f1e8">$db_type</a></td></tr>
 <tr class="separator:a78868b4c2301aa813d9e2d481424f1e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9902aee7d8900a597670fce92c7eb74b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9902aee7d8900a597670fce92c7eb74b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$use_prepared_statements</b></td></tr>
+<tr class="memitem:a9902aee7d8900a597670fce92c7eb74b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDB.html#a9902aee7d8900a597670fce92c7eb74b">$use_prepared_statements</a></td></tr>
 <tr class="separator:a9902aee7d8900a597670fce92c7eb74b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a6b693edbdcdce5c86f42c050f62d8136"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6b693edbdcdce5c86f42c050f62d8136"></a>
-static&#160;</td><td class="memItemRight" valign="bottom"><b>$isSupported</b> = FALSE</td></tr>
+<tr class="memitem:a6b693edbdcdce5c86f42c050f62d8136"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDB.html#a6b693edbdcdce5c86f42c050f62d8136">$isSupported</a> = FALSE</td></tr>
 <tr class="separator:a6b693edbdcdce5c86f42c050f62d8136"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l00050">50</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a398b5d8142cab5920d3e037b4f22830e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -295,6 +278,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$isSupported</b> = 
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l01288">1288</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
 
 </div>
 </div>
@@ -331,6 +316,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$isSupported</b> = 
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l01226">1226</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ae9511581ab1229970e061e599b0f2f94"></a>
@@ -355,6 +342,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$isSupported</b> = 
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l01299">1299</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ab081086c9f44c12dce30d78e00141986"></a>
@@ -371,6 +360,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$isSupported</b> = 
 </div><div class="memdoc">
 <p><a class="el" href="classDB.html">DB</a> transaction start this method is protected </p>
 <dl class="section return"><dt>Returns</dt><dd>boolean </dd></dl>
+
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l01133">1133</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
 
 </div>
 </div>
@@ -396,6 +387,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$isSupported</b> = 
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l01095">1095</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ae6b44dc80d78b7f73cb6741ff0d63399"></a>
@@ -412,6 +405,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$isSupported</b> = 
 </div><div class="memdoc">
 <p><a class="el" href="classDB.html">DB</a> transaction commit this method is protected </p>
 <dl class="section return"><dt>Returns</dt><dd>boolean </dd></dl>
+
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l01192">1192</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
 
 </div>
 </div>
@@ -448,6 +443,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$isSupported</b> = 
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l01311">1311</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a3bbfb0e7579e8d6fc27a20c1219bb693"></a>
@@ -464,6 +461,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$isSupported</b> = 
 </div><div class="memdoc">
 <p>check db information exists </p>
 <dl class="section return"><dt>Returns</dt><dd>boolean </dd></dl>
+
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l01076">1076</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
 
 </div>
 </div>
@@ -514,6 +513,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$isSupported</b> = 
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>object result of query </dd></dl>
 
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l00652">652</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a52b496d073cecfd2ca6e14897b559819"></a>
@@ -549,6 +550,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$isSupported</b> = 
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>resource </dd></dl>
 
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l01046">1046</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a8dc4e826557c3de0d49adf7e6112bfea"></a>
@@ -566,6 +569,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$isSupported</b> = 
 <p>Return index from slave server list </p>
 <dl class="section return"><dt>Returns</dt><dd>int </dd></dl>
 
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l01033">1033</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a7b0d1af98d9f53968631ca789d6d755c"></a>
@@ -582,6 +587,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$isSupported</b> = 
 </div><div class="memdoc">
 <p>returns list of supported dbms list this method is private </p>
 <dl class="section return"><dt>Returns</dt><dd>array return supported DBMS list </dd></dl>
+
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l00299">299</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
 
 </div>
 </div>
@@ -618,6 +625,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$isSupported</b> = 
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>resource </dd></dl>
 
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l01238">1238</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ac537ae2001731b709a4b60992b04275b"></a>
@@ -635,6 +644,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$isSupported</b> = 
 <p><a class="el" href="classDB.html">DB</a> transaction rollback this method is protected </p>
 <dl class="section return"><dt>Returns</dt><dd>boolean </dd></dl>
 
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l01161">1161</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a92f2478aeb03b00432332ad4e4a3d700"></a>
@@ -651,6 +662,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$isSupported</b> = 
 </div><div class="memdoc">
 <p><a class="el" href="classDB.html">DB</a> info settings this method is protected </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l01261">1261</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
 
 </div>
 </div>
@@ -679,6 +692,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$isSupported</b> = 
 </div><div class="memdoc">
 <p>sort dbms as priority </p>
 
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l00356">356</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="abcdbf61ef5e7c96725c7ea2781f165f4"></a>
@@ -695,6 +710,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$isSupported</b> = 
 </div><div class="memdoc">
 <p>Finish recording DBClass log </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l01368">1368</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
 
 </div>
 </div>
@@ -713,6 +730,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$isSupported</b> = 
 <p>Start recording DBClass log </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l01357">1357</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a79cad647912ef780e967819e6346a742"></a>
@@ -729,6 +748,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$isSupported</b> = 
 </div><div class="memdoc">
 <p>finish recording log </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l00429">429</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
 
 </div>
 </div>
@@ -754,6 +775,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$isSupported</b> = 
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l00417">417</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a41aea6b3a6787467fcfd16d28a302c54"></a>
@@ -770,6 +793,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$isSupported</b> = 
 </div><div class="memdoc">
 <p><a class="el" href="classDB.html">DB</a> transaction start </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l01142">1142</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
 
 </div>
 </div>
@@ -806,6 +831,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$isSupported</b> = 
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string cache file </dd></dl>
 
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l00622">622</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a99ab404981e46ae5b48e11ce46290500"></a>
@@ -841,6 +868,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$isSupported</b> = 
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l01106">1106</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a9e84ef91b522b1cd4d1f0f9a3fe3a57a"></a>
@@ -865,6 +894,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$isSupported</b> = 
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l01202">1202</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="aad22e845daa75ae9ca9b97f7e3a89749"></a>
@@ -882,6 +913,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$isSupported</b> = 
 <p>returns instance of db </p>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classDB.html">DB</a> return <a class="el" href="classDB.html">DB</a> object instance </dd></dl>
 
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l00213">213</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a29a603c52c10831cddee82518417f992"></a>
@@ -898,6 +931,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$isSupported</b> = 
 </div><div class="memdoc">
 <p>constructor </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l00222">222</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
 
 </div>
 </div>
@@ -922,6 +957,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$isSupported</b> = 
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l00845">845</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
 
 </div>
 </div>
@@ -965,6 +1002,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$isSupported</b> = 
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>object result of query </dd></dl>
 
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l00555">555</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a75a6b61801ef6ed2bbf092f1333a8ccd"></a>
@@ -988,6 +1027,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$isSupported</b> = 
   </table>
   </dd>
 </dl>
+
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l00930">930</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
 
 </div>
 </div>
@@ -1023,6 +1064,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$isSupported</b> = 
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>int count of cache data </dd></dl>
+
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l00717">717</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
 
 </div>
 </div>
@@ -1066,6 +1109,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$isSupported</b> = 
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string </dd></dl>
 
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l00956">956</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a65508ca8b2bb4ebf6dbb570caf9c8e40"></a>
@@ -1082,6 +1127,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$isSupported</b> = 
 </div><div class="memdoc">
 <p>returns list of disable in supported dbms list this list return by child class </p>
 <dl class="section return"><dt>Returns</dt><dd>array return disable DBMS list in supported dbms list </dd></dl>
+
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l00272">272</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
 
 </div>
 </div>
@@ -1100,6 +1147,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$isSupported</b> = 
 <p>returns enable list in supported dbms list this list return by child class </p>
 <dl class="section return"><dt>Returns</dt><dd>array return enable DBMS list in supported dbms list </dd></dl>
 
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l00245">245</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a3956fe8725f824d8c0a4f3cba449d6df"></a>
@@ -1116,6 +1165,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$isSupported</b> = 
 </div><div class="memdoc">
 <p>Returns object of error info </p>
 <dl class="section return"><dt>Returns</dt><dd>object object of error </dd></dl>
+
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l00541">541</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
 
 </div>
 </div>
@@ -1159,6 +1210,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$isSupported</b> = 
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string </dd></dl>
 
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l01020">1020</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a16f4a668b6429b4b9af5132cbf885213"></a>
@@ -1182,6 +1235,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$isSupported</b> = 
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classDB.html">DB</a> return <a class="el" href="classDB.html">DB</a> object instance </dd></dl>
+
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l00176">176</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
 
 </div>
 </div>
@@ -1207,6 +1262,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$isSupported</b> = 
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classDBParser.html">DBParser</a> </dd></dl>
+
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l01390">1390</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
 
 </div>
 </div>
@@ -1243,6 +1300,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$isSupported</b> = 
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string </dd></dl>
 
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l00861">861</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a82226ac3fc6365c0771b13e389d216cf"></a>
@@ -1259,6 +1318,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$isSupported</b> = 
 </div><div class="memdoc">
 <p>returns list of supported dbms list this list return by directory list check by instance can creatable </p>
 <dl class="section return"><dt>Returns</dt><dd>array return supported DBMS list </dd></dl>
+
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l00234">234</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
 
 </div>
 </div>
@@ -1302,6 +1363,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$isSupported</b> = 
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string </dd></dl>
 
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l00988">988</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a217cc2096613d1758a9851f1dd990d71"></a>
@@ -1337,6 +1400,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$isSupported</b> = 
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>boolean true: connected, false: not connected </dd></dl>
 
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l00400">400</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ab1433763c6378f1085606424a1bfe27c"></a>
@@ -1354,6 +1419,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$isSupported</b> = 
 <p>Return error status </p>
 <dl class="section return"><dt>Returns</dt><dd>boolean true: error, false: no error </dd></dl>
 
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l00532">532</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a7517481bc9d24ad659f8d347688e481b"></a>
@@ -1370,6 +1437,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$isSupported</b> = 
 </div><div class="memdoc">
 <p>Return dbms supportable status The value is set in the child class </p>
 <dl class="section return"><dt>Returns</dt><dd>boolean true: is supported, false: is not supported </dd></dl>
+
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l00389">389</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
 
 </div>
 </div>
@@ -1413,6 +1482,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$isSupported</b> = 
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l00777">777</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a8167fd227a1955f8300c0d0e70dd9d9e"></a>
@@ -1437,6 +1508,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$isSupported</b> = 
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>boolean true: success, false: failed </dd></dl>
 
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l00815">815</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a1fb6903379bc241fd318b980b9e30882"></a>
@@ -1453,6 +1526,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$isSupported</b> = 
 </div><div class="memdoc">
 <p><a class="el" href="classDB.html">DB</a> transaction rollback </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l01170">1170</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
 
 </div>
 </div>
@@ -1489,9 +1564,51 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$isSupported</b> = 
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l00522">522</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0adb7f453d6e8ed2e491d6708be7f9ec"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DB::setQueryLog </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$log</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>set query debug log </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$log</td><td>values set query debug </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l00511">511</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a9952a27cbf07942e5bb8853ab95b5bdb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DB::$cache_file = 'files/cache/queries/'</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l00151">151</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a85f8f65c37474b0e65d844e1f01f39b0"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1512,6 +1629,156 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$isSupported</b> = 
 <div class="line">        <span class="stringliteral">&#39;null&#39;</span> =&gt; <span class="stringliteral">&#39;is null&#39;</span>,</div>
 <div class="line">    )</div>
 </div><!-- fragment -->
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l00078">78</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac9071e31f8241ad644430537f39a16ce"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DB::$connection = ''</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l00119">119</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aca72b9b3a39bb5e5d2e444f20db2c6bb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DB::$count_cache_path = 'files/cache/db'</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l00072">72</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a78868b4c2301aa813d9e2d481424f1e8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DB::$db_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l00157">157</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0483c1bfe18fa5e8bbe7915f9c8187a7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DB::$elapsed_dbclass_time = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l00131">131</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af5a3fdd4e0078a185dac8c2727fb4f2c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DB::$elapsed_time = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l00125">125</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af99d759f7fb3bbadd579d72e686d1cf1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DB::$errno = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l00106">106</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae006f35821aba99713b834fa6a69e55b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DB::$errstr = ''</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l00112">112</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aac22b6ebcd8f78c2f70646d381f933dc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DB::$is_connected = FALSE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l00138">138</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6b693edbdcdce5c86f42c050f62d8136"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DB::$isSupported = FALSE</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l00053">53</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad0a3ae175a659516131cfc6cd615d15c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DB::$master_db = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l00093">93</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a082292b9ca3855cbddd3a74e9490ca82"></a>
@@ -1524,22 +1791,109 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$isSupported</b> = 
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= array(</div>
-<div class="line">        <span class="stringliteral">&#39;mysqli&#39;</span> =&gt; 5,</div>
+<div class="line">        <span class="stringliteral">&#39;mysqli&#39;</span> =&gt; 6,</div>
+<div class="line">        <span class="stringliteral">&#39;mysqli_innodb&#39;</span> =&gt; 5,</div>
 <div class="line">        <span class="stringliteral">&#39;mysql&#39;</span> =&gt; 4,</div>
 <div class="line">        <span class="stringliteral">&#39;mysql_innodb&#39;</span> =&gt; 3,</div>
 <div class="line">        <span class="stringliteral">&#39;cubrid&#39;</span> =&gt; 2,</div>
 <div class="line">        <span class="stringliteral">&#39;mssql&#39;</span> =&gt; 1</div>
 <div class="line">    )</div>
 </div><!-- fragment -->
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l00059">59</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a32ebabea908efd805a83db48fec3ab52"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DB::$query = ''</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l00118">118</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a74e74ee9d3311aa1e8107b8accd05e29"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DB::$result = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l00100">100</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0a811a4446882ee9edf0ed846e8926f3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DB::$slave_db = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l00099">99</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac09dd547a22963632e063c9ab68b7707"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DB::$supported_list = array()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l00145">145</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a39a0eef56f82082ca4c69bcad1f12a31"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DB::$transaction_started = FALSE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l00137">137</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9902aee7d8900a597670fce92c7eb74b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DB::$use_prepared_statements</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="DB_8class_8php_source.html#l00163">163</a> of file <a class="el" href="DB_8class_8php_source.html">DB.class.php</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>classes/db/DB.class.php</li>
+<li>classes/db/<a class="el" href="DB_8class_8php_source.html">DB.class.php</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Nov 29 2013 15:06:10 for XpressEngine by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed May 21 2014 13:47:42 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

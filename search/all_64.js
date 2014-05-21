@@ -275,6 +275,7 @@ var searchData=
   ['dispspamfilteradmindeniedwordlist',['dispSpamfilterAdminDeniedWordList',['../classspamfilterAdminView.html#a1cca57b5c55b8739e21fa3e3a984df72',1,'spamfilterAdminView']]],
   ['disptempsavedlist',['dispTempSavedList',['../classdocumentView.html#a849d0bdc714a0ea2fd23bbe86f2fde6f',1,'documentView']]],
   ['disptrashadminlist',['dispTrashAdminList',['../classtrashAdminView.html#afb1f31836be3cfeda1d8b9e1f5ec9ee0',1,'trashAdminView']]],
+  ['disptrashadminview',['dispTrashAdminView',['../classtrashAdminView.html#a77a13f0633df48ee6802c706d8ccf1de',1,'trashAdminView']]],
   ['dispwidgetadminaddcontent',['dispWidgetAdminAddContent',['../classwidgetAdminView.html#a2f499c5195c994d427e80b9e3cbaa7ef',1,'widgetAdminView']]],
   ['dispwidgetadmindownloadedlist',['dispWidgetAdminDownloadedList',['../classwidgetAdminView.html#ad5defcecf21fb470cb6c3b2e868941a0',1,'widgetAdminView']]],
   ['dispwidgetadmingeneratecode',['dispWidgetAdminGenerateCode',['../classwidgetAdminView.html#ad7ff38d629f723021518ac9ec7a88933',1,'widgetAdminView']]],
@@ -328,5 +329,5 @@ var searchData=
   ['dropcolumn',['dropColumn',['../classDBCubrid.html#ad0b269d73617c6de8b3135ee36ae43d2',1,'DBCubrid\dropColumn()'],['../classDBMssql.html#a802707618ed283cd4143c82972b3ade5',1,'DBMssql\dropColumn()'],['../classDBMysql.html#aa4cd80d663225f3cd7a539d7d7101b38',1,'DBMysql\dropColumn()']]],
   ['dropindex',['dropIndex',['../classDBCubrid.html#a11876878e4a688f8d3407aaa93ffd86e',1,'DBCubrid\dropIndex()'],['../classDBMssql.html#a83bea7f71705370699eac384c5f93088',1,'DBMssql\dropIndex()'],['../classDBMysql.html#a43937761dd37fa25ef0d373446d01d90',1,'DBMysql\dropIndex()']]],
   ['droptable',['dropTable',['../classDB.html#a63a3a5bdc8e30e1cee37cefddd5ce8de',1,'DB']]],
-  ['dump',['DUMP',['../classFirePHP.html#a1adf0b398f3c799b242b58aa1883d1a2',1,'FirePHP\DUMP()'],['../classFB.html#a5565dd7230a3fc4ad7514da54f183a2d',1,'FB\dump()'],['../classFirePHP.html#aa3437a2a2002e6e6a5f36f877e1d65c6',1,'FirePHP\dump()']]]
+  ['dump',['dump',['../classFB.html#a5565dd7230a3fc4ad7514da54f183a2d',1,'FB\dump()'],['../classFirePHP.html#aa3437a2a2002e6e6a5f36f877e1d65c6',1,'FirePHP\dump($Key, $Variable)'],['../classFirePHP.html#a1adf0b398f3c799b242b58aa1883d1a2',1,'FirePHP\DUMP()']]]
 ];

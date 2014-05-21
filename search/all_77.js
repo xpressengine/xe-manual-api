@@ -1,7 +1,7 @@
 var searchData=
 [
   ['wap',['wap',['../classwap.html',1,'wap'],['../classwap.html#a7b4befeef8257c63a0ffe3012a84560b',1,'wap\wap()'],['../classwap.html#a7b4befeef8257c63a0ffe3012a84560b',1,'wap\wap()'],['../classwap.html#a7b4befeef8257c63a0ffe3012a84560b',1,'wap\wap()']]],
-  ['warn',['WARN',['../classFirePHP.html#a0943694c0eaa99d349b36dca2bd572f2',1,'FirePHP\WARN()'],['../classFB.html#a35be1d348ee5ceabf035c2c13f55bb32',1,'FB\warn()'],['../classFirePHP.html#a7ba0c068b6ee851ccd9b8c29bdb61bb7',1,'FirePHP\warn()']]],
+  ['warn',['warn',['../classFB.html#a35be1d348ee5ceabf035c2c13f55bb32',1,'FB\warn()'],['../classFirePHP.html#a7ba0c068b6ee851ccd9b8c29bdb61bb7',1,'FirePHP\warn($Object, $Label=null)'],['../classFirePHP.html#a0943694c0eaa99d349b36dca2bd572f2',1,'FirePHP\WARN()']]],
   ['where',['where',['../classQuery.html#a0ed9a48e6619d83211d0b81907fa8d6b',1,'Query']]],
   ['widget',['widget',['../classwidget.html',1,'']]],
   ['widget_2eadmin_2eview_2ephp',['widget.admin.view.php',['../widget_8admin_8view_8php.html',1,'']]],

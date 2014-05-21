@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.7.4</span>
+   &#160;<span id="projectnumber">1.7.5</span>
    </div>
   </td>
  </tr>
@@ -955,262 +955,263 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00937"></a><span class="lineno">  937</span>&#160;                <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;last_update = base64_decode($xmlDoc-&gt;comment-&gt;update-&gt;body);</div>
 <div class="line"><a name="l00938"></a><span class="lineno">  938</span>&#160;                <span class="keywordflow">if</span>(!<a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;last_update) <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;last_update = <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;regdate;</div>
 <div class="line"><a name="l00939"></a><span class="lineno">  939</span>&#160;                <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;ipaddress = base64_decode($xmlDoc-&gt;comment-&gt;ipaddress-&gt;body);</div>
-<div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160;                <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;list_order = <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;comment_srl*-1;</div>
-<div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160;                <span class="comment">// Change content information (attachment)</span></div>
-<div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160;                <span class="keywordflow">if</span>(count($files))</div>
-<div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160;                {</div>
-<div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160;                    <span class="keywordflow">foreach</span>($files as $key =&gt; $val)</div>
-<div class="line"><a name="l00945"></a><span class="lineno">  945</span>&#160;                    {</div>
-<div class="line"><a name="l00946"></a><span class="lineno">  946</span>&#160;                        <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;content = preg_replace(<span class="stringliteral">&#39;/(src|href)\=([&quot;\&#39;]?)&#39;</span>.preg_quote($key).<span class="stringliteral">&#39;([&quot;\&#39;]?)/i&#39;</span>,<span class="stringliteral">&#39;$1=&quot;&#39;</span>.$val.<span class="charliteral">&#39;&quot;&#39;</span>,<a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;content);</div>
-<div class="line"><a name="l00947"></a><span class="lineno">  947</span>&#160;                    }</div>
-<div class="line"><a name="l00948"></a><span class="lineno">  948</span>&#160;                }</div>
-<div class="line"><a name="l00949"></a><span class="lineno">  949</span>&#160;                <span class="comment">// Comment list first</span></div>
-<div class="line"><a name="l00950"></a><span class="lineno">  950</span>&#160;                $list_args = <span class="keyword">new</span> stdClass;</div>
-<div class="line"><a name="l00951"></a><span class="lineno">  951</span>&#160;                $list_args-&gt;comment_srl = <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;comment_srl;</div>
-<div class="line"><a name="l00952"></a><span class="lineno">  952</span>&#160;                $list_args-&gt;document_srl = <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;document_srl;</div>
-<div class="line"><a name="l00953"></a><span class="lineno">  953</span>&#160;                $list_args-&gt;module_srl = <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;module_srl;</div>
-<div class="line"><a name="l00954"></a><span class="lineno">  954</span>&#160;                $list_args-&gt;regdate = <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;regdate;</div>
-<div class="line"><a name="l00955"></a><span class="lineno">  955</span>&#160;                <span class="comment">// Set data directly if parent comment doesn&#39;t exist</span></div>
-<div class="line"><a name="l00956"></a><span class="lineno">  956</span>&#160;                <span class="keywordflow">if</span>(!<a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;parent_srl)</div>
-<div class="line"><a name="l00957"></a><span class="lineno">  957</span>&#160;                {</div>
-<div class="line"><a name="l00958"></a><span class="lineno">  958</span>&#160;                    $list_args-&gt;head = $list_args-&gt;arrange = <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;comment_srl;</div>
-<div class="line"><a name="l00959"></a><span class="lineno">  959</span>&#160;                    $list_args-&gt;depth = 0;</div>
-<div class="line"><a name="l00960"></a><span class="lineno">  960</span>&#160;                    <span class="comment">// Get parent_srl if parent comment exists</span></div>
-<div class="line"><a name="l00961"></a><span class="lineno">  961</span>&#160;                }</div>
-<div class="line"><a name="l00962"></a><span class="lineno">  962</span>&#160;                <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00963"></a><span class="lineno">  963</span>&#160;                {</div>
-<div class="line"><a name="l00964"></a><span class="lineno">  964</span>&#160;                    <span class="comment">// Get parent comment infomation</span></div>
-<div class="line"><a name="l00965"></a><span class="lineno">  965</span>&#160;                    $parent_args-&gt;comment_srl = <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;parent_srl;</div>
-<div class="line"><a name="l00966"></a><span class="lineno">  966</span>&#160;                    $parent_output = <a class="code" href="func_8inc_8php.html#a418bc23855eebc0d90190dd625ac4474">executeQuery</a>(<span class="stringliteral">&#39;comment.getCommentListItem&#39;</span>, $parent_args);</div>
-<div class="line"><a name="l00967"></a><span class="lineno">  967</span>&#160;                    <span class="comment">// Return if parent comment doesn&#39;t exist</span></div>
-<div class="line"><a name="l00968"></a><span class="lineno">  968</span>&#160;                    <span class="keywordflow">if</span>(!$parent_output-&gt;toBool() || !$parent_output-&gt;data) <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00969"></a><span class="lineno">  969</span>&#160;                    $parent = $parent_output-&gt;data;</div>
-<div class="line"><a name="l00970"></a><span class="lineno">  970</span>&#160;</div>
-<div class="line"><a name="l00971"></a><span class="lineno">  971</span>&#160;                    $list_args-&gt;head = $parent-&gt;head;</div>
-<div class="line"><a name="l00972"></a><span class="lineno">  972</span>&#160;                    $list_args-&gt;depth = $parent-&gt;depth+1;</div>
-<div class="line"><a name="l00973"></a><span class="lineno">  973</span>&#160;                    <span class="keywordflow">if</span>($list_args-&gt;depth&lt;2) $list_args-&gt;arrange = <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;comment_srl;</div>
-<div class="line"><a name="l00974"></a><span class="lineno">  974</span>&#160;                    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00975"></a><span class="lineno">  975</span>&#160;                    {</div>
-<div class="line"><a name="l00976"></a><span class="lineno">  976</span>&#160;                        $list_args-&gt;arrange = $parent-&gt;arrange;</div>
-<div class="line"><a name="l00977"></a><span class="lineno">  977</span>&#160;                        <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = <a class="code" href="func_8inc_8php.html#a418bc23855eebc0d90190dd625ac4474">executeQuery</a>(<span class="stringliteral">&#39;comment.updateCommentListArrange&#39;</span>, $list_args);</div>
-<div class="line"><a name="l00978"></a><span class="lineno">  978</span>&#160;                        <span class="keywordflow">if</span>(!<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;toBool()) <span class="keywordflow">return</span> <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>;</div>
-<div class="line"><a name="l00979"></a><span class="lineno">  979</span>&#160;                    }</div>
-<div class="line"><a name="l00980"></a><span class="lineno">  980</span>&#160;                }</div>
-<div class="line"><a name="l00981"></a><span class="lineno">  981</span>&#160;</div>
-<div class="line"><a name="l00982"></a><span class="lineno">  982</span>&#160;                <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = <a class="code" href="func_8inc_8php.html#a418bc23855eebc0d90190dd625ac4474">executeQuery</a>(<span class="stringliteral">&#39;comment.insertCommentList&#39;</span>, $list_args);</div>
-<div class="line"><a name="l00983"></a><span class="lineno">  983</span>&#160;                <span class="keywordflow">if</span>(<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;toBool())</div>
-<div class="line"><a name="l00984"></a><span class="lineno">  984</span>&#160;                {</div>
-<div class="line"><a name="l00985"></a><span class="lineno">  985</span>&#160;                    <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = <a class="code" href="func_8inc_8php.html#a418bc23855eebc0d90190dd625ac4474">executeQuery</a>(<span class="stringliteral">&#39;comment.insertComment&#39;</span>, <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>);</div>
-<div class="line"><a name="l00986"></a><span class="lineno">  986</span>&#160;                    <span class="keywordflow">if</span>(<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;toBool()) $cnt++;</div>
-<div class="line"><a name="l00987"></a><span class="lineno">  987</span>&#160;                }</div>
-<div class="line"><a name="l00988"></a><span class="lineno">  988</span>&#160;</div>
-<div class="line"><a name="l00989"></a><span class="lineno">  989</span>&#160;                $buff = null;</div>
-<div class="line"><a name="l00990"></a><span class="lineno">  990</span>&#160;                $started = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00991"></a><span class="lineno">  991</span>&#160;            }</div>
-<div class="line"><a name="l00992"></a><span class="lineno">  992</span>&#160;        }</div>
-<div class="line"><a name="l00993"></a><span class="lineno">  993</span>&#160;        <span class="keywordflow">return</span> $cnt;</div>
-<div class="line"><a name="l00994"></a><span class="lineno">  994</span>&#160;    }</div>
-<div class="line"><a name="l00995"></a><span class="lineno">  995</span>&#160;</div>
-<div class="line"><a name="l01004"></a><span class="lineno"><a class="line" href="classimporterAdminController.html#a259bb7d8ae0b653dc45e544af3100753"> 1004</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classimporterAdminController.html#a259bb7d8ae0b653dc45e544af3100753">importAttaches</a>($fp, <a class="code" href="ko_8install_8php.html#ae40aed4d7a99050245e66ca2a82949ed">$module_srl</a>, $upload_target_srl, &amp;$files)</div>
-<div class="line"><a name="l01005"></a><span class="lineno"> 1005</span>&#160;    {</div>
-<div class="line"><a name="l01006"></a><span class="lineno"> 1006</span>&#160;        $uploaded_count = 0;</div>
-<div class="line"><a name="l01007"></a><span class="lineno"> 1007</span>&#160;</div>
-<div class="line"><a name="l01008"></a><span class="lineno"> 1008</span>&#160;        $started = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l01009"></a><span class="lineno"> 1009</span>&#160;        $buff = null;</div>
-<div class="line"><a name="l01010"></a><span class="lineno"> 1010</span>&#160;</div>
-<div class="line"><a name="l01011"></a><span class="lineno"> 1011</span>&#160;        <span class="keywordflow">while</span>(!feof($fp))</div>
-<div class="line"><a name="l01012"></a><span class="lineno"> 1012</span>&#160;        {</div>
-<div class="line"><a name="l01013"></a><span class="lineno"> 1013</span>&#160;            $file_obj = <span class="keyword">new</span> stdClass;</div>
-<div class="line"><a name="l01014"></a><span class="lineno"> 1014</span>&#160;            $str = trim(fgets($fp, 1024));</div>
-<div class="line"><a name="l01015"></a><span class="lineno"> 1015</span>&#160;            <span class="comment">// If it ends with &lt;/attaches&gt;, break</span></div>
-<div class="line"><a name="l01016"></a><span class="lineno"> 1016</span>&#160;            <span class="keywordflow">if</span>(trim($str) == <span class="stringliteral">&#39;&lt;/attaches&gt;&#39;</span>) <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01017"></a><span class="lineno"> 1017</span>&#160;            <span class="comment">// If it starts with &lt;attach&gt;, collect attachments</span></div>
-<div class="line"><a name="l01018"></a><span class="lineno"> 1018</span>&#160;            <span class="keywordflow">if</span>(trim($str) == <span class="stringliteral">&#39;&lt;attach&gt;&#39;</span>)</div>
-<div class="line"><a name="l01019"></a><span class="lineno"> 1019</span>&#160;            {</div>
-<div class="line"><a name="l01020"></a><span class="lineno"> 1020</span>&#160;                $file_obj-&gt;file_srl = <a class="code" href="func_8inc_8php.html#a5a97b458f9c5b4fe3574671840aee27c">getNextSequence</a>();</div>
-<div class="line"><a name="l01021"></a><span class="lineno"> 1021</span>&#160;                $file_obj-&gt;upload_target_srl = $upload_target_srl;</div>
-<div class="line"><a name="l01022"></a><span class="lineno"> 1022</span>&#160;                $file_obj-&gt;module_srl = <a class="code" href="ko_8install_8php.html#ae40aed4d7a99050245e66ca2a82949ed">$module_srl</a>;</div>
-<div class="line"><a name="l01023"></a><span class="lineno"> 1023</span>&#160;</div>
-<div class="line"><a name="l01024"></a><span class="lineno"> 1024</span>&#160;                $started = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l01025"></a><span class="lineno"> 1025</span>&#160;                $buff = null;</div>
-<div class="line"><a name="l01026"></a><span class="lineno"> 1026</span>&#160;                <span class="comment">// If it starts with &lt;file&gt;, handle the attachement in xml file</span></div>
-<div class="line"><a name="l01027"></a><span class="lineno"> 1027</span>&#160;            }</div>
-<div class="line"><a name="l01028"></a><span class="lineno"> 1028</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span>(trim($str) == <span class="stringliteral">&#39;&lt;file&gt;&#39;</span>)</div>
-<div class="line"><a name="l01029"></a><span class="lineno"> 1029</span>&#160;            {</div>
-<div class="line"><a name="l01030"></a><span class="lineno"> 1030</span>&#160;                $file_obj-&gt;file = $this-&gt;saveTemporaryFile($fp);</div>
-<div class="line"><a name="l01031"></a><span class="lineno"> 1031</span>&#160;                <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l01032"></a><span class="lineno"> 1032</span>&#160;            }</div>
-<div class="line"><a name="l01033"></a><span class="lineno"> 1033</span>&#160;</div>
-<div class="line"><a name="l01034"></a><span class="lineno"> 1034</span>&#160;            <span class="keywordflow">if</span>($started) $buff .= $str;</div>
-<div class="line"><a name="l01035"></a><span class="lineno"> 1035</span>&#160;            <span class="comment">// If it ends with &lt;/attach&gt;, handle attachements</span></div>
-<div class="line"><a name="l01036"></a><span class="lineno"> 1036</span>&#160;            <span class="keywordflow">if</span>(trim($str) == <span class="stringliteral">&#39;&lt;/attach&gt;&#39;</span>)</div>
-<div class="line"><a name="l01037"></a><span class="lineno"> 1037</span>&#160;            {</div>
-<div class="line"><a name="l01038"></a><span class="lineno"> 1038</span>&#160;                $xmlDoc = $this-&gt;oXmlParser-&gt;parse($buff.$str);</div>
-<div class="line"><a name="l01039"></a><span class="lineno"> 1039</span>&#160;</div>
-<div class="line"><a name="l01040"></a><span class="lineno"> 1040</span>&#160;                $file_obj-&gt;source_filename = base64_decode($xmlDoc-&gt;attach-&gt;filename-&gt;body);</div>
-<div class="line"><a name="l01041"></a><span class="lineno"> 1041</span>&#160;                $file_obj-&gt;download_count = base64_decode($xmlDoc-&gt;attach-&gt;download_count-&gt;body);</div>
-<div class="line"><a name="l01042"></a><span class="lineno"> 1042</span>&#160;</div>
-<div class="line"><a name="l01043"></a><span class="lineno"> 1043</span>&#160;                <span class="keywordflow">if</span>(!$file_obj-&gt;file)</div>
-<div class="line"><a name="l01044"></a><span class="lineno"> 1044</span>&#160;                {</div>
-<div class="line"><a name="l01045"></a><span class="lineno"> 1045</span>&#160;                    $url = base64_decode($xmlDoc-&gt;attach-&gt;url-&gt;body);</div>
-<div class="line"><a name="l01046"></a><span class="lineno"> 1046</span>&#160;                    $path = base64_decode($xmlDoc-&gt;attach-&gt;path-&gt;body);</div>
-<div class="line"><a name="l01047"></a><span class="lineno"> 1047</span>&#160;                    <span class="keywordflow">if</span>($path &amp;&amp; file_exists($path)) $file_obj-&gt;file = $path;</div>
-<div class="line"><a name="l01048"></a><span class="lineno"> 1048</span>&#160;                    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l01049"></a><span class="lineno"> 1049</span>&#160;                    {</div>
-<div class="line"><a name="l01050"></a><span class="lineno"> 1050</span>&#160;                        $file_obj-&gt;file = $this-&gt;getTmpFilename();</div>
-<div class="line"><a name="l01051"></a><span class="lineno"> 1051</span>&#160;                        <a class="code" href="classFileHandler.html#a41e633e2f59cffddd5d5ffae1e3639c7">FileHandler::getRemoteFile</a>($url, $file_obj-&gt;file);</div>
-<div class="line"><a name="l01052"></a><span class="lineno"> 1052</span>&#160;                    }</div>
-<div class="line"><a name="l01053"></a><span class="lineno"> 1053</span>&#160;                }</div>
-<div class="line"><a name="l01054"></a><span class="lineno"> 1054</span>&#160;</div>
-<div class="line"><a name="l01055"></a><span class="lineno"> 1055</span>&#160;                <span class="keywordflow">if</span>(file_exists($file_obj-&gt;file))</div>
-<div class="line"><a name="l01056"></a><span class="lineno"> 1056</span>&#160;                {</div>
-<div class="line"><a name="l01057"></a><span class="lineno"> 1057</span>&#160;                    <span class="comment">// Set upload path by checking if the attachement is an image or other kind of file</span></div>
-<div class="line"><a name="l01058"></a><span class="lineno"> 1058</span>&#160;                    <span class="keywordflow">if</span>(preg_match(<span class="stringliteral">&quot;/\.(jpe?g|gif|png|wm[va]|mpe?g|avi|swf|flv|mp[1-4]|as[fx]|wav|midi?|moo?v|qt|r[am]{1,2}|m4v)$/i&quot;</span>, $file_obj-&gt;source_filename))</div>
-<div class="line"><a name="l01059"></a><span class="lineno"> 1059</span>&#160;                    {</div>
-<div class="line"><a name="l01060"></a><span class="lineno"> 1060</span>&#160;                        <span class="comment">// Immediately remove the direct file if it has any kind of extensions for hacking</span></div>
-<div class="line"><a name="l01061"></a><span class="lineno"> 1061</span>&#160;                        $file_obj-&gt;source_filename = preg_replace(<span class="stringliteral">&#39;/\.(php|phtm|phar|html?|cgi|pl|exe|jsp|asp|inc)/i&#39;</span>, <span class="stringliteral">&#39;$0-x&#39;</span>, $file_obj-&gt;source_filename);</div>
-<div class="line"><a name="l01062"></a><span class="lineno"> 1062</span>&#160;                        $file_obj-&gt;source_filename = str_replace(array(<span class="charliteral">&#39;&lt;&#39;</span>, <span class="charliteral">&#39;&gt;&#39;</span>), array(<span class="stringliteral">&#39;%3C&#39;</span>, <span class="stringliteral">&#39;%3E&#39;</span>), $file_obj-&gt;source_filename);</div>
-<div class="line"><a name="l01063"></a><span class="lineno"> 1063</span>&#160;</div>
-<div class="line"><a name="l01064"></a><span class="lineno"> 1064</span>&#160;                        $path = sprintf(<span class="stringliteral">&quot;./files/attach/images/%s/%s&quot;</span>, <a class="code" href="ko_8install_8php.html#ae40aed4d7a99050245e66ca2a82949ed">$module_srl</a>, <a class="code" href="func_8inc_8php.html#ae1a0ad24dbf34de227ffd2eb0d1f8da3">getNumberingPath</a>($upload_target_srl, 3));</div>
-<div class="line"><a name="l01065"></a><span class="lineno"> 1065</span>&#160;</div>
-<div class="line"><a name="l01066"></a><span class="lineno"> 1066</span>&#160;                        $ext = substr(strrchr($file_obj-&gt;source_filename,<span class="charliteral">&#39;.&#39;</span>),1);</div>
-<div class="line"><a name="l01067"></a><span class="lineno"> 1067</span>&#160;                        $_filename = md5(crypt(rand(1000000, 900000), rand(0, 100))).<span class="charliteral">&#39;.&#39;</span>.$ext;</div>
-<div class="line"><a name="l01068"></a><span class="lineno"> 1068</span>&#160;                        $filename  = $path.$_filename;</div>
-<div class="line"><a name="l01069"></a><span class="lineno"> 1069</span>&#160;</div>
-<div class="line"><a name="l01070"></a><span class="lineno"> 1070</span>&#160;                        $idx = 1;</div>
-<div class="line"><a name="l01071"></a><span class="lineno"> 1071</span>&#160;                        <span class="keywordflow">while</span>(file_exists($filename))</div>
-<div class="line"><a name="l01072"></a><span class="lineno"> 1072</span>&#160;                        {</div>
-<div class="line"><a name="l01073"></a><span class="lineno"> 1073</span>&#160;                            $filename = $path.preg_replace(<span class="stringliteral">&#39;/\.([a-z0-9]+)$/i&#39;</span>,<span class="charliteral">&#39;_&#39;</span>.$idx.<span class="stringliteral">&#39;.$1&#39;</span>, $_filename);</div>
-<div class="line"><a name="l01074"></a><span class="lineno"> 1074</span>&#160;                            $idx++;</div>
-<div class="line"><a name="l01075"></a><span class="lineno"> 1075</span>&#160;                        }</div>
-<div class="line"><a name="l01076"></a><span class="lineno"> 1076</span>&#160;</div>
-<div class="line"><a name="l01077"></a><span class="lineno"> 1077</span>&#160;                        $file_obj-&gt;direct_download = <span class="charliteral">&#39;Y&#39;</span>;</div>
-<div class="line"><a name="l01078"></a><span class="lineno"> 1078</span>&#160;                    }</div>
-<div class="line"><a name="l01079"></a><span class="lineno"> 1079</span>&#160;                    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l01080"></a><span class="lineno"> 1080</span>&#160;                    {</div>
-<div class="line"><a name="l01081"></a><span class="lineno"> 1081</span>&#160;                        $path = sprintf(<span class="stringliteral">&quot;./files/attach/binaries/%s/%s&quot;</span>, <a class="code" href="ko_8install_8php.html#ae40aed4d7a99050245e66ca2a82949ed">$module_srl</a>, <a class="code" href="func_8inc_8php.html#ae1a0ad24dbf34de227ffd2eb0d1f8da3">getNumberingPath</a>($upload_target_srl,3));</div>
-<div class="line"><a name="l01082"></a><span class="lineno"> 1082</span>&#160;                        $filename = $path.md5(crypt(rand(1000000,900000), rand(0,100)));</div>
-<div class="line"><a name="l01083"></a><span class="lineno"> 1083</span>&#160;                        $file_obj-&gt;direct_download = <span class="charliteral">&#39;N&#39;</span>;</div>
-<div class="line"><a name="l01084"></a><span class="lineno"> 1084</span>&#160;                    }</div>
-<div class="line"><a name="l01085"></a><span class="lineno"> 1085</span>&#160;                    <span class="comment">// Create a directory</span></div>
-<div class="line"><a name="l01086"></a><span class="lineno"> 1086</span>&#160;                    <span class="keywordflow">if</span>(!<a class="code" href="classFileHandler.html#a9c2502d10c34a3996f1d6927624a7824">FileHandler::makeDir</a>($path)) <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l01087"></a><span class="lineno"> 1087</span>&#160;</div>
-<div class="line"><a name="l01088"></a><span class="lineno"> 1088</span>&#160;                    <span class="keywordflow">if</span>(strncmp(<span class="stringliteral">&#39;./files/cache/importer/&#39;</span>, $file_obj-&gt;file, 23) === 0)</div>
-<div class="line"><a name="l01089"></a><span class="lineno"> 1089</span>&#160;                    {</div>
-<div class="line"><a name="l01090"></a><span class="lineno"> 1090</span>&#160;                        <a class="code" href="classFileHandler.html#abfeaad5fe3c937fdbfed73f2138b3d48">FileHandler::rename</a>($file_obj-&gt;file, $filename);</div>
-<div class="line"><a name="l01091"></a><span class="lineno"> 1091</span>&#160;                    }</div>
-<div class="line"><a name="l01092"></a><span class="lineno"> 1092</span>&#160;                    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l01093"></a><span class="lineno"> 1093</span>&#160;                    {</div>
-<div class="line"><a name="l01094"></a><span class="lineno"> 1094</span>&#160;                        copy($file_obj-&gt;file, $filename);</div>
-<div class="line"><a name="l01095"></a><span class="lineno"> 1095</span>&#160;                    }</div>
-<div class="line"><a name="l01096"></a><span class="lineno"> 1096</span>&#160;</div>
-<div class="line"><a name="l01097"></a><span class="lineno"> 1097</span>&#160;                    <span class="comment">// Insert the file to the DB</span></div>
-<div class="line"><a name="l01098"></a><span class="lineno"> 1098</span>&#160;                    unset($file_obj-&gt;file);</div>
-<div class="line"><a name="l01099"></a><span class="lineno"> 1099</span>&#160;                    <span class="keywordflow">if</span>(file_exists($filename))</div>
-<div class="line"><a name="l01100"></a><span class="lineno"> 1100</span>&#160;                    {</div>
-<div class="line"><a name="l01101"></a><span class="lineno"> 1101</span>&#160;                        $file_obj-&gt;uploaded_filename = $filename;</div>
-<div class="line"><a name="l01102"></a><span class="lineno"> 1102</span>&#160;                        $file_obj-&gt;file_size = filesize($filename);</div>
-<div class="line"><a name="l01103"></a><span class="lineno"> 1103</span>&#160;                        $file_obj-&gt;comment = NULL;</div>
-<div class="line"><a name="l01104"></a><span class="lineno"> 1104</span>&#160;                        $file_obj-&gt;member_srl = 0;</div>
-<div class="line"><a name="l01105"></a><span class="lineno"> 1105</span>&#160;                        $file_obj-&gt;sid = md5(rand(rand(1111111,4444444),rand(4444445,9999999)));</div>
-<div class="line"><a name="l01106"></a><span class="lineno"> 1106</span>&#160;                        $file_obj-&gt;isvalid = <span class="charliteral">&#39;Y&#39;</span>;</div>
-<div class="line"><a name="l01107"></a><span class="lineno"> 1107</span>&#160;                        <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = <a class="code" href="func_8inc_8php.html#a418bc23855eebc0d90190dd625ac4474">executeQuery</a>(<span class="stringliteral">&#39;file.insertFile&#39;</span>, $file_obj);</div>
-<div class="line"><a name="l01108"></a><span class="lineno"> 1108</span>&#160;</div>
-<div class="line"><a name="l01109"></a><span class="lineno"> 1109</span>&#160;                        <span class="keywordflow">if</span>(<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;toBool())</div>
-<div class="line"><a name="l01110"></a><span class="lineno"> 1110</span>&#160;                        {</div>
-<div class="line"><a name="l01111"></a><span class="lineno"> 1111</span>&#160;                            $uploaded_count++;</div>
-<div class="line"><a name="l01112"></a><span class="lineno"> 1112</span>&#160;                            $tmp_obj = null;</div>
-<div class="line"><a name="l01113"></a><span class="lineno"> 1113</span>&#160;                            $tmp_obj-&gt;source_filename = $file_obj-&gt;source_filename;</div>
-<div class="line"><a name="l01114"></a><span class="lineno"> 1114</span>&#160;                            <span class="keywordflow">if</span>($file_obj-&gt;direct_download == <span class="charliteral">&#39;Y&#39;</span>) $files[$file_obj-&gt;source_filename] = $file_obj-&gt;uploaded_filename;</div>
-<div class="line"><a name="l01115"></a><span class="lineno"> 1115</span>&#160;                            <span class="keywordflow">else</span> $files[$file_obj-&gt;source_filename] = <a class="code" href="func_8inc_8php.html#accd14bda49a1044b4d8dd93f020f11ee">getUrl</a>(<span class="stringliteral">&#39;&#39;</span>,<span class="stringliteral">&#39;module&#39;</span>,<span class="stringliteral">&#39;file&#39;</span>,<span class="stringliteral">&#39;act&#39;</span>,<span class="stringliteral">&#39;procFileDownload&#39;</span>,<span class="stringliteral">&#39;file_srl&#39;</span>,$file_obj-&gt;file_srl,<span class="stringliteral">&#39;sid&#39;</span>,$file_obj-&gt;sid);</div>
-<div class="line"><a name="l01116"></a><span class="lineno"> 1116</span>&#160;                        }</div>
-<div class="line"><a name="l01117"></a><span class="lineno"> 1117</span>&#160;                    }</div>
-<div class="line"><a name="l01118"></a><span class="lineno"> 1118</span>&#160;                }</div>
-<div class="line"><a name="l01119"></a><span class="lineno"> 1119</span>&#160;            }</div>
-<div class="line"><a name="l01120"></a><span class="lineno"> 1120</span>&#160;        }</div>
-<div class="line"><a name="l01121"></a><span class="lineno"> 1121</span>&#160;        <span class="keywordflow">return</span> $uploaded_count;</div>
-<div class="line"><a name="l01122"></a><span class="lineno"> 1122</span>&#160;    }</div>
-<div class="line"><a name="l01123"></a><span class="lineno"> 1123</span>&#160;</div>
-<div class="line"><a name="l01128"></a><span class="lineno"><a class="line" href="classimporterAdminController.html#a007ae310ca94fb49d96bcdfa3688cb6d"> 1128</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classimporterAdminController.html#a007ae310ca94fb49d96bcdfa3688cb6d">getTmpFilename</a>()</div>
-<div class="line"><a name="l01129"></a><span class="lineno"> 1129</span>&#160;    {</div>
-<div class="line"><a name="l01130"></a><span class="lineno"> 1130</span>&#160;        $path = <span class="stringliteral">&quot;./files/cache/importer&quot;</span>;</div>
-<div class="line"><a name="l01131"></a><span class="lineno"> 1131</span>&#160;        <a class="code" href="classFileHandler.html#a9c2502d10c34a3996f1d6927624a7824">FileHandler::makeDir</a>($path);</div>
-<div class="line"><a name="l01132"></a><span class="lineno"> 1132</span>&#160;        $filename = sprintf(<span class="stringliteral">&quot;%s/%d&quot;</span>, $path, rand(11111111,99999999));</div>
-<div class="line"><a name="l01133"></a><span class="lineno"> 1133</span>&#160;        <span class="keywordflow">if</span>(file_exists($filename)) $filename .= rand(111,999);</div>
-<div class="line"><a name="l01134"></a><span class="lineno"> 1134</span>&#160;        <span class="keywordflow">return</span> $filename;</div>
-<div class="line"><a name="l01135"></a><span class="lineno"> 1135</span>&#160;    }</div>
-<div class="line"><a name="l01136"></a><span class="lineno"> 1136</span>&#160;</div>
-<div class="line"><a name="l01142"></a><span class="lineno"><a class="line" href="classimporterAdminController.html#af263aba79294e35c2027b2e41ac2a198"> 1142</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classimporterAdminController.html#af263aba79294e35c2027b2e41ac2a198">saveTemporaryFile</a>($fp)</div>
-<div class="line"><a name="l01143"></a><span class="lineno"> 1143</span>&#160;    {</div>
-<div class="line"><a name="l01144"></a><span class="lineno"> 1144</span>&#160;        $temp_filename = $this-&gt;getTmpFilename();</div>
-<div class="line"><a name="l01145"></a><span class="lineno"> 1145</span>&#160;        $f = fopen($temp_filename, <span class="stringliteral">&quot;w&quot;</span>);</div>
-<div class="line"><a name="l01146"></a><span class="lineno"> 1146</span>&#160;</div>
-<div class="line"><a name="l01147"></a><span class="lineno"> 1147</span>&#160;        $buff = <span class="stringliteral">&#39;&#39;</span>;</div>
-<div class="line"><a name="l01148"></a><span class="lineno"> 1148</span>&#160;        <span class="keywordflow">while</span>(!feof($fp))</div>
-<div class="line"><a name="l01149"></a><span class="lineno"> 1149</span>&#160;        {</div>
-<div class="line"><a name="l01150"></a><span class="lineno"> 1150</span>&#160;            $str = trim(fgets($fp, 1024));</div>
-<div class="line"><a name="l01151"></a><span class="lineno"> 1151</span>&#160;            <span class="keywordflow">if</span>(trim($str) == <span class="stringliteral">&#39;&lt;/file&gt;&#39;</span>) <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01152"></a><span class="lineno"> 1152</span>&#160;</div>
-<div class="line"><a name="l01153"></a><span class="lineno"> 1153</span>&#160;            $buff .= $str;</div>
-<div class="line"><a name="l01154"></a><span class="lineno"> 1154</span>&#160;</div>
-<div class="line"><a name="l01155"></a><span class="lineno"> 1155</span>&#160;            <span class="keywordflow">if</span>(substr($buff,-7)==<span class="stringliteral">&#39;&lt;/buff&gt;&#39;</span>)</div>
-<div class="line"><a name="l01156"></a><span class="lineno"> 1156</span>&#160;            {</div>
-<div class="line"><a name="l01157"></a><span class="lineno"> 1157</span>&#160;                fwrite($f, base64_decode(substr($buff, 6, -7)));</div>
-<div class="line"><a name="l01158"></a><span class="lineno"> 1158</span>&#160;                $buff = <span class="stringliteral">&#39;&#39;</span>;</div>
-<div class="line"><a name="l01159"></a><span class="lineno"> 1159</span>&#160;            }</div>
-<div class="line"><a name="l01160"></a><span class="lineno"> 1160</span>&#160;        }</div>
-<div class="line"><a name="l01161"></a><span class="lineno"> 1161</span>&#160;        fclose($f);</div>
-<div class="line"><a name="l01162"></a><span class="lineno"> 1162</span>&#160;        <span class="keywordflow">return</span> $temp_filename;</div>
-<div class="line"><a name="l01163"></a><span class="lineno"> 1163</span>&#160;    }</div>
-<div class="line"><a name="l01164"></a><span class="lineno"> 1164</span>&#160;</div>
+<div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160;                <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;status = base64_decode($xmlDoc-&gt;comment-&gt;status-&gt;body);</div>
+<div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160;                <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;list_order = <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;comment_srl*-1;</div>
+<div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160;                <span class="comment">// Change content information (attachment)</span></div>
+<div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160;                <span class="keywordflow">if</span>(count($files))</div>
+<div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160;                {</div>
+<div class="line"><a name="l00945"></a><span class="lineno">  945</span>&#160;                    <span class="keywordflow">foreach</span>($files as $key =&gt; $val)</div>
+<div class="line"><a name="l00946"></a><span class="lineno">  946</span>&#160;                    {</div>
+<div class="line"><a name="l00947"></a><span class="lineno">  947</span>&#160;                        <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;content = preg_replace(<span class="stringliteral">&#39;/(src|href)\=([&quot;\&#39;]?)&#39;</span>.preg_quote($key).<span class="stringliteral">&#39;([&quot;\&#39;]?)/i&#39;</span>,<span class="stringliteral">&#39;$1=&quot;&#39;</span>.$val.<span class="charliteral">&#39;&quot;&#39;</span>,<a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;content);</div>
+<div class="line"><a name="l00948"></a><span class="lineno">  948</span>&#160;                    }</div>
+<div class="line"><a name="l00949"></a><span class="lineno">  949</span>&#160;                }</div>
+<div class="line"><a name="l00950"></a><span class="lineno">  950</span>&#160;                <span class="comment">// Comment list first</span></div>
+<div class="line"><a name="l00951"></a><span class="lineno">  951</span>&#160;                $list_args = <span class="keyword">new</span> stdClass;</div>
+<div class="line"><a name="l00952"></a><span class="lineno">  952</span>&#160;                $list_args-&gt;comment_srl = <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;comment_srl;</div>
+<div class="line"><a name="l00953"></a><span class="lineno">  953</span>&#160;                $list_args-&gt;document_srl = <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;document_srl;</div>
+<div class="line"><a name="l00954"></a><span class="lineno">  954</span>&#160;                $list_args-&gt;module_srl = <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;module_srl;</div>
+<div class="line"><a name="l00955"></a><span class="lineno">  955</span>&#160;                $list_args-&gt;regdate = <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;regdate;</div>
+<div class="line"><a name="l00956"></a><span class="lineno">  956</span>&#160;                <span class="comment">// Set data directly if parent comment doesn&#39;t exist</span></div>
+<div class="line"><a name="l00957"></a><span class="lineno">  957</span>&#160;                <span class="keywordflow">if</span>(!<a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;parent_srl)</div>
+<div class="line"><a name="l00958"></a><span class="lineno">  958</span>&#160;                {</div>
+<div class="line"><a name="l00959"></a><span class="lineno">  959</span>&#160;                    $list_args-&gt;head = $list_args-&gt;arrange = <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;comment_srl;</div>
+<div class="line"><a name="l00960"></a><span class="lineno">  960</span>&#160;                    $list_args-&gt;depth = 0;</div>
+<div class="line"><a name="l00961"></a><span class="lineno">  961</span>&#160;                    <span class="comment">// Get parent_srl if parent comment exists</span></div>
+<div class="line"><a name="l00962"></a><span class="lineno">  962</span>&#160;                }</div>
+<div class="line"><a name="l00963"></a><span class="lineno">  963</span>&#160;                <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00964"></a><span class="lineno">  964</span>&#160;                {</div>
+<div class="line"><a name="l00965"></a><span class="lineno">  965</span>&#160;                    <span class="comment">// Get parent comment infomation</span></div>
+<div class="line"><a name="l00966"></a><span class="lineno">  966</span>&#160;                    $parent_args-&gt;comment_srl = <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;parent_srl;</div>
+<div class="line"><a name="l00967"></a><span class="lineno">  967</span>&#160;                    $parent_output = <a class="code" href="func_8inc_8php.html#a418bc23855eebc0d90190dd625ac4474">executeQuery</a>(<span class="stringliteral">&#39;comment.getCommentListItem&#39;</span>, $parent_args);</div>
+<div class="line"><a name="l00968"></a><span class="lineno">  968</span>&#160;                    <span class="comment">// Return if parent comment doesn&#39;t exist</span></div>
+<div class="line"><a name="l00969"></a><span class="lineno">  969</span>&#160;                    <span class="keywordflow">if</span>(!$parent_output-&gt;toBool() || !$parent_output-&gt;data) <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00970"></a><span class="lineno">  970</span>&#160;                    $parent = $parent_output-&gt;data;</div>
+<div class="line"><a name="l00971"></a><span class="lineno">  971</span>&#160;</div>
+<div class="line"><a name="l00972"></a><span class="lineno">  972</span>&#160;                    $list_args-&gt;head = $parent-&gt;head;</div>
+<div class="line"><a name="l00973"></a><span class="lineno">  973</span>&#160;                    $list_args-&gt;depth = $parent-&gt;depth+1;</div>
+<div class="line"><a name="l00974"></a><span class="lineno">  974</span>&#160;                    <span class="keywordflow">if</span>($list_args-&gt;depth&lt;2) $list_args-&gt;arrange = <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;comment_srl;</div>
+<div class="line"><a name="l00975"></a><span class="lineno">  975</span>&#160;                    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00976"></a><span class="lineno">  976</span>&#160;                    {</div>
+<div class="line"><a name="l00977"></a><span class="lineno">  977</span>&#160;                        $list_args-&gt;arrange = $parent-&gt;arrange;</div>
+<div class="line"><a name="l00978"></a><span class="lineno">  978</span>&#160;                        <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = <a class="code" href="func_8inc_8php.html#a418bc23855eebc0d90190dd625ac4474">executeQuery</a>(<span class="stringliteral">&#39;comment.updateCommentListArrange&#39;</span>, $list_args);</div>
+<div class="line"><a name="l00979"></a><span class="lineno">  979</span>&#160;                        <span class="keywordflow">if</span>(!<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;toBool()) <span class="keywordflow">return</span> <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>;</div>
+<div class="line"><a name="l00980"></a><span class="lineno">  980</span>&#160;                    }</div>
+<div class="line"><a name="l00981"></a><span class="lineno">  981</span>&#160;                }</div>
+<div class="line"><a name="l00982"></a><span class="lineno">  982</span>&#160;</div>
+<div class="line"><a name="l00983"></a><span class="lineno">  983</span>&#160;                <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = <a class="code" href="func_8inc_8php.html#a418bc23855eebc0d90190dd625ac4474">executeQuery</a>(<span class="stringliteral">&#39;comment.insertCommentList&#39;</span>, $list_args);</div>
+<div class="line"><a name="l00984"></a><span class="lineno">  984</span>&#160;                <span class="keywordflow">if</span>(<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;toBool())</div>
+<div class="line"><a name="l00985"></a><span class="lineno">  985</span>&#160;                {</div>
+<div class="line"><a name="l00986"></a><span class="lineno">  986</span>&#160;                    <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = <a class="code" href="func_8inc_8php.html#a418bc23855eebc0d90190dd625ac4474">executeQuery</a>(<span class="stringliteral">&#39;comment.insertComment&#39;</span>, <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>);</div>
+<div class="line"><a name="l00987"></a><span class="lineno">  987</span>&#160;                    <span class="keywordflow">if</span>(<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;toBool()) $cnt++;</div>
+<div class="line"><a name="l00988"></a><span class="lineno">  988</span>&#160;                }</div>
+<div class="line"><a name="l00989"></a><span class="lineno">  989</span>&#160;</div>
+<div class="line"><a name="l00990"></a><span class="lineno">  990</span>&#160;                $buff = null;</div>
+<div class="line"><a name="l00991"></a><span class="lineno">  991</span>&#160;                $started = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00992"></a><span class="lineno">  992</span>&#160;            }</div>
+<div class="line"><a name="l00993"></a><span class="lineno">  993</span>&#160;        }</div>
+<div class="line"><a name="l00994"></a><span class="lineno">  994</span>&#160;        <span class="keywordflow">return</span> $cnt;</div>
+<div class="line"><a name="l00995"></a><span class="lineno">  995</span>&#160;    }</div>
+<div class="line"><a name="l00996"></a><span class="lineno">  996</span>&#160;</div>
+<div class="line"><a name="l01005"></a><span class="lineno"><a class="line" href="classimporterAdminController.html#a259bb7d8ae0b653dc45e544af3100753"> 1005</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classimporterAdminController.html#a259bb7d8ae0b653dc45e544af3100753">importAttaches</a>($fp, <a class="code" href="ko_8install_8php.html#ae40aed4d7a99050245e66ca2a82949ed">$module_srl</a>, $upload_target_srl, &amp;$files)</div>
+<div class="line"><a name="l01006"></a><span class="lineno"> 1006</span>&#160;    {</div>
+<div class="line"><a name="l01007"></a><span class="lineno"> 1007</span>&#160;        $uploaded_count = 0;</div>
+<div class="line"><a name="l01008"></a><span class="lineno"> 1008</span>&#160;</div>
+<div class="line"><a name="l01009"></a><span class="lineno"> 1009</span>&#160;        $started = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l01010"></a><span class="lineno"> 1010</span>&#160;        $buff = null;</div>
+<div class="line"><a name="l01011"></a><span class="lineno"> 1011</span>&#160;</div>
+<div class="line"><a name="l01012"></a><span class="lineno"> 1012</span>&#160;        $file_obj = <span class="keyword">new</span> stdClass;</div>
+<div class="line"><a name="l01013"></a><span class="lineno"> 1013</span>&#160;        <span class="keywordflow">while</span>(!feof($fp))</div>
+<div class="line"><a name="l01014"></a><span class="lineno"> 1014</span>&#160;        {</div>
+<div class="line"><a name="l01015"></a><span class="lineno"> 1015</span>&#160;            $str = trim(fgets($fp, 1024));</div>
+<div class="line"><a name="l01016"></a><span class="lineno"> 1016</span>&#160;            <span class="comment">// If it ends with &lt;/attaches&gt;, break</span></div>
+<div class="line"><a name="l01017"></a><span class="lineno"> 1017</span>&#160;            <span class="keywordflow">if</span>(trim($str) == <span class="stringliteral">&#39;&lt;/attaches&gt;&#39;</span>) <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01018"></a><span class="lineno"> 1018</span>&#160;            <span class="comment">// If it starts with &lt;attach&gt;, collect attachments</span></div>
+<div class="line"><a name="l01019"></a><span class="lineno"> 1019</span>&#160;            <span class="keywordflow">if</span>(trim($str) == <span class="stringliteral">&#39;&lt;attach&gt;&#39;</span>)</div>
+<div class="line"><a name="l01020"></a><span class="lineno"> 1020</span>&#160;            {</div>
+<div class="line"><a name="l01021"></a><span class="lineno"> 1021</span>&#160;                $file_obj-&gt;file_srl = <a class="code" href="func_8inc_8php.html#a5a97b458f9c5b4fe3574671840aee27c">getNextSequence</a>();</div>
+<div class="line"><a name="l01022"></a><span class="lineno"> 1022</span>&#160;                $file_obj-&gt;upload_target_srl = $upload_target_srl;</div>
+<div class="line"><a name="l01023"></a><span class="lineno"> 1023</span>&#160;                $file_obj-&gt;module_srl = <a class="code" href="ko_8install_8php.html#ae40aed4d7a99050245e66ca2a82949ed">$module_srl</a>;</div>
+<div class="line"><a name="l01024"></a><span class="lineno"> 1024</span>&#160;</div>
+<div class="line"><a name="l01025"></a><span class="lineno"> 1025</span>&#160;                $started = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l01026"></a><span class="lineno"> 1026</span>&#160;                $buff = null;</div>
+<div class="line"><a name="l01027"></a><span class="lineno"> 1027</span>&#160;                <span class="comment">// If it starts with &lt;file&gt;, handle the attachement in xml file</span></div>
+<div class="line"><a name="l01028"></a><span class="lineno"> 1028</span>&#160;            }</div>
+<div class="line"><a name="l01029"></a><span class="lineno"> 1029</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span>(trim($str) == <span class="stringliteral">&#39;&lt;file&gt;&#39;</span>)</div>
+<div class="line"><a name="l01030"></a><span class="lineno"> 1030</span>&#160;            {</div>
+<div class="line"><a name="l01031"></a><span class="lineno"> 1031</span>&#160;                $file_obj-&gt;file = $this-&gt;saveTemporaryFile($fp);</div>
+<div class="line"><a name="l01032"></a><span class="lineno"> 1032</span>&#160;                <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l01033"></a><span class="lineno"> 1033</span>&#160;            }</div>
+<div class="line"><a name="l01034"></a><span class="lineno"> 1034</span>&#160;</div>
+<div class="line"><a name="l01035"></a><span class="lineno"> 1035</span>&#160;            <span class="keywordflow">if</span>($started) $buff .= $str;</div>
+<div class="line"><a name="l01036"></a><span class="lineno"> 1036</span>&#160;            <span class="comment">// If it ends with &lt;/attach&gt;, handle attachements</span></div>
+<div class="line"><a name="l01037"></a><span class="lineno"> 1037</span>&#160;            <span class="keywordflow">if</span>(trim($str) == <span class="stringliteral">&#39;&lt;/attach&gt;&#39;</span>)</div>
+<div class="line"><a name="l01038"></a><span class="lineno"> 1038</span>&#160;            {</div>
+<div class="line"><a name="l01039"></a><span class="lineno"> 1039</span>&#160;                $xmlDoc = $this-&gt;oXmlParser-&gt;parse($buff.$str);</div>
+<div class="line"><a name="l01040"></a><span class="lineno"> 1040</span>&#160;</div>
+<div class="line"><a name="l01041"></a><span class="lineno"> 1041</span>&#160;                $file_obj-&gt;source_filename = base64_decode($xmlDoc-&gt;attach-&gt;filename-&gt;body);</div>
+<div class="line"><a name="l01042"></a><span class="lineno"> 1042</span>&#160;                $file_obj-&gt;download_count = base64_decode($xmlDoc-&gt;attach-&gt;download_count-&gt;body);</div>
+<div class="line"><a name="l01043"></a><span class="lineno"> 1043</span>&#160;</div>
+<div class="line"><a name="l01044"></a><span class="lineno"> 1044</span>&#160;                <span class="keywordflow">if</span>(!$file_obj-&gt;file)</div>
+<div class="line"><a name="l01045"></a><span class="lineno"> 1045</span>&#160;                {</div>
+<div class="line"><a name="l01046"></a><span class="lineno"> 1046</span>&#160;                    $url = base64_decode($xmlDoc-&gt;attach-&gt;url-&gt;body);</div>
+<div class="line"><a name="l01047"></a><span class="lineno"> 1047</span>&#160;                    $path = base64_decode($xmlDoc-&gt;attach-&gt;path-&gt;body);</div>
+<div class="line"><a name="l01048"></a><span class="lineno"> 1048</span>&#160;                    <span class="keywordflow">if</span>($path &amp;&amp; file_exists($path)) $file_obj-&gt;file = $path;</div>
+<div class="line"><a name="l01049"></a><span class="lineno"> 1049</span>&#160;                    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l01050"></a><span class="lineno"> 1050</span>&#160;                    {</div>
+<div class="line"><a name="l01051"></a><span class="lineno"> 1051</span>&#160;                        $file_obj-&gt;file = $this-&gt;getTmpFilename();</div>
+<div class="line"><a name="l01052"></a><span class="lineno"> 1052</span>&#160;                        <a class="code" href="classFileHandler.html#a41e633e2f59cffddd5d5ffae1e3639c7">FileHandler::getRemoteFile</a>($url, $file_obj-&gt;file);</div>
+<div class="line"><a name="l01053"></a><span class="lineno"> 1053</span>&#160;                    }</div>
+<div class="line"><a name="l01054"></a><span class="lineno"> 1054</span>&#160;                }</div>
+<div class="line"><a name="l01055"></a><span class="lineno"> 1055</span>&#160;</div>
+<div class="line"><a name="l01056"></a><span class="lineno"> 1056</span>&#160;                <span class="keywordflow">if</span>(file_exists($file_obj-&gt;file))</div>
+<div class="line"><a name="l01057"></a><span class="lineno"> 1057</span>&#160;                {</div>
+<div class="line"><a name="l01058"></a><span class="lineno"> 1058</span>&#160;                    <span class="comment">// Set upload path by checking if the attachement is an image or other kind of file</span></div>
+<div class="line"><a name="l01059"></a><span class="lineno"> 1059</span>&#160;                    <span class="keywordflow">if</span>(preg_match(<span class="stringliteral">&quot;/\.(jpe?g|gif|png|wm[va]|mpe?g|avi|swf|flv|mp[1-4]|as[fx]|wav|midi?|moo?v|qt|r[am]{1,2}|m4v)$/i&quot;</span>, $file_obj-&gt;source_filename))</div>
+<div class="line"><a name="l01060"></a><span class="lineno"> 1060</span>&#160;                    {</div>
+<div class="line"><a name="l01061"></a><span class="lineno"> 1061</span>&#160;                        <span class="comment">// Immediately remove the direct file if it has any kind of extensions for hacking</span></div>
+<div class="line"><a name="l01062"></a><span class="lineno"> 1062</span>&#160;                        $file_obj-&gt;source_filename = preg_replace(<span class="stringliteral">&#39;/\.(php|phtm|phar|html?|cgi|pl|exe|jsp|asp|inc)/i&#39;</span>, <span class="stringliteral">&#39;$0-x&#39;</span>, $file_obj-&gt;source_filename);</div>
+<div class="line"><a name="l01063"></a><span class="lineno"> 1063</span>&#160;                        $file_obj-&gt;source_filename = str_replace(array(<span class="charliteral">&#39;&lt;&#39;</span>, <span class="charliteral">&#39;&gt;&#39;</span>), array(<span class="stringliteral">&#39;%3C&#39;</span>, <span class="stringliteral">&#39;%3E&#39;</span>), $file_obj-&gt;source_filename);</div>
+<div class="line"><a name="l01064"></a><span class="lineno"> 1064</span>&#160;</div>
+<div class="line"><a name="l01065"></a><span class="lineno"> 1065</span>&#160;                        $path = sprintf(<span class="stringliteral">&quot;./files/attach/images/%s/%s&quot;</span>, <a class="code" href="ko_8install_8php.html#ae40aed4d7a99050245e66ca2a82949ed">$module_srl</a>, <a class="code" href="func_8inc_8php.html#ae1a0ad24dbf34de227ffd2eb0d1f8da3">getNumberingPath</a>($upload_target_srl, 3));</div>
+<div class="line"><a name="l01066"></a><span class="lineno"> 1066</span>&#160;</div>
+<div class="line"><a name="l01067"></a><span class="lineno"> 1067</span>&#160;                        $ext = substr(strrchr($file_obj-&gt;source_filename,<span class="charliteral">&#39;.&#39;</span>),1);</div>
+<div class="line"><a name="l01068"></a><span class="lineno"> 1068</span>&#160;                        $_filename = md5(crypt(rand(1000000, 900000), rand(0, 100))).<span class="charliteral">&#39;.&#39;</span>.$ext;</div>
+<div class="line"><a name="l01069"></a><span class="lineno"> 1069</span>&#160;                        $filename  = $path.$_filename;</div>
+<div class="line"><a name="l01070"></a><span class="lineno"> 1070</span>&#160;</div>
+<div class="line"><a name="l01071"></a><span class="lineno"> 1071</span>&#160;                        $idx = 1;</div>
+<div class="line"><a name="l01072"></a><span class="lineno"> 1072</span>&#160;                        <span class="keywordflow">while</span>(file_exists($filename))</div>
+<div class="line"><a name="l01073"></a><span class="lineno"> 1073</span>&#160;                        {</div>
+<div class="line"><a name="l01074"></a><span class="lineno"> 1074</span>&#160;                            $filename = $path.preg_replace(<span class="stringliteral">&#39;/\.([a-z0-9]+)$/i&#39;</span>,<span class="charliteral">&#39;_&#39;</span>.$idx.<span class="stringliteral">&#39;.$1&#39;</span>, $_filename);</div>
+<div class="line"><a name="l01075"></a><span class="lineno"> 1075</span>&#160;                            $idx++;</div>
+<div class="line"><a name="l01076"></a><span class="lineno"> 1076</span>&#160;                        }</div>
+<div class="line"><a name="l01077"></a><span class="lineno"> 1077</span>&#160;</div>
+<div class="line"><a name="l01078"></a><span class="lineno"> 1078</span>&#160;                        $file_obj-&gt;direct_download = <span class="charliteral">&#39;Y&#39;</span>;</div>
+<div class="line"><a name="l01079"></a><span class="lineno"> 1079</span>&#160;                    }</div>
+<div class="line"><a name="l01080"></a><span class="lineno"> 1080</span>&#160;                    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l01081"></a><span class="lineno"> 1081</span>&#160;                    {</div>
+<div class="line"><a name="l01082"></a><span class="lineno"> 1082</span>&#160;                        $path = sprintf(<span class="stringliteral">&quot;./files/attach/binaries/%s/%s&quot;</span>, <a class="code" href="ko_8install_8php.html#ae40aed4d7a99050245e66ca2a82949ed">$module_srl</a>, <a class="code" href="func_8inc_8php.html#ae1a0ad24dbf34de227ffd2eb0d1f8da3">getNumberingPath</a>($upload_target_srl,3));</div>
+<div class="line"><a name="l01083"></a><span class="lineno"> 1083</span>&#160;                        $filename = $path.md5(crypt(rand(1000000,900000), rand(0,100)));</div>
+<div class="line"><a name="l01084"></a><span class="lineno"> 1084</span>&#160;                        $file_obj-&gt;direct_download = <span class="charliteral">&#39;N&#39;</span>;</div>
+<div class="line"><a name="l01085"></a><span class="lineno"> 1085</span>&#160;                    }</div>
+<div class="line"><a name="l01086"></a><span class="lineno"> 1086</span>&#160;                    <span class="comment">// Create a directory</span></div>
+<div class="line"><a name="l01087"></a><span class="lineno"> 1087</span>&#160;                    <span class="keywordflow">if</span>(!<a class="code" href="classFileHandler.html#a9c2502d10c34a3996f1d6927624a7824">FileHandler::makeDir</a>($path)) <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l01088"></a><span class="lineno"> 1088</span>&#160;</div>
+<div class="line"><a name="l01089"></a><span class="lineno"> 1089</span>&#160;                    <span class="keywordflow">if</span>(strncmp(<span class="stringliteral">&#39;./files/cache/importer/&#39;</span>, $file_obj-&gt;file, 23) === 0)</div>
+<div class="line"><a name="l01090"></a><span class="lineno"> 1090</span>&#160;                    {</div>
+<div class="line"><a name="l01091"></a><span class="lineno"> 1091</span>&#160;                        <a class="code" href="classFileHandler.html#abfeaad5fe3c937fdbfed73f2138b3d48">FileHandler::rename</a>($file_obj-&gt;file, $filename);</div>
+<div class="line"><a name="l01092"></a><span class="lineno"> 1092</span>&#160;                    }</div>
+<div class="line"><a name="l01093"></a><span class="lineno"> 1093</span>&#160;                    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l01094"></a><span class="lineno"> 1094</span>&#160;                    {</div>
+<div class="line"><a name="l01095"></a><span class="lineno"> 1095</span>&#160;                        copy($file_obj-&gt;file, $filename);</div>
+<div class="line"><a name="l01096"></a><span class="lineno"> 1096</span>&#160;                    }</div>
+<div class="line"><a name="l01097"></a><span class="lineno"> 1097</span>&#160;</div>
+<div class="line"><a name="l01098"></a><span class="lineno"> 1098</span>&#160;                    <span class="comment">// Insert the file to the DB</span></div>
+<div class="line"><a name="l01099"></a><span class="lineno"> 1099</span>&#160;                    unset($file_obj-&gt;file);</div>
+<div class="line"><a name="l01100"></a><span class="lineno"> 1100</span>&#160;                    <span class="keywordflow">if</span>(file_exists($filename))</div>
+<div class="line"><a name="l01101"></a><span class="lineno"> 1101</span>&#160;                    {</div>
+<div class="line"><a name="l01102"></a><span class="lineno"> 1102</span>&#160;                        $file_obj-&gt;uploaded_filename = $filename;</div>
+<div class="line"><a name="l01103"></a><span class="lineno"> 1103</span>&#160;                        $file_obj-&gt;file_size = filesize($filename);</div>
+<div class="line"><a name="l01104"></a><span class="lineno"> 1104</span>&#160;                        $file_obj-&gt;comment = NULL;</div>
+<div class="line"><a name="l01105"></a><span class="lineno"> 1105</span>&#160;                        $file_obj-&gt;member_srl = 0;</div>
+<div class="line"><a name="l01106"></a><span class="lineno"> 1106</span>&#160;                        $file_obj-&gt;sid = md5(rand(rand(1111111,4444444),rand(4444445,9999999)));</div>
+<div class="line"><a name="l01107"></a><span class="lineno"> 1107</span>&#160;                        $file_obj-&gt;isvalid = <span class="charliteral">&#39;Y&#39;</span>;</div>
+<div class="line"><a name="l01108"></a><span class="lineno"> 1108</span>&#160;                        <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = <a class="code" href="func_8inc_8php.html#a418bc23855eebc0d90190dd625ac4474">executeQuery</a>(<span class="stringliteral">&#39;file.insertFile&#39;</span>, $file_obj);</div>
+<div class="line"><a name="l01109"></a><span class="lineno"> 1109</span>&#160;</div>
+<div class="line"><a name="l01110"></a><span class="lineno"> 1110</span>&#160;                        <span class="keywordflow">if</span>(<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;toBool())</div>
+<div class="line"><a name="l01111"></a><span class="lineno"> 1111</span>&#160;                        {</div>
+<div class="line"><a name="l01112"></a><span class="lineno"> 1112</span>&#160;                            $uploaded_count++;</div>
+<div class="line"><a name="l01113"></a><span class="lineno"> 1113</span>&#160;                            $tmp_obj = null;</div>
+<div class="line"><a name="l01114"></a><span class="lineno"> 1114</span>&#160;                            $tmp_obj-&gt;source_filename = $file_obj-&gt;source_filename;</div>
+<div class="line"><a name="l01115"></a><span class="lineno"> 1115</span>&#160;                            <span class="keywordflow">if</span>($file_obj-&gt;direct_download == <span class="charliteral">&#39;Y&#39;</span>) $files[$file_obj-&gt;source_filename] = $file_obj-&gt;uploaded_filename;</div>
+<div class="line"><a name="l01116"></a><span class="lineno"> 1116</span>&#160;                            <span class="keywordflow">else</span> $files[$file_obj-&gt;source_filename] = <a class="code" href="func_8inc_8php.html#accd14bda49a1044b4d8dd93f020f11ee">getUrl</a>(<span class="stringliteral">&#39;&#39;</span>,<span class="stringliteral">&#39;module&#39;</span>,<span class="stringliteral">&#39;file&#39;</span>,<span class="stringliteral">&#39;act&#39;</span>,<span class="stringliteral">&#39;procFileDownload&#39;</span>,<span class="stringliteral">&#39;file_srl&#39;</span>,$file_obj-&gt;file_srl,<span class="stringliteral">&#39;sid&#39;</span>,$file_obj-&gt;sid);</div>
+<div class="line"><a name="l01117"></a><span class="lineno"> 1117</span>&#160;                        }</div>
+<div class="line"><a name="l01118"></a><span class="lineno"> 1118</span>&#160;                    }</div>
+<div class="line"><a name="l01119"></a><span class="lineno"> 1119</span>&#160;                }</div>
+<div class="line"><a name="l01120"></a><span class="lineno"> 1120</span>&#160;            }</div>
+<div class="line"><a name="l01121"></a><span class="lineno"> 1121</span>&#160;        }</div>
+<div class="line"><a name="l01122"></a><span class="lineno"> 1122</span>&#160;        <span class="keywordflow">return</span> $uploaded_count;</div>
+<div class="line"><a name="l01123"></a><span class="lineno"> 1123</span>&#160;    }</div>
+<div class="line"><a name="l01124"></a><span class="lineno"> 1124</span>&#160;</div>
+<div class="line"><a name="l01129"></a><span class="lineno"><a class="line" href="classimporterAdminController.html#a007ae310ca94fb49d96bcdfa3688cb6d"> 1129</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classimporterAdminController.html#a007ae310ca94fb49d96bcdfa3688cb6d">getTmpFilename</a>()</div>
+<div class="line"><a name="l01130"></a><span class="lineno"> 1130</span>&#160;    {</div>
+<div class="line"><a name="l01131"></a><span class="lineno"> 1131</span>&#160;        $path = <span class="stringliteral">&quot;./files/cache/importer&quot;</span>;</div>
+<div class="line"><a name="l01132"></a><span class="lineno"> 1132</span>&#160;        <a class="code" href="classFileHandler.html#a9c2502d10c34a3996f1d6927624a7824">FileHandler::makeDir</a>($path);</div>
+<div class="line"><a name="l01133"></a><span class="lineno"> 1133</span>&#160;        $filename = sprintf(<span class="stringliteral">&quot;%s/%d&quot;</span>, $path, rand(11111111,99999999));</div>
+<div class="line"><a name="l01134"></a><span class="lineno"> 1134</span>&#160;        <span class="keywordflow">if</span>(file_exists($filename)) $filename .= rand(111,999);</div>
+<div class="line"><a name="l01135"></a><span class="lineno"> 1135</span>&#160;        <span class="keywordflow">return</span> $filename;</div>
+<div class="line"><a name="l01136"></a><span class="lineno"> 1136</span>&#160;    }</div>
+<div class="line"><a name="l01137"></a><span class="lineno"> 1137</span>&#160;</div>
+<div class="line"><a name="l01143"></a><span class="lineno"><a class="line" href="classimporterAdminController.html#af263aba79294e35c2027b2e41ac2a198"> 1143</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classimporterAdminController.html#af263aba79294e35c2027b2e41ac2a198">saveTemporaryFile</a>($fp)</div>
+<div class="line"><a name="l01144"></a><span class="lineno"> 1144</span>&#160;    {</div>
+<div class="line"><a name="l01145"></a><span class="lineno"> 1145</span>&#160;        $temp_filename = $this-&gt;getTmpFilename();</div>
+<div class="line"><a name="l01146"></a><span class="lineno"> 1146</span>&#160;        $f = fopen($temp_filename, <span class="stringliteral">&quot;w&quot;</span>);</div>
+<div class="line"><a name="l01147"></a><span class="lineno"> 1147</span>&#160;</div>
+<div class="line"><a name="l01148"></a><span class="lineno"> 1148</span>&#160;        $buff = <span class="stringliteral">&#39;&#39;</span>;</div>
+<div class="line"><a name="l01149"></a><span class="lineno"> 1149</span>&#160;        <span class="keywordflow">while</span>(!feof($fp))</div>
+<div class="line"><a name="l01150"></a><span class="lineno"> 1150</span>&#160;        {</div>
+<div class="line"><a name="l01151"></a><span class="lineno"> 1151</span>&#160;            $str = trim(fgets($fp, 1024));</div>
+<div class="line"><a name="l01152"></a><span class="lineno"> 1152</span>&#160;            <span class="keywordflow">if</span>(trim($str) == <span class="stringliteral">&#39;&lt;/file&gt;&#39;</span>) <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01153"></a><span class="lineno"> 1153</span>&#160;</div>
+<div class="line"><a name="l01154"></a><span class="lineno"> 1154</span>&#160;            $buff .= $str;</div>
+<div class="line"><a name="l01155"></a><span class="lineno"> 1155</span>&#160;</div>
+<div class="line"><a name="l01156"></a><span class="lineno"> 1156</span>&#160;            <span class="keywordflow">if</span>(substr($buff,-7)==<span class="stringliteral">&#39;&lt;/buff&gt;&#39;</span>)</div>
+<div class="line"><a name="l01157"></a><span class="lineno"> 1157</span>&#160;            {</div>
+<div class="line"><a name="l01158"></a><span class="lineno"> 1158</span>&#160;                fwrite($f, base64_decode(substr($buff, 6, -7)));</div>
+<div class="line"><a name="l01159"></a><span class="lineno"> 1159</span>&#160;                $buff = <span class="stringliteral">&#39;&#39;</span>;</div>
+<div class="line"><a name="l01160"></a><span class="lineno"> 1160</span>&#160;            }</div>
+<div class="line"><a name="l01161"></a><span class="lineno"> 1161</span>&#160;        }</div>
+<div class="line"><a name="l01162"></a><span class="lineno"> 1162</span>&#160;        fclose($f);</div>
+<div class="line"><a name="l01163"></a><span class="lineno"> 1163</span>&#160;        <span class="keywordflow">return</span> $temp_filename;</div>
+<div class="line"><a name="l01164"></a><span class="lineno"> 1164</span>&#160;    }</div>
 <div class="line"><a name="l01165"></a><span class="lineno"> 1165</span>&#160;</div>
-<div class="line"><a name="l01171"></a><span class="lineno"><a class="line" href="classimporterAdminController.html#afa354c44da369a7d71f8d7556632705f"> 1171</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classimporterAdminController.html#afa354c44da369a7d71f8d7556632705f">importExtraVars</a>($fp)</div>
-<div class="line"><a name="l01172"></a><span class="lineno"> 1172</span>&#160;    {</div>
-<div class="line"><a name="l01173"></a><span class="lineno"> 1173</span>&#160;        $buff = null;</div>
-<div class="line"><a name="l01174"></a><span class="lineno"> 1174</span>&#160;        <span class="keywordflow">while</span>(!feof($fp))</div>
-<div class="line"><a name="l01175"></a><span class="lineno"> 1175</span>&#160;        {</div>
-<div class="line"><a name="l01176"></a><span class="lineno"> 1176</span>&#160;            $buff .= $str = trim(fgets($fp, 1024));</div>
-<div class="line"><a name="l01177"></a><span class="lineno"> 1177</span>&#160;            <span class="keywordflow">if</span>(trim($str) == <span class="stringliteral">&#39;&lt;/extra_vars&gt;&#39;</span>) <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01178"></a><span class="lineno"> 1178</span>&#160;        }</div>
-<div class="line"><a name="l01179"></a><span class="lineno"> 1179</span>&#160;        <span class="keywordflow">if</span>(!$buff) <span class="keywordflow">return</span> array();</div>
-<div class="line"><a name="l01180"></a><span class="lineno"> 1180</span>&#160;</div>
-<div class="line"><a name="l01181"></a><span class="lineno"> 1181</span>&#160;        $buff = <span class="stringliteral">&#39;&lt;extra_vars&gt;&#39;</span>.$buff;</div>
-<div class="line"><a name="l01182"></a><span class="lineno"> 1182</span>&#160;        $oXmlParser = <span class="keyword">new</span> <a class="code" href="classXmlParser.html">XmlParser</a>();</div>
-<div class="line"><a name="l01183"></a><span class="lineno"> 1183</span>&#160;        $xmlDoc = $this-&gt;oXmlParser-&gt;parse($buff);</div>
-<div class="line"><a name="l01184"></a><span class="lineno"> 1184</span>&#160;        <span class="keywordflow">if</span>(!count($xmlDoc-&gt;extra_vars-&gt;key)) <span class="keywordflow">return</span> array();</div>
-<div class="line"><a name="l01185"></a><span class="lineno"> 1185</span>&#160;</div>
-<div class="line"><a name="l01186"></a><span class="lineno"> 1186</span>&#160;        $index = 1;</div>
-<div class="line"><a name="l01187"></a><span class="lineno"> 1187</span>&#160;        <span class="keywordflow">foreach</span>($xmlDoc-&gt;extra_vars-&gt;key as $k =&gt; $v)</div>
-<div class="line"><a name="l01188"></a><span class="lineno"> 1188</span>&#160;        {</div>
-<div class="line"><a name="l01189"></a><span class="lineno"> 1189</span>&#160;            unset($vobj);</div>
-<div class="line"><a name="l01190"></a><span class="lineno"> 1190</span>&#160;            <span class="keywordflow">if</span>($v-&gt;var_idx)</div>
-<div class="line"><a name="l01191"></a><span class="lineno"> 1191</span>&#160;            {</div>
-<div class="line"><a name="l01192"></a><span class="lineno"> 1192</span>&#160;                $vobj-&gt;var_idx = base64_decode($v-&gt;var_idx-&gt;body);</div>
-<div class="line"><a name="l01193"></a><span class="lineno"> 1193</span>&#160;                $vobj-&gt;lang_code = base64_decode($v-&gt;lang_code-&gt;body);</div>
-<div class="line"><a name="l01194"></a><span class="lineno"> 1194</span>&#160;                $vobj-&gt;value = base64_decode($v-&gt;value-&gt;body);</div>
-<div class="line"><a name="l01195"></a><span class="lineno"> 1195</span>&#160;                $vobj-&gt;eid = base64_decode($v-&gt;eid-&gt;body);</div>
-<div class="line"><a name="l01196"></a><span class="lineno"> 1196</span>&#160;</div>
-<div class="line"><a name="l01197"></a><span class="lineno"> 1197</span>&#160;            }</div>
-<div class="line"><a name="l01198"></a><span class="lineno"> 1198</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span>($v-&gt;body)</div>
-<div class="line"><a name="l01199"></a><span class="lineno"> 1199</span>&#160;            {</div>
-<div class="line"><a name="l01200"></a><span class="lineno"> 1200</span>&#160;                $vobj-&gt;var_idx = $index;</div>
-<div class="line"><a name="l01201"></a><span class="lineno"> 1201</span>&#160;                $vobj-&gt;lang_code = <a class="code" href="classContext.html#ae75d6f4064d09e48d0d76614b6997e29">Context::getLangType</a>();</div>
-<div class="line"><a name="l01202"></a><span class="lineno"> 1202</span>&#160;                $vobj-&gt;value = base64_decode($v-&gt;body);</div>
-<div class="line"><a name="l01203"></a><span class="lineno"> 1203</span>&#160;                $vobj-&gt;eid = <span class="stringliteral">&#39;extra_vars&#39;</span>.$index;</div>
-<div class="line"><a name="l01204"></a><span class="lineno"> 1204</span>&#160;            }</div>
-<div class="line"><a name="l01205"></a><span class="lineno"> 1205</span>&#160;            <a class="code" href="ko_8install_8php.html#ae9f3d13d48d464400201d7ec024d3a45">$extra_vars</a>[<span class="stringliteral">&quot;extra_vars&quot;</span>.$index] = $vobj;</div>
-<div class="line"><a name="l01206"></a><span class="lineno"> 1206</span>&#160;            $index++;</div>
-<div class="line"><a name="l01207"></a><span class="lineno"> 1207</span>&#160;        }</div>
-<div class="line"><a name="l01208"></a><span class="lineno"> 1208</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="ko_8install_8php.html#ae9f3d13d48d464400201d7ec024d3a45">$extra_vars</a>;</div>
-<div class="line"><a name="l01209"></a><span class="lineno"> 1209</span>&#160;    }</div>
-<div class="line"><a name="l01210"></a><span class="lineno"> 1210</span>&#160;}</div>
-<div class="line"><a name="l01211"></a><span class="lineno"> 1211</span>&#160;<span class="comment">/* End of file importer.admin.controller.php */</span></div>
-<div class="line"><a name="l01212"></a><span class="lineno"> 1212</span>&#160;<span class="comment">/* Location: ./modules/importer/importer.admin.controller.php */</span></div>
+<div class="line"><a name="l01166"></a><span class="lineno"> 1166</span>&#160;</div>
+<div class="line"><a name="l01172"></a><span class="lineno"><a class="line" href="classimporterAdminController.html#afa354c44da369a7d71f8d7556632705f"> 1172</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classimporterAdminController.html#afa354c44da369a7d71f8d7556632705f">importExtraVars</a>($fp)</div>
+<div class="line"><a name="l01173"></a><span class="lineno"> 1173</span>&#160;    {</div>
+<div class="line"><a name="l01174"></a><span class="lineno"> 1174</span>&#160;        $buff = null;</div>
+<div class="line"><a name="l01175"></a><span class="lineno"> 1175</span>&#160;        <span class="keywordflow">while</span>(!feof($fp))</div>
+<div class="line"><a name="l01176"></a><span class="lineno"> 1176</span>&#160;        {</div>
+<div class="line"><a name="l01177"></a><span class="lineno"> 1177</span>&#160;            $buff .= $str = trim(fgets($fp, 1024));</div>
+<div class="line"><a name="l01178"></a><span class="lineno"> 1178</span>&#160;            <span class="keywordflow">if</span>(trim($str) == <span class="stringliteral">&#39;&lt;/extra_vars&gt;&#39;</span>) <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01179"></a><span class="lineno"> 1179</span>&#160;        }</div>
+<div class="line"><a name="l01180"></a><span class="lineno"> 1180</span>&#160;        <span class="keywordflow">if</span>(!$buff) <span class="keywordflow">return</span> array();</div>
+<div class="line"><a name="l01181"></a><span class="lineno"> 1181</span>&#160;</div>
+<div class="line"><a name="l01182"></a><span class="lineno"> 1182</span>&#160;        $buff = <span class="stringliteral">&#39;&lt;extra_vars&gt;&#39;</span>.$buff;</div>
+<div class="line"><a name="l01183"></a><span class="lineno"> 1183</span>&#160;        $oXmlParser = <span class="keyword">new</span> <a class="code" href="classXmlParser.html">XmlParser</a>();</div>
+<div class="line"><a name="l01184"></a><span class="lineno"> 1184</span>&#160;        $xmlDoc = $this-&gt;oXmlParser-&gt;parse($buff);</div>
+<div class="line"><a name="l01185"></a><span class="lineno"> 1185</span>&#160;        <span class="keywordflow">if</span>(!count($xmlDoc-&gt;extra_vars-&gt;key)) <span class="keywordflow">return</span> array();</div>
+<div class="line"><a name="l01186"></a><span class="lineno"> 1186</span>&#160;</div>
+<div class="line"><a name="l01187"></a><span class="lineno"> 1187</span>&#160;        $index = 1;</div>
+<div class="line"><a name="l01188"></a><span class="lineno"> 1188</span>&#160;        <span class="keywordflow">foreach</span>($xmlDoc-&gt;extra_vars-&gt;key as $k =&gt; $v)</div>
+<div class="line"><a name="l01189"></a><span class="lineno"> 1189</span>&#160;        {</div>
+<div class="line"><a name="l01190"></a><span class="lineno"> 1190</span>&#160;            unset($vobj);</div>
+<div class="line"><a name="l01191"></a><span class="lineno"> 1191</span>&#160;            <span class="keywordflow">if</span>($v-&gt;var_idx)</div>
+<div class="line"><a name="l01192"></a><span class="lineno"> 1192</span>&#160;            {</div>
+<div class="line"><a name="l01193"></a><span class="lineno"> 1193</span>&#160;                $vobj-&gt;var_idx = base64_decode($v-&gt;var_idx-&gt;body);</div>
+<div class="line"><a name="l01194"></a><span class="lineno"> 1194</span>&#160;                $vobj-&gt;lang_code = base64_decode($v-&gt;lang_code-&gt;body);</div>
+<div class="line"><a name="l01195"></a><span class="lineno"> 1195</span>&#160;                $vobj-&gt;value = base64_decode($v-&gt;value-&gt;body);</div>
+<div class="line"><a name="l01196"></a><span class="lineno"> 1196</span>&#160;                $vobj-&gt;eid = base64_decode($v-&gt;eid-&gt;body);</div>
+<div class="line"><a name="l01197"></a><span class="lineno"> 1197</span>&#160;</div>
+<div class="line"><a name="l01198"></a><span class="lineno"> 1198</span>&#160;            }</div>
+<div class="line"><a name="l01199"></a><span class="lineno"> 1199</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span>($v-&gt;body)</div>
+<div class="line"><a name="l01200"></a><span class="lineno"> 1200</span>&#160;            {</div>
+<div class="line"><a name="l01201"></a><span class="lineno"> 1201</span>&#160;                $vobj-&gt;var_idx = $index;</div>
+<div class="line"><a name="l01202"></a><span class="lineno"> 1202</span>&#160;                $vobj-&gt;lang_code = <a class="code" href="classContext.html#ae75d6f4064d09e48d0d76614b6997e29">Context::getLangType</a>();</div>
+<div class="line"><a name="l01203"></a><span class="lineno"> 1203</span>&#160;                $vobj-&gt;value = base64_decode($v-&gt;body);</div>
+<div class="line"><a name="l01204"></a><span class="lineno"> 1204</span>&#160;                $vobj-&gt;eid = <span class="stringliteral">&#39;extra_vars&#39;</span>.$index;</div>
+<div class="line"><a name="l01205"></a><span class="lineno"> 1205</span>&#160;            }</div>
+<div class="line"><a name="l01206"></a><span class="lineno"> 1206</span>&#160;            <a class="code" href="ko_8install_8php.html#ae9f3d13d48d464400201d7ec024d3a45">$extra_vars</a>[<span class="stringliteral">&quot;extra_vars&quot;</span>.$index] = $vobj;</div>
+<div class="line"><a name="l01207"></a><span class="lineno"> 1207</span>&#160;            $index++;</div>
+<div class="line"><a name="l01208"></a><span class="lineno"> 1208</span>&#160;        }</div>
+<div class="line"><a name="l01209"></a><span class="lineno"> 1209</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="ko_8install_8php.html#ae9f3d13d48d464400201d7ec024d3a45">$extra_vars</a>;</div>
+<div class="line"><a name="l01210"></a><span class="lineno"> 1210</span>&#160;    }</div>
+<div class="line"><a name="l01211"></a><span class="lineno"> 1211</span>&#160;}</div>
+<div class="line"><a name="l01212"></a><span class="lineno"> 1212</span>&#160;<span class="comment">/* End of file importer.admin.controller.php */</span></div>
+<div class="line"><a name="l01213"></a><span class="lineno"> 1213</span>&#160;<span class="comment">/* Location: ./modules/importer/importer.admin.controller.php */</span></div>
 <div class="ttc" id="classFileHandler_html_a55015d030d3773d96281b0fa4bda986e"><div class="ttname"><a href="classFileHandler.html#a55015d030d3773d96281b0fa4bda986e">FileHandler\removeDir</a></div><div class="ttdeci">removeDir($path)</div><div class="ttdef"><b>Definition:</b> <a href="FileHandler_8class_8php_source.html#l00361">FileHandler.class.php:361</a></div></div>
 <div class="ttc" id="ko_8install_8php_html_a8d7a87df524e7d6938f66f8e284cdd1e"><div class="ttname"><a href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a></div><div class="ttdeci">$oModuleModel</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00092">ko.install.php:92</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_aa08f01e3bf130d770b373ca8493e3e9b"><div class="ttname"><a href="func_8inc_8php.html#aa08f01e3bf130d770b373ca8493e3e9b">getController</a></div><div class="ttdeci">getController($module_name)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00090">func.inc.php:90</a></div></div>
 <div class="ttc" id="ko_8install_8php_html_a7714b111b644017933931ec69a154102"><div class="ttname"><a href="ko_8install_8php.html#a7714b111b644017933931ec69a154102">$lang</a></div><div class="ttdeci">$lang</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00004">ko.install.php:4</a></div></div>
-<div class="ttc" id="func_8inc_8php_html_ae1a0ad24dbf34de227ffd2eb0d1f8da3"><div class="ttname"><a href="func_8inc_8php.html#ae1a0ad24dbf34de227ffd2eb0d1f8da3">getNumberingPath</a></div><div class="ttdeci">getNumberingPath($no, $size=3)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00936">func.inc.php:936</a></div></div>
+<div class="ttc" id="func_8inc_8php_html_ae1a0ad24dbf34de227ffd2eb0d1f8da3"><div class="ttname"><a href="func_8inc_8php.html#ae1a0ad24dbf34de227ffd2eb0d1f8da3">getNumberingPath</a></div><div class="ttdeci">getNumberingPath($no, $size=3)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00975">func.inc.php:975</a></div></div>
 <div class="ttc" id="classimporterAdminController_html_a7609f3f95b4c1e10be65dfcec57d0d27"><div class="ttname"><a href="classimporterAdminController.html#a7609f3f95b4c1e10be65dfcec57d0d27">importerAdminController\importModule</a></div><div class="ttdeci">importModule($key, $cur, $index_file, $module_srl)</div><div class="ttdef"><b>Definition:</b> <a href="importer_8admin_8controller_8php_source.html#l00599">importer.admin.controller.php:599</a></div></div>
 <div class="ttc" id="classMail_html"><div class="ttname"><a href="classMail.html">Mail</a></div><div class="ttdef"><b>Definition:</b> <a href="Mail_8class_8php_source.html#l00018">Mail.class.php:18</a></div></div>
 <div class="ttc" id="classimporterAdminController_html"><div class="ttname"><a href="classimporterAdminController.html">importerAdminController</a></div><div class="ttdef"><b>Definition:</b> <a href="importer_8admin_8controller_8php_source.html#l00014">importer.admin.controller.php:14</a></div></div>
@@ -1218,14 +1219,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="ko_8install_8php_html_a9008ed94ba185855b1723e367744b87e"><div class="ttname"><a href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a></div><div class="ttdeci">$obj</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00116">ko.install.php:116</a></div></div>
 <div class="ttc" id="ko_8install_8php_html_a73004ce9cd673c1bfafd1dc351134797"><div class="ttname"><a href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a></div><div class="ttdeci">$output</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00008">ko.install.php:8</a></div></div>
 <div class="ttc" id="classObject_html_a4f8a7fa8794663b7625fc15c9589797b"><div class="ttname"><a href="classObject.html#a4f8a7fa8794663b7625fc15c9589797b">Object\add</a></div><div class="ttdeci">add($key, $val)</div><div class="ttdef"><b>Definition:</b> <a href="Object_8class_8php_source.html#l00129">Object.class.php:129</a></div></div>
-<div class="ttc" id="classimporterAdminController_html_af263aba79294e35c2027b2e41ac2a198"><div class="ttname"><a href="classimporterAdminController.html#af263aba79294e35c2027b2e41ac2a198">importerAdminController\saveTemporaryFile</a></div><div class="ttdeci">saveTemporaryFile($fp)</div><div class="ttdef"><b>Definition:</b> <a href="importer_8admin_8controller_8php_source.html#l01142">importer.admin.controller.php:1142</a></div></div>
-<div class="ttc" id="blogapi_8addon_8php_html_a6d0a036129b3030ce289a026c5e1eff2"><div class="ttname"><a href="blogapi_8addon_8php.html#a6d0a036129b3030ce289a026c5e1eff2">$user_id</a></div><div class="ttdeci">if(in_array($method_name, array('metaWeblog.deletePost', 'metaWeblog.getUsersBlogs', 'metaWeblog.getUserInfo'))) $user_id</div><div class="ttdef"><b>Definition:</b> <a href="blogapi_8addon_8php_source.html#l00047">blogapi.addon.php:47</a></div></div>
+<div class="ttc" id="classimporterAdminController_html_af263aba79294e35c2027b2e41ac2a198"><div class="ttname"><a href="classimporterAdminController.html#af263aba79294e35c2027b2e41ac2a198">importerAdminController\saveTemporaryFile</a></div><div class="ttdeci">saveTemporaryFile($fp)</div><div class="ttdef"><b>Definition:</b> <a href="importer_8admin_8controller_8php_source.html#l01143">importer.admin.controller.php:1143</a></div></div>
+<div class="ttc" id="blogapi_8addon_8php_html_a6d0a036129b3030ce289a026c5e1eff2"><div class="ttname"><a href="blogapi_8addon_8php.html#a6d0a036129b3030ce289a026c5e1eff2">$user_id</a></div><div class="ttdeci">if(in_array($method_name, array('metaWeblog.deletePost', 'metaWeblog.getUsersBlogs', 'metaWeblog.getUserInfo'))) $user_id</div><div class="ttdef"><b>Definition:</b> <a href="blogapi_8addon_8php_source.html#l00054">blogapi.addon.php:54</a></div></div>
 <div class="ttc" id="classFileHandler_html_ad90c10a81460f437bc68952427606155"><div class="ttname"><a href="classFileHandler.html#ad90c10a81460f437bc68952427606155">FileHandler\writeFile</a></div><div class="ttdeci">writeFile($filename, $buff, $mode=&quot;w&quot;)</div><div class="ttdef"><b>Definition:</b> <a href="FileHandler_8class_8php_source.html#l00145">FileHandler.class.php:145</a></div></div>
-<div class="ttc" id="classContext_html_ae75d6f4064d09e48d0d76614b6997e29"><div class="ttname"><a href="classContext.html#ae75d6f4064d09e48d0d76614b6997e29">Context\getLangType</a></div><div class="ttdeci">getLangType()</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l00927">Context.class.php:927</a></div></div>
+<div class="ttc" id="classContext_html_ae75d6f4064d09e48d0d76614b6997e29"><div class="ttname"><a href="classContext.html#ae75d6f4064d09e48d0d76614b6997e29">Context\getLangType</a></div><div class="ttdeci">getLangType()</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l00930">Context.class.php:930</a></div></div>
 <div class="ttc" id="classimporterAdminController_html_a51a0e3d1bccf3f7c539b119bf394d572"><div class="ttname"><a href="classimporterAdminController.html#a51a0e3d1bccf3f7c539b119bf394d572">importerAdminController\procImporterAdminImport</a></div><div class="ttdeci">procImporterAdminImport()</div><div class="ttdef"><b>Definition:</b> <a href="importer_8admin_8controller_8php_source.html#l00281">importer.admin.controller.php:281</a></div></div>
 <div class="ttc" id="classimporterAdminController_html_a7f08bd88a5e7eeea00c7f201438d1b1b"><div class="ttname"><a href="classimporterAdminController.html#a7f08bd88a5e7eeea00c7f201438d1b1b">importerAdminController\$oXmlParser</a></div><div class="ttdeci">$oXmlParser</div><div class="ttdef"><b>Definition:</b> <a href="importer_8admin_8controller_8php_source.html#l00025">importer.admin.controller.php:25</a></div></div>
 <div class="ttc" id="classimporterAdminController_html_ac425370d30482b23546a0a16da75792c"><div class="ttname"><a href="classimporterAdminController.html#ac425370d30482b23546a0a16da75792c">importerAdminController\$unit_count</a></div><div class="ttdeci">$unit_count</div><div class="ttdef"><b>Definition:</b> <a href="importer_8admin_8controller_8php_source.html#l00020">importer.admin.controller.php:20</a></div></div>
-<div class="ttc" id="classContext_html_a54dd61c7b035a12697db8ca3f1c6849c"><div class="ttname"><a href="classContext.html#a54dd61c7b035a12697db8ca3f1c6849c">Context\getDBInfo</a></div><div class="ttdeci">getDBInfo()</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l00519">Context.class.php:519</a></div></div>
+<div class="ttc" id="classContext_html_a54dd61c7b035a12697db8ca3f1c6849c"><div class="ttname"><a href="classContext.html#a54dd61c7b035a12697db8ca3f1c6849c">Context\getDBInfo</a></div><div class="ttdeci">getDBInfo()</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l00522">Context.class.php:522</a></div></div>
 <div class="ttc" id="classModuleObject_html_ac0e69111c80e589a4da7899fc7c75fe5"><div class="ttname"><a href="classModuleObject.html#ac0e69111c80e589a4da7899fc7c75fe5">ModuleObject\setMessage</a></div><div class="ttdeci">setMessage($message, $type=NULL)</div><div class="ttdef"><b>Definition:</b> <a href="ModuleObject_8class_8php_source.html#l00089">ModuleObject.class.php:89</a></div></div>
 <div class="ttc" id="classFileHandler_html_a41e633e2f59cffddd5d5ffae1e3639c7"><div class="ttname"><a href="classFileHandler.html#a41e633e2f59cffddd5d5ffae1e3639c7">FileHandler\getRemoteFile</a></div><div class="ttdeci">getRemoteFile($url, $target_filename, $body=null, $timeout=3, $method= 'GET', $content_type=null, $headers=array())</div><div class="ttdef"><b>Definition:</b> <a href="FileHandler_8class_8php_source.html#l00609">FileHandler.class.php:609</a></div></div>
 <div class="ttc" id="classimporterAdminController_html_a112303ff9925d381a27f526b97909205"><div class="ttname"><a href="classimporterAdminController.html#a112303ff9925d381a27f526b97909205">importerAdminController\procImporterAdminPreProcessing</a></div><div class="ttdeci">procImporterAdminPreProcessing()</div><div class="ttdef"><b>Definition:</b> <a href="importer_8admin_8controller_8php_source.html#l00172">importer.admin.controller.php:172</a></div></div>
@@ -1242,34 +1243,34 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classFileHandler_html_a6370b3eeddb705be04d9f60902a746e0"><div class="ttname"><a href="classFileHandler.html#a6370b3eeddb705be04d9f60902a746e0">FileHandler\getRealPath</a></div><div class="ttdeci">getRealPath($source)</div><div class="ttdef"><b>Definition:</b> <a href="FileHandler_8class_8php_source.html#l00018">FileHandler.class.php:18</a></div></div>
 <div class="ttc" id="classFileHandler_html_a9c2502d10c34a3996f1d6927624a7824"><div class="ttname"><a href="classFileHandler.html#a9c2502d10c34a3996f1d6927624a7824">FileHandler\makeDir</a></div><div class="ttdeci">makeDir($path_string)</div><div class="ttdef"><b>Definition:</b> <a href="FileHandler_8class_8php_source.html#l00280">FileHandler.class.php:280</a></div></div>
 <div class="ttc" id="ko_8install_8php_html_ae9f3d13d48d464400201d7ec024d3a45"><div class="ttname"><a href="ko_8install_8php.html#ae9f3d13d48d464400201d7ec024d3a45">$extra_vars</a></div><div class="ttdeci">$extra_vars</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00037">ko.install.php:37</a></div></div>
-<div class="ttc" id="classContext_html_a9af9269b04542f7462d27a63226e0ff3"><div class="ttname"><a href="classContext.html#a9af9269b04542f7462d27a63226e0ff3">Context\getLang</a></div><div class="ttdeci">getLang($code)</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l00939">Context.class.php:939</a></div></div>
-<div class="ttc" id="config_8inc_8php_html_a5387c7a3f2aa38adf16f324cee88db88"><div class="ttname"><a href="config_8inc_8php.html#a5387c7a3f2aa38adf16f324cee88db88">_XE_PATH_</a></div><div class="ttdeci">const _XE_PATH_</div><div class="ttdef"><b>Definition:</b> <a href="config_8inc_8php_source.html#l00042">config.inc.php:42</a></div></div>
-<div class="ttc" id="func_8inc_8php_html_abde22c0ee89dfd569abd1e338b3b2cf5"><div class="ttname"><a href="func_8inc_8php.html#abde22c0ee89dfd569abd1e338b3b2cf5">removeHackTag</a></div><div class="ttdeci">removeHackTag($content)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00971">func.inc.php:971</a></div></div>
+<div class="ttc" id="classContext_html_a9af9269b04542f7462d27a63226e0ff3"><div class="ttname"><a href="classContext.html#a9af9269b04542f7462d27a63226e0ff3">Context\getLang</a></div><div class="ttdeci">getLang($code)</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l00942">Context.class.php:942</a></div></div>
+<div class="ttc" id="config_8inc_8php_html_a5387c7a3f2aa38adf16f324cee88db88"><div class="ttname"><a href="config_8inc_8php.html#a5387c7a3f2aa38adf16f324cee88db88">_XE_PATH_</a></div><div class="ttdeci">const _XE_PATH_</div><div class="ttdef"><b>Definition:</b> <a href="config_8inc_8php_source.html#l00046">config.inc.php:46</a></div></div>
+<div class="ttc" id="func_8inc_8php_html_abde22c0ee89dfd569abd1e338b3b2cf5"><div class="ttname"><a href="func_8inc_8php.html#abde22c0ee89dfd569abd1e338b3b2cf5">removeHackTag</a></div><div class="ttdeci">removeHackTag($content)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l01010">func.inc.php:1010</a></div></div>
 <div class="ttc" id="classFileHandler_html_ac0bd2431461ad2bc04c093bfbb826bea"><div class="ttname"><a href="classFileHandler.html#ac0bd2431461ad2bc04c093bfbb826bea">FileHandler\readFile</a></div><div class="ttdeci">readFile($filename)</div><div class="ttdef"><b>Definition:</b> <a href="FileHandler_8class_8php_source.html#l00127">FileHandler.class.php:127</a></div></div>
 <div class="ttc" id="ko_8install_8php_html_aac43fce682d4b7a05df6d3e44c2c54e6"><div class="ttname"><a href="ko_8install_8php.html#aac43fce682d4b7a05df6d3e44c2c54e6">$oDocumentController</a></div><div class="ttdeci">$oDocumentController</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00114">ko.install.php:114</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_a5a97b458f9c5b4fe3574671840aee27c"><div class="ttname"><a href="func_8inc_8php.html#a5a97b458f9c5b4fe3574671840aee27c">getNextSequence</a></div><div class="ttdeci">getNextSequence()</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00236">func.inc.php:236</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_aecdfcc5332bcf22df01fc21a03b64435"><div class="ttname"><a href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a></div><div class="ttdeci">getModel($module_name)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00145">func.inc.php:145</a></div></div>
 <div class="ttc" id="classimporterAdminController_html_a5a83e9fecd854dd75464d6f4cd63f344"><div class="ttname"><a href="classimporterAdminController.html#a5a83e9fecd854dd75464d6f4cd63f344">importerAdminController\importComments</a></div><div class="ttdeci">importComments($fp, $module_srl, $document_srl)</div><div class="ttdef"><b>Definition:</b> <a href="importer_8admin_8controller_8php_source.html#l00879">importer.admin.controller.php:879</a></div></div>
-<div class="ttc" id="func_8inc_8php_html_a778b55fa9ebcf9a5ef0b017b998d9894"><div class="ttname"><a href="func_8inc_8php.html#a778b55fa9ebcf9a5ef0b017b998d9894">getFullSiteUrl</a></div><div class="ttdeci">getFullSiteUrl()</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00412">func.inc.php:412</a></div></div>
+<div class="ttc" id="func_8inc_8php_html_a778b55fa9ebcf9a5ef0b017b998d9894"><div class="ttname"><a href="func_8inc_8php.html#a778b55fa9ebcf9a5ef0b017b998d9894">getFullSiteUrl</a></div><div class="ttdeci">getFullSiteUrl()</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00451">func.inc.php:451</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_ace5cc06ee6c5d655a1bdcc15846a779e"><div class="ttname"><a href="func_8inc_8php.html#ace5cc06ee6c5d655a1bdcc15846a779e">executeQueryArray</a></div><div class="ttdeci">executeQueryArray($query_id, $args=NULL, $arg_columns=NULL)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00219">func.inc.php:219</a></div></div>
 <div class="ttc" id="classimporter_html"><div class="ttname"><a href="classimporter.html">importer</a></div><div class="ttdef"><b>Definition:</b> <a href="importer_8class_8php_source.html#l00011">importer.class.php:11</a></div></div>
-<div class="ttc" id="classContext_html_a90ce25d65fe6c9778421cbb36ab3def5"><div class="ttname"><a href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context\get</a></div><div class="ttdeci">get($key)</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l01752">Context.class.php:1752</a></div></div>
+<div class="ttc" id="classContext_html_a90ce25d65fe6c9778421cbb36ab3def5"><div class="ttname"><a href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context\get</a></div><div class="ttdeci">get($key)</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l01765">Context.class.php:1765</a></div></div>
 <div class="ttc" id="ko_8install_8php_html_ae40aed4d7a99050245e66ca2a82949ed"><div class="ttname"><a href="ko_8install_8php.html#ae40aed4d7a99050245e66ca2a82949ed">$module_srl</a></div><div class="ttdeci">$module_srl</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00108">ko.install.php:108</a></div></div>
 <div class="ttc" id="classimporterAdminController_html_a9f2397ca84ef0adb182cf2b63b941604"><div class="ttname"><a href="classimporterAdminController.html#a9f2397ca84ef0adb182cf2b63b941604">importerAdminController\importTrackbacks</a></div><div class="ttdeci">importTrackbacks($fp, $module_srl, $document_srl)</div><div class="ttdef"><b>Definition:</b> <a href="importer_8admin_8controller_8php_source.html#l00831">importer.admin.controller.php:831</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_a418bc23855eebc0d90190dd625ac4474"><div class="ttname"><a href="func_8inc_8php.html#a418bc23855eebc0d90190dd625ac4474">executeQuery</a></div><div class="ttdeci">executeQuery($query_id, $args=NULL, $arg_columns=NULL)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00203">func.inc.php:203</a></div></div>
-<div class="ttc" id="classimporterAdminController_html_a259bb7d8ae0b653dc45e544af3100753"><div class="ttname"><a href="classimporterAdminController.html#a259bb7d8ae0b653dc45e544af3100753">importerAdminController\importAttaches</a></div><div class="ttdeci">importAttaches($fp, $module_srl, $upload_target_srl, &amp;$files)</div><div class="ttdef"><b>Definition:</b> <a href="importer_8admin_8controller_8php_source.html#l01004">importer.admin.controller.php:1004</a></div></div>
-<div class="ttc" id="func_8inc_8php_html_accd14bda49a1044b4d8dd93f020f11ee"><div class="ttname"><a href="func_8inc_8php.html#accd14bda49a1044b4d8dd93f020f11ee">getUrl</a></div><div class="ttdeci">getUrl()</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00255">func.inc.php:255</a></div></div>
+<div class="ttc" id="classimporterAdminController_html_a259bb7d8ae0b653dc45e544af3100753"><div class="ttname"><a href="classimporterAdminController.html#a259bb7d8ae0b653dc45e544af3100753">importerAdminController\importAttaches</a></div><div class="ttdeci">importAttaches($fp, $module_srl, $upload_target_srl, &amp;$files)</div><div class="ttdef"><b>Definition:</b> <a href="importer_8admin_8controller_8php_source.html#l01005">importer.admin.controller.php:1005</a></div></div>
+<div class="ttc" id="func_8inc_8php_html_accd14bda49a1044b4d8dd93f020f11ee"><div class="ttname"><a href="func_8inc_8php.html#accd14bda49a1044b4d8dd93f020f11ee">getUrl</a></div><div class="ttdeci">getUrl()</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00294">func.inc.php:294</a></div></div>
 <div class="ttc" id="classimporterAdminController_html_a5b0172b0077de7de8b718b897b9fb562"><div class="ttname"><a href="classimporterAdminController.html#a5b0172b0077de7de8b718b897b9fb562">importerAdminController\init</a></div><div class="ttdeci">init()</div><div class="ttdef"><b>Definition:</b> <a href="importer_8admin_8controller_8php_source.html#l00031">importer.admin.controller.php:31</a></div></div>
 <div class="ttc" id="classXmlParser_html"><div class="ttname"><a href="classXmlParser.html">XmlParser</a></div><div class="ttdef"><b>Definition:</b> <a href="XmlParser_8class_8php_source.html#l00038">XmlParser.class.php:38</a></div></div>
 <div class="ttc" id="validate_8php_html_a83018d9153d17d91fbcf3bc10158d34f"><div class="ttname"><a href="validate_8php.html#a83018d9153d17d91fbcf3bc10158d34f">$i</a></div><div class="ttdeci">$i</div><div class="ttdef"><b>Definition:</b> <a href="validate_8php_source.html#l01856">validate.php:1856</a></div></div>
 <div class="ttc" id="classimporterAdminController_html_a34c3708a45075ca44f1c1e274c5e002d"><div class="ttname"><a href="classimporterAdminController.html#a34c3708a45075ca44f1c1e274c5e002d">importerAdminController\importMember</a></div><div class="ttdeci">importMember($key, $cur, $index_file)</div><div class="ttdef"><b>Definition:</b> <a href="importer_8admin_8controller_8php_source.html#l00345">importer.admin.controller.php:345</a></div></div>
-<div class="ttc" id="classimporterAdminController_html_a007ae310ca94fb49d96bcdfa3688cb6d"><div class="ttname"><a href="classimporterAdminController.html#a007ae310ca94fb49d96bcdfa3688cb6d">importerAdminController\getTmpFilename</a></div><div class="ttdeci">getTmpFilename()</div><div class="ttdef"><b>Definition:</b> <a href="importer_8admin_8controller_8php_source.html#l01128">importer.admin.controller.php:1128</a></div></div>
+<div class="ttc" id="classimporterAdminController_html_a007ae310ca94fb49d96bcdfa3688cb6d"><div class="ttname"><a href="classimporterAdminController.html#a007ae310ca94fb49d96bcdfa3688cb6d">importerAdminController\getTmpFilename</a></div><div class="ttdeci">getTmpFilename()</div><div class="ttdef"><b>Definition:</b> <a href="importer_8admin_8controller_8php_source.html#l01129">importer.admin.controller.php:1129</a></div></div>
 <div class="ttc" id="classimporterAdminController_html_aa553a8db633713f858c1064a5b8fa621"><div class="ttname"><a href="classimporterAdminController.html#aa553a8db633713f858c1064a5b8fa621">importerAdminController\procImporterAdminCheckXmlFile</a></div><div class="ttdeci">procImporterAdminCheckXmlFile()</div><div class="ttdef"><b>Definition:</b> <a href="importer_8admin_8controller_8php_source.html#l00039">importer.admin.controller.php:39</a></div></div>
-<div class="ttc" id="classimporterAdminController_html_afa354c44da369a7d71f8d7556632705f"><div class="ttname"><a href="classimporterAdminController.html#afa354c44da369a7d71f8d7556632705f">importerAdminController\importExtraVars</a></div><div class="ttdeci">importExtraVars($fp)</div><div class="ttdef"><b>Definition:</b> <a href="importer_8admin_8controller_8php_source.html#l01171">importer.admin.controller.php:1171</a></div></div>
+<div class="ttc" id="classimporterAdminController_html_afa354c44da369a7d71f8d7556632705f"><div class="ttname"><a href="classimporterAdminController.html#afa354c44da369a7d71f8d7556632705f">importerAdminController\importExtraVars</a></div><div class="ttdeci">importExtraVars($fp)</div><div class="ttdef"><b>Definition:</b> <a href="importer_8admin_8controller_8php_source.html#l01172">importer.admin.controller.php:1172</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 4 2014 20:59:07 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed May 21 2014 13:47:28 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

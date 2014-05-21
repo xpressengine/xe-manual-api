@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.7.4</span>
+   &#160;<span id="projectnumber">1.7.5</span>
    </div>
   </td>
  </tr>
@@ -97,7 +97,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
 <div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classHTMLPurifier__DoctypeRegistry.html#a543ad0ac3f184d26f81a8aa18348be8e">   14</a></span>&#160;    <span class="keyword">protected</span> <a class="code" href="classHTMLPurifier__DoctypeRegistry.html#a543ad0ac3f184d26f81a8aa18348be8e">$aliases</a>;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classHTMLPurifier__DoctypeRegistry.html#aef92485f3d409b5eacf62933967f1027">   26</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">function</span> <span class="keyword">register</span>($doctype, <a class="code" href="blogapi_8addon_8php.html#aa108d9d91e700ac530401dd363b0723b">$xml</a> = <span class="keyword">true</span>, $modules = array(),</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classHTMLPurifier__DoctypeRegistry.html#aef92485f3d409b5eacf62933967f1027">   26</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">function</span> <span class="keyword">register</span>($doctype, <a class="code" href="blogapi_8addon_8php.html#a14ad998c59a6fcbcc09adbc67c7abb85">$xml</a> = <span class="keyword">true</span>, $modules = array(),</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        $tidy_modules = array(), <a class="code" href="classHTMLPurifier__DoctypeRegistry.html#a543ad0ac3f184d26f81a8aa18348be8e">$aliases</a> = array(), $dtd_public = null, $dtd_system = null</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    ) {</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordflow">if</span> (!is_array($modules)) $modules = array($modules);</div>
@@ -105,7 +105,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordflow">if</span> (!is_array(<a class="code" href="classHTMLPurifier__DoctypeRegistry.html#a543ad0ac3f184d26f81a8aa18348be8e">$aliases</a>)) <a class="code" href="classHTMLPurifier__DoctypeRegistry.html#a543ad0ac3f184d26f81a8aa18348be8e">$aliases</a> = array(<a class="code" href="classHTMLPurifier__DoctypeRegistry.html#a543ad0ac3f184d26f81a8aa18348be8e">$aliases</a>);</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordflow">if</span> (!is_object($doctype)) {</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            $doctype = <span class="keyword">new</span> <a class="code" href="classHTMLPurifier__Doctype.html">HTMLPurifier_Doctype</a>(</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                $doctype, <a class="code" href="blogapi_8addon_8php.html#aa108d9d91e700ac530401dd363b0723b">$xml</a>, $modules, $tidy_modules, <a class="code" href="classHTMLPurifier__DoctypeRegistry.html#a543ad0ac3f184d26f81a8aa18348be8e">$aliases</a>, $dtd_public, $dtd_system</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                $doctype, <a class="code" href="blogapi_8addon_8php.html#a14ad998c59a6fcbcc09adbc67c7abb85">$xml</a>, $modules, $tidy_modules, <a class="code" href="classHTMLPurifier__DoctypeRegistry.html#a543ad0ac3f184d26f81a8aa18348be8e">$aliases</a>, $dtd_public, $dtd_system</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            );</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        }</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        $this-&gt;doctypes[$doctype-&gt;name] = $doctype;</div>
@@ -157,17 +157,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;}</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="comment">// vim: et sw=4 sts=4</span></div>
-<div class="ttc" id="blogapi_8addon_8php_html_aa108d9d91e700ac530401dd363b0723b"><div class="ttname"><a href="blogapi_8addon_8php.html#aa108d9d91e700ac530401dd363b0723b">$xml</a></div><div class="ttdeci">$xml</div><div class="ttdef"><b>Definition:</b> <a href="blogapi_8addon_8php_source.html#l00035">blogapi.addon.php:35</a></div></div>
 <div class="ttc" id="classHTMLPurifier__Doctype_html"><div class="ttname"><a href="classHTMLPurifier__Doctype.html">HTMLPurifier_Doctype</a></div><div class="ttdef"><b>Definition:</b> <a href="Doctype_8php_source.html#l00009">Doctype.php:9</a></div></div>
 <div class="ttc" id="classHTMLPurifier__DoctypeRegistry_html_aadfe9274b5c028c80c51106ba428ce97"><div class="ttname"><a href="classHTMLPurifier__DoctypeRegistry.html#aadfe9274b5c028c80c51106ba428ce97">HTMLPurifier_DoctypeRegistry\$doctypes</a></div><div class="ttdeci">$doctypes</div><div class="ttdef"><b>Definition:</b> <a href="DoctypeRegistry_8php_source.html#l00009">DoctypeRegistry.php:9</a></div></div>
 <div class="ttc" id="classHTMLPurifier__DoctypeRegistry_html_a2f81739f6047b1a7388b93ab0fd771fe"><div class="ttname"><a href="classHTMLPurifier__DoctypeRegistry.html#a2f81739f6047b1a7388b93ab0fd771fe">HTMLPurifier_DoctypeRegistry\getDoctypeFromConfig</a></div><div class="ttdeci">getDoctypeFromConfig($config)</div><div class="ttdef"><b>Definition:</b> <a href="DoctypeRegistry_8php_source.html#l00081">DoctypeRegistry.php:81</a></div></div>
 <div class="ttc" id="classHTMLPurifier__DoctypeRegistry_html"><div class="ttname"><a href="classHTMLPurifier__DoctypeRegistry.html">HTMLPurifier_DoctypeRegistry</a></div><div class="ttdef"><b>Definition:</b> <a href="DoctypeRegistry_8php_source.html#l00003">DoctypeRegistry.php:3</a></div></div>
 <div class="ttc" id="classHTMLPurifier__DoctypeRegistry_html_a543ad0ac3f184d26f81a8aa18348be8e"><div class="ttname"><a href="classHTMLPurifier__DoctypeRegistry.html#a543ad0ac3f184d26f81a8aa18348be8e">HTMLPurifier_DoctypeRegistry\$aliases</a></div><div class="ttdeci">$aliases</div><div class="ttdef"><b>Definition:</b> <a href="DoctypeRegistry_8php_source.html#l00014">DoctypeRegistry.php:14</a></div></div>
 <div class="ttc" id="classHTMLPurifier__DoctypeRegistry_html_a94613f98345e43187f652dfeed3d7fcc"><div class="ttname"><a href="classHTMLPurifier__DoctypeRegistry.html#a94613f98345e43187f652dfeed3d7fcc">HTMLPurifier_DoctypeRegistry\make</a></div><div class="ttdeci">make($config)</div><div class="ttdef"><b>Definition:</b> <a href="DoctypeRegistry_8php_source.html#l00074">DoctypeRegistry.php:74</a></div></div>
+<div class="ttc" id="blogapi_8addon_8php_html_a14ad998c59a6fcbcc09adbc67c7abb85"><div class="ttname"><a href="blogapi_8addon_8php.html#a14ad998c59a6fcbcc09adbc67c7abb85">$xml</a></div><div class="ttdeci">if(!$GLOBALS['HTTP_RAW_POST_DATA']) $xml</div><div class="ttdef"><b>Definition:</b> <a href="blogapi_8addon_8php_source.html#l00042">blogapi.addon.php:42</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 4 2014 20:59:02 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed May 21 2014 13:47:23 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

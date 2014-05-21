@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.7.4</span>
+   &#160;<span id="projectnumber">1.7.5</span>
    </div>
   </td>
  </tr>
@@ -116,81 +116,85 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">// Encoding</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="blogapi_8func_8php.html#a1557492ae9fc007747ea06aad32948a0">   32</a></span>&#160;<span class="keyword">function</span> <a class="code" href="blogapi_8func_8php.html#a1557492ae9fc007747ea06aad32948a0">_getEncodedVal</a>($val, $is_sub_set = <span class="keyword">false</span>)</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">if</span>(is_int($val))</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">if</span>(preg_match(<span class="stringliteral">&#39;/^&lt;\!\[CDATA\[/&#39;</span>,$val))</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        $buff = sprintf(<span class="stringliteral">&quot;&lt;value&gt;&lt;i4&gt;%d&lt;/i4&gt;&lt;/value&gt;&quot;</span>, $val);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        $buff = sprintf(<span class="stringliteral">&quot;&lt;value&gt;%s&lt;/value&gt;&quot;</span>, $val);</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    elseif(is_string($val) &amp;&amp; preg_match(<span class="stringliteral">&#39;/^([0-9]+)T([0-9\:]+)$/&#39;</span>, $val))</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    elseif(is_int($val))</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        $buff = sprintf(<span class="stringliteral">&quot;&lt;value&gt;&lt;dateTime.iso8601&gt;%s&lt;/dateTime.iso8601&gt;&lt;/value&gt;\n&quot;</span>, $val);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        $buff = sprintf(<span class="stringliteral">&quot;&lt;value&gt;&lt;i4&gt;%d&lt;/i4&gt;&lt;/value&gt;&quot;</span>, $val);</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    }</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    elseif(is_double($val))</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    elseif(is_string($val) &amp;&amp; preg_match(<span class="stringliteral">&#39;/^([0-9]+)T([0-9\:]+)$/&#39;</span>, $val))</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        $buff = sprintf(<span class="stringliteral">&quot;&lt;value&gt;&lt;double&gt;%f&lt;/double&gt;&lt;/value&gt;&quot;</span>, $val);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        $buff = sprintf(<span class="stringliteral">&quot;&lt;value&gt;&lt;dateTime.iso8601&gt;%s&lt;/dateTime.iso8601&gt;&lt;/value&gt;\n&quot;</span>, $val);</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    elseif(is_bool($val))</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    elseif(is_double($val))</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    {</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        $buff = sprintf(<span class="stringliteral">&quot;&lt;value&gt;&lt;boolean&gt;%d&lt;/boolean&gt;&lt;/value&gt;&quot;</span>, $val ? 1 : 0);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        $buff = sprintf(<span class="stringliteral">&quot;&lt;value&gt;&lt;double&gt;%f&lt;/double&gt;&lt;/value&gt;&quot;</span>, $val);</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    elseif(is_object($val))</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    elseif(is_bool($val))</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        $values = get_object_vars($val);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        $val_count = count($values);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        $buff = <span class="stringliteral">&quot;&lt;value&gt;&lt;struct&gt;&quot;</span>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordflow">foreach</span>($values as $k =&gt; $v)</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            $buff .= sprintf(<span class="stringliteral">&quot;&lt;member&gt;\n&lt;name&gt;%s&lt;/name&gt;\n%s&lt;/member&gt;\n&quot;</span>, htmlspecialchars($k, ENT_COMPAT | ENT_HTML401, <span class="stringliteral">&#39;UTF-8&#39;</span>, <span class="keyword">false</span>), <a class="code" href="blogapi_8func_8php.html#a1557492ae9fc007747ea06aad32948a0">_getEncodedVal</a>($v, <span class="keyword">true</span>));</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        }</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        $buff .= <span class="stringliteral">&quot;&lt;/struct&gt;&lt;/value&gt;\n&quot;</span>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    elseif(is_array($val))</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        $val_count = count($val);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        $buff = <span class="stringliteral">&quot;&lt;value&gt;&lt;array&gt;\n&lt;data&gt;&quot;</span>;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordflow">for</span>(<a class="code" href="validate_8php.html#a83018d9153d17d91fbcf3bc10158d34f">$i</a> = 0; <a class="code" href="validate_8php.html#a83018d9153d17d91fbcf3bc10158d34f">$i</a> &lt; $val_count; <a class="code" href="validate_8php.html#a83018d9153d17d91fbcf3bc10158d34f">$i</a>++)</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        {</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            $buff .= <a class="code" href="blogapi_8func_8php.html#a1557492ae9fc007747ea06aad32948a0">_getEncodedVal</a>($val[<a class="code" href="validate_8php.html#a83018d9153d17d91fbcf3bc10158d34f">$i</a>], <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        }</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        $buff .= <span class="stringliteral">&quot;&lt;/data&gt;\n&lt;/array&gt;&lt;/value&gt;&quot;</span>;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    {</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        $buff = sprintf(<span class="stringliteral">&quot;&lt;value&gt;&lt;string&gt;%s&lt;/string&gt;&lt;/value&gt;\n&quot;</span>, $val);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        $buff = sprintf(<span class="stringliteral">&quot;&lt;value&gt;&lt;boolean&gt;%d&lt;/boolean&gt;&lt;/value&gt;&quot;</span>, $val ? 1 : 0);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    elseif(is_object($val))</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        $values = get_object_vars($val);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        $val_count = count($values);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        $buff = <span class="stringliteral">&quot;&lt;value&gt;&lt;struct&gt;&quot;</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">foreach</span>($values as $k =&gt; $v)</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            $buff .= sprintf(<span class="stringliteral">&quot;&lt;member&gt;\n&lt;name&gt;%s&lt;/name&gt;\n%s&lt;/member&gt;\n&quot;</span>, htmlspecialchars($k, ENT_COMPAT | ENT_HTML401, <span class="stringliteral">&#39;UTF-8&#39;</span>, <span class="keyword">false</span>), <a class="code" href="blogapi_8func_8php.html#a1557492ae9fc007747ea06aad32948a0">_getEncodedVal</a>($v, <span class="keyword">true</span>));</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        $buff .= <span class="stringliteral">&quot;&lt;/struct&gt;&lt;/value&gt;\n&quot;</span>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    elseif(is_array($val))</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        $val_count = count($val);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        $buff = <span class="stringliteral">&quot;&lt;value&gt;&lt;array&gt;\n&lt;data&gt;&quot;</span>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordflow">for</span>(<a class="code" href="validate_8php.html#a83018d9153d17d91fbcf3bc10158d34f">$i</a> = 0; <a class="code" href="validate_8php.html#a83018d9153d17d91fbcf3bc10158d34f">$i</a> &lt; $val_count; <a class="code" href="validate_8php.html#a83018d9153d17d91fbcf3bc10158d34f">$i</a>++)</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            $buff .= <a class="code" href="blogapi_8func_8php.html#a1557492ae9fc007747ea06aad32948a0">_getEncodedVal</a>($val[<a class="code" href="validate_8php.html#a83018d9153d17d91fbcf3bc10158d34f">$i</a>], <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        $buff .= <span class="stringliteral">&quot;&lt;/data&gt;\n&lt;/array&gt;&lt;/value&gt;&quot;</span>;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">if</span>(!$is_sub_set)</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordflow">return</span> sprintf(<span class="stringliteral">&quot;&lt;param&gt;\n%s&lt;/param&gt;&quot;</span>, $buff);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        $buff = sprintf(<span class="stringliteral">&quot;&lt;value&gt;&lt;string&gt;%s&lt;/string&gt;&lt;/value&gt;\n&quot;</span>, $val);</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    }</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">return</span> $buff;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">// Display the result</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="blogapi_8func_8php.html#aee14687cb1bc033360baef8b634ab27e">   83</a></span>&#160;<span class="keyword">function</span> <a class="code" href="blogapi_8func_8php.html#aee14687cb1bc033360baef8b634ab27e">printContent</a>($content)</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;{</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    header(<span class="stringliteral">&quot;Content-Type: text/xml; charset=UTF-8&quot;</span>);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    header(<span class="stringliteral">&quot;Expires: Mon, 26 Jul 1997 05:00:00 GMT&quot;</span>);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    header(<span class="stringliteral">&quot;Last-Modified: &quot;</span> . gmdate(<span class="stringliteral">&quot;D, d M Y H:i:s&quot;</span>) . <span class="stringliteral">&quot; GMT&quot;</span>);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    header(<span class="stringliteral">&quot;Cache-Control: no-store, no-cache, must-revalidate&quot;</span>);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    header(<span class="stringliteral">&quot;Cache-Control: post-check=0, pre-check=0&quot;</span>, <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    header(<span class="stringliteral">&quot;Pragma: no-cache&quot;</span>);</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    print $content;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="code" href="classContext.html#ad59031e45d21ad27eb7d06e0ee76f008">Context::close</a>();</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    exit();</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment">/* End of file blogapi.func.php */</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment">/* Location: ./addons/blogapi/blogapi.func.php */</span></div>
-<div class="ttc" id="blogapi_8addon_8php_html_afe68e6fbe7acfbffc0af0c84a1996466"><div class="ttname"><a href="blogapi_8addon_8php.html#afe68e6fbe7acfbffc0af0c84a1996466">$params</a></div><div class="ttdeci">$params</div><div class="ttdef"><b>Definition:</b> <a href="blogapi_8addon_8php_source.html#l00038">blogapi.addon.php:38</a></div></div>
-<div class="ttc" id="blogapi_8func_8php_html_aee14687cb1bc033360baef8b634ab27e"><div class="ttname"><a href="blogapi_8func_8php.html#aee14687cb1bc033360baef8b634ab27e">printContent</a></div><div class="ttdeci">printContent($content)</div><div class="ttdef"><b>Definition:</b> <a href="blogapi_8func_8php_source.html#l00083">blogapi.func.php:83</a></div></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">if</span>(!$is_sub_set)</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordflow">return</span> sprintf(<span class="stringliteral">&quot;&lt;param&gt;\n%s&lt;/param&gt;&quot;</span>, $buff);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">return</span> $buff;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment">// Display the result</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="blogapi_8func_8php.html#aee14687cb1bc033360baef8b634ab27e">   87</a></span>&#160;<span class="keyword">function</span> <a class="code" href="blogapi_8func_8php.html#aee14687cb1bc033360baef8b634ab27e">printContent</a>($content)</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;{</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    header(<span class="stringliteral">&quot;Content-Type: text/xml; charset=UTF-8&quot;</span>);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    header(<span class="stringliteral">&quot;Expires: Mon, 26 Jul 1997 05:00:00 GMT&quot;</span>);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    header(<span class="stringliteral">&quot;Last-Modified: &quot;</span> . gmdate(<span class="stringliteral">&quot;D, d M Y H:i:s&quot;</span>) . <span class="stringliteral">&quot; GMT&quot;</span>);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    header(<span class="stringliteral">&quot;Cache-Control: no-store, no-cache, must-revalidate&quot;</span>);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    header(<span class="stringliteral">&quot;Cache-Control: post-check=0, pre-check=0&quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    header(<span class="stringliteral">&quot;Pragma: no-cache&quot;</span>);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    print $content;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <a class="code" href="classContext.html#ad59031e45d21ad27eb7d06e0ee76f008">Context::close</a>();</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    exit();</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;}</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment">/* End of file blogapi.func.php */</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment">/* Location: ./addons/blogapi/blogapi.func.php */</span></div>
+<div class="ttc" id="blogapi_8addon_8php_html_afe68e6fbe7acfbffc0af0c84a1996466"><div class="ttname"><a href="blogapi_8addon_8php.html#afe68e6fbe7acfbffc0af0c84a1996466">$params</a></div><div class="ttdeci">$params</div><div class="ttdef"><b>Definition:</b> <a href="blogapi_8addon_8php_source.html#l00045">blogapi.addon.php:45</a></div></div>
+<div class="ttc" id="blogapi_8func_8php_html_aee14687cb1bc033360baef8b634ab27e"><div class="ttname"><a href="blogapi_8func_8php.html#aee14687cb1bc033360baef8b634ab27e">printContent</a></div><div class="ttdeci">printContent($content)</div><div class="ttdef"><b>Definition:</b> <a href="blogapi_8func_8php_source.html#l00087">blogapi.func.php:87</a></div></div>
 <div class="ttc" id="blogapi_8func_8php_html_a1557492ae9fc007747ea06aad32948a0"><div class="ttname"><a href="blogapi_8func_8php.html#a1557492ae9fc007747ea06aad32948a0">_getEncodedVal</a></div><div class="ttdeci">_getEncodedVal($val, $is_sub_set=false)</div><div class="ttdef"><b>Definition:</b> <a href="blogapi_8func_8php_source.html#l00032">blogapi.func.php:32</a></div></div>
 <div class="ttc" id="blogapi_8func_8php_html_a18b93e72ecaae5fdfcfe1f0f107238f6"><div class="ttname"><a href="blogapi_8func_8php.html#a18b93e72ecaae5fdfcfe1f0f107238f6">getXmlRpcResponse</a></div><div class="ttdeci">getXmlRpcResponse($params)</div><div class="ttdef"><b>Definition:</b> <a href="blogapi_8func_8php_source.html#l00022">blogapi.func.php:22</a></div></div>
-<div class="ttc" id="classContext_html_ad59031e45d21ad27eb7d06e0ee76f008"><div class="ttname"><a href="classContext.html#ad59031e45d21ad27eb7d06e0ee76f008">Context\close</a></div><div class="ttdeci">close()</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l00400">Context.class.php:400</a></div></div>
+<div class="ttc" id="classContext_html_ad59031e45d21ad27eb7d06e0ee76f008"><div class="ttname"><a href="classContext.html#ad59031e45d21ad27eb7d06e0ee76f008">Context\close</a></div><div class="ttdeci">close()</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l00403">Context.class.php:403</a></div></div>
 <div class="ttc" id="blogapi_8func_8php_html_a7e46f8d2f9b3c3115d176926b68b6b09"><div class="ttname"><a href="blogapi_8func_8php.html#a7e46f8d2f9b3c3115d176926b68b6b09">getXmlRpcFailure</a></div><div class="ttdeci">getXmlRpcFailure($error, $message)</div><div class="ttdef"><b>Definition:</b> <a href="blogapi_8func_8php_source.html#l00013">blogapi.func.php:13</a></div></div>
 <div class="ttc" id="validate_8php_html_a83018d9153d17d91fbcf3bc10158d34f"><div class="ttname"><a href="validate_8php.html#a83018d9153d17d91fbcf3bc10158d34f">$i</a></div><div class="ttdeci">$i</div><div class="ttdef"><b>Definition:</b> <a href="validate_8php_source.html#l01856">validate.php:1856</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 4 2014 20:58:59 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed May 21 2014 13:47:19 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>
