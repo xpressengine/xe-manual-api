@@ -130,7 +130,20 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a43bcd3ebc364d2fe66b412df5ce03200"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Facade that coordinates HTML <a class="el" href="classPurifier.html">Purifier</a>'s subsystems in order to purify HTML.</p>
+<div class="textblock"><p>mainpage</p>
+<p>HTML <a class="el" href="classPurifier.html">Purifier</a> is an HTML filter that will take an arbitrary snippet of HTML and rigorously test, validate and filter it into a version that is safe for output onto webpages. It achieves this by:</p>
+<ol type="1">
+<li>Lexing (parsing into tokens) the document,</li>
+<li>Executing various strategies on the tokens:<ol type="a">
+<li>Removing all elements not in the whitelist,</li>
+<li>Making the tokens well-formed,</li>
+<li>Fixing the nesting of the nodes, and</li>
+<li>Validating attributes of the nodes; and</li>
+</ol>
+</li>
+<li>Generating HTML from the purified tokens.</li>
+</ol>
+<p>However, most users will only need to interface with the <a class="el" href="classHTMLPurifier.html">HTMLPurifier</a> and <a class="el" href="classHTMLPurifier__Config.html">HTMLPurifier_Config</a>. Facade that coordinates HTML <a class="el" href="classPurifier.html">Purifier</a>'s subsystems in order to purify HTML.</p>
 <dl class="section note"><dt>Note</dt><dd>There are several points in which configuration can be specified for HTML <a class="el" href="classPurifier.html">Purifier</a>. The precedence of these (from lowest to highest) is as follows:<ol type="1">
 <li>Instance: new <a class="el" href="classHTMLPurifier.html">HTMLPurifier</a>($config)</li>
 <li>Invocation: purify($html, $config) These configurations are entirely independent of each other and are <em>not</em> merged (this behavior may change in the future).</li>
@@ -427,7 +440,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 21 2014 13:47:46 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed May 21 2014 22:14:37 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>
