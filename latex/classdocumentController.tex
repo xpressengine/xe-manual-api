@@ -1,0 +1,1217 @@
+\hypertarget{classdocumentController}{\section{document\+Controller Class Reference}
+\label{classdocumentController}\index{document\+Controller@{document\+Controller}}
+}
+
+
+controller class of the document module  
+
+
+Inheritance diagram for document\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classdocumentController}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classdocumentController_a3b20277855e8275a99ba25a63c720f7c}{init} ()
+\item 
+\hyperlink{classdocumentController_a32058ce80d8db1a0b6a97ce1d849afac}{proc\+Document\+Vote\+Up} ()
+\item 
+\hyperlink{classdocumentController_a4ab39cd64c6d7871868bbce8ca4486ee}{insert\+Alias} (\$\hyperlink{ko_8install_8php_a370bb6450fab1da3e0ed9f484a38b761}{module\+\_\+srl}, \$document\+\_\+srl, \$alias\+\_\+title)
+\item 
+\hyperlink{classdocumentController_a2df8114d4cfbe0a01c6bf29f68884d6e}{proc\+Document\+Vote\+Down} ()
+\item 
+\hyperlink{classdocumentController_a9c23f01e72bf1028d72f43ebf08d0cee}{proc\+Document\+Declare} ()
+\item 
+\hyperlink{classdocumentController_aca369b51be40b67d7c2456f4e2f28598}{delete\+Document\+Alias\+By\+Module} (\$\hyperlink{ko_8install_8php_a370bb6450fab1da3e0ed9f484a38b761}{module\+\_\+srl})
+\item 
+\hyperlink{classdocumentController_a0dc624a7dd83ce881a7ff136066160aa}{delete\+Document\+Alias\+By\+Document} (\$document\+\_\+srl)
+\item 
+\hyperlink{classdocumentController_a01a4d3351ede905b2158174af58ca0a8}{delete\+Document\+History} (\$history\+\_\+srl, \$document\+\_\+srl, \$\hyperlink{ko_8install_8php_a370bb6450fab1da3e0ed9f484a38b761}{module\+\_\+srl})
+\item 
+\hyperlink{classdocumentController_a6b5c3aae5cb5a4fd51350a597963d73a}{trigger\+Delete\+Module\+Documents} (\&\$obj)
+\item 
+\hyperlink{classdocumentController_af5d7f1c94c924d19c3cf4c94f13dc90d}{add\+Grant} (\$document\+\_\+srl)
+\item 
+\hyperlink{classdocumentController_ab3b1090cdebc810569b64f3a87ab0637}{insert\+Document} (\$obj, \$manual\+\_\+inserted=false, \$is\+Restore=false, \$is\+Latest=true)
+\item 
+\hyperlink{classdocumentController_a09cde49e8c89e2b580f302a459831cee}{update\+Document} (\$source\+\_\+obj, \$obj, \$manual\+\_\+updated=F\+A\+L\+S\+E)
+\item 
+\hyperlink{classdocumentController_a93df4318474646597031e6a1ea50c884}{delete\+Document} (\$document\+\_\+srl, \$is\+\_\+admin=false, \$is\+Empty\+Trash=false, \$o\+Document=null)
+\item 
+\hyperlink{classdocumentController_a2514acfe313b7ddd5daccb50557d38b5}{\+\_\+delete\+Declared\+Documents} (\$document\+Srls)
+\item 
+\hyperlink{classdocumentController_ac055fa2cc48de200d0b319eddd7a13da}{\+\_\+delete\+Document\+Readed\+Log} (\$document\+Srls)
+\item 
+\hyperlink{classdocumentController_a9fe391d1b1ece3b7b16d15976c1622d0}{\+\_\+delete\+Document\+Voted\+Log} (\$document\+Srls)
+\item 
+\hyperlink{classdocumentController_a3f861f8df6113ca3211c48be3c49f305}{move\+Document\+To\+Trash} (\$obj)
+\item 
+\hyperlink{classdocumentController_a437461a6588e59e038ed54316bfa7893}{update\+Readed\+Count} (\&\$o\+Document)
+\item 
+\hyperlink{classdocumentController_a832207dfbf4dac2f32d4a365f9e5ea77}{insert\+Document\+Extra\+Key} (\$\hyperlink{ko_8install_8php_a370bb6450fab1da3e0ed9f484a38b761}{module\+\_\+srl}, \$var\+\_\+idx, \$var\+\_\+name, \$var\+\_\+type, \$var\+\_\+is\+\_\+required= 'N', \$var\+\_\+search= 'N', \$var\+\_\+default= '', \$var\+\_\+desc= '', \$eid)
+\item 
+\hyperlink{classdocumentController_a279894a3cef824bc940cda67ced511aa}{delete\+Document\+Extra\+Keys} (\$\hyperlink{ko_8install_8php_a370bb6450fab1da3e0ed9f484a38b761}{module\+\_\+srl}, \$var\+\_\+idx=null)
+\item 
+\hyperlink{classdocumentController_adb5345b43e9795d7e647754cb88b9b5a}{insert\+Document\+Extra\+Var} (\$\hyperlink{ko_8install_8php_a370bb6450fab1da3e0ed9f484a38b761}{module\+\_\+srl}, \$document\+\_\+srl, \$var\+\_\+idx, \$value, \$eid=null, \$lang\+\_\+code= '')
+\item 
+\hyperlink{classdocumentController_a1ebb5684cf99ea4044fa476c6d006bd2}{delete\+Document\+Extra\+Vars} (\$\hyperlink{ko_8install_8php_a370bb6450fab1da3e0ed9f484a38b761}{module\+\_\+srl}, \$document\+\_\+srl=null, \$var\+\_\+idx=null, \$lang\+\_\+code=null, \$eid=null)
+\item 
+\hyperlink{classdocumentController_aca82ae9abe825d3ee6182d3608e71e31}{update\+Voted\+Count} (\$document\+\_\+srl, \$\hyperlink{classpoint}{point}=1)
+\item 
+\hyperlink{classdocumentController_aa2cdd129c5f882d535e39728761d4168}{declared\+Document} (\$document\+\_\+srl)
+\item 
+\hyperlink{classdocumentController_a1813c01d82596b3ddb48c1bde746428e}{update\+Comment\+Count} (\$document\+\_\+srl, \$comment\+\_\+count, \$last\+\_\+updater, \$comment\+\_\+inserted=false)
+\item 
+\hyperlink{classdocumentController_ab932f88ad36638495bb5db441737edef}{update\+Trackback\+Count} (\$document\+\_\+srl, \$trackback\+\_\+count)
+\item 
+\hyperlink{classdocumentController_a5809b6e744e354b7979788f8a4d2d825}{insert\+Category} (\$obj)
+\item 
+\hyperlink{classdocumentController_a6f3fe3265fd98035ffdd849a03dbe45c}{update\+Category\+List\+Order} (\$\hyperlink{ko_8install_8php_a370bb6450fab1da3e0ed9f484a38b761}{module\+\_\+srl}, \$list\+\_\+order)
+\item 
+\hyperlink{classdocumentController_a6c2c3cad331e43a7fff774142fe62d00}{update\+Category\+Count} (\$\hyperlink{ko_8install_8php_a370bb6450fab1da3e0ed9f484a38b761}{module\+\_\+srl}, \$category\+\_\+srl, \$document\+\_\+count=0)
+\item 
+\hyperlink{classdocumentController_a7a4e53cda0765a416280e403b6193b0a}{update\+Category} (\$obj)
+\item 
+\hyperlink{classdocumentController_ad5840bc0f6ed0040779c5d90d8c327a6}{delete\+Category} (\$category\+\_\+srl)
+\item 
+\hyperlink{classdocumentController_a8a357bcedee02e8fda122ed24f2a9c1c}{delete\+Module\+Category} (\$\hyperlink{ko_8install_8php_a370bb6450fab1da3e0ed9f484a38b761}{module\+\_\+srl})
+\item 
+\hyperlink{classdocumentController_a16a00fabad8b270e40d7fa196350280c}{move\+Category\+Up} (\$category\+\_\+srl)
+\item 
+\hyperlink{classdocumentController_ab6befd47268a1fbfcc56dda3c3a71dc4}{move\+Category\+Down} (\$category\+\_\+srl)
+\item 
+\hyperlink{classdocumentController_a1fe6155cfd253e19d0583cc74a2cab35}{add\+Xml\+Js\+Filter} (\$\hyperlink{ko_8install_8php_a370bb6450fab1da3e0ed9f484a38b761}{module\+\_\+srl})
+\item 
+\hyperlink{classdocumentController_aad9894e1432083a62a883568c7b3a42b}{proc\+Document\+Insert\+Category} (\$args=null)
+\item 
+\hyperlink{classdocumentController_a6bb8b84c1f775b59f74ef8d68ba48f55}{proc\+Document\+Move\+Category} ()
+\item 
+\hyperlink{classdocumentController_a60d6012f96c71ee539d4152bc2c6f994}{proc\+Document\+Delete\+Category} ()
+\item 
+\hyperlink{classdocumentController_a749d60be23e4645a5656a82a4fae1962}{proc\+Document\+Make\+Xml\+File} ()
+\item 
+\hyperlink{classdocumentController_a75dc24adc286b03e6eeb23eb7f771d8f}{make\+Category\+File} (\$\hyperlink{ko_8install_8php_a370bb6450fab1da3e0ed9f484a38b761}{module\+\_\+srl})
+\item 
+\hyperlink{classdocumentController_ad18d5e7c2cfbef82020548e13e00df7d}{get\+Xml\+Tree} (\$source\+\_\+node, \$tree, \$\hyperlink{ko_8install_8php_a8b1406b4ad1048041558dce6bfe89004}{site\+\_\+srl}, \&\$xml\+\_\+header\+\_\+buff)
+\item 
+\hyperlink{classdocumentController_a0e0c1eb0506e936703b6b2b4ed958e5f}{get\+Php\+Cache\+Code} (\$source\+\_\+node, \$tree, \$\hyperlink{ko_8install_8php_a8b1406b4ad1048041558dce6bfe89004}{site\+\_\+srl}, \&\$php\+\_\+header\+\_\+buff)
+\item 
+\hyperlink{classdocumentController_a763e7cfbb01e26e7b0adaf0d25ff9373}{add\+Document\+Popup\+Menu} (\$url, \$str, \$icon= '', \$target= 'self')
+\item 
+\hyperlink{classdocumentController_a9072167f6533f269be32a0a43e147dae}{proc\+Document\+Add\+Cart} ()
+\item 
+\hyperlink{classdocumentController_a96dee41cd75a387fee93375d33633aba}{proc\+Document\+Manage\+Checked\+Document} ()
+\item 
+\hyperlink{classdocumentController_aede408d35ea6622dfa1b39ec52f84e44}{proc\+Document\+Insert\+Module\+Config} ()
+\item 
+\hyperlink{classdocumentController_a65e4d6ef48c59e92bf82e8ced4b85d4d}{proc\+Document\+Temp\+Save} ()
+\item 
+\hyperlink{classdocumentController_a23cf92fe7c204813d12c5996360cd939}{proc\+Document\+Get\+List} ()
+\item 
+\hyperlink{classdocumentController_a3fad5f9653c0ca05bcb1a63a24c318cf}{\+\_\+check\+Comment\+Status\+For\+Old\+Version} (\&\$obj)
+\item 
+\hyperlink{classdocumentController_ad0d7bdcafe22b9f7ee8f5ae072f3f146}{\+\_\+check\+Document\+Status\+For\+Old\+Version} (\&\$obj)
+\item 
+\hyperlink{classdocumentController_a2e3e591a2262e0fffc195456248b89ff}{update\+Uploaed\+Count} (\$document\+Srl\+List)
+\item 
+\hyperlink{classdocumentController_a5e03be29c7b61f87658b604ba80daa88}{trigger\+Copy\+Module\+Extra\+Keys} (\&\$obj)
+\item 
+\hyperlink{classdocumentController_a612ee2c47ff03e76f6e86fa31ff098a7}{trigger\+Copy\+Module} (\&\$obj)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+controller class of the document module 
+
+\begin{DoxyAuthor}{Author}
+N\+A\+V\+E\+R (\href{mailto:developers@xpressengine.com}{\tt developers@xpressengine.\+com}) 
+\end{DoxyAuthor}
+
+
+Definition at line 11 of file document.\+controller.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classdocumentController_a3fad5f9653c0ca05bcb1a63a24c318cf}{\index{document\+Controller@{document\+Controller}!\+\_\+check\+Comment\+Status\+For\+Old\+Version@{\+\_\+check\+Comment\+Status\+For\+Old\+Version}}
+\index{\+\_\+check\+Comment\+Status\+For\+Old\+Version@{\+\_\+check\+Comment\+Status\+For\+Old\+Version}!document\+Controller@{document\+Controller}}
+\subsubsection[{\+\_\+check\+Comment\+Status\+For\+Old\+Version}]{\setlength{\rightskip}{0pt plus 5cm}document\+Controller\+::\+\_\+check\+Comment\+Status\+For\+Old\+Version (
+\begin{DoxyParamCaption}
+\item[{\&}]{\$obj}
+\end{DoxyParamCaption}
+)}}\label{classdocumentController_a3fad5f9653c0ca05bcb1a63a24c318cf}
+For old version, comment allow status check. 
+\begin{DoxyParams}[1]{Parameters}
+object & {\em \$obj} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 2447 of file document.\+controller.\+php.
+
+\hypertarget{classdocumentController_ad0d7bdcafe22b9f7ee8f5ae072f3f146}{\index{document\+Controller@{document\+Controller}!\+\_\+check\+Document\+Status\+For\+Old\+Version@{\+\_\+check\+Document\+Status\+For\+Old\+Version}}
+\index{\+\_\+check\+Document\+Status\+For\+Old\+Version@{\+\_\+check\+Document\+Status\+For\+Old\+Version}!document\+Controller@{document\+Controller}}
+\subsubsection[{\+\_\+check\+Document\+Status\+For\+Old\+Version}]{\setlength{\rightskip}{0pt plus 5cm}document\+Controller\+::\+\_\+check\+Document\+Status\+For\+Old\+Version (
+\begin{DoxyParamCaption}
+\item[{\&}]{\$obj}
+\end{DoxyParamCaption}
+)}}\label{classdocumentController_ad0d7bdcafe22b9f7ee8f5ae072f3f146}
+For old version, document status check. 
+\begin{DoxyParams}[1]{Parameters}
+object & {\em \$obj} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 2461 of file document.\+controller.\+php.
+
+\hypertarget{classdocumentController_a2514acfe313b7ddd5daccb50557d38b5}{\index{document\+Controller@{document\+Controller}!\+\_\+delete\+Declared\+Documents@{\+\_\+delete\+Declared\+Documents}}
+\index{\+\_\+delete\+Declared\+Documents@{\+\_\+delete\+Declared\+Documents}!document\+Controller@{document\+Controller}}
+\subsubsection[{\+\_\+delete\+Declared\+Documents}]{\setlength{\rightskip}{0pt plus 5cm}document\+Controller\+::\+\_\+delete\+Declared\+Documents (
+\begin{DoxyParamCaption}
+\item[{}]{\$document\+Srls}
+\end{DoxyParamCaption}
+)}}\label{classdocumentController_a2514acfe313b7ddd5daccb50557d38b5}
+Delete declared document, log 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$document\+Srls} & (ex\+: 1, 2,56, 88) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 670 of file document.\+controller.\+php.
+
+\hypertarget{classdocumentController_ac055fa2cc48de200d0b319eddd7a13da}{\index{document\+Controller@{document\+Controller}!\+\_\+delete\+Document\+Readed\+Log@{\+\_\+delete\+Document\+Readed\+Log}}
+\index{\+\_\+delete\+Document\+Readed\+Log@{\+\_\+delete\+Document\+Readed\+Log}!document\+Controller@{document\+Controller}}
+\subsubsection[{\+\_\+delete\+Document\+Readed\+Log}]{\setlength{\rightskip}{0pt plus 5cm}document\+Controller\+::\+\_\+delete\+Document\+Readed\+Log (
+\begin{DoxyParamCaption}
+\item[{}]{\$document\+Srls}
+\end{DoxyParamCaption}
+)}}\label{classdocumentController_ac055fa2cc48de200d0b319eddd7a13da}
+Delete readed log 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$document\+Srls} & (ex\+: 1, 2,56, 88) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 681 of file document.\+controller.\+php.
+
+\hypertarget{classdocumentController_a9fe391d1b1ece3b7b16d15976c1622d0}{\index{document\+Controller@{document\+Controller}!\+\_\+delete\+Document\+Voted\+Log@{\+\_\+delete\+Document\+Voted\+Log}}
+\index{\+\_\+delete\+Document\+Voted\+Log@{\+\_\+delete\+Document\+Voted\+Log}!document\+Controller@{document\+Controller}}
+\subsubsection[{\+\_\+delete\+Document\+Voted\+Log}]{\setlength{\rightskip}{0pt plus 5cm}document\+Controller\+::\+\_\+delete\+Document\+Voted\+Log (
+\begin{DoxyParamCaption}
+\item[{}]{\$document\+Srls}
+\end{DoxyParamCaption}
+)}}\label{classdocumentController_a9fe391d1b1ece3b7b16d15976c1622d0}
+Delete voted log 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$document\+Srls} & (ex\+: 1, 2,56, 88) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 691 of file document.\+controller.\+php.
+
+\hypertarget{classdocumentController_a763e7cfbb01e26e7b0adaf0d25ff9373}{\index{document\+Controller@{document\+Controller}!add\+Document\+Popup\+Menu@{add\+Document\+Popup\+Menu}}
+\index{add\+Document\+Popup\+Menu@{add\+Document\+Popup\+Menu}!document\+Controller@{document\+Controller}}
+\subsubsection[{add\+Document\+Popup\+Menu}]{\setlength{\rightskip}{0pt plus 5cm}document\+Controller\+::add\+Document\+Popup\+Menu (
+\begin{DoxyParamCaption}
+\item[{}]{\$url, }
+\item[{}]{\$str, }
+\item[{}]{\$icon = {\ttfamily ''}, }
+\item[{}]{\$target = {\ttfamily 'self'}}
+\end{DoxyParamCaption}
+)}}\label{classdocumentController_a763e7cfbb01e26e7b0adaf0d25ff9373}
+A method to add a pop-\/up menu which appears when clicking 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$url} & \\
+\hline
+string & {\em \$str} & \\
+\hline
+string & {\em \$icon} & \\
+\hline
+string & {\em \$target} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 2099 of file document.\+controller.\+php.
+
+\hypertarget{classdocumentController_af5d7f1c94c924d19c3cf4c94f13dc90d}{\index{document\+Controller@{document\+Controller}!add\+Grant@{add\+Grant}}
+\index{add\+Grant@{add\+Grant}!document\+Controller@{document\+Controller}}
+\subsubsection[{add\+Grant}]{\setlength{\rightskip}{0pt plus 5cm}document\+Controller\+::add\+Grant (
+\begin{DoxyParamCaption}
+\item[{}]{\$document\+\_\+srl}
+\end{DoxyParamCaption}
+)}}\label{classdocumentController_af5d7f1c94c924d19c3cf4c94f13dc90d}
+Grant a permisstion of the document Available in the current connection with session value 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$document\+\_\+srl} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 178 of file document.\+controller.\+php.
+
+\hypertarget{classdocumentController_a1fe6155cfd253e19d0583cc74a2cab35}{\index{document\+Controller@{document\+Controller}!add\+Xml\+Js\+Filter@{add\+Xml\+Js\+Filter}}
+\index{add\+Xml\+Js\+Filter@{add\+Xml\+Js\+Filter}!document\+Controller@{document\+Controller}}
+\subsubsection[{add\+Xml\+Js\+Filter}]{\setlength{\rightskip}{0pt plus 5cm}document\+Controller\+::add\+Xml\+Js\+Filter (
+\begin{DoxyParamCaption}
+\item[{}]{\$module\+\_\+srl}
+\end{DoxyParamCaption}
+)}}\label{classdocumentController_a1fe6155cfd253e19d0583cc74a2cab35}
+Add javascript codes into the header by checking values of document\+\_\+extra\+\_\+keys type, required and others 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$module\+\_\+srl} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 1566 of file document.\+controller.\+php.
+
+\hypertarget{classdocumentController_aa2cdd129c5f882d535e39728761d4168}{\index{document\+Controller@{document\+Controller}!declared\+Document@{declared\+Document}}
+\index{declared\+Document@{declared\+Document}!document\+Controller@{document\+Controller}}
+\subsubsection[{declared\+Document}]{\setlength{\rightskip}{0pt plus 5cm}document\+Controller\+::declared\+Document (
+\begin{DoxyParamCaption}
+\item[{}]{\$document\+\_\+srl}
+\end{DoxyParamCaption}
+)}}\label{classdocumentController_aa2cdd129c5f882d535e39728761d4168}
+Report posts 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$document\+\_\+srl} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void$\vert$\+Object 
+\end{DoxyReturn}
+
+
+Definition at line 1166 of file document.\+controller.\+php.
+
+\hypertarget{classdocumentController_ad5840bc0f6ed0040779c5d90d8c327a6}{\index{document\+Controller@{document\+Controller}!delete\+Category@{delete\+Category}}
+\index{delete\+Category@{delete\+Category}!document\+Controller@{document\+Controller}}
+\subsubsection[{delete\+Category}]{\setlength{\rightskip}{0pt plus 5cm}document\+Controller\+::delete\+Category (
+\begin{DoxyParamCaption}
+\item[{}]{\$category\+\_\+srl}
+\end{DoxyParamCaption}
+)}}\label{classdocumentController_ad5840bc0f6ed0040779c5d90d8c327a6}
+Delete a category 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$category\+\_\+srl} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 1409 of file document.\+controller.\+php.
+
+\hypertarget{classdocumentController_a93df4318474646597031e6a1ea50c884}{\index{document\+Controller@{document\+Controller}!delete\+Document@{delete\+Document}}
+\index{delete\+Document@{delete\+Document}!document\+Controller@{document\+Controller}}
+\subsubsection[{delete\+Document}]{\setlength{\rightskip}{0pt plus 5cm}document\+Controller\+::delete\+Document (
+\begin{DoxyParamCaption}
+\item[{}]{\$document\+\_\+srl, }
+\item[{}]{\$is\+\_\+admin = {\ttfamily false}, }
+\item[{}]{\$is\+Empty\+Trash = {\ttfamily false}, }
+\item[{}]{\$o\+Document = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{classdocumentController_a93df4318474646597031e6a1ea50c884}
+Deleting Documents 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$document\+\_\+srl} & \\
+\hline
+bool & {\em \$is\+\_\+admin} & \\
+\hline
+bool & {\em \$is\+Empty\+Trash} & \\
+\hline
+\hyperlink{classdocumentItem}{document\+Item} & {\em \$o\+Document} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 582 of file document.\+controller.\+php.
+
+\hypertarget{classdocumentController_a0dc624a7dd83ce881a7ff136066160aa}{\index{document\+Controller@{document\+Controller}!delete\+Document\+Alias\+By\+Document@{delete\+Document\+Alias\+By\+Document}}
+\index{delete\+Document\+Alias\+By\+Document@{delete\+Document\+Alias\+By\+Document}!document\+Controller@{document\+Controller}}
+\subsubsection[{delete\+Document\+Alias\+By\+Document}]{\setlength{\rightskip}{0pt plus 5cm}document\+Controller\+::delete\+Document\+Alias\+By\+Document (
+\begin{DoxyParamCaption}
+\item[{}]{\$document\+\_\+srl}
+\end{DoxyParamCaption}
+)}}\label{classdocumentController_a0dc624a7dd83ce881a7ff136066160aa}
+Delete alias when document deleted 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$document\+\_\+srl} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 119 of file document.\+controller.\+php.
+
+\hypertarget{classdocumentController_aca369b51be40b67d7c2456f4e2f28598}{\index{document\+Controller@{document\+Controller}!delete\+Document\+Alias\+By\+Module@{delete\+Document\+Alias\+By\+Module}}
+\index{delete\+Document\+Alias\+By\+Module@{delete\+Document\+Alias\+By\+Module}!document\+Controller@{document\+Controller}}
+\subsubsection[{delete\+Document\+Alias\+By\+Module}]{\setlength{\rightskip}{0pt plus 5cm}document\+Controller\+::delete\+Document\+Alias\+By\+Module (
+\begin{DoxyParamCaption}
+\item[{}]{\$module\+\_\+srl}
+\end{DoxyParamCaption}
+)}}\label{classdocumentController_aca369b51be40b67d7c2456f4e2f28598}
+Delete alias when module deleted 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$module\+\_\+srl} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 107 of file document.\+controller.\+php.
+
+\hypertarget{classdocumentController_a279894a3cef824bc940cda67ced511aa}{\index{document\+Controller@{document\+Controller}!delete\+Document\+Extra\+Keys@{delete\+Document\+Extra\+Keys}}
+\index{delete\+Document\+Extra\+Keys@{delete\+Document\+Extra\+Keys}!document\+Controller@{document\+Controller}}
+\subsubsection[{delete\+Document\+Extra\+Keys}]{\setlength{\rightskip}{0pt plus 5cm}document\+Controller\+::delete\+Document\+Extra\+Keys (
+\begin{DoxyParamCaption}
+\item[{}]{\$module\+\_\+srl, }
+\item[{}]{\$var\+\_\+idx = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{classdocumentController_a279894a3cef824bc940cda67ced511aa}
+Remove the extra variables of the documents 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$module\+\_\+srl} & \\
+\hline
+int & {\em \$var\+\_\+idx} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classObject}{Object} 
+\end{DoxyReturn}
+
+
+Definition at line 932 of file document.\+controller.\+php.
+
+\hypertarget{classdocumentController_a1ebb5684cf99ea4044fa476c6d006bd2}{\index{document\+Controller@{document\+Controller}!delete\+Document\+Extra\+Vars@{delete\+Document\+Extra\+Vars}}
+\index{delete\+Document\+Extra\+Vars@{delete\+Document\+Extra\+Vars}!document\+Controller@{document\+Controller}}
+\subsubsection[{delete\+Document\+Extra\+Vars}]{\setlength{\rightskip}{0pt plus 5cm}document\+Controller\+::delete\+Document\+Extra\+Vars (
+\begin{DoxyParamCaption}
+\item[{}]{\$module\+\_\+srl, }
+\item[{}]{\$document\+\_\+srl = {\ttfamily null}, }
+\item[{}]{\$var\+\_\+idx = {\ttfamily null}, }
+\item[{}]{\$lang\+\_\+code = {\ttfamily null}, }
+\item[{}]{\$eid = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{classdocumentController_a1ebb5684cf99ea4044fa476c6d006bd2}
+Remove values of extra variable from the document 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$module\+\_\+srl} & \\
+\hline
+int & {\em \$document\+\_\+srl} & \\
+\hline
+int & {\em \$var\+\_\+idx} & \\
+\hline
+string & {\em \$lang\+\_\+code} & \\
+\hline
+int & {\em \$eid} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$output 
+\end{DoxyReturn}
+
+
+Definition at line 1024 of file document.\+controller.\+php.
+
+\hypertarget{classdocumentController_a01a4d3351ede905b2158174af58ca0a8}{\index{document\+Controller@{document\+Controller}!delete\+Document\+History@{delete\+Document\+History}}
+\index{delete\+Document\+History@{delete\+Document\+History}!document\+Controller@{document\+Controller}}
+\subsubsection[{delete\+Document\+History}]{\setlength{\rightskip}{0pt plus 5cm}document\+Controller\+::delete\+Document\+History (
+\begin{DoxyParamCaption}
+\item[{}]{\$history\+\_\+srl, }
+\item[{}]{\$document\+\_\+srl, }
+\item[{}]{\$module\+\_\+srl}
+\end{DoxyParamCaption}
+)}}\label{classdocumentController_a01a4d3351ede905b2158174af58ca0a8}
+Delete document history 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$history\+\_\+srl} & \\
+\hline
+int & {\em \$document\+\_\+srl} & \\
+\hline
+int & {\em \$module\+\_\+srl} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 133 of file document.\+controller.\+php.
+
+\hypertarget{classdocumentController_a8a357bcedee02e8fda122ed24f2a9c1c}{\index{document\+Controller@{document\+Controller}!delete\+Module\+Category@{delete\+Module\+Category}}
+\index{delete\+Module\+Category@{delete\+Module\+Category}!document\+Controller@{document\+Controller}}
+\subsubsection[{delete\+Module\+Category}]{\setlength{\rightskip}{0pt plus 5cm}document\+Controller\+::delete\+Module\+Category (
+\begin{DoxyParamCaption}
+\item[{}]{\$module\+\_\+srl}
+\end{DoxyParamCaption}
+)}}\label{classdocumentController_a8a357bcedee02e8fda122ed24f2a9c1c}
+Delete all categories in a module 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$module\+\_\+srl} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 1462 of file document.\+controller.\+php.
+
+\hypertarget{classdocumentController_a0e0c1eb0506e936703b6b2b4ed958e5f}{\index{document\+Controller@{document\+Controller}!get\+Php\+Cache\+Code@{get\+Php\+Cache\+Code}}
+\index{get\+Php\+Cache\+Code@{get\+Php\+Cache\+Code}!document\+Controller@{document\+Controller}}
+\subsubsection[{get\+Php\+Cache\+Code}]{\setlength{\rightskip}{0pt plus 5cm}document\+Controller\+::get\+Php\+Cache\+Code (
+\begin{DoxyParamCaption}
+\item[{}]{\$source\+\_\+node, }
+\item[{}]{\$tree, }
+\item[{}]{\$site\+\_\+srl, }
+\item[{\&}]{\$php\+\_\+header\+\_\+buff}
+\end{DoxyParamCaption}
+)}}\label{classdocumentController_a0e0c1eb0506e936703b6b2b4ed958e5f}
+Change sorted nodes in an array to the php code and then return When using menu on tpl, you can directly xml data. howver you may need javascrips additionally. Therefore, you can configure the menu info directly from php cache file, not through \hyperlink{classDB}{D\+B}. You may include the cache in the \hyperlink{classModuleHandler_a140c43faf30dedf139212294e3e9acf3}{Module\+Handler\+::display\+Content()} 
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$source\+\_\+node} & \\
+\hline
+array & {\em \$tree} & \\
+\hline
+int & {\em \$site\+\_\+srl} & \\
+\hline
+string & {\em \$php\+\_\+header\+\_\+buff} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Definition at line 2000 of file document.\+controller.\+php.
+
+\hypertarget{classdocumentController_ad18d5e7c2cfbef82020548e13e00df7d}{\index{document\+Controller@{document\+Controller}!get\+Xml\+Tree@{get\+Xml\+Tree}}
+\index{get\+Xml\+Tree@{get\+Xml\+Tree}!document\+Controller@{document\+Controller}}
+\subsubsection[{get\+Xml\+Tree}]{\setlength{\rightskip}{0pt plus 5cm}document\+Controller\+::get\+Xml\+Tree (
+\begin{DoxyParamCaption}
+\item[{}]{\$source\+\_\+node, }
+\item[{}]{\$tree, }
+\item[{}]{\$site\+\_\+srl, }
+\item[{\&}]{\$xml\+\_\+header\+\_\+buff}
+\end{DoxyParamCaption}
+)}}\label{classdocumentController_ad18d5e7c2cfbef82020548e13e00df7d}
+Create the xml data recursively referring to parent\+\_\+srl In the menu xml file, node tag is nested and xml doc enables the admin page to have a menu~\newline
+(tree menu is implemented by reading xml file from the tree\+\_\+menu.\+js) 
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$source\+\_\+node} & \\
+\hline
+array & {\em \$tree} & \\
+\hline
+int & {\em \$site\+\_\+srl} & \\
+\hline
+string & {\em \$xml\+\_\+header\+\_\+buff} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 1924 of file document.\+controller.\+php.
+
+\hypertarget{classdocumentController_a3b20277855e8275a99ba25a63c720f7c}{\index{document\+Controller@{document\+Controller}!init@{init}}
+\index{init@{init}!document\+Controller@{document\+Controller}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}document\+Controller\+::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classdocumentController_a3b20277855e8275a99ba25a63c720f7c}
+Initialization \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 17 of file document.\+controller.\+php.
+
+\hypertarget{classdocumentController_a4ab39cd64c6d7871868bbce8ca4486ee}{\index{document\+Controller@{document\+Controller}!insert\+Alias@{insert\+Alias}}
+\index{insert\+Alias@{insert\+Alias}!document\+Controller@{document\+Controller}}
+\subsubsection[{insert\+Alias}]{\setlength{\rightskip}{0pt plus 5cm}document\+Controller\+::insert\+Alias (
+\begin{DoxyParamCaption}
+\item[{}]{\$module\+\_\+srl, }
+\item[{}]{\$document\+\_\+srl, }
+\item[{}]{\$alias\+\_\+title}
+\end{DoxyParamCaption}
+)}}\label{classdocumentController_a4ab39cd64c6d7871868bbce8ca4486ee}
+insert alias 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$module\+\_\+srl} & \\
+\hline
+int & {\em \$document\+\_\+srl} & \\
+\hline
+string & {\em \$alias\+\_\+title} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 52 of file document.\+controller.\+php.
+
+\hypertarget{classdocumentController_a5809b6e744e354b7979788f8a4d2d825}{\index{document\+Controller@{document\+Controller}!insert\+Category@{insert\+Category}}
+\index{insert\+Category@{insert\+Category}!document\+Controller@{document\+Controller}}
+\subsubsection[{insert\+Category}]{\setlength{\rightskip}{0pt plus 5cm}document\+Controller\+::insert\+Category (
+\begin{DoxyParamCaption}
+\item[{}]{\$obj}
+\end{DoxyParamCaption}
+)}}\label{classdocumentController_a5809b6e744e354b7979788f8a4d2d825}
+Add a category 
+\begin{DoxyParams}[1]{Parameters}
+object & {\em \$obj} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 1329 of file document.\+controller.\+php.
+
+\hypertarget{classdocumentController_ab3b1090cdebc810569b64f3a87ab0637}{\index{document\+Controller@{document\+Controller}!insert\+Document@{insert\+Document}}
+\index{insert\+Document@{insert\+Document}!document\+Controller@{document\+Controller}}
+\subsubsection[{insert\+Document}]{\setlength{\rightskip}{0pt plus 5cm}document\+Controller\+::insert\+Document (
+\begin{DoxyParamCaption}
+\item[{}]{\$obj, }
+\item[{}]{\$manual\+\_\+inserted = {\ttfamily false}, }
+\item[{}]{\$is\+Restore = {\ttfamily false}, }
+\item[{}]{\$is\+Latest = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{classdocumentController_ab3b1090cdebc810569b64f3a87ab0637}
+Insert the document 
+\begin{DoxyParams}[1]{Parameters}
+object & {\em \$obj} & \\
+\hline
+bool & {\em \$manual\+\_\+inserted} & \\
+\hline
+bool & {\em \$is\+Restore} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 190 of file document.\+controller.\+php.
+
+\hypertarget{classdocumentController_a832207dfbf4dac2f32d4a365f9e5ea77}{\index{document\+Controller@{document\+Controller}!insert\+Document\+Extra\+Key@{insert\+Document\+Extra\+Key}}
+\index{insert\+Document\+Extra\+Key@{insert\+Document\+Extra\+Key}!document\+Controller@{document\+Controller}}
+\subsubsection[{insert\+Document\+Extra\+Key}]{\setlength{\rightskip}{0pt plus 5cm}document\+Controller\+::insert\+Document\+Extra\+Key (
+\begin{DoxyParamCaption}
+\item[{}]{\$module\+\_\+srl, }
+\item[{}]{\$var\+\_\+idx, }
+\item[{}]{\$var\+\_\+name, }
+\item[{}]{\$var\+\_\+type, }
+\item[{}]{\$var\+\_\+is\+\_\+required = {\ttfamily 'N'}, }
+\item[{}]{\$var\+\_\+search = {\ttfamily 'N'}, }
+\item[{}]{\$var\+\_\+default = {\ttfamily ''}, }
+\item[{}]{\$var\+\_\+desc = {\ttfamily ''}, }
+\item[{}]{\$eid}
+\end{DoxyParamCaption}
+)}}\label{classdocumentController_a832207dfbf4dac2f32d4a365f9e5ea77}
+Insert extra variables into the document table 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$module\+\_\+srl} & \\
+\hline
+int & {\em \$var\+\_\+idx} & \\
+\hline
+string & {\em \$var\+\_\+name} & \\
+\hline
+string & {\em \$var\+\_\+type} & \\
+\hline
+string & {\em \$var\+\_\+is\+\_\+required} & \\
+\hline
+string & {\em \$var\+\_\+search} & \\
+\hline
+string & {\em \$var\+\_\+default} & \\
+\hline
+string & {\em \$var\+\_\+desc} & \\
+\hline
+int & {\em \$eid} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 888 of file document.\+controller.\+php.
+
+\hypertarget{classdocumentController_adb5345b43e9795d7e647754cb88b9b5a}{\index{document\+Controller@{document\+Controller}!insert\+Document\+Extra\+Var@{insert\+Document\+Extra\+Var}}
+\index{insert\+Document\+Extra\+Var@{insert\+Document\+Extra\+Var}!document\+Controller@{document\+Controller}}
+\subsubsection[{insert\+Document\+Extra\+Var}]{\setlength{\rightskip}{0pt plus 5cm}document\+Controller\+::insert\+Document\+Extra\+Var (
+\begin{DoxyParamCaption}
+\item[{}]{\$module\+\_\+srl, }
+\item[{}]{\$document\+\_\+srl, }
+\item[{}]{\$var\+\_\+idx, }
+\item[{}]{\$value, }
+\item[{}]{\$eid = {\ttfamily null}, }
+\item[{}]{\$lang\+\_\+code = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)}}\label{classdocumentController_adb5345b43e9795d7e647754cb88b9b5a}
+Insert extra vaiable to the documents table 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$module\+\_\+srl} & \\
+\hline
+int & {\em \$document\+\_\+srl} & \\
+\hline
+int & {\em \$var\+\_\+idx} & \\
+\hline
+mixed & {\em \$value} & \\
+\hline
+int & {\em \$eid} & \\
+\hline
+string & {\em \$lang\+\_\+code} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Object$\vert$void 
+\end{DoxyReturn}
+
+
+Definition at line 999 of file document.\+controller.\+php.
+
+\hypertarget{classdocumentController_a75dc24adc286b03e6eeb23eb7f771d8f}{\index{document\+Controller@{document\+Controller}!make\+Category\+File@{make\+Category\+File}}
+\index{make\+Category\+File@{make\+Category\+File}!document\+Controller@{document\+Controller}}
+\subsubsection[{make\+Category\+File}]{\setlength{\rightskip}{0pt plus 5cm}document\+Controller\+::make\+Category\+File (
+\begin{DoxyParamCaption}
+\item[{}]{\$module\+\_\+srl}
+\end{DoxyParamCaption}
+)}}\label{classdocumentController_a75dc24adc286b03e6eeb23eb7f771d8f}
+Save the category in a cache file 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$module\+\_\+srl} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 1807 of file document.\+controller.\+php.
+
+\hypertarget{classdocumentController_ab6befd47268a1fbfcc56dda3c3a71dc4}{\index{document\+Controller@{document\+Controller}!move\+Category\+Down@{move\+Category\+Down}}
+\index{move\+Category\+Down@{move\+Category\+Down}!document\+Controller@{document\+Controller}}
+\subsubsection[{move\+Category\+Down}]{\setlength{\rightskip}{0pt plus 5cm}document\+Controller\+::move\+Category\+Down (
+\begin{DoxyParamCaption}
+\item[{}]{\$category\+\_\+srl}
+\end{DoxyParamCaption}
+)}}\label{classdocumentController_ab6befd47268a1fbfcc56dda3c3a71dc4}
+Move the category down 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$category\+\_\+srl} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classObject}{Object} 
+\end{DoxyReturn}
+
+
+Definition at line 1522 of file document.\+controller.\+php.
+
+\hypertarget{classdocumentController_a16a00fabad8b270e40d7fa196350280c}{\index{document\+Controller@{document\+Controller}!move\+Category\+Up@{move\+Category\+Up}}
+\index{move\+Category\+Up@{move\+Category\+Up}!document\+Controller@{document\+Controller}}
+\subsubsection[{move\+Category\+Up}]{\setlength{\rightskip}{0pt plus 5cm}document\+Controller\+::move\+Category\+Up (
+\begin{DoxyParamCaption}
+\item[{}]{\$category\+\_\+srl}
+\end{DoxyParamCaption}
+)}}\label{classdocumentController_a16a00fabad8b270e40d7fa196350280c}
+Move the category level to higher 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$category\+\_\+srl} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classObject}{Object} 
+\end{DoxyReturn}
+
+
+Definition at line 1475 of file document.\+controller.\+php.
+
+\hypertarget{classdocumentController_a3f861f8df6113ca3211c48be3c49f305}{\index{document\+Controller@{document\+Controller}!move\+Document\+To\+Trash@{move\+Document\+To\+Trash}}
+\index{move\+Document\+To\+Trash@{move\+Document\+To\+Trash}!document\+Controller@{document\+Controller}}
+\subsubsection[{move\+Document\+To\+Trash}]{\setlength{\rightskip}{0pt plus 5cm}document\+Controller\+::move\+Document\+To\+Trash (
+\begin{DoxyParamCaption}
+\item[{}]{\$obj}
+\end{DoxyParamCaption}
+)}}\label{classdocumentController_a3f861f8df6113ca3211c48be3c49f305}
+Move the doc into the trash 
+\begin{DoxyParams}[1]{Parameters}
+object & {\em \$obj} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 701 of file document.\+controller.\+php.
+
+\hypertarget{classdocumentController_a9072167f6533f269be32a0a43e147dae}{\index{document\+Controller@{document\+Controller}!proc\+Document\+Add\+Cart@{proc\+Document\+Add\+Cart}}
+\index{proc\+Document\+Add\+Cart@{proc\+Document\+Add\+Cart}!document\+Controller@{document\+Controller}}
+\subsubsection[{proc\+Document\+Add\+Cart}]{\setlength{\rightskip}{0pt plus 5cm}document\+Controller\+::proc\+Document\+Add\+Cart (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classdocumentController_a9072167f6533f269be32a0a43e147dae}
+Saved in the session when an administrator selects a post \begin{DoxyReturn}{Returns}
+void$\vert$\+Object 
+\end{DoxyReturn}
+
+
+Definition at line 2118 of file document.\+controller.\+php.
+
+\hypertarget{classdocumentController_a9c23f01e72bf1028d72f43ebf08d0cee}{\index{document\+Controller@{document\+Controller}!proc\+Document\+Declare@{proc\+Document\+Declare}}
+\index{proc\+Document\+Declare@{proc\+Document\+Declare}!document\+Controller@{document\+Controller}}
+\subsubsection[{proc\+Document\+Declare}]{\setlength{\rightskip}{0pt plus 5cm}document\+Controller\+::proc\+Document\+Declare (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classdocumentController_a9c23f01e72bf1028d72f43ebf08d0cee}
+Action called when the post is reported by other member \begin{DoxyReturn}{Returns}
+void$\vert$\+Object 
+\end{DoxyReturn}
+
+
+Definition at line 92 of file document.\+controller.\+php.
+
+\hypertarget{classdocumentController_a60d6012f96c71ee539d4152bc2c6f994}{\index{document\+Controller@{document\+Controller}!proc\+Document\+Delete\+Category@{proc\+Document\+Delete\+Category}}
+\index{proc\+Document\+Delete\+Category@{proc\+Document\+Delete\+Category}!document\+Controller@{document\+Controller}}
+\subsubsection[{proc\+Document\+Delete\+Category}]{\setlength{\rightskip}{0pt plus 5cm}document\+Controller\+::proc\+Document\+Delete\+Category (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classdocumentController_a60d6012f96c71ee539d4152bc2c6f994}
+Delete a category \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 1742 of file document.\+controller.\+php.
+
+\hypertarget{classdocumentController_a23cf92fe7c204813d12c5996360cd939}{\index{document\+Controller@{document\+Controller}!proc\+Document\+Get\+List@{proc\+Document\+Get\+List}}
+\index{proc\+Document\+Get\+List@{proc\+Document\+Get\+List}!document\+Controller@{document\+Controller}}
+\subsubsection[{proc\+Document\+Get\+List}]{\setlength{\rightskip}{0pt plus 5cm}document\+Controller\+::proc\+Document\+Get\+List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classdocumentController_a23cf92fe7c204813d12c5996360cd939}
+Return Document List for exec\+\_\+xml \begin{DoxyReturn}{Returns}
+void$\vert$\+Object 
+\end{DoxyReturn}
+
+
+Definition at line 2419 of file document.\+controller.\+php.
+
+\hypertarget{classdocumentController_aad9894e1432083a62a883568c7b3a42b}{\index{document\+Controller@{document\+Controller}!proc\+Document\+Insert\+Category@{proc\+Document\+Insert\+Category}}
+\index{proc\+Document\+Insert\+Category@{proc\+Document\+Insert\+Category}!document\+Controller@{document\+Controller}}
+\subsubsection[{proc\+Document\+Insert\+Category}]{\setlength{\rightskip}{0pt plus 5cm}document\+Controller\+::proc\+Document\+Insert\+Category (
+\begin{DoxyParamCaption}
+\item[{}]{\$args = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{classdocumentController_aad9894e1432083a62a883568c7b3a42b}
+Add a category 
+\begin{DoxyParams}[1]{Parameters}
+object & {\em \$args} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 1604 of file document.\+controller.\+php.
+
+\hypertarget{classdocumentController_aede408d35ea6622dfa1b39ec52f84e44}{\index{document\+Controller@{document\+Controller}!proc\+Document\+Insert\+Module\+Config@{proc\+Document\+Insert\+Module\+Config}}
+\index{proc\+Document\+Insert\+Module\+Config@{proc\+Document\+Insert\+Module\+Config}!document\+Controller@{document\+Controller}}
+\subsubsection[{proc\+Document\+Insert\+Module\+Config}]{\setlength{\rightskip}{0pt plus 5cm}document\+Controller\+::proc\+Document\+Insert\+Module\+Config (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classdocumentController_aede408d35ea6622dfa1b39ec52f84e44}
+Insert document module config \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 2317 of file document.\+controller.\+php.
+
+\hypertarget{classdocumentController_a749d60be23e4645a5656a82a4fae1962}{\index{document\+Controller@{document\+Controller}!proc\+Document\+Make\+Xml\+File@{proc\+Document\+Make\+Xml\+File}}
+\index{proc\+Document\+Make\+Xml\+File@{proc\+Document\+Make\+Xml\+File}!document\+Controller@{document\+Controller}}
+\subsubsection[{proc\+Document\+Make\+Xml\+File}]{\setlength{\rightskip}{0pt plus 5cm}document\+Controller\+::proc\+Document\+Make\+Xml\+File (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classdocumentController_a749d60be23e4645a5656a82a4fae1962}
+Xml files updated Occasionally the xml file is not generated after menu is configued on the admin page ~\newline
+The administrator can manually update the file in this case ~\newline
+Although the issue is not currently reproduced, it is unnecessay to remove. \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 1786 of file document.\+controller.\+php.
+
+\hypertarget{classdocumentController_a96dee41cd75a387fee93375d33633aba}{\index{document\+Controller@{document\+Controller}!proc\+Document\+Manage\+Checked\+Document@{proc\+Document\+Manage\+Checked\+Document}}
+\index{proc\+Document\+Manage\+Checked\+Document@{proc\+Document\+Manage\+Checked\+Document}!document\+Controller@{document\+Controller}}
+\subsubsection[{proc\+Document\+Manage\+Checked\+Document}]{\setlength{\rightskip}{0pt plus 5cm}document\+Controller\+::proc\+Document\+Manage\+Checked\+Document (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classdocumentController_a96dee41cd75a387fee93375d33633aba}
+Move/ Delete the document in the seession \begin{DoxyReturn}{Returns}
+void$\vert$\+Object 
+\end{DoxyReturn}
+
+
+Definition at line 2191 of file document.\+controller.\+php.
+
+\hypertarget{classdocumentController_a6bb8b84c1f775b59f74ef8d68ba48f55}{\index{document\+Controller@{document\+Controller}!proc\+Document\+Move\+Category@{proc\+Document\+Move\+Category}}
+\index{proc\+Document\+Move\+Category@{proc\+Document\+Move\+Category}!document\+Controller@{document\+Controller}}
+\subsubsection[{proc\+Document\+Move\+Category}]{\setlength{\rightskip}{0pt plus 5cm}document\+Controller\+::proc\+Document\+Move\+Category (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classdocumentController_a6bb8b84c1f775b59f74ef8d68ba48f55}
+Move a category \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 1678 of file document.\+controller.\+php.
+
+\hypertarget{classdocumentController_a65e4d6ef48c59e92bf82e8ced4b85d4d}{\index{document\+Controller@{document\+Controller}!proc\+Document\+Temp\+Save@{proc\+Document\+Temp\+Save}}
+\index{proc\+Document\+Temp\+Save@{proc\+Document\+Temp\+Save}!document\+Controller@{document\+Controller}}
+\subsubsection[{proc\+Document\+Temp\+Save}]{\setlength{\rightskip}{0pt plus 5cm}document\+Controller\+::proc\+Document\+Temp\+Save (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classdocumentController_a65e4d6ef48c59e92bf82e8ced4b85d4d}
+Document temporary save \begin{DoxyReturn}{Returns}
+void$\vert$\+Object 
+\end{DoxyReturn}
+
+
+Definition at line 2353 of file document.\+controller.\+php.
+
+\hypertarget{classdocumentController_a2df8114d4cfbe0a01c6bf29f68884d6e}{\index{document\+Controller@{document\+Controller}!proc\+Document\+Vote\+Down@{proc\+Document\+Vote\+Down}}
+\index{proc\+Document\+Vote\+Down@{proc\+Document\+Vote\+Down}!document\+Controller@{document\+Controller}}
+\subsubsection[{proc\+Document\+Vote\+Down}]{\setlength{\rightskip}{0pt plus 5cm}document\+Controller\+::proc\+Document\+Vote\+Down (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classdocumentController_a2df8114d4cfbe0a01c6bf29f68884d6e}
+Action to handle vote-\/up of the post (Down) \begin{DoxyReturn}{Returns}
+\hyperlink{classObject}{Object} 
+\end{DoxyReturn}
+
+
+Definition at line 68 of file document.\+controller.\+php.
+
+\hypertarget{classdocumentController_a32058ce80d8db1a0b6a97ce1d849afac}{\index{document\+Controller@{document\+Controller}!proc\+Document\+Vote\+Up@{proc\+Document\+Vote\+Up}}
+\index{proc\+Document\+Vote\+Up@{proc\+Document\+Vote\+Up}!document\+Controller@{document\+Controller}}
+\subsubsection[{proc\+Document\+Vote\+Up}]{\setlength{\rightskip}{0pt plus 5cm}document\+Controller\+::proc\+Document\+Vote\+Up (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classdocumentController_a32058ce80d8db1a0b6a97ce1d849afac}
+Action to handle vote-\/up of the post (Up) \begin{DoxyReturn}{Returns}
+\hyperlink{classObject}{Object} 
+\end{DoxyReturn}
+
+
+Definition at line 25 of file document.\+controller.\+php.
+
+\hypertarget{classdocumentController_a612ee2c47ff03e76f6e86fa31ff098a7}{\index{document\+Controller@{document\+Controller}!trigger\+Copy\+Module@{trigger\+Copy\+Module}}
+\index{trigger\+Copy\+Module@{trigger\+Copy\+Module}!document\+Controller@{document\+Controller}}
+\subsubsection[{trigger\+Copy\+Module}]{\setlength{\rightskip}{0pt plus 5cm}document\+Controller\+::trigger\+Copy\+Module (
+\begin{DoxyParamCaption}
+\item[{\&}]{\$obj}
+\end{DoxyParamCaption}
+)}}\label{classdocumentController_a612ee2c47ff03e76f6e86fa31ff098a7}
+
+
+Definition at line 2514 of file document.\+controller.\+php.
+
+\hypertarget{classdocumentController_a5e03be29c7b61f87658b604ba80daa88}{\index{document\+Controller@{document\+Controller}!trigger\+Copy\+Module\+Extra\+Keys@{trigger\+Copy\+Module\+Extra\+Keys}}
+\index{trigger\+Copy\+Module\+Extra\+Keys@{trigger\+Copy\+Module\+Extra\+Keys}!document\+Controller@{document\+Controller}}
+\subsubsection[{trigger\+Copy\+Module\+Extra\+Keys}]{\setlength{\rightskip}{0pt plus 5cm}document\+Controller\+::trigger\+Copy\+Module\+Extra\+Keys (
+\begin{DoxyParamCaption}
+\item[{\&}]{\$obj}
+\end{DoxyParamCaption}
+)}}\label{classdocumentController_a5e03be29c7b61f87658b604ba80daa88}
+Copy extra keys when module copied 
+\begin{DoxyParams}[1]{Parameters}
+object & {\em \$obj} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 2496 of file document.\+controller.\+php.
+
+\hypertarget{classdocumentController_a6b5c3aae5cb5a4fd51350a597963d73a}{\index{document\+Controller@{document\+Controller}!trigger\+Delete\+Module\+Documents@{trigger\+Delete\+Module\+Documents}}
+\index{trigger\+Delete\+Module\+Documents@{trigger\+Delete\+Module\+Documents}!document\+Controller@{document\+Controller}}
+\subsubsection[{trigger\+Delete\+Module\+Documents}]{\setlength{\rightskip}{0pt plus 5cm}document\+Controller\+::trigger\+Delete\+Module\+Documents (
+\begin{DoxyParamCaption}
+\item[{\&}]{\$obj}
+\end{DoxyParamCaption}
+)}}\label{classdocumentController_a6b5c3aae5cb5a4fd51350a597963d73a}
+A trigger to delete all posts together when the module is deleted 
+\begin{DoxyParams}[1]{Parameters}
+object & {\em \$obj} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classObject}{Object} 
+\end{DoxyReturn}
+
+
+Definition at line 148 of file document.\+controller.\+php.
+
+\hypertarget{classdocumentController_a7a4e53cda0765a416280e403b6193b0a}{\index{document\+Controller@{document\+Controller}!update\+Category@{update\+Category}}
+\index{update\+Category@{update\+Category}!document\+Controller@{document\+Controller}}
+\subsubsection[{update\+Category}]{\setlength{\rightskip}{0pt plus 5cm}document\+Controller\+::update\+Category (
+\begin{DoxyParamCaption}
+\item[{}]{\$obj}
+\end{DoxyParamCaption}
+)}}\label{classdocumentController_a7a4e53cda0765a416280e403b6193b0a}
+Update category information 
+\begin{DoxyParams}[1]{Parameters}
+object & {\em \$obj} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 1397 of file document.\+controller.\+php.
+
+\hypertarget{classdocumentController_a6c2c3cad331e43a7fff774142fe62d00}{\index{document\+Controller@{document\+Controller}!update\+Category\+Count@{update\+Category\+Count}}
+\index{update\+Category\+Count@{update\+Category\+Count}!document\+Controller@{document\+Controller}}
+\subsubsection[{update\+Category\+Count}]{\setlength{\rightskip}{0pt plus 5cm}document\+Controller\+::update\+Category\+Count (
+\begin{DoxyParamCaption}
+\item[{}]{\$module\+\_\+srl, }
+\item[{}]{\$category\+\_\+srl, }
+\item[{}]{\$document\+\_\+count = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classdocumentController_a6c2c3cad331e43a7fff774142fe62d00}
+Update document\+\_\+count in the category. 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$module\+\_\+srl} & \\
+\hline
+int & {\em \$category\+\_\+srl} & \\
+\hline
+int & {\em \$document\+\_\+count} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 1377 of file document.\+controller.\+php.
+
+\hypertarget{classdocumentController_a6f3fe3265fd98035ffdd849a03dbe45c}{\index{document\+Controller@{document\+Controller}!update\+Category\+List\+Order@{update\+Category\+List\+Order}}
+\index{update\+Category\+List\+Order@{update\+Category\+List\+Order}!document\+Controller@{document\+Controller}}
+\subsubsection[{update\+Category\+List\+Order}]{\setlength{\rightskip}{0pt plus 5cm}document\+Controller\+::update\+Category\+List\+Order (
+\begin{DoxyParamCaption}
+\item[{}]{\$module\+\_\+srl, }
+\item[{}]{\$list\+\_\+order}
+\end{DoxyParamCaption}
+)}}\label{classdocumentController_a6f3fe3265fd98035ffdd849a03dbe45c}
+Increase list\+\_\+count from a specific category 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$module\+\_\+srl} & \\
+\hline
+int & {\em \$list\+\_\+order} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 1362 of file document.\+controller.\+php.
+
+\hypertarget{classdocumentController_a1813c01d82596b3ddb48c1bde746428e}{\index{document\+Controller@{document\+Controller}!update\+Comment\+Count@{update\+Comment\+Count}}
+\index{update\+Comment\+Count@{update\+Comment\+Count}!document\+Controller@{document\+Controller}}
+\subsubsection[{update\+Comment\+Count}]{\setlength{\rightskip}{0pt plus 5cm}document\+Controller\+::update\+Comment\+Count (
+\begin{DoxyParamCaption}
+\item[{}]{\$document\+\_\+srl, }
+\item[{}]{\$comment\+\_\+count, }
+\item[{}]{\$last\+\_\+updater, }
+\item[{}]{\$comment\+\_\+inserted = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{classdocumentController_a1813c01d82596b3ddb48c1bde746428e}
+Increase the number of comments in the document Update modified date, modifier, and order with increasing comment count 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$document\+\_\+srl} & \\
+\hline
+int & {\em \$comment\+\_\+count} & \\
+\hline
+string & {\em \$last\+\_\+updater} & \\
+\hline
+bool & {\em \$comment\+\_\+inserted} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 1278 of file document.\+controller.\+php.
+
+\hypertarget{classdocumentController_a09cde49e8c89e2b580f302a459831cee}{\index{document\+Controller@{document\+Controller}!update\+Document@{update\+Document}}
+\index{update\+Document@{update\+Document}!document\+Controller@{document\+Controller}}
+\subsubsection[{update\+Document}]{\setlength{\rightskip}{0pt plus 5cm}document\+Controller\+::update\+Document (
+\begin{DoxyParamCaption}
+\item[{}]{\$source\+\_\+obj, }
+\item[{}]{\$obj, }
+\item[{}]{\$manual\+\_\+updated = {\ttfamily FALSE}}
+\end{DoxyParamCaption}
+)}}\label{classdocumentController_a09cde49e8c89e2b580f302a459831cee}
+Update the document 
+\begin{DoxyParams}[1]{Parameters}
+object & {\em \$source\+\_\+obj} & \\
+\hline
+object & {\em \$obj} & \\
+\hline
+bool & {\em \$manual\+\_\+updated} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 350 of file document.\+controller.\+php.
+
+\hypertarget{classdocumentController_a437461a6588e59e038ed54316bfa7893}{\index{document\+Controller@{document\+Controller}!update\+Readed\+Count@{update\+Readed\+Count}}
+\index{update\+Readed\+Count@{update\+Readed\+Count}!document\+Controller@{document\+Controller}}
+\subsubsection[{update\+Readed\+Count}]{\setlength{\rightskip}{0pt plus 5cm}document\+Controller\+::update\+Readed\+Count (
+\begin{DoxyParamCaption}
+\item[{\&}]{\$o\+Document}
+\end{DoxyParamCaption}
+)}}\label{classdocumentController_a437461a6588e59e038ed54316bfa7893}
+Update read counts of the document 
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{classdocumentItem}{document\+Item} & {\em \$o\+Document} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool$\vert$void 
+\end{DoxyReturn}
+
+
+Definition at line 817 of file document.\+controller.\+php.
+
+\hypertarget{classdocumentController_ab932f88ad36638495bb5db441737edef}{\index{document\+Controller@{document\+Controller}!update\+Trackback\+Count@{update\+Trackback\+Count}}
+\index{update\+Trackback\+Count@{update\+Trackback\+Count}!document\+Controller@{document\+Controller}}
+\subsubsection[{update\+Trackback\+Count}]{\setlength{\rightskip}{0pt plus 5cm}document\+Controller\+::update\+Trackback\+Count (
+\begin{DoxyParamCaption}
+\item[{}]{\$document\+\_\+srl, }
+\item[{}]{\$trackback\+\_\+count}
+\end{DoxyParamCaption}
+)}}\label{classdocumentController_ab932f88ad36638495bb5db441737edef}
+Increase trackback count of the document 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$document\+\_\+srl} & \\
+\hline
+int & {\em \$trackback\+\_\+count} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 1307 of file document.\+controller.\+php.
+
+\hypertarget{classdocumentController_a2e3e591a2262e0fffc195456248b89ff}{\index{document\+Controller@{document\+Controller}!update\+Uploaed\+Count@{update\+Uploaed\+Count}}
+\index{update\+Uploaed\+Count@{update\+Uploaed\+Count}!document\+Controller@{document\+Controller}}
+\subsubsection[{update\+Uploaed\+Count}]{\setlength{\rightskip}{0pt plus 5cm}document\+Controller\+::update\+Uploaed\+Count (
+\begin{DoxyParamCaption}
+\item[{}]{\$document\+Srl\+List}
+\end{DoxyParamCaption}
+)}}\label{classdocumentController_a2e3e591a2262e0fffc195456248b89ff}
+
+
+Definition at line 2467 of file document.\+controller.\+php.
+
+\hypertarget{classdocumentController_aca82ae9abe825d3ee6182d3608e71e31}{\index{document\+Controller@{document\+Controller}!update\+Voted\+Count@{update\+Voted\+Count}}
+\index{update\+Voted\+Count@{update\+Voted\+Count}!document\+Controller@{document\+Controller}}
+\subsubsection[{update\+Voted\+Count}]{\setlength{\rightskip}{0pt plus 5cm}document\+Controller\+::update\+Voted\+Count (
+\begin{DoxyParamCaption}
+\item[{}]{\$document\+\_\+srl, }
+\item[{}]{\$point = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}}\label{classdocumentController_aca82ae9abe825d3ee6182d3608e71e31}
+Increase the number of vote-\/up of the document 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$document\+\_\+srl} & \\
+\hline
+int & {\em \$point} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classObject}{Object} 
+\end{DoxyReturn}
+
+
+Definition at line 1043 of file document.\+controller.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+modules/document/\hyperlink{document_8controller_8php}{document.\+controller.\+php}\end{DoxyCompactItemize}

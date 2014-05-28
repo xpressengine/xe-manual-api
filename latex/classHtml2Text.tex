@@ -1,0 +1,267 @@
+\hypertarget{classHtml2Text}{\section{Html2\+Text Class Reference}
+\label{classHtml2Text}\index{Html2\+Text@{Html2\+Text}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHtml2Text_a8be1c2ba4a804a6625f77f525474374d}{Html2\+Text} (\$a\+Html\+Text, \$a\+Max\+Columns)
+\item 
+\hyperlink{classHtml2Text_a180ebdd9fc13fa40484f1140288b1a2d}{convert} ()
+\item 
+\hyperlink{classHtml2Text_abee419dd36e91f8415e2d05179e4d961}{get\+Line} ()
+\item 
+\hyperlink{classHtml2Text_a13a652c4a37ee695398eeea16f37594f}{add\+Word\+To\+Line} (\$word)
+\item 
+\hyperlink{classHtml2Text_ae2d6223263a1adc49c53ec28365ce3ae}{get\+Word} ()
+\item 
+\hyperlink{classHtml2Text_a706c293a5f628aad44a0bc76e17b9c11}{split\+Words} (\$text)
+\item 
+\hyperlink{classHtml2Text_ab9a81560284542d868b2947de60e5084}{html\+Decode} (\$text)
+\item 
+\hyperlink{classHtml2Text_a76c12bc2c8a836b7712affd572955fd5}{get\+Indentation} (\$has\+L\+I)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHtml2Text_a637a7ad288f5f1cb3596e6c30ff7cdd1}{\$i\+Current\+Line} = \char`\"{}\char`\"{}
+\item 
+\hyperlink{classHtml2Text_a3fcbc8d47ee2d39d7642581a6eaeac3f}{\$i\+Current\+Word} = \char`\"{}\char`\"{}
+\item 
+\hyperlink{classHtml2Text_a2a3421df2f6c713a6362cc177fc825ee}{\$i\+Current\+Word\+Array}
+\item 
+\hyperlink{classHtml2Text_afd51143c5a22243e3fdb296b165b75fc}{\$i\+Current\+Word\+Index}
+\item 
+\hyperlink{classHtml2Text_ad1ac7e0033e7147f70634201d4c75c3a}{\$i\+In\+Script}
+\item 
+\hyperlink{classHtml2Text_a0550556ecb4b3b5de01eab8044c28784}{\$i\+List\+Level} = 0
+\item 
+\hyperlink{classHtml2Text_aec57c716088597cbf5ef823a4ad9237d}{\$i\+Html\+Text}
+\item 
+\hyperlink{classHtml2Text_a0acbcfeaed2a430e528fde413b0549f9}{\$i\+Max\+Columns}
+\item 
+\hyperlink{classHtml2Text_a22abd87860bf97f5eedbe8849d67a2d8}{\$i\+Html\+Parser}
+\item 
+\hyperlink{classHtml2Text_a613470e1fb5059e50cd74119fde8932e}{\$\+T\+O\+K\+E\+N\+\_\+\+B\+R} = 0
+\item 
+\hyperlink{classHtml2Text_a4d94686f1b18fda5460b9a208d89a98d}{\$\+T\+O\+K\+E\+N\+\_\+\+P} = 1
+\item 
+\hyperlink{classHtml2Text_aadb27ed8819d414ef85c71c3f7f367ba}{\$\+T\+O\+K\+E\+N\+\_\+\+L\+I} = 2
+\item 
+\hyperlink{classHtml2Text_a7c59649ca668432ae1fa144422a6ae2c}{\$\+T\+O\+K\+E\+N\+\_\+\+A\+F\+T\+E\+R\+L\+I} = 3
+\item 
+\hyperlink{classHtml2Text_a21920236a8173543887975c3d657a81c}{\$\+T\+O\+K\+E\+N\+\_\+\+U\+L} = 4
+\item 
+\hyperlink{classHtml2Text_aa5aafc2e0f4c2038185ae09fcc3521d2}{\$\+T\+O\+K\+E\+N\+\_\+\+E\+N\+D\+U\+L} = 5
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class \hyperlink{classHtml2Text}{Html2\+Text}. (\hyperlink{classHtmlParser}{Html\+Parser} example.) Converts H\+T\+M\+L to A\+S\+C\+I\+I attempting to preserve document structure. To use, create an instance of \hyperlink{classHtml2Text}{Html2\+Text} passing the text to convert and the desired maximum number of characters per line. Then invoke \hyperlink{classHtml2Text_a180ebdd9fc13fa40484f1140288b1a2d}{convert()} which returns A\+S\+C\+I\+I text. 
+
+Definition at line 19 of file html2text.\+inc.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classHtml2Text_a13a652c4a37ee695398eeea16f37594f}{\index{Html2\+Text@{Html2\+Text}!add\+Word\+To\+Line@{add\+Word\+To\+Line}}
+\index{add\+Word\+To\+Line@{add\+Word\+To\+Line}!Html2\+Text@{Html2\+Text}}
+\subsubsection[{add\+Word\+To\+Line}]{\setlength{\rightskip}{0pt plus 5cm}Html2\+Text\+::add\+Word\+To\+Line (
+\begin{DoxyParamCaption}
+\item[{}]{\$word}
+\end{DoxyParamCaption}
+)}}\label{classHtml2Text_a13a652c4a37ee695398eeea16f37594f}
+
+
+Definition at line 78 of file html2text.\+inc.
+
+\hypertarget{classHtml2Text_a180ebdd9fc13fa40484f1140288b1a2d}{\index{Html2\+Text@{Html2\+Text}!convert@{convert}}
+\index{convert@{convert}!Html2\+Text@{Html2\+Text}}
+\subsubsection[{convert}]{\setlength{\rightskip}{0pt plus 5cm}Html2\+Text\+::convert (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classHtml2Text_a180ebdd9fc13fa40484f1140288b1a2d}
+
+
+Definition at line 47 of file html2text.\+inc.
+
+\hypertarget{classHtml2Text_a76c12bc2c8a836b7712affd572955fd5}{\index{Html2\+Text@{Html2\+Text}!get\+Indentation@{get\+Indentation}}
+\index{get\+Indentation@{get\+Indentation}!Html2\+Text@{Html2\+Text}}
+\subsubsection[{get\+Indentation}]{\setlength{\rightskip}{0pt plus 5cm}Html2\+Text\+::get\+Indentation (
+\begin{DoxyParamCaption}
+\item[{}]{\$has\+L\+I}
+\end{DoxyParamCaption}
+)}}\label{classHtml2Text_a76c12bc2c8a836b7712affd572955fd5}
+
+
+Definition at line 203 of file html2text.\+inc.
+
+\hypertarget{classHtml2Text_abee419dd36e91f8415e2d05179e4d961}{\index{Html2\+Text@{Html2\+Text}!get\+Line@{get\+Line}}
+\index{get\+Line@{get\+Line}!Html2\+Text@{Html2\+Text}}
+\subsubsection[{get\+Line}]{\setlength{\rightskip}{0pt plus 5cm}Html2\+Text\+::get\+Line (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classHtml2Text_abee419dd36e91f8415e2d05179e4d961}
+
+
+Definition at line 56 of file html2text.\+inc.
+
+\hypertarget{classHtml2Text_ae2d6223263a1adc49c53ec28365ce3ae}{\index{Html2\+Text@{Html2\+Text}!get\+Word@{get\+Word}}
+\index{get\+Word@{get\+Word}!Html2\+Text@{Html2\+Text}}
+\subsubsection[{get\+Word}]{\setlength{\rightskip}{0pt plus 5cm}Html2\+Text\+::get\+Word (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classHtml2Text_ae2d6223263a1adc49c53ec28365ce3ae}
+
+
+Definition at line 121 of file html2text.\+inc.
+
+\hypertarget{classHtml2Text_a8be1c2ba4a804a6625f77f525474374d}{\index{Html2\+Text@{Html2\+Text}!Html2\+Text@{Html2\+Text}}
+\index{Html2\+Text@{Html2\+Text}!Html2\+Text@{Html2\+Text}}
+\subsubsection[{Html2\+Text}]{\setlength{\rightskip}{0pt plus 5cm}Html2\+Text\+::\+Html2\+Text (
+\begin{DoxyParamCaption}
+\item[{}]{\$a\+Html\+Text, }
+\item[{}]{\$a\+Max\+Columns}
+\end{DoxyParamCaption}
+)}}\label{classHtml2Text_a8be1c2ba4a804a6625f77f525474374d}
+
+
+Definition at line 42 of file html2text.\+inc.
+
+\hypertarget{classHtml2Text_ab9a81560284542d868b2947de60e5084}{\index{Html2\+Text@{Html2\+Text}!html\+Decode@{html\+Decode}}
+\index{html\+Decode@{html\+Decode}!Html2\+Text@{Html2\+Text}}
+\subsubsection[{html\+Decode}]{\setlength{\rightskip}{0pt plus 5cm}Html2\+Text\+::html\+Decode (
+\begin{DoxyParamCaption}
+\item[{}]{\$text}
+\end{DoxyParamCaption}
+)}}\label{classHtml2Text_ab9a81560284542d868b2947de60e5084}
+
+
+Definition at line 198 of file html2text.\+inc.
+
+\hypertarget{classHtml2Text_a706c293a5f628aad44a0bc76e17b9c11}{\index{Html2\+Text@{Html2\+Text}!split\+Words@{split\+Words}}
+\index{split\+Words@{split\+Words}!Html2\+Text@{Html2\+Text}}
+\subsubsection[{split\+Words}]{\setlength{\rightskip}{0pt plus 5cm}Html2\+Text\+::split\+Words (
+\begin{DoxyParamCaption}
+\item[{}]{\$text}
+\end{DoxyParamCaption}
+)}}\label{classHtml2Text_a706c293a5f628aad44a0bc76e17b9c11}
+
+
+Definition at line 190 of file html2text.\+inc.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classHtml2Text_a637a7ad288f5f1cb3596e6c30ff7cdd1}{\index{Html2\+Text@{Html2\+Text}!\$i\+Current\+Line@{\$i\+Current\+Line}}
+\index{\$i\+Current\+Line@{\$i\+Current\+Line}!Html2\+Text@{Html2\+Text}}
+\subsubsection[{\$i\+Current\+Line}]{\setlength{\rightskip}{0pt plus 5cm}Html2\+Text\+::\$i\+Current\+Line = \char`\"{}\char`\"{}}}\label{classHtml2Text_a637a7ad288f5f1cb3596e6c30ff7cdd1}
+
+
+Definition at line 23 of file html2text.\+inc.
+
+\hypertarget{classHtml2Text_a3fcbc8d47ee2d39d7642581a6eaeac3f}{\index{Html2\+Text@{Html2\+Text}!\$i\+Current\+Word@{\$i\+Current\+Word}}
+\index{\$i\+Current\+Word@{\$i\+Current\+Word}!Html2\+Text@{Html2\+Text}}
+\subsubsection[{\$i\+Current\+Word}]{\setlength{\rightskip}{0pt plus 5cm}Html2\+Text\+::\$i\+Current\+Word = \char`\"{}\char`\"{}}}\label{classHtml2Text_a3fcbc8d47ee2d39d7642581a6eaeac3f}
+
+
+Definition at line 24 of file html2text.\+inc.
+
+\hypertarget{classHtml2Text_a2a3421df2f6c713a6362cc177fc825ee}{\index{Html2\+Text@{Html2\+Text}!\$i\+Current\+Word\+Array@{\$i\+Current\+Word\+Array}}
+\index{\$i\+Current\+Word\+Array@{\$i\+Current\+Word\+Array}!Html2\+Text@{Html2\+Text}}
+\subsubsection[{\$i\+Current\+Word\+Array}]{\setlength{\rightskip}{0pt plus 5cm}Html2\+Text\+::\$i\+Current\+Word\+Array}}\label{classHtml2Text_a2a3421df2f6c713a6362cc177fc825ee}
+
+
+Definition at line 25 of file html2text.\+inc.
+
+\hypertarget{classHtml2Text_afd51143c5a22243e3fdb296b165b75fc}{\index{Html2\+Text@{Html2\+Text}!\$i\+Current\+Word\+Index@{\$i\+Current\+Word\+Index}}
+\index{\$i\+Current\+Word\+Index@{\$i\+Current\+Word\+Index}!Html2\+Text@{Html2\+Text}}
+\subsubsection[{\$i\+Current\+Word\+Index}]{\setlength{\rightskip}{0pt plus 5cm}Html2\+Text\+::\$i\+Current\+Word\+Index}}\label{classHtml2Text_afd51143c5a22243e3fdb296b165b75fc}
+
+
+Definition at line 26 of file html2text.\+inc.
+
+\hypertarget{classHtml2Text_a22abd87860bf97f5eedbe8849d67a2d8}{\index{Html2\+Text@{Html2\+Text}!\$i\+Html\+Parser@{\$i\+Html\+Parser}}
+\index{\$i\+Html\+Parser@{\$i\+Html\+Parser}!Html2\+Text@{Html2\+Text}}
+\subsubsection[{\$i\+Html\+Parser}]{\setlength{\rightskip}{0pt plus 5cm}Html2\+Text\+::\$i\+Html\+Parser}}\label{classHtml2Text_a22abd87860bf97f5eedbe8849d67a2d8}
+
+
+Definition at line 31 of file html2text.\+inc.
+
+\hypertarget{classHtml2Text_aec57c716088597cbf5ef823a4ad9237d}{\index{Html2\+Text@{Html2\+Text}!\$i\+Html\+Text@{\$i\+Html\+Text}}
+\index{\$i\+Html\+Text@{\$i\+Html\+Text}!Html2\+Text@{Html2\+Text}}
+\subsubsection[{\$i\+Html\+Text}]{\setlength{\rightskip}{0pt plus 5cm}Html2\+Text\+::\$i\+Html\+Text}}\label{classHtml2Text_aec57c716088597cbf5ef823a4ad9237d}
+
+
+Definition at line 29 of file html2text.\+inc.
+
+\hypertarget{classHtml2Text_ad1ac7e0033e7147f70634201d4c75c3a}{\index{Html2\+Text@{Html2\+Text}!\$i\+In\+Script@{\$i\+In\+Script}}
+\index{\$i\+In\+Script@{\$i\+In\+Script}!Html2\+Text@{Html2\+Text}}
+\subsubsection[{\$i\+In\+Script}]{\setlength{\rightskip}{0pt plus 5cm}Html2\+Text\+::\$i\+In\+Script}}\label{classHtml2Text_ad1ac7e0033e7147f70634201d4c75c3a}
+
+
+Definition at line 27 of file html2text.\+inc.
+
+\hypertarget{classHtml2Text_a0550556ecb4b3b5de01eab8044c28784}{\index{Html2\+Text@{Html2\+Text}!\$i\+List\+Level@{\$i\+List\+Level}}
+\index{\$i\+List\+Level@{\$i\+List\+Level}!Html2\+Text@{Html2\+Text}}
+\subsubsection[{\$i\+List\+Level}]{\setlength{\rightskip}{0pt plus 5cm}Html2\+Text\+::\$i\+List\+Level = 0}}\label{classHtml2Text_a0550556ecb4b3b5de01eab8044c28784}
+
+
+Definition at line 28 of file html2text.\+inc.
+
+\hypertarget{classHtml2Text_a0acbcfeaed2a430e528fde413b0549f9}{\index{Html2\+Text@{Html2\+Text}!\$i\+Max\+Columns@{\$i\+Max\+Columns}}
+\index{\$i\+Max\+Columns@{\$i\+Max\+Columns}!Html2\+Text@{Html2\+Text}}
+\subsubsection[{\$i\+Max\+Columns}]{\setlength{\rightskip}{0pt plus 5cm}Html2\+Text\+::\$i\+Max\+Columns}}\label{classHtml2Text_a0acbcfeaed2a430e528fde413b0549f9}
+
+
+Definition at line 30 of file html2text.\+inc.
+
+\hypertarget{classHtml2Text_a7c59649ca668432ae1fa144422a6ae2c}{\index{Html2\+Text@{Html2\+Text}!\$\+T\+O\+K\+E\+N\+\_\+\+A\+F\+T\+E\+R\+L\+I@{\$\+T\+O\+K\+E\+N\+\_\+\+A\+F\+T\+E\+R\+L\+I}}
+\index{\$\+T\+O\+K\+E\+N\+\_\+\+A\+F\+T\+E\+R\+L\+I@{\$\+T\+O\+K\+E\+N\+\_\+\+A\+F\+T\+E\+R\+L\+I}!Html2\+Text@{Html2\+Text}}
+\subsubsection[{\$\+T\+O\+K\+E\+N\+\_\+\+A\+F\+T\+E\+R\+L\+I}]{\setlength{\rightskip}{0pt plus 5cm}Html2\+Text\+::\$\+T\+O\+K\+E\+N\+\_\+\+A\+F\+T\+E\+R\+L\+I = 3}}\label{classHtml2Text_a7c59649ca668432ae1fa144422a6ae2c}
+
+
+Definition at line 38 of file html2text.\+inc.
+
+\hypertarget{classHtml2Text_a613470e1fb5059e50cd74119fde8932e}{\index{Html2\+Text@{Html2\+Text}!\$\+T\+O\+K\+E\+N\+\_\+\+B\+R@{\$\+T\+O\+K\+E\+N\+\_\+\+B\+R}}
+\index{\$\+T\+O\+K\+E\+N\+\_\+\+B\+R@{\$\+T\+O\+K\+E\+N\+\_\+\+B\+R}!Html2\+Text@{Html2\+Text}}
+\subsubsection[{\$\+T\+O\+K\+E\+N\+\_\+\+B\+R}]{\setlength{\rightskip}{0pt plus 5cm}Html2\+Text\+::\$\+T\+O\+K\+E\+N\+\_\+\+B\+R = 0}}\label{classHtml2Text_a613470e1fb5059e50cd74119fde8932e}
+
+
+Definition at line 35 of file html2text.\+inc.
+
+\hypertarget{classHtml2Text_aa5aafc2e0f4c2038185ae09fcc3521d2}{\index{Html2\+Text@{Html2\+Text}!\$\+T\+O\+K\+E\+N\+\_\+\+E\+N\+D\+U\+L@{\$\+T\+O\+K\+E\+N\+\_\+\+E\+N\+D\+U\+L}}
+\index{\$\+T\+O\+K\+E\+N\+\_\+\+E\+N\+D\+U\+L@{\$\+T\+O\+K\+E\+N\+\_\+\+E\+N\+D\+U\+L}!Html2\+Text@{Html2\+Text}}
+\subsubsection[{\$\+T\+O\+K\+E\+N\+\_\+\+E\+N\+D\+U\+L}]{\setlength{\rightskip}{0pt plus 5cm}Html2\+Text\+::\$\+T\+O\+K\+E\+N\+\_\+\+E\+N\+D\+U\+L = 5}}\label{classHtml2Text_aa5aafc2e0f4c2038185ae09fcc3521d2}
+
+
+Definition at line 40 of file html2text.\+inc.
+
+\hypertarget{classHtml2Text_aadb27ed8819d414ef85c71c3f7f367ba}{\index{Html2\+Text@{Html2\+Text}!\$\+T\+O\+K\+E\+N\+\_\+\+L\+I@{\$\+T\+O\+K\+E\+N\+\_\+\+L\+I}}
+\index{\$\+T\+O\+K\+E\+N\+\_\+\+L\+I@{\$\+T\+O\+K\+E\+N\+\_\+\+L\+I}!Html2\+Text@{Html2\+Text}}
+\subsubsection[{\$\+T\+O\+K\+E\+N\+\_\+\+L\+I}]{\setlength{\rightskip}{0pt plus 5cm}Html2\+Text\+::\$\+T\+O\+K\+E\+N\+\_\+\+L\+I = 2}}\label{classHtml2Text_aadb27ed8819d414ef85c71c3f7f367ba}
+
+
+Definition at line 37 of file html2text.\+inc.
+
+\hypertarget{classHtml2Text_a4d94686f1b18fda5460b9a208d89a98d}{\index{Html2\+Text@{Html2\+Text}!\$\+T\+O\+K\+E\+N\+\_\+\+P@{\$\+T\+O\+K\+E\+N\+\_\+\+P}}
+\index{\$\+T\+O\+K\+E\+N\+\_\+\+P@{\$\+T\+O\+K\+E\+N\+\_\+\+P}!Html2\+Text@{Html2\+Text}}
+\subsubsection[{\$\+T\+O\+K\+E\+N\+\_\+\+P}]{\setlength{\rightskip}{0pt plus 5cm}Html2\+Text\+::\$\+T\+O\+K\+E\+N\+\_\+\+P = 1}}\label{classHtml2Text_a4d94686f1b18fda5460b9a208d89a98d}
+
+
+Definition at line 36 of file html2text.\+inc.
+
+\hypertarget{classHtml2Text_a21920236a8173543887975c3d657a81c}{\index{Html2\+Text@{Html2\+Text}!\$\+T\+O\+K\+E\+N\+\_\+\+U\+L@{\$\+T\+O\+K\+E\+N\+\_\+\+U\+L}}
+\index{\$\+T\+O\+K\+E\+N\+\_\+\+U\+L@{\$\+T\+O\+K\+E\+N\+\_\+\+U\+L}!Html2\+Text@{Html2\+Text}}
+\subsubsection[{\$\+T\+O\+K\+E\+N\+\_\+\+U\+L}]{\setlength{\rightskip}{0pt plus 5cm}Html2\+Text\+::\$\+T\+O\+K\+E\+N\+\_\+\+U\+L = 4}}\label{classHtml2Text_a21920236a8173543887975c3d657a81c}
+
+
+Definition at line 39 of file html2text.\+inc.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+classes/security/phphtmlparser/src/\hyperlink{html2text_8inc}{html2text.\+inc}\end{DoxyCompactItemize}

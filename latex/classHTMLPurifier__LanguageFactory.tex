@@ -1,0 +1,189 @@
+\hypertarget{classHTMLPurifier__LanguageFactory}{\section{H\+T\+M\+L\+Purifier\+\_\+\+Language\+Factory Class Reference}
+\label{classHTMLPurifier__LanguageFactory}\index{H\+T\+M\+L\+Purifier\+\_\+\+Language\+Factory@{H\+T\+M\+L\+Purifier\+\_\+\+Language\+Factory}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHTMLPurifier__LanguageFactory_a122c2c2803747d67972545567ff7a5c3}{setup} ()
+\item 
+\hyperlink{classHTMLPurifier__LanguageFactory_a7b729c88631b8dc0b264bf19111a4f32}{create} (\$config, \$context, \$code=false)
+\item 
+\hyperlink{classHTMLPurifier__LanguageFactory_ae82c6d27d6c5771c2635cb696140b64e}{get\+Fallback\+For} (\$code)
+\item 
+\hyperlink{classHTMLPurifier__LanguageFactory_a81bdb6578f72d015889ff858d6694c7c}{load\+Language} (\$code)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classHTMLPurifier__LanguageFactory_a488c442bf17292dc832bff6a343667ac}{instance} (\$prototype=null)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHTMLPurifier__LanguageFactory_a963533a7141c8acb5ae890c39c72a85f}{\$cache}
+\item 
+\hyperlink{classHTMLPurifier__LanguageFactory_ad42771f148ac00e139798d3eac59d592}{\$keys} = array('fallback', 'messages', 'error\+Names')
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHTMLPurifier__LanguageFactory_adc75fa793689675394f89fd920804105}{\$validator}
+\item 
+\hyperlink{classHTMLPurifier__LanguageFactory_a741f65f44cddbeb9a1ef54fedf8e2a89}{\$dir}
+\item 
+\hyperlink{classHTMLPurifier__LanguageFactory_a52e2d6740f4e7411697bad9f85e95892}{\$mergeable\+\_\+keys\+\_\+map} = array('messages' =$>$ true, 'error\+Names' =$>$ true)
+\item 
+\hyperlink{classHTMLPurifier__LanguageFactory_a9901a43e75cef050c89b117a10800843}{\$mergeable\+\_\+keys\+\_\+list} = array()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class responsible for generating \hyperlink{classHTMLPurifier__Language}{H\+T\+M\+L\+Purifier\+\_\+\+Language} objects, managing caching and fallbacks. \begin{DoxyNote}{Note}
+Thanks to Media\+Wiki for the general logic, although this version has been entirely rewritten 
+\end{DoxyNote}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000026}{Todo}]Serialized cache for languages \end{DoxyRefDesc}
+
+
+Definition at line 10 of file Language\+Factory.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classHTMLPurifier__LanguageFactory_a7b729c88631b8dc0b264bf19111a4f32}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Language\+Factory@{H\+T\+M\+L\+Purifier\+\_\+\+Language\+Factory}!create@{create}}
+\index{create@{create}!H\+T\+M\+L\+Purifier\+\_\+\+Language\+Factory@{H\+T\+M\+L\+Purifier\+\_\+\+Language\+Factory}}
+\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Language\+Factory\+::create (
+\begin{DoxyParamCaption}
+\item[{}]{\$config, }
+\item[{}]{\$context, }
+\item[{}]{\$code = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__LanguageFactory_a7b729c88631b8dc0b264bf19111a4f32}
+Creates a language object, handles class fallbacks 
+\begin{DoxyParams}{Parameters}
+{\em \$config} & Instance of \hyperlink{classHTMLPurifier__Config}{H\+T\+M\+L\+Purifier\+\_\+\+Config} \\
+\hline
+{\em \$context} & Instance of \hyperlink{classHTMLPurifier__Context}{H\+T\+M\+L\+Purifier\+\_\+\+Context} \\
+\hline
+{\em \$code} & Code to override configuration with. Private parameter. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 83 of file Language\+Factory.\+php.
+
+\hypertarget{classHTMLPurifier__LanguageFactory_ae82c6d27d6c5771c2635cb696140b64e}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Language\+Factory@{H\+T\+M\+L\+Purifier\+\_\+\+Language\+Factory}!get\+Fallback\+For@{get\+Fallback\+For}}
+\index{get\+Fallback\+For@{get\+Fallback\+For}!H\+T\+M\+L\+Purifier\+\_\+\+Language\+Factory@{H\+T\+M\+L\+Purifier\+\_\+\+Language\+Factory}}
+\subsubsection[{get\+Fallback\+For}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Language\+Factory\+::get\+Fallback\+For (
+\begin{DoxyParamCaption}
+\item[{}]{\$code}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__LanguageFactory_ae82c6d27d6c5771c2635cb696140b64e}
+Returns the fallback language for language \begin{DoxyNote}{Note}
+Loads the original language into cache 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em \$code} & string language code \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 129 of file Language\+Factory.\+php.
+
+\hypertarget{classHTMLPurifier__LanguageFactory_a488c442bf17292dc832bff6a343667ac}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Language\+Factory@{H\+T\+M\+L\+Purifier\+\_\+\+Language\+Factory}!instance@{instance}}
+\index{instance@{instance}!H\+T\+M\+L\+Purifier\+\_\+\+Language\+Factory@{H\+T\+M\+L\+Purifier\+\_\+\+Language\+Factory}}
+\subsubsection[{instance}]{\setlength{\rightskip}{0pt plus 5cm}static H\+T\+M\+L\+Purifier\+\_\+\+Language\+Factory\+::instance (
+\begin{DoxyParamCaption}
+\item[{}]{\$prototype = {\ttfamily null}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classHTMLPurifier__LanguageFactory_a488c442bf17292dc832bff6a343667ac}
+Retrieve sole instance of the factory. 
+\begin{DoxyParams}{Parameters}
+{\em \$prototype} & Optional prototype to overload sole instance with, or bool true to reset to default factory. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 57 of file Language\+Factory.\+php.
+
+\hypertarget{classHTMLPurifier__LanguageFactory_a81bdb6578f72d015889ff858d6694c7c}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Language\+Factory@{H\+T\+M\+L\+Purifier\+\_\+\+Language\+Factory}!load\+Language@{load\+Language}}
+\index{load\+Language@{load\+Language}!H\+T\+M\+L\+Purifier\+\_\+\+Language\+Factory@{H\+T\+M\+L\+Purifier\+\_\+\+Language\+Factory}}
+\subsubsection[{load\+Language}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Language\+Factory\+::load\+Language (
+\begin{DoxyParamCaption}
+\item[{}]{\$code}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__LanguageFactory_a81bdb6578f72d015889ff858d6694c7c}
+Loads language into the cache, handles message file and fallbacks 
+\begin{DoxyParams}{Parameters}
+{\em \$code} & string language code \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 138 of file Language\+Factory.\+php.
+
+\hypertarget{classHTMLPurifier__LanguageFactory_a122c2c2803747d67972545567ff7a5c3}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Language\+Factory@{H\+T\+M\+L\+Purifier\+\_\+\+Language\+Factory}!setup@{setup}}
+\index{setup@{setup}!H\+T\+M\+L\+Purifier\+\_\+\+Language\+Factory@{H\+T\+M\+L\+Purifier\+\_\+\+Language\+Factory}}
+\subsubsection[{setup}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Language\+Factory\+::setup (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__LanguageFactory_a122c2c2803747d67972545567ff7a5c3}
+Sets up the singleton, much like a constructor \begin{DoxyNote}{Note}
+Prevents people from getting this outside of the singleton 
+\end{DoxyNote}
+
+
+Definition at line 72 of file Language\+Factory.\+php.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classHTMLPurifier__LanguageFactory_a963533a7141c8acb5ae890c39c72a85f}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Language\+Factory@{H\+T\+M\+L\+Purifier\+\_\+\+Language\+Factory}!\$cache@{\$cache}}
+\index{\$cache@{\$cache}!H\+T\+M\+L\+Purifier\+\_\+\+Language\+Factory@{H\+T\+M\+L\+Purifier\+\_\+\+Language\+Factory}}
+\subsubsection[{\$cache}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Language\+Factory\+::\$cache}}\label{classHTMLPurifier__LanguageFactory_a963533a7141c8acb5ae890c39c72a85f}
+Cache of language code information used to load \hyperlink{classHTMLPurifier__Language}{H\+T\+M\+L\+Purifier\+\_\+\+Language} objects Structure is\+: \$factory-\/$>$cache\mbox{[}\$language\+\_\+code\mbox{]}\mbox{[}\$key\mbox{]} = \$value  array map 
+
+Definition at line 18 of file Language\+Factory.\+php.
+
+\hypertarget{classHTMLPurifier__LanguageFactory_a741f65f44cddbeb9a1ef54fedf8e2a89}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Language\+Factory@{H\+T\+M\+L\+Purifier\+\_\+\+Language\+Factory}!\$dir@{\$dir}}
+\index{\$dir@{\$dir}!H\+T\+M\+L\+Purifier\+\_\+\+Language\+Factory@{H\+T\+M\+L\+Purifier\+\_\+\+Language\+Factory}}
+\subsubsection[{\$dir}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Language\+Factory\+::\$dir\hspace{0.3cm}{\ttfamily [protected]}}}\label{classHTMLPurifier__LanguageFactory_a741f65f44cddbeb9a1ef54fedf8e2a89}
+Cached copy of dirname({\bfseries F\+I\+L\+E}), directory of current file without trailing slash  string filename 
+
+Definition at line 38 of file Language\+Factory.\+php.
+
+\hypertarget{classHTMLPurifier__LanguageFactory_ad42771f148ac00e139798d3eac59d592}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Language\+Factory@{H\+T\+M\+L\+Purifier\+\_\+\+Language\+Factory}!\$keys@{\$keys}}
+\index{\$keys@{\$keys}!H\+T\+M\+L\+Purifier\+\_\+\+Language\+Factory@{H\+T\+M\+L\+Purifier\+\_\+\+Language\+Factory}}
+\subsubsection[{\$keys}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Language\+Factory\+::\$keys = array('fallback', 'messages', 'error\+Names')}}\label{classHTMLPurifier__LanguageFactory_ad42771f148ac00e139798d3eac59d592}
+Valid keys in the \hyperlink{classHTMLPurifier__Language}{H\+T\+M\+L\+Purifier\+\_\+\+Language} object. Designates which variables to slurp out of a message file.  array list 
+
+Definition at line 25 of file Language\+Factory.\+php.
+
+\hypertarget{classHTMLPurifier__LanguageFactory_a9901a43e75cef050c89b117a10800843}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Language\+Factory@{H\+T\+M\+L\+Purifier\+\_\+\+Language\+Factory}!\$mergeable\+\_\+keys\+\_\+list@{\$mergeable\+\_\+keys\+\_\+list}}
+\index{\$mergeable\+\_\+keys\+\_\+list@{\$mergeable\+\_\+keys\+\_\+list}!H\+T\+M\+L\+Purifier\+\_\+\+Language\+Factory@{H\+T\+M\+L\+Purifier\+\_\+\+Language\+Factory}}
+\subsubsection[{\$mergeable\+\_\+keys\+\_\+list}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Language\+Factory\+::\$mergeable\+\_\+keys\+\_\+list = array()\hspace{0.3cm}{\ttfamily [protected]}}}\label{classHTMLPurifier__LanguageFactory_a9901a43e75cef050c89b117a10800843}
+Keys whose contents are a list and can be merged  array lookup 
+
+Definition at line 50 of file Language\+Factory.\+php.
+
+\hypertarget{classHTMLPurifier__LanguageFactory_a52e2d6740f4e7411697bad9f85e95892}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Language\+Factory@{H\+T\+M\+L\+Purifier\+\_\+\+Language\+Factory}!\$mergeable\+\_\+keys\+\_\+map@{\$mergeable\+\_\+keys\+\_\+map}}
+\index{\$mergeable\+\_\+keys\+\_\+map@{\$mergeable\+\_\+keys\+\_\+map}!H\+T\+M\+L\+Purifier\+\_\+\+Language\+Factory@{H\+T\+M\+L\+Purifier\+\_\+\+Language\+Factory}}
+\subsubsection[{\$mergeable\+\_\+keys\+\_\+map}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Language\+Factory\+::\$mergeable\+\_\+keys\+\_\+map = array('messages' =$>$ true, 'error\+Names' =$>$ true)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classHTMLPurifier__LanguageFactory_a52e2d6740f4e7411697bad9f85e95892}
+Keys whose contents are a hash map and can be merged  array lookup 
+
+Definition at line 44 of file Language\+Factory.\+php.
+
+\hypertarget{classHTMLPurifier__LanguageFactory_adc75fa793689675394f89fd920804105}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Language\+Factory@{H\+T\+M\+L\+Purifier\+\_\+\+Language\+Factory}!\$validator@{\$validator}}
+\index{\$validator@{\$validator}!H\+T\+M\+L\+Purifier\+\_\+\+Language\+Factory@{H\+T\+M\+L\+Purifier\+\_\+\+Language\+Factory}}
+\subsubsection[{\$validator}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Language\+Factory\+::\$validator\hspace{0.3cm}{\ttfamily [protected]}}}\label{classHTMLPurifier__LanguageFactory_adc75fa793689675394f89fd920804105}
+Instance of \hyperlink{classHTMLPurifier__AttrDef__Lang}{H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Def\+\_\+\+Lang} to validate language codes  object \hyperlink{classHTMLPurifier__AttrDef__Lang}{H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Def\+\_\+\+Lang} 
+
+Definition at line 31 of file Language\+Factory.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+classes/security/htmlpurifier/library/\+H\+T\+M\+L\+Purifier/\hyperlink{LanguageFactory_8php}{Language\+Factory.\+php}\end{DoxyCompactItemize}

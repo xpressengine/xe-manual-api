@@ -1,0 +1,351 @@
+\hypertarget{classFrontEndFileHandler}{\section{Front\+End\+File\+Handler Class Reference}
+\label{classFrontEndFileHandler}\index{Front\+End\+File\+Handler@{Front\+End\+File\+Handler}}
+}
+Inheritance diagram for Front\+End\+File\+Handler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classFrontEndFileHandler}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFrontEndFileHandler_a2bd70c621572f784c4e563d0dafa0fc2}{is\+Ssl} ()
+\item 
+\hyperlink{classFrontEndFileHandler_aeb802ae7b7b315da73ec3be224ce9e9f}{load\+File} (\$args)
+\item 
+\hyperlink{classFrontEndFileHandler_ad55bc752b0d140bbfefaaa30057db3d2}{unload\+File} (\$file\+Name, \$target\+Ie= '', \$media= 'all')
+\item 
+\hyperlink{classFrontEndFileHandler_ad118128391da5bb33e4a7105152432bc}{unload\+All\+Files} (\$type= 'all')
+\item 
+\hyperlink{classFrontEndFileHandler_a35cff5fb32625790d01e8839c73fd0fc}{get\+Css\+File\+List} ()
+\item 
+\hyperlink{classFrontEndFileHandler_ab6147b1dac393bc3838d433f3c46553f}{get\+Js\+File\+List} (\$type= 'head')
+\item 
+\hyperlink{classFrontEndFileHandler_a3677abdd2a1a3a17fd1de9f58ffe27a5}{\+\_\+sort\+Map} (\&\$map, \&\$index)
+\item 
+\hyperlink{classFrontEndFileHandler_a4818293d9395dd1b4d62b8cabeb04603}{\+\_\+normalize\+File\+Path} (\$path)
+\item 
+\hyperlink{classFrontEndFileHandler_a0a76e82d6037ea9a862e1585b2e562df}{\+\_\+get\+Abs\+File\+Url} (\$path)
+\item 
+\hyperlink{classFrontEndFileHandler_aedfe6ba984a8e33de211ef23e83cd98e}{\+\_\+arrange\+Css\+Index} (\$dir\+Name, \&\$\hyperlink{classfile}{file})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFrontEndFileHandler_ae7470e6b48cdd0b76b8bd0fd8e38850c}{\$css\+Map} = array()
+\item 
+\hyperlink{classFrontEndFileHandler_ab434f9c8c874aaf8186e259dff95d116}{\$js\+Head\+Map} = array()
+\item 
+\hyperlink{classFrontEndFileHandler_ad03de614a088bc386c393543a3cd9aed}{\$js\+Body\+Map} = array()
+\item 
+\hyperlink{classFrontEndFileHandler_a61df1d725cd1884fd0a260dec738a4b7}{\$css\+Map\+Index} = array()
+\item 
+\hyperlink{classFrontEndFileHandler_a151a55b31ffaec411a86b7f618eed4ac}{\$js\+Head\+Map\+Index} = array()
+\item 
+\hyperlink{classFrontEndFileHandler_aba61415d3f993f1f6b9cddc0024f50b1}{\$js\+Body\+Map\+Index} = array()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classFrontEndFileHandler_a1e709934ab4023d10850268064d771bc}{\$is\+S\+S\+L} = F\+A\+L\+S\+E
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Handle front end files \begin{DoxyAuthor}{Author}
+N\+A\+V\+E\+R (\href{mailto:developers@xpressengine.com}{\tt developers@xpressengine.\+com}) 
+\end{DoxyAuthor}
+
+
+Definition at line 8 of file Front\+End\+File\+Handler.\+class.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classFrontEndFileHandler_aedfe6ba984a8e33de211ef23e83cd98e}{\index{Front\+End\+File\+Handler@{Front\+End\+File\+Handler}!\+\_\+arrange\+Css\+Index@{\+\_\+arrange\+Css\+Index}}
+\index{\+\_\+arrange\+Css\+Index@{\+\_\+arrange\+Css\+Index}!Front\+End\+File\+Handler@{Front\+End\+File\+Handler}}
+\subsubsection[{\+\_\+arrange\+Css\+Index}]{\setlength{\rightskip}{0pt plus 5cm}Front\+End\+File\+Handler\+::\+\_\+arrange\+Css\+Index (
+\begin{DoxyParamCaption}
+\item[{}]{\$dir\+Name, }
+\item[{\&}]{\$file}
+\end{DoxyParamCaption}
+)}}\label{classFrontEndFileHandler_aedfe6ba984a8e33de211ef23e83cd98e}
+Arrage css index
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$dir\+Name} & First directory name of css path \\
+\hline
+array & {\em \$file} & file info. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 394 of file Front\+End\+File\+Handler.\+class.\+php.
+
+\hypertarget{classFrontEndFileHandler_a0a76e82d6037ea9a862e1585b2e562df}{\index{Front\+End\+File\+Handler@{Front\+End\+File\+Handler}!\+\_\+get\+Abs\+File\+Url@{\+\_\+get\+Abs\+File\+Url}}
+\index{\+\_\+get\+Abs\+File\+Url@{\+\_\+get\+Abs\+File\+Url}!Front\+End\+File\+Handler@{Front\+End\+File\+Handler}}
+\subsubsection[{\+\_\+get\+Abs\+File\+Url}]{\setlength{\rightskip}{0pt plus 5cm}Front\+End\+File\+Handler\+::\+\_\+get\+Abs\+File\+Url (
+\begin{DoxyParamCaption}
+\item[{}]{\$path}
+\end{DoxyParamCaption}
+)}}\label{classFrontEndFileHandler_a0a76e82d6037ea9a862e1585b2e562df}
+Get absolute file url
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & Path to get absolute url \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Absolute url 
+\end{DoxyReturn}
+
+
+Definition at line 364 of file Front\+End\+File\+Handler.\+class.\+php.
+
+\hypertarget{classFrontEndFileHandler_a4818293d9395dd1b4d62b8cabeb04603}{\index{Front\+End\+File\+Handler@{Front\+End\+File\+Handler}!\+\_\+normalize\+File\+Path@{\+\_\+normalize\+File\+Path}}
+\index{\+\_\+normalize\+File\+Path@{\+\_\+normalize\+File\+Path}!Front\+End\+File\+Handler@{Front\+End\+File\+Handler}}
+\subsubsection[{\+\_\+normalize\+File\+Path}]{\setlength{\rightskip}{0pt plus 5cm}Front\+End\+File\+Handler\+::\+\_\+normalize\+File\+Path (
+\begin{DoxyParamCaption}
+\item[{}]{\$path}
+\end{DoxyParamCaption}
+)}}\label{classFrontEndFileHandler_a4818293d9395dd1b4d62b8cabeb04603}
+Normalize File path
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & Path to normalize \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Normalized path 
+\end{DoxyReturn}
+
+
+Definition at line 341 of file Front\+End\+File\+Handler.\+class.\+php.
+
+\hypertarget{classFrontEndFileHandler_a3677abdd2a1a3a17fd1de9f58ffe27a5}{\index{Front\+End\+File\+Handler@{Front\+End\+File\+Handler}!\+\_\+sort\+Map@{\+\_\+sort\+Map}}
+\index{\+\_\+sort\+Map@{\+\_\+sort\+Map}!Front\+End\+File\+Handler@{Front\+End\+File\+Handler}}
+\subsubsection[{\+\_\+sort\+Map}]{\setlength{\rightskip}{0pt plus 5cm}Front\+End\+File\+Handler\+::\+\_\+sort\+Map (
+\begin{DoxyParamCaption}
+\item[{\&}]{\$map, }
+\item[{\&}]{\$index}
+\end{DoxyParamCaption}
+)}}\label{classFrontEndFileHandler_a3677abdd2a1a3a17fd1de9f58ffe27a5}
+Sort a map
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$map} & Array to sort \\
+\hline
+array & {\em \$index} & Not used \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 330 of file Front\+End\+File\+Handler.\+class.\+php.
+
+\hypertarget{classFrontEndFileHandler_a35cff5fb32625790d01e8839c73fd0fc}{\index{Front\+End\+File\+Handler@{Front\+End\+File\+Handler}!get\+Css\+File\+List@{get\+Css\+File\+List}}
+\index{get\+Css\+File\+List@{get\+Css\+File\+List}!Front\+End\+File\+Handler@{Front\+End\+File\+Handler}}
+\subsubsection[{get\+Css\+File\+List}]{\setlength{\rightskip}{0pt plus 5cm}Front\+End\+File\+Handler\+::get\+Css\+File\+List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classFrontEndFileHandler_a35cff5fb32625790d01e8839c73fd0fc}
+Get css file list
+
+\begin{DoxyReturn}{Returns}
+array Returns css file list. Array contains file, media, targetie. 
+\end{DoxyReturn}
+
+
+Definition at line 265 of file Front\+End\+File\+Handler.\+class.\+php.
+
+\hypertarget{classFrontEndFileHandler_ab6147b1dac393bc3838d433f3c46553f}{\index{Front\+End\+File\+Handler@{Front\+End\+File\+Handler}!get\+Js\+File\+List@{get\+Js\+File\+List}}
+\index{get\+Js\+File\+List@{get\+Js\+File\+List}!Front\+End\+File\+Handler@{Front\+End\+File\+Handler}}
+\subsubsection[{get\+Js\+File\+List}]{\setlength{\rightskip}{0pt plus 5cm}Front\+End\+File\+Handler\+::get\+Js\+File\+List (
+\begin{DoxyParamCaption}
+\item[{}]{\$type = {\ttfamily 'head'}}
+\end{DoxyParamCaption}
+)}}\label{classFrontEndFileHandler_ab6147b1dac393bc3838d433f3c46553f}
+Get javascript file list
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$type} & Type of javascript. head, body \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array Returns javascript file list. Array contains file, targetie. 
+\end{DoxyReturn}
+
+
+Definition at line 293 of file Front\+End\+File\+Handler.\+class.\+php.
+
+\hypertarget{classFrontEndFileHandler_a2bd70c621572f784c4e563d0dafa0fc2}{\index{Front\+End\+File\+Handler@{Front\+End\+File\+Handler}!is\+Ssl@{is\+Ssl}}
+\index{is\+Ssl@{is\+Ssl}!Front\+End\+File\+Handler@{Front\+End\+File\+Handler}}
+\subsubsection[{is\+Ssl}]{\setlength{\rightskip}{0pt plus 5cm}Front\+End\+File\+Handler\+::is\+Ssl (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classFrontEndFileHandler_a2bd70c621572f784c4e563d0dafa0fc2}
+Check S\+S\+L
+
+\begin{DoxyReturn}{Returns}
+bool If using ssl returns true, otherwise returns false. 
+\end{DoxyReturn}
+
+
+Definition at line 54 of file Front\+End\+File\+Handler.\+class.\+php.
+
+\hypertarget{classFrontEndFileHandler_aeb802ae7b7b315da73ec3be224ce9e9f}{\index{Front\+End\+File\+Handler@{Front\+End\+File\+Handler}!load\+File@{load\+File}}
+\index{load\+File@{load\+File}!Front\+End\+File\+Handler@{Front\+End\+File\+Handler}}
+\subsubsection[{load\+File}]{\setlength{\rightskip}{0pt plus 5cm}Front\+End\+File\+Handler\+::load\+File (
+\begin{DoxyParamCaption}
+\item[{}]{\$args}
+\end{DoxyParamCaption}
+)}}\label{classFrontEndFileHandler_aeb802ae7b7b315da73ec3be224ce9e9f}
+Load front end file
+
+The \$args is use as below. File type(js, css) is detected by file extension.
+
+
+\begin{DoxyPre}
+case js
+        $args[0]: file name
+        $args[1]: type (head | body)
+        $args[2]: target IE
+        $args[3]: index
+case css
+        $args[0]: file name
+        $args[1]: media
+        $args[2]: target IE
+        $args[3]: index
+\end{DoxyPre}
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$args} & Arguments \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 88 of file Front\+End\+File\+Handler.\+class.\+php.
+
+\hypertarget{classFrontEndFileHandler_ad118128391da5bb33e4a7105152432bc}{\index{Front\+End\+File\+Handler@{Front\+End\+File\+Handler}!unload\+All\+Files@{unload\+All\+Files}}
+\index{unload\+All\+Files@{unload\+All\+Files}!Front\+End\+File\+Handler@{Front\+End\+File\+Handler}}
+\subsubsection[{unload\+All\+Files}]{\setlength{\rightskip}{0pt plus 5cm}Front\+End\+File\+Handler\+::unload\+All\+Files (
+\begin{DoxyParamCaption}
+\item[{}]{\$type = {\ttfamily 'all'}}
+\end{DoxyParamCaption}
+)}}\label{classFrontEndFileHandler_ad118128391da5bb33e4a7105152432bc}
+Unload all front end file
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$type} & Type to unload. all, css, js \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 243 of file Front\+End\+File\+Handler.\+class.\+php.
+
+\hypertarget{classFrontEndFileHandler_ad55bc752b0d140bbfefaaa30057db3d2}{\index{Front\+End\+File\+Handler@{Front\+End\+File\+Handler}!unload\+File@{unload\+File}}
+\index{unload\+File@{unload\+File}!Front\+End\+File\+Handler@{Front\+End\+File\+Handler}}
+\subsubsection[{unload\+File}]{\setlength{\rightskip}{0pt plus 5cm}Front\+End\+File\+Handler\+::unload\+File (
+\begin{DoxyParamCaption}
+\item[{}]{\$file\+Name, }
+\item[{}]{\$target\+Ie = {\ttfamily ''}, }
+\item[{}]{\$media = {\ttfamily 'all'}}
+\end{DoxyParamCaption}
+)}}\label{classFrontEndFileHandler_ad55bc752b0d140bbfefaaa30057db3d2}
+Unload front end file
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$file\+Name} & The file name to unload \\
+\hline
+string & {\em \$target\+Ie} & Target I\+E of file to unload \\
+\hline
+string & {\em \$media} & Media of file to unload. Only use when file is css. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 210 of file Front\+End\+File\+Handler.\+class.\+php.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classFrontEndFileHandler_ae7470e6b48cdd0b76b8bd0fd8e38850c}{\index{Front\+End\+File\+Handler@{Front\+End\+File\+Handler}!\$css\+Map@{\$css\+Map}}
+\index{\$css\+Map@{\$css\+Map}!Front\+End\+File\+Handler@{Front\+End\+File\+Handler}}
+\subsubsection[{\$css\+Map}]{\setlength{\rightskip}{0pt plus 5cm}Front\+End\+File\+Handler\+::\$css\+Map = array()}}\label{classFrontEndFileHandler_ae7470e6b48cdd0b76b8bd0fd8e38850c}
+
+
+Definition at line 17 of file Front\+End\+File\+Handler.\+class.\+php.
+
+\hypertarget{classFrontEndFileHandler_a61df1d725cd1884fd0a260dec738a4b7}{\index{Front\+End\+File\+Handler@{Front\+End\+File\+Handler}!\$css\+Map\+Index@{\$css\+Map\+Index}}
+\index{\$css\+Map\+Index@{\$css\+Map\+Index}!Front\+End\+File\+Handler@{Front\+End\+File\+Handler}}
+\subsubsection[{\$css\+Map\+Index}]{\setlength{\rightskip}{0pt plus 5cm}Front\+End\+File\+Handler\+::\$css\+Map\+Index = array()}}\label{classFrontEndFileHandler_a61df1d725cd1884fd0a260dec738a4b7}
+
+
+Definition at line 35 of file Front\+End\+File\+Handler.\+class.\+php.
+
+\hypertarget{classFrontEndFileHandler_a1e709934ab4023d10850268064d771bc}{\index{Front\+End\+File\+Handler@{Front\+End\+File\+Handler}!\$is\+S\+S\+L@{\$is\+S\+S\+L}}
+\index{\$is\+S\+S\+L@{\$is\+S\+S\+L}!Front\+End\+File\+Handler@{Front\+End\+File\+Handler}}
+\subsubsection[{\$is\+S\+S\+L}]{\setlength{\rightskip}{0pt plus 5cm}Front\+End\+File\+Handler\+::\$is\+S\+S\+L = F\+A\+L\+S\+E\hspace{0.3cm}{\ttfamily [static]}}}\label{classFrontEndFileHandler_a1e709934ab4023d10850268064d771bc}
+
+
+Definition at line 11 of file Front\+End\+File\+Handler.\+class.\+php.
+
+\hypertarget{classFrontEndFileHandler_ad03de614a088bc386c393543a3cd9aed}{\index{Front\+End\+File\+Handler@{Front\+End\+File\+Handler}!\$js\+Body\+Map@{\$js\+Body\+Map}}
+\index{\$js\+Body\+Map@{\$js\+Body\+Map}!Front\+End\+File\+Handler@{Front\+End\+File\+Handler}}
+\subsubsection[{\$js\+Body\+Map}]{\setlength{\rightskip}{0pt plus 5cm}Front\+End\+File\+Handler\+::\$js\+Body\+Map = array()}}\label{classFrontEndFileHandler_ad03de614a088bc386c393543a3cd9aed}
+
+
+Definition at line 29 of file Front\+End\+File\+Handler.\+class.\+php.
+
+\hypertarget{classFrontEndFileHandler_aba61415d3f993f1f6b9cddc0024f50b1}{\index{Front\+End\+File\+Handler@{Front\+End\+File\+Handler}!\$js\+Body\+Map\+Index@{\$js\+Body\+Map\+Index}}
+\index{\$js\+Body\+Map\+Index@{\$js\+Body\+Map\+Index}!Front\+End\+File\+Handler@{Front\+End\+File\+Handler}}
+\subsubsection[{\$js\+Body\+Map\+Index}]{\setlength{\rightskip}{0pt plus 5cm}Front\+End\+File\+Handler\+::\$js\+Body\+Map\+Index = array()}}\label{classFrontEndFileHandler_aba61415d3f993f1f6b9cddc0024f50b1}
+
+
+Definition at line 47 of file Front\+End\+File\+Handler.\+class.\+php.
+
+\hypertarget{classFrontEndFileHandler_ab434f9c8c874aaf8186e259dff95d116}{\index{Front\+End\+File\+Handler@{Front\+End\+File\+Handler}!\$js\+Head\+Map@{\$js\+Head\+Map}}
+\index{\$js\+Head\+Map@{\$js\+Head\+Map}!Front\+End\+File\+Handler@{Front\+End\+File\+Handler}}
+\subsubsection[{\$js\+Head\+Map}]{\setlength{\rightskip}{0pt plus 5cm}Front\+End\+File\+Handler\+::\$js\+Head\+Map = array()}}\label{classFrontEndFileHandler_ab434f9c8c874aaf8186e259dff95d116}
+
+
+Definition at line 23 of file Front\+End\+File\+Handler.\+class.\+php.
+
+\hypertarget{classFrontEndFileHandler_a151a55b31ffaec411a86b7f618eed4ac}{\index{Front\+End\+File\+Handler@{Front\+End\+File\+Handler}!\$js\+Head\+Map\+Index@{\$js\+Head\+Map\+Index}}
+\index{\$js\+Head\+Map\+Index@{\$js\+Head\+Map\+Index}!Front\+End\+File\+Handler@{Front\+End\+File\+Handler}}
+\subsubsection[{\$js\+Head\+Map\+Index}]{\setlength{\rightskip}{0pt plus 5cm}Front\+End\+File\+Handler\+::\$js\+Head\+Map\+Index = array()}}\label{classFrontEndFileHandler_a151a55b31ffaec411a86b7f618eed4ac}
+
+
+Definition at line 41 of file Front\+End\+File\+Handler.\+class.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+classes/frontendfile/\hyperlink{FrontEndFileHandler_8class_8php}{Front\+End\+File\+Handler.\+class.\+php}\end{DoxyCompactItemize}

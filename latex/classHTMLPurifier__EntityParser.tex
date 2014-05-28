@@ -1,0 +1,188 @@
+\hypertarget{classHTMLPurifier__EntityParser}{\section{H\+T\+M\+L\+Purifier\+\_\+\+Entity\+Parser Class Reference}
+\label{classHTMLPurifier__EntityParser}\index{H\+T\+M\+L\+Purifier\+\_\+\+Entity\+Parser@{H\+T\+M\+L\+Purifier\+\_\+\+Entity\+Parser}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHTMLPurifier__EntityParser_a1e003bfd746dfbda9dcc27b0a543cdfb}{substitute\+Non\+Special\+Entities} (\$string)
+\item 
+\hyperlink{classHTMLPurifier__EntityParser_af5763f9df0bcd1b2972c43bcf3876658}{substitute\+Special\+Entities} (\$string)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHTMLPurifier__EntityParser_a787c07173c94c9f1070d0d86f73e87a2}{non\+Special\+Entity\+Callback} (\$matches)
+\item 
+\hyperlink{classHTMLPurifier__EntityParser_a32b6c60a636f6d7619a9e334c57830d8}{special\+Entity\+Callback} (\$matches)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHTMLPurifier__EntityParser_a4c4b9d2b462fea1c7d027f009dabf4aa}{\$\+\_\+entity\+\_\+lookup}
+\item 
+\hyperlink{classHTMLPurifier__EntityParser_a0d3d84748792da4caba3150a0a9daaf9}{\$\+\_\+substitute\+Entities\+Regex}
+\item 
+\hyperlink{classHTMLPurifier__EntityParser_a0144a916f272789e64e2bd514139b31e}{\$\+\_\+special\+\_\+dec2str}
+\item 
+\hyperlink{classHTMLPurifier__EntityParser_a1233260b0aaf087445e962aca4d12689}{\$\+\_\+special\+\_\+ent2dec}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Handles referencing and derefencing character entities 
+
+Definition at line 10 of file Entity\+Parser.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classHTMLPurifier__EntityParser_a787c07173c94c9f1070d0d86f73e87a2}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Entity\+Parser@{H\+T\+M\+L\+Purifier\+\_\+\+Entity\+Parser}!non\+Special\+Entity\+Callback@{non\+Special\+Entity\+Callback}}
+\index{non\+Special\+Entity\+Callback@{non\+Special\+Entity\+Callback}!H\+T\+M\+L\+Purifier\+\_\+\+Entity\+Parser@{H\+T\+M\+L\+Purifier\+\_\+\+Entity\+Parser}}
+\subsubsection[{non\+Special\+Entity\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Entity\+Parser\+::non\+Special\+Entity\+Callback (
+\begin{DoxyParamCaption}
+\item[{}]{\$matches}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classHTMLPurifier__EntityParser_a787c07173c94c9f1070d0d86f73e87a2}
+Callback function for \hyperlink{classHTMLPurifier__EntityParser_a1e003bfd746dfbda9dcc27b0a543cdfb}{substitute\+Non\+Special\+Entities()} that does the work.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$matches} & P\+C\+R\+E matches array, with 0 the entire match, and either index 1, 2 or 3 set with a hex value, dec value, or string (respectively). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Replacement string. 
+\end{DoxyReturn}
+
+
+Definition at line 75 of file Entity\+Parser.\+php.
+
+\hypertarget{classHTMLPurifier__EntityParser_a32b6c60a636f6d7619a9e334c57830d8}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Entity\+Parser@{H\+T\+M\+L\+Purifier\+\_\+\+Entity\+Parser}!special\+Entity\+Callback@{special\+Entity\+Callback}}
+\index{special\+Entity\+Callback@{special\+Entity\+Callback}!H\+T\+M\+L\+Purifier\+\_\+\+Entity\+Parser@{H\+T\+M\+L\+Purifier\+\_\+\+Entity\+Parser}}
+\subsubsection[{special\+Entity\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Entity\+Parser\+::special\+Entity\+Callback (
+\begin{DoxyParamCaption}
+\item[{}]{\$matches}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classHTMLPurifier__EntityParser_a32b6c60a636f6d7619a9e334c57830d8}
+Callback function for \hyperlink{classHTMLPurifier__EntityParser_af5763f9df0bcd1b2972c43bcf3876658}{substitute\+Special\+Entities()} that does the work.
+
+This callback has same syntax as \hyperlink{classHTMLPurifier__EntityParser_a787c07173c94c9f1070d0d86f73e87a2}{non\+Special\+Entity\+Callback()}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$matches} & P\+C\+R\+E-\/style matches array, with 0 the entire match, and either index 1, 2 or 3 set with a hex value, dec value, or string (respectively). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Replacement string. 
+\end{DoxyReturn}
+
+
+Definition at line 126 of file Entity\+Parser.\+php.
+
+\hypertarget{classHTMLPurifier__EntityParser_a1e003bfd746dfbda9dcc27b0a543cdfb}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Entity\+Parser@{H\+T\+M\+L\+Purifier\+\_\+\+Entity\+Parser}!substitute\+Non\+Special\+Entities@{substitute\+Non\+Special\+Entities}}
+\index{substitute\+Non\+Special\+Entities@{substitute\+Non\+Special\+Entities}!H\+T\+M\+L\+Purifier\+\_\+\+Entity\+Parser@{H\+T\+M\+L\+Purifier\+\_\+\+Entity\+Parser}}
+\subsubsection[{substitute\+Non\+Special\+Entities}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Entity\+Parser\+::substitute\+Non\+Special\+Entities (
+\begin{DoxyParamCaption}
+\item[{}]{\$string}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__EntityParser_a1e003bfd746dfbda9dcc27b0a543cdfb}
+Substitutes non-\/special entities with their parsed equivalents. Since running this whenever you have parsed character is t3h 5uck, we run it before everything else.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$string} & String to have non-\/special entities parsed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Parsed string. 
+\end{DoxyReturn}
+
+
+Definition at line 57 of file Entity\+Parser.\+php.
+
+\hypertarget{classHTMLPurifier__EntityParser_af5763f9df0bcd1b2972c43bcf3876658}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Entity\+Parser@{H\+T\+M\+L\+Purifier\+\_\+\+Entity\+Parser}!substitute\+Special\+Entities@{substitute\+Special\+Entities}}
+\index{substitute\+Special\+Entities@{substitute\+Special\+Entities}!H\+T\+M\+L\+Purifier\+\_\+\+Entity\+Parser@{H\+T\+M\+L\+Purifier\+\_\+\+Entity\+Parser}}
+\subsubsection[{substitute\+Special\+Entities}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Entity\+Parser\+::substitute\+Special\+Entities (
+\begin{DoxyParamCaption}
+\item[{}]{\$string}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__EntityParser_af5763f9df0bcd1b2972c43bcf3876658}
+Substitutes only special entities with their parsed equivalents.
+
+We try to avoid calling this function because otherwise, it would have to be called a lot (for every parsed section).
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$string} & String to have non-\/special entities parsed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Parsed string. 
+\end{DoxyReturn}
+
+
+Definition at line 109 of file Entity\+Parser.\+php.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classHTMLPurifier__EntityParser_a4c4b9d2b462fea1c7d027f009dabf4aa}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Entity\+Parser@{H\+T\+M\+L\+Purifier\+\_\+\+Entity\+Parser}!\$\+\_\+entity\+\_\+lookup@{\$\+\_\+entity\+\_\+lookup}}
+\index{\$\+\_\+entity\+\_\+lookup@{\$\+\_\+entity\+\_\+lookup}!H\+T\+M\+L\+Purifier\+\_\+\+Entity\+Parser@{H\+T\+M\+L\+Purifier\+\_\+\+Entity\+Parser}}
+\subsubsection[{\$\+\_\+entity\+\_\+lookup}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Entity\+Parser\+::\$\+\_\+entity\+\_\+lookup\hspace{0.3cm}{\ttfamily [protected]}}}\label{classHTMLPurifier__EntityParser_a4c4b9d2b462fea1c7d027f009dabf4aa}
+Reference to entity lookup table. 
+
+Definition at line 16 of file Entity\+Parser.\+php.
+
+\hypertarget{classHTMLPurifier__EntityParser_a0144a916f272789e64e2bd514139b31e}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Entity\+Parser@{H\+T\+M\+L\+Purifier\+\_\+\+Entity\+Parser}!\$\+\_\+special\+\_\+dec2str@{\$\+\_\+special\+\_\+dec2str}}
+\index{\$\+\_\+special\+\_\+dec2str@{\$\+\_\+special\+\_\+dec2str}!H\+T\+M\+L\+Purifier\+\_\+\+Entity\+Parser@{H\+T\+M\+L\+Purifier\+\_\+\+Entity\+Parser}}
+\subsubsection[{\$\+\_\+special\+\_\+dec2str}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Entity\+Parser\+::\$\+\_\+special\+\_\+dec2str\hspace{0.3cm}{\ttfamily [protected]}}}\label{classHTMLPurifier__EntityParser_a0144a916f272789e64e2bd514139b31e}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+            array(
+                    34 => \textcolor{charliteral}{'"'},
+                    38 => \textcolor{charliteral}{'&'},
+                    39 => \textcolor{stringliteral}{"'"},
+                    60 => \textcolor{charliteral}{'<'},
+                    62 => \textcolor{charliteral}{'>'}
+            )
+\end{DoxyCode}
+Decimal to parsed string conversion table for special entities. 
+
+Definition at line 29 of file Entity\+Parser.\+php.
+
+\hypertarget{classHTMLPurifier__EntityParser_a1233260b0aaf087445e962aca4d12689}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Entity\+Parser@{H\+T\+M\+L\+Purifier\+\_\+\+Entity\+Parser}!\$\+\_\+special\+\_\+ent2dec@{\$\+\_\+special\+\_\+ent2dec}}
+\index{\$\+\_\+special\+\_\+ent2dec@{\$\+\_\+special\+\_\+ent2dec}!H\+T\+M\+L\+Purifier\+\_\+\+Entity\+Parser@{H\+T\+M\+L\+Purifier\+\_\+\+Entity\+Parser}}
+\subsubsection[{\$\+\_\+special\+\_\+ent2dec}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Entity\+Parser\+::\$\+\_\+special\+\_\+ent2dec\hspace{0.3cm}{\ttfamily [protected]}}}\label{classHTMLPurifier__EntityParser_a1233260b0aaf087445e962aca4d12689}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+            array(
+                    \textcolor{stringliteral}{'quot'} => 34,
+                    \textcolor{stringliteral}{'amp'}  => 38,
+                    \textcolor{stringliteral}{'lt'}   => 60,
+                    \textcolor{stringliteral}{'gt'}   => 62
+            )
+\end{DoxyCode}
+Stripped entity names to decimal conversion table for special entities. 
+
+Definition at line 41 of file Entity\+Parser.\+php.
+
+\hypertarget{classHTMLPurifier__EntityParser_a0d3d84748792da4caba3150a0a9daaf9}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Entity\+Parser@{H\+T\+M\+L\+Purifier\+\_\+\+Entity\+Parser}!\$\+\_\+substitute\+Entities\+Regex@{\$\+\_\+substitute\+Entities\+Regex}}
+\index{\$\+\_\+substitute\+Entities\+Regex@{\$\+\_\+substitute\+Entities\+Regex}!H\+T\+M\+L\+Purifier\+\_\+\+Entity\+Parser@{H\+T\+M\+L\+Purifier\+\_\+\+Entity\+Parser}}
+\subsubsection[{\$\+\_\+substitute\+Entities\+Regex}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Entity\+Parser\+::\$\+\_\+substitute\+Entities\+Regex\hspace{0.3cm}{\ttfamily [protected]}}}\label{classHTMLPurifier__EntityParser_a0d3d84748792da4caba3150a0a9daaf9}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+\textcolor{stringliteral}{'/&(?:[#]x([a-fA-F0-9]+)|[#]0*(\(\backslash\)d+)|([A-Za-z\_:][A-Za-z0-9.\(\backslash\)-\_:]*));?/'}
+\end{DoxyCode}
+Callback regex string for parsing entities. 
+
+Definition at line 21 of file Entity\+Parser.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+classes/security/htmlpurifier/library/\+H\+T\+M\+L\+Purifier/\hyperlink{EntityParser_8php}{Entity\+Parser.\+php}\end{DoxyCompactItemize}

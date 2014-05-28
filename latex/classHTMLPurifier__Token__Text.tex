@@ -1,0 +1,84 @@
+\hypertarget{classHTMLPurifier__Token__Text}{\section{H\+T\+M\+L\+Purifier\+\_\+\+Token\+\_\+\+Text Class Reference}
+\label{classHTMLPurifier__Token__Text}\index{H\+T\+M\+L\+Purifier\+\_\+\+Token\+\_\+\+Text@{H\+T\+M\+L\+Purifier\+\_\+\+Token\+\_\+\+Text}}
+}
+Inheritance diagram for H\+T\+M\+L\+Purifier\+\_\+\+Token\+\_\+\+Text\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classHTMLPurifier__Token__Text}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHTMLPurifier__Token__Text_ab121849fdd2ef306ee62a4782b76812e}{\+\_\+\+\_\+construct} (\$data, \$line=null, \$col=null)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHTMLPurifier__Token__Text_a2e1a60c76a85960d81f9e74f2fd2f294}{\$name} = '\#P\+C\+D\+A\+T\+A'
+\item 
+\hyperlink{classHTMLPurifier__Token__Text_ad77402c8b1972c3397cd154ec5b7c9bb}{\$data}
+\item 
+\hyperlink{classHTMLPurifier__Token__Text_aabc9a269015ae9b3e370a15ee5de621f}{\$is\+\_\+whitespace}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Concrete text token class.
+
+Text tokens comprise of regular parsed character data (P\+C\+D\+A\+T\+A) and raw character data (from the C\+D\+A\+T\+A sections). Internally, their data is parsed with all entities expanded. Surprisingly, the text token does have a \char`\"{}tag name\char`\"{} called \#\+P\+C\+D\+A\+T\+A, which is how the D\+T\+D represents it in permissible child nodes. 
+
+Definition at line 12 of file Text.\+php.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classHTMLPurifier__Token__Text_ab121849fdd2ef306ee62a4782b76812e}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Token\+\_\+\+Text@{H\+T\+M\+L\+Purifier\+\_\+\+Token\+\_\+\+Text}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!H\+T\+M\+L\+Purifier\+\_\+\+Token\+\_\+\+Text@{H\+T\+M\+L\+Purifier\+\_\+\+Token\+\_\+\+Text}}
+\subsubsection[{\+\_\+\+\_\+construct}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Token\+\_\+\+Text\+::\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+\item[{}]{\$data, }
+\item[{}]{\$line = {\ttfamily null}, }
+\item[{}]{\$col = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__Token__Text_ab121849fdd2ef306ee62a4782b76812e}
+Constructor, accepts data and determines if it is whitespace.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$data} & String parsed character data. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 24 of file Text.\+php.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classHTMLPurifier__Token__Text_ad77402c8b1972c3397cd154ec5b7c9bb}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Token\+\_\+\+Text@{H\+T\+M\+L\+Purifier\+\_\+\+Token\+\_\+\+Text}!\$data@{\$data}}
+\index{\$data@{\$data}!H\+T\+M\+L\+Purifier\+\_\+\+Token\+\_\+\+Text@{H\+T\+M\+L\+Purifier\+\_\+\+Token\+\_\+\+Text}}
+\subsubsection[{\$data}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Token\+\_\+\+Text\+::\$data}}\label{classHTMLPurifier__Token__Text_ad77402c8b1972c3397cd154ec5b7c9bb}
+Parsed character data of text. 
+
+Definition at line 16 of file Text.\+php.
+
+\hypertarget{classHTMLPurifier__Token__Text_aabc9a269015ae9b3e370a15ee5de621f}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Token\+\_\+\+Text@{H\+T\+M\+L\+Purifier\+\_\+\+Token\+\_\+\+Text}!\$is\+\_\+whitespace@{\$is\+\_\+whitespace}}
+\index{\$is\+\_\+whitespace@{\$is\+\_\+whitespace}!H\+T\+M\+L\+Purifier\+\_\+\+Token\+\_\+\+Text@{H\+T\+M\+L\+Purifier\+\_\+\+Token\+\_\+\+Text}}
+\subsubsection[{\$is\+\_\+whitespace}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Token\+\_\+\+Text\+::\$is\+\_\+whitespace}}\label{classHTMLPurifier__Token__Text_aabc9a269015ae9b3e370a15ee5de621f}
+Bool indicating if node is whitespace. 
+
+Definition at line 17 of file Text.\+php.
+
+\hypertarget{classHTMLPurifier__Token__Text_a2e1a60c76a85960d81f9e74f2fd2f294}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Token\+\_\+\+Text@{H\+T\+M\+L\+Purifier\+\_\+\+Token\+\_\+\+Text}!\$name@{\$name}}
+\index{\$name@{\$name}!H\+T\+M\+L\+Purifier\+\_\+\+Token\+\_\+\+Text@{H\+T\+M\+L\+Purifier\+\_\+\+Token\+\_\+\+Text}}
+\subsubsection[{\$name}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Token\+\_\+\+Text\+::\$name = '\#P\+C\+D\+A\+T\+A'}}\label{classHTMLPurifier__Token__Text_a2e1a60c76a85960d81f9e74f2fd2f294}
+P\+C\+D\+A\+T\+A tag name compatible with D\+T\+D. 
+
+Definition at line 15 of file Text.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+classes/security/htmlpurifier/library/\+H\+T\+M\+L\+Purifier/\+Token/\hyperlink{Token_2Text_8php}{Text.\+php}\end{DoxyCompactItemize}

@@ -1,0 +1,442 @@
+\hypertarget{classinstallController}{\section{install\+Controller Class Reference}
+\label{classinstallController}\index{install\+Controller@{install\+Controller}}
+}
+
+
+install module of the Controller class  
+
+
+Inheritance diagram for install\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classinstallController}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classinstallController_a99641d12063ae41f5a787ac159853c83}{init} ()
+\begin{DoxyCompactList}\small\item\em Initialization. \end{DoxyCompactList}\item 
+\hyperlink{classinstallController_a275ce5057c0171e2582739506cec99cb}{proc\+Cubrid\+D\+B\+Setting} ()
+\begin{DoxyCompactList}\small\item\em cubrid db setting wrapper, becase Server Side \hyperlink{classValidator}{Validator}... Server Side Validatro can use only one proc, one ruleset \end{DoxyCompactList}\item 
+\hyperlink{classinstallController_a243cf71fa5653d7cbf2d5583effefb95}{proc\+Firebird\+D\+B\+Setting} ()
+\begin{DoxyCompactList}\small\item\em firebird db setting wrapper, becase Server Side \hyperlink{classValidator}{Validator}... Server Side Validatro can use only one proc, one ruleset \end{DoxyCompactList}\item 
+\hyperlink{classinstallController_a583b9b74e93bf6a762a7bd6d08e2b23a}{proc\+Mssql\+D\+B\+Setting} ()
+\begin{DoxyCompactList}\small\item\em mssql db setting wrapper, becase Server Side \hyperlink{classValidator}{Validator}... Server Side Validatro can use only one proc, one ruleset \end{DoxyCompactList}\item 
+\hyperlink{classinstallController_a9d46a8423a90109be5dc1edf8238630e}{proc\+Mysql\+D\+B\+Setting} ()
+\begin{DoxyCompactList}\small\item\em mysql db setting wrapper, becase Server Side \hyperlink{classValidator}{Validator}... Server Side Validatro can use only one proc, one ruleset \end{DoxyCompactList}\item 
+\hyperlink{classinstallController_afc3f4c6259e4be427531fca748c98c49}{proc\+Postgresql\+D\+B\+Setting} ()
+\begin{DoxyCompactList}\small\item\em postgresql db setting wrapper, becase Server Side \hyperlink{classValidator}{Validator}... Server Side Validatro can use only one proc, one ruleset \end{DoxyCompactList}\item 
+\hyperlink{classinstallController_ad850902e30ecd8f0d80f82579f1f867f}{proc\+Sqlite\+D\+B\+Setting} ()
+\begin{DoxyCompactList}\small\item\em sqlite db setting wrapper, becase Server Side \hyperlink{classValidator}{Validator}... Server Side Validatro can use only one proc, one ruleset \end{DoxyCompactList}\item 
+\hyperlink{classinstallController_a159bf71d02aad0ae607b2acc71b10618}{\+\_\+proc\+D\+B\+Setting} ()
+\begin{DoxyCompactList}\small\item\em division install step... \hyperlink{classDB}{D\+B} Config temp file create \end{DoxyCompactList}\item 
+\hyperlink{classinstallController_a070de62caeaa36e7bfa2b50be905cfde}{proc\+Config\+Setting} ()
+\begin{DoxyCompactList}\small\item\em division install step... rewrite, time\+\_\+zone Config temp file create \end{DoxyCompactList}\item 
+\hyperlink{classinstallController_a41026755146b829fe87b83bca3962938}{proc\+Install} ()
+\begin{DoxyCompactList}\small\item\em Install with received information. \end{DoxyCompactList}\item 
+\hyperlink{classinstallController_aa6f541715f9abe418e14f47d9e6fa789}{\+\_\+make\+Db\+Info\+By\+Install\+Config} ()
+\begin{DoxyCompactList}\small\item\em Make \hyperlink{classDB}{D\+B} Information by Install Config. \end{DoxyCompactList}\item 
+\hyperlink{classinstallController_af955577b33b8125145df5e18f10c38a5}{proc\+Install\+F\+T\+P} ()
+\begin{DoxyCompactList}\small\item\em Set F\+T\+P Information. \end{DoxyCompactList}\item 
+\hyperlink{classinstallController_aebbed72d5e11663013b1c1cbe281fcfe}{proc\+Install\+Check\+Ftp} ()
+\item 
+\hyperlink{classinstallController_a6cd48bffa15badc616c0b860c59d410e}{check\+Install\+Env} ()
+\begin{DoxyCompactList}\small\item\em Result returned after checking the installation environment. \end{DoxyCompactList}\item 
+\hyperlink{classinstallController_ae621886c36c43926d81f6beb56cfde25}{check\+Rewrite\+Usable} ()
+\item 
+\hyperlink{classinstallController_a5503f7ef0615cbd6b11a6ef4ae13c2c9}{make\+Default\+Directory} ()
+\begin{DoxyCompactList}\small\item\em Create files and subdirectories Local evironment setting before installation by using \hyperlink{classDB}{D\+B} information. \end{DoxyCompactList}\item 
+\hyperlink{classinstallController_ad7919cd4745794ee4f57db53e8105190}{install\+Downloaded\+Module} ()
+\begin{DoxyCompactList}\small\item\em Install all the modules. \end{DoxyCompactList}\item 
+\hyperlink{classinstallController_a97c582da1e115f0db5256f02d22efc88}{install\+Module} (\$\hyperlink{classmodule}{module}, \$module\+\_\+path)
+\begin{DoxyCompactList}\small\item\em Install an each module. \end{DoxyCompactList}\item 
+\hyperlink{classinstallController_a49b453dda367ff1ce7ef2455974f36a5}{\+\_\+get\+D\+B\+Config\+File\+Contents} (\$db\+\_\+info)
+\item 
+\hyperlink{classinstallController_a65277eeb03f9762ae58dab7570e5310c}{make\+D\+B\+Config\+File} ()
+\begin{DoxyCompactList}\small\item\em Create \hyperlink{classDB}{D\+B} temp config file Create the config file when all settings are completed. \end{DoxyCompactList}\item 
+\hyperlink{classinstallController_a87b331e263614e15c5366284648f6ee0}{make\+Etc\+Config\+File} (\$config\+\_\+info)
+\begin{DoxyCompactList}\small\item\em Create etc config file Create the config file when all settings are completed. \end{DoxyCompactList}\item 
+\hyperlink{classinstallController_a1ccad92dd450d67e90a2efdde0f6b78a}{make\+Config\+File} ()
+\begin{DoxyCompactList}\small\item\em Create config file Create the config file when all settings are completed. \end{DoxyCompactList}\item 
+\hyperlink{classinstallController_a4ec44b3090b73660ba018945c2ffa239}{install\+By\+Config} (\$install\+\_\+config\+\_\+file)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classinstallController_a1d32cf378279cb2b7d388b8a7e88c7aa}{\$db\+\_\+tmp\+\_\+config\+\_\+file} = ''
+\item 
+\hyperlink{classinstallController_a8e090f5c9a9844fbd8b4f0855a52dc43}{\$etc\+\_\+tmp\+\_\+config\+\_\+file} = ''
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+install module of the Controller class 
+
+\begin{DoxyAuthor}{Author}
+N\+A\+V\+E\+R (\href{mailto:developers@xpressengine.com}{\tt developers@xpressengine.\+com}) 
+\end{DoxyAuthor}
+
+
+Definition at line 8 of file install.\+controller.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classinstallController_a49b453dda367ff1ce7ef2455974f36a5}{\index{install\+Controller@{install\+Controller}!\+\_\+get\+D\+B\+Config\+File\+Contents@{\+\_\+get\+D\+B\+Config\+File\+Contents}}
+\index{\+\_\+get\+D\+B\+Config\+File\+Contents@{\+\_\+get\+D\+B\+Config\+File\+Contents}!install\+Controller@{install\+Controller}}
+\subsubsection[{\+\_\+get\+D\+B\+Config\+File\+Contents}]{\setlength{\rightskip}{0pt plus 5cm}install\+Controller\+::\+\_\+get\+D\+B\+Config\+File\+Contents (
+\begin{DoxyParamCaption}
+\item[{}]{\$db\+\_\+info}
+\end{DoxyParamCaption}
+)}}\label{classinstallController_a49b453dda367ff1ce7ef2455974f36a5}
+
+
+Definition at line 533 of file install.\+controller.\+php.
+
+\hypertarget{classinstallController_aa6f541715f9abe418e14f47d9e6fa789}{\index{install\+Controller@{install\+Controller}!\+\_\+make\+Db\+Info\+By\+Install\+Config@{\+\_\+make\+Db\+Info\+By\+Install\+Config}}
+\index{\+\_\+make\+Db\+Info\+By\+Install\+Config@{\+\_\+make\+Db\+Info\+By\+Install\+Config}!install\+Controller@{install\+Controller}}
+\subsubsection[{\+\_\+make\+Db\+Info\+By\+Install\+Config}]{\setlength{\rightskip}{0pt plus 5cm}install\+Controller\+::\+\_\+make\+Db\+Info\+By\+Install\+Config (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classinstallController_aa6f541715f9abe418e14f47d9e6fa789}
+
+
+Make \hyperlink{classDB}{D\+B} Information by Install Config. 
+
+
+
+Definition at line 214 of file install.\+controller.\+php.
+
+\hypertarget{classinstallController_a159bf71d02aad0ae607b2acc71b10618}{\index{install\+Controller@{install\+Controller}!\+\_\+proc\+D\+B\+Setting@{\+\_\+proc\+D\+B\+Setting}}
+\index{\+\_\+proc\+D\+B\+Setting@{\+\_\+proc\+D\+B\+Setting}!install\+Controller@{install\+Controller}}
+\subsubsection[{\+\_\+proc\+D\+B\+Setting}]{\setlength{\rightskip}{0pt plus 5cm}install\+Controller\+::\+\_\+proc\+D\+B\+Setting (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classinstallController_a159bf71d02aad0ae607b2acc71b10618}
+
+
+division install step... \hyperlink{classDB}{D\+B} Config temp file create 
+
+
+
+Definition at line 85 of file install.\+controller.\+php.
+
+\hypertarget{classinstallController_a6cd48bffa15badc616c0b860c59d410e}{\index{install\+Controller@{install\+Controller}!check\+Install\+Env@{check\+Install\+Env}}
+\index{check\+Install\+Env@{check\+Install\+Env}!install\+Controller@{install\+Controller}}
+\subsubsection[{check\+Install\+Env}]{\setlength{\rightskip}{0pt plus 5cm}install\+Controller\+::check\+Install\+Env (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classinstallController_a6cd48bffa15badc616c0b860c59d410e}
+
+
+Result returned after checking the installation environment. 
+
+
+
+Definition at line 336 of file install.\+controller.\+php.
+
+\hypertarget{classinstallController_ae621886c36c43926d81f6beb56cfde25}{\index{install\+Controller@{install\+Controller}!check\+Rewrite\+Usable@{check\+Rewrite\+Usable}}
+\index{check\+Rewrite\+Usable@{check\+Rewrite\+Usable}!install\+Controller@{install\+Controller}}
+\subsubsection[{check\+Rewrite\+Usable}]{\setlength{\rightskip}{0pt plus 5cm}install\+Controller\+::check\+Rewrite\+Usable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classinstallController_ae621886c36c43926d81f6beb56cfde25}
+check this server can use rewrite module make a file to files/config and check url approach by \char`\"{}.\+htaccess\char`\"{} rules
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Definition at line 385 of file install.\+controller.\+php.
+
+\hypertarget{classinstallController_a99641d12063ae41f5a787ac159853c83}{\index{install\+Controller@{install\+Controller}!init@{init}}
+\index{init@{init}!install\+Controller@{install\+Controller}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}install\+Controller\+::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classinstallController_a99641d12063ae41f5a787ac159853c83}
+
+
+Initialization. 
+
+
+
+Definition at line 16 of file install.\+controller.\+php.
+
+\hypertarget{classinstallController_a4ec44b3090b73660ba018945c2ffa239}{\index{install\+Controller@{install\+Controller}!install\+By\+Config@{install\+By\+Config}}
+\index{install\+By\+Config@{install\+By\+Config}!install\+Controller@{install\+Controller}}
+\subsubsection[{install\+By\+Config}]{\setlength{\rightskip}{0pt plus 5cm}install\+Controller\+::install\+By\+Config (
+\begin{DoxyParamCaption}
+\item[{}]{\$install\+\_\+config\+\_\+file}
+\end{DoxyParamCaption}
+)}}\label{classinstallController_a4ec44b3090b73660ba018945c2ffa239}
+
+
+Definition at line 623 of file install.\+controller.\+php.
+
+\hypertarget{classinstallController_ad7919cd4745794ee4f57db53e8105190}{\index{install\+Controller@{install\+Controller}!install\+Downloaded\+Module@{install\+Downloaded\+Module}}
+\index{install\+Downloaded\+Module@{install\+Downloaded\+Module}!install\+Controller@{install\+Controller}}
+\subsubsection[{install\+Downloaded\+Module}]{\setlength{\rightskip}{0pt plus 5cm}install\+Controller\+::install\+Downloaded\+Module (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classinstallController_ad7919cd4745794ee4f57db53e8105190}
+
+
+Install all the modules. 
+
+Create a table by using schema xml file in the shcema directory of each module 
+
+Definition at line 441 of file install.\+controller.\+php.
+
+\hypertarget{classinstallController_a97c582da1e115f0db5256f02d22efc88}{\index{install\+Controller@{install\+Controller}!install\+Module@{install\+Module}}
+\index{install\+Module@{install\+Module}!install\+Controller@{install\+Controller}}
+\subsubsection[{install\+Module}]{\setlength{\rightskip}{0pt plus 5cm}install\+Controller\+::install\+Module (
+\begin{DoxyParamCaption}
+\item[{}]{\$module, }
+\item[{}]{\$module\+\_\+path}
+\end{DoxyParamCaption}
+)}}\label{classinstallController_a97c582da1e115f0db5256f02d22efc88}
+
+
+Install an each module. 
+
+
+
+Definition at line 509 of file install.\+controller.\+php.
+
+\hypertarget{classinstallController_a1ccad92dd450d67e90a2efdde0f6b78a}{\index{install\+Controller@{install\+Controller}!make\+Config\+File@{make\+Config\+File}}
+\index{make\+Config\+File@{make\+Config\+File}!install\+Controller@{install\+Controller}}
+\subsubsection[{make\+Config\+File}]{\setlength{\rightskip}{0pt plus 5cm}install\+Controller\+::make\+Config\+File (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classinstallController_a1ccad92dd450d67e90a2efdde0f6b78a}
+
+
+Create config file Create the config file when all settings are completed. 
+
+
+
+Definition at line 598 of file install.\+controller.\+php.
+
+\hypertarget{classinstallController_a65277eeb03f9762ae58dab7570e5310c}{\index{install\+Controller@{install\+Controller}!make\+D\+B\+Config\+File@{make\+D\+B\+Config\+File}}
+\index{make\+D\+B\+Config\+File@{make\+D\+B\+Config\+File}!install\+Controller@{install\+Controller}}
+\subsubsection[{make\+D\+B\+Config\+File}]{\setlength{\rightskip}{0pt plus 5cm}install\+Controller\+::make\+D\+B\+Config\+File (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classinstallController_a65277eeb03f9762ae58dab7570e5310c}
+
+
+Create \hyperlink{classDB}{D\+B} temp config file Create the config file when all settings are completed. 
+
+
+
+Definition at line 559 of file install.\+controller.\+php.
+
+\hypertarget{classinstallController_a5503f7ef0615cbd6b11a6ef4ae13c2c9}{\index{install\+Controller@{install\+Controller}!make\+Default\+Directory@{make\+Default\+Directory}}
+\index{make\+Default\+Directory@{make\+Default\+Directory}!install\+Controller@{install\+Controller}}
+\subsubsection[{make\+Default\+Directory}]{\setlength{\rightskip}{0pt plus 5cm}install\+Controller\+::make\+Default\+Directory (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classinstallController_a5503f7ef0615cbd6b11a6ef4ae13c2c9}
+
+
+Create files and subdirectories Local evironment setting before installation by using \hyperlink{classDB}{D\+B} information. 
+
+
+
+Definition at line 421 of file install.\+controller.\+php.
+
+\hypertarget{classinstallController_a87b331e263614e15c5366284648f6ee0}{\index{install\+Controller@{install\+Controller}!make\+Etc\+Config\+File@{make\+Etc\+Config\+File}}
+\index{make\+Etc\+Config\+File@{make\+Etc\+Config\+File}!install\+Controller@{install\+Controller}}
+\subsubsection[{make\+Etc\+Config\+File}]{\setlength{\rightskip}{0pt plus 5cm}install\+Controller\+::make\+Etc\+Config\+File (
+\begin{DoxyParamCaption}
+\item[{}]{\$config\+\_\+info}
+\end{DoxyParamCaption}
+)}}\label{classinstallController_a87b331e263614e15c5366284648f6ee0}
+
+
+Create etc config file Create the config file when all settings are completed. 
+
+
+
+Definition at line 578 of file install.\+controller.\+php.
+
+\hypertarget{classinstallController_a070de62caeaa36e7bfa2b50be905cfde}{\index{install\+Controller@{install\+Controller}!proc\+Config\+Setting@{proc\+Config\+Setting}}
+\index{proc\+Config\+Setting@{proc\+Config\+Setting}!install\+Controller@{install\+Controller}}
+\subsubsection[{proc\+Config\+Setting}]{\setlength{\rightskip}{0pt plus 5cm}install\+Controller\+::proc\+Config\+Setting (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classinstallController_a070de62caeaa36e7bfa2b50be905cfde}
+
+
+division install step... rewrite, time\+\_\+zone Config temp file create 
+
+
+
+Definition at line 120 of file install.\+controller.\+php.
+
+\hypertarget{classinstallController_a275ce5057c0171e2582739506cec99cb}{\index{install\+Controller@{install\+Controller}!proc\+Cubrid\+D\+B\+Setting@{proc\+Cubrid\+D\+B\+Setting}}
+\index{proc\+Cubrid\+D\+B\+Setting@{proc\+Cubrid\+D\+B\+Setting}!install\+Controller@{install\+Controller}}
+\subsubsection[{proc\+Cubrid\+D\+B\+Setting}]{\setlength{\rightskip}{0pt plus 5cm}install\+Controller\+::proc\+Cubrid\+D\+B\+Setting (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classinstallController_a275ce5057c0171e2582739506cec99cb}
+
+
+cubrid db setting wrapper, becase Server Side \hyperlink{classValidator}{Validator}... Server Side Validatro can use only one proc, one ruleset 
+
+
+
+Definition at line 32 of file install.\+controller.\+php.
+
+\hypertarget{classinstallController_a243cf71fa5653d7cbf2d5583effefb95}{\index{install\+Controller@{install\+Controller}!proc\+Firebird\+D\+B\+Setting@{proc\+Firebird\+D\+B\+Setting}}
+\index{proc\+Firebird\+D\+B\+Setting@{proc\+Firebird\+D\+B\+Setting}!install\+Controller@{install\+Controller}}
+\subsubsection[{proc\+Firebird\+D\+B\+Setting}]{\setlength{\rightskip}{0pt plus 5cm}install\+Controller\+::proc\+Firebird\+D\+B\+Setting (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classinstallController_a243cf71fa5653d7cbf2d5583effefb95}
+
+
+firebird db setting wrapper, becase Server Side \hyperlink{classValidator}{Validator}... Server Side Validatro can use only one proc, one ruleset 
+
+
+
+Definition at line 41 of file install.\+controller.\+php.
+
+\hypertarget{classinstallController_a41026755146b829fe87b83bca3962938}{\index{install\+Controller@{install\+Controller}!proc\+Install@{proc\+Install}}
+\index{proc\+Install@{proc\+Install}!install\+Controller@{install\+Controller}}
+\subsubsection[{proc\+Install}]{\setlength{\rightskip}{0pt plus 5cm}install\+Controller\+::proc\+Install (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classinstallController_a41026755146b829fe87b83bca3962938}
+
+
+Install with received information. 
+
+
+
+Definition at line 140 of file install.\+controller.\+php.
+
+\hypertarget{classinstallController_aebbed72d5e11663013b1c1cbe281fcfe}{\index{install\+Controller@{install\+Controller}!proc\+Install\+Check\+Ftp@{proc\+Install\+Check\+Ftp}}
+\index{proc\+Install\+Check\+Ftp@{proc\+Install\+Check\+Ftp}!install\+Controller@{install\+Controller}}
+\subsubsection[{proc\+Install\+Check\+Ftp}]{\setlength{\rightskip}{0pt plus 5cm}install\+Controller\+::proc\+Install\+Check\+Ftp (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classinstallController_aebbed72d5e11663013b1c1cbe281fcfe}
+
+
+Definition at line 299 of file install.\+controller.\+php.
+
+\hypertarget{classinstallController_af955577b33b8125145df5e18f10c38a5}{\index{install\+Controller@{install\+Controller}!proc\+Install\+F\+T\+P@{proc\+Install\+F\+T\+P}}
+\index{proc\+Install\+F\+T\+P@{proc\+Install\+F\+T\+P}!install\+Controller@{install\+Controller}}
+\subsubsection[{proc\+Install\+F\+T\+P}]{\setlength{\rightskip}{0pt plus 5cm}install\+Controller\+::proc\+Install\+F\+T\+P (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classinstallController_af955577b33b8125145df5e18f10c38a5}
+
+
+Set F\+T\+P Information. 
+
+
+
+Definition at line 238 of file install.\+controller.\+php.
+
+\hypertarget{classinstallController_a583b9b74e93bf6a762a7bd6d08e2b23a}{\index{install\+Controller@{install\+Controller}!proc\+Mssql\+D\+B\+Setting@{proc\+Mssql\+D\+B\+Setting}}
+\index{proc\+Mssql\+D\+B\+Setting@{proc\+Mssql\+D\+B\+Setting}!install\+Controller@{install\+Controller}}
+\subsubsection[{proc\+Mssql\+D\+B\+Setting}]{\setlength{\rightskip}{0pt plus 5cm}install\+Controller\+::proc\+Mssql\+D\+B\+Setting (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classinstallController_a583b9b74e93bf6a762a7bd6d08e2b23a}
+
+
+mssql db setting wrapper, becase Server Side \hyperlink{classValidator}{Validator}... Server Side Validatro can use only one proc, one ruleset 
+
+
+
+Definition at line 50 of file install.\+controller.\+php.
+
+\hypertarget{classinstallController_a9d46a8423a90109be5dc1edf8238630e}{\index{install\+Controller@{install\+Controller}!proc\+Mysql\+D\+B\+Setting@{proc\+Mysql\+D\+B\+Setting}}
+\index{proc\+Mysql\+D\+B\+Setting@{proc\+Mysql\+D\+B\+Setting}!install\+Controller@{install\+Controller}}
+\subsubsection[{proc\+Mysql\+D\+B\+Setting}]{\setlength{\rightskip}{0pt plus 5cm}install\+Controller\+::proc\+Mysql\+D\+B\+Setting (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classinstallController_a9d46a8423a90109be5dc1edf8238630e}
+
+
+mysql db setting wrapper, becase Server Side \hyperlink{classValidator}{Validator}... Server Side Validatro can use only one proc, one ruleset 
+
+
+
+Definition at line 59 of file install.\+controller.\+php.
+
+\hypertarget{classinstallController_afc3f4c6259e4be427531fca748c98c49}{\index{install\+Controller@{install\+Controller}!proc\+Postgresql\+D\+B\+Setting@{proc\+Postgresql\+D\+B\+Setting}}
+\index{proc\+Postgresql\+D\+B\+Setting@{proc\+Postgresql\+D\+B\+Setting}!install\+Controller@{install\+Controller}}
+\subsubsection[{proc\+Postgresql\+D\+B\+Setting}]{\setlength{\rightskip}{0pt plus 5cm}install\+Controller\+::proc\+Postgresql\+D\+B\+Setting (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classinstallController_afc3f4c6259e4be427531fca748c98c49}
+
+
+postgresql db setting wrapper, becase Server Side \hyperlink{classValidator}{Validator}... Server Side Validatro can use only one proc, one ruleset 
+
+
+
+Definition at line 68 of file install.\+controller.\+php.
+
+\hypertarget{classinstallController_ad850902e30ecd8f0d80f82579f1f867f}{\index{install\+Controller@{install\+Controller}!proc\+Sqlite\+D\+B\+Setting@{proc\+Sqlite\+D\+B\+Setting}}
+\index{proc\+Sqlite\+D\+B\+Setting@{proc\+Sqlite\+D\+B\+Setting}!install\+Controller@{install\+Controller}}
+\subsubsection[{proc\+Sqlite\+D\+B\+Setting}]{\setlength{\rightskip}{0pt plus 5cm}install\+Controller\+::proc\+Sqlite\+D\+B\+Setting (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classinstallController_ad850902e30ecd8f0d80f82579f1f867f}
+
+
+sqlite db setting wrapper, becase Server Side \hyperlink{classValidator}{Validator}... Server Side Validatro can use only one proc, one ruleset 
+
+
+
+Definition at line 77 of file install.\+controller.\+php.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classinstallController_a1d32cf378279cb2b7d388b8a7e88c7aa}{\index{install\+Controller@{install\+Controller}!\$db\+\_\+tmp\+\_\+config\+\_\+file@{\$db\+\_\+tmp\+\_\+config\+\_\+file}}
+\index{\$db\+\_\+tmp\+\_\+config\+\_\+file@{\$db\+\_\+tmp\+\_\+config\+\_\+file}!install\+Controller@{install\+Controller}}
+\subsubsection[{\$db\+\_\+tmp\+\_\+config\+\_\+file}]{\setlength{\rightskip}{0pt plus 5cm}install\+Controller\+::\$db\+\_\+tmp\+\_\+config\+\_\+file = ''}}\label{classinstallController_a1d32cf378279cb2b7d388b8a7e88c7aa}
+
+
+Definition at line 10 of file install.\+controller.\+php.
+
+\hypertarget{classinstallController_a8e090f5c9a9844fbd8b4f0855a52dc43}{\index{install\+Controller@{install\+Controller}!\$etc\+\_\+tmp\+\_\+config\+\_\+file@{\$etc\+\_\+tmp\+\_\+config\+\_\+file}}
+\index{\$etc\+\_\+tmp\+\_\+config\+\_\+file@{\$etc\+\_\+tmp\+\_\+config\+\_\+file}!install\+Controller@{install\+Controller}}
+\subsubsection[{\$etc\+\_\+tmp\+\_\+config\+\_\+file}]{\setlength{\rightskip}{0pt plus 5cm}install\+Controller\+::\$etc\+\_\+tmp\+\_\+config\+\_\+file = ''}}\label{classinstallController_a8e090f5c9a9844fbd8b4f0855a52dc43}
+
+
+Definition at line 11 of file install.\+controller.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+modules/install/\hyperlink{install_8controller_8php}{install.\+controller.\+php}\end{DoxyCompactItemize}

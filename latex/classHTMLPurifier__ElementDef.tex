@@ -1,0 +1,195 @@
+\hypertarget{classHTMLPurifier__ElementDef}{\section{H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def Class Reference}
+\label{classHTMLPurifier__ElementDef}\index{H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def@{H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHTMLPurifier__ElementDef_a1b64a7a4cebe332edc6f190a5ac9d84e}{merge\+In} (\$def)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classHTMLPurifier__ElementDef_af9cb4f37c0de548d6240c7c0372a0277}{create} (\$content\+\_\+model, \$content\+\_\+model\+\_\+type, \$attr)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHTMLPurifier__ElementDef_a55b9825b6bf0fcf1757d223fe67b2502}{\$standalone} = true
+\item 
+\hyperlink{classHTMLPurifier__ElementDef_a2bcbdb53248fe3df0ac956cde18f793f}{\$attr} = array()
+\item 
+\hyperlink{classHTMLPurifier__ElementDef_a8673e6a9b4eb86ebacdcc44a4eba2cad}{\$attr\+\_\+transform\+\_\+pre} = array()
+\item 
+\hyperlink{classHTMLPurifier__ElementDef_a3085ac6ae100475e1ff86fe94910c12e}{\$attr\+\_\+transform\+\_\+post} = array()
+\item 
+\hyperlink{classHTMLPurifier__ElementDef_ac00a01850d99ecacc0245d6ceba13a9b}{\$child}
+\item 
+\hyperlink{classHTMLPurifier__ElementDef_a629aecb03bfd09763b4f22d6153e845b}{\$content\+\_\+model}
+\item 
+\hyperlink{classHTMLPurifier__ElementDef_a0371f4fa7ff6a8fdd55aa949df833f38}{\$content\+\_\+model\+\_\+type}
+\item 
+\hyperlink{classHTMLPurifier__ElementDef_abb620edb77a4817b18aeed07343d002b}{\$descendants\+\_\+are\+\_\+inline} = false
+\item 
+\hyperlink{classHTMLPurifier__ElementDef_a5a3ba83e55d67a7e20ba6c80ea73aa54}{\$required\+\_\+attr} = array()
+\item 
+\hyperlink{classHTMLPurifier__ElementDef_a878b52c232dac0e65eec37048c47299f}{\$excludes} = array()
+\item 
+\hyperlink{classHTMLPurifier__ElementDef_a19729d4c2d69e9864a148d0a6b390a36}{\$autoclose} = array()
+\item 
+\hyperlink{classHTMLPurifier__ElementDef_a9d58b1db4bc6a4aa7bf4e6896ba3b932}{\$wrap}
+\item 
+\hyperlink{classHTMLPurifier__ElementDef_adb1a90d0ca1759f991e69b8e4a7758ce}{\$formatting}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Structure that stores an H\+T\+M\+L element definition. Used by \hyperlink{classHTMLPurifier__HTMLDefinition}{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Definition} and \hyperlink{classHTMLPurifier__HTMLModule}{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module}. \begin{DoxyNote}{Note}
+This class is inspected by \hyperlink{classHTMLPurifier__Printer__HTMLDefinition}{H\+T\+M\+L\+Purifier\+\_\+\+Printer\+\_\+\+H\+T\+M\+L\+Definition}. Please update that class too. 
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+If you add new properties to this class, you M\+U\+S\+T update the \hyperlink{classHTMLPurifier__ElementDef_a1b64a7a4cebe332edc6f190a5ac9d84e}{merge\+In()} method. 
+\end{DoxyWarning}
+
+
+Definition at line 11 of file Element\+Def.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classHTMLPurifier__ElementDef_af9cb4f37c0de548d6240c7c0372a0277}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def@{H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def}!create@{create}}
+\index{create@{create}!H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def@{H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def}}
+\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}static H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def\+::create (
+\begin{DoxyParamCaption}
+\item[{}]{\$content\+\_\+model, }
+\item[{}]{\$content\+\_\+model\+\_\+type, }
+\item[{}]{\$attr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classHTMLPurifier__ElementDef_af9cb4f37c0de548d6240c7c0372a0277}
+Low-\/level factory constructor for creating new standalone element defs 
+
+Definition at line 116 of file Element\+Def.\+php.
+
+\hypertarget{classHTMLPurifier__ElementDef_a1b64a7a4cebe332edc6f190a5ac9d84e}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def@{H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def}!merge\+In@{merge\+In}}
+\index{merge\+In@{merge\+In}!H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def@{H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def}}
+\subsubsection[{merge\+In}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def\+::merge\+In (
+\begin{DoxyParamCaption}
+\item[{}]{\$def}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__ElementDef_a1b64a7a4cebe332edc6f190a5ac9d84e}
+Merges the values of another element definition into this one. Values from the new element def take precedence if a value is not mergeable. 
+
+Definition at line 129 of file Element\+Def.\+php.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classHTMLPurifier__ElementDef_a2bcbdb53248fe3df0ac956cde18f793f}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def@{H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def}!\$attr@{\$attr}}
+\index{\$attr@{\$attr}!H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def@{H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def}}
+\subsubsection[{\$attr}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def\+::\$attr = array()}}\label{classHTMLPurifier__ElementDef_a2bcbdb53248fe3df0ac956cde18f793f}
+Associative array of attribute name to \hyperlink{classHTMLPurifier__AttrDef}{H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Def} \begin{DoxyNote}{Note}
+Before being processed by \hyperlink{classHTMLPurifier__AttrCollections}{H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Collections} when modules are finalized during H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Definition-\/$>$setup(), this array may also contain an array at index 0 that indicates which attribute collections to load into the full array. It may also contain string indentifiers in lieu of \hyperlink{classHTMLPurifier__AttrDef}{H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Def}, see \hyperlink{classHTMLPurifier__AttrTypes}{H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Types} on how they are expanded during H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Definition-\/$>$setup() processing. 
+\end{DoxyNote}
+
+
+Definition at line 31 of file Element\+Def.\+php.
+
+\hypertarget{classHTMLPurifier__ElementDef_a3085ac6ae100475e1ff86fe94910c12e}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def@{H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def}!\$attr\+\_\+transform\+\_\+post@{\$attr\+\_\+transform\+\_\+post}}
+\index{\$attr\+\_\+transform\+\_\+post@{\$attr\+\_\+transform\+\_\+post}!H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def@{H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def}}
+\subsubsection[{\$attr\+\_\+transform\+\_\+post}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def\+::\$attr\+\_\+transform\+\_\+post = array()}}\label{classHTMLPurifier__ElementDef_a3085ac6ae100475e1ff86fe94910c12e}
+Indexed list of tag's \hyperlink{classHTMLPurifier__AttrTransform}{H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Transform} to be done after validation 
+
+Definition at line 41 of file Element\+Def.\+php.
+
+\hypertarget{classHTMLPurifier__ElementDef_a8673e6a9b4eb86ebacdcc44a4eba2cad}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def@{H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def}!\$attr\+\_\+transform\+\_\+pre@{\$attr\+\_\+transform\+\_\+pre}}
+\index{\$attr\+\_\+transform\+\_\+pre@{\$attr\+\_\+transform\+\_\+pre}!H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def@{H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def}}
+\subsubsection[{\$attr\+\_\+transform\+\_\+pre}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def\+::\$attr\+\_\+transform\+\_\+pre = array()}}\label{classHTMLPurifier__ElementDef_a8673e6a9b4eb86ebacdcc44a4eba2cad}
+Indexed list of tag's \hyperlink{classHTMLPurifier__AttrTransform}{H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Transform} to be done before validation 
+
+Definition at line 36 of file Element\+Def.\+php.
+
+\hypertarget{classHTMLPurifier__ElementDef_a19729d4c2d69e9864a148d0a6b390a36}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def@{H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def}!\$autoclose@{\$autoclose}}
+\index{\$autoclose@{\$autoclose}!H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def@{H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def}}
+\subsubsection[{\$autoclose}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def\+::\$autoclose = array()}}\label{classHTMLPurifier__ElementDef_a19729d4c2d69e9864a148d0a6b390a36}
+This tag is explicitly auto-\/closed by the following tags. 
+
+Definition at line 98 of file Element\+Def.\+php.
+
+\hypertarget{classHTMLPurifier__ElementDef_ac00a01850d99ecacc0245d6ceba13a9b}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def@{H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def}!\$child@{\$child}}
+\index{\$child@{\$child}!H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def@{H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def}}
+\subsubsection[{\$child}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def\+::\$child}}\label{classHTMLPurifier__ElementDef_ac00a01850d99ecacc0245d6ceba13a9b}
+\hyperlink{classHTMLPurifier__ChildDef}{H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def} of this tag. 
+
+Definition at line 46 of file Element\+Def.\+php.
+
+\hypertarget{classHTMLPurifier__ElementDef_a629aecb03bfd09763b4f22d6153e845b}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def@{H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def}!\$content\+\_\+model@{\$content\+\_\+model}}
+\index{\$content\+\_\+model@{\$content\+\_\+model}!H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def@{H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def}}
+\subsubsection[{\$content\+\_\+model}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def\+::\$content\+\_\+model}}\label{classHTMLPurifier__ElementDef_a629aecb03bfd09763b4f22d6153e845b}
+Abstract string representation of internal Child\+Def rules. See \hyperlink{classHTMLPurifier__ContentSets}{H\+T\+M\+L\+Purifier\+\_\+\+Content\+Sets} for how this is parsed and then transformed into an \hyperlink{classHTMLPurifier__ChildDef}{H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def}. \begin{DoxyWarning}{Warning}
+This is a temporary variable that is not available after being processed by H\+T\+M\+L\+Definition 
+\end{DoxyWarning}
+
+
+Definition at line 55 of file Element\+Def.\+php.
+
+\hypertarget{classHTMLPurifier__ElementDef_a0371f4fa7ff6a8fdd55aa949df833f38}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def@{H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def}!\$content\+\_\+model\+\_\+type@{\$content\+\_\+model\+\_\+type}}
+\index{\$content\+\_\+model\+\_\+type@{\$content\+\_\+model\+\_\+type}!H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def@{H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def}}
+\subsubsection[{\$content\+\_\+model\+\_\+type}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def\+::\$content\+\_\+model\+\_\+type}}\label{classHTMLPurifier__ElementDef_a0371f4fa7ff6a8fdd55aa949df833f38}
+Value of \$child-\/$>$type, used to determine which Child\+Def to use, used in combination with \$content\+\_\+model. \begin{DoxyWarning}{Warning}
+This must be lowercase 
+
+This is a temporary variable that is not available after being processed by H\+T\+M\+L\+Definition 
+\end{DoxyWarning}
+
+
+Definition at line 64 of file Element\+Def.\+php.
+
+\hypertarget{classHTMLPurifier__ElementDef_abb620edb77a4817b18aeed07343d002b}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def@{H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def}!\$descendants\+\_\+are\+\_\+inline@{\$descendants\+\_\+are\+\_\+inline}}
+\index{\$descendants\+\_\+are\+\_\+inline@{\$descendants\+\_\+are\+\_\+inline}!H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def@{H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def}}
+\subsubsection[{\$descendants\+\_\+are\+\_\+inline}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def\+::\$descendants\+\_\+are\+\_\+inline = false}}\label{classHTMLPurifier__ElementDef_abb620edb77a4817b18aeed07343d002b}
+Does the element have a content model (\#\+P\+C\+D\+A\+T\+A $\vert$ Inline)$\ast$? This is important for chameleon ins and del processing in \hyperlink{classHTMLPurifier__ChildDef__Chameleon}{H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def\+\_\+\+Chameleon}. Dynamically set\+: modules don't have to worry about this one. 
+
+Definition at line 74 of file Element\+Def.\+php.
+
+\hypertarget{classHTMLPurifier__ElementDef_a878b52c232dac0e65eec37048c47299f}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def@{H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def}!\$excludes@{\$excludes}}
+\index{\$excludes@{\$excludes}!H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def@{H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def}}
+\subsubsection[{\$excludes}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def\+::\$excludes = array()}}\label{classHTMLPurifier__ElementDef_a878b52c232dac0e65eec37048c47299f}
+Lookup table of tags excluded from all descendants of this tag. \begin{DoxyNote}{Note}
+S\+G\+M\+L permits exclusions for all descendants, but this is not possible with D\+T\+Ds or X\+M\+L Schemas. W3\+C has elected to use complicated compositions of content\+\_\+models to simulate exclusion for children, but we go the simpler, S\+G\+M\+L-\/style route of flat-\/out exclusions, which correctly apply to all descendants and not just children. Note that the X\+H\+T\+M\+L Modularization Abstract Modules are blithely unaware of such distinctions. 
+\end{DoxyNote}
+
+
+Definition at line 93 of file Element\+Def.\+php.
+
+\hypertarget{classHTMLPurifier__ElementDef_adb1a90d0ca1759f991e69b8e4a7758ce}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def@{H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def}!\$formatting@{\$formatting}}
+\index{\$formatting@{\$formatting}!H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def@{H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def}}
+\subsubsection[{\$formatting}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def\+::\$formatting}}\label{classHTMLPurifier__ElementDef_adb1a90d0ca1759f991e69b8e4a7758ce}
+Whether or not this is a formatting element affected by the \char`\"{}\+Active Formatting Elements\char`\"{} algorithm. 
+
+Definition at line 111 of file Element\+Def.\+php.
+
+\hypertarget{classHTMLPurifier__ElementDef_a5a3ba83e55d67a7e20ba6c80ea73aa54}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def@{H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def}!\$required\+\_\+attr@{\$required\+\_\+attr}}
+\index{\$required\+\_\+attr@{\$required\+\_\+attr}!H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def@{H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def}}
+\subsubsection[{\$required\+\_\+attr}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def\+::\$required\+\_\+attr = array()}}\label{classHTMLPurifier__ElementDef_a5a3ba83e55d67a7e20ba6c80ea73aa54}
+List of the names of required attributes this element has. Dynamically populated by H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Definition\+::get\+Element 
+
+Definition at line 80 of file Element\+Def.\+php.
+
+\hypertarget{classHTMLPurifier__ElementDef_a55b9825b6bf0fcf1757d223fe67b2502}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def@{H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def}!\$standalone@{\$standalone}}
+\index{\$standalone@{\$standalone}!H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def@{H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def}}
+\subsubsection[{\$standalone}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def\+::\$standalone = true}}\label{classHTMLPurifier__ElementDef_a55b9825b6bf0fcf1757d223fe67b2502}
+Does the definition work by itself, or is it created solely for the purpose of merging into another definition? 
+
+Definition at line 18 of file Element\+Def.\+php.
+
+\hypertarget{classHTMLPurifier__ElementDef_a9d58b1db4bc6a4aa7bf4e6896ba3b932}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def@{H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def}!\$wrap@{\$wrap}}
+\index{\$wrap@{\$wrap}!H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def@{H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def}}
+\subsubsection[{\$wrap}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def\+::\$wrap}}\label{classHTMLPurifier__ElementDef_a9d58b1db4bc6a4aa7bf4e6896ba3b932}
+If a foreign element is found in this element, test if it is allowed by this sub-\/element; if it is, instead of closing the current element, place it inside this element. 
+
+Definition at line 105 of file Element\+Def.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+classes/security/htmlpurifier/library/\+H\+T\+M\+L\+Purifier/\hyperlink{ElementDef_8php}{Element\+Def.\+php}\end{DoxyCompactItemize}

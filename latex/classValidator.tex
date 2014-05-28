@@ -1,0 +1,446 @@
+\hypertarget{classValidator}{\section{Validator Class Reference}
+\label{classValidator}\index{Validator@{Validator}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classValidator_abfd7a6c58dc8cedae5bef76325b7bf6e}{\+\_\+\+\_\+construct} (\$xml\+\_\+path= '')
+\item 
+\hyperlink{classValidator_aa076d09e847e8461281d4912688a9388}{\+\_\+\+\_\+destruct} ()
+\item 
+\hyperlink{classValidator_a43de0eb69cae01eee855f825324ffc39}{load} (\$xml\+\_\+path)
+\item 
+\hyperlink{classValidator_a1630131530dca60428e72dd4dd2d4af3}{set\+Cache\+Dir} (\$cache\+\_\+dir)
+\item 
+\hyperlink{classValidator_a05e34dac507b8d719e7f95f2cd0220bc}{validate} (\$fields\+\_\+=null)
+\item 
+\hyperlink{classValidator_ac4be365554a620a921f6846e80d76671}{array\+Trim} (\$array)
+\item 
+\hyperlink{classValidator_ad46fa003b320d64ef656b22de870782c}{error} (\$field, \$msg)
+\item 
+\hyperlink{classValidator_a3de1a1112e46b42ab6a89a4a13048504}{get\+Last\+Error} ()
+\item 
+\hyperlink{classValidator_a71cc158b6b3f52f03e1ddb34f4801906}{add\+Rule} (\$name, \$rule= '')
+\item 
+\hyperlink{classValidator_acc2d2fd527f54e1fed839a927a83c6b8}{remove\+Rule} (\$name)
+\item 
+\hyperlink{classValidator_a5f22a8ddf58df13376769ed422492e33}{add\+Filter} (\$name, \$filter= '')
+\item 
+\hyperlink{classValidator_a7613a0d6b468b5d5ade046a801b260db}{remove\+Filter} (\$name)
+\item 
+\hyperlink{classValidator_a8a8be8c74216e9d0ebbd99eb1e29b8d2}{apply\+Rule} (\$name, \$value)
+\item 
+\hyperlink{classValidator_a46de77869676b1b027a076c2106653e2}{mb\+Str\+Len} (\$str)
+\item 
+\hyperlink{classValidator_ae9037d1911390583a1358b25c03768e3}{get\+Js\+Path} ()
+\item 
+\hyperlink{classValidator_ae7b44a7a2bfb3ee4672b4cf2cdbd059f}{\+\_\+compile2js} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classValidator_aaba7f33304aedded2c308120a0925e77}{\$\+\_\+cache\+\_\+dir} = ''
+\item 
+\hyperlink{classValidator_a1b957a11848d8cb550fc578052f49588}{\$\+\_\+last\+\_\+error}
+\item 
+\hyperlink{classValidator_a45a0aaa905493683be7fc01a80837a26}{\$\+\_\+xml\+\_\+ruleset} = N\+U\+L\+L
+\item 
+\hyperlink{classValidator_ab0ec00f502a96e6c95d963fe8cf40c00}{\$\+\_\+rules}
+\item 
+\hyperlink{classValidator_ab86eb87cb828002c10d06be613d7b013}{\$\+\_\+filters}
+\item 
+\hyperlink{classValidator_ac9f1f384dc723b2a4581e83066fba49c}{\$\+\_\+messages}
+\item 
+\hyperlink{classValidator_a5689ec4c9687c826fc82902fa9b662d8}{\$\+\_\+field\+Names}
+\item 
+\hyperlink{classValidator_a8ac5ee1cf7a5ba237ee40c61a5d834c1}{\$\+\_\+has\+\_\+mb\+\_\+func}
+\item 
+\hyperlink{classValidator_af3e80f6437543d50f58f1e5269900068}{\$\+\_\+version} = '1.\+0'
+\item 
+\hyperlink{classValidator_a69a5bdd50a59f7d9daab2ea702036277}{\$\+\_\+xml\+\_\+path} = ''
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 10 of file Validator.\+class.\+php.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classValidator_abfd7a6c58dc8cedae5bef76325b7bf6e}{\index{Validator@{Validator}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!Validator@{Validator}}
+\subsubsection[{\+\_\+\+\_\+construct}]{\setlength{\rightskip}{0pt plus 5cm}Validator\+::\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+\item[{}]{\$xml\+\_\+path = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)}}\label{classValidator_abfd7a6c58dc8cedae5bef76325b7bf6e}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$xml\+\_\+path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 78 of file Validator.\+class.\+php.
+
+\hypertarget{classValidator_aa076d09e847e8461281d4912688a9388}{\index{Validator@{Validator}!\+\_\+\+\_\+destruct@{\+\_\+\+\_\+destruct}}
+\index{\+\_\+\+\_\+destruct@{\+\_\+\+\_\+destruct}!Validator@{Validator}}
+\subsubsection[{\+\_\+\+\_\+destruct}]{\setlength{\rightskip}{0pt plus 5cm}Validator\+::\+\_\+\+\_\+destruct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classValidator_aa076d09e847e8461281d4912688a9388}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 105 of file Validator.\+class.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classValidator_ae7b44a7a2bfb3ee4672b4cf2cdbd059f}{\index{Validator@{Validator}!\+\_\+compile2js@{\+\_\+compile2js}}
+\index{\+\_\+compile2js@{\+\_\+compile2js}!Validator@{Validator}}
+\subsubsection[{\+\_\+compile2js}]{\setlength{\rightskip}{0pt plus 5cm}Validator\+::\+\_\+compile2js (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classValidator_ae7b44a7a2bfb3ee4672b4cf2cdbd059f}
+Compile a ruleset to a javascript file \begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 694 of file Validator.\+class.\+php.
+
+\hypertarget{classValidator_a5f22a8ddf58df13376769ed422492e33}{\index{Validator@{Validator}!add\+Filter@{add\+Filter}}
+\index{add\+Filter@{add\+Filter}!Validator@{Validator}}
+\subsubsection[{add\+Filter}]{\setlength{\rightskip}{0pt plus 5cm}Validator\+::add\+Filter (
+\begin{DoxyParamCaption}
+\item[{}]{\$name, }
+\item[{}]{\$filter = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)}}\label{classValidator_a5f22a8ddf58df13376769ed422492e33}
+add filter to filter list 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & rule name \\
+\hline
+string & {\em \$filter} & filter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 553 of file Validator.\+class.\+php.
+
+\hypertarget{classValidator_a71cc158b6b3f52f03e1ddb34f4801906}{\index{Validator@{Validator}!add\+Rule@{add\+Rule}}
+\index{add\+Rule@{add\+Rule}!Validator@{Validator}}
+\subsubsection[{add\+Rule}]{\setlength{\rightskip}{0pt plus 5cm}Validator\+::add\+Rule (
+\begin{DoxyParamCaption}
+\item[{}]{\$name, }
+\item[{}]{\$rule = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)}}\label{classValidator_a71cc158b6b3f52f03e1ddb34f4801906}
+Add a new rule 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & rule name \\
+\hline
+mixed & {\em \$rule} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 505 of file Validator.\+class.\+php.
+
+\hypertarget{classValidator_a8a8be8c74216e9d0ebbd99eb1e29b8d2}{\index{Validator@{Validator}!apply\+Rule@{apply\+Rule}}
+\index{apply\+Rule@{apply\+Rule}!Validator@{Validator}}
+\subsubsection[{apply\+Rule}]{\setlength{\rightskip}{0pt plus 5cm}Validator\+::apply\+Rule (
+\begin{DoxyParamCaption}
+\item[{}]{\$name, }
+\item[{}]{\$value}
+\end{DoxyParamCaption}
+)}}\label{classValidator_a8a8be8c74216e9d0ebbd99eb1e29b8d2}
+Find whether the field is valid with the rule 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & rule name \\
+\hline
+string & {\em \$value} & a value to be validated \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean T\+R\+U\+E if the field is valid, F\+A\+L\+S\+E otherwise. 
+\end{DoxyReturn}
+
+
+Definition at line 607 of file Validator.\+class.\+php.
+
+\hypertarget{classValidator_ac4be365554a620a921f6846e80d76671}{\index{Validator@{Validator}!array\+Trim@{array\+Trim}}
+\index{array\+Trim@{array\+Trim}!Validator@{Validator}}
+\subsubsection[{array\+Trim}]{\setlength{\rightskip}{0pt plus 5cm}Validator\+::array\+Trim (
+\begin{DoxyParamCaption}
+\item[{}]{\$array}
+\end{DoxyParamCaption}
+)}}\label{classValidator_ac4be365554a620a921f6846e80d76671}
+apply trim recursive 
+\begin{DoxyParams}[1]{Parameters}
+string | array & {\em \$array} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string$\vert$array 
+\end{DoxyReturn}
+
+
+Definition at line 442 of file Validator.\+class.\+php.
+
+\hypertarget{classValidator_ad46fa003b320d64ef656b22de870782c}{\index{Validator@{Validator}!error@{error}}
+\index{error@{error}!Validator@{Validator}}
+\subsubsection[{error}]{\setlength{\rightskip}{0pt plus 5cm}Validator\+::error (
+\begin{DoxyParamCaption}
+\item[{}]{\$field, }
+\item[{}]{\$msg}
+\end{DoxyParamCaption}
+)}}\label{classValidator_ad46fa003b320d64ef656b22de870782c}
+Log an error 
+\begin{DoxyParams}{Parameters}
+{\em \$msg} & error message \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean always false 
+\end{DoxyReturn}
+
+
+Definition at line 462 of file Validator.\+class.\+php.
+
+\hypertarget{classValidator_ae9037d1911390583a1358b25c03768e3}{\index{Validator@{Validator}!get\+Js\+Path@{get\+Js\+Path}}
+\index{get\+Js\+Path@{get\+Js\+Path}!Validator@{Validator}}
+\subsubsection[{get\+Js\+Path}]{\setlength{\rightskip}{0pt plus 5cm}Validator\+::get\+Js\+Path (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classValidator_ae9037d1911390583a1358b25c03768e3}
+Returns compiled javascript file path. The path begins from X\+E root directory. \begin{DoxyReturn}{Returns}
+string Compiled Java\+Script file path 
+\end{DoxyReturn}
+
+
+Definition at line 652 of file Validator.\+class.\+php.
+
+\hypertarget{classValidator_a3de1a1112e46b42ab6a89a4a13048504}{\index{Validator@{Validator}!get\+Last\+Error@{get\+Last\+Error}}
+\index{get\+Last\+Error@{get\+Last\+Error}!Validator@{Validator}}
+\subsubsection[{get\+Last\+Error}]{\setlength{\rightskip}{0pt plus 5cm}Validator\+::get\+Last\+Error (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classValidator_a3de1a1112e46b42ab6a89a4a13048504}
+Returns the last error infomation including a field name and an error message. \begin{DoxyReturn}{Returns}
+array The last error infomation 
+\end{DoxyReturn}
+
+
+Definition at line 494 of file Validator.\+class.\+php.
+
+\hypertarget{classValidator_a43de0eb69cae01eee855f825324ffc39}{\index{Validator@{Validator}!load@{load}}
+\index{load@{load}!Validator@{Validator}}
+\subsubsection[{load}]{\setlength{\rightskip}{0pt plus 5cm}Validator\+::load (
+\begin{DoxyParamCaption}
+\item[{}]{\$xml\+\_\+path}
+\end{DoxyParamCaption}
+)}}\label{classValidator_a43de0eb69cae01eee855f825324ffc39}
+Load a xml file 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$xml\+\_\+path} & A file name to be loaded \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 116 of file Validator.\+class.\+php.
+
+\hypertarget{classValidator_a46de77869676b1b027a076c2106653e2}{\index{Validator@{Validator}!mb\+Str\+Len@{mb\+Str\+Len}}
+\index{mb\+Str\+Len@{mb\+Str\+Len}!Validator@{Validator}}
+\subsubsection[{mb\+Str\+Len}]{\setlength{\rightskip}{0pt plus 5cm}Validator\+::mb\+Str\+Len (
+\begin{DoxyParamCaption}
+\item[{}]{\$str}
+\end{DoxyParamCaption}
+)}}\label{classValidator_a46de77869676b1b027a076c2106653e2}
+if not supported 'mb\+\_\+strlen' function, this method can use. 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$str} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Definition at line 638 of file Validator.\+class.\+php.
+
+\hypertarget{classValidator_a7613a0d6b468b5d5ade046a801b260db}{\index{Validator@{Validator}!remove\+Filter@{remove\+Filter}}
+\index{remove\+Filter@{remove\+Filter}!Validator@{Validator}}
+\subsubsection[{remove\+Filter}]{\setlength{\rightskip}{0pt plus 5cm}Validator\+::remove\+Filter (
+\begin{DoxyParamCaption}
+\item[{}]{\$name}
+\end{DoxyParamCaption}
+)}}\label{classValidator_a7613a0d6b468b5d5ade046a801b260db}
+remove filter from filter list 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & rule name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 596 of file Validator.\+class.\+php.
+
+\hypertarget{classValidator_acc2d2fd527f54e1fed839a927a83c6b8}{\index{Validator@{Validator}!remove\+Rule@{remove\+Rule}}
+\index{remove\+Rule@{remove\+Rule}!Validator@{Validator}}
+\subsubsection[{remove\+Rule}]{\setlength{\rightskip}{0pt plus 5cm}Validator\+::remove\+Rule (
+\begin{DoxyParamCaption}
+\item[{}]{\$name}
+\end{DoxyParamCaption}
+)}}\label{classValidator_acc2d2fd527f54e1fed839a927a83c6b8}
+Remove a rule 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & rule name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 542 of file Validator.\+class.\+php.
+
+\hypertarget{classValidator_a1630131530dca60428e72dd4dd2d4af3}{\index{Validator@{Validator}!set\+Cache\+Dir@{set\+Cache\+Dir}}
+\index{set\+Cache\+Dir@{set\+Cache\+Dir}!Validator@{Validator}}
+\subsubsection[{set\+Cache\+Dir}]{\setlength{\rightskip}{0pt plus 5cm}Validator\+::set\+Cache\+Dir (
+\begin{DoxyParamCaption}
+\item[{}]{\$cache\+\_\+dir}
+\end{DoxyParamCaption}
+)}}\label{classValidator_a1630131530dca60428e72dd4dd2d4af3}
+Set root cache directory 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$cache\+\_\+dir} & Root cache directory \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 232 of file Validator.\+class.\+php.
+
+\hypertarget{classValidator_a05e34dac507b8d719e7f95f2cd0220bc}{\index{Validator@{Validator}!validate@{validate}}
+\index{validate@{validate}!Validator@{Validator}}
+\subsubsection[{validate}]{\setlength{\rightskip}{0pt plus 5cm}Validator\+::validate (
+\begin{DoxyParamCaption}
+\item[{}]{\$fields\+\_\+ = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{classValidator_a05e34dac507b8d719e7f95f2cd0220bc}
+Validate the fields. If the fields aren't passed, validation will be execute on the \hyperlink{classContext}{Context} variables. 
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$fields} & Target fields. The keys of the array represents field's name, its values represents field's value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean T\+R\+U\+E if it is valid, F\+A\+L\+S\+E otherwise. 
+\end{DoxyReturn}
+
+
+Definition at line 245 of file Validator.\+class.\+php.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classValidator_aaba7f33304aedded2c308120a0925e77}{\index{Validator@{Validator}!\$\+\_\+cache\+\_\+dir@{\$\+\_\+cache\+\_\+dir}}
+\index{\$\+\_\+cache\+\_\+dir@{\$\+\_\+cache\+\_\+dir}!Validator@{Validator}}
+\subsubsection[{\$\+\_\+cache\+\_\+dir}]{\setlength{\rightskip}{0pt plus 5cm}Validator\+::\$\+\_\+cache\+\_\+dir = ''}}\label{classValidator_aaba7f33304aedded2c308120a0925e77}
+
+
+Definition at line 17 of file Validator.\+class.\+php.
+
+\hypertarget{classValidator_a5689ec4c9687c826fc82902fa9b662d8}{\index{Validator@{Validator}!\$\+\_\+field\+Names@{\$\+\_\+field\+Names}}
+\index{\$\+\_\+field\+Names@{\$\+\_\+field\+Names}!Validator@{Validator}}
+\subsubsection[{\$\+\_\+field\+Names}]{\setlength{\rightskip}{0pt plus 5cm}Validator\+::\$\+\_\+field\+Names}}\label{classValidator_a5689ec4c9687c826fc82902fa9b662d8}
+
+
+Definition at line 53 of file Validator.\+class.\+php.
+
+\hypertarget{classValidator_ab86eb87cb828002c10d06be613d7b013}{\index{Validator@{Validator}!\$\+\_\+filters@{\$\+\_\+filters}}
+\index{\$\+\_\+filters@{\$\+\_\+filters}!Validator@{Validator}}
+\subsubsection[{\$\+\_\+filters}]{\setlength{\rightskip}{0pt plus 5cm}Validator\+::\$\+\_\+filters}}\label{classValidator_ab86eb87cb828002c10d06be613d7b013}
+
+
+Definition at line 41 of file Validator.\+class.\+php.
+
+\hypertarget{classValidator_a8ac5ee1cf7a5ba237ee40c61a5d834c1}{\index{Validator@{Validator}!\$\+\_\+has\+\_\+mb\+\_\+func@{\$\+\_\+has\+\_\+mb\+\_\+func}}
+\index{\$\+\_\+has\+\_\+mb\+\_\+func@{\$\+\_\+has\+\_\+mb\+\_\+func}!Validator@{Validator}}
+\subsubsection[{\$\+\_\+has\+\_\+mb\+\_\+func}]{\setlength{\rightskip}{0pt plus 5cm}Validator\+::\$\+\_\+has\+\_\+mb\+\_\+func}}\label{classValidator_a8ac5ee1cf7a5ba237ee40c61a5d834c1}
+
+
+Definition at line 59 of file Validator.\+class.\+php.
+
+\hypertarget{classValidator_a1b957a11848d8cb550fc578052f49588}{\index{Validator@{Validator}!\$\+\_\+last\+\_\+error@{\$\+\_\+last\+\_\+error}}
+\index{\$\+\_\+last\+\_\+error@{\$\+\_\+last\+\_\+error}!Validator@{Validator}}
+\subsubsection[{\$\+\_\+last\+\_\+error}]{\setlength{\rightskip}{0pt plus 5cm}Validator\+::\$\+\_\+last\+\_\+error}}\label{classValidator_a1b957a11848d8cb550fc578052f49588}
+
+
+Definition at line 23 of file Validator.\+class.\+php.
+
+\hypertarget{classValidator_ac9f1f384dc723b2a4581e83066fba49c}{\index{Validator@{Validator}!\$\+\_\+messages@{\$\+\_\+messages}}
+\index{\$\+\_\+messages@{\$\+\_\+messages}!Validator@{Validator}}
+\subsubsection[{\$\+\_\+messages}]{\setlength{\rightskip}{0pt plus 5cm}Validator\+::\$\+\_\+messages}}\label{classValidator_ac9f1f384dc723b2a4581e83066fba49c}
+
+
+Definition at line 47 of file Validator.\+class.\+php.
+
+\hypertarget{classValidator_ab0ec00f502a96e6c95d963fe8cf40c00}{\index{Validator@{Validator}!\$\+\_\+rules@{\$\+\_\+rules}}
+\index{\$\+\_\+rules@{\$\+\_\+rules}!Validator@{Validator}}
+\subsubsection[{\$\+\_\+rules}]{\setlength{\rightskip}{0pt plus 5cm}Validator\+::\$\+\_\+rules}}\label{classValidator_ab0ec00f502a96e6c95d963fe8cf40c00}
+
+
+Definition at line 35 of file Validator.\+class.\+php.
+
+\hypertarget{classValidator_af3e80f6437543d50f58f1e5269900068}{\index{Validator@{Validator}!\$\+\_\+version@{\$\+\_\+version}}
+\index{\$\+\_\+version@{\$\+\_\+version}!Validator@{Validator}}
+\subsubsection[{\$\+\_\+version}]{\setlength{\rightskip}{0pt plus 5cm}Validator\+::\$\+\_\+version = '1.\+0'}}\label{classValidator_af3e80f6437543d50f58f1e5269900068}
+
+
+Definition at line 65 of file Validator.\+class.\+php.
+
+\hypertarget{classValidator_a69a5bdd50a59f7d9daab2ea702036277}{\index{Validator@{Validator}!\$\+\_\+xml\+\_\+path@{\$\+\_\+xml\+\_\+path}}
+\index{\$\+\_\+xml\+\_\+path@{\$\+\_\+xml\+\_\+path}!Validator@{Validator}}
+\subsubsection[{\$\+\_\+xml\+\_\+path}]{\setlength{\rightskip}{0pt plus 5cm}Validator\+::\$\+\_\+xml\+\_\+path = ''}}\label{classValidator_a69a5bdd50a59f7d9daab2ea702036277}
+
+
+Definition at line 71 of file Validator.\+class.\+php.
+
+\hypertarget{classValidator_a45a0aaa905493683be7fc01a80837a26}{\index{Validator@{Validator}!\$\+\_\+xml\+\_\+ruleset@{\$\+\_\+xml\+\_\+ruleset}}
+\index{\$\+\_\+xml\+\_\+ruleset@{\$\+\_\+xml\+\_\+ruleset}!Validator@{Validator}}
+\subsubsection[{\$\+\_\+xml\+\_\+ruleset}]{\setlength{\rightskip}{0pt plus 5cm}Validator\+::\$\+\_\+xml\+\_\+ruleset = N\+U\+L\+L}}\label{classValidator_a45a0aaa905493683be7fc01a80837a26}
+
+
+Definition at line 29 of file Validator.\+class.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+classes/validator/\hyperlink{Validator_8class_8php}{Validator.\+class.\+php}\end{DoxyCompactItemize}

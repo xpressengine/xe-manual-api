@@ -1,0 +1,177 @@
+\hypertarget{classHTMLPurifier__Generator}{\section{H\+T\+M\+L\+Purifier\+\_\+\+Generator Class Reference}
+\label{classHTMLPurifier__Generator}\index{H\+T\+M\+L\+Purifier\+\_\+\+Generator@{H\+T\+M\+L\+Purifier\+\_\+\+Generator}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHTMLPurifier__Generator_ac3757f96910c45d148a919bf637024bc}{\+\_\+\+\_\+construct} (\$config, \$context)
+\item 
+\hyperlink{classHTMLPurifier__Generator_a87d1cc1c87c14df7fc19ecdfeb5bda50}{generate\+From\+Tokens} (\$tokens)
+\item 
+\hyperlink{classHTMLPurifier__Generator_a78ad5c6b8c5963d60baf5b2badd249f2}{generate\+From\+Token} (\$token)
+\item 
+\hyperlink{classHTMLPurifier__Generator_a14d2e83ac6500ed9de9acdf2c3350791}{generate\+Script\+From\+Token} (\$token)
+\item 
+\hyperlink{classHTMLPurifier__Generator_a4f049d3cbfcdbb46c5eb9e424f298537}{generate\+Attributes} (\$assoc\+\_\+array\+\_\+of\+\_\+attributes, \$element=false)
+\item 
+\hyperlink{classHTMLPurifier__Generator_a99506b7d90f173bba8a26ddc0ced9657}{escape} (\$string, \$quote=null)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHTMLPurifier__Generator_a42a40024d1f996b1fc78ab9f979b1801}{\$config}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Generates H\+T\+M\+L from tokens. \begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000016}{Todo}]Refactor interface so that configuration/context is determined upon instantiation, no need for messy \hyperlink{classHTMLPurifier__Generator_a87d1cc1c87c14df7fc19ecdfeb5bda50}{generate\+From\+Tokens()} calls 
+
+Make some of the more internal functions protected, and have unit tests work around that \end{DoxyRefDesc}
+
+
+Definition at line 10 of file Generator.\+php.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classHTMLPurifier__Generator_ac3757f96910c45d148a919bf637024bc}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Generator@{H\+T\+M\+L\+Purifier\+\_\+\+Generator}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!H\+T\+M\+L\+Purifier\+\_\+\+Generator@{H\+T\+M\+L\+Purifier\+\_\+\+Generator}}
+\subsubsection[{\+\_\+\+\_\+construct}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Generator\+::\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+\item[{}]{\$config, }
+\item[{}]{\$context}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__Generator_ac3757f96910c45d148a919bf637024bc}
+
+\begin{DoxyParams}{Parameters}
+{\em \$config} & Instance of \hyperlink{classHTMLPurifier__Config}{H\+T\+M\+L\+Purifier\+\_\+\+Config} \\
+\hline
+{\em \$context} & Instance of \hyperlink{classHTMLPurifier__Context}{H\+T\+M\+L\+Purifier\+\_\+\+Context} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 59 of file Generator.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classHTMLPurifier__Generator_a99506b7d90f173bba8a26ddc0ced9657}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Generator@{H\+T\+M\+L\+Purifier\+\_\+\+Generator}!escape@{escape}}
+\index{escape@{escape}!H\+T\+M\+L\+Purifier\+\_\+\+Generator@{H\+T\+M\+L\+Purifier\+\_\+\+Generator}}
+\subsubsection[{escape}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Generator\+::escape (
+\begin{DoxyParamCaption}
+\item[{}]{\$string, }
+\item[{}]{\$quote = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__Generator_a99506b7d90f173bba8a26ddc0ced9657}
+Escapes raw text data. \begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000017}{Todo}]This really ought to be protected, but until we have a facility for properly generating H\+T\+M\+L here w/o using tokens, it stays public. 
+\begin{DoxyParams}{Parameters}
+{\em \$string} & String data to escape for H\+T\+M\+L. \\
+\hline
+{\em \$quote} & Quoting style, like htmlspecialchars. E\+N\+T\+\_\+\+N\+O\+Q\+U\+O\+T\+E\+S is permissible for non-\/attribute output. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String escaped data. 
+\end{DoxyReturn}
+\end{DoxyRefDesc}
+
+
+Definition at line 245 of file Generator.\+php.
+
+\hypertarget{classHTMLPurifier__Generator_a4f049d3cbfcdbb46c5eb9e424f298537}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Generator@{H\+T\+M\+L\+Purifier\+\_\+\+Generator}!generate\+Attributes@{generate\+Attributes}}
+\index{generate\+Attributes@{generate\+Attributes}!H\+T\+M\+L\+Purifier\+\_\+\+Generator@{H\+T\+M\+L\+Purifier\+\_\+\+Generator}}
+\subsubsection[{generate\+Attributes}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Generator\+::generate\+Attributes (
+\begin{DoxyParamCaption}
+\item[{}]{\$assoc\+\_\+array\+\_\+of\+\_\+attributes, }
+\item[{}]{\$element = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__Generator_a4f049d3cbfcdbb46c5eb9e424f298537}
+Generates attribute declarations from attribute array. \begin{DoxyNote}{Note}
+This does not include the leading or trailing space. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em \$assoc\+\_\+array\+\_\+of\+\_\+attributes} & Attribute array \\
+\hline
+{\em \$element} & Name of element attributes are for, used to check attribute minimization. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Generate H\+T\+M\+L fragment for insertion. 
+\end{DoxyReturn}
+
+
+Definition at line 186 of file Generator.\+php.
+
+\hypertarget{classHTMLPurifier__Generator_a78ad5c6b8c5963d60baf5b2badd249f2}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Generator@{H\+T\+M\+L\+Purifier\+\_\+\+Generator}!generate\+From\+Token@{generate\+From\+Token}}
+\index{generate\+From\+Token@{generate\+From\+Token}!H\+T\+M\+L\+Purifier\+\_\+\+Generator@{H\+T\+M\+L\+Purifier\+\_\+\+Generator}}
+\subsubsection[{generate\+From\+Token}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Generator\+::generate\+From\+Token (
+\begin{DoxyParamCaption}
+\item[{}]{\$token}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__Generator_a78ad5c6b8c5963d60baf5b2badd249f2}
+Generates H\+T\+M\+L from a single token. 
+\begin{DoxyParams}{Parameters}
+{\em \$token} & \hyperlink{classHTMLPurifier__Token}{H\+T\+M\+L\+Purifier\+\_\+\+Token} object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Generated H\+T\+M\+L 
+\end{DoxyReturn}
+
+
+Definition at line 120 of file Generator.\+php.
+
+\hypertarget{classHTMLPurifier__Generator_a87d1cc1c87c14df7fc19ecdfeb5bda50}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Generator@{H\+T\+M\+L\+Purifier\+\_\+\+Generator}!generate\+From\+Tokens@{generate\+From\+Tokens}}
+\index{generate\+From\+Tokens@{generate\+From\+Tokens}!H\+T\+M\+L\+Purifier\+\_\+\+Generator@{H\+T\+M\+L\+Purifier\+\_\+\+Generator}}
+\subsubsection[{generate\+From\+Tokens}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Generator\+::generate\+From\+Tokens (
+\begin{DoxyParamCaption}
+\item[{}]{\$tokens}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__Generator_a87d1cc1c87c14df7fc19ecdfeb5bda50}
+Generates H\+T\+M\+L from an array of tokens. 
+\begin{DoxyParams}{Parameters}
+{\em \$tokens} & Array of \hyperlink{classHTMLPurifier__Token}{H\+T\+M\+L\+Purifier\+\_\+\+Token} \\
+\hline
+{\em \$config} & \hyperlink{classHTMLPurifier__Config}{H\+T\+M\+L\+Purifier\+\_\+\+Config} object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Generated H\+T\+M\+L 
+\end{DoxyReturn}
+
+
+Definition at line 75 of file Generator.\+php.
+
+\hypertarget{classHTMLPurifier__Generator_a14d2e83ac6500ed9de9acdf2c3350791}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Generator@{H\+T\+M\+L\+Purifier\+\_\+\+Generator}!generate\+Script\+From\+Token@{generate\+Script\+From\+Token}}
+\index{generate\+Script\+From\+Token@{generate\+Script\+From\+Token}!H\+T\+M\+L\+Purifier\+\_\+\+Generator@{H\+T\+M\+L\+Purifier\+\_\+\+Generator}}
+\subsubsection[{generate\+Script\+From\+Token}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Generator\+::generate\+Script\+From\+Token (
+\begin{DoxyParamCaption}
+\item[{}]{\$token}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__Generator_a14d2e83ac6500ed9de9acdf2c3350791}
+Special case processor for the contents of script tags \begin{DoxyWarning}{Warning}
+This runs into problems if there's already a literal --$>$ somewhere inside the script contents. 
+\end{DoxyWarning}
+
+
+Definition at line 171 of file Generator.\+php.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classHTMLPurifier__Generator_a42a40024d1f996b1fc78ab9f979b1801}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Generator@{H\+T\+M\+L\+Purifier\+\_\+\+Generator}!\$config@{\$config}}
+\index{\$config@{\$config}!H\+T\+M\+L\+Purifier\+\_\+\+Generator@{H\+T\+M\+L\+Purifier\+\_\+\+Generator}}
+\subsubsection[{\$config}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Generator\+::\$config\hspace{0.3cm}{\ttfamily [protected]}}}\label{classHTMLPurifier__Generator_a42a40024d1f996b1fc78ab9f979b1801}
+Configuration for the generator 
+
+Definition at line 53 of file Generator.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+classes/security/htmlpurifier/library/\+H\+T\+M\+L\+Purifier/\hyperlink{Generator_8php}{Generator.\+php}\end{DoxyCompactItemize}

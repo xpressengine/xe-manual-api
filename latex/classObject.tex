@@ -1,0 +1,385 @@
+\hypertarget{classObject}{\section{Object Class Reference}
+\label{classObject}\index{Object@{Object}}
+}
+Inheritance diagram for Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=9.000000cm]{classObject}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classObject_a9c1f4bf33208a5c858c0722afce90f30}{Object} (\$error=0, \$\hyperlink{classmessage}{message}= 'success')
+\item 
+\hyperlink{classObject_a12f7ac70214558a1774ca010865c798e}{set\+Error} (\$error=0)
+\item 
+\hyperlink{classObject_a2aaced460a018edd69bf17813d6c48df}{get\+Error} ()
+\item 
+\hyperlink{classObject_a56a37e14694356404f793dd0ab02e2af}{set\+Http\+Status\+Code} (\$code= '200')
+\item 
+\hyperlink{classObject_a5cb4abc24dd01e04c24da487d476efc0}{get\+Http\+Status\+Code} ()
+\item 
+\hyperlink{classObject_aef83a6fcde9ce261446fe4849a33bb10}{set\+Message} (\$\hyperlink{classmessage}{message}= 'success')
+\item 
+\hyperlink{classObject_a813487b153bfe18102ac76d8c718999f}{get\+Message} ()
+\item 
+\hyperlink{classObject_a4f8a7fa8794663b7625fc15c9589797b}{add} (\$key, \$val)
+\item 
+\hyperlink{classObject_a6dbae38facc1000561b8b230847aaca1}{adds} (\$object)
+\item 
+\hyperlink{classObject_ae6dff49b7ab68822bdb4ce6940c10d3f}{get} (\$key)
+\item 
+\hyperlink{classObject_ad6f51071a4048c1fed581748065e4d68}{gets} ()
+\item 
+\hyperlink{classObject_ad33c509ec041fb43c6e25f8155577925}{get\+Variables} ()
+\item 
+\hyperlink{classObject_afe1fe6fc005389cd616a5e9105de977a}{get\+Object\+Vars} ()
+\item 
+\hyperlink{classObject_a409216fd5ab386b1e78e311440113f75}{to\+Bool} ()
+\item 
+\hyperlink{classObject_afafb45098e163c179940c7e1ddc67fe2}{to\+Boolean} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classObject_a891a586df36cca119a56bb509f582858}{\$error} = 0
+\item 
+\hyperlink{classObject_af661550c62873d6b6e61f32d68c56973}{\$message} = 'success'
+\item 
+\hyperlink{classObject_a153e76f6619408780cc2b50cef5100c6}{\$variables} = array()
+\item 
+\hyperlink{classObject_a82ad6bb41d770d91d9d10a97495669d0}{\$http\+Status\+Code} = N\+U\+L\+L
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Every modules inherits from \hyperlink{classObject}{Object} class. It includes error, message, and other variables for communicatin purpose.
+
+\begin{DoxyAuthor}{Author}
+N\+A\+V\+E\+R (\href{mailto:developers@xpressengine.com}{\tt developers@xpressengine.\+com}) 
+\end{DoxyAuthor}
+
+
+Definition at line 9 of file Object.\+class.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classObject_a4f8a7fa8794663b7625fc15c9589797b}{\index{Object@{Object}!add@{add}}
+\index{add@{add}!Object@{Object}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}Object\+::add (
+\begin{DoxyParamCaption}
+\item[{}]{\$key, }
+\item[{}]{\$val}
+\end{DoxyParamCaption}
+)}}\label{classObject_a4f8a7fa8794663b7625fc15c9589797b}
+Setter to set a key/value pair as an additional variable
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & A variable name \\
+\hline
+mixed & {\em \$val} & A value for the variable \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 129 of file Object.\+class.\+php.
+
+\hypertarget{classObject_a6dbae38facc1000561b8b230847aaca1}{\index{Object@{Object}!adds@{adds}}
+\index{adds@{adds}!Object@{Object}}
+\subsubsection[{adds}]{\setlength{\rightskip}{0pt plus 5cm}Object\+::adds (
+\begin{DoxyParamCaption}
+\item[{}]{\$object}
+\end{DoxyParamCaption}
+)}}\label{classObject_a6dbae38facc1000561b8b230847aaca1}
+Method to set multiple key/value pairs as an additional variables
+
+
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{classObject}{Object} | array & {\em \$object} & Either object or array containg key/value pairs to be added \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 140 of file Object.\+class.\+php.
+
+\hypertarget{classObject_ae6dff49b7ab68822bdb4ce6940c10d3f}{\index{Object@{Object}!get@{get}}
+\index{get@{get}!Object@{Object}}
+\subsubsection[{get}]{\setlength{\rightskip}{0pt plus 5cm}Object\+::get (
+\begin{DoxyParamCaption}
+\item[{}]{\$key}
+\end{DoxyParamCaption}
+)}}\label{classObject_ae6dff49b7ab68822bdb4ce6940c10d3f}
+Method to retrieve a corresponding value to a given key
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Returns value to a given key 
+\end{DoxyReturn}
+
+
+Definition at line 162 of file Object.\+class.\+php.
+
+\hypertarget{classObject_a2aaced460a018edd69bf17813d6c48df}{\index{Object@{Object}!get\+Error@{get\+Error}}
+\index{get\+Error@{get\+Error}!Object@{Object}}
+\subsubsection[{get\+Error}]{\setlength{\rightskip}{0pt plus 5cm}Object\+::get\+Error (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classObject_a2aaced460a018edd69bf17813d6c48df}
+Getter to retrieve error code
+
+\begin{DoxyReturn}{Returns}
+int Returns an error code 
+\end{DoxyReturn}
+
+
+Definition at line 65 of file Object.\+class.\+php.
+
+\hypertarget{classObject_a5cb4abc24dd01e04c24da487d476efc0}{\index{Object@{Object}!get\+Http\+Status\+Code@{get\+Http\+Status\+Code}}
+\index{get\+Http\+Status\+Code@{get\+Http\+Status\+Code}!Object@{Object}}
+\subsubsection[{get\+Http\+Status\+Code}]{\setlength{\rightskip}{0pt plus 5cm}Object\+::get\+Http\+Status\+Code (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classObject_a5cb4abc24dd01e04c24da487d476efc0}
+Getter to retrieve H\+T\+T\+P status code
+
+\begin{DoxyReturn}{Returns}
+int Returns H\+T\+T\+P status code 
+\end{DoxyReturn}
+
+
+Definition at line 86 of file Object.\+class.\+php.
+
+\hypertarget{classObject_a813487b153bfe18102ac76d8c718999f}{\index{Object@{Object}!get\+Message@{get\+Message}}
+\index{get\+Message@{get\+Message}!Object@{Object}}
+\subsubsection[{get\+Message}]{\setlength{\rightskip}{0pt plus 5cm}Object\+::get\+Message (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classObject_a813487b153bfe18102ac76d8c718999f}
+Getter to retrieve an error message
+
+\begin{DoxyReturn}{Returns}
+string Returns message 
+\end{DoxyReturn}
+
+
+Definition at line 117 of file Object.\+class.\+php.
+
+\hypertarget{classObject_afe1fe6fc005389cd616a5e9105de977a}{\index{Object@{Object}!get\+Object\+Vars@{get\+Object\+Vars}}
+\index{get\+Object\+Vars@{get\+Object\+Vars}!Object@{Object}}
+\subsubsection[{get\+Object\+Vars}]{\setlength{\rightskip}{0pt plus 5cm}Object\+::get\+Object\+Vars (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classObject_afe1fe6fc005389cd616a5e9105de977a}
+Method to retrieve an object of key/value pairs
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classObject}{Object} 
+\end{DoxyReturn}
+
+
+Definition at line 198 of file Object.\+class.\+php.
+
+\hypertarget{classObject_ad6f51071a4048c1fed581748065e4d68}{\index{Object@{Object}!gets@{gets}}
+\index{gets@{gets}!Object@{Object}}
+\subsubsection[{gets}]{\setlength{\rightskip}{0pt plus 5cm}Object\+::gets (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classObject_ad6f51071a4048c1fed581748065e4d68}
+Method to retrieve an object containing a key/value paris
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classObject}{Object} Returns an object containing key/value pairs 
+\end{DoxyReturn}
+
+
+Definition at line 172 of file Object.\+class.\+php.
+
+\hypertarget{classObject_ad33c509ec041fb43c6e25f8155577925}{\index{Object@{Object}!get\+Variables@{get\+Variables}}
+\index{get\+Variables@{get\+Variables}!Object@{Object}}
+\subsubsection[{get\+Variables}]{\setlength{\rightskip}{0pt plus 5cm}Object\+::get\+Variables (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classObject_ad33c509ec041fb43c6e25f8155577925}
+Method to retrieve an array of key/value pairs
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Definition at line 188 of file Object.\+class.\+php.
+
+\hypertarget{classObject_a9c1f4bf33208a5c858c0722afce90f30}{\index{Object@{Object}!Object@{Object}}
+\index{Object@{Object}!Object@{Object}}
+\subsubsection[{Object}]{\setlength{\rightskip}{0pt plus 5cm}Object\+::\+Object (
+\begin{DoxyParamCaption}
+\item[{}]{\$error = {\ttfamily 0}, }
+\item[{}]{\$message = {\ttfamily 'success'}}
+\end{DoxyParamCaption}
+)}}\label{classObject_a9c1f4bf33208a5c858c0722afce90f30}
+Constructor
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$error} & Error code \\
+\hline
+string & {\em \$message} & Error message \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 43 of file Object.\+class.\+php.
+
+\hypertarget{classObject_a12f7ac70214558a1774ca010865c798e}{\index{Object@{Object}!set\+Error@{set\+Error}}
+\index{set\+Error@{set\+Error}!Object@{Object}}
+\subsubsection[{set\+Error}]{\setlength{\rightskip}{0pt plus 5cm}Object\+::set\+Error (
+\begin{DoxyParamCaption}
+\item[{}]{\$error = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classObject_a12f7ac70214558a1774ca010865c798e}
+Setter to set error code
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$error} & error code \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 55 of file Object.\+class.\+php.
+
+\hypertarget{classObject_a56a37e14694356404f793dd0ab02e2af}{\index{Object@{Object}!set\+Http\+Status\+Code@{set\+Http\+Status\+Code}}
+\index{set\+Http\+Status\+Code@{set\+Http\+Status\+Code}!Object@{Object}}
+\subsubsection[{set\+Http\+Status\+Code}]{\setlength{\rightskip}{0pt plus 5cm}Object\+::set\+Http\+Status\+Code (
+\begin{DoxyParamCaption}
+\item[{}]{\$code = {\ttfamily '200'}}
+\end{DoxyParamCaption}
+)}}\label{classObject_a56a37e14694356404f793dd0ab02e2af}
+Setter to set H\+T\+T\+P status code
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$code} & H\+T\+T\+P status code. Default value is {\ttfamily 200} that means successful \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 76 of file Object.\+class.\+php.
+
+\hypertarget{classObject_aef83a6fcde9ce261446fe4849a33bb10}{\index{Object@{Object}!set\+Message@{set\+Message}}
+\index{set\+Message@{set\+Message}!Object@{Object}}
+\subsubsection[{set\+Message}]{\setlength{\rightskip}{0pt plus 5cm}Object\+::set\+Message (
+\begin{DoxyParamCaption}
+\item[{}]{\$message = {\ttfamily 'success'}}
+\end{DoxyParamCaption}
+)}}\label{classObject_aef83a6fcde9ce261446fe4849a33bb10}
+Setter to set set the error message
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$message} & Error message \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool Alaways returns true. 
+\end{DoxyReturn}
+
+
+Definition at line 97 of file Object.\+class.\+php.
+
+\hypertarget{classObject_a409216fd5ab386b1e78e311440113f75}{\index{Object@{Object}!to\+Bool@{to\+Bool}}
+\index{to\+Bool@{to\+Bool}!Object@{Object}}
+\subsubsection[{to\+Bool}]{\setlength{\rightskip}{0pt plus 5cm}Object\+::to\+Bool (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classObject_a409216fd5ab386b1e78e311440113f75}
+Method to return either true or false depnding on the value in a 'error' variable
+
+\begin{DoxyReturn}{Returns}
+bool Retruns true \+: error isn't 0 or false \+: otherwise. 
+\end{DoxyReturn}
+
+
+Definition at line 213 of file Object.\+class.\+php.
+
+\hypertarget{classObject_afafb45098e163c179940c7e1ddc67fe2}{\index{Object@{Object}!to\+Boolean@{to\+Boolean}}
+\index{to\+Boolean@{to\+Boolean}!Object@{Object}}
+\subsubsection[{to\+Boolean}]{\setlength{\rightskip}{0pt plus 5cm}Object\+::to\+Boolean (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classObject_afafb45098e163c179940c7e1ddc67fe2}
+Method to return either true or false depnding on the value in a 'error' variable
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Definition at line 224 of file Object.\+class.\+php.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classObject_a891a586df36cca119a56bb509f582858}{\index{Object@{Object}!\$error@{\$error}}
+\index{\$error@{\$error}!Object@{Object}}
+\subsubsection[{\$error}]{\setlength{\rightskip}{0pt plus 5cm}Object\+::\$error = 0}}\label{classObject_a891a586df36cca119a56bb509f582858}
+
+
+Definition at line 16 of file Object.\+class.\+php.
+
+\hypertarget{classObject_a82ad6bb41d770d91d9d10a97495669d0}{\index{Object@{Object}!\$http\+Status\+Code@{\$http\+Status\+Code}}
+\index{\$http\+Status\+Code@{\$http\+Status\+Code}!Object@{Object}}
+\subsubsection[{\$http\+Status\+Code}]{\setlength{\rightskip}{0pt plus 5cm}Object\+::\$http\+Status\+Code = N\+U\+L\+L}}\label{classObject_a82ad6bb41d770d91d9d10a97495669d0}
+
+
+Definition at line 34 of file Object.\+class.\+php.
+
+\hypertarget{classObject_af661550c62873d6b6e61f32d68c56973}{\index{Object@{Object}!\$message@{\$message}}
+\index{\$message@{\$message}!Object@{Object}}
+\subsubsection[{\$message}]{\setlength{\rightskip}{0pt plus 5cm}Object\+::\$message = 'success'}}\label{classObject_af661550c62873d6b6e61f32d68c56973}
+
+
+Definition at line 22 of file Object.\+class.\+php.
+
+\hypertarget{classObject_a153e76f6619408780cc2b50cef5100c6}{\index{Object@{Object}!\$variables@{\$variables}}
+\index{\$variables@{\$variables}!Object@{Object}}
+\subsubsection[{\$variables}]{\setlength{\rightskip}{0pt plus 5cm}Object\+::\$variables = array()}}\label{classObject_a153e76f6619408780cc2b50cef5100c6}
+
+
+Definition at line 28 of file Object.\+class.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+classes/object/\hyperlink{Object_8class_8php}{Object.\+class.\+php}\end{DoxyCompactItemize}

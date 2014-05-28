@@ -1,0 +1,128 @@
+\hypertarget{classHTMLPurifier__Token}{\section{H\+T\+M\+L\+Purifier\+\_\+\+Token Class Reference}
+\label{classHTMLPurifier__Token}\index{H\+T\+M\+L\+Purifier\+\_\+\+Token@{H\+T\+M\+L\+Purifier\+\_\+\+Token}}
+}
+Inheritance diagram for H\+T\+M\+L\+Purifier\+\_\+\+Token\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.871795cm]{classHTMLPurifier__Token}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHTMLPurifier__Token_a8c51419f0902e1855b61997fa0e37278}{\+\_\+\+\_\+get} (\$n)
+\item 
+\hyperlink{classHTMLPurifier__Token_ae5fbc90f102d5a0b754bd1b6206ce59d}{position} (\$l=null, \$c=null)
+\item 
+\hyperlink{classHTMLPurifier__Token_a53f9c2c200d4de64d5453866223a65a3}{raw\+Position} (\$l, \$c)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHTMLPurifier__Token_a64cba5bdee6d525377b8fe33109122b4}{\$line}
+\item 
+\hyperlink{classHTMLPurifier__Token_ae063b7efb1fb056d4abad981d5237a71}{\$col}
+\item 
+\hyperlink{classHTMLPurifier__Token_a3379dcc5aa96a30f90e15b7823cc54db}{\$armor} = array()
+\item 
+\hyperlink{classHTMLPurifier__Token_af7eba36dca16eab138ff7823444f2ca0}{\$skip}
+\item 
+\hyperlink{classHTMLPurifier__Token_ae6284c7aa38e04e9e2b117e2029ef8c3}{\$rewind}
+\item 
+\hyperlink{classHTMLPurifier__Token_ac83c86cb9f4e65a872bb1b4330224533}{\$carryover}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract base token class that all others inherit from. 
+
+Definition at line 6 of file Token.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classHTMLPurifier__Token_a8c51419f0902e1855b61997fa0e37278}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Token@{H\+T\+M\+L\+Purifier\+\_\+\+Token}!\+\_\+\+\_\+get@{\+\_\+\+\_\+get}}
+\index{\+\_\+\+\_\+get@{\+\_\+\+\_\+get}!H\+T\+M\+L\+Purifier\+\_\+\+Token@{H\+T\+M\+L\+Purifier\+\_\+\+Token}}
+\subsubsection[{\+\_\+\+\_\+get}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Token\+::\+\_\+\+\_\+get (
+\begin{DoxyParamCaption}
+\item[{}]{\$n}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__Token_a8c51419f0902e1855b61997fa0e37278}
+
+
+Definition at line 24 of file Token.\+php.
+
+\hypertarget{classHTMLPurifier__Token_ae5fbc90f102d5a0b754bd1b6206ce59d}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Token@{H\+T\+M\+L\+Purifier\+\_\+\+Token}!position@{position}}
+\index{position@{position}!H\+T\+M\+L\+Purifier\+\_\+\+Token@{H\+T\+M\+L\+Purifier\+\_\+\+Token}}
+\subsubsection[{position}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Token\+::position (
+\begin{DoxyParamCaption}
+\item[{}]{\$l = {\ttfamily null}, }
+\item[{}]{\$c = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__Token_ae5fbc90f102d5a0b754bd1b6206ce59d}
+Sets the position of the token in the source document. 
+
+Definition at line 41 of file Token.\+php.
+
+\hypertarget{classHTMLPurifier__Token_a53f9c2c200d4de64d5453866223a65a3}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Token@{H\+T\+M\+L\+Purifier\+\_\+\+Token}!raw\+Position@{raw\+Position}}
+\index{raw\+Position@{raw\+Position}!H\+T\+M\+L\+Purifier\+\_\+\+Token@{H\+T\+M\+L\+Purifier\+\_\+\+Token}}
+\subsubsection[{raw\+Position}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Token\+::raw\+Position (
+\begin{DoxyParamCaption}
+\item[{}]{\$l, }
+\item[{}]{\$c}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__Token_a53f9c2c200d4de64d5453866223a65a3}
+Convenience function for Direct\+Lex settings line/col position. 
+
+Definition at line 49 of file Token.\+php.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classHTMLPurifier__Token_a3379dcc5aa96a30f90e15b7823cc54db}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Token@{H\+T\+M\+L\+Purifier\+\_\+\+Token}!\$armor@{\$armor}}
+\index{\$armor@{\$armor}!H\+T\+M\+L\+Purifier\+\_\+\+Token@{H\+T\+M\+L\+Purifier\+\_\+\+Token}}
+\subsubsection[{\$armor}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Token\+::\$armor = array()}}\label{classHTMLPurifier__Token_a3379dcc5aa96a30f90e15b7823cc54db}
+Lookup array of processing that this token is exempt from. Currently, valid values are \char`\"{}\+Validate\+Attributes\char`\"{} and \char`\"{}\+Make\+Well\+Formed\+\_\+\+Tag\+Closed\+Error\char`\"{} 
+
+Definition at line 15 of file Token.\+php.
+
+\hypertarget{classHTMLPurifier__Token_ac83c86cb9f4e65a872bb1b4330224533}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Token@{H\+T\+M\+L\+Purifier\+\_\+\+Token}!\$carryover@{\$carryover}}
+\index{\$carryover@{\$carryover}!H\+T\+M\+L\+Purifier\+\_\+\+Token@{H\+T\+M\+L\+Purifier\+\_\+\+Token}}
+\subsubsection[{\$carryover}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Token\+::\$carryover}}\label{classHTMLPurifier__Token_ac83c86cb9f4e65a872bb1b4330224533}
+
+
+Definition at line 22 of file Token.\+php.
+
+\hypertarget{classHTMLPurifier__Token_ae063b7efb1fb056d4abad981d5237a71}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Token@{H\+T\+M\+L\+Purifier\+\_\+\+Token}!\$col@{\$col}}
+\index{\$col@{\$col}!H\+T\+M\+L\+Purifier\+\_\+\+Token@{H\+T\+M\+L\+Purifier\+\_\+\+Token}}
+\subsubsection[{\$col}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Token\+::\$col}}\label{classHTMLPurifier__Token_ae063b7efb1fb056d4abad981d5237a71}
+Column of line node was on in source document. Null if unknown. 
+
+Definition at line 8 of file Token.\+php.
+
+\hypertarget{classHTMLPurifier__Token_a64cba5bdee6d525377b8fe33109122b4}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Token@{H\+T\+M\+L\+Purifier\+\_\+\+Token}!\$line@{\$line}}
+\index{\$line@{\$line}!H\+T\+M\+L\+Purifier\+\_\+\+Token@{H\+T\+M\+L\+Purifier\+\_\+\+Token}}
+\subsubsection[{\$line}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Token\+::\$line}}\label{classHTMLPurifier__Token_a64cba5bdee6d525377b8fe33109122b4}
+Line number node was on in source document. Null if unknown. 
+
+Definition at line 7 of file Token.\+php.
+
+\hypertarget{classHTMLPurifier__Token_ae6284c7aa38e04e9e2b117e2029ef8c3}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Token@{H\+T\+M\+L\+Purifier\+\_\+\+Token}!\$rewind@{\$rewind}}
+\index{\$rewind@{\$rewind}!H\+T\+M\+L\+Purifier\+\_\+\+Token@{H\+T\+M\+L\+Purifier\+\_\+\+Token}}
+\subsubsection[{\$rewind}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Token\+::\$rewind}}\label{classHTMLPurifier__Token_ae6284c7aa38e04e9e2b117e2029ef8c3}
+
+
+Definition at line 21 of file Token.\+php.
+
+\hypertarget{classHTMLPurifier__Token_af7eba36dca16eab138ff7823444f2ca0}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Token@{H\+T\+M\+L\+Purifier\+\_\+\+Token}!\$skip@{\$skip}}
+\index{\$skip@{\$skip}!H\+T\+M\+L\+Purifier\+\_\+\+Token@{H\+T\+M\+L\+Purifier\+\_\+\+Token}}
+\subsubsection[{\$skip}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Token\+::\$skip}}\label{classHTMLPurifier__Token_af7eba36dca16eab138ff7823444f2ca0}
+Used during Make\+Well\+Formed. 
+
+Definition at line 20 of file Token.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+classes/security/htmlpurifier/library/\+H\+T\+M\+L\+Purifier/\hyperlink{Token_8php}{Token.\+php}\end{DoxyCompactItemize}

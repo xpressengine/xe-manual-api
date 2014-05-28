@@ -1,0 +1,55 @@
+\hypertarget{classHTMLPurifier__Strategy__FixNesting}{\section{H\+T\+M\+L\+Purifier\+\_\+\+Strategy\+\_\+\+Fix\+Nesting Class Reference}
+\label{classHTMLPurifier__Strategy__FixNesting}\index{H\+T\+M\+L\+Purifier\+\_\+\+Strategy\+\_\+\+Fix\+Nesting@{H\+T\+M\+L\+Purifier\+\_\+\+Strategy\+\_\+\+Fix\+Nesting}}
+}
+Inheritance diagram for H\+T\+M\+L\+Purifier\+\_\+\+Strategy\+\_\+\+Fix\+Nesting\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classHTMLPurifier__Strategy__FixNesting}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHTMLPurifier__Strategy__FixNesting_acaf931b0a5e7d2af678f986b60e29373}{execute} (\$tokens, \$config, \$context)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Takes a well formed list of tokens and fixes their nesting.
+
+H\+T\+M\+L elements dictate which elements are allowed to be their children, for example, you can't have a p tag in a span tag. Other elements have much more rigorous definitions\+: tables, for instance, require a specific order for their elements. There are also constraints not expressible by document type definitions, such as the chameleon nature of ins/del tags and global child exclusions.
+
+The first major objective of this strategy is to iterate through all the nodes (not tokens) of the list of tokens and determine whether or not their children conform to the element's definition. If they do not, the child definition may optionally supply an amended list of elements that is valid or require that the entire node be deleted (and the previous node rescanned).
+
+The second objective is to ensure that explicitly excluded elements of an element do not appear in its children. Code that accomplishes this task is pervasive through the strategy, though the two are distinct tasks and could, theoretically, be seperated (although it's not recommended).
+
+\begin{DoxyNote}{Note}
+Whether or not unrecognized children are silently dropped or translated into text depends on the child definitions.
+\end{DoxyNote}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000032}{Todo}]Enable nodes to be bubbled out of the structure. \end{DoxyRefDesc}
+
+
+Definition at line 31 of file Fix\+Nesting.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classHTMLPurifier__Strategy__FixNesting_acaf931b0a5e7d2af678f986b60e29373}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Strategy\+\_\+\+Fix\+Nesting@{H\+T\+M\+L\+Purifier\+\_\+\+Strategy\+\_\+\+Fix\+Nesting}!execute@{execute}}
+\index{execute@{execute}!H\+T\+M\+L\+Purifier\+\_\+\+Strategy\+\_\+\+Fix\+Nesting@{H\+T\+M\+L\+Purifier\+\_\+\+Strategy\+\_\+\+Fix\+Nesting}}
+\subsubsection[{execute}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Strategy\+\_\+\+Fix\+Nesting\+::execute (
+\begin{DoxyParamCaption}
+\item[{}]{\$tokens, }
+\item[{}]{\$config, }
+\item[{}]{\$context}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__Strategy__FixNesting_acaf931b0a5e7d2af678f986b60e29373}
+
+
+Definition at line 34 of file Fix\+Nesting.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+classes/security/htmlpurifier/library/\+H\+T\+M\+L\+Purifier/\+Strategy/\hyperlink{FixNesting_8php}{Fix\+Nesting.\+php}\end{DoxyCompactItemize}

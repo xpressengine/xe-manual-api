@@ -1,0 +1,102 @@
+\hypertarget{classHTMLPurifier__PercentEncoder}{\section{H\+T\+M\+L\+Purifier\+\_\+\+Percent\+Encoder Class Reference}
+\label{classHTMLPurifier__PercentEncoder}\index{H\+T\+M\+L\+Purifier\+\_\+\+Percent\+Encoder@{H\+T\+M\+L\+Purifier\+\_\+\+Percent\+Encoder}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHTMLPurifier__PercentEncoder_ac6cd8ef45123e6f5ae5df7ffc71224c7}{\+\_\+\+\_\+construct} (\$preserve=false)
+\item 
+\hyperlink{classHTMLPurifier__PercentEncoder_a4e827d898aa6f814091993c1a4790d37}{encode} (\$string)
+\item 
+\hyperlink{classHTMLPurifier__PercentEncoder_a8faf68165d7746c64e8d4459948a9653}{normalize} (\$string)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHTMLPurifier__PercentEncoder_a671e9bd32d57206df54030b0d57721d6}{\$preserve} = array()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class that handles operations involving percent-\/encoding in U\+R\+Is.
+
+\begin{DoxyWarning}{Warning}
+Be careful when reusing instances of Percent\+Encoder. The object you use for \hyperlink{classHTMLPurifier__PercentEncoder_a8faf68165d7746c64e8d4459948a9653}{normalize()} S\+H\+O\+U\+L\+D N\+O\+T be used for \hyperlink{classHTMLPurifier__PercentEncoder_a4e827d898aa6f814091993c1a4790d37}{encode()}, or vice-\/versa. 
+\end{DoxyWarning}
+
+
+Definition at line 11 of file Percent\+Encoder.\+php.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classHTMLPurifier__PercentEncoder_ac6cd8ef45123e6f5ae5df7ffc71224c7}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Percent\+Encoder@{H\+T\+M\+L\+Purifier\+\_\+\+Percent\+Encoder}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!H\+T\+M\+L\+Purifier\+\_\+\+Percent\+Encoder@{H\+T\+M\+L\+Purifier\+\_\+\+Percent\+Encoder}}
+\subsubsection[{\+\_\+\+\_\+construct}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Percent\+Encoder\+::\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+\item[{}]{\$preserve = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__PercentEncoder_ac6cd8ef45123e6f5ae5df7ffc71224c7}
+String of characters that should be preserved while using \hyperlink{classHTMLPurifier__PercentEncoder_a4e827d898aa6f814091993c1a4790d37}{encode()}. 
+
+Definition at line 22 of file Percent\+Encoder.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classHTMLPurifier__PercentEncoder_a4e827d898aa6f814091993c1a4790d37}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Percent\+Encoder@{H\+T\+M\+L\+Purifier\+\_\+\+Percent\+Encoder}!encode@{encode}}
+\index{encode@{encode}!H\+T\+M\+L\+Purifier\+\_\+\+Percent\+Encoder@{H\+T\+M\+L\+Purifier\+\_\+\+Percent\+Encoder}}
+\subsubsection[{encode}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Percent\+Encoder\+::encode (
+\begin{DoxyParamCaption}
+\item[{}]{\$string}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__PercentEncoder_a4e827d898aa6f814091993c1a4790d37}
+Our replacement for urlencode, it encodes all non-\/reserved characters, as well as any extra characters that were instructed to be preserved. \begin{DoxyNote}{Note}
+Assumes that the string has already been normalized, making any and all percent escape sequences valid. Percents will not be re-\/escaped, regardless of their status in \$preserve 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em \$string} & String to be encoded \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Encoded string. 
+\end{DoxyReturn}
+
+
+Definition at line 50 of file Percent\+Encoder.\+php.
+
+\hypertarget{classHTMLPurifier__PercentEncoder_a8faf68165d7746c64e8d4459948a9653}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Percent\+Encoder@{H\+T\+M\+L\+Purifier\+\_\+\+Percent\+Encoder}!normalize@{normalize}}
+\index{normalize@{normalize}!H\+T\+M\+L\+Purifier\+\_\+\+Percent\+Encoder@{H\+T\+M\+L\+Purifier\+\_\+\+Percent\+Encoder}}
+\subsubsection[{normalize}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Percent\+Encoder\+::normalize (
+\begin{DoxyParamCaption}
+\item[{}]{\$string}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__PercentEncoder_a8faf68165d7746c64e8d4459948a9653}
+Fix up percent-\/encoding by decoding unreserved characters and normalizing. \begin{DoxyWarning}{Warning}
+This function is affected by \$preserve, even though the usual desired behavior is for this not to preserve those characters. Be careful when reusing instances of Percent\+Encoder! 
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em \$string} & String to normalize \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 69 of file Percent\+Encoder.\+php.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classHTMLPurifier__PercentEncoder_a671e9bd32d57206df54030b0d57721d6}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Percent\+Encoder@{H\+T\+M\+L\+Purifier\+\_\+\+Percent\+Encoder}!\$preserve@{\$preserve}}
+\index{\$preserve@{\$preserve}!H\+T\+M\+L\+Purifier\+\_\+\+Percent\+Encoder@{H\+T\+M\+L\+Purifier\+\_\+\+Percent\+Encoder}}
+\subsubsection[{\$preserve}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Percent\+Encoder\+::\$preserve = array()\hspace{0.3cm}{\ttfamily [protected]}}}\label{classHTMLPurifier__PercentEncoder_a671e9bd32d57206df54030b0d57721d6}
+Reserved characters to preserve when using \hyperlink{classHTMLPurifier__PercentEncoder_a4e827d898aa6f814091993c1a4790d37}{encode()}. 
+
+Definition at line 17 of file Percent\+Encoder.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+classes/security/htmlpurifier/library/\+H\+T\+M\+L\+Purifier/\hyperlink{PercentEncoder_8php}{Percent\+Encoder.\+php}\end{DoxyCompactItemize}

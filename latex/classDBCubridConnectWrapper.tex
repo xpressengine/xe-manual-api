@@ -1,0 +1,500 @@
+\hypertarget{classDBCubridConnectWrapper}{\section{D\+B\+Cubrid\+Connect\+Wrapper Class Reference}
+\label{classDBCubridConnectWrapper}\index{D\+B\+Cubrid\+Connect\+Wrapper@{D\+B\+Cubrid\+Connect\+Wrapper}}
+}
+
+
+ 
+
+
+Inheritance diagram for D\+B\+Cubrid\+Connect\+Wrapper\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classDBCubridConnectWrapper}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classDBCubridConnectWrapper_a1fb631b5c64dc57fc47c1edf2a119c07}{\+\_\+\+\_\+construct} ()
+\item 
+\hyperlink{classDBCubridConnectWrapper_a545164e4627865cfb2725a65bcd87605}{create} ()
+\item 
+\hyperlink{classDBCubridConnectWrapper_af8358bd33215f81e51aa8683e3e9d18a}{act\+D\+B\+Class\+Start} ()
+\item 
+\hyperlink{classDBCubridConnectWrapper_a4a25b7180667bba108d9d206d830305d}{act\+Start} (\$query)
+\item 
+\hyperlink{classDBCubridConnectWrapper_ac59c3b74f8eb6c51dd6b2dcc136441ab}{\+\_\+make\+Sequence} ()
+\item 
+\hyperlink{classDBCubridConnectWrapper_a0cc9f50dc8759a5d0d44ef3992654b68}{act\+Finish} ()
+\item 
+\hyperlink{classDBCubridConnectWrapper_aeb7f35fad0a35c3df99eda5ff1c4ef03}{act\+D\+B\+Class\+Finish} ()
+\item 
+\hyperlink{classDBCubridConnectWrapper_a2e0cb434041dab8243f978b7f20b29bf}{is\+Supported} ()
+\item 
+\hyperlink{classDBCubridConnectWrapper_a085ebee6e25b02aab171fa70b7ee0fba}{is\+Table\+Exists} (\$target\+\_\+name)
+\item 
+\hyperlink{classDBCubridConnectWrapper_afb3e68a86eda27de94652eaddfd99954}{\+\_\+\+\_\+connect} (\$connection)
+\item 
+\hyperlink{classDBCubridConnectWrapper_aed3cc4440b05809edba612141c925063}{\+\_\+after\+Connect} (\$connection)
+\item 
+\hyperlink{classDBCubridConnectWrapper_ac55361083a1d02ac4f7b11e58e16ab79}{\+\_\+close} (\$connection)
+\item 
+\hyperlink{classDBCubridConnectWrapper_ae4d82f05776b8db4f968bb21de168f69}{close} (\$type= 'master', \$indx=N\+U\+L\+L)
+\item 
+\hyperlink{classDBCubridConnectWrapper_ae08cdaeed47029a0e43c850781f95ad3}{\+\_\+begin} ()
+\item 
+\hyperlink{classDBCubridConnectWrapper_ade06a2b930f3f7b98d7aa751049ed9b2}{\+\_\+rollback} ()
+\item 
+\hyperlink{classDBCubridConnectWrapper_a9599295a1d4c266d5c35e4a556fe81ce}{\+\_\+commit} ()
+\item 
+\hyperlink{classDBCubridConnectWrapper_a87bc2988be5745c1afa403333d57cd38}{\+\_\+\+\_\+query} (\$query, \$connection)
+\item 
+\hyperlink{classDBCubridConnectWrapper_ac02b952edc791b01253f9c5db2dbcf85}{\+\_\+fetch} (\$result, \$array\+Index\+End\+Value=N\+U\+L\+L)
+\item 
+\hyperlink{classDBCubridConnectWrapper_ae2a7172776b5e9d645ed1bdba55b2180}{db\+\_\+insert\+\_\+id} ()
+\item 
+\& \hyperlink{classDBCubridConnectWrapper_a210e6a694ed2bb6b80d102065393040b}{db\+\_\+fetch\+\_\+object} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classDBCubridConnectWrapper_a81badd33a22bbce8ada6ae0d0d408867}{\$queries} = ''
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 498 of file connect\+\_\+wrapper.\+php.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classDBCubridConnectWrapper_a1fb631b5c64dc57fc47c1edf2a119c07}{\index{D\+B\+Cubrid\+Connect\+Wrapper@{D\+B\+Cubrid\+Connect\+Wrapper}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!D\+B\+Cubrid\+Connect\+Wrapper@{D\+B\+Cubrid\+Connect\+Wrapper}}
+\subsubsection[{\+\_\+\+\_\+construct}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Cubrid\+Connect\+Wrapper\+::\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classDBCubridConnectWrapper_a1fb631b5c64dc57fc47c1edf2a119c07}
+
+
+
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 508 of file connect\+\_\+wrapper.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classDBCubridConnectWrapper_afb3e68a86eda27de94652eaddfd99954}{\index{D\+B\+Cubrid\+Connect\+Wrapper@{D\+B\+Cubrid\+Connect\+Wrapper}!\+\_\+\+\_\+connect@{\+\_\+\+\_\+connect}}
+\index{\+\_\+\+\_\+connect@{\+\_\+\+\_\+connect}!D\+B\+Cubrid\+Connect\+Wrapper@{D\+B\+Cubrid\+Connect\+Wrapper}}
+\subsubsection[{\+\_\+\+\_\+connect}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Cubrid\+Connect\+Wrapper\+::\+\_\+\+\_\+connect (
+\begin{DoxyParamCaption}
+\item[{}]{\$connection}
+\end{DoxyParamCaption}
+)}}\label{classDBCubridConnectWrapper_afb3e68a86eda27de94652eaddfd99954}
+
+
+
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$connection} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 616 of file connect\+\_\+wrapper.\+php.
+
+\hypertarget{classDBCubridConnectWrapper_a87bc2988be5745c1afa403333d57cd38}{\index{D\+B\+Cubrid\+Connect\+Wrapper@{D\+B\+Cubrid\+Connect\+Wrapper}!\+\_\+\+\_\+query@{\+\_\+\+\_\+query}}
+\index{\+\_\+\+\_\+query@{\+\_\+\+\_\+query}!D\+B\+Cubrid\+Connect\+Wrapper@{D\+B\+Cubrid\+Connect\+Wrapper}}
+\subsubsection[{\+\_\+\+\_\+query}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Cubrid\+Connect\+Wrapper\+::\+\_\+\+\_\+query (
+\begin{DoxyParamCaption}
+\item[{}]{\$query, }
+\item[{}]{\$connection}
+\end{DoxyParamCaption}
+)}}\label{classDBCubridConnectWrapper_a87bc2988be5745c1afa403333d57cd38}
+
+
+
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$query} & \\
+\hline
+{\em \$connection} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 696 of file connect\+\_\+wrapper.\+php.
+
+\hypertarget{classDBCubridConnectWrapper_aed3cc4440b05809edba612141c925063}{\index{D\+B\+Cubrid\+Connect\+Wrapper@{D\+B\+Cubrid\+Connect\+Wrapper}!\+\_\+after\+Connect@{\+\_\+after\+Connect}}
+\index{\+\_\+after\+Connect@{\+\_\+after\+Connect}!D\+B\+Cubrid\+Connect\+Wrapper@{D\+B\+Cubrid\+Connect\+Wrapper}}
+\subsubsection[{\+\_\+after\+Connect}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Cubrid\+Connect\+Wrapper\+::\+\_\+after\+Connect (
+\begin{DoxyParamCaption}
+\item[{}]{\$connection}
+\end{DoxyParamCaption}
+)}}\label{classDBCubridConnectWrapper_aed3cc4440b05809edba612141c925063}
+
+
+
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$connection} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 628 of file connect\+\_\+wrapper.\+php.
+
+\hypertarget{classDBCubridConnectWrapper_ae08cdaeed47029a0e43c850781f95ad3}{\index{D\+B\+Cubrid\+Connect\+Wrapper@{D\+B\+Cubrid\+Connect\+Wrapper}!\+\_\+begin@{\+\_\+begin}}
+\index{\+\_\+begin@{\+\_\+begin}!D\+B\+Cubrid\+Connect\+Wrapper@{D\+B\+Cubrid\+Connect\+Wrapper}}
+\subsubsection[{\+\_\+begin}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Cubrid\+Connect\+Wrapper\+::\+\_\+begin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classDBCubridConnectWrapper_ae08cdaeed47029a0e43c850781f95ad3}
+
+
+
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 661 of file connect\+\_\+wrapper.\+php.
+
+\hypertarget{classDBCubridConnectWrapper_ac55361083a1d02ac4f7b11e58e16ab79}{\index{D\+B\+Cubrid\+Connect\+Wrapper@{D\+B\+Cubrid\+Connect\+Wrapper}!\+\_\+close@{\+\_\+close}}
+\index{\+\_\+close@{\+\_\+close}!D\+B\+Cubrid\+Connect\+Wrapper@{D\+B\+Cubrid\+Connect\+Wrapper}}
+\subsubsection[{\+\_\+close}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Cubrid\+Connect\+Wrapper\+::\+\_\+close (
+\begin{DoxyParamCaption}
+\item[{}]{\$connection}
+\end{DoxyParamCaption}
+)}}\label{classDBCubridConnectWrapper_ac55361083a1d02ac4f7b11e58e16ab79}
+
+
+
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$connection} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 639 of file connect\+\_\+wrapper.\+php.
+
+\hypertarget{classDBCubridConnectWrapper_a9599295a1d4c266d5c35e4a556fe81ce}{\index{D\+B\+Cubrid\+Connect\+Wrapper@{D\+B\+Cubrid\+Connect\+Wrapper}!\+\_\+commit@{\+\_\+commit}}
+\index{\+\_\+commit@{\+\_\+commit}!D\+B\+Cubrid\+Connect\+Wrapper@{D\+B\+Cubrid\+Connect\+Wrapper}}
+\subsubsection[{\+\_\+commit}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Cubrid\+Connect\+Wrapper\+::\+\_\+commit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classDBCubridConnectWrapper_a9599295a1d4c266d5c35e4a556fe81ce}
+
+
+
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 683 of file connect\+\_\+wrapper.\+php.
+
+\hypertarget{classDBCubridConnectWrapper_ac02b952edc791b01253f9c5db2dbcf85}{\index{D\+B\+Cubrid\+Connect\+Wrapper@{D\+B\+Cubrid\+Connect\+Wrapper}!\+\_\+fetch@{\+\_\+fetch}}
+\index{\+\_\+fetch@{\+\_\+fetch}!D\+B\+Cubrid\+Connect\+Wrapper@{D\+B\+Cubrid\+Connect\+Wrapper}}
+\subsubsection[{\+\_\+fetch}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Cubrid\+Connect\+Wrapper\+::\+\_\+fetch (
+\begin{DoxyParamCaption}
+\item[{}]{\$result, }
+\item[{}]{\$array\+Index\+End\+Value = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}}\label{classDBCubridConnectWrapper_ac02b952edc791b01253f9c5db2dbcf85}
+
+
+
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$result} & \\
+\hline
+{\em \$array\+Index\+End\+Value} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 711 of file connect\+\_\+wrapper.\+php.
+
+\hypertarget{classDBCubridConnectWrapper_ac59c3b74f8eb6c51dd6b2dcc136441ab}{\index{D\+B\+Cubrid\+Connect\+Wrapper@{D\+B\+Cubrid\+Connect\+Wrapper}!\+\_\+make\+Sequence@{\+\_\+make\+Sequence}}
+\index{\+\_\+make\+Sequence@{\+\_\+make\+Sequence}!D\+B\+Cubrid\+Connect\+Wrapper@{D\+B\+Cubrid\+Connect\+Wrapper}}
+\subsubsection[{\+\_\+make\+Sequence}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Cubrid\+Connect\+Wrapper\+::\+\_\+make\+Sequence (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classDBCubridConnectWrapper_ac59c3b74f8eb6c51dd6b2dcc136441ab}
+
+
+
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 552 of file connect\+\_\+wrapper.\+php.
+
+\hypertarget{classDBCubridConnectWrapper_ade06a2b930f3f7b98d7aa751049ed9b2}{\index{D\+B\+Cubrid\+Connect\+Wrapper@{D\+B\+Cubrid\+Connect\+Wrapper}!\+\_\+rollback@{\+\_\+rollback}}
+\index{\+\_\+rollback@{\+\_\+rollback}!D\+B\+Cubrid\+Connect\+Wrapper@{D\+B\+Cubrid\+Connect\+Wrapper}}
+\subsubsection[{\+\_\+rollback}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Cubrid\+Connect\+Wrapper\+::\+\_\+rollback (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classDBCubridConnectWrapper_ade06a2b930f3f7b98d7aa751049ed9b2}
+
+
+
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 672 of file connect\+\_\+wrapper.\+php.
+
+\hypertarget{classDBCubridConnectWrapper_aeb7f35fad0a35c3df99eda5ff1c4ef03}{\index{D\+B\+Cubrid\+Connect\+Wrapper@{D\+B\+Cubrid\+Connect\+Wrapper}!act\+D\+B\+Class\+Finish@{act\+D\+B\+Class\+Finish}}
+\index{act\+D\+B\+Class\+Finish@{act\+D\+B\+Class\+Finish}!D\+B\+Cubrid\+Connect\+Wrapper@{D\+B\+Cubrid\+Connect\+Wrapper}}
+\subsubsection[{act\+D\+B\+Class\+Finish}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Cubrid\+Connect\+Wrapper\+::act\+D\+B\+Class\+Finish (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classDBCubridConnectWrapper_aeb7f35fad0a35c3df99eda5ff1c4ef03}
+
+
+
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 573 of file connect\+\_\+wrapper.\+php.
+
+\hypertarget{classDBCubridConnectWrapper_af8358bd33215f81e51aa8683e3e9d18a}{\index{D\+B\+Cubrid\+Connect\+Wrapper@{D\+B\+Cubrid\+Connect\+Wrapper}!act\+D\+B\+Class\+Start@{act\+D\+B\+Class\+Start}}
+\index{act\+D\+B\+Class\+Start@{act\+D\+B\+Class\+Start}!D\+B\+Cubrid\+Connect\+Wrapper@{D\+B\+Cubrid\+Connect\+Wrapper}}
+\subsubsection[{act\+D\+B\+Class\+Start}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Cubrid\+Connect\+Wrapper\+::act\+D\+B\+Class\+Start (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classDBCubridConnectWrapper_af8358bd33215f81e51aa8683e3e9d18a}
+
+
+
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 531 of file connect\+\_\+wrapper.\+php.
+
+\hypertarget{classDBCubridConnectWrapper_a0cc9f50dc8759a5d0d44ef3992654b68}{\index{D\+B\+Cubrid\+Connect\+Wrapper@{D\+B\+Cubrid\+Connect\+Wrapper}!act\+Finish@{act\+Finish}}
+\index{act\+Finish@{act\+Finish}!D\+B\+Cubrid\+Connect\+Wrapper@{D\+B\+Cubrid\+Connect\+Wrapper}}
+\subsubsection[{act\+Finish}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Cubrid\+Connect\+Wrapper\+::act\+Finish (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classDBCubridConnectWrapper_a0cc9f50dc8759a5d0d44ef3992654b68}
+
+
+
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 563 of file connect\+\_\+wrapper.\+php.
+
+\hypertarget{classDBCubridConnectWrapper_a4a25b7180667bba108d9d206d830305d}{\index{D\+B\+Cubrid\+Connect\+Wrapper@{D\+B\+Cubrid\+Connect\+Wrapper}!act\+Start@{act\+Start}}
+\index{act\+Start@{act\+Start}!D\+B\+Cubrid\+Connect\+Wrapper@{D\+B\+Cubrid\+Connect\+Wrapper}}
+\subsubsection[{act\+Start}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Cubrid\+Connect\+Wrapper\+::act\+Start (
+\begin{DoxyParamCaption}
+\item[{}]{\$query}
+\end{DoxyParamCaption}
+)}}\label{classDBCubridConnectWrapper_a4a25b7180667bba108d9d206d830305d}
+
+
+
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$query} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 542 of file connect\+\_\+wrapper.\+php.
+
+\hypertarget{classDBCubridConnectWrapper_ae4d82f05776b8db4f968bb21de168f69}{\index{D\+B\+Cubrid\+Connect\+Wrapper@{D\+B\+Cubrid\+Connect\+Wrapper}!close@{close}}
+\index{close@{close}!D\+B\+Cubrid\+Connect\+Wrapper@{D\+B\+Cubrid\+Connect\+Wrapper}}
+\subsubsection[{close}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Cubrid\+Connect\+Wrapper\+::close (
+\begin{DoxyParamCaption}
+\item[{}]{\$type = {\ttfamily 'master'}, }
+\item[{}]{\$indx = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}}\label{classDBCubridConnectWrapper_ae4d82f05776b8db4f968bb21de168f69}
+
+
+
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$type} & \\
+\hline
+{\em \$indx} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 651 of file connect\+\_\+wrapper.\+php.
+
+\hypertarget{classDBCubridConnectWrapper_a545164e4627865cfb2725a65bcd87605}{\index{D\+B\+Cubrid\+Connect\+Wrapper@{D\+B\+Cubrid\+Connect\+Wrapper}!create@{create}}
+\index{create@{create}!D\+B\+Cubrid\+Connect\+Wrapper@{D\+B\+Cubrid\+Connect\+Wrapper}}
+\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Cubrid\+Connect\+Wrapper\+::create (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classDBCubridConnectWrapper_a545164e4627865cfb2725a65bcd87605}
+
+
+
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 520 of file connect\+\_\+wrapper.\+php.
+
+\hypertarget{classDBCubridConnectWrapper_a210e6a694ed2bb6b80d102065393040b}{\index{D\+B\+Cubrid\+Connect\+Wrapper@{D\+B\+Cubrid\+Connect\+Wrapper}!db\+\_\+fetch\+\_\+object@{db\+\_\+fetch\+\_\+object}}
+\index{db\+\_\+fetch\+\_\+object@{db\+\_\+fetch\+\_\+object}!D\+B\+Cubrid\+Connect\+Wrapper@{D\+B\+Cubrid\+Connect\+Wrapper}}
+\subsubsection[{db\+\_\+fetch\+\_\+object}]{\setlength{\rightskip}{0pt plus 5cm}\& D\+B\+Cubrid\+Connect\+Wrapper\+::db\+\_\+fetch\+\_\+object (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classDBCubridConnectWrapper_a210e6a694ed2bb6b80d102065393040b}
+
+
+
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 733 of file connect\+\_\+wrapper.\+php.
+
+\hypertarget{classDBCubridConnectWrapper_ae2a7172776b5e9d645ed1bdba55b2180}{\index{D\+B\+Cubrid\+Connect\+Wrapper@{D\+B\+Cubrid\+Connect\+Wrapper}!db\+\_\+insert\+\_\+id@{db\+\_\+insert\+\_\+id}}
+\index{db\+\_\+insert\+\_\+id@{db\+\_\+insert\+\_\+id}!D\+B\+Cubrid\+Connect\+Wrapper@{D\+B\+Cubrid\+Connect\+Wrapper}}
+\subsubsection[{db\+\_\+insert\+\_\+id}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Cubrid\+Connect\+Wrapper\+::db\+\_\+insert\+\_\+id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classDBCubridConnectWrapper_ae2a7172776b5e9d645ed1bdba55b2180}
+
+
+
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 722 of file connect\+\_\+wrapper.\+php.
+
+\hypertarget{classDBCubridConnectWrapper_a2e0cb434041dab8243f978b7f20b29bf}{\index{D\+B\+Cubrid\+Connect\+Wrapper@{D\+B\+Cubrid\+Connect\+Wrapper}!is\+Supported@{is\+Supported}}
+\index{is\+Supported@{is\+Supported}!D\+B\+Cubrid\+Connect\+Wrapper@{D\+B\+Cubrid\+Connect\+Wrapper}}
+\subsubsection[{is\+Supported}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Cubrid\+Connect\+Wrapper\+::is\+Supported (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classDBCubridConnectWrapper_a2e0cb434041dab8243f978b7f20b29bf}
+
+
+
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 583 of file connect\+\_\+wrapper.\+php.
+
+\hypertarget{classDBCubridConnectWrapper_a085ebee6e25b02aab171fa70b7ee0fba}{\index{D\+B\+Cubrid\+Connect\+Wrapper@{D\+B\+Cubrid\+Connect\+Wrapper}!is\+Table\+Exists@{is\+Table\+Exists}}
+\index{is\+Table\+Exists@{is\+Table\+Exists}!D\+B\+Cubrid\+Connect\+Wrapper@{D\+B\+Cubrid\+Connect\+Wrapper}}
+\subsubsection[{is\+Table\+Exists}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Cubrid\+Connect\+Wrapper\+::is\+Table\+Exists (
+\begin{DoxyParamCaption}
+\item[{}]{\$target\+\_\+name}
+\end{DoxyParamCaption}
+)}}\label{classDBCubridConnectWrapper_a085ebee6e25b02aab171fa70b7ee0fba}
+
+
+
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$target\+\_\+name} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 596 of file connect\+\_\+wrapper.\+php.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classDBCubridConnectWrapper_a81badd33a22bbce8ada6ae0d0d408867}{\index{D\+B\+Cubrid\+Connect\+Wrapper@{D\+B\+Cubrid\+Connect\+Wrapper}!\$queries@{\$queries}}
+\index{\$queries@{\$queries}!D\+B\+Cubrid\+Connect\+Wrapper@{D\+B\+Cubrid\+Connect\+Wrapper}}
+\subsubsection[{\$queries}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Cubrid\+Connect\+Wrapper\+::\$queries = ''}}\label{classDBCubridConnectWrapper_a81badd33a22bbce8ada6ae0d0d408867}
+
+
+Definition at line 500 of file connect\+\_\+wrapper.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+tools/dbxml\+\_\+validator/\hyperlink{connect__wrapper_8php}{connect\+\_\+wrapper.\+php}\end{DoxyCompactItemize}

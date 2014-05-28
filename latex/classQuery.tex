@@ -1,0 +1,744 @@
+\hypertarget{classQuery}{\section{Query Class Reference}
+\label{classQuery}\index{Query@{Query}}
+}
+Inheritance diagram for Query\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classQuery}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classQuery_a18345a4b454ee480c261c15c4338768e}{Query} (\$query\+I\+D=N\+U\+L\+L, \$action=N\+U\+L\+L, \$columns=N\+U\+L\+L, \$tables=N\+U\+L\+L, \$conditions=N\+U\+L\+L, \$groups=N\+U\+L\+L, \$orderby=N\+U\+L\+L, \$\hyperlink{classQuery_af2e290d02d3e8c157f9b85b9da1ac08c}{limit}=N\+U\+L\+L, \$priority=N\+U\+L\+L)
+\item 
+\hyperlink{classQuery_ab191941325776f3475aeea910167a116}{show} ()
+\item 
+\hyperlink{classQuery_aad02b39cd751359208514261f7d320d3}{set\+Query\+Id} (\$query\+I\+D)
+\item 
+\hyperlink{classQuery_a7039862d8a88c94733b4ffabd655ade6}{set\+Action} (\$action)
+\item 
+\hyperlink{classQuery_a6bb27fe96006304e408d51171301c4b9}{set\+Priority} (\$priority)
+\item 
+\hyperlink{classQuery_a514b84890d27f9252a9002f562b17654}{set\+Column\+List} (\$column\+List)
+\item 
+\hyperlink{classQuery_a2437f6f8524dfc487794270a11778388}{set\+Columns} (\$columns)
+\item 
+\hyperlink{classQuery_a883baff577719a7108a3acc202d2db00}{set\+Tables} (\$tables)
+\item 
+\hyperlink{classQuery_a98af3910bfaf6ed001572c954f28e1a5}{set\+Subquery} (\$subquery)
+\item 
+\hyperlink{classQuery_a5355ddd61a8e4dc129f5f3dd24d39bc9}{set\+Conditions} (\$conditions)
+\item 
+\hyperlink{classQuery_ab32d5ecb27ebf9facac7ba9c28fc22f6}{set\+Groups} (\$groups)
+\item 
+\hyperlink{classQuery_a712d4ae76fa0efafa198d2e1fe23a222}{set\+Order} (\$order)
+\item 
+\hyperlink{classQuery_a41f8624567819ead73e5b57935e526c7}{get\+Order} ()
+\item 
+\hyperlink{classQuery_a16a55fd5666868a39a7a93f7b98d4de0}{set\+Limit} (\$\hyperlink{classQuery_af2e290d02d3e8c157f9b85b9da1ac08c}{limit}=N\+U\+L\+L)
+\item 
+\hyperlink{classQuery_a90a4c6f16abc24f107cd9cbc8db6baea}{select} (\$columns=N\+U\+L\+L)
+\item 
+\hyperlink{classQuery_a8c48087275e1fb408298c5c6295bbf20}{from} (\$tables)
+\item 
+\hyperlink{classQuery_a0ed9a48e6619d83211d0b81907fa8d6b}{where} (\$conditions)
+\item 
+\hyperlink{classQuery_afeca4abb4534e8aa58db00dac98e7082}{group\+By} (\$groups)
+\item 
+\hyperlink{classQuery_a47d03784bf5f79d270e0f56f9ada6560}{order\+By} (\$order)
+\item 
+\hyperlink{classQuery_af2e290d02d3e8c157f9b85b9da1ac08c}{limit} (\$limit)
+\item 
+\hyperlink{classQuery_af51085dc05333d2a51cda11152c51b31}{get\+Action} ()
+\item 
+\hyperlink{classQuery_a7c2b595ce97f0845360e21a5e8e1216d}{get\+Priority} ()
+\item 
+\hyperlink{classQuery_ab0f5afff51d19f0f5478055dcb16c2c0}{uses\+Click\+Count} ()
+\item 
+\hyperlink{classQuery_ab762a676eb3b0a5f78b3bccd04af233f}{get\+Click\+Count\+Columns} ()
+\item 
+\hyperlink{classQuery_a85639a8e09af498d2cb4eaf61a94aa25}{get\+Select\+String} (\$with\+\_\+values=T\+R\+U\+E)
+\item 
+\hyperlink{classQuery_ad322b30b75af5b7b2e0c0ab17f30cc9d}{get\+Update\+String} (\$with\+\_\+values=T\+R\+U\+E)
+\item 
+\hyperlink{classQuery_a9e51002db6dbd8743dc9395a42d1d2dc}{get\+Insert\+String} (\$with\+\_\+values=T\+R\+U\+E)
+\item 
+\hyperlink{classQuery_a123bec7835d39656ce7acd1daec43a17}{get\+Tables} ()
+\item 
+\hyperlink{classQuery_a804cc37929736e0fea414721b90af410}{get\+From\+String} (\$with\+\_\+values=T\+R\+U\+E)
+\item 
+\hyperlink{classQuery_a975ad40c838d8073790091800a458ff3}{get\+Where\+String} (\$with\+\_\+values=T\+R\+U\+E, \$with\+\_\+optimization=T\+R\+U\+E)
+\item 
+\hyperlink{classQuery_ab5a30b706a9e963bf638409a567ff8d9}{get\+Group\+By\+String} ()
+\item 
+\hyperlink{classQuery_a43b8446cd8699978988b8ea0bc2642dd}{get\+Order\+By\+String} ()
+\item 
+\hyperlink{classQuery_a4ce13762176a83bd5b79e162dded72c9}{get\+Limit} ()
+\item 
+\hyperlink{classQuery_a693e75de6fb7cfbc07f73792ac800246}{get\+Limit\+String} ()
+\item 
+\hyperlink{classQuery_a440208634d58f7dbbf6c5220133b21c0}{get\+First\+Table\+Name} ()
+\item 
+\hyperlink{classQuery_af50db41315e7cd2b0c05040933905d11}{get\+Arguments} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classQuery_a67666b2fcd6c60e73d8329f7d22044dc}{\$query\+I\+D}
+\item 
+\hyperlink{classQuery_a62c36010085369fc0508ea548660be9f}{\$action}
+\item 
+\hyperlink{classQuery_a4d64f61fd525a70ebc2aaa6ab8291e20}{\$priority}
+\item 
+\hyperlink{classQuery_a7cf97254cbd55fdbb9e149723498d9ba}{\$columns}
+\item 
+\hyperlink{classQuery_a5c74163d1615b141456b123c11fa9d92}{\$tables}
+\item 
+\hyperlink{classQuery_a5c71d786a82b2cc014968d2553b6bc9d}{\$conditions}
+\item 
+\hyperlink{classQuery_a76992fbfae6d700e65dfde28911a2475}{\$groups}
+\item 
+\hyperlink{classQuery_aa955216a83dfe57cdd9600b44b38ebac}{\$orderby}
+\item 
+\hyperlink{classQuery_abe481cf8b7f42b513a4f64cf7fb0ffea}{\$limit}
+\item 
+\hyperlink{classQuery_a49166e3c5f5198e4b899c8ee47b6258a}{\$arguments} = N\+U\+L\+L
+\item 
+\hyperlink{classQuery_a113bcdfdc3bf6acef684a06ae324334a}{\$column\+List} = N\+U\+L\+L
+\item 
+\hyperlink{classQuery_aaf035e5cfac7afe46163a6ba4c55c34b}{\$\+\_\+order\+By\+String}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 9 of file Query.\+class.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classQuery_a8c48087275e1fb408298c5c6295bbf20}{\index{Query@{Query}!from@{from}}
+\index{from@{from}!Query@{Query}}
+\subsubsection[{from}]{\setlength{\rightskip}{0pt plus 5cm}Query\+::from (
+\begin{DoxyParamCaption}
+\item[{}]{\$tables}
+\end{DoxyParamCaption}
+)}}\label{classQuery_a8c48087275e1fb408298c5c6295bbf20}
+from set 
+\begin{DoxyParams}[1]{Parameters}
+string | array & {\em \$tables} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classQuery}{Query} return \hyperlink{classQuery}{Query} instance 
+\end{DoxyReturn}
+
+
+Definition at line 281 of file Query.\+class.\+php.
+
+\hypertarget{classQuery_af51085dc05333d2a51cda11152c51b31}{\index{Query@{Query}!get\+Action@{get\+Action}}
+\index{get\+Action@{get\+Action}!Query@{Query}}
+\subsubsection[{get\+Action}]{\setlength{\rightskip}{0pt plus 5cm}Query\+::get\+Action (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classQuery_af51085dc05333d2a51cda11152c51b31}
+
+
+Definition at line 333 of file Query.\+class.\+php.
+
+\hypertarget{classQuery_af50db41315e7cd2b0c05040933905d11}{\index{Query@{Query}!get\+Arguments@{get\+Arguments}}
+\index{get\+Arguments@{get\+Arguments}!Query@{Query}}
+\subsubsection[{get\+Arguments}]{\setlength{\rightskip}{0pt plus 5cm}Query\+::get\+Arguments (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classQuery_af50db41315e7cd2b0c05040933905d11}
+Return argument list \begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Definition at line 607 of file Query.\+class.\+php.
+
+\hypertarget{classQuery_ab762a676eb3b0a5f78b3bccd04af233f}{\index{Query@{Query}!get\+Click\+Count\+Columns@{get\+Click\+Count\+Columns}}
+\index{get\+Click\+Count\+Columns@{get\+Click\+Count\+Columns}!Query@{Query}}
+\subsubsection[{get\+Click\+Count\+Columns}]{\setlength{\rightskip}{0pt plus 5cm}Query\+::get\+Click\+Count\+Columns (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classQuery_ab762a676eb3b0a5f78b3bccd04af233f}
+
+
+Definition at line 354 of file Query.\+class.\+php.
+
+\hypertarget{classQuery_a440208634d58f7dbbf6c5220133b21c0}{\index{Query@{Query}!get\+First\+Table\+Name@{get\+First\+Table\+Name}}
+\index{get\+First\+Table\+Name@{get\+First\+Table\+Name}!Query@{Query}}
+\subsubsection[{get\+First\+Table\+Name}]{\setlength{\rightskip}{0pt plus 5cm}Query\+::get\+First\+Table\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classQuery_a440208634d58f7dbbf6c5220133b21c0}
+
+
+Definition at line 598 of file Query.\+class.\+php.
+
+\hypertarget{classQuery_a804cc37929736e0fea414721b90af410}{\index{Query@{Query}!get\+From\+String@{get\+From\+String}}
+\index{get\+From\+String@{get\+From\+String}!Query@{Query}}
+\subsubsection[{get\+From\+String}]{\setlength{\rightskip}{0pt plus 5cm}Query\+::get\+From\+String (
+\begin{DoxyParamCaption}
+\item[{}]{\$with\+\_\+values = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+)}}\label{classQuery_a804cc37929736e0fea414721b90af410}
+from table\+\_\+a from table\+\_\+a inner join table\+\_\+b on x=y from (select $\ast$ from table a) as x from (select $\ast$ from table t) as x inner join table y on y.\+x 
+\begin{DoxyParams}[1]{Parameters}
+boolean & {\em \$with\+\_\+values} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 459 of file Query.\+class.\+php.
+
+\hypertarget{classQuery_ab5a30b706a9e963bf638409a567ff8d9}{\index{Query@{Query}!get\+Group\+By\+String@{get\+Group\+By\+String}}
+\index{get\+Group\+By\+String@{get\+Group\+By\+String}!Query@{Query}}
+\subsubsection[{get\+Group\+By\+String}]{\setlength{\rightskip}{0pt plus 5cm}Query\+::get\+Group\+By\+String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classQuery_ab5a30b706a9e963bf638409a567ff8d9}
+Return groupby sql \begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 542 of file Query.\+class.\+php.
+
+\hypertarget{classQuery_a9e51002db6dbd8743dc9395a42d1d2dc}{\index{Query@{Query}!get\+Insert\+String@{get\+Insert\+String}}
+\index{get\+Insert\+String@{get\+Insert\+String}!Query@{Query}}
+\subsubsection[{get\+Insert\+String}]{\setlength{\rightskip}{0pt plus 5cm}Query\+::get\+Insert\+String (
+\begin{DoxyParamCaption}
+\item[{}]{\$with\+\_\+values = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+)}}\label{classQuery_a9e51002db6dbd8743dc9395a42d1d2dc}
+Return insert sql 
+\begin{DoxyParams}[1]{Parameters}
+boolean & {\em \$with\+\_\+values} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 415 of file Query.\+class.\+php.
+
+\hypertarget{classQuery_a4ce13762176a83bd5b79e162dded72c9}{\index{Query@{Query}!get\+Limit@{get\+Limit}}
+\index{get\+Limit@{get\+Limit}!Query@{Query}}
+\subsubsection[{get\+Limit}]{\setlength{\rightskip}{0pt plus 5cm}Query\+::get\+Limit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classQuery_a4ce13762176a83bd5b79e162dded72c9}
+
+
+Definition at line 578 of file Query.\+class.\+php.
+
+\hypertarget{classQuery_a693e75de6fb7cfbc07f73792ac800246}{\index{Query@{Query}!get\+Limit\+String@{get\+Limit\+String}}
+\index{get\+Limit\+String@{get\+Limit\+String}!Query@{Query}}
+\subsubsection[{get\+Limit\+String}]{\setlength{\rightskip}{0pt plus 5cm}Query\+::get\+Limit\+String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classQuery_a693e75de6fb7cfbc07f73792ac800246}
+Return limit sql \begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 587 of file Query.\+class.\+php.
+
+\hypertarget{classQuery_a41f8624567819ead73e5b57935e526c7}{\index{Query@{Query}!get\+Order@{get\+Order}}
+\index{get\+Order@{get\+Order}!Query@{Query}}
+\subsubsection[{get\+Order}]{\setlength{\rightskip}{0pt plus 5cm}Query\+::get\+Order (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classQuery_a41f8624567819ead73e5b57935e526c7}
+
+
+Definition at line 249 of file Query.\+class.\+php.
+
+\hypertarget{classQuery_a43b8446cd8699978988b8ea0bc2642dd}{\index{Query@{Query}!get\+Order\+By\+String@{get\+Order\+By\+String}}
+\index{get\+Order\+By\+String@{get\+Order\+By\+String}!Query@{Query}}
+\subsubsection[{get\+Order\+By\+String}]{\setlength{\rightskip}{0pt plus 5cm}Query\+::get\+Order\+By\+String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classQuery_a43b8446cd8699978988b8ea0bc2642dd}
+Return orderby sql \begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 559 of file Query.\+class.\+php.
+
+\hypertarget{classQuery_a7c2b595ce97f0845360e21a5e8e1216d}{\index{Query@{Query}!get\+Priority@{get\+Priority}}
+\index{get\+Priority@{get\+Priority}!Query@{Query}}
+\subsubsection[{get\+Priority}]{\setlength{\rightskip}{0pt plus 5cm}Query\+::get\+Priority (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classQuery_a7c2b595ce97f0845360e21a5e8e1216d}
+
+
+Definition at line 338 of file Query.\+class.\+php.
+
+\hypertarget{classQuery_a85639a8e09af498d2cb4eaf61a94aa25}{\index{Query@{Query}!get\+Select\+String@{get\+Select\+String}}
+\index{get\+Select\+String@{get\+Select\+String}!Query@{Query}}
+\subsubsection[{get\+Select\+String}]{\setlength{\rightskip}{0pt plus 5cm}Query\+::get\+Select\+String (
+\begin{DoxyParamCaption}
+\item[{}]{\$with\+\_\+values = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+)}}\label{classQuery_a85639a8e09af498d2cb4eaf61a94aa25}
+Return select sql 
+\begin{DoxyParams}[1]{Parameters}
+boolean & {\em \$with\+\_\+values} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 372 of file Query.\+class.\+php.
+
+\hypertarget{classQuery_a123bec7835d39656ce7acd1daec43a17}{\index{Query@{Query}!get\+Tables@{get\+Tables}}
+\index{get\+Tables@{get\+Tables}!Query@{Query}}
+\subsubsection[{get\+Tables}]{\setlength{\rightskip}{0pt plus 5cm}Query\+::get\+Tables (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classQuery_a123bec7835d39656ce7acd1daec43a17}
+
+
+Definition at line 446 of file Query.\+class.\+php.
+
+\hypertarget{classQuery_ad322b30b75af5b7b2e0c0ab17f30cc9d}{\index{Query@{Query}!get\+Update\+String@{get\+Update\+String}}
+\index{get\+Update\+String@{get\+Update\+String}!Query@{Query}}
+\subsubsection[{get\+Update\+String}]{\setlength{\rightskip}{0pt plus 5cm}Query\+::get\+Update\+String (
+\begin{DoxyParamCaption}
+\item[{}]{\$with\+\_\+values = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+)}}\label{classQuery_ad322b30b75af5b7b2e0c0ab17f30cc9d}
+Return update sql 
+\begin{DoxyParams}[1]{Parameters}
+boolean & {\em \$with\+\_\+values} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 396 of file Query.\+class.\+php.
+
+\hypertarget{classQuery_a975ad40c838d8073790091800a458ff3}{\index{Query@{Query}!get\+Where\+String@{get\+Where\+String}}
+\index{get\+Where\+String@{get\+Where\+String}!Query@{Query}}
+\subsubsection[{get\+Where\+String}]{\setlength{\rightskip}{0pt plus 5cm}Query\+::get\+Where\+String (
+\begin{DoxyParamCaption}
+\item[{}]{\$with\+\_\+values = {\ttfamily TRUE}, }
+\item[{}]{\$with\+\_\+optimization = {\ttfamily TRUE}}
+\end{DoxyParamCaption}
+)}}\label{classQuery_a975ad40c838d8073790091800a458ff3}
+Return where sql 
+\begin{DoxyParams}[1]{Parameters}
+boolean & {\em \$with\+\_\+values} & \\
+\hline
+boolean & {\em \$with\+\_\+optimization} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 494 of file Query.\+class.\+php.
+
+\hypertarget{classQuery_afeca4abb4534e8aa58db00dac98e7082}{\index{Query@{Query}!group\+By@{group\+By}}
+\index{group\+By@{group\+By}!Query@{Query}}
+\subsubsection[{group\+By}]{\setlength{\rightskip}{0pt plus 5cm}Query\+::group\+By (
+\begin{DoxyParamCaption}
+\item[{}]{\$groups}
+\end{DoxyParamCaption}
+)}}\label{classQuery_afeca4abb4534e8aa58db00dac98e7082}
+group\+By set 
+\begin{DoxyParams}[1]{Parameters}
+string | array & {\em \$groups} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classQuery}{Query} return \hyperlink{classQuery}{Query} instance 
+\end{DoxyReturn}
+
+
+Definition at line 303 of file Query.\+class.\+php.
+
+\hypertarget{classQuery_af2e290d02d3e8c157f9b85b9da1ac08c}{\index{Query@{Query}!limit@{limit}}
+\index{limit@{limit}!Query@{Query}}
+\subsubsection[{limit}]{\setlength{\rightskip}{0pt plus 5cm}Query\+::limit (
+\begin{DoxyParamCaption}
+\item[{}]{\$limit}
+\end{DoxyParamCaption}
+)}}\label{classQuery_af2e290d02d3e8c157f9b85b9da1ac08c}
+limit set 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$limit} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classQuery}{Query} return \hyperlink{classQuery}{Query} instance 
+\end{DoxyReturn}
+
+
+Definition at line 325 of file Query.\+class.\+php.
+
+\hypertarget{classQuery_a47d03784bf5f79d270e0f56f9ada6560}{\index{Query@{Query}!order\+By@{order\+By}}
+\index{order\+By@{order\+By}!Query@{Query}}
+\subsubsection[{order\+By}]{\setlength{\rightskip}{0pt plus 5cm}Query\+::order\+By (
+\begin{DoxyParamCaption}
+\item[{}]{\$order}
+\end{DoxyParamCaption}
+)}}\label{classQuery_a47d03784bf5f79d270e0f56f9ada6560}
+order\+By set 
+\begin{DoxyParams}[1]{Parameters}
+string | array & {\em \$order} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classQuery}{Query} return \hyperlink{classQuery}{Query} instance 
+\end{DoxyReturn}
+
+
+Definition at line 314 of file Query.\+class.\+php.
+
+\hypertarget{classQuery_a18345a4b454ee480c261c15c4338768e}{\index{Query@{Query}!Query@{Query}}
+\index{Query@{Query}!Query@{Query}}
+\subsubsection[{Query}]{\setlength{\rightskip}{0pt plus 5cm}Query\+::\+Query (
+\begin{DoxyParamCaption}
+\item[{}]{\$query\+I\+D = {\ttfamily NULL}, }
+\item[{}]{\$action = {\ttfamily NULL}, }
+\item[{}]{\$columns = {\ttfamily NULL}, }
+\item[{}]{\$tables = {\ttfamily NULL}, }
+\item[{}]{\$conditions = {\ttfamily NULL}, }
+\item[{}]{\$groups = {\ttfamily NULL}, }
+\item[{}]{\$orderby = {\ttfamily NULL}, }
+\item[{}]{\$limit = {\ttfamily NULL}, }
+\item[{}]{\$priority = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}}\label{classQuery_a18345a4b454ee480c261c15c4338768e}
+constructor 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$query\+I\+D} & \\
+\hline
+string & {\em \$action} & \\
+\hline
+string | array & {\em \$columns} & \\
+\hline
+string | array & {\em \$tables} & \\
+\hline
+string | array & {\em \$conditions} & \\
+\hline
+string | array & {\em \$groups} & \\
+\hline
+string | array & {\em \$orderby} & \\
+\hline
+int & {\em \$limit} & \\
+\hline
+string & {\em \$priority} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 97 of file Query.\+class.\+php.
+
+\hypertarget{classQuery_a90a4c6f16abc24f107cd9cbc8db6baea}{\index{Query@{Query}!select@{select}}
+\index{select@{select}!Query@{Query}}
+\subsubsection[{select}]{\setlength{\rightskip}{0pt plus 5cm}Query\+::select (
+\begin{DoxyParamCaption}
+\item[{}]{\$columns = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}}\label{classQuery_a90a4c6f16abc24f107cd9cbc8db6baea}
+seleect set 
+\begin{DoxyParams}[1]{Parameters}
+string | array & {\em \$columns} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classQuery}{Query} return \hyperlink{classQuery}{Query} instance 
+\end{DoxyReturn}
+
+
+Definition at line 269 of file Query.\+class.\+php.
+
+\hypertarget{classQuery_a7039862d8a88c94733b4ffabd655ade6}{\index{Query@{Query}!set\+Action@{set\+Action}}
+\index{set\+Action@{set\+Action}!Query@{Query}}
+\subsubsection[{set\+Action}]{\setlength{\rightskip}{0pt plus 5cm}Query\+::set\+Action (
+\begin{DoxyParamCaption}
+\item[{}]{\$action}
+\end{DoxyParamCaption}
+)}}\label{classQuery_a7039862d8a88c94733b4ffabd655ade6}
+
+
+Definition at line 134 of file Query.\+class.\+php.
+
+\hypertarget{classQuery_a514b84890d27f9252a9002f562b17654}{\index{Query@{Query}!set\+Column\+List@{set\+Column\+List}}
+\index{set\+Column\+List@{set\+Column\+List}!Query@{Query}}
+\subsubsection[{set\+Column\+List}]{\setlength{\rightskip}{0pt plus 5cm}Query\+::set\+Column\+List (
+\begin{DoxyParamCaption}
+\item[{}]{\$column\+List}
+\end{DoxyParamCaption}
+)}}\label{classQuery_a514b84890d27f9252a9002f562b17654}
+
+
+Definition at line 144 of file Query.\+class.\+php.
+
+\hypertarget{classQuery_a2437f6f8524dfc487794270a11778388}{\index{Query@{Query}!set\+Columns@{set\+Columns}}
+\index{set\+Columns@{set\+Columns}!Query@{Query}}
+\subsubsection[{set\+Columns}]{\setlength{\rightskip}{0pt plus 5cm}Query\+::set\+Columns (
+\begin{DoxyParamCaption}
+\item[{}]{\$columns}
+\end{DoxyParamCaption}
+)}}\label{classQuery_a2437f6f8524dfc487794270a11778388}
+
+
+Definition at line 162 of file Query.\+class.\+php.
+
+\hypertarget{classQuery_a5355ddd61a8e4dc129f5f3dd24d39bc9}{\index{Query@{Query}!set\+Conditions@{set\+Conditions}}
+\index{set\+Conditions@{set\+Conditions}!Query@{Query}}
+\subsubsection[{set\+Conditions}]{\setlength{\rightskip}{0pt plus 5cm}Query\+::set\+Conditions (
+\begin{DoxyParamCaption}
+\item[{}]{\$conditions}
+\end{DoxyParamCaption}
+)}}\label{classQuery_a5355ddd61a8e4dc129f5f3dd24d39bc9}
+
+
+Definition at line 200 of file Query.\+class.\+php.
+
+\hypertarget{classQuery_ab32d5ecb27ebf9facac7ba9c28fc22f6}{\index{Query@{Query}!set\+Groups@{set\+Groups}}
+\index{set\+Groups@{set\+Groups}!Query@{Query}}
+\subsubsection[{set\+Groups}]{\setlength{\rightskip}{0pt plus 5cm}Query\+::set\+Groups (
+\begin{DoxyParamCaption}
+\item[{}]{\$groups}
+\end{DoxyParamCaption}
+)}}\label{classQuery_ab32d5ecb27ebf9facac7ba9c28fc22f6}
+
+
+Definition at line 221 of file Query.\+class.\+php.
+
+\hypertarget{classQuery_a16a55fd5666868a39a7a93f7b98d4de0}{\index{Query@{Query}!set\+Limit@{set\+Limit}}
+\index{set\+Limit@{set\+Limit}!Query@{Query}}
+\subsubsection[{set\+Limit}]{\setlength{\rightskip}{0pt plus 5cm}Query\+::set\+Limit (
+\begin{DoxyParamCaption}
+\item[{}]{\$limit = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}}\label{classQuery_a16a55fd5666868a39a7a93f7b98d4de0}
+
+
+Definition at line 254 of file Query.\+class.\+php.
+
+\hypertarget{classQuery_a712d4ae76fa0efafa198d2e1fe23a222}{\index{Query@{Query}!set\+Order@{set\+Order}}
+\index{set\+Order@{set\+Order}!Query@{Query}}
+\subsubsection[{set\+Order}]{\setlength{\rightskip}{0pt plus 5cm}Query\+::set\+Order (
+\begin{DoxyParamCaption}
+\item[{}]{\$order}
+\end{DoxyParamCaption}
+)}}\label{classQuery_a712d4ae76fa0efafa198d2e1fe23a222}
+
+
+Definition at line 235 of file Query.\+class.\+php.
+
+\hypertarget{classQuery_a6bb27fe96006304e408d51171301c4b9}{\index{Query@{Query}!set\+Priority@{set\+Priority}}
+\index{set\+Priority@{set\+Priority}!Query@{Query}}
+\subsubsection[{set\+Priority}]{\setlength{\rightskip}{0pt plus 5cm}Query\+::set\+Priority (
+\begin{DoxyParamCaption}
+\item[{}]{\$priority}
+\end{DoxyParamCaption}
+)}}\label{classQuery_a6bb27fe96006304e408d51171301c4b9}
+
+
+Definition at line 139 of file Query.\+class.\+php.
+
+\hypertarget{classQuery_aad02b39cd751359208514261f7d320d3}{\index{Query@{Query}!set\+Query\+Id@{set\+Query\+Id}}
+\index{set\+Query\+Id@{set\+Query\+Id}!Query@{Query}}
+\subsubsection[{set\+Query\+Id}]{\setlength{\rightskip}{0pt plus 5cm}Query\+::set\+Query\+Id (
+\begin{DoxyParamCaption}
+\item[{}]{\$query\+I\+D}
+\end{DoxyParamCaption}
+)}}\label{classQuery_aad02b39cd751359208514261f7d320d3}
+
+
+Definition at line 129 of file Query.\+class.\+php.
+
+\hypertarget{classQuery_a98af3910bfaf6ed001572c954f28e1a5}{\index{Query@{Query}!set\+Subquery@{set\+Subquery}}
+\index{set\+Subquery@{set\+Subquery}!Query@{Query}}
+\subsubsection[{set\+Subquery}]{\setlength{\rightskip}{0pt plus 5cm}Query\+::set\+Subquery (
+\begin{DoxyParamCaption}
+\item[{}]{\$subquery}
+\end{DoxyParamCaption}
+)}}\label{classQuery_a98af3910bfaf6ed001572c954f28e1a5}
+
+
+Definition at line 195 of file Query.\+class.\+php.
+
+\hypertarget{classQuery_a883baff577719a7108a3acc202d2db00}{\index{Query@{Query}!set\+Tables@{set\+Tables}}
+\index{set\+Tables@{set\+Tables}!Query@{Query}}
+\subsubsection[{set\+Tables}]{\setlength{\rightskip}{0pt plus 5cm}Query\+::set\+Tables (
+\begin{DoxyParamCaption}
+\item[{}]{\$tables}
+\end{DoxyParamCaption}
+)}}\label{classQuery_a883baff577719a7108a3acc202d2db00}
+
+
+Definition at line 178 of file Query.\+class.\+php.
+
+\hypertarget{classQuery_ab191941325776f3475aeea910167a116}{\index{Query@{Query}!show@{show}}
+\index{show@{show}!Query@{Query}}
+\subsubsection[{show}]{\setlength{\rightskip}{0pt plus 5cm}Query\+::show (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classQuery_ab191941325776f3475aeea910167a116}
+
+
+Definition at line 124 of file Query.\+class.\+php.
+
+\hypertarget{classQuery_ab0f5afff51d19f0f5478055dcb16c2c0}{\index{Query@{Query}!uses\+Click\+Count@{uses\+Click\+Count}}
+\index{uses\+Click\+Count@{uses\+Click\+Count}!Query@{Query}}
+\subsubsection[{uses\+Click\+Count}]{\setlength{\rightskip}{0pt plus 5cm}Query\+::uses\+Click\+Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classQuery_ab0f5afff51d19f0f5478055dcb16c2c0}
+Check if current query uses the click count attribute For C\+U\+B\+R\+I\+D, this statement uses the click count feature. For the other databases, using this attribute causes a query to produce both a select and an update 
+
+Definition at line 349 of file Query.\+class.\+php.
+
+\hypertarget{classQuery_a0ed9a48e6619d83211d0b81907fa8d6b}{\index{Query@{Query}!where@{where}}
+\index{where@{where}!Query@{Query}}
+\subsubsection[{where}]{\setlength{\rightskip}{0pt plus 5cm}Query\+::where (
+\begin{DoxyParamCaption}
+\item[{}]{\$conditions}
+\end{DoxyParamCaption}
+)}}\label{classQuery_a0ed9a48e6619d83211d0b81907fa8d6b}
+where set 
+\begin{DoxyParams}[1]{Parameters}
+string | array & {\em \$conditions} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classQuery}{Query} return \hyperlink{classQuery}{Query} instance 
+\end{DoxyReturn}
+
+
+Definition at line 292 of file Query.\+class.\+php.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classQuery_aaf035e5cfac7afe46163a6ba4c55c34b}{\index{Query@{Query}!\$\+\_\+order\+By\+String@{\$\+\_\+order\+By\+String}}
+\index{\$\+\_\+order\+By\+String@{\$\+\_\+order\+By\+String}!Query@{Query}}
+\subsubsection[{\$\+\_\+order\+By\+String}]{\setlength{\rightskip}{0pt plus 5cm}Query\+::\$\+\_\+order\+By\+String}}\label{classQuery_aaf035e5cfac7afe46163a6ba4c55c34b}
+
+
+Definition at line 82 of file Query.\+class.\+php.
+
+\hypertarget{classQuery_a62c36010085369fc0508ea548660be9f}{\index{Query@{Query}!\$action@{\$action}}
+\index{\$action@{\$action}!Query@{Query}}
+\subsubsection[{\$action}]{\setlength{\rightskip}{0pt plus 5cm}Query\+::\$action}}\label{classQuery_a62c36010085369fc0508ea548660be9f}
+
+
+Definition at line 22 of file Query.\+class.\+php.
+
+\hypertarget{classQuery_a49166e3c5f5198e4b899c8ee47b6258a}{\index{Query@{Query}!\$arguments@{\$arguments}}
+\index{\$arguments@{\$arguments}!Query@{Query}}
+\subsubsection[{\$arguments}]{\setlength{\rightskip}{0pt plus 5cm}Query\+::\$arguments = N\+U\+L\+L}}\label{classQuery_a49166e3c5f5198e4b899c8ee47b6258a}
+
+
+Definition at line 70 of file Query.\+class.\+php.
+
+\hypertarget{classQuery_a113bcdfdc3bf6acef684a06ae324334a}{\index{Query@{Query}!\$column\+List@{\$column\+List}}
+\index{\$column\+List@{\$column\+List}!Query@{Query}}
+\subsubsection[{\$column\+List}]{\setlength{\rightskip}{0pt plus 5cm}Query\+::\$column\+List = N\+U\+L\+L}}\label{classQuery_a113bcdfdc3bf6acef684a06ae324334a}
+
+
+Definition at line 76 of file Query.\+class.\+php.
+
+\hypertarget{classQuery_a7cf97254cbd55fdbb9e149723498d9ba}{\index{Query@{Query}!\$columns@{\$columns}}
+\index{\$columns@{\$columns}!Query@{Query}}
+\subsubsection[{\$columns}]{\setlength{\rightskip}{0pt plus 5cm}Query\+::\$columns}}\label{classQuery_a7cf97254cbd55fdbb9e149723498d9ba}
+
+
+Definition at line 34 of file Query.\+class.\+php.
+
+\hypertarget{classQuery_a5c71d786a82b2cc014968d2553b6bc9d}{\index{Query@{Query}!\$conditions@{\$conditions}}
+\index{\$conditions@{\$conditions}!Query@{Query}}
+\subsubsection[{\$conditions}]{\setlength{\rightskip}{0pt plus 5cm}Query\+::\$conditions}}\label{classQuery_a5c71d786a82b2cc014968d2553b6bc9d}
+
+
+Definition at line 46 of file Query.\+class.\+php.
+
+\hypertarget{classQuery_a76992fbfae6d700e65dfde28911a2475}{\index{Query@{Query}!\$groups@{\$groups}}
+\index{\$groups@{\$groups}!Query@{Query}}
+\subsubsection[{\$groups}]{\setlength{\rightskip}{0pt plus 5cm}Query\+::\$groups}}\label{classQuery_a76992fbfae6d700e65dfde28911a2475}
+
+
+Definition at line 52 of file Query.\+class.\+php.
+
+\hypertarget{classQuery_abe481cf8b7f42b513a4f64cf7fb0ffea}{\index{Query@{Query}!\$limit@{\$limit}}
+\index{\$limit@{\$limit}!Query@{Query}}
+\subsubsection[{\$limit}]{\setlength{\rightskip}{0pt plus 5cm}Query\+::\$limit}}\label{classQuery_abe481cf8b7f42b513a4f64cf7fb0ffea}
+
+
+Definition at line 64 of file Query.\+class.\+php.
+
+\hypertarget{classQuery_aa955216a83dfe57cdd9600b44b38ebac}{\index{Query@{Query}!\$orderby@{\$orderby}}
+\index{\$orderby@{\$orderby}!Query@{Query}}
+\subsubsection[{\$orderby}]{\setlength{\rightskip}{0pt plus 5cm}Query\+::\$orderby}}\label{classQuery_aa955216a83dfe57cdd9600b44b38ebac}
+
+
+Definition at line 58 of file Query.\+class.\+php.
+
+\hypertarget{classQuery_a4d64f61fd525a70ebc2aaa6ab8291e20}{\index{Query@{Query}!\$priority@{\$priority}}
+\index{\$priority@{\$priority}!Query@{Query}}
+\subsubsection[{\$priority}]{\setlength{\rightskip}{0pt plus 5cm}Query\+::\$priority}}\label{classQuery_a4d64f61fd525a70ebc2aaa6ab8291e20}
+
+
+Definition at line 28 of file Query.\+class.\+php.
+
+\hypertarget{classQuery_a67666b2fcd6c60e73d8329f7d22044dc}{\index{Query@{Query}!\$query\+I\+D@{\$query\+I\+D}}
+\index{\$query\+I\+D@{\$query\+I\+D}!Query@{Query}}
+\subsubsection[{\$query\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}Query\+::\$query\+I\+D}}\label{classQuery_a67666b2fcd6c60e73d8329f7d22044dc}
+
+
+Definition at line 16 of file Query.\+class.\+php.
+
+\hypertarget{classQuery_a5c74163d1615b141456b123c11fa9d92}{\index{Query@{Query}!\$tables@{\$tables}}
+\index{\$tables@{\$tables}!Query@{Query}}
+\subsubsection[{\$tables}]{\setlength{\rightskip}{0pt plus 5cm}Query\+::\$tables}}\label{classQuery_a5c74163d1615b141456b123c11fa9d92}
+
+
+Definition at line 40 of file Query.\+class.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+classes/db/queryparts/\hyperlink{Query_8class_8php}{Query.\+class.\+php}\end{DoxyCompactItemize}

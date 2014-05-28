@@ -1,0 +1,274 @@
+\hypertarget{classHTMLPurifier__HTMLModuleManager}{\section{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager Class Reference}
+\label{classHTMLPurifier__HTMLModuleManager}\index{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHTMLPurifier__HTMLModuleManager_ab4cf47bc757a0945f1f863be6af70817}{\+\_\+\+\_\+construct} ()
+\item 
+\hyperlink{classHTMLPurifier__HTMLModuleManager_ac91cb089402a19c3257ddab318d5a315}{register\+Module} (\$\hyperlink{classmodule}{module}, \$overload=false)
+\item 
+\hyperlink{classHTMLPurifier__HTMLModuleManager_a4431aef113f408e637230870a06f1d6a}{add\+Module} (\$\hyperlink{classmodule}{module})
+\item 
+\hyperlink{classHTMLPurifier__HTMLModuleManager_ae71327a3f4d2ef1bdb245e0472943904}{add\+Prefix} (\$prefix)
+\item 
+\hyperlink{classHTMLPurifier__HTMLModuleManager_a231d31b028783d14a737518593a56ab8}{setup} (\$config)
+\item 
+\hyperlink{classHTMLPurifier__HTMLModuleManager_a8270448d8f0db95d3edd97e50c39567d}{process\+Module} (\$\hyperlink{classmodule}{module})
+\item 
+\hyperlink{classHTMLPurifier__HTMLModuleManager_a5b85d28bdcb0ec465475a078a6b0c982}{get\+Elements} ()
+\item 
+\hyperlink{classHTMLPurifier__HTMLModuleManager_a3d228475c622633648fc0d92174d26bd}{get\+Element} (\$name, \$trusted=null)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHTMLPurifier__HTMLModuleManager_a94b1b82d8a2873995d6f0e7348e960d0}{\$doctypes}
+\item 
+\hyperlink{classHTMLPurifier__HTMLModuleManager_aaeffccf938152286738d5c3466eae2b5}{\$doctype}
+\item 
+\hyperlink{classHTMLPurifier__HTMLModuleManager_ae71132f5eb2e1999b9c2e9d19a00da77}{\$attr\+Types}
+\item 
+\hyperlink{classHTMLPurifier__HTMLModuleManager_a1dad6984fd384aa80f545c0323e8b18f}{\$modules} = array()
+\item 
+\hyperlink{classHTMLPurifier__HTMLModuleManager_ac7baacae235048bc75eeb962de4fd096}{\$registered\+Modules} = array()
+\item 
+\hyperlink{classHTMLPurifier__HTMLModuleManager_acb5e35e4049e59fda2f13e974211f420}{\$user\+Modules} = array()
+\item 
+\hyperlink{classHTMLPurifier__HTMLModuleManager_a9e6c47d3f347bb0d09116b4ac5fce29e}{\$element\+Lookup} = array()
+\item 
+\hyperlink{classHTMLPurifier__HTMLModuleManager_ada129f26d42ceea1c83cd771b0fdb261}{\$prefixes} = array('H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+\_\+')
+\item 
+\hyperlink{classHTMLPurifier__HTMLModuleManager_aa756a5b18c58d609963a2302e5c569a1}{\$content\+Sets}
+\item 
+\hyperlink{classHTMLPurifier__HTMLModuleManager_a8c0860d983146ac2086afb8cc4fefbd1}{\$attr\+Collections}
+\item 
+\hyperlink{classHTMLPurifier__HTMLModuleManager_ac672c14e87065bab6cbc76edcda40315}{\$trusted} = false
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 3 of file H\+T\+M\+L\+Module\+Manager.\+php.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classHTMLPurifier__HTMLModuleManager_ab4cf47bc757a0945f1f863be6af70817}{\index{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager}}
+\subsubsection[{\+\_\+\+\_\+construct}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager\+::\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__HTMLModuleManager_ab4cf47bc757a0945f1f863be6af70817}
+
+
+Definition at line 56 of file H\+T\+M\+L\+Module\+Manager.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classHTMLPurifier__HTMLModuleManager_a4431aef113f408e637230870a06f1d6a}{\index{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager}!add\+Module@{add\+Module}}
+\index{add\+Module@{add\+Module}!H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager}}
+\subsubsection[{add\+Module}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager\+::add\+Module (
+\begin{DoxyParamCaption}
+\item[{}]{\$module}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__HTMLModuleManager_a4431aef113f408e637230870a06f1d6a}
+Adds a module to the current doctype by first registering it, and then tacking it on to the active doctype 
+
+Definition at line 183 of file H\+T\+M\+L\+Module\+Manager.\+php.
+
+\hypertarget{classHTMLPurifier__HTMLModuleManager_ae71327a3f4d2ef1bdb245e0472943904}{\index{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager}!add\+Prefix@{add\+Prefix}}
+\index{add\+Prefix@{add\+Prefix}!H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager}}
+\subsubsection[{add\+Prefix}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager\+::add\+Prefix (
+\begin{DoxyParamCaption}
+\item[{}]{\$prefix}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__HTMLModuleManager_ae71327a3f4d2ef1bdb245e0472943904}
+Adds a class prefix that \hyperlink{classHTMLPurifier__HTMLModuleManager_ac91cb089402a19c3257ddab318d5a315}{register\+Module()} will use to resolve a string name to a concrete class 
+
+Definition at line 193 of file H\+T\+M\+L\+Module\+Manager.\+php.
+
+\hypertarget{classHTMLPurifier__HTMLModuleManager_a3d228475c622633648fc0d92174d26bd}{\index{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager}!get\+Element@{get\+Element}}
+\index{get\+Element@{get\+Element}!H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager}}
+\subsubsection[{get\+Element}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager\+::get\+Element (
+\begin{DoxyParamCaption}
+\item[{}]{\$name, }
+\item[{}]{\$trusted = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__HTMLModuleManager_a3d228475c622633648fc0d92174d26bd}
+Retrieves a single merged element definition 
+\begin{DoxyParams}{Parameters}
+{\em \$name} & Name of element \\
+\hline
+{\em \$trusted} & Boolean trusted overriding parameter\+: set to true if you want the full version of an element \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Merged \hyperlink{classHTMLPurifier__ElementDef}{H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def} 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+You may notice that modules are getting iterated over twice (once in \hyperlink{classHTMLPurifier__HTMLModuleManager_a5b85d28bdcb0ec465475a078a6b0c982}{get\+Elements()} and once here). This is because 
+\end{DoxyNote}
+
+
+Definition at line 335 of file H\+T\+M\+L\+Module\+Manager.\+php.
+
+\hypertarget{classHTMLPurifier__HTMLModuleManager_a5b85d28bdcb0ec465475a078a6b0c982}{\index{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager}!get\+Elements@{get\+Elements}}
+\index{get\+Elements@{get\+Elements}!H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager}}
+\subsubsection[{get\+Elements}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager\+::get\+Elements (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__HTMLModuleManager_a5b85d28bdcb0ec465475a078a6b0c982}
+Retrieves merged element definitions. \begin{DoxyReturn}{Returns}
+Array of \hyperlink{classHTMLPurifier__ElementDef}{H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def} 
+\end{DoxyReturn}
+
+
+Definition at line 304 of file H\+T\+M\+L\+Module\+Manager.\+php.
+
+\hypertarget{classHTMLPurifier__HTMLModuleManager_a8270448d8f0db95d3edd97e50c39567d}{\index{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager}!process\+Module@{process\+Module}}
+\index{process\+Module@{process\+Module}!H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager}}
+\subsubsection[{process\+Module}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager\+::process\+Module (
+\begin{DoxyParamCaption}
+\item[{}]{\$module}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__HTMLModuleManager_a8270448d8f0db95d3edd97e50c39567d}
+Takes a module and adds it to the active module collection, registering it if necessary. 
+
+Definition at line 293 of file H\+T\+M\+L\+Module\+Manager.\+php.
+
+\hypertarget{classHTMLPurifier__HTMLModuleManager_ac91cb089402a19c3257ddab318d5a315}{\index{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager}!register\+Module@{register\+Module}}
+\index{register\+Module@{register\+Module}!H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager}}
+\subsubsection[{register\+Module}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager\+::register\+Module (
+\begin{DoxyParamCaption}
+\item[{}]{\$module, }
+\item[{}]{\$overload = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__HTMLModuleManager_ac91cb089402a19c3257ddab318d5a315}
+Registers a module to the recognized module list, useful for overloading pre-\/existing modules. 
+\begin{DoxyParams}{Parameters}
+{\em \$module} & Mixed\+: string module name, with or without \hyperlink{classHTMLPurifier__HTMLModule}{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module} prefix, or instance of subclass of \hyperlink{classHTMLPurifier__HTMLModule}{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module}. \\
+\hline
+{\em \$overload} & Boolean whether or not to overload previous modules. If this is not set, and you do overload a module, H\+T\+M\+L \hyperlink{classPurifier}{Purifier} will complain with a warning. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This function will not call autoload, you must instantiate (and thus invoke) autoload outside the method. 
+
+If a string is passed as a module name, different variants will be tested in this order\+:
+\begin{DoxyItemize}
+\item Check for H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+\_\+\$name
+\item Check all prefixes with \$name in order they were added
+\item Check for literal object name
+\item Throw fatal error If your object name collides with an internal class, specify your module manually. All modules must have been included externally\+: register\+Module will not perform inclusions for you! 
+\end{DoxyItemize}
+\end{DoxyNote}
+
+
+Definition at line 147 of file H\+T\+M\+L\+Module\+Manager.\+php.
+
+\hypertarget{classHTMLPurifier__HTMLModuleManager_a231d31b028783d14a737518593a56ab8}{\index{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager}!setup@{setup}}
+\index{setup@{setup}!H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager}}
+\subsubsection[{setup}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager\+::setup (
+\begin{DoxyParamCaption}
+\item[{}]{\$config}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__HTMLModuleManager_a231d31b028783d14a737518593a56ab8}
+Performs processing on modules, after being called you may use \hyperlink{classHTMLPurifier__HTMLModuleManager_a3d228475c622633648fc0d92174d26bd}{get\+Element()} and \hyperlink{classHTMLPurifier__HTMLModuleManager_a5b85d28bdcb0ec465475a078a6b0c982}{get\+Elements()} 
+\begin{DoxyParams}{Parameters}
+{\em \$config} & Instance of \hyperlink{classHTMLPurifier__Config}{H\+T\+M\+L\+Purifier\+\_\+\+Config} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 202 of file H\+T\+M\+L\+Module\+Manager.\+php.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classHTMLPurifier__HTMLModuleManager_a8c0860d983146ac2086afb8cc4fefbd1}{\index{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager}!\$attr\+Collections@{\$attr\+Collections}}
+\index{\$attr\+Collections@{\$attr\+Collections}!H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager}}
+\subsubsection[{\$attr\+Collections}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager\+::\$attr\+Collections}}\label{classHTMLPurifier__HTMLModuleManager_a8c0860d983146ac2086afb8cc4fefbd1}
+Instance of \hyperlink{classHTMLPurifier__AttrCollections}{H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Collections} 
+
+Definition at line 51 of file H\+T\+M\+L\+Module\+Manager.\+php.
+
+\hypertarget{classHTMLPurifier__HTMLModuleManager_ae71132f5eb2e1999b9c2e9d19a00da77}{\index{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager}!\$attr\+Types@{\$attr\+Types}}
+\index{\$attr\+Types@{\$attr\+Types}!H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager}}
+\subsubsection[{\$attr\+Types}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager\+::\$attr\+Types}}\label{classHTMLPurifier__HTMLModuleManager_ae71132f5eb2e1999b9c2e9d19a00da77}
+Instance of \hyperlink{classHTMLPurifier__AttrTypes}{H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Types} 
+
+Definition at line 19 of file H\+T\+M\+L\+Module\+Manager.\+php.
+
+\hypertarget{classHTMLPurifier__HTMLModuleManager_aa756a5b18c58d609963a2302e5c569a1}{\index{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager}!\$content\+Sets@{\$content\+Sets}}
+\index{\$content\+Sets@{\$content\+Sets}!H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager}}
+\subsubsection[{\$content\+Sets}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager\+::\$content\+Sets}}\label{classHTMLPurifier__HTMLModuleManager_aa756a5b18c58d609963a2302e5c569a1}
+Instance of \hyperlink{classHTMLPurifier__ContentSets}{H\+T\+M\+L\+Purifier\+\_\+\+Content\+Sets} 
+
+Definition at line 50 of file H\+T\+M\+L\+Module\+Manager.\+php.
+
+\hypertarget{classHTMLPurifier__HTMLModuleManager_aaeffccf938152286738d5c3466eae2b5}{\index{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager}!\$doctype@{\$doctype}}
+\index{\$doctype@{\$doctype}!H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager}}
+\subsubsection[{\$doctype}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager\+::\$doctype}}\label{classHTMLPurifier__HTMLModuleManager_aaeffccf938152286738d5c3466eae2b5}
+Instance of current doctype 
+
+Definition at line 14 of file H\+T\+M\+L\+Module\+Manager.\+php.
+
+\hypertarget{classHTMLPurifier__HTMLModuleManager_a94b1b82d8a2873995d6f0e7348e960d0}{\index{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager}!\$doctypes@{\$doctypes}}
+\index{\$doctypes@{\$doctypes}!H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager}}
+\subsubsection[{\$doctypes}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager\+::\$doctypes}}\label{classHTMLPurifier__HTMLModuleManager_a94b1b82d8a2873995d6f0e7348e960d0}
+Instance of \hyperlink{classHTMLPurifier__DoctypeRegistry}{H\+T\+M\+L\+Purifier\+\_\+\+Doctype\+Registry} 
+
+Definition at line 9 of file H\+T\+M\+L\+Module\+Manager.\+php.
+
+\hypertarget{classHTMLPurifier__HTMLModuleManager_a9e6c47d3f347bb0d09116b4ac5fce29e}{\index{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager}!\$element\+Lookup@{\$element\+Lookup}}
+\index{\$element\+Lookup@{\$element\+Lookup}!H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager}}
+\subsubsection[{\$element\+Lookup}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager\+::\$element\+Lookup = array()}}\label{classHTMLPurifier__HTMLModuleManager_a9e6c47d3f347bb0d09116b4ac5fce29e}
+Associative array of element name to list of modules that have definitions for the element; this array is dynamically filled. 
+
+Definition at line 45 of file H\+T\+M\+L\+Module\+Manager.\+php.
+
+\hypertarget{classHTMLPurifier__HTMLModuleManager_a1dad6984fd384aa80f545c0323e8b18f}{\index{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager}!\$modules@{\$modules}}
+\index{\$modules@{\$modules}!H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager}}
+\subsubsection[{\$modules}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager\+::\$modules = array()}}\label{classHTMLPurifier__HTMLModuleManager_a1dad6984fd384aa80f545c0323e8b18f}
+Active instances of modules for the specified doctype are indexed, by name, in this array. 
+
+Definition at line 25 of file H\+T\+M\+L\+Module\+Manager.\+php.
+
+\hypertarget{classHTMLPurifier__HTMLModuleManager_ada129f26d42ceea1c83cd771b0fdb261}{\index{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager}!\$prefixes@{\$prefixes}}
+\index{\$prefixes@{\$prefixes}!H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager}}
+\subsubsection[{\$prefixes}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager\+::\$prefixes = array('H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+\_\+')}}\label{classHTMLPurifier__HTMLModuleManager_ada129f26d42ceea1c83cd771b0fdb261}
+List of prefixes we should use for registering small names 
+
+Definition at line 48 of file H\+T\+M\+L\+Module\+Manager.\+php.
+
+\hypertarget{classHTMLPurifier__HTMLModuleManager_ac7baacae235048bc75eeb962de4fd096}{\index{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager}!\$registered\+Modules@{\$registered\+Modules}}
+\index{\$registered\+Modules@{\$registered\+Modules}!H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager}}
+\subsubsection[{\$registered\+Modules}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager\+::\$registered\+Modules = array()}}\label{classHTMLPurifier__HTMLModuleManager_ac7baacae235048bc75eeb962de4fd096}
+Array of recognized H\+T\+M\+L\+Purifier\+\_\+\+Module instances, indexed by module's class name. This array is usually lazy loaded, but a user can overload a module by pre-\/emptively registering it. 
+
+Definition at line 32 of file H\+T\+M\+L\+Module\+Manager.\+php.
+
+\hypertarget{classHTMLPurifier__HTMLModuleManager_ac672c14e87065bab6cbc76edcda40315}{\index{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager}!\$trusted@{\$trusted}}
+\index{\$trusted@{\$trusted}!H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager}}
+\subsubsection[{\$trusted}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager\+::\$trusted = false}}\label{classHTMLPurifier__HTMLModuleManager_ac672c14e87065bab6cbc76edcda40315}
+If set to true, unsafe elements and attributes will be allowed 
+
+Definition at line 54 of file H\+T\+M\+L\+Module\+Manager.\+php.
+
+\hypertarget{classHTMLPurifier__HTMLModuleManager_acb5e35e4049e59fda2f13e974211f420}{\index{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager}!\$user\+Modules@{\$user\+Modules}}
+\index{\$user\+Modules@{\$user\+Modules}!H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager}}
+\subsubsection[{\$user\+Modules}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+Manager\+::\$user\+Modules = array()}}\label{classHTMLPurifier__HTMLModuleManager_acb5e35e4049e59fda2f13e974211f420}
+List of extra modules that were added by the user using \hyperlink{classHTMLPurifier__HTMLModuleManager_a4431aef113f408e637230870a06f1d6a}{add\+Module()}. These get unconditionally merged into the current doctype, whatever it may be. 
+
+Definition at line 39 of file H\+T\+M\+L\+Module\+Manager.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+classes/security/htmlpurifier/library/\+H\+T\+M\+L\+Purifier/\hyperlink{HTMLModuleManager_8php}{H\+T\+M\+L\+Module\+Manager.\+php}\end{DoxyCompactItemize}

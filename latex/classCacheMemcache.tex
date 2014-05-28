@@ -1,0 +1,292 @@
+\hypertarget{classCacheMemcache}{\section{Cache\+Memcache Class Reference}
+\label{classCacheMemcache}\index{Cache\+Memcache@{Cache\+Memcache}}
+}
+Inheritance diagram for Cache\+Memcache\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCacheMemcache}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCacheMemcache_a951aa78ba49fdb971def3e2bb8b7db2e}{get\+Instance} (\$url)
+\item 
+\hyperlink{classCacheMemcache_ac4810e2e11716523e49df5a14b2fc215}{Cache\+Memcache} (\$url)
+\item 
+\hyperlink{classCacheMemcache_a4ea35bdd7cc26faa01996dbbc162720f}{is\+Support} ()
+\item 
+\hyperlink{classCacheMemcache_a27f400a936cc3efb152acc12edb379e1}{get\+Key} (\$key)
+\item 
+\hyperlink{classCacheMemcache_aaf8fbd3ad05138296cb522fe8c133017}{put} (\$key, \$buff, \$valid\+\_\+time=0)
+\item 
+\hyperlink{classCacheMemcache_af0882957fc5b20e7fb70aeae652920e8}{is\+Valid} (\$key, \$modified\+\_\+time=0)
+\item 
+\hyperlink{classCacheMemcache_a9a3db7b30c229677ce7c331aa41f9e9a}{get} (\$key, \$modified\+\_\+time=0)
+\item 
+\hyperlink{classCacheMemcache_aca057fd092e1a938410a20e16d2d2d7f}{delete} (\$key)
+\item 
+\hyperlink{classCacheMemcache_a8ac0c5d0703aaeaabec2c478984d43fa}{\+\_\+delete} (\$\+\_\+key)
+\item 
+\hyperlink{classCacheMemcache_a064b47c5872cde9ff686b148bf005849}{truncate} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCacheMemcache_a56ac8c11dec3851aee654babe49d20f8}{\$\+Memcache}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Cache class for memcache
+
+\begin{DoxyAuthor}{Author}
+N\+A\+V\+E\+R (\href{mailto:developer@xpressengine.com}{\tt developer@xpressengine.\+com}) 
+\end{DoxyAuthor}
+
+
+Definition at line 9 of file Cache\+Memcache.\+class.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classCacheMemcache_a8ac0c5d0703aaeaabec2c478984d43fa}{\index{Cache\+Memcache@{Cache\+Memcache}!\+\_\+delete@{\+\_\+delete}}
+\index{\+\_\+delete@{\+\_\+delete}!Cache\+Memcache@{Cache\+Memcache}}
+\subsubsection[{\+\_\+delete}]{\setlength{\rightskip}{0pt plus 5cm}Cache\+Memcache\+::\+\_\+delete (
+\begin{DoxyParamCaption}
+\item[{}]{\$\+\_\+key}
+\end{DoxyParamCaption}
+)}}\label{classCacheMemcache_a8ac0c5d0703aaeaabec2c478984d43fa}
+Delete item from the server(private)
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classCacheMemcache_aca057fd092e1a938410a20e16d2d2d7f}{Cache\+Memcache\+::delete()} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$\+\_\+key} & The key associated with the item to delete. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 193 of file Cache\+Memcache.\+class.\+php.
+
+\hypertarget{classCacheMemcache_ac4810e2e11716523e49df5a14b2fc215}{\index{Cache\+Memcache@{Cache\+Memcache}!Cache\+Memcache@{Cache\+Memcache}}
+\index{Cache\+Memcache@{Cache\+Memcache}!Cache\+Memcache@{Cache\+Memcache}}
+\subsubsection[{Cache\+Memcache}]{\setlength{\rightskip}{0pt plus 5cm}Cache\+Memcache\+::\+Cache\+Memcache (
+\begin{DoxyParamCaption}
+\item[{}]{\$url}
+\end{DoxyParamCaption}
+)}}\label{classCacheMemcache_ac4810e2e11716523e49df5a14b2fc215}
+Construct
+
+Do not use this directly. You can use \hyperlink{classCacheMemcache_a951aa78ba49fdb971def3e2bb8b7db2e}{get\+Instance()} instead. 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$url} & url of memcache \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 39 of file Cache\+Memcache.\+class.\+php.
+
+\hypertarget{classCacheMemcache_aca057fd092e1a938410a20e16d2d2d7f}{\index{Cache\+Memcache@{Cache\+Memcache}!delete@{delete}}
+\index{delete@{delete}!Cache\+Memcache@{Cache\+Memcache}}
+\subsubsection[{delete}]{\setlength{\rightskip}{0pt plus 5cm}Cache\+Memcache\+::delete (
+\begin{DoxyParamCaption}
+\item[{}]{\$key}
+\end{DoxyParamCaption}
+)}}\label{classCacheMemcache_aca057fd092e1a938410a20e16d2d2d7f}
+Delete item from the server
+
+\hyperlink{classCacheMemcache_aca057fd092e1a938410a20e16d2d2d7f}{Cache\+Memcache\+::delete()} deletes an item with tey \$key.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & The key associated with the item to delete. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 180 of file Cache\+Memcache.\+class.\+php.
+
+\hypertarget{classCacheMemcache_a9a3db7b30c229677ce7c331aa41f9e9a}{\index{Cache\+Memcache@{Cache\+Memcache}!get@{get}}
+\index{get@{get}!Cache\+Memcache@{Cache\+Memcache}}
+\subsubsection[{get}]{\setlength{\rightskip}{0pt plus 5cm}Cache\+Memcache\+::get (
+\begin{DoxyParamCaption}
+\item[{}]{\$key, }
+\item[{}]{\$modified\+\_\+time = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classCacheMemcache_a9a3db7b30c229677ce7c331aa41f9e9a}
+Retrieve item from the server
+
+\hyperlink{classCacheMemcache_a9a3db7b30c229677ce7c331aa41f9e9a}{Cache\+Memcache\+::get()} returns previously stored data if an item with such \$key exists on the server at this moment.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & The key to fetch \\
+\hline
+int & {\em \$modified\+\_\+time} & Unix time of data modified. If stored time is older then modified time, return false. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false$\vert$mixed Return false on failure or older then modified time. Return the string associated with the \$key on success. 
+\end{DoxyReturn}
+
+
+Definition at line 152 of file Cache\+Memcache.\+class.\+php.
+
+\hypertarget{classCacheMemcache_a951aa78ba49fdb971def3e2bb8b7db2e}{\index{Cache\+Memcache@{Cache\+Memcache}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!Cache\+Memcache@{Cache\+Memcache}}
+\subsubsection[{get\+Instance}]{\setlength{\rightskip}{0pt plus 5cm}Cache\+Memcache\+::get\+Instance (
+\begin{DoxyParamCaption}
+\item[{}]{\$url}
+\end{DoxyParamCaption}
+)}}\label{classCacheMemcache_a951aa78ba49fdb971def3e2bb8b7db2e}
+Get instance of \hyperlink{classCacheMemcache}{Cache\+Memcache}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$url} & url of memcache \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classCacheMemcache}{Cache\+Memcache} instance of \hyperlink{classCacheMemcache}{Cache\+Memcache} 
+\end{DoxyReturn}
+
+
+Definition at line 23 of file Cache\+Memcache.\+class.\+php.
+
+\hypertarget{classCacheMemcache_a27f400a936cc3efb152acc12edb379e1}{\index{Cache\+Memcache@{Cache\+Memcache}!get\+Key@{get\+Key}}
+\index{get\+Key@{get\+Key}!Cache\+Memcache@{Cache\+Memcache}}
+\subsubsection[{get\+Key}]{\setlength{\rightskip}{0pt plus 5cm}Cache\+Memcache\+::get\+Key (
+\begin{DoxyParamCaption}
+\item[{}]{\$key}
+\end{DoxyParamCaption}
+)}}\label{classCacheMemcache_a27f400a936cc3efb152acc12edb379e1}
+Get unique key of given key by path of X\+E
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & Cache key \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Return unique key 
+\end{DoxyReturn}
+
+
+Definition at line 82 of file Cache\+Memcache.\+class.\+php.
+
+\hypertarget{classCacheMemcache_a4ea35bdd7cc26faa01996dbbc162720f}{\index{Cache\+Memcache@{Cache\+Memcache}!is\+Support@{is\+Support}}
+\index{is\+Support@{is\+Support}!Cache\+Memcache@{Cache\+Memcache}}
+\subsubsection[{is\+Support}]{\setlength{\rightskip}{0pt plus 5cm}Cache\+Memcache\+::is\+Support (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCacheMemcache_a4ea35bdd7cc26faa01996dbbc162720f}
+Return whether support or not support cache
+
+\begin{DoxyReturn}{Returns}
+bool Return true on support or false on not support 
+\end{DoxyReturn}
+
+
+Definition at line 57 of file Cache\+Memcache.\+class.\+php.
+
+\hypertarget{classCacheMemcache_af0882957fc5b20e7fb70aeae652920e8}{\index{Cache\+Memcache@{Cache\+Memcache}!is\+Valid@{is\+Valid}}
+\index{is\+Valid@{is\+Valid}!Cache\+Memcache@{Cache\+Memcache}}
+\subsubsection[{is\+Valid}]{\setlength{\rightskip}{0pt plus 5cm}Cache\+Memcache\+::is\+Valid (
+\begin{DoxyParamCaption}
+\item[{}]{\$key, }
+\item[{}]{\$modified\+\_\+time = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classCacheMemcache_af0882957fc5b20e7fb70aeae652920e8}
+Return whether cache is valid or invalid
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & Cache key \\
+\hline
+int & {\em \$modified\+\_\+time} & Unix time of data modified. If stored time is older then modified time, the data is invalid. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool Return true on valid or false on invalid. 
+\end{DoxyReturn}
+
+
+Definition at line 122 of file Cache\+Memcache.\+class.\+php.
+
+\hypertarget{classCacheMemcache_aaf8fbd3ad05138296cb522fe8c133017}{\index{Cache\+Memcache@{Cache\+Memcache}!put@{put}}
+\index{put@{put}!Cache\+Memcache@{Cache\+Memcache}}
+\subsubsection[{put}]{\setlength{\rightskip}{0pt plus 5cm}Cache\+Memcache\+::put (
+\begin{DoxyParamCaption}
+\item[{}]{\$key, }
+\item[{}]{\$buff, }
+\item[{}]{\$valid\+\_\+time = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classCacheMemcache_aaf8fbd3ad05138296cb522fe8c133017}
+Store data at the server
+
+\hyperlink{classCacheMemcache_aaf8fbd3ad05138296cb522fe8c133017}{Cache\+Memcache\+::put()} stores an item \$buff with \$key on the memcached server. Parameter \$valid\+\_\+time is expiration time in seconds. If it's 0, the item never expires (but memcached server doesn't guarantee this item to be stored all the time, it could be delete from the cache to make place for other items).
+
+Remember that resource variables (i.\+e. file and connection descriptors) cannot be stored in the cache, because they can not be adequately represented in serialized state.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & The key that will be associated with the item. \\
+\hline
+mixed & {\em \$buff} & The variable to store. Strings and integers are stored as is, other types are stored serialized. \\
+\hline
+int & {\em \$valid\+\_\+time} & Expiration time of the item. You can also use Unix timestamp or a number of seconds starting from current time, but in the latter case the number of seconds may not exceed 2592000 (30 days). If it's equal to zero, use the default valid time Cache\+Memcache\+::valid\+\_\+time. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool Returns true on success or false on failure. 
+\end{DoxyReturn}
+
+
+Definition at line 104 of file Cache\+Memcache.\+class.\+php.
+
+\hypertarget{classCacheMemcache_a064b47c5872cde9ff686b148bf005849}{\index{Cache\+Memcache@{Cache\+Memcache}!truncate@{truncate}}
+\index{truncate@{truncate}!Cache\+Memcache@{Cache\+Memcache}}
+\subsubsection[{truncate}]{\setlength{\rightskip}{0pt plus 5cm}Cache\+Memcache\+::truncate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCacheMemcache_a064b47c5872cde9ff686b148bf005849}
+Flush all existing items at the server
+
+\hyperlink{classCacheMemcache_a064b47c5872cde9ff686b148bf005849}{Cache\+Memcache\+::truncate()} immediately invalidates all existing items. \hyperlink{classCacheMemcache_a064b47c5872cde9ff686b148bf005849}{Cache\+Memcache\+::truncate()} doesn't actually free any resources, it only marks all the items as expired, so occupied memory will be overwitten by new items.
+
+\begin{DoxyReturn}{Returns}
+bool Returns true on success or false on failure. 
+\end{DoxyReturn}
+
+
+Definition at line 207 of file Cache\+Memcache.\+class.\+php.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classCacheMemcache_a56ac8c11dec3851aee654babe49d20f8}{\index{Cache\+Memcache@{Cache\+Memcache}!\$\+Memcache@{\$\+Memcache}}
+\index{\$\+Memcache@{\$\+Memcache}!Cache\+Memcache@{Cache\+Memcache}}
+\subsubsection[{\$\+Memcache}]{\setlength{\rightskip}{0pt plus 5cm}Cache\+Memcache\+::\$\+Memcache}}\label{classCacheMemcache_a56ac8c11dec3851aee654babe49d20f8}
+
+
+Definition at line 15 of file Cache\+Memcache.\+class.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+classes/cache/\hyperlink{CacheMemcache_8class_8php}{Cache\+Memcache.\+class.\+php}\end{DoxyCompactItemize}

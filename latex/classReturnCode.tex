@@ -1,0 +1,218 @@
+\hypertarget{classReturnCode}{\section{Return\+Code Class Reference}
+\label{classReturnCode}\index{Return\+Code@{Return\+Code}}
+}
+
+
+ 
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classReturnCode_a4fd0b4c831333fd85f7cdf0e9e6d6801}{code} (\$val=-\/1)
+\item 
+\hyperlink{classReturnCode_a31c260c4a66c0d7f6de6921f01f9502d}{push} (\$val)
+\item 
+\hyperlink{classReturnCode_ac6f767aa41d2e8443327cfcd2b9044ff}{pop} ()
+\item 
+\hyperlink{classReturnCode_a131e40f79f7a90e3d49d4ccfe814a83c}{\+\_\+\+\_\+construct} (\$val=0)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{classReturnCode_ac54b7536af67019f9209e68a7c4aee68}{R\+E\+T\+C\+O\+D\+E\+\_\+\+V\+A\+L\+I\+D\+A\+T\+O\+R\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L} = 60
+\item 
+const \hyperlink{classReturnCode_a428e8f95d23aad26927fd861b2d9d8ff}{R\+E\+T\+C\+O\+D\+E\+\_\+\+G\+E\+N\+E\+R\+I\+C\+\_\+\+X\+M\+L\+\_\+\+S\+Y\+N\+T\+A\+X} = 50
+\item 
+const \hyperlink{classReturnCode_a509a7443671b7b7c70856648999295f7}{R\+E\+T\+C\+O\+D\+E\+\_\+\+Q\+U\+E\+R\+Y\+\_\+\+E\+L\+E\+M\+E\+N\+T} = 40
+\item 
+const \hyperlink{classReturnCode_a93db5420236cb54ab9743b3147ae6eea}{R\+E\+T\+C\+O\+D\+E\+\_\+\+X\+S\+D\+\_\+\+V\+A\+L\+I\+D\+A\+T\+I\+O\+N} = 30
+\item 
+const \hyperlink{classReturnCode_ae9314547c8aff7d8e024e9a9d5f85785}{R\+E\+T\+C\+O\+D\+E\+\_\+\+B\+U\+I\+L\+T\+I\+N\+\_\+\+C\+H\+E\+C\+K\+S} = 20
+\item 
+const \hyperlink{classReturnCode_a651f0d08db704bebb1f486a2fa8d138c}{R\+E\+T\+C\+O\+D\+E\+\_\+\+D\+B\+\_\+\+S\+C\+H\+E\+M\+A\+\_\+\+M\+A\+T\+C\+H} = 10
+\item 
+const \hyperlink{classReturnCode_a1bfbc40c7a81cff70d885541bde528bd}{R\+E\+T\+C\+O\+D\+E\+\_\+\+S\+U\+C\+C\+E\+S\+S} = 0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classReturnCode_acc576506d2efe55750f5927bf70426b8}{\$save}
+\item 
+\hyperlink{classReturnCode_a908f33ec596821d3f3f5d9e685cde72f}{\$exit\+\_\+code}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Class to accumulate the highest return code when multiple files are being processed, list return codes, and save/restore the code as needed.
+
+Use specific error codes depending on the validation stage and results, so the unit tests can tell what validation step has failed. 
+
+Definition at line 1096 of file validate.\+php.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classReturnCode_a131e40f79f7a90e3d49d4ccfe814a83c}{\index{Return\+Code@{Return\+Code}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!Return\+Code@{Return\+Code}}
+\subsubsection[{\+\_\+\+\_\+construct}]{\setlength{\rightskip}{0pt plus 5cm}Return\+Code\+::\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+\item[{}]{\$val = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classReturnCode_a131e40f79f7a90e3d49d4ccfe814a83c}
+
+
+
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$val} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 1164 of file validate.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classReturnCode_a4fd0b4c831333fd85f7cdf0e9e6d6801}{\index{Return\+Code@{Return\+Code}!code@{code}}
+\index{code@{code}!Return\+Code@{Return\+Code}}
+\subsubsection[{code}]{\setlength{\rightskip}{0pt plus 5cm}Return\+Code\+::code (
+\begin{DoxyParamCaption}
+\item[{}]{\$val = {\ttfamily -\/1}}
+\end{DoxyParamCaption}
+)}}\label{classReturnCode_a4fd0b4c831333fd85f7cdf0e9e6d6801}
+
+
+
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$val} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 1117 of file validate.\+php.
+
+\hypertarget{classReturnCode_ac6f767aa41d2e8443327cfcd2b9044ff}{\index{Return\+Code@{Return\+Code}!pop@{pop}}
+\index{pop@{pop}!Return\+Code@{Return\+Code}}
+\subsubsection[{pop}]{\setlength{\rightskip}{0pt plus 5cm}Return\+Code\+::pop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classReturnCode_ac6f767aa41d2e8443327cfcd2b9044ff}
+
+
+
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 1151 of file validate.\+php.
+
+\hypertarget{classReturnCode_a31c260c4a66c0d7f6de6921f01f9502d}{\index{Return\+Code@{Return\+Code}!push@{push}}
+\index{push@{push}!Return\+Code@{Return\+Code}}
+\subsubsection[{push}]{\setlength{\rightskip}{0pt plus 5cm}Return\+Code\+::push (
+\begin{DoxyParamCaption}
+\item[{}]{\$val}
+\end{DoxyParamCaption}
+)}}\label{classReturnCode_a31c260c4a66c0d7f6de6921f01f9502d}
+
+
+
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$val} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 1139 of file validate.\+php.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classReturnCode_a908f33ec596821d3f3f5d9e685cde72f}{\index{Return\+Code@{Return\+Code}!\$exit\+\_\+code@{\$exit\+\_\+code}}
+\index{\$exit\+\_\+code@{\$exit\+\_\+code}!Return\+Code@{Return\+Code}}
+\subsubsection[{\$exit\+\_\+code}]{\setlength{\rightskip}{0pt plus 5cm}Return\+Code\+::\$exit\+\_\+code\hspace{0.3cm}{\ttfamily [protected]}}}\label{classReturnCode_a908f33ec596821d3f3f5d9e685cde72f}
+
+
+Definition at line 1099 of file validate.\+php.
+
+\hypertarget{classReturnCode_acc576506d2efe55750f5927bf70426b8}{\index{Return\+Code@{Return\+Code}!\$save@{\$save}}
+\index{\$save@{\$save}!Return\+Code@{Return\+Code}}
+\subsubsection[{\$save}]{\setlength{\rightskip}{0pt plus 5cm}Return\+Code\+::\$save\hspace{0.3cm}{\ttfamily [protected]}}}\label{classReturnCode_acc576506d2efe55750f5927bf70426b8}
+
+
+Definition at line 1098 of file validate.\+php.
+
+\hypertarget{classReturnCode_ae9314547c8aff7d8e024e9a9d5f85785}{\index{Return\+Code@{Return\+Code}!R\+E\+T\+C\+O\+D\+E\+\_\+\+B\+U\+I\+L\+T\+I\+N\+\_\+\+C\+H\+E\+C\+K\+S@{R\+E\+T\+C\+O\+D\+E\+\_\+\+B\+U\+I\+L\+T\+I\+N\+\_\+\+C\+H\+E\+C\+K\+S}}
+\index{R\+E\+T\+C\+O\+D\+E\+\_\+\+B\+U\+I\+L\+T\+I\+N\+\_\+\+C\+H\+E\+C\+K\+S@{R\+E\+T\+C\+O\+D\+E\+\_\+\+B\+U\+I\+L\+T\+I\+N\+\_\+\+C\+H\+E\+C\+K\+S}!Return\+Code@{Return\+Code}}
+\subsubsection[{R\+E\+T\+C\+O\+D\+E\+\_\+\+B\+U\+I\+L\+T\+I\+N\+\_\+\+C\+H\+E\+C\+K\+S}]{\setlength{\rightskip}{0pt plus 5cm}const Return\+Code\+::\+R\+E\+T\+C\+O\+D\+E\+\_\+\+B\+U\+I\+L\+T\+I\+N\+\_\+\+C\+H\+E\+C\+K\+S = 20}}\label{classReturnCode_ae9314547c8aff7d8e024e9a9d5f85785}
+
+
+Definition at line 1105 of file validate.\+php.
+
+\hypertarget{classReturnCode_a651f0d08db704bebb1f486a2fa8d138c}{\index{Return\+Code@{Return\+Code}!R\+E\+T\+C\+O\+D\+E\+\_\+\+D\+B\+\_\+\+S\+C\+H\+E\+M\+A\+\_\+\+M\+A\+T\+C\+H@{R\+E\+T\+C\+O\+D\+E\+\_\+\+D\+B\+\_\+\+S\+C\+H\+E\+M\+A\+\_\+\+M\+A\+T\+C\+H}}
+\index{R\+E\+T\+C\+O\+D\+E\+\_\+\+D\+B\+\_\+\+S\+C\+H\+E\+M\+A\+\_\+\+M\+A\+T\+C\+H@{R\+E\+T\+C\+O\+D\+E\+\_\+\+D\+B\+\_\+\+S\+C\+H\+E\+M\+A\+\_\+\+M\+A\+T\+C\+H}!Return\+Code@{Return\+Code}}
+\subsubsection[{R\+E\+T\+C\+O\+D\+E\+\_\+\+D\+B\+\_\+\+S\+C\+H\+E\+M\+A\+\_\+\+M\+A\+T\+C\+H}]{\setlength{\rightskip}{0pt plus 5cm}const Return\+Code\+::\+R\+E\+T\+C\+O\+D\+E\+\_\+\+D\+B\+\_\+\+S\+C\+H\+E\+M\+A\+\_\+\+M\+A\+T\+C\+H = 10}}\label{classReturnCode_a651f0d08db704bebb1f486a2fa8d138c}
+
+
+Definition at line 1106 of file validate.\+php.
+
+\hypertarget{classReturnCode_a428e8f95d23aad26927fd861b2d9d8ff}{\index{Return\+Code@{Return\+Code}!R\+E\+T\+C\+O\+D\+E\+\_\+\+G\+E\+N\+E\+R\+I\+C\+\_\+\+X\+M\+L\+\_\+\+S\+Y\+N\+T\+A\+X@{R\+E\+T\+C\+O\+D\+E\+\_\+\+G\+E\+N\+E\+R\+I\+C\+\_\+\+X\+M\+L\+\_\+\+S\+Y\+N\+T\+A\+X}}
+\index{R\+E\+T\+C\+O\+D\+E\+\_\+\+G\+E\+N\+E\+R\+I\+C\+\_\+\+X\+M\+L\+\_\+\+S\+Y\+N\+T\+A\+X@{R\+E\+T\+C\+O\+D\+E\+\_\+\+G\+E\+N\+E\+R\+I\+C\+\_\+\+X\+M\+L\+\_\+\+S\+Y\+N\+T\+A\+X}!Return\+Code@{Return\+Code}}
+\subsubsection[{R\+E\+T\+C\+O\+D\+E\+\_\+\+G\+E\+N\+E\+R\+I\+C\+\_\+\+X\+M\+L\+\_\+\+S\+Y\+N\+T\+A\+X}]{\setlength{\rightskip}{0pt plus 5cm}const Return\+Code\+::\+R\+E\+T\+C\+O\+D\+E\+\_\+\+G\+E\+N\+E\+R\+I\+C\+\_\+\+X\+M\+L\+\_\+\+S\+Y\+N\+T\+A\+X = 50}}\label{classReturnCode_a428e8f95d23aad26927fd861b2d9d8ff}
+
+
+Definition at line 1102 of file validate.\+php.
+
+\hypertarget{classReturnCode_a509a7443671b7b7c70856648999295f7}{\index{Return\+Code@{Return\+Code}!R\+E\+T\+C\+O\+D\+E\+\_\+\+Q\+U\+E\+R\+Y\+\_\+\+E\+L\+E\+M\+E\+N\+T@{R\+E\+T\+C\+O\+D\+E\+\_\+\+Q\+U\+E\+R\+Y\+\_\+\+E\+L\+E\+M\+E\+N\+T}}
+\index{R\+E\+T\+C\+O\+D\+E\+\_\+\+Q\+U\+E\+R\+Y\+\_\+\+E\+L\+E\+M\+E\+N\+T@{R\+E\+T\+C\+O\+D\+E\+\_\+\+Q\+U\+E\+R\+Y\+\_\+\+E\+L\+E\+M\+E\+N\+T}!Return\+Code@{Return\+Code}}
+\subsubsection[{R\+E\+T\+C\+O\+D\+E\+\_\+\+Q\+U\+E\+R\+Y\+\_\+\+E\+L\+E\+M\+E\+N\+T}]{\setlength{\rightskip}{0pt plus 5cm}const Return\+Code\+::\+R\+E\+T\+C\+O\+D\+E\+\_\+\+Q\+U\+E\+R\+Y\+\_\+\+E\+L\+E\+M\+E\+N\+T = 40}}\label{classReturnCode_a509a7443671b7b7c70856648999295f7}
+
+
+Definition at line 1103 of file validate.\+php.
+
+\hypertarget{classReturnCode_a1bfbc40c7a81cff70d885541bde528bd}{\index{Return\+Code@{Return\+Code}!R\+E\+T\+C\+O\+D\+E\+\_\+\+S\+U\+C\+C\+E\+S\+S@{R\+E\+T\+C\+O\+D\+E\+\_\+\+S\+U\+C\+C\+E\+S\+S}}
+\index{R\+E\+T\+C\+O\+D\+E\+\_\+\+S\+U\+C\+C\+E\+S\+S@{R\+E\+T\+C\+O\+D\+E\+\_\+\+S\+U\+C\+C\+E\+S\+S}!Return\+Code@{Return\+Code}}
+\subsubsection[{R\+E\+T\+C\+O\+D\+E\+\_\+\+S\+U\+C\+C\+E\+S\+S}]{\setlength{\rightskip}{0pt plus 5cm}const Return\+Code\+::\+R\+E\+T\+C\+O\+D\+E\+\_\+\+S\+U\+C\+C\+E\+S\+S = 0}}\label{classReturnCode_a1bfbc40c7a81cff70d885541bde528bd}
+
+
+Definition at line 1107 of file validate.\+php.
+
+\hypertarget{classReturnCode_ac54b7536af67019f9209e68a7c4aee68}{\index{Return\+Code@{Return\+Code}!R\+E\+T\+C\+O\+D\+E\+\_\+\+V\+A\+L\+I\+D\+A\+T\+O\+R\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L@{R\+E\+T\+C\+O\+D\+E\+\_\+\+V\+A\+L\+I\+D\+A\+T\+O\+R\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L}}
+\index{R\+E\+T\+C\+O\+D\+E\+\_\+\+V\+A\+L\+I\+D\+A\+T\+O\+R\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L@{R\+E\+T\+C\+O\+D\+E\+\_\+\+V\+A\+L\+I\+D\+A\+T\+O\+R\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L}!Return\+Code@{Return\+Code}}
+\subsubsection[{R\+E\+T\+C\+O\+D\+E\+\_\+\+V\+A\+L\+I\+D\+A\+T\+O\+R\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L}]{\setlength{\rightskip}{0pt plus 5cm}const Return\+Code\+::\+R\+E\+T\+C\+O\+D\+E\+\_\+\+V\+A\+L\+I\+D\+A\+T\+O\+R\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L = 60}}\label{classReturnCode_ac54b7536af67019f9209e68a7c4aee68}
+
+
+Definition at line 1101 of file validate.\+php.
+
+\hypertarget{classReturnCode_a93db5420236cb54ab9743b3147ae6eea}{\index{Return\+Code@{Return\+Code}!R\+E\+T\+C\+O\+D\+E\+\_\+\+X\+S\+D\+\_\+\+V\+A\+L\+I\+D\+A\+T\+I\+O\+N@{R\+E\+T\+C\+O\+D\+E\+\_\+\+X\+S\+D\+\_\+\+V\+A\+L\+I\+D\+A\+T\+I\+O\+N}}
+\index{R\+E\+T\+C\+O\+D\+E\+\_\+\+X\+S\+D\+\_\+\+V\+A\+L\+I\+D\+A\+T\+I\+O\+N@{R\+E\+T\+C\+O\+D\+E\+\_\+\+X\+S\+D\+\_\+\+V\+A\+L\+I\+D\+A\+T\+I\+O\+N}!Return\+Code@{Return\+Code}}
+\subsubsection[{R\+E\+T\+C\+O\+D\+E\+\_\+\+X\+S\+D\+\_\+\+V\+A\+L\+I\+D\+A\+T\+I\+O\+N}]{\setlength{\rightskip}{0pt plus 5cm}const Return\+Code\+::\+R\+E\+T\+C\+O\+D\+E\+\_\+\+X\+S\+D\+\_\+\+V\+A\+L\+I\+D\+A\+T\+I\+O\+N = 30}}\label{classReturnCode_a93db5420236cb54ab9743b3147ae6eea}
+
+
+Definition at line 1104 of file validate.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+tools/dbxml\+\_\+validator/\hyperlink{validate_8php}{validate.\+php}\end{DoxyCompactItemize}

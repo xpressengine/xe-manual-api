@@ -1,0 +1,124 @@
+\hypertarget{minify_8php}{\section{tools/minify/minify.php File Reference}
+\label{minify_8php}\index{tools/minify/minify.\+php@{tools/minify/minify.\+php}}
+}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{point__level__icon_8addon_8php_a29031816e50a8f742422e671b2bef9b2}{if}(version\+\_\+compare(P\+H\+P\+\_\+\+V\+E\+R\+S\+I\+O\+N, '5.\+3.\+0', '$<$')) \hyperlink{minify_8php_a9cd589844a6b1e31f6a724e21a5abc56}{main} ()
+\item 
+\hyperlink{minify_8php_a8f78574d56253a7a402ae1041489a622}{add\+\_\+dirsep} (\$path)
+\item 
+\hyperlink{minify_8php_a70644e856beeab8a513070c0985c2069}{execute} (\$dir)
+\item 
+\hyperlink{minify_8php_a268545c7e1e847a94276b2054d07c75e}{read\+\_\+config} (\$dir)
+\item 
+\hyperlink{minify_8php_a57f7d986a6bb869f3262828b648b29a0}{transform\+\_\+config\+\_\+str} (\$matches)
+\item 
+\hyperlink{minify_8php_ab0d04ae4d168ad54caf61c0180cbf402}{merge} (\$files, \$target, \$base\+\_\+dir)
+\item 
+\hyperlink{minify_8php_a16a03c63d25e4329f79dd172822ac3f0}{get\+\_\+target\+\_\+files} (\$ext, \$dir, \$files\+\_\+to\+\_\+skip)
+\item 
+\hyperlink{minify_8php_a1e8bb40ab95c46a66f60707d1e9312b2}{closure\+\_\+compile} (\$\hyperlink{classcontent}{content})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{minify_8php_a8f78574d56253a7a402ae1041489a622}{\index{minify.\+php@{minify.\+php}!add\+\_\+dirsep@{add\+\_\+dirsep}}
+\index{add\+\_\+dirsep@{add\+\_\+dirsep}!minify.\+php@{minify.\+php}}
+\subsubsection[{add\+\_\+dirsep}]{\setlength{\rightskip}{0pt plus 5cm}add\+\_\+dirsep (
+\begin{DoxyParamCaption}
+\item[{}]{\$path}
+\end{DoxyParamCaption}
+)}}\label{minify_8php_a8f78574d56253a7a402ae1041489a622}
+
+
+Definition at line 35 of file minify.\+php.
+
+\hypertarget{minify_8php_a1e8bb40ab95c46a66f60707d1e9312b2}{\index{minify.\+php@{minify.\+php}!closure\+\_\+compile@{closure\+\_\+compile}}
+\index{closure\+\_\+compile@{closure\+\_\+compile}!minify.\+php@{minify.\+php}}
+\subsubsection[{closure\+\_\+compile}]{\setlength{\rightskip}{0pt plus 5cm}closure\+\_\+compile (
+\begin{DoxyParamCaption}
+\item[{}]{\$content}
+\end{DoxyParamCaption}
+)}}\label{minify_8php_a1e8bb40ab95c46a66f60707d1e9312b2}
+
+
+Definition at line 184 of file minify.\+php.
+
+\hypertarget{minify_8php_a70644e856beeab8a513070c0985c2069}{\index{minify.\+php@{minify.\+php}!execute@{execute}}
+\index{execute@{execute}!minify.\+php@{minify.\+php}}
+\subsubsection[{execute}]{\setlength{\rightskip}{0pt plus 5cm}execute (
+\begin{DoxyParamCaption}
+\item[{}]{\$dir}
+\end{DoxyParamCaption}
+)}}\label{minify_8php_a70644e856beeab8a513070c0985c2069}
+
+
+Definition at line 40 of file minify.\+php.
+
+\hypertarget{minify_8php_a16a03c63d25e4329f79dd172822ac3f0}{\index{minify.\+php@{minify.\+php}!get\+\_\+target\+\_\+files@{get\+\_\+target\+\_\+files}}
+\index{get\+\_\+target\+\_\+files@{get\+\_\+target\+\_\+files}!minify.\+php@{minify.\+php}}
+\subsubsection[{get\+\_\+target\+\_\+files}]{\setlength{\rightskip}{0pt plus 5cm}get\+\_\+target\+\_\+files (
+\begin{DoxyParamCaption}
+\item[{}]{\$ext, }
+\item[{}]{\$dir, }
+\item[{}]{\$files\+\_\+to\+\_\+skip}
+\end{DoxyParamCaption}
+)}}\label{minify_8php_a16a03c63d25e4329f79dd172822ac3f0}
+
+
+Definition at line 175 of file minify.\+php.
+
+\hypertarget{minify_8php_a9cd589844a6b1e31f6a724e21a5abc56}{\index{minify.\+php@{minify.\+php}!main@{main}}
+\index{main@{main}!minify.\+php@{minify.\+php}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} (version\+\_\+compare(P\+H\+P\+\_\+\+V\+E\+R\+S\+I\+O\+N, '5.\+3.\+0', '$<$')) main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{minify_8php_a9cd589844a6b1e31f6a724e21a5abc56}
+Minify This script comnbines multiple Java\+Script or C\+S\+S files with minifying. P\+H\+P 5.\+3.\+0 or above version is required.
+
+Usage \+: php \hyperlink{minify_8php}{minify.\+php} \mbox{[}T\+A\+R\+G\+E\+T\+\_\+\+D\+I\+R ...\mbox{]} T\+A\+R\+G\+E\+T\+\_\+\+D\+I\+R use the current working directory as a default path.
+
+\begin{DoxyAuthor}{Author}
+N\+A\+V\+E\+R(\href{mailto:developer@xpressengine.com}{\tt developer@xpressengine.\+com}) 
+\end{DoxyAuthor}
+
+
+Definition at line 19 of file minify.\+php.
+
+\hypertarget{minify_8php_ab0d04ae4d168ad54caf61c0180cbf402}{\index{minify.\+php@{minify.\+php}!merge@{merge}}
+\index{merge@{merge}!minify.\+php@{minify.\+php}}
+\subsubsection[{merge}]{\setlength{\rightskip}{0pt plus 5cm}merge (
+\begin{DoxyParamCaption}
+\item[{}]{\$files, }
+\item[{}]{\$target, }
+\item[{}]{\$base\+\_\+dir}
+\end{DoxyParamCaption}
+)}}\label{minify_8php_ab0d04ae4d168ad54caf61c0180cbf402}
+
+
+Definition at line 152 of file minify.\+php.
+
+\hypertarget{minify_8php_a268545c7e1e847a94276b2054d07c75e}{\index{minify.\+php@{minify.\+php}!read\+\_\+config@{read\+\_\+config}}
+\index{read\+\_\+config@{read\+\_\+config}!minify.\+php@{minify.\+php}}
+\subsubsection[{read\+\_\+config}]{\setlength{\rightskip}{0pt plus 5cm}read\+\_\+config (
+\begin{DoxyParamCaption}
+\item[{}]{\$dir}
+\end{DoxyParamCaption}
+)}}\label{minify_8php_a268545c7e1e847a94276b2054d07c75e}
+
+
+Definition at line 116 of file minify.\+php.
+
+\hypertarget{minify_8php_a57f7d986a6bb869f3262828b648b29a0}{\index{minify.\+php@{minify.\+php}!transform\+\_\+config\+\_\+str@{transform\+\_\+config\+\_\+str}}
+\index{transform\+\_\+config\+\_\+str@{transform\+\_\+config\+\_\+str}!minify.\+php@{minify.\+php}}
+\subsubsection[{transform\+\_\+config\+\_\+str}]{\setlength{\rightskip}{0pt plus 5cm}transform\+\_\+config\+\_\+str (
+\begin{DoxyParamCaption}
+\item[{}]{\$matches}
+\end{DoxyParamCaption}
+)}}\label{minify_8php_a57f7d986a6bb869f3262828b648b29a0}
+
+
+Definition at line 145 of file minify.\+php.
+

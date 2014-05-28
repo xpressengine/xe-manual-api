@@ -1,0 +1,205 @@
+\hypertarget{classHTMLPurifier__Length}{\section{H\+T\+M\+L\+Purifier\+\_\+\+Length Class Reference}
+\label{classHTMLPurifier__Length}\index{H\+T\+M\+L\+Purifier\+\_\+\+Length@{H\+T\+M\+L\+Purifier\+\_\+\+Length}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHTMLPurifier__Length_a5e2f90515b5224003be7fa2d6fb4f813}{\+\_\+\+\_\+construct} (\$n= '0', \$u=false)
+\item 
+\hyperlink{classHTMLPurifier__Length_ae872c17bf1c1d58508ebd5eacb6df220}{to\+String} ()
+\item 
+\hyperlink{classHTMLPurifier__Length_a925aad235966d9f9decc412a771c176f}{get\+N} ()
+\item 
+\hyperlink{classHTMLPurifier__Length_a801e4f86f35648bc4166536b6763d150}{get\+Unit} ()
+\item 
+\hyperlink{classHTMLPurifier__Length_aef739ccc01785ff683e1563aa0367297}{is\+Valid} ()
+\item 
+\hyperlink{classHTMLPurifier__Length_a7e95d358d66a53fdd4ac5d9477f29388}{compare\+To} (\$l)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classHTMLPurifier__Length_a6a042789c0c99ef92066bd69e3f91ce0}{make} (\$s)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHTMLPurifier__Length_a0dc753e7de3a549edc202958f23e41c3}{validate} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHTMLPurifier__Length_ae5e0e6ba1ea8bf13163fd1926c583e43}{\$n}
+\item 
+\hyperlink{classHTMLPurifier__Length_a770d1e622fc661387ade708fa9308a89}{\$unit}
+\item 
+\hyperlink{classHTMLPurifier__Length_a702c647145c9f859423b269f98fbe2e0}{\$is\+Valid}
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classHTMLPurifier__Length_a046abbfd221c1ea84273399d6d182aec}{\$allowed\+Units}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents a measurable length, with a string numeric magnitude and a unit. This object is immutable. 
+
+Definition at line 7 of file Length.\+php.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classHTMLPurifier__Length_a5e2f90515b5224003be7fa2d6fb4f813}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Length@{H\+T\+M\+L\+Purifier\+\_\+\+Length}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!H\+T\+M\+L\+Purifier\+\_\+\+Length@{H\+T\+M\+L\+Purifier\+\_\+\+Length}}
+\subsubsection[{\+\_\+\+\_\+construct}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Length\+::\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+\item[{}]{\$n = {\ttfamily '0'}, }
+\item[{}]{\$u = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__Length_a5e2f90515b5224003be7fa2d6fb4f813}
+
+\begin{DoxyParams}[1]{Parameters}
+number & {\em \$n} & Magnitude \\
+\hline
+string & {\em \$u} & Unit \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 37 of file Length.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classHTMLPurifier__Length_a7e95d358d66a53fdd4ac5d9477f29388}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Length@{H\+T\+M\+L\+Purifier\+\_\+\+Length}!compare\+To@{compare\+To}}
+\index{compare\+To@{compare\+To}!H\+T\+M\+L\+Purifier\+\_\+\+Length@{H\+T\+M\+L\+Purifier\+\_\+\+Length}}
+\subsubsection[{compare\+To}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Length\+::compare\+To (
+\begin{DoxyParamCaption}
+\item[{}]{\$l}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__Length_a7e95d358d66a53fdd4ac5d9477f29388}
+Compares two lengths, and returns 1 if greater, -\/1 if less and 0 if equal. \begin{DoxyWarning}{Warning}
+If both values are too large or small, this calculation will not work properly 
+\end{DoxyWarning}
+
+
+Definition at line 103 of file Length.\+php.
+
+\hypertarget{classHTMLPurifier__Length_a925aad235966d9f9decc412a771c176f}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Length@{H\+T\+M\+L\+Purifier\+\_\+\+Length}!get\+N@{get\+N}}
+\index{get\+N@{get\+N}!H\+T\+M\+L\+Purifier\+\_\+\+Length@{H\+T\+M\+L\+Purifier\+\_\+\+Length}}
+\subsubsection[{get\+N}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Length\+::get\+N (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__Length_a925aad235966d9f9decc412a771c176f}
+Retrieves string numeric magnitude. 
+
+Definition at line 83 of file Length.\+php.
+
+\hypertarget{classHTMLPurifier__Length_a801e4f86f35648bc4166536b6763d150}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Length@{H\+T\+M\+L\+Purifier\+\_\+\+Length}!get\+Unit@{get\+Unit}}
+\index{get\+Unit@{get\+Unit}!H\+T\+M\+L\+Purifier\+\_\+\+Length@{H\+T\+M\+L\+Purifier\+\_\+\+Length}}
+\subsubsection[{get\+Unit}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Length\+::get\+Unit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__Length_a801e4f86f35648bc4166536b6763d150}
+Retrieves string unit. 
+
+Definition at line 88 of file Length.\+php.
+
+\hypertarget{classHTMLPurifier__Length_aef739ccc01785ff683e1563aa0367297}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Length@{H\+T\+M\+L\+Purifier\+\_\+\+Length}!is\+Valid@{is\+Valid}}
+\index{is\+Valid@{is\+Valid}!H\+T\+M\+L\+Purifier\+\_\+\+Length@{H\+T\+M\+L\+Purifier\+\_\+\+Length}}
+\subsubsection[{is\+Valid}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Length\+::is\+Valid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__Length_aef739ccc01785ff683e1563aa0367297}
+Returns true if this length unit is valid. 
+
+Definition at line 93 of file Length.\+php.
+
+\hypertarget{classHTMLPurifier__Length_a6a042789c0c99ef92066bd69e3f91ce0}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Length@{H\+T\+M\+L\+Purifier\+\_\+\+Length}!make@{make}}
+\index{make@{make}!H\+T\+M\+L\+Purifier\+\_\+\+Length@{H\+T\+M\+L\+Purifier\+\_\+\+Length}}
+\subsubsection[{make}]{\setlength{\rightskip}{0pt plus 5cm}static H\+T\+M\+L\+Purifier\+\_\+\+Length\+::make (
+\begin{DoxyParamCaption}
+\item[{}]{\$s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classHTMLPurifier__Length_a6a042789c0c99ef92066bd69e3f91ce0}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$s} & Unit string, like '2em' or '3.\+4in' \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+Does not perform validation. 
+\end{DoxyWarning}
+
+
+Definition at line 46 of file Length.\+php.
+
+\hypertarget{classHTMLPurifier__Length_ae872c17bf1c1d58508ebd5eacb6df220}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Length@{H\+T\+M\+L\+Purifier\+\_\+\+Length}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!H\+T\+M\+L\+Purifier\+\_\+\+Length@{H\+T\+M\+L\+Purifier\+\_\+\+Length}}
+\subsubsection[{to\+String}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Length\+::to\+String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__Length_ae872c17bf1c1d58508ebd5eacb6df220}
+Returns string representation of number. 
+
+Definition at line 75 of file Length.\+php.
+
+\hypertarget{classHTMLPurifier__Length_a0dc753e7de3a549edc202958f23e41c3}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Length@{H\+T\+M\+L\+Purifier\+\_\+\+Length}!validate@{validate}}
+\index{validate@{validate}!H\+T\+M\+L\+Purifier\+\_\+\+Length@{H\+T\+M\+L\+Purifier\+\_\+\+Length}}
+\subsubsection[{validate}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Length\+::validate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classHTMLPurifier__Length_a0dc753e7de3a549edc202958f23e41c3}
+Validates the number and unit. 
+
+Definition at line 58 of file Length.\+php.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classHTMLPurifier__Length_a046abbfd221c1ea84273399d6d182aec}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Length@{H\+T\+M\+L\+Purifier\+\_\+\+Length}!\$allowed\+Units@{\$allowed\+Units}}
+\index{\$allowed\+Units@{\$allowed\+Units}!H\+T\+M\+L\+Purifier\+\_\+\+Length@{H\+T\+M\+L\+Purifier\+\_\+\+Length}}
+\subsubsection[{\$allowed\+Units}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Length\+::\$allowed\+Units\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{classHTMLPurifier__Length_a046abbfd221c1ea84273399d6d182aec}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= array(
+        \textcolor{stringliteral}{'em'} => \textcolor{keyword}{true}, \textcolor{stringliteral}{'ex'} => \textcolor{keyword}{true}, \textcolor{stringliteral}{'px'} => \textcolor{keyword}{true}, \textcolor{stringliteral}{'in'} => \textcolor{keyword}{true},
+        \textcolor{stringliteral}{'cm'} => \textcolor{keyword}{true}, \textcolor{stringliteral}{'mm'} => \textcolor{keyword}{true}, \textcolor{stringliteral}{'pt'} => \textcolor{keyword}{true}, \textcolor{stringliteral}{'pc'} => \textcolor{keyword}{true}
+    )
+\end{DoxyCode}
+Lookup array of units recognized by C\+S\+S 2.\+1 
+
+Definition at line 28 of file Length.\+php.
+
+\hypertarget{classHTMLPurifier__Length_a702c647145c9f859423b269f98fbe2e0}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Length@{H\+T\+M\+L\+Purifier\+\_\+\+Length}!\$is\+Valid@{\$is\+Valid}}
+\index{\$is\+Valid@{\$is\+Valid}!H\+T\+M\+L\+Purifier\+\_\+\+Length@{H\+T\+M\+L\+Purifier\+\_\+\+Length}}
+\subsubsection[{\$is\+Valid}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Length\+::\$is\+Valid\hspace{0.3cm}{\ttfamily [protected]}}}\label{classHTMLPurifier__Length_a702c647145c9f859423b269f98fbe2e0}
+Whether or not this length is valid. Null if not calculated yet. 
+
+Definition at line 23 of file Length.\+php.
+
+\hypertarget{classHTMLPurifier__Length_ae5e0e6ba1ea8bf13163fd1926c583e43}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Length@{H\+T\+M\+L\+Purifier\+\_\+\+Length}!\$n@{\$n}}
+\index{\$n@{\$n}!H\+T\+M\+L\+Purifier\+\_\+\+Length@{H\+T\+M\+L\+Purifier\+\_\+\+Length}}
+\subsubsection[{\$n}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Length\+::\$n\hspace{0.3cm}{\ttfamily [protected]}}}\label{classHTMLPurifier__Length_ae5e0e6ba1ea8bf13163fd1926c583e43}
+String numeric magnitude. 
+
+Definition at line 13 of file Length.\+php.
+
+\hypertarget{classHTMLPurifier__Length_a770d1e622fc661387ade708fa9308a89}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Length@{H\+T\+M\+L\+Purifier\+\_\+\+Length}!\$unit@{\$unit}}
+\index{\$unit@{\$unit}!H\+T\+M\+L\+Purifier\+\_\+\+Length@{H\+T\+M\+L\+Purifier\+\_\+\+Length}}
+\subsubsection[{\$unit}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Length\+::\$unit\hspace{0.3cm}{\ttfamily [protected]}}}\label{classHTMLPurifier__Length_a770d1e622fc661387ade708fa9308a89}
+String unit. False is permitted if \$n = 0. 
+
+Definition at line 18 of file Length.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+classes/security/htmlpurifier/library/\+H\+T\+M\+L\+Purifier/\hyperlink{Length_8php}{Length.\+php}\end{DoxyCompactItemize}

@@ -1,0 +1,164 @@
+\hypertarget{classCacheBase}{\section{Cache\+Base Class Reference}
+\label{classCacheBase}\index{Cache\+Base@{Cache\+Base}}
+}
+Inheritance diagram for Cache\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCacheBase}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCacheBase_afee31dcb9d33e4e87c102d828c4d8d26}{get} (\$key, \$modified\+\_\+time=0)
+\item 
+\hyperlink{classCacheBase_aa6729e608bf81ffc19825f3f38777667}{put} (\$key, \$obj, \$valid\+\_\+time=0)
+\item 
+\hyperlink{classCacheBase_a9a8227b929be86601f4570f787c22746}{is\+Valid} (\$key, \$modified\+\_\+time=0)
+\item 
+\hyperlink{classCacheBase_a302d6640565e56c4f8b927fcf605f62b}{is\+Support} ()
+\item 
+\hyperlink{classCacheBase_ad4ef9d60ea844036b17364b6e30bcb39}{truncate} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCacheBase_ad4f01a1a34bce91cb38308028252b233}{\$valid\+\_\+time} = 36000
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base class of Cache
+
+\begin{DoxyAuthor}{Author}
+N\+A\+V\+E\+R (\href{mailto:developer@xpressengine.com}{\tt developer@xpressengine.\+com}) 
+\end{DoxyAuthor}
+
+
+Definition at line 286 of file Cache\+Handler.\+class.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classCacheBase_afee31dcb9d33e4e87c102d828c4d8d26}{\index{Cache\+Base@{Cache\+Base}!get@{get}}
+\index{get@{get}!Cache\+Base@{Cache\+Base}}
+\subsubsection[{get}]{\setlength{\rightskip}{0pt plus 5cm}Cache\+Base\+::get (
+\begin{DoxyParamCaption}
+\item[{}]{\$key, }
+\item[{}]{\$modified\+\_\+time = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classCacheBase_afee31dcb9d33e4e87c102d828c4d8d26}
+Get cached data
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & Cache key \\
+\hline
+int & {\em \$modified\+\_\+time} & Unix time of data modified. If stored time is older then modified time, return false. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false$\vert$mixed Return false on failure or older then modified time. Return the string associated with the \$key on success. 
+\end{DoxyReturn}
+
+
+Definition at line 302 of file Cache\+Handler.\+class.\+php.
+
+\hypertarget{classCacheBase_a302d6640565e56c4f8b927fcf605f62b}{\index{Cache\+Base@{Cache\+Base}!is\+Support@{is\+Support}}
+\index{is\+Support@{is\+Support}!Cache\+Base@{Cache\+Base}}
+\subsubsection[{is\+Support}]{\setlength{\rightskip}{0pt plus 5cm}Cache\+Base\+::is\+Support (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCacheBase_a302d6640565e56c4f8b927fcf605f62b}
+Return whether support or not support cache
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 340 of file Cache\+Handler.\+class.\+php.
+
+\hypertarget{classCacheBase_a9a8227b929be86601f4570f787c22746}{\index{Cache\+Base@{Cache\+Base}!is\+Valid@{is\+Valid}}
+\index{is\+Valid@{is\+Valid}!Cache\+Base@{Cache\+Base}}
+\subsubsection[{is\+Valid}]{\setlength{\rightskip}{0pt plus 5cm}Cache\+Base\+::is\+Valid (
+\begin{DoxyParamCaption}
+\item[{}]{\$key, }
+\item[{}]{\$modified\+\_\+time = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classCacheBase_a9a8227b929be86601f4570f787c22746}
+Return whether cache is valid or invalid
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & Cache key \\
+\hline
+int & {\em \$modified\+\_\+time} & Unix time of data modified. If stored time is older then modified time, the data is invalid. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool Return true on valid or false on invalid. 
+\end{DoxyReturn}
+
+
+Definition at line 330 of file Cache\+Handler.\+class.\+php.
+
+\hypertarget{classCacheBase_aa6729e608bf81ffc19825f3f38777667}{\index{Cache\+Base@{Cache\+Base}!put@{put}}
+\index{put@{put}!Cache\+Base@{Cache\+Base}}
+\subsubsection[{put}]{\setlength{\rightskip}{0pt plus 5cm}Cache\+Base\+::put (
+\begin{DoxyParamCaption}
+\item[{}]{\$key, }
+\item[{}]{\$obj, }
+\item[{}]{\$valid\+\_\+time = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classCacheBase_aa6729e608bf81ffc19825f3f38777667}
+Put data into cache
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & Cache key \\
+\hline
+mixed & {\em \$obj} & Value of a variable to store. \$value supports all data types except resources, such as file handlers. \\
+\hline
+int & {\em \$valid\+\_\+time} & Time for the variable to live in the cache in seconds. After the value specified in ttl has passed the stored variable will be deleted from the cache. If no ttl is supplied, use the default valid time. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool$\vert$void Returns true on success or false on failure. If use \hyperlink{classCacheFile}{Cache\+File}, returns void. 
+\end{DoxyReturn}
+
+
+Definition at line 317 of file Cache\+Handler.\+class.\+php.
+
+\hypertarget{classCacheBase_ad4ef9d60ea844036b17364b6e30bcb39}{\index{Cache\+Base@{Cache\+Base}!truncate@{truncate}}
+\index{truncate@{truncate}!Cache\+Base@{Cache\+Base}}
+\subsubsection[{truncate}]{\setlength{\rightskip}{0pt plus 5cm}Cache\+Base\+::truncate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCacheBase_ad4ef9d60ea844036b17364b6e30bcb39}
+Truncate all cache
+
+\begin{DoxyReturn}{Returns}
+bool$\vert$void Returns true on success or false on failure. If use \hyperlink{classCacheFile}{Cache\+File}, returns void. 
+\end{DoxyReturn}
+
+
+Definition at line 350 of file Cache\+Handler.\+class.\+php.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classCacheBase_ad4f01a1a34bce91cb38308028252b233}{\index{Cache\+Base@{Cache\+Base}!\$valid\+\_\+time@{\$valid\+\_\+time}}
+\index{\$valid\+\_\+time@{\$valid\+\_\+time}!Cache\+Base@{Cache\+Base}}
+\subsubsection[{\$valid\+\_\+time}]{\setlength{\rightskip}{0pt plus 5cm}Cache\+Base\+::\$valid\+\_\+time = 36000}}\label{classCacheBase_ad4f01a1a34bce91cb38308028252b233}
+
+
+Definition at line 292 of file Cache\+Handler.\+class.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+classes/cache/\hyperlink{CacheHandler_8class_8php}{Cache\+Handler.\+class.\+php}\end{DoxyCompactItemize}

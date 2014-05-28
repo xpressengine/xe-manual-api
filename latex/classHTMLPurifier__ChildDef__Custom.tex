@@ -1,0 +1,117 @@
+\hypertarget{classHTMLPurifier__ChildDef__Custom}{\section{H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def\+\_\+\+Custom Class Reference}
+\label{classHTMLPurifier__ChildDef__Custom}\index{H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def\+\_\+\+Custom@{H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def\+\_\+\+Custom}}
+}
+Inheritance diagram for H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def\+\_\+\+Custom\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classHTMLPurifier__ChildDef__Custom}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHTMLPurifier__ChildDef__Custom_a80ca547f853bf9c2f0dd201b904cc3d4}{\+\_\+\+\_\+construct} (\$dtd\+\_\+regex)
+\item 
+\hyperlink{classHTMLPurifier__ChildDef__Custom_adf4fc5ab95054b2847ee51ef33f69143}{validate\+Children} (\$tokens\+\_\+of\+\_\+children, \$config, \$context)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHTMLPurifier__ChildDef__Custom_aa367d716379195c16bb9174a7c8b8dde}{\$type} = 'custom'
+\item 
+\hyperlink{classHTMLPurifier__ChildDef__Custom_acac362eee284fbd3acf67d15bc2acdd9}{\$allow\+\_\+empty} = false
+\item 
+\hyperlink{classHTMLPurifier__ChildDef__Custom_a72b76ac39dbaa12629440dd7c0dfacf8}{\$dtd\+\_\+regex}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHTMLPurifier__ChildDef__Custom_a6870520037ff15a8a2616a6d22a47cce}{\+\_\+compile\+Regex} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Custom validation class, accepts D\+T\+D child definitions
+
+\begin{DoxyWarning}{Warning}
+Currently this class is an all or nothing proposition, that is, it will only give a bool return value. 
+\end{DoxyWarning}
+
+
+Definition at line 9 of file Custom.\+php.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classHTMLPurifier__ChildDef__Custom_a80ca547f853bf9c2f0dd201b904cc3d4}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def\+\_\+\+Custom@{H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def\+\_\+\+Custom}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def\+\_\+\+Custom@{H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def\+\_\+\+Custom}}
+\subsubsection[{\+\_\+\+\_\+construct}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def\+\_\+\+Custom\+::\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+\item[{}]{\$dtd\+\_\+regex}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__ChildDef__Custom_a80ca547f853bf9c2f0dd201b904cc3d4}
+
+\begin{DoxyParams}{Parameters}
+{\em \$dtd\+\_\+regex} & Allowed child pattern from the D\+T\+D \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 25 of file Custom.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classHTMLPurifier__ChildDef__Custom_a6870520037ff15a8a2616a6d22a47cce}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def\+\_\+\+Custom@{H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def\+\_\+\+Custom}!\+\_\+compile\+Regex@{\+\_\+compile\+Regex}}
+\index{\+\_\+compile\+Regex@{\+\_\+compile\+Regex}!H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def\+\_\+\+Custom@{H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def\+\_\+\+Custom}}
+\subsubsection[{\+\_\+compile\+Regex}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def\+\_\+\+Custom\+::\+\_\+compile\+Regex (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classHTMLPurifier__ChildDef__Custom_a6870520037ff15a8a2616a6d22a47cce}
+Compiles the P\+C\+R\+E regex from a D\+T\+D regex (\$dtd\+\_\+regex to \$\+\_\+pcre\+\_\+regex) 
+
+Definition at line 32 of file Custom.\+php.
+
+\hypertarget{classHTMLPurifier__ChildDef__Custom_adf4fc5ab95054b2847ee51ef33f69143}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def\+\_\+\+Custom@{H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def\+\_\+\+Custom}!validate\+Children@{validate\+Children}}
+\index{validate\+Children@{validate\+Children}!H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def\+\_\+\+Custom@{H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def\+\_\+\+Custom}}
+\subsubsection[{validate\+Children}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def\+\_\+\+Custom\+::validate\+Children (
+\begin{DoxyParamCaption}
+\item[{}]{\$tokens\+\_\+of\+\_\+children, }
+\item[{}]{\$config, }
+\item[{}]{\$context}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__ChildDef__Custom_adf4fc5ab95054b2847ee51ef33f69143}
+
+
+Definition at line 60 of file Custom.\+php.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classHTMLPurifier__ChildDef__Custom_acac362eee284fbd3acf67d15bc2acdd9}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def\+\_\+\+Custom@{H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def\+\_\+\+Custom}!\$allow\+\_\+empty@{\$allow\+\_\+empty}}
+\index{\$allow\+\_\+empty@{\$allow\+\_\+empty}!H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def\+\_\+\+Custom@{H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def\+\_\+\+Custom}}
+\subsubsection[{\$allow\+\_\+empty}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def\+\_\+\+Custom\+::\$allow\+\_\+empty = false}}\label{classHTMLPurifier__ChildDef__Custom_acac362eee284fbd3acf67d15bc2acdd9}
+
+
+Definition at line 12 of file Custom.\+php.
+
+\hypertarget{classHTMLPurifier__ChildDef__Custom_a72b76ac39dbaa12629440dd7c0dfacf8}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def\+\_\+\+Custom@{H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def\+\_\+\+Custom}!\$dtd\+\_\+regex@{\$dtd\+\_\+regex}}
+\index{\$dtd\+\_\+regex@{\$dtd\+\_\+regex}!H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def\+\_\+\+Custom@{H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def\+\_\+\+Custom}}
+\subsubsection[{\$dtd\+\_\+regex}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def\+\_\+\+Custom\+::\$dtd\+\_\+regex}}\label{classHTMLPurifier__ChildDef__Custom_a72b76ac39dbaa12629440dd7c0dfacf8}
+Allowed child pattern as defined by the D\+T\+D 
+
+Definition at line 16 of file Custom.\+php.
+
+\hypertarget{classHTMLPurifier__ChildDef__Custom_aa367d716379195c16bb9174a7c8b8dde}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def\+\_\+\+Custom@{H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def\+\_\+\+Custom}!\$type@{\$type}}
+\index{\$type@{\$type}!H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def\+\_\+\+Custom@{H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def\+\_\+\+Custom}}
+\subsubsection[{\$type}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def\+\_\+\+Custom\+::\$type = 'custom'}}\label{classHTMLPurifier__ChildDef__Custom_aa367d716379195c16bb9174a7c8b8dde}
+
+
+Definition at line 11 of file Custom.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+classes/security/htmlpurifier/library/\+H\+T\+M\+L\+Purifier/\+Child\+Def/\hyperlink{Custom_8php}{Custom.\+php}\end{DoxyCompactItemize}

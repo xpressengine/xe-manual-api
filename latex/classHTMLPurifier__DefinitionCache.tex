@@ -1,0 +1,199 @@
+\hypertarget{classHTMLPurifier__DefinitionCache}{\section{H\+T\+M\+L\+Purifier\+\_\+\+Definition\+Cache Class Reference}
+\label{classHTMLPurifier__DefinitionCache}\index{H\+T\+M\+L\+Purifier\+\_\+\+Definition\+Cache@{H\+T\+M\+L\+Purifier\+\_\+\+Definition\+Cache}}
+}
+Inheritance diagram for H\+T\+M\+L\+Purifier\+\_\+\+Definition\+Cache\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.350482cm]{classHTMLPurifier__DefinitionCache}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHTMLPurifier__DefinitionCache_a042a2ac7126aed715d72bb63237e6d6d}{\+\_\+\+\_\+construct} (\$type)
+\item 
+\hyperlink{classHTMLPurifier__DefinitionCache_ad7539bc2ffb9ea5b265a77c9b637ed90}{generate\+Key} (\$config)
+\item 
+\hyperlink{classHTMLPurifier__DefinitionCache_a72277cd4e70f55b832c4c0a62be9c299}{is\+Old} (\$key, \$config)
+\item 
+\hyperlink{classHTMLPurifier__DefinitionCache_a6a5c8ab1ace59edb11512d4be702fd93}{check\+Def\+Type} (\$def)
+\item 
+\hyperlink{classHTMLPurifier__DefinitionCache_ab8d3f87b500df5a017712a460ac6089f}{add} (\$def, \$config)
+\item 
+\hyperlink{classHTMLPurifier__DefinitionCache_a97f14d4f1c7c2e56d83fdb864175be7e}{set} (\$def, \$config)
+\item 
+\hyperlink{classHTMLPurifier__DefinitionCache_a637ea90220e4e334942de73c44bdbeb3}{replace} (\$def, \$config)
+\item 
+\hyperlink{classHTMLPurifier__DefinitionCache_ab1d78d8d8b3ec702d6f4258ae6f57347}{get} (\$config)
+\item 
+\hyperlink{classHTMLPurifier__DefinitionCache_a35f777c47c08d91d4be900cfe29f6191}{remove} (\$config)
+\item 
+\hyperlink{classHTMLPurifier__DefinitionCache_aa808399297121e2e0513805b56b290bd}{flush} (\$config)
+\item 
+\hyperlink{classHTMLPurifier__DefinitionCache_ae02d1e54f27c61e10d68eaccf003be2d}{cleanup} (\$config)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHTMLPurifier__DefinitionCache_a0c80a1c08a20940de796f4ef29feefbc}{\$type}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract class representing Definition cache managers that implements useful common methods and is a factory. \begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000014}{Todo}]Create a separate maintenance file advanced users can use to cache their custom H\+T\+M\+L\+Definition, which can be loaded via a configuration directive 
+
+Implement memcached \end{DoxyRefDesc}
+
+
+Definition at line 11 of file Definition\+Cache.\+php.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classHTMLPurifier__DefinitionCache_a042a2ac7126aed715d72bb63237e6d6d}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Definition\+Cache@{H\+T\+M\+L\+Purifier\+\_\+\+Definition\+Cache}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!H\+T\+M\+L\+Purifier\+\_\+\+Definition\+Cache@{H\+T\+M\+L\+Purifier\+\_\+\+Definition\+Cache}}
+\subsubsection[{\+\_\+\+\_\+construct}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Definition\+Cache\+::\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+\item[{}]{\$type}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__DefinitionCache_a042a2ac7126aed715d72bb63237e6d6d}
+
+\begin{DoxyParams}{Parameters}
+{\em \$name} & Type of definition objects this instance of the cache will handle. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 20 of file Definition\+Cache.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classHTMLPurifier__DefinitionCache_ab8d3f87b500df5a017712a460ac6089f}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Definition\+Cache@{H\+T\+M\+L\+Purifier\+\_\+\+Definition\+Cache}!add@{add}}
+\index{add@{add}!H\+T\+M\+L\+Purifier\+\_\+\+Definition\+Cache@{H\+T\+M\+L\+Purifier\+\_\+\+Definition\+Cache}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Definition\+Cache\+::add (
+\begin{DoxyParamCaption}
+\item[{}]{\$def, }
+\item[{}]{\$config}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [abstract]}}}\label{classHTMLPurifier__DefinitionCache_ab8d3f87b500df5a017712a460ac6089f}
+Adds a definition object to the cache \hypertarget{classHTMLPurifier__DefinitionCache_a6a5c8ab1ace59edb11512d4be702fd93}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Definition\+Cache@{H\+T\+M\+L\+Purifier\+\_\+\+Definition\+Cache}!check\+Def\+Type@{check\+Def\+Type}}
+\index{check\+Def\+Type@{check\+Def\+Type}!H\+T\+M\+L\+Purifier\+\_\+\+Definition\+Cache@{H\+T\+M\+L\+Purifier\+\_\+\+Definition\+Cache}}
+\subsubsection[{check\+Def\+Type}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Definition\+Cache\+::check\+Def\+Type (
+\begin{DoxyParamCaption}
+\item[{}]{\$def}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__DefinitionCache_a6a5c8ab1ace59edb11512d4be702fd93}
+Checks if a definition's type jives with the cache's type \begin{DoxyNote}{Note}
+Throws an error on failure 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em \$def} & Definition object to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Boolean true if good, false if not 
+\end{DoxyReturn}
+
+
+Definition at line 60 of file Definition\+Cache.\+php.
+
+\hypertarget{classHTMLPurifier__DefinitionCache_ae02d1e54f27c61e10d68eaccf003be2d}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Definition\+Cache@{H\+T\+M\+L\+Purifier\+\_\+\+Definition\+Cache}!cleanup@{cleanup}}
+\index{cleanup@{cleanup}!H\+T\+M\+L\+Purifier\+\_\+\+Definition\+Cache@{H\+T\+M\+L\+Purifier\+\_\+\+Definition\+Cache}}
+\subsubsection[{cleanup}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Definition\+Cache\+::cleanup (
+\begin{DoxyParamCaption}
+\item[{}]{\$config}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [abstract]}}}\label{classHTMLPurifier__DefinitionCache_ae02d1e54f27c61e10d68eaccf003be2d}
+Clears all expired (older version or revision) objects from cache \begin{DoxyNote}{Note}
+Be carefuly implementing this method as flush. Flush must not interfere with other Definition types, and \hyperlink{classHTMLPurifier__DefinitionCache_ae02d1e54f27c61e10d68eaccf003be2d}{cleanup()} should not be repeatedly called by userland code. 
+\end{DoxyNote}
+\hypertarget{classHTMLPurifier__DefinitionCache_aa808399297121e2e0513805b56b290bd}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Definition\+Cache@{H\+T\+M\+L\+Purifier\+\_\+\+Definition\+Cache}!flush@{flush}}
+\index{flush@{flush}!H\+T\+M\+L\+Purifier\+\_\+\+Definition\+Cache@{H\+T\+M\+L\+Purifier\+\_\+\+Definition\+Cache}}
+\subsubsection[{flush}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Definition\+Cache\+::flush (
+\begin{DoxyParamCaption}
+\item[{}]{\$config}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [abstract]}}}\label{classHTMLPurifier__DefinitionCache_aa808399297121e2e0513805b56b290bd}
+Clears all objects from cache \hypertarget{classHTMLPurifier__DefinitionCache_ad7539bc2ffb9ea5b265a77c9b637ed90}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Definition\+Cache@{H\+T\+M\+L\+Purifier\+\_\+\+Definition\+Cache}!generate\+Key@{generate\+Key}}
+\index{generate\+Key@{generate\+Key}!H\+T\+M\+L\+Purifier\+\_\+\+Definition\+Cache@{H\+T\+M\+L\+Purifier\+\_\+\+Definition\+Cache}}
+\subsubsection[{generate\+Key}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Definition\+Cache\+::generate\+Key (
+\begin{DoxyParamCaption}
+\item[{}]{\$config}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__DefinitionCache_ad7539bc2ffb9ea5b265a77c9b637ed90}
+Generates a unique identifier for a particular configuration 
+\begin{DoxyParams}{Parameters}
+{\em Instance} & of \hyperlink{classHTMLPurifier__Config}{H\+T\+M\+L\+Purifier\+\_\+\+Config} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 28 of file Definition\+Cache.\+php.
+
+\hypertarget{classHTMLPurifier__DefinitionCache_ab1d78d8d8b3ec702d6f4258ae6f57347}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Definition\+Cache@{H\+T\+M\+L\+Purifier\+\_\+\+Definition\+Cache}!get@{get}}
+\index{get@{get}!H\+T\+M\+L\+Purifier\+\_\+\+Definition\+Cache@{H\+T\+M\+L\+Purifier\+\_\+\+Definition\+Cache}}
+\subsubsection[{get}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Definition\+Cache\+::get (
+\begin{DoxyParamCaption}
+\item[{}]{\$config}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [abstract]}}}\label{classHTMLPurifier__DefinitionCache_ab1d78d8d8b3ec702d6f4258ae6f57347}
+Retrieves a definition object from the cache \hypertarget{classHTMLPurifier__DefinitionCache_a72277cd4e70f55b832c4c0a62be9c299}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Definition\+Cache@{H\+T\+M\+L\+Purifier\+\_\+\+Definition\+Cache}!is\+Old@{is\+Old}}
+\index{is\+Old@{is\+Old}!H\+T\+M\+L\+Purifier\+\_\+\+Definition\+Cache@{H\+T\+M\+L\+Purifier\+\_\+\+Definition\+Cache}}
+\subsubsection[{is\+Old}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Definition\+Cache\+::is\+Old (
+\begin{DoxyParamCaption}
+\item[{}]{\$key, }
+\item[{}]{\$config}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__DefinitionCache_a72277cd4e70f55b832c4c0a62be9c299}
+Tests whether or not a key is old with respect to the configuration's version and revision number. 
+\begin{DoxyParams}{Parameters}
+{\em \$key} & Key to test \\
+\hline
+{\em \$config} & Instance of \hyperlink{classHTMLPurifier__Config}{H\+T\+M\+L\+Purifier\+\_\+\+Config} to test against \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 40 of file Definition\+Cache.\+php.
+
+\hypertarget{classHTMLPurifier__DefinitionCache_a35f777c47c08d91d4be900cfe29f6191}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Definition\+Cache@{H\+T\+M\+L\+Purifier\+\_\+\+Definition\+Cache}!remove@{remove}}
+\index{remove@{remove}!H\+T\+M\+L\+Purifier\+\_\+\+Definition\+Cache@{H\+T\+M\+L\+Purifier\+\_\+\+Definition\+Cache}}
+\subsubsection[{remove}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Definition\+Cache\+::remove (
+\begin{DoxyParamCaption}
+\item[{}]{\$config}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [abstract]}}}\label{classHTMLPurifier__DefinitionCache_a35f777c47c08d91d4be900cfe29f6191}
+Removes a definition object to the cache \hypertarget{classHTMLPurifier__DefinitionCache_a637ea90220e4e334942de73c44bdbeb3}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Definition\+Cache@{H\+T\+M\+L\+Purifier\+\_\+\+Definition\+Cache}!replace@{replace}}
+\index{replace@{replace}!H\+T\+M\+L\+Purifier\+\_\+\+Definition\+Cache@{H\+T\+M\+L\+Purifier\+\_\+\+Definition\+Cache}}
+\subsubsection[{replace}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Definition\+Cache\+::replace (
+\begin{DoxyParamCaption}
+\item[{}]{\$def, }
+\item[{}]{\$config}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [abstract]}}}\label{classHTMLPurifier__DefinitionCache_a637ea90220e4e334942de73c44bdbeb3}
+Replace an object in the cache \hypertarget{classHTMLPurifier__DefinitionCache_a97f14d4f1c7c2e56d83fdb864175be7e}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Definition\+Cache@{H\+T\+M\+L\+Purifier\+\_\+\+Definition\+Cache}!set@{set}}
+\index{set@{set}!H\+T\+M\+L\+Purifier\+\_\+\+Definition\+Cache@{H\+T\+M\+L\+Purifier\+\_\+\+Definition\+Cache}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Definition\+Cache\+::set (
+\begin{DoxyParamCaption}
+\item[{}]{\$def, }
+\item[{}]{\$config}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [abstract]}}}\label{classHTMLPurifier__DefinitionCache_a97f14d4f1c7c2e56d83fdb864175be7e}
+Unconditionally saves a definition object to the cache 
+
+\subsection{Member Data Documentation}
+\hypertarget{classHTMLPurifier__DefinitionCache_a0c80a1c08a20940de796f4ef29feefbc}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Definition\+Cache@{H\+T\+M\+L\+Purifier\+\_\+\+Definition\+Cache}!\$type@{\$type}}
+\index{\$type@{\$type}!H\+T\+M\+L\+Purifier\+\_\+\+Definition\+Cache@{H\+T\+M\+L\+Purifier\+\_\+\+Definition\+Cache}}
+\subsubsection[{\$type}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Definition\+Cache\+::\$type}}\label{classHTMLPurifier__DefinitionCache_a0c80a1c08a20940de796f4ef29feefbc}
+
+
+Definition at line 14 of file Definition\+Cache.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+classes/security/htmlpurifier/library/\+H\+T\+M\+L\+Purifier/\hyperlink{DefinitionCache_8php}{Definition\+Cache.\+php}\end{DoxyCompactItemize}

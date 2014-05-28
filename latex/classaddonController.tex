@@ -1,0 +1,182 @@
+\hypertarget{classaddonController}{\section{addon\+Controller Class Reference}
+\label{classaddonController}\index{addon\+Controller@{addon\+Controller}}
+}
+Inheritance diagram for addon\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classaddonController}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classaddonController_a11ede7aecba420c2a5c7e55d8bab4013}{init} ()
+\item 
+\hyperlink{classaddonController_aaad3343ec8471cab540db6ebde4c06bd}{get\+Cache\+File\+Path} (\$type=\char`\"{}pc\char`\"{})
+\item 
+\hyperlink{classaddonController_a7a1ed742a1dd2c4f71e56acafe31c13d}{\+\_\+get\+Mid\+List} (\$selected\+\_\+addon, \$\hyperlink{ko_8install_8php_a8b1406b4ad1048041558dce6bfe89004}{site\+\_\+srl}=0)
+\item 
+\hyperlink{classaddonController_ad0f567db4f461bb5d2d6449b38f261ed}{make\+Cache\+File} (\$\hyperlink{ko_8install_8php_a8b1406b4ad1048041558dce6bfe89004}{site\+\_\+srl}=0, \$type=\char`\"{}pc\char`\"{}, \$gtype= 'site')
+\item 
+\hyperlink{classaddonController_a029f47b2dc77ada00e12e6323039ebdb}{do\+Setup} (\$\hyperlink{classaddon}{addon}, \$\hyperlink{ko_8install_8php_ae1dcb37fc34a8f312d2e6abd6f806743}{extra\+\_\+vars}, \$\hyperlink{ko_8install_8php_a8b1406b4ad1048041558dce6bfe89004}{site\+\_\+srl}=0, \$gtype= 'site')
+\item 
+\hyperlink{classaddonController_ad90c76bfd8351152d3d69b287c606fe5}{remove\+Addon\+Config} (\$\hyperlink{ko_8install_8php_a8b1406b4ad1048041558dce6bfe89004}{site\+\_\+srl})
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Addon module's controller class \begin{DoxyAuthor}{Author}
+N\+A\+V\+E\+R (\href{mailto:developers@xpressengine.com}{\tt developers@xpressengine.\+com}) 
+\end{DoxyAuthor}
+
+
+Definition at line 8 of file addon.\+controller.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classaddonController_a7a1ed742a1dd2c4f71e56acafe31c13d}{\index{addon\+Controller@{addon\+Controller}!\+\_\+get\+Mid\+List@{\+\_\+get\+Mid\+List}}
+\index{\+\_\+get\+Mid\+List@{\+\_\+get\+Mid\+List}!addon\+Controller@{addon\+Controller}}
+\subsubsection[{\+\_\+get\+Mid\+List}]{\setlength{\rightskip}{0pt plus 5cm}addon\+Controller\+::\+\_\+get\+Mid\+List (
+\begin{DoxyParamCaption}
+\item[{}]{\$selected\+\_\+addon, }
+\item[{}]{\$site\+\_\+srl = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classaddonController_a7a1ed742a1dd2c4f71e56acafe31c13d}
+Returns mid list that addons is run
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$selected\+\_\+addon} & Name to get list \\
+\hline
+int & {\em \$site\+\_\+srl} & Site srl \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\mbox{[}\mbox{]} Returns list that contain mid 
+\end{DoxyReturn}
+
+
+Definition at line 64 of file addon.\+controller.\+php.
+
+\hypertarget{classaddonController_a029f47b2dc77ada00e12e6323039ebdb}{\index{addon\+Controller@{addon\+Controller}!do\+Setup@{do\+Setup}}
+\index{do\+Setup@{do\+Setup}!addon\+Controller@{addon\+Controller}}
+\subsubsection[{do\+Setup}]{\setlength{\rightskip}{0pt plus 5cm}addon\+Controller\+::do\+Setup (
+\begin{DoxyParamCaption}
+\item[{}]{\$addon, }
+\item[{}]{\$extra\+\_\+vars, }
+\item[{}]{\$site\+\_\+srl = {\ttfamily 0}, }
+\item[{}]{\$gtype = {\ttfamily 'site'}}
+\end{DoxyParamCaption}
+)}}\label{classaddonController_a029f47b2dc77ada00e12e6323039ebdb}
+Save setup
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$addon} & Addon name \\
+\hline
+object & {\em \$extra\+\_\+vars} & Extra variables \\
+\hline
+int & {\em \$site\+\_\+srl} & Site srl \\
+\hline
+string & {\em \$gtype} & site or global \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classObject}{Object} 
+\end{DoxyReturn}
+
+
+Definition at line 147 of file addon.\+controller.\+php.
+
+\hypertarget{classaddonController_aaad3343ec8471cab540db6ebde4c06bd}{\index{addon\+Controller@{addon\+Controller}!get\+Cache\+File\+Path@{get\+Cache\+File\+Path}}
+\index{get\+Cache\+File\+Path@{get\+Cache\+File\+Path}!addon\+Controller@{addon\+Controller}}
+\subsubsection[{get\+Cache\+File\+Path}]{\setlength{\rightskip}{0pt plus 5cm}addon\+Controller\+::get\+Cache\+File\+Path (
+\begin{DoxyParamCaption}
+\item[{}]{\$type = {\ttfamily \char`\"{}pc\char`\"{}}}
+\end{DoxyParamCaption}
+)}}\label{classaddonController_aaad3343ec8471cab540db6ebde4c06bd}
+Returns a cache file path
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$type} & pc or mobile \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Returns a path 
+\end{DoxyReturn}
+
+
+Definition at line 26 of file addon.\+controller.\+php.
+
+\hypertarget{classaddonController_a11ede7aecba420c2a5c7e55d8bab4013}{\index{addon\+Controller@{addon\+Controller}!init@{init}}
+\index{init@{init}!addon\+Controller@{addon\+Controller}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}addon\+Controller\+::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classaddonController_a11ede7aecba420c2a5c7e55d8bab4013}
+Initialization
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 16 of file addon.\+controller.\+php.
+
+\hypertarget{classaddonController_ad0f567db4f461bb5d2d6449b38f261ed}{\index{addon\+Controller@{addon\+Controller}!make\+Cache\+File@{make\+Cache\+File}}
+\index{make\+Cache\+File@{make\+Cache\+File}!addon\+Controller@{addon\+Controller}}
+\subsubsection[{make\+Cache\+File}]{\setlength{\rightskip}{0pt plus 5cm}addon\+Controller\+::make\+Cache\+File (
+\begin{DoxyParamCaption}
+\item[{}]{\$site\+\_\+srl = {\ttfamily 0}, }
+\item[{}]{\$type = {\ttfamily \char`\"{}pc\char`\"{}}, }
+\item[{}]{\$gtype = {\ttfamily 'site'}}
+\end{DoxyParamCaption}
+)}}\label{classaddonController_ad0f567db4f461bb5d2d6449b38f261ed}
+Re-\/generate the cache file
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$site\+\_\+srl} & Site srl \\
+\hline
+string & {\em \$type} & pc or mobile \\
+\hline
+string & {\em \$gtype} & site or global \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 79 of file addon.\+controller.\+php.
+
+\hypertarget{classaddonController_ad90c76bfd8351152d3d69b287c606fe5}{\index{addon\+Controller@{addon\+Controller}!remove\+Addon\+Config@{remove\+Addon\+Config}}
+\index{remove\+Addon\+Config@{remove\+Addon\+Config}!addon\+Controller@{addon\+Controller}}
+\subsubsection[{remove\+Addon\+Config}]{\setlength{\rightskip}{0pt plus 5cm}addon\+Controller\+::remove\+Addon\+Config (
+\begin{DoxyParamCaption}
+\item[{}]{\$site\+\_\+srl}
+\end{DoxyParamCaption}
+)}}\label{classaddonController_ad90c76bfd8351152d3d69b287c606fe5}
+Remove add-\/on information in the virtual site
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$site\+\_\+srl} & Site srl \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 171 of file addon.\+controller.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+modules/addon/\hyperlink{addon_8controller_8php}{addon.\+controller.\+php}\end{DoxyCompactItemize}

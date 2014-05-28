@@ -1,0 +1,485 @@
+\hypertarget{classcommentController}{\section{comment\+Controller Class Reference}
+\label{classcommentController}\index{comment\+Controller@{comment\+Controller}}
+}
+Inheritance diagram for comment\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classcommentController}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcommentController_aee7912001fe1896ca5440d22b42c626d}{init} ()
+\item 
+\hyperlink{classcommentController_a1ca216be683b8cedf6b5f71aaa23a0b3}{proc\+Comment\+Vote\+Up} ()
+\item 
+\hyperlink{classcommentController_ae5c2ce138a0c36f2d7fb4f1fdcfad800}{proc\+Comment\+Vote\+Down} ()
+\item 
+\hyperlink{classcommentController_af2d31904b424b330a3f2710c16d55f7b}{proc\+Comment\+Declare} ()
+\item 
+\hyperlink{classcommentController_ab209ef386bfb83c88a85bf4618237aca}{trigger\+Delete\+Document\+Comments} (\&\$obj)
+\item 
+\hyperlink{classcommentController_a8c9ad7337a8522f82a4010f9f0afa274}{trigger\+Delete\+Module\+Comments} (\&\$obj)
+\item 
+\hyperlink{classcommentController_a429acbf0d176d50256f666ecf9364aa8}{add\+Grant} (\$comment\+\_\+srl)
+\item 
+\hyperlink{classcommentController_ad77fc43c9ea8beb6397d541f8ff44f93}{is\+Module\+Using\+Publish\+Validation} (\$\hyperlink{ko_8install_8php_a370bb6450fab1da3e0ed9f484a38b761}{module\+\_\+srl}=N\+U\+L\+L)
+\item 
+\hyperlink{classcommentController_adf4259b95832275119add098174c8816}{insert\+Comment} (\$obj, \$manual\+\_\+inserted=F\+A\+L\+S\+E)
+\item 
+\hyperlink{classcommentController_a36736562b092a021301ec11a61310e68}{send\+Email\+To\+Admin\+After\+Insert\+Comment} (\$obj)
+\item 
+\hyperlink{classcommentController_aa2a123794691f3e5153f4df0b03c318f}{update\+Comment} (\$obj, \$is\+\_\+admin=F\+A\+L\+S\+E)
+\item 
+\hyperlink{classcommentController_adfd7bfdb249d109119f85e72aca2253c}{delete\+Comment} (\$comment\+\_\+srl, \$is\+\_\+admin=F\+A\+L\+S\+E, \$is\+Move\+To\+Trash=F\+A\+L\+S\+E)
+\item 
+\hyperlink{classcommentController_a74209017d102354e16394a3d0bb97fda}{delete\+Comment\+Log} ()
+\item 
+\hyperlink{classcommentController_a40b5ccce875c41ce902c82ec622c938e}{delete\+Comments} (\$document\+\_\+srl, \$obj=N\+U\+L\+L)
+\item 
+\hyperlink{classcommentController_a06a2f96cd357550dd0cd834d7e61f4bf}{\+\_\+delete\+Declared\+Comments} (\$comment\+Srls)
+\item 
+\hyperlink{classcommentController_a0e4216451f3bb1c02aeec98bb4f54ddc}{\+\_\+delete\+Voted\+Comments} (\$comment\+Srls)
+\item 
+\hyperlink{classcommentController_abe720cae94b04ba356b00f80f6880e91}{update\+Voted\+Count} (\$comment\+\_\+srl, \$\hyperlink{classpoint}{point}=1)
+\item 
+\hyperlink{classcommentController_aaae1e5860a1e170a8fc3142f80bbcde6}{declared\+Comment} (\$comment\+\_\+srl)
+\item 
+\hyperlink{classcommentController_a27025d0f5cc53f58566493e6e33b924a}{add\+Comment\+Popup\+Menu} (\$url, \$str, \$icon= '', \$target= 'self')
+\item 
+\hyperlink{classcommentController_ab4a71283244210be754cceb8511e8789}{proc\+Comment\+Insert\+Module\+Config} ()
+\item 
+\hyperlink{classcommentController_a3e4d45ad61f74541e1182c29924b625d}{set\+Comment\+Module\+Config} (\$srl, \$comment\+\_\+config)
+\item 
+\hyperlink{classcommentController_ac9edb9826c8b07ceb1a4db29c5db514a}{proc\+Comment\+Get\+List} ()
+\item 
+\hyperlink{classcommentController_a5cf1c177c5cbdd0556363a0204d92f5f}{trigger\+Copy\+Module} (\&\$obj)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 12 of file comment.\+controller.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcommentController_a06a2f96cd357550dd0cd834d7e61f4bf}{\index{comment\+Controller@{comment\+Controller}!\+\_\+delete\+Declared\+Comments@{\+\_\+delete\+Declared\+Comments}}
+\index{\+\_\+delete\+Declared\+Comments@{\+\_\+delete\+Declared\+Comments}!comment\+Controller@{comment\+Controller}}
+\subsubsection[{\+\_\+delete\+Declared\+Comments}]{\setlength{\rightskip}{0pt plus 5cm}comment\+Controller\+::\+\_\+delete\+Declared\+Comments (
+\begin{DoxyParamCaption}
+\item[{}]{\$comment\+Srls}
+\end{DoxyParamCaption}
+)}}\label{classcommentController_a06a2f96cd357550dd0cd834d7e61f4bf}
+delete declared comment, log 
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$comment\+Srls} & \+: srls string (ex\+: 1, 2,56, 88) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 981 of file comment.\+controller.\+php.
+
+\hypertarget{classcommentController_a0e4216451f3bb1c02aeec98bb4f54ddc}{\index{comment\+Controller@{comment\+Controller}!\+\_\+delete\+Voted\+Comments@{\+\_\+delete\+Voted\+Comments}}
+\index{\+\_\+delete\+Voted\+Comments@{\+\_\+delete\+Voted\+Comments}!comment\+Controller@{comment\+Controller}}
+\subsubsection[{\+\_\+delete\+Voted\+Comments}]{\setlength{\rightskip}{0pt plus 5cm}comment\+Controller\+::\+\_\+delete\+Voted\+Comments (
+\begin{DoxyParamCaption}
+\item[{}]{\$comment\+Srls}
+\end{DoxyParamCaption}
+)}}\label{classcommentController_a0e4216451f3bb1c02aeec98bb4f54ddc}
+delete voted comment log 
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$comment\+Srls} & \+: srls string (ex\+: 1, 2,56, 88) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 992 of file comment.\+controller.\+php.
+
+\hypertarget{classcommentController_a27025d0f5cc53f58566493e6e33b924a}{\index{comment\+Controller@{comment\+Controller}!add\+Comment\+Popup\+Menu@{add\+Comment\+Popup\+Menu}}
+\index{add\+Comment\+Popup\+Menu@{add\+Comment\+Popup\+Menu}!comment\+Controller@{comment\+Controller}}
+\subsubsection[{add\+Comment\+Popup\+Menu}]{\setlength{\rightskip}{0pt plus 5cm}comment\+Controller\+::add\+Comment\+Popup\+Menu (
+\begin{DoxyParamCaption}
+\item[{}]{\$url, }
+\item[{}]{\$str, }
+\item[{}]{\$icon = {\ttfamily ''}, }
+\item[{}]{\$target = {\ttfamily 'self'}}
+\end{DoxyParamCaption}
+)}}\label{classcommentController_a27025d0f5cc53f58566493e6e33b924a}
+Method to add a pop-\/up menu when clicking for displaying child comments 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$url} & \\
+\hline
+string & {\em \$str} & \\
+\hline
+strgin & {\em \$icon} & \\
+\hline
+strgin & {\em \$target} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 1250 of file comment.\+controller.\+php.
+
+\hypertarget{classcommentController_a429acbf0d176d50256f666ecf9364aa8}{\index{comment\+Controller@{comment\+Controller}!add\+Grant@{add\+Grant}}
+\index{add\+Grant@{add\+Grant}!comment\+Controller@{comment\+Controller}}
+\subsubsection[{add\+Grant}]{\setlength{\rightskip}{0pt plus 5cm}comment\+Controller\+::add\+Grant (
+\begin{DoxyParamCaption}
+\item[{}]{\$comment\+\_\+srl}
+\end{DoxyParamCaption}
+)}}\label{classcommentController_a429acbf0d176d50256f666ecf9364aa8}
+Authorization of the comments available only in the current connection of the session value \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 152 of file comment.\+controller.\+php.
+
+\hypertarget{classcommentController_aaae1e5860a1e170a8fc3142f80bbcde6}{\index{comment\+Controller@{comment\+Controller}!declared\+Comment@{declared\+Comment}}
+\index{declared\+Comment@{declared\+Comment}!comment\+Controller@{comment\+Controller}}
+\subsubsection[{declared\+Comment}]{\setlength{\rightskip}{0pt plus 5cm}comment\+Controller\+::declared\+Comment (
+\begin{DoxyParamCaption}
+\item[{}]{\$comment\+\_\+srl}
+\end{DoxyParamCaption}
+)}}\label{classcommentController_aaae1e5860a1e170a8fc3142f80bbcde6}
+Report a blamed comment 
+\begin{DoxyParams}{Parameters}
+{\em \$comment\+\_\+srl} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 1128 of file comment.\+controller.\+php.
+
+\hypertarget{classcommentController_adfd7bfdb249d109119f85e72aca2253c}{\index{comment\+Controller@{comment\+Controller}!delete\+Comment@{delete\+Comment}}
+\index{delete\+Comment@{delete\+Comment}!comment\+Controller@{comment\+Controller}}
+\subsubsection[{delete\+Comment}]{\setlength{\rightskip}{0pt plus 5cm}comment\+Controller\+::delete\+Comment (
+\begin{DoxyParamCaption}
+\item[{}]{\$comment\+\_\+srl, }
+\item[{}]{\$is\+\_\+admin = {\ttfamily FALSE}, }
+\item[{}]{\$is\+Move\+To\+Trash = {\ttfamily FALSE}}
+\end{DoxyParamCaption}
+)}}\label{classcommentController_adfd7bfdb249d109119f85e72aca2253c}
+Delete comment 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$comment\+\_\+srl} & \\
+\hline
+bool & {\em \$is\+\_\+admin} & \\
+\hline
+bool & {\em \$is\+Move\+To\+Trash} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 758 of file comment.\+controller.\+php.
+
+\hypertarget{classcommentController_a74209017d102354e16394a3d0bb97fda}{\index{comment\+Controller@{comment\+Controller}!delete\+Comment\+Log@{delete\+Comment\+Log}}
+\index{delete\+Comment\+Log@{delete\+Comment\+Log}!comment\+Controller@{comment\+Controller}}
+\subsubsection[{delete\+Comment\+Log}]{\setlength{\rightskip}{0pt plus 5cm}comment\+Controller\+::delete\+Comment\+Log (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcommentController_a74209017d102354e16394a3d0bb97fda}
+Remove all comment relation log \begin{DoxyReturn}{Returns}
+\hyperlink{classObject}{Object} 
+\end{DoxyReturn}
+
+
+Definition at line 892 of file comment.\+controller.\+php.
+
+\hypertarget{classcommentController_a40b5ccce875c41ce902c82ec622c938e}{\index{comment\+Controller@{comment\+Controller}!delete\+Comments@{delete\+Comments}}
+\index{delete\+Comments@{delete\+Comments}!comment\+Controller@{comment\+Controller}}
+\subsubsection[{delete\+Comments}]{\setlength{\rightskip}{0pt plus 5cm}comment\+Controller\+::delete\+Comments (
+\begin{DoxyParamCaption}
+\item[{}]{\$document\+\_\+srl, }
+\item[{}]{\$obj = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}}\label{classcommentController_a40b5ccce875c41ce902c82ec622c938e}
+Remove all comments of the article 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$document\+\_\+srl} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 904 of file comment.\+controller.\+php.
+
+\hypertarget{classcommentController_aee7912001fe1896ca5440d22b42c626d}{\index{comment\+Controller@{comment\+Controller}!init@{init}}
+\index{init@{init}!comment\+Controller@{comment\+Controller}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}comment\+Controller\+::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcommentController_aee7912001fe1896ca5440d22b42c626d}
+Initialization \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 19 of file comment.\+controller.\+php.
+
+\hypertarget{classcommentController_adf4259b95832275119add098174c8816}{\index{comment\+Controller@{comment\+Controller}!insert\+Comment@{insert\+Comment}}
+\index{insert\+Comment@{insert\+Comment}!comment\+Controller@{comment\+Controller}}
+\subsubsection[{insert\+Comment}]{\setlength{\rightskip}{0pt plus 5cm}comment\+Controller\+::insert\+Comment (
+\begin{DoxyParamCaption}
+\item[{}]{\$obj, }
+\item[{}]{\$manual\+\_\+inserted = {\ttfamily FALSE}}
+\end{DoxyParamCaption}
+)}}\label{classcommentController_adf4259b95832275119add098174c8816}
+Enter comments 
+\begin{DoxyParams}[1]{Parameters}
+object & {\em \$obj} & \\
+\hline
+bool & {\em \$manual\+\_\+inserted} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 187 of file comment.\+controller.\+php.
+
+\hypertarget{classcommentController_ad77fc43c9ea8beb6397d541f8ff44f93}{\index{comment\+Controller@{comment\+Controller}!is\+Module\+Using\+Publish\+Validation@{is\+Module\+Using\+Publish\+Validation}}
+\index{is\+Module\+Using\+Publish\+Validation@{is\+Module\+Using\+Publish\+Validation}!comment\+Controller@{comment\+Controller}}
+\subsubsection[{is\+Module\+Using\+Publish\+Validation}]{\setlength{\rightskip}{0pt plus 5cm}comment\+Controller\+::is\+Module\+Using\+Publish\+Validation (
+\begin{DoxyParamCaption}
+\item[{}]{\$module\+\_\+srl = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}}\label{classcommentController_ad77fc43c9ea8beb6397d541f8ff44f93}
+Check if module is using comment validation system 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$document\+\_\+srl} & \\
+\hline
+int & {\em \$module\+\_\+srl} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Definition at line 163 of file comment.\+controller.\+php.
+
+\hypertarget{classcommentController_af2d31904b424b330a3f2710c16d55f7b}{\index{comment\+Controller@{comment\+Controller}!proc\+Comment\+Declare@{proc\+Comment\+Declare}}
+\index{proc\+Comment\+Declare@{proc\+Comment\+Declare}!comment\+Controller@{comment\+Controller}}
+\subsubsection[{proc\+Comment\+Declare}]{\setlength{\rightskip}{0pt plus 5cm}comment\+Controller\+::proc\+Comment\+Declare (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcommentController_af2d31904b424b330a3f2710c16d55f7b}
+Action to be called when a comment posting is reported \begin{DoxyReturn}{Returns}
+void$\vert$\+Object 
+\end{DoxyReturn}
+
+
+Definition at line 100 of file comment.\+controller.\+php.
+
+\hypertarget{classcommentController_ac9edb9826c8b07ceb1a4db29c5db514a}{\index{comment\+Controller@{comment\+Controller}!proc\+Comment\+Get\+List@{proc\+Comment\+Get\+List}}
+\index{proc\+Comment\+Get\+List@{proc\+Comment\+Get\+List}!comment\+Controller@{comment\+Controller}}
+\subsubsection[{proc\+Comment\+Get\+List}]{\setlength{\rightskip}{0pt plus 5cm}comment\+Controller\+::proc\+Comment\+Get\+List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcommentController_ac9edb9826c8b07ceb1a4db29c5db514a}
+Get comment all list \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 1344 of file comment.\+controller.\+php.
+
+\hypertarget{classcommentController_ab4a71283244210be754cceb8511e8789}{\index{comment\+Controller@{comment\+Controller}!proc\+Comment\+Insert\+Module\+Config@{proc\+Comment\+Insert\+Module\+Config}}
+\index{proc\+Comment\+Insert\+Module\+Config@{proc\+Comment\+Insert\+Module\+Config}!comment\+Controller@{comment\+Controller}}
+\subsubsection[{proc\+Comment\+Insert\+Module\+Config}]{\setlength{\rightskip}{0pt plus 5cm}comment\+Controller\+::proc\+Comment\+Insert\+Module\+Config (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcommentController_ab4a71283244210be754cceb8511e8789}
+Save the comment extension form for each module \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 1272 of file comment.\+controller.\+php.
+
+\hypertarget{classcommentController_ae5c2ce138a0c36f2d7fb4f1fdcfad800}{\index{comment\+Controller@{comment\+Controller}!proc\+Comment\+Vote\+Down@{proc\+Comment\+Vote\+Down}}
+\index{proc\+Comment\+Vote\+Down@{proc\+Comment\+Vote\+Down}!comment\+Controller@{comment\+Controller}}
+\subsubsection[{proc\+Comment\+Vote\+Down}]{\setlength{\rightskip}{0pt plus 5cm}comment\+Controller\+::proc\+Comment\+Vote\+Down (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcommentController_ae5c2ce138a0c36f2d7fb4f1fdcfad800}
+Action to handle recommendation votes on comments (Down) \begin{DoxyReturn}{Returns}
+\hyperlink{classObject}{Object} 
+\end{DoxyReturn}
+
+
+Definition at line 64 of file comment.\+controller.\+php.
+
+\hypertarget{classcommentController_a1ca216be683b8cedf6b5f71aaa23a0b3}{\index{comment\+Controller@{comment\+Controller}!proc\+Comment\+Vote\+Up@{proc\+Comment\+Vote\+Up}}
+\index{proc\+Comment\+Vote\+Up@{proc\+Comment\+Vote\+Up}!comment\+Controller@{comment\+Controller}}
+\subsubsection[{proc\+Comment\+Vote\+Up}]{\setlength{\rightskip}{0pt plus 5cm}comment\+Controller\+::proc\+Comment\+Vote\+Up (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcommentController_a1ca216be683b8cedf6b5f71aaa23a0b3}
+Action to handle recommendation votes on comments (Up) \begin{DoxyReturn}{Returns}
+\hyperlink{classObject}{Object} 
+\end{DoxyReturn}
+
+
+Definition at line 28 of file comment.\+controller.\+php.
+
+\hypertarget{classcommentController_a36736562b092a021301ec11a61310e68}{\index{comment\+Controller@{comment\+Controller}!send\+Email\+To\+Admin\+After\+Insert\+Comment@{send\+Email\+To\+Admin\+After\+Insert\+Comment}}
+\index{send\+Email\+To\+Admin\+After\+Insert\+Comment@{send\+Email\+To\+Admin\+After\+Insert\+Comment}!comment\+Controller@{comment\+Controller}}
+\subsubsection[{send\+Email\+To\+Admin\+After\+Insert\+Comment}]{\setlength{\rightskip}{0pt plus 5cm}comment\+Controller\+::send\+Email\+To\+Admin\+After\+Insert\+Comment (
+\begin{DoxyParamCaption}
+\item[{}]{\$obj}
+\end{DoxyParamCaption}
+)}}\label{classcommentController_a36736562b092a021301ec11a61310e68}
+Send email to module's admins after a new comment was interted successfully if Comments Approval System is used 
+\begin{DoxyParams}[1]{Parameters}
+object & {\em \$obj} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000005}{Todo}]Removed code send email to document author. \end{DoxyRefDesc}
+
+
+Definition at line 489 of file comment.\+controller.\+php.
+
+\hypertarget{classcommentController_a3e4d45ad61f74541e1182c29924b625d}{\index{comment\+Controller@{comment\+Controller}!set\+Comment\+Module\+Config@{set\+Comment\+Module\+Config}}
+\index{set\+Comment\+Module\+Config@{set\+Comment\+Module\+Config}!comment\+Controller@{comment\+Controller}}
+\subsubsection[{set\+Comment\+Module\+Config}]{\setlength{\rightskip}{0pt plus 5cm}comment\+Controller\+::set\+Comment\+Module\+Config (
+\begin{DoxyParamCaption}
+\item[{}]{\$srl, }
+\item[{}]{\$comment\+\_\+config}
+\end{DoxyParamCaption}
+)}}\label{classcommentController_a3e4d45ad61f74541e1182c29924b625d}
+Comment module config setting 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$srl} & \\
+\hline
+object & {\em \$comment\+\_\+config} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classObject}{Object} 
+\end{DoxyReturn}
+
+
+Definition at line 1333 of file comment.\+controller.\+php.
+
+\hypertarget{classcommentController_a5cf1c177c5cbdd0556363a0204d92f5f}{\index{comment\+Controller@{comment\+Controller}!trigger\+Copy\+Module@{trigger\+Copy\+Module}}
+\index{trigger\+Copy\+Module@{trigger\+Copy\+Module}!comment\+Controller@{comment\+Controller}}
+\subsubsection[{trigger\+Copy\+Module}]{\setlength{\rightskip}{0pt plus 5cm}comment\+Controller\+::trigger\+Copy\+Module (
+\begin{DoxyParamCaption}
+\item[{\&}]{\$obj}
+\end{DoxyParamCaption}
+)}}\label{classcommentController_a5cf1c177c5cbdd0556363a0204d92f5f}
+
+
+Definition at line 1383 of file comment.\+controller.\+php.
+
+\hypertarget{classcommentController_ab209ef386bfb83c88a85bf4618237aca}{\index{comment\+Controller@{comment\+Controller}!trigger\+Delete\+Document\+Comments@{trigger\+Delete\+Document\+Comments}}
+\index{trigger\+Delete\+Document\+Comments@{trigger\+Delete\+Document\+Comments}!comment\+Controller@{comment\+Controller}}
+\subsubsection[{trigger\+Delete\+Document\+Comments}]{\setlength{\rightskip}{0pt plus 5cm}comment\+Controller\+::trigger\+Delete\+Document\+Comments (
+\begin{DoxyParamCaption}
+\item[{\&}]{\$obj}
+\end{DoxyParamCaption}
+)}}\label{classcommentController_ab209ef386bfb83c88a85bf4618237aca}
+Trigger to delete its comments together with document deleted \begin{DoxyReturn}{Returns}
+\hyperlink{classObject}{Object} 
+\end{DoxyReturn}
+
+
+Definition at line 120 of file comment.\+controller.\+php.
+
+\hypertarget{classcommentController_a8c9ad7337a8522f82a4010f9f0afa274}{\index{comment\+Controller@{comment\+Controller}!trigger\+Delete\+Module\+Comments@{trigger\+Delete\+Module\+Comments}}
+\index{trigger\+Delete\+Module\+Comments@{trigger\+Delete\+Module\+Comments}!comment\+Controller@{comment\+Controller}}
+\subsubsection[{trigger\+Delete\+Module\+Comments}]{\setlength{\rightskip}{0pt plus 5cm}comment\+Controller\+::trigger\+Delete\+Module\+Comments (
+\begin{DoxyParamCaption}
+\item[{\&}]{\$obj}
+\end{DoxyParamCaption}
+)}}\label{classcommentController_a8c9ad7337a8522f82a4010f9f0afa274}
+Trigger to delete corresponding comments when deleting a module \begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 135 of file comment.\+controller.\+php.
+
+\hypertarget{classcommentController_aa2a123794691f3e5153f4df0b03c318f}{\index{comment\+Controller@{comment\+Controller}!update\+Comment@{update\+Comment}}
+\index{update\+Comment@{update\+Comment}!comment\+Controller@{comment\+Controller}}
+\subsubsection[{update\+Comment}]{\setlength{\rightskip}{0pt plus 5cm}comment\+Controller\+::update\+Comment (
+\begin{DoxyParamCaption}
+\item[{}]{\$obj, }
+\item[{}]{\$is\+\_\+admin = {\ttfamily FALSE}}
+\end{DoxyParamCaption}
+)}}\label{classcommentController_aa2a123794691f3e5153f4df0b03c318f}
+Fix the comment 
+\begin{DoxyParams}[1]{Parameters}
+object & {\em \$obj} & \\
+\hline
+bool & {\em \$is\+\_\+admin} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 632 of file comment.\+controller.\+php.
+
+\hypertarget{classcommentController_abe720cae94b04ba356b00f80f6880e91}{\index{comment\+Controller@{comment\+Controller}!update\+Voted\+Count@{update\+Voted\+Count}}
+\index{update\+Voted\+Count@{update\+Voted\+Count}!comment\+Controller@{comment\+Controller}}
+\subsubsection[{update\+Voted\+Count}]{\setlength{\rightskip}{0pt plus 5cm}comment\+Controller\+::update\+Voted\+Count (
+\begin{DoxyParamCaption}
+\item[{}]{\$comment\+\_\+srl, }
+\item[{}]{\$point = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}}\label{classcommentController_abe720cae94b04ba356b00f80f6880e91}
+Increase vote-\/up counts of the comment 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$comment\+\_\+srl} & \\
+\hline
+int & {\em \$point} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classObject}{Object} 
+\end{DoxyReturn}
+
+
+Definition at line 1003 of file comment.\+controller.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+modules/comment/\hyperlink{comment_8controller_8php}{comment.\+controller.\+php}\end{DoxyCompactItemize}

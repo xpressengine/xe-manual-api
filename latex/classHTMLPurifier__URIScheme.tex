@@ -1,0 +1,128 @@
+\hypertarget{classHTMLPurifier__URIScheme}{\section{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Scheme Class Reference}
+\label{classHTMLPurifier__URIScheme}\index{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Scheme@{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Scheme}}
+}
+Inheritance diagram for H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Scheme\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.165049cm]{classHTMLPurifier__URIScheme}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHTMLPurifier__URIScheme_ab915d9b60669d9c79c23472265ded7fd}{do\+Validate} (\&\$uri, \$config, \$context)
+\item 
+\hyperlink{classHTMLPurifier__URIScheme_af881ccfdd6fc02d661801e401ad3298f}{validate} (\&\$uri, \$config, \$context)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHTMLPurifier__URIScheme_a3a6f27695d6029d4cab45ed2cc20e5ba}{\$default\+\_\+port} = null
+\item 
+\hyperlink{classHTMLPurifier__URIScheme_abbd36fc30d0256aa9a3a2728a4b1d28f}{\$browsable} = false
+\item 
+\hyperlink{classHTMLPurifier__URIScheme_a53fc8c93025cf82924f0c8f44d432e20}{\$secure} = false
+\item 
+\hyperlink{classHTMLPurifier__URIScheme_ac8df8407ec6f4e8c8bb1dc9ae3c352fb}{\$hierarchical} = false
+\item 
+\hyperlink{classHTMLPurifier__URIScheme_a9d8e36fcebf034700d00bc4d935fa765}{\$may\+\_\+omit\+\_\+host} = false
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classValidator}{Validator} for the components of a U\+R\+I for a specific scheme 
+
+Definition at line 6 of file U\+R\+I\+Scheme.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classHTMLPurifier__URIScheme_ab915d9b60669d9c79c23472265ded7fd}{\index{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Scheme@{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Scheme}!do\+Validate@{do\+Validate}}
+\index{do\+Validate@{do\+Validate}!H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Scheme@{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Scheme}}
+\subsubsection[{do\+Validate}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Scheme\+::do\+Validate (
+\begin{DoxyParamCaption}
+\item[{\&}]{\$uri, }
+\item[{}]{\$config, }
+\item[{}]{\$context}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [abstract]}}}\label{classHTMLPurifier__URIScheme_ab915d9b60669d9c79c23472265ded7fd}
+Validates the components of a U\+R\+I for a specific scheme. 
+\begin{DoxyParams}{Parameters}
+{\em \$uri} & Reference to a \hyperlink{classHTMLPurifier__URI}{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I} object \\
+\hline
+{\em \$config} & \hyperlink{classHTMLPurifier__Config}{H\+T\+M\+L\+Purifier\+\_\+\+Config} object \\
+\hline
+{\em \$context} & \hyperlink{classHTMLPurifier__Context}{H\+T\+M\+L\+Purifier\+\_\+\+Context} object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Bool success or failure 
+\end{DoxyReturn}
+\hypertarget{classHTMLPurifier__URIScheme_af881ccfdd6fc02d661801e401ad3298f}{\index{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Scheme@{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Scheme}!validate@{validate}}
+\index{validate@{validate}!H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Scheme@{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Scheme}}
+\subsubsection[{validate}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Scheme\+::validate (
+\begin{DoxyParamCaption}
+\item[{\&}]{\$uri, }
+\item[{}]{\$config, }
+\item[{}]{\$context}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__URIScheme_af881ccfdd6fc02d661801e401ad3298f}
+Public interface for validating components of a U\+R\+I. Performs a bunch of default actions. Don't overload this method. 
+\begin{DoxyParams}{Parameters}
+{\em \$uri} & Reference to a \hyperlink{classHTMLPurifier__URI}{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I} object \\
+\hline
+{\em \$config} & \hyperlink{classHTMLPurifier__Config}{H\+T\+M\+L\+Purifier\+\_\+\+Config} object \\
+\hline
+{\em \$context} & \hyperlink{classHTMLPurifier__Context}{H\+T\+M\+L\+Purifier\+\_\+\+Context} object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Bool success or failure 
+\end{DoxyReturn}
+
+
+Definition at line 58 of file U\+R\+I\+Scheme.\+php.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classHTMLPurifier__URIScheme_abbd36fc30d0256aa9a3a2728a4b1d28f}{\index{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Scheme@{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Scheme}!\$browsable@{\$browsable}}
+\index{\$browsable@{\$browsable}!H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Scheme@{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Scheme}}
+\subsubsection[{\$browsable}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Scheme\+::\$browsable = false}}\label{classHTMLPurifier__URIScheme_abbd36fc30d0256aa9a3a2728a4b1d28f}
+Whether or not U\+R\+Is of this schem are locatable by a browser http and ftp are accessible, while mailto and news are not. 
+
+Definition at line 20 of file U\+R\+I\+Scheme.\+php.
+
+\hypertarget{classHTMLPurifier__URIScheme_a3a6f27695d6029d4cab45ed2cc20e5ba}{\index{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Scheme@{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Scheme}!\$default\+\_\+port@{\$default\+\_\+port}}
+\index{\$default\+\_\+port@{\$default\+\_\+port}!H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Scheme@{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Scheme}}
+\subsubsection[{\$default\+\_\+port}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Scheme\+::\$default\+\_\+port = null}}\label{classHTMLPurifier__URIScheme_a3a6f27695d6029d4cab45ed2cc20e5ba}
+Scheme's default port (integer). If an explicit port number is specified that coincides with the default port, it will be elided. 
+
+Definition at line 14 of file U\+R\+I\+Scheme.\+php.
+
+\hypertarget{classHTMLPurifier__URIScheme_ac8df8407ec6f4e8c8bb1dc9ae3c352fb}{\index{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Scheme@{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Scheme}!\$hierarchical@{\$hierarchical}}
+\index{\$hierarchical@{\$hierarchical}!H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Scheme@{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Scheme}}
+\subsubsection[{\$hierarchical}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Scheme\+::\$hierarchical = false}}\label{classHTMLPurifier__URIScheme_ac8df8407ec6f4e8c8bb1dc9ae3c352fb}
+Whether or not the U\+R\+I always uses $<$hier\+\_\+part$>$, resolves edge cases with making relative U\+R\+Is absolute 
+
+Definition at line 32 of file U\+R\+I\+Scheme.\+php.
+
+\hypertarget{classHTMLPurifier__URIScheme_a9d8e36fcebf034700d00bc4d935fa765}{\index{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Scheme@{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Scheme}!\$may\+\_\+omit\+\_\+host@{\$may\+\_\+omit\+\_\+host}}
+\index{\$may\+\_\+omit\+\_\+host@{\$may\+\_\+omit\+\_\+host}!H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Scheme@{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Scheme}}
+\subsubsection[{\$may\+\_\+omit\+\_\+host}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Scheme\+::\$may\+\_\+omit\+\_\+host = false}}\label{classHTMLPurifier__URIScheme_a9d8e36fcebf034700d00bc4d935fa765}
+Whether or not the U\+R\+I may omit a hostname when the scheme is explicitly specified, ala \href{file:///path/to/file}{\tt file\+:///path/to/file}. As of writing, 'file' is the only scheme that browsers support his properly. 
+
+Definition at line 39 of file U\+R\+I\+Scheme.\+php.
+
+\hypertarget{classHTMLPurifier__URIScheme_a53fc8c93025cf82924f0c8f44d432e20}{\index{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Scheme@{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Scheme}!\$secure@{\$secure}}
+\index{\$secure@{\$secure}!H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Scheme@{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Scheme}}
+\subsubsection[{\$secure}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Scheme\+::\$secure = false}}\label{classHTMLPurifier__URIScheme_a53fc8c93025cf82924f0c8f44d432e20}
+Whether or not data transmitted over this scheme is encrypted. https is secure, http is not. 
+
+Definition at line 26 of file U\+R\+I\+Scheme.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+classes/security/htmlpurifier/library/\+H\+T\+M\+L\+Purifier/\hyperlink{URIScheme_8php}{U\+R\+I\+Scheme.\+php}\end{DoxyCompactItemize}

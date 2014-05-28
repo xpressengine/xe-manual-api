@@ -1,0 +1,286 @@
+\hypertarget{classfileModel}{\section{file\+Model Class Reference}
+\label{classfileModel}\index{file\+Model@{file\+Model}}
+}
+Inheritance diagram for file\+Model\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classfileModel}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classfileModel_a5dd9542d5c0ed61a7dd0158900ff5c92}{init} ()
+\item 
+\hyperlink{classfileModel_ad2b29057d5e61a15cb2caf794fc12291}{get\+File\+List} ()
+\item 
+\hyperlink{classfileModel_a37f83c04ce8adc09f576b94e04264f5b}{get\+Files\+Count} (\$upload\+\_\+target\+\_\+srl)
+\item 
+\hyperlink{classfileModel_ad626512a63e99f97d0e5a6fac7dae8c8}{get\+Download\+Url} (\$file\+\_\+srl, \$sid, \$\hyperlink{ko_8install_8php_a370bb6450fab1da3e0ed9f484a38b761}{module\+\_\+srl}=\char`\"{}\char`\"{})
+\item 
+\hyperlink{classfileModel_a81beeda11f761f561adb60ebc72d6187}{get\+File\+Config} (\$\hyperlink{ko_8install_8php_a370bb6450fab1da3e0ed9f484a38b761}{module\+\_\+srl}=null)
+\item 
+\hyperlink{classfileModel_a1475f2eb6cc740bf7f5ef67a4654fb24}{get\+File} (\$file\+\_\+srl, \$column\+List=array())
+\item 
+\hyperlink{classfileModel_a149c4f1e8710ec09c7dab5284b72bd48}{get\+Files} (\$upload\+\_\+target\+\_\+srl, \$column\+List=array(), \$sort\+Index= 'file\+\_\+srl', \$ck\+Valid=false)
+\item 
+\hyperlink{classfileModel_a0d268e1f840c7495de96ed511c7053fc}{get\+Upload\+Config} ()
+\item 
+\hyperlink{classfileModel_a63c3d6b41db33e55521cd3f0b10ab493}{get\+Upload\+Status} (\$attached\+\_\+size=0)
+\item 
+\hyperlink{classfileModel_aefe867916bce4a5f3451bb9afc464844}{get\+File\+Module\+Config} (\$\hyperlink{ko_8install_8php_a370bb6450fab1da3e0ed9f484a38b761}{module\+\_\+srl})
+\item 
+\hyperlink{classfileModel_a129e251c2a4ed575126c902a64ed3f59}{get\+File\+Grant} (\$file\+\_\+info, \$member\+\_\+info)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Model class of the file module \begin{DoxyAuthor}{Author}
+N\+A\+V\+E\+R (\href{mailto:developers@xpressengine.com}{\tt developers@xpressengine.\+com}) 
+\end{DoxyAuthor}
+
+
+Definition at line 7 of file file.\+model.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classfileModel_ad626512a63e99f97d0e5a6fac7dae8c8}{\index{file\+Model@{file\+Model}!get\+Download\+Url@{get\+Download\+Url}}
+\index{get\+Download\+Url@{get\+Download\+Url}!file\+Model@{file\+Model}}
+\subsubsection[{get\+Download\+Url}]{\setlength{\rightskip}{0pt plus 5cm}file\+Model\+::get\+Download\+Url (
+\begin{DoxyParamCaption}
+\item[{}]{\$file\+\_\+srl, }
+\item[{}]{\$sid, }
+\item[{}]{\$module\+\_\+srl = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)}}\label{classfileModel_ad626512a63e99f97d0e5a6fac7dae8c8}
+Get a download path
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$file\+\_\+srl} & The sequence of file to get url \\
+\hline
+string & {\em \$sid} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Returns a url 
+\end{DoxyReturn}
+
+
+Definition at line 98 of file file.\+model.\+php.
+
+\hypertarget{classfileModel_a1475f2eb6cc740bf7f5ef67a4654fb24}{\index{file\+Model@{file\+Model}!get\+File@{get\+File}}
+\index{get\+File@{get\+File}!file\+Model@{file\+Model}}
+\subsubsection[{get\+File}]{\setlength{\rightskip}{0pt plus 5cm}file\+Model\+::get\+File (
+\begin{DoxyParamCaption}
+\item[{}]{\$file\+\_\+srl, }
+\item[{}]{\$column\+List = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}}\label{classfileModel_a1475f2eb6cc740bf7f5ef67a4654fb24}
+Get file information
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$file\+\_\+srl} & The sequence of file to get information \\
+\hline
+array & {\em \$column\+List} & The list of columns to get from \hyperlink{classDB}{D\+B} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Object$\vert$object$\vert$array If error returns an instance of \hyperlink{classObject}{Object}. If result set is one returns a object that contins file information. If result set is more than one returns array of object. 
+\end{DoxyReturn}
+
+
+Definition at line 156 of file file.\+model.\+php.
+
+\hypertarget{classfileModel_a81beeda11f761f561adb60ebc72d6187}{\index{file\+Model@{file\+Model}!get\+File\+Config@{get\+File\+Config}}
+\index{get\+File\+Config@{get\+File\+Config}!file\+Model@{file\+Model}}
+\subsubsection[{get\+File\+Config}]{\setlength{\rightskip}{0pt plus 5cm}file\+Model\+::get\+File\+Config (
+\begin{DoxyParamCaption}
+\item[{}]{\$module\+\_\+srl = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{classfileModel_a81beeda11f761f561adb60ebc72d6187}
+Get file configurations
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$module\+\_\+srl} & If set this, returns specific module's configuration. Otherwise returns global configuration. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object Returns configuration. 
+\end{DoxyReturn}
+
+
+Definition at line 109 of file file.\+model.\+php.
+
+\hypertarget{classfileModel_a129e251c2a4ed575126c902a64ed3f59}{\index{file\+Model@{file\+Model}!get\+File\+Grant@{get\+File\+Grant}}
+\index{get\+File\+Grant@{get\+File\+Grant}!file\+Model@{file\+Model}}
+\subsubsection[{get\+File\+Grant}]{\setlength{\rightskip}{0pt plus 5cm}file\+Model\+::get\+File\+Grant (
+\begin{DoxyParamCaption}
+\item[{}]{\$file\+\_\+info, }
+\item[{}]{\$member\+\_\+info}
+\end{DoxyParamCaption}
+)}}\label{classfileModel_a129e251c2a4ed575126c902a64ed3f59}
+Returns a grant of file
+
+
+\begin{DoxyParams}[1]{Parameters}
+object & {\em \$file\+\_\+info} & The file information to get grant \\
+\hline
+object & {\em \$member\+\_\+info} & The member information to get grant \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object Returns a grant of file 
+\end{DoxyReturn}
+
+
+Definition at line 288 of file file.\+model.\+php.
+
+\hypertarget{classfileModel_ad2b29057d5e61a15cb2caf794fc12291}{\index{file\+Model@{file\+Model}!get\+File\+List@{get\+File\+List}}
+\index{get\+File\+List@{get\+File\+List}!file\+Model@{file\+Model}}
+\subsubsection[{get\+File\+List}]{\setlength{\rightskip}{0pt plus 5cm}file\+Model\+::get\+File\+List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classfileModel_ad2b29057d5e61a15cb2caf794fc12291}
+Return a file list attached in the document
+
+It is used when a file list of the upload\+\_\+target\+\_\+srl is requested for creating/updating a document. Attempt to replace with sever-\/side session if upload\+\_\+target\+\_\+srl is not yet determined
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 25 of file file.\+model.\+php.
+
+\hypertarget{classfileModel_aefe867916bce4a5f3451bb9afc464844}{\index{file\+Model@{file\+Model}!get\+File\+Module\+Config@{get\+File\+Module\+Config}}
+\index{get\+File\+Module\+Config@{get\+File\+Module\+Config}!file\+Model@{file\+Model}}
+\subsubsection[{get\+File\+Module\+Config}]{\setlength{\rightskip}{0pt plus 5cm}file\+Model\+::get\+File\+Module\+Config (
+\begin{DoxyParamCaption}
+\item[{}]{\$module\+\_\+srl}
+\end{DoxyParamCaption}
+)}}\label{classfileModel_aefe867916bce4a5f3451bb9afc464844}
+Return file configuration of the module
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$module\+\_\+srl} & The sequence of module to get configuration \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 276 of file file.\+model.\+php.
+
+\hypertarget{classfileModel_a149c4f1e8710ec09c7dab5284b72bd48}{\index{file\+Model@{file\+Model}!get\+Files@{get\+Files}}
+\index{get\+Files@{get\+Files}!file\+Model@{file\+Model}}
+\subsubsection[{get\+Files}]{\setlength{\rightskip}{0pt plus 5cm}file\+Model\+::get\+Files (
+\begin{DoxyParamCaption}
+\item[{}]{\$upload\+\_\+target\+\_\+srl, }
+\item[{}]{\$column\+List = {\ttfamily array()}, }
+\item[{}]{\$sort\+Index = {\ttfamily 'file\+\_\+srl'}, }
+\item[{}]{\$ck\+Valid = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{classfileModel_a149c4f1e8710ec09c7dab5284b72bd48}
+Return all files which belong to a specific document
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$upload\+\_\+target\+\_\+srl} & The sequence of target to get file list \\
+\hline
+array & {\em \$column\+List} & The list of columns to get from \hyperlink{classDB}{D\+B} \\
+\hline
+string & {\em \$sort\+Index} & The column that used as sort index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array Returns array of object that contains file information. If no result returns null. 
+\end{DoxyReturn}
+
+
+Definition at line 196 of file file.\+model.\+php.
+
+\hypertarget{classfileModel_a37f83c04ce8adc09f576b94e04264f5b}{\index{file\+Model@{file\+Model}!get\+Files\+Count@{get\+Files\+Count}}
+\index{get\+Files\+Count@{get\+Files\+Count}!file\+Model@{file\+Model}}
+\subsubsection[{get\+Files\+Count}]{\setlength{\rightskip}{0pt plus 5cm}file\+Model\+::get\+Files\+Count (
+\begin{DoxyParamCaption}
+\item[{}]{\$upload\+\_\+target\+\_\+srl}
+\end{DoxyParamCaption}
+)}}\label{classfileModel_a37f83c04ce8adc09f576b94e04264f5b}
+Return number of attachments which belongs to a specific document
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$upload\+\_\+target\+\_\+srl} & The sequence to get a number of files \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Returns a number of files 
+\end{DoxyReturn}
+
+
+Definition at line 83 of file file.\+model.\+php.
+
+\hypertarget{classfileModel_a0d268e1f840c7495de96ed511c7053fc}{\index{file\+Model@{file\+Model}!get\+Upload\+Config@{get\+Upload\+Config}}
+\index{get\+Upload\+Config@{get\+Upload\+Config}!file\+Model@{file\+Model}}
+\subsubsection[{get\+Upload\+Config}]{\setlength{\rightskip}{0pt plus 5cm}file\+Model\+::get\+Upload\+Config (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classfileModel_a0d268e1f840c7495de96ed511c7053fc}
+Return configurations of the attachement (it automatically checks if an administrator is)
+
+\begin{DoxyReturn}{Returns}
+object Returns a file configuration of current module. If user is admin, returns P\+H\+P's max file size and allow all file types. 
+\end{DoxyReturn}
+
+
+Definition at line 226 of file file.\+model.\+php.
+
+\hypertarget{classfileModel_a63c3d6b41db33e55521cd3f0b10ab493}{\index{file\+Model@{file\+Model}!get\+Upload\+Status@{get\+Upload\+Status}}
+\index{get\+Upload\+Status@{get\+Upload\+Status}!file\+Model@{file\+Model}}
+\subsubsection[{get\+Upload\+Status}]{\setlength{\rightskip}{0pt plus 5cm}file\+Model\+::get\+Upload\+Status (
+\begin{DoxyParamCaption}
+\item[{}]{\$attached\+\_\+size = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classfileModel_a63c3d6b41db33e55521cd3f0b10ab493}
+Return messages for file upload and it depends whether an admin is or not
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$attached\+\_\+size} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 253 of file file.\+model.\+php.
+
+\hypertarget{classfileModel_a5dd9542d5c0ed61a7dd0158900ff5c92}{\index{file\+Model@{file\+Model}!init@{init}}
+\index{init@{init}!file\+Model@{file\+Model}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}file\+Model\+::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classfileModel_a5dd9542d5c0ed61a7dd0158900ff5c92}
+Initialization \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 13 of file file.\+model.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+modules/file/\hyperlink{file_8model_8php}{file.\+model.\+php}\end{DoxyCompactItemize}

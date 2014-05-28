@@ -1,0 +1,261 @@
+\hypertarget{classHTMLPurifier__ConfigSchema}{\section{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema Class Reference}
+\label{classHTMLPurifier__ConfigSchema}\index{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema@{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHTMLPurifier__ConfigSchema_a41e23be9cf4cd46902c8a2b28db9622c}{\+\_\+\+\_\+construct} ()
+\item 
+\hyperlink{classHTMLPurifier__ConfigSchema_a951740a9c5af8e60ef42ba8dee66fe4e}{add} (\$key, \$default, \$type, \$allow\+\_\+null)
+\item 
+\hyperlink{classHTMLPurifier__ConfigSchema_a0dd75c50a43c7a694630eea4ee4c2062}{add\+Value\+Aliases} (\$key, \$aliases)
+\item 
+\hyperlink{classHTMLPurifier__ConfigSchema_a30ba02af1d480d033c8ccc6b4bf1e4e9}{add\+Allowed\+Values} (\$key, \$allowed)
+\item 
+\hyperlink{classHTMLPurifier__ConfigSchema_a4ef5fe568294717b9751e76e6d5da39d}{add\+Alias} (\$key, \$new\+\_\+key)
+\item 
+\hyperlink{classHTMLPurifier__ConfigSchema_a72f7e0607e67dbed7697caa8c40bdcf9}{post\+Process} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classHTMLPurifier__ConfigSchema_ade90aaacf1175ee0834258d872de751d}{make\+From\+Serial} ()
+\item 
+static \hyperlink{classHTMLPurifier__ConfigSchema_a08032256a2747722b8d04ba5354fde1d}{instance} (\$prototype=null)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHTMLPurifier__ConfigSchema_a7fc713e221224772229688e8bda11a19}{\$defaults} = array()
+\item 
+\hyperlink{classHTMLPurifier__ConfigSchema_a05712519dc257a092bc9bda8bfe34977}{\$default\+Plist}
+\item 
+\hyperlink{classHTMLPurifier__ConfigSchema_a2e8a80a7aa2d777b95de55e8465d385b}{\$info} = array()
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classHTMLPurifier__ConfigSchema_a60d289f46f786502bc0b15322ba5de8e}{\$singleton}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Configuration definition, defines directives and their defaults. 
+
+Definition at line 6 of file Config\+Schema.\+php.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classHTMLPurifier__ConfigSchema_a41e23be9cf4cd46902c8a2b28db9622c}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema@{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema@{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema}}
+\subsubsection[{\+\_\+\+\_\+construct}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+::\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__ConfigSchema_a41e23be9cf4cd46902c8a2b28db9622c}
+
+
+Definition at line 55 of file Config\+Schema.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classHTMLPurifier__ConfigSchema_a951740a9c5af8e60ef42ba8dee66fe4e}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema@{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema}!add@{add}}
+\index{add@{add}!H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema@{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+::add (
+\begin{DoxyParamCaption}
+\item[{}]{\$key, }
+\item[{}]{\$default, }
+\item[{}]{\$type, }
+\item[{}]{\$allow\+\_\+null}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__ConfigSchema_a951740a9c5af8e60ef42ba8dee66fe4e}
+Defines a directive for configuration \begin{DoxyWarning}{Warning}
+Will fail of directive's namespace is defined. 
+
+This method's signature is slightly different from the legacy define() static method! Beware! 
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em \$namespace} & Namespace the directive is in \\
+\hline
+{\em \$name} & Key of directive \\
+\hline
+{\em \$default} & Default value of directive \\
+\hline
+{\em \$type} & Allowed type of the directive. See H\+T\+M\+L\+Purifier\+\_\+\+Directive\+Def\+::\$type for allowed values \\
+\hline
+{\em \$allow\+\_\+null} & Whether or not to allow null values \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 96 of file Config\+Schema.\+php.
+
+\hypertarget{classHTMLPurifier__ConfigSchema_a4ef5fe568294717b9751e76e6d5da39d}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema@{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema}!add\+Alias@{add\+Alias}}
+\index{add\+Alias@{add\+Alias}!H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema@{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema}}
+\subsubsection[{add\+Alias}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+::add\+Alias (
+\begin{DoxyParamCaption}
+\item[{}]{\$key, }
+\item[{}]{\$new\+\_\+key}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__ConfigSchema_a4ef5fe568294717b9751e76e6d5da39d}
+Defines a directive alias for backwards compatibility 
+\begin{DoxyParams}{Parameters}
+{\em \$namespace} & \\
+\hline
+{\em \$name} & Directive that will be aliased \\
+\hline
+{\em \$new\+\_\+namespace} & \\
+\hline
+{\em \$new\+\_\+name} & Directive that the alias will be to \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 142 of file Config\+Schema.\+php.
+
+\hypertarget{classHTMLPurifier__ConfigSchema_a30ba02af1d480d033c8ccc6b4bf1e4e9}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema@{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema}!add\+Allowed\+Values@{add\+Allowed\+Values}}
+\index{add\+Allowed\+Values@{add\+Allowed\+Values}!H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema@{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema}}
+\subsubsection[{add\+Allowed\+Values}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+::add\+Allowed\+Values (
+\begin{DoxyParamCaption}
+\item[{}]{\$key, }
+\item[{}]{\$allowed}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__ConfigSchema_a30ba02af1d480d033c8ccc6b4bf1e4e9}
+Defines a set of allowed values for a directive. \begin{DoxyWarning}{Warning}
+This is slightly different from the corresponding static method definition. 
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em \$namespace} & Namespace of directive \\
+\hline
+{\em \$name} & Name of directive \\
+\hline
+{\em \$allowed} & Lookup array of allowed values \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 131 of file Config\+Schema.\+php.
+
+\hypertarget{classHTMLPurifier__ConfigSchema_a0dd75c50a43c7a694630eea4ee4c2062}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema@{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema}!add\+Value\+Aliases@{add\+Value\+Aliases}}
+\index{add\+Value\+Aliases@{add\+Value\+Aliases}!H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema@{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema}}
+\subsubsection[{add\+Value\+Aliases}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+::add\+Value\+Aliases (
+\begin{DoxyParamCaption}
+\item[{}]{\$key, }
+\item[{}]{\$aliases}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__ConfigSchema_a0dd75c50a43c7a694630eea4ee4c2062}
+Defines a directive value alias.
+
+Directive value aliases are convenient for developers because it lets them set a directive to several values and get the same result. 
+\begin{DoxyParams}{Parameters}
+{\em \$namespace} & Directive's namespace \\
+\hline
+{\em \$name} & Name of Directive \\
+\hline
+{\em \$aliases} & Hash of aliased values to the real alias \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 114 of file Config\+Schema.\+php.
+
+\hypertarget{classHTMLPurifier__ConfigSchema_a08032256a2747722b8d04ba5354fde1d}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema@{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema}!instance@{instance}}
+\index{instance@{instance}!H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema@{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema}}
+\subsubsection[{instance}]{\setlength{\rightskip}{0pt plus 5cm}static H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+::instance (
+\begin{DoxyParamCaption}
+\item[{}]{\$prototype = {\ttfamily null}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classHTMLPurifier__ConfigSchema_a08032256a2747722b8d04ba5354fde1d}
+Retrieves an instance of the application-\/wide configuration definition. 
+
+Definition at line 75 of file Config\+Schema.\+php.
+
+\hypertarget{classHTMLPurifier__ConfigSchema_ade90aaacf1175ee0834258d872de751d}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema@{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema}!make\+From\+Serial@{make\+From\+Serial}}
+\index{make\+From\+Serial@{make\+From\+Serial}!H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema@{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema}}
+\subsubsection[{make\+From\+Serial}]{\setlength{\rightskip}{0pt plus 5cm}static H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+::make\+From\+Serial (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classHTMLPurifier__ConfigSchema_ade90aaacf1175ee0834258d872de751d}
+Unserializes the default Config\+Schema. 
+
+Definition at line 62 of file Config\+Schema.\+php.
+
+\hypertarget{classHTMLPurifier__ConfigSchema_a72f7e0607e67dbed7697caa8c40bdcf9}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema@{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema}!post\+Process@{post\+Process}}
+\index{post\+Process@{post\+Process}!H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema@{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema}}
+\subsubsection[{post\+Process}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+::post\+Process (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__ConfigSchema_a72f7e0607e67dbed7697caa8c40bdcf9}
+Replaces any stdclass that only has the type property with type integer. 
+
+Definition at line 152 of file Config\+Schema.\+php.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classHTMLPurifier__ConfigSchema_a05712519dc257a092bc9bda8bfe34977}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema@{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema}!\$default\+Plist@{\$default\+Plist}}
+\index{\$default\+Plist@{\$default\+Plist}!H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema@{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema}}
+\subsubsection[{\$default\+Plist}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+::\$default\+Plist}}\label{classHTMLPurifier__ConfigSchema_a05712519dc257a092bc9bda8bfe34977}
+The default property list. Do not edit this property list. 
+
+Definition at line 17 of file Config\+Schema.\+php.
+
+\hypertarget{classHTMLPurifier__ConfigSchema_a7fc713e221224772229688e8bda11a19}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema@{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema}!\$defaults@{\$defaults}}
+\index{\$defaults@{\$defaults}!H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema@{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema}}
+\subsubsection[{\$defaults}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+::\$defaults = array()}}\label{classHTMLPurifier__ConfigSchema_a7fc713e221224772229688e8bda11a19}
+Defaults of the directives and namespaces. \begin{DoxyNote}{Note}
+This shares the exact same structure as H\+T\+M\+L\+Purifier\+\_\+\+Config\+::\$conf 
+\end{DoxyNote}
+
+
+Definition at line 12 of file Config\+Schema.\+php.
+
+\hypertarget{classHTMLPurifier__ConfigSchema_a2e8a80a7aa2d777b95de55e8465d385b}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema@{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema}!\$info@{\$info}}
+\index{\$info@{\$info}!H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema@{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema}}
+\subsubsection[{\$info}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+::\$info = array()}}\label{classHTMLPurifier__ConfigSchema_a2e8a80a7aa2d777b95de55e8465d385b}
+Definition of the directives. The structure of this is\+:
+
+array( 'Namespace' =$>$ array( 'Directive' =$>$ new stdclass(), ) )
+
+The stdclass may have the following properties\+:
+
+
+\begin{DoxyItemize}
+\item If is\+Alias isn't set\+:
+\begin{DoxyItemize}
+\item type\+: Integer type of directive, see \hyperlink{classHTMLPurifier__VarParser}{H\+T\+M\+L\+Purifier\+\_\+\+Var\+Parser} for definitions
+\item allow\+\_\+null\+: If set, this directive allows null values
+\item aliases\+: If set, an associative array of value aliases to real values
+\item allowed\+: If set, a lookup array of allowed (string) values
+\end{DoxyItemize}
+\item If is\+Alias is set\+:
+\begin{DoxyItemize}
+\item namespace\+: Namespace this directive aliases to
+\item name\+: Directive name this directive aliases to
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+In certain degenerate cases, stdclass will actually be an integer. In that case, the value is equivalent to an stdclass with the type property set to the integer. If the integer is negative, type is equal to the absolute value of integer, and allow\+\_\+null is true.
+
+This class is friendly with \hyperlink{classHTMLPurifier__Config}{H\+T\+M\+L\+Purifier\+\_\+\+Config}. If you need introspection about the schema, you're better of using the Config\+Schema\+\_\+\+Interchange, which uses more memory but has much richer information. 
+
+Definition at line 48 of file Config\+Schema.\+php.
+
+\hypertarget{classHTMLPurifier__ConfigSchema_a60d289f46f786502bc0b15322ba5de8e}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema@{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema}!\$singleton@{\$singleton}}
+\index{\$singleton@{\$singleton}!H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema@{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema}}
+\subsubsection[{\$singleton}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+::\$singleton\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{classHTMLPurifier__ConfigSchema_a60d289f46f786502bc0b15322ba5de8e}
+Application-\/wide singleton 
+
+Definition at line 53 of file Config\+Schema.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+classes/security/htmlpurifier/library/\+H\+T\+M\+L\+Purifier/\hyperlink{ConfigSchema_8php}{Config\+Schema.\+php}\end{DoxyCompactItemize}

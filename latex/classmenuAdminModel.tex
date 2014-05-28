@@ -1,0 +1,331 @@
+\hypertarget{classmenuAdminModel}{\section{menu\+Admin\+Model Class Reference}
+\label{classmenuAdminModel}\index{menu\+Admin\+Model@{menu\+Admin\+Model}}
+}
+
+
+admin model class of the menu module  
+
+
+Inheritance diagram for menu\+Admin\+Model\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classmenuAdminModel}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmenuAdminModel_a092a0da21ac0c7f76f84ec5be5eea1b7}{init} ()
+\item 
+\hyperlink{classmenuAdminModel_ad1a73e97dedf1b78f6780e4c17ff5100}{get\+Menu\+List} (\$obj)
+\item 
+\hyperlink{classmenuAdminModel_a78dfe866b68c04fd622df4d41bdce36c}{get\+Menus} (\$\hyperlink{ko_8install_8php_a8b1406b4ad1048041558dce6bfe89004}{site\+\_\+srl}=null)
+\item 
+\hyperlink{classmenuAdminModel_a303e32a7d98c99847035407e7ed4e951}{get\+Menu} (\$menu\+\_\+srl)
+\item 
+\hyperlink{classmenuAdminModel_a358509545ff88093b02be04c6599796d}{get\+Menu\+By\+Title} (\$\hyperlink{ko_8install_8php_a5b072c5fd1d2228c6ba5cee13cd142e3}{title}, \$\hyperlink{ko_8install_8php_a8b1406b4ad1048041558dce6bfe89004}{site\+\_\+srl}=0)
+\item 
+\hyperlink{classmenuAdminModel_a0639cb89b3292dc5ee8977423b5ac140}{get\+Menu\+List\+By\+Title} (\$\hyperlink{ko_8install_8php_a5b072c5fd1d2228c6ba5cee13cd142e3}{title})
+\item 
+\hyperlink{classmenuAdminModel_a5686120035966f9a44ec2fea2af191e4}{get\+Menu\+Item\+Info} (\$menu\+\_\+item\+\_\+srl)
+\item 
+\hyperlink{classmenuAdminModel_a12a02d8f3441f1454fe22e5b8d927de5}{get\+Menu\+Admin\+Item\+Info} ()
+\item 
+\hyperlink{classmenuAdminModel_a2a663607f4ded1cf71df28271ac72888}{get\+Menu\+Items} (\$menu\+\_\+srl, \$parent\+\_\+srl=null, \$column\+List=array())
+\item 
+\hyperlink{classmenuAdminModel_a3a77c5cfe6cee8b008b5b960adb83d9e}{get\+Menu\+Item\+Names} (\$source\+\_\+name, \$\hyperlink{ko_8install_8php_a8b1406b4ad1048041558dce6bfe89004}{site\+\_\+srl}=null)
+\item 
+\hyperlink{classmenuAdminModel_a9f938b72f1488559cab19e9011ae7076}{get\+Menu\+Admin\+Tpl\+Info} ()
+\item 
+\hyperlink{classmenuAdminModel_a1fd1ae309603a0fc0b58589d2cc0d025}{get\+Menu\+Admin\+Installed\+Menu\+Type} ()
+\item 
+\hyperlink{classmenuAdminModel_a20137764f7bc81d8413f7adc0518d895}{get\+Module\+List\+In\+Sitemap} (\$\hyperlink{ko_8install_8php_a8b1406b4ad1048041558dce6bfe89004}{site\+\_\+srl}=0)
+\begin{DoxyCompactList}\small\item\em when menu add in sitemap, select module list this menu showing with trigger \end{DoxyCompactList}\item 
+\hyperlink{classmenuAdminModel_adaae66f6de001bdaa33b72bcc83a6747}{get\+Menu\+Admin\+Site\+Map} ()
+\item 
+\hyperlink{classmenuAdminModel_ac55866233401318f5c9c2529a924c06b}{get\+Menu\+Admin\+Detail\+Setup} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+admin model class of the menu module 
+
+\begin{DoxyAuthor}{Author}
+N\+A\+V\+E\+R (\href{mailto:developers@xpressengine.com}{\tt developers@xpressengine.\+com}) 
+\end{DoxyAuthor}
+
+
+Definition at line 11 of file menu.\+admin.\+model.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmenuAdminModel_a303e32a7d98c99847035407e7ed4e951}{\index{menu\+Admin\+Model@{menu\+Admin\+Model}!get\+Menu@{get\+Menu}}
+\index{get\+Menu@{get\+Menu}!menu\+Admin\+Model@{menu\+Admin\+Model}}
+\subsubsection[{get\+Menu}]{\setlength{\rightskip}{0pt plus 5cm}menu\+Admin\+Model\+::get\+Menu (
+\begin{DoxyParamCaption}
+\item[{}]{\$menu\+\_\+srl}
+\end{DoxyParamCaption}
+)}}\label{classmenuAdminModel_a303e32a7d98c99847035407e7ed4e951}
+Get information of a new menu from the \hyperlink{classDB}{D\+B} Return \hyperlink{classDB}{D\+B} and X\+M\+L information of the menu 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$menu\+\_\+srl} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 77 of file menu.\+admin.\+model.\+php.
+
+\hypertarget{classmenuAdminModel_ac55866233401318f5c9c2529a924c06b}{\index{menu\+Admin\+Model@{menu\+Admin\+Model}!get\+Menu\+Admin\+Detail\+Setup@{get\+Menu\+Admin\+Detail\+Setup}}
+\index{get\+Menu\+Admin\+Detail\+Setup@{get\+Menu\+Admin\+Detail\+Setup}!menu\+Admin\+Model@{menu\+Admin\+Model}}
+\subsubsection[{get\+Menu\+Admin\+Detail\+Setup}]{\setlength{\rightskip}{0pt plus 5cm}menu\+Admin\+Model\+::get\+Menu\+Admin\+Detail\+Setup (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classmenuAdminModel_ac55866233401318f5c9c2529a924c06b}
+Get module's detail setup contents \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 584 of file menu.\+admin.\+model.\+php.
+
+\hypertarget{classmenuAdminModel_a1fd1ae309603a0fc0b58589d2cc0d025}{\index{menu\+Admin\+Model@{menu\+Admin\+Model}!get\+Menu\+Admin\+Installed\+Menu\+Type@{get\+Menu\+Admin\+Installed\+Menu\+Type}}
+\index{get\+Menu\+Admin\+Installed\+Menu\+Type@{get\+Menu\+Admin\+Installed\+Menu\+Type}!menu\+Admin\+Model@{menu\+Admin\+Model}}
+\subsubsection[{get\+Menu\+Admin\+Installed\+Menu\+Type}]{\setlength{\rightskip}{0pt plus 5cm}menu\+Admin\+Model\+::get\+Menu\+Admin\+Installed\+Menu\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classmenuAdminModel_a1fd1ae309603a0fc0b58589d2cc0d025}
+get installed menu type api 
+
+Definition at line 336 of file menu.\+admin.\+model.\+php.
+
+\hypertarget{classmenuAdminModel_a12a02d8f3441f1454fe22e5b8d927de5}{\index{menu\+Admin\+Model@{menu\+Admin\+Model}!get\+Menu\+Admin\+Item\+Info@{get\+Menu\+Admin\+Item\+Info}}
+\index{get\+Menu\+Admin\+Item\+Info@{get\+Menu\+Admin\+Item\+Info}!menu\+Admin\+Model@{menu\+Admin\+Model}}
+\subsubsection[{get\+Menu\+Admin\+Item\+Info}]{\setlength{\rightskip}{0pt plus 5cm}menu\+Admin\+Model\+::get\+Menu\+Admin\+Item\+Info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classmenuAdminModel_a12a02d8f3441f1454fe22e5b8d927de5}
+Return item information of the menu\+\_\+srl \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 173 of file menu.\+admin.\+model.\+php.
+
+\hypertarget{classmenuAdminModel_adaae66f6de001bdaa33b72bcc83a6747}{\index{menu\+Admin\+Model@{menu\+Admin\+Model}!get\+Menu\+Admin\+Site\+Map@{get\+Menu\+Admin\+Site\+Map}}
+\index{get\+Menu\+Admin\+Site\+Map@{get\+Menu\+Admin\+Site\+Map}!menu\+Admin\+Model@{menu\+Admin\+Model}}
+\subsubsection[{get\+Menu\+Admin\+Site\+Map}]{\setlength{\rightskip}{0pt plus 5cm}menu\+Admin\+Model\+::get\+Menu\+Admin\+Site\+Map (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classmenuAdminModel_adaae66f6de001bdaa33b72bcc83a6747}
+
+
+Definition at line 478 of file menu.\+admin.\+model.\+php.
+
+\hypertarget{classmenuAdminModel_a9f938b72f1488559cab19e9011ae7076}{\index{menu\+Admin\+Model@{menu\+Admin\+Model}!get\+Menu\+Admin\+Tpl\+Info@{get\+Menu\+Admin\+Tpl\+Info}}
+\index{get\+Menu\+Admin\+Tpl\+Info@{get\+Menu\+Admin\+Tpl\+Info}!menu\+Admin\+Model@{menu\+Admin\+Model}}
+\subsubsection[{get\+Menu\+Admin\+Tpl\+Info}]{\setlength{\rightskip}{0pt plus 5cm}menu\+Admin\+Model\+::get\+Menu\+Admin\+Tpl\+Info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classmenuAdminModel_a9f938b72f1488559cab19e9011ae7076}
+Get a template by using the menu\+\_\+srl and retrun. Return html after compiling tpl on the server in order to add menu information on the admin page \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 287 of file menu.\+admin.\+model.\+php.
+
+\hypertarget{classmenuAdminModel_a358509545ff88093b02be04c6599796d}{\index{menu\+Admin\+Model@{menu\+Admin\+Model}!get\+Menu\+By\+Title@{get\+Menu\+By\+Title}}
+\index{get\+Menu\+By\+Title@{get\+Menu\+By\+Title}!menu\+Admin\+Model@{menu\+Admin\+Model}}
+\subsubsection[{get\+Menu\+By\+Title}]{\setlength{\rightskip}{0pt plus 5cm}menu\+Admin\+Model\+::get\+Menu\+By\+Title (
+\begin{DoxyParamCaption}
+\item[{}]{\$title, }
+\item[{}]{\$site\+\_\+srl = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classmenuAdminModel_a358509545ff88093b02be04c6599796d}
+Get information of a new menu from the \hyperlink{classDB}{D\+B}, search condition is menu title Return \hyperlink{classDB}{D\+B} and X\+M\+L information of the menu 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$title} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 97 of file menu.\+admin.\+model.\+php.
+
+\hypertarget{classmenuAdminModel_a5686120035966f9a44ec2fea2af191e4}{\index{menu\+Admin\+Model@{menu\+Admin\+Model}!get\+Menu\+Item\+Info@{get\+Menu\+Item\+Info}}
+\index{get\+Menu\+Item\+Info@{get\+Menu\+Item\+Info}!menu\+Admin\+Model@{menu\+Admin\+Model}}
+\subsubsection[{get\+Menu\+Item\+Info}]{\setlength{\rightskip}{0pt plus 5cm}menu\+Admin\+Model\+::get\+Menu\+Item\+Info (
+\begin{DoxyParamCaption}
+\item[{}]{\$menu\+\_\+item\+\_\+srl}
+\end{DoxyParamCaption}
+)}}\label{classmenuAdminModel_a5686120035966f9a44ec2fea2af191e4}
+Return item information of the menu\+\_\+srl group\+\_\+srls uses a seperator with comma(,) and converts to an array by explode 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$menu\+\_\+item\+\_\+srl} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 147 of file menu.\+admin.\+model.\+php.
+
+\hypertarget{classmenuAdminModel_a3a77c5cfe6cee8b008b5b960adb83d9e}{\index{menu\+Admin\+Model@{menu\+Admin\+Model}!get\+Menu\+Item\+Names@{get\+Menu\+Item\+Names}}
+\index{get\+Menu\+Item\+Names@{get\+Menu\+Item\+Names}!menu\+Admin\+Model@{menu\+Admin\+Model}}
+\subsubsection[{get\+Menu\+Item\+Names}]{\setlength{\rightskip}{0pt plus 5cm}menu\+Admin\+Model\+::get\+Menu\+Item\+Names (
+\begin{DoxyParamCaption}
+\item[{}]{\$source\+\_\+name, }
+\item[{}]{\$site\+\_\+srl = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{classmenuAdminModel_a3a77c5cfe6cee8b008b5b960adb83d9e}
+Return menu name in each language to support multi-\/language 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$source\+\_\+name} & \\
+\hline
+int & {\em \$site\+\_\+srl} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Definition at line 270 of file menu.\+admin.\+model.\+php.
+
+\hypertarget{classmenuAdminModel_a2a663607f4ded1cf71df28271ac72888}{\index{menu\+Admin\+Model@{menu\+Admin\+Model}!get\+Menu\+Items@{get\+Menu\+Items}}
+\index{get\+Menu\+Items@{get\+Menu\+Items}!menu\+Admin\+Model@{menu\+Admin\+Model}}
+\subsubsection[{get\+Menu\+Items}]{\setlength{\rightskip}{0pt plus 5cm}menu\+Admin\+Model\+::get\+Menu\+Items (
+\begin{DoxyParamCaption}
+\item[{}]{\$menu\+\_\+srl, }
+\item[{}]{\$parent\+\_\+srl = {\ttfamily null}, }
+\item[{}]{\$column\+List = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}}\label{classmenuAdminModel_a2a663607f4ded1cf71df28271ac72888}
+Return menu item list by menu number 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$menu\+\_\+srl} & \\
+\hline
+int & {\em \$parent\+\_\+srl} & \\
+\hline
+array & {\em \$column\+List} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 254 of file menu.\+admin.\+model.\+php.
+
+\hypertarget{classmenuAdminModel_ad1a73e97dedf1b78f6780e4c17ff5100}{\index{menu\+Admin\+Model@{menu\+Admin\+Model}!get\+Menu\+List@{get\+Menu\+List}}
+\index{get\+Menu\+List@{get\+Menu\+List}!menu\+Admin\+Model@{menu\+Admin\+Model}}
+\subsubsection[{get\+Menu\+List}]{\setlength{\rightskip}{0pt plus 5cm}menu\+Admin\+Model\+::get\+Menu\+List (
+\begin{DoxyParamCaption}
+\item[{}]{\$obj}
+\end{DoxyParamCaption}
+)}}\label{classmenuAdminModel_ad1a73e97dedf1b78f6780e4c17ff5100}
+Get a list of all menus 
+\begin{DoxyParams}[1]{Parameters}
+object & {\em \$obj} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 28 of file menu.\+admin.\+model.\+php.
+
+\hypertarget{classmenuAdminModel_a0639cb89b3292dc5ee8977423b5ac140}{\index{menu\+Admin\+Model@{menu\+Admin\+Model}!get\+Menu\+List\+By\+Title@{get\+Menu\+List\+By\+Title}}
+\index{get\+Menu\+List\+By\+Title@{get\+Menu\+List\+By\+Title}!menu\+Admin\+Model@{menu\+Admin\+Model}}
+\subsubsection[{get\+Menu\+List\+By\+Title}]{\setlength{\rightskip}{0pt plus 5cm}menu\+Admin\+Model\+::get\+Menu\+List\+By\+Title (
+\begin{DoxyParamCaption}
+\item[{}]{\$title}
+\end{DoxyParamCaption}
+)}}\label{classmenuAdminModel_a0639cb89b3292dc5ee8977423b5ac140}
+Get information of a new menu from the \hyperlink{classDB}{D\+B}, search condition is menu title Return \hyperlink{classDB}{D\+B} and X\+M\+L information of the \hyperlink{classmenu}{menu(list Type)} 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$title} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 127 of file menu.\+admin.\+model.\+php.
+
+\hypertarget{classmenuAdminModel_a78dfe866b68c04fd622df4d41bdce36c}{\index{menu\+Admin\+Model@{menu\+Admin\+Model}!get\+Menus@{get\+Menus}}
+\index{get\+Menus@{get\+Menus}!menu\+Admin\+Model@{menu\+Admin\+Model}}
+\subsubsection[{get\+Menus}]{\setlength{\rightskip}{0pt plus 5cm}menu\+Admin\+Model\+::get\+Menus (
+\begin{DoxyParamCaption}
+\item[{}]{\$site\+\_\+srl = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{classmenuAdminModel_a78dfe866b68c04fd622df4d41bdce36c}
+Return all menus 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$site\+\_\+srl} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Definition at line 54 of file menu.\+admin.\+model.\+php.
+
+\hypertarget{classmenuAdminModel_a20137764f7bc81d8413f7adc0518d895}{\index{menu\+Admin\+Model@{menu\+Admin\+Model}!get\+Module\+List\+In\+Sitemap@{get\+Module\+List\+In\+Sitemap}}
+\index{get\+Module\+List\+In\+Sitemap@{get\+Module\+List\+In\+Sitemap}!menu\+Admin\+Model@{menu\+Admin\+Model}}
+\subsubsection[{get\+Module\+List\+In\+Sitemap}]{\setlength{\rightskip}{0pt plus 5cm}menu\+Admin\+Model\+::get\+Module\+List\+In\+Sitemap (
+\begin{DoxyParamCaption}
+\item[{}]{\$site\+\_\+srl = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classmenuAdminModel_a20137764f7bc81d8413f7adc0518d895}
+
+
+when menu add in sitemap, select module list this menu showing with trigger 
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$site\+\_\+srl} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Definition at line 398 of file menu.\+admin.\+model.\+php.
+
+\hypertarget{classmenuAdminModel_a092a0da21ac0c7f76f84ec5be5eea1b7}{\index{menu\+Admin\+Model@{menu\+Admin\+Model}!init@{init}}
+\index{init@{init}!menu\+Admin\+Model@{menu\+Admin\+Model}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}menu\+Admin\+Model\+::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classmenuAdminModel_a092a0da21ac0c7f76f84ec5be5eea1b7}
+Initialization \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 19 of file menu.\+admin.\+model.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+modules/menu/\hyperlink{menu_8admin_8model_8php}{menu.\+admin.\+model.\+php}\end{DoxyCompactItemize}

@@ -1,0 +1,470 @@
+\hypertarget{classautoinstallModel}{\section{autoinstall\+Model Class Reference}
+\label{classautoinstallModel}\index{autoinstall\+Model@{autoinstall\+Model}}
+}
+Inheritance diagram for autoinstall\+Model\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classautoinstallModel}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classautoinstallModel_a8f87ae860d59c5230baded7e25f38b96}{get\+Category} (\$category\+\_\+srl)
+\item 
+\hyperlink{classautoinstallModel_a32b3e83419ad1f9a01fc95ce8f8db795}{get\+Packages} ()
+\item 
+\hyperlink{classautoinstallModel_a80912c7d12ec4d37f75d0e1475adab4e}{get\+Installed\+Package} (\$package\+\_\+srl)
+\item 
+\hyperlink{classautoinstallModel_aaa22f977e7ba5720afda446a6e508c51}{get\+Package} (\$package\+\_\+srl)
+\item 
+\hyperlink{classautoinstallModel_a64deb99bf9367124115928a6faa12933}{get\+Category\+List} ()
+\item 
+\hyperlink{classautoinstallModel_a88e07f232668549a2b68478ad42f4005}{get\+Package\+Count} (\$category\+\_\+srl)
+\item 
+\hyperlink{classautoinstallModel_a1b9cec687d137129acec8db89f8a822b}{get\+Installed\+Package\+Count} ()
+\item 
+\hyperlink{classautoinstallModel_a9a626cc36cb67b076a07debe5f6c983c}{set\+Depth} (\&\$item, \$depth, \&\$list, \&\$result\+List)
+\item 
+\hyperlink{classautoinstallModel_a237e95933e438cec978e9382dfee6199}{get\+Latest\+Package} ()
+\item 
+\hyperlink{classautoinstallModel_a91d9fe9fc6776b5338fca658b5b1a6d8}{get\+Installed\+Packages} (\$package\+\_\+list)
+\item 
+\hyperlink{classautoinstallModel_a2f132c9c41e1689b3e28df6097dae238}{get\+Installed\+Package\+List} (\$\hyperlink{classpage}{page})
+\item 
+\hyperlink{classautoinstallModel_a29f5fd06b39d6df431d699efcb0aba47}{get\+Type\+From\+Path} (\$path)
+\item 
+\hyperlink{classautoinstallModel_afc9baa56522814866589ebe952041a43}{get\+Config\+File\+Path} (\$type)
+\item 
+\hyperlink{classautoinstallModel_ab4637f5520f16fffe622f5abd73253b0}{check\+Removable} (\$path)
+\item 
+\hyperlink{classautoinstallModel_a7344733b35feec3a7bcc8a1440d2e682}{get\+Package\+Srl\+By\+Path} (\$path)
+\item 
+\hyperlink{classautoinstallModel_aa2b3fa8f08e15bfb1a9a061aca6dfa8c}{get\+Remove\+Url\+By\+Package\+Srl} (\$package\+Srl)
+\item 
+\hyperlink{classautoinstallModel_a40c61ad733cb70958d2c550f06abc15d}{get\+Remove\+Url\+By\+Path} (\$path)
+\item 
+\hyperlink{classautoinstallModel_a20c447d210dff0edc286007b92ec881f}{get\+Update\+Url\+By\+Package\+Srl} (\$package\+Srl)
+\item 
+\hyperlink{classautoinstallModel_a560f4c8850324ee4e0c3dc74573bc7d9}{get\+Update\+Url\+By\+Path} (\$path)
+\item 
+\hyperlink{classautoinstallModel_ac2f036319c53b9a9392a7b4534fef4fd}{get\+Have\+Instance} (\$column\+List=array())
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Model class of the autoinstall module \begin{DoxyAuthor}{Author}
+N\+A\+V\+E\+R (\href{mailto:developers@xpressengine.com}{\tt developers@xpressengine.\+com}) 
+\end{DoxyAuthor}
+
+
+Definition at line 8 of file autoinstall.\+model.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classautoinstallModel_ab4637f5520f16fffe622f5abd73253b0}{\index{autoinstall\+Model@{autoinstall\+Model}!check\+Removable@{check\+Removable}}
+\index{check\+Removable@{check\+Removable}!autoinstall\+Model@{autoinstall\+Model}}
+\subsubsection[{check\+Removable}]{\setlength{\rightskip}{0pt plus 5cm}autoinstall\+Model\+::check\+Removable (
+\begin{DoxyParamCaption}
+\item[{}]{\$path}
+\end{DoxyParamCaption}
+)}}\label{classautoinstallModel_ab4637f5520f16fffe622f5abd73253b0}
+Returns target is removable
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & Path \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Definition at line 315 of file autoinstall.\+model.\+php.
+
+\hypertarget{classautoinstallModel_a8f87ae860d59c5230baded7e25f38b96}{\index{autoinstall\+Model@{autoinstall\+Model}!get\+Category@{get\+Category}}
+\index{get\+Category@{get\+Category}!autoinstall\+Model@{autoinstall\+Model}}
+\subsubsection[{get\+Category}]{\setlength{\rightskip}{0pt plus 5cm}autoinstall\+Model\+::get\+Category (
+\begin{DoxyParamCaption}
+\item[{}]{\$category\+\_\+srl}
+\end{DoxyParamCaption}
+)}}\label{classautoinstallModel_a8f87ae860d59c5230baded7e25f38b96}
+Get category information
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$category\+\_\+srl} & The sequence of category to get information \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 17 of file autoinstall.\+model.\+php.
+
+\hypertarget{classautoinstallModel_a64deb99bf9367124115928a6faa12933}{\index{autoinstall\+Model@{autoinstall\+Model}!get\+Category\+List@{get\+Category\+List}}
+\index{get\+Category\+List@{get\+Category\+List}!autoinstall\+Model@{autoinstall\+Model}}
+\subsubsection[{get\+Category\+List}]{\setlength{\rightskip}{0pt plus 5cm}autoinstall\+Model\+::get\+Category\+List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classautoinstallModel_a64deb99bf9367124115928a6faa12933}
+Get category list
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Definition at line 85 of file autoinstall.\+model.\+php.
+
+\hypertarget{classautoinstallModel_afc9baa56522814866589ebe952041a43}{\index{autoinstall\+Model@{autoinstall\+Model}!get\+Config\+File\+Path@{get\+Config\+File\+Path}}
+\index{get\+Config\+File\+Path@{get\+Config\+File\+Path}!autoinstall\+Model@{autoinstall\+Model}}
+\subsubsection[{get\+Config\+File\+Path}]{\setlength{\rightskip}{0pt plus 5cm}autoinstall\+Model\+::get\+Config\+File\+Path (
+\begin{DoxyParamCaption}
+\item[{}]{\$type}
+\end{DoxyParamCaption}
+)}}\label{classautoinstallModel_afc9baa56522814866589ebe952041a43}
+Get config file path by type
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$type} & Type to get config file path \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 280 of file autoinstall.\+model.\+php.
+
+\hypertarget{classautoinstallModel_ac2f036319c53b9a9392a7b4534fef4fd}{\index{autoinstall\+Model@{autoinstall\+Model}!get\+Have\+Instance@{get\+Have\+Instance}}
+\index{get\+Have\+Instance@{get\+Have\+Instance}!autoinstall\+Model@{autoinstall\+Model}}
+\subsubsection[{get\+Have\+Instance}]{\setlength{\rightskip}{0pt plus 5cm}autoinstall\+Model\+::get\+Have\+Instance (
+\begin{DoxyParamCaption}
+\item[{}]{\$column\+List = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}}\label{classautoinstallModel_ac2f036319c53b9a9392a7b4534fef4fd}
+
+
+Definition at line 452 of file autoinstall.\+model.\+php.
+
+\hypertarget{classautoinstallModel_a80912c7d12ec4d37f75d0e1475adab4e}{\index{autoinstall\+Model@{autoinstall\+Model}!get\+Installed\+Package@{get\+Installed\+Package}}
+\index{get\+Installed\+Package@{get\+Installed\+Package}!autoinstall\+Model@{autoinstall\+Model}}
+\subsubsection[{get\+Installed\+Package}]{\setlength{\rightskip}{0pt plus 5cm}autoinstall\+Model\+::get\+Installed\+Package (
+\begin{DoxyParamCaption}
+\item[{}]{\$package\+\_\+srl}
+\end{DoxyParamCaption}
+)}}\label{classautoinstallModel_a80912c7d12ec4d37f75d0e1475adab4e}
+Get installed packages information
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$package\+\_\+srl} & The sequence of package to get information \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 50 of file autoinstall.\+model.\+php.
+
+\hypertarget{classautoinstallModel_a1b9cec687d137129acec8db89f8a822b}{\index{autoinstall\+Model@{autoinstall\+Model}!get\+Installed\+Package\+Count@{get\+Installed\+Package\+Count}}
+\index{get\+Installed\+Package\+Count@{get\+Installed\+Package\+Count}!autoinstall\+Model@{autoinstall\+Model}}
+\subsubsection[{get\+Installed\+Package\+Count}]{\setlength{\rightskip}{0pt plus 5cm}autoinstall\+Model\+::get\+Installed\+Package\+Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classautoinstallModel_a1b9cec687d137129acec8db89f8a822b}
+Get installed package count
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Definition at line 143 of file autoinstall.\+model.\+php.
+
+\hypertarget{classautoinstallModel_a2f132c9c41e1689b3e28df6097dae238}{\index{autoinstall\+Model@{autoinstall\+Model}!get\+Installed\+Package\+List@{get\+Installed\+Package\+List}}
+\index{get\+Installed\+Package\+List@{get\+Installed\+Package\+List}!autoinstall\+Model@{autoinstall\+Model}}
+\subsubsection[{get\+Installed\+Package\+List}]{\setlength{\rightskip}{0pt plus 5cm}autoinstall\+Model\+::get\+Installed\+Package\+List (
+\begin{DoxyParamCaption}
+\item[{}]{\$page}
+\end{DoxyParamCaption}
+)}}\label{classautoinstallModel_a2f132c9c41e1689b3e28df6097dae238}
+Get installed package list
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$page} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classObject}{Object} 
+\end{DoxyReturn}
+
+
+Definition at line 223 of file autoinstall.\+model.\+php.
+
+\hypertarget{classautoinstallModel_a91d9fe9fc6776b5338fca658b5b1a6d8}{\index{autoinstall\+Model@{autoinstall\+Model}!get\+Installed\+Packages@{get\+Installed\+Packages}}
+\index{get\+Installed\+Packages@{get\+Installed\+Packages}!autoinstall\+Model@{autoinstall\+Model}}
+\subsubsection[{get\+Installed\+Packages}]{\setlength{\rightskip}{0pt plus 5cm}autoinstall\+Model\+::get\+Installed\+Packages (
+\begin{DoxyParamCaption}
+\item[{}]{\$package\+\_\+list}
+\end{DoxyParamCaption}
+)}}\label{classautoinstallModel_a91d9fe9fc6776b5338fca658b5b1a6d8}
+Get installed package informations
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$package\+\_\+list} & Package sequence list to get information \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array Returns array contains pacakge information. If no result returns empty array. 
+\end{DoxyReturn}
+
+
+Definition at line 200 of file autoinstall.\+model.\+php.
+
+\hypertarget{classautoinstallModel_a237e95933e438cec978e9382dfee6199}{\index{autoinstall\+Model@{autoinstall\+Model}!get\+Latest\+Package@{get\+Latest\+Package}}
+\index{get\+Latest\+Package@{get\+Latest\+Package}!autoinstall\+Model@{autoinstall\+Model}}
+\subsubsection[{get\+Latest\+Package}]{\setlength{\rightskip}{0pt plus 5cm}autoinstall\+Model\+::get\+Latest\+Package (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classautoinstallModel_a237e95933e438cec978e9382dfee6199}
+Get lastest package information
+
+\begin{DoxyReturn}{Returns}
+object Returns lastest package information. If no result returns null. 
+\end{DoxyReturn}
+
+
+Definition at line 184 of file autoinstall.\+model.\+php.
+
+\hypertarget{classautoinstallModel_aaa22f977e7ba5720afda446a6e508c51}{\index{autoinstall\+Model@{autoinstall\+Model}!get\+Package@{get\+Package}}
+\index{get\+Package@{get\+Package}!autoinstall\+Model@{autoinstall\+Model}}
+\subsubsection[{get\+Package}]{\setlength{\rightskip}{0pt plus 5cm}autoinstall\+Model\+::get\+Package (
+\begin{DoxyParamCaption}
+\item[{}]{\$package\+\_\+srl}
+\end{DoxyParamCaption}
+)}}\label{classautoinstallModel_aaa22f977e7ba5720afda446a6e508c51}
+Get one package information
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$package\+\_\+srl} & The sequence of package to get information \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 68 of file autoinstall.\+model.\+php.
+
+\hypertarget{classautoinstallModel_a88e07f232668549a2b68478ad42f4005}{\index{autoinstall\+Model@{autoinstall\+Model}!get\+Package\+Count@{get\+Package\+Count}}
+\index{get\+Package\+Count@{get\+Package\+Count}!autoinstall\+Model@{autoinstall\+Model}}
+\subsubsection[{get\+Package\+Count}]{\setlength{\rightskip}{0pt plus 5cm}autoinstall\+Model\+::get\+Package\+Count (
+\begin{DoxyParamCaption}
+\item[{}]{\$category\+\_\+srl}
+\end{DoxyParamCaption}
+)}}\label{classautoinstallModel_a88e07f232668549a2b68478ad42f4005}
+Get pcakge count in category
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$category\+\_\+srl} & The sequence of category to get count \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Definition at line 126 of file autoinstall.\+model.\+php.
+
+\hypertarget{classautoinstallModel_a32b3e83419ad1f9a01fc95ce8f8db795}{\index{autoinstall\+Model@{autoinstall\+Model}!get\+Packages@{get\+Packages}}
+\index{get\+Packages@{get\+Packages}!autoinstall\+Model@{autoinstall\+Model}}
+\subsubsection[{get\+Packages}]{\setlength{\rightskip}{0pt plus 5cm}autoinstall\+Model\+::get\+Packages (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classautoinstallModel_a32b3e83419ad1f9a01fc95ce8f8db795}
+Get packages information
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Definition at line 34 of file autoinstall.\+model.\+php.
+
+\hypertarget{classautoinstallModel_a7344733b35feec3a7bcc8a1440d2e682}{\index{autoinstall\+Model@{autoinstall\+Model}!get\+Package\+Srl\+By\+Path@{get\+Package\+Srl\+By\+Path}}
+\index{get\+Package\+Srl\+By\+Path@{get\+Package\+Srl\+By\+Path}!autoinstall\+Model@{autoinstall\+Model}}
+\subsubsection[{get\+Package\+Srl\+By\+Path}]{\setlength{\rightskip}{0pt plus 5cm}autoinstall\+Model\+::get\+Package\+Srl\+By\+Path (
+\begin{DoxyParamCaption}
+\item[{}]{\$path}
+\end{DoxyParamCaption}
+)}}\label{classautoinstallModel_a7344733b35feec3a7bcc8a1440d2e682}
+Get sequence of package by path
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & Path to get sequence \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Definition at line 340 of file autoinstall.\+model.\+php.
+
+\hypertarget{classautoinstallModel_aa2b3fa8f08e15bfb1a9a061aca6dfa8c}{\index{autoinstall\+Model@{autoinstall\+Model}!get\+Remove\+Url\+By\+Package\+Srl@{get\+Remove\+Url\+By\+Package\+Srl}}
+\index{get\+Remove\+Url\+By\+Package\+Srl@{get\+Remove\+Url\+By\+Package\+Srl}!autoinstall\+Model@{autoinstall\+Model}}
+\subsubsection[{get\+Remove\+Url\+By\+Package\+Srl}]{\setlength{\rightskip}{0pt plus 5cm}autoinstall\+Model\+::get\+Remove\+Url\+By\+Package\+Srl (
+\begin{DoxyParamCaption}
+\item[{}]{\$package\+Srl}
+\end{DoxyParamCaption}
+)}}\label{classautoinstallModel_aa2b3fa8f08e15bfb1a9a061aca6dfa8c}
+Get remove url by package srl
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$package\+Srl} & Sequence of pakcage to get url \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 370 of file autoinstall.\+model.\+php.
+
+\hypertarget{classautoinstallModel_a40c61ad733cb70958d2c550f06abc15d}{\index{autoinstall\+Model@{autoinstall\+Model}!get\+Remove\+Url\+By\+Path@{get\+Remove\+Url\+By\+Path}}
+\index{get\+Remove\+Url\+By\+Path@{get\+Remove\+Url\+By\+Path}!autoinstall\+Model@{autoinstall\+Model}}
+\subsubsection[{get\+Remove\+Url\+By\+Path}]{\setlength{\rightskip}{0pt plus 5cm}autoinstall\+Model\+::get\+Remove\+Url\+By\+Path (
+\begin{DoxyParamCaption}
+\item[{}]{\$path}
+\end{DoxyParamCaption}
+)}}\label{classautoinstallModel_a40c61ad733cb70958d2c550f06abc15d}
+Get remove url by path
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & Path to get url \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 392 of file autoinstall.\+model.\+php.
+
+\hypertarget{classautoinstallModel_a29f5fd06b39d6df431d699efcb0aba47}{\index{autoinstall\+Model@{autoinstall\+Model}!get\+Type\+From\+Path@{get\+Type\+From\+Path}}
+\index{get\+Type\+From\+Path@{get\+Type\+From\+Path}!autoinstall\+Model@{autoinstall\+Model}}
+\subsubsection[{get\+Type\+From\+Path}]{\setlength{\rightskip}{0pt plus 5cm}autoinstall\+Model\+::get\+Type\+From\+Path (
+\begin{DoxyParamCaption}
+\item[{}]{\$path}
+\end{DoxyParamCaption}
+)}}\label{classautoinstallModel_a29f5fd06b39d6df431d699efcb0aba47}
+Get type using path
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & Path to get type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 252 of file autoinstall.\+model.\+php.
+
+\hypertarget{classautoinstallModel_a20c447d210dff0edc286007b92ec881f}{\index{autoinstall\+Model@{autoinstall\+Model}!get\+Update\+Url\+By\+Package\+Srl@{get\+Update\+Url\+By\+Package\+Srl}}
+\index{get\+Update\+Url\+By\+Package\+Srl@{get\+Update\+Url\+By\+Package\+Srl}!autoinstall\+Model@{autoinstall\+Model}}
+\subsubsection[{get\+Update\+Url\+By\+Package\+Srl}]{\setlength{\rightskip}{0pt plus 5cm}autoinstall\+Model\+::get\+Update\+Url\+By\+Package\+Srl (
+\begin{DoxyParamCaption}
+\item[{}]{\$package\+Srl}
+\end{DoxyParamCaption}
+)}}\label{classautoinstallModel_a20c447d210dff0edc286007b92ec881f}
+Get update url by package srl
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$package\+Srl} & Sequence to get url \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 420 of file autoinstall.\+model.\+php.
+
+\hypertarget{classautoinstallModel_a560f4c8850324ee4e0c3dc74573bc7d9}{\index{autoinstall\+Model@{autoinstall\+Model}!get\+Update\+Url\+By\+Path@{get\+Update\+Url\+By\+Path}}
+\index{get\+Update\+Url\+By\+Path@{get\+Update\+Url\+By\+Path}!autoinstall\+Model@{autoinstall\+Model}}
+\subsubsection[{get\+Update\+Url\+By\+Path}]{\setlength{\rightskip}{0pt plus 5cm}autoinstall\+Model\+::get\+Update\+Url\+By\+Path (
+\begin{DoxyParamCaption}
+\item[{}]{\$path}
+\end{DoxyParamCaption}
+)}}\label{classautoinstallModel_a560f4c8850324ee4e0c3dc74573bc7d9}
+Get update url by path
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & Path to get url \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 436 of file autoinstall.\+model.\+php.
+
+\hypertarget{classautoinstallModel_a9a626cc36cb67b076a07debe5f6c983c}{\index{autoinstall\+Model@{autoinstall\+Model}!set\+Depth@{set\+Depth}}
+\index{set\+Depth@{set\+Depth}!autoinstall\+Model@{autoinstall\+Model}}
+\subsubsection[{set\+Depth}]{\setlength{\rightskip}{0pt plus 5cm}autoinstall\+Model\+::set\+Depth (
+\begin{DoxyParamCaption}
+\item[{\&}]{\$item, }
+\item[{}]{\$depth, }
+\item[{\&}]{\$list, }
+\item[{\&}]{\$result\+List}
+\end{DoxyParamCaption}
+)}}\label{classautoinstallModel_a9a626cc36cb67b076a07debe5f6c983c}
+Set depth, children list and package count of category
+
+
+\begin{DoxyParams}[1]{Parameters}
+object & {\em \$item} & Category information \\
+\hline
+int & {\em \$depth} & Depth of category \\
+\hline
+array & {\em \$list} & Category list \\
+\hline
+array & {\em \$result\+List} & Final result list \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string \$sibling\+List Comma seperated list 
+\end{DoxyReturn}
+
+
+Definition at line 162 of file autoinstall.\+model.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+modules/autoinstall/\hyperlink{autoinstall_8model_8php}{autoinstall.\+model.\+php}\end{DoxyCompactItemize}

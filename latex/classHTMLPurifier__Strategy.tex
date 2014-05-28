@@ -1,0 +1,52 @@
+\hypertarget{classHTMLPurifier__Strategy}{\section{H\+T\+M\+L\+Purifier\+\_\+\+Strategy Class Reference}
+\label{classHTMLPurifier__Strategy}\index{H\+T\+M\+L\+Purifier\+\_\+\+Strategy@{H\+T\+M\+L\+Purifier\+\_\+\+Strategy}}
+}
+Inheritance diagram for H\+T\+M\+L\+Purifier\+\_\+\+Strategy\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.135135cm]{classHTMLPurifier__Strategy}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHTMLPurifier__Strategy_ad41047139b0f7a417d4362ddf2b09bfb}{execute} (\$tokens, \$config, \$context)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Supertype for classes that define a strategy for modifying/purifying tokens.
+
+While \hyperlink{classHTMLPurifier}{H\+T\+M\+L\+Purifier}'s core purpose is fixing H\+T\+M\+L into something proper, strategies provide plug points for extra configuration or even extra features, such as custom tags, custom parsing of text, etc. 
+
+Definition at line 12 of file Strategy.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classHTMLPurifier__Strategy_ad41047139b0f7a417d4362ddf2b09bfb}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Strategy@{H\+T\+M\+L\+Purifier\+\_\+\+Strategy}!execute@{execute}}
+\index{execute@{execute}!H\+T\+M\+L\+Purifier\+\_\+\+Strategy@{H\+T\+M\+L\+Purifier\+\_\+\+Strategy}}
+\subsubsection[{execute}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Strategy\+::execute (
+\begin{DoxyParamCaption}
+\item[{}]{\$tokens, }
+\item[{}]{\$config, }
+\item[{}]{\$context}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [abstract]}}}\label{classHTMLPurifier__Strategy_ad41047139b0f7a417d4362ddf2b09bfb}
+Executes the strategy on the tokens.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$tokens} & Array of \hyperlink{classHTMLPurifier__Token}{H\+T\+M\+L\+Purifier\+\_\+\+Token} objects to be operated on. \\
+\hline
+{\em \$config} & Configuration options \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Processed array of token objects. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+classes/security/htmlpurifier/library/\+H\+T\+M\+L\+Purifier/\hyperlink{Strategy_8php}{Strategy.\+php}\end{DoxyCompactItemize}

@@ -1,0 +1,485 @@
+\hypertarget{classDBMysqlConnectWrapper}{\section{D\+B\+Mysql\+Connect\+Wrapper Class Reference}
+\label{classDBMysqlConnectWrapper}\index{D\+B\+Mysql\+Connect\+Wrapper@{D\+B\+Mysql\+Connect\+Wrapper}}
+}
+
+
+ 
+
+
+Inheritance diagram for D\+B\+Mysql\+Connect\+Wrapper\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classDBMysqlConnectWrapper}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classDBMysqlConnectWrapper_a8ad94ea4f17656d8049e061d5272e95d}{\+\_\+\+\_\+construct} ()
+\item 
+\hyperlink{classDBMysqlConnectWrapper_a64731408ca5d5f10faf1ab9dfc85d305}{create} ()
+\item 
+\hyperlink{classDBMysqlConnectWrapper_a092b8eb0055cf932453a06bc2e07ffa6}{act\+D\+B\+Class\+Start} ()
+\item 
+\hyperlink{classDBMysqlConnectWrapper_a72cd872ecf223861aa60c7a8e762006e}{act\+Start} (\$query)
+\item 
+\hyperlink{classDBMysqlConnectWrapper_a6134879360bf66676b06d2b90d08f231}{act\+Finish} ()
+\item 
+\hyperlink{classDBMysqlConnectWrapper_a441d399226f8b2ade5b83ecad2ee7fad}{act\+D\+B\+Class\+Finish} ()
+\item 
+\hyperlink{classDBMysqlConnectWrapper_a30f182dabfc36ca3d053f7804693945a}{is\+Supported} ()
+\item 
+\hyperlink{classDBMysqlConnectWrapper_a7742df749f6fd29ed8923424ec06aff1}{\+\_\+\+\_\+connect} (\$connection)
+\item 
+\hyperlink{classDBMysqlConnectWrapper_a6649b005573868b2e0864026d0dae97c}{\+\_\+after\+Connect} (\$connection)
+\item 
+\hyperlink{classDBMysqlConnectWrapper_a33cdc3d0b3f213b4fe15714465c71cc2}{\+\_\+close} (\$connection)
+\item 
+\hyperlink{classDBMysqlConnectWrapper_aa8d6e69f78e05738b4208dbee93b7e35}{close} (\$type= 'master', \$indx=N\+U\+L\+L)
+\item 
+\hyperlink{classDBMysqlConnectWrapper_a488d8ad018f1de7176019c44ee0be372}{\+\_\+begin} ()
+\item 
+\hyperlink{classDBMysqlConnectWrapper_a9404ef51cc9f734b3567df230c4e8a31}{\+\_\+rollback} ()
+\item 
+\hyperlink{classDBMysqlConnectWrapper_a593348857d1a458713ecb1c6e36ca86e}{\+\_\+commit} ()
+\item 
+\hyperlink{classDBMysqlConnectWrapper_a356376744b1a0db6142fc3f12aca038a}{\+\_\+\+\_\+query} (\$query, \$connection)
+\item 
+\hyperlink{classDBMysqlConnectWrapper_afb37dd9c37b126f7e30c08c5bf3e7b95}{\+\_\+fetch} (\$result, \$array\+Index\+End\+Value=N\+U\+L\+L)
+\item 
+\hyperlink{classDBMysqlConnectWrapper_a71d795c4840f3c7c3e143fd90b4f0e56}{is\+Table\+Exists} (\$target\+\_\+name)
+\item 
+\hyperlink{classDBMysqlConnectWrapper_a3b68647fbcd66de2149d16ed790e5001}{db\+\_\+insert\+\_\+id} ()
+\item 
+\hyperlink{classDBMysqlConnectWrapper_abde4e0c8c4c315e39d7c1698370314f8}{db\+\_\+fetch\+\_\+object} (\&\$result)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classDBMysqlConnectWrapper_a46ed0740d083d0b75d0eaa52a448a456}{\$queries} = ''
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 16 of file connect\+\_\+wrapper.\+php.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classDBMysqlConnectWrapper_a8ad94ea4f17656d8049e061d5272e95d}{\index{D\+B\+Mysql\+Connect\+Wrapper@{D\+B\+Mysql\+Connect\+Wrapper}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!D\+B\+Mysql\+Connect\+Wrapper@{D\+B\+Mysql\+Connect\+Wrapper}}
+\subsubsection[{\+\_\+\+\_\+construct}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+Connect\+Wrapper\+::\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classDBMysqlConnectWrapper_a8ad94ea4f17656d8049e061d5272e95d}
+
+
+
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 26 of file connect\+\_\+wrapper.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classDBMysqlConnectWrapper_a7742df749f6fd29ed8923424ec06aff1}{\index{D\+B\+Mysql\+Connect\+Wrapper@{D\+B\+Mysql\+Connect\+Wrapper}!\+\_\+\+\_\+connect@{\+\_\+\+\_\+connect}}
+\index{\+\_\+\+\_\+connect@{\+\_\+\+\_\+connect}!D\+B\+Mysql\+Connect\+Wrapper@{D\+B\+Mysql\+Connect\+Wrapper}}
+\subsubsection[{\+\_\+\+\_\+connect}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+Connect\+Wrapper\+::\+\_\+\+\_\+connect (
+\begin{DoxyParamCaption}
+\item[{}]{\$connection}
+\end{DoxyParamCaption}
+)}}\label{classDBMysqlConnectWrapper_a7742df749f6fd29ed8923424ec06aff1}
+
+
+
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$connection} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 103 of file connect\+\_\+wrapper.\+php.
+
+\hypertarget{classDBMysqlConnectWrapper_a356376744b1a0db6142fc3f12aca038a}{\index{D\+B\+Mysql\+Connect\+Wrapper@{D\+B\+Mysql\+Connect\+Wrapper}!\+\_\+\+\_\+query@{\+\_\+\+\_\+query}}
+\index{\+\_\+\+\_\+query@{\+\_\+\+\_\+query}!D\+B\+Mysql\+Connect\+Wrapper@{D\+B\+Mysql\+Connect\+Wrapper}}
+\subsubsection[{\+\_\+\+\_\+query}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+Connect\+Wrapper\+::\+\_\+\+\_\+query (
+\begin{DoxyParamCaption}
+\item[{}]{\$query, }
+\item[{}]{\$connection}
+\end{DoxyParamCaption}
+)}}\label{classDBMysqlConnectWrapper_a356376744b1a0db6142fc3f12aca038a}
+
+
+
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$query} & \\
+\hline
+{\em \$connection} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 183 of file connect\+\_\+wrapper.\+php.
+
+\hypertarget{classDBMysqlConnectWrapper_a6649b005573868b2e0864026d0dae97c}{\index{D\+B\+Mysql\+Connect\+Wrapper@{D\+B\+Mysql\+Connect\+Wrapper}!\+\_\+after\+Connect@{\+\_\+after\+Connect}}
+\index{\+\_\+after\+Connect@{\+\_\+after\+Connect}!D\+B\+Mysql\+Connect\+Wrapper@{D\+B\+Mysql\+Connect\+Wrapper}}
+\subsubsection[{\+\_\+after\+Connect}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+Connect\+Wrapper\+::\+\_\+after\+Connect (
+\begin{DoxyParamCaption}
+\item[{}]{\$connection}
+\end{DoxyParamCaption}
+)}}\label{classDBMysqlConnectWrapper_a6649b005573868b2e0864026d0dae97c}
+
+
+
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$connection} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 115 of file connect\+\_\+wrapper.\+php.
+
+\hypertarget{classDBMysqlConnectWrapper_a488d8ad018f1de7176019c44ee0be372}{\index{D\+B\+Mysql\+Connect\+Wrapper@{D\+B\+Mysql\+Connect\+Wrapper}!\+\_\+begin@{\+\_\+begin}}
+\index{\+\_\+begin@{\+\_\+begin}!D\+B\+Mysql\+Connect\+Wrapper@{D\+B\+Mysql\+Connect\+Wrapper}}
+\subsubsection[{\+\_\+begin}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+Connect\+Wrapper\+::\+\_\+begin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classDBMysqlConnectWrapper_a488d8ad018f1de7176019c44ee0be372}
+
+
+
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 148 of file connect\+\_\+wrapper.\+php.
+
+\hypertarget{classDBMysqlConnectWrapper_a33cdc3d0b3f213b4fe15714465c71cc2}{\index{D\+B\+Mysql\+Connect\+Wrapper@{D\+B\+Mysql\+Connect\+Wrapper}!\+\_\+close@{\+\_\+close}}
+\index{\+\_\+close@{\+\_\+close}!D\+B\+Mysql\+Connect\+Wrapper@{D\+B\+Mysql\+Connect\+Wrapper}}
+\subsubsection[{\+\_\+close}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+Connect\+Wrapper\+::\+\_\+close (
+\begin{DoxyParamCaption}
+\item[{}]{\$connection}
+\end{DoxyParamCaption}
+)}}\label{classDBMysqlConnectWrapper_a33cdc3d0b3f213b4fe15714465c71cc2}
+
+
+
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$connection} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 126 of file connect\+\_\+wrapper.\+php.
+
+\hypertarget{classDBMysqlConnectWrapper_a593348857d1a458713ecb1c6e36ca86e}{\index{D\+B\+Mysql\+Connect\+Wrapper@{D\+B\+Mysql\+Connect\+Wrapper}!\+\_\+commit@{\+\_\+commit}}
+\index{\+\_\+commit@{\+\_\+commit}!D\+B\+Mysql\+Connect\+Wrapper@{D\+B\+Mysql\+Connect\+Wrapper}}
+\subsubsection[{\+\_\+commit}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+Connect\+Wrapper\+::\+\_\+commit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classDBMysqlConnectWrapper_a593348857d1a458713ecb1c6e36ca86e}
+
+
+
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 170 of file connect\+\_\+wrapper.\+php.
+
+\hypertarget{classDBMysqlConnectWrapper_afb37dd9c37b126f7e30c08c5bf3e7b95}{\index{D\+B\+Mysql\+Connect\+Wrapper@{D\+B\+Mysql\+Connect\+Wrapper}!\+\_\+fetch@{\+\_\+fetch}}
+\index{\+\_\+fetch@{\+\_\+fetch}!D\+B\+Mysql\+Connect\+Wrapper@{D\+B\+Mysql\+Connect\+Wrapper}}
+\subsubsection[{\+\_\+fetch}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+Connect\+Wrapper\+::\+\_\+fetch (
+\begin{DoxyParamCaption}
+\item[{}]{\$result, }
+\item[{}]{\$array\+Index\+End\+Value = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}}\label{classDBMysqlConnectWrapper_afb37dd9c37b126f7e30c08c5bf3e7b95}
+
+
+
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$result} & \\
+\hline
+{\em \$array\+Index\+End\+Value} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 198 of file connect\+\_\+wrapper.\+php.
+
+\hypertarget{classDBMysqlConnectWrapper_a9404ef51cc9f734b3567df230c4e8a31}{\index{D\+B\+Mysql\+Connect\+Wrapper@{D\+B\+Mysql\+Connect\+Wrapper}!\+\_\+rollback@{\+\_\+rollback}}
+\index{\+\_\+rollback@{\+\_\+rollback}!D\+B\+Mysql\+Connect\+Wrapper@{D\+B\+Mysql\+Connect\+Wrapper}}
+\subsubsection[{\+\_\+rollback}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+Connect\+Wrapper\+::\+\_\+rollback (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classDBMysqlConnectWrapper_a9404ef51cc9f734b3567df230c4e8a31}
+
+
+
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 159 of file connect\+\_\+wrapper.\+php.
+
+\hypertarget{classDBMysqlConnectWrapper_a441d399226f8b2ade5b83ecad2ee7fad}{\index{D\+B\+Mysql\+Connect\+Wrapper@{D\+B\+Mysql\+Connect\+Wrapper}!act\+D\+B\+Class\+Finish@{act\+D\+B\+Class\+Finish}}
+\index{act\+D\+B\+Class\+Finish@{act\+D\+B\+Class\+Finish}!D\+B\+Mysql\+Connect\+Wrapper@{D\+B\+Mysql\+Connect\+Wrapper}}
+\subsubsection[{act\+D\+B\+Class\+Finish}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+Connect\+Wrapper\+::act\+D\+B\+Class\+Finish (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classDBMysqlConnectWrapper_a441d399226f8b2ade5b83ecad2ee7fad}
+
+
+
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 80 of file connect\+\_\+wrapper.\+php.
+
+\hypertarget{classDBMysqlConnectWrapper_a092b8eb0055cf932453a06bc2e07ffa6}{\index{D\+B\+Mysql\+Connect\+Wrapper@{D\+B\+Mysql\+Connect\+Wrapper}!act\+D\+B\+Class\+Start@{act\+D\+B\+Class\+Start}}
+\index{act\+D\+B\+Class\+Start@{act\+D\+B\+Class\+Start}!D\+B\+Mysql\+Connect\+Wrapper@{D\+B\+Mysql\+Connect\+Wrapper}}
+\subsubsection[{act\+D\+B\+Class\+Start}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+Connect\+Wrapper\+::act\+D\+B\+Class\+Start (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classDBMysqlConnectWrapper_a092b8eb0055cf932453a06bc2e07ffa6}
+
+
+
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 49 of file connect\+\_\+wrapper.\+php.
+
+\hypertarget{classDBMysqlConnectWrapper_a6134879360bf66676b06d2b90d08f231}{\index{D\+B\+Mysql\+Connect\+Wrapper@{D\+B\+Mysql\+Connect\+Wrapper}!act\+Finish@{act\+Finish}}
+\index{act\+Finish@{act\+Finish}!D\+B\+Mysql\+Connect\+Wrapper@{D\+B\+Mysql\+Connect\+Wrapper}}
+\subsubsection[{act\+Finish}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+Connect\+Wrapper\+::act\+Finish (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classDBMysqlConnectWrapper_a6134879360bf66676b06d2b90d08f231}
+
+
+
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 70 of file connect\+\_\+wrapper.\+php.
+
+\hypertarget{classDBMysqlConnectWrapper_a72cd872ecf223861aa60c7a8e762006e}{\index{D\+B\+Mysql\+Connect\+Wrapper@{D\+B\+Mysql\+Connect\+Wrapper}!act\+Start@{act\+Start}}
+\index{act\+Start@{act\+Start}!D\+B\+Mysql\+Connect\+Wrapper@{D\+B\+Mysql\+Connect\+Wrapper}}
+\subsubsection[{act\+Start}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+Connect\+Wrapper\+::act\+Start (
+\begin{DoxyParamCaption}
+\item[{}]{\$query}
+\end{DoxyParamCaption}
+)}}\label{classDBMysqlConnectWrapper_a72cd872ecf223861aa60c7a8e762006e}
+
+
+
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$query} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 60 of file connect\+\_\+wrapper.\+php.
+
+\hypertarget{classDBMysqlConnectWrapper_aa8d6e69f78e05738b4208dbee93b7e35}{\index{D\+B\+Mysql\+Connect\+Wrapper@{D\+B\+Mysql\+Connect\+Wrapper}!close@{close}}
+\index{close@{close}!D\+B\+Mysql\+Connect\+Wrapper@{D\+B\+Mysql\+Connect\+Wrapper}}
+\subsubsection[{close}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+Connect\+Wrapper\+::close (
+\begin{DoxyParamCaption}
+\item[{}]{\$type = {\ttfamily 'master'}, }
+\item[{}]{\$indx = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}}\label{classDBMysqlConnectWrapper_aa8d6e69f78e05738b4208dbee93b7e35}
+
+
+
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$type} & \\
+\hline
+{\em \$indx} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 138 of file connect\+\_\+wrapper.\+php.
+
+\hypertarget{classDBMysqlConnectWrapper_a64731408ca5d5f10faf1ab9dfc85d305}{\index{D\+B\+Mysql\+Connect\+Wrapper@{D\+B\+Mysql\+Connect\+Wrapper}!create@{create}}
+\index{create@{create}!D\+B\+Mysql\+Connect\+Wrapper@{D\+B\+Mysql\+Connect\+Wrapper}}
+\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+Connect\+Wrapper\+::create (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classDBMysqlConnectWrapper_a64731408ca5d5f10faf1ab9dfc85d305}
+
+
+
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 38 of file connect\+\_\+wrapper.\+php.
+
+\hypertarget{classDBMysqlConnectWrapper_abde4e0c8c4c315e39d7c1698370314f8}{\index{D\+B\+Mysql\+Connect\+Wrapper@{D\+B\+Mysql\+Connect\+Wrapper}!db\+\_\+fetch\+\_\+object@{db\+\_\+fetch\+\_\+object}}
+\index{db\+\_\+fetch\+\_\+object@{db\+\_\+fetch\+\_\+object}!D\+B\+Mysql\+Connect\+Wrapper@{D\+B\+Mysql\+Connect\+Wrapper}}
+\subsubsection[{db\+\_\+fetch\+\_\+object}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+Connect\+Wrapper\+::db\+\_\+fetch\+\_\+object (
+\begin{DoxyParamCaption}
+\item[{\&}]{\$result}
+\end{DoxyParamCaption}
+)}}\label{classDBMysqlConnectWrapper_abde4e0c8c4c315e39d7c1698370314f8}
+
+
+
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$result} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 235 of file connect\+\_\+wrapper.\+php.
+
+\hypertarget{classDBMysqlConnectWrapper_a3b68647fbcd66de2149d16ed790e5001}{\index{D\+B\+Mysql\+Connect\+Wrapper@{D\+B\+Mysql\+Connect\+Wrapper}!db\+\_\+insert\+\_\+id@{db\+\_\+insert\+\_\+id}}
+\index{db\+\_\+insert\+\_\+id@{db\+\_\+insert\+\_\+id}!D\+B\+Mysql\+Connect\+Wrapper@{D\+B\+Mysql\+Connect\+Wrapper}}
+\subsubsection[{db\+\_\+insert\+\_\+id}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+Connect\+Wrapper\+::db\+\_\+insert\+\_\+id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classDBMysqlConnectWrapper_a3b68647fbcd66de2149d16ed790e5001}
+
+
+
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 223 of file connect\+\_\+wrapper.\+php.
+
+\hypertarget{classDBMysqlConnectWrapper_a30f182dabfc36ca3d053f7804693945a}{\index{D\+B\+Mysql\+Connect\+Wrapper@{D\+B\+Mysql\+Connect\+Wrapper}!is\+Supported@{is\+Supported}}
+\index{is\+Supported@{is\+Supported}!D\+B\+Mysql\+Connect\+Wrapper@{D\+B\+Mysql\+Connect\+Wrapper}}
+\subsubsection[{is\+Supported}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+Connect\+Wrapper\+::is\+Supported (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classDBMysqlConnectWrapper_a30f182dabfc36ca3d053f7804693945a}
+
+
+
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 90 of file connect\+\_\+wrapper.\+php.
+
+\hypertarget{classDBMysqlConnectWrapper_a71d795c4840f3c7c3e143fd90b4f0e56}{\index{D\+B\+Mysql\+Connect\+Wrapper@{D\+B\+Mysql\+Connect\+Wrapper}!is\+Table\+Exists@{is\+Table\+Exists}}
+\index{is\+Table\+Exists@{is\+Table\+Exists}!D\+B\+Mysql\+Connect\+Wrapper@{D\+B\+Mysql\+Connect\+Wrapper}}
+\subsubsection[{is\+Table\+Exists}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+Connect\+Wrapper\+::is\+Table\+Exists (
+\begin{DoxyParamCaption}
+\item[{}]{\$target\+\_\+name}
+\end{DoxyParamCaption}
+)}}\label{classDBMysqlConnectWrapper_a71d795c4840f3c7c3e143fd90b4f0e56}
+
+
+
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \$target\+\_\+name} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 210 of file connect\+\_\+wrapper.\+php.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classDBMysqlConnectWrapper_a46ed0740d083d0b75d0eaa52a448a456}{\index{D\+B\+Mysql\+Connect\+Wrapper@{D\+B\+Mysql\+Connect\+Wrapper}!\$queries@{\$queries}}
+\index{\$queries@{\$queries}!D\+B\+Mysql\+Connect\+Wrapper@{D\+B\+Mysql\+Connect\+Wrapper}}
+\subsubsection[{\$queries}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+Connect\+Wrapper\+::\$queries = ''}}\label{classDBMysqlConnectWrapper_a46ed0740d083d0b75d0eaa52a448a456}
+
+
+Definition at line 18 of file connect\+\_\+wrapper.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+tools/dbxml\+\_\+validator/\hyperlink{connect__wrapper_8php}{connect\+\_\+wrapper.\+php}\end{DoxyCompactItemize}

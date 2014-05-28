@@ -1,0 +1,93 @@
+\hypertarget{classHTMLPurifier__Token__Tag}{\section{H\+T\+M\+L\+Purifier\+\_\+\+Token\+\_\+\+Tag Class Reference}
+\label{classHTMLPurifier__Token__Tag}\index{H\+T\+M\+L\+Purifier\+\_\+\+Token\+\_\+\+Tag@{H\+T\+M\+L\+Purifier\+\_\+\+Token\+\_\+\+Tag}}
+}
+Inheritance diagram for H\+T\+M\+L\+Purifier\+\_\+\+Token\+\_\+\+Tag\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classHTMLPurifier__Token__Tag}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHTMLPurifier__Token__Tag_a6666180bac25359b4228128745886c76}{\+\_\+\+\_\+construct} (\$name, \$attr=array(), \$line=null, \$col=null, \$armor=array())
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHTMLPurifier__Token__Tag_a974e4c3fdf940a938335c3aaba2e15b5}{\$is\+\_\+tag} = true
+\item 
+\hyperlink{classHTMLPurifier__Token__Tag_a11b476f2bf296541387212e5add8b88f}{\$name}
+\item 
+\hyperlink{classHTMLPurifier__Token__Tag_af97f0e1005e1e8cfd4a88a3dbc256c30}{\$attr} = array()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract class of a tag token (start, end or empty), and its behavior. 
+
+Definition at line 6 of file Tag.\+php.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classHTMLPurifier__Token__Tag_a6666180bac25359b4228128745886c76}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Token\+\_\+\+Tag@{H\+T\+M\+L\+Purifier\+\_\+\+Token\+\_\+\+Tag}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!H\+T\+M\+L\+Purifier\+\_\+\+Token\+\_\+\+Tag@{H\+T\+M\+L\+Purifier\+\_\+\+Token\+\_\+\+Tag}}
+\subsubsection[{\+\_\+\+\_\+construct}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Token\+\_\+\+Tag\+::\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+\item[{}]{\$name, }
+\item[{}]{\$attr = {\ttfamily array()}, }
+\item[{}]{\$line = {\ttfamily null}, }
+\item[{}]{\$col = {\ttfamily null}, }
+\item[{}]{\$armor = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__Token__Tag_a6666180bac25359b4228128745886c76}
+Non-\/overloaded constructor, which lower-\/cases passed tag name.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$name} & String name. \\
+\hline
+{\em \$attr} & Associative array of attributes. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 36 of file Tag.\+php.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classHTMLPurifier__Token__Tag_af97f0e1005e1e8cfd4a88a3dbc256c30}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Token\+\_\+\+Tag@{H\+T\+M\+L\+Purifier\+\_\+\+Token\+\_\+\+Tag}!\$attr@{\$attr}}
+\index{\$attr@{\$attr}!H\+T\+M\+L\+Purifier\+\_\+\+Token\+\_\+\+Tag@{H\+T\+M\+L\+Purifier\+\_\+\+Token\+\_\+\+Tag}}
+\subsubsection[{\$attr}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Token\+\_\+\+Tag\+::\$attr = array()}}\label{classHTMLPurifier__Token__Tag_af97f0e1005e1e8cfd4a88a3dbc256c30}
+Associative array of the tag's attributes. 
+
+Definition at line 28 of file Tag.\+php.
+
+\hypertarget{classHTMLPurifier__Token__Tag_a974e4c3fdf940a938335c3aaba2e15b5}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Token\+\_\+\+Tag@{H\+T\+M\+L\+Purifier\+\_\+\+Token\+\_\+\+Tag}!\$is\+\_\+tag@{\$is\+\_\+tag}}
+\index{\$is\+\_\+tag@{\$is\+\_\+tag}!H\+T\+M\+L\+Purifier\+\_\+\+Token\+\_\+\+Tag@{H\+T\+M\+L\+Purifier\+\_\+\+Token\+\_\+\+Tag}}
+\subsubsection[{\$is\+\_\+tag}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Token\+\_\+\+Tag\+::\$is\+\_\+tag = true}}\label{classHTMLPurifier__Token__Tag_a974e4c3fdf940a938335c3aaba2e15b5}
+Static bool marker that indicates the class is a tag.
+
+This allows us to check objects with {\ttfamily !empty(\$obj-\/$>$is\+\_\+tag)} without having to use a function call {\ttfamily is\+\_\+a()}. 
+
+Definition at line 14 of file Tag.\+php.
+
+\hypertarget{classHTMLPurifier__Token__Tag_a11b476f2bf296541387212e5add8b88f}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Token\+\_\+\+Tag@{H\+T\+M\+L\+Purifier\+\_\+\+Token\+\_\+\+Tag}!\$name@{\$name}}
+\index{\$name@{\$name}!H\+T\+M\+L\+Purifier\+\_\+\+Token\+\_\+\+Tag@{H\+T\+M\+L\+Purifier\+\_\+\+Token\+\_\+\+Tag}}
+\subsubsection[{\$name}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Token\+\_\+\+Tag\+::\$name}}\label{classHTMLPurifier__Token__Tag_a11b476f2bf296541387212e5add8b88f}
+The lower-\/case name of the tag, like 'a', 'b' or 'blockquote'.
+
+\begin{DoxyNote}{Note}
+Strictly speaking, X\+M\+L tags are case sensitive, so we shouldn't be lower-\/casing them, but these tokens cater to H\+T\+M\+L tags, which are insensitive. 
+\end{DoxyNote}
+
+
+Definition at line 23 of file Tag.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+classes/security/htmlpurifier/library/\+H\+T\+M\+L\+Purifier/\+Token/\hyperlink{Tag_8php}{Tag.\+php}\end{DoxyCompactItemize}

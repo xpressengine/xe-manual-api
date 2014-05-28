@@ -1,0 +1,327 @@
+\hypertarget{classHTMLPurifier__HTMLModule}{\section{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module Class Reference}
+\label{classHTMLPurifier__HTMLModule}\index{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module}}
+}
+Inheritance diagram for H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{classHTMLPurifier__HTMLModule}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHTMLPurifier__HTMLModule_a149d7faea904935ce1f32ef1634560c0}{get\+Child\+Def} (\$def)
+\item 
+\hyperlink{classHTMLPurifier__HTMLModule_affb19c170d2cdb5d1a231a73c0501895}{add\+Element} (\$element, \$type, \$contents, \$attr\+\_\+includes=array(), \$attr=array())
+\item 
+\hyperlink{classHTMLPurifier__HTMLModule_a39828170b14dad96be199d8f9bace473}{add\+Blank\+Element} (\$element)
+\item 
+\hyperlink{classHTMLPurifier__HTMLModule_a31e79046ffefbb0ef169c3a80bad5fc7}{add\+Element\+To\+Content\+Set} (\$element, \$type)
+\item 
+\hyperlink{classHTMLPurifier__HTMLModule_aed6918cbaa8242228e675a192dacbde8}{parse\+Contents} (\$contents)
+\item 
+\hyperlink{classHTMLPurifier__HTMLModule_a6843875cb5b504208dbe80c170fbf71a}{merge\+In\+Attr\+Includes} (\&\$attr, \$attr\+\_\+includes)
+\item 
+\hyperlink{classHTMLPurifier__HTMLModule_a30e22a4126da032efde1968bfa72744f}{make\+Lookup} (\$list)
+\item 
+\hyperlink{classHTMLPurifier__HTMLModule_ac0f562b1e33745ec853f2fbd61f7e6c6}{setup} (\$config)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHTMLPurifier__HTMLModule_a10f7d43e478f76541c170593453b9e50}{\$name}
+\item 
+\hyperlink{classHTMLPurifier__HTMLModule_a55ba2bf877759995be201f4badb49fc8}{\$elements} = array()
+\item 
+\hyperlink{classHTMLPurifier__HTMLModule_a8993a9639004f7e706f63f65ee28254f}{\$info} = array()
+\item 
+\hyperlink{classHTMLPurifier__HTMLModule_a9ab9ca2173f38bb33d398db756714809}{\$content\+\_\+sets} = array()
+\item 
+\hyperlink{classHTMLPurifier__HTMLModule_a7c8805952fcf0ad143180d97b3d3ec17}{\$attr\+\_\+collections} = array()
+\item 
+\hyperlink{classHTMLPurifier__HTMLModule_a9cd963895282a192b432ebef787fe93b}{\$info\+\_\+tag\+\_\+transform} = array()
+\item 
+\hyperlink{classHTMLPurifier__HTMLModule_a8360302f80672ee91e38609982ee3e96}{\$info\+\_\+attr\+\_\+transform\+\_\+pre} = array()
+\item 
+\hyperlink{classHTMLPurifier__HTMLModule_aef22ceb521086ceea23c408cd4974c40}{\$info\+\_\+attr\+\_\+transform\+\_\+post} = array()
+\item 
+\hyperlink{classHTMLPurifier__HTMLModule_a68a3f58ec05cf9b1aceb0ee0966dc4fa}{\$info\+\_\+injector} = array()
+\item 
+\hyperlink{classHTMLPurifier__HTMLModule_a6a249c0e393231a3c59d9b1f8ec897f0}{\$defines\+\_\+child\+\_\+def} = false
+\item 
+\hyperlink{classHTMLPurifier__HTMLModule_a2607fc85f803afa801cf1904300644b9}{\$safe} = true
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents an X\+H\+T\+M\+L 1.\+1 module, with information on elements, tags and attributes. \begin{DoxyNote}{Note}
+Even though this is technically X\+H\+T\+M\+L 1.\+1, it is also used for regular H\+T\+M\+L parsing. We are using modulization as a convenient way to represent the internals of H\+T\+M\+L\+Definition, and our implementation is by no means conforming and does not directly use the normative D\+T\+Ds or X\+M\+L schemas. 
+
+The public variables in a module should almost directly correspond to the variables in \hyperlink{classHTMLPurifier__HTMLDefinition}{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Definition}. However, the prefix info carries no special meaning in these objects (include it anyway if that's the correspondence though). 
+\end{DoxyNote}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000021}{Todo}]Consider making some member functions protected \end{DoxyRefDesc}
+
+
+Definition at line 18 of file H\+T\+M\+L\+Module.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classHTMLPurifier__HTMLModule_a39828170b14dad96be199d8f9bace473}{\index{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module}!add\+Blank\+Element@{add\+Blank\+Element}}
+\index{add\+Blank\+Element@{add\+Blank\+Element}!H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module}}
+\subsubsection[{add\+Blank\+Element}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+::add\+Blank\+Element (
+\begin{DoxyParamCaption}
+\item[{}]{\$element}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__HTMLModule_a39828170b14dad96be199d8f9bace473}
+Convenience function that creates a totally blank, non-\/standalone element. 
+\begin{DoxyParams}{Parameters}
+{\em \$element} & Name of element to create \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Created element 
+\end{DoxyReturn}
+
+
+Definition at line 153 of file H\+T\+M\+L\+Module.\+php.
+
+\hypertarget{classHTMLPurifier__HTMLModule_affb19c170d2cdb5d1a231a73c0501895}{\index{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module}!add\+Element@{add\+Element}}
+\index{add\+Element@{add\+Element}!H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module}}
+\subsubsection[{add\+Element}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+::add\+Element (
+\begin{DoxyParamCaption}
+\item[{}]{\$element, }
+\item[{}]{\$type, }
+\item[{}]{\$contents, }
+\item[{}]{\$attr\+\_\+includes = {\ttfamily array()}, }
+\item[{}]{\$attr = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__HTMLModule_affb19c170d2cdb5d1a231a73c0501895}
+Convenience function that sets up a new element 
+\begin{DoxyParams}{Parameters}
+{\em \$element} & Name of element to add \\
+\hline
+{\em \$type} & What content set should element be registered to? Set as false to skip this step. \\
+\hline
+{\em \$contents} & Allowed children in form of\+: \char`\"{}\$content\+\_\+model\+\_\+type\+: \$content\+\_\+model\char`\"{} \\
+\hline
+{\em \$attr\+\_\+includes} & What attribute collections to register to element? \\
+\hline
+{\em \$attr} & What unique attributes does the element define? \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+See Element\+Def for in-\/depth descriptions of these parameters. 
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+Created element definition object, so you can set advanced parameters 
+\end{DoxyReturn}
+
+
+Definition at line 130 of file H\+T\+M\+L\+Module.\+php.
+
+\hypertarget{classHTMLPurifier__HTMLModule_a31e79046ffefbb0ef169c3a80bad5fc7}{\index{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module}!add\+Element\+To\+Content\+Set@{add\+Element\+To\+Content\+Set}}
+\index{add\+Element\+To\+Content\+Set@{add\+Element\+To\+Content\+Set}!H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module}}
+\subsubsection[{add\+Element\+To\+Content\+Set}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+::add\+Element\+To\+Content\+Set (
+\begin{DoxyParamCaption}
+\item[{}]{\$element, }
+\item[{}]{\$type}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__HTMLModule_a31e79046ffefbb0ef169c3a80bad5fc7}
+Convenience function that registers an element to a content set 
+\begin{DoxyParams}{Parameters}
+{\em Element} & to register \\
+\hline
+{\em Name} & content set (warning\+: case sensitive, usually upper-\/case first letter) \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 170 of file H\+T\+M\+L\+Module.\+php.
+
+\hypertarget{classHTMLPurifier__HTMLModule_a149d7faea904935ce1f32ef1634560c0}{\index{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module}!get\+Child\+Def@{get\+Child\+Def}}
+\index{get\+Child\+Def@{get\+Child\+Def}!H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module}}
+\subsubsection[{get\+Child\+Def}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+::get\+Child\+Def (
+\begin{DoxyParamCaption}
+\item[{}]{\$def}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__HTMLModule_a149d7faea904935ce1f32ef1634560c0}
+Retrieves a proper \hyperlink{classHTMLPurifier__ChildDef}{H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def} subclass based on content\+\_\+model and content\+\_\+model\+\_\+type member variables of the \hyperlink{classHTMLPurifier__ElementDef}{H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def} class. There is a similar function in \hyperlink{classHTMLPurifier__HTMLDefinition}{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Definition}. 
+\begin{DoxyParams}{Parameters}
+{\em \$def} & \hyperlink{classHTMLPurifier__ElementDef}{H\+T\+M\+L\+Purifier\+\_\+\+Element\+Def} instance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classHTMLPurifier__ChildDef}{H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def} subclass 
+\end{DoxyReturn}
+
+
+Definition at line 112 of file H\+T\+M\+L\+Module.\+php.
+
+\hypertarget{classHTMLPurifier__HTMLModule_a30e22a4126da032efde1968bfa72744f}{\index{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module}!make\+Lookup@{make\+Lookup}}
+\index{make\+Lookup@{make\+Lookup}!H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module}}
+\subsubsection[{make\+Lookup}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+::make\+Lookup (
+\begin{DoxyParamCaption}
+\item[{}]{\$list}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__HTMLModule_a30e22a4126da032efde1968bfa72744f}
+Convenience function that generates a lookup table with boolean true as value. 
+\begin{DoxyParams}{Parameters}
+{\em \$list} & List of values to turn into a lookup \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+You can also pass an arbitrary number of arguments in place of the regular argument 
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+Lookup array equivalent of list 
+\end{DoxyReturn}
+
+
+Definition at line 224 of file H\+T\+M\+L\+Module.\+php.
+
+\hypertarget{classHTMLPurifier__HTMLModule_a6843875cb5b504208dbe80c170fbf71a}{\index{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module}!merge\+In\+Attr\+Includes@{merge\+In\+Attr\+Includes}}
+\index{merge\+In\+Attr\+Includes@{merge\+In\+Attr\+Includes}!H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module}}
+\subsubsection[{merge\+In\+Attr\+Includes}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+::merge\+In\+Attr\+Includes (
+\begin{DoxyParamCaption}
+\item[{\&}]{\$attr, }
+\item[{}]{\$attr\+\_\+includes}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__HTMLModule_a6843875cb5b504208dbe80c170fbf71a}
+Convenience function that merges a list of attribute includes into an attribute array. 
+\begin{DoxyParams}{Parameters}
+{\em \$attr} & Reference to attr array to modify \\
+\hline
+{\em \$attr\+\_\+includes} & Array of includes / string include to merge in \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 208 of file H\+T\+M\+L\+Module.\+php.
+
+\hypertarget{classHTMLPurifier__HTMLModule_aed6918cbaa8242228e675a192dacbde8}{\index{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module}!parse\+Contents@{parse\+Contents}}
+\index{parse\+Contents@{parse\+Contents}!H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module}}
+\subsubsection[{parse\+Contents}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+::parse\+Contents (
+\begin{DoxyParamCaption}
+\item[{}]{\$contents}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__HTMLModule_aed6918cbaa8242228e675a192dacbde8}
+Convenience function that transforms single-\/string contents into separate content model and content model type 
+\begin{DoxyParams}{Parameters}
+{\em \$contents} & Allowed children in form of\+: \char`\"{}\$content\+\_\+model\+\_\+type\+: \$content\+\_\+model\char`\"{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+If contents is an object, an array of two nulls will be returned, and the callee needs to take the original \$contents and use it directly. 
+\end{DoxyNote}
+
+
+Definition at line 185 of file H\+T\+M\+L\+Module.\+php.
+
+\hypertarget{classHTMLPurifier__HTMLModule_ac0f562b1e33745ec853f2fbd61f7e6c6}{\index{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module}!setup@{setup}}
+\index{setup@{setup}!H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module}}
+\subsubsection[{setup}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+::setup (
+\begin{DoxyParamCaption}
+\item[{}]{\$config}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__HTMLModule_ac0f562b1e33745ec853f2fbd61f7e6c6}
+Lazy load construction of the module after determining whether or not it's needed, and also when a finalized configuration object is available. 
+\begin{DoxyParams}{Parameters}
+{\em \$config} & Instance of \hyperlink{classHTMLPurifier__Config}{H\+T\+M\+L\+Purifier\+\_\+\+Config} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 240 of file H\+T\+M\+L\+Module.\+php.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classHTMLPurifier__HTMLModule_a7c8805952fcf0ad143180d97b3d3ec17}{\index{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module}!\$attr\+\_\+collections@{\$attr\+\_\+collections}}
+\index{\$attr\+\_\+collections@{\$attr\+\_\+collections}!H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module}}
+\subsubsection[{\$attr\+\_\+collections}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+::\$attr\+\_\+collections = array()}}\label{classHTMLPurifier__HTMLModule_a7c8805952fcf0ad143180d97b3d3ec17}
+Associative array of attribute collection names to attribute collection additions. More rarely used for adding attributes to the global collections. Example is the Style\+Attribute module adding the style attribute to the Core. Corresponds to H\+T\+M\+L\+Definition's attr\+\_\+collections-\/$>$info, since the object's data is only info, with extra behavior associated with it. 
+
+Definition at line 57 of file H\+T\+M\+L\+Module.\+php.
+
+\hypertarget{classHTMLPurifier__HTMLModule_a9ab9ca2173f38bb33d398db756714809}{\index{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module}!\$content\+\_\+sets@{\$content\+\_\+sets}}
+\index{\$content\+\_\+sets@{\$content\+\_\+sets}!H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module}}
+\subsubsection[{\$content\+\_\+sets}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+::\$content\+\_\+sets = array()}}\label{classHTMLPurifier__HTMLModule_a9ab9ca2173f38bb33d398db756714809}
+Associative array of content set names to content set additions. This is commonly used to, say, add an A element to the Inline content set. This corresponds to an internal variable \$content\+\_\+sets and N\+O\+T info\+\_\+content\+\_\+sets member variable of H\+T\+M\+L\+Definition. 
+
+Definition at line 47 of file H\+T\+M\+L\+Module.\+php.
+
+\hypertarget{classHTMLPurifier__HTMLModule_a6a249c0e393231a3c59d9b1f8ec897f0}{\index{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module}!\$defines\+\_\+child\+\_\+def@{\$defines\+\_\+child\+\_\+def}}
+\index{\$defines\+\_\+child\+\_\+def@{\$defines\+\_\+child\+\_\+def}!H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module}}
+\subsubsection[{\$defines\+\_\+child\+\_\+def}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+::\$defines\+\_\+child\+\_\+def = false}}\label{classHTMLPurifier__HTMLModule_a6a249c0e393231a3c59d9b1f8ec897f0}
+Boolean flag that indicates whether or not get\+Child\+Def is implemented. For optimization reasons\+: may save a call to a function. Be sure to set it if you do implement \hyperlink{classHTMLPurifier__HTMLModule_a149d7faea904935ce1f32ef1634560c0}{get\+Child\+Def()}, otherwise it will have no effect! 
+
+Definition at line 88 of file H\+T\+M\+L\+Module.\+php.
+
+\hypertarget{classHTMLPurifier__HTMLModule_a55ba2bf877759995be201f4badb49fc8}{\index{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module}!\$elements@{\$elements}}
+\index{\$elements@{\$elements}!H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module}}
+\subsubsection[{\$elements}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+::\$elements = array()}}\label{classHTMLPurifier__HTMLModule_a55ba2bf877759995be201f4badb49fc8}
+Informally, a list of elements this module changes. Not used in any significant way. 
+
+Definition at line 32 of file H\+T\+M\+L\+Module.\+php.
+
+\hypertarget{classHTMLPurifier__HTMLModule_a8993a9639004f7e706f63f65ee28254f}{\index{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module}!\$info@{\$info}}
+\index{\$info@{\$info}!H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module}}
+\subsubsection[{\$info}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+::\$info = array()}}\label{classHTMLPurifier__HTMLModule_a8993a9639004f7e706f63f65ee28254f}
+Associative array of element names to element definitions. Some definitions may be incomplete, to be merged in later with the full definition. 
+
+Definition at line 39 of file H\+T\+M\+L\+Module.\+php.
+
+\hypertarget{classHTMLPurifier__HTMLModule_aef22ceb521086ceea23c408cd4974c40}{\index{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module}!\$info\+\_\+attr\+\_\+transform\+\_\+post@{\$info\+\_\+attr\+\_\+transform\+\_\+post}}
+\index{\$info\+\_\+attr\+\_\+transform\+\_\+post@{\$info\+\_\+attr\+\_\+transform\+\_\+post}!H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module}}
+\subsubsection[{\$info\+\_\+attr\+\_\+transform\+\_\+post}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+::\$info\+\_\+attr\+\_\+transform\+\_\+post = array()}}\label{classHTMLPurifier__HTMLModule_aef22ceb521086ceea23c408cd4974c40}
+List of \hyperlink{classHTMLPurifier__AttrTransform}{H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Transform} to be performed after validation. 
+
+Definition at line 72 of file H\+T\+M\+L\+Module.\+php.
+
+\hypertarget{classHTMLPurifier__HTMLModule_a8360302f80672ee91e38609982ee3e96}{\index{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module}!\$info\+\_\+attr\+\_\+transform\+\_\+pre@{\$info\+\_\+attr\+\_\+transform\+\_\+pre}}
+\index{\$info\+\_\+attr\+\_\+transform\+\_\+pre@{\$info\+\_\+attr\+\_\+transform\+\_\+pre}!H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module}}
+\subsubsection[{\$info\+\_\+attr\+\_\+transform\+\_\+pre}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+::\$info\+\_\+attr\+\_\+transform\+\_\+pre = array()}}\label{classHTMLPurifier__HTMLModule_a8360302f80672ee91e38609982ee3e96}
+List of \hyperlink{classHTMLPurifier__AttrTransform}{H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Transform} to be performed before validation. 
+
+Definition at line 67 of file H\+T\+M\+L\+Module.\+php.
+
+\hypertarget{classHTMLPurifier__HTMLModule_a68a3f58ec05cf9b1aceb0ee0966dc4fa}{\index{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module}!\$info\+\_\+injector@{\$info\+\_\+injector}}
+\index{\$info\+\_\+injector@{\$info\+\_\+injector}!H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module}}
+\subsubsection[{\$info\+\_\+injector}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+::\$info\+\_\+injector = array()}}\label{classHTMLPurifier__HTMLModule_a68a3f58ec05cf9b1aceb0ee0966dc4fa}
+List of \hyperlink{classHTMLPurifier__Injector}{H\+T\+M\+L\+Purifier\+\_\+\+Injector} to be performed during well-\/formedness fixing. An injector will only be invoked if all of it's pre-\/requisites are met; if an injector fails setup, there will be no error; it will simply be silently disabled. 
+
+Definition at line 80 of file H\+T\+M\+L\+Module.\+php.
+
+\hypertarget{classHTMLPurifier__HTMLModule_a9cd963895282a192b432ebef787fe93b}{\index{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module}!\$info\+\_\+tag\+\_\+transform@{\$info\+\_\+tag\+\_\+transform}}
+\index{\$info\+\_\+tag\+\_\+transform@{\$info\+\_\+tag\+\_\+transform}!H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module}}
+\subsubsection[{\$info\+\_\+tag\+\_\+transform}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+::\$info\+\_\+tag\+\_\+transform = array()}}\label{classHTMLPurifier__HTMLModule_a9cd963895282a192b432ebef787fe93b}
+Associative array of deprecated tag name to \hyperlink{classHTMLPurifier__TagTransform}{H\+T\+M\+L\+Purifier\+\_\+\+Tag\+Transform} 
+
+Definition at line 62 of file H\+T\+M\+L\+Module.\+php.
+
+\hypertarget{classHTMLPurifier__HTMLModule_a10f7d43e478f76541c170593453b9e50}{\index{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module}!\$name@{\$name}}
+\index{\$name@{\$name}!H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module}}
+\subsubsection[{\$name}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+::\$name}}\label{classHTMLPurifier__HTMLModule_a10f7d43e478f76541c170593453b9e50}
+Short unique string identifier of the module 
+
+Definition at line 26 of file H\+T\+M\+L\+Module.\+php.
+
+\hypertarget{classHTMLPurifier__HTMLModule_a2607fc85f803afa801cf1904300644b9}{\index{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module}!\$safe@{\$safe}}
+\index{\$safe@{\$safe}!H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module@{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module}}
+\subsubsection[{\$safe}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module\+::\$safe = true}}\label{classHTMLPurifier__HTMLModule_a2607fc85f803afa801cf1904300644b9}
+Boolean flag whether or not this module is safe. If it is not safe, all of its members are unsafe. Modules are safe by default (this might be slightly dangerous, but it doesn't make much sense to force H\+T\+M\+L \hyperlink{classPurifier}{Purifier}, which is based off of safe H\+T\+M\+L, to explicitly say, \char`\"{}\+This is safe,\char`\"{} even though there are modules which are \char`\"{}unsafe\char`\"{})
+
+\begin{DoxyNote}{Note}
+Previously, safety could be applied at an element level granularity. We've removed this ability, so in order to add \char`\"{}unsafe\char`\"{} elements or attributes, a dedicated module with this property set to false must be used. 
+\end{DoxyNote}
+
+
+Definition at line 102 of file H\+T\+M\+L\+Module.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+classes/security/htmlpurifier/library/\+H\+T\+M\+L\+Purifier/\hyperlink{HTMLModule_8php}{H\+T\+M\+L\+Module.\+php}\end{DoxyCompactItemize}

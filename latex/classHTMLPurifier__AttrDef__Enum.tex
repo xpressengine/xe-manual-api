@@ -1,0 +1,120 @@
+\hypertarget{classHTMLPurifier__AttrDef__Enum}{\section{H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Def\+\_\+\+Enum Class Reference}
+\label{classHTMLPurifier__AttrDef__Enum}\index{H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Def\+\_\+\+Enum@{H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Def\+\_\+\+Enum}}
+}
+Inheritance diagram for H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Def\+\_\+\+Enum\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classHTMLPurifier__AttrDef__Enum}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHTMLPurifier__AttrDef__Enum_ab754e65c8301c2e6c33e8698d2c81ef0}{\+\_\+\+\_\+construct} (\$valid\+\_\+values=array(), \$case\+\_\+sensitive=false)
+\item 
+\hyperlink{classHTMLPurifier__AttrDef__Enum_abd19eb5ae772435d88664e53aa6900ab}{validate} (\$string, \$config, \$context)
+\item 
+\hyperlink{classHTMLPurifier__AttrDef__Enum_ab2992164766fee262e6f60db84635456}{make} (\$string)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHTMLPurifier__AttrDef__Enum_abc1df45b8d1bb628e037beae48b951d4}{\$valid\+\_\+values} = array()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHTMLPurifier__AttrDef__Enum_a146fbbbb149091688e54c1772a7713ac}{\$case\+\_\+sensitive} = false
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Validates a keyword against a list of valid values. \begin{DoxyWarning}{Warning}
+The case-\/insensitive compare of this function uses P\+H\+P's built-\/in strtolower and ctype\+\_\+lower functions, which may cause problems with international comparisons 
+\end{DoxyWarning}
+
+
+Definition at line 10 of file Enum.\+php.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classHTMLPurifier__AttrDef__Enum_ab754e65c8301c2e6c33e8698d2c81ef0}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Def\+\_\+\+Enum@{H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Def\+\_\+\+Enum}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Def\+\_\+\+Enum@{H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Def\+\_\+\+Enum}}
+\subsubsection[{\+\_\+\+\_\+construct}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Def\+\_\+\+Enum\+::\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+\item[{}]{\$valid\+\_\+values = {\ttfamily array()}, }
+\item[{}]{\$case\+\_\+sensitive = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__AttrDef__Enum_ab754e65c8301c2e6c33e8698d2c81ef0}
+
+\begin{DoxyParams}{Parameters}
+{\em \$valid\+\_\+values} & List of valid values \\
+\hline
+{\em \$case\+\_\+sensitive} & Bool indicating whether or not case sensitive \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 29 of file Enum.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classHTMLPurifier__AttrDef__Enum_ab2992164766fee262e6f60db84635456}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Def\+\_\+\+Enum@{H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Def\+\_\+\+Enum}!make@{make}}
+\index{make@{make}!H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Def\+\_\+\+Enum@{H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Def\+\_\+\+Enum}}
+\subsubsection[{make}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Def\+\_\+\+Enum\+::make (
+\begin{DoxyParamCaption}
+\item[{}]{\$string}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__AttrDef__Enum_ab2992164766fee262e6f60db84635456}
+
+\begin{DoxyParams}{Parameters}
+{\em \$string} & In form of comma-\/delimited list of case-\/insensitive valid values. Example\+: \char`\"{}foo,bar,baz\char`\"{}. Prepend \char`\"{}s\+:\char`\"{} to make case sensitive \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 52 of file Enum.\+php.
+
+\hypertarget{classHTMLPurifier__AttrDef__Enum_abd19eb5ae772435d88664e53aa6900ab}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Def\+\_\+\+Enum@{H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Def\+\_\+\+Enum}!validate@{validate}}
+\index{validate@{validate}!H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Def\+\_\+\+Enum@{H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Def\+\_\+\+Enum}}
+\subsubsection[{validate}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Def\+\_\+\+Enum\+::validate (
+\begin{DoxyParamCaption}
+\item[{}]{\$string, }
+\item[{}]{\$config, }
+\item[{}]{\$context}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__AttrDef__Enum_abd19eb5ae772435d88664e53aa6900ab}
+
+
+Definition at line 36 of file Enum.\+php.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classHTMLPurifier__AttrDef__Enum_a146fbbbb149091688e54c1772a7713ac}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Def\+\_\+\+Enum@{H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Def\+\_\+\+Enum}!\$case\+\_\+sensitive@{\$case\+\_\+sensitive}}
+\index{\$case\+\_\+sensitive@{\$case\+\_\+sensitive}!H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Def\+\_\+\+Enum@{H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Def\+\_\+\+Enum}}
+\subsubsection[{\$case\+\_\+sensitive}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Def\+\_\+\+Enum\+::\$case\+\_\+sensitive = false\hspace{0.3cm}{\ttfamily [protected]}}}\label{classHTMLPurifier__AttrDef__Enum_a146fbbbb149091688e54c1772a7713ac}
+Bool indicating whether or not enumeration is case sensitive. \begin{DoxyNote}{Note}
+In general this is always case insensitive. 
+\end{DoxyNote}
+
+
+Definition at line 23 of file Enum.\+php.
+
+\hypertarget{classHTMLPurifier__AttrDef__Enum_abc1df45b8d1bb628e037beae48b951d4}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Def\+\_\+\+Enum@{H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Def\+\_\+\+Enum}!\$valid\+\_\+values@{\$valid\+\_\+values}}
+\index{\$valid\+\_\+values@{\$valid\+\_\+values}!H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Def\+\_\+\+Enum@{H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Def\+\_\+\+Enum}}
+\subsubsection[{\$valid\+\_\+values}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Def\+\_\+\+Enum\+::\$valid\+\_\+values = array()}}\label{classHTMLPurifier__AttrDef__Enum_abc1df45b8d1bb628e037beae48b951d4}
+Lookup table of valid values. \begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000007}{Todo}]Make protected \end{DoxyRefDesc}
+
+
+Definition at line 17 of file Enum.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+classes/security/htmlpurifier/library/\+H\+T\+M\+L\+Purifier/\+Attr\+Def/\hyperlink{Enum_8php}{Enum.\+php}\end{DoxyCompactItemize}

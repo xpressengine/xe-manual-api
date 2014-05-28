@@ -1,0 +1,203 @@
+\hypertarget{classaddonAdminModel}{\section{addon\+Admin\+Model Class Reference}
+\label{classaddonAdminModel}\index{addon\+Admin\+Model@{addon\+Admin\+Model}}
+}
+Inheritance diagram for addon\+Admin\+Model\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classaddonAdminModel}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classaddonAdminModel_aed6091be1c24a8c5fcf101b664300b00}{init} ()
+\item 
+\hyperlink{classaddonAdminModel_ab4fea679a0059be718e449b31a88c46f}{get\+Addon\+Path} (\$addon\+\_\+name)
+\item 
+\hyperlink{classaddonAdminModel_a056c3d3567ae957b9a5635397dd78b9e}{get\+Addon\+List\+For\+Super\+Admin} ()
+\item 
+\hyperlink{classaddonAdminModel_abd8052e647a7ea4224e0680663fca536}{get\+Addon\+List} (\$\hyperlink{ko_8install_8php_a8b1406b4ad1048041558dce6bfe89004}{site\+\_\+srl}=0, \$gtype= 'site')
+\item 
+\hyperlink{classaddonAdminModel_a9019b55b1c67ac658259bfd78bd74e4a}{get\+Addon\+Info\+Xml} (\$\hyperlink{classaddon}{addon}, \$\hyperlink{ko_8install_8php_a8b1406b4ad1048041558dce6bfe89004}{site\+\_\+srl}=0, \$gtype= 'site')
+\item 
+\hyperlink{classaddonAdminModel_a59cd95bf540c78d29043029f292c201b}{get\+Inserted\+Addons} (\$\hyperlink{ko_8install_8php_a8b1406b4ad1048041558dce6bfe89004}{site\+\_\+srl}=0, \$gtype= 'site')
+\item 
+\hyperlink{classaddonAdminModel_ac5b47c66d9e5d0daea7e857676f2b7ec}{is\+Activated\+Addon} (\$\hyperlink{classaddon}{addon}, \$\hyperlink{ko_8install_8php_a8b1406b4ad1048041558dce6bfe89004}{site\+\_\+srl}=0, \$type=\char`\"{}pc\char`\"{}, \$gtype= 'site')
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Admin model class of addon module \begin{DoxyAuthor}{Author}
+N\+A\+V\+E\+R (\href{mailto:developers@xpressengine.com}{\tt developers@xpressengine.\+com}) 
+\end{DoxyAuthor}
+
+
+Definition at line 8 of file addon.\+admin.\+model.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classaddonAdminModel_a9019b55b1c67ac658259bfd78bd74e4a}{\index{addon\+Admin\+Model@{addon\+Admin\+Model}!get\+Addon\+Info\+Xml@{get\+Addon\+Info\+Xml}}
+\index{get\+Addon\+Info\+Xml@{get\+Addon\+Info\+Xml}!addon\+Admin\+Model@{addon\+Admin\+Model}}
+\subsubsection[{get\+Addon\+Info\+Xml}]{\setlength{\rightskip}{0pt plus 5cm}addon\+Admin\+Model\+::get\+Addon\+Info\+Xml (
+\begin{DoxyParamCaption}
+\item[{}]{\$addon, }
+\item[{}]{\$site\+\_\+srl = {\ttfamily 0}, }
+\item[{}]{\$gtype = {\ttfamily 'site'}}
+\end{DoxyParamCaption}
+)}}\label{classaddonAdminModel_a9019b55b1c67ac658259bfd78bd74e4a}
+Returns a information of addon
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$addon} & Name to get information \\
+\hline
+int & {\em \$site\+\_\+srl} & Site srl \\
+\hline
+string & {\em \$gtype} & site or global \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object Returns a information 
+\end{DoxyReturn}
+
+
+Definition at line 146 of file addon.\+admin.\+model.\+php.
+
+\hypertarget{classaddonAdminModel_abd8052e647a7ea4224e0680663fca536}{\index{addon\+Admin\+Model@{addon\+Admin\+Model}!get\+Addon\+List@{get\+Addon\+List}}
+\index{get\+Addon\+List@{get\+Addon\+List}!addon\+Admin\+Model@{addon\+Admin\+Model}}
+\subsubsection[{get\+Addon\+List}]{\setlength{\rightskip}{0pt plus 5cm}addon\+Admin\+Model\+::get\+Addon\+List (
+\begin{DoxyParamCaption}
+\item[{}]{\$site\+\_\+srl = {\ttfamily 0}, }
+\item[{}]{\$gtype = {\ttfamily 'site'}}
+\end{DoxyParamCaption}
+)}}\label{classaddonAdminModel_abd8052e647a7ea4224e0680663fca536}
+Returns addon list
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$site\+\_\+srl} & Site srl \\
+\hline
+string & {\em \$gtype} & site or global \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array Returns addon list 
+\end{DoxyReturn}
+
+
+Definition at line 74 of file addon.\+admin.\+model.\+php.
+
+\hypertarget{classaddonAdminModel_a056c3d3567ae957b9a5635397dd78b9e}{\index{addon\+Admin\+Model@{addon\+Admin\+Model}!get\+Addon\+List\+For\+Super\+Admin@{get\+Addon\+List\+For\+Super\+Admin}}
+\index{get\+Addon\+List\+For\+Super\+Admin@{get\+Addon\+List\+For\+Super\+Admin}!addon\+Admin\+Model@{addon\+Admin\+Model}}
+\subsubsection[{get\+Addon\+List\+For\+Super\+Admin}]{\setlength{\rightskip}{0pt plus 5cm}addon\+Admin\+Model\+::get\+Addon\+List\+For\+Super\+Admin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classaddonAdminModel_a056c3d3567ae957b9a5635397dd78b9e}
+Get addon list for super admin
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classObject}{Object} 
+\end{DoxyReturn}
+
+
+Definition at line 42 of file addon.\+admin.\+model.\+php.
+
+\hypertarget{classaddonAdminModel_ab4fea679a0059be718e449b31a88c46f}{\index{addon\+Admin\+Model@{addon\+Admin\+Model}!get\+Addon\+Path@{get\+Addon\+Path}}
+\index{get\+Addon\+Path@{get\+Addon\+Path}!addon\+Admin\+Model@{addon\+Admin\+Model}}
+\subsubsection[{get\+Addon\+Path}]{\setlength{\rightskip}{0pt plus 5cm}addon\+Admin\+Model\+::get\+Addon\+Path (
+\begin{DoxyParamCaption}
+\item[{}]{\$addon\+\_\+name}
+\end{DoxyParamCaption}
+)}}\label{classaddonAdminModel_ab4fea679a0059be718e449b31a88c46f}
+Returns a path of addon
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$addon\+\_\+name} & Name to get path \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Returns a path 
+\end{DoxyReturn}
+
+
+Definition at line 27 of file addon.\+admin.\+model.\+php.
+
+\hypertarget{classaddonAdminModel_a59cd95bf540c78d29043029f292c201b}{\index{addon\+Admin\+Model@{addon\+Admin\+Model}!get\+Inserted\+Addons@{get\+Inserted\+Addons}}
+\index{get\+Inserted\+Addons@{get\+Inserted\+Addons}!addon\+Admin\+Model@{addon\+Admin\+Model}}
+\subsubsection[{get\+Inserted\+Addons}]{\setlength{\rightskip}{0pt plus 5cm}addon\+Admin\+Model\+::get\+Inserted\+Addons (
+\begin{DoxyParamCaption}
+\item[{}]{\$site\+\_\+srl = {\ttfamily 0}, }
+\item[{}]{\$gtype = {\ttfamily 'site'}}
+\end{DoxyParamCaption}
+)}}\label{classaddonAdminModel_a59cd95bf540c78d29043029f292c201b}
+Returns activated addon list
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$site\+\_\+srl} & Site srl \\
+\hline
+string & {\em \$gtype} & site or global \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array Returns list 
+\end{DoxyReturn}
+
+
+Definition at line 405 of file addon.\+admin.\+model.\+php.
+
+\hypertarget{classaddonAdminModel_aed6091be1c24a8c5fcf101b664300b00}{\index{addon\+Admin\+Model@{addon\+Admin\+Model}!init@{init}}
+\index{init@{init}!addon\+Admin\+Model@{addon\+Admin\+Model}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}addon\+Admin\+Model\+::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classaddonAdminModel_aed6091be1c24a8c5fcf101b664300b00}
+Initialization
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 16 of file addon.\+admin.\+model.\+php.
+
+\hypertarget{classaddonAdminModel_ac5b47c66d9e5d0daea7e857676f2b7ec}{\index{addon\+Admin\+Model@{addon\+Admin\+Model}!is\+Activated\+Addon@{is\+Activated\+Addon}}
+\index{is\+Activated\+Addon@{is\+Activated\+Addon}!addon\+Admin\+Model@{addon\+Admin\+Model}}
+\subsubsection[{is\+Activated\+Addon}]{\setlength{\rightskip}{0pt plus 5cm}addon\+Admin\+Model\+::is\+Activated\+Addon (
+\begin{DoxyParamCaption}
+\item[{}]{\$addon, }
+\item[{}]{\$site\+\_\+srl = {\ttfamily 0}, }
+\item[{}]{\$type = {\ttfamily \char`\"{}pc\char`\"{}}, }
+\item[{}]{\$gtype = {\ttfamily 'site'}}
+\end{DoxyParamCaption}
+)}}\label{classaddonAdminModel_ac5b47c66d9e5d0daea7e857676f2b7ec}
+Returns whether to activate
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$addon} & Name to check \\
+\hline
+int & {\em \$site\+\_\+srl} & Site srl \\
+\hline
+string & {\em \$type} & pc or mobile \\
+\hline
+string & {\em \$gtype} & site or global \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool If addon is activated returns true. Otherwise returns false. 
+\end{DoxyReturn}
+
+
+Definition at line 442 of file addon.\+admin.\+model.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+modules/addon/\hyperlink{addon_8admin_8model_8php}{addon.\+admin.\+model.\+php}\end{DoxyCompactItemize}

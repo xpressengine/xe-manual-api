@@ -1,0 +1,99 @@
+\hypertarget{classHTMLPurifier__AttrCollections}{\section{H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Collections Class Reference}
+\label{classHTMLPurifier__AttrCollections}\index{H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Collections@{H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Collections}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHTMLPurifier__AttrCollections_a96838bb7ed7cc2ca7d5297570b7d783b}{\+\_\+\+\_\+construct} (\$attr\+\_\+types, \$modules)
+\item 
+\hyperlink{classHTMLPurifier__AttrCollections_a8ce2225ead783c0c9cfb48735d965e33}{perform\+Inclusions} (\&\$attr)
+\item 
+\hyperlink{classHTMLPurifier__AttrCollections_a206c1287255373a31cb8534da5eb7c5d}{expand\+Identifiers} (\&\$attr, \$attr\+\_\+types)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHTMLPurifier__AttrCollections_a588bcab5f5978c50456dbba61e695900}{\$info} = array()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Defines common attribute collections that modules reference 
+
+Definition at line 7 of file Attr\+Collections.\+php.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classHTMLPurifier__AttrCollections_a96838bb7ed7cc2ca7d5297570b7d783b}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Collections@{H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Collections}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Collections@{H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Collections}}
+\subsubsection[{\+\_\+\+\_\+construct}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Collections\+::\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+\item[{}]{\$attr\+\_\+types, }
+\item[{}]{\$modules}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__AttrCollections_a96838bb7ed7cc2ca7d5297570b7d783b}
+Performs all expansions on internal data for use by other inclusions It also collects all attribute collection extensions from modules 
+\begin{DoxyParams}{Parameters}
+{\em \$attr\+\_\+types} & \hyperlink{classHTMLPurifier__AttrTypes}{H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Types} instance \\
+\hline
+{\em \$modules} & Hash array of \hyperlink{classHTMLPurifier__HTMLModule}{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Module} members \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 22 of file Attr\+Collections.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classHTMLPurifier__AttrCollections_a206c1287255373a31cb8534da5eb7c5d}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Collections@{H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Collections}!expand\+Identifiers@{expand\+Identifiers}}
+\index{expand\+Identifiers@{expand\+Identifiers}!H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Collections@{H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Collections}}
+\subsubsection[{expand\+Identifiers}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Collections\+::expand\+Identifiers (
+\begin{DoxyParamCaption}
+\item[{\&}]{\$attr, }
+\item[{}]{\$attr\+\_\+types}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__AttrCollections_a206c1287255373a31cb8534da5eb7c5d}
+Expands all string identifiers in an attribute array by replacing them with the appropriate values inside \hyperlink{classHTMLPurifier__AttrTypes}{H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Types} 
+\begin{DoxyParams}{Parameters}
+{\em \&\$attr} & Reference to attribute array \\
+\hline
+{\em \$attr\+\_\+types} & \hyperlink{classHTMLPurifier__AttrTypes}{H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Types} instance \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 82 of file Attr\+Collections.\+php.
+
+\hypertarget{classHTMLPurifier__AttrCollections_a8ce2225ead783c0c9cfb48735d965e33}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Collections@{H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Collections}!perform\+Inclusions@{perform\+Inclusions}}
+\index{perform\+Inclusions@{perform\+Inclusions}!H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Collections@{H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Collections}}
+\subsubsection[{perform\+Inclusions}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Collections\+::perform\+Inclusions (
+\begin{DoxyParamCaption}
+\item[{\&}]{\$attr}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__AttrCollections_a8ce2225ead783c0c9cfb48735d965e33}
+Takes a reference to an attribute associative array and performs all inclusions specified by the zero index. 
+\begin{DoxyParams}{Parameters}
+{\em \&\$attr} & Reference to attribute array \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 54 of file Attr\+Collections.\+php.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classHTMLPurifier__AttrCollections_a588bcab5f5978c50456dbba61e695900}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Collections@{H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Collections}!\$info@{\$info}}
+\index{\$info@{\$info}!H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Collections@{H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Collections}}
+\subsubsection[{\$info}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Collections\+::\$info = array()}}\label{classHTMLPurifier__AttrCollections_a588bcab5f5978c50456dbba61e695900}
+Associative array of attribute collections, indexed by name 
+
+Definition at line 13 of file Attr\+Collections.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+classes/security/htmlpurifier/library/\+H\+T\+M\+L\+Purifier/\hyperlink{AttrCollections_8php}{Attr\+Collections.\+php}\end{DoxyCompactItemize}

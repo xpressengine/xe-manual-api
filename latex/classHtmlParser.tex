@@ -1,0 +1,376 @@
+\hypertarget{classHtmlParser}{\section{Html\+Parser Class Reference}
+\label{classHtmlParser}\index{Html\+Parser@{Html\+Parser}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHtmlParser_aaaba84803935c8ae10a75905cee57d65}{Html\+Parser} (\$a\+Html\+Text)
+\item 
+\hyperlink{classHtmlParser_a4856b59f41119d6c99293c94ac7f849e}{parse} ()
+\item 
+\hyperlink{classHtmlParser_acccd984ae2892532c174f83cfce2a546}{clear\+Attributes} ()
+\item 
+\hyperlink{classHtmlParser_a094c54a55dac28717219395632157f91}{read\+Tag} ()
+\item 
+\hyperlink{classHtmlParser_ac27d7cc3a6ee1b53b40d2fb92583e13a}{is\+Valid\+Tag\+Identifier} (\$name)
+\item 
+\hyperlink{classHtmlParser_af532c05234a2be1926dec4cdf77d6c49}{skip\+Blanks\+In\+Tag} ()
+\item 
+\hyperlink{classHtmlParser_a7a720f77d00fb3eb0251c37596fccb3d}{skip\+To\+Blanks\+Or\+Equals\+In\+Tag} ()
+\item 
+\hyperlink{classHtmlParser_a2eab30ed5702c86e12a397cce19d17c2}{skip\+To\+Blanks\+In\+Tag} ()
+\item 
+\hyperlink{classHtmlParser_a8df2144345dd99e10dfb391d8b3d2ee1}{skip\+To\+Blanks\+Or\+Slash\+In\+Tag} ()
+\item 
+\hyperlink{classHtmlParser_a8546d5a27c483d4dd43d2e4765d7cfef}{skip\+Equals\+In\+Tag} ()
+\item 
+\hyperlink{classHtmlParser_a739dd3ad8fd8af0219d2906ec99ac8f1}{read\+Value\+In\+Tag} ()
+\item 
+\hyperlink{classHtmlParser_a416a94c73a453c71af681e1bdf70853e}{set\+Text\+Index} (\$index)
+\item 
+\hyperlink{classHtmlParser_a307eebf6aef76875f58b7fc6b351c492}{move\+Next} ()
+\item 
+\hyperlink{classHtmlParser_a5acaf0e2dfc657499dcd33ee8755faa4}{skip\+End\+Of\+Tag} ()
+\item 
+\hyperlink{classHtmlParser_a406c613a90a8275f58ceba60fc71cb3c}{skip\+In\+Tag} (\$chars)
+\item 
+\hyperlink{classHtmlParser_a9f920ced9cab65de6bb821cbb80eba08}{skip\+Max\+In\+Tag} (\$chars, \$max\+Chars)
+\item 
+\hyperlink{classHtmlParser_a3979d78cab15dd09ca10c0ee9c5cf8f6}{skip\+To\+In\+Tag} (\$chars)
+\item 
+\hyperlink{classHtmlParser_a41e6073b3428c41205dc4db9834ce4b0}{skip\+To\+Element} ()
+\item 
+\hyperlink{classHtmlParser_a2b94710bc71fd456f7a481854984a030}{skip\+To\+String\+In\+Tag} (\$needle)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHtmlParser_a087961848d08ffdc95f7158cf2637b12}{\$i\+Node\+Type}
+\item 
+\hyperlink{classHtmlParser_a1a479b30cf83744fcd8298abca4c9f5d}{\$i\+Node\+Name} = \char`\"{}\char`\"{}
+\item 
+\hyperlink{classHtmlParser_a7ef6690232db5f37c310d78fa4839a79}{\$i\+Node\+Value} = \char`\"{}\char`\"{}
+\item 
+\hyperlink{classHtmlParser_a9ad344053ffa134d3e2265c891cbc1e3}{\$i\+Node\+Attributes}
+\item 
+\hyperlink{classHtmlParser_af6a1ecb77e687be07113d5a9ff9b9210}{\$i\+Html\+Text}
+\item 
+\hyperlink{classHtmlParser_a35d1c8bba530b89ceaf92b5c56a80620}{\$i\+Html\+Text\+Length}
+\item 
+\hyperlink{classHtmlParser_a63c9b906ce27db18ed26d121477998fe}{\$i\+Html\+Text\+Index} = 0
+\item 
+\hyperlink{classHtmlParser_ac71cf9b7d83f1986b183f4224110d9e2}{\$i\+Html\+Current\+Char}
+\item 
+\hyperlink{classHtmlParser_af0e54c2e2a1549ef2f4f3d120dd873aa}{\$\+B\+O\+E\+\_\+\+A\+R\+R\+A\+Y}
+\item 
+\hyperlink{classHtmlParser_a3b2fae368ff8b36085ed6e32058c92d9}{\$\+B\+\_\+\+A\+R\+R\+A\+Y}
+\item 
+\hyperlink{classHtmlParser_ab8dc07c0f07d5b0903ee4ed994a75431}{\$\+B\+O\+S\+\_\+\+A\+R\+R\+A\+Y}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class \hyperlink{classHtmlParser}{Html\+Parser}. To use, create an instance of the class passing H\+T\+M\+L text. Then invoke \hyperlink{classHtmlParser_a4856b59f41119d6c99293c94ac7f849e}{parse()} until it's false. When \hyperlink{classHtmlParser_a4856b59f41119d6c99293c94ac7f849e}{parse()} returns true, \$i\+Node\+Type, \$i\+Node\+Name \$i\+Node\+Value and \$i\+Node\+Attributes are updated.
+
+To create an \hyperlink{classHtmlParser}{Html\+Parser} instance you may also use convenience functions Html\+Parser\+\_\+\+For\+File and Html\+Parser\+\_\+\+For\+U\+R\+L. 
+
+Definition at line 31 of file htmlparser.\+inc.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classHtmlParser_acccd984ae2892532c174f83cfce2a546}{\index{Html\+Parser@{Html\+Parser}!clear\+Attributes@{clear\+Attributes}}
+\index{clear\+Attributes@{clear\+Attributes}!Html\+Parser@{Html\+Parser}}
+\subsubsection[{clear\+Attributes}]{\setlength{\rightskip}{0pt plus 5cm}Html\+Parser\+::clear\+Attributes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classHtmlParser_acccd984ae2892532c174f83cfce2a546}
+
+
+Definition at line 102 of file htmlparser.\+inc.
+
+\hypertarget{classHtmlParser_aaaba84803935c8ae10a75905cee57d65}{\index{Html\+Parser@{Html\+Parser}!Html\+Parser@{Html\+Parser}}
+\index{Html\+Parser@{Html\+Parser}!Html\+Parser@{Html\+Parser}}
+\subsubsection[{Html\+Parser}]{\setlength{\rightskip}{0pt plus 5cm}Html\+Parser\+::\+Html\+Parser (
+\begin{DoxyParamCaption}
+\item[{}]{\$a\+Html\+Text}
+\end{DoxyParamCaption}
+)}}\label{classHtmlParser_aaaba84803935c8ae10a75905cee57d65}
+Constructor. Constructs an \hyperlink{classHtmlParser}{Html\+Parser} instance with the H\+T\+M\+L text given. 
+
+Definition at line 74 of file htmlparser.\+inc.
+
+\hypertarget{classHtmlParser_ac27d7cc3a6ee1b53b40d2fb92583e13a}{\index{Html\+Parser@{Html\+Parser}!is\+Valid\+Tag\+Identifier@{is\+Valid\+Tag\+Identifier}}
+\index{is\+Valid\+Tag\+Identifier@{is\+Valid\+Tag\+Identifier}!Html\+Parser@{Html\+Parser}}
+\subsubsection[{is\+Valid\+Tag\+Identifier}]{\setlength{\rightskip}{0pt plus 5cm}Html\+Parser\+::is\+Valid\+Tag\+Identifier (
+\begin{DoxyParamCaption}
+\item[{}]{\$name}
+\end{DoxyParamCaption}
+)}}\label{classHtmlParser_ac27d7cc3a6ee1b53b40d2fb92583e13a}
+
+
+Definition at line 176 of file htmlparser.\+inc.
+
+\hypertarget{classHtmlParser_a307eebf6aef76875f58b7fc6b351c492}{\index{Html\+Parser@{Html\+Parser}!move\+Next@{move\+Next}}
+\index{move\+Next@{move\+Next}!Html\+Parser@{Html\+Parser}}
+\subsubsection[{move\+Next}]{\setlength{\rightskip}{0pt plus 5cm}Html\+Parser\+::move\+Next (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classHtmlParser_a307eebf6aef76875f58b7fc6b351c492}
+
+
+Definition at line 229 of file htmlparser.\+inc.
+
+\hypertarget{classHtmlParser_a4856b59f41119d6c99293c94ac7f849e}{\index{Html\+Parser@{Html\+Parser}!parse@{parse}}
+\index{parse@{parse}!Html\+Parser@{Html\+Parser}}
+\subsubsection[{parse}]{\setlength{\rightskip}{0pt plus 5cm}Html\+Parser\+::parse (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classHtmlParser_a4856b59f41119d6c99293c94ac7f849e}
+Method parse. Parses the next node. Returns false only if the end of the H\+T\+M\+L text has been reached. Updates values of i\+Node$\ast$ fields. 
+
+Definition at line 91 of file htmlparser.\+inc.
+
+\hypertarget{classHtmlParser_a094c54a55dac28717219395632157f91}{\index{Html\+Parser@{Html\+Parser}!read\+Tag@{read\+Tag}}
+\index{read\+Tag@{read\+Tag}!Html\+Parser@{Html\+Parser}}
+\subsubsection[{read\+Tag}]{\setlength{\rightskip}{0pt plus 5cm}Html\+Parser\+::read\+Tag (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classHtmlParser_a094c54a55dac28717219395632157f91}
+
+
+Definition at line 106 of file htmlparser.\+inc.
+
+\hypertarget{classHtmlParser_a739dd3ad8fd8af0219d2906ec99ac8f1}{\index{Html\+Parser@{Html\+Parser}!read\+Value\+In\+Tag@{read\+Value\+In\+Tag}}
+\index{read\+Value\+In\+Tag@{read\+Value\+In\+Tag}!Html\+Parser@{Html\+Parser}}
+\subsubsection[{read\+Value\+In\+Tag}]{\setlength{\rightskip}{0pt plus 5cm}Html\+Parser\+::read\+Value\+In\+Tag (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classHtmlParser_a739dd3ad8fd8af0219d2906ec99ac8f1}
+
+
+Definition at line 200 of file htmlparser.\+inc.
+
+\hypertarget{classHtmlParser_a416a94c73a453c71af681e1bdf70853e}{\index{Html\+Parser@{Html\+Parser}!set\+Text\+Index@{set\+Text\+Index}}
+\index{set\+Text\+Index@{set\+Text\+Index}!Html\+Parser@{Html\+Parser}}
+\subsubsection[{set\+Text\+Index}]{\setlength{\rightskip}{0pt plus 5cm}Html\+Parser\+::set\+Text\+Index (
+\begin{DoxyParamCaption}
+\item[{}]{\$index}
+\end{DoxyParamCaption}
+)}}\label{classHtmlParser_a416a94c73a453c71af681e1bdf70853e}
+
+
+Definition at line 219 of file htmlparser.\+inc.
+
+\hypertarget{classHtmlParser_af532c05234a2be1926dec4cdf77d6c49}{\index{Html\+Parser@{Html\+Parser}!skip\+Blanks\+In\+Tag@{skip\+Blanks\+In\+Tag}}
+\index{skip\+Blanks\+In\+Tag@{skip\+Blanks\+In\+Tag}!Html\+Parser@{Html\+Parser}}
+\subsubsection[{skip\+Blanks\+In\+Tag}]{\setlength{\rightskip}{0pt plus 5cm}Html\+Parser\+::skip\+Blanks\+In\+Tag (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classHtmlParser_af532c05234a2be1926dec4cdf77d6c49}
+
+
+Definition at line 180 of file htmlparser.\+inc.
+
+\hypertarget{classHtmlParser_a5acaf0e2dfc657499dcd33ee8755faa4}{\index{Html\+Parser@{Html\+Parser}!skip\+End\+Of\+Tag@{skip\+End\+Of\+Tag}}
+\index{skip\+End\+Of\+Tag@{skip\+End\+Of\+Tag}!Html\+Parser@{Html\+Parser}}
+\subsubsection[{skip\+End\+Of\+Tag}]{\setlength{\rightskip}{0pt plus 5cm}Html\+Parser\+::skip\+End\+Of\+Tag (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classHtmlParser_a5acaf0e2dfc657499dcd33ee8755faa4}
+
+
+Definition at line 239 of file htmlparser.\+inc.
+
+\hypertarget{classHtmlParser_a8546d5a27c483d4dd43d2e4765d7cfef}{\index{Html\+Parser@{Html\+Parser}!skip\+Equals\+In\+Tag@{skip\+Equals\+In\+Tag}}
+\index{skip\+Equals\+In\+Tag@{skip\+Equals\+In\+Tag}!Html\+Parser@{Html\+Parser}}
+\subsubsection[{skip\+Equals\+In\+Tag}]{\setlength{\rightskip}{0pt plus 5cm}Html\+Parser\+::skip\+Equals\+In\+Tag (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classHtmlParser_a8546d5a27c483d4dd43d2e4765d7cfef}
+
+
+Definition at line 196 of file htmlparser.\+inc.
+
+\hypertarget{classHtmlParser_a406c613a90a8275f58ceba60fc71cb3c}{\index{Html\+Parser@{Html\+Parser}!skip\+In\+Tag@{skip\+In\+Tag}}
+\index{skip\+In\+Tag@{skip\+In\+Tag}!Html\+Parser@{Html\+Parser}}
+\subsubsection[{skip\+In\+Tag}]{\setlength{\rightskip}{0pt plus 5cm}Html\+Parser\+::skip\+In\+Tag (
+\begin{DoxyParamCaption}
+\item[{}]{\$chars}
+\end{DoxyParamCaption}
+)}}\label{classHtmlParser_a406c613a90a8275f58ceba60fc71cb3c}
+
+
+Definition at line 249 of file htmlparser.\+inc.
+
+\hypertarget{classHtmlParser_a9f920ced9cab65de6bb821cbb80eba08}{\index{Html\+Parser@{Html\+Parser}!skip\+Max\+In\+Tag@{skip\+Max\+In\+Tag}}
+\index{skip\+Max\+In\+Tag@{skip\+Max\+In\+Tag}!Html\+Parser@{Html\+Parser}}
+\subsubsection[{skip\+Max\+In\+Tag}]{\setlength{\rightskip}{0pt plus 5cm}Html\+Parser\+::skip\+Max\+In\+Tag (
+\begin{DoxyParamCaption}
+\item[{}]{\$chars, }
+\item[{}]{\$max\+Chars}
+\end{DoxyParamCaption}
+)}}\label{classHtmlParser_a9f920ced9cab65de6bb821cbb80eba08}
+
+
+Definition at line 272 of file htmlparser.\+inc.
+
+\hypertarget{classHtmlParser_a2eab30ed5702c86e12a397cce19d17c2}{\index{Html\+Parser@{Html\+Parser}!skip\+To\+Blanks\+In\+Tag@{skip\+To\+Blanks\+In\+Tag}}
+\index{skip\+To\+Blanks\+In\+Tag@{skip\+To\+Blanks\+In\+Tag}!Html\+Parser@{Html\+Parser}}
+\subsubsection[{skip\+To\+Blanks\+In\+Tag}]{\setlength{\rightskip}{0pt plus 5cm}Html\+Parser\+::skip\+To\+Blanks\+In\+Tag (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classHtmlParser_a2eab30ed5702c86e12a397cce19d17c2}
+
+
+Definition at line 188 of file htmlparser.\+inc.
+
+\hypertarget{classHtmlParser_a7a720f77d00fb3eb0251c37596fccb3d}{\index{Html\+Parser@{Html\+Parser}!skip\+To\+Blanks\+Or\+Equals\+In\+Tag@{skip\+To\+Blanks\+Or\+Equals\+In\+Tag}}
+\index{skip\+To\+Blanks\+Or\+Equals\+In\+Tag@{skip\+To\+Blanks\+Or\+Equals\+In\+Tag}!Html\+Parser@{Html\+Parser}}
+\subsubsection[{skip\+To\+Blanks\+Or\+Equals\+In\+Tag}]{\setlength{\rightskip}{0pt plus 5cm}Html\+Parser\+::skip\+To\+Blanks\+Or\+Equals\+In\+Tag (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classHtmlParser_a7a720f77d00fb3eb0251c37596fccb3d}
+
+
+Definition at line 184 of file htmlparser.\+inc.
+
+\hypertarget{classHtmlParser_a8df2144345dd99e10dfb391d8b3d2ee1}{\index{Html\+Parser@{Html\+Parser}!skip\+To\+Blanks\+Or\+Slash\+In\+Tag@{skip\+To\+Blanks\+Or\+Slash\+In\+Tag}}
+\index{skip\+To\+Blanks\+Or\+Slash\+In\+Tag@{skip\+To\+Blanks\+Or\+Slash\+In\+Tag}!Html\+Parser@{Html\+Parser}}
+\subsubsection[{skip\+To\+Blanks\+Or\+Slash\+In\+Tag}]{\setlength{\rightskip}{0pt plus 5cm}Html\+Parser\+::skip\+To\+Blanks\+Or\+Slash\+In\+Tag (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classHtmlParser_a8df2144345dd99e10dfb391d8b3d2ee1}
+
+
+Definition at line 192 of file htmlparser.\+inc.
+
+\hypertarget{classHtmlParser_a41e6073b3428c41205dc4db9834ce4b0}{\index{Html\+Parser@{Html\+Parser}!skip\+To\+Element@{skip\+To\+Element}}
+\index{skip\+To\+Element@{skip\+To\+Element}!Html\+Parser@{Html\+Parser}}
+\subsubsection[{skip\+To\+Element}]{\setlength{\rightskip}{0pt plus 5cm}Html\+Parser\+::skip\+To\+Element (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classHtmlParser_a41e6073b3428c41205dc4db9834ce4b0}
+
+
+Definition at line 317 of file htmlparser.\+inc.
+
+\hypertarget{classHtmlParser_a3979d78cab15dd09ca10c0ee9c5cf8f6}{\index{Html\+Parser@{Html\+Parser}!skip\+To\+In\+Tag@{skip\+To\+In\+Tag}}
+\index{skip\+To\+In\+Tag@{skip\+To\+In\+Tag}!Html\+Parser@{Html\+Parser}}
+\subsubsection[{skip\+To\+In\+Tag}]{\setlength{\rightskip}{0pt plus 5cm}Html\+Parser\+::skip\+To\+In\+Tag (
+\begin{DoxyParamCaption}
+\item[{}]{\$chars}
+\end{DoxyParamCaption}
+)}}\label{classHtmlParser_a3979d78cab15dd09ca10c0ee9c5cf8f6}
+
+
+Definition at line 296 of file htmlparser.\+inc.
+
+\hypertarget{classHtmlParser_a2b94710bc71fd456f7a481854984a030}{\index{Html\+Parser@{Html\+Parser}!skip\+To\+String\+In\+Tag@{skip\+To\+String\+In\+Tag}}
+\index{skip\+To\+String\+In\+Tag@{skip\+To\+String\+In\+Tag}!Html\+Parser@{Html\+Parser}}
+\subsubsection[{skip\+To\+String\+In\+Tag}]{\setlength{\rightskip}{0pt plus 5cm}Html\+Parser\+::skip\+To\+String\+In\+Tag (
+\begin{DoxyParamCaption}
+\item[{}]{\$needle}
+\end{DoxyParamCaption}
+)}}\label{classHtmlParser_a2b94710bc71fd456f7a481854984a030}
+Returns text between current position and \$needle, inclusive, or \char`\"{}\char`\"{} if not found. The current index is moved to a point after the location of \$needle, or not moved at all if nothing is found. 
+
+Definition at line 335 of file htmlparser.\+inc.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classHtmlParser_a3b2fae368ff8b36085ed6e32058c92d9}{\index{Html\+Parser@{Html\+Parser}!\$\+B\+\_\+\+A\+R\+R\+A\+Y@{\$\+B\+\_\+\+A\+R\+R\+A\+Y}}
+\index{\$\+B\+\_\+\+A\+R\+R\+A\+Y@{\$\+B\+\_\+\+A\+R\+R\+A\+Y}!Html\+Parser@{Html\+Parser}}
+\subsubsection[{\$\+B\+\_\+\+A\+R\+R\+A\+Y}]{\setlength{\rightskip}{0pt plus 5cm}Html\+Parser\+::\$\+B\+\_\+\+A\+R\+R\+A\+Y}}\label{classHtmlParser_a3b2fae368ff8b36085ed6e32058c92d9}
+
+
+Definition at line 66 of file htmlparser.\+inc.
+
+\hypertarget{classHtmlParser_af0e54c2e2a1549ef2f4f3d120dd873aa}{\index{Html\+Parser@{Html\+Parser}!\$\+B\+O\+E\+\_\+\+A\+R\+R\+A\+Y@{\$\+B\+O\+E\+\_\+\+A\+R\+R\+A\+Y}}
+\index{\$\+B\+O\+E\+\_\+\+A\+R\+R\+A\+Y@{\$\+B\+O\+E\+\_\+\+A\+R\+R\+A\+Y}!Html\+Parser@{Html\+Parser}}
+\subsubsection[{\$\+B\+O\+E\+\_\+\+A\+R\+R\+A\+Y}]{\setlength{\rightskip}{0pt plus 5cm}Html\+Parser\+::\$\+B\+O\+E\+\_\+\+A\+R\+R\+A\+Y}}\label{classHtmlParser_af0e54c2e2a1549ef2f4f3d120dd873aa}
+
+
+Definition at line 65 of file htmlparser.\+inc.
+
+\hypertarget{classHtmlParser_ab8dc07c0f07d5b0903ee4ed994a75431}{\index{Html\+Parser@{Html\+Parser}!\$\+B\+O\+S\+\_\+\+A\+R\+R\+A\+Y@{\$\+B\+O\+S\+\_\+\+A\+R\+R\+A\+Y}}
+\index{\$\+B\+O\+S\+\_\+\+A\+R\+R\+A\+Y@{\$\+B\+O\+S\+\_\+\+A\+R\+R\+A\+Y}!Html\+Parser@{Html\+Parser}}
+\subsubsection[{\$\+B\+O\+S\+\_\+\+A\+R\+R\+A\+Y}]{\setlength{\rightskip}{0pt plus 5cm}Html\+Parser\+::\$\+B\+O\+S\+\_\+\+A\+R\+R\+A\+Y}}\label{classHtmlParser_ab8dc07c0f07d5b0903ee4ed994a75431}
+
+
+Definition at line 67 of file htmlparser.\+inc.
+
+\hypertarget{classHtmlParser_ac71cf9b7d83f1986b183f4224110d9e2}{\index{Html\+Parser@{Html\+Parser}!\$i\+Html\+Current\+Char@{\$i\+Html\+Current\+Char}}
+\index{\$i\+Html\+Current\+Char@{\$i\+Html\+Current\+Char}!Html\+Parser@{Html\+Parser}}
+\subsubsection[{\$i\+Html\+Current\+Char}]{\setlength{\rightskip}{0pt plus 5cm}Html\+Parser\+::\$i\+Html\+Current\+Char}}\label{classHtmlParser_ac71cf9b7d83f1986b183f4224110d9e2}
+
+
+Definition at line 64 of file htmlparser.\+inc.
+
+\hypertarget{classHtmlParser_af6a1ecb77e687be07113d5a9ff9b9210}{\index{Html\+Parser@{Html\+Parser}!\$i\+Html\+Text@{\$i\+Html\+Text}}
+\index{\$i\+Html\+Text@{\$i\+Html\+Text}!Html\+Parser@{Html\+Parser}}
+\subsubsection[{\$i\+Html\+Text}]{\setlength{\rightskip}{0pt plus 5cm}Html\+Parser\+::\$i\+Html\+Text}}\label{classHtmlParser_af6a1ecb77e687be07113d5a9ff9b9210}
+
+
+Definition at line 61 of file htmlparser.\+inc.
+
+\hypertarget{classHtmlParser_a63c9b906ce27db18ed26d121477998fe}{\index{Html\+Parser@{Html\+Parser}!\$i\+Html\+Text\+Index@{\$i\+Html\+Text\+Index}}
+\index{\$i\+Html\+Text\+Index@{\$i\+Html\+Text\+Index}!Html\+Parser@{Html\+Parser}}
+\subsubsection[{\$i\+Html\+Text\+Index}]{\setlength{\rightskip}{0pt plus 5cm}Html\+Parser\+::\$i\+Html\+Text\+Index = 0}}\label{classHtmlParser_a63c9b906ce27db18ed26d121477998fe}
+
+
+Definition at line 63 of file htmlparser.\+inc.
+
+\hypertarget{classHtmlParser_a35d1c8bba530b89ceaf92b5c56a80620}{\index{Html\+Parser@{Html\+Parser}!\$i\+Html\+Text\+Length@{\$i\+Html\+Text\+Length}}
+\index{\$i\+Html\+Text\+Length@{\$i\+Html\+Text\+Length}!Html\+Parser@{Html\+Parser}}
+\subsubsection[{\$i\+Html\+Text\+Length}]{\setlength{\rightskip}{0pt plus 5cm}Html\+Parser\+::\$i\+Html\+Text\+Length}}\label{classHtmlParser_a35d1c8bba530b89ceaf92b5c56a80620}
+
+
+Definition at line 62 of file htmlparser.\+inc.
+
+\hypertarget{classHtmlParser_a9ad344053ffa134d3e2265c891cbc1e3}{\index{Html\+Parser@{Html\+Parser}!\$i\+Node\+Attributes@{\$i\+Node\+Attributes}}
+\index{\$i\+Node\+Attributes@{\$i\+Node\+Attributes}!Html\+Parser@{Html\+Parser}}
+\subsubsection[{\$i\+Node\+Attributes}]{\setlength{\rightskip}{0pt plus 5cm}Html\+Parser\+::\$i\+Node\+Attributes}}\label{classHtmlParser_a9ad344053ffa134d3e2265c891cbc1e3}
+Field i\+Node\+Attributes. A string-\/indexed array containing attribute values of the current node. Indexes are always lowercase. 
+
+Definition at line 56 of file htmlparser.\+inc.
+
+\hypertarget{classHtmlParser_a1a479b30cf83744fcd8298abca4c9f5d}{\index{Html\+Parser@{Html\+Parser}!\$i\+Node\+Name@{\$i\+Node\+Name}}
+\index{\$i\+Node\+Name@{\$i\+Node\+Name}!Html\+Parser@{Html\+Parser}}
+\subsubsection[{\$i\+Node\+Name}]{\setlength{\rightskip}{0pt plus 5cm}Html\+Parser\+::\$i\+Node\+Name = \char`\"{}\char`\"{}}}\label{classHtmlParser_a1a479b30cf83744fcd8298abca4c9f5d}
+Field i\+Node\+Name. For elements, it's the name of the element. 
+
+Definition at line 43 of file htmlparser.\+inc.
+
+\hypertarget{classHtmlParser_a087961848d08ffdc95f7158cf2637b12}{\index{Html\+Parser@{Html\+Parser}!\$i\+Node\+Type@{\$i\+Node\+Type}}
+\index{\$i\+Node\+Type@{\$i\+Node\+Type}!Html\+Parser@{Html\+Parser}}
+\subsubsection[{\$i\+Node\+Type}]{\setlength{\rightskip}{0pt plus 5cm}Html\+Parser\+::\$i\+Node\+Type}}\label{classHtmlParser_a087961848d08ffdc95f7158cf2637b12}
+Field i\+Node\+Type. May be one of the N\+O\+D\+E\+\_\+\+T\+Y\+P\+E\+\_\+$\ast$ constants above. 
+
+Definition at line 37 of file htmlparser.\+inc.
+
+\hypertarget{classHtmlParser_a7ef6690232db5f37c310d78fa4839a79}{\index{Html\+Parser@{Html\+Parser}!\$i\+Node\+Value@{\$i\+Node\+Value}}
+\index{\$i\+Node\+Value@{\$i\+Node\+Value}!Html\+Parser@{Html\+Parser}}
+\subsubsection[{\$i\+Node\+Value}]{\setlength{\rightskip}{0pt plus 5cm}Html\+Parser\+::\$i\+Node\+Value = \char`\"{}\char`\"{}}}\label{classHtmlParser_a7ef6690232db5f37c310d78fa4839a79}
+Field i\+Node\+Value. For text nodes, it's the text. 
+
+Definition at line 49 of file htmlparser.\+inc.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+classes/security/phphtmlparser/src/\hyperlink{htmlparser_8inc}{htmlparser.\+inc}\end{DoxyCompactItemize}

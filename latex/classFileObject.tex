@@ -1,0 +1,242 @@
+\hypertarget{classFileObject}{\section{File\+Object Class Reference}
+\label{classFileObject}\index{File\+Object@{File\+Object}}
+}
+Inheritance diagram for File\+Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classFileObject}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFileObject_ab910aa1514ad470442e6b1adc236bb8f}{File\+Object} (\$path, \$mode)
+\item 
+\hyperlink{classFileObject_add062e05a5efc8c4c5947cbf3ff120a7}{append} (\$file\+\_\+name)
+\item 
+\hyperlink{classFileObject_a83ecf26332ee98598e0d45cae59b8e63}{feof} ()
+\item 
+\hyperlink{classFileObject_af345fcd2d619a3e13b1f95f744964617}{read} (\$size=1024)
+\item 
+\hyperlink{classFileObject_a6bfe97d0df5b57183c0816fb013b7fb2}{write} (\$str)
+\item 
+\hyperlink{classFileObject_af54e058c79d19dca6ef4c6e2bb54831f}{open} (\$path, \$mode)
+\item 
+\hyperlink{classFileObject_a3c8f4eff2c65c91f6ae36bb57ab332c5}{get\+Path} ()
+\item 
+\hyperlink{classFileObject_a14dcc624814271fb3f91a2a20a23ab24}{close} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFileObject_a3b4c55272cc7ab0a4e7e79aec6ebfbac}{\$fp} = N\+U\+L\+L
+\item 
+\hyperlink{classFileObject_aeaea5fd423f0c1349ad151f7da63f0e8}{\$path} = N\+U\+L\+L
+\item 
+\hyperlink{classFileObject_aa4cff8a1b117de6986c0765ae2284dab}{\$mode} = \char`\"{}r\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+File abstraction class
+
+\begin{DoxyAuthor}{Author}
+N\+A\+V\+E\+R (\href{mailto:developers@xpressengine.com}{\tt developers@xpressengine.\+com}) 
+\end{DoxyAuthor}
+
+
+Definition at line 9 of file File\+Object.\+class.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classFileObject_add062e05a5efc8c4c5947cbf3ff120a7}{\index{File\+Object@{File\+Object}!append@{append}}
+\index{append@{append}!File\+Object@{File\+Object}}
+\subsubsection[{append}]{\setlength{\rightskip}{0pt plus 5cm}File\+Object\+::append (
+\begin{DoxyParamCaption}
+\item[{}]{\$file\+\_\+name}
+\end{DoxyParamCaption}
+)}}\label{classFileObject_add062e05a5efc8c4c5947cbf3ff120a7}
+Append target file's content to current file
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$file\+\_\+name} & Path of target file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 51 of file File\+Object.\+class.\+php.
+
+\hypertarget{classFileObject_a14dcc624814271fb3f91a2a20a23ab24}{\index{File\+Object@{File\+Object}!close@{close}}
+\index{close@{close}!File\+Object@{File\+Object}}
+\subsubsection[{close}]{\setlength{\rightskip}{0pt plus 5cm}File\+Object\+::close (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classFileObject_a14dcc624814271fb3f91a2a20a23ab24}
+Close file
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 151 of file File\+Object.\+class.\+php.
+
+\hypertarget{classFileObject_a83ecf26332ee98598e0d45cae59b8e63}{\index{File\+Object@{File\+Object}!feof@{feof}}
+\index{feof@{feof}!File\+Object@{File\+Object}}
+\subsubsection[{feof}]{\setlength{\rightskip}{0pt plus 5cm}File\+Object\+::feof (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classFileObject_a83ecf26332ee98598e0d45cae59b8e63}
+Check current file meets eof
+
+\begin{DoxyReturn}{Returns}
+bool true\+: if eof. false\+: otherwise 
+\end{DoxyReturn}
+
+
+Definition at line 67 of file File\+Object.\+class.\+php.
+
+\hypertarget{classFileObject_ab910aa1514ad470442e6b1adc236bb8f}{\index{File\+Object@{File\+Object}!File\+Object@{File\+Object}}
+\index{File\+Object@{File\+Object}!File\+Object@{File\+Object}}
+\subsubsection[{File\+Object}]{\setlength{\rightskip}{0pt plus 5cm}File\+Object\+::\+File\+Object (
+\begin{DoxyParamCaption}
+\item[{}]{\$path, }
+\item[{}]{\$mode}
+\end{DoxyParamCaption}
+)}}\label{classFileObject_ab910aa1514ad470442e6b1adc236bb8f}
+Constructor
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & Path of target file \\
+\hline
+string & {\em \$mode} & File open mode \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 37 of file File\+Object.\+class.\+php.
+
+\hypertarget{classFileObject_a3c8f4eff2c65c91f6ae36bb57ab332c5}{\index{File\+Object@{File\+Object}!get\+Path@{get\+Path}}
+\index{get\+Path@{get\+Path}!File\+Object@{File\+Object}}
+\subsubsection[{get\+Path}]{\setlength{\rightskip}{0pt plus 5cm}File\+Object\+::get\+Path (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classFileObject_a3c8f4eff2c65c91f6ae36bb57ab332c5}
+Return current file's path
+
+\begin{DoxyReturn}{Returns}
+string Returns the path of current file. 
+\end{DoxyReturn}
+
+
+Definition at line 134 of file File\+Object.\+class.\+php.
+
+\hypertarget{classFileObject_af54e058c79d19dca6ef4c6e2bb54831f}{\index{File\+Object@{File\+Object}!open@{open}}
+\index{open@{open}!File\+Object@{File\+Object}}
+\subsubsection[{open}]{\setlength{\rightskip}{0pt plus 5cm}File\+Object\+::open (
+\begin{DoxyParamCaption}
+\item[{}]{\$path, }
+\item[{}]{\$mode}
+\end{DoxyParamCaption}
+)}}\label{classFileObject_af54e058c79d19dca6ef4c6e2bb54831f}
+Open a file
+
+If file is opened, close it and open the new path
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & Path of target file \\
+\hline
+string & {\em \$mode} & File open mode (\href{http://php.net/manual/en/function.fopen.php}{\tt http\+://php.\+net/manual/en/function.\+fopen.\+php}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool true if succeed, false otherwise. 
+\end{DoxyReturn}
+
+
+Definition at line 113 of file File\+Object.\+class.\+php.
+
+\hypertarget{classFileObject_af345fcd2d619a3e13b1f95f744964617}{\index{File\+Object@{File\+Object}!read@{read}}
+\index{read@{read}!File\+Object@{File\+Object}}
+\subsubsection[{read}]{\setlength{\rightskip}{0pt plus 5cm}File\+Object\+::read (
+\begin{DoxyParamCaption}
+\item[{}]{\$size = {\ttfamily 1024}}
+\end{DoxyParamCaption}
+)}}\label{classFileObject_af345fcd2d619a3e13b1f95f744964617}
+Read from current file
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$size} & Size to read \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Returns the read string or false on failure. 
+\end{DoxyReturn}
+
+
+Definition at line 78 of file File\+Object.\+class.\+php.
+
+\hypertarget{classFileObject_a6bfe97d0df5b57183c0816fb013b7fb2}{\index{File\+Object@{File\+Object}!write@{write}}
+\index{write@{write}!File\+Object@{File\+Object}}
+\subsubsection[{write}]{\setlength{\rightskip}{0pt plus 5cm}File\+Object\+::write (
+\begin{DoxyParamCaption}
+\item[{}]{\$str}
+\end{DoxyParamCaption}
+)}}\label{classFileObject_a6bfe97d0df5b57183c0816fb013b7fb2}
+Write string to current file
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$str} & String to write \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Returns the number of bytes written, or false on error. 
+\end{DoxyReturn}
+
+
+Definition at line 89 of file File\+Object.\+class.\+php.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classFileObject_a3b4c55272cc7ab0a4e7e79aec6ebfbac}{\index{File\+Object@{File\+Object}!\$fp@{\$fp}}
+\index{\$fp@{\$fp}!File\+Object@{File\+Object}}
+\subsubsection[{\$fp}]{\setlength{\rightskip}{0pt plus 5cm}File\+Object\+::\$fp = N\+U\+L\+L}}\label{classFileObject_a3b4c55272cc7ab0a4e7e79aec6ebfbac}
+
+
+Definition at line 16 of file File\+Object.\+class.\+php.
+
+\hypertarget{classFileObject_aa4cff8a1b117de6986c0765ae2284dab}{\index{File\+Object@{File\+Object}!\$mode@{\$mode}}
+\index{\$mode@{\$mode}!File\+Object@{File\+Object}}
+\subsubsection[{\$mode}]{\setlength{\rightskip}{0pt plus 5cm}File\+Object\+::\$mode = \char`\"{}r\char`\"{}}}\label{classFileObject_aa4cff8a1b117de6986c0765ae2284dab}
+
+
+Definition at line 28 of file File\+Object.\+class.\+php.
+
+\hypertarget{classFileObject_aeaea5fd423f0c1349ad151f7da63f0e8}{\index{File\+Object@{File\+Object}!\$path@{\$path}}
+\index{\$path@{\$path}!File\+Object@{File\+Object}}
+\subsubsection[{\$path}]{\setlength{\rightskip}{0pt plus 5cm}File\+Object\+::\$path = N\+U\+L\+L}}\label{classFileObject_aeaea5fd423f0c1349ad151f7da63f0e8}
+
+
+Definition at line 22 of file File\+Object.\+class.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+classes/file/\hyperlink{FileObject_8class_8php}{File\+Object.\+class.\+php}\end{DoxyCompactItemize}

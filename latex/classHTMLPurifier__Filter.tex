@@ -1,0 +1,81 @@
+\hypertarget{classHTMLPurifier__Filter}{\section{H\+T\+M\+L\+Purifier\+\_\+\+Filter Class Reference}
+\label{classHTMLPurifier__Filter}\index{H\+T\+M\+L\+Purifier\+\_\+\+Filter@{H\+T\+M\+L\+Purifier\+\_\+\+Filter}}
+}
+Inheritance diagram for H\+T\+M\+L\+Purifier\+\_\+\+Filter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classHTMLPurifier__Filter}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHTMLPurifier__Filter_a194734e8341711884c60394a0d44e1f3}{pre\+Filter} (\$html, \$config, \$context)
+\item 
+\hyperlink{classHTMLPurifier__Filter_ad9d7784d7b840ce943f5e20fbf4dd75c}{post\+Filter} (\$html, \$config, \$context)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHTMLPurifier__Filter_a5ba5b60834e169792f9005bc75000c21}{\$name}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents a pre or post processing filter on H\+T\+M\+L \hyperlink{classPurifier}{Purifier}'s output
+
+Sometimes, a little ad-\/hoc fixing of H\+T\+M\+L has to be done before it gets sent through H\+T\+M\+L \hyperlink{classPurifier}{Purifier}\+: you can use filters to acheive this effect. For instance, You\+Tube videos can be preserved using this manner. You could have used a decorator for this task, but P\+H\+P's support for them is not terribly robust, so we're going to just loop through the filters.
+
+Filters should be exited first in, last out. If there are three filters, named 1, 2 and 3, the order of execution should go 1-\/$>$pre\+Filter, 2-\/$>$pre\+Filter, 3-\/$>$pre\+Filter, purify, 3-\/$>$post\+Filter, 2-\/$>$post\+Filter, 1-\/$>$post\+Filter.
+
+\begin{DoxyNote}{Note}
+Methods are not declared abstract as it is perfectly legitimate for an implementation not to want anything to happen on a step 
+\end{DoxyNote}
+
+
+Definition at line 22 of file Filter.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classHTMLPurifier__Filter_ad9d7784d7b840ce943f5e20fbf4dd75c}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Filter@{H\+T\+M\+L\+Purifier\+\_\+\+Filter}!post\+Filter@{post\+Filter}}
+\index{post\+Filter@{post\+Filter}!H\+T\+M\+L\+Purifier\+\_\+\+Filter@{H\+T\+M\+L\+Purifier\+\_\+\+Filter}}
+\subsubsection[{post\+Filter}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Filter\+::post\+Filter (
+\begin{DoxyParamCaption}
+\item[{}]{\$html, }
+\item[{}]{\$config, }
+\item[{}]{\$context}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__Filter_ad9d7784d7b840ce943f5e20fbf4dd75c}
+Post-\/processor function, handles H\+T\+M\+L after H\+T\+M\+L \hyperlink{classPurifier}{Purifier} 
+
+Definition at line 40 of file Filter.\+php.
+
+\hypertarget{classHTMLPurifier__Filter_a194734e8341711884c60394a0d44e1f3}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Filter@{H\+T\+M\+L\+Purifier\+\_\+\+Filter}!pre\+Filter@{pre\+Filter}}
+\index{pre\+Filter@{pre\+Filter}!H\+T\+M\+L\+Purifier\+\_\+\+Filter@{H\+T\+M\+L\+Purifier\+\_\+\+Filter}}
+\subsubsection[{pre\+Filter}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Filter\+::pre\+Filter (
+\begin{DoxyParamCaption}
+\item[{}]{\$html, }
+\item[{}]{\$config, }
+\item[{}]{\$context}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__Filter_a194734e8341711884c60394a0d44e1f3}
+Pre-\/processor function, handles H\+T\+M\+L before H\+T\+M\+L \hyperlink{classPurifier}{Purifier} 
+
+Definition at line 33 of file Filter.\+php.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classHTMLPurifier__Filter_a5ba5b60834e169792f9005bc75000c21}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Filter@{H\+T\+M\+L\+Purifier\+\_\+\+Filter}!\$name@{\$name}}
+\index{\$name@{\$name}!H\+T\+M\+L\+Purifier\+\_\+\+Filter@{H\+T\+M\+L\+Purifier\+\_\+\+Filter}}
+\subsubsection[{\$name}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Filter\+::\$name}}\label{classHTMLPurifier__Filter_a5ba5b60834e169792f9005bc75000c21}
+Name of the filter for identification purposes 
+
+Definition at line 28 of file Filter.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+classes/security/htmlpurifier/library/\+H\+T\+M\+L\+Purifier/\hyperlink{Filter_8php}{Filter.\+php}\end{DoxyCompactItemize}

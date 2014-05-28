@@ -1,0 +1,228 @@
+\hypertarget{classHTMLPurifier__URIDefinition}{\section{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition Class Reference}
+\label{classHTMLPurifier__URIDefinition}\index{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition@{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition}}
+}
+Inheritance diagram for H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classHTMLPurifier__URIDefinition}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHTMLPurifier__URIDefinition_af6cba5698d65b636d0da90c9391c8591}{\+\_\+\+\_\+construct} ()
+\item 
+\hyperlink{classHTMLPurifier__URIDefinition_a5f7785e149b2b31fd2831bbe163ecf25}{register\+Filter} (\$\hyperlink{classHTMLPurifier__URIDefinition_a13edb4d55d3bde01fc9c0fe5faa674e8}{filter})
+\item 
+\hyperlink{classHTMLPurifier__URIDefinition_a161eff8655b9b55f17e1794045c459fa}{add\+Filter} (\$\hyperlink{classHTMLPurifier__URIDefinition_a13edb4d55d3bde01fc9c0fe5faa674e8}{filter}, \$config)
+\item 
+\hyperlink{classHTMLPurifier__URIDefinition_a8aa459d2b4b7eea015172c17cc6cc7d9}{get\+Default\+Scheme} (\$config, \$context)
+\item 
+\hyperlink{classHTMLPurifier__URIDefinition_a13edb4d55d3bde01fc9c0fe5faa674e8}{filter} (\&\$uri, \$config, \$context)
+\item 
+\hyperlink{classHTMLPurifier__URIDefinition_ab49841ab6370120386ced8471bdc3971}{post\+Filter} (\&\$uri, \$config, \$context)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHTMLPurifier__URIDefinition_af8025a26e38e2dc7f9043409d5e67646}{\$type} = 'U\+R\+I'
+\item 
+\hyperlink{classHTMLPurifier__URIDefinition_acbd574495184a66e4d2095ec70815c59}{\$base}
+\item 
+\hyperlink{classHTMLPurifier__URIDefinition_abb18dbc906edbfcf04d153386a3a10c8}{\$host}
+\item 
+\hyperlink{classHTMLPurifier__URIDefinition_afb85743941b395f885ecde8165c19b9d}{\$default\+Scheme}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHTMLPurifier__URIDefinition_aa3aeee5ee1717874f78f1bbb3d7bf32a}{do\+Setup} (\$config)
+\item 
+\hyperlink{classHTMLPurifier__URIDefinition_a31b5d2cb9d08b32d146a2b75d196e415}{setup\+Filters} (\$config)
+\item 
+\hyperlink{classHTMLPurifier__URIDefinition_af658baedeefebef90a9a0e7b6609b0e8}{setup\+Member\+Variables} (\$config)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHTMLPurifier__URIDefinition_aa2e2666cb45427509548175fb171c950}{\$filters} = array()
+\item 
+\hyperlink{classHTMLPurifier__URIDefinition_a0f4eb7bc917cbaf1af581572743389fc}{\$post\+Filters} = array()
+\item 
+\hyperlink{classHTMLPurifier__URIDefinition_a22a5ccf72975eba6ca2093cd5298f9f9}{\$registered\+Filters} = array()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 3 of file U\+R\+I\+Definition.\+php.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classHTMLPurifier__URIDefinition_af6cba5698d65b636d0da90c9391c8591}{\index{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition@{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition@{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition}}
+\subsubsection[{\+\_\+\+\_\+construct}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition\+::\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__URIDefinition_af6cba5698d65b636d0da90c9391c8591}
+
+
+Definition at line 26 of file U\+R\+I\+Definition.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classHTMLPurifier__URIDefinition_a161eff8655b9b55f17e1794045c459fa}{\index{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition@{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition}!add\+Filter@{add\+Filter}}
+\index{add\+Filter@{add\+Filter}!H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition@{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition}}
+\subsubsection[{add\+Filter}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition\+::add\+Filter (
+\begin{DoxyParamCaption}
+\item[{}]{\$filter, }
+\item[{}]{\$config}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__URIDefinition_a161eff8655b9b55f17e1794045c459fa}
+
+
+Definition at line 39 of file U\+R\+I\+Definition.\+php.
+
+\hypertarget{classHTMLPurifier__URIDefinition_aa3aeee5ee1717874f78f1bbb3d7bf32a}{\index{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition@{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition}!do\+Setup@{do\+Setup}}
+\index{do\+Setup@{do\+Setup}!H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition@{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition}}
+\subsubsection[{do\+Setup}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition\+::do\+Setup (
+\begin{DoxyParamCaption}
+\item[{}]{\$config}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classHTMLPurifier__URIDefinition_aa3aeee5ee1717874f78f1bbb3d7bf32a}
+
+
+Definition at line 49 of file U\+R\+I\+Definition.\+php.
+
+\hypertarget{classHTMLPurifier__URIDefinition_a13edb4d55d3bde01fc9c0fe5faa674e8}{\index{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition@{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition}!filter@{filter}}
+\index{filter@{filter}!H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition@{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition}}
+\subsubsection[{filter}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition\+::filter (
+\begin{DoxyParamCaption}
+\item[{\&}]{\$uri, }
+\item[{}]{\$config, }
+\item[{}]{\$context}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__URIDefinition_a13edb4d55d3bde01fc9c0fe5faa674e8}
+
+
+Definition at line 84 of file U\+R\+I\+Definition.\+php.
+
+\hypertarget{classHTMLPurifier__URIDefinition_a8aa459d2b4b7eea015172c17cc6cc7d9}{\index{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition@{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition}!get\+Default\+Scheme@{get\+Default\+Scheme}}
+\index{get\+Default\+Scheme@{get\+Default\+Scheme}!H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition@{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition}}
+\subsubsection[{get\+Default\+Scheme}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition\+::get\+Default\+Scheme (
+\begin{DoxyParamCaption}
+\item[{}]{\$config, }
+\item[{}]{\$context}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__URIDefinition_a8aa459d2b4b7eea015172c17cc6cc7d9}
+
+
+Definition at line 80 of file U\+R\+I\+Definition.\+php.
+
+\hypertarget{classHTMLPurifier__URIDefinition_ab49841ab6370120386ced8471bdc3971}{\index{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition@{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition}!post\+Filter@{post\+Filter}}
+\index{post\+Filter@{post\+Filter}!H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition@{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition}}
+\subsubsection[{post\+Filter}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition\+::post\+Filter (
+\begin{DoxyParamCaption}
+\item[{\&}]{\$uri, }
+\item[{}]{\$config, }
+\item[{}]{\$context}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__URIDefinition_ab49841ab6370120386ced8471bdc3971}
+
+
+Definition at line 92 of file U\+R\+I\+Definition.\+php.
+
+\hypertarget{classHTMLPurifier__URIDefinition_a5f7785e149b2b31fd2831bbe163ecf25}{\index{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition@{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition}!register\+Filter@{register\+Filter}}
+\index{register\+Filter@{register\+Filter}!H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition@{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition}}
+\subsubsection[{register\+Filter}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition\+::register\+Filter (
+\begin{DoxyParamCaption}
+\item[{}]{\$filter}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__URIDefinition_a5f7785e149b2b31fd2831bbe163ecf25}
+
+
+Definition at line 35 of file U\+R\+I\+Definition.\+php.
+
+\hypertarget{classHTMLPurifier__URIDefinition_a31b5d2cb9d08b32d146a2b75d196e415}{\index{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition@{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition}!setup\+Filters@{setup\+Filters}}
+\index{setup\+Filters@{setup\+Filters}!H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition@{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition}}
+\subsubsection[{setup\+Filters}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition\+::setup\+Filters (
+\begin{DoxyParamCaption}
+\item[{}]{\$config}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classHTMLPurifier__URIDefinition_a31b5d2cb9d08b32d146a2b75d196e415}
+
+
+Definition at line 54 of file U\+R\+I\+Definition.\+php.
+
+\hypertarget{classHTMLPurifier__URIDefinition_af658baedeefebef90a9a0e7b6609b0e8}{\index{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition@{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition}!setup\+Member\+Variables@{setup\+Member\+Variables}}
+\index{setup\+Member\+Variables@{setup\+Member\+Variables}!H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition@{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition}}
+\subsubsection[{setup\+Member\+Variables}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition\+::setup\+Member\+Variables (
+\begin{DoxyParamCaption}
+\item[{}]{\$config}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classHTMLPurifier__URIDefinition_af658baedeefebef90a9a0e7b6609b0e8}
+
+
+Definition at line 68 of file U\+R\+I\+Definition.\+php.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classHTMLPurifier__URIDefinition_acbd574495184a66e4d2095ec70815c59}{\index{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition@{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition}!\$base@{\$base}}
+\index{\$base@{\$base}!H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition@{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition}}
+\subsubsection[{\$base}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition\+::\$base}}\label{classHTMLPurifier__URIDefinition_acbd574495184a66e4d2095ec70815c59}
+\hyperlink{classHTMLPurifier__URI}{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I} object of the base specified at U\+R\+I.\+Base 
+
+Definition at line 14 of file U\+R\+I\+Definition.\+php.
+
+\hypertarget{classHTMLPurifier__URIDefinition_afb85743941b395f885ecde8165c19b9d}{\index{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition@{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition}!\$default\+Scheme@{\$default\+Scheme}}
+\index{\$default\+Scheme@{\$default\+Scheme}!H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition@{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition}}
+\subsubsection[{\$default\+Scheme}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition\+::\$default\+Scheme}}\label{classHTMLPurifier__URIDefinition_afb85743941b395f885ecde8165c19b9d}
+Name of default scheme based on U\+R\+I.\+Default\+Scheme and U\+R\+I.\+Base 
+
+Definition at line 24 of file U\+R\+I\+Definition.\+php.
+
+\hypertarget{classHTMLPurifier__URIDefinition_aa2e2666cb45427509548175fb171c950}{\index{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition@{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition}!\$filters@{\$filters}}
+\index{\$filters@{\$filters}!H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition@{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition}}
+\subsubsection[{\$filters}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition\+::\$filters = array()\hspace{0.3cm}{\ttfamily [protected]}}}\label{classHTMLPurifier__URIDefinition_aa2e2666cb45427509548175fb171c950}
+
+
+Definition at line 7 of file U\+R\+I\+Definition.\+php.
+
+\hypertarget{classHTMLPurifier__URIDefinition_abb18dbc906edbfcf04d153386a3a10c8}{\index{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition@{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition}!\$host@{\$host}}
+\index{\$host@{\$host}!H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition@{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition}}
+\subsubsection[{\$host}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition\+::\$host}}\label{classHTMLPurifier__URIDefinition_abb18dbc906edbfcf04d153386a3a10c8}
+String host to consider \char`\"{}home\char`\"{} base, derived off of \$base 
+
+Definition at line 19 of file U\+R\+I\+Definition.\+php.
+
+\hypertarget{classHTMLPurifier__URIDefinition_a0f4eb7bc917cbaf1af581572743389fc}{\index{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition@{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition}!\$post\+Filters@{\$post\+Filters}}
+\index{\$post\+Filters@{\$post\+Filters}!H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition@{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition}}
+\subsubsection[{\$post\+Filters}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition\+::\$post\+Filters = array()\hspace{0.3cm}{\ttfamily [protected]}}}\label{classHTMLPurifier__URIDefinition_a0f4eb7bc917cbaf1af581572743389fc}
+
+
+Definition at line 8 of file U\+R\+I\+Definition.\+php.
+
+\hypertarget{classHTMLPurifier__URIDefinition_a22a5ccf72975eba6ca2093cd5298f9f9}{\index{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition@{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition}!\$registered\+Filters@{\$registered\+Filters}}
+\index{\$registered\+Filters@{\$registered\+Filters}!H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition@{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition}}
+\subsubsection[{\$registered\+Filters}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition\+::\$registered\+Filters = array()\hspace{0.3cm}{\ttfamily [protected]}}}\label{classHTMLPurifier__URIDefinition_a22a5ccf72975eba6ca2093cd5298f9f9}
+
+
+Definition at line 9 of file U\+R\+I\+Definition.\+php.
+
+\hypertarget{classHTMLPurifier__URIDefinition_af8025a26e38e2dc7f9043409d5e67646}{\index{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition@{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition}!\$type@{\$type}}
+\index{\$type@{\$type}!H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition@{H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition}}
+\subsubsection[{\$type}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+U\+R\+I\+Definition\+::\$type = 'U\+R\+I'}}\label{classHTMLPurifier__URIDefinition_af8025a26e38e2dc7f9043409d5e67646}
+
+
+Definition at line 6 of file U\+R\+I\+Definition.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+classes/security/htmlpurifier/library/\+H\+T\+M\+L\+Purifier/\hyperlink{URIDefinition_8php}{U\+R\+I\+Definition.\+php}\end{DoxyCompactItemize}

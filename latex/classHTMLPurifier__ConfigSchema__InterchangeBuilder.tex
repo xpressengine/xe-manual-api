@@ -1,0 +1,191 @@
+\hypertarget{classHTMLPurifier__ConfigSchema__InterchangeBuilder}{\section{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+\_\+\+Interchange\+Builder Class Reference}
+\label{classHTMLPurifier__ConfigSchema__InterchangeBuilder}\index{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+\_\+\+Interchange\+Builder@{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+\_\+\+Interchange\+Builder}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHTMLPurifier__ConfigSchema__InterchangeBuilder_abbb50fe172deefa48e6ee45c7788edc5}{\+\_\+\+\_\+construct} (\$var\+Parser=null)
+\item 
+\hyperlink{classHTMLPurifier__ConfigSchema__InterchangeBuilder_a9433439ac47f63daf87ec5a222e594e7}{build\+Dir} (\$interchange, \$dir=null)
+\item 
+\hyperlink{classHTMLPurifier__ConfigSchema__InterchangeBuilder_a27a2defa6b80e63ec0d8659977df5930}{build\+File} (\$interchange, \$\hyperlink{classfile}{file})
+\item 
+\hyperlink{classHTMLPurifier__ConfigSchema__InterchangeBuilder_a49e5ee0ddfa589c46582ebeac56d6b14}{build} (\$interchange, \$hash)
+\item 
+\hyperlink{classHTMLPurifier__ConfigSchema__InterchangeBuilder_a8595024430063d857d0e3eba629dd16d}{build\+Directive} (\$interchange, \$hash)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classHTMLPurifier__ConfigSchema__InterchangeBuilder_ab5df851a0afacc6dd24a13c66a3daf8a}{build\+From\+Directory} (\$dir=null)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHTMLPurifier__ConfigSchema__InterchangeBuilder_a63eb6cfcdd39c02c11c4f4a832d6af1c}{eval\+Array} (\$contents)
+\item 
+\hyperlink{classHTMLPurifier__ConfigSchema__InterchangeBuilder_a8ecf76e83da57edad0016d3efc98c3ec}{lookup} (\$array)
+\item 
+\hyperlink{classHTMLPurifier__ConfigSchema__InterchangeBuilder_a79117cedde5c65f403b97996dbb2adbe}{id} (\$id)
+\item 
+\hyperlink{classHTMLPurifier__ConfigSchema__InterchangeBuilder_a97396e90cf11a8a3c81b1c44428600ed}{\+\_\+find\+Unused} (\$hash)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHTMLPurifier__ConfigSchema__InterchangeBuilder_afbc00b630518e882245d254a19d54ca8}{\$var\+Parser}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 3 of file Interchange\+Builder.\+php.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classHTMLPurifier__ConfigSchema__InterchangeBuilder_abbb50fe172deefa48e6ee45c7788edc5}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+\_\+\+Interchange\+Builder@{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+\_\+\+Interchange\+Builder}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+\_\+\+Interchange\+Builder@{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+\_\+\+Interchange\+Builder}}
+\subsubsection[{\+\_\+\+\_\+construct}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+\_\+\+Interchange\+Builder\+::\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+\item[{}]{\$var\+Parser = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__ConfigSchema__InterchangeBuilder_abbb50fe172deefa48e6ee45c7788edc5}
+
+
+Definition at line 11 of file Interchange\+Builder.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classHTMLPurifier__ConfigSchema__InterchangeBuilder_a97396e90cf11a8a3c81b1c44428600ed}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+\_\+\+Interchange\+Builder@{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+\_\+\+Interchange\+Builder}!\+\_\+find\+Unused@{\+\_\+find\+Unused}}
+\index{\+\_\+find\+Unused@{\+\_\+find\+Unused}!H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+\_\+\+Interchange\+Builder@{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+\_\+\+Interchange\+Builder}}
+\subsubsection[{\+\_\+find\+Unused}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+\_\+\+Interchange\+Builder\+::\+\_\+find\+Unused (
+\begin{DoxyParamCaption}
+\item[{}]{\$hash}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classHTMLPurifier__ConfigSchema__InterchangeBuilder_a97396e90cf11a8a3c81b1c44428600ed}
+Triggers errors for any unused keys passed in the hash; such keys may indicate typos, missing values, etc. 
+\begin{DoxyParams}{Parameters}
+{\em \$hash} & Instance of Config\+Schema\+\_\+\+String\+Hash to check. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 169 of file Interchange\+Builder.\+php.
+
+\hypertarget{classHTMLPurifier__ConfigSchema__InterchangeBuilder_a49e5ee0ddfa589c46582ebeac56d6b14}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+\_\+\+Interchange\+Builder@{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+\_\+\+Interchange\+Builder}!build@{build}}
+\index{build@{build}!H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+\_\+\+Interchange\+Builder@{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+\_\+\+Interchange\+Builder}}
+\subsubsection[{build}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+\_\+\+Interchange\+Builder\+::build (
+\begin{DoxyParamCaption}
+\item[{}]{\$interchange, }
+\item[{}]{\$hash}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__ConfigSchema__InterchangeBuilder_a49e5ee0ddfa589c46582ebeac56d6b14}
+Builds an interchange object based on a hash. 
+\begin{DoxyParams}{Parameters}
+{\em \$interchange} & \hyperlink{classHTMLPurifier__ConfigSchema__Interchange}{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+\_\+\+Interchange} object to build \\
+\hline
+{\em \$hash} & H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+\_\+\+String\+Hash source data \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 59 of file Interchange\+Builder.\+php.
+
+\hypertarget{classHTMLPurifier__ConfigSchema__InterchangeBuilder_a9433439ac47f63daf87ec5a222e594e7}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+\_\+\+Interchange\+Builder@{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+\_\+\+Interchange\+Builder}!build\+Dir@{build\+Dir}}
+\index{build\+Dir@{build\+Dir}!H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+\_\+\+Interchange\+Builder@{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+\_\+\+Interchange\+Builder}}
+\subsubsection[{build\+Dir}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+\_\+\+Interchange\+Builder\+::build\+Dir (
+\begin{DoxyParamCaption}
+\item[{}]{\$interchange, }
+\item[{}]{\$dir = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__ConfigSchema__InterchangeBuilder_a9433439ac47f63daf87ec5a222e594e7}
+
+
+Definition at line 21 of file Interchange\+Builder.\+php.
+
+\hypertarget{classHTMLPurifier__ConfigSchema__InterchangeBuilder_a8595024430063d857d0e3eba629dd16d}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+\_\+\+Interchange\+Builder@{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+\_\+\+Interchange\+Builder}!build\+Directive@{build\+Directive}}
+\index{build\+Directive@{build\+Directive}!H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+\_\+\+Interchange\+Builder@{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+\_\+\+Interchange\+Builder}}
+\subsubsection[{build\+Directive}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+\_\+\+Interchange\+Builder\+::build\+Directive (
+\begin{DoxyParamCaption}
+\item[{}]{\$interchange, }
+\item[{}]{\$hash}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__ConfigSchema__InterchangeBuilder_a8595024430063d857d0e3eba629dd16d}
+
+
+Definition at line 78 of file Interchange\+Builder.\+php.
+
+\hypertarget{classHTMLPurifier__ConfigSchema__InterchangeBuilder_a27a2defa6b80e63ec0d8659977df5930}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+\_\+\+Interchange\+Builder@{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+\_\+\+Interchange\+Builder}!build\+File@{build\+File}}
+\index{build\+File@{build\+File}!H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+\_\+\+Interchange\+Builder@{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+\_\+\+Interchange\+Builder}}
+\subsubsection[{build\+File}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+\_\+\+Interchange\+Builder\+::build\+File (
+\begin{DoxyParamCaption}
+\item[{}]{\$interchange, }
+\item[{}]{\$file}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__ConfigSchema__InterchangeBuilder_a27a2defa6b80e63ec0d8659977df5930}
+
+
+Definition at line 46 of file Interchange\+Builder.\+php.
+
+\hypertarget{classHTMLPurifier__ConfigSchema__InterchangeBuilder_ab5df851a0afacc6dd24a13c66a3daf8a}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+\_\+\+Interchange\+Builder@{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+\_\+\+Interchange\+Builder}!build\+From\+Directory@{build\+From\+Directory}}
+\index{build\+From\+Directory@{build\+From\+Directory}!H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+\_\+\+Interchange\+Builder@{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+\_\+\+Interchange\+Builder}}
+\subsubsection[{build\+From\+Directory}]{\setlength{\rightskip}{0pt plus 5cm}static H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+\_\+\+Interchange\+Builder\+::build\+From\+Directory (
+\begin{DoxyParamCaption}
+\item[{}]{\$dir = {\ttfamily null}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classHTMLPurifier__ConfigSchema__InterchangeBuilder_ab5df851a0afacc6dd24a13c66a3daf8a}
+
+
+Definition at line 15 of file Interchange\+Builder.\+php.
+
+\hypertarget{classHTMLPurifier__ConfigSchema__InterchangeBuilder_a63eb6cfcdd39c02c11c4f4a832d6af1c}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+\_\+\+Interchange\+Builder@{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+\_\+\+Interchange\+Builder}!eval\+Array@{eval\+Array}}
+\index{eval\+Array@{eval\+Array}!H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+\_\+\+Interchange\+Builder@{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+\_\+\+Interchange\+Builder}}
+\subsubsection[{eval\+Array}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+\_\+\+Interchange\+Builder\+::eval\+Array (
+\begin{DoxyParamCaption}
+\item[{}]{\$contents}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classHTMLPurifier__ConfigSchema__InterchangeBuilder_a63eb6cfcdd39c02c11c4f4a832d6af1c}
+Evaluates an array P\+H\+P code string without array() wrapper 
+
+Definition at line 143 of file Interchange\+Builder.\+php.
+
+\hypertarget{classHTMLPurifier__ConfigSchema__InterchangeBuilder_a79117cedde5c65f403b97996dbb2adbe}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+\_\+\+Interchange\+Builder@{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+\_\+\+Interchange\+Builder}!id@{id}}
+\index{id@{id}!H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+\_\+\+Interchange\+Builder@{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+\_\+\+Interchange\+Builder}}
+\subsubsection[{id}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+\_\+\+Interchange\+Builder\+::id (
+\begin{DoxyParamCaption}
+\item[{}]{\$id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classHTMLPurifier__ConfigSchema__InterchangeBuilder_a79117cedde5c65f403b97996dbb2adbe}
+Convenience function that creates an \hyperlink{classHTMLPurifier__ConfigSchema__Interchange__Id}{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+\_\+\+Interchange\+\_\+\+Id} object based on a string Id. 
+
+Definition at line 160 of file Interchange\+Builder.\+php.
+
+\hypertarget{classHTMLPurifier__ConfigSchema__InterchangeBuilder_a8ecf76e83da57edad0016d3efc98c3ec}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+\_\+\+Interchange\+Builder@{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+\_\+\+Interchange\+Builder}!lookup@{lookup}}
+\index{lookup@{lookup}!H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+\_\+\+Interchange\+Builder@{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+\_\+\+Interchange\+Builder}}
+\subsubsection[{lookup}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+\_\+\+Interchange\+Builder\+::lookup (
+\begin{DoxyParamCaption}
+\item[{}]{\$array}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classHTMLPurifier__ConfigSchema__InterchangeBuilder_a8ecf76e83da57edad0016d3efc98c3ec}
+Converts an array list into a lookup array. 
+
+Definition at line 150 of file Interchange\+Builder.\+php.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classHTMLPurifier__ConfigSchema__InterchangeBuilder_afbc00b630518e882245d254a19d54ca8}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+\_\+\+Interchange\+Builder@{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+\_\+\+Interchange\+Builder}!\$var\+Parser@{\$var\+Parser}}
+\index{\$var\+Parser@{\$var\+Parser}!H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+\_\+\+Interchange\+Builder@{H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+\_\+\+Interchange\+Builder}}
+\subsubsection[{\$var\+Parser}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Config\+Schema\+\_\+\+Interchange\+Builder\+::\$var\+Parser\hspace{0.3cm}{\ttfamily [protected]}}}\label{classHTMLPurifier__ConfigSchema__InterchangeBuilder_afbc00b630518e882245d254a19d54ca8}
+Used for processing D\+E\+F\+A\+U\+L\+T, nothing else. 
+
+Definition at line 9 of file Interchange\+Builder.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+classes/security/htmlpurifier/library/\+H\+T\+M\+L\+Purifier/\+Config\+Schema/\hyperlink{InterchangeBuilder_8php}{Interchange\+Builder.\+php}\end{DoxyCompactItemize}

@@ -1,0 +1,114 @@
+\hypertarget{classHTMLPurifier__ChildDef__Table}{\section{H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def\+\_\+\+Table Class Reference}
+\label{classHTMLPurifier__ChildDef__Table}\index{H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def\+\_\+\+Table@{H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def\+\_\+\+Table}}
+}
+Inheritance diagram for H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def\+\_\+\+Table\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classHTMLPurifier__ChildDef__Table}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHTMLPurifier__ChildDef__Table_acc3c3ec3b9746835631bb591233b40c6}{\+\_\+\+\_\+construct} ()
+\item 
+\hyperlink{classHTMLPurifier__ChildDef__Table_ace9eb0b90aa647a85132bf50cc531a59}{validate\+Children} (\$tokens\+\_\+of\+\_\+children, \$config, \$context)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHTMLPurifier__ChildDef__Table_a3feef09bb10feb0e93384f7963f46a94}{\$allow\+\_\+empty} = false
+\item 
+\hyperlink{classHTMLPurifier__ChildDef__Table_aa47480c1b24895cb53cb7116dc1cbde4}{\$type} = 'table'
+\item 
+\hyperlink{classHTMLPurifier__ChildDef__Table_a7ca799c4fcc31910a301c8c92486df35}{\$elements}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Definition for tables. The general idea is to extract out all of the essential bits, and then reconstruct it later.
+
+This is a bit confusing, because the D\+T\+Ds and the W3\+C validators seem to disagree on the appropriate definition. The D\+T\+D claims\+: \begin{DoxyVerb} (CAPTION?, (COL*|COLGROUP*), THEAD?, TFOOT?, TBODY+)
+\end{DoxyVerb}
+
+
+But actually, the H\+T\+M\+L4 spec then has this to say\+: \begin{DoxyVerb} The TBODY start tag is always required except when the table
+ contains only one table body and no table head or foot sections.
+ The TBODY end tag may always be safely omitted.
+\end{DoxyVerb}
+
+
+So the D\+T\+D is kind of wrong. The validator is, unfortunately, kind of on crack.
+
+The definition changed again in X\+H\+T\+M\+L1.\+1; and in my opinion, this formulation makes the most sense. \begin{DoxyVerb} caption?, ( col* | colgroup* ), (( thead?, tfoot?, tbody+ ) | ( tr+ ))
+\end{DoxyVerb}
+
+
+Essentially, we have two modes\+: thead/tfoot/tbody mode, and tr mode. If we encounter a thead, tfoot or tbody, we are placed in the former mode, and we {\itshape must} wrap any stray tr segments with a tbody. But if we don't run into any of them, just have tr tags is O\+K. 
+
+Definition at line 32 of file Table.\+php.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classHTMLPurifier__ChildDef__Table_acc3c3ec3b9746835631bb591233b40c6}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def\+\_\+\+Table@{H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def\+\_\+\+Table}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def\+\_\+\+Table@{H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def\+\_\+\+Table}}
+\subsubsection[{\+\_\+\+\_\+construct}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def\+\_\+\+Table\+::\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__ChildDef__Table_acc3c3ec3b9746835631bb591233b40c6}
+
+
+Definition at line 38 of file Table.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classHTMLPurifier__ChildDef__Table_ace9eb0b90aa647a85132bf50cc531a59}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def\+\_\+\+Table@{H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def\+\_\+\+Table}!validate\+Children@{validate\+Children}}
+\index{validate\+Children@{validate\+Children}!H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def\+\_\+\+Table@{H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def\+\_\+\+Table}}
+\subsubsection[{validate\+Children}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def\+\_\+\+Table\+::validate\+Children (
+\begin{DoxyParamCaption}
+\item[{}]{\$tokens\+\_\+of\+\_\+children, }
+\item[{}]{\$config, }
+\item[{}]{\$context}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__ChildDef__Table_ace9eb0b90aa647a85132bf50cc531a59}
+
+
+Definition at line 39 of file Table.\+php.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classHTMLPurifier__ChildDef__Table_a3feef09bb10feb0e93384f7963f46a94}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def\+\_\+\+Table@{H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def\+\_\+\+Table}!\$allow\+\_\+empty@{\$allow\+\_\+empty}}
+\index{\$allow\+\_\+empty@{\$allow\+\_\+empty}!H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def\+\_\+\+Table@{H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def\+\_\+\+Table}}
+\subsubsection[{\$allow\+\_\+empty}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def\+\_\+\+Table\+::\$allow\+\_\+empty = false}}\label{classHTMLPurifier__ChildDef__Table_a3feef09bb10feb0e93384f7963f46a94}
+
+
+Definition at line 34 of file Table.\+php.
+
+\hypertarget{classHTMLPurifier__ChildDef__Table_a7ca799c4fcc31910a301c8c92486df35}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def\+\_\+\+Table@{H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def\+\_\+\+Table}!\$elements@{\$elements}}
+\index{\$elements@{\$elements}!H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def\+\_\+\+Table@{H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def\+\_\+\+Table}}
+\subsubsection[{\$elements}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def\+\_\+\+Table\+::\$elements}}\label{classHTMLPurifier__ChildDef__Table_a7ca799c4fcc31910a301c8c92486df35}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= array(\textcolor{stringliteral}{'tr'} => \textcolor{keyword}{true}, \textcolor{stringliteral}{'tbody'} => \textcolor{keyword}{true}, \textcolor{stringliteral}{'thead'} => \textcolor{keyword}{true},
+        \textcolor{stringliteral}{'tfoot'} => \textcolor{keyword}{true}, \textcolor{stringliteral}{'caption'} => \textcolor{keyword}{true}, \textcolor{stringliteral}{'colgroup'} => \textcolor{keyword}{true}, \textcolor{stringliteral}{'col'} => \textcolor{keyword}{true})
+\end{DoxyCode}
+
+
+Definition at line 36 of file Table.\+php.
+
+\hypertarget{classHTMLPurifier__ChildDef__Table_aa47480c1b24895cb53cb7116dc1cbde4}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def\+\_\+\+Table@{H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def\+\_\+\+Table}!\$type@{\$type}}
+\index{\$type@{\$type}!H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def\+\_\+\+Table@{H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def\+\_\+\+Table}}
+\subsubsection[{\$type}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Child\+Def\+\_\+\+Table\+::\$type = 'table'}}\label{classHTMLPurifier__ChildDef__Table_aa47480c1b24895cb53cb7116dc1cbde4}
+
+
+Definition at line 35 of file Table.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+classes/security/htmlpurifier/library/\+H\+T\+M\+L\+Purifier/\+Child\+Def/\hyperlink{Table_8php}{Table.\+php}\end{DoxyCompactItemize}

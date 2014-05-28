@@ -1,0 +1,98 @@
+\hypertarget{classHTMLPurifier__AttrTransform}{\section{H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Transform Class Reference}
+\label{classHTMLPurifier__AttrTransform}\index{H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Transform@{H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Transform}}
+}
+Inheritance diagram for H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Transform\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{classHTMLPurifier__AttrTransform}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHTMLPurifier__AttrTransform_a2812e8ea8d30920b86e68c57d8be8dc0}{transform} (\$attr, \$config, \$context)
+\item 
+\hyperlink{classHTMLPurifier__AttrTransform_af0cc1bd83887a96c1cd756824fea81e1}{prepend\+C\+S\+S} (\&\$attr, \$css)
+\item 
+\hyperlink{classHTMLPurifier__AttrTransform_ac21852d026a715c2c371cfb8b5d6901c}{confiscate\+Attr} (\&\$attr, \$key)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Processes an entire attribute array for corrections needing multiple values.
+
+Occasionally, a certain attribute will need to be removed and popped onto another value. Instead of creating a complex return syntax for \hyperlink{classHTMLPurifier__AttrDef}{H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Def}, we just pass the whole attribute array to a specialized object and have that do the special work. That is the family of \hyperlink{classHTMLPurifier__AttrTransform}{H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Transform}.
+
+An attribute transformation can be assigned to run before or after \hyperlink{classHTMLPurifier__AttrDef}{H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Def} validation. See \hyperlink{classHTMLPurifier__HTMLDefinition}{H\+T\+M\+L\+Purifier\+\_\+\+H\+T\+M\+L\+Definition} for more details. 
+
+Definition at line 17 of file Attr\+Transform.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classHTMLPurifier__AttrTransform_ac21852d026a715c2c371cfb8b5d6901c}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Transform@{H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Transform}!confiscate\+Attr@{confiscate\+Attr}}
+\index{confiscate\+Attr@{confiscate\+Attr}!H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Transform@{H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Transform}}
+\subsubsection[{confiscate\+Attr}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Transform\+::confiscate\+Attr (
+\begin{DoxyParamCaption}
+\item[{\&}]{\$attr, }
+\item[{}]{\$key}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__AttrTransform_ac21852d026a715c2c371cfb8b5d6901c}
+Retrieves and removes an attribute 
+\begin{DoxyParams}{Parameters}
+{\em \$attr} & Attribute array to process (passed by reference) \\
+\hline
+{\em \$key} & Key of attribute to confiscate \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 47 of file Attr\+Transform.\+php.
+
+\hypertarget{classHTMLPurifier__AttrTransform_af0cc1bd83887a96c1cd756824fea81e1}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Transform@{H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Transform}!prepend\+C\+S\+S@{prepend\+C\+S\+S}}
+\index{prepend\+C\+S\+S@{prepend\+C\+S\+S}!H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Transform@{H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Transform}}
+\subsubsection[{prepend\+C\+S\+S}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Transform\+::prepend\+C\+S\+S (
+\begin{DoxyParamCaption}
+\item[{\&}]{\$attr, }
+\item[{}]{\$css}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__AttrTransform_af0cc1bd83887a96c1cd756824fea81e1}
+Prepends C\+S\+S properties to the style attribute, creating the attribute if it doesn't exist. 
+\begin{DoxyParams}{Parameters}
+{\em \$attr} & Attribute array to process (passed by reference) \\
+\hline
+{\em \$css} & C\+S\+S to prepend \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 37 of file Attr\+Transform.\+php.
+
+\hypertarget{classHTMLPurifier__AttrTransform_a2812e8ea8d30920b86e68c57d8be8dc0}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Transform@{H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Transform}!transform@{transform}}
+\index{transform@{transform}!H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Transform@{H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Transform}}
+\subsubsection[{transform}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Attr\+Transform\+::transform (
+\begin{DoxyParamCaption}
+\item[{}]{\$attr, }
+\item[{}]{\$config, }
+\item[{}]{\$context}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [abstract]}}}\label{classHTMLPurifier__AttrTransform_a2812e8ea8d30920b86e68c57d8be8dc0}
+Abstract\+: makes changes to the attributes dependent on multiple values.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$attr} & Assoc array of attributes, usually from \hyperlink{classHTMLPurifier__Token__Tag_af97f0e1005e1e8cfd4a88a3dbc256c30}{H\+T\+M\+L\+Purifier\+\_\+\+Token\+\_\+\+Tag\+::\$attr} \\
+\hline
+{\em \$config} & Mandatory \hyperlink{classHTMLPurifier__Config}{H\+T\+M\+L\+Purifier\+\_\+\+Config} object. \\
+\hline
+{\em \$context} & Mandatory \hyperlink{classHTMLPurifier__Context}{H\+T\+M\+L\+Purifier\+\_\+\+Context} object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Processed attribute array. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+classes/security/htmlpurifier/library/\+H\+T\+M\+L\+Purifier/\hyperlink{AttrTransform_8php}{Attr\+Transform.\+php}\end{DoxyCompactItemize}

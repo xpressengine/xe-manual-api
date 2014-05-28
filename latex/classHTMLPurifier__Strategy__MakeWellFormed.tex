@@ -1,0 +1,143 @@
+\hypertarget{classHTMLPurifier__Strategy__MakeWellFormed}{\section{H\+T\+M\+L\+Purifier\+\_\+\+Strategy\+\_\+\+Make\+Well\+Formed Class Reference}
+\label{classHTMLPurifier__Strategy__MakeWellFormed}\index{H\+T\+M\+L\+Purifier\+\_\+\+Strategy\+\_\+\+Make\+Well\+Formed@{H\+T\+M\+L\+Purifier\+\_\+\+Strategy\+\_\+\+Make\+Well\+Formed}}
+}
+Inheritance diagram for H\+T\+M\+L\+Purifier\+\_\+\+Strategy\+\_\+\+Make\+Well\+Formed\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classHTMLPurifier__Strategy__MakeWellFormed}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHTMLPurifier__Strategy__MakeWellFormed_a5df01929414200f139e4b76ee94d3774}{execute} (\$tokens, \$config, \$context)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHTMLPurifier__Strategy__MakeWellFormed_acca8bdc532ca1469b16299040f682446}{process\+Token} (\$token, \$injector=-\/1)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHTMLPurifier__Strategy__MakeWellFormed_afb844c69e9d6e032993b50048c6c08ff}{\$tokens}
+\item 
+\hyperlink{classHTMLPurifier__Strategy__MakeWellFormed_a1f363142a9154902642833c7c41c9536}{\$t}
+\item 
+\hyperlink{classHTMLPurifier__Strategy__MakeWellFormed_a42b5206c0b08d3713224da362e3893b1}{\$stack}
+\item 
+\hyperlink{classHTMLPurifier__Strategy__MakeWellFormed_a8f24bfd1c7814eabfcfe377b671fef55}{\$injectors}
+\item 
+\hyperlink{classHTMLPurifier__Strategy__MakeWellFormed_a652d2a2d24b6290651cef30a794385ca}{\$config}
+\item 
+\hyperlink{classHTMLPurifier__Strategy__MakeWellFormed_a2183f02d99e6db551da2a8aa2f53a26f}{\$context}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Takes tokens makes them well-\/formed (balance end tags, etc.)
+
+Specification of the armor attributes this strategy uses\+: \begin{DoxyVerb} - MakeWellFormed_TagClosedError: This armor field is used to
+   suppress tag closed errors for certain tokens [TagClosedSuppress],
+   in particular, if a tag was generated automatically by HTML
+   Purifier, we may rely on our infrastructure to close it for us
+   and shouldn't report an error to the user [TagClosedAuto].\end{DoxyVerb}
+ 
+
+Definition at line 14 of file Make\+Well\+Formed.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classHTMLPurifier__Strategy__MakeWellFormed_a5df01929414200f139e4b76ee94d3774}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Strategy\+\_\+\+Make\+Well\+Formed@{H\+T\+M\+L\+Purifier\+\_\+\+Strategy\+\_\+\+Make\+Well\+Formed}!execute@{execute}}
+\index{execute@{execute}!H\+T\+M\+L\+Purifier\+\_\+\+Strategy\+\_\+\+Make\+Well\+Formed@{H\+T\+M\+L\+Purifier\+\_\+\+Strategy\+\_\+\+Make\+Well\+Formed}}
+\subsubsection[{execute}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Strategy\+\_\+\+Make\+Well\+Formed\+::execute (
+\begin{DoxyParamCaption}
+\item[{}]{\$tokens, }
+\item[{}]{\$config, }
+\item[{}]{\$context}
+\end{DoxyParamCaption}
+)}}\label{classHTMLPurifier__Strategy__MakeWellFormed_a5df01929414200f139e4b76ee94d3774}
+
+
+Definition at line 47 of file Make\+Well\+Formed.\+php.
+
+\hypertarget{classHTMLPurifier__Strategy__MakeWellFormed_acca8bdc532ca1469b16299040f682446}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Strategy\+\_\+\+Make\+Well\+Formed@{H\+T\+M\+L\+Purifier\+\_\+\+Strategy\+\_\+\+Make\+Well\+Formed}!process\+Token@{process\+Token}}
+\index{process\+Token@{process\+Token}!H\+T\+M\+L\+Purifier\+\_\+\+Strategy\+\_\+\+Make\+Well\+Formed@{H\+T\+M\+L\+Purifier\+\_\+\+Strategy\+\_\+\+Make\+Well\+Formed}}
+\subsubsection[{process\+Token}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Strategy\+\_\+\+Make\+Well\+Formed\+::process\+Token (
+\begin{DoxyParamCaption}
+\item[{}]{\$token, }
+\item[{}]{\$injector = {\ttfamily -\/1}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classHTMLPurifier__Strategy__MakeWellFormed_acca8bdc532ca1469b16299040f682446}
+Processes arbitrary token values for complicated substitution patterns. In general\+:
+
+If \$token is an array, it is a list of tokens to substitute for the current token. These tokens then get individually processed. If there is a leading integer in the list, that integer determines how many tokens from the stream should be removed.
+
+If \$token is a regular token, it is swapped with the current token.
+
+If \$token is false, the current token is deleted.
+
+If \$token is an integer, that number of tokens (with the first token being the current one) will be deleted.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$token} & Token substitution value \\
+\hline
+{\em \$injector} & Injector that performed the substitution; default is if this is not an injector related operation. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 479 of file Make\+Well\+Formed.\+php.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classHTMLPurifier__Strategy__MakeWellFormed_a652d2a2d24b6290651cef30a794385ca}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Strategy\+\_\+\+Make\+Well\+Formed@{H\+T\+M\+L\+Purifier\+\_\+\+Strategy\+\_\+\+Make\+Well\+Formed}!\$config@{\$config}}
+\index{\$config@{\$config}!H\+T\+M\+L\+Purifier\+\_\+\+Strategy\+\_\+\+Make\+Well\+Formed@{H\+T\+M\+L\+Purifier\+\_\+\+Strategy\+\_\+\+Make\+Well\+Formed}}
+\subsubsection[{\$config}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Strategy\+\_\+\+Make\+Well\+Formed\+::\$config\hspace{0.3cm}{\ttfamily [protected]}}}\label{classHTMLPurifier__Strategy__MakeWellFormed_a652d2a2d24b6290651cef30a794385ca}
+Current instance of \hyperlink{classHTMLPurifier__Config}{H\+T\+M\+L\+Purifier\+\_\+\+Config}. 
+
+Definition at line 40 of file Make\+Well\+Formed.\+php.
+
+\hypertarget{classHTMLPurifier__Strategy__MakeWellFormed_a2183f02d99e6db551da2a8aa2f53a26f}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Strategy\+\_\+\+Make\+Well\+Formed@{H\+T\+M\+L\+Purifier\+\_\+\+Strategy\+\_\+\+Make\+Well\+Formed}!\$context@{\$context}}
+\index{\$context@{\$context}!H\+T\+M\+L\+Purifier\+\_\+\+Strategy\+\_\+\+Make\+Well\+Formed@{H\+T\+M\+L\+Purifier\+\_\+\+Strategy\+\_\+\+Make\+Well\+Formed}}
+\subsubsection[{\$context}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Strategy\+\_\+\+Make\+Well\+Formed\+::\$context\hspace{0.3cm}{\ttfamily [protected]}}}\label{classHTMLPurifier__Strategy__MakeWellFormed_a2183f02d99e6db551da2a8aa2f53a26f}
+Current instance of \hyperlink{classHTMLPurifier__Context}{H\+T\+M\+L\+Purifier\+\_\+\+Context}. 
+
+Definition at line 45 of file Make\+Well\+Formed.\+php.
+
+\hypertarget{classHTMLPurifier__Strategy__MakeWellFormed_a8f24bfd1c7814eabfcfe377b671fef55}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Strategy\+\_\+\+Make\+Well\+Formed@{H\+T\+M\+L\+Purifier\+\_\+\+Strategy\+\_\+\+Make\+Well\+Formed}!\$injectors@{\$injectors}}
+\index{\$injectors@{\$injectors}!H\+T\+M\+L\+Purifier\+\_\+\+Strategy\+\_\+\+Make\+Well\+Formed@{H\+T\+M\+L\+Purifier\+\_\+\+Strategy\+\_\+\+Make\+Well\+Formed}}
+\subsubsection[{\$injectors}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Strategy\+\_\+\+Make\+Well\+Formed\+::\$injectors\hspace{0.3cm}{\ttfamily [protected]}}}\label{classHTMLPurifier__Strategy__MakeWellFormed_a8f24bfd1c7814eabfcfe377b671fef55}
+Injectors active in this stream processing. 
+
+Definition at line 35 of file Make\+Well\+Formed.\+php.
+
+\hypertarget{classHTMLPurifier__Strategy__MakeWellFormed_a42b5206c0b08d3713224da362e3893b1}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Strategy\+\_\+\+Make\+Well\+Formed@{H\+T\+M\+L\+Purifier\+\_\+\+Strategy\+\_\+\+Make\+Well\+Formed}!\$stack@{\$stack}}
+\index{\$stack@{\$stack}!H\+T\+M\+L\+Purifier\+\_\+\+Strategy\+\_\+\+Make\+Well\+Formed@{H\+T\+M\+L\+Purifier\+\_\+\+Strategy\+\_\+\+Make\+Well\+Formed}}
+\subsubsection[{\$stack}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Strategy\+\_\+\+Make\+Well\+Formed\+::\$stack\hspace{0.3cm}{\ttfamily [protected]}}}\label{classHTMLPurifier__Strategy__MakeWellFormed_a42b5206c0b08d3713224da362e3893b1}
+Current nesting of elements. 
+
+Definition at line 30 of file Make\+Well\+Formed.\+php.
+
+\hypertarget{classHTMLPurifier__Strategy__MakeWellFormed_a1f363142a9154902642833c7c41c9536}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Strategy\+\_\+\+Make\+Well\+Formed@{H\+T\+M\+L\+Purifier\+\_\+\+Strategy\+\_\+\+Make\+Well\+Formed}!\$t@{\$t}}
+\index{\$t@{\$t}!H\+T\+M\+L\+Purifier\+\_\+\+Strategy\+\_\+\+Make\+Well\+Formed@{H\+T\+M\+L\+Purifier\+\_\+\+Strategy\+\_\+\+Make\+Well\+Formed}}
+\subsubsection[{\$t}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Strategy\+\_\+\+Make\+Well\+Formed\+::\$t\hspace{0.3cm}{\ttfamily [protected]}}}\label{classHTMLPurifier__Strategy__MakeWellFormed_a1f363142a9154902642833c7c41c9536}
+Current index in \$tokens. 
+
+Definition at line 25 of file Make\+Well\+Formed.\+php.
+
+\hypertarget{classHTMLPurifier__Strategy__MakeWellFormed_afb844c69e9d6e032993b50048c6c08ff}{\index{H\+T\+M\+L\+Purifier\+\_\+\+Strategy\+\_\+\+Make\+Well\+Formed@{H\+T\+M\+L\+Purifier\+\_\+\+Strategy\+\_\+\+Make\+Well\+Formed}!\$tokens@{\$tokens}}
+\index{\$tokens@{\$tokens}!H\+T\+M\+L\+Purifier\+\_\+\+Strategy\+\_\+\+Make\+Well\+Formed@{H\+T\+M\+L\+Purifier\+\_\+\+Strategy\+\_\+\+Make\+Well\+Formed}}
+\subsubsection[{\$tokens}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+M\+L\+Purifier\+\_\+\+Strategy\+\_\+\+Make\+Well\+Formed\+::\$tokens\hspace{0.3cm}{\ttfamily [protected]}}}\label{classHTMLPurifier__Strategy__MakeWellFormed_afb844c69e9d6e032993b50048c6c08ff}
+Array stream of tokens being processed. 
+
+Definition at line 20 of file Make\+Well\+Formed.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+classes/security/htmlpurifier/library/\+H\+T\+M\+L\+Purifier/\+Strategy/\hyperlink{MakeWellFormed_8php}{Make\+Well\+Formed.\+php}\end{DoxyCompactItemize}

@@ -1,0 +1,254 @@
+\hypertarget{classCacheWincache}{\section{Cache\+Wincache Class Reference}
+\label{classCacheWincache}\index{Cache\+Wincache@{Cache\+Wincache}}
+}
+Inheritance diagram for Cache\+Wincache\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCacheWincache}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCacheWincache_a4de3bb419825ceebbfbe5374cd144e07}{get\+Instance} (\$opt=null)
+\item 
+\hyperlink{classCacheWincache_a564e8c74dc22b1e84a0d1cfd6d0d935e}{Cache\+Wincache} ()
+\item 
+\hyperlink{classCacheWincache_a816994c866a29c5c7b117996de2f513c}{is\+Support} ()
+\item 
+\hyperlink{classCacheWincache_a1302d9ee0f33efefc8c690a9a9a5f9e1}{put} (\$key, \$buff, \$valid\+\_\+time=0)
+\item 
+\hyperlink{classCacheWincache_af8d27de13a90149d523c59dc589d2c15}{is\+Valid} (\$key, \$modified\+\_\+time=0)
+\item 
+\hyperlink{classCacheWincache_a36123121cdf50235b64929c3a13b596b}{get} (\$key, \$modified\+\_\+time=0)
+\item 
+\hyperlink{classCacheWincache_ab20145a0ee5672f182b6da797c80b77a}{\+\_\+delete} (\$\+\_\+key)
+\item 
+\hyperlink{classCacheWincache_ae7bfddf70b319e76b50f06d50ec720a2}{delete} (\$key)
+\item 
+\hyperlink{classCacheWincache_a2da6969290f8ded04554bfaddce5825d}{truncate} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classCacheWincache_a633cb53cf9535236075169604bf363e3}{\$is\+Support} = false
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Cache class for Wincache
+
+Wincache \hyperlink{classHandler}{Handler}
+
+\begin{DoxyAuthor}{Author}
+Arnia (\href{mailto:support@xpressengine.org}{\tt support@xpressengine.\+org}) 
+\end{DoxyAuthor}
+
+
+Definition at line 11 of file Cache\+Wincache.\+class.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classCacheWincache_ab20145a0ee5672f182b6da797c80b77a}{\index{Cache\+Wincache@{Cache\+Wincache}!\+\_\+delete@{\+\_\+delete}}
+\index{\+\_\+delete@{\+\_\+delete}!Cache\+Wincache@{Cache\+Wincache}}
+\subsubsection[{\+\_\+delete}]{\setlength{\rightskip}{0pt plus 5cm}Cache\+Wincache\+::\+\_\+delete (
+\begin{DoxyParamCaption}
+\item[{}]{\$\+\_\+key}
+\end{DoxyParamCaption}
+)}}\label{classCacheWincache_ab20145a0ee5672f182b6da797c80b77a}
+Delete variable from the cache(private)
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$\+\_\+key} & Used to store the value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 128 of file Cache\+Wincache.\+class.\+php.
+
+\hypertarget{classCacheWincache_a564e8c74dc22b1e84a0d1cfd6d0d935e}{\index{Cache\+Wincache@{Cache\+Wincache}!Cache\+Wincache@{Cache\+Wincache}}
+\index{Cache\+Wincache@{Cache\+Wincache}!Cache\+Wincache@{Cache\+Wincache}}
+\subsubsection[{Cache\+Wincache}]{\setlength{\rightskip}{0pt plus 5cm}Cache\+Wincache\+::\+Cache\+Wincache (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCacheWincache_a564e8c74dc22b1e84a0d1cfd6d0d935e}
+Constructor
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 35 of file Cache\+Wincache.\+class.\+php.
+
+\hypertarget{classCacheWincache_ae7bfddf70b319e76b50f06d50ec720a2}{\index{Cache\+Wincache@{Cache\+Wincache}!delete@{delete}}
+\index{delete@{delete}!Cache\+Wincache@{Cache\+Wincache}}
+\subsubsection[{delete}]{\setlength{\rightskip}{0pt plus 5cm}Cache\+Wincache\+::delete (
+\begin{DoxyParamCaption}
+\item[{}]{\$key}
+\end{DoxyParamCaption}
+)}}\label{classCacheWincache_ae7bfddf70b319e76b50f06d50ec720a2}
+Delete variable from the cache
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & Used to store the value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 139 of file Cache\+Wincache.\+class.\+php.
+
+\hypertarget{classCacheWincache_a36123121cdf50235b64929c3a13b596b}{\index{Cache\+Wincache@{Cache\+Wincache}!get@{get}}
+\index{get@{get}!Cache\+Wincache@{Cache\+Wincache}}
+\subsubsection[{get}]{\setlength{\rightskip}{0pt plus 5cm}Cache\+Wincache\+::get (
+\begin{DoxyParamCaption}
+\item[{}]{\$key, }
+\item[{}]{\$modified\+\_\+time = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classCacheWincache_a36123121cdf50235b64929c3a13b596b}
+Gets a variable stored in the user cache
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & The \$key that was used to store the variable in the cache. \\
+\hline
+int & {\em \$modified\+\_\+time} & Unix time of data modified. If stored time is older then modified time, return false. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false$\vert$mixed Return false on failure or older then modified time. Return the string associated with the \$key on success. 
+\end{DoxyReturn}
+
+
+Definition at line 104 of file Cache\+Wincache.\+class.\+php.
+
+\hypertarget{classCacheWincache_a4de3bb419825ceebbfbe5374cd144e07}{\index{Cache\+Wincache@{Cache\+Wincache}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!Cache\+Wincache@{Cache\+Wincache}}
+\subsubsection[{get\+Instance}]{\setlength{\rightskip}{0pt plus 5cm}Cache\+Wincache\+::get\+Instance (
+\begin{DoxyParamCaption}
+\item[{}]{\$opt = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}\label{classCacheWincache_a4de3bb419825ceebbfbe5374cd144e07}
+Get instance of \hyperlink{classCacheWincache}{Cache\+Wincache}
+
+
+\begin{DoxyParams}[1]{Parameters}
+void & {\em \$opt} & Not used \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classCacheWincache}{Cache\+Wincache} instance of \hyperlink{classCacheWincache}{Cache\+Wincache} 
+\end{DoxyReturn}
+
+
+Definition at line 21 of file Cache\+Wincache.\+class.\+php.
+
+\hypertarget{classCacheWincache_a816994c866a29c5c7b117996de2f513c}{\index{Cache\+Wincache@{Cache\+Wincache}!is\+Support@{is\+Support}}
+\index{is\+Support@{is\+Support}!Cache\+Wincache@{Cache\+Wincache}}
+\subsubsection[{is\+Support}]{\setlength{\rightskip}{0pt plus 5cm}Cache\+Wincache\+::is\+Support (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCacheWincache_a816994c866a29c5c7b117996de2f513c}
+Return whether support or not support cache
+
+\begin{DoxyReturn}{Returns}
+bool Return true on support or false on not support 
+\end{DoxyReturn}
+
+
+Definition at line 44 of file Cache\+Wincache.\+class.\+php.
+
+\hypertarget{classCacheWincache_af8d27de13a90149d523c59dc589d2c15}{\index{Cache\+Wincache@{Cache\+Wincache}!is\+Valid@{is\+Valid}}
+\index{is\+Valid@{is\+Valid}!Cache\+Wincache@{Cache\+Wincache}}
+\subsubsection[{is\+Valid}]{\setlength{\rightskip}{0pt plus 5cm}Cache\+Wincache\+::is\+Valid (
+\begin{DoxyParamCaption}
+\item[{}]{\$key, }
+\item[{}]{\$modified\+\_\+time = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classCacheWincache_af8d27de13a90149d523c59dc589d2c15}
+Return whether cache is valid or invalid
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & Cache key \\
+\hline
+int & {\em \$modified\+\_\+time} & Unix time of data modified. If stored time is older then modified time, the data is invalid. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool Return true on valid or false on invalid. 
+\end{DoxyReturn}
+
+
+Definition at line 77 of file Cache\+Wincache.\+class.\+php.
+
+\hypertarget{classCacheWincache_a1302d9ee0f33efefc8c690a9a9a5f9e1}{\index{Cache\+Wincache@{Cache\+Wincache}!put@{put}}
+\index{put@{put}!Cache\+Wincache@{Cache\+Wincache}}
+\subsubsection[{put}]{\setlength{\rightskip}{0pt plus 5cm}Cache\+Wincache\+::put (
+\begin{DoxyParamCaption}
+\item[{}]{\$key, }
+\item[{}]{\$buff, }
+\item[{}]{\$valid\+\_\+time = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classCacheWincache_a1302d9ee0f33efefc8c690a9a9a5f9e1}
+Adds a variable in user cache and overwrites a variable if it already exists in the cache
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & Store the variable using this \$key value. If a variable with same \$key is already present the function will overwrite the previous value with the new one. \\
+\hline
+mixed & {\em \$buff} & Value of a variable to store. \$value supports all data types except resources, such as file handlers. \\
+\hline
+int & {\em \$valid\+\_\+time} & Time for the variable to live in the cache in seconds. After the value specified in ttl has passed the stored variable will be deleted from the cache. If no ttl is supplied, use the default valid time Cache\+Wincache\+::valid\+\_\+time. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool Returns true on success or false on failure. 
+\end{DoxyReturn}
+
+
+Definition at line 60 of file Cache\+Wincache.\+class.\+php.
+
+\hypertarget{classCacheWincache_a2da6969290f8ded04554bfaddce5825d}{\index{Cache\+Wincache@{Cache\+Wincache}!truncate@{truncate}}
+\index{truncate@{truncate}!Cache\+Wincache@{Cache\+Wincache}}
+\subsubsection[{truncate}]{\setlength{\rightskip}{0pt plus 5cm}Cache\+Wincache\+::truncate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCacheWincache_a2da6969290f8ded04554bfaddce5825d}
+Truncate all existing variables at the cache
+
+\begin{DoxyReturn}{Returns}
+bool Returns true on success or false on failure. 
+\end{DoxyReturn}
+
+
+Definition at line 150 of file Cache\+Wincache.\+class.\+php.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classCacheWincache_a633cb53cf9535236075169604bf363e3}{\index{Cache\+Wincache@{Cache\+Wincache}!\$is\+Support@{\$is\+Support}}
+\index{\$is\+Support@{\$is\+Support}!Cache\+Wincache@{Cache\+Wincache}}
+\subsubsection[{\$is\+Support}]{\setlength{\rightskip}{0pt plus 5cm}Cache\+Wincache\+::\$is\+Support = false\hspace{0.3cm}{\ttfamily [static]}}}\label{classCacheWincache_a633cb53cf9535236075169604bf363e3}
+
+
+Definition at line 13 of file Cache\+Wincache.\+class.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+classes/cache/\hyperlink{CacheWincache_8class_8php}{Cache\+Wincache.\+class.\+php}\end{DoxyCompactItemize}
