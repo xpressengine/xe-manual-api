@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.7.5.1</span>
+   &#160;<span id="projectnumber">1.7.5.2</span>
    </div>
   </td>
  </tr>
@@ -405,60 +405,56 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        list($width, $height, $type_no, $attrs) = @getimagesize($target_file);</div>
 <div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        <span class="keywordflow">if</span>($iconname == <span class="stringliteral">&#39;favicon.ico&#39;</span>)</div>
 <div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        {</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;            <span class="keywordflow">if</span>(!preg_match(<span class="stringliteral">&#39;/^.*\.icon$/i&#39;</span>,$type)) {</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;            <span class="keywordflow">if</span>(!preg_match(<span class="stringliteral">&#39;/^.*(x-icon|\.icon)$/i&#39;</span>,$type)) {</div>
 <div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;                <a class="code" href="classContext.html#a9f79aa7aecf2e4d8006e517844523fc2">Context::set</a>(<span class="stringliteral">&#39;msg&#39;</span>, <span class="stringliteral">&#39;*.ico &#39;</span>.<a class="code" href="classContext.html#a9af9269b04542f7462d27a63226e0ff3">Context::getLang</a>(<span class="stringliteral">&#39;msg_possible_only_file&#39;</span>));</div>
 <div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;                <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;            }</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;            <span class="keywordflow">if</span>($width &amp;&amp; $height &amp;&amp; ($width != <span class="stringliteral">&#39;16&#39;</span> || $height != <span class="stringliteral">&#39;16&#39;</span>)) {</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;                <a class="code" href="classContext.html#a9f79aa7aecf2e4d8006e517844523fc2">Context::set</a>(<span class="stringliteral">&#39;msg&#39;</span>, <a class="code" href="classContext.html#a9af9269b04542f7462d27a63226e0ff3">Context::getLang</a>(<span class="stringliteral">&#39;msg_invalid_format&#39;</span>).<span class="stringliteral">&#39; (size : 16x16)&#39;</span>);</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;                <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;            }</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;        }</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span>($iconname == <span class="stringliteral">&#39;mobicon.png&#39;</span>)</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;        {</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;            <span class="keywordflow">if</span>(!preg_match(<span class="stringliteral">&#39;/^.*(png).*$/&#39;</span>,$type)) {</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;                <a class="code" href="classContext.html#a9f79aa7aecf2e4d8006e517844523fc2">Context::set</a>(<span class="stringliteral">&#39;msg&#39;</span>, <span class="stringliteral">&#39;*.png &#39;</span>.<a class="code" href="classContext.html#a9af9269b04542f7462d27a63226e0ff3">Context::getLang</a>(<span class="stringliteral">&#39;msg_possible_only_file&#39;</span>));</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;        }</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span>($iconname == <span class="stringliteral">&#39;mobicon.png&#39;</span>)</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;        {</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;            <span class="keywordflow">if</span>(!preg_match(<span class="stringliteral">&#39;/^.*(png).*$/&#39;</span>,$type)) {</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;                <a class="code" href="classContext.html#a9f79aa7aecf2e4d8006e517844523fc2">Context::set</a>(<span class="stringliteral">&#39;msg&#39;</span>, <span class="stringliteral">&#39;*.png &#39;</span>.<a class="code" href="classContext.html#a9af9269b04542f7462d27a63226e0ff3">Context::getLang</a>(<span class="stringliteral">&#39;msg_possible_only_file&#39;</span>));</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;                <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;            }</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;            <span class="keywordflow">if</span>(!(($height == <span class="stringliteral">&#39;57&#39;</span> &amp;&amp; $width == <span class="stringliteral">&#39;57&#39;</span>) || ($height == <span class="stringliteral">&#39;114&#39;</span> &amp;&amp; $width == <span class="stringliteral">&#39;114&#39;</span>))) {</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;                <a class="code" href="classContext.html#a9f79aa7aecf2e4d8006e517844523fc2">Context::set</a>(<span class="stringliteral">&#39;msg&#39;</span>, <a class="code" href="classContext.html#a9af9269b04542f7462d27a63226e0ff3">Context::getLang</a>(<span class="stringliteral">&#39;msg_invalid_format&#39;</span>).<span class="stringliteral">&#39; (size : 57x57, 114x114)&#39;</span>);</div>
 <div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;                <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;            }</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;            <span class="keywordflow">if</span>(!(($height == <span class="stringliteral">&#39;57&#39;</span> &amp;&amp; $width == <span class="stringliteral">&#39;57&#39;</span>) || ($height == <span class="stringliteral">&#39;114&#39;</span> &amp;&amp; $width == <span class="stringliteral">&#39;114&#39;</span>))) {</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;                <a class="code" href="classContext.html#a9f79aa7aecf2e4d8006e517844523fc2">Context::set</a>(<span class="stringliteral">&#39;msg&#39;</span>, <a class="code" href="classContext.html#a9af9269b04542f7462d27a63226e0ff3">Context::getLang</a>(<span class="stringliteral">&#39;msg_invalid_format&#39;</span>).<span class="stringliteral">&#39; (size : 57x57, 114x114)&#39;</span>);</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;                <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;            }</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;        }</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;        {</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;            <a class="code" href="classContext.html#a9f79aa7aecf2e4d8006e517844523fc2">Context::set</a>(<span class="stringliteral">&#39;msg&#39;</span>, <a class="code" href="classContext.html#a9af9269b04542f7462d27a63226e0ff3">Context::getLang</a>(<span class="stringliteral">&#39;msg_invalid_format&#39;</span>));</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;            <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;        }</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;        $fitHeight = $fitWidth = $height;</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;        <span class="comment">//FileHandler::createImageFile($target_file, $target_filename, $fitHeight, $fitWidth, $ext);</span></div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;        <a class="code" href="classFileHandler.html#a60d38b90a939a687ca5fde243936ff79">FileHandler::copyFile</a>($target_file, $target_filename);</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;        <span class="keywordflow">return</span> $relative_filename;</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    }</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    <span class="keyword">private</span> <span class="keyword">function</span> updateIcon($iconname, $deleteIcon = <span class="keyword">false</span>) {</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;        $image_filepath = <a class="code" href="config_8inc_8php.html#a5387c7a3f2aa38adf16f324cee88db88">_XE_PATH_</a>.<span class="stringliteral">&#39;files/attach/xeicon/&#39;</span>;</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;        <span class="keywordflow">if</span>($deleteIcon) {</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;            <a class="code" href="classFileHandler.html#aa5969f9fe0ce869fc736c4da384959e9">FileHandler::removeFile</a>($image_filepath.$iconname);</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;            <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;        }</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;        $tmpicon_filepath = $image_filepath.<span class="stringliteral">&#39;tmp/&#39;</span>.$iconname;</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;        $icon_filepath = $image_filepath.$iconname;</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;        <span class="keywordflow">if</span>(file_exists($tmpicon_filepath))</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;        {</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;            <a class="code" href="classFileHandler.html#aa558697af5a900f8594e1013f8d8b2c8">FileHandler::moveFile</a>($tmpicon_filepath, $icon_filepath);</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;        }</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;        }</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;        {</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;            <a class="code" href="classContext.html#a9f79aa7aecf2e4d8006e517844523fc2">Context::set</a>(<span class="stringliteral">&#39;msg&#39;</span>, <a class="code" href="classContext.html#a9af9269b04542f7462d27a63226e0ff3">Context::getLang</a>(<span class="stringliteral">&#39;msg_invalid_format&#39;</span>));</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;            <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;        }</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;        $fitHeight = $fitWidth = $height;</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;        <span class="comment">//FileHandler::createImageFile($target_file, $target_filename, $fitHeight, $fitWidth, $ext);</span></div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;        <a class="code" href="classFileHandler.html#a60d38b90a939a687ca5fde243936ff79">FileHandler::copyFile</a>($target_file, $target_filename);</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;        <span class="keywordflow">return</span> $relative_filename;</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    }</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    <span class="keyword">private</span> <span class="keyword">function</span> updateIcon($iconname, $deleteIcon = <span class="keyword">false</span>) {</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;        $image_filepath = <a class="code" href="config_8inc_8php.html#a5387c7a3f2aa38adf16f324cee88db88">_XE_PATH_</a>.<span class="stringliteral">&#39;files/attach/xeicon/&#39;</span>;</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;        <span class="keywordflow">if</span>($deleteIcon) {</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;            <a class="code" href="classFileHandler.html#aa5969f9fe0ce869fc736c4da384959e9">FileHandler::removeFile</a>($image_filepath.$iconname);</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;            <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;        }</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;        $tmpicon_filepath = $image_filepath.<span class="stringliteral">&#39;tmp/&#39;</span>.$iconname;</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;        $icon_filepath = $image_filepath.$iconname;</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;        <span class="keywordflow">if</span>(file_exists($tmpicon_filepath))</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;        {</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;            <a class="code" href="classFileHandler.html#aa558697af5a900f8594e1013f8d8b2c8">FileHandler::moveFile</a>($tmpicon_filepath, $icon_filepath);</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;        }</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;        <a class="code" href="classFileHandler.html#aa5969f9fe0ce869fc736c4da384959e9">FileHandler::removeFile</a>($tmpicon_filepath);</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    }</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;</div>
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;        <a class="code" href="classFileHandler.html#aa5969f9fe0ce869fc736c4da384959e9">FileHandler::removeFile</a>($tmpicon_filepath);</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    }</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;}</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;<span class="comment">/* End of file install.admin.controller.php */</span></div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;<span class="comment">/* Location: ./modules/install/install.admin.controller.php */</span></div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;}</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;<span class="comment">/* End of file install.admin.controller.php */</span></div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;<span class="comment">/* Location: ./modules/install/install.admin.controller.php */</span></div>
 <div class="ttc" id="classModuleObject_html_aa38e116023d54d3f5d8f507bb87663f4"><div class="ttname"><a href="classModuleObject.html#aa38e116023d54d3f5d8f507bb87663f4">ModuleObject\setTemplateFile</a></div><div class="ttdeci">setTemplateFile($filename)</div><div class="ttdef"><b>Definition:</b> <a href="ModuleObject_8class_8php_source.html#l00252">ModuleObject.class.php:252</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_aa08f01e3bf130d770b373ca8493e3e9b"><div class="ttname"><a href="func_8inc_8php.html#aa08f01e3bf130d770b373ca8493e3e9b">getController</a></div><div class="ttdeci">getController($module_name)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00090">func.inc.php:90</a></div></div>
 <div class="ttc" id="ko_8install_8php_html_a9062530c3b03479ca4530daee1c18887"><div class="ttname"><a href="ko_8install_8php.html#a9062530c3b03479ca4530daee1c18887">$oMenuAdminController</a></div><div class="ttdeci">$oMenuAdminController</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00007">ko.install.php:7</a></div></div>
@@ -506,7 +502,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 28 2014 14:19:29 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 10 2014 16:06:39 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>
