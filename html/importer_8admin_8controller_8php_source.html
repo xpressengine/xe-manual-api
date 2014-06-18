@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.7.5.2</span>
+   &#160;<span id="projectnumber">1.7.5.3</span>
    </div>
   </td>
  </tr>
@@ -955,7 +955,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00937"></a><span class="lineno">  937</span>&#160;                <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;last_update = base64_decode($xmlDoc-&gt;comment-&gt;update-&gt;body);</div>
 <div class="line"><a name="l00938"></a><span class="lineno">  938</span>&#160;                <span class="keywordflow">if</span>(!<a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;last_update) <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;last_update = <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;regdate;</div>
 <div class="line"><a name="l00939"></a><span class="lineno">  939</span>&#160;                <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;ipaddress = base64_decode($xmlDoc-&gt;comment-&gt;ipaddress-&gt;body);</div>
-<div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160;                <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;status = base64_decode($xmlDoc-&gt;comment-&gt;status-&gt;body);</div>
+<div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160;                <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;status = base64_decode($xmlDoc-&gt;comment-&gt;status-&gt;body)==<span class="stringliteral">&#39;&#39;</span>?<span class="charliteral">&#39;1&#39;</span>:base64_decode($xmlDoc-&gt;comment-&gt;status-&gt;body);</div>
 <div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160;                <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;list_order = <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;comment_srl*-1;</div>
 <div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160;                <span class="comment">// Change content information (attachment)</span></div>
 <div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160;                <span class="keywordflow">if</span>(count($files))</div>
@@ -1254,7 +1254,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="func_8inc_8php_html_a778b55fa9ebcf9a5ef0b017b998d9894"><div class="ttname"><a href="func_8inc_8php.html#a778b55fa9ebcf9a5ef0b017b998d9894">getFullSiteUrl</a></div><div class="ttdeci">getFullSiteUrl()</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00451">func.inc.php:451</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_ace5cc06ee6c5d655a1bdcc15846a779e"><div class="ttname"><a href="func_8inc_8php.html#ace5cc06ee6c5d655a1bdcc15846a779e">executeQueryArray</a></div><div class="ttdeci">executeQueryArray($query_id, $args=NULL, $arg_columns=NULL)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00219">func.inc.php:219</a></div></div>
 <div class="ttc" id="classimporter_html"><div class="ttname"><a href="classimporter.html">importer</a></div><div class="ttdef"><b>Definition:</b> <a href="importer_8class_8php_source.html#l00011">importer.class.php:11</a></div></div>
-<div class="ttc" id="classContext_html_a90ce25d65fe6c9778421cbb36ab3def5"><div class="ttname"><a href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context\get</a></div><div class="ttdeci">get($key)</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l01765">Context.class.php:1765</a></div></div>
+<div class="ttc" id="classContext_html_a90ce25d65fe6c9778421cbb36ab3def5"><div class="ttname"><a href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context\get</a></div><div class="ttdeci">get($key)</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l01771">Context.class.php:1771</a></div></div>
 <div class="ttc" id="ko_8install_8php_html_ae40aed4d7a99050245e66ca2a82949ed"><div class="ttname"><a href="ko_8install_8php.html#ae40aed4d7a99050245e66ca2a82949ed">$module_srl</a></div><div class="ttdeci">$module_srl</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00108">ko.install.php:108</a></div></div>
 <div class="ttc" id="classimporterAdminController_html_a9f2397ca84ef0adb182cf2b63b941604"><div class="ttname"><a href="classimporterAdminController.html#a9f2397ca84ef0adb182cf2b63b941604">importerAdminController\importTrackbacks</a></div><div class="ttdeci">importTrackbacks($fp, $module_srl, $document_srl)</div><div class="ttdef"><b>Definition:</b> <a href="importer_8admin_8controller_8php_source.html#l00831">importer.admin.controller.php:831</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_a418bc23855eebc0d90190dd625ac4474"><div class="ttname"><a href="func_8inc_8php.html#a418bc23855eebc0d90190dd625ac4474">executeQuery</a></div><div class="ttdeci">executeQuery($query_id, $args=NULL, $arg_columns=NULL)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00203">func.inc.php:203</a></div></div>
@@ -1270,7 +1270,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 10 2014 16:06:39 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 18 2014 14:55:56 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>
