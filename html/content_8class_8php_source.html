@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.7.5.3</span>
+   &#160;<span id="projectnumber">1.7.5.4</span>
    </div>
   </td>
  </tr>
@@ -524,7 +524,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00457"></a><span class="lineno"><a class="line" href="classcontent.html#a6f9991d17df1b915196ca159512552a1">  457</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classcontent.html#a6f9991d17df1b915196ca159512552a1">requestFeedContents</a>($rss_url)</div>
 <div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;    {</div>
 <div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;        $rss_url = str_replace(<span class="stringliteral">&#39;&amp;amp;&#39;</span>,<span class="charliteral">&#39;&amp;&#39;</span>,<a class="code" href="classContext.html#a0464dcbadfd67f62265fac90546d3bf8">Context::convertEncodingStr</a>($rss_url));</div>
-<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classFileHandler.html#a10c592d59693d8d7f313ca962d4c40ce">FileHandler::getRemoteResource</a>($rss_url, null, 3, <span class="stringliteral">&#39;GET&#39;</span>, <span class="stringliteral">&#39;application/xml&#39;</span>);</div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classFileHandler.html#a602c039b415c15d9d6866e586282faf7">FileHandler::getRemoteResource</a>($rss_url, null, 3, <span class="stringliteral">&#39;GET&#39;</span>, <span class="stringliteral">&#39;application/xml&#39;</span>);</div>
 <div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;    }</div>
 <div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;</div>
 <div class="line"><a name="l00463"></a><span class="lineno"><a class="line" href="classcontent.html#aa541a575f915fc5fddbd5075a545d991">  463</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classcontent.html#aa541a575f915fc5fddbd5075a545d991">_getRssItems</a>(<a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>)</div>
@@ -1028,6 +1028,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classdocumentItem_html"><div class="ttname"><a href="classdocumentItem.html">documentItem</a></div><div class="ttdef"><b>Definition:</b> <a href="document_8item_8php_source.html#l00011">document.item.php:11</a></div></div>
 <div class="ttc" id="classWidgetHandler_html"><div class="ttname"><a href="classWidgetHandler.html">WidgetHandler</a></div><div class="ttdoc">Handler class for widget execution. </div><div class="ttdef"><b>Definition:</b> <a href="WidgetHandler_8class_8php_source.html#l00010">WidgetHandler.class.php:10</a></div></div>
 <div class="ttc" id="classcontentItem_html_a2d0ac2755de034bee02842e1b4b8179c"><div class="ttname"><a href="classcontentItem.html#a2d0ac2755de034bee02842e1b4b8179c">contentItem\getThumbnail</a></div><div class="ttdeci">getThumbnail()</div><div class="ttdef"><b>Definition:</b> <a href="content_8class_8php_source.html#l00927">content.class.php:927</a></div></div>
+<div class="ttc" id="classFileHandler_html_a602c039b415c15d9d6866e586282faf7"><div class="ttname"><a href="classFileHandler.html#a602c039b415c15d9d6866e586282faf7">FileHandler\getRemoteResource</a></div><div class="ttdeci">getRemoteResource($url, $body=null, $timeout=3, $method= 'GET', $content_type=null, $headers=array(), $cookies=array(), $post_data=array(), $request_config=array())</div><div class="ttdef"><b>Definition:</b> <a href="FileHandler_8class_8php_source.html#l00518">FileHandler.class.php:518</a></div></div>
 <div class="ttc" id="classcontent_html_afe1cfad315cf8f3aeb352b22d0020142"><div class="ttname"><a href="classcontent.html#afe1cfad315cf8f3aeb352b22d0020142">content\_getRssThumbnail</a></div><div class="ttdeci">_getRssThumbnail($content)</div><div class="ttdef"><b>Definition:</b> <a href="content_8class_8php_source.html#l00636">content.class.php:636</a></div></div>
 <div class="ttc" id="classcontentItem_html_a7a513d119938877566418029c6124a45"><div class="ttname"><a href="classcontentItem.html#a7a513d119938877566418029c6124a45">contentItem\getDomain</a></div><div class="ttdeci">getDomain()</div><div class="ttdef"><b>Definition:</b> <a href="content_8class_8php_source.html#l00850">content.class.php:850</a></div></div>
 <div class="ttc" id="classcontent_html_a257f112a3719c28356bd49c336d3ad2f"><div class="ttname"><a href="classcontent.html#a257f112a3719c28356bd49c336d3ad2f">content\_getCommentItems</a></div><div class="ttdeci">_getCommentItems($args)</div><div class="ttdoc">Get a list of comments and return contentItem. </div><div class="ttdef"><b>Definition:</b> <a href="content_8class_8php_source.html#l00187">content.class.php:187</a></div></div>
@@ -1059,7 +1060,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classContext_html_a0464dcbadfd67f62265fac90546d3bf8"><div class="ttname"><a href="classContext.html#a0464dcbadfd67f62265fac90546d3bf8">Context\convertEncodingStr</a></div><div class="ttdeci">convertEncodingStr($str)</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l01060">Context.class.php:1060</a></div></div>
 <div class="ttc" id="classcontentItem_html_ad7355ad724398f4fbc79832241767405"><div class="ttname"><a href="classcontentItem.html#ad7355ad724398f4fbc79832241767405">contentItem\setContent</a></div><div class="ttdeci">setContent($content)</div><div class="ttdef"><b>Definition:</b> <a href="content_8class_8php_source.html#l00825">content.class.php:825</a></div></div>
 <div class="ttc" id="classContext_html_abf99203a93b0b0de0da3fbeced6ce333"><div class="ttname"><a href="classContext.html#abf99203a93b0b0de0da3fbeced6ce333">Context\getDefaultUrl</a></div><div class="ttdeci">getDefaultUrl()</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l00544">Context.class.php:544</a></div></div>
-<div class="ttc" id="classFileHandler_html_a10c592d59693d8d7f313ca962d4c40ce"><div class="ttname"><a href="classFileHandler.html#a10c592d59693d8d7f313ca962d4c40ce">FileHandler\getRemoteResource</a></div><div class="ttdeci">getRemoteResource($url, $body=null, $timeout=3, $method= 'GET', $content_type=null, $headers=array(), $cookies=array(), $post_data=array())</div><div class="ttdef"><b>Definition:</b> <a href="FileHandler_8class_8php_source.html#l00518">FileHandler.class.php:518</a></div></div>
 <div class="ttc" id="classcontentItem_html_a8e5d8c09bab20f5a0cd0874504cf5a5e"><div class="ttname"><a href="classcontentItem.html#a8e5d8c09bab20f5a0cd0874504cf5a5e">contentItem\getLink</a></div><div class="ttdeci">getLink()</div><div class="ttdef"><b>Definition:</b> <a href="content_8class_8php_source.html#l00864">content.class.php:864</a></div></div>
 <div class="ttc" id="classcontentItem_html_ac8050edaeafe9d6a9c3017185a60576d"><div class="ttname"><a href="classcontentItem.html#ac8050edaeafe9d6a9c3017185a60576d">contentItem\getAuthorSite</a></div><div class="ttdeci">getAuthorSite()</div><div class="ttdef"><b>Definition:</b> <a href="content_8class_8php_source.html#l00901">content.class.php:901</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_ace5cc06ee6c5d655a1bdcc15846a779e"><div class="ttname"><a href="func_8inc_8php.html#ace5cc06ee6c5d655a1bdcc15846a779e">executeQueryArray</a></div><div class="ttdeci">executeQueryArray($query_id, $args=NULL, $arg_columns=NULL)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00219">func.inc.php:219</a></div></div>
@@ -1081,7 +1081,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 18 2014 14:55:58 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jul 21 2014 13:02:43 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

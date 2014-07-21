@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.7.5.3</span>
+   &#160;<span id="projectnumber">1.7.5.4</span>
    </div>
   </td>
  </tr>
@@ -168,7 +168,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        $postdata[<span class="stringliteral">&quot;path&quot;</span>] = $this-&gt;package-&gt;path;</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        $postdata[<span class="stringliteral">&quot;module&quot;</span>] = <span class="stringliteral">&quot;resourceapi&quot;</span>;</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        $postdata[<span class="stringliteral">&quot;act&quot;</span>] = <span class="stringliteral">&quot;procResourceapiDownload&quot;</span>;</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        $buff = <a class="code" href="classFileHandler.html#a10c592d59693d8d7f313ca962d4c40ce">FileHandler::getRemoteResource</a>($this-&gt;base_url, NULL, 3, <span class="stringliteral">&quot;POST&quot;</span>, <span class="stringliteral">&quot;application/x-www-form-urlencoded&quot;</span>, array(), array(), $postdata);</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        $buff = <a class="code" href="classFileHandler.html#a602c039b415c15d9d6866e586282faf7">FileHandler::getRemoteResource</a>($this-&gt;base_url, NULL, 3, <span class="stringliteral">&quot;POST&quot;</span>, <span class="stringliteral">&quot;application/x-www-form-urlencoded&quot;</span>, array(), array(), $postdata);</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        <a class="code" href="classFileHandler.html#ad90c10a81460f437bc68952427606155">FileHandler::writeFile</a>($this-&gt;download_file, $buff);</div>
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    }</div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div>
@@ -755,6 +755,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classSFTPModuleInstaller_html_aafcf5a295a98403473988943b073838c"><div class="ttname"><a href="classSFTPModuleInstaller.html#aafcf5a295a98403473988943b073838c">SFTPModuleInstaller\$sftp</a></div><div class="ttdeci">$sftp</div><div class="ttdef"><b>Definition:</b> <a href="autoinstall_8lib_8php_source.html#l00339">autoinstall.lib.php:339</a></div></div>
 <div class="ttc" id="classContext_html_a4f3473f93028ce5f422135106f125f31"><div class="ttname"><a href="classContext.html#a4f3473f93028ce5f422135106f125f31">Context\getFTPInfo</a></div><div class="ttdeci">getFTPInfo()</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l00692">Context.class.php:692</a></div></div>
 <div class="ttc" id="classSFTPModuleInstaller_html_a57832797085ca931efd64c1080186e49"><div class="ttname"><a href="classSFTPModuleInstaller.html#a57832797085ca931efd64c1080186e49">SFTPModuleInstaller\_copyDir</a></div><div class="ttdeci">_copyDir(&amp;$file_list)</div><div class="ttdef"><b>Definition:</b> <a href="autoinstall_8lib_8php_source.html#l00446">autoinstall.lib.php:446</a></div></div>
+<div class="ttc" id="classFileHandler_html_a602c039b415c15d9d6866e586282faf7"><div class="ttname"><a href="classFileHandler.html#a602c039b415c15d9d6866e586282faf7">FileHandler\getRemoteResource</a></div><div class="ttdeci">getRemoteResource($url, $body=null, $timeout=3, $method= 'GET', $content_type=null, $headers=array(), $cookies=array(), $post_data=array(), $request_config=array())</div><div class="ttdef"><b>Definition:</b> <a href="FileHandler_8class_8php_source.html#l00518">FileHandler.class.php:518</a></div></div>
 <div class="ttc" id="classModuleInstaller_html_a4b669f44350c27a508c2aac3180836f6"><div class="ttname"><a href="classModuleInstaller.html#a4b669f44350c27a508c2aac3180836f6">ModuleInstaller\_unPack</a></div><div class="ttdeci">_unPack()</div><div class="ttdef"><b>Definition:</b> <a href="autoinstall_8lib_8php_source.html#l00250">autoinstall.lib.php:250</a></div></div>
 <div class="ttc" id="classFTPModuleInstaller_html_a77174bd1ad449c30c7f74333921441d6"><div class="ttname"><a href="classFTPModuleInstaller.html#a77174bd1ad449c30c7f74333921441d6">FTPModuleInstaller\FTPModuleInstaller</a></div><div class="ttdeci">FTPModuleInstaller(&amp;$package)</div><div class="ttdef"><b>Definition:</b> <a href="autoinstall_8lib_8php_source.html#l00723">autoinstall.lib.php:723</a></div></div>
 <div class="ttc" id="classSFTPModuleInstaller_html_a9c6b08191ecc35a10ed025b02d337b41"><div class="ttname"><a href="classSFTPModuleInstaller.html#a9c6b08191ecc35a10ed025b02d337b41">SFTPModuleInstaller\$ftp_info</a></div><div class="ttdeci">$ftp_info</div><div class="ttdef"><b>Definition:</b> <a href="autoinstall_8lib_8php_source.html#l00327">autoinstall.lib.php:327</a></div></div>
@@ -774,7 +775,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classFTPModuleInstaller_html_a069e2b098a7b06dfcf65bedf41c0fa0c"><div class="ttname"><a href="classFTPModuleInstaller.html#a069e2b098a7b06dfcf65bedf41c0fa0c">FTPModuleInstaller\_removeDir_real</a></div><div class="ttdeci">_removeDir_real($path)</div><div class="ttdef"><b>Definition:</b> <a href="autoinstall_8lib_8php_source.html#l00785">autoinstall.lib.php:785</a></div></div>
 <div class="ttc" id="classModuleInstaller_html_ac689b9d90b9845e4edb9726e5a0c1fd5"><div class="ttname"><a href="classModuleInstaller.html#ac689b9d90b9845e4edb9726e5a0c1fd5">ModuleInstaller\$target_path</a></div><div class="ttdeci">$target_path</div><div class="ttdef"><b>Definition:</b> <a href="autoinstall_8lib_8php_source.html#l00035">autoinstall.lib.php:35</a></div></div>
 <div class="ttc" id="classPHPFTPModuleInstaller_html"><div class="ttname"><a href="classPHPFTPModuleInstaller.html">PHPFTPModuleInstaller</a></div><div class="ttdef"><b>Definition:</b> <a href="autoinstall_8lib_8php_source.html#l00489">autoinstall.lib.php:489</a></div></div>
-<div class="ttc" id="classFileHandler_html_a10c592d59693d8d7f313ca962d4c40ce"><div class="ttname"><a href="classFileHandler.html#a10c592d59693d8d7f313ca962d4c40ce">FileHandler\getRemoteResource</a></div><div class="ttdeci">getRemoteResource($url, $body=null, $timeout=3, $method= 'GET', $content_type=null, $headers=array(), $cookies=array(), $post_data=array())</div><div class="ttdef"><b>Definition:</b> <a href="FileHandler_8class_8php_source.html#l00518">FileHandler.class.php:518</a></div></div>
 <div class="ttc" id="classModuleInstaller_html_a9ab463e12e9685dc42d4223b86a92754"><div class="ttname"><a href="classModuleInstaller.html#a9ab463e12e9685dc42d4223b86a92754">ModuleInstaller\uninstallModule</a></div><div class="ttdeci">uninstallModule()</div><div class="ttdef"><b>Definition:</b> <a href="autoinstall_8lib_8php_source.html#l00150">autoinstall.lib.php:150</a></div></div>
 <div class="ttc" id="classModuleInstaller_html_a07eb4b03dfd704124e05142cef5c9e82"><div class="ttname"><a href="classModuleInstaller.html#a07eb4b03dfd704124e05142cef5c9e82">ModuleInstaller\installModule</a></div><div class="ttdeci">installModule()</div><div class="ttdef"><b>Definition:</b> <a href="autoinstall_8lib_8php_source.html#l00192">autoinstall.lib.php:192</a></div></div>
 <div class="ttc" id="classFileHandler_html_a02d0cada88becf977968d961df2f864b"><div class="ttname"><a href="classFileHandler.html#a02d0cada88becf977968d961df2f864b">FileHandler\readDir</a></div><div class="ttdeci">readDir($path, $filter= '', $to_lower=FALSE, $concat_prefix=FALSE)</div><div class="ttdef"><b>Definition:</b> <a href="FileHandler_8class_8php_source.html#l00228">FileHandler.class.php:228</a></div></div>
@@ -792,7 +792,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 18 2014 14:55:55 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jul 21 2014 13:02:40 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>
