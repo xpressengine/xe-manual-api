@@ -19,6 +19,8 @@ Inheritance diagram for install\+View\+:\begin{figure}[H]
 \begin{DoxyCompactList}\small\item\em Initialization. \end{DoxyCompactList}\item 
 \hyperlink{classinstallView_a811e5c499d36055efb16411c0f0946c1}{disp\+Install\+Introduce} ()
 \begin{DoxyCompactList}\small\item\em Display license messages. \end{DoxyCompactList}\item 
+\hyperlink{classinstallView_a7182430aaf7f9fb4c8e18d21e9e5a4e7}{disp\+Install\+License\+Agreement} ()
+\begin{DoxyCompactList}\small\item\em License agreement. \end{DoxyCompactList}\item 
 \hyperlink{classinstallView_ac73107933a9a9498aaef04380137794d}{disp\+Install\+Check\+Env} ()
 \begin{DoxyCompactList}\small\item\em Display messages about installation environment. \end{DoxyCompactList}\item 
 \hyperlink{classinstallView_aa3ee9747353f128111f628a5c9359c5f}{disp\+Install\+Select\+D\+B} ()
@@ -64,7 +66,7 @@ Display messages about installation environment.
 
 
 
-Definition at line 64 of file install.\+view.\+php.
+Definition at line 96 of file install.\+view.\+php.
 
 \hypertarget{classinstallView_ad61c851960b71aad3b93cfd1a23149fb}{\index{install\+View@{install\+View}!disp\+Install\+Config\+Form@{disp\+Install\+Config\+Form}}
 \index{disp\+Install\+Config\+Form@{disp\+Install\+Config\+Form}!install\+View@{install\+View}}
@@ -79,7 +81,7 @@ Display a screen to enter \hyperlink{classDB}{D\+B} and administrator's informat
 
 
 
-Definition at line 133 of file install.\+view.\+php.
+Definition at line 165 of file install.\+view.\+php.
 
 \hypertarget{classinstallView_a61a05991e6aa8bf2278b9c438b70c8c7}{\index{install\+View@{install\+View}!disp\+Install\+D\+B\+Form@{disp\+Install\+D\+B\+Form}}
 \index{disp\+Install\+D\+B\+Form@{disp\+Install\+D\+B\+Form}!install\+View@{install\+View}}
@@ -94,7 +96,7 @@ Display a screen to enter \hyperlink{classDB}{D\+B} and administrator's informat
 
 
 
-Definition at line 115 of file install.\+view.\+php.
+Definition at line 147 of file install.\+view.\+php.
 
 \hypertarget{classinstallView_a811e5c499d36055efb16411c0f0946c1}{\index{install\+View@{install\+View}!disp\+Install\+Introduce@{disp\+Install\+Introduce}}
 \index{disp\+Install\+Introduce@{disp\+Install\+Introduce}!install\+View@{install\+View}}
@@ -107,9 +109,24 @@ Definition at line 115 of file install.\+view.\+php.
 
 Display license messages. 
 
-
+If './config/install.config.\+php' file created and write array shown in the example below, X\+E installed using config file. ex ) \$install\+\_\+config = array( 'db\+\_\+type' =$>$'mysqli\+\_\+innodb', 'db\+\_\+port' =$>$'3306', 'db\+\_\+hostname' =$>$'localhost', 'db\+\_\+userid' =$>$'root', 'db\+\_\+password' =$>$'root', 'db\+\_\+database' =$>$'xe\+\_\+database', 'db\+\_\+table\+\_\+prefix' =$>$'xe', 'user\+\_\+rewrite' =$>$'N', 'time\+\_\+zone' =$>$'0000', 'email\+\_\+address' =$>$'\href{mailto:admin@xe.com}{\tt admin@xe.\+com}', 'password' =$>$'pass', 'password2' =$>$'pass', 'nick\+\_\+name' =$>$'admin', 'user\+\_\+id' =$>$'admin', 'lang\+\_\+type' =$>$'ko', // en, jp, ... );
 
 Definition at line 33 of file install.\+view.\+php.
+
+\hypertarget{classinstallView_a7182430aaf7f9fb4c8e18d21e9e5a4e7}{\index{install\+View@{install\+View}!disp\+Install\+License\+Agreement@{disp\+Install\+License\+Agreement}}
+\index{disp\+Install\+License\+Agreement@{disp\+Install\+License\+Agreement}!install\+View@{install\+View}}
+\subsubsection[{disp\+Install\+License\+Agreement}]{\setlength{\rightskip}{0pt plus 5cm}install\+View\+::disp\+Install\+License\+Agreement (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classinstallView_a7182430aaf7f9fb4c8e18d21e9e5a4e7}
+
+
+License agreement. 
+
+
+
+Definition at line 85 of file install.\+view.\+php.
 
 \hypertarget{classinstallView_a00758f2134453587a409e8e8f3e4fada}{\index{install\+View@{install\+View}!disp\+Install\+Manager\+Form@{disp\+Install\+Manager\+Form}}
 \index{disp\+Install\+Manager\+Form@{disp\+Install\+Manager\+Form}!install\+View@{install\+View}}
@@ -124,7 +141,7 @@ Display a screen to enter \hyperlink{classDB}{D\+B} and administrator's informat
 
 
 
-Definition at line 164 of file install.\+view.\+php.
+Definition at line 196 of file install.\+view.\+php.
 
 \hypertarget{classinstallView_aa3ee9747353f128111f628a5c9359c5f}{\index{install\+View@{install\+View}!disp\+Install\+Select\+D\+B@{disp\+Install\+Select\+D\+B}}
 \index{disp\+Install\+Select\+D\+B@{disp\+Install\+Select\+D\+B}!install\+View@{install\+View}}
@@ -139,7 +156,7 @@ Choose a \hyperlink{classDB}{D\+B}.
 
 
 
-Definition at line 80 of file install.\+view.\+php.
+Definition at line 112 of file install.\+view.\+php.
 
 \hypertarget{classinstallView_ab24b18fa10e0268846ac0002d77ee453}{\index{install\+View@{install\+View}!init@{init}}
 \index{init@{init}!install\+View@{install\+View}}
@@ -165,7 +182,7 @@ Definition at line 15 of file install.\+view.\+php.
 )}}\label{classinstallView_a276997dd4c77a1a1cec5ceed56367ee9}
 
 
-Definition at line 146 of file install.\+view.\+php.
+Definition at line 178 of file install.\+view.\+php.
 
 
 

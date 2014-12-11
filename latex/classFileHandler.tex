@@ -36,7 +36,7 @@
 \item 
 \hyperlink{classFileHandler_a602c039b415c15d9d6866e586282faf7}{get\+Remote\+Resource} (\$url, \$body=null, \$timeout=3, \$method= 'G\+E\+T', \$content\+\_\+type=null, \$headers=array(), \$cookies=array(), \$post\+\_\+data=array(), \$request\+\_\+config=array())
 \item 
-\hyperlink{classFileHandler_a41e633e2f59cffddd5d5ffae1e3639c7}{get\+Remote\+File} (\$url, \$target\+\_\+filename, \$body=null, \$timeout=3, \$method= 'G\+E\+T', \$content\+\_\+type=null, \$headers=array())
+\hyperlink{classFileHandler_a0e3720cacd0137d537834376ce7b982b}{get\+Remote\+File} (\$url, \$target\+\_\+filename, \$body=null, \$timeout=3, \$method= 'G\+E\+T', \$content\+\_\+type=null, \$headers=array(), \$cookies=array(), \$post\+\_\+data=array(), \$request\+\_\+config=array())
 \item 
 \hyperlink{classFileHandler_a79dd068137470965b560f4d23d978e7d}{return\+Bytes} (\$val)
 \item 
@@ -57,6 +57,8 @@
 \hyperlink{classFileHandler_a862c4f6349792ae8f094ec456c9a26ed}{exists} (\$filename)
 \item 
 \hyperlink{classFileHandler_a5fd371542d6f1a86269d0b8795e74471}{is\+Dir} (\$path)
+\item 
+\hyperlink{classFileHandler_a9494e34a28f27b6a1ab2e032aada2bbb}{is\+Writable\+Dir} (\$path)
 \end{DoxyCompactItemize}
 
 
@@ -276,7 +278,7 @@ string Absolute path
 
 Definition at line 18 of file File\+Handler.\+class.\+php.
 
-\hypertarget{classFileHandler_a41e633e2f59cffddd5d5ffae1e3639c7}{\index{File\+Handler@{File\+Handler}!get\+Remote\+File@{get\+Remote\+File}}
+\hypertarget{classFileHandler_a0e3720cacd0137d537834376ce7b982b}{\index{File\+Handler@{File\+Handler}!get\+Remote\+File@{get\+Remote\+File}}
 \index{get\+Remote\+File@{get\+Remote\+File}!File\+Handler@{File\+Handler}}
 \subsubsection[{get\+Remote\+File}]{\setlength{\rightskip}{0pt plus 5cm}File\+Handler\+::get\+Remote\+File (
 \begin{DoxyParamCaption}
@@ -286,9 +288,12 @@ Definition at line 18 of file File\+Handler.\+class.\+php.
 \item[{}]{\$timeout = {\ttfamily 3}, }
 \item[{}]{\$method = {\ttfamily 'GET'}, }
 \item[{}]{\$content\+\_\+type = {\ttfamily null}, }
-\item[{}]{\$headers = {\ttfamily array()}}
+\item[{}]{\$headers = {\ttfamily array()}, }
+\item[{}]{\$cookies = {\ttfamily array()}, }
+\item[{}]{\$post\+\_\+data = {\ttfamily array()}, }
+\item[{}]{\$request\+\_\+config = {\ttfamily array()}}
 \end{DoxyParamCaption}
-)}}\label{classFileHandler_a41e633e2f59cffddd5d5ffae1e3639c7}
+)}}\label{classFileHandler_a0e3720cacd0137d537834376ce7b982b}
 Retrieves remote file, then stores it into target path.
 
 
@@ -305,7 +310,7 @@ string & {\em \$method} & G\+E\+T/\+P\+O\+S\+T \\
 \hline
 string & {\em \$content\+\_\+type} & Content type header of H\+T\+T\+P request \\
 \hline
- & {\em string\mbox{[}$\,$\mbox{]}} & \$headers Headers key vaule array. \\
+ & {\em string\mbox{[}$\,$\mbox{]}} & \$headers Headers key value array. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -346,7 +351,7 @@ string & {\em \$method} & G\+E\+T/\+P\+O\+S\+T \\
 \hline
 string & {\em \$content\+\_\+type} & Content type header of H\+T\+T\+P request \\
 \hline
- & {\em string\mbox{[}$\,$\mbox{]}} & \$headers Headers key vaule array. \\
+ & {\em string\mbox{[}$\,$\mbox{]}} & \$headers Headers key value array. \\
 \hline
  & {\em string\mbox{[}$\,$\mbox{]}} & \$cookies Cookies key value array. \\
 \hline
@@ -401,6 +406,27 @@ bool Returns F\+A\+L\+S\+E if the dir is not dir, or Returns full path of dir(st
 
 
 Definition at line 1015 of file File\+Handler.\+class.\+php.
+
+\hypertarget{classFileHandler_a9494e34a28f27b6a1ab2e032aada2bbb}{\index{File\+Handler@{File\+Handler}!is\+Writable\+Dir@{is\+Writable\+Dir}}
+\index{is\+Writable\+Dir@{is\+Writable\+Dir}!File\+Handler@{File\+Handler}}
+\subsubsection[{is\+Writable\+Dir}]{\setlength{\rightskip}{0pt plus 5cm}File\+Handler\+::is\+Writable\+Dir (
+\begin{DoxyParamCaption}
+\item[{}]{\$path}
+\end{DoxyParamCaption}
+)}}\label{classFileHandler_a9494e34a28f27b6a1ab2e032aada2bbb}
+Check is writable dir
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & Target dir path \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Definition at line 1027 of file File\+Handler.\+class.\+php.
 
 \hypertarget{classFileHandler_a9c2502d10c34a3996f1d6927624a7824}{\index{File\+Handler@{File\+Handler}!make\+Dir@{make\+Dir}}
 \index{make\+Dir@{make\+Dir}!File\+Handler@{File\+Handler}}
@@ -729,7 +755,7 @@ Write \$buff into the specified file
 \begin{DoxyParams}[1]{Parameters}
 string & {\em \$filename} & Path of target file \\
 \hline
-string & {\em \$buff} & Content to be writeen \\
+string & {\em \$buff} & Content to be written \\
 \hline
 string & {\em \$mode} & a(append) / w(write) \\
 \hline

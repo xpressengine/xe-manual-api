@@ -18,7 +18,7 @@ var searchData=
   ['layoutview',['layoutView',['../classlayoutView.html',1,'']]],
   ['libxmlclearerrors',['LibXmlClearErrors',['../classLibXmlClearErrors.html',1,'']]],
   ['libxmldisplayerror',['libXmlDisplayError',['../validate_8php.html#a314f82b963781ec88823449af5e5134e',1,'validate.php']]],
-  ['limit',['Limit',['../classLimit.html',1,'Limit'],['../classQuery.html#af2e290d02d3e8c157f9b85b9da1ac08c',1,'Query\limit()'],['../classLimit.html#a45e8c675dc77b863b87590c76b4113ad',1,'Limit\Limit()']]],
+  ['limit',['Limit',['../classLimit.html',1,'Limit'],['../classLimit.html#a45e8c675dc77b863b87590c76b4113ad',1,'Limit\Limit()'],['../classQuery.html#af2e290d02d3e8c157f9b85b9da1ac08c',1,'Query\limit()']]],
   ['limit_2eclass_2ephp',['Limit.class.php',['../Limit_8class_8php.html',1,'']]],
   ['limittag',['LimitTag',['../classLimitTag.html',1,'LimitTag'],['../classLimitTag.html#a9b5dbee572b93d0ae32089e8deed7462',1,'LimitTag\LimitTag()']]],
   ['limittag_2eclass_2ephp',['LimitTag.class.php',['../LimitTag_8class_8php.html',1,'']]],

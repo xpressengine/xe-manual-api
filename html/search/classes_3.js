@@ -14,6 +14,7 @@ var searchData=
   ['dbparser',['DBParser',['../classDBParser.html',1,'']]],
   ['defaultvalue',['DefaultValue',['../classDefaultValue.html',1,'']]],
   ['deleteexpression',['DeleteExpression',['../classDeleteExpression.html',1,'']]],
+  ['directmoduleinstaller',['DirectModuleInstaller',['../classDirectModuleInstaller.html',1,'']]],
   ['displayhandler',['DisplayHandler',['../classDisplayHandler.html',1,'']]],
   ['document',['document',['../classdocument.html',1,'']]],
   ['documentadmincontroller',['documentAdminController',['../classdocumentAdminController.html',1,'']]],

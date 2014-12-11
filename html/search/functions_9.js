@@ -137,5 +137,6 @@ var searchData=
   ['isvaildmailaddress',['isVaildMailAddress',['../classMail.html#a2d7fd899ae79dc18e7804a044127dbac',1,'Mail']]],
   ['isvalid',['isValid',['../classCacheApc.html#ae915c4aded713867d7fab9b691ab5795',1,'CacheApc\isValid()'],['../classCacheFile.html#ab154224d403ed4199885414cfa34d713',1,'CacheFile\isValid()'],['../classCacheHandler.html#aea9da5e2293a9062bc7a5f0a4104c9ce',1,'CacheHandler\isValid()'],['../classCacheBase.html#a9a8227b929be86601f4570f787c22746',1,'CacheBase\isValid()'],['../classCacheMemcache.html#af0882957fc5b20e7fb70aeae652920e8',1,'CacheMemcache\isValid()'],['../classCacheWincache.html#af8d27de13a90149d523c59dc589d2c15',1,'CacheWincache\isValid()'],['../classArgument.html#a3e07b6c495166e96aea4e4f90bb0fe53',1,'Argument\isValid()']]],
   ['isvalidoldpassword',['isValidOldPassword',['../classDBMysql.html#a19020f1ece293bcc332400234ee95dea',1,'DBMysql']]],
-  ['isvalidpassword',['isValidPassword',['../classmemberModel.html#a5d2727323d47e4304998311424bb4091',1,'memberModel']]]
+  ['isvalidpassword',['isValidPassword',['../classmemberModel.html#a5d2727323d47e4304998311424bb4091',1,'memberModel']]],
+  ['iswritabledir',['isWritableDir',['../classFileHandler.html#a9494e34a28f27b6a1ab2e032aada2bbb',1,'FileHandler\isWritableDir()'],['../classautoinstallAdminModel.html#ab3314bacf64ba16ea88180124699fc54',1,'autoinstallAdminModel\isWritableDir()']]]
 ];

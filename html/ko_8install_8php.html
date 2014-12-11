@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.7.5.7</span>
+   &#160;<span id="projectnumber">1.7.8</span>
    </div>
   </td>
  </tr>
@@ -97,6 +97,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Variables</h2></td></tr>
 <tr class="memitem:a7714b111b644017933931ec69a154102"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ko_8install_8php.html#a7714b111b644017933931ec69a154102">$lang</a> = <a class="el" href="classContext.html#ae75d6f4064d09e48d0d76614b6997e29">Context::getLangType</a>()</td></tr>
 <tr class="separator:a7714b111b644017933931ec69a154102"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a193c1593ceb216e9fb05b0bad01ebbc8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ko_8install_8php.html#a193c1593ceb216e9fb05b0bad01ebbc8">$logged_info</a> = <a class="el" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>('logged_info')</td></tr>
+<tr class="separator:a193c1593ceb216e9fb05b0bad01ebbc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9062530c3b03479ca4530daee1c18887"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ko_8install_8php.html#a9062530c3b03479ca4530daee1c18887">$oMenuAdminController</a> = <a class="el" href="func_8inc_8php.html#a2f7ca88a5226536aca3b2f5682bd7b2d">getAdminController</a>('<a class="el" href="classmenu.html">menu</a>')</td></tr>
 <tr class="separator:a9062530c3b03479ca4530daee1c18887"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73004ce9cd673c1bfafd1dc351134797"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = $oMenuAdminController-&gt;addMenu('Welcome <a class="el" href="classmenu.html">menu</a>')</td></tr>
@@ -168,6 +170,16 @@ Variables</h2></td></tr>
 <tr class="separator:aac43fce682d4b7a05df6d3e44c2c54e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9008ed94ba185855b1723e367744b87e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a> = new stdClass</td></tr>
 <tr class="separator:a9008ed94ba185855b1723e367744b87e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa61f9e08f0fe505094d26f8143f30bbd"><td class="memItemLeft" align="right" valign="top">$obj&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ko_8install_8php.html#aa61f9e08f0fe505094d26f8143f30bbd">member_srl</a> = $logged_info-&gt;member_srl</td></tr>
+<tr class="separator:aa61f9e08f0fe505094d26f8143f30bbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74f1a394389d774e5b4cd5d1d15413f7"><td class="memItemLeft" align="right" valign="top">$obj&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ko_8install_8php.html#a74f1a394389d774e5b4cd5d1d15413f7">user_id</a> = htmlspecialchars_decode($logged_info-&gt;user_id)</td></tr>
+<tr class="separator:a74f1a394389d774e5b4cd5d1d15413f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a115401aff7da80e73c66e9f76505426b"><td class="memItemLeft" align="right" valign="top">$obj&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ko_8install_8php.html#a115401aff7da80e73c66e9f76505426b">user_name</a> = htmlspecialchars_decode($logged_info-&gt;user_name)</td></tr>
+<tr class="separator:a115401aff7da80e73c66e9f76505426b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a151ecae87a1f3d7e257aa089803086bd"><td class="memItemLeft" align="right" valign="top">$obj&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ko_8install_8php.html#a151ecae87a1f3d7e257aa089803086bd">nick_name</a> = htmlspecialchars_decode($logged_info-&gt;nick_name)</td></tr>
+<tr class="separator:a151ecae87a1f3d7e257aa089803086bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dffea0d5ba8194f8ef01f414af0c831"><td class="memItemLeft" align="right" valign="top">$obj&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ko_8install_8php.html#a1dffea0d5ba8194f8ef01f414af0c831">email_address</a> = $logged_info-&gt;email_address</td></tr>
+<tr class="separator:a1dffea0d5ba8194f8ef01f414af0c831"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a370bb6450fab1da3e0ed9f484a38b761"><td class="memItemLeft" align="right" valign="top">$obj&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ko_8install_8php.html#a370bb6450fab1da3e0ed9f484a38b761">module_srl</a> = $module_srl</td></tr>
 <tr class="separator:a370bb6450fab1da3e0ed9f484a38b761"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65dddc3e5e47cb506e6b5417ffb3bdef"><td class="memItemLeft" align="right" valign="top">$obj&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ko_8install_8php.html#a65dddc3e5e47cb506e6b5417ffb3bdef">content</a> = $oTemplateHandler-&gt;compile(<a class="el" href="config_8inc_8php.html#a5387c7a3f2aa38adf16f324cee88db88">_XE_PATH_</a> . 'modules/<a class="el" href="classinstall.html">install</a>/script/welcome_content', 'welcome_content_'.$lang)</td></tr>
@@ -198,7 +210,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00044">44</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
+<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00045">45</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
 
 </div>
 </div>
@@ -212,7 +224,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00077">77</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
+<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00078">78</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
 
 </div>
 </div>
@@ -226,7 +238,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00126">126</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
+<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00134">134</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
 
 </div>
 </div>
@@ -240,7 +252,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00037">37</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
+<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00038">38</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
 
 </div>
 </div>
@@ -268,7 +280,21 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00046">46</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
+<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00047">47</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a193c1593ceb216e9fb05b0bad01ebbc8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$logged_info = <a class="el" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>('logged_info')</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00005">5</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
 
 </div>
 </div>
@@ -282,7 +308,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00135">135</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
+<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00143">143</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
 
 </div>
 </div>
@@ -296,7 +322,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00030">30</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
+<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00031">31</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
 
 </div>
 </div>
@@ -310,7 +336,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00013">13</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
+<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00014">14</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
 
 </div>
 </div>
@@ -324,7 +350,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00061">61</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
+<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00062">62</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
 
 </div>
 </div>
@@ -338,7 +364,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00136">136</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
+<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00144">144</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
 
 </div>
 </div>
@@ -352,7 +378,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00108">108</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
+<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00109">109</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
 
 </div>
 </div>
@@ -366,7 +392,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00107">107</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
+<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00108">108</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
 
 </div>
 </div>
@@ -380,7 +406,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00081">81</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
+<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00082">82</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
 
 </div>
 </div>
@@ -394,7 +420,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00082">82</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
+<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00083">83</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
 
 </div>
 </div>
@@ -408,7 +434,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00103">103</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
+<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00104">104</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
 
 </div>
 </div>
@@ -422,7 +448,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00116">116</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
+<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00117">117</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
 
 </div>
 </div>
@@ -436,7 +462,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00114">114</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
+<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00115">115</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
 
 </div>
 </div>
@@ -450,7 +476,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00113">113</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
+<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00114">114</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
 
 </div>
 </div>
@@ -464,7 +490,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00051">51</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
+<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00052">52</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
 
 </div>
 </div>
@@ -478,7 +504,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00007">7</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
+<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00008">8</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
 
 </div>
 </div>
@@ -492,7 +518,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00134">134</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
+<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00142">142</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
 
 </div>
 </div>
@@ -506,7 +532,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00092">92</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
+<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00093">93</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
 
 </div>
 </div>
@@ -520,7 +546,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00111">111</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
+<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00112">112</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
 
 </div>
 </div>
@@ -534,7 +560,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00008">8</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
+<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00009">9</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
 
 </div>
 </div>
@@ -548,7 +574,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00143">143</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
+<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00151">151</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
 
 </div>
 </div>
@@ -562,7 +588,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00074">74</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
+<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00075">75</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
 
 </div>
 </div>
@@ -576,7 +602,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00088">88</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
+<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00089">89</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
 
 </div>
 </div>
@@ -590,7 +616,21 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00121">121</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
+<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00129">129</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1dffea0d5ba8194f8ef01f414af0c831"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$obj email_address = $logged_info-&gt;email_address</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00123">123</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
 
 </div>
 </div>
@@ -604,7 +644,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00056">56</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
+<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00057">57</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
 
 </div>
 </div>
@@ -618,7 +658,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00038">38</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
+<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00039">39</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
 
 </div>
 </div>
@@ -632,7 +672,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00145">145</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
+<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00153">153</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
 
 </div>
 </div>
@@ -646,7 +686,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00047">47</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
+<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00048">48</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
 
 </div>
 </div>
@@ -660,7 +700,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00078">78</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
+<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00079">79</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
 
 </div>
 </div>
@@ -674,7 +714,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00039">39</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
+<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00040">40</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
 
 </div>
 </div>
@@ -688,7 +728,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00049">49</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
+<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00050">50</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
 
 </div>
 </div>
@@ -702,7 +742,21 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00138">138</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
+<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00146">146</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa61f9e08f0fe505094d26f8143f30bbd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$obj member_srl = $logged_info-&gt;member_srl</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00119">119</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
 
 </div>
 </div>
@@ -716,7 +770,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00041">41</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
+<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00042">42</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
 
 </div>
 </div>
@@ -730,7 +784,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00042">42</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
+<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00043">43</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
 
 </div>
 </div>
@@ -744,7 +798,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00079">79</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
+<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00080">80</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
 
 </div>
 </div>
@@ -758,7 +812,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00090">90</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
+<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00091">91</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
 
 </div>
 </div>
@@ -772,7 +826,21 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00117">117</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
+<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00125">125</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a151ecae87a1f3d7e257aa089803086bd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$obj nick_name = htmlspecialchars_decode($logged_info-&gt;nick_name)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00122">122</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
 
 </div>
 </div>
@@ -786,7 +854,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00045">45</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
+<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00046">46</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
 
 </div>
 </div>
@@ -800,7 +868,35 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00048">48</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
+<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00049">49</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a74f1a394389d774e5b4cd5d1d15413f7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$obj user_id = htmlspecialchars_decode($logged_info-&gt;user_id)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00120">120</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a115401aff7da80e73c66e9f76505426b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$obj user_name = htmlspecialchars_decode($logged_info-&gt;user_name)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00121">121</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
 
 </div>
 </div>
@@ -814,14 +910,14 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00040">40</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
+<p>Definition at line <a class="el" href="ko_8install_8php_source.html#l00041">41</a> of file <a class="el" href="ko_8install_8php_source.html">ko.install.php</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 7 2014 10:44:28 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 11 2014 11:30:00 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

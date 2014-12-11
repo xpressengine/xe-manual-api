@@ -1,7 +1,7 @@
 var searchData=
 [
   ['libxmldisplayerror',['libXmlDisplayError',['../validate_8php.html#a314f82b963781ec88823449af5e5134e',1,'validate.php']]],
-  ['limit',['limit',['../classQuery.html#af2e290d02d3e8c157f9b85b9da1ac08c',1,'Query\limit()'],['../classLimit.html#a45e8c675dc77b863b87590c76b4113ad',1,'Limit\Limit()']]],
+  ['limit',['Limit',['../classLimit.html#a45e8c675dc77b863b87590c76b4113ad',1,'Limit\Limit()'],['../classQuery.html#af2e290d02d3e8c157f9b85b9da1ac08c',1,'Query\limit()']]],
   ['limittag',['LimitTag',['../classLimitTag.html#a9b5dbee572b93d0ae32089e8deed7462',1,'LimitTag']]],
   ['linkallmoduleinstancestositemap',['linkAllModuleInstancesToSitemap',['../classmenuAdminController.html#a49adc0f822800b87a3419fc4d0d48005',1,'menuAdminController']]],
   ['load',['load',['../classValidator.html#a43de0eb69cae01eee855f825324ffc39',1,'Validator']]],

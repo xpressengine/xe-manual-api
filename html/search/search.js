@@ -12,7 +12,7 @@ var indexSectionsWithContent =
   2: "cm",
   3: "abcdefghijklmnopqrstuvwx",
   4: "_abcdefghijlmnopqrstuvwxz",
-  5: "$_cdefgijlmnrstv",
+  5: "$_cdefgijlmnrstuv",
   6: "cdtx"
 };
 

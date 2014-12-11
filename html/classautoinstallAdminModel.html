@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.7.5.7</span>
+   &#160;<span id="projectnumber">1.7.8</span>
    </div>
   </td>
  </tr>
@@ -122,6 +122,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8824834dd97b7e69b74af51778d27ed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6d50fbb755d2b48cdbd4269a1d1e404"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classautoinstallAdminModel.html#ad6d50fbb755d2b48cdbd4269a1d1e404">getAutoInstallAdminInstallInfo</a> ()</td></tr>
 <tr class="separator:ad6d50fbb755d2b48cdbd4269a1d1e404"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a899c3f3182e6c80b28f0aabc261bf38c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classautoinstallAdminModel.html#a899c3f3182e6c80b28f0aabc261bf38c">checkUseDirectModuleInstall</a> ($package)</td></tr>
+<tr class="separator:a899c3f3182e6c80b28f0aabc261bf38c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3314bacf64ba16ea88180124699fc54"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classautoinstallAdminModel.html#ab3314bacf64ba16ea88180124699fc54">isWritableDir</a> ($path)</td></tr>
+<tr class="separator:ab3314bacf64ba16ea88180124699fc54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classautoinstall"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classautoinstall')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classautoinstall.html">autoinstall</a></td></tr>
 <tr class="memitem:aa76d5fcbf6ac9450b810acefa4b85a51 inherit pub_methods_classautoinstall"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classautoinstall.html#aa76d5fcbf6ac9450b810acefa4b85a51">autoinstall</a> ()</td></tr>
 <tr class="separator:aa76d5fcbf6ac9450b810acefa4b85a51 inherit pub_methods_classautoinstall"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -262,7 +266,7 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a1fcbb01c627ce5ff104c05f54715bd61 inherit pub_attribs_classModuleObject"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleObject.html#a1fcbb01c627ce5ff104c05f54715bd61">$edited_layout_file</a> = ''</td></tr>
 <tr class="memdesc:a1fcbb01c627ce5ff104c05f54715bd61 inherit pub_attribs_classModuleObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">name of temporary layout files that is modified in an admin mode  <a href="#a1fcbb01c627ce5ff104c05f54715bd61">More...</a><br /></td></tr>
 <tr class="separator:a1fcbb01c627ce5ff104c05f54715bd61 inherit pub_attribs_classModuleObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4efa1b4c623247763e4d56f76c5fb1c inherit pub_attribs_classModuleObject"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleObject.html#ad4efa1b4c623247763e4d56f76c5fb1c">$stop_proc</a> = false</td></tr>
+<tr class="memitem:ad4efa1b4c623247763e4d56f76c5fb1c inherit pub_attribs_classModuleObject"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleObject.html#ad4efa1b4c623247763e4d56f76c5fb1c">$stop_proc</a> = FALSE</td></tr>
 <tr class="memdesc:ad4efa1b4c623247763e4d56f76c5fb1c inherit pub_attribs_classModuleObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">a flag to indicating whether to stop the execution of code.  <a href="#ad4efa1b4c623247763e4d56f76c5fb1c">More...</a><br /></td></tr>
 <tr class="separator:ad4efa1b4c623247763e4d56f76c5fb1c inherit pub_attribs_classModuleObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed2cac16f365c2b463772e3eeb0c1402 inherit pub_attribs_classModuleObject"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleObject.html#aed2cac16f365c2b463772e3eeb0c1402">$module_config</a> = NULL</td></tr>
@@ -286,6 +290,24 @@ Public Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="autoinstall_8admin_8model_8php_source.html#l00008">8</a> of file <a class="el" href="autoinstall_8admin_8model_8php_source.html">autoinstall.admin.model.php</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a899c3f3182e6c80b28f0aabc261bf38c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">autoinstallAdminModel::checkUseDirectModuleInstall </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$package</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="autoinstall_8admin_8model_8php_source.html#l00351">351</a> of file <a class="el" href="autoinstall_8admin_8model_8php_source.html">autoinstall.admin.model.php</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ad6d50fbb755d2b48cdbd4269a1d1e404"></a>
 <div class="memitem">
 <div class="memproto">
@@ -479,6 +501,24 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ab3314bacf64ba16ea88180124699fc54"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">autoinstallAdminModel::isWritableDir </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="autoinstall_8admin_8model_8php_source.html#l00382">382</a> of file <a class="el" href="autoinstall_8admin_8model_8php_source.html">autoinstall.admin.model.php</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a614c3051b3e9abff8c17dfc0664d6da5"></a>
 <div class="memitem">
 <div class="memproto">
@@ -577,7 +617,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 7 2014 10:44:28 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 11 2014 11:30:01 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>
