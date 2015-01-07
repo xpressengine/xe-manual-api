@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['security',['Security',['../classSecurity.html',1,'']]],
   ['selectcolumnstag',['SelectColumnsTag',['../classSelectColumnsTag.html',1,'']]],
   ['selectcolumntag',['SelectColumnTag',['../classSelectColumnTag.html',1,'']]],
   ['selectexpression',['SelectExpression',['../classSelectExpression.html',1,'']]],
@@ -17,6 +18,5 @@ var searchData=
   ['spamfiltercontroller',['spamfilterController',['../classspamfilterController.html',1,'']]],
   ['spamfiltermodel',['spamfilterModel',['../classspamfilterModel.html',1,'']]],
   ['starexpression',['StarExpression',['../classStarExpression.html',1,'']]],
-  ['subquery',['Subquery',['../classSubquery.html',1,'']]],
-  ['syntaxerror',['SyntaxError',['../classSyntaxError.html',1,'']]]
+  ['subquery',['Subquery',['../classSubquery.html',1,'']]]
 ];

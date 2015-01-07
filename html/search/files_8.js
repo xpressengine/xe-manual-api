@@ -5,8 +5,8 @@ var searchData=
   ['importer_2eadmin_2econtroller_2ephp',['importer.admin.controller.php',['../importer_8admin_8controller_8php.html',1,'']]],
   ['importer_2eadmin_2eview_2ephp',['importer.admin.view.php',['../importer_8admin_8view_8php.html',1,'']]],
   ['importer_2eclass_2ephp',['importer.class.php',['../importer_8class_8php.html',1,'']]],
-  ['index_2ephp',['index.php',['../index_8php.html',1,'']]],
   ['index_2ephp',['index.php',['../admin_2index_8php.html',1,'']]],
+  ['index_2ephp',['index.php',['../index_8php.html',1,'']]],
   ['indexhint_2eclass_2ephp',['IndexHint.class.php',['../IndexHint_8class_8php.html',1,'']]],
   ['indextag_2eclass_2ephp',['IndexTag.class.php',['../IndexTag_8class_8php.html',1,'']]],
   ['insertcolumnstag_2eclass_2ephp',['InsertColumnsTag.class.php',['../InsertColumnsTag_8class_8php.html',1,'']]],
@@ -22,5 +22,6 @@ var searchData=
   ['integration_5fsearch_2eadmin_2eview_2ephp',['integration_search.admin.view.php',['../integration__search_8admin_8view_8php.html',1,'']]],
   ['integration_5fsearch_2eclass_2ephp',['integration_search.class.php',['../integration__search_8class_8php.html',1,'']]],
   ['integration_5fsearch_2emodel_2ephp',['integration_search.model.php',['../integration__search_8model_8php.html',1,'']]],
-  ['integration_5fsearch_2eview_2ephp',['integration_search.view.php',['../integration__search_8view_8php.html',1,'']]]
+  ['integration_5fsearch_2eview_2ephp',['integration_search.view.php',['../integration__search_8view_8php.html',1,'']]],
+  ['ipfilter_2eclass_2ephp',['IpFilter.class.php',['../IpFilter_8class_8php.html',1,'']]]
 ];

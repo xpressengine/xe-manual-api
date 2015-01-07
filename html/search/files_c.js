@@ -26,7 +26,6 @@ var searchData=
   ['message_2emobile_2ephp',['message.mobile.php',['../message_8mobile_8php.html',1,'']]],
   ['message_2eview_2ephp',['message.view.php',['../message_8view_8php.html',1,'']]],
   ['mhtml_2eclass_2ephp',['mhtml.class.php',['../mhtml_8class_8php.html',1,'']]],
-  ['minify_2ephp',['minify.php',['../minify_8php.html',1,'']]],
   ['mobile_2eaddon_2ephp',['mobile.addon.php',['../mobile_8addon_8php.html',1,'']]],
   ['mobile_2eclass_2ephp',['mobile.class.php',['../addons_2mobile_2classes_2mobile_8class_8php.html',1,'']]],
   ['mobile_2eclass_2ephp',['Mobile.class.php',['../classes_2mobile_2mobile_8class_8php.html',1,'']]],

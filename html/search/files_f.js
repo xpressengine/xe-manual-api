@@ -24,5 +24,6 @@ var searchData=
   ['poll_2eclass_2ephp',['poll.class.php',['../poll_8class_8php.html',1,'']]],
   ['poll_2econtroller_2ephp',['poll.controller.php',['../poll_8controller_8php.html',1,'']]],
   ['poll_2emodel_2ephp',['poll.model.php',['../poll_8model_8php.html',1,'']]],
-  ['poll_5fmaker_2eclass_2ephp',['poll_maker.class.php',['../poll__maker_8class_8php.html',1,'']]]
+  ['poll_5fmaker_2eclass_2ephp',['poll_maker.class.php',['../poll__maker_8class_8php.html',1,'']]],
+  ['purifier_2eclass_2ephp',['Purifier.class.php',['../Purifier_8class_8php.html',1,'']]]
 ];

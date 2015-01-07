@@ -2,7 +2,10 @@ var searchData=
 [
   ['saveitems',['saveItems',['../classextract.html#a00d078dc669fb822cbf073b04ec8668d',1,'extract']]],
   ['savelangselected',['saveLangSelected',['../classinstallAdminController.html#ae7c646732649d1b526f0740d988a4164',1,'installAdminController']]],
+  ['savetar',['saveTar',['../classtar.html#ac70edc9fc85a3106aaa3c07a3a57a0a2',1,'tar']]],
   ['savetemporaryfile',['saveTemporaryFile',['../classimporterAdminController.html#af263aba79294e35c2027b2e41ac2a198',1,'importerAdminController\saveTemporaryFile()'],['../classttimport.html#a1b234f17517d13e725bfd53d17f4debd',1,'ttimport\saveTemporaryFile()']]],
+  ['security',['Security',['../classSecurity.html',1,'Security'],['../classSecurity.html#ab74d8099e74ecc760f9328fce70760c7',1,'Security\Security()']]],
+  ['security_2eclass_2ephp',['Security.class.php',['../Security_8class_8php.html',1,'']]],
   ['select',['select',['../classQuery.html#a90a4c6f16abc24f107cd9cbc8db6baea',1,'Query']]],
   ['selectcolumnstag',['SelectColumnsTag',['../classSelectColumnsTag.html',1,'SelectColumnsTag'],['../classSelectColumnsTag.html#a272d801d4a575217cd168a99bc7648a7',1,'SelectColumnsTag\SelectColumnsTag()']]],
   ['selectcolumnstag_2eclass_2ephp',['SelectColumnsTag.class.php',['../SelectColumnsTag_8class_8php.html',1,'']]],
@@ -27,10 +30,6 @@ var searchData=
   ['sessioncontroller',['sessionController',['../classsessionController.html',1,'']]],
   ['sessionmodel',['sessionModel',['../classsessionModel.html',1,'']]],
   ['set',['set',['../classContext.html#a9f79aa7aecf2e4d8006e517844523fc2',1,'Context\set()'],['../classextract.html#a77ee5d76df5e4b0f9861d33b1e679c4b',1,'extract\set()']]],
-  ['set_5fmax_5fexecution_5ftime',['set_max_execution_time',['../classCSSmin.html#add716d11ace7799312b347800fcaf9e6',1,'CSSmin']]],
-  ['set_5fmemory_5flimit',['set_memory_limit',['../classCSSmin.html#a5f497b0c5e32500e69260c58d575266c',1,'CSSmin']]],
-  ['set_5fpcre_5fbacktrack_5flimit',['set_pcre_backtrack_limit',['../classCSSmin.html#a996e3c26c694c6205b559bfcea08b84c',1,'CSSmin']]],
-  ['set_5fpcre_5frecursion_5flimit',['set_pcre_recursion_limit',['../classCSSmin.html#a1ba64fb7c48d960e48e1abbf7e4ec1a6',1,'CSSmin']]],
   ['setaccessible',['setAccessible',['../classcommentItem.html#af9af617b212fccb1f308ff0b0feff48f',1,'commentItem']]],
   ['setact',['setAct',['../classModuleObject.html#a35d0b9120ea393d4b4177b0c667e198c',1,'ModuleObject']]],
   ['setaction',['setAction',['../classQuery.html#a7039862d8a88c94733b4ffabd655ade6',1,'Query']]],
@@ -128,7 +127,6 @@ var searchData=
   ['settoalldocumentextravars',['setToAllDocumentExtraVars',['../classdocumentModel.html#a030147f71d77bdf6cf23798a2264445b',1,'documentModel']]],
   ['settrashsrl',['setTrashSrl',['../classTrashVO.html#a2f8108d81c6db69b8c954b028bcef8dc',1,'TrashVO']]],
   ['setunserializedobject',['setUnserializedObject',['../classTrashVO.html#affa3c85e2c01ad0e687afd9cdae171c0',1,'TrashVO']]],
-  ['setup',['setUp',['../classXmlQueriesTest.html#ae1b1995ecd45742c8cb32e79bb20f4e1',1,'XmlQueriesTest']]],
   ['setuploadinfo',['setUploadInfo',['../classfileController.html#a5cffda3cff8207351a7bd55065176c69',1,'fileController']]],
   ['setupperurl',['setUpperUrl',['../classmobileXE.html#a7f71628477316cc8845b8ca3d9857b29',1,'mobileXE']]],
   ['setuserid',['setUserId',['../classTrashVO.html#a170dc90ea1fec615ccc7aef649f89390',1,'TrashVO']]],
@@ -158,7 +156,6 @@ var searchData=
   ['spamfiltermodel',['spamfilterModel',['../classspamfilterModel.html',1,'']]],
   ['starexpression',['StarExpression',['../classStarExpression.html',1,'StarExpression'],['../classStarExpression.html#a7c9d934f3e104f7987f4266ef9e28eff',1,'StarExpression\StarExpression()']]],
   ['starexpression_2eclass_2ephp',['StarExpression.class.php',['../StarExpression_8class_8php.html',1,'']]],
-  ['statement_5fform',['STATEMENT_FORM',['../jsminplus_8php.html#a4e43aadaa46d5f2314079520634f70a1',1,'jsminplus.php']]],
   ['stop',['stop',['../classModuleObject.html#ac4c2bac7917c3ab3a0e816b99574727c',1,'ModuleObject']]],
   ['straightenmenu',['straightenMenu',['../classmenuMobile.html#aba6cbdcf9a47990ae13d8ae647fd0d2f',1,'menuMobile']]],
   ['stripembedtagforadmin',['stripEmbedTagForAdmin',['../func_8inc_8php.html#ad6d8ff5f851d62d39b170a46b766d834',1,'func.inc.php']]],
@@ -168,6 +165,5 @@ var searchData=
   ['syncmobileskininfotomoduleinfo',['syncMobileSkinInfoToModuleInfo',['../classmoduleModel.html#ae90cd832480cf8c46e96d95c20a63387',1,'moduleModel']]],
   ['syncmoduletosite',['syncModuleToSite',['../classmoduleModel.html#ab51d556817682d653b92e09a34b138d6',1,'moduleModel']]],
   ['syncpoll',['syncPoll',['../classpollController.html#a9a22d9c1e70e7fdf3d635cc4e02fe8f7',1,'pollController']]],
-  ['syncskininfotomoduleinfo',['syncSkinInfoToModuleInfo',['../classmoduleModel.html#af9179765de4796b45236b62be16eb8fb',1,'moduleModel']]],
-  ['syntaxerror',['SyntaxError',['../classSyntaxError.html',1,'']]]
+  ['syncskininfotomoduleinfo',['syncSkinInfoToModuleInfo',['../classmoduleModel.html#af9179765de4796b45236b62be16eb8fb',1,'moduleModel']]]
 ];

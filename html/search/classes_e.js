@@ -22,5 +22,6 @@ var searchData=
   ['polladminmodel',['pollAdminModel',['../classpollAdminModel.html',1,'']]],
   ['polladminview',['pollAdminView',['../classpollAdminView.html',1,'']]],
   ['pollcontroller',['pollController',['../classpollController.html',1,'']]],
-  ['pollmodel',['pollModel',['../classpollModel.html',1,'']]]
+  ['pollmodel',['pollModel',['../classpollModel.html',1,'']]],
+  ['purifier',['Purifier',['../classPurifier.html',1,'']]]
 ];

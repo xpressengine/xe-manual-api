@@ -20,5 +20,6 @@ var searchData=
   ['integration_5fsearchadmincontroller',['integration_searchAdminController',['../classintegration__searchAdminController.html',1,'']]],
   ['integration_5fsearchadminview',['integration_searchAdminView',['../classintegration__searchAdminView.html',1,'']]],
   ['integration_5fsearchmodel',['integration_searchModel',['../classintegration__searchModel.html',1,'']]],
-  ['integration_5fsearchview',['integration_searchView',['../classintegration__searchView.html',1,'']]]
+  ['integration_5fsearchview',['integration_searchView',['../classintegration__searchView.html',1,'']]],
+  ['ipfilter',['IpFilter',['../classIpFilter.html',1,'']]]
 ];

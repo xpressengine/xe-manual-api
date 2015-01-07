@@ -34,7 +34,6 @@ var searchData=
   ['conditionwithargument_2eclass_2ephp',['ConditionWithArgument.class.php',['../ConditionWithArgument_8class_8php.html',1,'']]],
   ['conditionwithoutargument_2eclass_2ephp',['ConditionWithoutArgument.class.php',['../ConditionWithoutArgument_8class_8php.html',1,'']]],
   ['config_2einc_2ephp',['config.inc.php',['../config_8inc_8php.html',1,'']]],
-  ['connect_5fwrapper_2ephp',['connect_wrapper.php',['../connect__wrapper_8php.html',1,'']]],
   ['content_2eclass_2ephp',['content.class.php',['../content_8class_8php.html',1,'']]],
   ['context_2eclass_2ephp',['Context.class.php',['../Context_8class_8php.html',1,'']]],
   ['contributing_2emd',['CONTRIBUTING.md',['../CONTRIBUTING_8md.html',1,'']]],
@@ -44,6 +43,5 @@ var searchData=
   ['counter_2econtroller_2ephp',['counter.controller.php',['../counter_8controller_8php.html',1,'']]],
   ['counter_2emodel_2ephp',['counter.model.php',['../counter_8model_8php.html',1,'']]],
   ['counter_5fstatus_2eclass_2ephp',['counter_status.class.php',['../counter__status_8class_8php.html',1,'']]],
-  ['cssmin_2ephp',['CSSmin.php',['../CSSmin_8php.html',1,'']]],
   ['cubridtablewithhint_2eclass_2ephp',['CubridTableWithHint.class.php',['../CubridTableWithHint_8class_8php.html',1,'']]]
 ];

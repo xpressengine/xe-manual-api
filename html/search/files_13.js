@@ -7,6 +7,7 @@ var searchData=
   ['tag_2eclass_2ephp',['tag.class.php',['../tag_8class_8php.html',1,'']]],
   ['tag_2econtroller_2ephp',['tag.controller.php',['../tag_8controller_8php.html',1,'']]],
   ['tag_2emodel_2ephp',['tag.model.php',['../tag_8model_8php.html',1,'']]],
+  ['tar_2eclass_2ephp',['tar.class.php',['../tar_8class_8php.html',1,'']]],
   ['templatehandler_2eclass_2ephp',['TemplateHandler.class.php',['../TemplateHandler_8class_8php.html',1,'']]],
   ['trash_2eadmin_2econtroller_2ephp',['trash.admin.controller.php',['../trash_8admin_8controller_8php.html',1,'']]],
   ['trash_2eadmin_2eview_2ephp',['trash.admin.view.php',['../trash_8admin_8view_8php.html',1,'']]],

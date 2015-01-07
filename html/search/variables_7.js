@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['if',['if',['../blogapi_8addon_8php.html#ae00067f6d78515f89a86a2a7f42cdc80',1,'if():&#160;blogapi.addon.php'],['../member__extra__info_8addon_8php.html#a29031816e50a8f742422e671b2bef9b2',1,'if():&#160;member_extra_info.addon.php'],['../mobile_8addon_8php.html#a13d720e0d3597438cb76873850ce4b63',1,'if():&#160;mobile.addon.php'],['../point__level__icon_8addon_8php.html#a29031816e50a8f742422e671b2bef9b2',1,'if():&#160;point_level_icon.addon.php']]],
-  ['index_5fmodule_5fsrl',['index_module_srl',['../ko_8install_8php.html#acd0b17bfe6d14c82871d73fa39c9c22d',1,'ko.install.php']]]
+  ['layout',['layout',['../ko_8install_8php.html#a0dc2cdff7167f362443808ff71ae5177',1,'ko.install.php']]],
+  ['layout_5fsrl',['layout_srl',['../ko_8install_8php.html#a70054876db09b2519a1726663c8dd9e7',1,'ko.install.php']]],
+  ['layout_5ftype',['layout_type',['../ko_8install_8php.html#a0532d89570cfdaebc628afac2ff5a81b',1,'layout_type():&#160;ko.install.php'],['../ko_8install_8php.html#a559e719d2ff17f12b8fba72773e6601d',1,'LAYOUT_TYPE():&#160;ko.install.php']]]
 ];

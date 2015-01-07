@@ -1,7 +1,6 @@
 var searchData=
 [
   ['read',['read',['../classFileObject.html#af345fcd2d619a3e13b1f95f744964617',1,'FileObject\read()'],['../classsessionModel.html#a1cae587d88bb84dc32c1c7b751b11528',1,'sessionModel\read()']]],
-  ['read_5fconfig',['read_config',['../minify_8php.html#a268545c7e1e847a94276b2054d07c75e',1,'minify.php']]],
   ['readdir',['readDir',['../classFileHandler.html#a02d0cada88becf977968d961df2f864b',1,'FileHandler']]],
   ['readfile',['readFile',['../classFileHandler.html#ac0bd2431461ad2bc04c093bfbb826bea',1,'FileHandler']]],
   ['readinifile',['readIniFile',['../classFileHandler.html#a58a8bbae1ab4acb358599db38a47db4d',1,'FileHandler']]],
@@ -18,8 +17,9 @@ var searchData=
   ['removecache',['removeCache',['../classeditorController.html#a0a512fff61d647692ad254eacafb8f0b',1,'editorController']]],
   ['removecart',['removeCart',['../classdocumentItem.html#aa66932772c39aeff91238badd8246969',1,'documentItem']]],
   ['removedir',['removeDir',['../classFileHandler.html#a55015d030d3773d96281b0fa4bda986e',1,'FileHandler']]],
+  ['removedirectory',['removeDirectory',['../classtar.html#a17971edb42a8be66b554ca5d6cf6bc1e',1,'tar']]],
   ['removeeditorconfig',['removeEditorConfig',['../classeditorController.html#a0c27d19482d9ad6c9de0e42ad7ad6465',1,'editorController']]],
-  ['removefile',['removeFile',['../classFileHandler.html#aa5969f9fe0ce869fc736c4da384959e9',1,'FileHandler']]],
+  ['removefile',['removeFile',['../classFileHandler.html#aa5969f9fe0ce869fc736c4da384959e9',1,'FileHandler\removeFile()'],['../classtar.html#a51cd4b11f9e4e6c9c5c0bc93d5a063c7',1,'tar\removeFile()']]],
   ['removefilesindir',['removeFilesInDir',['../classFileHandler.html#a07839b4971e9ef40039d23ea65977d69',1,'FileHandler']]],
   ['removefilter',['removeFilter',['../classValidator.html#a7613a0d6b468b5d5ade046a801b260db',1,'Validator']]],
   ['removehacktag',['removeHackTag',['../func_8inc_8php.html#abde22c0ee89dfd569abd1e338b3b2cf5',1,'func.inc.php']]],
@@ -38,6 +38,5 @@ var searchData=
   ['returnbytes',['returnBytes',['../classFileHandler.html#a79dd068137470965b560f4d23d978e7d',1,'FileHandler']]],
   ['returnmimetype',['returnMIMEType',['../classMail.html#afe036d54e43919318cb8e081533e7b90',1,'Mail']]],
   ['rollback',['rollback',['../classDB.html#a1fb6903379bc241fd318b980b9e30882',1,'DB']]],
-  ['rss',['rss',['../classrssView.html#a769dbe1bd0a000160ac6b4529b645dc7',1,'rssView']]],
-  ['run',['run',['../classCSSmin.html#a09dc031ef5d8618476147d4cf18a3e15',1,'CSSmin']]]
+  ['rss',['rss',['../classrssView.html#a769dbe1bd0a000160ac6b4529b645dc7',1,'rssView']]]
 ];

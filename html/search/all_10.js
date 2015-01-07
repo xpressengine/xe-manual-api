@@ -8,6 +8,7 @@ var searchData=
   ['open',['open',['../classFileObject.html#af54e058c79d19dca6ef4c6e2bb54831f',1,'FileObject\open()'],['../classsessionController.html#a6d695e575646db3c90300eb6da7eb69d',1,'sessionController\open()']]],
   ['openfile',['openFile',['../classFileHandler.html#a690753d8cf8ff837f28a811cdfbfa069',1,'FileHandler\openFile()'],['../classextract.html#afe5c47d4a18adeb1cb9fb0e7450def78',1,'extract\openFile()']]],
   ['openid_5fdelegation_5fid_2eaddon_2ephp',['openid_delegation_id.addon.php',['../openid__delegation__id_8addon_8php.html',1,'']]],
+  ['opentar',['openTAR',['../classtar.html#a62fc429d1e33de90d1ce65c3c16a4193',1,'tar']]],
   ['orderby',['orderBy',['../classQuery.html#a47d03784bf5f79d270e0f56f9ada6560',1,'Query']]],
   ['orderbycolumn',['OrderByColumn',['../classOrderByColumn.html',1,'OrderByColumn'],['../classOrderByColumn.html#a42a97dd505843873eb5cac1ea67e85a1',1,'OrderByColumn\OrderByColumn()']]],
   ['orderbycolumn_2eclass_2ephp',['OrderByColumn.class.php',['../OrderByColumn_8class_8php.html',1,'']]]

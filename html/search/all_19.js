@@ -15,9 +15,6 @@ var searchData=
   ['xmllangparser_2eclass_2ephp',['XmlLangParser.class.php',['../XmlLangParser_8class_8php.html',1,'']]],
   ['xmlparser',['XmlParser',['../classXmlParser.html',1,'']]],
   ['xmlparser_2eclass_2ephp',['XmlParser.class.php',['../XmlParser_8class_8php.html',1,'']]],
-  ['xmlqueriestest',['XmlQueriesTest',['../classXmlQueriesTest.html',1,'']]],
-  ['xmlqueriestest_2ephp',['xmlQueriesTest.php',['../xmlQueriesTest_8php.html',1,'']]],
   ['xmlqueryparser',['XmlQueryParser',['../classXmlQueryParser.html',1,'XmlQueryParser'],['../classXmlQueryParser.html#ac90d36a02cc74ea88d162d6fa0a44e21',1,'XmlQueryParser\XmlQueryParser()']]],
-  ['xmlqueryparser_2eclass_2ephp',['XmlQueryParser.class.php',['../XmlQueryParser_8class_8php.html',1,'']]],
-  ['xmlschemaerror',['XmlSchemaError',['../classXmlSchemaError.html',1,'']]]
+  ['xmlqueryparser_2eclass_2ephp',['XmlQueryParser.class.php',['../XmlQueryParser_8class_8php.html',1,'']]]
 ];

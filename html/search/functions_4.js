@@ -1,9 +1,9 @@
 var searchData=
 [
   ['db',['DB',['../classDB.html#a29a603c52c10831cddee82518417f992',1,'DB']]],
-  ['db_5ffetch_5fobject',['db_fetch_object',['../classDBMysql.html#a117189e72a44d1c3b615f133f486cf69',1,'DBMysql\db_fetch_object()'],['../classDBMysqli.html#a9e173fea0afa5c419977be95d1859892',1,'DBMysqli\db_fetch_object()'],['../classDBMysqli__innodb.html#a676cdff9d50d9398c0c2e3f9d50e8c0a',1,'DBMysqli_innodb\db_fetch_object()'],['../classDBMysqlConnectWrapper.html#abde4e0c8c4c315e39d7c1698370314f8',1,'DBMysqlConnectWrapper\db_fetch_object()'],['../classDBMysqliConnectWrapper.html#a67f5cb52bb8ee59f39634073bb865b8c',1,'DBMysqliConnectWrapper\db_fetch_object()'],['../classDBCubridConnectWrapper.html#a210e6a694ed2bb6b80d102065393040b',1,'DBCubridConnectWrapper\db_fetch_object()'],['../classDBMssqlConnectWrapper.html#ab02bc152f67c78e3c4e87a7a480700ee',1,'DBMssqlConnectWrapper\db_fetch_object()']]],
+  ['db_5ffetch_5fobject',['db_fetch_object',['../classDBMysql.html#a117189e72a44d1c3b615f133f486cf69',1,'DBMysql\db_fetch_object()'],['../classDBMysqli.html#a9e173fea0afa5c419977be95d1859892',1,'DBMysqli\db_fetch_object()'],['../classDBMysqli__innodb.html#a676cdff9d50d9398c0c2e3f9d50e8c0a',1,'DBMysqli_innodb\db_fetch_object()']]],
   ['db_5ffree_5fresult',['db_free_result',['../classDBMysql.html#a0d907e935bcfafa845fd39640dcc60cf',1,'DBMysql\db_free_result()'],['../classDBMysqli.html#a8639ebaca8bae119797a084af68750cc',1,'DBMysqli\db_free_result()'],['../classDBMysqli__innodb.html#a0eb1700db91867677a8f7fa9e2f25298',1,'DBMysqli_innodb\db_free_result()']]],
-  ['db_5finsert_5fid',['db_insert_id',['../classDBMysql.html#a21acddd922e39574922f60b881add658',1,'DBMysql\db_insert_id()'],['../classDBMysqli.html#a080939c13758f00ecd0092eda6cd2452',1,'DBMysqli\db_insert_id()'],['../classDBMysqli__innodb.html#aec47da41558bdf42e9d2fe31c2ce87f2',1,'DBMysqli_innodb\db_insert_id()'],['../classDBMysqlConnectWrapper.html#a3b68647fbcd66de2149d16ed790e5001',1,'DBMysqlConnectWrapper\db_insert_id()'],['../classDBMysqliConnectWrapper.html#ad98fb22767de37a5be5572634c4542bc',1,'DBMysqliConnectWrapper\db_insert_id()'],['../classDBCubridConnectWrapper.html#ae2a7172776b5e9d645ed1bdba55b2180',1,'DBCubridConnectWrapper\db_insert_id()'],['../classDBMssqlConnectWrapper.html#a561f05fa4f364814f00d0741a87eafab',1,'DBMssqlConnectWrapper\db_insert_id()']]],
+  ['db_5finsert_5fid',['db_insert_id',['../classDBMysql.html#a21acddd922e39574922f60b881add658',1,'DBMysql\db_insert_id()'],['../classDBMysqli.html#a080939c13758f00ecd0092eda6cd2452',1,'DBMysqli\db_insert_id()'],['../classDBMysqli__innodb.html#aec47da41558bdf42e9d2fe31c2ce87f2',1,'DBMysqli_innodb\db_insert_id()']]],
   ['dbcubrid',['DBCubrid',['../classDBCubrid.html#ad17912f5a76c00f761e32178f634581e',1,'DBCubrid']]],
   ['dbmssql',['DBMssql',['../classDBMssql.html#a308e7ed895b32bedb958b2fa946fb499',1,'DBMssql']]],
   ['dbmysql',['DBMysql',['../classDBMysql.html#a74c9966448ca4a373407ce6f3a1d7eb0',1,'DBMysql']]],
@@ -66,7 +66,6 @@ var searchData=
   ['destroy',['destroy',['../classsessionController.html#a695f52cca73bf4fc0efb1d35a79023c6',1,'sessionController']]],
   ['destroysessioninfo',['destroySessionInfo',['../classmemberController.html#ac259eb5e2f5ea0b7e747608fa1a308bd',1,'memberController']]],
   ['detectutf8',['detectUTF8',['../func_8inc_8php.html#a97f60adff3c4bbb5a341a557eef742b0',1,'func.inc.php']]],
-  ['directmoduleinstaller',['DirectModuleInstaller',['../classDirectModuleInstaller.html#a713e0cebd57a87f357d05d06445508f1',1,'DirectModuleInstaller']]],
   ['dispaddonadminindex',['dispAddonAdminIndex',['../classaddonAdminView.html#ac460e3c832e8209833bd5f50ab41910c',1,'addonAdminView']]],
   ['dispaddonadmininfo',['dispAddonAdminInfo',['../classaddonAdminView.html#a90e6af25e34c4834bd43633da6d83b60',1,'addonAdminView']]],
   ['dispaddonadminsetup',['dispAddonAdminSetup',['../classaddonAdminView.html#a14aef8b4e451f5eac1872ddc00530d50',1,'addonAdminView']]],
@@ -143,7 +142,6 @@ var searchData=
   ['dispinstallconfigform',['dispInstallConfigForm',['../classinstallView.html#ad61c851960b71aad3b93cfd1a23149fb',1,'installView']]],
   ['dispinstalldbform',['dispInstallDBForm',['../classinstallView.html#a61a05991e6aa8bf2278b9c438b70c8c7',1,'installView']]],
   ['dispinstallintroduce',['dispInstallIntroduce',['../classinstallView.html#a811e5c499d36055efb16411c0f0946c1',1,'installView']]],
-  ['dispinstalllicenseagreement',['dispInstallLicenseAgreement',['../classinstallView.html#a7182430aaf7f9fb4c8e18d21e9e5a4e7',1,'installView']]],
   ['dispinstallmanagerform',['dispInstallManagerForm',['../classinstallView.html#a00758f2134453587a409e8e8f3e4fada',1,'installView']]],
   ['dispinstallselectdb',['dispInstallSelectDB',['../classinstallView.html#aa3ee9747353f128111f628a5c9359c5f',1,'installView']]],
   ['dispintegration_5fsearchadmincontent',['dispIntegration_searchAdminContent',['../classintegration__searchAdminView.html#a2ae221c755a586cd2af8d1758edc01c6',1,'integration_searchAdminView']]],

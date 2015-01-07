@@ -17,6 +17,5 @@ var searchData=
   ['wml_2eclass_2ephp',['wml.class.php',['../wml_8class_8php.html',1,'']]],
   ['write',['write',['../classFileObject.html#a6bfe97d0df5b57183c0816fb013b7fb2',1,'FileObject\write()'],['../classsessionController.html#a05f09c961d684c81c6b192fff5005407',1,'sessionController\write()']]],
   ['writefile',['writeFile',['../classFileHandler.html#ad90c10a81460f437bc68952427606155',1,'FileHandler']]],
-  ['writeinifile',['writeIniFile',['../classFileHandler.html#aa0fd9ce8f2c81bee472a403e75b578bd',1,'FileHandler']]],
-  ['writeslowlog',['writeSlowlog',['../func_8inc_8php.html#ad04b6facc446291dbbb292553250a4a6',1,'func.inc.php']]]
+  ['writeinifile',['writeIniFile',['../classFileHandler.html#aa0fd9ce8f2c81bee472a403e75b578bd',1,'FileHandler']]]
 ];

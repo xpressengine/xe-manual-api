@@ -7,7 +7,5 @@ var searchData=
   ['xmlgenerator',['XmlGenerator',['../classXmlGenerator.html',1,'']]],
   ['xmllangparser',['XmlLangParser',['../classXmlLangParser.html',1,'']]],
   ['xmlparser',['XmlParser',['../classXmlParser.html',1,'']]],
-  ['xmlqueriestest',['XmlQueriesTest',['../classXmlQueriesTest.html',1,'']]],
-  ['xmlqueryparser',['XmlQueryParser',['../classXmlQueryParser.html',1,'']]],
-  ['xmlschemaerror',['XmlSchemaError',['../classXmlSchemaError.html',1,'']]]
+  ['xmlqueryparser',['XmlQueryParser',['../classXmlQueryParser.html',1,'']]]
 ];

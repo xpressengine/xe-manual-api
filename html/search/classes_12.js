@@ -7,6 +7,7 @@ var searchData=
   ['tagadmincontroller',['tagAdminController',['../classtagAdminController.html',1,'']]],
   ['tagcontroller',['tagController',['../classtagController.html',1,'']]],
   ['tagmodel',['tagModel',['../classtagModel.html',1,'']]],
+  ['tar',['tar',['../classtar.html',1,'']]],
   ['templatehandler',['TemplateHandler',['../classTemplateHandler.html',1,'']]],
   ['trash',['trash',['../classtrash.html',1,'']]],
   ['trashadmincontroller',['trashAdminController',['../classtrashAdminController.html',1,'']]],
