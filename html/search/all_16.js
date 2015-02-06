@@ -57,6 +57,8 @@ var searchData=
   ['usedefaultlayout',['useDefaultLayout',['../classlayoutModel.html#a85dfbba773c086806d4d8c9586d16e52',1,'layoutModel']]],
   ['usegmailaccount',['useGmailAccount',['../classMail.html#aa6094205d902ff01c7b0828f0e5e3221',1,'Mail']]],
   ['usenotify',['useNotify',['../classcommentItem.html#afe64742f56158a071b2bced6c3e35a34',1,'commentItem\useNotify()'],['../classdocumentItem.html#a25c9be892a37dbb3d519b980cd10930a',1,'documentItem\useNotify()']]],
+  ['user_5fid',['user_id',['../ko_8install_8php.html#a74f1a394389d774e5b4cd5d1d15413f7',1,'ko.install.php']]],
+  ['user_5fname',['user_name',['../ko_8install_8php.html#a115401aff7da80e73c66e9f76505426b',1,'ko.install.php']]],
   ['userewritemodule',['useRewriteModule',['../classinstallView.html#a276997dd4c77a1a1cec5ceed56367ee9',1,'installView']]],
   ['usesclickcount',['usesClickCount',['../classQuery.html#ab0f5afff51d19f0f5478055dcb16c2c0',1,'Query']]],
   ['usesmtp',['useSMTP',['../classMail.html#a73ddc444b256378acb00373e9ac3171e',1,'Mail']]],

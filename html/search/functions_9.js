@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['iconurlcheck',['iconUrlCheck',['../classadminAdminModel.html#a7c9daef493c063d6d4de836e8a511ec6',1,'adminAdminModel']]],
+  ['iconurlcheck',['iconUrlCheck',['../classadminAdminModel.html#ab77b7dd452e81ca285debe37a159e0d7',1,'adminAdminModel']]],
   ['image_5fgallery',['image_gallery',['../classimage__gallery.html#a61f93b0e279db69d5476ed16ec428200',1,'image_gallery']]],
   ['image_5flink',['image_link',['../classimage__link.html#a572a8311c1aaa3ddfbe3c1d027822fab',1,'image_link']]],
   ['importattaches',['importAttaches',['../classimporterAdminController.html#a259bb7d8ae0b653dc45e544af3100753',1,'importerAdminController\importAttaches()'],['../classttimport.html#a8b585ce5c93947bd9a4a1f6240c55f58',1,'ttimport\importAttaches()']]],
@@ -138,5 +138,6 @@ var searchData=
   ['iswhitedomain',['isWhiteDomain',['../classEmbedFilter.html#a12fcd3bdd961d247598d003b537b5e7f',1,'EmbedFilter']]],
   ['iswhiteext',['isWhiteExt',['../classEmbedFilter.html#ae3cc90883fe1fd15c692ab8268ae15b3',1,'EmbedFilter']]],
   ['iswhiteiframedomain',['isWhiteIframeDomain',['../classEmbedFilter.html#ada5403255f1d3612afefdc6d35e03d7f',1,'EmbedFilter']]],
-  ['iswhitemimetype',['isWhiteMimetype',['../classEmbedFilter.html#a34e7259c822a6c346a218bea0976e1cd',1,'EmbedFilter']]]
+  ['iswhitemimetype',['isWhiteMimetype',['../classEmbedFilter.html#a34e7259c822a6c346a218bea0976e1cd',1,'EmbedFilter']]],
+  ['iswritabledir',['isWritableDir',['../classFileHandler.html#a9494e34a28f27b6a1ab2e032aada2bbb',1,'FileHandler\isWritableDir()'],['../classautoinstallAdminModel.html#ab3314bacf64ba16ea88180124699fc54',1,'autoinstallAdminModel\isWritableDir()']]]
 ];

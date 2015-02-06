@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['iconurlcheck',['iconUrlCheck',['../classadminAdminModel.html#a7c9daef493c063d6d4de836e8a511ec6',1,'adminAdminModel']]],
+  ['iconurlcheck',['iconUrlCheck',['../classadminAdminModel.html#ab77b7dd452e81ca285debe37a159e0d7',1,'adminAdminModel']]],
   ['if',['if',['../blogapi_8addon_8php.html#ae00067f6d78515f89a86a2a7f42cdc80',1,'if():&#160;blogapi.addon.php'],['../member__extra__info_8addon_8php.html#a29031816e50a8f742422e671b2bef9b2',1,'if():&#160;member_extra_info.addon.php'],['../mobile_8addon_8php.html#a13d720e0d3597438cb76873850ce4b63',1,'if():&#160;mobile.addon.php'],['../point__level__icon_8addon_8php.html#a29031816e50a8f742422e671b2bef9b2',1,'if():&#160;point_level_icon.addon.php']]],
   ['image_5fgallery',['image_gallery',['../classimage__gallery.html',1,'image_gallery'],['../classimage__gallery.html#a61f93b0e279db69d5476ed16ec428200',1,'image_gallery\image_gallery()']]],
   ['image_5fgallery_2eclass_2ephp',['image_gallery.class.php',['../image__gallery_8class_8php.html',1,'']]],
@@ -177,5 +177,6 @@ var searchData=
   ['iswhitedomain',['isWhiteDomain',['../classEmbedFilter.html#a12fcd3bdd961d247598d003b537b5e7f',1,'EmbedFilter']]],
   ['iswhiteext',['isWhiteExt',['../classEmbedFilter.html#ae3cc90883fe1fd15c692ab8268ae15b3',1,'EmbedFilter']]],
   ['iswhiteiframedomain',['isWhiteIframeDomain',['../classEmbedFilter.html#ada5403255f1d3612afefdc6d35e03d7f',1,'EmbedFilter']]],
-  ['iswhitemimetype',['isWhiteMimetype',['../classEmbedFilter.html#a34e7259c822a6c346a218bea0976e1cd',1,'EmbedFilter']]]
+  ['iswhitemimetype',['isWhiteMimetype',['../classEmbedFilter.html#a34e7259c822a6c346a218bea0976e1cd',1,'EmbedFilter']]],
+  ['iswritabledir',['isWritableDir',['../classFileHandler.html#a9494e34a28f27b6a1ab2e032aada2bbb',1,'FileHandler\isWritableDir()'],['../classautoinstallAdminModel.html#ab3314bacf64ba16ea88180124699fc54',1,'autoinstallAdminModel\isWritableDir()']]]
 ];

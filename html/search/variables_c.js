@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['visual_5fuse',['VISUAL_USE',['../ko_8install_8php.html#a7d7de44c97265901bad00952f899d833',1,'ko.install.php']]]
+  ['title',['title',['../ko_8install_8php.html#a5b072c5fd1d2228c6ba5cee13cd142e3',1,'ko.install.php']]]
 ];

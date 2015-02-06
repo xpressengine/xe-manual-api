@@ -1,6 +1,5 @@
-\hypertarget{classDBMysql}{\section{D\+B\+Mysql Class Reference}
+\hypertarget{classDBMysql}{}\section{D\+B\+Mysql Class Reference}
 \label{classDBMysql}\index{D\+B\+Mysql@{D\+B\+Mysql}}
-}
 Inheritance diagram for D\+B\+Mysql\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -38,7 +37,7 @@ Inheritance diagram for D\+B\+Mysql\+:\begin{figure}[H]
 \item 
 \hyperlink{classDBMysql_a095f2a64a070958c18cb3ebfab3043e5}{is\+Table\+Exists} (\$target\+\_\+name)
 \item 
-\hyperlink{classDBMysql_a7d39120edb5c80f01568f404dac5c03f}{add\+Column} (\$table\+\_\+name, \$column\+\_\+name, \$type= 'number', \$size= '', \$default= '', \$notnull=false)
+\hyperlink{classDBMysql_a7d39120edb5c80f01568f404dac5c03f}{add\+Column} (\$table\+\_\+name, \$column\+\_\+name, \$type= \textquotesingle{}number\textquotesingle{}, \$size= \textquotesingle{}\textquotesingle{}, \$default= \textquotesingle{}\textquotesingle{}, \$notnull=false)
 \item 
 \hyperlink{classDBMysql_aa4cd80d663225f3cd7a539d7d7101b38}{drop\+Column} (\$table\+\_\+name, \$column\+\_\+name)
 \item 
@@ -81,9 +80,9 @@ Inheritance diagram for D\+B\+Mysql\+:\begin{figure}[H]
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classDBMysql_ac95b2047c4c75730e0533be0cccd19d9}{\$prefix} = 'xe\+\_\+'
+\hyperlink{classDBMysql_ac95b2047c4c75730e0533be0cccd19d9}{\$prefix} = \textquotesingle{}xe\+\_\+\textquotesingle{}
 \item 
-\hyperlink{classDBMysql_a2c00f6e29c9e4fc4a532f806cf4313c2}{\$comment\+\_\+syntax} = '/$\ast$ \%s $\ast$/'
+\hyperlink{classDBMysql_a2c00f6e29c9e4fc4a532f806cf4313c2}{\$comment\+\_\+syntax} = \textquotesingle{}/$\ast$ \%s $\ast$/\textquotesingle{}
 \item 
 \hyperlink{classDBMysql_aa93c8f5f14304a16864a0708a3ba41b0}{\$column\+\_\+type}
 \end{DoxyCompactItemize}
@@ -98,16 +97,16 @@ Definition at line 14 of file D\+B\+Mysql.\+class.\+php.
 
 
 \subsection{Member Function Documentation}
-\hypertarget{classDBMysql_ad11061c47d57c2f346947e0789ecb46b}{\index{D\+B\+Mysql@{D\+B\+Mysql}!\+\_\+\+\_\+connect@{\+\_\+\+\_\+connect}}
+\hypertarget{classDBMysql_ad11061c47d57c2f346947e0789ecb46b}{}\index{D\+B\+Mysql@{D\+B\+Mysql}!\+\_\+\+\_\+connect@{\+\_\+\+\_\+connect}}
 \index{\+\_\+\+\_\+connect@{\+\_\+\+\_\+connect}!D\+B\+Mysql@{D\+B\+Mysql}}
 \subsubsection[{\+\_\+\+\_\+connect}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+::\+\_\+\+\_\+connect (
 \begin{DoxyParamCaption}
 \item[{}]{\$connection}
 \end{DoxyParamCaption}
-)}}\label{classDBMysql_ad11061c47d57c2f346947e0789ecb46b}
+)}\label{classDBMysql_ad11061c47d57c2f346947e0789ecb46b}
 \hyperlink{classDB}{D\+B} Connect this method is private 
 \begin{DoxyParams}[1]{Parameters}
-array & {\em \$connection} & connection's value is db\+\_\+hostname, db\+\_\+port, db\+\_\+database, db\+\_\+userid, db\+\_\+password \\
+array & {\em \$connection} & connection\textquotesingle{}s value is db\+\_\+hostname, db\+\_\+port, db\+\_\+database, db\+\_\+userid, db\+\_\+password \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -117,14 +116,14 @@ resource
 
 Definition at line 67 of file D\+B\+Mysql.\+class.\+php.
 
-\hypertarget{classDBMysql_aa33da673a8c415b641b4e0b5209d3453}{\index{D\+B\+Mysql@{D\+B\+Mysql}!\+\_\+\+\_\+query@{\+\_\+\+\_\+query}}
+\hypertarget{classDBMysql_aa33da673a8c415b641b4e0b5209d3453}{}\index{D\+B\+Mysql@{D\+B\+Mysql}!\+\_\+\+\_\+query@{\+\_\+\+\_\+query}}
 \index{\+\_\+\+\_\+query@{\+\_\+\+\_\+query}!D\+B\+Mysql@{D\+B\+Mysql}}
 \subsubsection[{\+\_\+\+\_\+query}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+::\+\_\+\+\_\+query (
 \begin{DoxyParamCaption}
 \item[{}]{\$query, }
 \item[{}]{\$connection}
 \end{DoxyParamCaption}
-)}}\label{classDBMysql_aa33da673a8c415b641b4e0b5209d3453}
+)}\label{classDBMysql_aa33da673a8c415b641b4e0b5209d3453}
 Execute the query this method is private 
 \begin{DoxyParams}[1]{Parameters}
 string & {\em \$query} & \\
@@ -139,13 +138,13 @@ resource
 
 Definition at line 182 of file D\+B\+Mysql.\+class.\+php.
 
-\hypertarget{classDBMysql_a660e94bc5cde26859bb95cc428ca92da}{\index{D\+B\+Mysql@{D\+B\+Mysql}!\+\_\+after\+Connect@{\+\_\+after\+Connect}}
+\hypertarget{classDBMysql_a660e94bc5cde26859bb95cc428ca92da}{}\index{D\+B\+Mysql@{D\+B\+Mysql}!\+\_\+after\+Connect@{\+\_\+after\+Connect}}
 \index{\+\_\+after\+Connect@{\+\_\+after\+Connect}!D\+B\+Mysql@{D\+B\+Mysql}}
 \subsubsection[{\+\_\+after\+Connect}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+::\+\_\+after\+Connect (
 \begin{DoxyParamCaption}
 \item[{}]{\$connection}
 \end{DoxyParamCaption}
-)}}\label{classDBMysql_a660e94bc5cde26859bb95cc428ca92da}
+)}\label{classDBMysql_a660e94bc5cde26859bb95cc428ca92da}
 If have a task after connection, add a taks in this method this method is private 
 \begin{DoxyParams}[1]{Parameters}
 resource & {\em \$connection} & \\
@@ -158,13 +157,13 @@ void
 
 Definition at line 110 of file D\+B\+Mysql.\+class.\+php.
 
-\hypertarget{classDBMysql_a7ad4bfffa35bf75ddafb93767d03a5b7}{\index{D\+B\+Mysql@{D\+B\+Mysql}!\+\_\+begin@{\+\_\+begin}}
+\hypertarget{classDBMysql_a7ad4bfffa35bf75ddafb93767d03a5b7}{}\index{D\+B\+Mysql@{D\+B\+Mysql}!\+\_\+begin@{\+\_\+begin}}
 \index{\+\_\+begin@{\+\_\+begin}!D\+B\+Mysql@{D\+B\+Mysql}}
 \subsubsection[{\+\_\+begin}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+::\+\_\+begin (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}}\label{classDBMysql_a7ad4bfffa35bf75ddafb93767d03a5b7}
+)}\label{classDBMysql_a7ad4bfffa35bf75ddafb93767d03a5b7}
 \hyperlink{classDB}{D\+B} transaction start this method is private \begin{DoxyReturn}{Returns}
 boolean 
 \end{DoxyReturn}
@@ -172,13 +171,13 @@ boolean
 
 Definition at line 150 of file D\+B\+Mysql.\+class.\+php.
 
-\hypertarget{classDBMysql_a59581237e4dcb5f91f63de2459248e13}{\index{D\+B\+Mysql@{D\+B\+Mysql}!\+\_\+close@{\+\_\+close}}
+\hypertarget{classDBMysql_a59581237e4dcb5f91f63de2459248e13}{}\index{D\+B\+Mysql@{D\+B\+Mysql}!\+\_\+close@{\+\_\+close}}
 \index{\+\_\+close@{\+\_\+close}!D\+B\+Mysql@{D\+B\+Mysql}}
 \subsubsection[{\+\_\+close}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+::\+\_\+close (
 \begin{DoxyParamCaption}
 \item[{}]{\$connection}
 \end{DoxyParamCaption}
-)}}\label{classDBMysql_a59581237e4dcb5f91f63de2459248e13}
+)}\label{classDBMysql_a59581237e4dcb5f91f63de2459248e13}
 \hyperlink{classDB}{D\+B} disconnection this method is private 
 \begin{DoxyParams}[1]{Parameters}
 resource & {\em \$connection} & \\
@@ -191,13 +190,13 @@ void
 
 Definition at line 122 of file D\+B\+Mysql.\+class.\+php.
 
-\hypertarget{classDBMysql_a3f720677af37c36b2bc2934dd358a477}{\index{D\+B\+Mysql@{D\+B\+Mysql}!\+\_\+commit@{\+\_\+commit}}
+\hypertarget{classDBMysql_a3f720677af37c36b2bc2934dd358a477}{}\index{D\+B\+Mysql@{D\+B\+Mysql}!\+\_\+commit@{\+\_\+commit}}
 \index{\+\_\+commit@{\+\_\+commit}!D\+B\+Mysql@{D\+B\+Mysql}}
 \subsubsection[{\+\_\+commit}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+::\+\_\+commit (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}}\label{classDBMysql_a3f720677af37c36b2bc2934dd358a477}
+)}\label{classDBMysql_a3f720677af37c36b2bc2934dd358a477}
 \hyperlink{classDB}{D\+B} transaction commit this method is private \begin{DoxyReturn}{Returns}
 boolean 
 \end{DoxyReturn}
@@ -205,13 +204,13 @@ boolean
 
 Definition at line 170 of file D\+B\+Mysql.\+class.\+php.
 
-\hypertarget{classDBMysql_a7a3edda6d00b0c7b3702283b495b0a5d}{\index{D\+B\+Mysql@{D\+B\+Mysql}!\+\_\+create\+Table@{\+\_\+create\+Table}}
+\hypertarget{classDBMysql_a7a3edda6d00b0c7b3702283b495b0a5d}{}\index{D\+B\+Mysql@{D\+B\+Mysql}!\+\_\+create\+Table@{\+\_\+create\+Table}}
 \index{\+\_\+create\+Table@{\+\_\+create\+Table}!D\+B\+Mysql@{D\+B\+Mysql}}
 \subsubsection[{\+\_\+create\+Table}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+::\+\_\+create\+Table (
 \begin{DoxyParamCaption}
 \item[{}]{\$xml\+\_\+doc}
 \end{DoxyParamCaption}
-)}}\label{classDBMysql_a7a3edda6d00b0c7b3702283b495b0a5d}
+)}\label{classDBMysql_a7a3edda6d00b0c7b3702283b495b0a5d}
 Create table by using the schema xml
 
 type \+: number, varchar, tinytext, text, bigtext, char, date, ~\newline
@@ -229,14 +228,14 @@ void$\vert$object
 
 Definition at line 477 of file D\+B\+Mysql.\+class.\+php.
 
-\hypertarget{classDBMysql_aa1f3d836a8da807793983ff3f48998da}{\index{D\+B\+Mysql@{D\+B\+Mysql}!\+\_\+execute\+Delete\+Act@{\+\_\+execute\+Delete\+Act}}
+\hypertarget{classDBMysql_aa1f3d836a8da807793983ff3f48998da}{}\index{D\+B\+Mysql@{D\+B\+Mysql}!\+\_\+execute\+Delete\+Act@{\+\_\+execute\+Delete\+Act}}
 \index{\+\_\+execute\+Delete\+Act@{\+\_\+execute\+Delete\+Act}!D\+B\+Mysql@{D\+B\+Mysql}}
 \subsubsection[{\+\_\+execute\+Delete\+Act}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+::\+\_\+execute\+Delete\+Act (
 \begin{DoxyParamCaption}
 \item[{}]{\$query\+Object, }
 \item[{}]{\$with\+\_\+values = {\ttfamily true}}
 \end{DoxyParamCaption}
-)}}\label{classDBMysql_aa1f3d836a8da807793983ff3f48998da}
+)}\label{classDBMysql_aa1f3d836a8da807793983ff3f48998da}
 Handles delete\+Act 
 \begin{DoxyParams}[1]{Parameters}
 \hyperlink{classObject}{Object} & {\em \$query\+Object} & \\
@@ -251,14 +250,14 @@ resource
 
 Definition at line 603 of file D\+B\+Mysql.\+class.\+php.
 
-\hypertarget{classDBMysql_a29a81acddeeaff54b404dec8377b2d2b}{\index{D\+B\+Mysql@{D\+B\+Mysql}!\+\_\+execute\+Insert\+Act@{\+\_\+execute\+Insert\+Act}}
+\hypertarget{classDBMysql_a29a81acddeeaff54b404dec8377b2d2b}{}\index{D\+B\+Mysql@{D\+B\+Mysql}!\+\_\+execute\+Insert\+Act@{\+\_\+execute\+Insert\+Act}}
 \index{\+\_\+execute\+Insert\+Act@{\+\_\+execute\+Insert\+Act}!D\+B\+Mysql@{D\+B\+Mysql}}
 \subsubsection[{\+\_\+execute\+Insert\+Act}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+::\+\_\+execute\+Insert\+Act (
 \begin{DoxyParamCaption}
 \item[{}]{\$query\+Object, }
 \item[{}]{\$with\+\_\+values = {\ttfamily true}}
 \end{DoxyParamCaption}
-)}}\label{classDBMysql_a29a81acddeeaff54b404dec8377b2d2b}
+)}\label{classDBMysql_a29a81acddeeaff54b404dec8377b2d2b}
 Handles insert\+Act 
 \begin{DoxyParams}[1]{Parameters}
 \hyperlink{classObject}{Object} & {\em \$query\+Object} & \\
@@ -273,7 +272,7 @@ resource
 
 Definition at line 565 of file D\+B\+Mysql.\+class.\+php.
 
-\hypertarget{classDBMysql_a2643d9c9b3e5d5286e956ea6fc883cc9}{\index{D\+B\+Mysql@{D\+B\+Mysql}!\+\_\+execute\+Select\+Act@{\+\_\+execute\+Select\+Act}}
+\hypertarget{classDBMysql_a2643d9c9b3e5d5286e956ea6fc883cc9}{}\index{D\+B\+Mysql@{D\+B\+Mysql}!\+\_\+execute\+Select\+Act@{\+\_\+execute\+Select\+Act}}
 \index{\+\_\+execute\+Select\+Act@{\+\_\+execute\+Select\+Act}!D\+B\+Mysql@{D\+B\+Mysql}}
 \subsubsection[{\+\_\+execute\+Select\+Act}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+::\+\_\+execute\+Select\+Act (
 \begin{DoxyParamCaption}
@@ -281,7 +280,7 @@ Definition at line 565 of file D\+B\+Mysql.\+class.\+php.
 \item[{}]{\$connection = {\ttfamily null}, }
 \item[{}]{\$with\+\_\+values = {\ttfamily true}}
 \end{DoxyParamCaption}
-)}}\label{classDBMysql_a2643d9c9b3e5d5286e956ea6fc883cc9}
+)}\label{classDBMysql_a2643d9c9b3e5d5286e956ea6fc883cc9}
 Handle select\+Act In order to get a list of pages easily when selecting ~\newline
 it supports a method as navigation 
 \begin{DoxyParams}[1]{Parameters}
@@ -299,14 +298,14 @@ boolean & {\em \$with\+\_\+values} & \\
 
 Definition at line 623 of file D\+B\+Mysql.\+class.\+php.
 
-\hypertarget{classDBMysql_a93657e31e6a8f311aa76668602529e10}{\index{D\+B\+Mysql@{D\+B\+Mysql}!\+\_\+execute\+Update\+Act@{\+\_\+execute\+Update\+Act}}
+\hypertarget{classDBMysql_a93657e31e6a8f311aa76668602529e10}{}\index{D\+B\+Mysql@{D\+B\+Mysql}!\+\_\+execute\+Update\+Act@{\+\_\+execute\+Update\+Act}}
 \index{\+\_\+execute\+Update\+Act@{\+\_\+execute\+Update\+Act}!D\+B\+Mysql@{D\+B\+Mysql}}
 \subsubsection[{\+\_\+execute\+Update\+Act}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+::\+\_\+execute\+Update\+Act (
 \begin{DoxyParamCaption}
 \item[{}]{\$query\+Object, }
 \item[{}]{\$with\+\_\+values = {\ttfamily true}}
 \end{DoxyParamCaption}
-)}}\label{classDBMysql_a93657e31e6a8f311aa76668602529e10}
+)}\label{classDBMysql_a93657e31e6a8f311aa76668602529e10}
 Handles update\+Act 
 \begin{DoxyParams}[1]{Parameters}
 \hyperlink{classObject}{Object} & {\em \$query\+Object} & \\
@@ -321,14 +320,14 @@ resource
 
 Definition at line 582 of file D\+B\+Mysql.\+class.\+php.
 
-\hypertarget{classDBMysql_a4c7d83d8dcbb8e65c8fdfe75fa7d9fa5}{\index{D\+B\+Mysql@{D\+B\+Mysql}!\+\_\+fetch@{\+\_\+fetch}}
+\hypertarget{classDBMysql_a4c7d83d8dcbb8e65c8fdfe75fa7d9fa5}{}\index{D\+B\+Mysql@{D\+B\+Mysql}!\+\_\+fetch@{\+\_\+fetch}}
 \index{\+\_\+fetch@{\+\_\+fetch}!D\+B\+Mysql@{D\+B\+Mysql}}
 \subsubsection[{\+\_\+fetch}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+::\+\_\+fetch (
 \begin{DoxyParamCaption}
 \item[{}]{\$result, }
 \item[{}]{\$array\+Index\+End\+Value = {\ttfamily NULL}}
 \end{DoxyParamCaption}
-)}}\label{classDBMysql_a4c7d83d8dcbb8e65c8fdfe75fa7d9fa5}
+)}\label{classDBMysql_a4c7d83d8dcbb8e65c8fdfe75fa7d9fa5}
 Fetch the result 
 \begin{DoxyParams}[1]{Parameters}
 resource & {\em \$result} & \\
@@ -343,13 +342,13 @@ array
 
 Definition at line 205 of file D\+B\+Mysql.\+class.\+php.
 
-\hypertarget{classDBMysql_a99969f9cdea111207f80faaa8a74c0ab}{\index{D\+B\+Mysql@{D\+B\+Mysql}!\+\_\+rollback@{\+\_\+rollback}}
+\hypertarget{classDBMysql_a99969f9cdea111207f80faaa8a74c0ab}{}\index{D\+B\+Mysql@{D\+B\+Mysql}!\+\_\+rollback@{\+\_\+rollback}}
 \index{\+\_\+rollback@{\+\_\+rollback}!D\+B\+Mysql@{D\+B\+Mysql}}
 \subsubsection[{\+\_\+rollback}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+::\+\_\+rollback (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}}\label{classDBMysql_a99969f9cdea111207f80faaa8a74c0ab}
+)}\label{classDBMysql_a99969f9cdea111207f80faaa8a74c0ab}
 \hyperlink{classDB}{D\+B} transaction rollback this method is private \begin{DoxyReturn}{Returns}
 boolean 
 \end{DoxyReturn}
@@ -357,25 +356,25 @@ boolean
 
 Definition at line 160 of file D\+B\+Mysql.\+class.\+php.
 
-\hypertarget{classDBMysql_a7d39120edb5c80f01568f404dac5c03f}{\index{D\+B\+Mysql@{D\+B\+Mysql}!add\+Column@{add\+Column}}
+\hypertarget{classDBMysql_a7d39120edb5c80f01568f404dac5c03f}{}\index{D\+B\+Mysql@{D\+B\+Mysql}!add\+Column@{add\+Column}}
 \index{add\+Column@{add\+Column}!D\+B\+Mysql@{D\+B\+Mysql}}
 \subsubsection[{add\+Column}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+::add\+Column (
 \begin{DoxyParamCaption}
 \item[{}]{\$table\+\_\+name, }
 \item[{}]{\$column\+\_\+name, }
-\item[{}]{\$type = {\ttfamily 'number'}, }
-\item[{}]{\$size = {\ttfamily ''}, }
-\item[{}]{\$default = {\ttfamily ''}, }
+\item[{}]{\$type = {\ttfamily \textquotesingle{}number\textquotesingle{}}, }
+\item[{}]{\$size = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
+\item[{}]{\$default = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
 \item[{}]{\$notnull = {\ttfamily false}}
 \end{DoxyParamCaption}
-)}}\label{classDBMysql_a7d39120edb5c80f01568f404dac5c03f}
+)}\label{classDBMysql_a7d39120edb5c80f01568f404dac5c03f}
 Add a column to the table 
 \begin{DoxyParams}[1]{Parameters}
 string & {\em \$table\+\_\+name} & table name \\
 \hline
 string & {\em \$column\+\_\+name} & column name \\
 \hline
-string & {\em \$type} & column type, default value is 'number' \\
+string & {\em \$type} & column type, default value is \textquotesingle{}number\textquotesingle{} \\
 \hline
 int & {\em \$size} & column size \\
 \hline
@@ -391,7 +390,7 @@ void
 
 Definition at line 302 of file D\+B\+Mysql.\+class.\+php.
 
-\hypertarget{classDBMysql_ae17d30f3fd2dbbc29996acdc8c36a00f}{\index{D\+B\+Mysql@{D\+B\+Mysql}!add\+Index@{add\+Index}}
+\hypertarget{classDBMysql_ae17d30f3fd2dbbc29996acdc8c36a00f}{}\index{D\+B\+Mysql@{D\+B\+Mysql}!add\+Index@{add\+Index}}
 \index{add\+Index@{add\+Index}!D\+B\+Mysql@{D\+B\+Mysql}}
 \subsubsection[{add\+Index}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+::add\+Index (
 \begin{DoxyParamCaption}
@@ -400,7 +399,7 @@ Definition at line 302 of file D\+B\+Mysql.\+class.\+php.
 \item[{}]{\$target\+\_\+columns, }
 \item[{}]{\$is\+\_\+unique = {\ttfamily false}}
 \end{DoxyParamCaption}
-)}}\label{classDBMysql_ae17d30f3fd2dbbc29996acdc8c36a00f}
+)}\label{classDBMysql_ae17d30f3fd2dbbc29996acdc8c36a00f}
 Add an index to the table \$target\+\_\+columns = array(col1, col2) \$is\+\_\+unique? unique \+: none 
 \begin{DoxyParams}[1]{Parameters}
 string & {\em \$table\+\_\+name} & table name \\
@@ -419,13 +418,13 @@ void
 
 Definition at line 383 of file D\+B\+Mysql.\+class.\+php.
 
-\hypertarget{classDBMysql_a9674193c36272fa9ea16c20d91cfbfe5}{\index{D\+B\+Mysql@{D\+B\+Mysql}!add\+Quotes@{add\+Quotes}}
+\hypertarget{classDBMysql_a9674193c36272fa9ea16c20d91cfbfe5}{}\index{D\+B\+Mysql@{D\+B\+Mysql}!add\+Quotes@{add\+Quotes}}
 \index{add\+Quotes@{add\+Quotes}!D\+B\+Mysql@{D\+B\+Mysql}}
 \subsubsection[{add\+Quotes}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+::add\+Quotes (
 \begin{DoxyParamCaption}
 \item[{}]{\$string}
 \end{DoxyParamCaption}
-)}}\label{classDBMysql_a9674193c36272fa9ea16c20d91cfbfe5}
+)}\label{classDBMysql_a9674193c36272fa9ea16c20d91cfbfe5}
 Handles quatation of the string variables from the query 
 \begin{DoxyParams}[1]{Parameters}
 string & {\em \$string} & \\
@@ -438,13 +437,13 @@ string
 
 Definition at line 132 of file D\+B\+Mysql.\+class.\+php.
 
-\hypertarget{classDBMysql_a58ab5c56561966d486ba54129aed954d}{\index{D\+B\+Mysql@{D\+B\+Mysql}!create@{create}}
+\hypertarget{classDBMysql_a58ab5c56561966d486ba54129aed954d}{}\index{D\+B\+Mysql@{D\+B\+Mysql}!create@{create}}
 \index{create@{create}!D\+B\+Mysql@{D\+B\+Mysql}}
 \subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+::create (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}}\label{classDBMysql_a58ab5c56561966d486ba54129aed954d}
+)}\label{classDBMysql_a58ab5c56561966d486ba54129aed954d}
 Create an instance of this class \begin{DoxyReturn}{Returns}
 \hyperlink{classDBMysql}{D\+B\+Mysql} return \hyperlink{classDBMysql}{D\+B\+Mysql} object instance 
 \end{DoxyReturn}
@@ -452,13 +451,13 @@ Create an instance of this class \begin{DoxyReturn}{Returns}
 
 Definition at line 56 of file D\+B\+Mysql.\+class.\+php.
 
-\hypertarget{classDBMysql_a8d5c199f2a7362b92c7a6ba03ebdd554}{\index{D\+B\+Mysql@{D\+B\+Mysql}!create\+Table\+By\+Xml@{create\+Table\+By\+Xml}}
+\hypertarget{classDBMysql_a8d5c199f2a7362b92c7a6ba03ebdd554}{}\index{D\+B\+Mysql@{D\+B\+Mysql}!create\+Table\+By\+Xml@{create\+Table\+By\+Xml}}
 \index{create\+Table\+By\+Xml@{create\+Table\+By\+Xml}!D\+B\+Mysql@{D\+B\+Mysql}}
 \subsubsection[{create\+Table\+By\+Xml}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+::create\+Table\+By\+Xml (
 \begin{DoxyParamCaption}
 \item[{}]{\$xml\+\_\+doc}
 \end{DoxyParamCaption}
-)}}\label{classDBMysql_a8d5c199f2a7362b92c7a6ba03ebdd554}
+)}\label{classDBMysql_a8d5c199f2a7362b92c7a6ba03ebdd554}
 Creates a table by using xml contents 
 \begin{DoxyParams}[1]{Parameters}
 string & {\em \$xml\+\_\+doc} & xml schema contents \\
@@ -471,13 +470,13 @@ void$\vert$object
 
 Definition at line 447 of file D\+B\+Mysql.\+class.\+php.
 
-\hypertarget{classDBMysql_a92f43909e6ba226fc7067ddc25594a33}{\index{D\+B\+Mysql@{D\+B\+Mysql}!create\+Table\+By\+Xml\+File@{create\+Table\+By\+Xml\+File}}
+\hypertarget{classDBMysql_a92f43909e6ba226fc7067ddc25594a33}{}\index{D\+B\+Mysql@{D\+B\+Mysql}!create\+Table\+By\+Xml\+File@{create\+Table\+By\+Xml\+File}}
 \index{create\+Table\+By\+Xml\+File@{create\+Table\+By\+Xml\+File}!D\+B\+Mysql@{D\+B\+Mysql}}
 \subsubsection[{create\+Table\+By\+Xml\+File}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+::create\+Table\+By\+Xml\+File (
 \begin{DoxyParamCaption}
 \item[{}]{\$file\+\_\+name}
 \end{DoxyParamCaption}
-)}}\label{classDBMysql_a92f43909e6ba226fc7067ddc25594a33}
+)}\label{classDBMysql_a92f43909e6ba226fc7067ddc25594a33}
 Creates a table by using xml file path 
 \begin{DoxyParams}[1]{Parameters}
 string & {\em \$file\+\_\+name} & xml schema file path \\
@@ -490,13 +489,13 @@ void$\vert$object
 
 Definition at line 457 of file D\+B\+Mysql.\+class.\+php.
 
-\hypertarget{classDBMysql_a117189e72a44d1c3b615f133f486cf69}{\index{D\+B\+Mysql@{D\+B\+Mysql}!db\+\_\+fetch\+\_\+object@{db\+\_\+fetch\+\_\+object}}
+\hypertarget{classDBMysql_a117189e72a44d1c3b615f133f486cf69}{}\index{D\+B\+Mysql@{D\+B\+Mysql}!db\+\_\+fetch\+\_\+object@{db\+\_\+fetch\+\_\+object}}
 \index{db\+\_\+fetch\+\_\+object@{db\+\_\+fetch\+\_\+object}!D\+B\+Mysql@{D\+B\+Mysql}}
 \subsubsection[{db\+\_\+fetch\+\_\+object}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+::db\+\_\+fetch\+\_\+object (
 \begin{DoxyParamCaption}
 \item[{\&}]{\$result}
 \end{DoxyParamCaption}
-)}}\label{classDBMysql_a117189e72a44d1c3b615f133f486cf69}
+)}\label{classDBMysql_a117189e72a44d1c3b615f133f486cf69}
 Fetch a result row as an object 
 \begin{DoxyParams}[1]{Parameters}
 resource & {\em \$result} & \\
@@ -509,13 +508,13 @@ object
 
 Definition at line 677 of file D\+B\+Mysql.\+class.\+php.
 
-\hypertarget{classDBMysql_a0d907e935bcfafa845fd39640dcc60cf}{\index{D\+B\+Mysql@{D\+B\+Mysql}!db\+\_\+free\+\_\+result@{db\+\_\+free\+\_\+result}}
+\hypertarget{classDBMysql_a0d907e935bcfafa845fd39640dcc60cf}{}\index{D\+B\+Mysql@{D\+B\+Mysql}!db\+\_\+free\+\_\+result@{db\+\_\+free\+\_\+result}}
 \index{db\+\_\+free\+\_\+result@{db\+\_\+free\+\_\+result}!D\+B\+Mysql@{D\+B\+Mysql}}
 \subsubsection[{db\+\_\+free\+\_\+result}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+::db\+\_\+free\+\_\+result (
 \begin{DoxyParamCaption}
 \item[{\&}]{\$result}
 \end{DoxyParamCaption}
-)}}\label{classDBMysql_a0d907e935bcfafa845fd39640dcc60cf}
+)}\label{classDBMysql_a0d907e935bcfafa845fd39640dcc60cf}
 Free result memory 
 \begin{DoxyParams}[1]{Parameters}
 resource & {\em \$result} & \\
@@ -528,13 +527,13 @@ boolean Returns T\+R\+U\+E on success or F\+A\+L\+S\+E on failure.
 
 Definition at line 687 of file D\+B\+Mysql.\+class.\+php.
 
-\hypertarget{classDBMysql_a21acddd922e39574922f60b881add658}{\index{D\+B\+Mysql@{D\+B\+Mysql}!db\+\_\+insert\+\_\+id@{db\+\_\+insert\+\_\+id}}
+\hypertarget{classDBMysql_a21acddd922e39574922f60b881add658}{}\index{D\+B\+Mysql@{D\+B\+Mysql}!db\+\_\+insert\+\_\+id@{db\+\_\+insert\+\_\+id}}
 \index{db\+\_\+insert\+\_\+id@{db\+\_\+insert\+\_\+id}!D\+B\+Mysql@{D\+B\+Mysql}}
 \subsubsection[{db\+\_\+insert\+\_\+id}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+::db\+\_\+insert\+\_\+id (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}}\label{classDBMysql_a21acddd922e39574922f60b881add658}
+)}\label{classDBMysql_a21acddd922e39574922f60b881add658}
 Get the I\+D generated in the last query Return next sequence from sequence table This method use only mysql \begin{DoxyReturn}{Returns}
 int 
 \end{DoxyReturn}
@@ -542,13 +541,13 @@ int
 
 Definition at line 666 of file D\+B\+Mysql.\+class.\+php.
 
-\hypertarget{classDBMysql_a74c9966448ca4a373407ce6f3a1d7eb0}{\index{D\+B\+Mysql@{D\+B\+Mysql}!D\+B\+Mysql@{D\+B\+Mysql}}
+\hypertarget{classDBMysql_a74c9966448ca4a373407ce6f3a1d7eb0}{}\index{D\+B\+Mysql@{D\+B\+Mysql}!D\+B\+Mysql@{D\+B\+Mysql}}
 \index{D\+B\+Mysql@{D\+B\+Mysql}!D\+B\+Mysql@{D\+B\+Mysql}}
 \subsubsection[{D\+B\+Mysql}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+::\+D\+B\+Mysql (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}}\label{classDBMysql_a74c9966448ca4a373407ce6f3a1d7eb0}
+)}\label{classDBMysql_a74c9966448ca4a373407ce6f3a1d7eb0}
 Constructor \begin{DoxyReturn}{Returns}
 void 
 \end{DoxyReturn}
@@ -556,14 +555,14 @@ void
 
 Definition at line 46 of file D\+B\+Mysql.\+class.\+php.
 
-\hypertarget{classDBMysql_aa4cd80d663225f3cd7a539d7d7101b38}{\index{D\+B\+Mysql@{D\+B\+Mysql}!drop\+Column@{drop\+Column}}
+\hypertarget{classDBMysql_aa4cd80d663225f3cd7a539d7d7101b38}{}\index{D\+B\+Mysql@{D\+B\+Mysql}!drop\+Column@{drop\+Column}}
 \index{drop\+Column@{drop\+Column}!D\+B\+Mysql@{D\+B\+Mysql}}
 \subsubsection[{drop\+Column}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+::drop\+Column (
 \begin{DoxyParamCaption}
 \item[{}]{\$table\+\_\+name, }
 \item[{}]{\$column\+\_\+name}
 \end{DoxyParamCaption}
-)}}\label{classDBMysql_aa4cd80d663225f3cd7a539d7d7101b38}
+)}\label{classDBMysql_aa4cd80d663225f3cd7a539d7d7101b38}
 Drop a column from the table 
 \begin{DoxyParams}[1]{Parameters}
 string & {\em \$table\+\_\+name} & table name \\
@@ -578,7 +577,7 @@ void
 
 Definition at line 337 of file D\+B\+Mysql.\+class.\+php.
 
-\hypertarget{classDBMysql_a43937761dd37fa25ef0d373446d01d90}{\index{D\+B\+Mysql@{D\+B\+Mysql}!drop\+Index@{drop\+Index}}
+\hypertarget{classDBMysql_a43937761dd37fa25ef0d373446d01d90}{}\index{D\+B\+Mysql@{D\+B\+Mysql}!drop\+Index@{drop\+Index}}
 \index{drop\+Index@{drop\+Index}!D\+B\+Mysql@{D\+B\+Mysql}}
 \subsubsection[{drop\+Index}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+::drop\+Index (
 \begin{DoxyParamCaption}
@@ -586,7 +585,7 @@ Definition at line 337 of file D\+B\+Mysql.\+class.\+php.
 \item[{}]{\$index\+\_\+name, }
 \item[{}]{\$is\+\_\+unique = {\ttfamily false}}
 \end{DoxyParamCaption}
-)}}\label{classDBMysql_a43937761dd37fa25ef0d373446d01d90}
+)}\label{classDBMysql_a43937761dd37fa25ef0d373446d01d90}
 Drop an index from the table 
 \begin{DoxyParams}[1]{Parameters}
 string & {\em \$table\+\_\+name} & table name \\
@@ -603,13 +602,13 @@ void
 
 Definition at line 401 of file D\+B\+Mysql.\+class.\+php.
 
-\hypertarget{classDBMysql_a926ea6ca10e71ae128be90604b78411f}{\index{D\+B\+Mysql@{D\+B\+Mysql}!get\+Next\+Sequence@{get\+Next\+Sequence}}
+\hypertarget{classDBMysql_a926ea6ca10e71ae128be90604b78411f}{}\index{D\+B\+Mysql@{D\+B\+Mysql}!get\+Next\+Sequence@{get\+Next\+Sequence}}
 \index{get\+Next\+Sequence@{get\+Next\+Sequence}!D\+B\+Mysql@{D\+B\+Mysql}}
 \subsubsection[{get\+Next\+Sequence}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+::get\+Next\+Sequence (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}}\label{classDBMysql_a926ea6ca10e71ae128be90604b78411f}
+)}\label{classDBMysql_a926ea6ca10e71ae128be90604b78411f}
 Return the sequence value incremented by 1 Auto\+\_\+increment column only used in the sequence table \begin{DoxyReturn}{Returns}
 int 
 \end{DoxyReturn}
@@ -617,13 +616,13 @@ int
 
 Definition at line 243 of file D\+B\+Mysql.\+class.\+php.
 
-\hypertarget{classDBMysql_a2e45aa07bdecbaa156452f43381d34e3}{\index{D\+B\+Mysql@{D\+B\+Mysql}!get\+Parser@{get\+Parser}}
+\hypertarget{classDBMysql_a2e45aa07bdecbaa156452f43381d34e3}{}\index{D\+B\+Mysql@{D\+B\+Mysql}!get\+Parser@{get\+Parser}}
 \index{get\+Parser@{get\+Parser}!D\+B\+Mysql@{D\+B\+Mysql}}
 \subsubsection[{get\+Parser}]{\setlength{\rightskip}{0pt plus 5cm}\& D\+B\+Mysql\+::get\+Parser (
 \begin{DoxyParamCaption}
 \item[{}]{\$force = {\ttfamily FALSE}}
 \end{DoxyParamCaption}
-)}}\label{classDBMysql_a2e45aa07bdecbaa156452f43381d34e3}
+)}\label{classDBMysql_a2e45aa07bdecbaa156452f43381d34e3}
 Return the \hyperlink{classDBParser}{D\+B\+Parser} 
 \begin{DoxyParams}[1]{Parameters}
 boolean & {\em \$force} & \\
@@ -636,7 +635,7 @@ boolean & {\em \$force} & \\
 
 Definition at line 697 of file D\+B\+Mysql.\+class.\+php.
 
-\hypertarget{classDBMysql_ad7da6d2017d3a4f2e101b47b3f9b206d}{\index{D\+B\+Mysql@{D\+B\+Mysql}!get\+Select\+Page\+Sql@{get\+Select\+Page\+Sql}}
+\hypertarget{classDBMysql_ad7da6d2017d3a4f2e101b47b3f9b206d}{}\index{D\+B\+Mysql@{D\+B\+Mysql}!get\+Select\+Page\+Sql@{get\+Select\+Page\+Sql}}
 \index{get\+Select\+Page\+Sql@{get\+Select\+Page\+Sql}!D\+B\+Mysql@{D\+B\+Mysql}}
 \subsubsection[{get\+Select\+Page\+Sql}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+::get\+Select\+Page\+Sql (
 \begin{DoxyParamCaption}
@@ -645,7 +644,7 @@ Definition at line 697 of file D\+B\+Mysql.\+class.\+php.
 \item[{}]{\$start\+\_\+count = {\ttfamily 0}, }
 \item[{}]{\$list\+\_\+count = {\ttfamily 0}}
 \end{DoxyParamCaption}
-)}}\label{classDBMysql_ad7da6d2017d3a4f2e101b47b3f9b206d}
+)}\label{classDBMysql_ad7da6d2017d3a4f2e101b47b3f9b206d}
 If select query execute, return paging sql 
 \begin{DoxyParams}[1]{Parameters}
 object & {\em \$query} & \\
@@ -664,14 +663,14 @@ string select paging sql
 
 Definition at line 833 of file D\+B\+Mysql.\+class.\+php.
 
-\hypertarget{classDBMysql_a537be41db3f377b088353baa7be50a13}{\index{D\+B\+Mysql@{D\+B\+Mysql}!is\+Column\+Exists@{is\+Column\+Exists}}
+\hypertarget{classDBMysql_a537be41db3f377b088353baa7be50a13}{}\index{D\+B\+Mysql@{D\+B\+Mysql}!is\+Column\+Exists@{is\+Column\+Exists}}
 \index{is\+Column\+Exists@{is\+Column\+Exists}!D\+B\+Mysql@{D\+B\+Mysql}}
 \subsubsection[{is\+Column\+Exists}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+::is\+Column\+Exists (
 \begin{DoxyParamCaption}
 \item[{}]{\$table\+\_\+name, }
 \item[{}]{\$column\+\_\+name}
 \end{DoxyParamCaption}
-)}}\label{classDBMysql_a537be41db3f377b088353baa7be50a13}
+)}\label{classDBMysql_a537be41db3f377b088353baa7be50a13}
 Check column exist status of the table 
 \begin{DoxyParams}[1]{Parameters}
 string & {\em \$table\+\_\+name} & table name \\
@@ -686,14 +685,14 @@ boolean
 
 Definition at line 349 of file D\+B\+Mysql.\+class.\+php.
 
-\hypertarget{classDBMysql_acabd46877d9ce2131b847696b1174382}{\index{D\+B\+Mysql@{D\+B\+Mysql}!is\+Index\+Exists@{is\+Index\+Exists}}
+\hypertarget{classDBMysql_acabd46877d9ce2131b847696b1174382}{}\index{D\+B\+Mysql@{D\+B\+Mysql}!is\+Index\+Exists@{is\+Index\+Exists}}
 \index{is\+Index\+Exists@{is\+Index\+Exists}!D\+B\+Mysql@{D\+B\+Mysql}}
 \subsubsection[{is\+Index\+Exists}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+::is\+Index\+Exists (
 \begin{DoxyParamCaption}
 \item[{}]{\$table\+\_\+name, }
 \item[{}]{\$index\+\_\+name}
 \end{DoxyParamCaption}
-)}}\label{classDBMysql_acabd46877d9ce2131b847696b1174382}
+)}\label{classDBMysql_acabd46877d9ce2131b847696b1174382}
 Check index status of the table 
 \begin{DoxyParams}[1]{Parameters}
 string & {\em \$table\+\_\+name} & table name \\
@@ -708,13 +707,13 @@ boolean
 
 Definition at line 413 of file D\+B\+Mysql.\+class.\+php.
 
-\hypertarget{classDBMysql_a095f2a64a070958c18cb3ebfab3043e5}{\index{D\+B\+Mysql@{D\+B\+Mysql}!is\+Table\+Exists@{is\+Table\+Exists}}
+\hypertarget{classDBMysql_a095f2a64a070958c18cb3ebfab3043e5}{}\index{D\+B\+Mysql@{D\+B\+Mysql}!is\+Table\+Exists@{is\+Table\+Exists}}
 \index{is\+Table\+Exists@{is\+Table\+Exists}!D\+B\+Mysql@{D\+B\+Mysql}}
 \subsubsection[{is\+Table\+Exists}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+::is\+Table\+Exists (
 \begin{DoxyParamCaption}
 \item[{}]{\$target\+\_\+name}
 \end{DoxyParamCaption}
-)}}\label{classDBMysql_a095f2a64a070958c18cb3ebfab3043e5}
+)}\label{classDBMysql_a095f2a64a070958c18cb3ebfab3043e5}
 Check a table exists status 
 \begin{DoxyParams}[1]{Parameters}
 string & {\em \$target\+\_\+name} & \\
@@ -727,14 +726,14 @@ boolean
 
 Definition at line 280 of file D\+B\+Mysql.\+class.\+php.
 
-\hypertarget{classDBMysql_a19020f1ece293bcc332400234ee95dea}{\index{D\+B\+Mysql@{D\+B\+Mysql}!is\+Valid\+Old\+Password@{is\+Valid\+Old\+Password}}
+\hypertarget{classDBMysql_a19020f1ece293bcc332400234ee95dea}{}\index{D\+B\+Mysql@{D\+B\+Mysql}!is\+Valid\+Old\+Password@{is\+Valid\+Old\+Password}}
 \index{is\+Valid\+Old\+Password@{is\+Valid\+Old\+Password}!D\+B\+Mysql@{D\+B\+Mysql}}
 \subsubsection[{is\+Valid\+Old\+Password}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+::is\+Valid\+Old\+Password (
 \begin{DoxyParamCaption}
 \item[{}]{\$password, }
 \item[{}]{\$saved\+\_\+password}
 \end{DoxyParamCaption}
-)}}\label{classDBMysql_a19020f1ece293bcc332400234ee95dea}
+)}\label{classDBMysql_a19020f1ece293bcc332400234ee95dea}
 Function to obtain mysql old password(mysql only) 
 \begin{DoxyParams}[1]{Parameters}
 string & {\em \$password} & input password \\
@@ -749,13 +748,13 @@ boolean
 
 Definition at line 263 of file D\+B\+Mysql.\+class.\+php.
 
-\hypertarget{classDBMysql_a74f602cacc17d3402cde22eccdc8b46a}{\index{D\+B\+Mysql@{D\+B\+Mysql}!query\+Error@{query\+Error}}
+\hypertarget{classDBMysql_a74f602cacc17d3402cde22eccdc8b46a}{}\index{D\+B\+Mysql@{D\+B\+Mysql}!query\+Error@{query\+Error}}
 \index{query\+Error@{query\+Error}!D\+B\+Mysql@{D\+B\+Mysql}}
 \subsubsection[{query\+Error}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+::query\+Error (
 \begin{DoxyParamCaption}
 \item[{}]{\$query\+Object}
 \end{DoxyParamCaption}
-)}}\label{classDBMysql_a74f602cacc17d3402cde22eccdc8b46a}
+)}\label{classDBMysql_a74f602cacc17d3402cde22eccdc8b46a}
 If have a error, return error object 
 \begin{DoxyParams}[1]{Parameters}
 \hyperlink{classObject}{Object} & {\em \$query\+Object} & \\
@@ -768,7 +767,7 @@ If have a error, return error object
 
 Definition at line 708 of file D\+B\+Mysql.\+class.\+php.
 
-\hypertarget{classDBMysql_a0ea7c0aff43dcd69c1e4d900625c9321}{\index{D\+B\+Mysql@{D\+B\+Mysql}!query\+Page\+Limit@{query\+Page\+Limit}}
+\hypertarget{classDBMysql_a0ea7c0aff43dcd69c1e4d900625c9321}{}\index{D\+B\+Mysql@{D\+B\+Mysql}!query\+Page\+Limit@{query\+Page\+Limit}}
 \index{query\+Page\+Limit@{query\+Page\+Limit}!D\+B\+Mysql@{D\+B\+Mysql}}
 \subsubsection[{query\+Page\+Limit}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+::query\+Page\+Limit (
 \begin{DoxyParamCaption}
@@ -777,7 +776,7 @@ Definition at line 708 of file D\+B\+Mysql.\+class.\+php.
 \item[{}]{\$connection, }
 \item[{}]{\$with\+\_\+values = {\ttfamily true}}
 \end{DoxyParamCaption}
-)}}\label{classDBMysql_a0ea7c0aff43dcd69c1e4d900625c9321}
+)}\label{classDBMysql_a0ea7c0aff43dcd69c1e4d900625c9321}
 If select query execute, return page info 
 \begin{DoxyParams}[1]{Parameters}
 \hyperlink{classObject}{Object} & {\em \$query\+Object} & \\
@@ -799,9 +798,9 @@ Definition at line 735 of file D\+B\+Mysql.\+class.\+php.
 
 
 \subsection{Member Data Documentation}
-\hypertarget{classDBMysql_aa93c8f5f14304a16864a0708a3ba41b0}{\index{D\+B\+Mysql@{D\+B\+Mysql}!\$column\+\_\+type@{\$column\+\_\+type}}
+\hypertarget{classDBMysql_aa93c8f5f14304a16864a0708a3ba41b0}{}\index{D\+B\+Mysql@{D\+B\+Mysql}!\$column\+\_\+type@{\$column\+\_\+type}}
 \index{\$column\+\_\+type@{\$column\+\_\+type}!D\+B\+Mysql@{D\+B\+Mysql}}
-\subsubsection[{\$column\+\_\+type}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+::\$column\+\_\+type}}\label{classDBMysql_aa93c8f5f14304a16864a0708a3ba41b0}
+\subsubsection[{\$column\+\_\+type}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+::\$column\+\_\+type}\label{classDBMysql_aa93c8f5f14304a16864a0708a3ba41b0}
 {\bfseries Initial value\+:}
 \begin{DoxyCode}
 = array(
@@ -819,16 +818,16 @@ Definition at line 735 of file D\+B\+Mysql.\+class.\+php.
 
 Definition at line 31 of file D\+B\+Mysql.\+class.\+php.
 
-\hypertarget{classDBMysql_a2c00f6e29c9e4fc4a532f806cf4313c2}{\index{D\+B\+Mysql@{D\+B\+Mysql}!\$comment\+\_\+syntax@{\$comment\+\_\+syntax}}
+\hypertarget{classDBMysql_a2c00f6e29c9e4fc4a532f806cf4313c2}{}\index{D\+B\+Mysql@{D\+B\+Mysql}!\$comment\+\_\+syntax@{\$comment\+\_\+syntax}}
 \index{\$comment\+\_\+syntax@{\$comment\+\_\+syntax}!D\+B\+Mysql@{D\+B\+Mysql}}
-\subsubsection[{\$comment\+\_\+syntax}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+::\$comment\+\_\+syntax = '/$\ast$ \%s $\ast$/'}}\label{classDBMysql_a2c00f6e29c9e4fc4a532f806cf4313c2}
+\subsubsection[{\$comment\+\_\+syntax}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+::\$comment\+\_\+syntax = \textquotesingle{}/$\ast$ \%s $\ast$/\textquotesingle{}}\label{classDBMysql_a2c00f6e29c9e4fc4a532f806cf4313c2}
 
 
 Definition at line 22 of file D\+B\+Mysql.\+class.\+php.
 
-\hypertarget{classDBMysql_ac95b2047c4c75730e0533be0cccd19d9}{\index{D\+B\+Mysql@{D\+B\+Mysql}!\$prefix@{\$prefix}}
+\hypertarget{classDBMysql_ac95b2047c4c75730e0533be0cccd19d9}{}\index{D\+B\+Mysql@{D\+B\+Mysql}!\$prefix@{\$prefix}}
 \index{\$prefix@{\$prefix}!D\+B\+Mysql@{D\+B\+Mysql}}
-\subsubsection[{\$prefix}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+::\$prefix = 'xe\+\_\+'}}\label{classDBMysql_ac95b2047c4c75730e0533be0cccd19d9}
+\subsubsection[{\$prefix}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+::\$prefix = \textquotesingle{}xe\+\_\+\textquotesingle{}}\label{classDBMysql_ac95b2047c4c75730e0533be0cccd19d9}
 
 
 Definition at line 21 of file D\+B\+Mysql.\+class.\+php.
