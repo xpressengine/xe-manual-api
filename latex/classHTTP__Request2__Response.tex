@@ -1,0 +1,460 @@
+\hypertarget{classHTTP__Request2__Response}{}\section{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response Class Reference}
+\label{classHTTP__Request2__Response}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHTTP__Request2__Response_aaaa2f628e7dbfecfeb775c9ee6c12bdb}{\+\_\+\+\_\+construct} (\$status\+Line, \$body\+Encoded=true, \$effective\+Url=null)
+\item 
+\hyperlink{classHTTP__Request2__Response_a04cced85d4e024e5f41bb326aeba4bb8}{parse\+Header\+Line} (\$header\+Line)
+\item 
+\hyperlink{classHTTP__Request2__Response_a9c058efa93fa093f9e2ea3899aaafd81}{append\+Body} (\$body\+Chunk)
+\item 
+\hyperlink{classHTTP__Request2__Response_ac62d21f48b31db496403da74ec9a9635}{get\+Effective\+Url} ()
+\item 
+\hyperlink{classHTTP__Request2__Response_a624920600f1cff1d72493c74e945ace3}{get\+Status} ()
+\item 
+\hyperlink{classHTTP__Request2__Response_aabc673a3430ee9b8ad0e29275b31c655}{get\+Reason\+Phrase} ()
+\item 
+\hyperlink{classHTTP__Request2__Response_a9f99e1beb096712a7b1ebda78b638b06}{is\+Redirect} ()
+\item 
+\hyperlink{classHTTP__Request2__Response_a4fcafd1538662af1415ccf12cae68c62}{get\+Header} (\$header\+Name=null)
+\item 
+\hyperlink{classHTTP__Request2__Response_a1c8c23d204f797dd18a31aa5a9c50414}{get\+Cookies} ()
+\item 
+\hyperlink{classHTTP__Request2__Response_a2aa534b9ea2994761e3b9260908ad678}{get\+Body} ()
+\item 
+\hyperlink{classHTTP__Request2__Response_acf2961ff04baa2610df8ca30ea5313b0}{get\+Version} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classHTTP__Request2__Response_ae6a45aaf10437d67b4710d61702d9819}{get\+Default\+Reason\+Phrase} (\$code=null)
+\item 
+static \hyperlink{classHTTP__Request2__Response_aa599a743d6dfcdec596d58f359b22566}{decode\+Gzip} (\$data)
+\item 
+static \hyperlink{classHTTP__Request2__Response_ae43f4b1062afa9036c71e3c506d5979e}{decode\+Deflate} (\$data)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHTTP__Request2__Response_a98d67c4a923e69edcfbca9233dd71a81}{parse\+Cookie} (\$cookie\+String)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHTTP__Request2__Response_aadbcb4df3711846a3b890c5492c4ffe7}{\$version}
+\item 
+\hyperlink{classHTTP__Request2__Response_a974eeb592b307dca6c7d02e0311832f5}{\$code}
+\item 
+\hyperlink{classHTTP__Request2__Response_ab9faa50ba9b9f208a02a7c4ce75b391a}{\$reason\+Phrase}
+\item 
+\hyperlink{classHTTP__Request2__Response_ab87ff3f614066accc95a6f29f23bc051}{\$effective\+Url}
+\item 
+\hyperlink{classHTTP__Request2__Response_a17017d7d7f6452267ba57ecd0e10fa35}{\$headers} = array()
+\item 
+\hyperlink{classHTTP__Request2__Response_af1d49532aaf677e27046fafff4f5e985}{\$cookies} = array()
+\item 
+\hyperlink{classHTTP__Request2__Response_adcf7a1e02f6e5d9eac767466f8551a1e}{\$last\+Header} = null
+\item 
+\hyperlink{classHTTP__Request2__Response_a3f5cdce9656ed7bd31859b5778169f66}{\$body} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{classHTTP__Request2__Response_a1ab2bec927b0ac3d7cf82888479a4fea}{\$body\+Encoded}
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classHTTP__Request2__Response_ad9a8fd735e8dc89eb7afc73750ec0bbc}{\$phrases}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 54 of file Response.\+php.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classHTTP__Request2__Response_aaaa2f628e7dbfecfeb775c9ee6c12bdb}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response}}
+\subsubsection[{\+\_\+\+\_\+construct}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response\+::\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+\item[{}]{\$status\+Line, }
+\item[{}]{\$body\+Encoded = {\ttfamily true}, }
+\item[{}]{\$effective\+Url = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{classHTTP__Request2__Response_aaaa2f628e7dbfecfeb775c9ee6c12bdb}
+Constructor, parses the response status line
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$status\+Line} & Response status line (e.\+g. \char`\"{}\+H\+T\+T\+P/1.\+1 200 O\+K\char`\"{}) \\
+\hline
+bool & {\em \$body\+Encoded} & Whether body is still encoded by Content-\/\+Encoding \\
+\hline
+string & {\em \$effective\+Url} & Effective U\+R\+L of the response\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classHTTP__Request2__MessageException}{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Message\+Exception}} & if status line is invalid according to spec \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 212 of file Response.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classHTTP__Request2__Response_a9c058efa93fa093f9e2ea3899aaafd81}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response}!append\+Body@{append\+Body}}
+\index{append\+Body@{append\+Body}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response}}
+\subsubsection[{append\+Body}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response\+::append\+Body (
+\begin{DoxyParamCaption}
+\item[{}]{\$body\+Chunk}
+\end{DoxyParamCaption}
+)}\label{classHTTP__Request2__Response_a9c058efa93fa093f9e2ea3899aaafd81}
+Appends a string to the response body
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$body\+Chunk} & part of response body \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 339 of file Response.\+php.
+
+\hypertarget{classHTTP__Request2__Response_ae43f4b1062afa9036c71e3c506d5979e}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response}!decode\+Deflate@{decode\+Deflate}}
+\index{decode\+Deflate@{decode\+Deflate}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response}}
+\subsubsection[{decode\+Deflate}]{\setlength{\rightskip}{0pt plus 5cm}static H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response\+::decode\+Deflate (
+\begin{DoxyParamCaption}
+\item[{}]{\$data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classHTTP__Request2__Response_ae43f4b1062afa9036c71e3c506d5979e}
+Decodes the message-\/body encoded by deflate
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$data} & deflate-\/encoded data\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string decoded data 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classHTTP__Request2__LogicException}{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Logic\+Exception}} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 615 of file Response.\+php.
+
+\hypertarget{classHTTP__Request2__Response_aa599a743d6dfcdec596d58f359b22566}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response}!decode\+Gzip@{decode\+Gzip}}
+\index{decode\+Gzip@{decode\+Gzip}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response}}
+\subsubsection[{decode\+Gzip}]{\setlength{\rightskip}{0pt plus 5cm}static H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response\+::decode\+Gzip (
+\begin{DoxyParamCaption}
+\item[{}]{\$data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classHTTP__Request2__Response_aa599a743d6dfcdec596d58f359b22566}
+Decodes the message-\/body encoded by gzip
+
+The real decoding work is done by gzinflate() built-\/in function, this method only parses the header and checks data for compliance with R\+F\+C 1952
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$data} & gzip-\/encoded data\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string decoded data 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classHTTP__Request2__LogicException}{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Logic\+Exception}} & \\
+\hline
+{\em \hyperlink{classHTTP__Request2__MessageException}{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Message\+Exception}} & \hyperlink{}{http\+://tools.\+ietf.\+org/html/rfc1952}\\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 481 of file Response.\+php.
+
+\hypertarget{classHTTP__Request2__Response_a2aa534b9ea2994761e3b9260908ad678}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response}!get\+Body@{get\+Body}}
+\index{get\+Body@{get\+Body}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response}}
+\subsubsection[{get\+Body}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response\+::get\+Body (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classHTTP__Request2__Response_a2aa534b9ea2994761e3b9260908ad678}
+Returns the body of the response
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classHTTP__Request2__Exception}{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Exception}} & if body cannot be decoded \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 423 of file Response.\+php.
+
+\hypertarget{classHTTP__Request2__Response_a1c8c23d204f797dd18a31aa5a9c50414}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response}!get\+Cookies@{get\+Cookies}}
+\index{get\+Cookies@{get\+Cookies}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response}}
+\subsubsection[{get\+Cookies}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response\+::get\+Cookies (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classHTTP__Request2__Response_a1c8c23d204f797dd18a31aa5a9c50414}
+Returns cookies set in response
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Definition at line 412 of file Response.\+php.
+
+\hypertarget{classHTTP__Request2__Response_ae6a45aaf10437d67b4710d61702d9819}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response}!get\+Default\+Reason\+Phrase@{get\+Default\+Reason\+Phrase}}
+\index{get\+Default\+Reason\+Phrase@{get\+Default\+Reason\+Phrase}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response}}
+\subsubsection[{get\+Default\+Reason\+Phrase}]{\setlength{\rightskip}{0pt plus 5cm}static H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response\+::get\+Default\+Reason\+Phrase (
+\begin{DoxyParamCaption}
+\item[{}]{\$code = {\ttfamily null}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classHTTP__Request2__Response_ae6a45aaf10437d67b4710d61702d9819}
+Returns the default reason phrase for the given code or all reason phrases
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$code} & Response code\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string$\vert$array$\vert$null Default reason phrase for \$code if \$code is given (null if no phrase is available), array of all reason phrases if \$code is null \hyperlink{}{http\+://pear.\+php.\+net/bugs/18716}
+\end{DoxyReturn}
+
+
+Definition at line 194 of file Response.\+php.
+
+\hypertarget{classHTTP__Request2__Response_ac62d21f48b31db496403da74ec9a9635}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response}!get\+Effective\+Url@{get\+Effective\+Url}}
+\index{get\+Effective\+Url@{get\+Effective\+Url}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response}}
+\subsubsection[{get\+Effective\+Url}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response\+::get\+Effective\+Url (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classHTTP__Request2__Response_ac62d21f48b31db496403da74ec9a9635}
+Returns the effective U\+R\+L of the response
+
+This may be different from the request U\+R\+L if redirects were followed.
+
+\begin{DoxyReturn}{Returns}
+string \hyperlink{}{http\+://pear.\+php.\+net/bugs/bug.\+php?id=18412}
+\end{DoxyReturn}
+
+
+Definition at line 352 of file Response.\+php.
+
+\hypertarget{classHTTP__Request2__Response_a4fcafd1538662af1415ccf12cae68c62}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response}!get\+Header@{get\+Header}}
+\index{get\+Header@{get\+Header}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response}}
+\subsubsection[{get\+Header}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response\+::get\+Header (
+\begin{DoxyParamCaption}
+\item[{}]{\$header\+Name = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{classHTTP__Request2__Response_a4fcafd1538662af1415ccf12cae68c62}
+Returns either the named header or all response headers
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$header\+Name} & Name of header to return\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string$\vert$array Value of \$header\+Name header (null if header is not present), array of all response headers if \$header\+Name is null 
+\end{DoxyReturn}
+
+
+Definition at line 397 of file Response.\+php.
+
+\hypertarget{classHTTP__Request2__Response_aabc673a3430ee9b8ad0e29275b31c655}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response}!get\+Reason\+Phrase@{get\+Reason\+Phrase}}
+\index{get\+Reason\+Phrase@{get\+Reason\+Phrase}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response}}
+\subsubsection[{get\+Reason\+Phrase}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response\+::get\+Reason\+Phrase (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classHTTP__Request2__Response_aabc673a3430ee9b8ad0e29275b31c655}
+Returns the reason phrase
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 372 of file Response.\+php.
+
+\hypertarget{classHTTP__Request2__Response_a624920600f1cff1d72493c74e945ace3}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response}!get\+Status@{get\+Status}}
+\index{get\+Status@{get\+Status}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response}}
+\subsubsection[{get\+Status}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response\+::get\+Status (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classHTTP__Request2__Response_a624920600f1cff1d72493c74e945ace3}
+Returns the status code
+
+\begin{DoxyReturn}{Returns}
+integer 
+\end{DoxyReturn}
+
+
+Definition at line 362 of file Response.\+php.
+
+\hypertarget{classHTTP__Request2__Response_acf2961ff04baa2610df8ca30ea5313b0}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response}!get\+Version@{get\+Version}}
+\index{get\+Version@{get\+Version}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response}}
+\subsubsection[{get\+Version}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response\+::get\+Version (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classHTTP__Request2__Response_acf2961ff04baa2610df8ca30ea5313b0}
+Get the H\+T\+T\+P version of the response
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 462 of file Response.\+php.
+
+\hypertarget{classHTTP__Request2__Response_a9f99e1beb096712a7b1ebda78b638b06}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response}!is\+Redirect@{is\+Redirect}}
+\index{is\+Redirect@{is\+Redirect}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response}}
+\subsubsection[{is\+Redirect}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response\+::is\+Redirect (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classHTTP__Request2__Response_a9f99e1beb096712a7b1ebda78b638b06}
+Whether response is a redirect that can be automatically handled by \hyperlink{classHTTP__Request2}{H\+T\+T\+P\+\_\+\+Request2}
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Definition at line 382 of file Response.\+php.
+
+\hypertarget{classHTTP__Request2__Response_a98d67c4a923e69edcfbca9233dd71a81}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response}!parse\+Cookie@{parse\+Cookie}}
+\index{parse\+Cookie@{parse\+Cookie}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response}}
+\subsubsection[{parse\+Cookie}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response\+::parse\+Cookie (
+\begin{DoxyParamCaption}
+\item[{}]{\$cookie\+String}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classHTTP__Request2__Response_a98d67c4a923e69edcfbca9233dd71a81}
+Parses a Set-\/\+Cookie header to fill \$cookies array
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$cookie\+String} & value of Set-\/\+Cookie header\\
+\hline
+\end{DoxyParams}
+\hyperlink{}{http\+://web.\+archive.\+org/web/20080331104521/http\+://cgi.\+netscape.\+com/newsref/std/cookie\+\_\+spec.\+html}
+
+Definition at line 290 of file Response.\+php.
+
+\hypertarget{classHTTP__Request2__Response_a04cced85d4e024e5f41bb326aeba4bb8}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response}!parse\+Header\+Line@{parse\+Header\+Line}}
+\index{parse\+Header\+Line@{parse\+Header\+Line}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response}}
+\subsubsection[{parse\+Header\+Line}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response\+::parse\+Header\+Line (
+\begin{DoxyParamCaption}
+\item[{}]{\$header\+Line}
+\end{DoxyParamCaption}
+)}\label{classHTTP__Request2__Response_a04cced85d4e024e5f41bb326aeba4bb8}
+Parses the line from H\+T\+T\+P response filling \$headers array
+
+The method should be called after reading the line from socket or receiving it into c\+U\+R\+L callback. Passing an empty string here indicates the end of response headers and triggers additional processing, so be sure to pass an empty string in the end.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$header\+Line} & Line from H\+T\+T\+P response \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 237 of file Response.\+php.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classHTTP__Request2__Response_a3f5cdce9656ed7bd31859b5778169f66}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response}!\$body@{\$body}}
+\index{\$body@{\$body}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response}}
+\subsubsection[{\$body}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response\+::\$body = \textquotesingle{}\textquotesingle{}\hspace{0.3cm}{\ttfamily [protected]}}\label{classHTTP__Request2__Response_a3f5cdce9656ed7bd31859b5778169f66}
+
+
+Definition at line 107 of file Response.\+php.
+
+\hypertarget{classHTTP__Request2__Response_a1ab2bec927b0ac3d7cf82888479a4fea}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response}!\$body\+Encoded@{\$body\+Encoded}}
+\index{\$body\+Encoded@{\$body\+Encoded}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response}}
+\subsubsection[{\$body\+Encoded}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response\+::\$body\+Encoded\hspace{0.3cm}{\ttfamily [protected]}}\label{classHTTP__Request2__Response_a1ab2bec927b0ac3d7cf82888479a4fea}
+
+
+Definition at line 117 of file Response.\+php.
+
+\hypertarget{classHTTP__Request2__Response_a974eeb592b307dca6c7d02e0311832f5}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response}!\$code@{\$code}}
+\index{\$code@{\$code}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response}}
+\subsubsection[{\$code}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response\+::\$code\hspace{0.3cm}{\ttfamily [protected]}}\label{classHTTP__Request2__Response_a974eeb592b307dca6c7d02e0311832f5}
+
+
+Definition at line 67 of file Response.\+php.
+
+\hypertarget{classHTTP__Request2__Response_af1d49532aaf677e27046fafff4f5e985}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response}!\$cookies@{\$cookies}}
+\index{\$cookies@{\$cookies}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response}}
+\subsubsection[{\$cookies}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response\+::\$cookies = array()\hspace{0.3cm}{\ttfamily [protected]}}\label{classHTTP__Request2__Response_af1d49532aaf677e27046fafff4f5e985}
+
+
+Definition at line 92 of file Response.\+php.
+
+\hypertarget{classHTTP__Request2__Response_ab87ff3f614066accc95a6f29f23bc051}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response}!\$effective\+Url@{\$effective\+Url}}
+\index{\$effective\+Url@{\$effective\+Url}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response}}
+\subsubsection[{\$effective\+Url}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response\+::\$effective\+Url\hspace{0.3cm}{\ttfamily [protected]}}\label{classHTTP__Request2__Response_ab87ff3f614066accc95a6f29f23bc051}
+
+
+Definition at line 80 of file Response.\+php.
+
+\hypertarget{classHTTP__Request2__Response_a17017d7d7f6452267ba57ecd0e10fa35}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response}!\$headers@{\$headers}}
+\index{\$headers@{\$headers}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response}}
+\subsubsection[{\$headers}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response\+::\$headers = array()\hspace{0.3cm}{\ttfamily [protected]}}\label{classHTTP__Request2__Response_a17017d7d7f6452267ba57ecd0e10fa35}
+
+
+Definition at line 86 of file Response.\+php.
+
+\hypertarget{classHTTP__Request2__Response_adcf7a1e02f6e5d9eac767466f8551a1e}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response}!\$last\+Header@{\$last\+Header}}
+\index{\$last\+Header@{\$last\+Header}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response}}
+\subsubsection[{\$last\+Header}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response\+::\$last\+Header = null\hspace{0.3cm}{\ttfamily [protected]}}\label{classHTTP__Request2__Response_adcf7a1e02f6e5d9eac767466f8551a1e}
+
+
+Definition at line 101 of file Response.\+php.
+
+\hypertarget{classHTTP__Request2__Response_ad9a8fd735e8dc89eb7afc73750ec0bbc}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response}!\$phrases@{\$phrases}}
+\index{\$phrases@{\$phrases}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response}}
+\subsubsection[{\$phrases}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response\+::\$phrases\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}\label{classHTTP__Request2__Response_ad9a8fd735e8dc89eb7afc73750ec0bbc}
+
+
+Definition at line 125 of file Response.\+php.
+
+\hypertarget{classHTTP__Request2__Response_ab9faa50ba9b9f208a02a7c4ce75b391a}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response}!\$reason\+Phrase@{\$reason\+Phrase}}
+\index{\$reason\+Phrase@{\$reason\+Phrase}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response}}
+\subsubsection[{\$reason\+Phrase}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response\+::\$reason\+Phrase\hspace{0.3cm}{\ttfamily [protected]}}\label{classHTTP__Request2__Response_ab9faa50ba9b9f208a02a7c4ce75b391a}
+
+
+Definition at line 74 of file Response.\+php.
+
+\hypertarget{classHTTP__Request2__Response_aadbcb4df3711846a3b890c5492c4ffe7}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response}!\$version@{\$version}}
+\index{\$version@{\$version}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response}}
+\subsubsection[{\$version}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response\+::\$version\hspace{0.3cm}{\ttfamily [protected]}}\label{classHTTP__Request2__Response_aadbcb4df3711846a3b890c5492c4ffe7}
+
+
+Definition at line 60 of file Response.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libs/\+P\+E\+A\+R.\+1.\+9.\+5/\+H\+T\+T\+P/\+Request2/\hyperlink{Response_8php}{Response.\+php}\end{DoxyCompactItemize}

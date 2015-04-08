@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['adapter_2ephp',['Adapter.php',['../Adapter_8php.html',1,'']]],
   ['addon_2eadmin_2econtroller_2ephp',['addon.admin.controller.php',['../addon_8admin_8controller_8php.html',1,'']]],
   ['addon_2eadmin_2emodel_2ephp',['addon.admin.model.php',['../addon_8admin_8model_8php.html',1,'']]],
   ['addon_2eadmin_2eview_2ephp',['addon.admin.view.php',['../addon_8admin_8view_8php.html',1,'']]],

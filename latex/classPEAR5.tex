@@ -1,0 +1,46 @@
+\hypertarget{classPEAR5}{}\section{P\+E\+A\+R5 Class Reference}
+\label{classPEAR5}\index{P\+E\+A\+R5@{P\+E\+A\+R5}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \& \hyperlink{classPEAR5_a29ccb89d0bf8989788d0823c098325a6}{get\+Static\+Property} (\$class, \$var)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is only meant for P\+H\+P 5 to get rid of certain strict warning that doesn\textquotesingle{}t get hidden since it\textquotesingle{}s in the shutdown function 
+
+Definition at line 6 of file P\+E\+A\+R5.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classPEAR5_a29ccb89d0bf8989788d0823c098325a6}{}\index{P\+E\+A\+R5@{P\+E\+A\+R5}!get\+Static\+Property@{get\+Static\+Property}}
+\index{get\+Static\+Property@{get\+Static\+Property}!P\+E\+A\+R5@{P\+E\+A\+R5}}
+\subsubsection[{get\+Static\+Property}]{\setlength{\rightskip}{0pt plus 5cm}static\& P\+E\+A\+R5\+::get\+Static\+Property (
+\begin{DoxyParamCaption}
+\item[{}]{\$class, }
+\item[{}]{\$var}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classPEAR5_a29ccb89d0bf8989788d0823c098325a6}
+If you have a class that\textquotesingle{}s mostly/entirely static, and you need static properties, you can use this method to simulate them. Eg. in your method(s) do this\+: \$my\+Var = \&\hyperlink{classPEAR5_a29ccb89d0bf8989788d0823c098325a6}{P\+E\+A\+R5\+::get\+Static\+Property}(\textquotesingle{}myclass\textquotesingle{}, \textquotesingle{}my\+Var\textquotesingle{}); You M\+U\+S\+T use a reference, or they will not persist!
+
+public 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$class} & The calling classname, to prevent clashes \\
+\hline
+string & {\em \$var} & The variable to retrieve. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed A reference to the variable. If not set it will be auto initialised to N\+U\+L\+L. 
+\end{DoxyReturn}
+
+
+Definition at line 20 of file P\+E\+A\+R5.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libs/\+P\+E\+A\+R.\+1.\+9.\+5/\hyperlink{PEAR5_8php}{P\+E\+A\+R5.\+php}\end{DoxyCompactItemize}

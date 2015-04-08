@@ -1,0 +1,56 @@
+\hypertarget{classuctc}{}\section{uctc Class Reference}
+\label{classuctc}\index{uctc@{uctc}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classuctc_ae0606c0be3e12ff1184b52a463754a86}{convert} (\$data, \$from, \$to, \$safe\+\_\+mode=false, \$safe\+\_\+char=0x\+F\+F\+F\+C)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 18 of file uctc.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classuctc_ae0606c0be3e12ff1184b52a463754a86}{}\index{uctc@{uctc}!convert@{convert}}
+\index{convert@{convert}!uctc@{uctc}}
+\subsubsection[{convert}]{\setlength{\rightskip}{0pt plus 5cm}static uctc\+::convert (
+\begin{DoxyParamCaption}
+\item[{}]{\$data, }
+\item[{}]{\$from, }
+\item[{}]{\$to, }
+\item[{}]{\$safe\+\_\+mode = {\ttfamily false}, }
+\item[{}]{\$safe\+\_\+char = {\ttfamily 0xFFFC}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classuctc_ae0606c0be3e12ff1184b52a463754a86}
+The actual conversion routine
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$data} & The data to convert, usually a string, array when converting from U\+C\+S-\/4 array \\
+\hline
+string & {\em \$from} & Original encoding of the data \\
+\hline
+string & {\em \$to} & Target encoding of the data \\
+\hline
+bool & {\em \$safe\+\_\+mode} & Safe\+Mode tries to correct invalid codepoints \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed False on failure, String or array on success, depending on target encoding  public 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+0.\+0.\+1 
+\end{DoxySince}
+
+
+Definition at line 35 of file uctc.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libs/idna\+\_\+convert/\hyperlink{uctc_8php}{uctc.\+php}\end{DoxyCompactItemize}

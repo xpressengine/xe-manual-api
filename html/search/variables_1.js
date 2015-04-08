@@ -1,6 +1,8 @@
 var searchData=
 [
   ['_5f_5fxe_5f_5f',['__XE__',['../index_8php.html#a697de427d83b791899ae45d555377756',1,'index.php']]],
+  ['_5f_5fxe_5fmin_5fphp_5fversion_5f_5f',['__XE_MIN_PHP_VERSION__',['../config_8inc_8php.html#a9efd2b40fddf6f5bdc89660de1492f93',1,'config.inc.php']]],
+  ['_5f_5fxe_5frecommend_5fphp_5fversion_5f_5f',['__XE_RECOMMEND_PHP_VERSION__',['../config_8inc_8php.html#a46828ee09f5bc69de2b897e3b605e9d8',1,'config.inc.php']]],
   ['_5f_5fxe_5fversion_5f_5f',['__XE_VERSION__',['../config_8inc_8php.html#afceaaec30d0e5b6a78d0ae28bcbfc8f3',1,'config.inc.php']]],
   ['_5f_5fxe_5fversion_5falpha_5f_5f',['__XE_VERSION_ALPHA__',['../config_8inc_8php.html#aaee982ed748e379cde978edfe8d433e1',1,'config.inc.php']]],
   ['_5f_5fxe_5fversion_5fbeta_5f_5f',['__XE_VERSION_BETA__',['../config_8inc_8php.html#aac8a83557f3eab1d2d2583fe21559ca9',1,'config.inc.php']]],

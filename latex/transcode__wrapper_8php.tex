@@ -1,0 +1,123 @@
+\hypertarget{transcode__wrapper_8php}{}\section{libs/idna\+\_\+convert/transcode\+\_\+wrapper.php File Reference}
+\label{transcode__wrapper_8php}\index{libs/idna\+\_\+convert/transcode\+\_\+wrapper.\+php@{libs/idna\+\_\+convert/transcode\+\_\+wrapper.\+php}}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceIDNA}{I\+D\+N\+A}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{transcode__wrapper_8php_a2ff254e88e75a9b65a7f7ed6701d9307}{encode\+\_\+utf8} (\$string= \textquotesingle{}\textquotesingle{}, \$encoding= \textquotesingle{}iso-\/8859-\/1\textquotesingle{}, \$safe\+\_\+mode=false)
+\item 
+\hyperlink{transcode__wrapper_8php_ad2fd4d69808391b53e99415b7e7d593b}{decode\+\_\+utf8} (\$string= \textquotesingle{}\textquotesingle{}, \$encoding= \textquotesingle{}iso-\/8859-\/1\textquotesingle{}, \$safe\+\_\+mode=false)
+\item 
+\hyperlink{transcode__wrapper_8php_aa7960d121ac08a7136632119e2c7f9ff}{map\+\_\+w1252\+\_\+iso8859\+\_\+1} (\$string= \textquotesingle{}\textquotesingle{})
+\item 
+\hyperlink{transcode__wrapper_8php_a4ef1158fdfc9dfbb47a3642cc16fe19b}{map\+\_\+iso8859\+\_\+1\+\_\+w1252} (\$string= \textquotesingle{}\textquotesingle{})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{transcode__wrapper_8php_ad2fd4d69808391b53e99415b7e7d593b}{}\index{transcode\+\_\+wrapper.\+php@{transcode\+\_\+wrapper.\+php}!decode\+\_\+utf8@{decode\+\_\+utf8}}
+\index{decode\+\_\+utf8@{decode\+\_\+utf8}!transcode\+\_\+wrapper.\+php@{transcode\+\_\+wrapper.\+php}}
+\subsubsection[{decode\+\_\+utf8}]{\setlength{\rightskip}{0pt plus 5cm}decode\+\_\+utf8 (
+\begin{DoxyParamCaption}
+\item[{}]{\$string = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
+\item[{}]{\$encoding = {\ttfamily \textquotesingle{}iso-\/8859-\/1\textquotesingle{}}, }
+\item[{}]{\$safe\+\_\+mode = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{transcode__wrapper_8php_ad2fd4d69808391b53e99415b7e7d593b}
+Convert a string from U\+T\+F-\/8 to any of various encodings
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & String to decode \mbox{[}\\
+\hline
+{\em string} & Encoding; Default\+: I\+S\+O-\/8859-\/1\mbox{]} \mbox{[}\\
+\hline
+{\em bool} & Safe Mode\+: if set to T\+R\+U\+E, the original string is retunred on errors\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string The decoded string or false on failure 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+0.\+0.\+1 
+\end{DoxySince}
+
+
+Definition at line 55 of file transcode\+\_\+wrapper.\+php.
+
+\hypertarget{transcode__wrapper_8php_a2ff254e88e75a9b65a7f7ed6701d9307}{}\index{transcode\+\_\+wrapper.\+php@{transcode\+\_\+wrapper.\+php}!encode\+\_\+utf8@{encode\+\_\+utf8}}
+\index{encode\+\_\+utf8@{encode\+\_\+utf8}!transcode\+\_\+wrapper.\+php@{transcode\+\_\+wrapper.\+php}}
+\subsubsection[{encode\+\_\+utf8}]{\setlength{\rightskip}{0pt plus 5cm}encode\+\_\+utf8 (
+\begin{DoxyParamCaption}
+\item[{}]{\$string = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
+\item[{}]{\$encoding = {\ttfamily \textquotesingle{}iso-\/8859-\/1\textquotesingle{}}, }
+\item[{}]{\$safe\+\_\+mode = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{transcode__wrapper_8php_a2ff254e88e75a9b65a7f7ed6701d9307}
+Convert a string from any of various encodings to U\+T\+F-\/8
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & String to encode \mbox{[}\\
+\hline
+{\em string} & Encoding; Default\+: I\+S\+O-\/8859-\/1\mbox{]} \mbox{[}\\
+\hline
+{\em bool} & Safe Mode\+: if set to T\+R\+U\+E, the original string is retunred on errors\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string The encoded string or false on failure 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+0.\+0.\+1 
+\end{DoxySince}
+
+
+Definition at line 19 of file transcode\+\_\+wrapper.\+php.
+
+\hypertarget{transcode__wrapper_8php_a4ef1158fdfc9dfbb47a3642cc16fe19b}{}\index{transcode\+\_\+wrapper.\+php@{transcode\+\_\+wrapper.\+php}!map\+\_\+iso8859\+\_\+1\+\_\+w1252@{map\+\_\+iso8859\+\_\+1\+\_\+w1252}}
+\index{map\+\_\+iso8859\+\_\+1\+\_\+w1252@{map\+\_\+iso8859\+\_\+1\+\_\+w1252}!transcode\+\_\+wrapper.\+php@{transcode\+\_\+wrapper.\+php}}
+\subsubsection[{map\+\_\+iso8859\+\_\+1\+\_\+w1252}]{\setlength{\rightskip}{0pt plus 5cm}map\+\_\+iso8859\+\_\+1\+\_\+w1252 (
+\begin{DoxyParamCaption}
+\item[{}]{\$string = {\ttfamily \textquotesingle{}\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\label{transcode__wrapper_8php_a4ef1158fdfc9dfbb47a3642cc16fe19b}
+Special treatment for our guys in Redmond Windows-\/1252 is basically I\+S\+O-\/8859-\/1 -- with some exceptions, which get accounted for here 
+\begin{DoxyParams}{Parameters}
+{\em string} & Your input in I\+S\+O-\/8859-\/1 \\
+\hline
+{\em string} & The resulting Win1252 string \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+3.\+0.\+8 
+\end{DoxySince}
+
+
+Definition at line 117 of file transcode\+\_\+wrapper.\+php.
+
+\hypertarget{transcode__wrapper_8php_aa7960d121ac08a7136632119e2c7f9ff}{}\index{transcode\+\_\+wrapper.\+php@{transcode\+\_\+wrapper.\+php}!map\+\_\+w1252\+\_\+iso8859\+\_\+1@{map\+\_\+w1252\+\_\+iso8859\+\_\+1}}
+\index{map\+\_\+w1252\+\_\+iso8859\+\_\+1@{map\+\_\+w1252\+\_\+iso8859\+\_\+1}!transcode\+\_\+wrapper.\+php@{transcode\+\_\+wrapper.\+php}}
+\subsubsection[{map\+\_\+w1252\+\_\+iso8859\+\_\+1}]{\setlength{\rightskip}{0pt plus 5cm}map\+\_\+w1252\+\_\+iso8859\+\_\+1 (
+\begin{DoxyParamCaption}
+\item[{}]{\$string = {\ttfamily \textquotesingle{}\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\label{transcode__wrapper_8php_aa7960d121ac08a7136632119e2c7f9ff}
+Special treatment for our guys in Redmond Windows-\/1252 is basically I\+S\+O-\/8859-\/1 -- with some exceptions, which get accounted for here 
+\begin{DoxyParams}{Parameters}
+{\em string} & Your input in Win1252 \\
+\hline
+{\em string} & The resulting I\+S\+O-\/8859-\/1 string \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+3.\+0.\+8 
+\end{DoxySince}
+
+
+Definition at line 90 of file transcode\+\_\+wrapper.\+php.
+

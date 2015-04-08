@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.7.10</span>
+   &#160;<span id="projectnumber">1.8.0</span>
    </div>
   </td>
  </tr>
@@ -84,7 +84,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_b02e4219757ae4e3a0f1714873865bbf.html">classes</a></li><li class="navelem"><a class="el" href="dir_0978e65c1059bd2f5ff00ea269737540.html">cache</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_4cd7a2829fc898c7d41194735e8655b0.html">classes</a></li><li class="navelem"><a class="el" href="dir_884b3e4aeeba6304f515e08d9514e3bc.html">cache</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -101,11 +101,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
 <div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classCacheMemcache.html#a951aa78ba49fdb971def3e2bb8b7db2e">   23</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classCacheMemcache.html#a951aa78ba49fdb971def3e2bb8b7db2e">getInstance</a>($url)</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    {</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordflow">if</span>(!$GLOBALS[<span class="stringliteral">&#39;__CacheMemcache__&#39;</span>])</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="PEAR_8php.html#a5dd2eabd22dc870da26c0f6cca061438">$GLOBALS</a>[<span class="stringliteral">&#39;__CacheMemcache__&#39;</span>])</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        {</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            $GLOBALS[<span class="stringliteral">&#39;__CacheMemcache__&#39;</span>] = <span class="keyword">new</span> <a class="code" href="classCacheMemcache.html#ac4810e2e11716523e49df5a14b2fc215">CacheMemcache</a>($url);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            <a class="code" href="PEAR_8php.html#a5dd2eabd22dc870da26c0f6cca061438">$GLOBALS</a>[<span class="stringliteral">&#39;__CacheMemcache__&#39;</span>] = <span class="keyword">new</span> <a class="code" href="classCacheMemcache.html#ac4810e2e11716523e49df5a14b2fc215">CacheMemcache</a>($url);</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        }</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordflow">return</span> $GLOBALS[<span class="stringliteral">&#39;__CacheMemcache__&#39;</span>];</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="PEAR_8php.html#a5dd2eabd22dc870da26c0f6cca061438">$GLOBALS</a>[<span class="stringliteral">&#39;__CacheMemcache__&#39;</span>];</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    }</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
 <div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classCacheMemcache.html#ac4810e2e11716523e49df5a14b2fc215">   39</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classCacheMemcache.html#ac4810e2e11716523e49df5a14b2fc215">CacheMemcache</a>($url)</div>
@@ -123,21 +123,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
 <div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classCacheMemcache.html#a4ea35bdd7cc26faa01996dbbc162720f">   57</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classCacheMemcache.html#a4ea35bdd7cc26faa01996dbbc162720f">isSupport</a>()</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">if</span>(isset($GLOBALS[<span class="stringliteral">&#39;XE_MEMCACHE_SUPPORT&#39;</span>]))</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">if</span>(isset(<a class="code" href="PEAR_8php.html#a5dd2eabd22dc870da26c0f6cca061438">$GLOBALS</a>[<span class="stringliteral">&#39;XE_MEMCACHE_SUPPORT&#39;</span>]))</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        {</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        }</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">if</span>($this-&gt;Memcache-&gt;set(<span class="stringliteral">&#39;xe&#39;</span>, <span class="stringliteral">&#39;xe&#39;</span>, MEMCACHE_COMPRESSED, 1))</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            $GLOBALS[<span class="stringliteral">&#39;XE_MEMCACHE_SUPPORT&#39;</span>] = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <a class="code" href="PEAR_8php.html#a5dd2eabd22dc870da26c0f6cca061438">$GLOBALS</a>[<span class="stringliteral">&#39;XE_MEMCACHE_SUPPORT&#39;</span>] = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        }</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        {</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            $GLOBALS[<span class="stringliteral">&#39;XE_MEMCACHE_SUPPORT&#39;</span>] = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <a class="code" href="PEAR_8php.html#a5dd2eabd22dc870da26c0f6cca061438">$GLOBALS</a>[<span class="stringliteral">&#39;XE_MEMCACHE_SUPPORT&#39;</span>] = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        }</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">return</span> $GLOBALS[<span class="stringliteral">&#39;XE_MEMCACHE_SUPPORT&#39;</span>];</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="PEAR_8php.html#a5dd2eabd22dc870da26c0f6cca061438">$GLOBALS</a>[<span class="stringliteral">&#39;XE_MEMCACHE_SUPPORT&#39;</span>];</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
 <div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="classCacheMemcache.html#a27f400a936cc3efb152acc12edb379e1">   82</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classCacheMemcache.html#a27f400a936cc3efb152acc12edb379e1">getKey</a>($key)</div>
@@ -215,7 +215,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;<span class="comment">/* End of file CacheMemcache.class.php */</span></div>
 <div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;<span class="comment">/* Location: ./classes/cache/CacheMemcache.class.php */</span></div>
 <div class="ttc" id="classCacheMemcache_html_af0882957fc5b20e7fb70aeae652920e8"><div class="ttname"><a href="classCacheMemcache.html#af0882957fc5b20e7fb70aeae652920e8">CacheMemcache\isValid</a></div><div class="ttdeci">isValid($key, $modified_time=0)</div><div class="ttdef"><b>Definition:</b> <a href="CacheMemcache_8class_8php_source.html#l00122">CacheMemcache.class.php:122</a></div></div>
-<div class="ttc" id="ko_8install_8php_html_a9008ed94ba185855b1723e367744b87e"><div class="ttname"><a href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a></div><div class="ttdeci">$obj</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00117">ko.install.php:117</a></div></div>
+<div class="ttc" id="ko_8install_8php_html_a9008ed94ba185855b1723e367744b87e"><div class="ttname"><a href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a></div><div class="ttdeci">$obj</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00266">ko.install.php:266</a></div></div>
 <div class="ttc" id="classCacheMemcache_html_a951aa78ba49fdb971def3e2bb8b7db2e"><div class="ttname"><a href="classCacheMemcache.html#a951aa78ba49fdb971def3e2bb8b7db2e">CacheMemcache\getInstance</a></div><div class="ttdeci">getInstance($url)</div><div class="ttdef"><b>Definition:</b> <a href="CacheMemcache_8class_8php_source.html#l00023">CacheMemcache.class.php:23</a></div></div>
 <div class="ttc" id="classCacheBase_html_ad4f01a1a34bce91cb38308028252b233"><div class="ttname"><a href="classCacheBase.html#ad4f01a1a34bce91cb38308028252b233">CacheBase\$valid_time</a></div><div class="ttdeci">$valid_time</div><div class="ttdef"><b>Definition:</b> <a href="CacheHandler_8class_8php_source.html#l00292">CacheHandler.class.php:292</a></div></div>
 <div class="ttc" id="classCacheMemcache_html_aaf8fbd3ad05138296cb522fe8c133017"><div class="ttname"><a href="classCacheMemcache.html#aaf8fbd3ad05138296cb522fe8c133017">CacheMemcache\put</a></div><div class="ttdeci">put($key, $buff, $valid_time=0)</div><div class="ttdef"><b>Definition:</b> <a href="CacheMemcache_8class_8php_source.html#l00104">CacheMemcache.class.php:104</a></div></div>
@@ -224,14 +224,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classCacheMemcache_html_a4ea35bdd7cc26faa01996dbbc162720f"><div class="ttname"><a href="classCacheMemcache.html#a4ea35bdd7cc26faa01996dbbc162720f">CacheMemcache\isSupport</a></div><div class="ttdeci">isSupport()</div><div class="ttdef"><b>Definition:</b> <a href="CacheMemcache_8class_8php_source.html#l00057">CacheMemcache.class.php:57</a></div></div>
 <div class="ttc" id="classCacheMemcache_html_a56ac8c11dec3851aee654babe49d20f8"><div class="ttname"><a href="classCacheMemcache.html#a56ac8c11dec3851aee654babe49d20f8">CacheMemcache\$Memcache</a></div><div class="ttdeci">$Memcache</div><div class="ttdef"><b>Definition:</b> <a href="CacheMemcache_8class_8php_source.html#l00015">CacheMemcache.class.php:15</a></div></div>
 <div class="ttc" id="classCacheMemcache_html_a8ac0c5d0703aaeaabec2c478984d43fa"><div class="ttname"><a href="classCacheMemcache.html#a8ac0c5d0703aaeaabec2c478984d43fa">CacheMemcache\_delete</a></div><div class="ttdeci">_delete($_key)</div><div class="ttdef"><b>Definition:</b> <a href="CacheMemcache_8class_8php_source.html#l00193">CacheMemcache.class.php:193</a></div></div>
-<div class="ttc" id="config_8inc_8php_html_a5387c7a3f2aa38adf16f324cee88db88"><div class="ttname"><a href="config_8inc_8php.html#a5387c7a3f2aa38adf16f324cee88db88">_XE_PATH_</a></div><div class="ttdeci">const _XE_PATH_</div><div class="ttdef"><b>Definition:</b> <a href="config_8inc_8php_source.html#l00046">config.inc.php:46</a></div></div>
+<div class="ttc" id="PEAR_8php_html_a5dd2eabd22dc870da26c0f6cca061438"><div class="ttname"><a href="PEAR_8php.html#a5dd2eabd22dc870da26c0f6cca061438">$GLOBALS</a></div><div class="ttdeci">$GLOBALS['_PEAR_default_error_mode']</div><div class="ttdef"><b>Definition:</b> <a href="PEAR_8php_source.html#l00049">PEAR.php:49</a></div></div>
+<div class="ttc" id="config_8inc_8php_html_a5387c7a3f2aa38adf16f324cee88db88"><div class="ttname"><a href="config_8inc_8php.html#a5387c7a3f2aa38adf16f324cee88db88">_XE_PATH_</a></div><div class="ttdeci">const _XE_PATH_</div><div class="ttdef"><b>Definition:</b> <a href="config_8inc_8php_source.html#l00049">config.inc.php:49</a></div></div>
 <div class="ttc" id="classCacheMemcache_html"><div class="ttname"><a href="classCacheMemcache.html">CacheMemcache</a></div><div class="ttdef"><b>Definition:</b> <a href="CacheMemcache_8class_8php_source.html#l00009">CacheMemcache.class.php:9</a></div></div>
 <div class="ttc" id="classCacheMemcache_html_a064b47c5872cde9ff686b148bf005849"><div class="ttname"><a href="classCacheMemcache.html#a064b47c5872cde9ff686b148bf005849">CacheMemcache\truncate</a></div><div class="ttdeci">truncate()</div><div class="ttdef"><b>Definition:</b> <a href="CacheMemcache_8class_8php_source.html#l00207">CacheMemcache.class.php:207</a></div></div>
 <div class="ttc" id="classCacheMemcache_html_a27f400a936cc3efb152acc12edb379e1"><div class="ttname"><a href="classCacheMemcache.html#a27f400a936cc3efb152acc12edb379e1">CacheMemcache\getKey</a></div><div class="ttdeci">getKey($key)</div><div class="ttdef"><b>Definition:</b> <a href="CacheMemcache_8class_8php_source.html#l00082">CacheMemcache.class.php:82</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 6 2015 13:55:00 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Apr 8 2015 16:29:01 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

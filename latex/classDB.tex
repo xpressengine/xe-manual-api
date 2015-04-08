@@ -41,11 +41,11 @@ Inheritance diagram for D\+B\+:\begin{figure}[H]
 \item 
 \hyperlink{classDB_a3956fe8725f824d8c0a4f3cba449d6df}{get\+Error} ()
 \item 
-\hyperlink{classDB_a2ac8db06615a3ded603d42c731a67ee3}{execute\+Query} (\$query\+\_\+id, \$args=N\+U\+L\+L, \$arg\+\_\+columns=N\+U\+L\+L)
+\hyperlink{classDB_a4541040cbc3f33b059bafd66f8cb0ada}{execute\+Query} (\$query\+\_\+id, \$args=N\+U\+L\+L, \$arg\+\_\+columns=N\+U\+L\+L, \$type=N\+U\+L\+L)
 \item 
 \hyperlink{classDB_a0bbeb84cee13c54916b7f9aac6db4791}{check\+Query\+Cache\+File} (\$query\+\_\+id, \$xml\+\_\+file)
 \item 
-\hyperlink{classDB_ae3febd3b468fd75f9606f247489d5512}{\+\_\+execute\+Query} (\$cache\+\_\+file, \$source\+\_\+args, \$query\+\_\+id, \$arg\+\_\+columns)
+\hyperlink{classDB_abb9920613c642481dc4c7b5f6f8fe9b2}{\+\_\+execute\+Query} (\$cache\+\_\+file, \$source\+\_\+args, \$query\+\_\+id, \$arg\+\_\+columns, \$type)
 \item 
 \hyperlink{classDB_af638cf3ae9ad406810b2f8c2d322225c}{get\+Count\+Cache} (\$tables, \$condition)
 \item 
@@ -176,7 +176,7 @@ void
 \end{DoxyReturn}
 
 
-Definition at line 1282 of file D\+B.\+class.\+php.
+Definition at line 1284 of file D\+B.\+class.\+php.
 
 \hypertarget{classDB_a9e93ad499d34fefc40686d35ed9bf18f}{}\index{D\+B@{D\+B}!\+\_\+\+\_\+query@{\+\_\+\+\_\+query}}
 \index{\+\_\+\+\_\+query@{\+\_\+\+\_\+query}!D\+B@{D\+B}}
@@ -198,7 +198,7 @@ void
 \end{DoxyReturn}
 
 
-Definition at line 1220 of file D\+B.\+class.\+php.
+Definition at line 1222 of file D\+B.\+class.\+php.
 
 \hypertarget{classDB_ae9511581ab1229970e061e599b0f2f94}{}\index{D\+B@{D\+B}!\+\_\+after\+Connect@{\+\_\+after\+Connect}}
 \index{\+\_\+after\+Connect@{\+\_\+after\+Connect}!D\+B@{D\+B}}
@@ -217,7 +217,7 @@ void
 \end{DoxyReturn}
 
 
-Definition at line 1293 of file D\+B.\+class.\+php.
+Definition at line 1295 of file D\+B.\+class.\+php.
 
 \hypertarget{classDB_ab081086c9f44c12dce30d78e00141986}{}\index{D\+B@{D\+B}!\+\_\+begin@{\+\_\+begin}}
 \index{\+\_\+begin@{\+\_\+begin}!D\+B@{D\+B}}
@@ -231,7 +231,7 @@ boolean
 \end{DoxyReturn}
 
 
-Definition at line 1127 of file D\+B.\+class.\+php.
+Definition at line 1129 of file D\+B.\+class.\+php.
 
 \hypertarget{classDB_a8c161612a558f47fb008dec4b46ee05c}{}\index{D\+B@{D\+B}!\+\_\+close@{\+\_\+close}}
 \index{\+\_\+close@{\+\_\+close}!D\+B@{D\+B}}
@@ -250,7 +250,7 @@ void
 \end{DoxyReturn}
 
 
-Definition at line 1089 of file D\+B.\+class.\+php.
+Definition at line 1091 of file D\+B.\+class.\+php.
 
 \hypertarget{classDB_ae6b44dc80d78b7f73cb6741ff0d63399}{}\index{D\+B@{D\+B}!\+\_\+commit@{\+\_\+commit}}
 \index{\+\_\+commit@{\+\_\+commit}!D\+B@{D\+B}}
@@ -264,7 +264,7 @@ boolean
 \end{DoxyReturn}
 
 
-Definition at line 1186 of file D\+B.\+class.\+php.
+Definition at line 1188 of file D\+B.\+class.\+php.
 
 \hypertarget{classDB_aaa2d517ff3b233e36c7873f288cb38ba}{}\index{D\+B@{D\+B}!\+\_\+connect@{\+\_\+connect}}
 \index{\+\_\+connect@{\+\_\+connect}!D\+B@{D\+B}}
@@ -286,7 +286,7 @@ void
 \end{DoxyReturn}
 
 
-Definition at line 1305 of file D\+B.\+class.\+php.
+Definition at line 1307 of file D\+B.\+class.\+php.
 
 \hypertarget{classDB_a3bbfb0e7579e8d6fc27a20c1219bb693}{}\index{D\+B@{D\+B}!\+\_\+db\+Info\+Exists@{\+\_\+db\+Info\+Exists}}
 \index{\+\_\+db\+Info\+Exists@{\+\_\+db\+Info\+Exists}!D\+B@{D\+B}}
@@ -300,18 +300,19 @@ boolean
 \end{DoxyReturn}
 
 
-Definition at line 1070 of file D\+B.\+class.\+php.
+Definition at line 1072 of file D\+B.\+class.\+php.
 
-\hypertarget{classDB_ae3febd3b468fd75f9606f247489d5512}{}\index{D\+B@{D\+B}!\+\_\+execute\+Query@{\+\_\+execute\+Query}}
+\hypertarget{classDB_abb9920613c642481dc4c7b5f6f8fe9b2}{}\index{D\+B@{D\+B}!\+\_\+execute\+Query@{\+\_\+execute\+Query}}
 \index{\+\_\+execute\+Query@{\+\_\+execute\+Query}!D\+B@{D\+B}}
 \subsubsection[{\+\_\+execute\+Query}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+::\+\_\+execute\+Query (
 \begin{DoxyParamCaption}
 \item[{}]{\$cache\+\_\+file, }
 \item[{}]{\$source\+\_\+args, }
 \item[{}]{\$query\+\_\+id, }
-\item[{}]{\$arg\+\_\+columns}
+\item[{}]{\$arg\+\_\+columns, }
+\item[{}]{\$type}
 \end{DoxyParamCaption}
-)}\label{classDB_ae3febd3b468fd75f9606f247489d5512}
+)}\label{classDB_abb9920613c642481dc4c7b5f6f8fe9b2}
 Execute query and return the result 
 \begin{DoxyParams}[1]{Parameters}
 string & {\em \$cache\+\_\+file} & cache file of query \\
@@ -350,7 +351,7 @@ resource
 \end{DoxyReturn}
 
 
-Definition at line 1040 of file D\+B.\+class.\+php.
+Definition at line 1042 of file D\+B.\+class.\+php.
 
 \hypertarget{classDB_a8dc4e826557c3de0d49adf7e6112bfea}{}\index{D\+B@{D\+B}!\+\_\+get\+Slave\+Connection\+String\+Index@{\+\_\+get\+Slave\+Connection\+String\+Index}}
 \index{\+\_\+get\+Slave\+Connection\+String\+Index@{\+\_\+get\+Slave\+Connection\+String\+Index}!D\+B@{D\+B}}
@@ -364,7 +365,7 @@ int
 \end{DoxyReturn}
 
 
-Definition at line 1027 of file D\+B.\+class.\+php.
+Definition at line 1029 of file D\+B.\+class.\+php.
 
 \hypertarget{classDB_a7b0d1af98d9f53968631ca789d6d755c}{}\index{D\+B@{D\+B}!\+\_\+get\+Supported\+List@{\+\_\+get\+Supported\+List}}
 \index{\+\_\+get\+Supported\+List@{\+\_\+get\+Supported\+List}!D\+B@{D\+B}}
@@ -400,7 +401,7 @@ resource
 \end{DoxyReturn}
 
 
-Definition at line 1232 of file D\+B.\+class.\+php.
+Definition at line 1234 of file D\+B.\+class.\+php.
 
 \hypertarget{classDB_ac537ae2001731b709a4b60992b04275b}{}\index{D\+B@{D\+B}!\+\_\+rollback@{\+\_\+rollback}}
 \index{\+\_\+rollback@{\+\_\+rollback}!D\+B@{D\+B}}
@@ -414,7 +415,7 @@ boolean
 \end{DoxyReturn}
 
 
-Definition at line 1155 of file D\+B.\+class.\+php.
+Definition at line 1157 of file D\+B.\+class.\+php.
 
 \hypertarget{classDB_a92f2478aeb03b00432332ad4e4a3d700}{}\index{D\+B@{D\+B}!\+\_\+set\+D\+B\+Info@{\+\_\+set\+D\+B\+Info}}
 \index{\+\_\+set\+D\+B\+Info@{\+\_\+set\+D\+B\+Info}!D\+B@{D\+B}}
@@ -428,7 +429,7 @@ void
 \end{DoxyReturn}
 
 
-Definition at line 1255 of file D\+B.\+class.\+php.
+Definition at line 1257 of file D\+B.\+class.\+php.
 
 \hypertarget{classDB_ab0a6d97fa16de74b4d991c9a4d633718}{}\index{D\+B@{D\+B}!\+\_\+sort\+D\+B\+M\+S@{\+\_\+sort\+D\+B\+M\+S}}
 \index{\+\_\+sort\+D\+B\+M\+S@{\+\_\+sort\+D\+B\+M\+S}!D\+B@{D\+B}}
@@ -454,7 +455,7 @@ void
 \end{DoxyReturn}
 
 
-Definition at line 1362 of file D\+B.\+class.\+php.
+Definition at line 1364 of file D\+B.\+class.\+php.
 
 \hypertarget{classDB_a5aa10d0d5f40cbd7c9b20a84b1c1c307}{}\index{D\+B@{D\+B}!act\+D\+B\+Class\+Start@{act\+D\+B\+Class\+Start}}
 \index{act\+D\+B\+Class\+Start@{act\+D\+B\+Class\+Start}!D\+B@{D\+B}}
@@ -468,7 +469,7 @@ void
 \end{DoxyReturn}
 
 
-Definition at line 1351 of file D\+B.\+class.\+php.
+Definition at line 1353 of file D\+B.\+class.\+php.
 
 \hypertarget{classDB_a79cad647912ef780e967819e6346a742}{}\index{D\+B@{D\+B}!act\+Finish@{act\+Finish}}
 \index{act\+Finish@{act\+Finish}!D\+B@{D\+B}}
@@ -515,7 +516,7 @@ void
 \end{DoxyReturn}
 
 
-Definition at line 1136 of file D\+B.\+class.\+php.
+Definition at line 1138 of file D\+B.\+class.\+php.
 
 \hypertarget{classDB_a0bbeb84cee13c54916b7f9aac6db4791}{}\index{D\+B@{D\+B}!check\+Query\+Cache\+File@{check\+Query\+Cache\+File}}
 \index{check\+Query\+Cache\+File@{check\+Query\+Cache\+File}!D\+B@{D\+B}}
@@ -559,7 +560,7 @@ void
 \end{DoxyReturn}
 
 
-Definition at line 1100 of file D\+B.\+class.\+php.
+Definition at line 1102 of file D\+B.\+class.\+php.
 
 \hypertarget{classDB_a9e84ef91b522b1cd4d1f0f9a3fe3a57a}{}\index{D\+B@{D\+B}!commit@{commit}}
 \index{commit@{commit}!D\+B@{D\+B}}
@@ -578,7 +579,7 @@ void
 \end{DoxyReturn}
 
 
-Definition at line 1196 of file D\+B.\+class.\+php.
+Definition at line 1198 of file D\+B.\+class.\+php.
 
 \hypertarget{classDB_aad22e845daa75ae9ca9b97f7e3a89749}{}\index{D\+B@{D\+B}!create@{create}}
 \index{create@{create}!D\+B@{D\+B}}
@@ -625,17 +626,18 @@ void
 \end{DoxyReturn}
 
 
-Definition at line 839 of file D\+B.\+class.\+php.
+Definition at line 841 of file D\+B.\+class.\+php.
 
-\hypertarget{classDB_a2ac8db06615a3ded603d42c731a67ee3}{}\index{D\+B@{D\+B}!execute\+Query@{execute\+Query}}
+\hypertarget{classDB_a4541040cbc3f33b059bafd66f8cb0ada}{}\index{D\+B@{D\+B}!execute\+Query@{execute\+Query}}
 \index{execute\+Query@{execute\+Query}!D\+B@{D\+B}}
 \subsubsection[{execute\+Query}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+::execute\+Query (
 \begin{DoxyParamCaption}
 \item[{}]{\$query\+\_\+id, }
 \item[{}]{\$args = {\ttfamily NULL}, }
-\item[{}]{\$arg\+\_\+columns = {\ttfamily NULL}}
+\item[{}]{\$arg\+\_\+columns = {\ttfamily NULL}, }
+\item[{}]{\$type = {\ttfamily NULL}}
 \end{DoxyParamCaption}
-)}\label{classDB_a2ac8db06615a3ded603d42c731a67ee3}
+)}\label{classDB_a4541040cbc3f33b059bafd66f8cb0ada}
 Execute \hyperlink{classQuery}{Query} that result of the query xml file This function finds xml file or cache file of \$query\+\_\+id, compiles it and then execute it 
 \begin{DoxyParams}[1]{Parameters}
 string & {\em \$query\+\_\+id} & query id (module.\+queryname) \\
@@ -670,7 +672,7 @@ Function does not check if click count columns exist! You must call \$query-\/$>
 \end{DoxyParams}
 
 
-Definition at line 924 of file D\+B.\+class.\+php.
+Definition at line 926 of file D\+B.\+class.\+php.
 
 \hypertarget{classDB_af638cf3ae9ad406810b2f8c2d322225c}{}\index{D\+B@{D\+B}!get\+Count\+Cache@{get\+Count\+Cache}}
 \index{get\+Count\+Cache@{get\+Count\+Cache}!D\+B@{D\+B}}
@@ -692,7 +694,7 @@ int count of cache data
 \end{DoxyReturn}
 
 
-Definition at line 711 of file D\+B.\+class.\+php.
+Definition at line 713 of file D\+B.\+class.\+php.
 
 \hypertarget{classDB_aeb58bf0e323895cdc7eda34f09254ed6}{}\index{D\+B@{D\+B}!get\+Delete\+Sql@{get\+Delete\+Sql}}
 \index{get\+Delete\+Sql@{get\+Delete\+Sql}!D\+B@{D\+B}}
@@ -717,7 +719,7 @@ string
 \end{DoxyReturn}
 
 
-Definition at line 950 of file D\+B.\+class.\+php.
+Definition at line 952 of file D\+B.\+class.\+php.
 
 \hypertarget{classDB_a65508ca8b2bb4ebf6dbb570caf9c8e40}{}\index{D\+B@{D\+B}!get\+Disable\+List@{get\+Disable\+List}}
 \index{get\+Disable\+List@{get\+Disable\+List}!D\+B@{D\+B}}
@@ -784,7 +786,7 @@ string
 \end{DoxyReturn}
 
 
-Definition at line 1014 of file D\+B.\+class.\+php.
+Definition at line 1016 of file D\+B.\+class.\+php.
 
 \hypertarget{classDB_a16f4a668b6429b4b9af5132cbf885213}{}\index{D\+B@{D\+B}!get\+Instance@{get\+Instance}}
 \index{get\+Instance@{get\+Instance}!D\+B@{D\+B}}
@@ -826,7 +828,7 @@ boolean & {\em \$force} & force load \hyperlink{classDBParser}{D\+B\+Parser} ins
 \end{DoxyReturn}
 
 
-Definition at line 1384 of file D\+B.\+class.\+php.
+Definition at line 1386 of file D\+B.\+class.\+php.
 
 \hypertarget{classDB_a5324aefa22399846c6a7fb8afeb6e55d}{}\index{D\+B@{D\+B}!get\+Select\+Sql@{get\+Select\+Sql}}
 \index{get\+Select\+Sql@{get\+Select\+Sql}!D\+B@{D\+B}}
@@ -848,7 +850,7 @@ string
 \end{DoxyReturn}
 
 
-Definition at line 855 of file D\+B.\+class.\+php.
+Definition at line 857 of file D\+B.\+class.\+php.
 
 \hypertarget{classDB_a82226ac3fc6365c0771b13e389d216cf}{}\index{D\+B@{D\+B}!get\+Supported\+List@{get\+Supported\+List}}
 \index{get\+Supported\+List@{get\+Supported\+List}!D\+B@{D\+B}}
@@ -887,7 +889,7 @@ string
 \end{DoxyReturn}
 
 
-Definition at line 982 of file D\+B.\+class.\+php.
+Definition at line 984 of file D\+B.\+class.\+php.
 
 \hypertarget{classDB_a217cc2096613d1758a9851f1dd990d71}{}\index{D\+B@{D\+B}!is\+Connected@{is\+Connected}}
 \index{is\+Connected@{is\+Connected}!D\+B@{D\+B}}
@@ -962,7 +964,7 @@ void
 \end{DoxyReturn}
 
 
-Definition at line 771 of file D\+B.\+class.\+php.
+Definition at line 773 of file D\+B.\+class.\+php.
 
 \hypertarget{classDB_a8167fd227a1955f8300c0d0e70dd9d9e}{}\index{D\+B@{D\+B}!reset\+Count\+Cache@{reset\+Count\+Cache}}
 \index{reset\+Count\+Cache@{reset\+Count\+Cache}!D\+B@{D\+B}}
@@ -981,7 +983,7 @@ boolean true\+: success, false\+: failed
 \end{DoxyReturn}
 
 
-Definition at line 809 of file D\+B.\+class.\+php.
+Definition at line 811 of file D\+B.\+class.\+php.
 
 \hypertarget{classDB_a1fb6903379bc241fd318b980b9e30882}{}\index{D\+B@{D\+B}!rollback@{rollback}}
 \index{rollback@{rollback}!D\+B@{D\+B}}
@@ -995,7 +997,7 @@ void
 \end{DoxyReturn}
 
 
-Definition at line 1164 of file D\+B.\+class.\+php.
+Definition at line 1166 of file D\+B.\+class.\+php.
 
 \hypertarget{classDB_af2584546ee78d07a40cc16493f8797cc}{}\index{D\+B@{D\+B}!set\+Error@{set\+Error}}
 \index{set\+Error@{set\+Error}!D\+B@{D\+B}}

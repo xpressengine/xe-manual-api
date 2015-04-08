@@ -10,7 +10,7 @@ var searchData=
   ['layout_2emodel_2ephp',['layout.model.php',['../layout_8model_8php.html',1,'']]],
   ['layout_2eview_2ephp',['layout.view.php',['../layout_8view_8php.html',1,'']]],
   ['layout_5fsrl',['layout_srl',['../ko_8install_8php.html#a70054876db09b2519a1726663c8dd9e7',1,'ko.install.php']]],
-  ['layout_5ftype',['layout_type',['../ko_8install_8php.html#a0532d89570cfdaebc628afac2ff5a81b',1,'layout_type():&#160;ko.install.php'],['../ko_8install_8php.html#a559e719d2ff17f12b8fba72773e6601d',1,'LAYOUT_TYPE():&#160;ko.install.php']]],
+  ['layout_5ftype',['layout_type',['../ko_8install_8php.html#a0532d89570cfdaebc628afac2ff5a81b',1,'ko.install.php']]],
   ['layoutadmincontroller',['layoutAdminController',['../classlayoutAdminController.html',1,'']]],
   ['layoutadminmodel',['layoutAdminModel',['../classlayoutAdminModel.html',1,'']]],
   ['layoutadminview',['layoutAdminView',['../classlayoutAdminView.html',1,'']]],
@@ -24,6 +24,7 @@ var searchData=
   ['load',['load',['../classValidator.html#a43de0eb69cae01eee855f825324ffc39',1,'Validator']]],
   ['loaddbinfo',['loadDBInfo',['../classContext.html#af9a710b382c01e18ddabc728d04f5667',1,'Context']]],
   ['loaddrcomponents',['loadDrComponents',['../classeditorModel.html#a1ad866d4c1ab454b9d0b72c8d3cc29bd',1,'editorModel']]],
+  ['loadextension',['loadExtension',['../classPEAR.html#a0c1ee79fa15f1d8ac1b24686a3d3fe44',1,'PEAR']]],
   ['loadfile',['loadFile',['../classContext.html#a01ddbd076a74f16dc46d3c7b358daea6',1,'Context\loadFile()'],['../classFrontEndFileHandler.html#aeb802ae7b7b315da73ec3be224ce9e9f',1,'FrontEndFileHandler\loadFile()']]],
   ['loadjavascriptplugin',['loadJavascriptPlugin',['../classContext.html#acaea76bdc1334df9c2f088103d619593',1,'Context']]],
   ['loadlang',['loadLang',['../classContext.html#a7b22a741ff804e5cdaafd952273bd70c',1,'Context']]],
@@ -33,6 +34,8 @@ var searchData=
   ['loadskininfo',['loadSkinInfo',['../classmoduleModel.html#af2f585723dfb8b8993f0e884136e45bb',1,'moduleModel']]],
   ['loadxmlfile',['loadXmlFile',['../classXmlParser.html#a3975b17b893e196069963d433046771b',1,'XmlParser']]],
   ['lock',['lock',['../classmoduleController.html#a1395c1be0ebed50078212640fba409be',1,'moduleController']]],
+  ['log',['log',['../classHTTP__Request2__Observer__Log.html#a253f36793403dd77277fb2e76d19c117',1,'HTTP_Request2_Observer_Log']]],
+  ['log_2ephp',['Log.php',['../Log_8php.html',1,'']]],
   ['login_5finfo',['login_info',['../classlogin__info.html',1,'']]],
   ['login_5finfo_2eclass_2ephp',['login_info.class.php',['../login__info_8class_8php.html',1,'']]]
 ];

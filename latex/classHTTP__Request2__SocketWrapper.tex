@@ -1,0 +1,318 @@
+\hypertarget{classHTTP__Request2__SocketWrapper}{}\section{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper Class Reference}
+\label{classHTTP__Request2__SocketWrapper}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper}}
+Inheritance diagram for H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classHTTP__Request2__SocketWrapper}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHTTP__Request2__SocketWrapper_a3a59e9400c03f4f9aa6b2c2659f22512}{\+\_\+\+\_\+construct} (\$address, \$timeout, array \$context\+Options=array())
+\item 
+\hyperlink{classHTTP__Request2__SocketWrapper_af5176bcee9170ae7d4d9c00aadbfcde3}{\+\_\+\+\_\+destruct} ()
+\item 
+\hyperlink{classHTTP__Request2__SocketWrapper_a5e483244689fefacb4b774fde087c60d}{read} (\$length)
+\item 
+\hyperlink{classHTTP__Request2__SocketWrapper_a7b6d59527741b687f3de869bdd6bb1bf}{read\+Line} (\$buffer\+Size, \$local\+Timeout=null)
+\item 
+\hyperlink{classHTTP__Request2__SocketWrapper_ac0c9f5044043c4e55efe5f1d71ac63a1}{write} (\$data)
+\item 
+\hyperlink{classHTTP__Request2__SocketWrapper_a25df9e4044072eabf76add57013b205e}{eof} ()
+\item 
+\hyperlink{classHTTP__Request2__SocketWrapper_a5bb5243d3cde9ec3eadcdbed1a3ffba4}{set\+Deadline} (\$deadline, \$timeout)
+\item 
+\hyperlink{classHTTP__Request2__SocketWrapper_a541cea424faf35b039273eb4c5a8472a}{enable\+Crypto} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHTTP__Request2__SocketWrapper_a4325bbe1d479b4e3dd106624c38118a3}{check\+Timeout} ()
+\item 
+\hyperlink{classHTTP__Request2__SocketWrapper_aa26d77c799f9525f11adc23c7b4e7698}{connection\+Warnings\+Handler} (\$errno, \$errstr)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classHTTP__Request2__SocketWrapper_a8eea84ada40da8f5d55d0b2d23aa450b}{\$connection\+Warnings} = array()
+\item 
+\hyperlink{classHTTP__Request2__SocketWrapper_a76f6510956270cea38ea1ea23387a7fe}{\$socket}
+\item 
+\hyperlink{classHTTP__Request2__SocketWrapper_a60fb3c60ee5ae016778114722bba86e4}{\$deadline}
+\item 
+\hyperlink{classHTTP__Request2__SocketWrapper_a1ad0716141ad4c8eaa0da661a4471fe7}{\$timeout}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 39 of file Socket\+Wrapper.\+php.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classHTTP__Request2__SocketWrapper_a3a59e9400c03f4f9aa6b2c2659f22512}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper}}
+\subsubsection[{\+\_\+\+\_\+construct}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper\+::\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+\item[{}]{\$address, }
+\item[{}]{\$timeout, }
+\item[{array}]{\$context\+Options = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}\label{classHTTP__Request2__SocketWrapper_a3a59e9400c03f4f9aa6b2c2659f22512}
+Class constructor, tries to establish connection
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$address} & Address for stream\+\_\+socket\+\_\+client() call, e.\+g. \textquotesingle{}tcp\+://localhost\+:80\textquotesingle{} \\
+\hline
+int & {\em \$timeout} & Connection timeout (seconds) \\
+\hline
+array & {\em \$context\+Options} & \hyperlink{classContext}{Context} options\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classHTTP__Request2__LogicException}{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Logic\+Exception}} & \\
+\hline
+{\em \hyperlink{classHTTP__Request2__ConnectionException}{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Connection\+Exception}} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 76 of file Socket\+Wrapper.\+php.
+
+\hypertarget{classHTTP__Request2__SocketWrapper_af5176bcee9170ae7d4d9c00aadbfcde3}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper}!\+\_\+\+\_\+destruct@{\+\_\+\+\_\+destruct}}
+\index{\+\_\+\+\_\+destruct@{\+\_\+\+\_\+destruct}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper}}
+\subsubsection[{\+\_\+\+\_\+destruct}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper\+::\+\_\+\+\_\+destruct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classHTTP__Request2__SocketWrapper_af5176bcee9170ae7d4d9c00aadbfcde3}
+Destructor, disconnects socket 
+
+Definition at line 117 of file Socket\+Wrapper.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classHTTP__Request2__SocketWrapper_a4325bbe1d479b4e3dd106624c38118a3}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper}!check\+Timeout@{check\+Timeout}}
+\index{check\+Timeout@{check\+Timeout}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper}}
+\subsubsection[{check\+Timeout}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper\+::check\+Timeout (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classHTTP__Request2__SocketWrapper_a4325bbe1d479b4e3dd106624c38118a3}
+Throws an Exception if stream timed out
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classHTTP__Request2__MessageException}{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Message\+Exception}} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 264 of file Socket\+Wrapper.\+php.
+
+\hypertarget{classHTTP__Request2__SocketWrapper_aa26d77c799f9525f11adc23c7b4e7698}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper}!connection\+Warnings\+Handler@{connection\+Warnings\+Handler}}
+\index{connection\+Warnings\+Handler@{connection\+Warnings\+Handler}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper}}
+\subsubsection[{connection\+Warnings\+Handler}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper\+::connection\+Warnings\+Handler (
+\begin{DoxyParamCaption}
+\item[{}]{\$errno, }
+\item[{}]{\$errstr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classHTTP__Request2__SocketWrapper_aa26d77c799f9525f11adc23c7b4e7698}
+Error handler to use during stream\+\_\+socket\+\_\+client() call
+
+One stream\+\_\+socket\+\_\+client() call may produce {\itshape multiple} P\+H\+P warnings (especially Open\+S\+S\+L-\/related), we keep them in an array to later use for the message of \hyperlink{classHTTP__Request2__ConnectionException}{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Connection\+Exception}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$errno} & error level \\
+\hline
+string & {\em \$errstr} & error message\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Definition at line 289 of file Socket\+Wrapper.\+php.
+
+\hypertarget{classHTTP__Request2__SocketWrapper_a541cea424faf35b039273eb4c5a8472a}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper}!enable\+Crypto@{enable\+Crypto}}
+\index{enable\+Crypto@{enable\+Crypto}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper}}
+\subsubsection[{enable\+Crypto}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper\+::enable\+Crypto (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classHTTP__Request2__SocketWrapper_a541cea424faf35b039273eb4c5a8472a}
+Turns on encryption on a socket
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classHTTP__Request2__ConnectionException}{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Connection\+Exception}} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 240 of file Socket\+Wrapper.\+php.
+
+\hypertarget{classHTTP__Request2__SocketWrapper_a25df9e4044072eabf76add57013b205e}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper}!eof@{eof}}
+\index{eof@{eof}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper}}
+\subsubsection[{eof}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper\+::eof (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classHTTP__Request2__SocketWrapper_a25df9e4044072eabf76add57013b205e}
+Tests for end-\/of-\/file on a socket
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Definition at line 216 of file Socket\+Wrapper.\+php.
+
+\hypertarget{classHTTP__Request2__SocketWrapper_a5e483244689fefacb4b774fde087c60d}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper}!read@{read}}
+\index{read@{read}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper}}
+\subsubsection[{read}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper\+::read (
+\begin{DoxyParamCaption}
+\item[{}]{\$length}
+\end{DoxyParamCaption}
+)}\label{classHTTP__Request2__SocketWrapper_a5e483244689fefacb4b774fde087c60d}
+Wrapper around fread(), handles global request timeout
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$length} & Reads up to this number of bytes\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Data read from socket 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classHTTP__Request2__MessageException}{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Message\+Exception}} & In case of timeout \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 130 of file Socket\+Wrapper.\+php.
+
+\hypertarget{classHTTP__Request2__SocketWrapper_a7b6d59527741b687f3de869bdd6bb1bf}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper}!read\+Line@{read\+Line}}
+\index{read\+Line@{read\+Line}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper}}
+\subsubsection[{read\+Line}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper\+::read\+Line (
+\begin{DoxyParamCaption}
+\item[{}]{\$buffer\+Size, }
+\item[{}]{\$local\+Timeout = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{classHTTP__Request2__SocketWrapper_a7b6d59527741b687f3de869bdd6bb1bf}
+Reads until either the end of the socket or a newline, whichever comes first
+
+Strips the trailing newline from the returned data, handles global request timeout. Method idea borrowed from Net\+\_\+\+Socket \hyperlink{classPEAR}{P\+E\+A\+R} package.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$buffer\+Size} & buffer size to use for reading \\
+\hline
+int & {\em \$local\+Timeout} & timeout value to use just for this call (used when waiting for \char`\"{}100 Continue\char`\"{} response)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Available data up to the newline (not including newline) 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classHTTP__Request2__MessageException}{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Message\+Exception}} & In case of timeout \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 153 of file Socket\+Wrapper.\+php.
+
+\hypertarget{classHTTP__Request2__SocketWrapper_a5bb5243d3cde9ec3eadcdbed1a3ffba4}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper}!set\+Deadline@{set\+Deadline}}
+\index{set\+Deadline@{set\+Deadline}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper}}
+\subsubsection[{set\+Deadline}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper\+::set\+Deadline (
+\begin{DoxyParamCaption}
+\item[{}]{\$deadline, }
+\item[{}]{\$timeout}
+\end{DoxyParamCaption}
+)}\label{classHTTP__Request2__SocketWrapper_a5bb5243d3cde9ec3eadcdbed1a3ffba4}
+Sets request deadline
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$deadline} & Exception will be thrown if request continues past this time \\
+\hline
+int & {\em \$timeout} & Original request timeout value, to use in Exception message \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 229 of file Socket\+Wrapper.\+php.
+
+\hypertarget{classHTTP__Request2__SocketWrapper_ac0c9f5044043c4e55efe5f1d71ac63a1}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper}!write@{write}}
+\index{write@{write}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper}}
+\subsubsection[{write}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper\+::write (
+\begin{DoxyParamCaption}
+\item[{}]{\$data}
+\end{DoxyParamCaption}
+)}\label{classHTTP__Request2__SocketWrapper_ac0c9f5044043c4e55efe5f1d71ac63a1}
+Wrapper around fwrite(), handles global request timeout
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$data} & String to be written\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classHTTP__Request2__MessageException}{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Message\+Exception}} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 197 of file Socket\+Wrapper.\+php.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classHTTP__Request2__SocketWrapper_a8eea84ada40da8f5d55d0b2d23aa450b}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper}!\$connection\+Warnings@{\$connection\+Warnings}}
+\index{\$connection\+Warnings@{\$connection\+Warnings}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper}}
+\subsubsection[{\$connection\+Warnings}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper\+::\$connection\+Warnings = array()\hspace{0.3cm}{\ttfamily [protected]}}\label{classHTTP__Request2__SocketWrapper_a8eea84ada40da8f5d55d0b2d23aa450b}
+
+
+Definition at line 45 of file Socket\+Wrapper.\+php.
+
+\hypertarget{classHTTP__Request2__SocketWrapper_a60fb3c60ee5ae016778114722bba86e4}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper}!\$deadline@{\$deadline}}
+\index{\$deadline@{\$deadline}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper}}
+\subsubsection[{\$deadline}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper\+::\$deadline\hspace{0.3cm}{\ttfamily [protected]}}\label{classHTTP__Request2__SocketWrapper_a60fb3c60ee5ae016778114722bba86e4}
+
+
+Definition at line 57 of file Socket\+Wrapper.\+php.
+
+\hypertarget{classHTTP__Request2__SocketWrapper_a76f6510956270cea38ea1ea23387a7fe}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper}!\$socket@{\$socket}}
+\index{\$socket@{\$socket}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper}}
+\subsubsection[{\$socket}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper\+::\$socket\hspace{0.3cm}{\ttfamily [protected]}}\label{classHTTP__Request2__SocketWrapper_a76f6510956270cea38ea1ea23387a7fe}
+
+
+Definition at line 51 of file Socket\+Wrapper.\+php.
+
+\hypertarget{classHTTP__Request2__SocketWrapper_a1ad0716141ad4c8eaa0da661a4471fe7}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper}!\$timeout@{\$timeout}}
+\index{\$timeout@{\$timeout}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper}}
+\subsubsection[{\$timeout}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Socket\+Wrapper\+::\$timeout\hspace{0.3cm}{\ttfamily [protected]}}\label{classHTTP__Request2__SocketWrapper_a1ad0716141ad4c8eaa0da661a4471fe7}
+
+
+Definition at line 63 of file Socket\+Wrapper.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libs/\+P\+E\+A\+R.\+1.\+9.\+5/\+H\+T\+T\+P/\+Request2/\hyperlink{SocketWrapper_8php}{Socket\+Wrapper.\+php}\end{DoxyCompactItemize}

@@ -2,5 +2,22 @@ var searchData=
 [
   ['handler',['Handler',['../classHandler.html',1,'']]],
   ['hinttabletag',['HintTableTag',['../classHintTableTag.html',1,'']]],
-  ['htmldisplayhandler',['HTMLDisplayHandler',['../classHTMLDisplayHandler.html',1,'']]]
+  ['htmldisplayhandler',['HTMLDisplayHandler',['../classHTMLDisplayHandler.html',1,'']]],
+  ['http_5frequest',['HTTP_Request',['../classHTTP__Request.html',1,'']]],
+  ['http_5frequest2',['HTTP_Request2',['../classHTTP__Request2.html',1,'']]],
+  ['http_5frequest2_5fadapter',['HTTP_Request2_Adapter',['../classHTTP__Request2__Adapter.html',1,'']]],
+  ['http_5frequest2_5fadapter_5fcurl',['HTTP_Request2_Adapter_Curl',['../classHTTP__Request2__Adapter__Curl.html',1,'']]],
+  ['http_5frequest2_5fadapter_5fmock',['HTTP_Request2_Adapter_Mock',['../classHTTP__Request2__Adapter__Mock.html',1,'']]],
+  ['http_5frequest2_5fadapter_5fsocket',['HTTP_Request2_Adapter_Socket',['../classHTTP__Request2__Adapter__Socket.html',1,'']]],
+  ['http_5frequest2_5fconnectionexception',['HTTP_Request2_ConnectionException',['../classHTTP__Request2__ConnectionException.html',1,'']]],
+  ['http_5frequest2_5fcookiejar',['HTTP_Request2_CookieJar',['../classHTTP__Request2__CookieJar.html',1,'']]],
+  ['http_5frequest2_5fexception',['HTTP_Request2_Exception',['../classHTTP__Request2__Exception.html',1,'']]],
+  ['http_5frequest2_5flogicexception',['HTTP_Request2_LogicException',['../classHTTP__Request2__LogicException.html',1,'']]],
+  ['http_5frequest2_5fmessageexception',['HTTP_Request2_MessageException',['../classHTTP__Request2__MessageException.html',1,'']]],
+  ['http_5frequest2_5fmultipartbody',['HTTP_Request2_MultipartBody',['../classHTTP__Request2__MultipartBody.html',1,'']]],
+  ['http_5frequest2_5fnotimplementedexception',['HTTP_Request2_NotImplementedException',['../classHTTP__Request2__NotImplementedException.html',1,'']]],
+  ['http_5frequest2_5fobserver_5flog',['HTTP_Request2_Observer_Log',['../classHTTP__Request2__Observer__Log.html',1,'']]],
+  ['http_5frequest2_5fresponse',['HTTP_Request2_Response',['../classHTTP__Request2__Response.html',1,'']]],
+  ['http_5frequest2_5fsocketwrapper',['HTTP_Request2_SocketWrapper',['../classHTTP__Request2__SocketWrapper.html',1,'']]],
+  ['http_5frequest2_5fsocks5',['HTTP_Request2_SOCKS5',['../classHTTP__Request2__SOCKS5.html',1,'']]]
 ];

@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.7.10</span>
+   &#160;<span id="projectnumber">1.8.0</span>
    </div>
   </td>
  </tr>
@@ -84,7 +84,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_b02e4219757ae4e3a0f1714873865bbf.html">classes</a></li><li class="navelem"><a class="el" href="dir_2e531c4b27e8e981c0a64283163dafbb.html">xml</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_4cd7a2829fc898c7d41194735e8655b0.html">classes</a></li><li class="navelem"><a class="el" href="dir_db19e081b64c0e7392db05b05193b1d9.html">xml</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -138,7 +138,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        $this-&gt;lang = <a class="code" href="classContext.html#ae75d6f4064d09e48d0d76614b6997e29">Context::getLangType</a>();</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        $this-&gt;input = $input ? $input : $GLOBALS[<span class="stringliteral">&#39;HTTP_RAW_POST_DATA&#39;</span>];</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        $this-&gt;input = $input ? $input : <a class="code" href="PEAR_8php.html#a5dd2eabd22dc870da26c0f6cca061438">$GLOBALS</a>[<span class="stringliteral">&#39;HTTP_RAW_POST_DATA&#39;</span>];</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        $this-&gt;input = str_replace(array(<span class="charliteral">&#39;&#39;</span>, <span class="charliteral">&#39;&#39;</span>), array(<span class="stringliteral">&#39;&#39;</span>, <span class="stringliteral">&#39;&#39;</span>), $this-&gt;input);</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="comment">// extracts a supported language</span></div>
@@ -185,7 +185,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        <span class="comment">// Save compile starting time for debugging</span></div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        <span class="keywordflow">if</span>(__DEBUG__ == 3)</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        {</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            $GLOBALS[<span class="stringliteral">&#39;__xmlparse_elapsed__&#39;</span>] += <a class="code" href="func_8inc_8php.html#a83ff2cccfdfaf38ba29c8c6d04586deb">getMicroTime</a>() - $start;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            <a class="code" href="PEAR_8php.html#a5dd2eabd22dc870da26c0f6cca061438">$GLOBALS</a>[<span class="stringliteral">&#39;__xmlparse_elapsed__&#39;</span>] += <a class="code" href="func_8inc_8php.html#a83ff2cccfdfaf38ba29c8c6d04586deb">getMicroTime</a>() - $start;</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        }</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classXmlParser.html#aa4324be74ded61847ce33730c7785389">$output</a>;</div>
@@ -211,11 +211,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        $node_name = strtolower($node_name);</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        $cur_obj = array_pop($this-&gt;output);</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        $parent_obj = &amp;$this-&gt;output[count($this-&gt;output) - 1];</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        <span class="keywordflow">if</span>($this-&gt;lang &amp;&amp; $cur_obj-&gt;attrs-&gt;{<span class="stringliteral">&#39;xml:lang&#39;</span>} &amp;&amp; $cur_obj-&gt;attrs-&gt;{<span class="stringliteral">&#39;xml:lang&#39;</span>} != <a class="code" href="ko_8install_8php.html#a7714b111b644017933931ec69a154102">$this-&gt;lang</a>)</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        <span class="keywordflow">if</span>($this-&gt;lang &amp;&amp; $cur_obj-&gt;attrs-&gt;{<span class="stringliteral">&#39;xml:lang&#39;</span>} &amp;&amp; $cur_obj-&gt;attrs-&gt;{<span class="stringliteral">&#39;xml:lang&#39;</span>} != <a class="code" href="example_8php.html#aef99014231eb219a8c774eb4b8463fd9">$this-&gt;lang</a>)</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        {</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;            <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        }</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        <span class="keywordflow">if</span>($this-&gt;lang &amp;&amp; $parent_obj-&gt;{$node_name}-&gt;attrs-&gt;{<span class="stringliteral">&#39;xml:lang&#39;</span>} &amp;&amp; $parent_obj-&gt;{$node_name}-&gt;attrs-&gt;{<span class="stringliteral">&#39;xml:lang&#39;</span>} != <a class="code" href="ko_8install_8php.html#a7714b111b644017933931ec69a154102">$this-&gt;lang</a>)</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        <span class="keywordflow">if</span>($this-&gt;lang &amp;&amp; $parent_obj-&gt;{$node_name}-&gt;attrs-&gt;{<span class="stringliteral">&#39;xml:lang&#39;</span>} &amp;&amp; $parent_obj-&gt;{$node_name}-&gt;attrs-&gt;{<span class="stringliteral">&#39;xml:lang&#39;</span>} != <a class="code" href="example_8php.html#aef99014231eb219a8c774eb4b8463fd9">$this-&gt;lang</a>)</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        {</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;            <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        }</div>
@@ -257,29 +257,30 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;}</div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="comment">/* End of file XmlParser.class.php */</span></div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="comment">/* Location: ./classes/xml/XmlParser.class.php */</span></div>
-<div class="ttc" id="ko_8install_8php_html_a7714b111b644017933931ec69a154102"><div class="ttname"><a href="ko_8install_8php.html#a7714b111b644017933931ec69a154102">$lang</a></div><div class="ttdeci">$lang</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00004">ko.install.php:4</a></div></div>
-<div class="ttc" id="ko_8install_8php_html_a9008ed94ba185855b1723e367744b87e"><div class="ttname"><a href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a></div><div class="ttdeci">$obj</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00117">ko.install.php:117</a></div></div>
-<div class="ttc" id="func_8inc_8php_html_a83ff2cccfdfaf38ba29c8c6d04586deb"><div class="ttname"><a href="func_8inc_8php.html#a83ff2cccfdfaf38ba29c8c6d04586deb">getMicroTime</a></div><div class="ttdeci">getMicroTime()</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00923">func.inc.php:923</a></div></div>
-<div class="ttc" id="ko_8install_8php_html_a73004ce9cd673c1bfafd1dc351134797"><div class="ttname"><a href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a></div><div class="ttdeci">$output</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00009">ko.install.php:9</a></div></div>
+<div class="ttc" id="ko_8install_8php_html_a9008ed94ba185855b1723e367744b87e"><div class="ttname"><a href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a></div><div class="ttdeci">$obj</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00266">ko.install.php:266</a></div></div>
+<div class="ttc" id="func_8inc_8php_html_a83ff2cccfdfaf38ba29c8c6d04586deb"><div class="ttname"><a href="func_8inc_8php.html#a83ff2cccfdfaf38ba29c8c6d04586deb">getMicroTime</a></div><div class="ttdeci">getMicroTime()</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00957">func.inc.php:957</a></div></div>
+<div class="ttc" id="ko_8install_8php_html_a73004ce9cd673c1bfafd1dc351134797"><div class="ttname"><a href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a></div><div class="ttdeci">$output</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00197">ko.install.php:197</a></div></div>
 <div class="ttc" id="classXml__Node___html"><div class="ttname"><a href="classXml__Node__.html">Xml_Node_</a></div><div class="ttdef"><b>Definition:</b> <a href="XmlParser_8class_8php_source.html#l00011">XmlParser.class.php:11</a></div></div>
 <div class="ttc" id="classXmlParser_html_adbe603248522105c2912dcddeedcd6ab"><div class="ttname"><a href="classXmlParser.html#adbe603248522105c2912dcddeedcd6ab">XmlParser\$lang</a></div><div class="ttdeci">$lang</div><div class="ttdef"><b>Definition:</b> <a href="XmlParser_8class_8php_source.html#l00063">XmlParser.class.php:63</a></div></div>
 <div class="ttc" id="classXmlParser_html_a65903457181cddd5d100685e0d6ba66a"><div class="ttname"><a href="classXmlParser.html#a65903457181cddd5d100685e0d6ba66a">XmlParser\$input</a></div><div class="ttdeci">$input</div><div class="ttdef"><b>Definition:</b> <a href="XmlParser_8class_8php_source.html#l00051">XmlParser.class.php:51</a></div></div>
-<div class="ttc" id="classContext_html_ae75d6f4064d09e48d0d76614b6997e29"><div class="ttname"><a href="classContext.html#ae75d6f4064d09e48d0d76614b6997e29">Context\getLangType</a></div><div class="ttdeci">getLangType()</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l00933">Context.class.php:933</a></div></div>
+<div class="ttc" id="classContext_html_ae75d6f4064d09e48d0d76614b6997e29"><div class="ttname"><a href="classContext.html#ae75d6f4064d09e48d0d76614b6997e29">Context\getLangType</a></div><div class="ttdeci">getLangType()</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l00949">Context.class.php:949</a></div></div>
 <div class="ttc" id="classXmlParser_html_aa4324be74ded61847ce33730c7785389"><div class="ttname"><a href="classXmlParser.html#aa4324be74ded61847ce33730c7785389">XmlParser\$output</a></div><div class="ttdeci">$output</div><div class="ttdef"><b>Definition:</b> <a href="XmlParser_8class_8php_source.html#l00057">XmlParser.class.php:57</a></div></div>
 <div class="ttc" id="classXml__Node___html_a92b82fdfee7220d0438f98500ec10dc3"><div class="ttname"><a href="classXml__Node__.html#a92b82fdfee7220d0438f98500ec10dc3">Xml_Node_\__get</a></div><div class="ttdeci">__get($name)</div><div class="ttdef"><b>Definition:</b> <a href="XmlParser_8class_8php_source.html#l00018">XmlParser.class.php:18</a></div></div>
 <div class="ttc" id="classXmlParser_html_aeee1082b5150f2adb53b16b42ca1b9f5"><div class="ttname"><a href="classXmlParser.html#aeee1082b5150f2adb53b16b42ca1b9f5">XmlParser\$oParser</a></div><div class="ttdeci">$oParser</div><div class="ttdef"><b>Definition:</b> <a href="XmlParser_8class_8php_source.html#l00045">XmlParser.class.php:45</a></div></div>
 <div class="ttc" id="classXmlParser_html_aa7b52a3ab42568f6f49056d928688e7a"><div class="ttname"><a href="classXmlParser.html#aa7b52a3ab42568f6f49056d928688e7a">XmlParser\parse</a></div><div class="ttdeci">parse($input= '', $arg1=NULL, $arg2=NULL)</div><div class="ttdef"><b>Definition:</b> <a href="XmlParser_8class_8php_source.html#l00089">XmlParser.class.php:89</a></div></div>
 <div class="ttc" id="classXmlParser_html_a1205550b688631ab1296365904c61a92"><div class="ttname"><a href="classXmlParser.html#a1205550b688631ab1296365904c61a92">XmlParser\_tagBody</a></div><div class="ttdeci">_tagBody($parser, $body)</div><div class="ttdef"><b>Definition:</b> <a href="XmlParser_8class_8php_source.html#l00175">XmlParser.class.php:175</a></div></div>
 <div class="ttc" id="classXmlParser_html_ad6c6c76f2e0c9fbd04c071fc30f1a193"><div class="ttname"><a href="classXmlParser.html#ad6c6c76f2e0c9fbd04c071fc30f1a193">XmlParser\_arrToAttrsObj</a></div><div class="ttdeci">_arrToAttrsObj($arr)</div><div class="ttdef"><b>Definition:</b> <a href="XmlParser_8class_8php_source.html#l00229">XmlParser.class.php:229</a></div></div>
+<div class="ttc" id="PEAR_8php_html_a5dd2eabd22dc870da26c0f6cca061438"><div class="ttname"><a href="PEAR_8php.html#a5dd2eabd22dc870da26c0f6cca061438">$GLOBALS</a></div><div class="ttdeci">$GLOBALS['_PEAR_default_error_mode']</div><div class="ttdef"><b>Definition:</b> <a href="PEAR_8php_source.html#l00049">PEAR.php:49</a></div></div>
 <div class="ttc" id="classFileHandler_html_ac0bd2431461ad2bc04c093bfbb826bea"><div class="ttname"><a href="classFileHandler.html#ac0bd2431461ad2bc04c093bfbb826bea">FileHandler\readFile</a></div><div class="ttdeci">readFile($filename)</div><div class="ttdef"><b>Definition:</b> <a href="FileHandler_8class_8php_source.html#l00127">FileHandler.class.php:127</a></div></div>
 <div class="ttc" id="classXmlParser_html_a3975b17b893e196069963d433046771b"><div class="ttname"><a href="classXmlParser.html#a3975b17b893e196069963d433046771b">XmlParser\loadXmlFile</a></div><div class="ttdeci">loadXmlFile($filename)</div><div class="ttdef"><b>Definition:</b> <a href="XmlParser_8class_8php_source.html#l00070">XmlParser.class.php:70</a></div></div>
 <div class="ttc" id="classXmlParser_html_a01facf5db302e49b0b61fb0e1b1fee36"><div class="ttname"><a href="classXmlParser.html#a01facf5db302e49b0b61fb0e1b1fee36">XmlParser\_tagOpen</a></div><div class="ttdeci">_tagOpen($parser, $node_name, $attrs)</div><div class="ttdef"><b>Definition:</b> <a href="XmlParser_8class_8php_source.html#l00159">XmlParser.class.php:159</a></div></div>
 <div class="ttc" id="classXmlParser_html"><div class="ttname"><a href="classXmlParser.html">XmlParser</a></div><div class="ttdef"><b>Definition:</b> <a href="XmlParser_8class_8php_source.html#l00038">XmlParser.class.php:38</a></div></div>
+<div class="ttc" id="example_8php_html_aef99014231eb219a8c774eb4b8463fd9"><div class="ttname"><a href="example_8php.html#aef99014231eb219a8c774eb4b8463fd9">$lang</a></div><div class="ttdeci">if(isset($_REQUEST['encode'])) if(isset($_REQUEST['decode'])) $lang</div><div class="ttdef"><b>Definition:</b> <a href="example_8php_source.html#l00023">example.php:23</a></div></div>
 <div class="ttc" id="classXmlParser_html_acb524a3ecf27535c9b085a93d714e1c5"><div class="ttname"><a href="classXmlParser.html#acb524a3ecf27535c9b085a93d714e1c5">XmlParser\_tagClosed</a></div><div class="ttdeci">_tagClosed($parser, $node_name)</div><div class="ttdef"><b>Definition:</b> <a href="XmlParser_8class_8php_source.html#l00187">XmlParser.class.php:187</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 6 2015 13:55:00 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Apr 8 2015 16:29:01 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

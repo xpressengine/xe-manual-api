@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.7.10</span>
+   &#160;<span id="projectnumber">1.8.0</span>
    </div>
   </td>
  </tr>
@@ -128,7 +128,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <tr class="even"><td class="entry"><a class="el" href="classDB.html#a3bbfb0e7579e8d6fc27a20c1219bb693">_dbInfoExists</a>()</td><td class="entry"><a class="el" href="classDB.html">DB</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classDBCubrid.html#ac296beebeee54f80e9224f74ec9a0aaa">_executeDeleteAct</a>($queryObject, $with_values=TRUE)</td><td class="entry"><a class="el" href="classDBCubrid.html">DBCubrid</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classDBCubrid.html#a64e0e0229136638b2497561cd32432f8">_executeInsertAct</a>($queryObject, $with_values=TRUE)</td><td class="entry"><a class="el" href="classDBCubrid.html">DBCubrid</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classDB.html#ae3febd3b468fd75f9606f247489d5512">_executeQuery</a>($cache_file, $source_args, $query_id, $arg_columns)</td><td class="entry"><a class="el" href="classDB.html">DB</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classDB.html#abb9920613c642481dc4c7b5f6f8fe9b2">_executeQuery</a>($cache_file, $source_args, $query_id, $arg_columns, $type)</td><td class="entry"><a class="el" href="classDB.html">DB</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classDBCubrid.html#a55e0eb703828c9ae33c0903b896926d0">_executeSelectAct</a>($queryObject, $connection=NULL, $with_values=TRUE)</td><td class="entry"><a class="el" href="classDBCubrid.html">DBCubrid</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classDBCubrid.html#ae9ac1a643d44ff77e59f07aca99a5983">_executeUpdateAct</a>($queryObject, $with_values=TRUE)</td><td class="entry"><a class="el" href="classDBCubrid.html">DBCubrid</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classDBCubrid.html#abb95044521be20a8b2ba105ab623b4d9">_fetch</a>($result, $arrayIndexEndValue=NULL)</td><td class="entry"><a class="el" href="classDBCubrid.html">DBCubrid</a></td><td class="entry"></td></tr>
@@ -146,7 +146,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <tr class="even"><td class="entry"><a class="el" href="classDB.html#a5aa10d0d5f40cbd7c9b20a84b1c1c307">actDBClassStart</a>()</td><td class="entry"><a class="el" href="classDB.html">DB</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classDB.html#a79cad647912ef780e967819e6346a742">actFinish</a>()</td><td class="entry"><a class="el" href="classDB.html">DB</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classDB.html#a51a1ba94763a8211495eac18d74c80bb">actStart</a>($query)</td><td class="entry"><a class="el" href="classDB.html">DB</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classDBCubrid.html#ab06037303de4dd1eee7ca846e8abdc7d">addColumn</a>($table_name, $column_name, $type= 'number', $size= '', $default= '', $notnull=FALSE)</td><td class="entry"><a class="el" href="classDBCubrid.html">DBCubrid</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classDBCubrid.html#a10207e248b4aa36b60cf4adacfb44889">addColumn</a>($table_name, $column_name, $type= 'number', $size= '', $default=null, $notnull=FALSE)</td><td class="entry"><a class="el" href="classDBCubrid.html">DBCubrid</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classDBCubrid.html#a57c81b55423f07caa0c021229c7ffa07">addIndex</a>($table_name, $index_name, $target_columns, $is_unique=FALSE)</td><td class="entry"><a class="el" href="classDBCubrid.html">DBCubrid</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classDBCubrid.html#ab9aea745152a86b3852101aa3225f26d">addQuotes</a>($string)</td><td class="entry"><a class="el" href="classDBCubrid.html">DBCubrid</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classDB.html#a41aea6b3a6787467fcfd16d28a302c54">begin</a>()</td><td class="entry"><a class="el" href="classDB.html">DB</a></td><td class="entry"></td></tr>
@@ -162,7 +162,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <tr class="even"><td class="entry"><a class="el" href="classDBCubrid.html#ad0b269d73617c6de8b3135ee36ae43d2">dropColumn</a>($table_name, $column_name)</td><td class="entry"><a class="el" href="classDBCubrid.html">DBCubrid</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classDBCubrid.html#a11876878e4a688f8d3407aaa93ffd86e">dropIndex</a>($table_name, $index_name, $is_unique=FALSE)</td><td class="entry"><a class="el" href="classDBCubrid.html">DBCubrid</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classDB.html#a63a3a5bdc8e30e1cee37cefddd5ce8de">dropTable</a>($table_name)</td><td class="entry"><a class="el" href="classDB.html">DB</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classDB.html#a2ac8db06615a3ded603d42c731a67ee3">executeQuery</a>($query_id, $args=NULL, $arg_columns=NULL)</td><td class="entry"><a class="el" href="classDB.html">DB</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classDB.html#a4541040cbc3f33b059bafd66f8cb0ada">executeQuery</a>($query_id, $args=NULL, $arg_columns=NULL, $type=NULL)</td><td class="entry"><a class="el" href="classDB.html">DB</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classDB.html#a75a6b61801ef6ed2bbf092f1333a8ccd">getClickCountQuery</a>($queryObject)</td><td class="entry"><a class="el" href="classDB.html">DB</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classDB.html#af638cf3ae9ad406810b2f8c2d322225c">getCountCache</a>($tables, $condition)</td><td class="entry"><a class="el" href="classDB.html">DB</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classDB.html#aeb58bf0e323895cdc7eda34f09254ed6">getDeleteSql</a>($query, $with_values=TRUE, $with_priority=FALSE)</td><td class="entry"><a class="el" href="classDB.html">DB</a></td><td class="entry"></td></tr>
@@ -193,7 +193,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 6 2015 13:55:03 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Apr 8 2015 16:29:09 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

@@ -10,6 +10,9 @@ var searchData=
   ['editorhandler_2eclass_2ephp',['EditorHandler.class.php',['../EditorHandler_8class_8php.html',1,'']]],
   ['embedfilter_2eclass_2ephp',['EmbedFilter.class.php',['../EmbedFilter_8class_8php.html',1,'']]],
   ['emoticon_2eclass_2ephp',['emoticon.class.php',['../emoticon_8class_8php.html',1,'']]],
+  ['example_2ephp',['example.php',['../example_8php.html',1,'']]],
+  ['exception_2ephp',['Exception.php',['../HTTP_2Request2_2Exception_8php.html',1,'']]],
+  ['exception_2ephp',['Exception.php',['../PEAR_2Exception_8php.html',1,'']]],
   ['expression_2eclass_2ephp',['Expression.class.php',['../Expression_8class_8php.html',1,'']]],
   ['extract_2eclass_2ephp',['extract.class.php',['../extract_8class_8php.html',1,'']]],
   ['extravar_2eclass_2ephp',['Extravar.class.php',['../Extravar_8class_8php.html',1,'']]]
