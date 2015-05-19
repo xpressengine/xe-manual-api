@@ -18,6 +18,13 @@
 \item 
 static \& \hyperlink{classTemplateHandler_a9745460c5daccfc48abf8652778b2718}{get\+Instance} ()
 \end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classTemplateHandler_a783df180d319abe3722862ed6edacb9d}{init} (\$tpl\+\_\+path, \$tpl\+\_\+filename, \$tpl\+\_\+file= \textquotesingle{}\textquotesingle{})
+\item 
+\hyperlink{classTemplateHandler_acf0023ac6383d43e9b0ab854c75c0694}{parse} (\$buff=null)
+\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -152,6 +159,50 @@ returns \hyperlink{classTemplateHandler}{Template\+Handler}\textquotesingle{}s s
 
 
 Definition at line 40 of file Template\+Handler.\+class.\+php.
+
+\hypertarget{classTemplateHandler_a783df180d319abe3722862ed6edacb9d}{}\index{Template\+Handler@{Template\+Handler}!init@{init}}
+\index{init@{init}!Template\+Handler@{Template\+Handler}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}Template\+Handler\+::init (
+\begin{DoxyParamCaption}
+\item[{}]{\$tpl\+\_\+path, }
+\item[{}]{\$tpl\+\_\+filename, }
+\item[{}]{\$tpl\+\_\+file = {\ttfamily \textquotesingle{}\textquotesingle{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classTemplateHandler_a783df180d319abe3722862ed6edacb9d}
+set variables for template compile 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$tpl\+\_\+path} & \\
+\hline
+string & {\em \$tpl\+\_\+filename} & \\
+\hline
+string & {\em \$tpl\+\_\+file} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 71 of file Template\+Handler.\+class.\+php.
+
+\hypertarget{classTemplateHandler_acf0023ac6383d43e9b0ab854c75c0694}{}\index{Template\+Handler@{Template\+Handler}!parse@{parse}}
+\index{parse@{parse}!Template\+Handler@{Template\+Handler}}
+\subsubsection[{parse}]{\setlength{\rightskip}{0pt plus 5cm}Template\+Handler\+::parse (
+\begin{DoxyParamCaption}
+\item[{}]{\$buff = {\ttfamily null}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{classTemplateHandler_acf0023ac6383d43e9b0ab854c75c0694}
+parse syntax. 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$buff} & template file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string compiled result in case of success or N\+U\+L\+L in case of error 
+\end{DoxyReturn}
+
+
+Definition at line 216 of file Template\+Handler.\+class.\+php.
 
 
 

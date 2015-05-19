@@ -19,7 +19,7 @@ var searchData=
   ['pagemobile',['pageMobile',['../classpageMobile.html',1,'']]],
   ['pageview',['pageView',['../classpageView.html',1,'']]],
   ['pagewap',['pageWap',['../classpageWap.html',1,'']]],
-  ['parse',['parse',['../classGeneralXmlParser.html#a908eec0715e2c7470a18e149a092f300',1,'GeneralXmlParser\parse()'],['../classXmlParser.html#aa7b52a3ab42568f6f49056d928688e7a',1,'XmlParser\parse()'],['../classXmlQueryParser.html#a73bf00a88a856f3acb99dba3f554aeb2',1,'XmlQueryParser\parse()']]],
+  ['parse',['parse',['../classTemplateHandler.html#acf0023ac6383d43e9b0ab854c75c0694',1,'TemplateHandler\parse()'],['../classGeneralXmlParser.html#a908eec0715e2c7470a18e149a092f300',1,'GeneralXmlParser\parse()'],['../classXmlParser.html#aa7b52a3ab42568f6f49056d928688e7a',1,'XmlParser\parse()'],['../classXmlQueryParser.html#a73bf00a88a856f3acb99dba3f554aeb2',1,'XmlQueryParser\parse()']]],
   ['parse_5fxml_5fquery',['parse_xml_query',['../classXmlQueryParser.html#ada0b24aac541d493f8344a74776664cb',1,'XmlQueryParser']]],
   ['parsecolumnname',['parseColumnName',['../classDBParser.html#a4e9d7229c290a48fddd26c278f964dab',1,'DBParser']]],
   ['parsecookie',['parseCookie',['../classHTTP__Request2__Response.html#a98d67c4a923e69edcfbca9233dd71a81',1,'HTTP_Request2_Response']]],

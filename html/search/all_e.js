@@ -52,7 +52,6 @@ var searchData=
   ['menu_2eadmin_2eview_2ephp',['menu.admin.view.php',['../menu_8admin_8view_8php.html',1,'']]],
   ['menu_2eclass_2ephp',['menu.class.php',['../menu_8class_8php.html',1,'']]],
   ['menu_2emobile_2ephp',['menu.mobile.php',['../menu_8mobile_8php.html',1,'']]],
-  ['menu_5fname_5flist',['menu_name_list',['../ko_8install_8php.html#a9223cf55eb6ff5239c0396968e619fbe',1,'menu_name_list():&#160;ko.install.php'],['../ko_8install_8php.html#a5e00e121a1038ef3c304b7f78488d102',1,'menu_name_list():&#160;ko.install.php']]],
   ['menuadmincontroller',['menuAdminController',['../classmenuAdminController.html',1,'']]],
   ['menuadminmodel',['menuAdminModel',['../classmenuAdminModel.html',1,'']]],
   ['menuadminview',['menuAdminView',['../classmenuAdminView.html',1,'']]],
