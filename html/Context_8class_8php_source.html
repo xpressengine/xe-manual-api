@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.8.2</span>
+   &#160;<span id="projectnumber">1.8.3</span>
    </div>
   </td>
  </tr>
@@ -1147,7 +1147,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01384"></a><span class="lineno"> 1384</span>&#160;            {</div>
 <div class="line"><a name="l01385"></a><span class="lineno"> 1385</span>&#160;                $result[$k] = $v;</div>
 <div class="line"><a name="l01386"></a><span class="lineno"> 1386</span>&#160;</div>
-<div class="line"><a name="l01387"></a><span class="lineno"> 1387</span>&#160;                <span class="keywordflow">if</span>($do_stripslashes &amp;&amp; version_compare(PHP_VERSION, <span class="stringliteral">&#39;5.9.0&#39;</span>, <span class="charliteral">&#39;&lt;&#39;</span>) &amp;&amp; get_magic_quotes_gpc())</div>
+<div class="line"><a name="l01387"></a><span class="lineno"> 1387</span>&#160;                <span class="keywordflow">if</span>($do_stripslashes &amp;&amp; version_compare(PHP_VERSION, <span class="stringliteral">&#39;5.4.0&#39;</span>, <span class="charliteral">&#39;&lt;&#39;</span>) &amp;&amp; get_magic_quotes_gpc())</div>
 <div class="line"><a name="l01388"></a><span class="lineno"> 1388</span>&#160;                {</div>
 <div class="line"><a name="l01389"></a><span class="lineno"> 1389</span>&#160;                    $result[$k] = stripslashes($result[$k]);</div>
 <div class="line"><a name="l01390"></a><span class="lineno"> 1390</span>&#160;                }</div>
@@ -1170,7 +1170,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01412"></a><span class="lineno"> 1412</span>&#160;</div>
 <div class="line"><a name="l01418"></a><span class="lineno"><a class="line" href="classContext.html#a9c821f96670ef47c7139bafc6b39091b"> 1418</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classContext.html#a9c821f96670ef47c7139bafc6b39091b">_setUploadedArgument</a>()</div>
 <div class="line"><a name="l01419"></a><span class="lineno"> 1419</span>&#160;    {</div>
-<div class="line"><a name="l01420"></a><span class="lineno"> 1420</span>&#160;        <span class="keywordflow">if</span>($_SERVER[<span class="stringliteral">&#39;REQUEST_METHOD&#39;</span>] != <span class="stringliteral">&#39;POST&#39;</span> || !$_FILES || stripos($_SERVER[<span class="stringliteral">&#39;CONTENT_TYPE&#39;</span>], <span class="stringliteral">&#39;multipart/form-data&#39;</span>) === FALSE || stripos($_SERVER[<span class="stringliteral">&#39;HTTP_CONTENT_TYPE&#39;</span>], <span class="stringliteral">&#39;multipart/form-data&#39;</span>) === FALSE)</div>
+<div class="line"><a name="l01420"></a><span class="lineno"> 1420</span>&#160;        <span class="keywordflow">if</span>($_SERVER[<span class="stringliteral">&#39;REQUEST_METHOD&#39;</span>] != <span class="stringliteral">&#39;POST&#39;</span> || !$_FILES || (stripos($_SERVER[<span class="stringliteral">&#39;CONTENT_TYPE&#39;</span>], <span class="stringliteral">&#39;multipart/form-data&#39;</span>) === FALSE &amp;&amp; stripos($_SERVER[<span class="stringliteral">&#39;HTTP_CONTENT_TYPE&#39;</span>], <span class="stringliteral">&#39;multipart/form-data&#39;</span>) === FALSE))</div>
 <div class="line"><a name="l01421"></a><span class="lineno"> 1421</span>&#160;        {</div>
 <div class="line"><a name="l01422"></a><span class="lineno"> 1422</span>&#160;            <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l01423"></a><span class="lineno"> 1423</span>&#160;        }</div>
@@ -2253,7 +2253,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 19 2015 16:37:13 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 9 2015 17:20:07 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>
