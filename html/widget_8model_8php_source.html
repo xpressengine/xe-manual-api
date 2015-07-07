@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.8.3</span>
+   &#160;<span id="projectnumber">1.8.4</span>
    </div>
   </td>
  </tr>
@@ -364,70 +364,71 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        <span class="keywordflow">if</span>(file_exists($preview_file)) $buff[] = sprintf(<span class="stringliteral">&#39;$widgetStyle_info-&gt;preview = &quot;%s&quot;;&#39;</span>, $preview_file);</div>
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;</div>
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;        <span class="comment">// Author information</span></div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;        $author_list = (!is_array($author_list)) ? array($author_list) : $author_list;</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;        <span class="keywordflow">foreach</span>($author_list as $idx =&gt; $author)</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        {</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;            $buff[] = sprintf(<span class="stringliteral">&#39;$widgetStyle_info-&gt;author[%d] = new stdClass();&#39;</span>, $idx);</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;            $buff[] = sprintf(<span class="stringliteral">&#39;$widgetStyle_info-&gt;author[%d]-&gt;name = &quot;%s&quot;;&#39;</span>, $idx, $author-&gt;name-&gt;body);</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;            $buff[] = sprintf(<span class="stringliteral">&#39;$widgetStyle_info-&gt;author[%d]-&gt;email_address = &quot;%s&quot;;&#39;</span>, $idx, $author-&gt;attrs-&gt;email_address);</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;            $buff[] = sprintf(<span class="stringliteral">&#39;$widgetStyle_info-&gt;author[%d]-&gt;homepage = &quot;%s&quot;;&#39;</span>, $idx, $author-&gt;attrs-&gt;link);</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;        }</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;        <span class="comment">// Extra vars (user defined variables to use in a template)</span></div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        $extra_var_groups = $xml_obj-&gt;extra_vars-&gt;group;</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        <span class="keywordflow">if</span>(!$extra_var_groups) $extra_var_groups = $xml_obj-&gt;extra_vars;</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        <span class="keywordflow">if</span>(!is_array($extra_var_groups)) $extra_var_groups = array($extra_var_groups);</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        $extra_var_count = 0;</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;        $buff[] = sprintf(<span class="stringliteral">&#39;$widgetStyle_info-&gt;extra_var = new stdClass();&#39;</span>, $extra_var_count);</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        <span class="keywordflow">foreach</span>($extra_var_groups as $group)</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        {</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;            <a class="code" href="ko_8install_8php.html#a99863a9d4b597491e1a9c801f2e55c0b">$extra_vars</a> = (!is_array($group-&gt;var)) ? array($group-&gt;var) : $group-&gt;var;</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="ko_8install_8php.html#a99863a9d4b597491e1a9c801f2e55c0b">$extra_vars</a>[0]-&gt;attrs-&gt;id || <a class="code" href="ko_8install_8php.html#a99863a9d4b597491e1a9c801f2e55c0b">$extra_vars</a>[0]-&gt;attrs-&gt;name)</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;            {</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;                <span class="keywordflow">foreach</span>(<a class="code" href="ko_8install_8php.html#a99863a9d4b597491e1a9c801f2e55c0b">$extra_vars</a> as $var)</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;                {</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;                    $extra_var_count++;</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;                    $id = ($var-&gt;attrs-&gt;id) ? $var-&gt;attrs-&gt;id : $var-&gt;attrs-&gt;name;</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;                    $name = ($var-&gt;name-&gt;body) ? $var-&gt;name-&gt;body : $var-&gt;title-&gt;body;</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;                    $type = ($var-&gt;attrs-&gt;type) ? $var-&gt;attrs-&gt;type : $var-&gt;type-&gt;body;</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;                    $buff[] = sprintf(<span class="stringliteral">&#39;$widgetStyle_info-&gt;extra_var-&gt;%s = new stdClass();&#39;</span>, $id);</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;                    $buff[] = sprintf(<span class="stringliteral">&#39;$widgetStyle_info-&gt;extra_var-&gt;%s-&gt;group = &quot;%s&quot;;&#39;</span>, $id, $group-&gt;title-&gt;body);</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;                    $buff[] = sprintf(<span class="stringliteral">&#39;$widgetStyle_info-&gt;extra_var-&gt;%s-&gt;name = &quot;%s&quot;;&#39;</span>, $id, $name);</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;                    $buff[] = sprintf(<span class="stringliteral">&#39;$widgetStyle_info-&gt;extra_var-&gt;%s-&gt;type = &quot;%s&quot;;&#39;</span>, $id, $type);</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;                    <span class="keywordflow">if</span>($type ==<span class="stringliteral">&#39;filebox&#39;</span>)</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;                    {</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;                        $buff[] = sprintf(<span class="stringliteral">&#39;$widgetStyle_info-&gt;extra_var-&gt;%s-&gt;filter = &quot;%s&quot;;&#39;</span>, $id, $var-&gt;attrs-&gt;filter);</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;                        $buff[] = sprintf(<span class="stringliteral">&#39;$widgetStyle_info-&gt;extra_var-&gt;%s-&gt;allow_multiple = &quot;%s&quot;;&#39;</span>, $id, $var-&gt;attrs-&gt;allow_multiple);</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;                    }</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;                    $buff[] = sprintf(<span class="stringliteral">&#39;$widgetStyle_info-&gt;extra_var-&gt;%s-&gt;value = $vars-&gt;%s;&#39;</span>, $id, $id);</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;                    $buff[] = sprintf(<span class="stringliteral">&#39;$widgetStyle_info-&gt;extra_var-&gt;%s-&gt;description = &quot;%s&quot;;&#39;</span>, $id, str_replace(<span class="charliteral">&#39;&quot;&#39;</span>,<span class="charliteral">&#39;\&quot;&#39;</span>,$var-&gt;description-&gt;body));</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;                    <span class="keywordflow">if</span>($var-&gt;options)</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;                    {</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;                        $var_options = (!is_array($var-&gt;options)) ? array($var-&gt;options) : $var-&gt;options;</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;                        <span class="keywordflow">foreach</span>($var_options as $option_item)</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;                        {</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;                            $buff[] = sprintf(<span class="stringliteral">&#39;$widgetStyle_info-&gt;extra_var-&gt;%s-&gt;options[&quot;%s&quot;] = &quot;%s&quot;;&#39;</span>, $id, $option_item-&gt;value-&gt;body, $option_item-&gt;name-&gt;body);</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;                        }</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;                    }</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;                }</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;            }</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;        }</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;        $buff[] = sprintf(<span class="stringliteral">&#39;$widgetStyle_info-&gt;extra_var_count = %d;&#39;</span>, $extra_var_count);</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;        <a class="code" href="classFileHandler.html#ad90c10a81460f437bc68952427606155">FileHandler::writeFile</a>($cache_file, implode(PHP_EOL, $buff));</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;        <span class="keywordflow">if</span>(file_exists($cache_file)) @include($cache_file);</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;        <span class="keywordflow">return</span> $widgetStyle_info;</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    }</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;}</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;<span class="comment">/* End of file widget.model.php */</span></div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;<span class="comment">/* Location: ./modules/widget/widget.model.php */</span></div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;        <span class="keywordflow">if</span>(!is_array($xml_obj-&gt;author)) $author_list[] = $xml_obj-&gt;author;</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;        <span class="keywordflow">else</span> $author_list = $xml_obj-&gt;author;</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        <span class="keywordflow">foreach</span>($author_list as $idx =&gt; $author)</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;        {</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;            $buff[] = sprintf(<span class="stringliteral">&#39;$widgetStyle_info-&gt;author[%d] = new stdClass();&#39;</span>, $idx);</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;            $buff[] = sprintf(<span class="stringliteral">&#39;$widgetStyle_info-&gt;author[%d]-&gt;name = &quot;%s&quot;;&#39;</span>, $idx, $author-&gt;name-&gt;body);</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;            $buff[] = sprintf(<span class="stringliteral">&#39;$widgetStyle_info-&gt;author[%d]-&gt;email_address = &quot;%s&quot;;&#39;</span>, $idx, $author-&gt;attrs-&gt;email_address);</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;            $buff[] = sprintf(<span class="stringliteral">&#39;$widgetStyle_info-&gt;author[%d]-&gt;homepage = &quot;%s&quot;;&#39;</span>, $idx, $author-&gt;attrs-&gt;link);</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;        }</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        <span class="comment">// Extra vars (user defined variables to use in a template)</span></div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        $extra_var_groups = $xml_obj-&gt;extra_vars-&gt;group;</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        <span class="keywordflow">if</span>(!$extra_var_groups) $extra_var_groups = $xml_obj-&gt;extra_vars;</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        <span class="keywordflow">if</span>(!is_array($extra_var_groups)) $extra_var_groups = array($extra_var_groups);</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;        $extra_var_count = 0;</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        $buff[] = sprintf(<span class="stringliteral">&#39;$widgetStyle_info-&gt;extra_var = new stdClass();&#39;</span>, $extra_var_count);</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        <span class="keywordflow">foreach</span>($extra_var_groups as $group)</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        {</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;            <a class="code" href="ko_8install_8php.html#a99863a9d4b597491e1a9c801f2e55c0b">$extra_vars</a> = (!is_array($group-&gt;var)) ? array($group-&gt;var) : $group-&gt;var;</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="ko_8install_8php.html#a99863a9d4b597491e1a9c801f2e55c0b">$extra_vars</a>[0]-&gt;attrs-&gt;id || <a class="code" href="ko_8install_8php.html#a99863a9d4b597491e1a9c801f2e55c0b">$extra_vars</a>[0]-&gt;attrs-&gt;name)</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;            {</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;                <span class="keywordflow">foreach</span>(<a class="code" href="ko_8install_8php.html#a99863a9d4b597491e1a9c801f2e55c0b">$extra_vars</a> as $var)</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;                {</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;                    $extra_var_count++;</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;                    $id = ($var-&gt;attrs-&gt;id) ? $var-&gt;attrs-&gt;id : $var-&gt;attrs-&gt;name;</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;                    $name = ($var-&gt;name-&gt;body) ? $var-&gt;name-&gt;body : $var-&gt;title-&gt;body;</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;                    $type = ($var-&gt;attrs-&gt;type) ? $var-&gt;attrs-&gt;type : $var-&gt;type-&gt;body;</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;                    $buff[] = sprintf(<span class="stringliteral">&#39;$widgetStyle_info-&gt;extra_var-&gt;%s = new stdClass();&#39;</span>, $id);</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;                    $buff[] = sprintf(<span class="stringliteral">&#39;$widgetStyle_info-&gt;extra_var-&gt;%s-&gt;group = &quot;%s&quot;;&#39;</span>, $id, $group-&gt;title-&gt;body);</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;                    $buff[] = sprintf(<span class="stringliteral">&#39;$widgetStyle_info-&gt;extra_var-&gt;%s-&gt;name = &quot;%s&quot;;&#39;</span>, $id, $name);</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;                    $buff[] = sprintf(<span class="stringliteral">&#39;$widgetStyle_info-&gt;extra_var-&gt;%s-&gt;type = &quot;%s&quot;;&#39;</span>, $id, $type);</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;                    <span class="keywordflow">if</span>($type ==<span class="stringliteral">&#39;filebox&#39;</span>)</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;                    {</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;                        $buff[] = sprintf(<span class="stringliteral">&#39;$widgetStyle_info-&gt;extra_var-&gt;%s-&gt;filter = &quot;%s&quot;;&#39;</span>, $id, $var-&gt;attrs-&gt;filter);</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;                        $buff[] = sprintf(<span class="stringliteral">&#39;$widgetStyle_info-&gt;extra_var-&gt;%s-&gt;allow_multiple = &quot;%s&quot;;&#39;</span>, $id, $var-&gt;attrs-&gt;allow_multiple);</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;                    }</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;                    $buff[] = sprintf(<span class="stringliteral">&#39;$widgetStyle_info-&gt;extra_var-&gt;%s-&gt;value = $vars-&gt;%s;&#39;</span>, $id, $id);</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;                    $buff[] = sprintf(<span class="stringliteral">&#39;$widgetStyle_info-&gt;extra_var-&gt;%s-&gt;description = &quot;%s&quot;;&#39;</span>, $id, str_replace(<span class="charliteral">&#39;&quot;&#39;</span>,<span class="charliteral">&#39;\&quot;&#39;</span>,$var-&gt;description-&gt;body));</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;                    <span class="keywordflow">if</span>($var-&gt;options)</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;                    {</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;                        $var_options = (!is_array($var-&gt;options)) ? array($var-&gt;options) : $var-&gt;options;</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;                        <span class="keywordflow">foreach</span>($var_options as $option_item)</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;                        {</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;                            $buff[] = sprintf(<span class="stringliteral">&#39;$widgetStyle_info-&gt;extra_var-&gt;%s-&gt;options[&quot;%s&quot;] = &quot;%s&quot;;&#39;</span>, $id, $option_item-&gt;value-&gt;body, $option_item-&gt;name-&gt;body);</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;                        }</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;                    }</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;                }</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;            }</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;        }</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;        $buff[] = sprintf(<span class="stringliteral">&#39;$widgetStyle_info-&gt;extra_var_count = %d;&#39;</span>, $extra_var_count);</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;        <a class="code" href="classFileHandler.html#ad90c10a81460f437bc68952427606155">FileHandler::writeFile</a>($cache_file, implode(PHP_EOL, $buff));</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;        <span class="keywordflow">if</span>(file_exists($cache_file)) @include($cache_file);</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;        <span class="keywordflow">return</span> $widgetStyle_info;</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    }</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;}</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;<span class="comment">/* End of file widget.model.php */</span></div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;<span class="comment">/* Location: ./modules/widget/widget.model.php */</span></div>
 <div class="ttc" id="ko_8install_8php_html_a99863a9d4b597491e1a9c801f2e55c0b"><div class="ttname"><a href="ko_8install_8php.html#a99863a9d4b597491e1a9c801f2e55c0b">$extra_vars</a></div><div class="ttdeci">foreach($sitemap as $id=&gt; &amp;$val) $extra_vars</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00180">ko.install.php:180</a></div></div>
 <div class="ttc" id="classFileHandler_html_ad90c10a81460f437bc68952427606155"><div class="ttname"><a href="classFileHandler.html#ad90c10a81460f437bc68952427606155">FileHandler\writeFile</a></div><div class="ttdeci">writeFile($filename, $buff, $mode=&quot;w&quot;)</div><div class="ttdef"><b>Definition:</b> <a href="FileHandler_8class_8php_source.html#l00145">FileHandler.class.php:145</a></div></div>
 <div class="ttc" id="classwidgetModel_html_a185fc0ca0bcf22fd6efb045ce8912e47"><div class="ttname"><a href="classwidgetModel.html#a185fc0ca0bcf22fd6efb045ce8912e47">widgetModel\getWidgetStyleInfo</a></div><div class="ttdeci">getWidgetStyleInfo($widgetStyle)</div><div class="ttdoc">Modules conf/info.xml wanted to read the information It uses caching to reduce time for xml parsing ...</div><div class="ttdef"><b>Definition:</b> <a href="widget_8model_8php_source.html#l00264">widget.model.php:264</a></div></div>
@@ -448,7 +449,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 9 2015 17:20:11 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 7 2015 19:26:31 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

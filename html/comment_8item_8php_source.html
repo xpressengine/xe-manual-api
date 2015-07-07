@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.8.3</span>
+   &#160;<span id="projectnumber">1.8.4</span>
    </div>
   </td>
  </tr>
@@ -444,7 +444,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;</div>
 <div class="line"><a name="l00397"></a><span class="lineno"><a class="line" href="classcommentItem.html#ae5f0203691b6d16a2d99ae40d67adb3f">  397</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classcommentItem.html#ae5f0203691b6d16a2d99ae40d67adb3f">getRegdateGM</a>()</div>
 <div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    {</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;        <span class="keywordflow">return</span> $this-&gt;<a class="code" href="classcommentItem.html#acae004be4282c96181e79cc0f3b3adfa">getRegdate</a>(<span class="stringliteral">&#39;D, d M Y H:i:s&#39;</span>) . <span class="charliteral">&#39; &#39;</span> . <a class="code" href="PEAR_8php.html#a5dd2eabd22dc870da26c0f6cca061438">$GLOBALS</a>[<span class="stringliteral">&#39;_time_zone&#39;</span>];</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;        <span class="keywordflow">return</span> $this-&gt;<a class="code" href="classcommentItem.html#acae004be4282c96181e79cc0f3b3adfa">getRegdate</a>(<span class="stringliteral">&#39;D, d M Y H:i:s&#39;</span>) . <span class="charliteral">&#39; &#39;</span> . <a class="code" href="config_8inc_8php.html#a2843c2516649b5d9554f09b06b7b810a">$GLOBALS</a>[<span class="stringliteral">&#39;_time_zone&#39;</span>];</div>
 <div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;    }</div>
 <div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;</div>
 <div class="line"><a name="l00402"></a><span class="lineno"><a class="line" href="classcommentItem.html#aa7a413ef04f4c64c779a8bb119a5c214">  402</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classcommentItem.html#aa7a413ef04f4c64c779a8bb119a5c214">getUpdate</a>($format = <span class="stringliteral">&#39;Y.m.d H:i:s&#39;</span>)</div>
@@ -539,14 +539,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;        $signature = $oMemberModel-&gt;getSignature($this-&gt;<span class="keyword">get</span>(<span class="stringliteral">&#39;member_srl&#39;</span>));</div>
 <div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;</div>
 <div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;        <span class="comment">// check if max height of the signiture is specified on the member module</span></div>
-<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;        <span class="keywordflow">if</span>(!isset(<a class="code" href="PEAR_8php.html#a5dd2eabd22dc870da26c0f6cca061438">$GLOBALS</a>[<span class="stringliteral">&#39;__member_signature_max_height&#39;</span>]))</div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;        <span class="keywordflow">if</span>(!isset(<a class="code" href="config_8inc_8php.html#a2843c2516649b5d9554f09b06b7b810a">$GLOBALS</a>[<span class="stringliteral">&#39;__member_signature_max_height&#39;</span>]))</div>
 <div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;        {</div>
 <div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;            <a class="code" href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a> = <a class="code" href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a>(<span class="stringliteral">&#39;module&#39;</span>);</div>
 <div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;            $member_config = <a class="code" href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a>-&gt;getModuleConfig(<span class="stringliteral">&#39;member&#39;</span>);</div>
-<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;            <a class="code" href="PEAR_8php.html#a5dd2eabd22dc870da26c0f6cca061438">$GLOBALS</a>[<span class="stringliteral">&#39;__member_signature_max_height&#39;</span>] = $member_config-&gt;signature_max_height;</div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;            <a class="code" href="config_8inc_8php.html#a2843c2516649b5d9554f09b06b7b810a">$GLOBALS</a>[<span class="stringliteral">&#39;__member_signature_max_height&#39;</span>] = $member_config-&gt;signature_max_height;</div>
 <div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;        }</div>
 <div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;</div>
-<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;        $max_signature_height = <a class="code" href="PEAR_8php.html#a5dd2eabd22dc870da26c0f6cca061438">$GLOBALS</a>[<span class="stringliteral">&#39;__member_signature_max_height&#39;</span>];</div>
+<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;        $max_signature_height = <a class="code" href="config_8inc_8php.html#a2843c2516649b5d9554f09b06b7b810a">$GLOBALS</a>[<span class="stringliteral">&#39;__member_signature_max_height&#39;</span>];</div>
 <div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;</div>
 <div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;        <span class="keywordflow">if</span>($max_signature_height)</div>
 <div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;        {</div>
@@ -579,168 +579,176 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;            <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;        }</div>
 <div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;</div>
-<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;        <span class="comment">// If signiture height setting is omitted, create a square</span></div>
-<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;        <span class="keywordflow">if</span>(!$height)</div>
-<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;        {</div>
-<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;            $height = $width;</div>
-<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;        }</div>
-<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;</div>
-<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;        <span class="comment">// return false if neigher attached file nor image;</span></div>
-<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;        <span class="keywordflow">if</span>(!$this-&gt;<a class="code" href="classcommentItem.html#abe1774ffe4e8c0f5c14822c5698433da">hasUploadedFiles</a>() &amp;&amp; !preg_match(<span class="stringliteral">&quot;!&lt;img!is&quot;</span>, $this-&gt;<span class="keyword">get</span>(<span class="stringliteral">&#39;content&#39;</span>)))</div>
-<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;        {</div>
-<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;            <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;        }</div>
-<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;</div>
-<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;        <span class="comment">// get thumbail generation info on the doc module configuration.</span></div>
-<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;        <span class="keywordflow">if</span>(!in_array($thumbnail_type, array(<span class="stringliteral">&#39;crop&#39;</span>, <span class="stringliteral">&#39;ratio&#39;</span>)))</div>
-<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;        {</div>
-<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;            $thumbnail_type = <span class="stringliteral">&#39;crop&#39;</span>;</div>
-<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;        }</div>
-<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;</div>
-<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;        <span class="comment">// Define thumbnail information</span></div>
-<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;        $thumbnail_path = sprintf(<span class="stringliteral">&#39;files/thumbnails/%s&#39;</span>, <a class="code" href="func_8inc_8php.html#ae1a0ad24dbf34de227ffd2eb0d1f8da3">getNumberingPath</a>($this-&gt;comment_srl, 3));</div>
-<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;        $thumbnail_file = sprintf(<span class="stringliteral">&#39;%s%dx%d.%s.jpg&#39;</span>, $thumbnail_path, $width, $height, $thumbnail_type);</div>
-<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;        $thumbnail_url = <a class="code" href="classContext.html#aa79578cfccee4d7f7c4890dc6e36ff90">Context::getRequestUri</a>() . $thumbnail_file;</div>
+<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;        <span class="keywordflow">if</span>($this-&gt;<a class="code" href="classcommentItem.html#abae79d7831d1674aec166e449a70dca7">isSecret</a>() &amp;&amp; !$this-&gt;<a class="code" href="classcommentItem.html#aa614277cd1369df7b0446e0cffd65c6d">isGranted</a>())</div>
+<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;        {</div>
+<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;            <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;        }</div>
+<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;</div>
+<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;        <span class="comment">// If signiture height setting is omitted, create a square</span></div>
+<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;        <span class="keywordflow">if</span>(!$height)</div>
+<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;        {</div>
+<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;            $height = $width;</div>
+<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;        }</div>
+<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;</div>
+<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;        <span class="comment">// return false if neigher attached file nor image;</span></div>
+<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;        <span class="keywordflow">if</span>(!$this-&gt;<a class="code" href="classcommentItem.html#abe1774ffe4e8c0f5c14822c5698433da">hasUploadedFiles</a>() &amp;&amp; !preg_match(<span class="stringliteral">&quot;!&lt;img!is&quot;</span>, $this-&gt;<span class="keyword">get</span>(<span class="stringliteral">&#39;content&#39;</span>)))</div>
+<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;        {</div>
+<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;            <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;        }</div>
+<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;</div>
+<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;        <span class="comment">// get thumbail generation info on the doc module configuration.</span></div>
+<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;        <span class="keywordflow">if</span>(!in_array($thumbnail_type, array(<span class="stringliteral">&#39;crop&#39;</span>, <span class="stringliteral">&#39;ratio&#39;</span>)))</div>
+<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;        {</div>
+<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;            $thumbnail_type = <span class="stringliteral">&#39;crop&#39;</span>;</div>
+<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;        }</div>
 <div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;</div>
-<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;        <span class="comment">// return false if a size of existing thumbnail file is 0. otherwise return the file path</span></div>
-<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;        <span class="keywordflow">if</span>(file_exists($thumbnail_file))</div>
-<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;        {</div>
-<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;            <span class="keywordflow">if</span>(filesize($thumbnail_file) &lt; 1)</div>
-<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;            {</div>
-<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;                <span class="keywordflow">return</span> FALSE;</div>
-<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;            }</div>
-<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;            <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;            {</div>
-<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;                <span class="keywordflow">return</span> $thumbnail_url;</div>
-<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;            }</div>
-<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;        }</div>
-<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;</div>
-<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;        <span class="comment">// Target file</span></div>
-<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;        $source_file = NULL;</div>
-<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;        $is_tmp_file = FALSE;</div>
-<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;</div>
-<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;        <span class="comment">// find an image file among attached files</span></div>
-<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;        <span class="keywordflow">if</span>($this-&gt;<a class="code" href="classcommentItem.html#abe1774ffe4e8c0f5c14822c5698433da">hasUploadedFiles</a>())</div>
-<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;        {</div>
-<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;            $file_list = $this-&gt;<a class="code" href="classcommentItem.html#aaa9c1ef5cfd0ce69fd83d8d980360ee5">getUploadedFiles</a>();</div>
-<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;            <span class="keywordflow">if</span>(count($file_list))</div>
-<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;            {</div>
-<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;                <span class="keywordflow">foreach</span>($file_list as $file)</div>
-<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;                {</div>
-<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;                    <span class="keywordflow">if</span>($file-&gt;direct_download != <span class="charliteral">&#39;Y&#39;</span>)</div>
-<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;                    {</div>
-<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;                        <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;                    }</div>
-<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;                    <span class="keywordflow">if</span>(!preg_match(<span class="stringliteral">&quot;/\.(jpg|png|jpeg|gif|bmp)$/i&quot;</span>, $file-&gt;source_filename))</div>
-<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;                    {</div>
-<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;                        <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;                    }</div>
-<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;</div>
+<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;        <span class="comment">// Define thumbnail information</span></div>
+<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;        $thumbnail_path = sprintf(<span class="stringliteral">&#39;files/thumbnails/%s&#39;</span>, <a class="code" href="func_8inc_8php.html#ae1a0ad24dbf34de227ffd2eb0d1f8da3">getNumberingPath</a>($this-&gt;comment_srl, 3));</div>
+<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;        $thumbnail_file = sprintf(<span class="stringliteral">&#39;%s%dx%d.%s.jpg&#39;</span>, $thumbnail_path, $width, $height, $thumbnail_type);</div>
+<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;        $thumbnail_url = <a class="code" href="classContext.html#aa79578cfccee4d7f7c4890dc6e36ff90">Context::getRequestUri</a>() . $thumbnail_file;</div>
+<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;</div>
+<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;        <span class="comment">// return false if a size of existing thumbnail file is 0. otherwise return the file path</span></div>
+<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;        <span class="keywordflow">if</span>(file_exists($thumbnail_file))</div>
+<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;        {</div>
+<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;            <span class="keywordflow">if</span>(filesize($thumbnail_file) &lt; 1)</div>
+<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;            {</div>
+<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;                <span class="keywordflow">return</span> FALSE;</div>
+<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;            }</div>
+<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;            {</div>
+<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;                <span class="keywordflow">return</span> $thumbnail_url;</div>
+<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;            }</div>
+<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;        }</div>
+<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;</div>
+<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;        <span class="comment">// Target file</span></div>
+<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;        $source_file = NULL;</div>
+<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;        $is_tmp_file = FALSE;</div>
+<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;</div>
+<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;        <span class="comment">// find an image file among attached files</span></div>
+<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;        <span class="keywordflow">if</span>($this-&gt;<a class="code" href="classcommentItem.html#abe1774ffe4e8c0f5c14822c5698433da">hasUploadedFiles</a>())</div>
+<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;        {</div>
+<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;            $file_list = $this-&gt;<a class="code" href="classcommentItem.html#aaa9c1ef5cfd0ce69fd83d8d980360ee5">getUploadedFiles</a>();</div>
+<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;</div>
+<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;            $first_image = null;</div>
+<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;            <span class="keywordflow">foreach</span>($file_list as $file)</div>
+<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;            {</div>
+<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;                <span class="keywordflow">if</span>($file-&gt;direct_download !== <span class="charliteral">&#39;Y&#39;</span>) <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;</div>
+<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;                <span class="keywordflow">if</span>($file-&gt;cover_image === <span class="charliteral">&#39;Y&#39;</span> &amp;&amp; file_exists($file-&gt;uploaded_filename))</div>
+<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;                {</div>
 <div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;                    $source_file = $file-&gt;uploaded_filename;</div>
-<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;                    <span class="keywordflow">if</span>(!file_exists($source_file))</div>
-<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;                    {</div>
-<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;                        $source_file = NULL;</div>
-<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;                    }</div>
-<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;                    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;                    {</div>
-<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;                    }</div>
-<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;                }</div>
-<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;            }</div>
-<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;        }</div>
-<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;</div>
-<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;        <span class="comment">// get an image file from the doc content if no file attached. </span></div>
-<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;        <span class="keywordflow">if</span>(!$source_file)</div>
-<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;        {</div>
-<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;            $content = $this-&gt;<span class="keyword">get</span>(<span class="stringliteral">&#39;content&#39;</span>);</div>
-<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;            $target_src = NULL;</div>
-<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;</div>
-<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;            preg_match_all(<span class="stringliteral">&quot;!src=(\&quot;|&#39;)([^\&quot;&#39; ]*?)(\&quot;|&#39;)!is&quot;</span>, $content, $matches, PREG_SET_ORDER);</div>
+<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;                }</div>
+<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;</div>
+<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;                <span class="keywordflow">if</span>($first_image) <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;</div>
+<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;                <span class="keywordflow">if</span>(preg_match(<span class="stringliteral">&quot;/\.(jpe?g|png|gif|bmp)$/i&quot;</span>, $file-&gt;source_filename))</div>
+<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;                {</div>
+<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;                    <span class="keywordflow">if</span>(file_exists($file-&gt;uploaded_filename))</div>
+<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;                    {</div>
+<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;                        $first_image = $file-&gt;uploaded_filename;</div>
+<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;                    }</div>
+<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;                }</div>
+<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;            }</div>
+<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;</div>
+<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;            <span class="keywordflow">if</span>(!$source_file &amp;&amp; $first_image)</div>
+<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;            {</div>
+<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;                $source_file = $first_image;</div>
+<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;            }</div>
+<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;        }</div>
 <div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;</div>
-<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;            $cnt = count($matches);</div>
-<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;</div>
-<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;            <span class="keywordflow">for</span>($i = 0; $i &lt; $cnt; $i++)</div>
-<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;            {</div>
-<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;                $target_src = $matches[$i][2];</div>
-<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;                <span class="keywordflow">if</span>(preg_match(<span class="stringliteral">&#39;/\/(common|modules|widgets|addons|layouts)\//i&#39;</span>, $target_src))</div>
-<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;                {</div>
-<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;                    <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;                }</div>
-<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;                <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;                {</div>
-<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;                    <span class="keywordflow">if</span>(!preg_match(<span class="stringliteral">&#39;/^(http|https):\/\//i&#39;</span>, $target_src))</div>
-<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;                    {</div>
-<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;                        $target_src = <a class="code" href="classContext.html#aa79578cfccee4d7f7c4890dc6e36ff90">Context::getRequestUri</a>() . $target_src;</div>
-<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;                    }</div>
-<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;</div>
-<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;                    $tmp_file = sprintf(<span class="stringliteral">&#39;./files/cache/tmp/%d&#39;</span>, md5(rand(111111, 999999) . $this-&gt;comment_srl));</div>
-<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;</div>
-<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;                    <a class="code" href="classFileHandler.html#a9c2502d10c34a3996f1d6927624a7824">FileHandler::makeDir</a>(<span class="stringliteral">&#39;./files/cache/tmp&#39;</span>);</div>
-<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;</div>
-<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;                    <a class="code" href="classFileHandler.html#a0e3720cacd0137d537834376ce7b982b">FileHandler::getRemoteFile</a>($target_src, $tmp_file);</div>
-<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;</div>
-<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;                    <span class="keywordflow">if</span>(!file_exists($tmp_file))</div>
-<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;                    {</div>
-<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;                        <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;                    }</div>
-<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;                    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;                    {</div>
-<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;                        list($_w, $_h, $_t, $_a) = @getimagesize($tmp_file);</div>
+<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;        <span class="comment">// get an image file from the doc content if no file attached. </span></div>
+<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;        <span class="keywordflow">if</span>(!$source_file)</div>
+<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;        {</div>
+<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;            $content = $this-&gt;<span class="keyword">get</span>(<span class="stringliteral">&#39;content&#39;</span>);</div>
+<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;            $target_src = NULL;</div>
+<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;</div>
+<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;            preg_match_all(<span class="stringliteral">&quot;!src=(\&quot;|&#39;)([^\&quot;&#39; ]*?)(\&quot;|&#39;)!is&quot;</span>, $content, $matches, PREG_SET_ORDER);</div>
+<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;</div>
+<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;            $cnt = count($matches);</div>
+<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;</div>
+<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;            <span class="keywordflow">for</span>($i = 0; $i &lt; $cnt; $i++)</div>
+<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;            {</div>
+<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;                $target_src = $matches[$i][2];</div>
+<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;                <span class="keywordflow">if</span>(preg_match(<span class="stringliteral">&#39;/\/(common|modules|widgets|addons|layouts)\//i&#39;</span>, $target_src))</div>
+<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;                {</div>
+<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;                    <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;                }</div>
+<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;                <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;                {</div>
+<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;                    <span class="keywordflow">if</span>(!preg_match(<span class="stringliteral">&#39;/^(http|https):\/\//i&#39;</span>, $target_src))</div>
+<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;                    {</div>
+<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;                        $target_src = <a class="code" href="classContext.html#aa79578cfccee4d7f7c4890dc6e36ff90">Context::getRequestUri</a>() . $target_src;</div>
+<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;                    }</div>
+<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;</div>
+<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;                    $tmp_file = sprintf(<span class="stringliteral">&#39;./files/cache/tmp/%d&#39;</span>, md5(rand(111111, 999999) . $this-&gt;comment_srl));</div>
+<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;</div>
+<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;                    <a class="code" href="classFileHandler.html#a9c2502d10c34a3996f1d6927624a7824">FileHandler::makeDir</a>(<span class="stringliteral">&#39;./files/cache/tmp&#39;</span>);</div>
+<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;</div>
+<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;                    <a class="code" href="classFileHandler.html#a0e3720cacd0137d537834376ce7b982b">FileHandler::getRemoteFile</a>($target_src, $tmp_file);</div>
 <div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;</div>
-<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;                        <span class="keywordflow">if</span>($_w &lt; $width || $_h &lt; $height)</div>
-<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;                        {</div>
-<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;                            <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;                        }</div>
-<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;</div>
-<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;                        $source_file = $tmp_file;</div>
-<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;                        $is_tmp_file = TRUE;</div>
-<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;                    }</div>
-<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;                }</div>
-<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;            }</div>
-<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;        }</div>
+<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;                    <span class="keywordflow">if</span>(!file_exists($tmp_file))</div>
+<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;                    {</div>
+<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;                        <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;                    }</div>
+<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;                    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;                    {</div>
+<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;                        list($_w, $_h, $_t, $_a) = @getimagesize($tmp_file);</div>
+<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;</div>
+<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;                        <span class="keywordflow">if</span>($_w &lt; $width || $_h &lt; $height)</div>
+<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;                        {</div>
+<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;                            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;                        }</div>
 <div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;</div>
-<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;        <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = <a class="code" href="classFileHandler.html#a171948d79c14415ad45b7581a011c593">FileHandler::createImageFile</a>($source_file, $thumbnail_file, $width, $height, <span class="stringliteral">&#39;jpg&#39;</span>, $thumbnail_type);</div>
-<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;</div>
-<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;        <span class="keywordflow">if</span>($is_tmp_file)</div>
-<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;        {</div>
-<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;            <a class="code" href="classFileHandler.html#aa5969f9fe0ce869fc736c4da384959e9">FileHandler::removeFile</a>($source_file);</div>
-<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;        }</div>
-<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;</div>
-<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;        <span class="comment">// return the thumbnail path if successfully generated.</span></div>
-<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>)</div>
-<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;        {</div>
-<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;            <span class="keywordflow">return</span> $thumbnail_url;</div>
-<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;        }</div>
-<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;</div>
-<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;        <span class="comment">// create an empty file not to attempt to generate the thumbnail afterwards</span></div>
-<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;        {</div>
-<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;            <a class="code" href="classFileHandler.html#ad90c10a81460f437bc68952427606155">FileHandler::writeFile</a>($thumbnail_file, <span class="stringliteral">&#39;&#39;</span>, <span class="charliteral">&#39;w&#39;</span>);</div>
-<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;        }</div>
-<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;</div>
-<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;    }</div>
-<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;</div>
-<div class="line"><a name="l00689"></a><span class="lineno"><a class="line" href="classcommentItem.html#aee548a05480bd060de454017aa8be318">  689</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classcommentItem.html#aee548a05480bd060de454017aa8be318">isCarted</a>()</div>
-<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;    {</div>
-<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;        <span class="keywordflow">return</span> $_SESSION[<span class="stringliteral">&#39;comment_management&#39;</span>][<a class="code" href="classcommentItem.html#aec6b057a6e1e71a7b1441fe12682af3b">$this-&gt;comment_srl</a>];</div>
-<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;    }</div>
+<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;                        $source_file = $tmp_file;</div>
+<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;                        $is_tmp_file = TRUE;</div>
+<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;                    }</div>
+<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;                }</div>
+<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;            }</div>
+<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;        }</div>
+<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;</div>
+<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;        <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = <a class="code" href="classFileHandler.html#a171948d79c14415ad45b7581a011c593">FileHandler::createImageFile</a>($source_file, $thumbnail_file, $width, $height, <span class="stringliteral">&#39;jpg&#39;</span>, $thumbnail_type);</div>
+<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;</div>
+<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;        <span class="keywordflow">if</span>($is_tmp_file)</div>
+<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;        {</div>
+<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;            <a class="code" href="classFileHandler.html#aa5969f9fe0ce869fc736c4da384959e9">FileHandler::removeFile</a>($source_file);</div>
+<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;        }</div>
+<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;</div>
+<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;        <span class="comment">// return the thumbnail path if successfully generated.</span></div>
+<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>)</div>
+<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;        {</div>
+<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;            <span class="keywordflow">return</span> $thumbnail_url;</div>
+<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;        }</div>
+<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;</div>
+<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;        <span class="comment">// create an empty file not to attempt to generate the thumbnail afterwards</span></div>
+<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;        {</div>
+<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;            <a class="code" href="classFileHandler.html#ad90c10a81460f437bc68952427606155">FileHandler::writeFile</a>($thumbnail_file, <span class="stringliteral">&#39;&#39;</span>, <span class="charliteral">&#39;w&#39;</span>);</div>
+<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;        }</div>
 <div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;</div>
-<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;}</div>
-<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;<span class="comment">/* End of file comment.item.php */</span></div>
-<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;<span class="comment">/* Location: ./modules/comment/comment.item.php */</span></div>
+<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;    }</div>
+<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;</div>
+<div class="line"><a name="l00697"></a><span class="lineno"><a class="line" href="classcommentItem.html#aee548a05480bd060de454017aa8be318">  697</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classcommentItem.html#aee548a05480bd060de454017aa8be318">isCarted</a>()</div>
+<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;    {</div>
+<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;        <span class="keywordflow">return</span> $_SESSION[<span class="stringliteral">&#39;comment_management&#39;</span>][<a class="code" href="classcommentItem.html#aec6b057a6e1e71a7b1441fe12682af3b">$this-&gt;comment_srl</a>];</div>
+<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;    }</div>
+<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;</div>
+<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;}</div>
+<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;<span class="comment">/* End of file comment.item.php */</span></div>
+<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;<span class="comment">/* Location: ./modules/comment/comment.item.php */</span></div>
 <div class="ttc" id="classObject_html"><div class="ttname"><a href="classObject.html">Object</a></div><div class="ttdef"><b>Definition:</b> <a href="Object_8class_8php_source.html#l00009">Object.class.php:9</a></div></div>
 <div class="ttc" id="ko_8install_8php_html_a8d7a87df524e7d6938f66f8e284cdd1e"><div class="ttname"><a href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a></div><div class="ttdeci">$oModuleModel</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00236">ko.install.php:236</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_aa08f01e3bf130d770b373ca8493e3e9b"><div class="ttname"><a href="func_8inc_8php.html#aa08f01e3bf130d770b373ca8493e3e9b">getController</a></div><div class="ttdeci">getController($module_name)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00090">func.inc.php:90</a></div></div>
 <div class="ttc" id="classcommentItem_html_a097673677cd1c461040cbc9275b7fca9"><div class="ttname"><a href="classcommentItem.html#a097673677cd1c461040cbc9275b7fca9">commentItem\getNickName</a></div><div class="ttdeci">getNickName()</div><div class="ttdef"><b>Definition:</b> <a href="comment_8item_8php_source.html#l00276">comment.item.php:276</a></div></div>
-<div class="ttc" id="func_8inc_8php_html_ae1a0ad24dbf34de227ffd2eb0d1f8da3"><div class="ttname"><a href="func_8inc_8php.html#ae1a0ad24dbf34de227ffd2eb0d1f8da3">getNumberingPath</a></div><div class="ttdeci">getNumberingPath($no, $size=3)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l01052">func.inc.php:1052</a></div></div>
+<div class="ttc" id="func_8inc_8php_html_ae1a0ad24dbf34de227ffd2eb0d1f8da3"><div class="ttname"><a href="func_8inc_8php.html#ae1a0ad24dbf34de227ffd2eb0d1f8da3">getNumberingPath</a></div><div class="ttdeci">getNumberingPath($no, $size=3)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l01049">func.inc.php:1049</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_acccf91c81ea5145f4704bdd53421917b"><div class="ttname"><a href="func_8inc_8php.html#acccf91c81ea5145f4704bdd53421917b">zdate</a></div><div class="ttdeci">zdate($str, $format= 'Y-m-d H:i:s', $conversion=TRUE)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00673">func.inc.php:673</a></div></div>
 <div class="ttc" id="classcommentItem_html_ae5f0203691b6d16a2d99ae40d67adb3f"><div class="ttname"><a href="classcommentItem.html#ae5f0203691b6d16a2d99ae40d67adb3f">commentItem\getRegdateGM</a></div><div class="ttdeci">getRegdateGM()</div><div class="ttdef"><b>Definition:</b> <a href="comment_8item_8php_source.html#l00397">comment.item.php:397</a></div></div>
 <div class="ttc" id="classcommentItem_html_aec6b057a6e1e71a7b1441fe12682af3b"><div class="ttname"><a href="classcommentItem.html#aec6b057a6e1e71a7b1441fe12682af3b">commentItem\$comment_srl</a></div><div class="ttdeci">$comment_srl</div><div class="ttdef"><b>Definition:</b> <a href="comment_8item_8php_source.html#l00019">comment.item.php:19</a></div></div>
 <div class="ttc" id="classFileHandler_html_aa5969f9fe0ce869fc736c4da384959e9"><div class="ttname"><a href="classFileHandler.html#aa5969f9fe0ce869fc736c4da384959e9">FileHandler\removeFile</a></div><div class="ttdeci">removeFile($filename)</div><div class="ttdef"><b>Definition:</b> <a href="FileHandler_8class_8php_source.html#l00167">FileHandler.class.php:167</a></div></div>
 <div class="ttc" id="classcommentItem_html_adc6e6a36fd7c02a2f0fecc8a22f9b13b"><div class="ttname"><a href="classcommentItem.html#adc6e6a36fd7c02a2f0fecc8a22f9b13b">commentItem\getPermanentUrl</a></div><div class="ttdeci">getPermanentUrl()</div><div class="ttdef"><b>Definition:</b> <a href="comment_8item_8php_source.html#l00407">comment.item.php:407</a></div></div>
-<div class="ttc" id="func_8inc_8php_html_ad6d8ff5f851d62d39b170a46b766d834"><div class="ttname"><a href="func_8inc_8php.html#ad6d8ff5f851d62d39b170a46b766d834">stripEmbedTagForAdmin</a></div><div class="ttdeci">stripEmbedTagForAdmin(&amp;$content, $writer_member_srl)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l01513">func.inc.php:1513</a></div></div>
+<div class="ttc" id="func_8inc_8php_html_ad6d8ff5f851d62d39b170a46b766d834"><div class="ttname"><a href="func_8inc_8php.html#ad6d8ff5f851d62d39b170a46b766d834">stripEmbedTagForAdmin</a></div><div class="ttdeci">stripEmbedTagForAdmin(&amp;$content, $writer_member_srl)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l01510">func.inc.php:1510</a></div></div>
 <div class="ttc" id="ko_8install_8php_html_a73004ce9cd673c1bfafd1dc351134797"><div class="ttname"><a href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a></div><div class="ttdeci">$output</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00193">ko.install.php:193</a></div></div>
 <div class="ttc" id="classcommentItem_html"><div class="ttname"><a href="classcommentItem.html">commentItem</a></div><div class="ttdef"><b>Definition:</b> <a href="comment_8item_8php_source.html#l00012">comment.item.php:12</a></div></div>
 <div class="ttc" id="classcommentItem_html_a0c2c15c69b3584aadf79446147752d80"><div class="ttname"><a href="classcommentItem.html#a0c2c15c69b3584aadf79446147752d80">commentItem\_loadFromDB</a></div><div class="ttdeci">_loadFromDB()</div><div class="ttdef"><b>Definition:</b> <a href="comment_8item_8php_source.html#l00050">comment.item.php:50</a></div></div>
@@ -752,15 +760,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classcommentItem_html_a53a357acf0d2d4c951505383c94a6373"><div class="ttname"><a href="classcommentItem.html#a53a357acf0d2d4c951505383c94a6373">commentItem\isEditable</a></div><div class="ttdeci">isEditable()</div><div class="ttdef"><b>Definition:</b> <a href="comment_8item_8php_source.html#l00137">comment.item.php:137</a></div></div>
 <div class="ttc" id="classcommentItem_html_acae004be4282c96181e79cc0f3b3adfa"><div class="ttname"><a href="classcommentItem.html#acae004be4282c96181e79cc0f3b3adfa">commentItem\getRegdate</a></div><div class="ttdeci">getRegdate($format= 'Y.m.d H:i:s')</div><div class="ttdef"><b>Definition:</b> <a href="comment_8item_8php_source.html#l00380">comment.item.php:380</a></div></div>
 <div class="ttc" id="classcommentItem_html_a97eea3e5359c0ffe84db781d5e5fbff6"><div class="ttname"><a href="classcommentItem.html#a97eea3e5359c0ffe84db781d5e5fbff6">commentItem\getSignature</a></div><div class="ttdeci">getSignature()</div><div class="ttdef"><b>Definition:</b> <a href="comment_8item_8php_source.html#l00493">comment.item.php:493</a></div></div>
+<div class="ttc" id="config_8inc_8php_html_a2843c2516649b5d9554f09b06b7b810a"><div class="ttname"><a href="config_8inc_8php.html#a2843c2516649b5d9554f09b06b7b810a">$GLOBALS</a></div><div class="ttdeci">if(__DEBUG__) if(__DEBUG__) $GLOBALS['__xe_autoload_file_map']</div><div class="ttdef"><b>Definition:</b> <a href="config_8inc_8php_source.html#l00296">config.inc.php:296</a></div></div>
 <div class="ttc" id="classcommentItem_html_a6cf2c8baefdc9183f0194805bc197231"><div class="ttname"><a href="classcommentItem.html#a6cf2c8baefdc9183f0194805bc197231">commentItem\getMemberSrl</a></div><div class="ttdeci">getMemberSrl()</div><div class="ttdef"><b>Definition:</b> <a href="comment_8item_8php_source.html#l00261">comment.item.php:261</a></div></div>
 <div class="ttc" id="classcommentItem_html_a994914aab465cd8b950bd05e655afb9f"><div class="ttname"><a href="classcommentItem.html#a994914aab465cd8b950bd05e655afb9f">commentItem\isExists</a></div><div class="ttdeci">isExists()</div><div class="ttdef"><b>Definition:</b> <a href="comment_8item_8php_source.html#l00089">comment.item.php:89</a></div></div>
 <div class="ttc" id="classcommentItem_html_a7bc40cf7b410d4ee4a4b1e978f172d06"><div class="ttname"><a href="classcommentItem.html#a7bc40cf7b410d4ee4a4b1e978f172d06">commentItem\setAttribute</a></div><div class="ttdeci">setAttribute($attribute)</div><div class="ttdef"><b>Definition:</b> <a href="comment_8item_8php_source.html#l00068">comment.item.php:68</a></div></div>
 <div class="ttc" id="classcommentItem_html_adb5754f10a245c54a0beb4f6fb22f0e3"><div class="ttname"><a href="classcommentItem.html#adb5754f10a245c54a0beb4f6fb22f0e3">commentItem\getRegdateTime</a></div><div class="ttdeci">getRegdateTime()</div><div class="ttdef"><b>Definition:</b> <a href="comment_8item_8php_source.html#l00385">comment.item.php:385</a></div></div>
 <div class="ttc" id="classcommentItem_html_aabe11142b19d831c5e3120e48bb169f7"><div class="ttname"><a href="classcommentItem.html#aabe11142b19d831c5e3120e48bb169f7">commentItem\getSummary</a></div><div class="ttdeci">getSummary($str_size=50, $tail= '...')</div><div class="ttdef"><b>Definition:</b> <a href="comment_8item_8php_source.html#l00352">comment.item.php:352</a></div></div>
 <div class="ttc" id="classcommentItem_html_a340fd95c5c60a6e2791c73cb59119d38"><div class="ttname"><a href="classcommentItem.html#a340fd95c5c60a6e2791c73cb59119d38">commentItem\setGrant</a></div><div class="ttdeci">setGrant()</div><div class="ttdef"><b>Definition:</b> <a href="comment_8item_8php_source.html#l00126">comment.item.php:126</a></div></div>
-<div class="ttc" id="classFileHandler_html_a171948d79c14415ad45b7581a011c593"><div class="ttname"><a href="classFileHandler.html#a171948d79c14415ad45b7581a011c593">FileHandler\createImageFile</a></div><div class="ttdeci">createImageFile($source_file, $target_file, $resize_width=0, $resize_height=0, $target_type= '', $thumbnail_type= 'crop')</div><div class="ttdef"><b>Definition:</b> <a href="FileHandler_8class_8php_source.html#l00685">FileHandler.class.php:685</a></div></div>
+<div class="ttc" id="classFileHandler_html_a171948d79c14415ad45b7581a011c593"><div class="ttname"><a href="classFileHandler.html#a171948d79c14415ad45b7581a011c593">FileHandler\createImageFile</a></div><div class="ttdeci">createImageFile($source_file, $target_file, $resize_width=0, $resize_height=0, $target_type= '', $thumbnail_type= 'crop')</div><div class="ttdef"><b>Definition:</b> <a href="FileHandler_8class_8php_source.html#l00692">FileHandler.class.php:692</a></div></div>
 <div class="ttc" id="ko_8install_8php_html_a67e94494731d99ed23b123e95175bc10"><div class="ttname"><a href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a></div><div class="ttdeci">$args</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00185">ko.install.php:185</a></div></div>
-<div class="ttc" id="classFileHandler_html_a0e3720cacd0137d537834376ce7b982b"><div class="ttname"><a href="classFileHandler.html#a0e3720cacd0137d537834376ce7b982b">FileHandler\getRemoteFile</a></div><div class="ttdeci">getRemoteFile($url, $target_filename, $body=null, $timeout=3, $method= 'GET', $content_type=null, $headers=array(), $cookies=array(), $post_data=array(), $request_config=array())</div><div class="ttdef"><b>Definition:</b> <a href="FileHandler_8class_8php_source.html#l00617">FileHandler.class.php:617</a></div></div>
+<div class="ttc" id="classFileHandler_html_a0e3720cacd0137d537834376ce7b982b"><div class="ttname"><a href="classFileHandler.html#a0e3720cacd0137d537834376ce7b982b">FileHandler\getRemoteFile</a></div><div class="ttdeci">getRemoteFile($url, $target_filename, $body=null, $timeout=3, $method= 'GET', $content_type=null, $headers=array(), $cookies=array(), $post_data=array(), $request_config=array())</div><div class="ttdef"><b>Definition:</b> <a href="FileHandler_8class_8php_source.html#l00624">FileHandler.class.php:624</a></div></div>
 <div class="ttc" id="classcommentItem_html_a1c35032d37e80ad5018a02787f0091fe"><div class="ttname"><a href="classcommentItem.html#a1c35032d37e80ad5018a02787f0091fe">commentItem\getUserName</a></div><div class="ttdeci">getUserName()</div><div class="ttdef"><b>Definition:</b> <a href="comment_8item_8php_source.html#l00271">comment.item.php:271</a></div></div>
 <div class="ttc" id="classcommentItem_html_a59d0264c1b6842c6a0dfa21a6dfe1edb"><div class="ttname"><a href="classcommentItem.html#a59d0264c1b6842c6a0dfa21a6dfe1edb">commentItem\getUpdateTime</a></div><div class="ttdeci">getUpdateTime()</div><div class="ttdef"><b>Definition:</b> <a href="comment_8item_8php_source.html#l00412">comment.item.php:412</a></div></div>
 <div class="ttc" id="classcommentItem_html_a5a175cf38e7a6dd7b1b771b198388e25"><div class="ttname"><a href="classcommentItem.html#a5a175cf38e7a6dd7b1b771b198388e25">commentItem\isAccessible</a></div><div class="ttdeci">isAccessible()</div><div class="ttdef"><b>Definition:</b> <a href="comment_8item_8php_source.html#l00151">comment.item.php:151</a></div></div>
@@ -772,13 +781,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classcommentItem_html_a1523ec4128cf464d13ca1fb1c2078a0f"><div class="ttname"><a href="classcommentItem.html#a1523ec4128cf464d13ca1fb1c2078a0f">commentItem\thumbnailExists</a></div><div class="ttdeci">thumbnailExists($width=80, $height=0, $type= '')</div><div class="ttdef"><b>Definition:</b> <a href="comment_8item_8php_source.html#l00523">comment.item.php:523</a></div></div>
 <div class="ttc" id="classcommentItem_html_a98724f23e262a80b73355f5b25f9c2b0"><div class="ttname"><a href="classcommentItem.html#a98724f23e262a80b73355f5b25f9c2b0">commentItem\setComment</a></div><div class="ttdeci">setComment($comment_srl)</div><div class="ttdef"><b>Definition:</b> <a href="comment_8item_8php_source.html#l00040">comment.item.php:40</a></div></div>
 <div class="ttc" id="classFileHandler_html_a9c2502d10c34a3996f1d6927624a7824"><div class="ttname"><a href="classFileHandler.html#a9c2502d10c34a3996f1d6927624a7824">FileHandler\makeDir</a></div><div class="ttdeci">makeDir($path_string)</div><div class="ttdef"><b>Definition:</b> <a href="FileHandler_8class_8php_source.html#l00280">FileHandler.class.php:280</a></div></div>
-<div class="ttc" id="PEAR_8php_html_a5dd2eabd22dc870da26c0f6cca061438"><div class="ttname"><a href="PEAR_8php.html#a5dd2eabd22dc870da26c0f6cca061438">$GLOBALS</a></div><div class="ttdeci">$GLOBALS['_PEAR_default_error_mode']</div><div class="ttdef"><b>Definition:</b> <a href="PEAR_8php_source.html#l00049">PEAR.php:49</a></div></div>
 <div class="ttc" id="classContext_html_a9af9269b04542f7462d27a63226e0ff3"><div class="ttname"><a href="classContext.html#a9af9269b04542f7462d27a63226e0ff3">Context\getLang</a></div><div class="ttdeci">getLang($code)</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l00965">Context.class.php:965</a></div></div>
 <div class="ttc" id="classcommentItem_html_afae7151c28cc9066f9c40a010597b25a"><div class="ttname"><a href="classcommentItem.html#afae7151c28cc9066f9c40a010597b25a">commentItem\getContent</a></div><div class="ttdeci">getContent($add_popup_menu=TRUE, $add_content_info=TRUE, $add_xe_content_class=TRUE)</div><div class="ttdef"><b>Definition:</b> <a href="comment_8item_8php_source.html#l00306">comment.item.php:306</a></div></div>
 <div class="ttc" id="classObject_html_a6dbae38facc1000561b8b230847aaca1"><div class="ttname"><a href="classObject.html#a6dbae38facc1000561b8b230847aaca1">Object\adds</a></div><div class="ttdeci">adds($object)</div><div class="ttdef"><b>Definition:</b> <a href="Object_8class_8php_source.html#l00140">Object.class.php:140</a></div></div>
 <div class="ttc" id="adminlogging_8addon_8php_html_a193c1593ceb216e9fb05b0bad01ebbc8"><div class="ttname"><a href="adminlogging_8addon_8php.html#a193c1593ceb216e9fb05b0bad01ebbc8">$logged_info</a></div><div class="ttdeci">$logged_info</div><div class="ttdef"><b>Definition:</b> <a href="adminlogging_8addon_8php_source.html#l00012">adminlogging.addon.php:12</a></div></div>
 <div class="ttc" id="classContext_html_aa79578cfccee4d7f7c4890dc6e36ff90"><div class="ttname"><a href="classContext.html#aa79578cfccee4d7f7c4890dc6e36ff90">Context\getRequestUri</a></div><div class="ttdeci">getRequestUri($ssl_mode=FOLLOW_REQUEST_SSL, $domain=null)</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l01759">Context.class.php:1759</a></div></div>
-<div class="ttc" id="classcommentItem_html_aee548a05480bd060de454017aa8be318"><div class="ttname"><a href="classcommentItem.html#aee548a05480bd060de454017aa8be318">commentItem\isCarted</a></div><div class="ttdeci">isCarted()</div><div class="ttdef"><b>Definition:</b> <a href="comment_8item_8php_source.html#l00689">comment.item.php:689</a></div></div>
+<div class="ttc" id="classcommentItem_html_aee548a05480bd060de454017aa8be318"><div class="ttname"><a href="classcommentItem.html#aee548a05480bd060de454017aa8be318">commentItem\isCarted</a></div><div class="ttdeci">isCarted()</div><div class="ttdef"><b>Definition:</b> <a href="comment_8item_8php_source.html#l00697">comment.item.php:697</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_aecdfcc5332bcf22df01fc21a03b64435"><div class="ttname"><a href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a></div><div class="ttdeci">getModel($module_name)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00145">func.inc.php:145</a></div></div>
 <div class="ttc" id="classContext_html_a90ce25d65fe6c9778421cbb36ab3def5"><div class="ttname"><a href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context\get</a></div><div class="ttdeci">get($key)</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l01883">Context.class.php:1883</a></div></div>
 <div class="ttc" id="ko_8install_8php_html_ae40aed4d7a99050245e66ca2a82949ed"><div class="ttname"><a href="ko_8install_8php.html#ae40aed4d7a99050245e66ca2a82949ed">$module_srl</a></div><div class="ttdeci">$module_srl</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00254">ko.install.php:254</a></div></div>
@@ -799,7 +807,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 9 2015 17:20:10 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 7 2015 19:26:30 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

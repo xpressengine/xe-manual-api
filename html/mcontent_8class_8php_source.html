@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.8.3</span>
+   &#160;<span id="projectnumber">1.8.4</span>
    </div>
   </td>
  </tr>
@@ -312,14 +312,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;            {</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;                $oDocument = <span class="keyword">new</span> <a class="code" href="classdocumentItem.html">documentItem</a>();</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;                $oDocument-&gt;setAttribute($attribute, <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;                <a class="code" href="PEAR_8php.html#a5dd2eabd22dc870da26c0f6cca061438">$GLOBALS</a>[<span class="stringliteral">&#39;XE_DOCUMENT_LIST&#39;</span>][$oDocument-&gt;document_srl] = $oDocument;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;                <a class="code" href="config_8inc_8php.html#a2843c2516649b5d9554f09b06b7b810a">$GLOBALS</a>[<span class="stringliteral">&#39;XE_DOCUMENT_LIST&#39;</span>][$oDocument-&gt;document_srl] = $oDocument;</div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;                $document_srls[] = $oDocument-&gt;document_srl;</div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;            }</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;            <a class="code" href="ko_8install_8php.html#afb18aa87e5520385e76377e876e042af">$oDocumentModel</a>-&gt;setToAllDocumentExtraVars();</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;</div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;            <span class="keywordflow">for</span>($i=0,$c=count($document_srls);$i&lt;$c;$i++)</div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;            {</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                $oDocument = <a class="code" href="PEAR_8php.html#a5dd2eabd22dc870da26c0f6cca061438">$GLOBALS</a>[<span class="stringliteral">&#39;XE_DOCUMENT_LIST&#39;</span>][$document_srls[$i]];</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                $oDocument = <a class="code" href="config_8inc_8php.html#a2843c2516649b5d9554f09b06b7b810a">$GLOBALS</a>[<span class="stringliteral">&#39;XE_DOCUMENT_LIST&#39;</span>][$document_srls[$i]];</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                <a class="code" href="ko_8install_8php.html#a14522e7fff0604a8372c75b4a0fbc0fd">$document_srl</a> = $oDocument-&gt;document_srl;</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;                <a class="code" href="ko_8install_8php.html#ae40aed4d7a99050245e66ca2a82949ed">$module_srl</a> = $oDocument-&gt;get(<span class="stringliteral">&#39;module_srl&#39;</span>);</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;                $category_srl = $oDocument-&gt;get(<span class="stringliteral">&#39;category_srl&#39;</span>);</div>
@@ -927,6 +927,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classmcontentItem_html_afb955c421fa34f36c51edd795d3a00c7"><div class="ttname"><a href="classmcontentItem.html#afb955c421fa34f36c51edd795d3a00c7">mcontentItem\getTrackbackCount</a></div><div class="ttdeci">getTrackbackCount()</div><div class="ttdef"><b>Definition:</b> <a href="mcontent_8class_8php_source.html#l00798">mcontent.class.php:798</a></div></div>
 <div class="ttc" id="classdocumentItem_html"><div class="ttname"><a href="classdocumentItem.html">documentItem</a></div><div class="ttdef"><b>Definition:</b> <a href="document_8item_8php_source.html#l00011">document.item.php:11</a></div></div>
 <div class="ttc" id="classmcontentItem_html_a90fc323e4d3cf2661e6af5e51babd05f"><div class="ttname"><a href="classmcontentItem.html#a90fc323e4d3cf2661e6af5e51babd05f">mcontentItem\getAuthorSite</a></div><div class="ttdeci">getAuthorSite()</div><div class="ttdef"><b>Definition:</b> <a href="mcontent_8class_8php_source.html#l00789">mcontent.class.php:789</a></div></div>
+<div class="ttc" id="config_8inc_8php_html_a2843c2516649b5d9554f09b06b7b810a"><div class="ttname"><a href="config_8inc_8php.html#a2843c2516649b5d9554f09b06b7b810a">$GLOBALS</a></div><div class="ttdeci">if(__DEBUG__) if(__DEBUG__) $GLOBALS['__xe_autoload_file_map']</div><div class="ttdef"><b>Definition:</b> <a href="config_8inc_8php_source.html#l00296">config.inc.php:296</a></div></div>
 <div class="ttc" id="classWidgetHandler_html"><div class="ttname"><a href="classWidgetHandler.html">WidgetHandler</a></div><div class="ttdoc">Handler class for widget execution. </div><div class="ttdef"><b>Definition:</b> <a href="WidgetHandler_8class_8php_source.html#l00010">WidgetHandler.class.php:10</a></div></div>
 <div class="ttc" id="classmcontentItem_html_a19b333e6ff14db6f7f77c3f94471bdff"><div class="ttname"><a href="classmcontentItem.html#a19b333e6ff14db6f7f77c3f94471bdff">mcontentItem\getContent</a></div><div class="ttdeci">getContent()</div><div class="ttdef"><b>Definition:</b> <a href="mcontent_8class_8php_source.html#l00777">mcontent.class.php:777</a></div></div>
 <div class="ttc" id="classFileHandler_html_a602c039b415c15d9d6866e586282faf7"><div class="ttname"><a href="classFileHandler.html#a602c039b415c15d9d6866e586282faf7">FileHandler\getRemoteResource</a></div><div class="ttdeci">getRemoteResource($url, $body=null, $timeout=3, $method= 'GET', $content_type=null, $headers=array(), $cookies=array(), $post_data=array(), $request_config=array())</div><div class="ttdef"><b>Definition:</b> <a href="FileHandler_8class_8php_source.html#l00518">FileHandler.class.php:518</a></div></div>
@@ -945,7 +946,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classmcontent_html_a5d41447024e60278f0cf46cea902da52"><div class="ttname"><a href="classmcontent.html#a5d41447024e60278f0cf46cea902da52">mcontent\_getRssBody</a></div><div class="ttdeci">_getRssBody($value)</div><div class="ttdef"><b>Definition:</b> <a href="mcontent_8class_8php_source.html#l00361">mcontent.class.php:361</a></div></div>
 <div class="ttc" id="classmcontent_html_a6a077425294207e1e357668b82e30bbf"><div class="ttname"><a href="classmcontent.html#a6a077425294207e1e357668b82e30bbf">mcontent\_getCommentItems</a></div><div class="ttdeci">_getCommentItems($args)</div><div class="ttdoc">Return to the list of comments extracted mcontentItem. </div><div class="ttdef"><b>Definition:</b> <a href="mcontent_8class_8php_source.html#l00170">mcontent.class.php:170</a></div></div>
 <div class="ttc" id="classmcontent_html_a9c74009a166bfac6a467cb27bc2ad214"><div class="ttname"><a href="classmcontent.html#a9c74009a166bfac6a467cb27bc2ad214">mcontent\requestFeedContents</a></div><div class="ttdeci">requestFeedContents($rss_url)</div><div class="ttdoc">function to receive contents from rss url For Tistory blog in Korea, the original RSS url has locatio...</div><div class="ttdef"><b>Definition:</b> <a href="mcontent_8class_8php_source.html#l00405">mcontent.class.php:405</a></div></div>
-<div class="ttc" id="PEAR_8php_html_a5dd2eabd22dc870da26c0f6cca061438"><div class="ttname"><a href="PEAR_8php.html#a5dd2eabd22dc870da26c0f6cca061438">$GLOBALS</a></div><div class="ttdeci">$GLOBALS['_PEAR_default_error_mode']</div><div class="ttdef"><b>Definition:</b> <a href="PEAR_8php_source.html#l00049">PEAR.php:49</a></div></div>
 <div class="ttc" id="classmcontentItem_html_a0cd7ac4bbaf7e7561f5597920c691f9d"><div class="ttname"><a href="classmcontentItem.html#a0cd7ac4bbaf7e7561f5597920c691f9d">mcontentItem\printExtraImages</a></div><div class="ttdeci">printExtraImages()</div><div class="ttdef"><b>Definition:</b> <a href="mcontent_8class_8php_source.html#l00807">mcontent.class.php:807</a></div></div>
 <div class="ttc" id="classmcontentItem_html_adaf816a617e10b21c1b7cfa3080e4a25"><div class="ttname"><a href="classmcontentItem.html#adaf816a617e10b21c1b7cfa3080e4a25">mcontentItem\setDomain</a></div><div class="ttdeci">setDomain($domain)</div><div class="ttdef"><b>Definition:</b> <a href="mcontent_8class_8php_source.html#l00693">mcontent.class.php:693</a></div></div>
 <div class="ttc" id="classmcontentItem_html_ae8d1d6e76cc1cfa79d544d47acaedbcc"><div class="ttname"><a href="classmcontentItem.html#ae8d1d6e76cc1cfa79d544d47acaedbcc">mcontentItem\getCategory</a></div><div class="ttdeci">getCategory()</div><div class="ttdef"><b>Definition:</b> <a href="mcontent_8class_8php_source.html#l00781">mcontent.class.php:781</a></div></div>
@@ -972,7 +972,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 9 2015 17:20:11 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 7 2015 19:26:31 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

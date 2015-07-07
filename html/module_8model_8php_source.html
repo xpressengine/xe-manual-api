@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.8.3</span>
+   &#160;<span id="projectnumber">1.8.4</span>
    </div>
   </td>
  </tr>
@@ -660,7 +660,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;</div>
 <div class="line"><a name="l00630"></a><span class="lineno"><a class="line" href="classmoduleModel.html#a979238a3b59bf52ccaa29ec3f7744808">  630</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classmoduleModel.html#a979238a3b59bf52ccaa29ec3f7744808">getTriggers</a>($trigger_name, $called_position)</div>
 <div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;    {</div>
-<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;        <span class="keywordflow">if</span>(is_null(<a class="code" href="PEAR_8php.html#a5dd2eabd22dc870da26c0f6cca061438">$GLOBALS</a>[<span class="stringliteral">&#39;__triggers__&#39;</span>]))</div>
+<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;        <span class="keywordflow">if</span>(is_null(<a class="code" href="config_8inc_8php.html#a2843c2516649b5d9554f09b06b7b810a">$GLOBALS</a>[<span class="stringliteral">&#39;__triggers__&#39;</span>]))</div>
 <div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;        {</div>
 <div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;            $triggers = FALSE;</div>
 <div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;            $oCacheHandler = <a class="code" href="classCacheHandler.html#a2fce85cb82ab180ce9d6bcea61a54eec">CacheHandler::getInstance</a>(<span class="stringliteral">&#39;object&#39;</span>, NULL, TRUE);</div>
@@ -680,11 +680,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;            }</div>
 <div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;            <span class="keywordflow">foreach</span>($triggers as $item)</div>
 <div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;            {</div>
-<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;                <a class="code" href="PEAR_8php.html#a5dd2eabd22dc870da26c0f6cca061438">$GLOBALS</a>[<span class="stringliteral">&#39;__triggers__&#39;</span>][$item-&gt;trigger_name][$item-&gt;called_position][] = $item;</div>
+<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;                <a class="code" href="config_8inc_8php.html#a2843c2516649b5d9554f09b06b7b810a">$GLOBALS</a>[<span class="stringliteral">&#39;__triggers__&#39;</span>][$item-&gt;trigger_name][$item-&gt;called_position][] = $item;</div>
 <div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;            }</div>
 <div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;        }</div>
 <div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;</div>
-<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="PEAR_8php.html#a5dd2eabd22dc870da26c0f6cca061438">$GLOBALS</a>[<span class="stringliteral">&#39;__triggers__&#39;</span>][$trigger_name][$called_position];</div>
+<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="config_8inc_8php.html#a2843c2516649b5d9554f09b06b7b810a">$GLOBALS</a>[<span class="stringliteral">&#39;__triggers__&#39;</span>][$trigger_name][$called_position];</div>
 <div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;    }</div>
 <div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;</div>
 <div class="line"><a name="l00662"></a><span class="lineno"><a class="line" href="classmoduleModel.html#ae570716b47c7fd19b7fc0d217a155b22">  662</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classmoduleModel.html#ae570716b47c7fd19b7fc0d217a155b22">getTrigger</a>($trigger_name, $module, $type, $called_method, $called_position)</div>
@@ -723,7 +723,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;        $cache_file = <span class="stringliteral">&#39;./files/config/module_extend.php&#39;</span>;</div>
 <div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;        $cache_file = <a class="code" href="classFileHandler.html#a6370b3eeddb705be04d9f60902a746e0">FileHandler::getRealPath</a>($cache_file);</div>
 <div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;</div>
-<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;        <span class="keywordflow">if</span>(!isset(<a class="code" href="PEAR_8php.html#a5dd2eabd22dc870da26c0f6cca061438">$GLOBALS</a>[<span class="stringliteral">&#39;__MODULE_EXTEND__&#39;</span>]))</div>
+<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;        <span class="keywordflow">if</span>(!isset(<a class="code" href="config_8inc_8php.html#a2843c2516649b5d9554f09b06b7b810a">$GLOBALS</a>[<span class="stringliteral">&#39;__MODULE_EXTEND__&#39;</span>]))</div>
 <div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;        {</div>
 <div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;            <span class="comment">// check pre install</span></div>
 <div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;            <span class="keywordflow">if</span>(file_exists(<a class="code" href="classFileHandler.html#a6370b3eeddb705be04d9f60902a746e0">FileHandler::getRealPath</a>(<span class="stringliteral">&#39;./files&#39;</span>)) &amp;&amp; !file_exists($cache_file))</div>
@@ -747,15 +747,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;</div>
 <div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;            <span class="keywordflow">if</span>(file_exists($cache_file))</div>
 <div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;            {</div>
-<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;                <a class="code" href="PEAR_8php.html#a5dd2eabd22dc870da26c0f6cca061438">$GLOBALS</a>[<span class="stringliteral">&#39;__MODULE_EXTEND__&#39;</span>] = include($cache_file);</div>
+<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;                <a class="code" href="config_8inc_8php.html#a2843c2516649b5d9554f09b06b7b810a">$GLOBALS</a>[<span class="stringliteral">&#39;__MODULE_EXTEND__&#39;</span>] = include($cache_file);</div>
 <div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;            }</div>
 <div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;            <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;            {</div>
-<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;                <a class="code" href="PEAR_8php.html#a5dd2eabd22dc870da26c0f6cca061438">$GLOBALS</a>[<span class="stringliteral">&#39;__MODULE_EXTEND__&#39;</span>] = array();</div>
+<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;                <a class="code" href="config_8inc_8php.html#a2843c2516649b5d9554f09b06b7b810a">$GLOBALS</a>[<span class="stringliteral">&#39;__MODULE_EXTEND__&#39;</span>] = array();</div>
 <div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;            }</div>
 <div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;        }</div>
 <div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;</div>
-<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="PEAR_8php.html#a5dd2eabd22dc870da26c0f6cca061438">$GLOBALS</a>[<span class="stringliteral">&#39;__MODULE_EXTEND__&#39;</span>];</div>
+<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="config_8inc_8php.html#a2843c2516649b5d9554f09b06b7b810a">$GLOBALS</a>[<span class="stringliteral">&#39;__MODULE_EXTEND__&#39;</span>];</div>
 <div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;    }</div>
 <div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;</div>
 <div class="line"><a name="l00742"></a><span class="lineno"><a class="line" href="classmoduleModel.html#ae4e9287674bddc605dfc4cef77f8c1bb">  742</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classmoduleModel.html#ae4e9287674bddc605dfc4cef77f8c1bb">getModuleInfoXml</a>($module)</div>
@@ -1085,7 +1085,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01080"></a><span class="lineno"> 1080</span>&#160;                $skinInfos = $info-&gt;skin_infos;</div>
 <div class="line"><a name="l01081"></a><span class="lineno"> 1081</span>&#160;                <span class="keywordflow">if</span>(isset($skinInfos[$module]) &amp;&amp; $skinInfos[$module]-&gt;is_theme)</div>
 <div class="line"><a name="l01082"></a><span class="lineno"> 1082</span>&#160;                {</div>
-<div class="line"><a name="l01083"></a><span class="lineno"> 1083</span>&#160;                    $themeSkinInfo = <a class="code" href="PEAR_8php.html#a5dd2eabd22dc870da26c0f6cca061438">$GLOBALS</a>[<span class="stringliteral">&#39;__ThemeModuleSkin__&#39;</span>][$module][<span class="stringliteral">&#39;skins&#39;</span>][$skinInfos[$module]-&gt;name];</div>
+<div class="line"><a name="l01083"></a><span class="lineno"> 1083</span>&#160;                    $themeSkinInfo = <a class="code" href="config_8inc_8php.html#a2843c2516649b5d9554f09b06b7b810a">$GLOBALS</a>[<span class="stringliteral">&#39;__ThemeModuleSkin__&#39;</span>][$module][<span class="stringliteral">&#39;skins&#39;</span>][$skinInfos[$module]-&gt;name];</div>
 <div class="line"><a name="l01084"></a><span class="lineno"> 1084</span>&#160;                    $skin_list[$skinInfos[$module]-&gt;name] = $themeSkinInfo;</div>
 <div class="line"><a name="l01085"></a><span class="lineno"> 1085</span>&#160;                }</div>
 <div class="line"><a name="l01086"></a><span class="lineno"> 1086</span>&#160;            }</div>
@@ -1369,7 +1369,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01374"></a><span class="lineno"> 1374</span>&#160;</div>
 <div class="line"><a name="l01375"></a><span class="lineno"> 1375</span>&#160;        <span class="keywordflow">if</span>($config === <span class="keyword">false</span>)</div>
 <div class="line"><a name="l01376"></a><span class="lineno"> 1376</span>&#160;        {</div>
-<div class="line"><a name="l01377"></a><span class="lineno"> 1377</span>&#160;            <span class="keywordflow">if</span>(!<a class="code" href="PEAR_8php.html#a5dd2eabd22dc870da26c0f6cca061438">$GLOBALS</a>[<span class="stringliteral">&#39;__ModuleConfig__&#39;</span>][$site_srl][$module])</div>
+<div class="line"><a name="l01377"></a><span class="lineno"> 1377</span>&#160;            <span class="keywordflow">if</span>(!<a class="code" href="config_8inc_8php.html#a2843c2516649b5d9554f09b06b7b810a">$GLOBALS</a>[<span class="stringliteral">&#39;__ModuleConfig__&#39;</span>][$site_srl][$module])</div>
 <div class="line"><a name="l01378"></a><span class="lineno"> 1378</span>&#160;            {</div>
 <div class="line"><a name="l01379"></a><span class="lineno"> 1379</span>&#160;                <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a> = <span class="keyword">new</span> stdClass();</div>
 <div class="line"><a name="l01380"></a><span class="lineno"> 1380</span>&#160;                <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;module = $module;</div>
@@ -1383,9 +1383,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01388"></a><span class="lineno"> 1388</span>&#160;                {</div>
 <div class="line"><a name="l01389"></a><span class="lineno"> 1389</span>&#160;                    $oCacheHandler-&gt;put($cache_key, $config);</div>
 <div class="line"><a name="l01390"></a><span class="lineno"> 1390</span>&#160;                }</div>
-<div class="line"><a name="l01391"></a><span class="lineno"> 1391</span>&#160;                <a class="code" href="PEAR_8php.html#a5dd2eabd22dc870da26c0f6cca061438">$GLOBALS</a>[<span class="stringliteral">&#39;__ModuleConfig__&#39;</span>][$site_srl][$module] = $config;</div>
+<div class="line"><a name="l01391"></a><span class="lineno"> 1391</span>&#160;                <a class="code" href="config_8inc_8php.html#a2843c2516649b5d9554f09b06b7b810a">$GLOBALS</a>[<span class="stringliteral">&#39;__ModuleConfig__&#39;</span>][$site_srl][$module] = $config;</div>
 <div class="line"><a name="l01392"></a><span class="lineno"> 1392</span>&#160;            }</div>
-<div class="line"><a name="l01393"></a><span class="lineno"> 1393</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="PEAR_8php.html#a5dd2eabd22dc870da26c0f6cca061438">$GLOBALS</a>[<span class="stringliteral">&#39;__ModuleConfig__&#39;</span>][$site_srl][$module];</div>
+<div class="line"><a name="l01393"></a><span class="lineno"> 1393</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="config_8inc_8php.html#a2843c2516649b5d9554f09b06b7b810a">$GLOBALS</a>[<span class="stringliteral">&#39;__ModuleConfig__&#39;</span>][$site_srl][$module];</div>
 <div class="line"><a name="l01394"></a><span class="lineno"> 1394</span>&#160;        }</div>
 <div class="line"><a name="l01395"></a><span class="lineno"> 1395</span>&#160;</div>
 <div class="line"><a name="l01396"></a><span class="lineno"> 1396</span>&#160;        <span class="keywordflow">return</span> $config;</div>
@@ -1405,7 +1405,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01414"></a><span class="lineno"> 1414</span>&#160;</div>
 <div class="line"><a name="l01415"></a><span class="lineno"> 1415</span>&#160;        <span class="keywordflow">if</span>($config === <span class="keyword">false</span>)</div>
 <div class="line"><a name="l01416"></a><span class="lineno"> 1416</span>&#160;        {</div>
-<div class="line"><a name="l01417"></a><span class="lineno"> 1417</span>&#160;            <span class="keywordflow">if</span>(!isset(<a class="code" href="PEAR_8php.html#a5dd2eabd22dc870da26c0f6cca061438">$GLOBALS</a>[<span class="stringliteral">&#39;__ModulePartConfig__&#39;</span>][$module][<a class="code" href="ko_8install_8php.html#ae40aed4d7a99050245e66ca2a82949ed">$module_srl</a>]))</div>
+<div class="line"><a name="l01417"></a><span class="lineno"> 1417</span>&#160;            <span class="keywordflow">if</span>(!isset(<a class="code" href="config_8inc_8php.html#a2843c2516649b5d9554f09b06b7b810a">$GLOBALS</a>[<span class="stringliteral">&#39;__ModulePartConfig__&#39;</span>][$module][<a class="code" href="ko_8install_8php.html#ae40aed4d7a99050245e66ca2a82949ed">$module_srl</a>]))</div>
 <div class="line"><a name="l01418"></a><span class="lineno"> 1418</span>&#160;            {</div>
 <div class="line"><a name="l01419"></a><span class="lineno"> 1419</span>&#160;                <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a> = <span class="keyword">new</span> stdClass();</div>
 <div class="line"><a name="l01420"></a><span class="lineno"> 1420</span>&#160;                <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;module = $module;</div>
@@ -1419,9 +1419,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01428"></a><span class="lineno"> 1428</span>&#160;                {</div>
 <div class="line"><a name="l01429"></a><span class="lineno"> 1429</span>&#160;                    $oCacheHandler-&gt;put($cache_key, $config);</div>
 <div class="line"><a name="l01430"></a><span class="lineno"> 1430</span>&#160;                }</div>
-<div class="line"><a name="l01431"></a><span class="lineno"> 1431</span>&#160;                <a class="code" href="PEAR_8php.html#a5dd2eabd22dc870da26c0f6cca061438">$GLOBALS</a>[<span class="stringliteral">&#39;__ModulePartConfig__&#39;</span>][$module][<a class="code" href="ko_8install_8php.html#ae40aed4d7a99050245e66ca2a82949ed">$module_srl</a>] = $config;</div>
+<div class="line"><a name="l01431"></a><span class="lineno"> 1431</span>&#160;                <a class="code" href="config_8inc_8php.html#a2843c2516649b5d9554f09b06b7b810a">$GLOBALS</a>[<span class="stringliteral">&#39;__ModulePartConfig__&#39;</span>][$module][<a class="code" href="ko_8install_8php.html#ae40aed4d7a99050245e66ca2a82949ed">$module_srl</a>] = $config;</div>
 <div class="line"><a name="l01432"></a><span class="lineno"> 1432</span>&#160;            }</div>
-<div class="line"><a name="l01433"></a><span class="lineno"> 1433</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="PEAR_8php.html#a5dd2eabd22dc870da26c0f6cca061438">$GLOBALS</a>[<span class="stringliteral">&#39;__ModulePartConfig__&#39;</span>][$module][<a class="code" href="ko_8install_8php.html#ae40aed4d7a99050245e66ca2a82949ed">$module_srl</a>];</div>
+<div class="line"><a name="l01433"></a><span class="lineno"> 1433</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="config_8inc_8php.html#a2843c2516649b5d9554f09b06b7b810a">$GLOBALS</a>[<span class="stringliteral">&#39;__ModulePartConfig__&#39;</span>][$module][<a class="code" href="ko_8install_8php.html#ae40aed4d7a99050245e66ca2a82949ed">$module_srl</a>];</div>
 <div class="line"><a name="l01434"></a><span class="lineno"> 1434</span>&#160;        }</div>
 <div class="line"><a name="l01435"></a><span class="lineno"> 1435</span>&#160;</div>
 <div class="line"><a name="l01436"></a><span class="lineno"> 1436</span>&#160;        <span class="keywordflow">return</span> $config;</div>
@@ -2248,7 +2248,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="ko_8install_8php_html_a99e144f7d563ceb76b003d54739b3b0c"><div class="ttname"><a href="ko_8install_8php.html#a99e144f7d563ceb76b003d54739b3b0c">$designInfo</a></div><div class="ttdeci">$designInfo</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00221">ko.install.php:221</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_aa08f01e3bf130d770b373ca8493e3e9b"><div class="ttname"><a href="func_8inc_8php.html#aa08f01e3bf130d770b373ca8493e3e9b">getController</a></div><div class="ttdeci">getController($module_name)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00090">func.inc.php:90</a></div></div>
 <div class="ttc" id="classmoduleModel_html_a96446e3b8e031ec1264c7187cb1384a5"><div class="ttname"><a href="classmoduleModel.html#a96446e3b8e031ec1264c7187cb1384a5">moduleModel\getSiteInfo</a></div><div class="ttdeci">getSiteInfo($site_srl, $columnList=array())</div><div class="ttdoc">Get site information. </div><div class="ttdef"><b>Definition:</b> <a href="module_8model_8php_source.html#l00050">module.model.php:50</a></div></div>
-<div class="ttc" id="func_8inc_8php_html_ae1a0ad24dbf34de227ffd2eb0d1f8da3"><div class="ttname"><a href="func_8inc_8php.html#ae1a0ad24dbf34de227ffd2eb0d1f8da3">getNumberingPath</a></div><div class="ttdeci">getNumberingPath($no, $size=3)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l01052">func.inc.php:1052</a></div></div>
+<div class="ttc" id="func_8inc_8php_html_ae1a0ad24dbf34de227ffd2eb0d1f8da3"><div class="ttname"><a href="func_8inc_8php.html#ae1a0ad24dbf34de227ffd2eb0d1f8da3">getNumberingPath</a></div><div class="ttdeci">getNumberingPath($no, $size=3)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l01049">func.inc.php:1049</a></div></div>
 <div class="ttc" id="classmoduleModel_html_a4e93226573048a7b9c8e2cb842d0cb30"><div class="ttname"><a href="classmoduleModel.html#a4e93226573048a7b9c8e2cb842d0cb30">moduleModel\getModuleExtraVars</a></div><div class="ttdeci">getModuleExtraVars($list_module_srl)</div><div class="ttdoc">Get extra vars of the module Extra information, not in the modules table. </div><div class="ttdef"><b>Definition:</b> <a href="module_8model_8php_source.html#l01720">module.model.php:1720</a></div></div>
 <div class="ttc" id="classmoduleModel_html_a0d6431efeb3e3d377dbbb20b414ba074"><div class="ttname"><a href="classmoduleModel.html#a0d6431efeb3e3d377dbbb20b414ba074">moduleModel\getGrant</a></div><div class="ttdeci">getGrant($module_info, $member_info, $xml_info= '')</div><div class="ttdoc">Return permission by using module info, xml info and member info. </div><div class="ttdef"><b>Definition:</b> <a href="module_8model_8php_source.html#l01979">module.model.php:1979</a></div></div>
 <div class="ttc" id="classmoduleModel_html_ae8005c8ab7ee3b9e6ddd7f71bb2b4698"><div class="ttname"><a href="classmoduleModel.html#ae8005c8ab7ee3b9e6ddd7f71bb2b4698">moduleModel\getModuleConfig</a></div><div class="ttdeci">getModuleConfig($module, $site_srl=0)</div><div class="ttdoc">Return module configurations Global configuration is used to manage board, member and others...</div><div class="ttdef"><b>Definition:</b> <a href="module_8model_8php_source.html#l01363">module.model.php:1363</a></div></div>
@@ -2281,6 +2281,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classmoduleModel_html_a4ea7187b04b26a98fe6d7fd138817b16"><div class="ttname"><a href="classmoduleModel.html#a4ea7187b04b26a98fe6d7fd138817b16">moduleModel\getLangByLangcode</a></div><div class="ttdeci">getLangByLangcode()</div><div class="ttdef"><b>Definition:</b> <a href="module_8model_8php_source.html#l02302">module.model.php:2302</a></div></div>
 <div class="ttc" id="classmoduleModel_html_a6baa2faf83fc96fba51072276c9cb7c3"><div class="ttname"><a href="classmoduleModel.html#a6baa2faf83fc96fba51072276c9cb7c3">moduleModel\getSiteAdmin</a></div><div class="ttdeci">getSiteAdmin($site_srl)</div><div class="ttdoc">Get admin information of the site. </div><div class="ttdef"><b>Definition:</b> <a href="module_8model_8php_source.html#l01695">module.model.php:1695</a></div></div>
 <div class="ttc" id="classmoduleModel_html_a240b4774ddaadc1ded08551120942ca3"><div class="ttname"><a href="classmoduleModel.html#a240b4774ddaadc1ded08551120942ca3">moduleModel\getValidatorFilePath</a></div><div class="ttdeci">getValidatorFilePath($module, $ruleset, $mid=null)</div><div class="ttdoc">Return ruleset cache file path. </div><div class="ttdef"><b>Definition:</b> <a href="module_8model_8php_source.html#l02229">module.model.php:2229</a></div></div>
+<div class="ttc" id="config_8inc_8php_html_a2843c2516649b5d9554f09b06b7b810a"><div class="ttname"><a href="config_8inc_8php.html#a2843c2516649b5d9554f09b06b7b810a">$GLOBALS</a></div><div class="ttdeci">if(__DEBUG__) if(__DEBUG__) $GLOBALS['__xe_autoload_file_map']</div><div class="ttdef"><b>Definition:</b> <a href="config_8inc_8php_source.html#l00296">config.inc.php:296</a></div></div>
 <div class="ttc" id="classmoduleModel_html_a253e39c41e241e2f3fa914ce5d915963"><div class="ttname"><a href="classmoduleModel.html#a253e39c41e241e2f3fa914ce5d915963">moduleModel\getModuleCategories</a></div><div class="ttdeci">getModuleCategories($moduleCategorySrl=array())</div><div class="ttdoc">Get a list of module category. </div><div class="ttdef"><b>Definition:</b> <a href="module_8model_8php_source.html#l01460">module.model.php:1460</a></div></div>
 <div class="ttc" id="classmoduleModel_html_a6c4e1496c55c3c15507bb9532cb01c7f"><div class="ttname"><a href="classmoduleModel.html#a6c4e1496c55c3c15507bb9532cb01c7f">moduleModel\getSiteInfoByDomain</a></div><div class="ttdeci">getSiteInfoByDomain($domain, $columnList=array())</div><div class="ttdef"><b>Definition:</b> <a href="module_8model_8php_source.html#l00058">module.model.php:58</a></div></div>
 <div class="ttc" id="classmoduleModel_html_a0a2303f1634b4937509e9b21e811d1ad"><div class="ttname"><a href="classmoduleModel.html#a0a2303f1634b4937509e9b21e811d1ad">moduleModel\checkNeedInstall</a></div><div class="ttdeci">checkNeedInstall($module_name)</div><div class="ttdef"><b>Definition:</b> <a href="module_8model_8php_source.html#l01523">module.model.php:1523</a></div></div>
@@ -2313,7 +2314,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classDB_html_a16f4a668b6429b4b9af5132cbf885213"><div class="ttname"><a href="classDB.html#a16f4a668b6429b4b9af5132cbf885213">DB\getInstance</a></div><div class="ttdeci">&amp; getInstance($db_type=NULL)</div><div class="ttdef"><b>Definition:</b> <a href="DB_8class_8php_source.html#l00147">DB.class.php:147</a></div></div>
 <div class="ttc" id="classFileHandler_html_a6370b3eeddb705be04d9f60902a746e0"><div class="ttname"><a href="classFileHandler.html#a6370b3eeddb705be04d9f60902a746e0">FileHandler\getRealPath</a></div><div class="ttdeci">getRealPath($source)</div><div class="ttdef"><b>Definition:</b> <a href="FileHandler_8class_8php_source.html#l00018">FileHandler.class.php:18</a></div></div>
 <div class="ttc" id="classModuleHandler_html_a0a175bdc5034df0bf4ce66ea0e6e1bf2"><div class="ttname"><a href="classModuleHandler.html#a0a175bdc5034df0bf4ce66ea0e6e1bf2">ModuleHandler\getModulePath</a></div><div class="ttdeci">getModulePath($module)</div><div class="ttdef"><b>Definition:</b> <a href="ModuleHandler_8class_8php_source.html#l00998">ModuleHandler.class.php:998</a></div></div>
-<div class="ttc" id="PEAR_8php_html_a5dd2eabd22dc870da26c0f6cca061438"><div class="ttname"><a href="PEAR_8php.html#a5dd2eabd22dc870da26c0f6cca061438">$GLOBALS</a></div><div class="ttdeci">$GLOBALS['_PEAR_default_error_mode']</div><div class="ttdef"><b>Definition:</b> <a href="PEAR_8php_source.html#l00049">PEAR.php:49</a></div></div>
 <div class="ttc" id="classContext_html_a9af9269b04542f7462d27a63226e0ff3"><div class="ttname"><a href="classContext.html#a9af9269b04542f7462d27a63226e0ff3">Context\getLang</a></div><div class="ttdeci">getLang($code)</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l00965">Context.class.php:965</a></div></div>
 <div class="ttc" id="config_8inc_8php_html_a5387c7a3f2aa38adf16f324cee88db88"><div class="ttname"><a href="config_8inc_8php.html#a5387c7a3f2aa38adf16f324cee88db88">_XE_PATH_</a></div><div class="ttdeci">const _XE_PATH_</div><div class="ttdef"><b>Definition:</b> <a href="config_8inc_8php_source.html#l00049">config.inc.php:49</a></div></div>
 <div class="ttc" id="classSecurity_html"><div class="ttname"><a href="classSecurity.html">Security</a></div><div class="ttdef"><b>Definition:</b> <a href="Security_8class_8php_source.html#l00011">Security.class.php:11</a></div></div>
@@ -2353,7 +2353,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 9 2015 17:20:11 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 7 2015 19:26:31 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.8.3</span>
+   &#160;<span id="projectnumber">1.8.4</span>
    </div>
   </td>
  </tr>
@@ -126,7 +126,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                    $v = ($k == <span class="stringliteral">&#39;db_table_prefix&#39;</span>) ? $v.<span class="charliteral">&#39;_&#39;</span> : $v;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                    <a class="code" href="classContext.html#a9f79aa7aecf2e4d8006e517844523fc2">Context::set</a>($k,$v,<span class="keyword">true</span>);</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                }</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                unset(<a class="code" href="PEAR_8php.html#a5dd2eabd22dc870da26c0f6cca061438">$GLOBALS</a>[<span class="stringliteral">&#39;__DB__&#39;</span>]);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                unset(<a class="code" href="config_8inc_8php.html#a2843c2516649b5d9554f09b06b7b810a">$GLOBALS</a>[<span class="stringliteral">&#39;__DB__&#39;</span>]);</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                <a class="code" href="classContext.html#a9f79aa7aecf2e4d8006e517844523fc2">Context::set</a>(<span class="stringliteral">&#39;install_config&#39;</span>, <span class="keyword">true</span>, <span class="keyword">true</span>);</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                $oInstallController = <a class="code" href="func_8inc_8php.html#aa08f01e3bf130d770b373ca8493e3e9b">getController</a>(<span class="stringliteral">&#39;install&#39;</span>);</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = $oInstallController-&gt;procInstall();</div>
@@ -230,7 +230,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        include <a class="code" href="config_8inc_8php.html#a5387c7a3f2aa38adf16f324cee88db88">_XE_PATH_</a>.<span class="stringliteral">&#39;files/config/tmpDB.config.php&#39;</span>;</div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        <a class="code" href="classContext.html#a9f79aa7aecf2e4d8006e517844523fc2">Context::set</a>(<span class="stringliteral">&#39;use_rewrite&#39;</span>, $_SESSION[<span class="stringliteral">&#39;use_rewrite&#39;</span>]); </div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        <a class="code" href="classContext.html#a9f79aa7aecf2e4d8006e517844523fc2">Context::set</a>(<span class="stringliteral">&#39;time_zone&#39;</span>, <a class="code" href="PEAR_8php.html#a5dd2eabd22dc870da26c0f6cca061438">$GLOBALS</a>[<span class="stringliteral">&#39;time_zone&#39;</span>]);</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        <a class="code" href="classContext.html#a9f79aa7aecf2e4d8006e517844523fc2">Context::set</a>(<span class="stringliteral">&#39;time_zone&#39;</span>, <a class="code" href="config_8inc_8php.html#a2843c2516649b5d9554f09b06b7b810a">$GLOBALS</a>[<span class="stringliteral">&#39;time_zone&#39;</span>]);</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        <a class="code" href="classContext.html#a9f79aa7aecf2e4d8006e517844523fc2">Context::set</a>(<span class="stringliteral">&#39;db_type&#39;</span>, $db_info-&gt;db_type);</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        $this-&gt;<a class="code" href="classModuleObject.html#aa38e116023d54d3f5d8f507bb87663f4">setTemplateFile</a>(<span class="stringliteral">&#39;config_form&#39;</span>);</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    }</div>
@@ -273,13 +273,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classContext_html_aab07bc95a7a855c4d9608b4ed615807f"><div class="ttname"><a href="classContext.html#aab07bc95a7a855c4d9608b4ed615807f">Context\setBrowserTitle</a></div><div class="ttdeci">setBrowserTitle($site_title)</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l00759">Context.class.php:759</a></div></div>
 <div class="ttc" id="classContext_html_ae75d6f4064d09e48d0d76614b6997e29"><div class="ttname"><a href="classContext.html#ae75d6f4064d09e48d0d76614b6997e29">Context\getLangType</a></div><div class="ttdeci">getLangType()</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l00953">Context.class.php:953</a></div></div>
 <div class="ttc" id="classinstallView_html_ab24b18fa10e0268846ac0002d77ee453"><div class="ttname"><a href="classinstallView.html#ab24b18fa10e0268846ac0002d77ee453">installView\init</a></div><div class="ttdeci">init()</div><div class="ttdoc">Initialization. </div><div class="ttdef"><b>Definition:</b> <a href="install_8view_8php_source.html#l00015">install.view.php:15</a></div></div>
+<div class="ttc" id="config_8inc_8php_html_a2843c2516649b5d9554f09b06b7b810a"><div class="ttname"><a href="config_8inc_8php.html#a2843c2516649b5d9554f09b06b7b810a">$GLOBALS</a></div><div class="ttdeci">if(__DEBUG__) if(__DEBUG__) $GLOBALS['__xe_autoload_file_map']</div><div class="ttdef"><b>Definition:</b> <a href="config_8inc_8php_source.html#l00296">config.inc.php:296</a></div></div>
 <div class="ttc" id="classinstallView_html_aa3ee9747353f128111f628a5c9359c5f"><div class="ttname"><a href="classinstallView.html#aa3ee9747353f128111f628a5c9359c5f">installView\dispInstallSelectDB</a></div><div class="ttdeci">dispInstallSelectDB()</div><div class="ttdoc">Choose a DB. </div><div class="ttdef"><b>Definition:</b> <a href="install_8view_8php_source.html#l00112">install.view.php:112</a></div></div>
 <div class="ttc" id="classinstallView_html_af8e64ea4a91e88a6539bef37e73d3a05"><div class="ttname"><a href="classinstallView.html#af8e64ea4a91e88a6539bef37e73d3a05">installView\$install_enable</a></div><div class="ttdeci">$install_enable</div><div class="ttdef"><b>Definition:</b> <a href="install_8view_8php_source.html#l00010">install.view.php:10</a></div></div>
 <div class="ttc" id="classinstall_html"><div class="ttname"><a href="classinstall.html">install</a></div><div class="ttdoc">install module of the high class </div><div class="ttdef"><b>Definition:</b> <a href="install_8class_8php_source.html#l00008">install.class.php:8</a></div></div>
 <div class="ttc" id="classFileHandler_html_a6370b3eeddb705be04d9f60902a746e0"><div class="ttname"><a href="classFileHandler.html#a6370b3eeddb705be04d9f60902a746e0">FileHandler\getRealPath</a></div><div class="ttdeci">getRealPath($source)</div><div class="ttdef"><b>Definition:</b> <a href="FileHandler_8class_8php_source.html#l00018">FileHandler.class.php:18</a></div></div>
 <div class="ttc" id="classDB_html_a65508ca8b2bb4ebf6dbb570caf9c8e40"><div class="ttname"><a href="classDB.html#a65508ca8b2bb4ebf6dbb570caf9c8e40">DB\getDisableList</a></div><div class="ttdeci">getDisableList()</div><div class="ttdef"><b>Definition:</b> <a href="DB_8class_8php_source.html#l00243">DB.class.php:243</a></div></div>
 <div class="ttc" id="classinstallView_html_ac73107933a9a9498aaef04380137794d"><div class="ttname"><a href="classinstallView.html#ac73107933a9a9498aaef04380137794d">installView\dispInstallCheckEnv</a></div><div class="ttdeci">dispInstallCheckEnv()</div><div class="ttdoc">Display messages about installation environment. </div><div class="ttdef"><b>Definition:</b> <a href="install_8view_8php_source.html#l00096">install.view.php:96</a></div></div>
-<div class="ttc" id="PEAR_8php_html_a5dd2eabd22dc870da26c0f6cca061438"><div class="ttname"><a href="PEAR_8php.html#a5dd2eabd22dc870da26c0f6cca061438">$GLOBALS</a></div><div class="ttdeci">$GLOBALS['_PEAR_default_error_mode']</div><div class="ttdef"><b>Definition:</b> <a href="PEAR_8php_source.html#l00049">PEAR.php:49</a></div></div>
 <div class="ttc" id="classContext_html_a9af9269b04542f7462d27a63226e0ff3"><div class="ttname"><a href="classContext.html#a9af9269b04542f7462d27a63226e0ff3">Context\getLang</a></div><div class="ttdeci">getLang($code)</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l00965">Context.class.php:965</a></div></div>
 <div class="ttc" id="config_8inc_8php_html_a5387c7a3f2aa38adf16f324cee88db88"><div class="ttname"><a href="config_8inc_8php.html#a5387c7a3f2aa38adf16f324cee88db88">_XE_PATH_</a></div><div class="ttdeci">const _XE_PATH_</div><div class="ttdef"><b>Definition:</b> <a href="config_8inc_8php_source.html#l00049">config.inc.php:49</a></div></div>
 <div class="ttc" id="classContext_html_ad59031e45d21ad27eb7d06e0ee76f008"><div class="ttname"><a href="classContext.html#ad59031e45d21ad27eb7d06e0ee76f008">Context\close</a></div><div class="ttdeci">close()</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l00428">Context.class.php:428</a></div></div>
@@ -297,7 +297,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 9 2015 17:20:11 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 7 2015 19:26:30 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

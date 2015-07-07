@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.8.3</span>
+   &#160;<span id="projectnumber">1.8.4</span>
    </div>
   </td>
  </tr>
@@ -125,180 +125,191 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        $temp_menus = <a class="code" href="func_8inc_8php.html#ace5cc06ee6c5d655a1bdcc15846a779e">executeQueryArray</a>(<span class="stringliteral">&#39;menu.getMenuByTitle&#39;</span>, <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>);</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordflow">if</span>($temp_menus-&gt;toBool() &amp;&amp; count($temp_menus-&gt;data)) <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classmenu.html#aa9eb9adadde15b730b887564b9184023">   58</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classmenu.html#aa9eb9adadde15b730b887564b9184023">moduleUpdate</a>() {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        $oDB = &amp;<a class="code" href="classDB.html#a16f4a668b6429b4b9af5132cbf885213">DB::getInstance</a>();</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="comment">// 2009. 02. 11 menu added to the table site_srl</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">if</span>(!$oDB-&gt;isColumnExists(<span class="stringliteral">&#39;menu&#39;</span>, <span class="stringliteral">&#39;site_srl&#39;</span>))</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            $oDB-&gt;addColumn(<span class="stringliteral">&#39;menu&#39;</span>,<span class="stringliteral">&#39;site_srl&#39;</span>,<span class="stringliteral">&#39;number&#39;</span>,11,0,<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        }</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="comment">// 2012. 02. 01 title index check</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordflow">if</span>(!$oDB-&gt;isIndexExists(<span class="stringliteral">&quot;menu&quot;</span>,<span class="stringliteral">&quot;idx_title&quot;</span>))</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        {</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            $oDB-&gt;addIndex(<span class="stringliteral">&#39;menu&#39;</span>, <span class="stringliteral">&#39;idx_title&#39;</span>, array(<span class="stringliteral">&#39;title&#39;</span>));</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        }</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="comment">// 1.7(maserati) shortcut column add and mirgration</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">if</span>(!$oDB-&gt;isColumnExists(<span class="stringliteral">&#39;menu_item&#39;</span>, <span class="stringliteral">&#39;is_shortcut&#39;</span>))</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        {</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            $oDB-&gt;addColumn(<span class="stringliteral">&#39;menu_item&#39;</span>, <span class="stringliteral">&#39;is_shortcut&#39;</span>, <span class="stringliteral">&#39;char&#39;</span>, 1, <span class="charliteral">&#39;N&#39;</span>);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <span class="comment">// check empty url and change shortcut type</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            $oMenuAdminModel = <a class="code" href="func_8inc_8php.html#a902cd0c884e75afab2682fdd3ae3791f">getAdminModel</a>(<span class="stringliteral">&#39;menu&#39;</span>);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = $oMenuAdminModel-&gt;getMenus();</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <span class="keywordflow">if</span>(is_array(<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>))</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            {</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                $menuItemUniqueList = array();</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                $menuItemAllList = array();</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                <span class="keywordflow">foreach</span>(<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>  AS $key=&gt;$value)</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                {</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                    unset(<a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                    <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;menu_srl = $value-&gt;menu_srl;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                    $output2 = <a class="code" href="func_8inc_8php.html#ace5cc06ee6c5d655a1bdcc15846a779e">executeQueryArray</a>(<span class="stringliteral">&#39;menu.getMenuItems&#39;</span>, <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                    <span class="keywordflow">if</span>(is_array($output2-&gt;data))</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                    {</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                        <span class="keywordflow">foreach</span>($output2-&gt;data AS $key2=&gt;$value2)</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                        {</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                            $menuItemAllList[$value2-&gt;menu_item_srl] = $value2-&gt;url;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                            <span class="keywordflow">if</span>(!in_array($value2-&gt;url, $menuItemUniqueList))</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                            {</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                                $menuItemUniqueList[$value2-&gt;menu_item_srl] = $value2-&gt;url;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                            }</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                            <span class="comment">// if url is empty, change type to shortcurt</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                            <span class="keywordflow">if</span>($value2-&gt;is_shortcut == <span class="charliteral">&#39;N&#39;</span> &amp;&amp; (!$value2-&gt;url || strncasecmp(<span class="stringliteral">&#39;http&#39;</span>, $value2-&gt;url, 4) === 0))</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                            {</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                                $value2-&gt;is_shortcut = <span class="charliteral">&#39;Y&#39;</span>;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                                $output3 = <a class="code" href="func_8inc_8php.html#a418bc23855eebc0d90190dd625ac4474">executeQuery</a>(<span class="stringliteral">&#39;menu.updateMenuItem&#39;</span>, $value2);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                            }</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                        }</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                    }</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                }</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                <a class="code" href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a> = <a class="code" href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a>(<span class="stringliteral">&#39;module&#39;</span>);</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                <span class="comment">// if duplicate reference, change type to shortcut</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                $shortcutItemList = array_diff_assoc($menuItemAllList, $menuItemUniqueList);</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                <span class="keywordflow">foreach</span>(<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> AS $key=&gt;$value)</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                {</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                    unset(<a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>);</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                    <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;menu_srl = $value-&gt;menu_srl;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                    $output2 = <a class="code" href="func_8inc_8php.html#ace5cc06ee6c5d655a1bdcc15846a779e">executeQueryArray</a>(<span class="stringliteral">&#39;menu.getMenuItems&#39;</span>, <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>);</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                    <span class="keywordflow">if</span>(is_array($output2-&gt;data))</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                    {</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                        <span class="keywordflow">foreach</span>($output2-&gt;data AS $key2=&gt;$value2)</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                        {</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                            <span class="keywordflow">if</span>(!empty($value2-&gt;url) &amp;&amp; strncasecmp(<span class="stringliteral">&#39;http&#39;</span>, $value2-&gt;url, 4) !== 0)</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                            {</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                                <a class="code" href="ko_8install_8php.html#ae3552a6dd49f37a50e7858151f7c5cc2">$moduleInfo</a> = <a class="code" href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a>-&gt;getModuleInfoByMid($value2-&gt;url);</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                                <span class="keywordflow">if</span>(!<a class="code" href="ko_8install_8php.html#ae3552a6dd49f37a50e7858151f7c5cc2">$moduleInfo</a>-&gt;module_srl)</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                                {</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                                    $value2-&gt;url = <a class="code" href="classContext.html#abf99203a93b0b0de0da3fbeced6ce333">Context::getDefaultUrl</a>();</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                                    <span class="keywordflow">if</span>(!$value2-&gt;url) $value2-&gt;url = <span class="charliteral">&#39;#&#39;</span>;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                                    $value2-&gt;is_shortcut = <span class="charliteral">&#39;Y&#39;</span>;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                                    $updateOutput = <a class="code" href="func_8inc_8php.html#a418bc23855eebc0d90190dd625ac4474">executeQuery</a>(<span class="stringliteral">&#39;menu.updateMenuItem&#39;</span>, $value2);</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                                }</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                            }</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                            <span class="keywordflow">if</span>($shortcutItemList[$value2-&gt;menu_item_srl])</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                            {</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;                                $value2-&gt;is_shortcut = <span class="charliteral">&#39;Y&#39;</span>;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;                                $output3 = <a class="code" href="func_8inc_8php.html#a418bc23855eebc0d90190dd625ac4474">executeQuery</a>(<span class="stringliteral">&#39;menu.updateMenuItem&#39;</span>, $value2);</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;                            }</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;                        }</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;                    }</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;                }</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;            }</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            $this-&gt;<a class="code" href="classmenu.html#a583aef0b15f6391d8e591f3498755f2e">recompileCache</a>();</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        }</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        </div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        <span class="comment">// for 1.7.4 update, 기존에 생성된 Temporary menu 항목 정리</span></div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        $oMenuAdminModel = <a class="code" href="func_8inc_8php.html#a902cd0c884e75afab2682fdd3ae3791f">getAdminModel</a>(<span class="stringliteral">&#39;menu&#39;</span>);</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a> = <span class="keyword">new</span> stdClass();</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;title = array(<span class="stringliteral">&quot;Temporary menu&quot;</span>);</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        $temp_menus = <a class="code" href="func_8inc_8php.html#ace5cc06ee6c5d655a1bdcc15846a779e">executeQueryArray</a>(<span class="stringliteral">&#39;menu.getMenuByTitle&#39;</span>, <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>);</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        </div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a> = <span class="keyword">new</span> stdClass();</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        <span class="keywordflow">if</span>($temp_menus-&gt;toBool() &amp;&amp; count($temp_menus-&gt;data))</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        {</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            </div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            <a class="code" href="ko_8install_8php.html#a9062530c3b03479ca4530daee1c18887">$oMenuAdminController</a> = <a class="code" href="func_8inc_8php.html#a2f7ca88a5226536aca3b2f5682bd7b2d">getAdminController</a>(<span class="stringliteral">&#39;menu&#39;</span>);</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            <span class="keywordflow">foreach</span>($temp_menus-&gt;data as $menu)</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            {</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;current_menu_srl = $menu-&gt;menu_srl;</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;menu_srl = <a class="code" href="ko_8install_8php.html#a9062530c3b03479ca4530daee1c18887">$oMenuAdminController</a>-&gt;getUnlinkedMenu();</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                $output3 = <a class="code" href="func_8inc_8php.html#a418bc23855eebc0d90190dd625ac4474">executeQuery</a>(<span class="stringliteral">&#39;menu.updateMenuItems&#39;</span>, <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>);</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                    </div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                <span class="keywordflow">if</span>($output3-&gt;toBool())</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                {</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                    <span class="comment">// delete</span></div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                    <a class="code" href="ko_8install_8php.html#a9062530c3b03479ca4530daee1c18887">$oMenuAdminController</a>-&gt;deleteMenu($menu-&gt;menu_srl);</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;                }</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            }</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            </div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            $this-&gt;<a class="code" href="classmenu.html#a583aef0b15f6391d8e591f3498755f2e">recompileCache</a>();</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        }</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(0, <span class="stringliteral">&#39;success_updated&#39;</span>);</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    }</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
-<div class="line"><a name="l00182"></a><span class="lineno"><a class="line" href="classmenu.html#a583aef0b15f6391d8e591f3498755f2e">  182</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classmenu.html#a583aef0b15f6391d8e591f3498755f2e">recompileCache</a>()</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    {</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        <a class="code" href="ko_8install_8php.html#a9062530c3b03479ca4530daee1c18887">$oMenuAdminController</a> = <a class="code" href="func_8inc_8php.html#a2f7ca88a5226536aca3b2f5682bd7b2d">getAdminController</a>(<span class="stringliteral">&#39;menu&#39;</span>);</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        $oMenuAdminModel = <a class="code" href="func_8inc_8php.html#a902cd0c884e75afab2682fdd3ae3791f">getAdminModel</a>(<span class="stringliteral">&#39;menu&#39;</span>);</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        <span class="comment">// get home module id</span></div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        <a class="code" href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a> = <a class="code" href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a>(<span class="stringliteral">&#39;module&#39;</span>);</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        $columnList = array(<span class="stringliteral">&#39;modules.mid&#39;</span>,);</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = <a class="code" href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a>-&gt;getSiteInfo(0, $columnList);</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        $homeModuleMid = <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;mid;</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        $homeMenuSrl = NULL;</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        <span class="comment">// Wanted list of all the blog module</span></div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = <a class="code" href="func_8inc_8php.html#ace5cc06ee6c5d655a1bdcc15846a779e">executeQueryArray</a>(<span class="stringliteral">&quot;menu.getMenus&quot;</span>);</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        $list = <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;data;</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        <span class="keywordflow">if</span>(!count($list)) <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        <span class="comment">// The menu module is used in the re-create all the menu list</span></div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        <span class="keywordflow">foreach</span>($list as $menu_item)</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        {</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;            $menu_srl = $menu_item-&gt;menu_srl;</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;            <a class="code" href="ko_8install_8php.html#a9062530c3b03479ca4530daee1c18887">$oMenuAdminController</a>-&gt;makeXmlFile($menu_srl);</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;            <span class="comment">// for homeSitemap.php regenrate</span></div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;            <span class="keywordflow">if</span>(!$homeMenuSrl)</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;            {</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;                $menuItemList = $oMenuAdminModel-&gt;getMenuItems($menu_srl);</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;                <span class="keywordflow">if</span>(is_array($menuItemList-&gt;data))</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;                {</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;                    <span class="keywordflow">foreach</span>($menuItemList-&gt;data AS $key=&gt;$value)</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;                    {</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;                        <span class="keywordflow">if</span>($homeModuleMid == $value-&gt;url)</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;                        {</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;                            $homeMenuSrl = $menu_srl;</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;                            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;                        }</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;                    }</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;                }</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;            }</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        }</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        <span class="keywordflow">if</span>($homeMenuSrl)</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        {</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;            <a class="code" href="ko_8install_8php.html#a9062530c3b03479ca4530daee1c18887">$oMenuAdminController</a>-&gt;makeHomemenuCacheFile($homeMenuSrl);</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        }</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    }</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;}</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;<span class="comment">/* End of file menu.class.php */</span></div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;<span class="comment">/* Location: ./modules/menu/menu.class.php */</span></div>
-<div class="ttc" id="classmenu_html_a583aef0b15f6391d8e591f3498755f2e"><div class="ttname"><a href="classmenu.html#a583aef0b15f6391d8e591f3498755f2e">menu\recompileCache</a></div><div class="ttdeci">recompileCache()</div><div class="ttdef"><b>Definition:</b> <a href="menu_8class_8php_source.html#l00182">menu.class.php:182</a></div></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="comment">// 2015. 06. 15 add column desc</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">if</span>(!$oDB-&gt;isColumnExists(<span class="stringliteral">&#39;menu_item&#39;</span>, <span class="stringliteral">&#39;desc&#39;</span>))</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="classmenu.html#aa9eb9adadde15b730b887564b9184023">   63</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classmenu.html#aa9eb9adadde15b730b887564b9184023">moduleUpdate</a>() {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        $oDB = &amp;<a class="code" href="classDB.html#a16f4a668b6429b4b9af5132cbf885213">DB::getInstance</a>();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="comment">// 2009. 02. 11 menu added to the table site_srl</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">if</span>(!$oDB-&gt;isColumnExists(<span class="stringliteral">&#39;menu&#39;</span>, <span class="stringliteral">&#39;site_srl&#39;</span>))</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            $oDB-&gt;addColumn(<span class="stringliteral">&#39;menu&#39;</span>,<span class="stringliteral">&#39;site_srl&#39;</span>,<span class="stringliteral">&#39;number&#39;</span>,11,0,<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="comment">// 2012. 02. 01 title index check</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordflow">if</span>(!$oDB-&gt;isIndexExists(<span class="stringliteral">&quot;menu&quot;</span>,<span class="stringliteral">&quot;idx_title&quot;</span>))</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            $oDB-&gt;addIndex(<span class="stringliteral">&#39;menu&#39;</span>, <span class="stringliteral">&#39;idx_title&#39;</span>, array(<span class="stringliteral">&#39;title&#39;</span>));</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="comment">// 2015. 06. 15 add column desc</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordflow">if</span>(!$oDB-&gt;isColumnExists(<span class="stringliteral">&#39;menu_item&#39;</span>, <span class="stringliteral">&#39;desc&#39;</span>))</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        {</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            $oDB-&gt;addColumn(<span class="stringliteral">&#39;menu_item&#39;</span>, <span class="stringliteral">&#39;desc&#39;</span>,<span class="stringliteral">&#39;varchar&#39;</span>,250,<span class="stringliteral">&quot;&quot;</span>,<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="comment">// 1.7(maserati) shortcut column add and mirgration</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keywordflow">if</span>(!$oDB-&gt;isColumnExists(<span class="stringliteral">&#39;menu_item&#39;</span>, <span class="stringliteral">&#39;is_shortcut&#39;</span>))</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            $oDB-&gt;addColumn(<span class="stringliteral">&#39;menu_item&#39;</span>, <span class="stringliteral">&#39;is_shortcut&#39;</span>, <span class="stringliteral">&#39;char&#39;</span>, 1, <span class="charliteral">&#39;N&#39;</span>);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            <span class="comment">// check empty url and change shortcut type</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            $oMenuAdminModel = <a class="code" href="func_8inc_8php.html#a902cd0c884e75afab2682fdd3ae3791f">getAdminModel</a>(<span class="stringliteral">&#39;menu&#39;</span>);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = $oMenuAdminModel-&gt;getMenus();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            <span class="keywordflow">if</span>(is_array(<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>))</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                $menuItemUniqueList = array();</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                $menuItemAllList = array();</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                <span class="keywordflow">foreach</span>(<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>  AS $key=&gt;$value)</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                {</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                    unset(<a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                    <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;menu_srl = $value-&gt;menu_srl;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                    $output2 = <a class="code" href="func_8inc_8php.html#ace5cc06ee6c5d655a1bdcc15846a779e">executeQueryArray</a>(<span class="stringliteral">&#39;menu.getMenuItems&#39;</span>, <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                    <span class="keywordflow">if</span>(is_array($output2-&gt;data))</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                    {</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                        <span class="keywordflow">foreach</span>($output2-&gt;data AS $key2=&gt;$value2)</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                        {</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                            $menuItemAllList[$value2-&gt;menu_item_srl] = $value2-&gt;url;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                            <span class="keywordflow">if</span>(!in_array($value2-&gt;url, $menuItemUniqueList))</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                            {</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                                $menuItemUniqueList[$value2-&gt;menu_item_srl] = $value2-&gt;url;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                            }</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                            <span class="comment">// if url is empty, change type to shortcurt</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                            <span class="keywordflow">if</span>($value2-&gt;is_shortcut == <span class="charliteral">&#39;N&#39;</span> &amp;&amp; (!$value2-&gt;url || strncasecmp(<span class="stringliteral">&#39;http&#39;</span>, $value2-&gt;url, 4) === 0))</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                            {</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                                $value2-&gt;is_shortcut = <span class="charliteral">&#39;Y&#39;</span>;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                                $output3 = <a class="code" href="func_8inc_8php.html#a418bc23855eebc0d90190dd625ac4474">executeQuery</a>(<span class="stringliteral">&#39;menu.updateMenuItem&#39;</span>, $value2);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                            }</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                        }</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                    }</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                }</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                <a class="code" href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a> = <a class="code" href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a>(<span class="stringliteral">&#39;module&#39;</span>);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                <span class="comment">// if duplicate reference, change type to shortcut</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                $shortcutItemList = array_diff_assoc($menuItemAllList, $menuItemUniqueList);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                <span class="keywordflow">foreach</span>(<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> AS $key=&gt;$value)</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                {</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                    unset(<a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                    <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;menu_srl = $value-&gt;menu_srl;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                    $output2 = <a class="code" href="func_8inc_8php.html#ace5cc06ee6c5d655a1bdcc15846a779e">executeQueryArray</a>(<span class="stringliteral">&#39;menu.getMenuItems&#39;</span>, <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                    <span class="keywordflow">if</span>(is_array($output2-&gt;data))</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                    {</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                        <span class="keywordflow">foreach</span>($output2-&gt;data AS $key2=&gt;$value2)</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                        {</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                            <span class="keywordflow">if</span>(!empty($value2-&gt;url) &amp;&amp; strncasecmp(<span class="stringliteral">&#39;http&#39;</span>, $value2-&gt;url, 4) !== 0)</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                            {</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                                <a class="code" href="ko_8install_8php.html#ae3552a6dd49f37a50e7858151f7c5cc2">$moduleInfo</a> = <a class="code" href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a>-&gt;getModuleInfoByMid($value2-&gt;url);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                                <span class="keywordflow">if</span>(!<a class="code" href="ko_8install_8php.html#ae3552a6dd49f37a50e7858151f7c5cc2">$moduleInfo</a>-&gt;module_srl)</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;                                {</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;                                    $value2-&gt;url = <a class="code" href="classContext.html#abf99203a93b0b0de0da3fbeced6ce333">Context::getDefaultUrl</a>();</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;                                    <span class="keywordflow">if</span>(!$value2-&gt;url) $value2-&gt;url = <span class="charliteral">&#39;#&#39;</span>;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;                                    $value2-&gt;is_shortcut = <span class="charliteral">&#39;Y&#39;</span>;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;                                    $updateOutput = <a class="code" href="func_8inc_8php.html#a418bc23855eebc0d90190dd625ac4474">executeQuery</a>(<span class="stringliteral">&#39;menu.updateMenuItem&#39;</span>, $value2);</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                                }</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;                            }</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                            <span class="keywordflow">if</span>($shortcutItemList[$value2-&gt;menu_item_srl])</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;                            {</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                                $value2-&gt;is_shortcut = <span class="charliteral">&#39;Y&#39;</span>;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;                                $output3 = <a class="code" href="func_8inc_8php.html#a418bc23855eebc0d90190dd625ac4474">executeQuery</a>(<span class="stringliteral">&#39;menu.updateMenuItem&#39;</span>, $value2);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                            }</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                        }</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                    }</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                }</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            }</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;            $this-&gt;<a class="code" href="classmenu.html#a583aef0b15f6391d8e591f3498755f2e">recompileCache</a>();</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        }</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        </div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        <span class="comment">// for 1.7.4 update, 기존에 생성된 Temporary menu 항목 정리</span></div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        $oMenuAdminModel = <a class="code" href="func_8inc_8php.html#a902cd0c884e75afab2682fdd3ae3791f">getAdminModel</a>(<span class="stringliteral">&#39;menu&#39;</span>);</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a> = <span class="keyword">new</span> stdClass();</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;title = array(<span class="stringliteral">&quot;Temporary menu&quot;</span>);</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        $temp_menus = <a class="code" href="func_8inc_8php.html#ace5cc06ee6c5d655a1bdcc15846a779e">executeQueryArray</a>(<span class="stringliteral">&#39;menu.getMenuByTitle&#39;</span>, <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>);</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        </div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a> = <span class="keyword">new</span> stdClass();</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        <span class="keywordflow">if</span>($temp_menus-&gt;toBool() &amp;&amp; count($temp_menus-&gt;data))</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        {</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;            </div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            <a class="code" href="ko_8install_8php.html#a9062530c3b03479ca4530daee1c18887">$oMenuAdminController</a> = <a class="code" href="func_8inc_8php.html#a2f7ca88a5226536aca3b2f5682bd7b2d">getAdminController</a>(<span class="stringliteral">&#39;menu&#39;</span>);</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            <span class="keywordflow">foreach</span>($temp_menus-&gt;data as $menu)</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            {</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;current_menu_srl = $menu-&gt;menu_srl;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;                <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;menu_srl = <a class="code" href="ko_8install_8php.html#a9062530c3b03479ca4530daee1c18887">$oMenuAdminController</a>-&gt;getUnlinkedMenu();</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                $output3 = <a class="code" href="func_8inc_8php.html#a418bc23855eebc0d90190dd625ac4474">executeQuery</a>(<span class="stringliteral">&#39;menu.updateMenuItems&#39;</span>, <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>);</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                    </div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                <span class="keywordflow">if</span>($output3-&gt;toBool())</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                {</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                    <span class="comment">// delete</span></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                    <a class="code" href="ko_8install_8php.html#a9062530c3b03479ca4530daee1c18887">$oMenuAdminController</a>-&gt;deleteMenu($menu-&gt;menu_srl);</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                }</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;            }</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;            </div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;            $this-&gt;<a class="code" href="classmenu.html#a583aef0b15f6391d8e591f3498755f2e">recompileCache</a>();</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        }</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(0, <span class="stringliteral">&#39;success_updated&#39;</span>);</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    }</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;</div>
+<div class="line"><a name="l00193"></a><span class="lineno"><a class="line" href="classmenu.html#a583aef0b15f6391d8e591f3498755f2e">  193</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classmenu.html#a583aef0b15f6391d8e591f3498755f2e">recompileCache</a>()</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    {</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        <a class="code" href="ko_8install_8php.html#a9062530c3b03479ca4530daee1c18887">$oMenuAdminController</a> = <a class="code" href="func_8inc_8php.html#a2f7ca88a5226536aca3b2f5682bd7b2d">getAdminController</a>(<span class="stringliteral">&#39;menu&#39;</span>);</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        $oMenuAdminModel = <a class="code" href="func_8inc_8php.html#a902cd0c884e75afab2682fdd3ae3791f">getAdminModel</a>(<span class="stringliteral">&#39;menu&#39;</span>);</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        <span class="comment">// get home module id</span></div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        <a class="code" href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a> = <a class="code" href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a>(<span class="stringliteral">&#39;module&#39;</span>);</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        $columnList = array(<span class="stringliteral">&#39;modules.mid&#39;</span>,);</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = <a class="code" href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a>-&gt;getSiteInfo(0, $columnList);</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        $homeModuleMid = <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;mid;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        $homeMenuSrl = NULL;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        <span class="comment">// Wanted list of all the blog module</span></div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = <a class="code" href="func_8inc_8php.html#ace5cc06ee6c5d655a1bdcc15846a779e">executeQueryArray</a>(<span class="stringliteral">&quot;menu.getMenus&quot;</span>);</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        $list = <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;data;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        <span class="keywordflow">if</span>(!count($list)) <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        <span class="comment">// The menu module is used in the re-create all the menu list</span></div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        <span class="keywordflow">foreach</span>($list as $menu_item)</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        {</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;            $menu_srl = $menu_item-&gt;menu_srl;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;            <a class="code" href="ko_8install_8php.html#a9062530c3b03479ca4530daee1c18887">$oMenuAdminController</a>-&gt;makeXmlFile($menu_srl);</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;            <span class="comment">// for homeSitemap.php regenrate</span></div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;            <span class="keywordflow">if</span>(!$homeMenuSrl)</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;            {</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;                $menuItemList = $oMenuAdminModel-&gt;getMenuItems($menu_srl);</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;                <span class="keywordflow">if</span>(is_array($menuItemList-&gt;data))</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;                {</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;                    <span class="keywordflow">foreach</span>($menuItemList-&gt;data AS $key=&gt;$value)</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                    {</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;                        <span class="keywordflow">if</span>($homeModuleMid == $value-&gt;url)</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;                        {</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;                            $homeMenuSrl = $menu_srl;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;                            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                        }</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                    }</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;                }</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;            }</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        }</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        <span class="keywordflow">if</span>($homeMenuSrl)</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        {</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;            <a class="code" href="ko_8install_8php.html#a9062530c3b03479ca4530daee1c18887">$oMenuAdminController</a>-&gt;makeHomemenuCacheFile($homeMenuSrl);</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        }</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    }</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;}</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="comment">/* End of file menu.class.php */</span></div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="comment">/* Location: ./modules/menu/menu.class.php */</span></div>
+<div class="ttc" id="classmenu_html_a583aef0b15f6391d8e591f3498755f2e"><div class="ttname"><a href="classmenu.html#a583aef0b15f6391d8e591f3498755f2e">menu\recompileCache</a></div><div class="ttdeci">recompileCache()</div><div class="ttdef"><b>Definition:</b> <a href="menu_8class_8php_source.html#l00193">menu.class.php:193</a></div></div>
 <div class="ttc" id="ko_8install_8php_html_a8d7a87df524e7d6938f66f8e284cdd1e"><div class="ttname"><a href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a></div><div class="ttdeci">$oModuleModel</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00236">ko.install.php:236</a></div></div>
 <div class="ttc" id="ko_8install_8php_html_a9062530c3b03479ca4530daee1c18887"><div class="ttname"><a href="ko_8install_8php.html#a9062530c3b03479ca4530daee1c18887">$oMenuAdminController</a></div><div class="ttdeci">$oMenuAdminController</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00007">ko.install.php:7</a></div></div>
 <div class="ttc" id="classmenu_html_a42090ef27569489938b28486eec60922"><div class="ttname"><a href="classmenu.html#a42090ef27569489938b28486eec60922">menu\checkUpdate</a></div><div class="ttdeci">checkUpdate()</div><div class="ttdef"><b>Definition:</b> <a href="menu_8class_8php_source.html#l00029">menu.class.php:29</a></div></div>
@@ -317,11 +328,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="func_8inc_8php_html_a2f7ca88a5226536aca3b2f5682bd7b2d"><div class="ttname"><a href="func_8inc_8php.html#a2f7ca88a5226536aca3b2f5682bd7b2d">getAdminController</a></div><div class="ttdeci">getAdminController($module_name)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00101">func.inc.php:101</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_a418bc23855eebc0d90190dd625ac4474"><div class="ttname"><a href="func_8inc_8php.html#a418bc23855eebc0d90190dd625ac4474">executeQuery</a></div><div class="ttdeci">executeQuery($query_id, $args=NULL, $arg_columns=NULL)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00203">func.inc.php:203</a></div></div>
 <div class="ttc" id="classmenu_html"><div class="ttname"><a href="classmenu.html">menu</a></div><div class="ttdef"><b>Definition:</b> <a href="menu_8class_8php_source.html#l00011">menu.class.php:11</a></div></div>
-<div class="ttc" id="classmenu_html_aa9eb9adadde15b730b887564b9184023"><div class="ttname"><a href="classmenu.html#aa9eb9adadde15b730b887564b9184023">menu\moduleUpdate</a></div><div class="ttdeci">moduleUpdate()</div><div class="ttdef"><b>Definition:</b> <a href="menu_8class_8php_source.html#l00058">menu.class.php:58</a></div></div>
+<div class="ttc" id="classmenu_html_aa9eb9adadde15b730b887564b9184023"><div class="ttname"><a href="classmenu.html#aa9eb9adadde15b730b887564b9184023">menu\moduleUpdate</a></div><div class="ttdeci">moduleUpdate()</div><div class="ttdef"><b>Definition:</b> <a href="menu_8class_8php_source.html#l00063">menu.class.php:63</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 9 2015 17:20:11 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 7 2015 19:26:31 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

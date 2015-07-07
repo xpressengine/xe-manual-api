@@ -28,7 +28,7 @@ var searchData=
   ['updatecolumnstag_2eclass_2ephp',['UpdateColumnsTag.class.php',['../UpdateColumnsTag_8class_8php.html',1,'']]],
   ['updatecolumntag',['UpdateColumnTag',['../classUpdateColumnTag.html',1,'UpdateColumnTag'],['../classUpdateColumnTag.html#a08118f413b38890ca779e44974447854',1,'UpdateColumnTag\UpdateColumnTag()']]],
   ['updatecolumntag_2eclass_2ephp',['UpdateColumnTag.class.php',['../UpdateColumnTag_8class_8php.html',1,'']]],
-  ['updatecomment',['updateComment',['../classcommentController.html#aa2a123794691f3e5153f4df0b03c318f',1,'commentController']]],
+  ['updatecomment',['updateComment',['../classcommentController.html#af154ebfde1bfe279e6c9bc6cf2e4645f',1,'commentController']]],
   ['updatecommentcount',['updateCommentCount',['../classdocumentController.html#a1813c01d82596b3ddb48c1bde746428e',1,'documentController']]],
   ['updatedefaultdesigninfo',['updateDefaultDesignInfo',['../classadminAdminController.html#ab0f984cd55d52455a818323404efb974',1,'adminAdminController']]],
   ['updatedocument',['updateDocument',['../classdocumentController.html#a09cde49e8c89e2b580f302a459831cee',1,'documentController']]],

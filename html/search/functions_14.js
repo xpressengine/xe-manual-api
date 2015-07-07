@@ -23,7 +23,7 @@ var searchData=
   ['updatechallenge',['updateChallenge',['../classHTTP__Request2__Adapter__Socket.html#abe6b620d64a56d799cd9367aedf3c0e6',1,'HTTP_Request2_Adapter_Socket']]],
   ['updatecolumnstag',['UpdateColumnsTag',['../classUpdateColumnsTag.html#ac046fb7c43564e290d1022aa8299e1aa',1,'UpdateColumnsTag']]],
   ['updatecolumntag',['UpdateColumnTag',['../classUpdateColumnTag.html#a08118f413b38890ca779e44974447854',1,'UpdateColumnTag']]],
-  ['updatecomment',['updateComment',['../classcommentController.html#aa2a123794691f3e5153f4df0b03c318f',1,'commentController']]],
+  ['updatecomment',['updateComment',['../classcommentController.html#af154ebfde1bfe279e6c9bc6cf2e4645f',1,'commentController']]],
   ['updatecommentcount',['updateCommentCount',['../classdocumentController.html#a1813c01d82596b3ddb48c1bde746428e',1,'documentController']]],
   ['updatedefaultdesigninfo',['updateDefaultDesignInfo',['../classadminAdminController.html#ab0f984cd55d52455a818323404efb974',1,'adminAdminController']]],
   ['updatedocument',['updateDocument',['../classdocumentController.html#a09cde49e8c89e2b580f302a459831cee',1,'documentController']]],
