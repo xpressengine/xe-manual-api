@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.8.7</span>
+   &#160;<span id="projectnumber">1.8.8</span>
    </div>
   </td>
  </tr>
@@ -601,307 +601,308 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;            }</div>
 <div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;        }</div>
 <div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;</div>
-<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;        <span class="comment">// Get random number generator</span></div>
-<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;        $random = <span class="keyword">new</span> <a class="code" href="classPassword.html">Password</a>();</div>
-<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;        </div>
-<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;        <span class="comment">// Set upload path by checking if the attachement is an image or other kinds of file</span></div>
-<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;        <span class="keywordflow">if</span>(preg_match(<span class="stringliteral">&quot;/\.(jpe?g|gif|png|wm[va]|mpe?g|avi|swf|flv|mp[1-4]|as[fx]|wav|midi?|moo?v|qt|r[am]{1,2}|m4v)$/i&quot;</span>, $file_info[<span class="stringliteral">&#39;name&#39;</span>]))</div>
-<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;        {</div>
-<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;            <span class="comment">// Immediately remove the direct file if it has any kind of extensions for hacking</span></div>
-<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;            $file_info[<span class="stringliteral">&#39;name&#39;</span>] = preg_replace(<span class="stringliteral">&#39;/\.(php|phtm|phar|html?|cgi|pl|exe|jsp|asp|inc)/i&#39;</span>, <span class="stringliteral">&#39;$0-x&#39;</span>,$file_info[<span class="stringliteral">&#39;name&#39;</span>]);</div>
-<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;            $file_info[<span class="stringliteral">&#39;name&#39;</span>] = str_replace(array(<span class="charliteral">&#39;&lt;&#39;</span>,<span class="charliteral">&#39;&gt;&#39;</span>),array(<span class="stringliteral">&#39;%3C&#39;</span>,<span class="stringliteral">&#39;%3E&#39;</span>),$file_info[<span class="stringliteral">&#39;name&#39;</span>]);</div>
-<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;</div>
-<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;            $path = sprintf(<span class="stringliteral">&quot;./files/attach/images/%s/%s&quot;</span>, <a class="code" href="classModuleObject.html#a0da50016ddc31513f563206fdf6f413d">$module_srl</a>,<a class="code" href="func_8inc_8php.html#ae1a0ad24dbf34de227ffd2eb0d1f8da3">getNumberingPath</a>($upload_target_srl,3));</div>
-<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;</div>
-<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;            <span class="comment">// special character to &#39;_&#39;</span></div>
-<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;            <span class="comment">// change to random file name. because window php bug. window php is not recognize unicode character file name - by cherryfilter</span></div>
-<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;            $ext = substr(strrchr($file_info[<span class="stringliteral">&#39;name&#39;</span>],<span class="charliteral">&#39;.&#39;</span>),1);</div>
-<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;            <span class="comment">//$_filename = preg_replace(&#39;/[#$&amp;*?+%&quot;\&#39;]/&#39;, &#39;_&#39;, $file_info[&#39;name&#39;]);</span></div>
-<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;            $_filename = $random-&gt;createSecureSalt(32, <span class="stringliteral">&#39;hex&#39;</span>).<span class="charliteral">&#39;.&#39;</span>.$ext;</div>
-<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;            $filename  = $path.$_filename;</div>
-<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;            $idx = 1;</div>
-<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;            <span class="keywordflow">while</span>(file_exists($filename))</div>
-<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;            {</div>
-<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;                $filename = $path.preg_replace(<span class="stringliteral">&#39;/\.([a-z0-9]+)$/i&#39;</span>,<span class="charliteral">&#39;_&#39;</span>.$idx.<span class="stringliteral">&#39;.$1&#39;</span>,$_filename);</div>
-<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;                $idx++;</div>
-<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;            }</div>
-<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;            $direct_download = <span class="charliteral">&#39;Y&#39;</span>;</div>
-<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;        }</div>
-<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;        {</div>
-<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;            $path = sprintf(<span class="stringliteral">&quot;./files/attach/binaries/%s/%s&quot;</span>, <a class="code" href="classModuleObject.html#a0da50016ddc31513f563206fdf6f413d">$module_srl</a>, <a class="code" href="func_8inc_8php.html#ae1a0ad24dbf34de227ffd2eb0d1f8da3">getNumberingPath</a>($upload_target_srl,3));</div>
-<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;            $filename = $path.$random-&gt;createSecureSalt(32, <span class="stringliteral">&#39;hex&#39;</span>);</div>
-<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;            $direct_download = <span class="charliteral">&#39;N&#39;</span>;</div>
-<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;        }</div>
-<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;        <span class="comment">// Create a directory</span></div>
-<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="classFileHandler.html#a9c2502d10c34a3996f1d6927624a7824">FileHandler::makeDir</a>($path)) <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1,<span class="stringliteral">&#39;msg_not_permitted_create&#39;</span>);</div>
-<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;</div>
-<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;        <span class="comment">// Check uploaded file</span></div>
-<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="func_8inc_8php.html#a771c122bb7a5b7038f7f751f5e2129b9">checkUploadedFile</a>($file_info[<span class="stringliteral">&#39;tmp_name&#39;</span>]))  <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1,<span class="stringliteral">&#39;msg_file_upload_error&#39;</span>);</div>
-<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;</div>
-<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;        <span class="comment">// Get random number generator</span></div>
-<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;        $random = <span class="keyword">new</span> <a class="code" href="classPassword.html">Password</a>();</div>
-<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;        </div>
-<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;        <span class="comment">// Move the file</span></div>
-<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;        <span class="keywordflow">if</span>($manual_insert)</div>
-<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;        {</div>
-<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;            @copy($file_info[<span class="stringliteral">&#39;tmp_name&#39;</span>], $filename);</div>
-<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;            <span class="keywordflow">if</span>(!file_exists($filename))</div>
-<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;            {</div>
-<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;                $filename = $path.$random-&gt;createSecureSalt(32, <span class="stringliteral">&#39;hex&#39;</span>).<span class="charliteral">&#39;.&#39;</span>.$ext;</div>
-<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;                @copy($file_info[<span class="stringliteral">&#39;tmp_name&#39;</span>], $filename);</div>
-<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;            }</div>
-<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;        }</div>
-<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;        {</div>
-<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;            <span class="keywordflow">if</span>(!@move_uploaded_file($file_info[<span class="stringliteral">&#39;tmp_name&#39;</span>], $filename))</div>
-<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;            {</div>
-<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;                $filename = $path.$random-&gt;createSecureSalt(32, <span class="stringliteral">&#39;hex&#39;</span>).<span class="charliteral">&#39;.&#39;</span>.$ext;</div>
-<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;                <span class="keywordflow">if</span>(!@move_uploaded_file($file_info[<span class="stringliteral">&#39;tmp_name&#39;</span>], $filename))  <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1,<span class="stringliteral">&#39;msg_file_upload_error&#39;</span>);</div>
-<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;            }</div>
-<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;        }</div>
-<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;        <span class="comment">// Get member information</span></div>
-<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;        $oMemberModel = <a class="code" href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a>(<span class="stringliteral">&#39;member&#39;</span>);</div>
-<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;        $member_srl = $oMemberModel-&gt;getLoggedMemberSrl();</div>
-<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;        <span class="comment">// List file information</span></div>
-<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a> = <span class="keyword">new</span> stdClass;</div>
-<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;file_srl = <a class="code" href="func_8inc_8php.html#a5a97b458f9c5b4fe3574671840aee27c">getNextSequence</a>();</div>
-<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;upload_target_srl = $upload_target_srl;</div>
-<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;module_srl = <a class="code" href="classModuleObject.html#a0da50016ddc31513f563206fdf6f413d">$module_srl</a>;</div>
-<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;direct_download = $direct_download;</div>
-<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;source_filename = $file_info[<span class="stringliteral">&#39;name&#39;</span>];</div>
-<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;uploaded_filename = $filename;</div>
-<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;download_count = $download_count;</div>
-<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;file_size = @filesize($filename);</div>
-<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;comment = NULL;</div>
-<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;member_srl = $member_srl;</div>
-<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;sid = $random-&gt;createSecureSalt(32, <span class="stringliteral">&#39;hex&#39;</span>);</div>
-<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;</div>
-<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;        <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = <a class="code" href="func_8inc_8php.html#a418bc23855eebc0d90190dd625ac4474">executeQuery</a>(<span class="stringliteral">&#39;file.insertFile&#39;</span>, <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>);</div>
-<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;toBool()) <span class="keywordflow">return</span> <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>;</div>
-<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;        <span class="comment">// Call a trigger (after)</span></div>
-<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;        $trigger_output = <a class="code" href="classModuleHandler.html#aa1b1f9eae91ccd76e6a81c9375c2e673">ModuleHandler::triggerCall</a>(<span class="stringliteral">&#39;file.insertFile&#39;</span>, <span class="stringliteral">&#39;after&#39;</span>, <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>);</div>
-<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;        <span class="keywordflow">if</span>(!$trigger_output-&gt;toBool()) <span class="keywordflow">return</span> $trigger_output;</div>
-<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;</div>
-<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;        $_SESSION[<span class="stringliteral">&#39;__XE_UPLOADING_FILES_INFO__&#39;</span>][<a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;file_srl] = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;</div>
-<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;        <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;add(<span class="stringliteral">&#39;file_srl&#39;</span>, <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;file_srl);</div>
-<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;        <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;add(<span class="stringliteral">&#39;file_size&#39;</span>, <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;file_size);</div>
-<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;        <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;add(<span class="stringliteral">&#39;sid&#39;</span>, <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;sid);</div>
-<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;        <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;add(<span class="stringliteral">&#39;direct_download&#39;</span>, <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;direct_download);</div>
-<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;        <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;add(<span class="stringliteral">&#39;source_filename&#39;</span>, <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;source_filename);</div>
-<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;        <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;add(<span class="stringliteral">&#39;upload_target_srl&#39;</span>, $upload_target_srl);</div>
-<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;        <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;add(<span class="stringliteral">&#39;uploaded_filename&#39;</span>, <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;uploaded_filename);</div>
-<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>;</div>
-<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;    }</div>
-<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;</div>
-<div class="line"><a name="l00786"></a><span class="lineno"><a class="line" href="classfileController.html#a98775c010ad21e88fd590c0a35b9c405">  786</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classfileController.html#a98775c010ad21e88fd590c0a35b9c405">deleteFile</a>($file_srl)</div>
-<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;    {</div>
-<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;        <span class="keywordflow">if</span>(!$file_srl) <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;</div>
-<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;        $srls = (is_array($file_srl)) ? $file_srl : explode(<span class="charliteral">&#39;,&#39;</span>, $file_srl);</div>
-<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;        <span class="keywordflow">if</span>(!count($srls)) <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;</div>
-<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;        <a class="code" href="ko_8install_8php.html#aac43fce682d4b7a05df6d3e44c2c54e6">$oDocumentController</a> = <a class="code" href="func_8inc_8php.html#aa08f01e3bf130d770b373ca8493e3e9b">getController</a>(<span class="stringliteral">&#39;document&#39;</span>);</div>
-<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;        $documentSrlList = array();</div>
-<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;</div>
-<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;        <span class="keywordflow">foreach</span>($srls as $srl)</div>
-<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;        {</div>
-<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;            $srl = (int)$srl;</div>
-<div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;            <span class="keywordflow">if</span>(!$srl) </div>
-<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;            {</div>
-<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;                <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;            }</div>
-<div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;</div>
-<div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;            <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a> = <span class="keyword">new</span> stdClass();</div>
-<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;            <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;file_srl = $srl;</div>
-<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;            <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = <a class="code" href="func_8inc_8php.html#a418bc23855eebc0d90190dd625ac4474">executeQuery</a>(<span class="stringliteral">&#39;file.getFile&#39;</span>, <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>);</div>
-<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;</div>
-<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;            <span class="keywordflow">if</span>(!<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;toBool() || !<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;data) </div>
-<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;            {</div>
-<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;                <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;            }</div>
-<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;</div>
-<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;            $file_info = <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;data;</div>
-<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;</div>
-<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;            <span class="keywordflow">if</span>($file_info-&gt;upload_target_srl)</div>
-<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;            {</div>
-<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;                $documentSrlList[] = $file_info-&gt;upload_target_srl;</div>
-<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;            }</div>
-<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;</div>
-<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;            $source_filename = <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;data-&gt;source_filename;</div>
-<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;            $uploaded_filename = <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;data-&gt;uploaded_filename;</div>
-<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;</div>
-<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;            <span class="comment">// Call a trigger (before)</span></div>
-<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;            $trigger_obj = <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;data;</div>
-<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;            <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = <a class="code" href="classModuleHandler.html#aa1b1f9eae91ccd76e6a81c9375c2e673">ModuleHandler::triggerCall</a>(<span class="stringliteral">&#39;file.deleteFile&#39;</span>, <span class="stringliteral">&#39;before&#39;</span>, $trigger_obj);</div>
-<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;            <span class="keywordflow">if</span>(!<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;toBool()) <span class="keywordflow">return</span> <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>;</div>
-<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;</div>
-<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;            <span class="comment">// Remove from the DB</span></div>
-<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;            <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = <a class="code" href="func_8inc_8php.html#a418bc23855eebc0d90190dd625ac4474">executeQuery</a>(<span class="stringliteral">&#39;file.deleteFile&#39;</span>, <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>);</div>
-<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;            <span class="keywordflow">if</span>(!<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;toBool()) <span class="keywordflow">return</span> <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>;</div>
-<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;</div>
-<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;            <span class="comment">// Call a trigger (after)</span></div>
-<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;            $trigger_output = <a class="code" href="classModuleHandler.html#aa1b1f9eae91ccd76e6a81c9375c2e673">ModuleHandler::triggerCall</a>(<span class="stringliteral">&#39;file.deleteFile&#39;</span>, <span class="stringliteral">&#39;after&#39;</span>, $trigger_obj);</div>
-<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;            <span class="keywordflow">if</span>(!$trigger_output-&gt;toBool()) <span class="keywordflow">return</span> $trigger_output;</div>
-<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;</div>
-<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;            <span class="comment">// If successfully deleted, remove the file</span></div>
-<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;            <a class="code" href="classFileHandler.html#aa5969f9fe0ce869fc736c4da384959e9">FileHandler::removeFile</a>($uploaded_filename);</div>
-<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;        }</div>
-<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;</div>
-<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;        <a class="code" href="ko_8install_8php.html#aac43fce682d4b7a05df6d3e44c2c54e6">$oDocumentController</a>-&gt;updateUploaedCount($documentSrlList);</div>
-<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;</div>
-<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>;</div>
-<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;    }</div>
-<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;</div>
-<div class="line"><a name="l00851"></a><span class="lineno"><a class="line" href="classfileController.html#ae3060e078930eeaae0c939d7a1c4f229">  851</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classfileController.html#ae3060e078930eeaae0c939d7a1c4f229">deleteFiles</a>($upload_target_srl)</div>
-<div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;    {</div>
-<div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;        <span class="comment">// Get a list of attachements</span></div>
-<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;        $oFileModel = <a class="code" href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a>(<span class="stringliteral">&#39;file&#39;</span>);</div>
-<div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;        $columnList = array(<span class="stringliteral">&#39;file_srl&#39;</span>, <span class="stringliteral">&#39;uploaded_filename&#39;</span>, <span class="stringliteral">&#39;module_srl&#39;</span>);</div>
-<div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;        $file_list = $oFileModel-&gt;getFiles($upload_target_srl, $columnList);</div>
-<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;        <span class="comment">// Success returned if no attachement exists</span></div>
-<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;        <span class="keywordflow">if</span>(!is_array($file_list)||!count($file_list)) <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>();</div>
-<div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;</div>
-<div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;        <span class="comment">// Delete the file</span></div>
-<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;        $path = array();</div>
-<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;        $file_count = count($file_list);</div>
-<div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;        <span class="keywordflow">for</span>($i=0;$i&lt;$file_count;$i++)</div>
-<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;        {</div>
-<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;            $this-&gt;<a class="code" href="classfileController.html#a98775c010ad21e88fd590c0a35b9c405">deleteFile</a>($file_list[$i]-&gt;file_srl);</div>
-<div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;</div>
-<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;            $uploaded_filename = $file_list[$i]-&gt;uploaded_filename;</div>
-<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;            $path_info = pathinfo($uploaded_filename);</div>
-<div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;            <span class="keywordflow">if</span>(!in_array($path_info[<span class="stringliteral">&#39;dirname&#39;</span>], $path)) $path[] = $path_info[<span class="stringliteral">&#39;dirname&#39;</span>];</div>
-<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;        }</div>
-<div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;</div>
-<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;        <span class="comment">// Remove from the DB</span></div>
-<div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a> = <span class="keyword">new</span> stdClass();</div>
-<div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;upload_target_srl = $upload_target_srl;</div>
-<div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;        <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = <a class="code" href="func_8inc_8php.html#a418bc23855eebc0d90190dd625ac4474">executeQuery</a>(<span class="stringliteral">&#39;file.deleteFiles&#39;</span>, <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>);</div>
-<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;toBool()) <span class="keywordflow">return</span> <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>;</div>
-<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;        </div>
-<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;        <span class="comment">// Remove a file directory of the document</span></div>
-<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;        <span class="keywordflow">for</span>($i=0, $c=count($path); $i&lt;$c; $i++)</div>
-<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;        {</div>
-<div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;            <a class="code" href="classFileHandler.html#a538bfd50008250786985c7da4ff768f1">FileHandler::removeBlankDir</a>($path[$i]);</div>
-<div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;        }</div>
-<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;</div>
-<div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>;</div>
-<div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;    }</div>
-<div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;</div>
-<div class="line"><a name="l00895"></a><span class="lineno"><a class="line" href="classfileController.html#aae914224f7bc02d907004c3fb1dd29ac">  895</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classfileController.html#aae914224f7bc02d907004c3fb1dd29ac">moveFile</a>($source_srl, $target_module_srl, $target_srl)</div>
-<div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;    {</div>
-<div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;        <span class="keywordflow">if</span>($source_srl == $target_srl) <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;</div>
-<div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;        $oFileModel = <a class="code" href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a>(<span class="stringliteral">&#39;file&#39;</span>);</div>
-<div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;        $file_list = $oFileModel-&gt;getFiles($source_srl);</div>
-<div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;        <span class="keywordflow">if</span>(!$file_list) <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;</div>
-<div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;        $file_count = count($file_list);</div>
-<div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;</div>
-<div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160;        <span class="keywordflow">for</span>($i=0;$i&lt;$file_count;$i++)</div>
-<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;        {</div>
-<div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;            unset($file_info);</div>
-<div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;            $file_info = $file_list[$i];</div>
-<div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;            $old_file = $file_info-&gt;uploaded_filename;</div>
-<div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;            <span class="comment">// Determine the file path by checking if the file is an image or other kinds</span></div>
-<div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;            <span class="keywordflow">if</span>(preg_match(<span class="stringliteral">&quot;/\.(jpg|jpeg|gif|png|wmv|wma|mpg|mpeg|avi|swf|flv|mp1|mp2|mp3|mp4|asf|wav|asx|mid|midi|asf|mov|moov|qt|rm|ram|ra|rmm|m4v)$/i&quot;</span>, $file_info-&gt;source_filename))</div>
-<div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160;            {</div>
-<div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;                $path = sprintf(<span class="stringliteral">&quot;./files/attach/images/%s/%s/&quot;</span>, $target_module_srl,$target_srl);</div>
-<div class="line"><a name="l00914"></a><span class="lineno">  914</span>&#160;                $new_file = $path.$file_info-&gt;source_filename;</div>
-<div class="line"><a name="l00915"></a><span class="lineno">  915</span>&#160;            }</div>
-<div class="line"><a name="l00916"></a><span class="lineno">  916</span>&#160;            <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160;            {</div>
-<div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160;                $path = sprintf(<span class="stringliteral">&quot;./files/attach/binaries/%s/%s/&quot;</span>, $target_module_srl, $target_srl);</div>
-<div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160;                $random = <span class="keyword">new</span> <a class="code" href="classPassword.html">Password</a>();</div>
-<div class="line"><a name="l00920"></a><span class="lineno">  920</span>&#160;                $new_file = $path.$random-&gt;createSecureSalt(32, <span class="stringliteral">&#39;hex&#39;</span>);</div>
-<div class="line"><a name="l00921"></a><span class="lineno">  921</span>&#160;            }</div>
-<div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160;            <span class="comment">// Pass if a target document to move is same</span></div>
-<div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160;            <span class="keywordflow">if</span>($old_file == $new_file) <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00924"></a><span class="lineno">  924</span>&#160;            <span class="comment">// Create a directory</span></div>
-<div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160;            <a class="code" href="classFileHandler.html#a9c2502d10c34a3996f1d6927624a7824">FileHandler::makeDir</a>($path);</div>
-<div class="line"><a name="l00926"></a><span class="lineno">  926</span>&#160;            <span class="comment">// Move the file</span></div>
-<div class="line"><a name="l00927"></a><span class="lineno">  927</span>&#160;            <a class="code" href="classFileHandler.html#abfeaad5fe3c937fdbfed73f2138b3d48">FileHandler::rename</a>($old_file, $new_file);</div>
-<div class="line"><a name="l00928"></a><span class="lineno">  928</span>&#160;            <span class="comment">// Update DB information</span></div>
-<div class="line"><a name="l00929"></a><span class="lineno">  929</span>&#160;            <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a> = <span class="keyword">new</span> stdClass;</div>
-<div class="line"><a name="l00930"></a><span class="lineno">  930</span>&#160;            <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;file_srl = $file_info-&gt;file_srl;</div>
-<div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;            <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;uploaded_filename = $new_file;</div>
-<div class="line"><a name="l00932"></a><span class="lineno">  932</span>&#160;            <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;module_srl = $file_info-&gt;module_srl;</div>
-<div class="line"><a name="l00933"></a><span class="lineno">  933</span>&#160;            <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;upload_target_srl = $target_srl;</div>
-<div class="line"><a name="l00934"></a><span class="lineno">  934</span>&#160;            <a class="code" href="func_8inc_8php.html#a418bc23855eebc0d90190dd625ac4474">executeQuery</a>(<span class="stringliteral">&#39;file.updateFile&#39;</span>, <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>);</div>
-<div class="line"><a name="l00935"></a><span class="lineno">  935</span>&#160;        }</div>
-<div class="line"><a name="l00936"></a><span class="lineno">  936</span>&#160;    }</div>
-<div class="line"><a name="l00937"></a><span class="lineno">  937</span>&#160;</div>
-<div class="line"><a name="l00938"></a><span class="lineno"><a class="line" href="classfileController.html#a54e65e695efa22b2a9507fd52e44d601">  938</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="classfileController.html#a54e65e695efa22b2a9507fd52e44d601">procFileSetCoverImage</a>()</div>
-<div class="line"><a name="l00939"></a><span class="lineno">  939</span>&#160;    {</div>
-<div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160;        $vars = <a class="code" href="classContext.html#a9ddbc79a7ba5892d1ea2d793f6ad52c2">Context::getRequestVars</a>();</div>
-<div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160;        <a class="code" href="adminlogging_8addon_8php.html#a193c1593ceb216e9fb05b0bad01ebbc8">$logged_info</a> = <a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;logged_info&#39;</span>);</div>
-<div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160;</div>
-<div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160;        <span class="keywordflow">if</span>(!$vars-&gt;editor_sequence) <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1, <span class="stringliteral">&#39;msg_invalid_request&#39;</span>);</div>
-<div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160;</div>
-<div class="line"><a name="l00945"></a><span class="lineno">  945</span>&#160;        $upload_target_srl = $_SESSION[<span class="stringliteral">&#39;upload_info&#39;</span>][$vars-&gt;editor_sequence]-&gt;upload_target_srl;</div>
-<div class="line"><a name="l00946"></a><span class="lineno">  946</span>&#160;</div>
-<div class="line"><a name="l00947"></a><span class="lineno">  947</span>&#160;        $oFileModel = <a class="code" href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a>(<span class="stringliteral">&#39;file&#39;</span>);</div>
-<div class="line"><a name="l00948"></a><span class="lineno">  948</span>&#160;        $file_info = $oFileModel-&gt;getFile($vars-&gt;file_srl);</div>
-<div class="line"><a name="l00949"></a><span class="lineno">  949</span>&#160;</div>
-<div class="line"><a name="l00950"></a><span class="lineno">  950</span>&#160;        <span class="keywordflow">if</span>(!$file_info) <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1, <span class="stringliteral">&#39;msg_not_founded&#39;</span>);</div>
-<div class="line"><a name="l00951"></a><span class="lineno">  951</span>&#160;</div>
-<div class="line"><a name="l00952"></a><span class="lineno">  952</span>&#160;        <span class="keywordflow">if</span>(!$this-&gt;manager &amp;&amp; !$file_info-&gt;member_srl === <a class="code" href="adminlogging_8addon_8php.html#a193c1593ceb216e9fb05b0bad01ebbc8">$logged_info</a>-&gt;member_srl) <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1, <span class="stringliteral">&#39;msg_not_permitted&#39;</span>);</div>
-<div class="line"><a name="l00953"></a><span class="lineno">  953</span>&#160;</div>
-<div class="line"><a name="l00954"></a><span class="lineno">  954</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a> =  <span class="keyword">new</span> stdClass();</div>
-<div class="line"><a name="l00955"></a><span class="lineno">  955</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;file_srl = $vars-&gt;file_srl;</div>
-<div class="line"><a name="l00956"></a><span class="lineno">  956</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;upload_target_srl = $upload_target_srl;</div>
-<div class="line"><a name="l00957"></a><span class="lineno">  957</span>&#160;</div>
-<div class="line"><a name="l00958"></a><span class="lineno">  958</span>&#160;        $oDB = &amp;<a class="code" href="classDB.html#a16f4a668b6429b4b9af5132cbf885213">DB::getInstance</a>();</div>
-<div class="line"><a name="l00959"></a><span class="lineno">  959</span>&#160;        $oDB-&gt;begin();</div>
-<div class="line"><a name="l00960"></a><span class="lineno">  960</span>&#160;</div>
-<div class="line"><a name="l00961"></a><span class="lineno">  961</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;cover_image = <span class="charliteral">&#39;N&#39;</span>;</div>
-<div class="line"><a name="l00962"></a><span class="lineno">  962</span>&#160;        <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = <a class="code" href="func_8inc_8php.html#a418bc23855eebc0d90190dd625ac4474">executeQuery</a>(<span class="stringliteral">&#39;file.updateClearCoverImage&#39;</span>, <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>);</div>
-<div class="line"><a name="l00963"></a><span class="lineno">  963</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;toBool())</div>
-<div class="line"><a name="l00964"></a><span class="lineno">  964</span>&#160;        {</div>
-<div class="line"><a name="l00965"></a><span class="lineno">  965</span>&#160;            $oDB-&gt;rollback();</div>
-<div class="line"><a name="l00966"></a><span class="lineno">  966</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>;</div>
-<div class="line"><a name="l00967"></a><span class="lineno">  967</span>&#160;        }</div>
-<div class="line"><a name="l00968"></a><span class="lineno">  968</span>&#160;</div>
-<div class="line"><a name="l00969"></a><span class="lineno">  969</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;cover_image = <span class="charliteral">&#39;Y&#39;</span>;</div>
-<div class="line"><a name="l00970"></a><span class="lineno">  970</span>&#160;        <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = <a class="code" href="func_8inc_8php.html#a418bc23855eebc0d90190dd625ac4474">executeQuery</a>(<span class="stringliteral">&#39;file.updateCoverImage&#39;</span>, <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>);</div>
-<div class="line"><a name="l00971"></a><span class="lineno">  971</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;toBool())</div>
-<div class="line"><a name="l00972"></a><span class="lineno">  972</span>&#160;        {</div>
-<div class="line"><a name="l00973"></a><span class="lineno">  973</span>&#160;            $oDB-&gt;rollback();</div>
-<div class="line"><a name="l00974"></a><span class="lineno">  974</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>;</div>
-<div class="line"><a name="l00975"></a><span class="lineno">  975</span>&#160;        }</div>
-<div class="line"><a name="l00976"></a><span class="lineno">  976</span>&#160;</div>
-<div class="line"><a name="l00977"></a><span class="lineno">  977</span>&#160;        $oDB-&gt;commit();</div>
-<div class="line"><a name="l00978"></a><span class="lineno">  978</span>&#160;</div>
-<div class="line"><a name="l00979"></a><span class="lineno">  979</span>&#160;        <span class="comment">// 썸네일 삭제</span></div>
-<div class="line"><a name="l00980"></a><span class="lineno">  980</span>&#160;        $thumbnail_path = sprintf(<span class="stringliteral">&#39;files/thumbnails/%s&#39;</span>, <a class="code" href="func_8inc_8php.html#ae1a0ad24dbf34de227ffd2eb0d1f8da3">getNumberingPath</a>($upload_target_srl, 3));</div>
-<div class="line"><a name="l00981"></a><span class="lineno">  981</span>&#160;        Filehandler::removeFilesInDir($thumbnail_path);</div>
-<div class="line"><a name="l00982"></a><span class="lineno">  982</span>&#160;    }</div>
-<div class="line"><a name="l00983"></a><span class="lineno">  983</span>&#160;</div>
-<div class="line"><a name="l00992"></a><span class="lineno"><a class="line" href="classfileController.html#a99cefbd1c15aeb48b68903e77f9041c7">  992</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classfileController.html#a99cefbd1c15aeb48b68903e77f9041c7">printUploadedFileList</a>($editor_sequence, $upload_target_srl)</div>
-<div class="line"><a name="l00993"></a><span class="lineno">  993</span>&#160;    {</div>
-<div class="line"><a name="l00994"></a><span class="lineno">  994</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00995"></a><span class="lineno">  995</span>&#160;    }</div>
-<div class="line"><a name="l00996"></a><span class="lineno">  996</span>&#160;</div>
-<div class="line"><a name="l00997"></a><span class="lineno"><a class="line" href="classfileController.html#a043759003f14e91db0f4fb554955fba8">  997</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classfileController.html#a043759003f14e91db0f4fb554955fba8">triggerCopyModule</a>(&amp;<a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>)</div>
-<div class="line"><a name="l00998"></a><span class="lineno">  998</span>&#160;    {</div>
-<div class="line"><a name="l00999"></a><span class="lineno">  999</span>&#160;        <a class="code" href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a> = <a class="code" href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a>(<span class="stringliteral">&#39;module&#39;</span>);</div>
-<div class="line"><a name="l01000"></a><span class="lineno"> 1000</span>&#160;        $fileConfig = <a class="code" href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a>-&gt;getModulePartConfig(<span class="stringliteral">&#39;file&#39;</span>, <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;originModuleSrl);</div>
-<div class="line"><a name="l01001"></a><span class="lineno"> 1001</span>&#160;</div>
-<div class="line"><a name="l01002"></a><span class="lineno"> 1002</span>&#160;        <a class="code" href="ko_8install_8php.html#a9fd93f6625cec4fd65bf6f412e28c015">$oModuleController</a> = <a class="code" href="func_8inc_8php.html#aa08f01e3bf130d770b373ca8493e3e9b">getController</a>(<span class="stringliteral">&#39;module&#39;</span>);</div>
-<div class="line"><a name="l01003"></a><span class="lineno"> 1003</span>&#160;        <span class="keywordflow">if</span>(is_array(<a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;moduleSrlList))</div>
-<div class="line"><a name="l01004"></a><span class="lineno"> 1004</span>&#160;        {</div>
-<div class="line"><a name="l01005"></a><span class="lineno"> 1005</span>&#160;            <span class="keywordflow">foreach</span>(<a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;moduleSrlList AS $key=&gt;$moduleSrl)</div>
-<div class="line"><a name="l01006"></a><span class="lineno"> 1006</span>&#160;            {</div>
-<div class="line"><a name="l01007"></a><span class="lineno"> 1007</span>&#160;                <a class="code" href="ko_8install_8php.html#a9fd93f6625cec4fd65bf6f412e28c015">$oModuleController</a>-&gt;insertModulePartConfig(<span class="stringliteral">&#39;file&#39;</span>, $moduleSrl, $fileConfig);</div>
-<div class="line"><a name="l01008"></a><span class="lineno"> 1008</span>&#160;            }</div>
-<div class="line"><a name="l01009"></a><span class="lineno"> 1009</span>&#160;        }</div>
-<div class="line"><a name="l01010"></a><span class="lineno"> 1010</span>&#160;    }</div>
-<div class="line"><a name="l01011"></a><span class="lineno"> 1011</span>&#160;}</div>
-<div class="line"><a name="l01012"></a><span class="lineno"> 1012</span>&#160;<span class="comment">/* End of file file.controller.php */</span></div>
-<div class="line"><a name="l01013"></a><span class="lineno"> 1013</span>&#160;<span class="comment">/* Location: ./modules/file/file.controller.php */</span></div>
-<div class="line"><a name="l01014"></a><span class="lineno"> 1014</span>&#160;</div>
+<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;        <span class="comment">// https://github.com/xpressengine/xe-core/issues/1713</span></div>
+<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;        $file_info[<span class="stringliteral">&#39;name&#39;</span>] = preg_replace(<span class="stringliteral">&#39;/\.(php|phtm|phar|html?|cgi|pl|exe|jsp|asp|inc)/i&#39;</span>, <span class="stringliteral">&#39;$0-x&#39;</span>,$file_info[<span class="stringliteral">&#39;name&#39;</span>]);</div>
+<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;        $file_info[<span class="stringliteral">&#39;name&#39;</span>] = <a class="code" href="func_8inc_8php.html#abde22c0ee89dfd569abd1e338b3b2cf5">removeHackTag</a>($file_info[<span class="stringliteral">&#39;name&#39;</span>]);</div>
+<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;        $file_info[<span class="stringliteral">&#39;name&#39;</span>] = str_replace(array(<span class="charliteral">&#39;&lt;&#39;</span>,<span class="charliteral">&#39;&gt;&#39;</span>),array(<span class="stringliteral">&#39;%3C&#39;</span>,<span class="stringliteral">&#39;%3E&#39;</span>),$file_info[<span class="stringliteral">&#39;name&#39;</span>]);</div>
+<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;</div>
+<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;        <span class="comment">// Get random number generator</span></div>
+<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;        $random = <span class="keyword">new</span> <a class="code" href="classPassword.html">Password</a>();</div>
+<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;</div>
+<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;        <span class="comment">// Set upload path by checking if the attachement is an image or other kinds of file</span></div>
+<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;        <span class="keywordflow">if</span>(preg_match(<span class="stringliteral">&quot;/\.(jpe?g|gif|png|wm[va]|mpe?g|avi|swf|flv|mp[1-4]|as[fx]|wav|midi?|moo?v|qt|r[am]{1,2}|m4v)$/i&quot;</span>, $file_info[<span class="stringliteral">&#39;name&#39;</span>]))</div>
+<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;        {</div>
+<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;            $path = sprintf(<span class="stringliteral">&quot;./files/attach/images/%s/%s&quot;</span>, <a class="code" href="classModuleObject.html#a0da50016ddc31513f563206fdf6f413d">$module_srl</a>,<a class="code" href="func_8inc_8php.html#ae1a0ad24dbf34de227ffd2eb0d1f8da3">getNumberingPath</a>($upload_target_srl,3));</div>
+<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;</div>
+<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;            <span class="comment">// special character to &#39;_&#39;</span></div>
+<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;            <span class="comment">// change to random file name. because window php bug. window php is not recognize unicode character file name - by cherryfilter</span></div>
+<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;            $ext = substr(strrchr($file_info[<span class="stringliteral">&#39;name&#39;</span>],<span class="charliteral">&#39;.&#39;</span>),1);</div>
+<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;            <span class="comment">//$_filename = preg_replace(&#39;/[#$&amp;*?+%&quot;\&#39;]/&#39;, &#39;_&#39;, $file_info[&#39;name&#39;]);</span></div>
+<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;            $_filename = $random-&gt;createSecureSalt(32, <span class="stringliteral">&#39;hex&#39;</span>).<span class="charliteral">&#39;.&#39;</span>.$ext;</div>
+<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;            $filename  = $path.$_filename;</div>
+<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;            $idx = 1;</div>
+<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;            <span class="keywordflow">while</span>(file_exists($filename))</div>
+<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;            {</div>
+<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;                $filename = $path.preg_replace(<span class="stringliteral">&#39;/\.([a-z0-9]+)$/i&#39;</span>,<span class="charliteral">&#39;_&#39;</span>.$idx.<span class="stringliteral">&#39;.$1&#39;</span>,$_filename);</div>
+<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;                $idx++;</div>
+<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;            }</div>
+<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;            $direct_download = <span class="charliteral">&#39;Y&#39;</span>;</div>
+<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;        }</div>
+<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;        {</div>
+<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;            $path = sprintf(<span class="stringliteral">&quot;./files/attach/binaries/%s/%s&quot;</span>, <a class="code" href="classModuleObject.html#a0da50016ddc31513f563206fdf6f413d">$module_srl</a>, <a class="code" href="func_8inc_8php.html#ae1a0ad24dbf34de227ffd2eb0d1f8da3">getNumberingPath</a>($upload_target_srl,3));</div>
+<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;            $filename = $path.$random-&gt;createSecureSalt(32, <span class="stringliteral">&#39;hex&#39;</span>);</div>
+<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;            $direct_download = <span class="charliteral">&#39;N&#39;</span>;</div>
+<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;        }</div>
+<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;        <span class="comment">// Create a directory</span></div>
+<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="classFileHandler.html#a9c2502d10c34a3996f1d6927624a7824">FileHandler::makeDir</a>($path)) <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1,<span class="stringliteral">&#39;msg_not_permitted_create&#39;</span>);</div>
+<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;</div>
+<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;        <span class="comment">// Check uploaded file</span></div>
+<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="func_8inc_8php.html#a771c122bb7a5b7038f7f751f5e2129b9">checkUploadedFile</a>($file_info[<span class="stringliteral">&#39;tmp_name&#39;</span>]))  <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1,<span class="stringliteral">&#39;msg_file_upload_error&#39;</span>);</div>
+<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;</div>
+<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;        <span class="comment">// Get random number generator</span></div>
+<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;        $random = <span class="keyword">new</span> <a class="code" href="classPassword.html">Password</a>();</div>
+<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;        </div>
+<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;        <span class="comment">// Move the file</span></div>
+<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;        <span class="keywordflow">if</span>($manual_insert)</div>
+<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;        {</div>
+<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;            @copy($file_info[<span class="stringliteral">&#39;tmp_name&#39;</span>], $filename);</div>
+<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;            <span class="keywordflow">if</span>(!file_exists($filename))</div>
+<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;            {</div>
+<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;                $filename = $path.$random-&gt;createSecureSalt(32, <span class="stringliteral">&#39;hex&#39;</span>).<span class="charliteral">&#39;.&#39;</span>.$ext;</div>
+<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;                @copy($file_info[<span class="stringliteral">&#39;tmp_name&#39;</span>], $filename);</div>
+<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;            }</div>
+<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;        }</div>
+<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;        {</div>
+<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;            <span class="keywordflow">if</span>(!@move_uploaded_file($file_info[<span class="stringliteral">&#39;tmp_name&#39;</span>], $filename))</div>
+<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;            {</div>
+<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;                $filename = $path.$random-&gt;createSecureSalt(32, <span class="stringliteral">&#39;hex&#39;</span>).<span class="charliteral">&#39;.&#39;</span>.$ext;</div>
+<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;                <span class="keywordflow">if</span>(!@move_uploaded_file($file_info[<span class="stringliteral">&#39;tmp_name&#39;</span>], $filename))  <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1,<span class="stringliteral">&#39;msg_file_upload_error&#39;</span>);</div>
+<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;            }</div>
+<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;        }</div>
+<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;        <span class="comment">// Get member information</span></div>
+<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;        $oMemberModel = <a class="code" href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a>(<span class="stringliteral">&#39;member&#39;</span>);</div>
+<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;        $member_srl = $oMemberModel-&gt;getLoggedMemberSrl();</div>
+<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;        <span class="comment">// List file information</span></div>
+<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a> = <span class="keyword">new</span> stdClass;</div>
+<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;file_srl = <a class="code" href="func_8inc_8php.html#a5a97b458f9c5b4fe3574671840aee27c">getNextSequence</a>();</div>
+<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;upload_target_srl = $upload_target_srl;</div>
+<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;module_srl = <a class="code" href="classModuleObject.html#a0da50016ddc31513f563206fdf6f413d">$module_srl</a>;</div>
+<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;direct_download = $direct_download;</div>
+<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;source_filename = $file_info[<span class="stringliteral">&#39;name&#39;</span>];</div>
+<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;uploaded_filename = $filename;</div>
+<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;download_count = $download_count;</div>
+<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;file_size = @filesize($filename);</div>
+<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;comment = NULL;</div>
+<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;member_srl = $member_srl;</div>
+<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;sid = $random-&gt;createSecureSalt(32, <span class="stringliteral">&#39;hex&#39;</span>);</div>
+<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;</div>
+<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;        <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = <a class="code" href="func_8inc_8php.html#a418bc23855eebc0d90190dd625ac4474">executeQuery</a>(<span class="stringliteral">&#39;file.insertFile&#39;</span>, <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>);</div>
+<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;toBool()) <span class="keywordflow">return</span> <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>;</div>
+<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;        <span class="comment">// Call a trigger (after)</span></div>
+<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;        $trigger_output = <a class="code" href="classModuleHandler.html#aa1b1f9eae91ccd76e6a81c9375c2e673">ModuleHandler::triggerCall</a>(<span class="stringliteral">&#39;file.insertFile&#39;</span>, <span class="stringliteral">&#39;after&#39;</span>, <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>);</div>
+<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;        <span class="keywordflow">if</span>(!$trigger_output-&gt;toBool()) <span class="keywordflow">return</span> $trigger_output;</div>
+<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;</div>
+<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;        $_SESSION[<span class="stringliteral">&#39;__XE_UPLOADING_FILES_INFO__&#39;</span>][<a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;file_srl] = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;</div>
+<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;        <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;add(<span class="stringliteral">&#39;file_srl&#39;</span>, <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;file_srl);</div>
+<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;        <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;add(<span class="stringliteral">&#39;file_size&#39;</span>, <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;file_size);</div>
+<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;        <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;add(<span class="stringliteral">&#39;sid&#39;</span>, <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;sid);</div>
+<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;        <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;add(<span class="stringliteral">&#39;direct_download&#39;</span>, <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;direct_download);</div>
+<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;        <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;add(<span class="stringliteral">&#39;source_filename&#39;</span>, <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;source_filename);</div>
+<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;        <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;add(<span class="stringliteral">&#39;upload_target_srl&#39;</span>, $upload_target_srl);</div>
+<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;        <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;add(<span class="stringliteral">&#39;uploaded_filename&#39;</span>, <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;uploaded_filename);</div>
+<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>;</div>
+<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;    }</div>
+<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;</div>
+<div class="line"><a name="l00787"></a><span class="lineno"><a class="line" href="classfileController.html#a98775c010ad21e88fd590c0a35b9c405">  787</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classfileController.html#a98775c010ad21e88fd590c0a35b9c405">deleteFile</a>($file_srl)</div>
+<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;    {</div>
+<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;        <span class="keywordflow">if</span>(!$file_srl) <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;</div>
+<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;        $srls = (is_array($file_srl)) ? $file_srl : explode(<span class="charliteral">&#39;,&#39;</span>, $file_srl);</div>
+<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;        <span class="keywordflow">if</span>(!count($srls)) <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;</div>
+<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;        <a class="code" href="ko_8install_8php.html#aac43fce682d4b7a05df6d3e44c2c54e6">$oDocumentController</a> = <a class="code" href="func_8inc_8php.html#aa08f01e3bf130d770b373ca8493e3e9b">getController</a>(<span class="stringliteral">&#39;document&#39;</span>);</div>
+<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;        $documentSrlList = array();</div>
+<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;</div>
+<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;        <span class="keywordflow">foreach</span>($srls as $srl)</div>
+<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;        {</div>
+<div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;            $srl = (int)$srl;</div>
+<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;            <span class="keywordflow">if</span>(!$srl) </div>
+<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;            {</div>
+<div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;                <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;            }</div>
+<div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;</div>
+<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;            <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a> = <span class="keyword">new</span> stdClass();</div>
+<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;            <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;file_srl = $srl;</div>
+<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;            <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = <a class="code" href="func_8inc_8php.html#a418bc23855eebc0d90190dd625ac4474">executeQuery</a>(<span class="stringliteral">&#39;file.getFile&#39;</span>, <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>);</div>
+<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;</div>
+<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;            <span class="keywordflow">if</span>(!<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;toBool() || !<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;data) </div>
+<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;            {</div>
+<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;                <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;            }</div>
+<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;</div>
+<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;            $file_info = <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;data;</div>
+<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;</div>
+<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;            <span class="keywordflow">if</span>($file_info-&gt;upload_target_srl)</div>
+<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;            {</div>
+<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;                $documentSrlList[] = $file_info-&gt;upload_target_srl;</div>
+<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;            }</div>
+<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;</div>
+<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;            $source_filename = <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;data-&gt;source_filename;</div>
+<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;            $uploaded_filename = <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;data-&gt;uploaded_filename;</div>
+<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;</div>
+<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;            <span class="comment">// Call a trigger (before)</span></div>
+<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;            $trigger_obj = <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;data;</div>
+<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;            <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = <a class="code" href="classModuleHandler.html#aa1b1f9eae91ccd76e6a81c9375c2e673">ModuleHandler::triggerCall</a>(<span class="stringliteral">&#39;file.deleteFile&#39;</span>, <span class="stringliteral">&#39;before&#39;</span>, $trigger_obj);</div>
+<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;            <span class="keywordflow">if</span>(!<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;toBool()) <span class="keywordflow">return</span> <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>;</div>
+<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;</div>
+<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;            <span class="comment">// Remove from the DB</span></div>
+<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;            <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = <a class="code" href="func_8inc_8php.html#a418bc23855eebc0d90190dd625ac4474">executeQuery</a>(<span class="stringliteral">&#39;file.deleteFile&#39;</span>, <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>);</div>
+<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;            <span class="keywordflow">if</span>(!<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;toBool()) <span class="keywordflow">return</span> <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>;</div>
+<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;</div>
+<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;            <span class="comment">// Call a trigger (after)</span></div>
+<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;            $trigger_output = <a class="code" href="classModuleHandler.html#aa1b1f9eae91ccd76e6a81c9375c2e673">ModuleHandler::triggerCall</a>(<span class="stringliteral">&#39;file.deleteFile&#39;</span>, <span class="stringliteral">&#39;after&#39;</span>, $trigger_obj);</div>
+<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;            <span class="keywordflow">if</span>(!$trigger_output-&gt;toBool()) <span class="keywordflow">return</span> $trigger_output;</div>
+<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;</div>
+<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;            <span class="comment">// If successfully deleted, remove the file</span></div>
+<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;            <a class="code" href="classFileHandler.html#aa5969f9fe0ce869fc736c4da384959e9">FileHandler::removeFile</a>($uploaded_filename);</div>
+<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;        }</div>
+<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;</div>
+<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;        <a class="code" href="ko_8install_8php.html#aac43fce682d4b7a05df6d3e44c2c54e6">$oDocumentController</a>-&gt;updateUploaedCount($documentSrlList);</div>
+<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;</div>
+<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>;</div>
+<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;    }</div>
+<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;</div>
+<div class="line"><a name="l00852"></a><span class="lineno"><a class="line" href="classfileController.html#ae3060e078930eeaae0c939d7a1c4f229">  852</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classfileController.html#ae3060e078930eeaae0c939d7a1c4f229">deleteFiles</a>($upload_target_srl)</div>
+<div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;    {</div>
+<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;        <span class="comment">// Get a list of attachements</span></div>
+<div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;        $oFileModel = <a class="code" href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a>(<span class="stringliteral">&#39;file&#39;</span>);</div>
+<div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;        $columnList = array(<span class="stringliteral">&#39;file_srl&#39;</span>, <span class="stringliteral">&#39;uploaded_filename&#39;</span>, <span class="stringliteral">&#39;module_srl&#39;</span>);</div>
+<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;        $file_list = $oFileModel-&gt;getFiles($upload_target_srl, $columnList);</div>
+<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;        <span class="comment">// Success returned if no attachement exists</span></div>
+<div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;        <span class="keywordflow">if</span>(!is_array($file_list)||!count($file_list)) <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>();</div>
+<div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;</div>
+<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;        <span class="comment">// Delete the file</span></div>
+<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;        $path = array();</div>
+<div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;        $file_count = count($file_list);</div>
+<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;        <span class="keywordflow">for</span>($i=0;$i&lt;$file_count;$i++)</div>
+<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;        {</div>
+<div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;            $this-&gt;<a class="code" href="classfileController.html#a98775c010ad21e88fd590c0a35b9c405">deleteFile</a>($file_list[$i]-&gt;file_srl);</div>
+<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;</div>
+<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;            $uploaded_filename = $file_list[$i]-&gt;uploaded_filename;</div>
+<div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;            $path_info = pathinfo($uploaded_filename);</div>
+<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;            <span class="keywordflow">if</span>(!in_array($path_info[<span class="stringliteral">&#39;dirname&#39;</span>], $path)) $path[] = $path_info[<span class="stringliteral">&#39;dirname&#39;</span>];</div>
+<div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;        }</div>
+<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;</div>
+<div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;        <span class="comment">// Remove from the DB</span></div>
+<div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a> = <span class="keyword">new</span> stdClass();</div>
+<div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;upload_target_srl = $upload_target_srl;</div>
+<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;        <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = <a class="code" href="func_8inc_8php.html#a418bc23855eebc0d90190dd625ac4474">executeQuery</a>(<span class="stringliteral">&#39;file.deleteFiles&#39;</span>, <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>);</div>
+<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;toBool()) <span class="keywordflow">return</span> <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>;</div>
+<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;        </div>
+<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;        <span class="comment">// Remove a file directory of the document</span></div>
+<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;        <span class="keywordflow">for</span>($i=0, $c=count($path); $i&lt;$c; $i++)</div>
+<div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;        {</div>
+<div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;            <a class="code" href="classFileHandler.html#a538bfd50008250786985c7da4ff768f1">FileHandler::removeBlankDir</a>($path[$i]);</div>
+<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;        }</div>
+<div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;</div>
+<div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>;</div>
+<div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;    }</div>
+<div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;</div>
+<div class="line"><a name="l00896"></a><span class="lineno"><a class="line" href="classfileController.html#aae914224f7bc02d907004c3fb1dd29ac">  896</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classfileController.html#aae914224f7bc02d907004c3fb1dd29ac">moveFile</a>($source_srl, $target_module_srl, $target_srl)</div>
+<div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;    {</div>
+<div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;        <span class="keywordflow">if</span>($source_srl == $target_srl) <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;</div>
+<div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;        $oFileModel = <a class="code" href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a>(<span class="stringliteral">&#39;file&#39;</span>);</div>
+<div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;        $file_list = $oFileModel-&gt;getFiles($source_srl);</div>
+<div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;        <span class="keywordflow">if</span>(!$file_list) <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;</div>
+<div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;        $file_count = count($file_list);</div>
+<div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160;</div>
+<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;        <span class="keywordflow">for</span>($i=0;$i&lt;$file_count;$i++)</div>
+<div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;        {</div>
+<div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;            unset($file_info);</div>
+<div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;            $file_info = $file_list[$i];</div>
+<div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;            $old_file = $file_info-&gt;uploaded_filename;</div>
+<div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;            <span class="comment">// Determine the file path by checking if the file is an image or other kinds</span></div>
+<div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160;            <span class="keywordflow">if</span>(preg_match(<span class="stringliteral">&quot;/\.(jpg|jpeg|gif|png|wmv|wma|mpg|mpeg|avi|swf|flv|mp1|mp2|mp3|mp4|asf|wav|asx|mid|midi|asf|mov|moov|qt|rm|ram|ra|rmm|m4v)$/i&quot;</span>, $file_info-&gt;source_filename))</div>
+<div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;            {</div>
+<div class="line"><a name="l00914"></a><span class="lineno">  914</span>&#160;                $path = sprintf(<span class="stringliteral">&quot;./files/attach/images/%s/%s/&quot;</span>, $target_module_srl,$target_srl);</div>
+<div class="line"><a name="l00915"></a><span class="lineno">  915</span>&#160;                $new_file = $path.$file_info-&gt;source_filename;</div>
+<div class="line"><a name="l00916"></a><span class="lineno">  916</span>&#160;            }</div>
+<div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160;            {</div>
+<div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160;                $path = sprintf(<span class="stringliteral">&quot;./files/attach/binaries/%s/%s/&quot;</span>, $target_module_srl, $target_srl);</div>
+<div class="line"><a name="l00920"></a><span class="lineno">  920</span>&#160;                $random = <span class="keyword">new</span> <a class="code" href="classPassword.html">Password</a>();</div>
+<div class="line"><a name="l00921"></a><span class="lineno">  921</span>&#160;                $new_file = $path.$random-&gt;createSecureSalt(32, <span class="stringliteral">&#39;hex&#39;</span>);</div>
+<div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160;            }</div>
+<div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160;            <span class="comment">// Pass if a target document to move is same</span></div>
+<div class="line"><a name="l00924"></a><span class="lineno">  924</span>&#160;            <span class="keywordflow">if</span>($old_file == $new_file) <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160;            <span class="comment">// Create a directory</span></div>
+<div class="line"><a name="l00926"></a><span class="lineno">  926</span>&#160;            <a class="code" href="classFileHandler.html#a9c2502d10c34a3996f1d6927624a7824">FileHandler::makeDir</a>($path);</div>
+<div class="line"><a name="l00927"></a><span class="lineno">  927</span>&#160;            <span class="comment">// Move the file</span></div>
+<div class="line"><a name="l00928"></a><span class="lineno">  928</span>&#160;            <a class="code" href="classFileHandler.html#abfeaad5fe3c937fdbfed73f2138b3d48">FileHandler::rename</a>($old_file, $new_file);</div>
+<div class="line"><a name="l00929"></a><span class="lineno">  929</span>&#160;            <span class="comment">// Update DB information</span></div>
+<div class="line"><a name="l00930"></a><span class="lineno">  930</span>&#160;            <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a> = <span class="keyword">new</span> stdClass;</div>
+<div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;            <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;file_srl = $file_info-&gt;file_srl;</div>
+<div class="line"><a name="l00932"></a><span class="lineno">  932</span>&#160;            <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;uploaded_filename = $new_file;</div>
+<div class="line"><a name="l00933"></a><span class="lineno">  933</span>&#160;            <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;module_srl = $file_info-&gt;module_srl;</div>
+<div class="line"><a name="l00934"></a><span class="lineno">  934</span>&#160;            <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;upload_target_srl = $target_srl;</div>
+<div class="line"><a name="l00935"></a><span class="lineno">  935</span>&#160;            <a class="code" href="func_8inc_8php.html#a418bc23855eebc0d90190dd625ac4474">executeQuery</a>(<span class="stringliteral">&#39;file.updateFile&#39;</span>, <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>);</div>
+<div class="line"><a name="l00936"></a><span class="lineno">  936</span>&#160;        }</div>
+<div class="line"><a name="l00937"></a><span class="lineno">  937</span>&#160;    }</div>
+<div class="line"><a name="l00938"></a><span class="lineno">  938</span>&#160;</div>
+<div class="line"><a name="l00939"></a><span class="lineno"><a class="line" href="classfileController.html#a54e65e695efa22b2a9507fd52e44d601">  939</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="classfileController.html#a54e65e695efa22b2a9507fd52e44d601">procFileSetCoverImage</a>()</div>
+<div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160;    {</div>
+<div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160;        $vars = <a class="code" href="classContext.html#a9ddbc79a7ba5892d1ea2d793f6ad52c2">Context::getRequestVars</a>();</div>
+<div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160;        <a class="code" href="adminlogging_8addon_8php.html#a193c1593ceb216e9fb05b0bad01ebbc8">$logged_info</a> = <a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;logged_info&#39;</span>);</div>
+<div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160;</div>
+<div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160;        <span class="keywordflow">if</span>(!$vars-&gt;editor_sequence) <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1, <span class="stringliteral">&#39;msg_invalid_request&#39;</span>);</div>
+<div class="line"><a name="l00945"></a><span class="lineno">  945</span>&#160;</div>
+<div class="line"><a name="l00946"></a><span class="lineno">  946</span>&#160;        $upload_target_srl = $_SESSION[<span class="stringliteral">&#39;upload_info&#39;</span>][$vars-&gt;editor_sequence]-&gt;upload_target_srl;</div>
+<div class="line"><a name="l00947"></a><span class="lineno">  947</span>&#160;</div>
+<div class="line"><a name="l00948"></a><span class="lineno">  948</span>&#160;        $oFileModel = <a class="code" href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a>(<span class="stringliteral">&#39;file&#39;</span>);</div>
+<div class="line"><a name="l00949"></a><span class="lineno">  949</span>&#160;        $file_info = $oFileModel-&gt;getFile($vars-&gt;file_srl);</div>
+<div class="line"><a name="l00950"></a><span class="lineno">  950</span>&#160;</div>
+<div class="line"><a name="l00951"></a><span class="lineno">  951</span>&#160;        <span class="keywordflow">if</span>(!$file_info) <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1, <span class="stringliteral">&#39;msg_not_founded&#39;</span>);</div>
+<div class="line"><a name="l00952"></a><span class="lineno">  952</span>&#160;</div>
+<div class="line"><a name="l00953"></a><span class="lineno">  953</span>&#160;        <span class="keywordflow">if</span>(!$this-&gt;manager &amp;&amp; !$file_info-&gt;member_srl === <a class="code" href="adminlogging_8addon_8php.html#a193c1593ceb216e9fb05b0bad01ebbc8">$logged_info</a>-&gt;member_srl) <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1, <span class="stringliteral">&#39;msg_not_permitted&#39;</span>);</div>
+<div class="line"><a name="l00954"></a><span class="lineno">  954</span>&#160;</div>
+<div class="line"><a name="l00955"></a><span class="lineno">  955</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a> =  <span class="keyword">new</span> stdClass();</div>
+<div class="line"><a name="l00956"></a><span class="lineno">  956</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;file_srl = $vars-&gt;file_srl;</div>
+<div class="line"><a name="l00957"></a><span class="lineno">  957</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;upload_target_srl = $upload_target_srl;</div>
+<div class="line"><a name="l00958"></a><span class="lineno">  958</span>&#160;</div>
+<div class="line"><a name="l00959"></a><span class="lineno">  959</span>&#160;        $oDB = &amp;<a class="code" href="classDB.html#a16f4a668b6429b4b9af5132cbf885213">DB::getInstance</a>();</div>
+<div class="line"><a name="l00960"></a><span class="lineno">  960</span>&#160;        $oDB-&gt;begin();</div>
+<div class="line"><a name="l00961"></a><span class="lineno">  961</span>&#160;</div>
+<div class="line"><a name="l00962"></a><span class="lineno">  962</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;cover_image = <span class="charliteral">&#39;N&#39;</span>;</div>
+<div class="line"><a name="l00963"></a><span class="lineno">  963</span>&#160;        <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = <a class="code" href="func_8inc_8php.html#a418bc23855eebc0d90190dd625ac4474">executeQuery</a>(<span class="stringliteral">&#39;file.updateClearCoverImage&#39;</span>, <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>);</div>
+<div class="line"><a name="l00964"></a><span class="lineno">  964</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;toBool())</div>
+<div class="line"><a name="l00965"></a><span class="lineno">  965</span>&#160;        {</div>
+<div class="line"><a name="l00966"></a><span class="lineno">  966</span>&#160;            $oDB-&gt;rollback();</div>
+<div class="line"><a name="l00967"></a><span class="lineno">  967</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>;</div>
+<div class="line"><a name="l00968"></a><span class="lineno">  968</span>&#160;        }</div>
+<div class="line"><a name="l00969"></a><span class="lineno">  969</span>&#160;</div>
+<div class="line"><a name="l00970"></a><span class="lineno">  970</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;cover_image = <span class="charliteral">&#39;Y&#39;</span>;</div>
+<div class="line"><a name="l00971"></a><span class="lineno">  971</span>&#160;        <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = <a class="code" href="func_8inc_8php.html#a418bc23855eebc0d90190dd625ac4474">executeQuery</a>(<span class="stringliteral">&#39;file.updateCoverImage&#39;</span>, <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>);</div>
+<div class="line"><a name="l00972"></a><span class="lineno">  972</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;toBool())</div>
+<div class="line"><a name="l00973"></a><span class="lineno">  973</span>&#160;        {</div>
+<div class="line"><a name="l00974"></a><span class="lineno">  974</span>&#160;            $oDB-&gt;rollback();</div>
+<div class="line"><a name="l00975"></a><span class="lineno">  975</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>;</div>
+<div class="line"><a name="l00976"></a><span class="lineno">  976</span>&#160;        }</div>
+<div class="line"><a name="l00977"></a><span class="lineno">  977</span>&#160;</div>
+<div class="line"><a name="l00978"></a><span class="lineno">  978</span>&#160;        $oDB-&gt;commit();</div>
+<div class="line"><a name="l00979"></a><span class="lineno">  979</span>&#160;</div>
+<div class="line"><a name="l00980"></a><span class="lineno">  980</span>&#160;        <span class="comment">// 썸네일 삭제</span></div>
+<div class="line"><a name="l00981"></a><span class="lineno">  981</span>&#160;        $thumbnail_path = sprintf(<span class="stringliteral">&#39;files/thumbnails/%s&#39;</span>, <a class="code" href="func_8inc_8php.html#ae1a0ad24dbf34de227ffd2eb0d1f8da3">getNumberingPath</a>($upload_target_srl, 3));</div>
+<div class="line"><a name="l00982"></a><span class="lineno">  982</span>&#160;        Filehandler::removeFilesInDir($thumbnail_path);</div>
+<div class="line"><a name="l00983"></a><span class="lineno">  983</span>&#160;    }</div>
+<div class="line"><a name="l00984"></a><span class="lineno">  984</span>&#160;</div>
+<div class="line"><a name="l00993"></a><span class="lineno"><a class="line" href="classfileController.html#a99cefbd1c15aeb48b68903e77f9041c7">  993</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classfileController.html#a99cefbd1c15aeb48b68903e77f9041c7">printUploadedFileList</a>($editor_sequence, $upload_target_srl)</div>
+<div class="line"><a name="l00994"></a><span class="lineno">  994</span>&#160;    {</div>
+<div class="line"><a name="l00995"></a><span class="lineno">  995</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00996"></a><span class="lineno">  996</span>&#160;    }</div>
+<div class="line"><a name="l00997"></a><span class="lineno">  997</span>&#160;</div>
+<div class="line"><a name="l00998"></a><span class="lineno"><a class="line" href="classfileController.html#a043759003f14e91db0f4fb554955fba8">  998</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classfileController.html#a043759003f14e91db0f4fb554955fba8">triggerCopyModule</a>(&amp;<a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>)</div>
+<div class="line"><a name="l00999"></a><span class="lineno">  999</span>&#160;    {</div>
+<div class="line"><a name="l01000"></a><span class="lineno"> 1000</span>&#160;        <a class="code" href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a> = <a class="code" href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a>(<span class="stringliteral">&#39;module&#39;</span>);</div>
+<div class="line"><a name="l01001"></a><span class="lineno"> 1001</span>&#160;        $fileConfig = <a class="code" href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a>-&gt;getModulePartConfig(<span class="stringliteral">&#39;file&#39;</span>, <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;originModuleSrl);</div>
+<div class="line"><a name="l01002"></a><span class="lineno"> 1002</span>&#160;</div>
+<div class="line"><a name="l01003"></a><span class="lineno"> 1003</span>&#160;        <a class="code" href="ko_8install_8php.html#a9fd93f6625cec4fd65bf6f412e28c015">$oModuleController</a> = <a class="code" href="func_8inc_8php.html#aa08f01e3bf130d770b373ca8493e3e9b">getController</a>(<span class="stringliteral">&#39;module&#39;</span>);</div>
+<div class="line"><a name="l01004"></a><span class="lineno"> 1004</span>&#160;        <span class="keywordflow">if</span>(is_array(<a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;moduleSrlList))</div>
+<div class="line"><a name="l01005"></a><span class="lineno"> 1005</span>&#160;        {</div>
+<div class="line"><a name="l01006"></a><span class="lineno"> 1006</span>&#160;            <span class="keywordflow">foreach</span>(<a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;moduleSrlList AS $key=&gt;$moduleSrl)</div>
+<div class="line"><a name="l01007"></a><span class="lineno"> 1007</span>&#160;            {</div>
+<div class="line"><a name="l01008"></a><span class="lineno"> 1008</span>&#160;                <a class="code" href="ko_8install_8php.html#a9fd93f6625cec4fd65bf6f412e28c015">$oModuleController</a>-&gt;insertModulePartConfig(<span class="stringliteral">&#39;file&#39;</span>, $moduleSrl, $fileConfig);</div>
+<div class="line"><a name="l01009"></a><span class="lineno"> 1009</span>&#160;            }</div>
+<div class="line"><a name="l01010"></a><span class="lineno"> 1010</span>&#160;        }</div>
+<div class="line"><a name="l01011"></a><span class="lineno"> 1011</span>&#160;    }</div>
+<div class="line"><a name="l01012"></a><span class="lineno"> 1012</span>&#160;}</div>
+<div class="line"><a name="l01013"></a><span class="lineno"> 1013</span>&#160;<span class="comment">/* End of file file.controller.php */</span></div>
+<div class="line"><a name="l01014"></a><span class="lineno"> 1014</span>&#160;<span class="comment">/* Location: ./modules/file/file.controller.php */</span></div>
+<div class="line"><a name="l01015"></a><span class="lineno"> 1015</span>&#160;</div>
 <div class="ttc" id="classModuleObject_html_aa38e116023d54d3f5d8f507bb87663f4"><div class="ttname"><a href="classModuleObject.html#aa38e116023d54d3f5d8f507bb87663f4">ModuleObject\setTemplateFile</a></div><div class="ttdeci">setTemplateFile($filename)</div><div class="ttdef"><b>Definition:</b> <a href="ModuleObject_8class_8php_source.html#l00252">ModuleObject.class.php:252</a></div></div>
 <div class="ttc" id="ko_8install_8php_html_a8d7a87df524e7d6938f66f8e284cdd1e"><div class="ttname"><a href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a></div><div class="ttdeci">$oModuleModel</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00236">ko.install.php:236</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_aa08f01e3bf130d770b373ca8493e3e9b"><div class="ttname"><a href="func_8inc_8php.html#aa08f01e3bf130d770b373ca8493e3e9b">getController</a></div><div class="ttdeci">getController($module_name)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00090">func.inc.php:90</a></div></div>
@@ -917,7 +918,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classModuleObject_html_ac4c2bac7917c3ab3a0e816b99574727c"><div class="ttname"><a href="classModuleObject.html#ac4c2bac7917c3ab3a0e816b99574727c">ModuleObject\stop</a></div><div class="ttdeci">stop($msg_code)</div><div class="ttdef"><b>Definition:</b> <a href="ModuleObject_8class_8php_source.html#l00227">ModuleObject.class.php:227</a></div></div>
 <div class="ttc" id="classfileController_html_a5cffda3cff8207351a7bd55065176c69"><div class="ttname"><a href="classfileController.html#a5cffda3cff8207351a7bd55065176c69">fileController\setUploadInfo</a></div><div class="ttdeci">setUploadInfo($editor_sequence, $upload_target_srl=0)</div><div class="ttdef"><b>Definition:</b> <a href="file_8controller_8php_source.html#l00555">file.controller.php:555</a></div></div>
 <div class="ttc" id="classfileController_html_ae1011288af2b3a2aca5bc4db41b9ad09"><div class="ttname"><a href="classfileController.html#ae1011288af2b3a2aca5bc4db41b9ad09">fileController\triggerCommentDeleteAttached</a></div><div class="ttdeci">triggerCommentDeleteAttached(&amp;$obj)</div><div class="ttdef"><b>Definition:</b> <a href="file_8controller_8php_source.html#l00522">file.controller.php:522</a></div></div>
-<div class="ttc" id="classContext_html_a9f79aa7aecf2e4d8006e517844523fc2"><div class="ttname"><a href="classContext.html#a9f79aa7aecf2e4d8006e517844523fc2">Context\set</a></div><div class="ttdeci">set($key, $val, $set_to_get_vars=0)</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l01858">Context.class.php:1858</a></div></div>
+<div class="ttc" id="classContext_html_a9f79aa7aecf2e4d8006e517844523fc2"><div class="ttname"><a href="classContext.html#a9f79aa7aecf2e4d8006e517844523fc2">Context\set</a></div><div class="ttdeci">set($key, $val, $set_to_get_vars=0)</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l01859">Context.class.php:1859</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_aa73dbeb07c5bcac26c24fe4c6b05d8d2"><div class="ttname"><a href="func_8inc_8php.html#aa73dbeb07c5bcac26c24fe4c6b05d8d2">getNotEncodedUrl</a></div><div class="ttdeci">getNotEncodedUrl()</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00313">func.inc.php:313</a></div></div>
 <div class="ttc" id="classfileController_html_a68fbf2cdcb182912d4138f269904a1ba"><div class="ttname"><a href="classfileController.html#a68fbf2cdcb182912d4138f269904a1ba">fileController\triggerDeleteModuleFiles</a></div><div class="ttdeci">triggerDeleteModuleFiles(&amp;$obj)</div><div class="ttdef"><b>Definition:</b> <a href="file_8controller_8php_source.html#l00539">file.controller.php:539</a></div></div>
 <div class="ttc" id="classfileController_html_a307bc7f83988451603a052ed77db3895"><div class="ttname"><a href="classfileController.html#a307bc7f83988451603a052ed77db3895">fileController\triggerAttachFiles</a></div><div class="ttdeci">triggerAttachFiles(&amp;$obj)</div><div class="ttdef"><b>Definition:</b> <a href="file_8controller_8php_source.html#l00455">file.controller.php:455</a></div></div>
@@ -929,13 +930,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classfileController_html"><div class="ttname"><a href="classfileController.html">fileController</a></div><div class="ttdef"><b>Definition:</b> <a href="file_8controller_8php_source.html#l00007">file.controller.php:7</a></div></div>
 <div class="ttc" id="classPassword_html"><div class="ttname"><a href="classPassword.html">Password</a></div><div class="ttdef"><b>Definition:</b> <a href="Password_8class_8php_source.html#l00013">Password.class.php:13</a></div></div>
 <div class="ttc" id="classfileController_html_a05eff5de98e487cd806ae8fd1229d5dd"><div class="ttname"><a href="classfileController.html#a05eff5de98e487cd806ae8fd1229d5dd">fileController\procFileDelete</a></div><div class="ttdeci">procFileDelete()</div><div class="ttdef"><b>Definition:</b> <a href="file_8controller_8php_source.html#l00357">file.controller.php:357</a></div></div>
-<div class="ttc" id="classfileController_html_aae914224f7bc02d907004c3fb1dd29ac"><div class="ttname"><a href="classfileController.html#aae914224f7bc02d907004c3fb1dd29ac">fileController\moveFile</a></div><div class="ttdeci">moveFile($source_srl, $target_module_srl, $target_srl)</div><div class="ttdef"><b>Definition:</b> <a href="file_8controller_8php_source.html#l00895">file.controller.php:895</a></div></div>
+<div class="ttc" id="classfileController_html_aae914224f7bc02d907004c3fb1dd29ac"><div class="ttname"><a href="classfileController.html#aae914224f7bc02d907004c3fb1dd29ac">fileController\moveFile</a></div><div class="ttdeci">moveFile($source_srl, $target_module_srl, $target_srl)</div><div class="ttdef"><b>Definition:</b> <a href="file_8controller_8php_source.html#l00896">file.controller.php:896</a></div></div>
 <div class="ttc" id="classfileController_html_ab25a513258ef9c9e2dc2af274c9c24e7"><div class="ttname"><a href="classfileController.html#ab25a513258ef9c9e2dc2af274c9c24e7">fileController\triggerCommentAttachFiles</a></div><div class="ttdeci">triggerCommentAttachFiles(&amp;$obj)</div><div class="ttdef"><b>Definition:</b> <a href="file_8controller_8php_source.html#l00504">file.controller.php:504</a></div></div>
 <div class="ttc" id="classModuleObject_html_a0da50016ddc31513f563206fdf6f413d"><div class="ttname"><a href="classModuleObject.html#a0da50016ddc31513f563206fdf6f413d">ModuleObject\$module_srl</a></div><div class="ttdeci">$module_srl</div><div class="ttdoc">integer value to represent a run-time instance of Module (XE Module) </div><div class="ttdef"><b>Definition:</b> <a href="ModuleObject_8class_8php_source.html#l00014">ModuleObject.class.php:14</a></div></div>
 <div class="ttc" id="classModuleObject_html_ac0e69111c80e589a4da7899fc7c75fe5"><div class="ttname"><a href="classModuleObject.html#ac0e69111c80e589a4da7899fc7c75fe5">ModuleObject\setMessage</a></div><div class="ttdeci">setMessage($message, $type=NULL)</div><div class="ttdef"><b>Definition:</b> <a href="ModuleObject_8class_8php_source.html#l00089">ModuleObject.class.php:89</a></div></div>
-<div class="ttc" id="classfileController_html_a043759003f14e91db0f4fb554955fba8"><div class="ttname"><a href="classfileController.html#a043759003f14e91db0f4fb554955fba8">fileController\triggerCopyModule</a></div><div class="ttdeci">triggerCopyModule(&amp;$obj)</div><div class="ttdef"><b>Definition:</b> <a href="file_8controller_8php_source.html#l00997">file.controller.php:997</a></div></div>
+<div class="ttc" id="classfileController_html_a043759003f14e91db0f4fb554955fba8"><div class="ttname"><a href="classfileController.html#a043759003f14e91db0f4fb554955fba8">fileController\triggerCopyModule</a></div><div class="ttdeci">triggerCopyModule(&amp;$obj)</div><div class="ttdef"><b>Definition:</b> <a href="file_8controller_8php_source.html#l00998">file.controller.php:998</a></div></div>
 <div class="ttc" id="classFileHandler_html_a171948d79c14415ad45b7581a011c593"><div class="ttname"><a href="classFileHandler.html#a171948d79c14415ad45b7581a011c593">FileHandler\createImageFile</a></div><div class="ttdeci">createImageFile($source_file, $target_file, $resize_width=0, $resize_height=0, $target_type= '', $thumbnail_type= 'crop')</div><div class="ttdef"><b>Definition:</b> <a href="FileHandler_8class_8php_source.html#l00692">FileHandler.class.php:692</a></div></div>
-<div class="ttc" id="classfileController_html_ae3060e078930eeaae0c939d7a1c4f229"><div class="ttname"><a href="classfileController.html#ae3060e078930eeaae0c939d7a1c4f229">fileController\deleteFiles</a></div><div class="ttdeci">deleteFiles($upload_target_srl)</div><div class="ttdef"><b>Definition:</b> <a href="file_8controller_8php_source.html#l00851">file.controller.php:851</a></div></div>
+<div class="ttc" id="classfileController_html_ae3060e078930eeaae0c939d7a1c4f229"><div class="ttname"><a href="classfileController.html#ae3060e078930eeaae0c939d7a1c4f229">fileController\deleteFiles</a></div><div class="ttdeci">deleteFiles($upload_target_srl)</div><div class="ttdef"><b>Definition:</b> <a href="file_8controller_8php_source.html#l00852">file.controller.php:852</a></div></div>
 <div class="ttc" id="classFileHandler_html_abfeaad5fe3c937fdbfed73f2138b3d48"><div class="ttname"><a href="classFileHandler.html#abfeaad5fe3c937fdbfed73f2138b3d48">FileHandler\rename</a></div><div class="ttdeci">rename($source, $target)</div><div class="ttdef"><b>Definition:</b> <a href="FileHandler_8class_8php_source.html#l00181">FileHandler.class.php:181</a></div></div>
 <div class="ttc" id="ko_8install_8php_html_a67e94494731d99ed23b123e95175bc10"><div class="ttname"><a href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a></div><div class="ttdeci">$args</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00185">ko.install.php:185</a></div></div>
 <div class="ttc" id="classModuleObject_html_ac1c9807e77270f2e2abe4f79e1cd2987"><div class="ttname"><a href="classModuleObject.html#ac1c9807e77270f2e2abe4f79e1cd2987">ModuleObject\$module_info</a></div><div class="ttdeci">$module_info</div><div class="ttdoc">an object containing the module information </div><div class="ttdef"><b>Definition:</b> <a href="ModuleObject_8class_8php_source.html#l00015">ModuleObject.class.php:15</a></div></div>
@@ -945,9 +946,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classfileController_html_a21d4fb5d44f6f078cc9d63b89e642dce"><div class="ttname"><a href="classfileController.html#a21d4fb5d44f6f078cc9d63b89e642dce">fileController\procFileOutput</a></div><div class="ttdeci">procFileOutput()</div><div class="ttdef"><b>Definition:</b> <a href="file_8controller_8php_source.html#l00287">file.controller.php:287</a></div></div>
 <div class="ttc" id="classfileController_html_a29e461f3cb7a84ddbb07b0abcdeef2e5"><div class="ttname"><a href="classfileController.html#a29e461f3cb7a84ddbb07b0abcdeef2e5">fileController\procFileImageResize</a></div><div class="ttdeci">procFileImageResize()</div><div class="ttdef"><b>Definition:</b> <a href="file_8controller_8php_source.html#l00094">file.controller.php:94</a></div></div>
 <div class="ttc" id="classDB_html_a16f4a668b6429b4b9af5132cbf885213"><div class="ttname"><a href="classDB.html#a16f4a668b6429b4b9af5132cbf885213">DB\getInstance</a></div><div class="ttdeci">&amp; getInstance($db_type=NULL)</div><div class="ttdef"><b>Definition:</b> <a href="DB_8class_8php_source.html#l00147">DB.class.php:147</a></div></div>
-<div class="ttc" id="classfileController_html_a54e65e695efa22b2a9507fd52e44d601"><div class="ttname"><a href="classfileController.html#a54e65e695efa22b2a9507fd52e44d601">fileController\procFileSetCoverImage</a></div><div class="ttdeci">procFileSetCoverImage()</div><div class="ttdef"><b>Definition:</b> <a href="file_8controller_8php_source.html#l00938">file.controller.php:938</a></div></div>
+<div class="ttc" id="classfileController_html_a54e65e695efa22b2a9507fd52e44d601"><div class="ttname"><a href="classfileController.html#a54e65e695efa22b2a9507fd52e44d601">fileController\procFileSetCoverImage</a></div><div class="ttdeci">procFileSetCoverImage()</div><div class="ttdef"><b>Definition:</b> <a href="file_8controller_8php_source.html#l00939">file.controller.php:939</a></div></div>
 <div class="ttc" id="classFileHandler_html_a9c2502d10c34a3996f1d6927624a7824"><div class="ttname"><a href="classFileHandler.html#a9c2502d10c34a3996f1d6927624a7824">FileHandler\makeDir</a></div><div class="ttdeci">makeDir($path_string)</div><div class="ttdef"><b>Definition:</b> <a href="FileHandler_8class_8php_source.html#l00280">FileHandler.class.php:280</a></div></div>
 <div class="ttc" id="classContext_html_ad59031e45d21ad27eb7d06e0ee76f008"><div class="ttname"><a href="classContext.html#ad59031e45d21ad27eb7d06e0ee76f008">Context\close</a></div><div class="ttdeci">close()</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l00428">Context.class.php:428</a></div></div>
+<div class="ttc" id="func_8inc_8php_html_abde22c0ee89dfd569abd1e338b3b2cf5"><div class="ttname"><a href="func_8inc_8php.html#abde22c0ee89dfd569abd1e338b3b2cf5">removeHackTag</a></div><div class="ttdeci">removeHackTag($content)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l01084">func.inc.php:1084</a></div></div>
 <div class="ttc" id="ko_8install_8php_html_aac43fce682d4b7a05df6d3e44c2c54e6"><div class="ttname"><a href="ko_8install_8php.html#aac43fce682d4b7a05df6d3e44c2c54e6">$oDocumentController</a></div><div class="ttdeci">$oDocumentController</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00260">ko.install.php:260</a></div></div>
 <div class="ttc" id="adminlogging_8addon_8php_html_a193c1593ceb216e9fb05b0bad01ebbc8"><div class="ttname"><a href="adminlogging_8addon_8php.html#a193c1593ceb216e9fb05b0bad01ebbc8">$logged_info</a></div><div class="ttdeci">$logged_info</div><div class="ttdef"><b>Definition:</b> <a href="adminlogging_8addon_8php_source.html#l00012">adminlogging.addon.php:12</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_a5a97b458f9c5b4fe3574671840aee27c"><div class="ttname"><a href="func_8inc_8php.html#a5a97b458f9c5b4fe3574671840aee27c">getNextSequence</a></div><div class="ttdeci">getNextSequence()</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00236">func.inc.php:236</a></div></div>
@@ -955,23 +957,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="func_8inc_8php_html_aecdfcc5332bcf22df01fc21a03b64435"><div class="ttname"><a href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a></div><div class="ttdeci">getModel($module_name)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00145">func.inc.php:145</a></div></div>
 <div class="ttc" id="classContext_html_afc58a19e296dfc70a95648f35bb0f3a9"><div class="ttname"><a href="classContext.html#afc58a19e296dfc70a95648f35bb0f3a9">Context\setResponseMethod</a></div><div class="ttdeci">setResponseMethod($method= 'HTML')</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l01110">Context.class.php:1110</a></div></div>
 <div class="ttc" id="classfileController_html_aea1086732740ff005a00f7152e30937d"><div class="ttname"><a href="classfileController.html#aea1086732740ff005a00f7152e30937d">fileController\init</a></div><div class="ttdeci">init()</div><div class="ttdef"><b>Definition:</b> <a href="file_8controller_8php_source.html#l00013">file.controller.php:13</a></div></div>
-<div class="ttc" id="classContext_html_a90ce25d65fe6c9778421cbb36ab3def5"><div class="ttname"><a href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context\get</a></div><div class="ttdeci">get($key)</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l01883">Context.class.php:1883</a></div></div>
-<div class="ttc" id="classfileController_html_a98775c010ad21e88fd590c0a35b9c405"><div class="ttname"><a href="classfileController.html#a98775c010ad21e88fd590c0a35b9c405">fileController\deleteFile</a></div><div class="ttdeci">deleteFile($file_srl)</div><div class="ttdef"><b>Definition:</b> <a href="file_8controller_8php_source.html#l00786">file.controller.php:786</a></div></div>
+<div class="ttc" id="classContext_html_a90ce25d65fe6c9778421cbb36ab3def5"><div class="ttname"><a href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context\get</a></div><div class="ttdeci">get($key)</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l01884">Context.class.php:1884</a></div></div>
+<div class="ttc" id="classfileController_html_a98775c010ad21e88fd590c0a35b9c405"><div class="ttname"><a href="classfileController.html#a98775c010ad21e88fd590c0a35b9c405">fileController\deleteFile</a></div><div class="ttdeci">deleteFile($file_srl)</div><div class="ttdef"><b>Definition:</b> <a href="file_8controller_8php_source.html#l00787">file.controller.php:787</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_a2f7ca88a5226536aca3b2f5682bd7b2d"><div class="ttname"><a href="func_8inc_8php.html#a2f7ca88a5226536aca3b2f5682bd7b2d">getAdminController</a></div><div class="ttdeci">getAdminController($module_name)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00101">func.inc.php:101</a></div></div>
 <div class="ttc" id="classModuleObject_html_a440407bd8b6b16eb03115ad4a5c5835a"><div class="ttname"><a href="classModuleObject.html#a440407bd8b6b16eb03115ad4a5c5835a">ModuleObject\setTemplatePath</a></div><div class="ttdeci">setTemplatePath($path)</div><div class="ttdef"><b>Definition:</b> <a href="ModuleObject_8class_8php_source.html#l00275">ModuleObject.class.php:275</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_a418bc23855eebc0d90190dd625ac4474"><div class="ttname"><a href="func_8inc_8php.html#a418bc23855eebc0d90190dd625ac4474">executeQuery</a></div><div class="ttdeci">executeQuery($query_id, $args=NULL, $arg_columns=NULL)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00203">func.inc.php:203</a></div></div>
-<div class="ttc" id="classfileController_html_a99cefbd1c15aeb48b68903e77f9041c7"><div class="ttname"><a href="classfileController.html#a99cefbd1c15aeb48b68903e77f9041c7">fileController\printUploadedFileList</a></div><div class="ttdeci">printUploadedFileList($editor_sequence, $upload_target_srl)</div><div class="ttdef"><b>Definition:</b> <a href="file_8controller_8php_source.html#l00992">file.controller.php:992</a></div></div>
+<div class="ttc" id="classfileController_html_a99cefbd1c15aeb48b68903e77f9041c7"><div class="ttname"><a href="classfileController.html#a99cefbd1c15aeb48b68903e77f9041c7">fileController\printUploadedFileList</a></div><div class="ttdeci">printUploadedFileList($editor_sequence, $upload_target_srl)</div><div class="ttdef"><b>Definition:</b> <a href="file_8controller_8php_source.html#l00993">file.controller.php:993</a></div></div>
 <div class="ttc" id="classfileController_html_ad1cdb6696de4e0c90532412bb80a359e"><div class="ttname"><a href="classfileController.html#ad1cdb6696de4e0c90532412bb80a359e">fileController\procFileGetList</a></div><div class="ttdeci">procFileGetList()</div><div class="ttdef"><b>Definition:</b> <a href="file_8controller_8php_source.html#l00401">file.controller.php:401</a></div></div>
 <div class="ttc" id="ko_8install_8php_html_a9fd93f6625cec4fd65bf6f412e28c015"><div class="ttname"><a href="ko_8install_8php.html#a9fd93f6625cec4fd65bf6f412e28c015">$oModuleController</a></div><div class="ttdeci">$oModuleController</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00287">ko.install.php:287</a></div></div>
 <div class="ttc" id="classfileController_html_a801efe17bf09b43279f82504b748c5ee"><div class="ttname"><a href="classfileController.html#a801efe17bf09b43279f82504b748c5ee">fileController\setFilesValid</a></div><div class="ttdeci">setFilesValid($upload_target_srl)</div><div class="ttdef"><b>Definition:</b> <a href="file_8controller_8php_source.html#l00572">file.controller.php:572</a></div></div>
 <div class="ttc" id="classModuleHandler_html_aa1b1f9eae91ccd76e6a81c9375c2e673"><div class="ttname"><a href="classModuleHandler.html#aa1b1f9eae91ccd76e6a81c9375c2e673">ModuleHandler\triggerCall</a></div><div class="ttdeci">triggerCall($trigger_name, $called_position, &amp;$obj)</div><div class="ttdef"><b>Definition:</b> <a href="ModuleHandler_8class_8php_source.html#l01137">ModuleHandler.class.php:1137</a></div></div>
 <div class="ttc" id="example_8php_html_aef99014231eb219a8c774eb4b8463fd9"><div class="ttname"><a href="example_8php.html#aef99014231eb219a8c774eb4b8463fd9">$lang</a></div><div class="ttdeci">if(isset($_REQUEST['encode'])) if(isset($_REQUEST['decode'])) $lang</div><div class="ttdef"><b>Definition:</b> <a href="example_8php_source.html#l00023">example.php:23</a></div></div>
-<div class="ttc" id="classContext_html_a9ddbc79a7ba5892d1ea2d793f6ad52c2"><div class="ttname"><a href="classContext.html#a9ddbc79a7ba5892d1ea2d793f6ad52c2">Context\getRequestVars</a></div><div class="ttdeci">getRequestVars()</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l01933">Context.class.php:1933</a></div></div>
+<div class="ttc" id="classContext_html_a9ddbc79a7ba5892d1ea2d793f6ad52c2"><div class="ttname"><a href="classContext.html#a9ddbc79a7ba5892d1ea2d793f6ad52c2">Context\getRequestVars</a></div><div class="ttdeci">getRequestVars()</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l01934">Context.class.php:1934</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_a771c122bb7a5b7038f7f751f5e2129b9"><div class="ttname"><a href="func_8inc_8php.html#a771c122bb7a5b7038f7f751f5e2129b9">checkUploadedFile</a></div><div class="ttdeci">checkUploadedFile($file)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l01126">func.inc.php:1126</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jul 17 2015 18:07:12 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 18 2015 14:29:06 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

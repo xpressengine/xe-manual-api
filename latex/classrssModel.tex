@@ -9,7 +9,7 @@ Inheritance diagram for rss\+Model\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classrssModel_afaab782e467091fb51103d386682bca8}{get\+Module\+Feed\+Url} (\$vid=null, \$mid, \$format)
+\hyperlink{classrssModel_a2e188c3e11aab64655f3eb3d40b41ec3}{get\+Module\+Feed\+Url} (\$vid, \$mid, \$format= \textquotesingle{}\hyperlink{classrss}{rss}\textquotesingle{}, \$absolute\+\_\+url=false)
 \item 
 \hyperlink{classrssModel_a3c6f9fd398a931ff32038e2a48745bad}{get\+Rss\+Module\+Config} (\$\hyperlink{ko_8install_8php_a370bb6450fab1da3e0ed9f484a38b761}{module\+\_\+srl})
 \end{DoxyCompactItemize}
@@ -29,15 +29,16 @@ Definition at line 8 of file rss.\+model.\+php.
 
 
 \subsection{Member Function Documentation}
-\hypertarget{classrssModel_afaab782e467091fb51103d386682bca8}{}\index{rss\+Model@{rss\+Model}!get\+Module\+Feed\+Url@{get\+Module\+Feed\+Url}}
+\hypertarget{classrssModel_a2e188c3e11aab64655f3eb3d40b41ec3}{}\index{rss\+Model@{rss\+Model}!get\+Module\+Feed\+Url@{get\+Module\+Feed\+Url}}
 \index{get\+Module\+Feed\+Url@{get\+Module\+Feed\+Url}!rss\+Model@{rss\+Model}}
 \subsubsection[{get\+Module\+Feed\+Url}]{\setlength{\rightskip}{0pt plus 5cm}rss\+Model\+::get\+Module\+Feed\+Url (
 \begin{DoxyParamCaption}
-\item[{}]{\$vid = {\ttfamily null}, }
+\item[{}]{\$vid, }
 \item[{}]{\$mid, }
-\item[{}]{\$format}
+\item[{}]{\$format = {\ttfamily \textquotesingle{}{\bf rss}\textquotesingle{}}, }
+\item[{}]{\$absolute\+\_\+url = {\ttfamily false}}
 \end{DoxyParamCaption}
-)}\label{classrssModel_afaab782e467091fb51103d386682bca8}
+)}\label{classrssModel_a2e188c3e11aab64655f3eb3d40b41ec3}
 Create the Feed url.
 
 
@@ -46,7 +47,9 @@ string & {\em \$vid} & Vid \\
 \hline
 string & {\em \$mid} & mid \\
 \hline
-string & {\em \$format} & Feed format. ef)xe, atom, rss1.\+0 \\
+string & {\em \$format} & Feed format. rss $\vert$ atom \\
+\hline
+bool & {\em \$absolute\+\_\+url} & \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -54,7 +57,7 @@ string
 \end{DoxyReturn}
 
 
-Definition at line 18 of file rss.\+model.\+php.
+Definition at line 19 of file rss.\+model.\+php.
 
 \hypertarget{classrssModel_a3c6f9fd398a931ff32038e2a48745bad}{}\index{rss\+Model@{rss\+Model}!get\+Rss\+Module\+Config@{get\+Rss\+Module\+Config}}
 \index{get\+Rss\+Module\+Config@{get\+Rss\+Module\+Config}!rss\+Model@{rss\+Model}}
@@ -75,7 +78,7 @@ integer & {\em \$module\+\_\+srl} & Module\+\_\+srl \\
 \end{DoxyReturn}
 
 
-Definition at line 45 of file rss.\+model.\+php.
+Definition at line 37 of file rss.\+model.\+php.
 
 
 

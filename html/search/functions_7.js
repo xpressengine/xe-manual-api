@@ -373,7 +373,7 @@ var searchData=
   ['getmoduleeditor',['getModuleEditor',['../classeditorModel.html#a7870d2a76cbc33a9dbaea3f865edd313',1,'editorModel']]],
   ['getmoduleextend',['getModuleExtend',['../classmoduleModel.html#a1dd3c03b874a4f6e05f6b5e8ec283665',1,'moduleModel']]],
   ['getmoduleextravars',['getModuleExtraVars',['../classmoduleModel.html#a4e93226573048a7b9c8e2cb842d0cb30',1,'moduleModel']]],
-  ['getmodulefeedurl',['getModuleFeedUrl',['../classrssModel.html#afaab782e467091fb51103d386682bca8',1,'rssModel']]],
+  ['getmodulefeedurl',['getModuleFeedUrl',['../classrssModel.html#a2e188c3e11aab64655f3eb3d40b41ec3',1,'rssModel']]],
   ['getmodulefilebox',['getModuleFileBox',['../classmoduleModel.html#a792e14b71d66044513a646a44216be17',1,'moduleModel']]],
   ['getmodulefileboxlist',['getModuleFileBoxList',['../classmoduleModel.html#a8f3a098b40649594a591e5ea8bd15d96',1,'moduleModel']]],
   ['getmodulefileboxpath',['getModuleFileBoxPath',['../classmoduleModel.html#ac1183d568d6dab443a83c8618e6eb348',1,'moduleModel']]],
