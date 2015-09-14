@@ -574,7 +574,7 @@ var searchData=
   ['geturl',['getUrl',['../classContext.html#aa60b75d32d4923bb3b9854985a82ce36',1,'Context\getUrl()'],['../classHTTP__Request2.html#a35d9ef6e266d90ad52a5037b70850694',1,'HTTP_Request2\getUrl()'],['../classNet__URL2.html#a77d3197589861087e09db160a78c7ee1',1,'Net_URL2\getURL()'],['../func_8inc_8php.html#accd14bda49a1044b4d8dd93f020f11ee',1,'getUrl():&#160;func.inc.php']]],
   ['getusedjoinformlist',['getUsedJoinFormList',['../classmemberModel.html#ab249b6e54c0b7d472d3cd50ad3b658dc',1,'memberModel']]],
   ['getuser',['getUser',['../classNet__URL2.html#ad06292db039e4723ce457f416fc61763',1,'Net_URL2']]],
-  ['getuserid',['getUserID',['../classcommentItem.html#a5c793e6542e731da5d465c35c77b42fd',1,'commentItem\getUserID()'],['../classdocumentItem.html#a66a8157a3cc7c82325eadcefe6390a58',1,'documentItem\getUserID()'],['../classTrashVO.html#a2e999529c316982b83362d5e3af98675',1,'TrashVO\getUserId()']]],
+  ['getuserid',['getUserId',['../classTrashVO.html#a2e999529c316982b83362d5e3af98675',1,'TrashVO\getUserId()'],['../classcommentItem.html#a5c793e6542e731da5d465c35c77b42fd',1,'commentItem\getUserID()'],['../classdocumentItem.html#a66a8157a3cc7c82325eadcefe6390a58',1,'documentItem\getUserID()']]],
   ['getuserinfo',['getUserinfo',['../classNet__URL2.html#a9249aba1b6b07ac8f992033cc865a455',1,'Net_URL2\getUserinfo()'],['../classPEAR__Error.html#a3933a88dc76b37aace3c333ce91f8560',1,'PEAR_Error\getUserInfo()']]],
   ['getuserlayoutcache',['getUserLayoutCache',['../classlayoutModel.html#a54bdf5ad29661e7d2e97e4831cf8832c',1,'layoutModel']]],
   ['getuserlayoutcss',['getUserLayoutCss',['../classlayoutModel.html#a1c4e0310f7fce01392ddae5eeb849a5c',1,'layoutModel']]],
