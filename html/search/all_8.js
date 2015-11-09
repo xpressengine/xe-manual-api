@@ -116,6 +116,7 @@ var searchData=
   ['getcssfile',['getCSSFile',['../classContext.html#a1b14cb135e24cc9c79414a50575cf309',1,'Context']]],
   ['getcssfilelist',['getCssFileList',['../classFrontEndFileHandler.html#a35cff5fb32625790d01e8839c73fd0fc',1,'FrontEndFileHandler']]],
   ['getcurrentlyselectedalgorithm',['getCurrentlySelectedAlgorithm',['../classPassword.html#afd4c3a1daf246f73845a1f0c60cd17d8',1,'Password']]],
+  ['getcurrentpageurl',['getCurrentPageUrl',['../func_8inc_8php.html#ae9a94dea2a8e11ebf9010683a124fabf',1,'func.inc.php']]],
   ['getdailyarchivedlist',['getDailyArchivedList',['../classdocumentModel.html#a9f7ad689da9b5a7b8f75fa2e48aec80a',1,'documentModel']]],
   ['getdbinfo',['getDBInfo',['../classContext.html#a54dd61c7b035a12697db8ca3f1c6849c',1,'Context']]],
   ['getdbtype',['getDBType',['../classContext.html#a2e90e7083bcc220daeec3d4d8d3bb427',1,'Context']]],
