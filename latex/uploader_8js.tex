@@ -1,0 +1,214 @@
+\hypertarget{uploader_8js}{}\section{modules/editor/tpl/js/uploader.js File Reference}
+\label{uploader_8js}\index{modules/editor/tpl/js/uploader.\+js@{modules/editor/tpl/js/uploader.\+js}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \hyperlink{uploader_8js_a7e7bbb7a9bf95a555f7887c3c33fae82}{init} (cfg, exe)
+\item 
+function \hyperlink{uploader_8js_a4f9bdb20d5425d94e90a4978fd6c427c}{start} (cfg)
+\item 
+function \hyperlink{uploader_8js_a0fb8186cf3fc4c90208422192a520840}{\+\_\+true} ()
+\item 
+function \hyperlink{uploader_8js_acfa8426745f5a83a6a502fc421025e7a}{reload\+File\+List} (cfg)
+\item 
+function \hyperlink{uploader_8js_a610c0c6d1815e5d30658d542aa1cebcc}{preview\+Files} (event, file\+\_\+srl)
+\item 
+function \hyperlink{uploader_8js_a0dfd5fa4dea4b7cce99639abbba6eda1}{remove\+Uploaded\+File} (editor\+Sequence)
+\item 
+function \hyperlink{uploader_8js_ad4a82f8f8584a510e0bc87cf1d26caf6}{insert\+Uploaded\+File} (editor\+Sequence)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \hyperlink{uploader_8js_ac8f09b6ddf8f7b79df43b2426b3fe588}{uploaded\+Files} = \mbox{[}$\,$\mbox{]}
+\begin{DoxyCompactList}\small\item\em 파일 업로드 관련 \end{DoxyCompactList}\item 
+var \hyperlink{uploader_8js_a2511d575bb6ee979ebe3d14cfcc5159a}{uploader\+Settings} = \mbox{[}$\,$\mbox{]}
+\item 
+var \hyperlink{uploader_8js_aed7a54bee03be527a0229fe8ba4c4cff}{loaded\+\_\+images} = \mbox{[}$\,$\mbox{]}
+\item 
+var \hyperlink{uploader_8js_ab5c275b15bddbdd41405ca7c8d32e08e}{swf\+Upload\+Objs} = \mbox{[}$\,$\mbox{]}
+\item 
+var \hyperlink{uploader_8js_a7952020549affd69f2188625a34826f8}{upload\+Setting\+Obj} = \mbox{[}$\,$\mbox{]}
+\item 
+var \hyperlink{uploader_8js_a85c34b5ddd7e70851ffa99772ec6332e}{upload\+Autosave\+Checker} = false
+\item 
+\hyperlink{uploader_8js_ab0b01965c6f86f00aa4ed5dc8a5b5e41}{default\+Handlers}
+\item 
+\hyperlink{jquery_8scrollTo-1_84_82_8js_a063b4c7da02a249e0a54d8af5d473cc2}{window} \hyperlink{uploader_8js_a323dc78b1f9c21456196aef30e841fee}{editor\+Upload\+Init} = \hyperlink{uploader_8js_a7e7bbb7a9bf95a555f7887c3c33fae82}{init}
+\item 
+\hyperlink{jquery_8scrollTo-1_84_82_8js_a063b4c7da02a249e0a54d8af5d473cc2}{window} \hyperlink{uploader_8js_a00a6fb943410dbac046c5cd451996cee}{reload\+File\+List} = reload\+File\+List
+\item 
+function \hyperlink{uploader_8js_a1e853eabf9d8ee3ac2700c9a2ddda672}{j\+Query}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{uploader.\+js@{uploader.\+js}!\+\_\+true@{\+\_\+true}}
+\index{\+\_\+true@{\+\_\+true}!uploader.\+js@{uploader.\+js}}
+\subsubsection[{\texorpdfstring{\+\_\+true()}{_true()}}]{\setlength{\rightskip}{0pt plus 5cm}function \+\_\+true (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{uploader_8js_a0fb8186cf3fc4c90208422192a520840}{}\label{uploader_8js_a0fb8186cf3fc4c90208422192a520840}
+
+
+Definition at line 141 of file uploader.\+js.
+
+\index{uploader.\+js@{uploader.\+js}!init@{init}}
+\index{init@{init}!uploader.\+js@{uploader.\+js}}
+\subsubsection[{\texorpdfstring{init(cfg, exe)}{init(cfg, exe)}}]{\setlength{\rightskip}{0pt plus 5cm}function init (
+\begin{DoxyParamCaption}
+\item[{}]{cfg, }
+\item[{}]{exe}
+\end{DoxyParamCaption}
+)}\hypertarget{uploader_8js_a7e7bbb7a9bf95a555f7887c3c33fae82}{}\label{uploader_8js_a7e7bbb7a9bf95a555f7887c3c33fae82}
+업로드를 하기 위한 준비 시작 이 함수는 editor.\+html 에서 파일 업로드 가능할 경우 호출됨 
+
+Definition at line 21 of file uploader.\+js.
+
+\index{uploader.\+js@{uploader.\+js}!insert\+Uploaded\+File@{insert\+Uploaded\+File}}
+\index{insert\+Uploaded\+File@{insert\+Uploaded\+File}!uploader.\+js@{uploader.\+js}}
+\subsubsection[{\texorpdfstring{insert\+Uploaded\+File(editor\+Sequence)}{insertUploadedFile(editorSequence)}}]{\setlength{\rightskip}{0pt plus 5cm}function insert\+Uploaded\+File (
+\begin{DoxyParamCaption}
+\item[{}]{editor\+Sequence}
+\end{DoxyParamCaption}
+)}\hypertarget{uploader_8js_ad4a82f8f8584a510e0bc87cf1d26caf6}{}\label{uploader_8js_ad4a82f8f8584a510e0bc87cf1d26caf6}
+
+
+Definition at line 394 of file uploader.\+js.
+
+\index{uploader.\+js@{uploader.\+js}!preview\+Files@{preview\+Files}}
+\index{preview\+Files@{preview\+Files}!uploader.\+js@{uploader.\+js}}
+\subsubsection[{\texorpdfstring{preview\+Files(event, file\+\_\+srl)}{previewFiles(event, file_srl)}}]{\setlength{\rightskip}{0pt plus 5cm}function preview\+Files (
+\begin{DoxyParamCaption}
+\item[{}]{event, }
+\item[{}]{file\+\_\+srl}
+\end{DoxyParamCaption}
+)}\hypertarget{uploader_8js_a610c0c6d1815e5d30658d542aa1cebcc}{}\label{uploader_8js_a610c0c6d1815e5d30658d542aa1cebcc}
+
+
+Definition at line 335 of file uploader.\+js.
+
+\index{uploader.\+js@{uploader.\+js}!reload\+File\+List@{reload\+File\+List}}
+\index{reload\+File\+List@{reload\+File\+List}!uploader.\+js@{uploader.\+js}}
+\subsubsection[{\texorpdfstring{reload\+File\+List(cfg)}{reloadFileList(cfg)}}]{\setlength{\rightskip}{0pt plus 5cm}function reload\+File\+List (
+\begin{DoxyParamCaption}
+\item[{}]{cfg}
+\end{DoxyParamCaption}
+)}\hypertarget{uploader_8js_acfa8426745f5a83a6a502fc421025e7a}{}\label{uploader_8js_acfa8426745f5a83a6a502fc421025e7a}
+
+
+Definition at line 252 of file uploader.\+js.
+
+\index{uploader.\+js@{uploader.\+js}!remove\+Uploaded\+File@{remove\+Uploaded\+File}}
+\index{remove\+Uploaded\+File@{remove\+Uploaded\+File}!uploader.\+js@{uploader.\+js}}
+\subsubsection[{\texorpdfstring{remove\+Uploaded\+File(editor\+Sequence)}{removeUploadedFile(editorSequence)}}]{\setlength{\rightskip}{0pt plus 5cm}function remove\+Uploaded\+File (
+\begin{DoxyParamCaption}
+\item[{}]{editor\+Sequence}
+\end{DoxyParamCaption}
+)}\hypertarget{uploader_8js_a0dfd5fa4dea4b7cce99639abbba6eda1}{}\label{uploader_8js_a0dfd5fa4dea4b7cce99639abbba6eda1}
+
+
+Definition at line 368 of file uploader.\+js.
+
+\index{uploader.\+js@{uploader.\+js}!start@{start}}
+\index{start@{start}!uploader.\+js@{uploader.\+js}}
+\subsubsection[{\texorpdfstring{start(cfg)}{start(cfg)}}]{\setlength{\rightskip}{0pt plus 5cm}function start (
+\begin{DoxyParamCaption}
+\item[{}]{cfg}
+\end{DoxyParamCaption}
+)}\hypertarget{uploader_8js_a4f9bdb20d5425d94e90a4978fd6c427c}{}\label{uploader_8js_a4f9bdb20d5425d94e90a4978fd6c427c}
+
+
+Definition at line 40 of file uploader.\+js.
+
+
+
+\subsection{Variable Documentation}
+\index{uploader.\+js@{uploader.\+js}!default\+Handlers@{default\+Handlers}}
+\index{default\+Handlers@{default\+Handlers}!uploader.\+js@{uploader.\+js}}
+\subsubsection[{\texorpdfstring{default\+Handlers}{defaultHandlers}}]{\setlength{\rightskip}{0pt plus 5cm}default\+Handlers}\hypertarget{uploader_8js_ab0b01965c6f86f00aa4ed5dc8a5b5e41}{}\label{uploader_8js_ab0b01965c6f86f00aa4ed5dc8a5b5e41}
+
+
+Definition at line 143 of file uploader.\+js.
+
+\index{uploader.\+js@{uploader.\+js}!editor\+Upload\+Init@{editor\+Upload\+Init}}
+\index{editor\+Upload\+Init@{editor\+Upload\+Init}!uploader.\+js@{uploader.\+js}}
+\subsubsection[{\texorpdfstring{editor\+Upload\+Init}{editorUploadInit}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf window} editor\+Upload\+Init = {\bf init}}\hypertarget{uploader_8js_a323dc78b1f9c21456196aef30e841fee}{}\label{uploader_8js_a323dc78b1f9c21456196aef30e841fee}
+
+
+Definition at line 327 of file uploader.\+js.
+
+\index{uploader.\+js@{uploader.\+js}!j\+Query@{j\+Query}}
+\index{j\+Query@{j\+Query}!uploader.\+js@{uploader.\+js}}
+\subsubsection[{\texorpdfstring{j\+Query}{jQuery}}]{\setlength{\rightskip}{0pt plus 5cm}function j\+Query}\hypertarget{uploader_8js_a1e853eabf9d8ee3ac2700c9a2ddda672}{}\label{uploader_8js_a1e853eabf9d8ee3ac2700c9a2ddda672}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{
+        \textcolor{keywordflow}{try} \{ \hyperlink{classdocument}{document}.execCommand(\textcolor{stringliteral}{'BackgroundImageCache'},\textcolor{keyword}{false},\textcolor{keyword}{true}); \} \textcolor{keywordflow}{catch}(
+      \hyperlink{html5_8js_a2c038346d47955cbe2cb91e338edd7e1}{e}) \{ \}
+    \})
+\end{DoxyCode}
+
+
+Definition at line 330 of file uploader.\+js.
+
+\index{uploader.\+js@{uploader.\+js}!loaded\+\_\+images@{loaded\+\_\+images}}
+\index{loaded\+\_\+images@{loaded\+\_\+images}!uploader.\+js@{uploader.\+js}}
+\subsubsection[{\texorpdfstring{loaded\+\_\+images}{loaded_images}}]{\setlength{\rightskip}{0pt plus 5cm}var loaded\+\_\+images = \mbox{[}$\,$\mbox{]}}\hypertarget{uploader_8js_aed7a54bee03be527a0229fe8ba4c4cff}{}\label{uploader_8js_aed7a54bee03be527a0229fe8ba4c4cff}
+
+
+Definition at line 8 of file uploader.\+js.
+
+\index{uploader.\+js@{uploader.\+js}!reload\+File\+List@{reload\+File\+List}}
+\index{reload\+File\+List@{reload\+File\+List}!uploader.\+js@{uploader.\+js}}
+\subsubsection[{\texorpdfstring{reload\+File\+List}{reloadFileList}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf window} reload\+File\+List = reload\+File\+List}\hypertarget{uploader_8js_a00a6fb943410dbac046c5cd451996cee}{}\label{uploader_8js_a00a6fb943410dbac046c5cd451996cee}
+
+
+Definition at line 328 of file uploader.\+js.
+
+\index{uploader.\+js@{uploader.\+js}!swf\+Upload\+Objs@{swf\+Upload\+Objs}}
+\index{swf\+Upload\+Objs@{swf\+Upload\+Objs}!uploader.\+js@{uploader.\+js}}
+\subsubsection[{\texorpdfstring{swf\+Upload\+Objs}{swfUploadObjs}}]{\setlength{\rightskip}{0pt plus 5cm}var swf\+Upload\+Objs = \mbox{[}$\,$\mbox{]}}\hypertarget{uploader_8js_ab5c275b15bddbdd41405ca7c8d32e08e}{}\label{uploader_8js_ab5c275b15bddbdd41405ca7c8d32e08e}
+
+
+Definition at line 9 of file uploader.\+js.
+
+\index{uploader.\+js@{uploader.\+js}!upload\+Autosave\+Checker@{upload\+Autosave\+Checker}}
+\index{upload\+Autosave\+Checker@{upload\+Autosave\+Checker}!uploader.\+js@{uploader.\+js}}
+\subsubsection[{\texorpdfstring{upload\+Autosave\+Checker}{uploadAutosaveChecker}}]{\setlength{\rightskip}{0pt plus 5cm}var upload\+Autosave\+Checker = false}\hypertarget{uploader_8js_a85c34b5ddd7e70851ffa99772ec6332e}{}\label{uploader_8js_a85c34b5ddd7e70851ffa99772ec6332e}
+
+
+Definition at line 11 of file uploader.\+js.
+
+\index{uploader.\+js@{uploader.\+js}!uploaded\+Files@{uploaded\+Files}}
+\index{uploaded\+Files@{uploaded\+Files}!uploader.\+js@{uploader.\+js}}
+\subsubsection[{\texorpdfstring{uploaded\+Files}{uploadedFiles}}]{\setlength{\rightskip}{0pt plus 5cm}var uploaded\+Files = \mbox{[}$\,$\mbox{]}}\hypertarget{uploader_8js_ac8f09b6ddf8f7b79df43b2426b3fe588}{}\label{uploader_8js_ac8f09b6ddf8f7b79df43b2426b3fe588}
+
+
+파일 업로드 관련 
+
+\begin{DoxyAuthor}{Author}
+N\+A\+V\+ER (\href{mailto:developers@xpressengine.com}{\tt developers@xpressengine.\+com}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1.\+1 
+\end{DoxyVersion}
+
+
+Definition at line 6 of file uploader.\+js.
+
+\index{uploader.\+js@{uploader.\+js}!uploader\+Settings@{uploader\+Settings}}
+\index{uploader\+Settings@{uploader\+Settings}!uploader.\+js@{uploader.\+js}}
+\subsubsection[{\texorpdfstring{uploader\+Settings}{uploaderSettings}}]{\setlength{\rightskip}{0pt plus 5cm}var uploader\+Settings = \mbox{[}$\,$\mbox{]}}\hypertarget{uploader_8js_a2511d575bb6ee979ebe3d14cfcc5159a}{}\label{uploader_8js_a2511d575bb6ee979ebe3d14cfcc5159a}
+
+
+Definition at line 7 of file uploader.\+js.
+
+\index{uploader.\+js@{uploader.\+js}!upload\+Setting\+Obj@{upload\+Setting\+Obj}}
+\index{upload\+Setting\+Obj@{upload\+Setting\+Obj}!uploader.\+js@{uploader.\+js}}
+\subsubsection[{\texorpdfstring{upload\+Setting\+Obj}{uploadSettingObj}}]{\setlength{\rightskip}{0pt plus 5cm}var upload\+Setting\+Obj = \mbox{[}$\,$\mbox{]}}\hypertarget{uploader_8js_a7952020549affd69f2188625a34826f8}{}\label{uploader_8js_a7952020549affd69f2188625a34826f8}
+
+
+Definition at line 10 of file uploader.\+js.
+

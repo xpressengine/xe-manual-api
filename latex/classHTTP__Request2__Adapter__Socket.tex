@@ -14,9 +14,9 @@ Inheritance diagram for H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket\
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-const \hyperlink{classHTTP__Request2__Adapter__Socket_a56beacc9218c6048c7f9ad5af80959eb}{R\+E\+G\+E\+X\+P\+\_\+\+T\+O\+K\+E\+N} = \textquotesingle{}\mbox{[}$^\wedge$\textbackslash{}x00-\/\textbackslash{}x1f\textbackslash{}x7f-\/\textbackslash{}xff()$<$$>$@,;\+:\textbackslash{}\textbackslash{}\textbackslash{}\textbackslash{}\char`\"{}/\textbackslash{}\mbox{[}\textbackslash{}\mbox{]}?=\{\}\textbackslash{}s\mbox{]}+\textquotesingle{}
+const \hyperlink{classHTTP__Request2__Adapter__Socket_a56beacc9218c6048c7f9ad5af80959eb}{R\+E\+G\+E\+X\+P\+\_\+\+T\+O\+K\+EN} = \textquotesingle{}\mbox{[}$^\wedge$\textbackslash{}x00-\/\textbackslash{}x1f\textbackslash{}x7f-\/\textbackslash{}xff()$<$$>$@,;\+:\textbackslash{}\textbackslash{}\textbackslash{}\textbackslash{}\char`\"{}/\textbackslash{}\mbox{[}\textbackslash{}\mbox{]}?=\{\}\textbackslash{}s\mbox{]}+\textquotesingle{}
 \item 
-const \hyperlink{classHTTP__Request2__Adapter__Socket_a6c107bbe3366105b84ab79ccedda35c9}{R\+E\+G\+E\+X\+P\+\_\+\+Q\+U\+O\+T\+E\+D\+\_\+\+S\+T\+R\+I\+N\+G} = \textquotesingle{}\char`\"{}(?$>$\mbox{[}$^\wedge$\char`\"{}\textbackslash{}\textbackslash{}\textbackslash{}\textbackslash{}\mbox{]}+$\vert$\textbackslash{}\textbackslash{}\textbackslash{}\textbackslash{}.)$\ast$\char`\"{}\textquotesingle{}
+const \hyperlink{classHTTP__Request2__Adapter__Socket_a6c107bbe3366105b84ab79ccedda35c9}{R\+E\+G\+E\+X\+P\+\_\+\+Q\+U\+O\+T\+E\+D\+\_\+\+S\+T\+R\+I\+NG} = \textquotesingle{}\char`\"{}(?$>$\mbox{[}$^\wedge$\char`\"{}\textbackslash{}\textbackslash{}\textbackslash{}\textbackslash{}\mbox{]}+$\vert$\textbackslash{}\textbackslash{}\textbackslash{}\textbackslash{}.)$\ast$\char`\"{}\textquotesingle{}
 \end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
@@ -39,7 +39,7 @@ const \hyperlink{classHTTP__Request2__Adapter__Socket_a6c107bbe3366105b84ab79cce
 \item 
 \hyperlink{classHTTP__Request2__Adapter__Socket_abe6b620d64a56d799cd9367aedf3c0e6}{update\+Challenge} (\&\$challenge, \$header\+Value)
 \item 
-\hyperlink{classHTTP__Request2__Adapter__Socket_a8eeccb83fca751fd43b3035e31243940}{create\+Digest\+Response} (\$user, \$password, \$url, \&\$challenge)
+\hyperlink{classHTTP__Request2__Adapter__Socket_a8eeccb83fca751fd43b3035e31243940}{create\+Digest\+Response} (\$user, \$password, \$\hyperlink{swfupload_8js_a440a52a9004fdab0700100a6ddb49f67}{url}, \&\$challenge)
 \item 
 \hyperlink{classHTTP__Request2__Adapter__Socket_af09e76396d487dae2bfc85b789c8f73b}{add\+Authorization\+Header} (\&\$headers, \$request\+Host, \$request\+Url)
 \item 
@@ -66,7 +66,7 @@ const \hyperlink{classHTTP__Request2__Adapter__Socket_a6c107bbe3366105b84ab79cce
 \item 
 \hyperlink{classHTTP__Request2__Adapter__Socket_add96406caddf7540cc0525dee2aa479f}{\$chunk\+Length} = 0
 \item 
-\hyperlink{classHTTP__Request2__Adapter__Socket_a667d94f4db2e719a1c17809a3ff3d355}{\$redirect\+Countdown} = null
+\hyperlink{classHTTP__Request2__Adapter__Socket_a667d94f4db2e719a1c17809a3ff3d355}{\$redirect\+Countdown} = \hyperlink{modernizr_8min_8js_a286f9ec831c5e676eeb493248eab9575}{null}
 \item 
 \hyperlink{classHTTP__Request2__Adapter__Socket_afd2a8a4a59755ae2fb901741774cb02c}{\$expect100\+Continue} = false
 \end{DoxyCompactItemize}
@@ -87,15 +87,15 @@ Definition at line 40 of file Socket.\+php.
 
 
 \subsection{Member Function Documentation}
-\hypertarget{classHTTP__Request2__Adapter__Socket_af09e76396d487dae2bfc85b789c8f73b}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}!add\+Authorization\+Header@{add\+Authorization\+Header}}
+\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}!add\+Authorization\+Header@{add\+Authorization\+Header}}
 \index{add\+Authorization\+Header@{add\+Authorization\+Header}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}}
-\subsubsection[{add\+Authorization\+Header}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket\+::add\+Authorization\+Header (
+\subsubsection[{\texorpdfstring{add\+Authorization\+Header(\&\$headers, \$request\+Host, \$request\+Url)}{addAuthorizationHeader(&$headers, $requestHost, $requestUrl)}}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket\+::add\+Authorization\+Header (
 \begin{DoxyParamCaption}
 \item[{\&}]{\$headers, }
 \item[{}]{\$request\+Host, }
 \item[{}]{\$request\+Url}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [protected]}}\label{classHTTP__Request2__Adapter__Socket_af09e76396d487dae2bfc85b789c8f73b}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classHTTP__Request2__Adapter__Socket_af09e76396d487dae2bfc85b789c8f73b}{}\label{classHTTP__Request2__Adapter__Socket_af09e76396d487dae2bfc85b789c8f73b}
 Adds \textquotesingle{}Authorization\textquotesingle{} header (if needed) to request headers array
 
 
@@ -104,7 +104,7 @@ array & {\em \&\$headers} & request headers \\
 \hline
 string & {\em \$request\+Host} & request host (needed for digest authentication) \\
 \hline
-string & {\em \$request\+Url} & request U\+R\+L (needed for digest authentication)\\
+string & {\em \$request\+Url} & request U\+RL (needed for digest authentication)\\
 \hline
 \end{DoxyParams}
 
@@ -116,21 +116,21 @@ string & {\em \$request\+Url} & request U\+R\+L (needed for digest authenticatio
 
 Definition at line 729 of file Socket.\+php.
 
-\hypertarget{classHTTP__Request2__Adapter__Socket_a65649f201171f34f2db163033fbfde27}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}!add\+Proxy\+Authorization\+Header@{add\+Proxy\+Authorization\+Header}}
+\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}!add\+Proxy\+Authorization\+Header@{add\+Proxy\+Authorization\+Header}}
 \index{add\+Proxy\+Authorization\+Header@{add\+Proxy\+Authorization\+Header}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}}
-\subsubsection[{add\+Proxy\+Authorization\+Header}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket\+::add\+Proxy\+Authorization\+Header (
+\subsubsection[{\texorpdfstring{add\+Proxy\+Authorization\+Header(\&\$headers, \$request\+Url)}{addProxyAuthorizationHeader(&$headers, $requestUrl)}}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket\+::add\+Proxy\+Authorization\+Header (
 \begin{DoxyParamCaption}
 \item[{\&}]{\$headers, }
 \item[{}]{\$request\+Url}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [protected]}}\label{classHTTP__Request2__Adapter__Socket_a65649f201171f34f2db163033fbfde27}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classHTTP__Request2__Adapter__Socket_a65649f201171f34f2db163033fbfde27}{}\label{classHTTP__Request2__Adapter__Socket_a65649f201171f34f2db163033fbfde27}
 Adds \textquotesingle{}Proxy-\/\+Authorization\textquotesingle{} header (if needed) to request headers array
 
 
 \begin{DoxyParams}[1]{Parameters}
 array & {\em \&\$headers} & request headers \\
 \hline
-string & {\em \$request\+Url} & request U\+R\+L (needed for digest authentication)\\
+string & {\em \$request\+Url} & request U\+RL (needed for digest authentication)\\
 \hline
 \end{DoxyParams}
 
@@ -142,14 +142,14 @@ string & {\em \$request\+Url} & request U\+R\+L (needed for digest authenticatio
 
 Definition at line 774 of file Socket.\+php.
 
-\hypertarget{classHTTP__Request2__Adapter__Socket_a5171c1e7af2244777b09a8078ed5c667}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}!can\+Keep\+Alive@{can\+Keep\+Alive}}
+\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}!can\+Keep\+Alive@{can\+Keep\+Alive}}
 \index{can\+Keep\+Alive@{can\+Keep\+Alive}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}}
-\subsubsection[{can\+Keep\+Alive}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket\+::can\+Keep\+Alive (
+\subsubsection[{\texorpdfstring{can\+Keep\+Alive(\$request\+Keep\+Alive, H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response \$response)}{canKeepAlive($requestKeepAlive, HTTP_Request2_Response $response)}}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket\+::can\+Keep\+Alive (
 \begin{DoxyParamCaption}
 \item[{}]{\$request\+Keep\+Alive, }
 \item[{{\bf H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response}}]{\$response}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [protected]}}\label{classHTTP__Request2__Adapter__Socket_a5171c1e7af2244777b09a8078ed5c667}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classHTTP__Request2__Adapter__Socket_a5171c1e7af2244777b09a8078ed5c667}{}\label{classHTTP__Request2__Adapter__Socket_a5171c1e7af2244777b09a8078ed5c667}
 Checks whether current connection may be reused or should be closed
 
 
@@ -166,13 +166,13 @@ boolean
 
 Definition at line 372 of file Socket.\+php.
 
-\hypertarget{classHTTP__Request2__Adapter__Socket_a84b2a17c74b0dc0eb8ac7403adbeffc9}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}!connect@{connect}}
+\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}!connect@{connect}}
 \index{connect@{connect}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}}
-\subsubsection[{connect}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket\+::connect (
+\subsubsection[{\texorpdfstring{connect()}{connect()}}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket\+::connect (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [protected]}}\label{classHTTP__Request2__Adapter__Socket_a84b2a17c74b0dc0eb8ac7403adbeffc9}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classHTTP__Request2__Adapter__Socket_a84b2a17c74b0dc0eb8ac7403adbeffc9}{}\label{classHTTP__Request2__Adapter__Socket_a84b2a17c74b0dc0eb8ac7403adbeffc9}
 Connects to the remote server
 
 \begin{DoxyReturn}{Returns}
@@ -187,16 +187,16 @@ bool whether the connection can be persistent
 
 Definition at line 195 of file Socket.\+php.
 
-\hypertarget{classHTTP__Request2__Adapter__Socket_a8eeccb83fca751fd43b3035e31243940}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}!create\+Digest\+Response@{create\+Digest\+Response}}
+\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}!create\+Digest\+Response@{create\+Digest\+Response}}
 \index{create\+Digest\+Response@{create\+Digest\+Response}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}}
-\subsubsection[{create\+Digest\+Response}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket\+::create\+Digest\+Response (
+\subsubsection[{\texorpdfstring{create\+Digest\+Response(\$user, \$password, \$url, \&\$challenge)}{createDigestResponse($user, $password, $url, &$challenge)}}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket\+::create\+Digest\+Response (
 \begin{DoxyParamCaption}
 \item[{}]{\$user, }
 \item[{}]{\$password, }
 \item[{}]{\$url, }
 \item[{\&}]{\$challenge}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [protected]}}\label{classHTTP__Request2__Adapter__Socket_a8eeccb83fca751fd43b3035e31243940}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classHTTP__Request2__Adapter__Socket_a8eeccb83fca751fd43b3035e31243940}{}\label{classHTTP__Request2__Adapter__Socket_a8eeccb83fca751fd43b3035e31243940}
 Creates a value for \mbox{[}Proxy-\/\mbox{]}Authorization header when using digest authentication
 
 
@@ -205,7 +205,7 @@ string & {\em \$user} & user name \\
 \hline
 string & {\em \$password} & password \\
 \hline
-string & {\em \$url} & request U\+R\+L \\
+string & {\em \$url} & request U\+RL \\
 \hline
 array & {\em \&\$challenge} & digest challenge parameters\\
 \hline
@@ -217,43 +217,43 @@ string value of \mbox{[}Proxy-\/\mbox{]}Authorization request header \hyperlink{
 
 Definition at line 683 of file Socket.\+php.
 
-\hypertarget{classHTTP__Request2__Adapter__Socket_a20cf7acb1fb9f0f80929ec368fc4ff8f}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}!disconnect@{disconnect}}
+\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}!disconnect@{disconnect}}
 \index{disconnect@{disconnect}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}}
-\subsubsection[{disconnect}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket\+::disconnect (
+\subsubsection[{\texorpdfstring{disconnect()}{disconnect()}}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket\+::disconnect (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [protected]}}\label{classHTTP__Request2__Adapter__Socket_a20cf7acb1fb9f0f80929ec368fc4ff8f}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classHTTP__Request2__Adapter__Socket_a20cf7acb1fb9f0f80929ec368fc4ff8f}{}\label{classHTTP__Request2__Adapter__Socket_a20cf7acb1fb9f0f80929ec368fc4ff8f}
 Disconnects from the remote server 
 
 Definition at line 395 of file Socket.\+php.
 
-\hypertarget{classHTTP__Request2__Adapter__Socket_a924bbeb198c174580c109eb563079296}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}!establish\+Tunnel@{establish\+Tunnel}}
+\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}!establish\+Tunnel@{establish\+Tunnel}}
 \index{establish\+Tunnel@{establish\+Tunnel}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}}
-\subsubsection[{establish\+Tunnel}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket\+::establish\+Tunnel (
+\subsubsection[{\texorpdfstring{establish\+Tunnel()}{establishTunnel()}}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket\+::establish\+Tunnel (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [protected]}}\label{classHTTP__Request2__Adapter__Socket_a924bbeb198c174580c109eb563079296}
-Establishes a tunnel to a secure remote server via H\+T\+T\+P C\+O\+N\+N\+E\+C\+T request
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classHTTP__Request2__Adapter__Socket_a924bbeb198c174580c109eb563079296}{}\label{classHTTP__Request2__Adapter__Socket_a924bbeb198c174580c109eb563079296}
+Establishes a tunnel to a secure remote server via H\+T\+TP C\+O\+N\+N\+E\+CT request
 
-This method will fail if \textquotesingle{}ssl\+\_\+verify\+\_\+peer\textquotesingle{} is enabled. Probably because P\+H\+P sees that we are connected to a proxy server (duh!) rather than the server that presents its certificate.
+This method will fail if \textquotesingle{}ssl\+\_\+verify\+\_\+peer\textquotesingle{} is enabled. Probably because P\+HP sees that we are connected to a proxy server (duh!) rather than the server that presents its certificate.
 
 \hyperlink{}{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Exception }
 
 Definition at line 344 of file Socket.\+php.
 
-\hypertarget{classHTTP__Request2__Adapter__Socket_aa60407169d7f2faee49d32a6d48d1f3e}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}!handle\+Redirect@{handle\+Redirect}}
+\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}!handle\+Redirect@{handle\+Redirect}}
 \index{handle\+Redirect@{handle\+Redirect}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}}
-\subsubsection[{handle\+Redirect}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket\+::handle\+Redirect (
+\subsubsection[{\texorpdfstring{handle\+Redirect(\+H\+T\+T\+P\+\_\+\+Request2 \$request, H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response \$response)}{handleRedirect(HTTP_Request2 $request, HTTP_Request2_Response $response)}}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket\+::handle\+Redirect (
 \begin{DoxyParamCaption}
 \item[{{\bf H\+T\+T\+P\+\_\+\+Request2}}]{\$request, }
 \item[{{\bf H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response}}]{\$response}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [protected]}}\label{classHTTP__Request2__Adapter__Socket_aa60407169d7f2faee49d32a6d48d1f3e}
-Handles H\+T\+T\+P redirection
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classHTTP__Request2__Adapter__Socket_aa60407169d7f2faee49d32a6d48d1f3e}{}\label{classHTTP__Request2__Adapter__Socket_aa60407169d7f2faee49d32a6d48d1f3e}
+Handles H\+T\+TP redirection
 
-This method will throw an Exception if redirect to a non-\/\+H\+T\+T\+P(S) location is attempted, also if number of redirects performed already is equal to \textquotesingle{}max\+\_\+redirects\textquotesingle{} configuration parameter.
+This method will throw an Exception if redirect to a non-\/\+H\+T\+TP(S) location is attempted, also if number of redirects performed already is equal to \textquotesingle{}max\+\_\+redirects\textquotesingle{} configuration parameter.
 
 
 \begin{DoxyParams}[1]{Parameters}
@@ -274,25 +274,25 @@ This method will throw an Exception if redirect to a non-\/\+H\+T\+T\+P(S) locat
 
 Definition at line 416 of file Socket.\+php.
 
-\hypertarget{classHTTP__Request2__Adapter__Socket_a271d3c7e7ce64e2acc6f560187c8a7cb}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}!parse\+Digest\+Challenge@{parse\+Digest\+Challenge}}
+\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}!parse\+Digest\+Challenge@{parse\+Digest\+Challenge}}
 \index{parse\+Digest\+Challenge@{parse\+Digest\+Challenge}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}}
-\subsubsection[{parse\+Digest\+Challenge}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket\+::parse\+Digest\+Challenge (
+\subsubsection[{\texorpdfstring{parse\+Digest\+Challenge(\$header\+Value)}{parseDigestChallenge($headerValue)}}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket\+::parse\+Digest\+Challenge (
 \begin{DoxyParamCaption}
 \item[{}]{\$header\+Value}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [protected]}}\label{classHTTP__Request2__Adapter__Socket_a271d3c7e7ce64e2acc6f560187c8a7cb}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classHTTP__Request2__Adapter__Socket_a271d3c7e7ce64e2acc6f560187c8a7cb}{}\label{classHTTP__Request2__Adapter__Socket_a271d3c7e7ce64e2acc6f560187c8a7cb}
 Extracts digest method challenge from (W\+W\+W$\vert$\+Proxy)-\/\+Authenticate header value
 
-There is a problem with implementation of R\+F\+C 2617\+: several of the parameters are defined as quoted-\/string there and thus may contain backslash escaped double quotes (R\+F\+C 2616, section 2.\+2). However, R\+F\+C 2617 defines unq(\+X) as just value of quoted-\/string X without surrounding quotes, it doesn\textquotesingle{}t speak about removing backslash escaping.
+There is a problem with implementation of R\+FC 2617\+: several of the parameters are defined as quoted-\/string there and thus may contain backslash escaped double quotes (R\+FC 2616, section 2.\+2). However, R\+FC 2617 defines unq(\+X) as just value of quoted-\/string X without surrounding quotes, it doesn\textquotesingle{}t speak about removing backslash escaping.
 
 Now realm parameter is user-\/defined and human-\/readable, strange things happen when it contains quotes\+:
 \begin{DoxyItemize}
 \item Apache allows quotes in realm, but apparently uses realm value without backslashes for digest computation
 \item Squid allows (manually escaped) quotes there, but it is impossible to authorize with either escaped or unescaped quotes used in digest, probably it can\textquotesingle{}t parse the response (?)
-\item Both I\+E and Firefox display realm value with backslashes in the password popup and apparently use the same value for digest
+\item Both IE and Firefox display realm value with backslashes in the password popup and apparently use the same value for digest
 \end{DoxyItemize}
 
-\hyperlink{classHTTP__Request2}{H\+T\+T\+P\+\_\+\+Request2} follows I\+E and Firefox (and hopefully R\+F\+C 2617) in quoted-\/string handling, unfortunately that means failure to authorize sometimes
+\hyperlink{classHTTP__Request2}{H\+T\+T\+P\+\_\+\+Request2} follows IE and Firefox (and hopefully R\+FC 2617) in quoted-\/string handling, unfortunately that means failure to authorize sometimes
 
 
 \begin{DoxyParams}[1]{Parameters}
@@ -311,13 +311,13 @@ mixed associative array with challenge parameters, false if no challenge is pres
 
 Definition at line 600 of file Socket.\+php.
 
-\hypertarget{classHTTP__Request2__Adapter__Socket_a8715074a6226005aa4db694a899c759b}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}!prepare\+Headers@{prepare\+Headers}}
+\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}!prepare\+Headers@{prepare\+Headers}}
 \index{prepare\+Headers@{prepare\+Headers}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}}
-\subsubsection[{prepare\+Headers}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket\+::prepare\+Headers (
+\subsubsection[{\texorpdfstring{prepare\+Headers()}{prepareHeaders()}}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket\+::prepare\+Headers (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [protected]}}\label{classHTTP__Request2__Adapter__Socket_a8715074a6226005aa4db694a899c759b}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classHTTP__Request2__Adapter__Socket_a8715074a6226005aa4db694a899c759b}{}\label{classHTTP__Request2__Adapter__Socket_a8715074a6226005aa4db694a899c759b}
 Creates the string with the Request-\/\+Line and request headers
 
 \begin{DoxyReturn}{Returns}
@@ -332,13 +332,13 @@ string
 
 Definition at line 820 of file Socket.\+php.
 
-\hypertarget{classHTTP__Request2__Adapter__Socket_a2a5a784d7631133a5713476ee96c62ed}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}!read\+Chunked@{read\+Chunked}}
+\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}!read\+Chunked@{read\+Chunked}}
 \index{read\+Chunked@{read\+Chunked}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}}
-\subsubsection[{read\+Chunked}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket\+::read\+Chunked (
+\subsubsection[{\texorpdfstring{read\+Chunked(\$buffer\+Size)}{readChunked($bufferSize)}}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket\+::read\+Chunked (
 \begin{DoxyParamCaption}
 \item[{}]{\$buffer\+Size}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [protected]}}\label{classHTTP__Request2__Adapter__Socket_a2a5a784d7631133a5713476ee96c62ed}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classHTTP__Request2__Adapter__Socket_a2a5a784d7631133a5713476ee96c62ed}{}\label{classHTTP__Request2__Adapter__Socket_a2a5a784d7631133a5713476ee96c62ed}
 Reads a part of response body encoded with chunked Transfer-\/\+Encoding
 
 
@@ -358,13 +358,13 @@ string
 
 Definition at line 1093 of file Socket.\+php.
 
-\hypertarget{classHTTP__Request2__Adapter__Socket_ace322a437e3d44b48bd44c2d452e0ad0}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}!read\+Response@{read\+Response}}
+\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}!read\+Response@{read\+Response}}
 \index{read\+Response@{read\+Response}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}}
-\subsubsection[{read\+Response}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket\+::read\+Response (
+\subsubsection[{\texorpdfstring{read\+Response()}{readResponse()}}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket\+::read\+Response (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [protected]}}\label{classHTTP__Request2__Adapter__Socket_ace322a437e3d44b48bd44c2d452e0ad0}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classHTTP__Request2__Adapter__Socket_ace322a437e3d44b48bd44c2d452e0ad0}{}\label{classHTTP__Request2__Adapter__Socket_ace322a437e3d44b48bd44c2d452e0ad0}
 Reads the remote server\textquotesingle{}s response
 
 \begin{DoxyReturn}{Returns}
@@ -379,18 +379,18 @@ Reads the remote server\textquotesingle{}s response
 
 Definition at line 1002 of file Socket.\+php.
 
-\hypertarget{classHTTP__Request2__Adapter__Socket_ac601f7f165d0771e38f680a1f159fe79}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}!send\+Request@{send\+Request}}
+\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}!send\+Request@{send\+Request}}
 \index{send\+Request@{send\+Request}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}}
-\subsubsection[{send\+Request}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket\+::send\+Request (
+\subsubsection[{\texorpdfstring{send\+Request(\+H\+T\+T\+P\+\_\+\+Request2 \$request)}{sendRequest(HTTP_Request2 $request)}}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket\+::send\+Request (
 \begin{DoxyParamCaption}
 \item[{{\bf H\+T\+T\+P\+\_\+\+Request2}}]{\$request}
 \end{DoxyParamCaption}
-)}\label{classHTTP__Request2__Adapter__Socket_ac601f7f165d0771e38f680a1f159fe79}
+)}\hypertarget{classHTTP__Request2__Adapter__Socket_ac601f7f165d0771e38f680a1f159fe79}{}\label{classHTTP__Request2__Adapter__Socket_ac601f7f165d0771e38f680a1f159fe79}
 Sends request to the remote server and returns its response
 
 
 \begin{DoxyParams}[1]{Parameters}
-\hyperlink{classHTTP__Request2}{H\+T\+T\+P\+\_\+\+Request2} & {\em \$request} & H\+T\+T\+P request message\\
+\hyperlink{classHTTP__Request2}{H\+T\+T\+P\+\_\+\+Request2} & {\em \$request} & H\+T\+TP request message\\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -405,13 +405,13 @@ Sends request to the remote server and returns its response
 
 Definition at line 123 of file Socket.\+php.
 
-\hypertarget{classHTTP__Request2__Adapter__Socket_af26e1fe3de20a109ff76fbadab10ec28}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}!should\+Use\+Proxy\+Digest\+Auth@{should\+Use\+Proxy\+Digest\+Auth}}
+\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}!should\+Use\+Proxy\+Digest\+Auth@{should\+Use\+Proxy\+Digest\+Auth}}
 \index{should\+Use\+Proxy\+Digest\+Auth@{should\+Use\+Proxy\+Digest\+Auth}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}}
-\subsubsection[{should\+Use\+Proxy\+Digest\+Auth}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket\+::should\+Use\+Proxy\+Digest\+Auth (
+\subsubsection[{\texorpdfstring{should\+Use\+Proxy\+Digest\+Auth(\+H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response \$response)}{shouldUseProxyDigestAuth(HTTP_Request2_Response $response)}}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket\+::should\+Use\+Proxy\+Digest\+Auth (
 \begin{DoxyParamCaption}
 \item[{{\bf H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response}}]{\$response}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [protected]}}\label{classHTTP__Request2__Adapter__Socket_af26e1fe3de20a109ff76fbadab10ec28}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classHTTP__Request2__Adapter__Socket_af26e1fe3de20a109ff76fbadab10ec28}{}\label{classHTTP__Request2__Adapter__Socket_af26e1fe3de20a109ff76fbadab10ec28}
 Checks whether another request should be performed with proxy digest auth
 
 Several conditions should be satisfied for it to return true\+:
@@ -441,13 +441,13 @@ boolean whether another request should be performed
 
 Definition at line 548 of file Socket.\+php.
 
-\hypertarget{classHTTP__Request2__Adapter__Socket_a3d9def9a7ef3725d00b81fa224eedeb3}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}!should\+Use\+Server\+Digest\+Auth@{should\+Use\+Server\+Digest\+Auth}}
+\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}!should\+Use\+Server\+Digest\+Auth@{should\+Use\+Server\+Digest\+Auth}}
 \index{should\+Use\+Server\+Digest\+Auth@{should\+Use\+Server\+Digest\+Auth}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}}
-\subsubsection[{should\+Use\+Server\+Digest\+Auth}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket\+::should\+Use\+Server\+Digest\+Auth (
+\subsubsection[{\texorpdfstring{should\+Use\+Server\+Digest\+Auth(\+H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response \$response)}{shouldUseServerDigestAuth(HTTP_Request2_Response $response)}}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket\+::should\+Use\+Server\+Digest\+Auth (
 \begin{DoxyParamCaption}
 \item[{{\bf H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response}}]{\$response}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [protected]}}\label{classHTTP__Request2__Adapter__Socket_a3d9def9a7ef3725d00b81fa224eedeb3}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classHTTP__Request2__Adapter__Socket_a3d9def9a7ef3725d00b81fa224eedeb3}{}\label{classHTTP__Request2__Adapter__Socket_a3d9def9a7ef3725d00b81fa224eedeb3}
 Checks whether another request should be performed with server digest auth
 
 Several conditions should be satisfied for it to return true\+:
@@ -455,7 +455,7 @@ Several conditions should be satisfied for it to return true\+:
 \item response status should be 401
 \item auth credentials should be set in the request object
 \item response should contain W\+W\+W-\/\+Authenticate header with digest challenge
-\item there is either no challenge stored for this U\+R\+L or new challenge contains stale=true parameter (in other case we probably just failed due to invalid username / password)
+\item there is either no challenge stored for this U\+RL or new challenge contains stale=true parameter (in other case we probably just failed due to invalid username / password)
 \end{DoxyItemize}
 
 The method stores challenge values in \$challenges static property
@@ -477,14 +477,14 @@ boolean whether another request should be performed
 
 Definition at line 483 of file Socket.\+php.
 
-\hypertarget{classHTTP__Request2__Adapter__Socket_abe6b620d64a56d799cd9367aedf3c0e6}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}!update\+Challenge@{update\+Challenge}}
+\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}!update\+Challenge@{update\+Challenge}}
 \index{update\+Challenge@{update\+Challenge}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}}
-\subsubsection[{update\+Challenge}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket\+::update\+Challenge (
+\subsubsection[{\texorpdfstring{update\+Challenge(\&\$challenge, \$header\+Value)}{updateChallenge(&$challenge, $headerValue)}}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket\+::update\+Challenge (
 \begin{DoxyParamCaption}
 \item[{\&}]{\$challenge, }
 \item[{}]{\$header\+Value}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [protected]}}\label{classHTTP__Request2__Adapter__Socket_abe6b620d64a56d799cd9367aedf3c0e6}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classHTTP__Request2__Adapter__Socket_abe6b620d64a56d799cd9367aedf3c0e6}{}\label{classHTTP__Request2__Adapter__Socket_abe6b620d64a56d799cd9367aedf3c0e6}
 Parses \mbox{[}Proxy-\/\mbox{]}Authentication-\/\+Info header value and updates challenge
 
 
@@ -500,17 +500,17 @@ string & {\em \$header\+Value} & value of \mbox{[}Proxy-\/\mbox{]}Authentication
 
 Definition at line 651 of file Socket.\+php.
 
-\hypertarget{classHTTP__Request2__Adapter__Socket_a7a547941e41ce97677f3217284a0c447}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}!update\+Expect\+Header@{update\+Expect\+Header}}
+\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}!update\+Expect\+Header@{update\+Expect\+Header}}
 \index{update\+Expect\+Header@{update\+Expect\+Header}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}}
-\subsubsection[{update\+Expect\+Header}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket\+::update\+Expect\+Header (
+\subsubsection[{\texorpdfstring{update\+Expect\+Header(\&\$headers)}{updateExpectHeader(&$headers)}}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket\+::update\+Expect\+Header (
 \begin{DoxyParamCaption}
 \item[{\&}]{\$headers}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [protected]}}\label{classHTTP__Request2__Adapter__Socket_a7a547941e41ce97677f3217284a0c447}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classHTTP__Request2__Adapter__Socket_a7a547941e41ce97677f3217284a0c447}{}\label{classHTTP__Request2__Adapter__Socket_a7a547941e41ce97677f3217284a0c447}
 Adds or removes \textquotesingle{}Expect\+: 100-\/continue\textquotesingle{} header from request headers
 
-Also sets the \$expect100\+Continue property. Parsing of existing header is somewhat needed due to its complex structure and due to the requirement in section 8.\+2.\+3 of R\+F\+C 2616\+: \begin{quote}
-A client M\+U\+S\+T N\+O\+T send an Expect request-\/header field (section 14.\+20) with the \char`\"{}100-\/continue\char`\"{} expectation if it does not intend to send a request body. \end{quote}
+Also sets the \$expect100\+Continue property. Parsing of existing header is somewhat needed due to its complex structure and due to the requirement in section 8.\+2.\+3 of R\+FC 2616\+: \begin{quote}
+A client M\+U\+ST N\+OT send an Expect request-\/header field (section 14.\+20) with the \char`\"{}100-\/continue\char`\"{} expectation if it does not intend to send a request body. \end{quote}
 
 
 
@@ -527,13 +527,13 @@ array & {\em \&\$headers} & Array of headers prepared for the request\\
 
 Definition at line 898 of file Socket.\+php.
 
-\hypertarget{classHTTP__Request2__Adapter__Socket_a091decf5cd08db3d422e3d50dafa4122}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}!write\+Body@{write\+Body}}
+\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}!write\+Body@{write\+Body}}
 \index{write\+Body@{write\+Body}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}}
-\subsubsection[{write\+Body}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket\+::write\+Body (
+\subsubsection[{\texorpdfstring{write\+Body()}{writeBody()}}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket\+::write\+Body (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [protected]}}\label{classHTTP__Request2__Adapter__Socket_a091decf5cd08db3d422e3d50dafa4122}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classHTTP__Request2__Adapter__Socket_a091decf5cd08db3d422e3d50dafa4122}{}\label{classHTTP__Request2__Adapter__Socket_a091decf5cd08db3d422e3d50dafa4122}
 Sends the request body
 
 
@@ -548,73 +548,73 @@ Definition at line 959 of file Socket.\+php.
 
 
 \subsection{Member Data Documentation}
-\hypertarget{classHTTP__Request2__Adapter__Socket_ae4456b3dff588030e66270e99d29e589}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}!\$challenges@{\$challenges}}
+\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}!\$challenges@{\$challenges}}
 \index{\$challenges@{\$challenges}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}}
-\subsubsection[{\$challenges}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket\+::\$challenges = array()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}\label{classHTTP__Request2__Adapter__Socket_ae4456b3dff588030e66270e99d29e589}
+\subsubsection[{\texorpdfstring{\$challenges}{$challenges}}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket\+::\$challenges = array()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}\hypertarget{classHTTP__Request2__Adapter__Socket_ae4456b3dff588030e66270e99d29e589}{}\label{classHTTP__Request2__Adapter__Socket_ae4456b3dff588030e66270e99d29e589}
 
 
 Definition at line 71 of file Socket.\+php.
 
-\hypertarget{classHTTP__Request2__Adapter__Socket_add96406caddf7540cc0525dee2aa479f}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}!\$chunk\+Length@{\$chunk\+Length}}
+\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}!\$chunk\+Length@{\$chunk\+Length}}
 \index{\$chunk\+Length@{\$chunk\+Length}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}}
-\subsubsection[{\$chunk\+Length}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket\+::\$chunk\+Length = 0\hspace{0.3cm}{\ttfamily [protected]}}\label{classHTTP__Request2__Adapter__Socket_add96406caddf7540cc0525dee2aa479f}
+\subsubsection[{\texorpdfstring{\$chunk\+Length}{$chunkLength}}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket\+::\$chunk\+Length = 0\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classHTTP__Request2__Adapter__Socket_add96406caddf7540cc0525dee2aa479f}{}\label{classHTTP__Request2__Adapter__Socket_add96406caddf7540cc0525dee2aa479f}
 
 
 Definition at line 97 of file Socket.\+php.
 
-\hypertarget{classHTTP__Request2__Adapter__Socket_afd2a8a4a59755ae2fb901741774cb02c}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}!\$expect100\+Continue@{\$expect100\+Continue}}
+\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}!\$expect100\+Continue@{\$expect100\+Continue}}
 \index{\$expect100\+Continue@{\$expect100\+Continue}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}}
-\subsubsection[{\$expect100\+Continue}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket\+::\$expect100\+Continue = false\hspace{0.3cm}{\ttfamily [protected]}}\label{classHTTP__Request2__Adapter__Socket_afd2a8a4a59755ae2fb901741774cb02c}
+\subsubsection[{\texorpdfstring{\$expect100\+Continue}{$expect100Continue}}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket\+::\$expect100\+Continue = false\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classHTTP__Request2__Adapter__Socket_afd2a8a4a59755ae2fb901741774cb02c}{}\label{classHTTP__Request2__Adapter__Socket_afd2a8a4a59755ae2fb901741774cb02c}
 
 
 Definition at line 113 of file Socket.\+php.
 
-\hypertarget{classHTTP__Request2__Adapter__Socket_a0b3a0d18548e354e248253f67e1d5f50}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}!\$proxy\+Challenge@{\$proxy\+Challenge}}
+\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}!\$proxy\+Challenge@{\$proxy\+Challenge}}
 \index{\$proxy\+Challenge@{\$proxy\+Challenge}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}}
-\subsubsection[{\$proxy\+Challenge}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket\+::\$proxy\+Challenge\hspace{0.3cm}{\ttfamily [protected]}}\label{classHTTP__Request2__Adapter__Socket_a0b3a0d18548e354e248253f67e1d5f50}
+\subsubsection[{\texorpdfstring{\$proxy\+Challenge}{$proxyChallenge}}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket\+::\$proxy\+Challenge\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classHTTP__Request2__Adapter__Socket_a0b3a0d18548e354e248253f67e1d5f50}{}\label{classHTTP__Request2__Adapter__Socket_a0b3a0d18548e354e248253f67e1d5f50}
 
 
 Definition at line 90 of file Socket.\+php.
 
-\hypertarget{classHTTP__Request2__Adapter__Socket_a667d94f4db2e719a1c17809a3ff3d355}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}!\$redirect\+Countdown@{\$redirect\+Countdown}}
+\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}!\$redirect\+Countdown@{\$redirect\+Countdown}}
 \index{\$redirect\+Countdown@{\$redirect\+Countdown}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}}
-\subsubsection[{\$redirect\+Countdown}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket\+::\$redirect\+Countdown = null\hspace{0.3cm}{\ttfamily [protected]}}\label{classHTTP__Request2__Adapter__Socket_a667d94f4db2e719a1c17809a3ff3d355}
+\subsubsection[{\texorpdfstring{\$redirect\+Countdown}{$redirectCountdown}}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket\+::\$redirect\+Countdown = {\bf null}\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classHTTP__Request2__Adapter__Socket_a667d94f4db2e719a1c17809a3ff3d355}{}\label{classHTTP__Request2__Adapter__Socket_a667d94f4db2e719a1c17809a3ff3d355}
 
 
 Definition at line 107 of file Socket.\+php.
 
-\hypertarget{classHTTP__Request2__Adapter__Socket_a39896645b7671bfc2af02c5db7853341}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}!\$server\+Challenge@{\$server\+Challenge}}
+\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}!\$server\+Challenge@{\$server\+Challenge}}
 \index{\$server\+Challenge@{\$server\+Challenge}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}}
-\subsubsection[{\$server\+Challenge}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket\+::\$server\+Challenge\hspace{0.3cm}{\ttfamily [protected]}}\label{classHTTP__Request2__Adapter__Socket_a39896645b7671bfc2af02c5db7853341}
+\subsubsection[{\texorpdfstring{\$server\+Challenge}{$serverChallenge}}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket\+::\$server\+Challenge\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classHTTP__Request2__Adapter__Socket_a39896645b7671bfc2af02c5db7853341}{}\label{classHTTP__Request2__Adapter__Socket_a39896645b7671bfc2af02c5db7853341}
 
 
 Definition at line 84 of file Socket.\+php.
 
-\hypertarget{classHTTP__Request2__Adapter__Socket_ad9f67426c07302e3867c01577fffc27b}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}!\$socket@{\$socket}}
+\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}!\$socket@{\$socket}}
 \index{\$socket@{\$socket}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}}
-\subsubsection[{\$socket}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket\+::\$socket\hspace{0.3cm}{\ttfamily [protected]}}\label{classHTTP__Request2__Adapter__Socket_ad9f67426c07302e3867c01577fffc27b}
+\subsubsection[{\texorpdfstring{\$socket}{$socket}}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket\+::\$socket\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classHTTP__Request2__Adapter__Socket_ad9f67426c07302e3867c01577fffc27b}{}\label{classHTTP__Request2__Adapter__Socket_ad9f67426c07302e3867c01577fffc27b}
 
 
 Definition at line 78 of file Socket.\+php.
 
-\hypertarget{classHTTP__Request2__Adapter__Socket_ac7d848682d9289b2c270abb214338455}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}!\$sockets@{\$sockets}}
+\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}!\$sockets@{\$sockets}}
 \index{\$sockets@{\$sockets}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}}
-\subsubsection[{\$sockets}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket\+::\$sockets = array()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}\label{classHTTP__Request2__Adapter__Socket_ac7d848682d9289b2c270abb214338455}
+\subsubsection[{\texorpdfstring{\$sockets}{$sockets}}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket\+::\$sockets = array()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}\hypertarget{classHTTP__Request2__Adapter__Socket_ac7d848682d9289b2c270abb214338455}{}\label{classHTTP__Request2__Adapter__Socket_ac7d848682d9289b2c270abb214338455}
 
 
 Definition at line 57 of file Socket.\+php.
 
-\hypertarget{classHTTP__Request2__Adapter__Socket_a6c107bbe3366105b84ab79ccedda35c9}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}!R\+E\+G\+E\+X\+P\+\_\+\+Q\+U\+O\+T\+E\+D\+\_\+\+S\+T\+R\+I\+N\+G@{R\+E\+G\+E\+X\+P\+\_\+\+Q\+U\+O\+T\+E\+D\+\_\+\+S\+T\+R\+I\+N\+G}}
-\index{R\+E\+G\+E\+X\+P\+\_\+\+Q\+U\+O\+T\+E\+D\+\_\+\+S\+T\+R\+I\+N\+G@{R\+E\+G\+E\+X\+P\+\_\+\+Q\+U\+O\+T\+E\+D\+\_\+\+S\+T\+R\+I\+N\+G}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}}
-\subsubsection[{R\+E\+G\+E\+X\+P\+\_\+\+Q\+U\+O\+T\+E\+D\+\_\+\+S\+T\+R\+I\+N\+G}]{\setlength{\rightskip}{0pt plus 5cm}const H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket\+::\+R\+E\+G\+E\+X\+P\+\_\+\+Q\+U\+O\+T\+E\+D\+\_\+\+S\+T\+R\+I\+N\+G = \textquotesingle{}\char`\"{}(?$>$\mbox{[}$^\wedge$\char`\"{}\textbackslash{}\textbackslash{}\textbackslash{}\textbackslash{}\mbox{]}+$\vert$\textbackslash{}\textbackslash{}\textbackslash{}\textbackslash{}.)$\ast$\char`\"{}\textquotesingle{}}\label{classHTTP__Request2__Adapter__Socket_a6c107bbe3366105b84ab79ccedda35c9}
-Regular expression for \textquotesingle{}quoted-\/string\textquotesingle{} rule from R\+F\+C 2616 
+\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}!R\+E\+G\+E\+X\+P\+\_\+\+Q\+U\+O\+T\+E\+D\+\_\+\+S\+T\+R\+I\+NG@{R\+E\+G\+E\+X\+P\+\_\+\+Q\+U\+O\+T\+E\+D\+\_\+\+S\+T\+R\+I\+NG}}
+\index{R\+E\+G\+E\+X\+P\+\_\+\+Q\+U\+O\+T\+E\+D\+\_\+\+S\+T\+R\+I\+NG@{R\+E\+G\+E\+X\+P\+\_\+\+Q\+U\+O\+T\+E\+D\+\_\+\+S\+T\+R\+I\+NG}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}}
+\subsubsection[{\texorpdfstring{R\+E\+G\+E\+X\+P\+\_\+\+Q\+U\+O\+T\+E\+D\+\_\+\+S\+T\+R\+I\+NG}{REGEXP_QUOTED_STRING}}]{\setlength{\rightskip}{0pt plus 5cm}const H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket\+::\+R\+E\+G\+E\+X\+P\+\_\+\+Q\+U\+O\+T\+E\+D\+\_\+\+S\+T\+R\+I\+NG = \textquotesingle{}\char`\"{}(?$>$\mbox{[}$^\wedge$\char`\"{}\textbackslash{}\textbackslash{}\textbackslash{}\textbackslash{}\mbox{]}+$\vert$\textbackslash{}\textbackslash{}\textbackslash{}\textbackslash{}.)$\ast$\char`\"{}\textquotesingle{}}\hypertarget{classHTTP__Request2__Adapter__Socket_a6c107bbe3366105b84ab79ccedda35c9}{}\label{classHTTP__Request2__Adapter__Socket_a6c107bbe3366105b84ab79ccedda35c9}
+Regular expression for \textquotesingle{}quoted-\/string\textquotesingle{} rule from R\+FC 2616 
 
 Definition at line 50 of file Socket.\+php.
 
-\hypertarget{classHTTP__Request2__Adapter__Socket_a56beacc9218c6048c7f9ad5af80959eb}{}\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}!R\+E\+G\+E\+X\+P\+\_\+\+T\+O\+K\+E\+N@{R\+E\+G\+E\+X\+P\+\_\+\+T\+O\+K\+E\+N}}
-\index{R\+E\+G\+E\+X\+P\+\_\+\+T\+O\+K\+E\+N@{R\+E\+G\+E\+X\+P\+\_\+\+T\+O\+K\+E\+N}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}}
-\subsubsection[{R\+E\+G\+E\+X\+P\+\_\+\+T\+O\+K\+E\+N}]{\setlength{\rightskip}{0pt plus 5cm}const H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket\+::\+R\+E\+G\+E\+X\+P\+\_\+\+T\+O\+K\+E\+N = \textquotesingle{}\mbox{[}$^\wedge$\textbackslash{}x00-\/\textbackslash{}x1f\textbackslash{}x7f-\/\textbackslash{}xff()$<$$>$@,;\+:\textbackslash{}\textbackslash{}\textbackslash{}\textbackslash{}\char`\"{}/\textbackslash{}\mbox{[}\textbackslash{}\mbox{]}?=\{\}\textbackslash{}s\mbox{]}+\textquotesingle{}}\label{classHTTP__Request2__Adapter__Socket_a56beacc9218c6048c7f9ad5af80959eb}
-Regular expression for \textquotesingle{}token\textquotesingle{} rule from R\+F\+C 2616 
+\index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}!R\+E\+G\+E\+X\+P\+\_\+\+T\+O\+K\+EN@{R\+E\+G\+E\+X\+P\+\_\+\+T\+O\+K\+EN}}
+\index{R\+E\+G\+E\+X\+P\+\_\+\+T\+O\+K\+EN@{R\+E\+G\+E\+X\+P\+\_\+\+T\+O\+K\+EN}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket}}
+\subsubsection[{\texorpdfstring{R\+E\+G\+E\+X\+P\+\_\+\+T\+O\+K\+EN}{REGEXP_TOKEN}}]{\setlength{\rightskip}{0pt plus 5cm}const H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Socket\+::\+R\+E\+G\+E\+X\+P\+\_\+\+T\+O\+K\+EN = \textquotesingle{}\mbox{[}$^\wedge$\textbackslash{}x00-\/\textbackslash{}x1f\textbackslash{}x7f-\/\textbackslash{}xff()$<$$>$@,;\+:\textbackslash{}\textbackslash{}\textbackslash{}\textbackslash{}\char`\"{}/\textbackslash{}\mbox{[}\textbackslash{}\mbox{]}?=\{\}\textbackslash{}s\mbox{]}+\textquotesingle{}}\hypertarget{classHTTP__Request2__Adapter__Socket_a56beacc9218c6048c7f9ad5af80959eb}{}\label{classHTTP__Request2__Adapter__Socket_a56beacc9218c6048c7f9ad5af80959eb}
+Regular expression for \textquotesingle{}token\textquotesingle{} rule from R\+FC 2616 
 
 Definition at line 45 of file Socket.\+php.
 

@@ -28,7 +28,7 @@ Inheritance diagram for editor\+Controller\+:\begin{figure}[H]
 \hyperlink{classeditorController_a9e5a3fdca13b5ac5c507964fbcd74d35}{do\+Save\+Doc} (\$args)
 \begin{DoxyCompactList}\small\item\em Auto\+Save. \end{DoxyCompactList}\item 
 \hyperlink{classeditorController_a00edb6a2633a7578c40bda1cba61f041}{proc\+Editor\+Load\+Saved\+Document} ()
-\begin{DoxyCompactList}\small\item\em Load the srl of autosaved document -\/ for those who uses X\+E older versions. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Load the srl of autosaved document -\/ for those who uses \hyperlink{namespaceXE}{XE} older versions. \end{DoxyCompactList}\item 
 \hyperlink{classeditorController_a9a141433e80917efe9280dc8eb4fe5c2}{trigger\+Delete\+Saved\+Doc} (\&\$obj)
 \begin{DoxyCompactList}\small\item\em A trigger to remove auto-\/saved document when inserting/updating the document. \end{DoxyCompactList}\item 
 \hyperlink{classeditorController_abfe95017a9b2baa548dde4a339af5df4}{delete\+Saved\+Doc} (\$mode=false)
@@ -36,7 +36,7 @@ Inheritance diagram for editor\+Controller\+:\begin{figure}[H]
 \hyperlink{classeditorController_a0c27d19482d9ad6c9de0e42ad7ad6465}{remove\+Editor\+Config} (\$\hyperlink{ko_8install_8php_a8b1406b4ad1048041558dce6bfe89004}{site\+\_\+srl})
 \begin{DoxyCompactList}\small\item\em E\+Remove editor component information used on the virtual site. \end{DoxyCompactList}\item 
 \hyperlink{classeditorController_a246bf423c2f25208758a5cbcd2ba9890}{make\+Cache} (\$filter\+\_\+enabled=true, \$\hyperlink{ko_8install_8php_a8b1406b4ad1048041558dce6bfe89004}{site\+\_\+srl})
-\begin{DoxyCompactList}\small\item\em Caching a list of editor component (\hyperlink{classeditorModel_a24cf5d2f9bc9783dd2efd85fb0f89408}{editor\+Model\+::get\+Component\+List}) For the editor component list, use a caching file because of \hyperlink{classDB}{D\+B} query and Xml parsing. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Caching a list of editor component (\hyperlink{classeditorModel_a24cf5d2f9bc9783dd2efd85fb0f89408}{editor\+Model\+::get\+Component\+List}) For the editor component list, use a caching file because of \hyperlink{classDB}{DB} query and Xml parsing. \end{DoxyCompactList}\item 
 \hyperlink{classeditorController_a0a512fff61d647692ad254eacafb8f0b}{remove\+Cache} (\$\hyperlink{ko_8install_8php_a8b1406b4ad1048041558dce6bfe89004}{site\+\_\+srl}=0)
 \begin{DoxyCompactList}\small\item\em Delete cache files. \end{DoxyCompactList}\item 
 \hyperlink{classeditorController_acccfd1dab6c8c48a2eb232ae2e46e6bf}{trigger\+Copy\+Module} (\&\$obj)
@@ -52,13 +52,13 @@ Definition at line 8 of file editor.\+controller.\+php.
 
 
 \subsection{Member Function Documentation}
-\hypertarget{classeditorController_abfe95017a9b2baa548dde4a339af5df4}{}\index{editor\+Controller@{editor\+Controller}!delete\+Saved\+Doc@{delete\+Saved\+Doc}}
+\index{editor\+Controller@{editor\+Controller}!delete\+Saved\+Doc@{delete\+Saved\+Doc}}
 \index{delete\+Saved\+Doc@{delete\+Saved\+Doc}!editor\+Controller@{editor\+Controller}}
-\subsubsection[{delete\+Saved\+Doc}]{\setlength{\rightskip}{0pt plus 5cm}editor\+Controller\+::delete\+Saved\+Doc (
+\subsubsection[{\texorpdfstring{delete\+Saved\+Doc(\$mode=false)}{deleteSavedDoc($mode=false)}}]{\setlength{\rightskip}{0pt plus 5cm}editor\+Controller\+::delete\+Saved\+Doc (
 \begin{DoxyParamCaption}
 \item[{}]{\$mode = {\ttfamily false}}
 \end{DoxyParamCaption}
-)}\label{classeditorController_abfe95017a9b2baa548dde4a339af5df4}
+)}\hypertarget{classeditorController_abfe95017a9b2baa548dde4a339af5df4}{}\label{classeditorController_abfe95017a9b2baa548dde4a339af5df4}
 
 
 Delete the auto-\/saved document Based on the current logged-\/in user. 
@@ -67,13 +67,13 @@ Delete the auto-\/saved document Based on the current logged-\/in user.
 
 Definition at line 303 of file editor.\+controller.\+php.
 
-\hypertarget{classeditorController_a9e5a3fdca13b5ac5c507964fbcd74d35}{}\index{editor\+Controller@{editor\+Controller}!do\+Save\+Doc@{do\+Save\+Doc}}
+\index{editor\+Controller@{editor\+Controller}!do\+Save\+Doc@{do\+Save\+Doc}}
 \index{do\+Save\+Doc@{do\+Save\+Doc}!editor\+Controller@{editor\+Controller}}
-\subsubsection[{do\+Save\+Doc}]{\setlength{\rightskip}{0pt plus 5cm}editor\+Controller\+::do\+Save\+Doc (
+\subsubsection[{\texorpdfstring{do\+Save\+Doc(\$args)}{doSaveDoc($args)}}]{\setlength{\rightskip}{0pt plus 5cm}editor\+Controller\+::do\+Save\+Doc (
 \begin{DoxyParamCaption}
 \item[{}]{\$args}
 \end{DoxyParamCaption}
-)}\label{classeditorController_a9e5a3fdca13b5ac5c507964fbcd74d35}
+)}\hypertarget{classeditorController_a9e5a3fdca13b5ac5c507964fbcd74d35}{}\label{classeditorController_a9e5a3fdca13b5ac5c507964fbcd74d35}
 
 
 Auto\+Save. 
@@ -82,13 +82,13 @@ Auto\+Save.
 
 Definition at line 242 of file editor.\+controller.\+php.
 
-\hypertarget{classeditorController_a40838d463bafa5863b5f966b8828738b}{}\index{editor\+Controller@{editor\+Controller}!init@{init}}
+\index{editor\+Controller@{editor\+Controller}!init@{init}}
 \index{init@{init}!editor\+Controller@{editor\+Controller}}
-\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}editor\+Controller\+::init (
+\subsubsection[{\texorpdfstring{init()}{init()}}]{\setlength{\rightskip}{0pt plus 5cm}editor\+Controller\+::init (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classeditorController_a40838d463bafa5863b5f966b8828738b}
+)}\hypertarget{classeditorController_a40838d463bafa5863b5f966b8828738b}{}\label{classeditorController_a40838d463bafa5863b5f966b8828738b}
 
 
 Initialization. 
@@ -97,29 +97,29 @@ Initialization.
 
 Definition at line 13 of file editor.\+controller.\+php.
 
-\hypertarget{classeditorController_a246bf423c2f25208758a5cbcd2ba9890}{}\index{editor\+Controller@{editor\+Controller}!make\+Cache@{make\+Cache}}
+\index{editor\+Controller@{editor\+Controller}!make\+Cache@{make\+Cache}}
 \index{make\+Cache@{make\+Cache}!editor\+Controller@{editor\+Controller}}
-\subsubsection[{make\+Cache}]{\setlength{\rightskip}{0pt plus 5cm}editor\+Controller\+::make\+Cache (
+\subsubsection[{\texorpdfstring{make\+Cache(\$filter\+\_\+enabled=true, \$site\+\_\+srl)}{makeCache($filter_enabled=true, $site_srl)}}]{\setlength{\rightskip}{0pt plus 5cm}editor\+Controller\+::make\+Cache (
 \begin{DoxyParamCaption}
 \item[{}]{\$filter\+\_\+enabled = {\ttfamily true}, }
 \item[{}]{\$site\+\_\+srl}
 \end{DoxyParamCaption}
-)}\label{classeditorController_a246bf423c2f25208758a5cbcd2ba9890}
+)}\hypertarget{classeditorController_a246bf423c2f25208758a5cbcd2ba9890}{}\label{classeditorController_a246bf423c2f25208758a5cbcd2ba9890}
 
 
-Caching a list of editor component (\hyperlink{classeditorModel_a24cf5d2f9bc9783dd2efd85fb0f89408}{editor\+Model\+::get\+Component\+List}) For the editor component list, use a caching file because of \hyperlink{classDB}{D\+B} query and Xml parsing. 
+Caching a list of editor component (\hyperlink{classeditorModel_a24cf5d2f9bc9783dd2efd85fb0f89408}{editor\+Model\+::get\+Component\+List}) For the editor component list, use a caching file because of \hyperlink{classDB}{DB} query and Xml parsing. 
 
 
 
 Definition at line 354 of file editor.\+controller.\+php.
 
-\hypertarget{classeditorController_ab7eab43a1ba21645dabcf36f32b27289}{}\index{editor\+Controller@{editor\+Controller}!proc\+Editor\+Call@{proc\+Editor\+Call}}
+\index{editor\+Controller@{editor\+Controller}!proc\+Editor\+Call@{proc\+Editor\+Call}}
 \index{proc\+Editor\+Call@{proc\+Editor\+Call}!editor\+Controller@{editor\+Controller}}
-\subsubsection[{proc\+Editor\+Call}]{\setlength{\rightskip}{0pt plus 5cm}editor\+Controller\+::proc\+Editor\+Call (
+\subsubsection[{\texorpdfstring{proc\+Editor\+Call()}{procEditorCall()}}]{\setlength{\rightskip}{0pt plus 5cm}editor\+Controller\+::proc\+Editor\+Call (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classeditorController_ab7eab43a1ba21645dabcf36f32b27289}
+)}\hypertarget{classeditorController_ab7eab43a1ba21645dabcf36f32b27289}{}\label{classeditorController_ab7eab43a1ba21645dabcf36f32b27289}
 
 
 Execute a method of the component when the component requests ajax. 
@@ -128,13 +128,13 @@ Execute a method of the component when the component requests ajax.
 
 Definition at line 46 of file editor.\+controller.\+php.
 
-\hypertarget{classeditorController_af20e397838bd94b60b09b0cba2d7da0d}{}\index{editor\+Controller@{editor\+Controller}!proc\+Editor\+Insert\+Module\+Config@{proc\+Editor\+Insert\+Module\+Config}}
+\index{editor\+Controller@{editor\+Controller}!proc\+Editor\+Insert\+Module\+Config@{proc\+Editor\+Insert\+Module\+Config}}
 \index{proc\+Editor\+Insert\+Module\+Config@{proc\+Editor\+Insert\+Module\+Config}!editor\+Controller@{editor\+Controller}}
-\subsubsection[{proc\+Editor\+Insert\+Module\+Config}]{\setlength{\rightskip}{0pt plus 5cm}editor\+Controller\+::proc\+Editor\+Insert\+Module\+Config (
+\subsubsection[{\texorpdfstring{proc\+Editor\+Insert\+Module\+Config()}{procEditorInsertModuleConfig()}}]{\setlength{\rightskip}{0pt plus 5cm}editor\+Controller\+::proc\+Editor\+Insert\+Module\+Config (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classeditorController_af20e397838bd94b60b09b0cba2d7da0d}
+)}\hypertarget{classeditorController_af20e397838bd94b60b09b0cba2d7da0d}{}\label{classeditorController_af20e397838bd94b60b09b0cba2d7da0d}
 
 
 Save Editor\textquotesingle{}s additional form for each module. 
@@ -143,28 +143,28 @@ Save Editor\textquotesingle{}s additional form for each module.
 
 Definition at line 81 of file editor.\+controller.\+php.
 
-\hypertarget{classeditorController_a00edb6a2633a7578c40bda1cba61f041}{}\index{editor\+Controller@{editor\+Controller}!proc\+Editor\+Load\+Saved\+Document@{proc\+Editor\+Load\+Saved\+Document}}
+\index{editor\+Controller@{editor\+Controller}!proc\+Editor\+Load\+Saved\+Document@{proc\+Editor\+Load\+Saved\+Document}}
 \index{proc\+Editor\+Load\+Saved\+Document@{proc\+Editor\+Load\+Saved\+Document}!editor\+Controller@{editor\+Controller}}
-\subsubsection[{proc\+Editor\+Load\+Saved\+Document}]{\setlength{\rightskip}{0pt plus 5cm}editor\+Controller\+::proc\+Editor\+Load\+Saved\+Document (
+\subsubsection[{\texorpdfstring{proc\+Editor\+Load\+Saved\+Document()}{procEditorLoadSavedDocument()}}]{\setlength{\rightskip}{0pt plus 5cm}editor\+Controller\+::proc\+Editor\+Load\+Saved\+Document (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classeditorController_a00edb6a2633a7578c40bda1cba61f041}
+)}\hypertarget{classeditorController_a00edb6a2633a7578c40bda1cba61f041}{}\label{classeditorController_a00edb6a2633a7578c40bda1cba61f041}
 
 
-Load the srl of autosaved document -\/ for those who uses X\+E older versions. 
+Load the srl of autosaved document -\/ for those who uses \hyperlink{namespaceXE}{XE} older versions. 
 
 
 
 Definition at line 272 of file editor.\+controller.\+php.
 
-\hypertarget{classeditorController_a869072fefa3ae722ecc0e0123b5f8bbd}{}\index{editor\+Controller@{editor\+Controller}!proc\+Editor\+Remove\+Saved\+Doc@{proc\+Editor\+Remove\+Saved\+Doc}}
+\index{editor\+Controller@{editor\+Controller}!proc\+Editor\+Remove\+Saved\+Doc@{proc\+Editor\+Remove\+Saved\+Doc}}
 \index{proc\+Editor\+Remove\+Saved\+Doc@{proc\+Editor\+Remove\+Saved\+Doc}!editor\+Controller@{editor\+Controller}}
-\subsubsection[{proc\+Editor\+Remove\+Saved\+Doc}]{\setlength{\rightskip}{0pt plus 5cm}editor\+Controller\+::proc\+Editor\+Remove\+Saved\+Doc (
+\subsubsection[{\texorpdfstring{proc\+Editor\+Remove\+Saved\+Doc()}{procEditorRemoveSavedDoc()}}]{\setlength{\rightskip}{0pt plus 5cm}editor\+Controller\+::proc\+Editor\+Remove\+Saved\+Doc (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classeditorController_a869072fefa3ae722ecc0e0123b5f8bbd}
+)}\hypertarget{classeditorController_a869072fefa3ae722ecc0e0123b5f8bbd}{}\label{classeditorController_a869072fefa3ae722ecc0e0123b5f8bbd}
 
 
 Delete autosaved documents. 
@@ -173,13 +173,13 @@ Delete autosaved documents.
 
 Definition at line 37 of file editor.\+controller.\+php.
 
-\hypertarget{classeditorController_a671035df077f460bc8c60dcea0410344}{}\index{editor\+Controller@{editor\+Controller}!proc\+Editor\+Save\+Doc@{proc\+Editor\+Save\+Doc}}
+\index{editor\+Controller@{editor\+Controller}!proc\+Editor\+Save\+Doc@{proc\+Editor\+Save\+Doc}}
 \index{proc\+Editor\+Save\+Doc@{proc\+Editor\+Save\+Doc}!editor\+Controller@{editor\+Controller}}
-\subsubsection[{proc\+Editor\+Save\+Doc}]{\setlength{\rightskip}{0pt plus 5cm}editor\+Controller\+::proc\+Editor\+Save\+Doc (
+\subsubsection[{\texorpdfstring{proc\+Editor\+Save\+Doc()}{procEditorSaveDoc()}}]{\setlength{\rightskip}{0pt plus 5cm}editor\+Controller\+::proc\+Editor\+Save\+Doc (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classeditorController_a671035df077f460bc8c60dcea0410344}
+)}\hypertarget{classeditorController_a671035df077f460bc8c60dcea0410344}{}\label{classeditorController_a671035df077f460bc8c60dcea0410344}
 
 
 Auto\+Save. 
@@ -188,13 +188,13 @@ Auto\+Save.
 
 Definition at line 20 of file editor.\+controller.\+php.
 
-\hypertarget{classeditorController_a0a512fff61d647692ad254eacafb8f0b}{}\index{editor\+Controller@{editor\+Controller}!remove\+Cache@{remove\+Cache}}
+\index{editor\+Controller@{editor\+Controller}!remove\+Cache@{remove\+Cache}}
 \index{remove\+Cache@{remove\+Cache}!editor\+Controller@{editor\+Controller}}
-\subsubsection[{remove\+Cache}]{\setlength{\rightskip}{0pt plus 5cm}editor\+Controller\+::remove\+Cache (
+\subsubsection[{\texorpdfstring{remove\+Cache(\$site\+\_\+srl=0)}{removeCache($site_srl=0)}}]{\setlength{\rightskip}{0pt plus 5cm}editor\+Controller\+::remove\+Cache (
 \begin{DoxyParamCaption}
 \item[{}]{\$site\+\_\+srl = {\ttfamily 0}}
 \end{DoxyParamCaption}
-)}\label{classeditorController_a0a512fff61d647692ad254eacafb8f0b}
+)}\hypertarget{classeditorController_a0a512fff61d647692ad254eacafb8f0b}{}\label{classeditorController_a0a512fff61d647692ad254eacafb8f0b}
 
 
 Delete cache files. 
@@ -203,13 +203,13 @@ Delete cache files.
 
 Definition at line 488 of file editor.\+controller.\+php.
 
-\hypertarget{classeditorController_a0c27d19482d9ad6c9de0e42ad7ad6465}{}\index{editor\+Controller@{editor\+Controller}!remove\+Editor\+Config@{remove\+Editor\+Config}}
+\index{editor\+Controller@{editor\+Controller}!remove\+Editor\+Config@{remove\+Editor\+Config}}
 \index{remove\+Editor\+Config@{remove\+Editor\+Config}!editor\+Controller@{editor\+Controller}}
-\subsubsection[{remove\+Editor\+Config}]{\setlength{\rightskip}{0pt plus 5cm}editor\+Controller\+::remove\+Editor\+Config (
+\subsubsection[{\texorpdfstring{remove\+Editor\+Config(\$site\+\_\+srl)}{removeEditorConfig($site_srl)}}]{\setlength{\rightskip}{0pt plus 5cm}editor\+Controller\+::remove\+Editor\+Config (
 \begin{DoxyParamCaption}
 \item[{}]{\$site\+\_\+srl}
 \end{DoxyParamCaption}
-)}\label{classeditorController_a0c27d19482d9ad6c9de0e42ad7ad6465}
+)}\hypertarget{classeditorController_a0c27d19482d9ad6c9de0e42ad7ad6465}{}\label{classeditorController_a0c27d19482d9ad6c9de0e42ad7ad6465}
 
 
 E\+Remove editor component information used on the virtual site. 
@@ -218,13 +218,13 @@ E\+Remove editor component information used on the virtual site.
 
 Definition at line 344 of file editor.\+controller.\+php.
 
-\hypertarget{classeditorController_a9ef6499da56cf876c70813624ae4a2c0}{}\index{editor\+Controller@{editor\+Controller}!trans\+Component@{trans\+Component}}
+\index{editor\+Controller@{editor\+Controller}!trans\+Component@{trans\+Component}}
 \index{trans\+Component@{trans\+Component}!editor\+Controller@{editor\+Controller}}
-\subsubsection[{trans\+Component}]{\setlength{\rightskip}{0pt plus 5cm}editor\+Controller\+::trans\+Component (
+\subsubsection[{\texorpdfstring{trans\+Component(\$content)}{transComponent($content)}}]{\setlength{\rightskip}{0pt plus 5cm}editor\+Controller\+::trans\+Component (
 \begin{DoxyParamCaption}
 \item[{}]{\$content}
 \end{DoxyParamCaption}
-)}\label{classeditorController_a9ef6499da56cf876c70813624ae4a2c0}
+)}\hypertarget{classeditorController_a9ef6499da56cf876c70813624ae4a2c0}{}\label{classeditorController_a9ef6499da56cf876c70813624ae4a2c0}
 
 
 Convert editor component codes to be returned. 
@@ -233,13 +233,13 @@ Convert editor component codes to be returned.
 
 Definition at line 205 of file editor.\+controller.\+php.
 
-\hypertarget{classeditorController_a278ef1204d8129636bb8d30a0c91c5bb}{}\index{editor\+Controller@{editor\+Controller}!trans\+Editor\+Component@{trans\+Editor\+Component}}
+\index{editor\+Controller@{editor\+Controller}!trans\+Editor\+Component@{trans\+Editor\+Component}}
 \index{trans\+Editor\+Component@{trans\+Editor\+Component}!editor\+Controller@{editor\+Controller}}
-\subsubsection[{trans\+Editor\+Component}]{\setlength{\rightskip}{0pt plus 5cm}editor\+Controller\+::trans\+Editor\+Component (
+\subsubsection[{\texorpdfstring{trans\+Editor\+Component(\$match)}{transEditorComponent($match)}}]{\setlength{\rightskip}{0pt plus 5cm}editor\+Controller\+::trans\+Editor\+Component (
 \begin{DoxyParamCaption}
 \item[{}]{\$match}
 \end{DoxyParamCaption}
-)}\label{classeditorController_a278ef1204d8129636bb8d30a0c91c5bb}
+)}\hypertarget{classeditorController_a278ef1204d8129636bb8d30a0c91c5bb}{}\label{classeditorController_a278ef1204d8129636bb8d30a0c91c5bb}
 
 
 Convert editor component code of the contents. 
@@ -248,24 +248,24 @@ Convert editor component code of the contents.
 
 Definition at line 214 of file editor.\+controller.\+php.
 
-\hypertarget{classeditorController_acccfd1dab6c8c48a2eb232ae2e46e6bf}{}\index{editor\+Controller@{editor\+Controller}!trigger\+Copy\+Module@{trigger\+Copy\+Module}}
+\index{editor\+Controller@{editor\+Controller}!trigger\+Copy\+Module@{trigger\+Copy\+Module}}
 \index{trigger\+Copy\+Module@{trigger\+Copy\+Module}!editor\+Controller@{editor\+Controller}}
-\subsubsection[{trigger\+Copy\+Module}]{\setlength{\rightskip}{0pt plus 5cm}editor\+Controller\+::trigger\+Copy\+Module (
+\subsubsection[{\texorpdfstring{trigger\+Copy\+Module(\&\$obj)}{triggerCopyModule(&$obj)}}]{\setlength{\rightskip}{0pt plus 5cm}editor\+Controller\+::trigger\+Copy\+Module (
 \begin{DoxyParamCaption}
 \item[{\&}]{\$obj}
 \end{DoxyParamCaption}
-)}\label{classeditorController_acccfd1dab6c8c48a2eb232ae2e46e6bf}
+)}\hypertarget{classeditorController_acccfd1dab6c8c48a2eb232ae2e46e6bf}{}\label{classeditorController_acccfd1dab6c8c48a2eb232ae2e46e6bf}
 
 
 Definition at line 495 of file editor.\+controller.\+php.
 
-\hypertarget{classeditorController_a9a141433e80917efe9280dc8eb4fe5c2}{}\index{editor\+Controller@{editor\+Controller}!trigger\+Delete\+Saved\+Doc@{trigger\+Delete\+Saved\+Doc}}
+\index{editor\+Controller@{editor\+Controller}!trigger\+Delete\+Saved\+Doc@{trigger\+Delete\+Saved\+Doc}}
 \index{trigger\+Delete\+Saved\+Doc@{trigger\+Delete\+Saved\+Doc}!editor\+Controller@{editor\+Controller}}
-\subsubsection[{trigger\+Delete\+Saved\+Doc}]{\setlength{\rightskip}{0pt plus 5cm}editor\+Controller\+::trigger\+Delete\+Saved\+Doc (
+\subsubsection[{\texorpdfstring{trigger\+Delete\+Saved\+Doc(\&\$obj)}{triggerDeleteSavedDoc(&$obj)}}]{\setlength{\rightskip}{0pt plus 5cm}editor\+Controller\+::trigger\+Delete\+Saved\+Doc (
 \begin{DoxyParamCaption}
 \item[{\&}]{\$obj}
 \end{DoxyParamCaption}
-)}\label{classeditorController_a9a141433e80917efe9280dc8eb4fe5c2}
+)}\hypertarget{classeditorController_a9a141433e80917efe9280dc8eb4fe5c2}{}\label{classeditorController_a9a141433e80917efe9280dc8eb4fe5c2}
 
 
 A trigger to remove auto-\/saved document when inserting/updating the document. 
@@ -274,13 +274,13 @@ A trigger to remove auto-\/saved document when inserting/updating the document.
 
 Definition at line 293 of file editor.\+controller.\+php.
 
-\hypertarget{classeditorController_a6003487c398eae0676e15f5437cebdf8}{}\index{editor\+Controller@{editor\+Controller}!trigger\+Editor\+Component\+Compile@{trigger\+Editor\+Component\+Compile}}
+\index{editor\+Controller@{editor\+Controller}!trigger\+Editor\+Component\+Compile@{trigger\+Editor\+Component\+Compile}}
 \index{trigger\+Editor\+Component\+Compile@{trigger\+Editor\+Component\+Compile}!editor\+Controller@{editor\+Controller}}
-\subsubsection[{trigger\+Editor\+Component\+Compile}]{\setlength{\rightskip}{0pt plus 5cm}editor\+Controller\+::trigger\+Editor\+Component\+Compile (
+\subsubsection[{\texorpdfstring{trigger\+Editor\+Component\+Compile(\&\$content)}{triggerEditorComponentCompile(&$content)}}]{\setlength{\rightskip}{0pt plus 5cm}editor\+Controller\+::trigger\+Editor\+Component\+Compile (
 \begin{DoxyParamCaption}
 \item[{\&}]{\$content}
 \end{DoxyParamCaption}
-)}\label{classeditorController_a6003487c398eae0676e15f5437cebdf8}
+)}\hypertarget{classeditorController_a6003487c398eae0676e15f5437cebdf8}{}\label{classeditorController_a6003487c398eae0676e15f5437cebdf8}
 
 
 convert editor component codes to be returned and specify content style. 

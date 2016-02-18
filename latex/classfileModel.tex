@@ -17,7 +17,7 @@ Inheritance diagram for file\+Model\+:\begin{figure}[H]
 \item 
 \hyperlink{classfileModel_ad626512a63e99f97d0e5a6fac7dae8c8}{get\+Download\+Url} (\$file\+\_\+srl, \$sid, \$\hyperlink{ko_8install_8php_a370bb6450fab1da3e0ed9f484a38b761}{module\+\_\+srl}=\char`\"{}\char`\"{})
 \item 
-\hyperlink{classfileModel_a81beeda11f761f561adb60ebc72d6187}{get\+File\+Config} (\$\hyperlink{ko_8install_8php_a370bb6450fab1da3e0ed9f484a38b761}{module\+\_\+srl}=null)
+\hyperlink{classfileModel_a81beeda11f761f561adb60ebc72d6187}{get\+File\+Config} (\$\hyperlink{ko_8install_8php_a370bb6450fab1da3e0ed9f484a38b761}{module\+\_\+srl}=\hyperlink{modernizr_8min_8js_a286f9ec831c5e676eeb493248eab9575}{null})
 \item 
 \hyperlink{classfileModel_a1475f2eb6cc740bf7f5ef67a4654fb24}{get\+File} (\$file\+\_\+srl, \$column\+List=array())
 \item 
@@ -36,7 +36,7 @@ Inheritance diagram for file\+Model\+:\begin{figure}[H]
 
 \subsection{Detailed Description}
 Model class of the file module \begin{DoxyAuthor}{Author}
-N\+A\+V\+E\+R (\href{mailto:developers@xpressengine.com}{\tt developers@xpressengine.\+com}) 
+N\+A\+V\+ER (\href{mailto:developers@xpressengine.com}{\tt developers@xpressengine.\+com}) 
 \end{DoxyAuthor}
 
 
@@ -45,15 +45,15 @@ Definition at line 7 of file file.\+model.\+php.
 
 
 \subsection{Member Function Documentation}
-\hypertarget{classfileModel_ad626512a63e99f97d0e5a6fac7dae8c8}{}\index{file\+Model@{file\+Model}!get\+Download\+Url@{get\+Download\+Url}}
+\index{file\+Model@{file\+Model}!get\+Download\+Url@{get\+Download\+Url}}
 \index{get\+Download\+Url@{get\+Download\+Url}!file\+Model@{file\+Model}}
-\subsubsection[{get\+Download\+Url}]{\setlength{\rightskip}{0pt plus 5cm}file\+Model\+::get\+Download\+Url (
+\subsubsection[{\texorpdfstring{get\+Download\+Url(\$file\+\_\+srl, \$sid, \$module\+\_\+srl="""")}{getDownloadUrl($file_srl, $sid, $module_srl="")}}]{\setlength{\rightskip}{0pt plus 5cm}file\+Model\+::get\+Download\+Url (
 \begin{DoxyParamCaption}
 \item[{}]{\$file\+\_\+srl, }
 \item[{}]{\$sid, }
 \item[{}]{\$module\+\_\+srl = {\ttfamily \char`\"{}\char`\"{}}}
 \end{DoxyParamCaption}
-)}\label{classfileModel_ad626512a63e99f97d0e5a6fac7dae8c8}
+)}\hypertarget{classfileModel_ad626512a63e99f97d0e5a6fac7dae8c8}{}\label{classfileModel_ad626512a63e99f97d0e5a6fac7dae8c8}
 Get a download path
 
 
@@ -70,21 +70,21 @@ string Returns a url
 
 Definition at line 107 of file file.\+model.\+php.
 
-\hypertarget{classfileModel_a1475f2eb6cc740bf7f5ef67a4654fb24}{}\index{file\+Model@{file\+Model}!get\+File@{get\+File}}
+\index{file\+Model@{file\+Model}!get\+File@{get\+File}}
 \index{get\+File@{get\+File}!file\+Model@{file\+Model}}
-\subsubsection[{get\+File}]{\setlength{\rightskip}{0pt plus 5cm}file\+Model\+::get\+File (
+\subsubsection[{\texorpdfstring{get\+File(\$file\+\_\+srl, \$column\+List=array())}{getFile($file_srl, $columnList=array())}}]{\setlength{\rightskip}{0pt plus 5cm}file\+Model\+::get\+File (
 \begin{DoxyParamCaption}
 \item[{}]{\$file\+\_\+srl, }
 \item[{}]{\$column\+List = {\ttfamily array()}}
 \end{DoxyParamCaption}
-)}\label{classfileModel_a1475f2eb6cc740bf7f5ef67a4654fb24}
+)}\hypertarget{classfileModel_a1475f2eb6cc740bf7f5ef67a4654fb24}{}\label{classfileModel_a1475f2eb6cc740bf7f5ef67a4654fb24}
 Get file information
 
 
 \begin{DoxyParams}[1]{Parameters}
 int & {\em \$file\+\_\+srl} & The sequence of file to get information \\
 \hline
-array & {\em \$column\+List} & The list of columns to get from \hyperlink{classDB}{D\+B} \\
+array & {\em \$column\+List} & The list of columns to get from \hyperlink{classDB}{DB} \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -94,13 +94,13 @@ Object$\vert$object$\vert$array If error returns an instance of \hyperlink{class
 
 Definition at line 165 of file file.\+model.\+php.
 
-\hypertarget{classfileModel_a81beeda11f761f561adb60ebc72d6187}{}\index{file\+Model@{file\+Model}!get\+File\+Config@{get\+File\+Config}}
+\index{file\+Model@{file\+Model}!get\+File\+Config@{get\+File\+Config}}
 \index{get\+File\+Config@{get\+File\+Config}!file\+Model@{file\+Model}}
-\subsubsection[{get\+File\+Config}]{\setlength{\rightskip}{0pt plus 5cm}file\+Model\+::get\+File\+Config (
+\subsubsection[{\texorpdfstring{get\+File\+Config(\$module\+\_\+srl=null)}{getFileConfig($module_srl=null)}}]{\setlength{\rightskip}{0pt plus 5cm}file\+Model\+::get\+File\+Config (
 \begin{DoxyParamCaption}
-\item[{}]{\$module\+\_\+srl = {\ttfamily null}}
+\item[{}]{\$module\+\_\+srl = {\ttfamily {\bf null}}}
 \end{DoxyParamCaption}
-)}\label{classfileModel_a81beeda11f761f561adb60ebc72d6187}
+)}\hypertarget{classfileModel_a81beeda11f761f561adb60ebc72d6187}{}\label{classfileModel_a81beeda11f761f561adb60ebc72d6187}
 Get file configurations
 
 
@@ -115,14 +115,14 @@ object Returns configuration.
 
 Definition at line 118 of file file.\+model.\+php.
 
-\hypertarget{classfileModel_a129e251c2a4ed575126c902a64ed3f59}{}\index{file\+Model@{file\+Model}!get\+File\+Grant@{get\+File\+Grant}}
+\index{file\+Model@{file\+Model}!get\+File\+Grant@{get\+File\+Grant}}
 \index{get\+File\+Grant@{get\+File\+Grant}!file\+Model@{file\+Model}}
-\subsubsection[{get\+File\+Grant}]{\setlength{\rightskip}{0pt plus 5cm}file\+Model\+::get\+File\+Grant (
+\subsubsection[{\texorpdfstring{get\+File\+Grant(\$file\+\_\+info, \$member\+\_\+info)}{getFileGrant($file_info, $member_info)}}]{\setlength{\rightskip}{0pt plus 5cm}file\+Model\+::get\+File\+Grant (
 \begin{DoxyParamCaption}
 \item[{}]{\$file\+\_\+info, }
 \item[{}]{\$member\+\_\+info}
 \end{DoxyParamCaption}
-)}\label{classfileModel_a129e251c2a4ed575126c902a64ed3f59}
+)}\hypertarget{classfileModel_a129e251c2a4ed575126c902a64ed3f59}{}\label{classfileModel_a129e251c2a4ed575126c902a64ed3f59}
 Returns a grant of file
 
 
@@ -139,13 +139,13 @@ object Returns a grant of file
 
 Definition at line 302 of file file.\+model.\+php.
 
-\hypertarget{classfileModel_ad2b29057d5e61a15cb2caf794fc12291}{}\index{file\+Model@{file\+Model}!get\+File\+List@{get\+File\+List}}
+\index{file\+Model@{file\+Model}!get\+File\+List@{get\+File\+List}}
 \index{get\+File\+List@{get\+File\+List}!file\+Model@{file\+Model}}
-\subsubsection[{get\+File\+List}]{\setlength{\rightskip}{0pt plus 5cm}file\+Model\+::get\+File\+List (
+\subsubsection[{\texorpdfstring{get\+File\+List()}{getFileList()}}]{\setlength{\rightskip}{0pt plus 5cm}file\+Model\+::get\+File\+List (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classfileModel_ad2b29057d5e61a15cb2caf794fc12291}
+)}\hypertarget{classfileModel_ad2b29057d5e61a15cb2caf794fc12291}{}\label{classfileModel_ad2b29057d5e61a15cb2caf794fc12291}
 Return a file list attached in the document
 
 It is used when a file list of the upload\+\_\+target\+\_\+srl is requested for creating/updating a document. Attempt to replace with sever-\/side session if upload\+\_\+target\+\_\+srl is not yet determined
@@ -157,13 +157,13 @@ void
 
 Definition at line 25 of file file.\+model.\+php.
 
-\hypertarget{classfileModel_aefe867916bce4a5f3451bb9afc464844}{}\index{file\+Model@{file\+Model}!get\+File\+Module\+Config@{get\+File\+Module\+Config}}
+\index{file\+Model@{file\+Model}!get\+File\+Module\+Config@{get\+File\+Module\+Config}}
 \index{get\+File\+Module\+Config@{get\+File\+Module\+Config}!file\+Model@{file\+Model}}
-\subsubsection[{get\+File\+Module\+Config}]{\setlength{\rightskip}{0pt plus 5cm}file\+Model\+::get\+File\+Module\+Config (
+\subsubsection[{\texorpdfstring{get\+File\+Module\+Config(\$module\+\_\+srl)}{getFileModuleConfig($module_srl)}}]{\setlength{\rightskip}{0pt plus 5cm}file\+Model\+::get\+File\+Module\+Config (
 \begin{DoxyParamCaption}
 \item[{}]{\$module\+\_\+srl}
 \end{DoxyParamCaption}
-)}\label{classfileModel_aefe867916bce4a5f3451bb9afc464844}
+)}\hypertarget{classfileModel_aefe867916bce4a5f3451bb9afc464844}{}\label{classfileModel_aefe867916bce4a5f3451bb9afc464844}
 Return file configuration of the module
 
 
@@ -178,23 +178,23 @@ object
 
 Definition at line 290 of file file.\+model.\+php.
 
-\hypertarget{classfileModel_a149c4f1e8710ec09c7dab5284b72bd48}{}\index{file\+Model@{file\+Model}!get\+Files@{get\+Files}}
+\index{file\+Model@{file\+Model}!get\+Files@{get\+Files}}
 \index{get\+Files@{get\+Files}!file\+Model@{file\+Model}}
-\subsubsection[{get\+Files}]{\setlength{\rightskip}{0pt plus 5cm}file\+Model\+::get\+Files (
+\subsubsection[{\texorpdfstring{get\+Files(\$upload\+\_\+target\+\_\+srl, \$column\+List=array(), \$sort\+Index= \textquotesingle{}file\+\_\+srl\textquotesingle{}, \$ck\+Valid=false)}{getFiles($upload_target_srl, $columnList=array(), $sortIndex= 'file_srl', $ckValid=false)}}]{\setlength{\rightskip}{0pt plus 5cm}file\+Model\+::get\+Files (
 \begin{DoxyParamCaption}
 \item[{}]{\$upload\+\_\+target\+\_\+srl, }
 \item[{}]{\$column\+List = {\ttfamily array()}, }
 \item[{}]{\$sort\+Index = {\ttfamily \textquotesingle{}file\+\_\+srl\textquotesingle{}}, }
 \item[{}]{\$ck\+Valid = {\ttfamily false}}
 \end{DoxyParamCaption}
-)}\label{classfileModel_a149c4f1e8710ec09c7dab5284b72bd48}
+)}\hypertarget{classfileModel_a149c4f1e8710ec09c7dab5284b72bd48}{}\label{classfileModel_a149c4f1e8710ec09c7dab5284b72bd48}
 Return all files which belong to a specific document
 
 
 \begin{DoxyParams}[1]{Parameters}
 int & {\em \$upload\+\_\+target\+\_\+srl} & The sequence of target to get file list \\
 \hline
-array & {\em \$column\+List} & The list of columns to get from \hyperlink{classDB}{D\+B} \\
+array & {\em \$column\+List} & The list of columns to get from \hyperlink{classDB}{DB} \\
 \hline
 string & {\em \$sort\+Index} & The column that used as sort index \\
 \hline
@@ -206,13 +206,13 @@ array Returns array of object that contains file information. If no result retur
 
 Definition at line 205 of file file.\+model.\+php.
 
-\hypertarget{classfileModel_a37f83c04ce8adc09f576b94e04264f5b}{}\index{file\+Model@{file\+Model}!get\+Files\+Count@{get\+Files\+Count}}
+\index{file\+Model@{file\+Model}!get\+Files\+Count@{get\+Files\+Count}}
 \index{get\+Files\+Count@{get\+Files\+Count}!file\+Model@{file\+Model}}
-\subsubsection[{get\+Files\+Count}]{\setlength{\rightskip}{0pt plus 5cm}file\+Model\+::get\+Files\+Count (
+\subsubsection[{\texorpdfstring{get\+Files\+Count(\$upload\+\_\+target\+\_\+srl)}{getFilesCount($upload_target_srl)}}]{\setlength{\rightskip}{0pt plus 5cm}file\+Model\+::get\+Files\+Count (
 \begin{DoxyParamCaption}
 \item[{}]{\$upload\+\_\+target\+\_\+srl}
 \end{DoxyParamCaption}
-)}\label{classfileModel_a37f83c04ce8adc09f576b94e04264f5b}
+)}\hypertarget{classfileModel_a37f83c04ce8adc09f576b94e04264f5b}{}\label{classfileModel_a37f83c04ce8adc09f576b94e04264f5b}
 Return number of attachments which belongs to a specific document
 
 
@@ -227,29 +227,29 @@ int Returns a number of files
 
 Definition at line 92 of file file.\+model.\+php.
 
-\hypertarget{classfileModel_a0d268e1f840c7495de96ed511c7053fc}{}\index{file\+Model@{file\+Model}!get\+Upload\+Config@{get\+Upload\+Config}}
+\index{file\+Model@{file\+Model}!get\+Upload\+Config@{get\+Upload\+Config}}
 \index{get\+Upload\+Config@{get\+Upload\+Config}!file\+Model@{file\+Model}}
-\subsubsection[{get\+Upload\+Config}]{\setlength{\rightskip}{0pt plus 5cm}file\+Model\+::get\+Upload\+Config (
+\subsubsection[{\texorpdfstring{get\+Upload\+Config()}{getUploadConfig()}}]{\setlength{\rightskip}{0pt plus 5cm}file\+Model\+::get\+Upload\+Config (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classfileModel_a0d268e1f840c7495de96ed511c7053fc}
+)}\hypertarget{classfileModel_a0d268e1f840c7495de96ed511c7053fc}{}\label{classfileModel_a0d268e1f840c7495de96ed511c7053fc}
 Return configurations of the attachement (it automatically checks if an administrator is)
 
 \begin{DoxyReturn}{Returns}
-object Returns a file configuration of current module. If user is admin, returns P\+H\+P\textquotesingle{}s max file size and allow all file types. 
+object Returns a file configuration of current module. If user is admin, returns P\+HP\textquotesingle{}s max file size and allow all file types. 
 \end{DoxyReturn}
 
 
 Definition at line 236 of file file.\+model.\+php.
 
-\hypertarget{classfileModel_a63c3d6b41db33e55521cd3f0b10ab493}{}\index{file\+Model@{file\+Model}!get\+Upload\+Status@{get\+Upload\+Status}}
+\index{file\+Model@{file\+Model}!get\+Upload\+Status@{get\+Upload\+Status}}
 \index{get\+Upload\+Status@{get\+Upload\+Status}!file\+Model@{file\+Model}}
-\subsubsection[{get\+Upload\+Status}]{\setlength{\rightskip}{0pt plus 5cm}file\+Model\+::get\+Upload\+Status (
+\subsubsection[{\texorpdfstring{get\+Upload\+Status(\$attached\+\_\+size=0)}{getUploadStatus($attached_size=0)}}]{\setlength{\rightskip}{0pt plus 5cm}file\+Model\+::get\+Upload\+Status (
 \begin{DoxyParamCaption}
 \item[{}]{\$attached\+\_\+size = {\ttfamily 0}}
 \end{DoxyParamCaption}
-)}\label{classfileModel_a63c3d6b41db33e55521cd3f0b10ab493}
+)}\hypertarget{classfileModel_a63c3d6b41db33e55521cd3f0b10ab493}{}\label{classfileModel_a63c3d6b41db33e55521cd3f0b10ab493}
 Return messages for file upload and it depends whether an admin is or not
 
 
@@ -264,13 +264,13 @@ string
 
 Definition at line 267 of file file.\+model.\+php.
 
-\hypertarget{classfileModel_a5dd9542d5c0ed61a7dd0158900ff5c92}{}\index{file\+Model@{file\+Model}!init@{init}}
+\index{file\+Model@{file\+Model}!init@{init}}
 \index{init@{init}!file\+Model@{file\+Model}}
-\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}file\+Model\+::init (
+\subsubsection[{\texorpdfstring{init()}{init()}}]{\setlength{\rightskip}{0pt plus 5cm}file\+Model\+::init (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classfileModel_a5dd9542d5c0ed61a7dd0158900ff5c92}
+)}\hypertarget{classfileModel_a5dd9542d5c0ed61a7dd0158900ff5c92}{}\label{classfileModel_a5dd9542d5c0ed61a7dd0158900ff5c92}
 Initialization \begin{DoxyReturn}{Returns}
 void 
 \end{DoxyReturn}

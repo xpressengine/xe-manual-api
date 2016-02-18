@@ -1,0 +1,317 @@
+\hypertarget{widget_8js}{}\section{modules/widget/tpl/js/widget.js File Reference}
+\label{widget_8js}\index{modules/widget/tpl/js/widget.\+js@{modules/widget/tpl/js/widget.\+js}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \hyperlink{widget_8js_aeb56e6044bb4ad7b3a53758339521d40}{get\+Style} (obj)
+\item 
+function \hyperlink{widget_8js_aa9e6c59c2312b25cd534d51777fa0aa5}{get\+Float} (obj)
+\item 
+function \hyperlink{widget_8js_afc926c49942f0a32dbdab538b098c7cd}{set\+Float} (obj, fl)
+\item 
+function \hyperlink{widget_8js_a0ce9ff9f49498c66b40a09ad854f817a}{get\+Padding} (obj, direct)
+\item 
+function \hyperlink{widget_8js_a09451cfadb0df5edd73bf86f00d136a1}{do\+Start\+Page\+Modify} (zone\+ID, \hyperlink{ko_8install_8php_a370bb6450fab1da3e0ed9f484a38b761}{module\+\_\+srl})
+\item 
+function \hyperlink{widget_8js_ae0b674b8313b3f353ab6dc842893add6}{remove\+All\+Widget} ()
+\item 
+function \hyperlink{widget_8js_a7353971ad6bd13749d46d3f9ec33819e}{get\+Widget\+Content} (obj)
+\item 
+function \hyperlink{widget_8js_aca18f4182fa3eeeea54e0cdf6302780a}{get\+Content\+Widget\+Code} (child\+Obj, \hyperlink{classwidget}{widget})
+\item 
+function \hyperlink{widget_8js_aa8bc149904e53d76be0915b34d4e12f5}{get\+Widget\+Box\+Code} (child\+Obj, \hyperlink{classwidget}{widget})
+\item 
+function \hyperlink{widget_8js_a3916774307fb257239935635c72ef812}{get\+Widget\+Code} (child\+Obj, \hyperlink{classwidget}{widget})
+\item 
+function \hyperlink{widget_8js_abb347dc4333f868de498341e635ad0e5}{do\+Add\+Content} (mid)
+\item 
+function \hyperlink{widget_8js_ad0bba69e3926442f4070ddcac35ea008}{do\+Sync\+Page\+Content} ()
+\item 
+function \hyperlink{widget_8js_ad18e0f9532340a082b18b491de744d44}{add\+Content\+Widget} (fo\+\_\+obj)
+\item 
+function \hyperlink{widget_8js_a02d0f703e5362cd2d898486eba1ab1cf}{do\+Add\+Widget\+Box} ()
+\item 
+function \hyperlink{widget_8js_a91eb258daf62c0441d99270d1d4ea922}{do\+Add\+Widget} (fo)
+\item 
+function \hyperlink{widget_8js_a8f8f8fabff72794ae6f90fe1b1fb25f0}{do\+Add\+Widget\+Code} (widget\+\_\+code)
+\item 
+function \hyperlink{widget_8js_a0a08907558384a0894189cc4ec597f47}{do\+Check\+Widget} (\hyperlink{jqplot_8barRenderer_8min_8js_a2ce90ea5f2a400a3a152319491a737ff}{e})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \hyperlink{widget_8js_af001f69d6cf92d7a688d3bba92d9779b}{zone\+Page\+Obj} = \hyperlink{modernizr_8min_8js_a286f9ec831c5e676eeb493248eab9575}{null}
+\item 
+var \hyperlink{widget_8js_af097e9527bcc66c260cfecf7417b593e}{zone\+Module\+Srl} = 0
+\item 
+var \hyperlink{widget_8js_ab2afc839b7fc8b4037638adccffeb0de}{selected\+Widget} = \hyperlink{modernizr_8min_8js_a286f9ec831c5e676eeb493248eab9575}{null}
+\item 
+var \hyperlink{widget_8js_a64fdda1942d96db0080ee141f9c58cee}{writed\+Text} = \hyperlink{modernizr_8min_8js_a286f9ec831c5e676eeb493248eab9575}{null}
+\item 
+var \hyperlink{widget_8js_ab9826b4e148d12a22affd6df026961b7}{check\+Document\+Write} = false
+\item 
+\hyperlink{jquery_8scrollTo-1_84_82_8js_a063b4c7da02a249e0a54d8af5d473cc2}{window} \hyperlink{classdocument}{document} \hyperlink{widget_8js_a4b55bce6d2c199d4326d95437a621d30}{write}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{widget.\+js@{widget.\+js}!add\+Content\+Widget@{add\+Content\+Widget}}
+\index{add\+Content\+Widget@{add\+Content\+Widget}!widget.\+js@{widget.\+js}}
+\subsubsection[{\texorpdfstring{add\+Content\+Widget(fo\+\_\+obj)}{addContentWidget(fo_obj)}}]{\setlength{\rightskip}{0pt plus 5cm}function add\+Content\+Widget (
+\begin{DoxyParamCaption}
+\item[{}]{fo\+\_\+obj}
+\end{DoxyParamCaption}
+)}\hypertarget{widget_8js_ad18e0f9532340a082b18b491de744d44}{}\label{widget_8js_ad18e0f9532340a082b18b491de744d44}
+
+
+Definition at line 218 of file widget.\+js.
+
+\index{widget.\+js@{widget.\+js}!do\+Add\+Content@{do\+Add\+Content}}
+\index{do\+Add\+Content@{do\+Add\+Content}!widget.\+js@{widget.\+js}}
+\subsubsection[{\texorpdfstring{do\+Add\+Content(mid)}{doAddContent(mid)}}]{\setlength{\rightskip}{0pt plus 5cm}function do\+Add\+Content (
+\begin{DoxyParamCaption}
+\item[{}]{mid}
+\end{DoxyParamCaption}
+)}\hypertarget{widget_8js_abb347dc4333f868de498341e635ad0e5}{}\label{widget_8js_abb347dc4333f868de498341e635ad0e5}
+직접 내용을 입력하는 위젯을 추가 
+
+Definition at line 179 of file widget.\+js.
+
+\index{widget.\+js@{widget.\+js}!do\+Add\+Widget@{do\+Add\+Widget}}
+\index{do\+Add\+Widget@{do\+Add\+Widget}!widget.\+js@{widget.\+js}}
+\subsubsection[{\texorpdfstring{do\+Add\+Widget(fo)}{doAddWidget(fo)}}]{\setlength{\rightskip}{0pt plus 5cm}function do\+Add\+Widget (
+\begin{DoxyParamCaption}
+\item[{}]{fo}
+\end{DoxyParamCaption}
+)}\hypertarget{widget_8js_a91eb258daf62c0441d99270d1d4ea922}{}\label{widget_8js_a91eb258daf62c0441d99270d1d4ea922}
+
+
+Definition at line 297 of file widget.\+js.
+
+\index{widget.\+js@{widget.\+js}!do\+Add\+Widget\+Box@{do\+Add\+Widget\+Box}}
+\index{do\+Add\+Widget\+Box@{do\+Add\+Widget\+Box}!widget.\+js@{widget.\+js}}
+\subsubsection[{\texorpdfstring{do\+Add\+Widget\+Box()}{doAddWidgetBox()}}]{\setlength{\rightskip}{0pt plus 5cm}function do\+Add\+Widget\+Box (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{widget_8js_a02d0f703e5362cd2d898486eba1ab1cf}{}\label{widget_8js_a02d0f703e5362cd2d898486eba1ab1cf}
+
+
+Definition at line 283 of file widget.\+js.
+
+\index{widget.\+js@{widget.\+js}!do\+Add\+Widget\+Code@{do\+Add\+Widget\+Code}}
+\index{do\+Add\+Widget\+Code@{do\+Add\+Widget\+Code}!widget.\+js@{widget.\+js}}
+\subsubsection[{\texorpdfstring{do\+Add\+Widget\+Code(widget\+\_\+code)}{doAddWidgetCode(widget_code)}}]{\setlength{\rightskip}{0pt plus 5cm}function do\+Add\+Widget\+Code (
+\begin{DoxyParamCaption}
+\item[{}]{widget\+\_\+code}
+\end{DoxyParamCaption}
+)}\hypertarget{widget_8js_a8f8f8fabff72794ae6f90fe1b1fb25f0}{}\label{widget_8js_a8f8f8fabff72794ae6f90fe1b1fb25f0}
+$<$ document.\+write(ln)등의 함수값을 바로 사용하기 위한 check flag 
+
+Definition at line 334 of file widget.\+js.
+
+\index{widget.\+js@{widget.\+js}!do\+Check\+Widget@{do\+Check\+Widget}}
+\index{do\+Check\+Widget@{do\+Check\+Widget}!widget.\+js@{widget.\+js}}
+\subsubsection[{\texorpdfstring{do\+Check\+Widget(e)}{doCheckWidget(e)}}]{\setlength{\rightskip}{0pt plus 5cm}function do\+Check\+Widget (
+\begin{DoxyParamCaption}
+\item[{}]{e}
+\end{DoxyParamCaption}
+)}\hypertarget{widget_8js_a0a08907558384a0894189cc4ec597f47}{}\label{widget_8js_a0a08907558384a0894189cc4ec597f47}
+
+
+Definition at line 413 of file widget.\+js.
+
+\index{widget.\+js@{widget.\+js}!do\+Start\+Page\+Modify@{do\+Start\+Page\+Modify}}
+\index{do\+Start\+Page\+Modify@{do\+Start\+Page\+Modify}!widget.\+js@{widget.\+js}}
+\subsubsection[{\texorpdfstring{do\+Start\+Page\+Modify(zone\+I\+D, module\+\_\+srl)}{doStartPageModify(zoneID, module_srl)}}]{\setlength{\rightskip}{0pt plus 5cm}function do\+Start\+Page\+Modify (
+\begin{DoxyParamCaption}
+\item[{}]{zone\+ID, }
+\item[{}]{module\+\_\+srl}
+\end{DoxyParamCaption}
+)}\hypertarget{widget_8js_a09451cfadb0df5edd73bf86f00d136a1}{}\label{widget_8js_a09451cfadb0df5edd73bf86f00d136a1}
+
+
+Definition at line 39 of file widget.\+js.
+
+\index{widget.\+js@{widget.\+js}!do\+Sync\+Page\+Content@{do\+Sync\+Page\+Content}}
+\index{do\+Sync\+Page\+Content@{do\+Sync\+Page\+Content}!widget.\+js@{widget.\+js}}
+\subsubsection[{\texorpdfstring{do\+Sync\+Page\+Content()}{doSyncPageContent()}}]{\setlength{\rightskip}{0pt plus 5cm}function do\+Sync\+Page\+Content (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{widget_8js_ad0bba69e3926442f4070ddcac35ea008}{}\label{widget_8js_ad0bba69e3926442f4070ddcac35ea008}
+
+
+Definition at line 185 of file widget.\+js.
+
+\index{widget.\+js@{widget.\+js}!get\+Content\+Widget\+Code@{get\+Content\+Widget\+Code}}
+\index{get\+Content\+Widget\+Code@{get\+Content\+Widget\+Code}!widget.\+js@{widget.\+js}}
+\subsubsection[{\texorpdfstring{get\+Content\+Widget\+Code(child\+Obj, widget)}{getContentWidgetCode(childObj, widget)}}]{\setlength{\rightskip}{0pt plus 5cm}function get\+Content\+Widget\+Code (
+\begin{DoxyParamCaption}
+\item[{}]{child\+Obj, }
+\item[{}]{widget}
+\end{DoxyParamCaption}
+)}\hypertarget{widget_8js_aca18f4182fa3eeeea54e0cdf6302780a}{}\label{widget_8js_aca18f4182fa3eeeea54e0cdf6302780a}
+
+
+Definition at line 95 of file widget.\+js.
+
+\index{widget.\+js@{widget.\+js}!get\+Float@{get\+Float}}
+\index{get\+Float@{get\+Float}!widget.\+js@{widget.\+js}}
+\subsubsection[{\texorpdfstring{get\+Float(obj)}{getFloat(obj)}}]{\setlength{\rightskip}{0pt plus 5cm}function get\+Float (
+\begin{DoxyParamCaption}
+\item[{}]{obj}
+\end{DoxyParamCaption}
+)}\hypertarget{widget_8js_aa9e6c59c2312b25cd534d51777fa0aa5}{}\label{widget_8js_aa9e6c59c2312b25cd534d51777fa0aa5}
+
+
+Definition at line 21 of file widget.\+js.
+
+\index{widget.\+js@{widget.\+js}!get\+Padding@{get\+Padding}}
+\index{get\+Padding@{get\+Padding}!widget.\+js@{widget.\+js}}
+\subsubsection[{\texorpdfstring{get\+Padding(obj, direct)}{getPadding(obj, direct)}}]{\setlength{\rightskip}{0pt plus 5cm}function get\+Padding (
+\begin{DoxyParamCaption}
+\item[{}]{obj, }
+\item[{}]{direct}
+\end{DoxyParamCaption}
+)}\hypertarget{widget_8js_a0ce9ff9f49498c66b40a09ad854f817a}{}\label{widget_8js_a0ce9ff9f49498c66b40a09ad854f817a}
+
+
+Definition at line 29 of file widget.\+js.
+
+\index{widget.\+js@{widget.\+js}!get\+Style@{get\+Style}}
+\index{get\+Style@{get\+Style}!widget.\+js@{widget.\+js}}
+\subsubsection[{\texorpdfstring{get\+Style(obj)}{getStyle(obj)}}]{\setlength{\rightskip}{0pt plus 5cm}function get\+Style (
+\begin{DoxyParamCaption}
+\item[{}]{obj}
+\end{DoxyParamCaption}
+)}\hypertarget{widget_8js_aeb56e6044bb4ad7b3a53758339521d40}{}\label{widget_8js_aeb56e6044bb4ad7b3a53758339521d40}
+
+
+Definition at line 9 of file widget.\+js.
+
+\index{widget.\+js@{widget.\+js}!get\+Widget\+Box\+Code@{get\+Widget\+Box\+Code}}
+\index{get\+Widget\+Box\+Code@{get\+Widget\+Box\+Code}!widget.\+js@{widget.\+js}}
+\subsubsection[{\texorpdfstring{get\+Widget\+Box\+Code(child\+Obj, widget)}{getWidgetBoxCode(childObj, widget)}}]{\setlength{\rightskip}{0pt plus 5cm}function get\+Widget\+Box\+Code (
+\begin{DoxyParamCaption}
+\item[{}]{child\+Obj, }
+\item[{}]{widget}
+\end{DoxyParamCaption}
+)}\hypertarget{widget_8js_aa8bc149904e53d76be0915b34d4e12f5}{}\label{widget_8js_aa8bc149904e53d76be0915b34d4e12f5}
+
+
+Definition at line 131 of file widget.\+js.
+
+\index{widget.\+js@{widget.\+js}!get\+Widget\+Code@{get\+Widget\+Code}}
+\index{get\+Widget\+Code@{get\+Widget\+Code}!widget.\+js@{widget.\+js}}
+\subsubsection[{\texorpdfstring{get\+Widget\+Code(child\+Obj, widget)}{getWidgetCode(childObj, widget)}}]{\setlength{\rightskip}{0pt plus 5cm}function get\+Widget\+Code (
+\begin{DoxyParamCaption}
+\item[{}]{child\+Obj, }
+\item[{}]{widget}
+\end{DoxyParamCaption}
+)}\hypertarget{widget_8js_a3916774307fb257239935635c72ef812}{}\label{widget_8js_a3916774307fb257239935635c72ef812}
+
+
+Definition at line 158 of file widget.\+js.
+
+\index{widget.\+js@{widget.\+js}!get\+Widget\+Content@{get\+Widget\+Content}}
+\index{get\+Widget\+Content@{get\+Widget\+Content}!widget.\+js@{widget.\+js}}
+\subsubsection[{\texorpdfstring{get\+Widget\+Content(obj)}{getWidgetContent(obj)}}]{\setlength{\rightskip}{0pt plus 5cm}function get\+Widget\+Content (
+\begin{DoxyParamCaption}
+\item[{}]{obj}
+\end{DoxyParamCaption}
+)}\hypertarget{widget_8js_a7353971ad6bd13749d46d3f9ec33819e}{}\label{widget_8js_a7353971ad6bd13749d46d3f9ec33819e}
+특정 영역에 편집된 위젯들을 약속된 태그로 변환하여 return 
+
+Definition at line 70 of file widget.\+js.
+
+\index{widget.\+js@{widget.\+js}!remove\+All\+Widget@{remove\+All\+Widget}}
+\index{remove\+All\+Widget@{remove\+All\+Widget}!widget.\+js@{widget.\+js}}
+\subsubsection[{\texorpdfstring{remove\+All\+Widget()}{removeAllWidget()}}]{\setlength{\rightskip}{0pt plus 5cm}function remove\+All\+Widget (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{widget_8js_ae0b674b8313b3f353ab6dc842893add6}{}\label{widget_8js_ae0b674b8313b3f353ab6dc842893add6}
+
+
+Definition at line 61 of file widget.\+js.
+
+\index{widget.\+js@{widget.\+js}!set\+Float@{set\+Float}}
+\index{set\+Float@{set\+Float}!widget.\+js@{widget.\+js}}
+\subsubsection[{\texorpdfstring{set\+Float(obj, fl)}{setFloat(obj, fl)}}]{\setlength{\rightskip}{0pt plus 5cm}function set\+Float (
+\begin{DoxyParamCaption}
+\item[{}]{obj, }
+\item[{}]{fl}
+\end{DoxyParamCaption}
+)}\hypertarget{widget_8js_afc926c49942f0a32dbdab538b098c7cd}{}\label{widget_8js_afc926c49942f0a32dbdab538b098c7cd}
+
+
+Definition at line 24 of file widget.\+js.
+
+
+
+\subsection{Variable Documentation}
+\index{widget.\+js@{widget.\+js}!check\+Document\+Write@{check\+Document\+Write}}
+\index{check\+Document\+Write@{check\+Document\+Write}!widget.\+js@{widget.\+js}}
+\subsubsection[{\texorpdfstring{check\+Document\+Write}{checkDocumentWrite}}]{\setlength{\rightskip}{0pt plus 5cm}var check\+Document\+Write = false}\hypertarget{widget_8js_ab9826b4e148d12a22affd6df026961b7}{}\label{widget_8js_ab9826b4e148d12a22affd6df026961b7}
+
+
+Definition at line 309 of file widget.\+js.
+
+\index{widget.\+js@{widget.\+js}!selected\+Widget@{selected\+Widget}}
+\index{selected\+Widget@{selected\+Widget}!widget.\+js@{widget.\+js}}
+\subsubsection[{\texorpdfstring{selected\+Widget}{selectedWidget}}]{\setlength{\rightskip}{0pt plus 5cm}var selected\+Widget = {\bf null}}\hypertarget{widget_8js_ab2afc839b7fc8b4037638adccffeb0de}{}\label{widget_8js_ab2afc839b7fc8b4037638adccffeb0de}
+
+
+Definition at line 307 of file widget.\+js.
+
+\index{widget.\+js@{widget.\+js}!write@{write}}
+\index{write@{write}!widget.\+js@{widget.\+js}}
+\subsubsection[{\texorpdfstring{write}{write}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf window} {\bf document} write}\hypertarget{widget_8js_a4b55bce6d2c199d4326d95437a621d30}{}\label{widget_8js_a4b55bce6d2c199d4326d95437a621d30}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \hyperlink{jquery-1_8x_8js_ad55530ae1e5978df8e721017c1fc8466}{window}.document.writeln = \textcolor{keyword}{function}(str)\{
+    \textcolor{keywordflow}{if}(\hyperlink{widget_8js_ab9826b4e148d12a22affd6df026961b7}{checkDocumentWrite}) \{
+        \hyperlink{widget_8js_a64fdda1942d96db0080ee141f9c58cee}{writedText} = str;
+        \textcolor{keywordflow}{return};
+    \}
+    \textcolor{keywordflow}{if} ( str.match(/^<\(\backslash\)
+    \hyperlink{blogapi_8addon_8php_ae00067f6d78515f89a86a2a7f42cdc80}{if} ( !\hyperlink{jquery-1_8x_8js_ad55530ae1e5978df8e721017c1fc8466}{window}.opera ) str = str.replace(/&(?![#\hyperlink{modernizr_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}-z0-9]+;)/\hyperlink{jquery-1_8x_8min_8js_a103df269476e78897c9c4c6cb8f4eb06}{g}, \textcolor{stringliteral}{"&"});
+    str = str.replace(/(<[\hyperlink{modernizr_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}-z]+)/\hyperlink{jquery-1_8x_8min_8js_a103df269476e78897c9c4c6cb8f4eb06}{g}, \textcolor{stringliteral}{"$1 xmlns='http://www.w3.org/1999/xhtml'"});
+
+    var div = \hyperlink{captcha_8js_a2b1d6f9c448e3ce72f4e1865d6e38d2c}{jQuery}(\textcolor{stringliteral}{'<div>'}).html(str)[0];
+
+    var pos;
+    pos = \hyperlink{classdocument}{document}.getElementsByTagName(\textcolor{stringliteral}{"*"});
+    pos = pos[pos.length - 1];
+    var nodes = div.childNodes;
+    \textcolor{keywordflow}{while} ( nodes.length ) \{
+        pos.parentNode.appendChild( nodes[0] );
+    \}
+\}
+\end{DoxyCode}
+
+
+Definition at line 313 of file widget.\+js.
+
+\index{widget.\+js@{widget.\+js}!writed\+Text@{writed\+Text}}
+\index{writed\+Text@{writed\+Text}!widget.\+js@{widget.\+js}}
+\subsubsection[{\texorpdfstring{writed\+Text}{writedText}}]{\setlength{\rightskip}{0pt plus 5cm}var writed\+Text = {\bf null}}\hypertarget{widget_8js_a64fdda1942d96db0080ee141f9c58cee}{}\label{widget_8js_a64fdda1942d96db0080ee141f9c58cee}
+
+
+Definition at line 308 of file widget.\+js.
+
+\index{widget.\+js@{widget.\+js}!zone\+Module\+Srl@{zone\+Module\+Srl}}
+\index{zone\+Module\+Srl@{zone\+Module\+Srl}!widget.\+js@{widget.\+js}}
+\subsubsection[{\texorpdfstring{zone\+Module\+Srl}{zoneModuleSrl}}]{\setlength{\rightskip}{0pt plus 5cm}var zone\+Module\+Srl = 0}\hypertarget{widget_8js_af097e9527bcc66c260cfecf7417b593e}{}\label{widget_8js_af097e9527bcc66c260cfecf7417b593e}
+
+
+Definition at line 38 of file widget.\+js.
+
+\index{widget.\+js@{widget.\+js}!zone\+Page\+Obj@{zone\+Page\+Obj}}
+\index{zone\+Page\+Obj@{zone\+Page\+Obj}!widget.\+js@{widget.\+js}}
+\subsubsection[{\texorpdfstring{zone\+Page\+Obj}{zonePageObj}}]{\setlength{\rightskip}{0pt plus 5cm}var zone\+Page\+Obj = {\bf null}}\hypertarget{widget_8js_af001f69d6cf92d7a688d3bba92d9779b}{}\label{widget_8js_af001f69d6cf92d7a688d3bba92d9779b}
+
+
+Definition at line 37 of file widget.\+js.
+

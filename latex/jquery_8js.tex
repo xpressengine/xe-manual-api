@@ -1,0 +1,911 @@
+\hypertarget{jquery_8js}{}\section{common/js/jquery.js File Reference}
+\label{jquery_8js}\index{common/js/jquery.\+js@{common/js/jquery.\+js}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{xe__solid__enterprise__login_2js_2login_8js_a5d40f04b6bb824963a42ec4b5fbfe262}{j\+Query} \hyperlink{jquery_8js_a49af46fff8db03e9d8a4e62b3ac09a88}{extend} (\{expando\+:\char`\"{}j\+Query\char`\"{}+(core\+\_\+version+Math.\+random()).replace(/\textbackslash{}D/\hyperlink{jqplot_8barRenderer_8min_8js_af0b07d7059bc78f82e8f61034df85ab3}{g},\char`\"{}\char`\"{}), no\+Conflict\+:function(deep)\{\hyperlink{menu_2tpl_2js_2jquery_8jstree_8js_acba95bef569cfaee32c4ed0212b2bb92}{if}(window.\$===\hyperlink{xe__solid__enterprise__login_2js_2login_8js_a5d40f04b6bb824963a42ec4b5fbfe262}{j\+Query})\{window.\$=\+\_\+ \$;\}\hyperlink{menu_2tpl_2js_2jquery_8jstree_8js_acba95bef569cfaee32c4ed0212b2bb92}{if}(deep \&\&\hyperlink{xe__solid__enterprise__login_2js_2login_8js_a5d40f04b6bb824963a42ec4b5fbfe262}{window.\+j\+Query}===\hyperlink{xe__solid__enterprise__login_2js_2login_8js_a5d40f04b6bb824963a42ec4b5fbfe262}{j\+Query})\{\hyperlink{xe__solid__enterprise__login_2js_2login_8js_a5d40f04b6bb824963a42ec4b5fbfe262}{window.\+j\+Query}=\+\_\+j\+Query;\}return \hyperlink{xe__solid__enterprise__login_2js_2login_8js_a5d40f04b6bb824963a42ec4b5fbfe262}{j\+Query};\}, is\+Ready\+:false,   ready\+Wait\+:1, hold\+Ready\+:function(hold)\{\hyperlink{menu_2tpl_2js_2jquery_8jstree_8js_acba95bef569cfaee32c4ed0212b2bb92}{if}(hold)\{j\+Query.\+ready\+Wait++;\}\hyperlink{swfupload_8js_a0544c3fe466e421738dae463968b70ba}{else}\{j\+Query.\+ready(true);\}\}, ready\+:function(wait)\{\hyperlink{menu_2tpl_2js_2jquery_8jstree_8js_acba95bef569cfaee32c4ed0212b2bb92}{if}(wait===true?-\/-\/j\+Query.\+ready\+Wait\+:j\+Query.\+is\+Ready)\{return;\}j\+Query.\+is\+Ready=true;\hyperlink{menu_2tpl_2js_2jquery_8jstree_8js_acba95bef569cfaee32c4ed0212b2bb92}{if}(wait!==true \&\&-\/-\/j\+Query.\+ready\+Wait $>$ 0)\{return;\}ready\+List.\+resolve\+With(\hyperlink{classdocument}{document}, \mbox{[}\hyperlink{xe__solid__enterprise__login_2js_2login_8js_a5d40f04b6bb824963a42ec4b5fbfe262}{j\+Query}\mbox{]});\hyperlink{menu_2tpl_2js_2jquery_8jstree_8js_acba95bef569cfaee32c4ed0212b2bb92}{if}(\hyperlink{jquery_8js_a3a2670632785d79909fadd16431e30f9}{j\+Query.\+fn.\+trigger})\{\hyperlink{xe__solid__enterprise__login_2js_2login_8js_a5d40f04b6bb824963a42ec4b5fbfe262}{j\+Query}(\hyperlink{classdocument}{document}).\hyperlink{jquery_8js_a3a2670632785d79909fadd16431e30f9}{trigger}(\char`\"{}ready\char`\"{}).off(\char`\"{}ready\char`\"{});\}\},       is\+Function\+:function(obj)\{return j\+Query.\+type(obj)===\char`\"{}function\char`\"{};\}, is\+Array\+:\+Array.\+is\+Array, is\+Window\+:function(obj)\{return obj!=\hyperlink{modernizr_8min_8js_a286f9ec831c5e676eeb493248eab9575}{null} \&\&obj===\hyperlink{jquery_8scrollTo-1_84_82_8js_a063b4c7da02a249e0a54d8af5d473cc2}{obj.\+window};\}, is\+Numeric\+:function(obj)\{return!is\+NaN(parse\+Float(obj))\&\&is\+Finite(obj);\}, type\+:function(obj)\{\hyperlink{menu_2tpl_2js_2jquery_8jstree_8js_acba95bef569cfaee32c4ed0212b2bb92}{if}(obj==\hyperlink{modernizr_8min_8js_a286f9ec831c5e676eeb493248eab9575}{null})\{return String(obj);\}return typeof obj===\char`\"{}object\char`\"{}$\vert$$\vert$typeof obj===\char`\"{}function\char`\"{}?class2type\mbox{[}core\+\_\+to\+String.\+call(obj)\mbox{]}$\vert$$\vert$\char`\"{}object\char`\"{}\+:typeof obj;\}, is\+Plain\+Object\+:function(obj)\{           \hyperlink{menu_2tpl_2js_2jquery_8jstree_8js_acba95bef569cfaee32c4ed0212b2bb92}{if}(j\+Query.\+type(obj)!==\char`\"{}object\char`\"{}$\vert$$\vert$obj.\+node\+Type$\vert$$\vert$j\+Query.\+is\+Window(obj))\{return false;\}           \hyperlink{jquery-1_8x_8js_abe4cc9788f52e49485473dc699537388}{try}\{\hyperlink{menu_2tpl_2js_2jquery_8jstree_8js_acba95bef569cfaee32c4ed0212b2bb92}{if}(\hyperlink{jqplot_8categoryAxisRenderer_8min_8js_a13b62bd4d95dff6ffac150c8a298686f}{obj.\+constructor} \&\&!core\+\_\+has\+Own.\+call(\hyperlink{jqplot_8categoryAxisRenderer_8min_8js_a36e53ecf5905332537c27e11af9e621a}{obj.\+constructor.\+prototype},\char`\"{}is\+Prototype\+Of\char`\"{}))\{return false;\}\}\hyperlink{jquery-1_8x_8js_a5bf45fc51bc0426586792b5f9cb95431}{catch}(\hyperlink{jqplot_8barRenderer_8min_8js_a2ce90ea5f2a400a3a152319491a737ff}{e})\{return false;\}   return true;\}, is\+Empty\+Object\+:function(obj)\{var \hyperlink{common_8js_a22c29d2aa8ed6161ce8faa718ef76e68}{name};\hyperlink{document__category_8js_aa303d4e538a4022d72a50a7ad8ee9799}{for}(\hyperlink{common_8js_a22c29d2aa8ed6161ce8faa718ef76e68}{name} in obj)\{return false;\}return true;\}, error\+:function(msg)\{throw new Error(msg);\},       parse\+H\+T\+M\+L\+:function(\hyperlink{document__category_8js_a94b4f25375ac17cb917012e05bf514a7}{data}, context, keep\+Scripts)\{\hyperlink{menu_2tpl_2js_2jquery_8jstree_8js_acba95bef569cfaee32c4ed0212b2bb92}{if}(!\hyperlink{document__category_8js_a94b4f25375ac17cb917012e05bf514a7}{data}$\vert$$\vert$typeof data!==\char`\"{}string\char`\"{})\{return \hyperlink{modernizr_8min_8js_a286f9ec831c5e676eeb493248eab9575}{null};\}\hyperlink{menu_2tpl_2js_2jquery_8jstree_8js_acba95bef569cfaee32c4ed0212b2bb92}{if}(typeof context===\char`\"{}boolean\char`\"{})\{keep\+Scripts=context;context=false;\}context=context$\vert$$\vert$\hyperlink{classdocument}{document};var parsed=rsingle\+Tag.\+exec(\hyperlink{document__category_8js_a94b4f25375ac17cb917012e05bf514a7}{data}), scripts=!keep\+Scripts \&\&\mbox{[}$\,$\mbox{]};\hyperlink{menu_2tpl_2js_2jquery_8jstree_8js_acba95bef569cfaee32c4ed0212b2bb92}{if}(parsed)\{return\mbox{[}context.\+create\+Element(parsed\mbox{[}1\mbox{]})\mbox{]};\}parsed=j\+Query.\+build\+Fragment(\mbox{[}\hyperlink{document__category_8js_a94b4f25375ac17cb917012e05bf514a7}{data}\mbox{]}, context, scripts);\hyperlink{menu_2tpl_2js_2jquery_8jstree_8js_acba95bef569cfaee32c4ed0212b2bb92}{if}(scripts)\{\hyperlink{xe__solid__enterprise__login_2js_2login_8js_a5d40f04b6bb824963a42ec4b5fbfe262}{j\+Query}(scripts).\hyperlink{jquery_8js_ac2bfeac9f445211e9176a527d3a292c4}{remove}();\}return j\+Query.\+merge(\mbox{[}$\,$\mbox{]}, parsed.\+child\+Nodes);\}, parse\+J\+S\+O\+N\+:\+J\+S\+O\+N.\+parse, parse\+X\+M\+L\+:function(\hyperlink{document__category_8js_a94b4f25375ac17cb917012e05bf514a7}{data})\{var xml, tmp;\hyperlink{menu_2tpl_2js_2jquery_8jstree_8js_acba95bef569cfaee32c4ed0212b2bb92}{if}(!\hyperlink{document__category_8js_a94b4f25375ac17cb917012e05bf514a7}{data}$\vert$$\vert$typeof data!==\char`\"{}string\char`\"{})\{return \hyperlink{modernizr_8min_8js_a286f9ec831c5e676eeb493248eab9575}{null};\}\hyperlink{jquery-1_8x_8js_abe4cc9788f52e49485473dc699537388}{try}\{tmp=new D\+O\+M\+Parser();xml=tmp.\+parse\+From\+String(\hyperlink{document__category_8js_a94b4f25375ac17cb917012e05bf514a7}{data},\char`\"{}text/xml\char`\"{});\}catch(\hyperlink{jqplot_8barRenderer_8min_8js_a2ce90ea5f2a400a3a152319491a737ff}{e})\{xml=\hyperlink{menu_2tpl_2js_2jquery_8tmpl_8js_a08113a236cc18d2a9d5ce27e638012be}{undefined};\}\hyperlink{menu_2tpl_2js_2jquery_8jstree_8js_acba95bef569cfaee32c4ed0212b2bb92}{if}(!xml$\vert$$\vert$xml.\+get\+Elements\+By\+Tag\+Name(\char`\"{}parsererror\char`\"{}).length)\{\hyperlink{jquery_8js_ad9c7b7332a24ed93fb21cd053c99bd12}{j\+Query.\+error}(\char`\"{}Invalid X\+M\+L\+: \char`\"{}+data);\}return xml;\}, noop\+:function()\{\}, global\+Eval\+:function(code)\{var script, indirect=eval;code=\hyperlink{common_8js_aa2a2da3bb0be9a135cfe2898cb9aa8bc}{j\+Query.\+trim}(code);\hyperlink{menu_2tpl_2js_2jquery_8jstree_8js_acba95bef569cfaee32c4ed0212b2bb92}{if}(code)\{       \hyperlink{menu_2tpl_2js_2jquery_8jstree_8js_acba95bef569cfaee32c4ed0212b2bb92}{if}(code.\+index\+Of(\char`\"{}use \hyperlink{menu_2tpl_2js_2jquery_8jstree_8js_ae2475e10618961c050dcba04e8c42331}{strict}\char`\"{})===1)\{script=document.\+create\+Element(\char`\"{}script\char`\"{});script.\+text=code;document.\+head.\+append\+Child(script).parent\+Node.\+remove\+Child(script);\}\hyperlink{swfupload_8js_a0544c3fe466e421738dae463968b70ba}{else}\{   indirect(code);\}\}\},   camel\+Case\+:function(string)\{return string.\+replace(rms\+Prefix,\char`\"{}ms-\/\char`\"{}).replace(rdash\+Alpha, fcamel\+Case);\}, node\+Name\+:function(elem, \hyperlink{common_8js_a22c29d2aa8ed6161ce8faa718ef76e68}{name})\{return elem.\+node\+Name \&\&elem.\+node\+Name.\+to\+Lower\+Case()===name.\+to\+Lower\+Case();\}, each\+:function(obj, callback, args)\{var \hyperlink{jquery_8js_abe5393d870043cf6aaa1d5ad5fce755c}{value}, \hyperlink{jqplot_8barRenderer_8min_8js_ad34c35dd1d1578d93d112c22c7726e0f}{i}=0, \hyperlink{xpresseditor_8min_8js_a8251a40bc2803d85bf8a918f1f288cce}{length}=\hyperlink{xpresseditor_8min_8js_a8251a40bc2803d85bf8a918f1f288cce}{obj.\+length}, is\+Array=\hyperlink{jquery_8js_a8cf85f36d5b3b4da8acc3f367e3b6792}{is\+Arraylike}(obj);\hyperlink{menu_2tpl_2js_2jquery_8jstree_8js_acba95bef569cfaee32c4ed0212b2bb92}{if}(args)\{\hyperlink{menu_2tpl_2js_2jquery_8jstree_8js_acba95bef569cfaee32c4ed0212b2bb92}{if}(is\+Array)\{\hyperlink{document__category_8js_aa303d4e538a4022d72a50a7ad8ee9799}{for}(;\hyperlink{jqplot_8barRenderer_8min_8js_ad34c35dd1d1578d93d112c22c7726e0f}{i}$<$ \hyperlink{xpresseditor_8min_8js_a8251a40bc2803d85bf8a918f1f288cce}{length};\hyperlink{jqplot_8barRenderer_8min_8js_ad34c35dd1d1578d93d112c22c7726e0f}{i}++)\{\hyperlink{jquery_8js_abe5393d870043cf6aaa1d5ad5fce755c}{value}=callback.\+apply(obj\mbox{[}\hyperlink{jqplot_8barRenderer_8min_8js_ad34c35dd1d1578d93d112c22c7726e0f}{i}\mbox{]}, args);\hyperlink{menu_2tpl_2js_2jquery_8jstree_8js_acba95bef569cfaee32c4ed0212b2bb92}{if}(\hyperlink{jquery_8js_abe5393d870043cf6aaa1d5ad5fce755c}{value}===false)\{break;\}\}\}\hyperlink{swfupload_8js_a0544c3fe466e421738dae463968b70ba}{else}\{\hyperlink{document__category_8js_aa303d4e538a4022d72a50a7ad8ee9799}{for}(\hyperlink{jqplot_8barRenderer_8min_8js_ad34c35dd1d1578d93d112c22c7726e0f}{i} in obj)\{\hyperlink{jquery_8js_abe5393d870043cf6aaa1d5ad5fce755c}{value}=callback.\+apply(obj\mbox{[}\hyperlink{jqplot_8barRenderer_8min_8js_ad34c35dd1d1578d93d112c22c7726e0f}{i}\mbox{]}, args);\hyperlink{menu_2tpl_2js_2jquery_8jstree_8js_acba95bef569cfaee32c4ed0212b2bb92}{if}(\hyperlink{jquery_8js_abe5393d870043cf6aaa1d5ad5fce755c}{value}===false)\{break;\}\}\}\}\hyperlink{swfupload_8js_a0544c3fe466e421738dae463968b70ba}{else}\{\hyperlink{menu_2tpl_2js_2jquery_8jstree_8js_acba95bef569cfaee32c4ed0212b2bb92}{if}(is\+Array)\{\hyperlink{document__category_8js_aa303d4e538a4022d72a50a7ad8ee9799}{for}(;\hyperlink{jqplot_8barRenderer_8min_8js_ad34c35dd1d1578d93d112c22c7726e0f}{i}$<$ \hyperlink{xpresseditor_8min_8js_a8251a40bc2803d85bf8a918f1f288cce}{length};\hyperlink{jqplot_8barRenderer_8min_8js_ad34c35dd1d1578d93d112c22c7726e0f}{i}++)\{\hyperlink{jquery_8js_abe5393d870043cf6aaa1d5ad5fce755c}{value}=callback.\+call(obj\mbox{[}\hyperlink{jqplot_8barRenderer_8min_8js_ad34c35dd1d1578d93d112c22c7726e0f}{i}\mbox{]}, \hyperlink{jqplot_8barRenderer_8min_8js_ad34c35dd1d1578d93d112c22c7726e0f}{i}, obj\mbox{[}\hyperlink{jqplot_8barRenderer_8min_8js_ad34c35dd1d1578d93d112c22c7726e0f}{i}\mbox{]});\hyperlink{menu_2tpl_2js_2jquery_8jstree_8js_acba95bef569cfaee32c4ed0212b2bb92}{if}(\hyperlink{jquery_8js_abe5393d870043cf6aaa1d5ad5fce755c}{value}===false)\{break;\}\}\}\hyperlink{swfupload_8js_a0544c3fe466e421738dae463968b70ba}{else}\{\hyperlink{document__category_8js_aa303d4e538a4022d72a50a7ad8ee9799}{for}(\hyperlink{jqplot_8barRenderer_8min_8js_ad34c35dd1d1578d93d112c22c7726e0f}{i} in obj)\{\hyperlink{jquery_8js_abe5393d870043cf6aaa1d5ad5fce755c}{value}=callback.\+call(obj\mbox{[}\hyperlink{jqplot_8barRenderer_8min_8js_ad34c35dd1d1578d93d112c22c7726e0f}{i}\mbox{]}, \hyperlink{jqplot_8barRenderer_8min_8js_ad34c35dd1d1578d93d112c22c7726e0f}{i}, obj\mbox{[}\hyperlink{jqplot_8barRenderer_8min_8js_ad34c35dd1d1578d93d112c22c7726e0f}{i}\mbox{]});\hyperlink{menu_2tpl_2js_2jquery_8jstree_8js_acba95bef569cfaee32c4ed0212b2bb92}{if}(\hyperlink{jquery_8js_abe5393d870043cf6aaa1d5ad5fce755c}{value}===false)\{break;\}\}\}\}return obj;\}, trim\+:function(text)\{return text==\hyperlink{modernizr_8min_8js_a286f9ec831c5e676eeb493248eab9575}{null}?\char`\"{}\char`\"{}\+:core\+\_\+trim.\+call(text);\}, make\+Array\+:function(arr, results)\{var ret=results$\vert$$\vert$\mbox{[}$\,$\mbox{]};\hyperlink{menu_2tpl_2js_2jquery_8jstree_8js_acba95bef569cfaee32c4ed0212b2bb92}{if}(arr!=\hyperlink{modernizr_8min_8js_a286f9ec831c5e676eeb493248eab9575}{null})\{\hyperlink{menu_2tpl_2js_2jquery_8jstree_8js_acba95bef569cfaee32c4ed0212b2bb92}{if}(\hyperlink{jquery_8js_a8cf85f36d5b3b4da8acc3f367e3b6792}{is\+Arraylike}(\hyperlink{classObject}{Object}(arr)))\{j\+Query.\+merge(ret, typeof arr===\char`\"{}string\char`\"{}?\mbox{[}arr\mbox{]}\+:arr);\}\hyperlink{swfupload_8js_a0544c3fe466e421738dae463968b70ba}{else}\{core\+\_\+push.\+call(ret, arr);\}\}return ret;\}, in\+Array\+:function(elem, arr, \hyperlink{jqplot_8barRenderer_8min_8js_ad34c35dd1d1578d93d112c22c7726e0f}{i})\{return arr==\hyperlink{modernizr_8min_8js_a286f9ec831c5e676eeb493248eab9575}{null}?-\/1\+:core\+\_\+index\+Of.\+call(arr, elem, \hyperlink{jqplot_8barRenderer_8min_8js_ad34c35dd1d1578d93d112c22c7726e0f}{i});\}, merge\+:function(first, second)\{var \hyperlink{jqplot_8barRenderer_8min_8js_a2faec6c4076b77032638fcf3d23bfaae}{l}=\hyperlink{xpresseditor_8min_8js_a8251a40bc2803d85bf8a918f1f288cce}{second.\+length}, \hyperlink{jqplot_8barRenderer_8min_8js_ad34c35dd1d1578d93d112c22c7726e0f}{i}=\hyperlink{xpresseditor_8min_8js_a8251a40bc2803d85bf8a918f1f288cce}{first.\+length}, \hyperlink{jqplot_8barRenderer_8min_8js_ad89085f141a3cbe5b57804c5a6491fed}{j}=0;\hyperlink{menu_2tpl_2js_2jquery_8jstree_8js_acba95bef569cfaee32c4ed0212b2bb92}{if}(typeof \hyperlink{jqplot_8barRenderer_8min_8js_a2faec6c4076b77032638fcf3d23bfaae}{l}===\char`\"{}number\char`\"{})\{for(;\hyperlink{jqplot_8barRenderer_8min_8js_ad89085f141a3cbe5b57804c5a6491fed}{j}$<$ \hyperlink{jqplot_8barRenderer_8min_8js_a2faec6c4076b77032638fcf3d23bfaae}{l};\hyperlink{jqplot_8barRenderer_8min_8js_ad89085f141a3cbe5b57804c5a6491fed}{j}++)\{first\mbox{[}\hyperlink{jqplot_8barRenderer_8min_8js_ad34c35dd1d1578d93d112c22c7726e0f}{i}++\mbox{]}=second\mbox{[}\hyperlink{jqplot_8barRenderer_8min_8js_ad89085f141a3cbe5b57804c5a6491fed}{j}\mbox{]};\}\}\hyperlink{swfupload_8js_a0544c3fe466e421738dae463968b70ba}{else}\{\hyperlink{xpresseditor_8min_8js_a5ab299f84f8a2a7703cada2c7c0d9fce}{while}(second\mbox{[}\hyperlink{jqplot_8barRenderer_8min_8js_ad89085f141a3cbe5b57804c5a6491fed}{j}\mbox{]}!==\hyperlink{menu_2tpl_2js_2jquery_8tmpl_8js_a08113a236cc18d2a9d5ce27e638012be}{undefined})\{first\mbox{[}\hyperlink{jqplot_8barRenderer_8min_8js_ad34c35dd1d1578d93d112c22c7726e0f}{i}++\mbox{]}=second\mbox{[}\hyperlink{jqplot_8barRenderer_8min_8js_ad89085f141a3cbe5b57804c5a6491fed}{j}++\mbox{]};\}\}\hyperlink{xpresseditor_8min_8js_a8251a40bc2803d85bf8a918f1f288cce}{first.\+length}=\hyperlink{jqplot_8barRenderer_8min_8js_ad34c35dd1d1578d93d112c22c7726e0f}{i};return first;\}, grep\+:function(elems, callback, inv)\{var ret\+Val, ret=\mbox{[}$\,$\mbox{]}, \hyperlink{jqplot_8barRenderer_8min_8js_ad34c35dd1d1578d93d112c22c7726e0f}{i}=0, \hyperlink{xpresseditor_8min_8js_a8251a40bc2803d85bf8a918f1f288cce}{length}=\hyperlink{xpresseditor_8min_8js_a8251a40bc2803d85bf8a918f1f288cce}{elems.\+length};inv=!!inv;   \hyperlink{document__category_8js_aa303d4e538a4022d72a50a7ad8ee9799}{for}(;\hyperlink{jqplot_8barRenderer_8min_8js_ad34c35dd1d1578d93d112c22c7726e0f}{i}$<$ \hyperlink{xpresseditor_8min_8js_a8251a40bc2803d85bf8a918f1f288cce}{length};\hyperlink{jqplot_8barRenderer_8min_8js_ad34c35dd1d1578d93d112c22c7726e0f}{i}++)\{ret\+Val=!!callback(elems\mbox{[}\hyperlink{jqplot_8barRenderer_8min_8js_ad34c35dd1d1578d93d112c22c7726e0f}{i}\mbox{]}, \hyperlink{jqplot_8barRenderer_8min_8js_ad34c35dd1d1578d93d112c22c7726e0f}{i});\hyperlink{menu_2tpl_2js_2jquery_8jstree_8js_acba95bef569cfaee32c4ed0212b2bb92}{if}(inv!==ret\+Val)\{\hyperlink{jqplot_8pointLabels_8min_8js_a5f5a5a175f1cd3c502e9ff91e03dc36e}{ret.\+push}(elems\mbox{[}\hyperlink{jqplot_8barRenderer_8min_8js_ad34c35dd1d1578d93d112c22c7726e0f}{i}\mbox{]});\}\}return ret;\}, map\+:function(elems, callback, arg)\{var \hyperlink{jquery_8js_abe5393d870043cf6aaa1d5ad5fce755c}{value}, \hyperlink{jqplot_8barRenderer_8min_8js_ad34c35dd1d1578d93d112c22c7726e0f}{i}=0, \hyperlink{xpresseditor_8min_8js_a8251a40bc2803d85bf8a918f1f288cce}{length}=\hyperlink{xpresseditor_8min_8js_a8251a40bc2803d85bf8a918f1f288cce}{elems.\+length}, is\+Array=\hyperlink{jquery_8js_a8cf85f36d5b3b4da8acc3f367e3b6792}{is\+Arraylike}(elems), ret=\mbox{[}$\,$\mbox{]};\hyperlink{menu_2tpl_2js_2jquery_8jstree_8js_acba95bef569cfaee32c4ed0212b2bb92}{if}(is\+Array)\{\hyperlink{document__category_8js_aa303d4e538a4022d72a50a7ad8ee9799}{for}(;\hyperlink{jqplot_8barRenderer_8min_8js_ad34c35dd1d1578d93d112c22c7726e0f}{i}$<$ \hyperlink{xpresseditor_8min_8js_a8251a40bc2803d85bf8a918f1f288cce}{length};\hyperlink{jqplot_8barRenderer_8min_8js_ad34c35dd1d1578d93d112c22c7726e0f}{i}++)\{\hyperlink{jquery_8js_abe5393d870043cf6aaa1d5ad5fce755c}{value}=callback(elems\mbox{[}\hyperlink{jqplot_8barRenderer_8min_8js_ad34c35dd1d1578d93d112c22c7726e0f}{i}\mbox{]}, \hyperlink{jqplot_8barRenderer_8min_8js_ad34c35dd1d1578d93d112c22c7726e0f}{i}, arg);\hyperlink{menu_2tpl_2js_2jquery_8jstree_8js_acba95bef569cfaee32c4ed0212b2bb92}{if}(value!=\hyperlink{modernizr_8min_8js_a286f9ec831c5e676eeb493248eab9575}{null})\{ret\mbox{[}\hyperlink{xpresseditor_8min_8js_a8251a40bc2803d85bf8a918f1f288cce}{ret.\+length}\mbox{]}=\hyperlink{jquery_8js_abe5393d870043cf6aaa1d5ad5fce755c}{value};\}\}\}\hyperlink{swfupload_8js_a0544c3fe466e421738dae463968b70ba}{else}\{\hyperlink{document__category_8js_aa303d4e538a4022d72a50a7ad8ee9799}{for}(\hyperlink{jqplot_8barRenderer_8min_8js_ad34c35dd1d1578d93d112c22c7726e0f}{i} in elems)\{\hyperlink{jquery_8js_abe5393d870043cf6aaa1d5ad5fce755c}{value}=callback(elems\mbox{[}\hyperlink{jqplot_8barRenderer_8min_8js_ad34c35dd1d1578d93d112c22c7726e0f}{i}\mbox{]}, \hyperlink{jqplot_8barRenderer_8min_8js_ad34c35dd1d1578d93d112c22c7726e0f}{i}, arg);\hyperlink{menu_2tpl_2js_2jquery_8jstree_8js_acba95bef569cfaee32c4ed0212b2bb92}{if}(value!=\hyperlink{modernizr_8min_8js_a286f9ec831c5e676eeb493248eab9575}{null})\{ret\mbox{[}\hyperlink{xpresseditor_8min_8js_a8251a40bc2803d85bf8a918f1f288cce}{ret.\+length}\mbox{]}=\hyperlink{jquery_8js_abe5393d870043cf6aaa1d5ad5fce755c}{value};\}\}\}return core\+\_\+concat.\+apply(\mbox{[}$\,$\mbox{]}, ret);\}, guid\+:1,   proxy\+:function(\hyperlink{jquery_8min_8js_af453dd93808e2e2826fd92ab8c394cfc}{fn}, context)\{var tmp, args, proxy;\hyperlink{menu_2tpl_2js_2jquery_8jstree_8js_acba95bef569cfaee32c4ed0212b2bb92}{if}(typeof context===\char`\"{}string\char`\"{})\{tmp=\hyperlink{jquery_8min_8js_af453dd93808e2e2826fd92ab8c394cfc}{fn}\mbox{[}context\mbox{]};context=\hyperlink{jquery_8min_8js_af453dd93808e2e2826fd92ab8c394cfc}{fn};\hyperlink{jquery_8min_8js_af453dd93808e2e2826fd92ab8c394cfc}{fn}=tmp;\}   \hyperlink{menu_2tpl_2js_2jquery_8jstree_8js_acba95bef569cfaee32c4ed0212b2bb92}{if}(!j\+Query.\+is\+Function(\hyperlink{jquery_8min_8js_af453dd93808e2e2826fd92ab8c394cfc}{fn}))\{return \hyperlink{menu_2tpl_2js_2jquery_8tmpl_8js_a08113a236cc18d2a9d5ce27e638012be}{undefined};\}args=core\+\_\+slice.\+call(arguments, 2);proxy=function()\{return fn.\+apply(context$\vert$$\vert$\hyperlink{jquery_8parallax-scroll_8min_8js_a05c09a5e9d53fa7adf0a7936038c2fa3}{this}, args.\+concat(core\+\_\+slice.\+call(arguments)));\};proxy.\+guid=fn.\+guid=fn.\+guid$\vert$$\vert$j\+Query.\+guid++;return proxy;\},   access\+:function(elems, \hyperlink{jquery_8min_8js_af453dd93808e2e2826fd92ab8c394cfc}{fn}, key, \hyperlink{jquery_8js_abe5393d870043cf6aaa1d5ad5fce755c}{value}, chainable, empty\+Get, raw)\{var \hyperlink{jqplot_8barRenderer_8min_8js_ad34c35dd1d1578d93d112c22c7726e0f}{i}=0, \hyperlink{xpresseditor_8min_8js_a8251a40bc2803d85bf8a918f1f288cce}{length}=\hyperlink{xpresseditor_8min_8js_a8251a40bc2803d85bf8a918f1f288cce}{elems.\+length}, bulk=key==\hyperlink{modernizr_8min_8js_a286f9ec831c5e676eeb493248eab9575}{null};\hyperlink{menu_2tpl_2js_2jquery_8jstree_8js_acba95bef569cfaee32c4ed0212b2bb92}{if}(j\+Query.\+type(key)===\char`\"{}object\char`\"{})\{chainable=true;\hyperlink{document__category_8js_aa303d4e538a4022d72a50a7ad8ee9799}{for}(\hyperlink{jqplot_8barRenderer_8min_8js_ad34c35dd1d1578d93d112c22c7726e0f}{i} in key)\{j\+Query.\+access(elems, \hyperlink{jquery_8min_8js_af453dd93808e2e2826fd92ab8c394cfc}{fn}, \hyperlink{jqplot_8barRenderer_8min_8js_ad34c35dd1d1578d93d112c22c7726e0f}{i}, key\mbox{[}\hyperlink{jqplot_8barRenderer_8min_8js_ad34c35dd1d1578d93d112c22c7726e0f}{i}\mbox{]}, true, empty\+Get, raw);\}\}\hyperlink{swfupload_8js_a0544c3fe466e421738dae463968b70ba}{else} \hyperlink{menu_2tpl_2js_2jquery_8jstree_8js_acba95bef569cfaee32c4ed0212b2bb92}{if}(value!==\hyperlink{menu_2tpl_2js_2jquery_8tmpl_8js_a08113a236cc18d2a9d5ce27e638012be}{undefined})\{chainable=true;\hyperlink{menu_2tpl_2js_2jquery_8jstree_8js_acba95bef569cfaee32c4ed0212b2bb92}{if}(!j\+Query.\+is\+Function(\hyperlink{jquery_8js_abe5393d870043cf6aaa1d5ad5fce755c}{value}))\{raw=true;\}\hyperlink{menu_2tpl_2js_2jquery_8jstree_8js_acba95bef569cfaee32c4ed0212b2bb92}{if}(bulk)\{\hyperlink{menu_2tpl_2js_2jquery_8jstree_8js_acba95bef569cfaee32c4ed0212b2bb92}{if}(raw)\{fn.\+call(elems, \hyperlink{jquery_8js_abe5393d870043cf6aaa1d5ad5fce755c}{value});\hyperlink{jquery_8min_8js_af453dd93808e2e2826fd92ab8c394cfc}{fn}=\hyperlink{modernizr_8min_8js_a286f9ec831c5e676eeb493248eab9575}{null};\}\hyperlink{swfupload_8js_a0544c3fe466e421738dae463968b70ba}{else}\{bulk=\hyperlink{jquery_8min_8js_af453dd93808e2e2826fd92ab8c394cfc}{fn};\hyperlink{jquery_8min_8js_af453dd93808e2e2826fd92ab8c394cfc}{fn}=function(elem, key, \hyperlink{jquery_8js_abe5393d870043cf6aaa1d5ad5fce755c}{value})\{return bulk.\+call(\hyperlink{xe__solid__enterprise__login_2js_2login_8js_a5d40f04b6bb824963a42ec4b5fbfe262}{j\+Query}(elem), \hyperlink{jquery_8js_abe5393d870043cf6aaa1d5ad5fce755c}{value});\};\}\}\hyperlink{menu_2tpl_2js_2jquery_8jstree_8js_acba95bef569cfaee32c4ed0212b2bb92}{if}(\hyperlink{jquery_8min_8js_af453dd93808e2e2826fd92ab8c394cfc}{fn})\{\hyperlink{document__category_8js_aa303d4e538a4022d72a50a7ad8ee9799}{for}(;\hyperlink{jqplot_8barRenderer_8min_8js_ad34c35dd1d1578d93d112c22c7726e0f}{i}$<$ \hyperlink{xpresseditor_8min_8js_a8251a40bc2803d85bf8a918f1f288cce}{length};\hyperlink{jqplot_8barRenderer_8min_8js_ad34c35dd1d1578d93d112c22c7726e0f}{i}++)\{\hyperlink{jquery_8min_8js_af453dd93808e2e2826fd92ab8c394cfc}{fn}(elems\mbox{[}\hyperlink{jqplot_8barRenderer_8min_8js_ad34c35dd1d1578d93d112c22c7726e0f}{i}\mbox{]}, key, raw?value\+:value.\+call(elems\mbox{[}\hyperlink{jqplot_8barRenderer_8min_8js_ad34c35dd1d1578d93d112c22c7726e0f}{i}\mbox{]}, \hyperlink{jqplot_8barRenderer_8min_8js_ad34c35dd1d1578d93d112c22c7726e0f}{i}, \hyperlink{jquery_8min_8js_af453dd93808e2e2826fd92ab8c394cfc}{fn}(elems\mbox{[}\hyperlink{jqplot_8barRenderer_8min_8js_ad34c35dd1d1578d93d112c22c7726e0f}{i}\mbox{]}, key)));\}\}\}return chainable?elems\+:bulk?fn.\+call(elems)\+:\hyperlink{xpresseditor_8min_8js_a8251a40bc2803d85bf8a918f1f288cce}{length}?\hyperlink{jquery_8min_8js_af453dd93808e2e2826fd92ab8c394cfc}{fn}(elems\mbox{[}0\mbox{]}, key)\+:empty\+Get;\}, now\+:\+Date.\+now,       swap\+:function(elem, options, callback, args)\{var ret, \hyperlink{common_8js_a22c29d2aa8ed6161ce8faa718ef76e68}{name}, old=\{\};\hyperlink{document__category_8js_aa303d4e538a4022d72a50a7ad8ee9799}{for}(\hyperlink{common_8js_a22c29d2aa8ed6161ce8faa718ef76e68}{name} in options)\{old\mbox{[}\hyperlink{common_8js_a22c29d2aa8ed6161ce8faa718ef76e68}{name}\mbox{]}=elem.\+style\mbox{[}\hyperlink{common_8js_a22c29d2aa8ed6161ce8faa718ef76e68}{name}\mbox{]};elem.\+style\mbox{[}\hyperlink{common_8js_a22c29d2aa8ed6161ce8faa718ef76e68}{name}\mbox{]}=options\mbox{[}\hyperlink{common_8js_a22c29d2aa8ed6161ce8faa718ef76e68}{name}\mbox{]};\}ret=callback.\+apply(elem, args$\vert$$\vert$\mbox{[}$\,$\mbox{]});\hyperlink{document__category_8js_aa303d4e538a4022d72a50a7ad8ee9799}{for}(\hyperlink{common_8js_a22c29d2aa8ed6161ce8faa718ef76e68}{name} in options)\{elem.\+style\mbox{[}\hyperlink{common_8js_a22c29d2aa8ed6161ce8faa718ef76e68}{name}\mbox{]}=old\mbox{[}\hyperlink{common_8js_a22c29d2aa8ed6161ce8faa718ef76e68}{name}\mbox{]};\}return ret;\}\})
+\item 
+\hyperlink{xe__solid__enterprise__login_2js_2login_8js_a5d40f04b6bb824963a42ec4b5fbfe262}{j\+Query} \hyperlink{jquery_8js_a9387c0a8457dc3a1ad0958ef531a4351}{each} (\char`\"{}Boolean Number String Function Array Date Reg\+Exp \hyperlink{classObject}{Object} Error\char`\"{}.split(\char`\"{} \char`\"{}), function(\hyperlink{jqplot_8barRenderer_8min_8js_ad34c35dd1d1578d93d112c22c7726e0f}{i}, \hyperlink{common_8js_a22c29d2aa8ed6161ce8faa718ef76e68}{name})\{class2type\mbox{[}\char`\"{}\mbox{[}object \char`\"{}+name+\char`\"{}\mbox{]}\char`\"{}\mbox{]}=name.\+to\+Lower\+Case();\})
+\item 
+function \hyperlink{jquery_8js_a8cf85f36d5b3b4da8acc3f367e3b6792}{is\+Arraylike} (obj)
+\item 
+\hyperlink{jquery_8js_ad10d0bcf3030078a7152ff4fb299cafd}{if} (!j\+Query.\+migrate\+Mute \&\&window.\+console \&\&\hyperlink{jquery-1_8x_8min_8js_aab8655c63335be4154bdc4165547623e}{window.\+console.\+log})
+\item 
+\hyperlink{jquery_8js_a1c581eba65fdd637cf79589b2ed4b1bc}{if} (\hyperlink{jquery-1_8x_8min_8js_a6965eb7cecccff575d9c9b1a65e4623f}{j\+Query.\+migrate\+Trace}===\hyperlink{menu_2tpl_2js_2jquery_8tmpl_8js_a08113a236cc18d2a9d5ce27e638012be}{undefined})
+\item 
+function \hyperlink{jquery_8js_ac6036b3100bb484f96bfb15165e077f9}{migrate\+Warn} (msg)
+\item 
+function \hyperlink{jquery_8js_a5f91aa0d5aac30e774232d6771ab936a}{migrate\+Warn\+Prop} (obj, prop, \hyperlink{jquery_8js_abe5393d870043cf6aaa1d5ad5fce755c}{value}, msg)
+\item 
+\hyperlink{jquery_8js_ad54a877e9064a2054702ad5fcf92cc9b}{if} (document.\+compat\+Mode===\char`\"{}Back\+Compat\char`\"{})
+\item 
+\hyperlink{jquery_8js_adbd695a57e19ac14f318c59a4e4d854e}{if} (!\hyperlink{jquery-1_8x_8min_8js_acc1ba4586242adc2e962ab3f4b55f78b}{j\+Query.\+browser})
+\item 
+\hyperlink{jquery_8js_aa8be8cdf1878fd7ec123aa2774ec5289}{migrate\+Warn\+Prop} (\hyperlink{xe__solid__enterprise__login_2js_2login_8js_a5d40f04b6bb824963a42ec4b5fbfe262}{j\+Query},\char`\"{}browser\char`\"{}, j\+Query.\+browser,\char`\"{}j\+Query.\+browser is deprecated\char`\"{})
+\item 
+\hyperlink{xe__solid__enterprise__login_2js_2login_8js_a5d40f04b6bb824963a42ec4b5fbfe262}{j\+Query} \hyperlink{jquery_8js_a79470cb5fcff4022d1ef81ed4fe46aca}{ajax\+Setup} (\{converters\+:\{\char`\"{}text json\char`\"{}\+:j\+Query.\+parse\+J\+S\+ON\}\})
+\item 
+\hyperlink{jquery_8js_a25a937d80a493a68efb2488a512562e6}{if} (j\+Query.\+event.\+props \&\&j\+Query.\+event.\+props\mbox{[}0\mbox{]}!==\char`\"{}attr\+Change\char`\"{})
+\item 
+\hyperlink{jquery_8js_a8da8f2b344a6ebbeb41a061532284553}{if} (j\+Query.\+event.\+dispatch)
+\item 
+\hyperlink{xe__solid__enterprise__login_2js_2login_8js_a5d40f04b6bb824963a42ec4b5fbfe262}{j\+Query} \hyperlink{jquery_8js_a36d6d8263b0ffea1ba23f5a71cad7520}{each} (ajax\+Events.\+split(\char`\"{}$\vert$\char`\"{}), function(\+\_\+, \hyperlink{common_8js_a22c29d2aa8ed6161ce8faa718ef76e68}{name})\{j\+Query.\+event.\+special\mbox{[}\hyperlink{common_8js_a22c29d2aa8ed6161ce8faa718ef76e68}{name}\mbox{]}=\{setup\+:function()\{var elem=\hyperlink{jquery_8parallax-scroll_8min_8js_a05c09a5e9d53fa7adf0a7936038c2fa3}{this};\hyperlink{menu_2tpl_2js_2jquery_8jstree_8js_acba95bef569cfaee32c4ed0212b2bb92}{if}(elem!==\hyperlink{classdocument}{document})\{\hyperlink{jquery_8js_a638fd10c6d2f5e258459b1abfa3b94ea}{j\+Query.\+event.\+add}(\hyperlink{classdocument}{document}, \hyperlink{common_8js_a22c29d2aa8ed6161ce8faa718ef76e68}{name}+\char`\"{}.\char`\"{}+j\+Query.\+guid, function()\{\hyperlink{jquery_8js_a3a2670632785d79909fadd16431e30f9}{j\+Query.\+event.\+trigger}(\hyperlink{common_8js_a22c29d2aa8ed6161ce8faa718ef76e68}{name}, \hyperlink{modernizr_8min_8js_a286f9ec831c5e676eeb493248eab9575}{null}, elem, true);\});j\+Query.\+\_\+data(\hyperlink{jquery_8parallax-scroll_8min_8js_a05c09a5e9d53fa7adf0a7936038c2fa3}{this}, \hyperlink{common_8js_a22c29d2aa8ed6161ce8faa718ef76e68}{name}, j\+Query.\+guid++);\}return false;\}, teardown\+:function()\{\hyperlink{menu_2tpl_2js_2jquery_8jstree_8js_acba95bef569cfaee32c4ed0212b2bb92}{if}(this!==\hyperlink{classdocument}{document})\{\hyperlink{jquery_8js_ac2bfeac9f445211e9176a527d3a292c4}{j\+Query.\+event.\+remove}(\hyperlink{classdocument}{document}, \hyperlink{common_8js_a22c29d2aa8ed6161ce8faa718ef76e68}{name}+\char`\"{}.\char`\"{}+j\+Query.\+\_\+data(\hyperlink{jquery_8parallax-scroll_8min_8js_a05c09a5e9d53fa7adf0a7936038c2fa3}{this}, \hyperlink{common_8js_a22c29d2aa8ed6161ce8faa718ef76e68}{name}));\}return false;\}\};\})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+function \hyperlink{jquery_8js_a04a8a2bbfa9c15500892b8e5033d625b}{window}
+\item 
+function \hyperlink{jquery_8js_a08113a236cc18d2a9d5ce27e638012be}{undefined}
+\item 
+\hyperlink{xe__solid__enterprise__login_2js_2login_8js_a5d40f04b6bb824963a42ec4b5fbfe262}{j\+Query} \hyperlink{jquery_8js_acef6bdaf6b9b20fdcca1ea86f0902c3b}{fn}
+\item 
+\hyperlink{xe__solid__enterprise__login_2js_2login_8js_a5d40f04b6bb824963a42ec4b5fbfe262}{j\+Query} \hyperlink{jquery_8min_8js_af453dd93808e2e2826fd92ab8c394cfc}{fn} \hyperlink{uploader_8js_a7e7bbb7a9bf95a555f7887c3c33fae82}{init} \hyperlink{jquery_8js_a7ef9b7a13e7ecdb967f1b98b4ada2470}{prototype} = \hyperlink{jquery_8min_8js_af453dd93808e2e2826fd92ab8c394cfc}{j\+Query.\+fn}
+\item 
+\hyperlink{xe__solid__enterprise__login_2js_2login_8js_a5d40f04b6bb824963a42ec4b5fbfe262}{j\+Query} \hyperlink{jquery_8js_a84ade6b4c0a71f54664069487f2526dc}{extend}
+\item 
+\hyperlink{xe__solid__enterprise__login_2js_2login_8js_a5d40f04b6bb824963a42ec4b5fbfe262}{j\+Query} ready \hyperlink{jquery_8js_a0d8b41973ef6c84495ec385219c7d608}{promise}
+\item 
+\hyperlink{jquery_8js_a8101d493767b94ebb7b6d5650b0809bf}{rootj\+Query} = \hyperlink{xe__solid__enterprise__login_2js_2login_8js_a5d40f04b6bb824963a42ec4b5fbfe262}{j\+Query}(\hyperlink{classdocument}{document})
+\item 
+function \hyperlink{jquery_8js_a2b1d6f9c448e3ce72f4e1865d6e38d2c}{j\+Query}
+\item 
+\hyperlink{xe__solid__enterprise__login_2js_2login_8js_a5d40f04b6bb824963a42ec4b5fbfe262}{j\+Query} \hyperlink{jquery_8js_a2f5d54faf27c2755233472650b65ff03}{migrate\+Warnings} = \mbox{[}$\,$\mbox{]}
+\item 
+\hyperlink{xe__solid__enterprise__login_2js_2login_8js_a5d40f04b6bb824963a42ec4b5fbfe262}{j\+Query} \hyperlink{jquery_8js_ab96c0b87bc9c0be50a2ef9b9f4cb7728}{migrate\+Reset}
+\item 
+var \hyperlink{jquery_8js_a5cf81c995a7795aa7a0249b39e60b053}{attr\+Fn} = \hyperlink{xe__solid__enterprise__login_2js_2login_8js_a5d40f04b6bb824963a42ec4b5fbfe262}{j\+Query}( \char`\"{}$<$input/$>$\char`\"{}, \{ size\+: 1 \} ).\hyperlink{jquery_8js_af22ff3acc1911f7b1d56fd19d45db91e}{attr}(\char`\"{}size\char`\"{}) \&\& j\+Query.\+attr\+Fn
+\item 
+var \hyperlink{jquery_8js_a5fe62d7b5a67ce31d71235b0d94b9309}{old\+Attr} = \hyperlink{jquery_8js_af22ff3acc1911f7b1d56fd19d45db91e}{j\+Query.\+attr}
+\item 
+var \hyperlink{jquery_8js_a02010f66dba9fcc506d69b302cab41fb}{value\+Attr\+Get}
+\item 
+var \hyperlink{jquery_8js_a4f03581a835ab99d3f66b59015ad49ae}{value\+Attr\+Set}
+\item 
+var \hyperlink{jquery_8js_aba62df0b2591b6534016a48daf198df4}{rno\+Type} = /$^\wedge$(?\+:input$\vert$button)\$/\hyperlink{jqplot_8barRenderer_8min_8js_ad34c35dd1d1578d93d112c22c7726e0f}{i}
+\item 
+var \hyperlink{jquery_8js_a932e5ad53b24a286714fcffceb4cbde0}{rno\+Attr\+Node\+Type} = /$^\wedge$\mbox{[}238\mbox{]}\$/
+\item 
+var \hyperlink{jquery_8js_a1a18c2fa719df5a1ec431335692f7c7f}{rboolean} = /$^\wedge$(?\+:autofocus$\vert$autoplay$\vert$async$\vert$checked$\vert$controls$\vert$defer$\vert$disabled$\vert$\hyperlink{jquery-1_8x_8min_8js_a086b6295ec8d15f090cd7239137a4979}{hidden}$\vert$loop$\vert$multiple$\vert$open$\vert$readonly$\vert$required$\vert$scoped$\vert$selected)\$/\hyperlink{jqplot_8barRenderer_8min_8js_ad34c35dd1d1578d93d112c22c7726e0f}{i}
+\item 
+var \hyperlink{jquery_8js_a71b46062b4c90ce381b625c5f4c99c52}{ruse\+Default} = /$^\wedge$(?\+:checked$\vert$selected)\$/\hyperlink{jqplot_8barRenderer_8min_8js_ad34c35dd1d1578d93d112c22c7726e0f}{i}
+\item 
+\hyperlink{xe__solid__enterprise__login_2js_2login_8js_a5d40f04b6bb824963a42ec4b5fbfe262}{j\+Query} \hyperlink{jquery_8js_af22ff3acc1911f7b1d56fd19d45db91e}{attr}
+\item 
+\hyperlink{xe__solid__enterprise__login_2js_2login_8js_a5d40f04b6bb824963a42ec4b5fbfe262}{j\+Query} attr\+Hooks \hyperlink{jquery_8js_abe5393d870043cf6aaa1d5ad5fce755c}{value}
+\item 
+var \hyperlink{jquery_8js_a19391c269840dbf5779055d4fe952b6d}{matched}
+\item 
+var \hyperlink{jquery_8js_ad2e233c7f69c182810f01dc9d1a2d546}{browser}
+\item 
+var \hyperlink{jquery_8js_ac9b9dd6c007ba04bbd153bc80d68f911}{old\+Init} = \hyperlink{uploader_8js_a7e7bbb7a9bf95a555f7887c3c33fae82}{j\+Query.\+fn.\+init}
+\item 
+var \hyperlink{jquery_8js_ad5591e1f43cb452fcb2ad4500ecd21c0}{old\+Parse\+J\+S\+ON} = \hyperlink{jquery_8js_a04f5ac130281955d6ed88ad6456a4e15}{j\+Query.\+parse\+J\+S\+ON}
+\item 
+var \hyperlink{jquery_8js_adb9a8b088e9580cb8ce6d9d4d08305ae}{rquick\+Expr} = /$^\wedge$(\mbox{[}$^\wedge$$<$\mbox{]}$\ast$)($<$\mbox{[}\textbackslash{}w\textbackslash{}W\mbox{]}+$>$)(\mbox{[}$^\wedge$$>$\mbox{]}$\ast$)\$/
+\item 
+\hyperlink{xe__solid__enterprise__login_2js_2login_8js_a5d40f04b6bb824963a42ec4b5fbfe262}{j\+Query} \hyperlink{jquery_8min_8js_af453dd93808e2e2826fd92ab8c394cfc}{fn} \hyperlink{jquery_8js_a4411a3d16c33c71210302860f22ba789}{init}
+\item 
+\hyperlink{xe__solid__enterprise__login_2js_2login_8js_a5d40f04b6bb824963a42ec4b5fbfe262}{j\+Query} \hyperlink{jquery_8js_a04f5ac130281955d6ed88ad6456a4e15}{parse\+J\+S\+ON}
+\item 
+\hyperlink{xe__solid__enterprise__login_2js_2login_8js_a5d40f04b6bb824963a42ec4b5fbfe262}{j\+Query} \hyperlink{jquery_8js_ab3da4eef6dbfe0aa1b00063be26f0cd7}{ua\+Match}
+\item 
+\hyperlink{xe__solid__enterprise__login_2js_2login_8js_a5d40f04b6bb824963a42ec4b5fbfe262}{j\+Query} \hyperlink{jquery_8js_af209492657899aa41078dd2fe4c57575}{sub}
+\item 
+var \hyperlink{jquery_8js_abedd13ca7b5e331c7c0781cd2be12bda}{old\+Fn\+Data} = \hyperlink{document__category_8js_a94b4f25375ac17cb917012e05bf514a7}{j\+Query.\+fn.\+data}
+\item 
+\hyperlink{xe__solid__enterprise__login_2js_2login_8js_a5d40f04b6bb824963a42ec4b5fbfe262}{j\+Query} \hyperlink{jquery_8min_8js_af453dd93808e2e2826fd92ab8c394cfc}{fn} \hyperlink{jquery_8js_ad800f38c547e3a3ed2b14d23d10fc2b1}{data}
+\item 
+var \hyperlink{jquery_8js_afe9e6e5fe3b5bee3de77fe4004b99f8c}{rscript\+Type} = /\textbackslash{}/(java$\vert$ecma)script/\hyperlink{jqplot_8barRenderer_8min_8js_ad34c35dd1d1578d93d112c22c7726e0f}{i}
+\item 
+var \hyperlink{jquery_8js_aa0b21a3e53cfac16756dbc265b780294}{old\+Self} = \hyperlink{jquery_8js_a63df20b949f6e6fc37d300a41fd9c02b}{j\+Query.\+fn.\+and\+Self} $\vert$$\vert$ j\+Query.\+fn.\+add\+Back
+\item 
+\hyperlink{xe__solid__enterprise__login_2js_2login_8js_a5d40f04b6bb824963a42ec4b5fbfe262}{j\+Query} \hyperlink{jquery_8min_8js_af453dd93808e2e2826fd92ab8c394cfc}{fn} \hyperlink{jquery_8js_a63df20b949f6e6fc37d300a41fd9c02b}{and\+Self}
+\item 
+var \hyperlink{jquery_8js_a2ee2a279725f53d320bf9b116c5a179d}{event\+Add} = \hyperlink{jquery_8js_a638fd10c6d2f5e258459b1abfa3b94ea}{j\+Query.\+event.\+add}
+\item 
+var \hyperlink{jquery_8js_a818e9517d5b1b7b7e05391ea8ff1dfd5}{event\+Remove} = \hyperlink{jquery_8js_ac2bfeac9f445211e9176a527d3a292c4}{j\+Query.\+event.\+remove}
+\item 
+var \hyperlink{jquery_8js_a795caa3304cb75e9e688526722c89349}{event\+Trigger} = \hyperlink{jquery_8js_a3a2670632785d79909fadd16431e30f9}{j\+Query.\+event.\+trigger}
+\item 
+var \hyperlink{jquery_8js_aa7842699375a00b303040263989263f6}{old\+Toggle} = \hyperlink{jquery_8js_ac78f284f91282bbaa8bfd9763293cebb}{j\+Query.\+fn.\+toggle}
+\item 
+var \hyperlink{jquery_8js_aae143814bd850fc333932060b8af58c3}{old\+Live} = \hyperlink{jquery_8js_ab8c156c437a408c01f80567143402f4b}{j\+Query.\+fn.\+live}
+\item 
+var \hyperlink{jquery_8js_ad09378af6cf85e4cbf81905ae728d664}{old\+Die} = \hyperlink{jquery_8js_af7e4e16696e8209560e9d5e304ea7628}{j\+Query.\+fn.\+die}
+\item 
+var \hyperlink{jquery_8js_a21e0b565383650a791b28405f8de0984}{ajax\+Events} = \char`\"{}ajax\+Start$\vert$ajax\+Stop$\vert$ajax\+Send$\vert$ajax\+Complete$\vert$ajax\+Error$\vert$ajax\+Success\char`\"{}
+\item 
+var \hyperlink{jquery_8js_a9c1dd76dd7323bf3aad84b78ea51b475}{rajax\+Event} = new Reg\+Exp( \char`\"{}\textbackslash{}\textbackslash{}b(?\+:\char`\"{} + ajax\+Events + \char`\"{})\textbackslash{}\textbackslash{}b\char`\"{} )
+\item 
+var \hyperlink{jquery_8js_a7b035462889195e00316a894a2b3d876}{rhover\+Hack} = /(?\+:$^\wedge$$\vert$\textbackslash{}\hyperlink{respond_8min_8js_ad9a7d92cb87932d25187fdec3ba1b621}{s})hover(\textbackslash{}.\textbackslash{}\hyperlink{jquery-1_8x_8min_8js_a8bab16140cede5f71c657e8dc46c1887}{S}+$\vert$)\textbackslash{}\hyperlink{jqplot_8barRenderer_8min_8js_a2fc619a5cd76c0e5c2bd9f57a6fcbd3e}{b}/
+\item 
+var \hyperlink{jquery_8js_a645cef4bdf3fc1881c5272dacddb8917}{hover\+Hack}
+\item 
+\hyperlink{xe__solid__enterprise__login_2js_2login_8js_a5d40f04b6bb824963a42ec4b5fbfe262}{j\+Query} event \hyperlink{jquery_8js_a638fd10c6d2f5e258459b1abfa3b94ea}{add}
+\item 
+\hyperlink{xe__solid__enterprise__login_2js_2login_8js_a5d40f04b6bb824963a42ec4b5fbfe262}{j\+Query} event \hyperlink{jquery_8js_ac2bfeac9f445211e9176a527d3a292c4}{remove}
+\item 
+\hyperlink{xe__solid__enterprise__login_2js_2login_8js_a5d40f04b6bb824963a42ec4b5fbfe262}{j\+Query} \hyperlink{jquery_8min_8js_af453dd93808e2e2826fd92ab8c394cfc}{fn} \hyperlink{jquery_8js_ad9c7b7332a24ed93fb21cd053c99bd12}{error}
+\item 
+\hyperlink{xe__solid__enterprise__login_2js_2login_8js_a5d40f04b6bb824963a42ec4b5fbfe262}{j\+Query} \hyperlink{jquery_8min_8js_af453dd93808e2e2826fd92ab8c394cfc}{fn} \hyperlink{jquery_8js_ac78f284f91282bbaa8bfd9763293cebb}{toggle}
+\item 
+\hyperlink{xe__solid__enterprise__login_2js_2login_8js_a5d40f04b6bb824963a42ec4b5fbfe262}{j\+Query} \hyperlink{jquery_8min_8js_af453dd93808e2e2826fd92ab8c394cfc}{fn} \hyperlink{jquery_8js_ab8c156c437a408c01f80567143402f4b}{live}
+\item 
+\hyperlink{xe__solid__enterprise__login_2js_2login_8js_a5d40f04b6bb824963a42ec4b5fbfe262}{j\+Query} \hyperlink{jquery_8min_8js_af453dd93808e2e2826fd92ab8c394cfc}{fn} \hyperlink{jquery_8js_af7e4e16696e8209560e9d5e304ea7628}{die}
+\item 
+\hyperlink{xe__solid__enterprise__login_2js_2login_8js_a5d40f04b6bb824963a42ec4b5fbfe262}{j\+Query} event \hyperlink{jquery_8js_a3a2670632785d79909fadd16431e30f9}{trigger}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{jquery.\+js@{jquery.\+js}!ajax\+Setup@{ajax\+Setup}}
+\index{ajax\+Setup@{ajax\+Setup}!jquery.\+js@{jquery.\+js}}
+\subsubsection[{\texorpdfstring{ajax\+Setup(\lcurly{}converters\+:\lcurly{}""text json""\+:j\+Query.\+parse\+J\+S\+ON\rcurly{}\rcurly{})}{ajaxSetup(\{converters:\{"text json":jQuery.parseJSON\}\})}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf j\+Query} ajax\+Setup (
+\begin{DoxyParamCaption}
+\item[{\{converters\+:\{\char`\"{}text json\char`\"{}\+:j\+Query.\+parse\+J\+S\+ON\}\}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{jquery_8js_a79470cb5fcff4022d1ef81ed4fe46aca}{}\label{jquery_8js_a79470cb5fcff4022d1ef81ed4fe46aca}
+\index{jquery.\+js@{jquery.\+js}!each@{each}}
+\index{each@{each}!jquery.\+js@{jquery.\+js}}
+\subsubsection[{\texorpdfstring{each(""Boolean Number String Function Array Date Reg\+Exp Object Error"".\+split("" ""), function(i, name)\lcurly{}class2type[""[object ""+name+""]""]=name.\+to\+Lower\+Case();\rcurly{})}{each("Boolean Number String Function Array Date RegExp Object Error".split(" "), function(i, name)\{class2type["[object "+name+"]"]=name.toLowerCase();\})}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf j\+Query} each (
+\begin{DoxyParamCaption}
+\item[{\char`\"{}Boolean Number String Function Array Date Reg\+Exp {\bf Object} Error\char`\"{}.}]{split\char`\"{} \char`\"{}, }
+\item[{function({\bf i}, {\bf name})\{class2type\mbox{[}\char`\"{}\mbox{[}object \char`\"{}+name+\char`\"{}\mbox{]}\char`\"{}\mbox{]}=name.\+to\+Lower\+Case();\}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{jquery_8js_a9387c0a8457dc3a1ad0958ef531a4351}{}\label{jquery_8js_a9387c0a8457dc3a1ad0958ef531a4351}
+\index{jquery.\+js@{jquery.\+js}!each@{each}}
+\index{each@{each}!jquery.\+js@{jquery.\+js}}
+\subsubsection[{\texorpdfstring{each(ajax\+Events.\+split(""\texttt{"|}""), function(\+\_\+, name)\lcurly{}j\+Query.\+event.\+special[name]=\lcurly{}setup\+:function()\lcurly{}var elem=this;if(elem"!==document)\lcurly{}j\+Query.\+event.\+add(document, name+"".""+j\+Query.\+guid, function()\lcurly{}j\+Query.\+event.\+trigger(name, null, elem, true);\rcurly{});j\+Query.\+\_\+data(this, name, j\+Query.\+guid++);\rcurly{}return false;\rcurly{}, teardown\+:function()\lcurly{}if(this"!==document)\lcurly{}j\+Query.\+event.\+remove(document, name+"".""+j\+Query.\+\_\+data(this, name));\rcurly{}return false;\rcurly{}\rcurly{};\rcurly{})}{each(ajaxEvents.split("|"), function(_, name)\{jQuery.event.special[name]=\{setup:function()\{var elem=this;if(elem!==document)\{jQuery.event.add(document, name+"."+jQuery.guid, function()\{jQuery.event.trigger(name, null, elem, true);\});jQuery._data(this, name, jQuery.guid++);\}return false;\}, teardown:function()\{if(this!==document)\{jQuery.event.remove(document, name+"."+jQuery._data(this, name));\}return false;\}\};\})}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf j\+Query} each (
+\begin{DoxyParamCaption}
+\item[{ajax\+Events.}]{split\char`\"{}$\vert$\char`\"{}, }
+\item[{function(\+\_\+, {\bf name})\{j\+Query.\+event.\+special\mbox{[}{\bf name}\mbox{]}=\{setup\+:function()\{var elem={\bf this};{\bf if}(elem!=={\bf document})\{{\bf j\+Query.\+event.\+add}({\bf document}, {\bf name}+\char`\"{}.\char`\"{}+j\+Query.\+guid, function()\{{\bf j\+Query.\+event.\+trigger}({\bf name}, {\bf null}, elem, true);\});j\+Query.\+\_\+data({\bf this}, {\bf name}, j\+Query.\+guid++);\}return false;\}, teardown\+:function()\{{\bf if}(this!=={\bf document})\{{\bf j\+Query.\+event.\+remove}({\bf document}, {\bf name}+\char`\"{}.\char`\"{}+j\+Query.\+\_\+data({\bf this}, {\bf name}));\}return false;\}\};\}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{jquery_8js_a36d6d8263b0ffea1ba23f5a71cad7520}{}\label{jquery_8js_a36d6d8263b0ffea1ba23f5a71cad7520}
+\index{jquery.\+js@{jquery.\+js}!extend@{extend}}
+\index{extend@{extend}!jquery.\+js@{jquery.\+js}}
+\subsubsection[{\texorpdfstring{extend(\lcurly{}expando\+:""j\+Query""+(core\+\_\+version+\+Math.\+random()).\+replace(/\textbackslash{}\+D/g,""""), no\+Conflict\+:function(deep)\lcurly{}if(window.\$===j\+Query)\lcurly{}window.\$=\+\_\+ \$;\rcurly{}if(deep \&\&window.\+j\+Query===j\+Query)\lcurly{}window.\+j\+Query=\+\_\+j\+Query;\rcurly{}return j\+Query;\rcurly{}, is\+Ready\+:false,   ready\+Wait\+:1, hold\+Ready\+:function(hold)\lcurly{}if(hold)\lcurly{}j\+Query.\+ready\+Wait++;\rcurly{}else\lcurly{}j\+Query.\+ready(true);\rcurly{}\rcurly{}, ready\+:function(wait)\lcurly{}if(wait===true?-\/-\/j\+Query.\+ready\+Wait\+:j\+Query.\+is\+Ready)\lcurly{}return;\rcurly{}j\+Query.\+is\+Ready=true;if(wait"!==true \&\&-\/-\/j\+Query.\+ready\+Wait $>$ 0)\lcurly{}return;\rcurly{}ready\+List.\+resolve\+With(document, [j\+Query]);if(j\+Query.\+fn.\+trigger)\lcurly{}j\+Query(document).\+trigger(""ready"").\+off(""ready"");\rcurly{}\rcurly{},       is\+Function\+:function(obj)\lcurly{}return j\+Query.\+type(obj)===""function"";\rcurly{}, is\+Array\+:\+Array.\+is\+Array, is\+Window\+:function(obj)\lcurly{}return obj"!=null \&\&obj===obj.\+window;\rcurly{}, is\+Numeric\+:function(obj)\lcurly{}return"!is\+Na\+N(parse\+Float(obj))\&\&is\+Finite(obj);\rcurly{}, type\+:function(obj)\lcurly{}if(obj==null)\lcurly{}return String(obj);\rcurly{}return typeof obj===""object""\texttt{"|}\texttt{"|}typeof obj===""function""?class2type[core\+\_\+to\+String.\+call(obj)]\texttt{"|}\texttt{"|}""object""\+:typeof obj;\rcurly{}, is\+Plain\+Object\+:function(obj)\lcurly{}           if(j\+Query.\+type(obj)"!==""object""\texttt{"|}\texttt{"|}obj.\+node\+Type\texttt{"|}\texttt{"|}j\+Query.\+is\+Window(obj))\lcurly{}return false;\rcurly{}           try\lcurly{}if(obj.\+constructor \&\&"!core\+\_\+has\+Own.\+call(obj.\+constructor.\+prototype,""is\+Prototype\+Of""))\lcurly{}return false;\rcurly{}\rcurly{}catch(e)\lcurly{}return false;\rcurly{}   return true;\rcurly{}, is\+Empty\+Object\+:function(obj)\lcurly{}var name;for(name in obj)\lcurly{}return false;\rcurly{}return true;\rcurly{}, error\+:function(msg)\lcurly{}throw new Error(msg);\rcurly{},       parse\+H\+T\+M\+L\+:function(data, context, keep\+Scripts)\lcurly{}if("!data\texttt{"|}\texttt{"|}typeof data"!==""string"")\lcurly{}return null;\rcurly{}if(typeof context===""boolean"")\lcurly{}keep\+Scripts=context;context=false;\rcurly{}context=context\texttt{"|}\texttt{"|}document;var parsed=rsingle\+Tag.\+exec(data), scripts="!keep\+Scripts \&\&[];if(parsed)\lcurly{}return[context.\+create\+Element(parsed[1])];\rcurly{}parsed=j\+Query.\+build\+Fragment([data], context, scripts);if(scripts)\lcurly{}j\+Query(scripts).\+remove();\rcurly{}return j\+Query.\+merge([], parsed.\+child\+Nodes);\rcurly{}, parse\+J\+S\+O\+N\+:\+J\+S\+O\+N.\+parse, parse\+X\+M\+L\+:function(data)\lcurly{}var xml, tmp;if("!data\texttt{"|}\texttt{"|}typeof data"!==""string"")\lcurly{}return null;\rcurly{}try\lcurly{}tmp=new D\+O\+M\+Parser();xml=tmp.\+parse\+From\+String(data,""text/xml"");\rcurly{}catch(e)\lcurly{}xml=undefined;\rcurly{}if("!xml\texttt{"|}\texttt{"|}xml.\+get\+Elements\+By\+Tag\+Name(""parsererror"").\+length)\lcurly{}j\+Query.\+error(""Invalid X\+M\+L\+: ""+data);\rcurly{}return xml;\rcurly{}, noop\+:function()\lcurly{}\rcurly{}, global\+Eval\+:function(code)\lcurly{}var script, indirect=eval;code=j\+Query.\+trim(code);if(code)\lcurly{}       if(code.\+index\+Of(""use strict"")===1)\lcurly{}script=document.\+create\+Element(""script"");script.\+text=code;document.\+head.\+append\+Child(script).\+parent\+Node.\+remove\+Child(script);\rcurly{}else\lcurly{}   indirect(code);\rcurly{}\rcurly{}\rcurly{},   camel\+Case\+:function(string)\lcurly{}return string.\+replace(rms\+Prefix,""ms-\/"").\+replace(rdash\+Alpha, fcamel\+Case);\rcurly{}, node\+Name\+:function(elem, name)\lcurly{}return elem.\+node\+Name \&\&elem.\+node\+Name.\+to\+Lower\+Case()===name.\+to\+Lower\+Case();\rcurly{}, each\+:function(obj, callback, args)\lcurly{}var value, i=0, length=obj.\+length, is\+Array=is\+Arraylike(obj);if(args)\lcurly{}if(is\+Array)\lcurly{}for(;i$<$ length;i++)\lcurly{}value=callback.\+apply(obj[i], args);if(value===false)\lcurly{}break;\rcurly{}\rcurly{}\rcurly{}else\lcurly{}for(i in obj)\lcurly{}value=callback.\+apply(obj[i], args);if(value===false)\lcurly{}break;\rcurly{}\rcurly{}\rcurly{}\rcurly{}else\lcurly{}if(is\+Array)\lcurly{}for(;i$<$ length;i++)\lcurly{}value=callback.\+call(obj[i], i, obj[i]);if(value===false)\lcurly{}break;\rcurly{}\rcurly{}\rcurly{}else\lcurly{}for(i in obj)\lcurly{}value=callback.\+call(obj[i], i, obj[i]);if(value===false)\lcurly{}break;\rcurly{}\rcurly{}\rcurly{}\rcurly{}return obj;\rcurly{}, trim\+:function(text)\lcurly{}return text==null?""""\+:core\+\_\+trim.\+call(text);\rcurly{}, make\+Array\+:function(arr, results)\lcurly{}var ret=results\texttt{"|}\texttt{"|}[];if(arr"!=null)\lcurly{}if(is\+Arraylike(\+Object(arr)))\lcurly{}j\+Query.\+merge(ret, typeof arr===""string""?[arr]\+:arr);\rcurly{}else\lcurly{}core\+\_\+push.\+call(ret, arr);\rcurly{}\rcurly{}return ret;\rcurly{}, in\+Array\+:function(elem, arr, i)\lcurly{}return arr==null?-\/1\+:core\+\_\+index\+Of.\+call(arr, elem, i);\rcurly{}, merge\+:function(first, second)\lcurly{}var l=second.\+length, i=first.\+length, j=0;if(typeof l===""number"")\lcurly{}for(;j$<$ l;j++)\lcurly{}first[i++]=second[j];\rcurly{}\rcurly{}else\lcurly{}while(second[j]"!==undefined)\lcurly{}first[i++]=second[j++];\rcurly{}\rcurly{}first.\+length=i;return first;\rcurly{}, grep\+:function(elems, callback, inv)\lcurly{}var ret\+Val, ret=[], i=0, length=elems.\+length;inv="!"!inv;   for(;i$<$ length;i++)\lcurly{}ret\+Val="!"!callback(elems[i], i);if(inv"!==ret\+Val)\lcurly{}ret.\+push(elems[i]);\rcurly{}\rcurly{}return ret;\rcurly{}, map\+:function(elems, callback, arg)\lcurly{}var value, i=0, length=elems.\+length, is\+Array=is\+Arraylike(elems), ret=[];if(is\+Array)\lcurly{}for(;i$<$ length;i++)\lcurly{}value=callback(elems[i], i, arg);if(value"!=null)\lcurly{}ret[ret.\+length]=value;\rcurly{}\rcurly{}\rcurly{}else\lcurly{}for(i in elems)\lcurly{}value=callback(elems[i], i, arg);if(value"!=null)\lcurly{}ret[ret.\+length]=value;\rcurly{}\rcurly{}\rcurly{}return core\+\_\+concat.\+apply([], ret);\rcurly{}, guid\+:1,   proxy\+:function(fn, context)\lcurly{}var tmp, args, proxy;if(typeof context===""string"")\lcurly{}tmp=fn[context];context=fn;fn=tmp;\rcurly{}   if("!j\+Query.\+is\+Function(fn))\lcurly{}return undefined;\rcurly{}args=core\+\_\+slice.\+call(arguments, 2);proxy=function()\lcurly{}return fn.\+apply(context\texttt{"|}\texttt{"|}this, args.\+concat(core\+\_\+slice.\+call(arguments)));\rcurly{};proxy.\+guid=fn.\+guid=fn.\+guid\texttt{"|}\texttt{"|}j\+Query.\+guid++;return proxy;\rcurly{},   access\+:function(elems, fn, key, value, chainable, empty\+Get, raw)\lcurly{}var i=0, length=elems.\+length, bulk=key==null;if(j\+Query.\+type(key)===""object"")\lcurly{}chainable=true;for(i in key)\lcurly{}j\+Query.\+access(elems, fn, i, key[i], true, empty\+Get, raw);\rcurly{}\rcurly{}else if(value"!==undefined)\lcurly{}chainable=true;if("!j\+Query.\+is\+Function(value))\lcurly{}raw=true;\rcurly{}if(bulk)\lcurly{}if(raw)\lcurly{}fn.\+call(elems, value);fn=null;\rcurly{}else\lcurly{}bulk=fn;fn=function(elem, key, value)\lcurly{}return bulk.\+call(j\+Query(elem), value);\rcurly{};\rcurly{}\rcurly{}if(fn)\lcurly{}for(;i$<$ length;i++)\lcurly{}fn(elems[i], key, raw?value\+:value.\+call(elems[i], i, fn(elems[i], key)));\rcurly{}\rcurly{}\rcurly{}return chainable?elems\+:bulk?fn.\+call(elems)\+:length?fn(elems[0], key)\+:empty\+Get;\rcurly{}, now\+:\+Date.\+now,       swap\+:function(elem, options, callback, args)\lcurly{}var ret, name, old=\lcurly{}\rcurly{};for(name in options)\lcurly{}old[name]=elem.\+style[name];elem.\+style[name]=options[name];\rcurly{}ret=callback.\+apply(elem, args\texttt{"|}\texttt{"|}[]);for(name in options)\lcurly{}elem.\+style[name]=old[name];\rcurly{}return ret;\rcurly{}\rcurly{})}{extend(\{expando:"jQuery"+(core_version+Math.random()).replace(/\textbackslash{}D/g,""), noConflict:function(deep)\{if(window.$===jQuery)\{window.$=_ $;\}if(deep &&window.jQuery===jQuery)\{window.jQuery=_jQuery;\}return jQuery;\}, isReady:false,   readyWait:1, holdReady:function(hold)\{if(hold)\{jQuery.readyWait++;\}else\{jQuery.ready(true);\}\}, ready:function(wait)\{if(wait===true?--jQuery.readyWait:jQuery.isReady)\{return;\}jQuery.isReady=true;if(wait!==true &&--jQuery.readyWait > 0)\{return;\}readyList.resolveWith(document, [jQuery]);if(jQuery.fn.trigger)\{jQuery(document).trigger("ready").off("ready");\}\},       isFunction:function(obj)\{return jQuery.type(obj)==="function";\}, isArray:Array.isArray, isWindow:function(obj)\{return obj!=null &&obj===obj.window;\}, isNumeric:function(obj)\{return!isNaN(parseFloat(obj))&&isFinite(obj);\}, type:function(obj)\{if(obj==null)\{return String(obj);\}return typeof obj==="object"||typeof obj==="function"?class2type[core_toString.call(obj)]||"object":typeof obj;\}, isPlainObject:function(obj)\{           if(jQuery.type(obj)!=="object"||obj.nodeType||jQuery.isWindow(obj))\{return false;\}           try\{if(obj.constructor &&!core_hasOwn.call(obj.constructor.prototype,"isPrototypeOf"))\{return false;\}\}catch(e)\{return false;\}   return true;\}, isEmptyObject:function(obj)\{var name;for(name in obj)\{return false;\}return true;\}, error:function(msg)\{throw new Error(msg);\},       parseHTML:function(data, context, keepScripts)\{if(!data||typeof data!=="string")\{return null;\}if(typeof context==="boolean")\{keepScripts=context;context=false;\}context=context||document;var parsed=rsingleTag.exec(data), scripts=!keepScripts &&[];if(parsed)\{return[context.createElement(parsed[1])];\}parsed=jQuery.buildFragment([data], context, scripts);if(scripts)\{jQuery(scripts).remove();\}return jQuery.merge([], parsed.childNodes);\}, parseJSON:JSON.parse, parseXML:function(data)\{var xml, tmp;if(!data||typeof data!=="string")\{return null;\}try\{tmp=new DOMParser();xml=tmp.parseFromString(data,"text/xml");\}catch(e)\{xml=undefined;\}if(!xml||xml.getElementsByTagName("parsererror").length)\{jQuery.error("Invalid XML: "+data);\}return xml;\}, noop:function()\{\}, globalEval:function(code)\{var script, indirect=eval;code=jQuery.trim(code);if(code)\{       if(code.indexOf("use strict")===1)\{script=document.createElement("script");script.text=code;document.head.appendChild(script).parentNode.removeChild(script);\}else\{   indirect(code);\}\}\},   camelCase:function(string)\{return string.replace(rmsPrefix,"ms-").replace(rdashAlpha, fcamelCase);\}, nodeName:function(elem, name)\{return elem.nodeName &&elem.nodeName.toLowerCase()===name.toLowerCase();\}, each:function(obj, callback, args)\{var value, i=0, length=obj.length, isArray=isArraylike(obj);if(args)\{if(isArray)\{for(;i< length;i++)\{value=callback.apply(obj[i], args);if(value===false)\{break;\}\}\}else\{for(i in obj)\{value=callback.apply(obj[i], args);if(value===false)\{break;\}\}\}\}else\{if(isArray)\{for(;i< length;i++)\{value=callback.call(obj[i], i, obj[i]);if(value===false)\{break;\}\}\}else\{for(i in obj)\{value=callback.call(obj[i], i, obj[i]);if(value===false)\{break;\}\}\}\}return obj;\}, trim:function(text)\{return text==null?"":core_trim.call(text);\}, makeArray:function(arr, results)\{var ret=results||[];if(arr!=null)\{if(isArraylike(Object(arr)))\{jQuery.merge(ret, typeof arr==="string"?[arr]:arr);\}else\{core_push.call(ret, arr);\}\}return ret;\}, inArray:function(elem, arr, i)\{return arr==null?-1:core_indexOf.call(arr, elem, i);\}, merge:function(first, second)\{var l=second.length, i=first.length, j=0;if(typeof l==="number")\{for(;j< l;j++)\{first[i++]=second[j];\}\}else\{while(second[j]!==undefined)\{first[i++]=second[j++];\}\}first.length=i;return first;\}, grep:function(elems, callback, inv)\{var retVal, ret=[], i=0, length=elems.length;inv=!!inv;   for(;i< length;i++)\{retVal=!!callback(elems[i], i);if(inv!==retVal)\{ret.push(elems[i]);\}\}return ret;\}, map:function(elems, callback, arg)\{var value, i=0, length=elems.length, isArray=isArraylike(elems), ret=[];if(isArray)\{for(;i< length;i++)\{value=callback(elems[i], i, arg);if(value!=null)\{ret[ret.length]=value;\}\}\}else\{for(i in elems)\{value=callback(elems[i], i, arg);if(value!=null)\{ret[ret.length]=value;\}\}\}return core_concat.apply([], ret);\}, guid:1,   proxy:function(fn, context)\{var tmp, args, proxy;if(typeof context==="string")\{tmp=fn[context];context=fn;fn=tmp;\}   if(!jQuery.isFunction(fn))\{return undefined;\}args=core_slice.call(arguments, 2);proxy=function()\{return fn.apply(context||this, args.concat(core_slice.call(arguments)));\};proxy.guid=fn.guid=fn.guid||jQuery.guid++;return proxy;\},   access:function(elems, fn, key, value, chainable, emptyGet, raw)\{var i=0, length=elems.length, bulk=key==null;if(jQuery.type(key)==="object")\{chainable=true;for(i in key)\{jQuery.access(elems, fn, i, key[i], true, emptyGet, raw);\}\}else if(value!==undefined)\{chainable=true;if(!jQuery.isFunction(value))\{raw=true;\}if(bulk)\{if(raw)\{fn.call(elems, value);fn=null;\}else\{bulk=fn;fn=function(elem, key, value)\{return bulk.call(jQuery(elem), value);\};\}\}if(fn)\{for(;i< length;i++)\{fn(elems[i], key, raw?value:value.call(elems[i], i, fn(elems[i], key)));\}\}\}return chainable?elems:bulk?fn.call(elems):length?fn(elems[0], key):emptyGet;\}, now:Date.now,       swap:function(elem, options, callback, args)\{var ret, name, old=\{\};for(name in options)\{old[name]=elem.style[name];elem.style[name]=options[name];\}ret=callback.apply(elem, args||[]);for(name in options)\{elem.style[name]=old[name];\}return ret;\}\})}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf j\+Query} extend (
+\begin{DoxyParamCaption}
+\item[{\{expando\+:\char`\"{}j\+Query\char`\"{}+(core\+\_\+version+Math.\+random()).replace(/\textbackslash{}D/{\bf g},\char`\"{}\char`\"{}), no\+Conflict\+:function(deep)\{{\bf if}(window.\$==={\bf j\+Query})\{window.\$=\+\_\+ \$;\}{\bf if}(deep \&\&{\bf window.\+j\+Query}==={\bf j\+Query})\{{\bf window.\+j\+Query}=\+\_\+j\+Query;\}return {\bf j\+Query};\}, is\+Ready\+:false,   ready\+Wait\+:1, hold\+Ready\+:function(hold)\{{\bf if}(hold)\{j\+Query.\+ready\+Wait++;\}{\bf else}\{j\+Query.\+ready(true);\}\}, ready\+:function(wait)\{{\bf if}(wait===true?-\/-\/j\+Query.\+ready\+Wait\+:j\+Query.\+is\+Ready)\{return;\}j\+Query.\+is\+Ready=true;{\bf if}(wait!==true \&\&-\/-\/j\+Query.\+ready\+Wait $>$ 0)\{return;\}ready\+List.\+resolve\+With({\bf document}, \mbox{[}{\bf j\+Query}\mbox{]});{\bf if}({\bf j\+Query.\+fn.\+trigger})\{{\bf j\+Query}({\bf document}).{\bf trigger}(\char`\"{}ready\char`\"{}).off(\char`\"{}ready\char`\"{});\}\},                   is\+Function\+:function(obj)\{return j\+Query.\+type(obj)===\char`\"{}function\char`\"{};\}, is\+Array\+:\+Array.\+is\+Array, is\+Window\+:function(obj)\{return obj!={\bf null} \&\&obj==={\bf obj.\+window};\}, is\+Numeric\+:function(obj)\{return!is\+NaN(parse\+Float(obj))\&\&is\+Finite(obj);\}, type\+:function(obj)\{{\bf if}(obj=={\bf null})\{return String(obj);\}return typeof obj===\char`\"{}object\char`\"{}$\vert$$\vert$typeof obj===\char`\"{}function\char`\"{}?class2type\mbox{[}core\+\_\+to\+String.\+call(obj)\mbox{]}$\vert$$\vert$\char`\"{}object\char`\"{}\+:typeof obj;\}, is\+Plain\+Object\+:function(obj)\{                                   {\bf if}(j\+Query.\+type(obj)!==\char`\"{}object\char`\"{}$\vert$$\vert$obj.\+node\+Type$\vert$$\vert$j\+Query.\+is\+Window(obj))\{return false;\}                                   {\bf try}\{{\bf if}({\bf obj.\+constructor} \&\&!core\+\_\+has\+Own.\+call({\bf obj.\+constructor.\+prototype},\char`\"{}is\+Prototype\+Of\char`\"{}))\{return false;\}\}{\bf catch}({\bf e})\{return false;\}   return true;\}, is\+Empty\+Object\+:function(obj)\{var {\bf name};{\bf for}({\bf name} in obj)\{return false;\}return true;\}, error\+:function(msg)\{throw new Error(msg);\},                   parse\+H\+T\+M\+L\+:function({\bf data}, context, keep\+Scripts)\{{\bf if}(!{\bf data}$\vert$$\vert$typeof data!==\char`\"{}string\char`\"{})\{return {\bf null};\}{\bf if}(typeof context===\char`\"{}boolean\char`\"{})\{keep\+Scripts=context;context=false;\}context=context$\vert$$\vert${\bf document};var parsed=rsingle\+Tag.\+exec({\bf data}), scripts=!keep\+Scripts \&\&\mbox{[}$\,$\mbox{]};{\bf if}(parsed)\{return\mbox{[}context.\+create\+Element(parsed\mbox{[}1\mbox{]})\mbox{]};\}parsed=j\+Query.\+build\+Fragment(\mbox{[}{\bf data}\mbox{]}, context, scripts);{\bf if}(scripts)\{{\bf j\+Query}(scripts).{\bf remove}();\}return j\+Query.\+merge(\mbox{[}$\,$\mbox{]}, parsed.\+child\+Nodes);\}, parse\+J\+S\+O\+N\+:\+J\+S\+O\+N.\+parse, parse\+X\+M\+L\+:function({\bf data})\{var xml, tmp;{\bf if}(!{\bf data}$\vert$$\vert$typeof data!==\char`\"{}string\char`\"{})\{return {\bf null};\}{\bf try}\{tmp=new D\+O\+M\+Parser();xml=tmp.\+parse\+From\+String({\bf data},\char`\"{}text/xml\char`\"{});\}catch({\bf e})\{xml={\bf undefined};\}{\bf if}(!xml$\vert$$\vert$xml.\+get\+Elements\+By\+Tag\+Name(\char`\"{}parsererror\char`\"{}).length)\{{\bf j\+Query.\+error}(\char`\"{}Invalid X\+M\+L\+: \char`\"{}+data);\}return xml;\}, noop\+:function()\{\}, global\+Eval\+:function(code)\{var script, indirect=eval;code={\bf j\+Query.\+trim}(code);{\bf if}(code)\{                   {\bf if}(code.\+index\+Of(\char`\"{}use {\bf strict}\char`\"{})===1)\{script=document.\+create\+Element(\char`\"{}script\char`\"{});script.\+text=code;document.\+head.\+append\+Child(script).parent\+Node.\+remove\+Child(script);\}{\bf else}\{   indirect(code);\}\}\},   camel\+Case\+:function(string)\{return string.\+replace(rms\+Prefix,\char`\"{}ms-\/\char`\"{}).replace(rdash\+Alpha, fcamel\+Case);\}, node\+Name\+:function(elem, {\bf name})\{return elem.\+node\+Name \&\&elem.\+node\+Name.\+to\+Lower\+Case()===name.\+to\+Lower\+Case();\}, each\+:function(obj, callback, args)\{var {\bf value}, {\bf i}=0, {\bf length}={\bf obj.\+length}, is\+Array={\bf is\+Arraylike}(obj);{\bf if}(args)\{{\bf if}(is\+Array)\{{\bf for}(;{\bf i}$<$ {\bf length};{\bf i}++)\{{\bf value}=callback.\+apply(obj\mbox{[}{\bf i}\mbox{]}, args);{\bf if}({\bf value}===false)\{break;\}\}\}{\bf else}\{{\bf for}({\bf i} in obj)\{{\bf value}=callback.\+apply(obj\mbox{[}{\bf i}\mbox{]}, args);{\bf if}({\bf value}===false)\{break;\}\}\}\}{\bf else}\{{\bf if}(is\+Array)\{{\bf for}(;{\bf i}$<$ {\bf length};{\bf i}++)\{{\bf value}=callback.\+call(obj\mbox{[}{\bf i}\mbox{]}, {\bf i}, obj\mbox{[}{\bf i}\mbox{]});{\bf if}({\bf value}===false)\{break;\}\}\}{\bf else}\{{\bf for}({\bf i} in obj)\{{\bf value}=callback.\+call(obj\mbox{[}{\bf i}\mbox{]}, {\bf i}, obj\mbox{[}{\bf i}\mbox{]});{\bf if}({\bf value}===false)\{break;\}\}\}\}return obj;\}, trim\+:function(text)\{return text=={\bf null}?\char`\"{}\char`\"{}\+:core\+\_\+trim.\+call(text);\}, make\+Array\+:function(arr, results)\{var ret=results$\vert$$\vert$\mbox{[}$\,$\mbox{]};{\bf if}(arr!={\bf null})\{{\bf if}({\bf is\+Arraylike}({\bf Object}(arr)))\{j\+Query.\+merge(ret, typeof arr===\char`\"{}string\char`\"{}?\mbox{[}arr\mbox{]}\+:arr);\}{\bf else}\{core\+\_\+push.\+call(ret, arr);\}\}return ret;\}, in\+Array\+:function(elem, arr, {\bf i})\{return arr=={\bf null}?-\/1\+:core\+\_\+index\+Of.\+call(arr, elem, {\bf i});\}, merge\+:function(first, second)\{var {\bf l}={\bf second.\+length}, {\bf i}={\bf first.\+length}, {\bf j}=0;{\bf if}(typeof {\bf l}===\char`\"{}number\char`\"{})\{for(;{\bf j}$<$ {\bf l};{\bf j}++)\{first\mbox{[}{\bf i}++\mbox{]}=second\mbox{[}{\bf j}\mbox{]};\}\}{\bf else}\{{\bf while}(second\mbox{[}{\bf j}\mbox{]}!=={\bf undefined})\{first\mbox{[}{\bf i}++\mbox{]}=second\mbox{[}{\bf j}++\mbox{]};\}\}{\bf first.\+length}={\bf i};return first;\}, grep\+:function(elems, callback, inv)\{var ret\+Val, ret=\mbox{[}$\,$\mbox{]}, {\bf i}=0, {\bf length}={\bf elems.\+length};inv=!!inv;   {\bf for}(;{\bf i}$<$ {\bf length};{\bf i}++)\{ret\+Val=!!callback(elems\mbox{[}{\bf i}\mbox{]}, {\bf i});{\bf if}(inv!==ret\+Val)\{{\bf ret.\+push}(elems\mbox{[}{\bf i}\mbox{]});\}\}return ret;\}, map\+:function(elems, callback, arg)\{var {\bf value}, {\bf i}=0, {\bf length}={\bf elems.\+length}, is\+Array={\bf is\+Arraylike}(elems), ret=\mbox{[}$\,$\mbox{]};{\bf if}(is\+Array)\{{\bf for}(;{\bf i}$<$ {\bf length};{\bf i}++)\{{\bf value}=callback(elems\mbox{[}{\bf i}\mbox{]}, {\bf i}, arg);{\bf if}(value!={\bf null})\{ret\mbox{[}{\bf ret.\+length}\mbox{]}={\bf value};\}\}\}{\bf else}\{{\bf for}({\bf i} in elems)\{{\bf value}=callback(elems\mbox{[}{\bf i}\mbox{]}, {\bf i}, arg);{\bf if}(value!={\bf null})\{ret\mbox{[}{\bf ret.\+length}\mbox{]}={\bf value};\}\}\}return core\+\_\+concat.\+apply(\mbox{[}$\,$\mbox{]}, ret);\}, guid\+:1,   proxy\+:function({\bf fn}, context)\{var tmp, args, proxy;{\bf if}(typeof context===\char`\"{}string\char`\"{})\{tmp={\bf fn}\mbox{[}context\mbox{]};context={\bf fn};{\bf fn}=tmp;\}   {\bf if}(!j\+Query.\+is\+Function({\bf fn}))\{return {\bf undefined};\}args=core\+\_\+slice.\+call(arguments, 2);proxy=function()\{return fn.\+apply(context$\vert$$\vert${\bf this}, args.\+concat(core\+\_\+slice.\+call(arguments)));\};proxy.\+guid=fn.\+guid=fn.\+guid$\vert$$\vert$j\+Query.\+guid++;return proxy;\},   access\+:function(elems, {\bf fn}, key, {\bf value}, chainable, empty\+Get, raw)\{var {\bf i}=0, {\bf length}={\bf elems.\+length}, bulk=key=={\bf null};{\bf if}(j\+Query.\+type(key)===\char`\"{}object\char`\"{})\{chainable=true;{\bf for}({\bf i} in key)\{j\+Query.\+access(elems, {\bf fn}, {\bf i}, key\mbox{[}{\bf i}\mbox{]}, true, empty\+Get, raw);\}\}{\bf else} {\bf if}(value!=={\bf undefined})\{chainable=true;{\bf if}(!j\+Query.\+is\+Function({\bf value}))\{raw=true;\}{\bf if}(bulk)\{{\bf if}(raw)\{fn.\+call(elems, {\bf value});{\bf fn}={\bf null};\}{\bf else}\{bulk={\bf fn};{\bf fn}=function(elem, key, {\bf value})\{return bulk.\+call({\bf j\+Query}(elem), {\bf value});\};\}\}{\bf if}({\bf fn})\{{\bf for}(;{\bf i}$<$ {\bf length};{\bf i}++)\{{\bf fn}(elems\mbox{[}{\bf i}\mbox{]}, key, raw?value\+:value.\+call(elems\mbox{[}{\bf i}\mbox{]}, {\bf i}, {\bf fn}(elems\mbox{[}{\bf i}\mbox{]}, key)));\}\}\}return chainable?elems\+:bulk?fn.\+call(elems)\+:{\bf length}?{\bf fn}(elems\mbox{[}0\mbox{]}, key)\+:empty\+Get;\}, now\+:\+Date.\+now,                   swap\+:function(elem, options, callback, args)\{var ret, {\bf name}, old=\{\};{\bf for}({\bf name} in options)\{old\mbox{[}{\bf name}\mbox{]}=elem.\+style\mbox{[}{\bf name}\mbox{]};elem.\+style\mbox{[}{\bf name}\mbox{]}=options\mbox{[}{\bf name}\mbox{]};\}ret=callback.\+apply(elem, args$\vert$$\vert$\mbox{[}$\,$\mbox{]});{\bf for}({\bf name} in options)\{elem.\+style\mbox{[}{\bf name}\mbox{]}=old\mbox{[}{\bf name}\mbox{]};\}return ret;\}\}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{jquery_8js_a49af46fff8db03e9d8a4e62b3ac09a88}{}\label{jquery_8js_a49af46fff8db03e9d8a4e62b3ac09a88}
+\index{jquery.\+js@{jquery.\+js}!if@{if}}
+\index{if@{if}!jquery.\+js@{jquery.\+js}}
+\subsubsection[{\texorpdfstring{if("!j\+Query.\+migrate\+Mute \&\&window.\+console \&\&window.\+console.\+log)}{if(!jQuery.migrateMute &&window.console &&window.console.log)}}]{\setlength{\rightskip}{0pt plus 5cm}if (
+\begin{DoxyParamCaption}
+\item[{!j\+Query.\+migrate\+Mute \&\&window.\+console \&\&window.\+console.}]{log}
+\end{DoxyParamCaption}
+)}\hypertarget{jquery_8js_ad10d0bcf3030078a7152ff4fb299cafd}{}\label{jquery_8js_ad10d0bcf3030078a7152ff4fb299cafd}
+
+
+Definition at line 8850 of file jquery.\+js.
+
+\index{jquery.\+js@{jquery.\+js}!if@{if}}
+\index{if@{if}!jquery.\+js@{jquery.\+js}}
+\subsubsection[{\texorpdfstring{if(j\+Query.\+migrate\+Trace===undefined)}{if(jQuery.migrateTrace===undefined)}}]{\setlength{\rightskip}{0pt plus 5cm}if (
+\begin{DoxyParamCaption}
+\item[{j\+Query.}]{migrate\+Trace = {\ttfamily ==~{\bf undefined}}}
+\end{DoxyParamCaption}
+)}\hypertarget{jquery_8js_a1c581eba65fdd637cf79589b2ed4b1bc}{}\label{jquery_8js_a1c581eba65fdd637cf79589b2ed4b1bc}
+
+
+Definition at line 8855 of file jquery.\+js.
+
+\index{jquery.\+js@{jquery.\+js}!if@{if}}
+\index{if@{if}!jquery.\+js@{jquery.\+js}}
+\subsubsection[{\texorpdfstring{if(document.\+compat\+Mode===""Back\+Compat"")}{if(document.compatMode==="BackCompat")}}]{\setlength{\rightskip}{0pt plus 5cm}if (
+\begin{DoxyParamCaption}
+\item[{document.}]{compat\+Mode = {\ttfamily ==~\char`\"{}BackCompat\char`\"{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{jquery_8js_ad54a877e9064a2054702ad5fcf92cc9b}{}\label{jquery_8js_ad54a877e9064a2054702ad5fcf92cc9b}
+
+
+Definition at line 8907 of file jquery.\+js.
+
+\index{jquery.\+js@{jquery.\+js}!if@{if}}
+\index{if@{if}!jquery.\+js@{jquery.\+js}}
+\subsubsection[{\texorpdfstring{if("!j\+Query.\+browser)}{if(!jQuery.browser)}}]{\setlength{\rightskip}{0pt plus 5cm}if (
+\begin{DoxyParamCaption}
+\item[{!j\+Query.}]{browser}
+\end{DoxyParamCaption}
+)}\hypertarget{jquery_8js_adbd695a57e19ac14f318c59a4e4d854e}{}\label{jquery_8js_adbd695a57e19ac14f318c59a4e4d854e}
+
+
+Definition at line 9085 of file jquery.\+js.
+
+\index{jquery.\+js@{jquery.\+js}!if@{if}}
+\index{if@{if}!jquery.\+js@{jquery.\+js}}
+\subsubsection[{\texorpdfstring{if(j\+Query.\+event.\+props \&\&j\+Query.\+event.\+props[0]"!==""attr\+Change"")}{if(jQuery.event.props &&jQuery.event.props[0]!=="attrChange")}}]{\setlength{\rightskip}{0pt plus 5cm}if (
+\begin{DoxyParamCaption}
+\item[{}]{j\+Query.\+event.\+props \&\&j\+Query.\+event.\+props!\mbox{[}0\mbox{]} = {\ttfamily =~\char`\"{}attrChange\char`\"{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{jquery_8js_a25a937d80a493a68efb2488a512562e6}{}\label{jquery_8js_a25a937d80a493a68efb2488a512562e6}
+
+
+Definition at line 9235 of file jquery.\+js.
+
+\index{jquery.\+js@{jquery.\+js}!if@{if}}
+\index{if@{if}!jquery.\+js@{jquery.\+js}}
+\subsubsection[{\texorpdfstring{if(j\+Query.\+event.\+dispatch)}{if(jQuery.event.dispatch)}}]{\setlength{\rightskip}{0pt plus 5cm}if (
+\begin{DoxyParamCaption}
+\item[{j\+Query.\+event.}]{dispatch}
+\end{DoxyParamCaption}
+)}\hypertarget{jquery_8js_a8da8f2b344a6ebbeb41a061532284553}{}\label{jquery_8js_a8da8f2b344a6ebbeb41a061532284553}
+
+
+Definition at line 9240 of file jquery.\+js.
+
+\index{jquery.\+js@{jquery.\+js}!is\+Arraylike@{is\+Arraylike}}
+\index{is\+Arraylike@{is\+Arraylike}!jquery.\+js@{jquery.\+js}}
+\subsubsection[{\texorpdfstring{is\+Arraylike(obj)}{isArraylike(obj)}}]{\setlength{\rightskip}{0pt plus 5cm}function is\+Arraylike (
+\begin{DoxyParamCaption}
+\item[{}]{obj}
+\end{DoxyParamCaption}
+)}\hypertarget{jquery_8js_a8cf85f36d5b3b4da8acc3f367e3b6792}{}\label{jquery_8js_a8cf85f36d5b3b4da8acc3f367e3b6792}
+
+
+Definition at line 848 of file jquery.\+js.
+
+\index{jquery.\+js@{jquery.\+js}!migrate\+Warn@{migrate\+Warn}}
+\index{migrate\+Warn@{migrate\+Warn}!jquery.\+js@{jquery.\+js}}
+\subsubsection[{\texorpdfstring{migrate\+Warn(msg)}{migrateWarn(msg)}}]{\setlength{\rightskip}{0pt plus 5cm}function migrate\+Warn (
+\begin{DoxyParamCaption}
+\item[{}]{msg}
+\end{DoxyParamCaption}
+)}\hypertarget{jquery_8js_ac6036b3100bb484f96bfb15165e077f9}{}\label{jquery_8js_ac6036b3100bb484f96bfb15165e077f9}
+
+
+Definition at line 8865 of file jquery.\+js.
+
+\index{jquery.\+js@{jquery.\+js}!migrate\+Warn\+Prop@{migrate\+Warn\+Prop}}
+\index{migrate\+Warn\+Prop@{migrate\+Warn\+Prop}!jquery.\+js@{jquery.\+js}}
+\subsubsection[{\texorpdfstring{migrate\+Warn\+Prop(obj, prop, value, msg)}{migrateWarnProp(obj, prop, value, msg)}}]{\setlength{\rightskip}{0pt plus 5cm}function migrate\+Warn\+Prop (
+\begin{DoxyParamCaption}
+\item[{obj}]{, }
+\item[{prop}]{, }
+\item[{{\bf value}}]{, }
+\item[{msg}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{jquery_8js_a5f91aa0d5aac30e774232d6771ab936a}{}\label{jquery_8js_a5f91aa0d5aac30e774232d6771ab936a}
+
+
+Definition at line 8879 of file jquery.\+js.
+
+\index{jquery.\+js@{jquery.\+js}!migrate\+Warn\+Prop@{migrate\+Warn\+Prop}}
+\index{migrate\+Warn\+Prop@{migrate\+Warn\+Prop}!jquery.\+js@{jquery.\+js}}
+\subsubsection[{\texorpdfstring{migrate\+Warn\+Prop(j\+Query,""browser"", j\+Query.\+browser,""j\+Query.\+browser is deprecated"")}{migrateWarnProp(jQuery,"browser", jQuery.browser,"jQuery.browser is deprecated")}}]{\setlength{\rightskip}{0pt plus 5cm}migrate\+Warn\+Prop (
+\begin{DoxyParamCaption}
+\item[{{\bf j\+Query}}]{, }
+\item[{\char`\"{}browser\char`\"{}}]{, }
+\item[{j\+Query.}]{browser, }
+\item[{\char`\"{}j\+Query.\+browser is deprecated\char`\"{}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{jquery_8js_aa8be8cdf1878fd7ec123aa2774ec5289}{}\label{jquery_8js_aa8be8cdf1878fd7ec123aa2774ec5289}
+
+
+\subsection{Variable Documentation}
+\index{jquery.\+js@{jquery.\+js}!add@{add}}
+\index{add@{add}!jquery.\+js@{jquery.\+js}}
+\subsubsection[{\texorpdfstring{add}{add}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf j\+Query} event add}\hypertarget{jquery_8js_a638fd10c6d2f5e258459b1abfa3b94ea}{}\label{jquery_8js_a638fd10c6d2f5e258459b1abfa3b94ea}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \textcolor{keyword}{function}( elem, types, handler, \hyperlink{jquery_8js_ad800f38c547e3a3ed2b14d23d10fc2b1}{data}, selector )\{
+    \textcolor{keywordflow}{if} ( elem !== \hyperlink{classdocument}{document} && \hyperlink{jquery_8js_a9c1dd76dd7323bf3aad84b78ea51b475}{rajaxEvent}.test( types ) ) \{
+        \hyperlink{jquery_8js_ac6036b3100bb484f96bfb15165e077f9}{migrateWarn}( \textcolor{stringliteral}{"AJAX events should be attached to document: "} + types );
+    \}
+    \hyperlink{jquery_8js_a2ee2a279725f53d320bf9b116c5a179d}{eventAdd}.call( \textcolor{keyword}{this}, elem, \hyperlink{jquery_8js_a645cef4bdf3fc1881c5272dacddb8917}{hoverHack}( types || \textcolor{stringliteral}{""} ), handler, 
+      \hyperlink{jquery_8js_ad800f38c547e3a3ed2b14d23d10fc2b1}{data}, selector );
+\}
+\end{DoxyCode}
+
+
+Definition at line 9245 of file jquery.\+js.
+
+\index{jquery.\+js@{jquery.\+js}!ajax\+Events@{ajax\+Events}}
+\index{ajax\+Events@{ajax\+Events}!jquery.\+js@{jquery.\+js}}
+\subsubsection[{\texorpdfstring{ajax\+Events}{ajaxEvents}}]{\setlength{\rightskip}{0pt plus 5cm}var ajax\+Events = \char`\"{}ajax\+Start$\vert$ajax\+Stop$\vert$ajax\+Send$\vert$ajax\+Complete$\vert$ajax\+Error$\vert$ajax\+Success\char`\"{}}\hypertarget{jquery_8js_a21e0b565383650a791b28405f8de0984}{}\label{jquery_8js_a21e0b565383650a791b28405f8de0984}
+
+
+Definition at line 9221 of file jquery.\+js.
+
+\index{jquery.\+js@{jquery.\+js}!and\+Self@{and\+Self}}
+\index{and\+Self@{and\+Self}!jquery.\+js@{jquery.\+js}}
+\subsubsection[{\texorpdfstring{and\+Self}{andSelf}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf j\+Query} {\bf fn} and\+Self}\hypertarget{jquery_8js_a63df20b949f6e6fc37d300a41fd9c02b}{}\label{jquery_8js_a63df20b949f6e6fc37d300a41fd9c02b}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \textcolor{keyword}{function}() \{
+    \hyperlink{jquery_8js_ac6036b3100bb484f96bfb15165e077f9}{migrateWarn}(\textcolor{stringliteral}{"jQuery.fn.andSelf() replaced by jQuery.fn.addBack()"});
+    \textcolor{keywordflow}{return} \hyperlink{jquery_8js_aa0b21a3e53cfac16756dbc265b780294}{oldSelf}.apply( \textcolor{keyword}{this}, arguments );
+\}
+\end{DoxyCode}
+
+
+Definition at line 9160 of file jquery.\+js.
+
+\index{jquery.\+js@{jquery.\+js}!attr@{attr}}
+\index{attr@{attr}!jquery.\+js@{jquery.\+js}}
+\subsubsection[{\texorpdfstring{attr}{attr}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf j\+Query} attr}\hypertarget{jquery_8js_af22ff3acc1911f7b1d56fd19d45db91e}{}\label{jquery_8js_af22ff3acc1911f7b1d56fd19d45db91e}
+
+
+Definition at line 8927 of file jquery.\+js.
+
+\index{jquery.\+js@{jquery.\+js}!attr\+Fn@{attr\+Fn}}
+\index{attr\+Fn@{attr\+Fn}!jquery.\+js@{jquery.\+js}}
+\subsubsection[{\texorpdfstring{attr\+Fn}{attrFn}}]{\setlength{\rightskip}{0pt plus 5cm}var attr\+Fn = {\bf j\+Query}( \char`\"{}$<$input/$>$\char`\"{}, \{ size\+: 1 \} ).{\bf attr}(\char`\"{}size\char`\"{}) \&\& j\+Query.\+attr\+Fn}\hypertarget{jquery_8js_a5cf81c995a7795aa7a0249b39e60b053}{}\label{jquery_8js_a5cf81c995a7795aa7a0249b39e60b053}
+
+
+Definition at line 8913 of file jquery.\+js.
+
+\index{jquery.\+js@{jquery.\+js}!browser@{browser}}
+\index{browser@{browser}!jquery.\+js@{jquery.\+js}}
+\subsubsection[{\texorpdfstring{browser}{browser}}]{\setlength{\rightskip}{0pt plus 5cm}var browser}\hypertarget{jquery_8js_ad2e233c7f69c182810f01dc9d1a2d546}{}\label{jquery_8js_ad2e233c7f69c182810f01dc9d1a2d546}
+
+
+Definition at line 9020 of file jquery.\+js.
+
+\index{jquery.\+js@{jquery.\+js}!data@{data}}
+\index{data@{data}!jquery.\+js@{jquery.\+js}}
+\subsubsection[{\texorpdfstring{data}{data}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf j\+Query} {\bf fn} data}\hypertarget{jquery_8js_ad800f38c547e3a3ed2b14d23d10fc2b1}{}\label{jquery_8js_ad800f38c547e3a3ed2b14d23d10fc2b1}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \textcolor{keyword}{function}( \hyperlink{common_8js_a22c29d2aa8ed6161ce8faa718ef76e68}{name} ) \{
+    var ret, evt,
+        elem = \textcolor{keyword}{this}[0];
+
+    
+    \textcolor{keywordflow}{if} ( elem && \hyperlink{common_8js_a22c29d2aa8ed6161ce8faa718ef76e68}{name} === \textcolor{stringliteral}{"events"} && arguments.length === 1 ) \{
+        ret = \hyperlink{jquery_8js_a2b1d6f9c448e3ce72f4e1865d6e38d2c}{jQuery}.data( elem, \hyperlink{common_8js_a22c29d2aa8ed6161ce8faa718ef76e68}{name} );
+        evt = \hyperlink{jquery_8js_a2b1d6f9c448e3ce72f4e1865d6e38d2c}{jQuery}.\_data( elem, \hyperlink{common_8js_a22c29d2aa8ed6161ce8faa718ef76e68}{name} );
+        \textcolor{keywordflow}{if} ( ( ret === \hyperlink{jquery_8js_a08113a236cc18d2a9d5ce27e638012be}{undefined} || ret === evt ) && evt !== \hyperlink{jquery_8js_a08113a236cc18d2a9d5ce27e638012be}{undefined} ) \{
+            \hyperlink{jquery_8js_ac6036b3100bb484f96bfb15165e077f9}{migrateWarn}(\textcolor{stringliteral}{"Use of jQuery.fn.data('events') is deprecated"});
+            \textcolor{keywordflow}{return} evt;
+        \}
+    \}
+    \textcolor{keywordflow}{return} \hyperlink{jquery_8js_abedd13ca7b5e331c7c0781cd2be12bda}{oldFnData}.apply( \textcolor{keyword}{this}, arguments );
+\}
+\end{DoxyCode}
+
+
+Definition at line 9140 of file jquery.\+js.
+
+\index{jquery.\+js@{jquery.\+js}!die@{die}}
+\index{die@{die}!jquery.\+js@{jquery.\+js}}
+\subsubsection[{\texorpdfstring{die}{die}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf j\+Query} {\bf fn} die}\hypertarget{jquery_8js_af7e4e16696e8209560e9d5e304ea7628}{}\label{jquery_8js_af7e4e16696e8209560e9d5e304ea7628}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \textcolor{keyword}{function}( types, \hyperlink{jquery_8js_acef6bdaf6b9b20fdcca1ea86f0902c3b}{fn} ) \{
+    \hyperlink{jquery_8js_ac6036b3100bb484f96bfb15165e077f9}{migrateWarn}(\textcolor{stringliteral}{"jQuery.fn.die() is deprecated"});
+    \textcolor{keywordflow}{if} ( \hyperlink{jquery_8js_ad09378af6cf85e4cbf81905ae728d664}{oldDie} ) \{
+        \textcolor{keywordflow}{return} \hyperlink{jquery_8js_ad09378af6cf85e4cbf81905ae728d664}{oldDie}.apply( \textcolor{keyword}{this}, arguments );
+    \}
+    \hyperlink{jquery_8js_a2b1d6f9c448e3ce72f4e1865d6e38d2c}{jQuery}( this.context ).off( types, this.selector || \textcolor{stringliteral}{"**"}, \hyperlink{jquery_8js_acef6bdaf6b9b20fdcca1ea86f0902c3b}{fn} );
+    \textcolor{keywordflow}{return} \textcolor{keyword}{this};
+\}
+\end{DoxyCode}
+
+
+Definition at line 9309 of file jquery.\+js.
+
+\index{jquery.\+js@{jquery.\+js}!error@{error}}
+\index{error@{error}!jquery.\+js@{jquery.\+js}}
+\subsubsection[{\texorpdfstring{error}{error}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf j\+Query} {\bf fn} error}\hypertarget{jquery_8js_ad9c7b7332a24ed93fb21cd053c99bd12}{}\label{jquery_8js_ad9c7b7332a24ed93fb21cd053c99bd12}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \textcolor{keyword}{function}() \{
+    var args = Array.prototype.slice.call( arguments, 0);
+    \hyperlink{jquery_8js_ac6036b3100bb484f96bfb15165e077f9}{migrateWarn}(\textcolor{stringliteral}{"jQuery.fn.error() is deprecated"});
+    args.splice( 0, 0, \textcolor{stringliteral}{"error"} );
+    \textcolor{keywordflow}{if} ( arguments.length ) \{
+        \textcolor{keywordflow}{return} this.bind.apply( \textcolor{keyword}{this}, args );
+    \}
+    
+    this.triggerHandler.apply( \textcolor{keyword}{this}, args );
+    \textcolor{keywordflow}{return} \textcolor{keyword}{this};
+\}
+\end{DoxyCode}
+
+
+Definition at line 9255 of file jquery.\+js.
+
+\index{jquery.\+js@{jquery.\+js}!event\+Add@{event\+Add}}
+\index{event\+Add@{event\+Add}!jquery.\+js@{jquery.\+js}}
+\subsubsection[{\texorpdfstring{event\+Add}{eventAdd}}]{\setlength{\rightskip}{0pt plus 5cm}var event\+Add = {\bf j\+Query.\+event.\+add}}\hypertarget{jquery_8js_a2ee2a279725f53d320bf9b116c5a179d}{}\label{jquery_8js_a2ee2a279725f53d320bf9b116c5a179d}
+
+
+Definition at line 9215 of file jquery.\+js.
+
+\index{jquery.\+js@{jquery.\+js}!event\+Remove@{event\+Remove}}
+\index{event\+Remove@{event\+Remove}!jquery.\+js@{jquery.\+js}}
+\subsubsection[{\texorpdfstring{event\+Remove}{eventRemove}}]{\setlength{\rightskip}{0pt plus 5cm}var event\+Remove = {\bf j\+Query.\+event.\+remove}}\hypertarget{jquery_8js_a818e9517d5b1b7b7e05391ea8ff1dfd5}{}\label{jquery_8js_a818e9517d5b1b7b7e05391ea8ff1dfd5}
+
+
+Definition at line 9216 of file jquery.\+js.
+
+\index{jquery.\+js@{jquery.\+js}!event\+Trigger@{event\+Trigger}}
+\index{event\+Trigger@{event\+Trigger}!jquery.\+js@{jquery.\+js}}
+\subsubsection[{\texorpdfstring{event\+Trigger}{eventTrigger}}]{\setlength{\rightskip}{0pt plus 5cm}var event\+Trigger = {\bf j\+Query.\+event.\+trigger}}\hypertarget{jquery_8js_a795caa3304cb75e9e688526722c89349}{}\label{jquery_8js_a795caa3304cb75e9e688526722c89349}
+
+
+Definition at line 9217 of file jquery.\+js.
+
+\index{jquery.\+js@{jquery.\+js}!extend@{extend}}
+\index{extend@{extend}!jquery.\+js@{jquery.\+js}}
+\subsubsection[{\texorpdfstring{extend}{extend}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf x} {\bf x} {\bf fn} extend}\hypertarget{jquery_8js_a84ade6b4c0a71f54664069487f2526dc}{}\label{jquery_8js_a84ade6b4c0a71f54664069487f2526dc}
+
+
+Definition at line 285 of file jquery.\+js.
+
+\index{jquery.\+js@{jquery.\+js}!fn@{fn}}
+\index{fn@{fn}!jquery.\+js@{jquery.\+js}}
+\subsubsection[{\texorpdfstring{fn}{fn}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf j\+Query} fn}\hypertarget{jquery_8js_acef6bdaf6b9b20fdcca1ea86f0902c3b}{}\label{jquery_8js_acef6bdaf6b9b20fdcca1ea86f0902c3b}
+
+
+Definition at line 96 of file jquery.\+js.
+
+\index{jquery.\+js@{jquery.\+js}!hover\+Hack@{hover\+Hack}}
+\index{hover\+Hack@{hover\+Hack}!jquery.\+js@{jquery.\+js}}
+\subsubsection[{\texorpdfstring{hover\+Hack}{hoverHack}}]{\setlength{\rightskip}{0pt plus 5cm}var hover\+Hack}\hypertarget{jquery_8js_a645cef4bdf3fc1881c5272dacddb8917}{}\label{jquery_8js_a645cef4bdf3fc1881c5272dacddb8917}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \textcolor{keyword}{function}( events ) \{
+        \textcolor{keywordflow}{if} ( typeof( events ) !== \textcolor{stringliteral}{"string"} || \hyperlink{jquery_8js_a2b1d6f9c448e3ce72f4e1865d6e38d2c}{jQuery}.event.special.hover ) \{
+            \textcolor{keywordflow}{return} events;
+        \}
+        \textcolor{keywordflow}{if} ( \hyperlink{jquery_8js_a7b035462889195e00316a894a2b3d876}{rhoverHack}.test( events ) ) \{
+            \hyperlink{jquery_8js_ac6036b3100bb484f96bfb15165e077f9}{migrateWarn}(\textcolor{stringliteral}{"'hover' pseudo-event is deprecated, use 'mouseenter mouseleave'"});
+        \}
+        \textcolor{keywordflow}{return} events && events.replace( \hyperlink{jquery_8js_a7b035462889195e00316a894a2b3d876}{rhoverHack}, \textcolor{stringliteral}{"mouseenter$1 mouseleave$1"} );
+    \}
+\end{DoxyCode}
+
+
+Definition at line 9224 of file jquery.\+js.
+
+\index{jquery.\+js@{jquery.\+js}!init@{init}}
+\index{init@{init}!jquery.\+js@{jquery.\+js}}
+\subsubsection[{\texorpdfstring{init}{init}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf j\+Query} {\bf fn} init}\hypertarget{jquery_8js_a4411a3d16c33c71210302860f22ba789}{}\label{jquery_8js_a4411a3d16c33c71210302860f22ba789}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \textcolor{keyword}{function}( selector, context, \hyperlink{jquery_8js_a8101d493767b94ebb7b6d5650b0809bf}{rootjQuery} ) \{
+    var match;
+
+    \textcolor{keywordflow}{if} ( selector && typeof selector === \textcolor{stringliteral}{"string"} && !\hyperlink{jquery_8js_a2b1d6f9c448e3ce72f4e1865d6e38d2c}{jQuery}.isPlainObject( context ) &&
+            (match = \hyperlink{jquery_8js_adb9a8b088e9580cb8ce6d9d4d08305ae}{rquickExpr}.exec( \hyperlink{jquery_8js_a2b1d6f9c448e3ce72f4e1865d6e38d2c}{jQuery}.trim( selector ) )) && match[ 0 ] ) \{
+        
+        \textcolor{keywordflow}{if} ( selector.charAt( 0 ) !== \textcolor{stringliteral}{"<"} ) \{
+            \hyperlink{jquery_8js_ac6036b3100bb484f96bfb15165e077f9}{migrateWarn}(\textcolor{stringliteral}{"$(html) HTML strings must start with '<' character"});
+        \}
+        \textcolor{keywordflow}{if} ( match[ 3 ] ) \{
+            \hyperlink{jquery_8js_ac6036b3100bb484f96bfb15165e077f9}{migrateWarn}(\textcolor{stringliteral}{"$(html) HTML text after last tag is ignored"});
+        \}
+        
+        
+        \textcolor{keywordflow}{if} ( match[ 0 ].charAt( 0 ) === \textcolor{stringliteral}{"#"} ) \{
+            \hyperlink{jquery_8js_ac6036b3100bb484f96bfb15165e077f9}{migrateWarn}(\textcolor{stringliteral}{"HTML string cannot start with a '#' character"});
+            \hyperlink{jquery_8js_a2b1d6f9c448e3ce72f4e1865d6e38d2c}{jQuery}.error(\textcolor{stringliteral}{"JQMIGRATE: Invalid selector string (XSS)"});
+        \}
+        
+        \textcolor{keywordflow}{if} ( context && context.context ) \{
+            
+            context = context.context;
+        \}
+        \textcolor{keywordflow}{if} ( \hyperlink{jquery_8js_a2b1d6f9c448e3ce72f4e1865d6e38d2c}{jQuery}.parseHTML ) \{
+            \textcolor{keywordflow}{return} \hyperlink{jquery_8js_ac9b9dd6c007ba04bbd153bc80d68f911}{oldInit}.call( \textcolor{keyword}{this}, \hyperlink{jquery_8js_a2b1d6f9c448e3ce72f4e1865d6e38d2c}{jQuery}.parseHTML( match[ 2 ], context, \textcolor{keyword}{true} ),
+                    context, \hyperlink{jquery_8js_a8101d493767b94ebb7b6d5650b0809bf}{rootjQuery} );
+        \}
+    \}
+    \textcolor{keywordflow}{return} \hyperlink{jquery_8js_ac9b9dd6c007ba04bbd153bc80d68f911}{oldInit}.apply( \textcolor{keyword}{this}, arguments );
+\}
+\end{DoxyCode}
+
+
+Definition at line 9027 of file jquery.\+js.
+
+\index{jquery.\+js@{jquery.\+js}!j\+Query@{j\+Query}}
+\index{j\+Query@{j\+Query}!jquery.\+js@{jquery.\+js}}
+\subsubsection[{\texorpdfstring{j\+Query}{jQuery}}]{\setlength{\rightskip}{0pt plus 5cm}j\+Query}\hypertarget{jquery_8js_a2b1d6f9c448e3ce72f4e1865d6e38d2c}{}\label{jquery_8js_a2b1d6f9c448e3ce72f4e1865d6e38d2c}
+j\+Query Migrate -\/ v1.\+2.\+1 -\/ 2013-\/05-\/08 \href{https://github.com/jquery/jquery-migrate}{\tt https\+://github.\+com/jquery/jquery-\/migrate} Copyright 2005, 2013 j\+Query Foundation, Inc. and other contributors; Licensed M\+IT 
+
+Definition at line 8836 of file jquery.\+js.
+
+\index{jquery.\+js@{jquery.\+js}!live@{live}}
+\index{live@{live}!jquery.\+js@{jquery.\+js}}
+\subsubsection[{\texorpdfstring{live}{live}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf j\+Query} {\bf fn} live}\hypertarget{jquery_8js_ab8c156c437a408c01f80567143402f4b}{}\label{jquery_8js_ab8c156c437a408c01f80567143402f4b}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \textcolor{keyword}{function}( types, \hyperlink{jquery_8js_ad800f38c547e3a3ed2b14d23d10fc2b1}{data}, \hyperlink{jquery_8js_acef6bdaf6b9b20fdcca1ea86f0902c3b}{fn} ) \{
+    \hyperlink{jquery_8js_ac6036b3100bb484f96bfb15165e077f9}{migrateWarn}(\textcolor{stringliteral}{"jQuery.fn.live() is deprecated"});
+    \textcolor{keywordflow}{if} ( \hyperlink{jquery_8js_aae143814bd850fc333932060b8af58c3}{oldLive} ) \{
+        \textcolor{keywordflow}{return} \hyperlink{jquery_8js_aae143814bd850fc333932060b8af58c3}{oldLive}.apply( \textcolor{keyword}{this}, arguments );
+    \}
+    \hyperlink{jquery_8js_a2b1d6f9c448e3ce72f4e1865d6e38d2c}{jQuery}( this.context ).on( types, this.selector, \hyperlink{jquery_8js_ad800f38c547e3a3ed2b14d23d10fc2b1}{data}, \hyperlink{jquery_8js_acef6bdaf6b9b20fdcca1ea86f0902c3b}{fn} );
+    \textcolor{keywordflow}{return} \textcolor{keyword}{this};
+\}
+\end{DoxyCode}
+
+
+Definition at line 9300 of file jquery.\+js.
+
+\index{jquery.\+js@{jquery.\+js}!matched@{matched}}
+\index{matched@{matched}!jquery.\+js@{jquery.\+js}}
+\subsubsection[{\texorpdfstring{matched}{matched}}]{\setlength{\rightskip}{0pt plus 5cm}var matched}\hypertarget{jquery_8js_a19391c269840dbf5779055d4fe952b6d}{}\label{jquery_8js_a19391c269840dbf5779055d4fe952b6d}
+
+
+Definition at line 9020 of file jquery.\+js.
+
+\index{jquery.\+js@{jquery.\+js}!migrate\+Reset@{migrate\+Reset}}
+\index{migrate\+Reset@{migrate\+Reset}!jquery.\+js@{jquery.\+js}}
+\subsubsection[{\texorpdfstring{migrate\+Reset}{migrateReset}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf j\+Query} migrate\+Reset}\hypertarget{jquery_8js_ab96c0b87bc9c0be50a2ef9b9f4cb7728}{}\label{jquery_8js_ab96c0b87bc9c0be50a2ef9b9f4cb7728}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \textcolor{keyword}{function}() \{
+    warnedAbout = \{\};
+    \hyperlink{jquery_8js_a2b1d6f9c448e3ce72f4e1865d6e38d2c}{jQuery}.migrateWarnings.length = 0;
+\}
+\end{DoxyCode}
+
+
+Definition at line 8860 of file jquery.\+js.
+
+\index{jquery.\+js@{jquery.\+js}!migrate\+Warnings@{migrate\+Warnings}}
+\index{migrate\+Warnings@{migrate\+Warnings}!jquery.\+js@{jquery.\+js}}
+\subsubsection[{\texorpdfstring{migrate\+Warnings}{migrateWarnings}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf j\+Query} migrate\+Warnings = \mbox{[}$\,$\mbox{]}}\hypertarget{jquery_8js_a2f5d54faf27c2755233472650b65ff03}{}\label{jquery_8js_a2f5d54faf27c2755233472650b65ff03}
+
+
+Definition at line 8844 of file jquery.\+js.
+
+\index{jquery.\+js@{jquery.\+js}!old\+Attr@{old\+Attr}}
+\index{old\+Attr@{old\+Attr}!jquery.\+js@{jquery.\+js}}
+\subsubsection[{\texorpdfstring{old\+Attr}{oldAttr}}]{\setlength{\rightskip}{0pt plus 5cm}var old\+Attr = {\bf j\+Query.\+attr}}\hypertarget{jquery_8js_a5fe62d7b5a67ce31d71235b0d94b9309}{}\label{jquery_8js_a5fe62d7b5a67ce31d71235b0d94b9309}
+
+
+Definition at line 8914 of file jquery.\+js.
+
+\index{jquery.\+js@{jquery.\+js}!old\+Die@{old\+Die}}
+\index{old\+Die@{old\+Die}!jquery.\+js@{jquery.\+js}}
+\subsubsection[{\texorpdfstring{old\+Die}{oldDie}}]{\setlength{\rightskip}{0pt plus 5cm}var old\+Die = {\bf j\+Query.\+fn.\+die}}\hypertarget{jquery_8js_ad09378af6cf85e4cbf81905ae728d664}{}\label{jquery_8js_ad09378af6cf85e4cbf81905ae728d664}
+
+
+Definition at line 9220 of file jquery.\+js.
+
+\index{jquery.\+js@{jquery.\+js}!old\+Fn\+Data@{old\+Fn\+Data}}
+\index{old\+Fn\+Data@{old\+Fn\+Data}!jquery.\+js@{jquery.\+js}}
+\subsubsection[{\texorpdfstring{old\+Fn\+Data}{oldFnData}}]{\setlength{\rightskip}{0pt plus 5cm}var old\+Fn\+Data = {\bf j\+Query.\+fn.\+data}}\hypertarget{jquery_8js_abedd13ca7b5e331c7c0781cd2be12bda}{}\label{jquery_8js_abedd13ca7b5e331c7c0781cd2be12bda}
+
+
+Definition at line 9138 of file jquery.\+js.
+
+\index{jquery.\+js@{jquery.\+js}!old\+Init@{old\+Init}}
+\index{old\+Init@{old\+Init}!jquery.\+js@{jquery.\+js}}
+\subsubsection[{\texorpdfstring{old\+Init}{oldInit}}]{\setlength{\rightskip}{0pt plus 5cm}var old\+Init = {\bf j\+Query.\+fn.\+init}}\hypertarget{jquery_8js_ac9b9dd6c007ba04bbd153bc80d68f911}{}\label{jquery_8js_ac9b9dd6c007ba04bbd153bc80d68f911}
+
+
+Definition at line 9021 of file jquery.\+js.
+
+\index{jquery.\+js@{jquery.\+js}!old\+Live@{old\+Live}}
+\index{old\+Live@{old\+Live}!jquery.\+js@{jquery.\+js}}
+\subsubsection[{\texorpdfstring{old\+Live}{oldLive}}]{\setlength{\rightskip}{0pt plus 5cm}var old\+Live = {\bf j\+Query.\+fn.\+live}}\hypertarget{jquery_8js_aae143814bd850fc333932060b8af58c3}{}\label{jquery_8js_aae143814bd850fc333932060b8af58c3}
+
+
+Definition at line 9219 of file jquery.\+js.
+
+\index{jquery.\+js@{jquery.\+js}!old\+Parse\+J\+S\+ON@{old\+Parse\+J\+S\+ON}}
+\index{old\+Parse\+J\+S\+ON@{old\+Parse\+J\+S\+ON}!jquery.\+js@{jquery.\+js}}
+\subsubsection[{\texorpdfstring{old\+Parse\+J\+S\+ON}{oldParseJSON}}]{\setlength{\rightskip}{0pt plus 5cm}var old\+Parse\+J\+S\+ON = {\bf j\+Query.\+parse\+J\+S\+ON}}\hypertarget{jquery_8js_ad5591e1f43cb452fcb2ad4500ecd21c0}{}\label{jquery_8js_ad5591e1f43cb452fcb2ad4500ecd21c0}
+
+
+Definition at line 9022 of file jquery.\+js.
+
+\index{jquery.\+js@{jquery.\+js}!old\+Self@{old\+Self}}
+\index{old\+Self@{old\+Self}!jquery.\+js@{jquery.\+js}}
+\subsubsection[{\texorpdfstring{old\+Self}{oldSelf}}]{\setlength{\rightskip}{0pt plus 5cm}var old\+Self = {\bf j\+Query.\+fn.\+and\+Self} $\vert$$\vert$ j\+Query.\+fn.\+add\+Back}\hypertarget{jquery_8js_aa0b21a3e53cfac16756dbc265b780294}{}\label{jquery_8js_aa0b21a3e53cfac16756dbc265b780294}
+
+
+Definition at line 9158 of file jquery.\+js.
+
+\index{jquery.\+js@{jquery.\+js}!old\+Toggle@{old\+Toggle}}
+\index{old\+Toggle@{old\+Toggle}!jquery.\+js@{jquery.\+js}}
+\subsubsection[{\texorpdfstring{old\+Toggle}{oldToggle}}]{\setlength{\rightskip}{0pt plus 5cm}var old\+Toggle = {\bf j\+Query.\+fn.\+toggle}}\hypertarget{jquery_8js_aa7842699375a00b303040263989263f6}{}\label{jquery_8js_aa7842699375a00b303040263989263f6}
+
+
+Definition at line 9218 of file jquery.\+js.
+
+\index{jquery.\+js@{jquery.\+js}!parse\+J\+S\+ON@{parse\+J\+S\+ON}}
+\index{parse\+J\+S\+ON@{parse\+J\+S\+ON}!jquery.\+js@{jquery.\+js}}
+\subsubsection[{\texorpdfstring{parse\+J\+S\+ON}{parseJSON}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf j\+Query} parse\+J\+S\+ON}\hypertarget{jquery_8js_a04f5ac130281955d6ed88ad6456a4e15}{}\label{jquery_8js_a04f5ac130281955d6ed88ad6456a4e15}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \textcolor{keyword}{function}( json ) \{
+    \textcolor{keywordflow}{if} ( !json && json !== \hyperlink{modernizr_8min_8js_a286f9ec831c5e676eeb493248eab9575}{null} ) \{
+        \hyperlink{jquery_8js_ac6036b3100bb484f96bfb15165e077f9}{migrateWarn}(\textcolor{stringliteral}{"jQuery.parseJSON requires a valid JSON string"});
+        \textcolor{keywordflow}{return} \hyperlink{modernizr_8min_8js_a286f9ec831c5e676eeb493248eab9575}{null};
+    \}
+    \textcolor{keywordflow}{return} \hyperlink{jquery_8js_ad5591e1f43cb452fcb2ad4500ecd21c0}{oldParseJSON}.apply( \textcolor{keyword}{this}, arguments );
+\}
+\end{DoxyCode}
+
+
+Definition at line 9060 of file jquery.\+js.
+
+\index{jquery.\+js@{jquery.\+js}!promise@{promise}}
+\index{promise@{promise}!jquery.\+js@{jquery.\+js}}
+\subsubsection[{\texorpdfstring{promise}{promise}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf j\+Query} ready promise}\hypertarget{jquery_8js_a0d8b41973ef6c84495ec385219c7d608}{}\label{jquery_8js_a0d8b41973ef6c84495ec385219c7d608}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \textcolor{keyword}{function}( obj ) \{
+    \textcolor{keywordflow}{if} ( !readyList ) \{
+
+        readyList = \hyperlink{jquery_8js_a2b1d6f9c448e3ce72f4e1865d6e38d2c}{jQuery}.Deferred();
+
+        
+        
+        
+        \textcolor{keywordflow}{if} ( \hyperlink{classdocument}{document}.readyState === \textcolor{stringliteral}{"complete"} ) \{
+            
+            setTimeout( \hyperlink{jquery_8js_a2b1d6f9c448e3ce72f4e1865d6e38d2c}{jQuery}.ready );
+
+        \} \textcolor{keywordflow}{else} \{
+
+            
+            \hyperlink{classdocument}{document}.addEventListener( \textcolor{stringliteral}{"DOMContentLoaded"}, completed, \textcolor{keyword}{false} );
+
+            
+            \hyperlink{jquery_8js_a04a8a2bbfa9c15500892b8e5033d625b}{window}.addEventListener( \textcolor{stringliteral}{"load"}, completed, \textcolor{keyword}{false} );
+        \}
+    \}
+    \textcolor{keywordflow}{return} readyList.promise( obj );
+\}
+\end{DoxyCode}
+
+
+Definition at line 819 of file jquery.\+js.
+
+\index{jquery.\+js@{jquery.\+js}!prototype@{prototype}}
+\index{prototype@{prototype}!jquery.\+js@{jquery.\+js}}
+\subsubsection[{\texorpdfstring{prototype}{prototype}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf j\+Query} {\bf fn} {\bf init} prototype = {\bf j\+Query.\+fn}}\hypertarget{jquery_8js_a7ef9b7a13e7ecdb967f1b98b4ada2470}{}\label{jquery_8js_a7ef9b7a13e7ecdb967f1b98b4ada2470}
+
+
+Definition at line 283 of file jquery.\+js.
+
+\index{jquery.\+js@{jquery.\+js}!rajax\+Event@{rajax\+Event}}
+\index{rajax\+Event@{rajax\+Event}!jquery.\+js@{jquery.\+js}}
+\subsubsection[{\texorpdfstring{rajax\+Event}{rajaxEvent}}]{\setlength{\rightskip}{0pt plus 5cm}var rajax\+Event = new Reg\+Exp( \char`\"{}\textbackslash{}\textbackslash{}b(?\+:\char`\"{} + ajax\+Events + \char`\"{})\textbackslash{}\textbackslash{}b\char`\"{} )}\hypertarget{jquery_8js_a9c1dd76dd7323bf3aad84b78ea51b475}{}\label{jquery_8js_a9c1dd76dd7323bf3aad84b78ea51b475}
+
+
+Definition at line 9222 of file jquery.\+js.
+
+\index{jquery.\+js@{jquery.\+js}!rboolean@{rboolean}}
+\index{rboolean@{rboolean}!jquery.\+js@{jquery.\+js}}
+\subsubsection[{\texorpdfstring{rboolean}{rboolean}}]{\setlength{\rightskip}{0pt plus 5cm}var rboolean = /$^\wedge$(?\+:autofocus$\vert$autoplay$\vert$async$\vert$checked$\vert$controls$\vert$defer$\vert$disabled$\vert${\bf hidden}$\vert$loop$\vert$multiple$\vert$open$\vert$readonly$\vert$required$\vert$scoped$\vert$selected)\$/{\bf i}}\hypertarget{jquery_8js_a1a18c2fa719df5a1ec431335692f7c7f}{}\label{jquery_8js_a1a18c2fa719df5a1ec431335692f7c7f}
+
+
+Definition at line 8921 of file jquery.\+js.
+
+\index{jquery.\+js@{jquery.\+js}!remove@{remove}}
+\index{remove@{remove}!jquery.\+js@{jquery.\+js}}
+\subsubsection[{\texorpdfstring{remove}{remove}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf j\+Query} event remove}\hypertarget{jquery_8js_ac2bfeac9f445211e9176a527d3a292c4}{}\label{jquery_8js_ac2bfeac9f445211e9176a527d3a292c4}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \textcolor{keyword}{function}( elem, types, handler, selector, mappedTypes )\{
+    \hyperlink{jquery_8js_a818e9517d5b1b7b7e05391ea8ff1dfd5}{eventRemove}.call( \textcolor{keyword}{this}, elem, \hyperlink{jquery_8js_a645cef4bdf3fc1881c5272dacddb8917}{hoverHack}( types ) || \textcolor{stringliteral}{""}, handler, selector, 
+      mappedTypes );
+\}
+\end{DoxyCode}
+
+
+Definition at line 9251 of file jquery.\+js.
+
+\index{jquery.\+js@{jquery.\+js}!rhover\+Hack@{rhover\+Hack}}
+\index{rhover\+Hack@{rhover\+Hack}!jquery.\+js@{jquery.\+js}}
+\subsubsection[{\texorpdfstring{rhover\+Hack}{rhoverHack}}]{\setlength{\rightskip}{0pt plus 5cm}var rhover\+Hack = /(?\+:$^\wedge$$\vert$\textbackslash{}{\bf s})hover(\textbackslash{}.\textbackslash{}{\bf S}+$\vert$)\textbackslash{}{\bf b}/}\hypertarget{jquery_8js_a7b035462889195e00316a894a2b3d876}{}\label{jquery_8js_a7b035462889195e00316a894a2b3d876}
+
+
+Definition at line 9223 of file jquery.\+js.
+
+\index{jquery.\+js@{jquery.\+js}!rno\+Attr\+Node\+Type@{rno\+Attr\+Node\+Type}}
+\index{rno\+Attr\+Node\+Type@{rno\+Attr\+Node\+Type}!jquery.\+js@{jquery.\+js}}
+\subsubsection[{\texorpdfstring{rno\+Attr\+Node\+Type}{rnoAttrNodeType}}]{\setlength{\rightskip}{0pt plus 5cm}var rno\+Attr\+Node\+Type = /$^\wedge$\mbox{[}238\mbox{]}\$/}\hypertarget{jquery_8js_a932e5ad53b24a286714fcffceb4cbde0}{}\label{jquery_8js_a932e5ad53b24a286714fcffceb4cbde0}
+
+
+Definition at line 8920 of file jquery.\+js.
+
+\index{jquery.\+js@{jquery.\+js}!rno\+Type@{rno\+Type}}
+\index{rno\+Type@{rno\+Type}!jquery.\+js@{jquery.\+js}}
+\subsubsection[{\texorpdfstring{rno\+Type}{rnoType}}]{\setlength{\rightskip}{0pt plus 5cm}var rno\+Type = /$^\wedge$(?\+:input$\vert$button)\$/{\bf i}}\hypertarget{jquery_8js_aba62df0b2591b6534016a48daf198df4}{}\label{jquery_8js_aba62df0b2591b6534016a48daf198df4}
+
+
+Definition at line 8919 of file jquery.\+js.
+
+\index{jquery.\+js@{jquery.\+js}!rootj\+Query@{rootj\+Query}}
+\index{rootj\+Query@{rootj\+Query}!jquery.\+js@{jquery.\+js}}
+\subsubsection[{\texorpdfstring{rootj\+Query}{rootjQuery}}]{\setlength{\rightskip}{0pt plus 5cm}rootj\+Query = {\bf j\+Query}({\bf document})}\hypertarget{jquery_8js_a8101d493767b94ebb7b6d5650b0809bf}{}\label{jquery_8js_a8101d493767b94ebb7b6d5650b0809bf}
+
+
+Definition at line 866 of file jquery.\+js.
+
+\index{jquery.\+js@{jquery.\+js}!rquick\+Expr@{rquick\+Expr}}
+\index{rquick\+Expr@{rquick\+Expr}!jquery.\+js@{jquery.\+js}}
+\subsubsection[{\texorpdfstring{rquick\+Expr}{rquickExpr}}]{\setlength{\rightskip}{0pt plus 5cm}var rquick\+Expr = /$^\wedge$(\mbox{[}$^\wedge$$<$\mbox{]}$\ast$)($<$\mbox{[}\textbackslash{}w\textbackslash{}W\mbox{]}+$>$)(\mbox{[}$^\wedge$$>$\mbox{]}$\ast$)\$/}\hypertarget{jquery_8js_adb9a8b088e9580cb8ce6d9d4d08305ae}{}\label{jquery_8js_adb9a8b088e9580cb8ce6d9d4d08305ae}
+
+
+Definition at line 9024 of file jquery.\+js.
+
+\index{jquery.\+js@{jquery.\+js}!rscript\+Type@{rscript\+Type}}
+\index{rscript\+Type@{rscript\+Type}!jquery.\+js@{jquery.\+js}}
+\subsubsection[{\texorpdfstring{rscript\+Type}{rscriptType}}]{\setlength{\rightskip}{0pt plus 5cm}var rscript\+Type = /\textbackslash{}/(java$\vert$ecma)script/{\bf i}}\hypertarget{jquery_8js_afe9e6e5fe3b5bee3de77fe4004b99f8c}{}\label{jquery_8js_afe9e6e5fe3b5bee3de77fe4004b99f8c}
+
+
+Definition at line 9157 of file jquery.\+js.
+
+\index{jquery.\+js@{jquery.\+js}!ruse\+Default@{ruse\+Default}}
+\index{ruse\+Default@{ruse\+Default}!jquery.\+js@{jquery.\+js}}
+\subsubsection[{\texorpdfstring{ruse\+Default}{ruseDefault}}]{\setlength{\rightskip}{0pt plus 5cm}var ruse\+Default = /$^\wedge$(?\+:checked$\vert$selected)\$/{\bf i}}\hypertarget{jquery_8js_a71b46062b4c90ce381b625c5f4c99c52}{}\label{jquery_8js_a71b46062b4c90ce381b625c5f4c99c52}
+
+
+Definition at line 8922 of file jquery.\+js.
+
+\index{jquery.\+js@{jquery.\+js}!sub@{sub}}
+\index{sub@{sub}!jquery.\+js@{jquery.\+js}}
+\subsubsection[{\texorpdfstring{sub}{sub}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf j\+Query} sub}\hypertarget{jquery_8js_af209492657899aa41078dd2fe4c57575}{}\label{jquery_8js_af209492657899aa41078dd2fe4c57575}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \textcolor{keyword}{function}() \{
+    \textcolor{keyword}{function} jQuerySub( selector, context ) \{
+        \textcolor{keywordflow}{return} \textcolor{keyword}{new} jQuerySub.fn.init( selector, context );
+    \}
+    \hyperlink{jquery_8js_a2b1d6f9c448e3ce72f4e1865d6e38d2c}{jQuery}.extend( \textcolor{keyword}{true}, jQuerySub, \textcolor{keyword}{this} );
+    jQuerySub.superclass = \textcolor{keyword}{this};
+    jQuerySub.fn = jQuerySub.prototype = \textcolor{keyword}{this}();
+    jQuerySub.fn.constructor = jQuerySub;
+    jQuerySub.sub = this.\hyperlink{jquery_8js_af209492657899aa41078dd2fe4c57575}{sub};
+    jQuerySub.fn.init = \textcolor{keyword}{function} \hyperlink{jquery_8js_a4411a3d16c33c71210302860f22ba789}{init}( selector, context ) \{
+        \textcolor{keywordflow}{if} ( context && context instanceof \hyperlink{jquery_8js_a2b1d6f9c448e3ce72f4e1865d6e38d2c}{jQuery} && !(context instanceof jQuerySub) ) \{
+            context = jQuerySub( context );
+        \}
+
+        \textcolor{keywordflow}{return} \hyperlink{jquery_8js_a2b1d6f9c448e3ce72f4e1865d6e38d2c}{jQuery}.fn.init.call( \textcolor{keyword}{this}, selector, context, rootjQuerySub );
+    \};
+    jQuerySub.fn.init.prototype = jQuerySub.fn;
+    var rootjQuerySub = jQuerySub(\hyperlink{classdocument}{document});
+    \hyperlink{jquery_8js_ac6036b3100bb484f96bfb15165e077f9}{migrateWarn}( \textcolor{stringliteral}{"jQuery.sub() is deprecated"} );
+    \textcolor{keywordflow}{return} jQuerySub;
+\}
+\end{DoxyCode}
+
+
+Definition at line 9107 of file jquery.\+js.
+
+\index{jquery.\+js@{jquery.\+js}!toggle@{toggle}}
+\index{toggle@{toggle}!jquery.\+js@{jquery.\+js}}
+\subsubsection[{\texorpdfstring{toggle}{toggle}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf j\+Query} {\bf fn} toggle}\hypertarget{jquery_8js_ac78f284f91282bbaa8bfd9763293cebb}{}\label{jquery_8js_ac78f284f91282bbaa8bfd9763293cebb}
+
+
+Definition at line 9267 of file jquery.\+js.
+
+\index{jquery.\+js@{jquery.\+js}!trigger@{trigger}}
+\index{trigger@{trigger}!jquery.\+js@{jquery.\+js}}
+\subsubsection[{\texorpdfstring{trigger}{trigger}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf j\+Query} event trigger}\hypertarget{jquery_8js_a3a2670632785d79909fadd16431e30f9}{}\label{jquery_8js_a3a2670632785d79909fadd16431e30f9}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \textcolor{keyword}{function}( event, \hyperlink{jquery_8js_ad800f38c547e3a3ed2b14d23d10fc2b1}{data}, elem, onlyHandlers  )\{
+    \textcolor{keywordflow}{if} ( !elem && !\hyperlink{jquery_8js_a9c1dd76dd7323bf3aad84b78ea51b475}{rajaxEvent}.test( event ) ) \{
+        \hyperlink{jquery_8js_ac6036b3100bb484f96bfb15165e077f9}{migrateWarn}( \textcolor{stringliteral}{"Global events are undocumented and deprecated"} );
+    \}
+    \textcolor{keywordflow}{return} \hyperlink{jquery_8js_a795caa3304cb75e9e688526722c89349}{eventTrigger}.call( \textcolor{keyword}{this},  event, \hyperlink{jquery_8js_ad800f38c547e3a3ed2b14d23d10fc2b1}{data}, elem || 
+      \hyperlink{classdocument}{document}, onlyHandlers  );
+\}
+\end{DoxyCode}
+
+
+Definition at line 9319 of file jquery.\+js.
+
+\index{jquery.\+js@{jquery.\+js}!ua\+Match@{ua\+Match}}
+\index{ua\+Match@{ua\+Match}!jquery.\+js@{jquery.\+js}}
+\subsubsection[{\texorpdfstring{ua\+Match}{uaMatch}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf j\+Query} ua\+Match}\hypertarget{jquery_8js_ab3da4eef6dbfe0aa1b00063be26f0cd7}{}\label{jquery_8js_ab3da4eef6dbfe0aa1b00063be26f0cd7}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \textcolor{keyword}{function}( ua ) \{
+    ua = ua.toLowerCase();
+
+    var match = /(chrome)[ \(\backslash\)/]([\(\backslash\)\hyperlink{jquery-1_8x_8min_8js_a9721a992655f700bdc2e91ba68b71e26}{w}.]+)/.exec( ua ) ||
+        /(webkit)[ \(\backslash\)/]([\(\backslash\)\hyperlink{jquery-1_8x_8min_8js_a9721a992655f700bdc2e91ba68b71e26}{w}.]+)/.exec( ua ) ||
+        /(opera)(?:.*\hyperlink{swfupload_8js_ae393f33a5d8a662e31985f4512cf9283}{version}|)[ \(\backslash\)/]([\hyperlink{jquery-1_8x_8min_8js_a9721a992655f700bdc2e91ba68b71e26}{\(\backslash\)w}.]+)/.exec( ua ) ||
+        /(msie) ([\(\backslash\)\hyperlink{jquery-1_8x_8min_8js_a9721a992655f700bdc2e91ba68b71e26}{w}.]+)/.exec( ua ) ||
+        ua.indexOf(\textcolor{stringliteral}{"compatible"}) < 0 && /(mozilla)(?:.*? rv:([\(\backslash\)\hyperlink{jquery-1_8x_8min_8js_a9721a992655f700bdc2e91ba68b71e26}{w}.]+)|)/.exec( ua ) ||
+        [];
+
+    \textcolor{keywordflow}{return} \{
+        \hyperlink{jquery_8js_ad2e233c7f69c182810f01dc9d1a2d546}{browser}: match[ 1 ] || \textcolor{stringliteral}{""},
+        \hyperlink{swfupload_8js_ae393f33a5d8a662e31985f4512cf9283}{version}: match[ 2 ] || \textcolor{stringliteral}{"0"}
+    \};
+\}
+\end{DoxyCode}
+
+
+Definition at line 9068 of file jquery.\+js.
+
+\index{jquery.\+js@{jquery.\+js}!undefined@{undefined}}
+\index{undefined@{undefined}!jquery.\+js@{jquery.\+js}}
+\subsubsection[{\texorpdfstring{undefined}{undefined}}]{\setlength{\rightskip}{0pt plus 5cm}function undefined}\hypertarget{jquery_8js_a08113a236cc18d2a9d5ce27e638012be}{}\label{jquery_8js_a08113a236cc18d2a9d5ce27e638012be}
+
+
+Definition at line 14 of file jquery.\+js.
+
+\index{jquery.\+js@{jquery.\+js}!value@{value}}
+\index{value@{value}!jquery.\+js@{jquery.\+js}}
+\subsubsection[{\texorpdfstring{value}{value}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf j\+Query} attr\+Hooks value}\hypertarget{jquery_8js_abe5393d870043cf6aaa1d5ad5fce755c}{}\label{jquery_8js_abe5393d870043cf6aaa1d5ad5fce755c}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+    \textcolor{keyword}{get}: \textcolor{keyword}{function}( elem, \hyperlink{common_8js_a22c29d2aa8ed6161ce8faa718ef76e68}{name} ) \{
+        var nodeName = ( elem.nodeName || \textcolor{stringliteral}{""} ).toLowerCase();
+        \textcolor{keywordflow}{if} ( nodeName === \textcolor{stringliteral}{"button"} ) \{
+            \textcolor{keywordflow}{return} \hyperlink{jquery_8js_a02010f66dba9fcc506d69b302cab41fb}{valueAttrGet}.apply( \textcolor{keyword}{this}, arguments );
+        \}
+        \textcolor{keywordflow}{if} ( nodeName !== \textcolor{stringliteral}{"input"} && nodeName !== \textcolor{stringliteral}{"option"} ) \{
+            \hyperlink{jquery_8js_ac6036b3100bb484f96bfb15165e077f9}{migrateWarn}(\textcolor{stringliteral}{"jQuery.fn.attr('value') no longer gets properties"});
+        \}
+        \textcolor{keywordflow}{return} \hyperlink{common_8js_a22c29d2aa8ed6161ce8faa718ef76e68}{name} in elem ?
+            elem.value :
+            \hyperlink{modernizr_8min_8js_a286f9ec831c5e676eeb493248eab9575}{null};
+    \},
+    \textcolor{keyword}{set}: \textcolor{keyword}{function}( elem, \hyperlink{jquery_8js_abe5393d870043cf6aaa1d5ad5fce755c}{value} ) \{
+        var nodeName = ( elem.nodeName || \textcolor{stringliteral}{""} ).toLowerCase();
+        \textcolor{keywordflow}{if} ( nodeName === \textcolor{stringliteral}{"button"} ) \{
+            \textcolor{keywordflow}{return} \hyperlink{jquery_8js_a4f03581a835ab99d3f66b59015ad49ae}{valueAttrSet}.apply( \textcolor{keyword}{this}, arguments );
+        \}
+        \textcolor{keywordflow}{if} ( nodeName !== \textcolor{stringliteral}{"input"} && nodeName !== \textcolor{stringliteral}{"option"} ) \{
+            \hyperlink{jquery_8js_ac6036b3100bb484f96bfb15165e077f9}{migrateWarn}(\textcolor{stringliteral}{"jQuery.fn.attr('value', val) no longer sets properties"});
+        \}
+        
+        elem.value = \hyperlink{jquery_8js_abe5393d870043cf6aaa1d5ad5fce755c}{value};
+    \}
+\}
+\end{DoxyCode}
+
+
+Definition at line 8993 of file jquery.\+js.
+
+\index{jquery.\+js@{jquery.\+js}!value\+Attr\+Get@{value\+Attr\+Get}}
+\index{value\+Attr\+Get@{value\+Attr\+Get}!jquery.\+js@{jquery.\+js}}
+\subsubsection[{\texorpdfstring{value\+Attr\+Get}{valueAttrGet}}]{\setlength{\rightskip}{0pt plus 5cm}var value\+Attr\+Get}\hypertarget{jquery_8js_a02010f66dba9fcc506d69b302cab41fb}{}\label{jquery_8js_a02010f66dba9fcc506d69b302cab41fb}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \hyperlink{jquery_8js_a2b1d6f9c448e3ce72f4e1865d6e38d2c}{jQuery}.attrHooks.value && \hyperlink{jquery_8js_a2b1d6f9c448e3ce72f4e1865d6e38d2c}{jQuery}.attrHooks.value.get ||
+        \textcolor{keyword}{function}() \{ \textcolor{keywordflow}{return} \hyperlink{modernizr_8min_8js_a286f9ec831c5e676eeb493248eab9575}{null}; \}
+\end{DoxyCode}
+
+
+Definition at line 8915 of file jquery.\+js.
+
+\index{jquery.\+js@{jquery.\+js}!value\+Attr\+Set@{value\+Attr\+Set}}
+\index{value\+Attr\+Set@{value\+Attr\+Set}!jquery.\+js@{jquery.\+js}}
+\subsubsection[{\texorpdfstring{value\+Attr\+Set}{valueAttrSet}}]{\setlength{\rightskip}{0pt plus 5cm}var value\+Attr\+Set}\hypertarget{jquery_8js_a4f03581a835ab99d3f66b59015ad49ae}{}\label{jquery_8js_a4f03581a835ab99d3f66b59015ad49ae}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \hyperlink{jquery_8js_a2b1d6f9c448e3ce72f4e1865d6e38d2c}{jQuery}.attrHooks.value && \hyperlink{jquery_8js_a2b1d6f9c448e3ce72f4e1865d6e38d2c}{jQuery}.attrHooks.value.set ||
+        \textcolor{keyword}{function}() \{ \textcolor{keywordflow}{return} \hyperlink{jquery_8js_a08113a236cc18d2a9d5ce27e638012be}{undefined}; \}
+\end{DoxyCode}
+
+
+Definition at line 8917 of file jquery.\+js.
+
+\index{jquery.\+js@{jquery.\+js}!window@{window}}
+\index{window@{window}!jquery.\+js@{jquery.\+js}}
+\subsubsection[{\texorpdfstring{window}{window}}]{\setlength{\rightskip}{0pt plus 5cm}window}\hypertarget{jquery_8js_a04a8a2bbfa9c15500892b8e5033d625b}{}\label{jquery_8js_a04a8a2bbfa9c15500892b8e5033d625b}
+j\+Query Java\+Script Library v2.\+0.\+3 \href{http://jquery.com/}{\tt http\+://jquery.\+com/}
+
+Includes Sizzle.\+js \href{http://sizzlejs.com/}{\tt http\+://sizzlejs.\+com/}
+
+Copyright 2005, 2013 j\+Query Foundation, Inc. and other contributors Released under the M\+IT license \href{http://jquery.org/license}{\tt http\+://jquery.\+org/license}
+
+Date\+: 2013-\/07-\/03\+T13\+:30Z
+
+Sizzle C\+SS Selector Engine v1.\+9.\+4-\/pre \href{http://sizzlejs.com/}{\tt http\+://sizzlejs.\+com/}
+
+Copyright 2013 j\+Query Foundation, Inc. and other contributors Released under the M\+IT license \href{http://jquery.org/license}{\tt http\+://jquery.\+org/license}
+
+Date\+: 2013-\/06-\/03 
+
+Definition at line 14 of file jquery.\+js.
+

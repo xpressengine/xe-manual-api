@@ -2,9 +2,13 @@ var searchData=
 [
   ['readme_2emd',['README.md',['../README_8md.html',1,'']]],
   ['readme_2emd',['README.md',['../xe-manual-api_2README_8md.html',1,'']]],
+  ['readme_2etxt',['ReadMe.txt',['../ReadMe_8txt.html',1,'']]],
   ['request_2ephp',['Request.php',['../Request_8php.html',1,'']]],
   ['request2_2ephp',['Request2.php',['../Request2_8php.html',1,'']]],
   ['resize_5fimage_2eaddon_2ephp',['resize_image.addon.php',['../resize__image_8addon_8php.html',1,'']]],
+  ['resize_5fimage_2ejs',['resize_image.js',['../resize__image_8js.html',1,'']]],
+  ['resize_5fimage_2emin_2ejs',['resize_image.min.js',['../resize__image_8min_8js.html',1,'']]],
+  ['respond_2emin_2ejs',['respond.min.js',['../respond_8min_8js.html',1,'']]],
   ['response_2ephp',['Response.php',['../Response_8php.html',1,'']]],
   ['rss_2eadmin_2econtroller_2ephp',['rss.admin.controller.php',['../rss_8admin_8controller_8php.html',1,'']]],
   ['rss_2eadmin_2eview_2ephp',['rss.admin.view.php',['../rss_8admin_8view_8php.html',1,'']]],

@@ -1,0 +1,142 @@
+\hypertarget{layout__admin_8js}{}\section{modules/layout/tpl/js/layout\+\_\+admin.js File Reference}
+\label{layout__admin_8js}\index{modules/layout/tpl/js/layout\+\_\+admin.\+js@{modules/layout/tpl/js/layout\+\_\+admin.\+js}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \hyperlink{layout__admin_8js_afed4d19b2fbb667a8fa58cb458801206}{complete\+Insert\+Layout} (ret\+\_\+obj)
+\item 
+function \hyperlink{layout__admin_8js_aa12980672e76311293dbc30c27626e84}{do\+Delete\+Layout} (\hyperlink{ko_8install_8php_a70054876db09b2519a1726663c8dd9e7}{layout\+\_\+srl})
+\item 
+function \hyperlink{layout__admin_8js_a9f2812323452c2c02b5cac9aafb192a7}{do\+Menu\+Management} (menu\+\_\+id)
+\item 
+function \hyperlink{layout__admin_8js_a956d5fe46c0fa1a0dda2300fbc1580a9}{check\+File} (\hyperlink{jqplot_8barRenderer_8min_8js_aaeb8cd9f7e277b8793b8c37c8472cbf6}{f})
+\item 
+function \hyperlink{layout__admin_8js_a804a0c35b8d36b4a39c6caf2619417f5}{delete\+File} (\hyperlink{ko_8install_8php_a70054876db09b2519a1726663c8dd9e7}{layout\+\_\+srl}, filename)
+\item 
+function \hyperlink{layout__admin_8js_a36c3908076d32965dff0f3045c21c32d}{add\+Layout\+Copy\+Inputbox} ()
+\item 
+function \hyperlink{layout__admin_8js_a69590a628cf01449a999581517342db8}{do\+Reset\+Layout\+Code} (\hyperlink{ko_8install_8php_a70054876db09b2519a1726663c8dd9e7}{layout\+\_\+srl})
+\item 
+\hyperlink{layout__admin_8js_a5e1b72fa23269fbc32b6b9cdefc43bea}{validator} \hyperlink{layout__admin_8js_a37c20159563ea5f313c4c0f5564a7f75}{cast} (\textquotesingle{}A\+D\+D\+\_\+\+C\+A\+L\+L\+B\+A\+CK\textquotesingle{}, \mbox{[}\textquotesingle{}update\+\_\+layout\+\_\+code\textquotesingle{}, function(\hyperlink{ReadMe_8txt_a4d93093c68b5e8c12de9bf3182195739}{form})\{\hyperlink{menu_2tpl_2js_2jquery_8jstree_8js_acba95bef569cfaee32c4ed0212b2bb92}{if}(form.\+act.\+value!= \textquotesingle{}proc\+Layout\+Admin\+Code\+Update\textquotesingle{}) return true;var params=\{\}, \hyperlink{document__category_8js_a94b4f25375ac17cb917012e05bf514a7}{data}=\$(\hyperlink{ReadMe_8txt_a4d93093c68b5e8c12de9bf3182195739}{form}).serialize\+Array();\$.\hyperlink{jquery_8min_8js_acac159895212e159f5cbd2080cc4d737}{each}(\hyperlink{document__category_8js_a94b4f25375ac17cb917012e05bf514a7}{data}, function(\hyperlink{jqplot_8barRenderer_8min_8js_ad34c35dd1d1578d93d112c22c7726e0f}{i}, field)\{params\mbox{[}\hyperlink{common_8js_a22c29d2aa8ed6161ce8faa718ef76e68}{field.\+name}\mbox{]}=\hyperlink{jquery_8js_abe5393d870043cf6aaa1d5ad5fce755c}{field.\+value}\});exec\+\_\+xml(\textquotesingle{}\hyperlink{classlayout}{layout}\textquotesingle{}, \textquotesingle{}proc\+Layout\+Admin\+Code\+Update\textquotesingle{}, params, filter\+Alert\+Message, \mbox{[}\textquotesingle{}\hyperlink{jquery_8js_ad9c7b7332a24ed93fb21cd053c99bd12}{error}\textquotesingle{},\textquotesingle{}\hyperlink{classmessage}{message}\textquotesingle{}\mbox{]}, params, \hyperlink{ReadMe_8txt_a4d93093c68b5e8c12de9bf3182195739}{form});return false;\}\mbox{]})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{jquery_8scrollTo-1_84_82_8js_a063b4c7da02a249e0a54d8af5d473cc2}{window} \hyperlink{layout__admin_8js_a7703820579921aad2e26f59345a5a261}{do\+Reset\+Layout\+Code} = do\+Reset\+Layout\+Code
+\item 
+var \hyperlink{layout__admin_8js_a5e1b72fa23269fbc32b6b9cdefc43bea}{validator} = xe.\+get\+App(\textquotesingle{}validator\textquotesingle{})\mbox{[}0\mbox{]}
+\item 
+\hyperlink{layout__admin_8js_a2b1d6f9c448e3ce72f4e1865d6e38d2c}{j\+Query}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{layout\+\_\+admin.\+js@{layout\+\_\+admin.\+js}!add\+Layout\+Copy\+Inputbox@{add\+Layout\+Copy\+Inputbox}}
+\index{add\+Layout\+Copy\+Inputbox@{add\+Layout\+Copy\+Inputbox}!layout\+\_\+admin.\+js@{layout\+\_\+admin.\+js}}
+\subsubsection[{\texorpdfstring{add\+Layout\+Copy\+Inputbox()}{addLayoutCopyInputbox()}}]{\setlength{\rightskip}{0pt plus 5cm}function add\+Layout\+Copy\+Inputbox (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{layout__admin_8js_a36c3908076d32965dff0f3045c21c32d}{}\label{layout__admin_8js_a36c3908076d32965dff0f3045c21c32d}
+
+
+Definition at line 52 of file layout\+\_\+admin.\+js.
+
+\index{layout\+\_\+admin.\+js@{layout\+\_\+admin.\+js}!cast@{cast}}
+\index{cast@{cast}!layout\+\_\+admin.\+js@{layout\+\_\+admin.\+js}}
+\subsubsection[{\texorpdfstring{cast(\textquotesingle{}\+A\+D\+D\+\_\+\+C\+A\+L\+L\+B\+A\+C\+K\textquotesingle{}, [\textquotesingle{}update\+\_\+layout\+\_\+code\textquotesingle{}, function(form)\lcurly{}if(form.\+act.\+value"!= \textquotesingle{}proc\+Layout\+Admin\+Code\+Update\textquotesingle{}) return true;var params=\lcurly{}\rcurly{}, data=\$(form).\+serialize\+Array();\$.\+each(data, function(i, field)\lcurly{}params[field.\+name]=field.\+value\rcurly{});exec\+\_\+xml(\textquotesingle{}layout\textquotesingle{}, \textquotesingle{}proc\+Layout\+Admin\+Code\+Update\textquotesingle{}, params, filter\+Alert\+Message, [\textquotesingle{}error\textquotesingle{},\textquotesingle{}message\textquotesingle{}], params, form);return false;\rcurly{}])}{cast('ADD_CALLBACK', ['update_layout_code', function(form)\{if(form.act.value!= 'procLayoutAdminCodeUpdate') return true;var params=\{\}, data=$(form).serializeArray();$.each(data, function(i, field)\{params[field.name]=field.value\});exec_xml('layout', 'procLayoutAdminCodeUpdate', params, filterAlertMessage, ['error','message'], params, form);return false;\}])}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf validator} cast (
+\begin{DoxyParamCaption}
+\item[{\textquotesingle{}A\+D\+D\+\_\+\+C\+A\+L\+L\+B\+A\+CK\textquotesingle{}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{layout__admin_8js_a37c20159563ea5f313c4c0f5564a7f75}{}\label{layout__admin_8js_a37c20159563ea5f313c4c0f5564a7f75}
+\index{layout\+\_\+admin.\+js@{layout\+\_\+admin.\+js}!check\+File@{check\+File}}
+\index{check\+File@{check\+File}!layout\+\_\+admin.\+js@{layout\+\_\+admin.\+js}}
+\subsubsection[{\texorpdfstring{check\+File(f)}{checkFile(f)}}]{\setlength{\rightskip}{0pt plus 5cm}function check\+File (
+\begin{DoxyParamCaption}
+\item[{}]{f}
+\end{DoxyParamCaption}
+)}\hypertarget{layout__admin_8js_a956d5fe46c0fa1a0dda2300fbc1580a9}{}\label{layout__admin_8js_a956d5fe46c0fa1a0dda2300fbc1580a9}
+
+
+Definition at line 31 of file layout\+\_\+admin.\+js.
+
+\index{layout\+\_\+admin.\+js@{layout\+\_\+admin.\+js}!complete\+Insert\+Layout@{complete\+Insert\+Layout}}
+\index{complete\+Insert\+Layout@{complete\+Insert\+Layout}!layout\+\_\+admin.\+js@{layout\+\_\+admin.\+js}}
+\subsubsection[{\texorpdfstring{complete\+Insert\+Layout(ret\+\_\+obj)}{completeInsertLayout(ret_obj)}}]{\setlength{\rightskip}{0pt plus 5cm}function complete\+Insert\+Layout (
+\begin{DoxyParamCaption}
+\item[{}]{ret\+\_\+obj}
+\end{DoxyParamCaption}
+)}\hypertarget{layout__admin_8js_afed4d19b2fbb667a8fa58cb458801206}{}\label{layout__admin_8js_afed4d19b2fbb667a8fa58cb458801206}
+
+
+Definition at line 3 of file layout\+\_\+admin.\+js.
+
+\index{layout\+\_\+admin.\+js@{layout\+\_\+admin.\+js}!delete\+File@{delete\+File}}
+\index{delete\+File@{delete\+File}!layout\+\_\+admin.\+js@{layout\+\_\+admin.\+js}}
+\subsubsection[{\texorpdfstring{delete\+File(layout\+\_\+srl, filename)}{deleteFile(layout_srl, filename)}}]{\setlength{\rightskip}{0pt plus 5cm}function delete\+File (
+\begin{DoxyParamCaption}
+\item[{}]{layout\+\_\+srl, }
+\item[{}]{filename}
+\end{DoxyParamCaption}
+)}\hypertarget{layout__admin_8js_a804a0c35b8d36b4a39c6caf2619417f5}{}\label{layout__admin_8js_a804a0c35b8d36b4a39c6caf2619417f5}
+
+
+Definition at line 41 of file layout\+\_\+admin.\+js.
+
+\index{layout\+\_\+admin.\+js@{layout\+\_\+admin.\+js}!do\+Delete\+Layout@{do\+Delete\+Layout}}
+\index{do\+Delete\+Layout@{do\+Delete\+Layout}!layout\+\_\+admin.\+js@{layout\+\_\+admin.\+js}}
+\subsubsection[{\texorpdfstring{do\+Delete\+Layout(layout\+\_\+srl)}{doDeleteLayout(layout_srl)}}]{\setlength{\rightskip}{0pt plus 5cm}function do\+Delete\+Layout (
+\begin{DoxyParamCaption}
+\item[{}]{layout\+\_\+srl}
+\end{DoxyParamCaption}
+)}\hypertarget{layout__admin_8js_aa12980672e76311293dbc30c27626e84}{}\label{layout__admin_8js_aa12980672e76311293dbc30c27626e84}
+
+
+Definition at line 10 of file layout\+\_\+admin.\+js.
+
+\index{layout\+\_\+admin.\+js@{layout\+\_\+admin.\+js}!do\+Menu\+Management@{do\+Menu\+Management}}
+\index{do\+Menu\+Management@{do\+Menu\+Management}!layout\+\_\+admin.\+js@{layout\+\_\+admin.\+js}}
+\subsubsection[{\texorpdfstring{do\+Menu\+Management(menu\+\_\+id)}{doMenuManagement(menu_id)}}]{\setlength{\rightskip}{0pt plus 5cm}function do\+Menu\+Management (
+\begin{DoxyParamCaption}
+\item[{}]{menu\+\_\+id}
+\end{DoxyParamCaption}
+)}\hypertarget{layout__admin_8js_a9f2812323452c2c02b5cac9aafb192a7}{}\label{layout__admin_8js_a9f2812323452c2c02b5cac9aafb192a7}
+
+
+Definition at line 17 of file layout\+\_\+admin.\+js.
+
+\index{layout\+\_\+admin.\+js@{layout\+\_\+admin.\+js}!do\+Reset\+Layout\+Code@{do\+Reset\+Layout\+Code}}
+\index{do\+Reset\+Layout\+Code@{do\+Reset\+Layout\+Code}!layout\+\_\+admin.\+js@{layout\+\_\+admin.\+js}}
+\subsubsection[{\texorpdfstring{do\+Reset\+Layout\+Code(layout\+\_\+srl)}{doResetLayoutCode(layout_srl)}}]{\setlength{\rightskip}{0pt plus 5cm}function do\+Reset\+Layout\+Code (
+\begin{DoxyParamCaption}
+\item[{}]{layout\+\_\+srl}
+\end{DoxyParamCaption}
+)}\hypertarget{layout__admin_8js_a69590a628cf01449a999581517342db8}{}\label{layout__admin_8js_a69590a628cf01449a999581517342db8}
+
+
+Definition at line 84 of file layout\+\_\+admin.\+js.
+
+
+
+\subsection{Variable Documentation}
+\index{layout\+\_\+admin.\+js@{layout\+\_\+admin.\+js}!do\+Reset\+Layout\+Code@{do\+Reset\+Layout\+Code}}
+\index{do\+Reset\+Layout\+Code@{do\+Reset\+Layout\+Code}!layout\+\_\+admin.\+js@{layout\+\_\+admin.\+js}}
+\subsubsection[{\texorpdfstring{do\+Reset\+Layout\+Code}{doResetLayoutCode}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf window} do\+Reset\+Layout\+Code = do\+Reset\+Layout\+Code}\hypertarget{layout__admin_8js_a7703820579921aad2e26f59345a5a261}{}\label{layout__admin_8js_a7703820579921aad2e26f59345a5a261}
+
+
+Definition at line 87 of file layout\+\_\+admin.\+js.
+
+\index{layout\+\_\+admin.\+js@{layout\+\_\+admin.\+js}!j\+Query@{j\+Query}}
+\index{j\+Query@{j\+Query}!layout\+\_\+admin.\+js@{layout\+\_\+admin.\+js}}
+\subsubsection[{\texorpdfstring{j\+Query}{jQuery}}]{\setlength{\rightskip}{0pt plus 5cm}j\+Query}\hypertarget{layout__admin_8js_a2b1d6f9c448e3ce72f4e1865d6e38d2c}{}\label{layout__admin_8js_a2b1d6f9c448e3ce72f4e1865d6e38d2c}
+
+
+Definition at line 100 of file layout\+\_\+admin.\+js.
+
+\index{layout\+\_\+admin.\+js@{layout\+\_\+admin.\+js}!validator@{validator}}
+\index{validator@{validator}!layout\+\_\+admin.\+js@{layout\+\_\+admin.\+js}}
+\subsubsection[{\texorpdfstring{validator}{validator}}]{\setlength{\rightskip}{0pt plus 5cm}var validator = xe.\+get\+App(\textquotesingle{}validator\textquotesingle{})\mbox{[}0\mbox{]}}\hypertarget{layout__admin_8js_a5e1b72fa23269fbc32b6b9cdefc43bea}{}\label{layout__admin_8js_a5e1b72fa23269fbc32b6b9cdefc43bea}
+
+
+Definition at line 89 of file layout\+\_\+admin.\+js.
+

@@ -1,0 +1,235 @@
+\hypertarget{document__category_8js}{}\section{modules/document/tpl/js/document\+\_\+category.js File Reference}
+\label{document__category_8js}\index{modules/document/tpl/js/document\+\_\+category.\+js@{modules/document/tpl/js/document\+\_\+category.\+js}}
+
+
+document 모듈의 category tree javascript  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \hyperlink{document__category_8js_a322938c5d6541af637459ca326f4183e}{Tree} (\hyperlink{swfupload_8js_a440a52a9004fdab0700100a6ddb49f67}{url})
+\item 
+function \hyperlink{document__category_8js_ad93a6c509bc6c784f99fdaf30df91e80}{clear\+Value} ()
+\item 
+function \hyperlink{document__category_8js_a4411fe01797c4bd11725553832ac038e}{add\+Node} (node, \hyperlink{jqplot_8barRenderer_8min_8js_a2ce90ea5f2a400a3a152319491a737ff}{e})
+\item 
+function \hyperlink{document__category_8js_a150c6c1480e4f813bbef566bfe230d25}{modify\+Node} (node, \hyperlink{jqplot_8barRenderer_8min_8js_a2ce90ea5f2a400a3a152319491a737ff}{e})
+\item 
+\hyperlink{document__category_8js_a53707b5155ed61ea2aee9801210f3efc}{if} (\hyperlink{jquery_8js_ad9c7b7332a24ed93fb21cd053c99bd12}{data.\+error})
+\item 
+\$\hyperlink{respond_8min_8js_a9721a992655f700bdc2e91ba68b71e26}{w} \hyperlink{document__category_8js_a375b0286e62fdc06f51007b717d6fc1c}{find} (\textquotesingle{}input\mbox{[}\hyperlink{common_8js_a22c29d2aa8ed6161ce8faa718ef76e68}{name}=\char`\"{}parent\+\_\+srl\char`\"{}\mbox{]}\textquotesingle{}).val(data.\+category\+\_\+info.\+parent\+\_\+srl)
+\item 
+\$\hyperlink{respond_8min_8js_a9721a992655f700bdc2e91ba68b71e26}{w} \hyperlink{document__category_8js_a417647faff2d27481a0187cf49d15a3c}{find} (\textquotesingle{}input\mbox{[}\hyperlink{common_8js_a22c29d2aa8ed6161ce8faa718ef76e68}{name}=\char`\"{}category\+\_\+title\char`\"{}\mbox{]}\textquotesingle{}).val(\hyperlink{ko_8install_8php_a5b072c5fd1d2228c6ba5cee13cd142e3}{data.\+category\+\_\+info.\+title}).\hyperlink{jquery_8js_a3a2670632785d79909fadd16431e30f9}{trigger}(\textquotesingle{}\hyperlink{func_8inc_8php_aaf78eccbde1406d602a7c408a364be24}{reload}-\/multilingual\textquotesingle{})
+\item 
+\$\hyperlink{respond_8min_8js_a9721a992655f700bdc2e91ba68b71e26}{w} \hyperlink{document__category_8js_ad7f587c22f226814cfb97b7f240fd0e3}{find} (\textquotesingle{}input\mbox{[}\hyperlink{common_8js_a22c29d2aa8ed6161ce8faa718ef76e68}{name}=\char`\"{}category\+\_\+color\char`\"{}\mbox{]}\textquotesingle{}).val(data.\+category\+\_\+info.\+color).\hyperlink{jquery_8js_a3a2670632785d79909fadd16431e30f9}{trigger}(\textquotesingle{}keyup\textquotesingle{})
+\item 
+\$\hyperlink{respond_8min_8js_a9721a992655f700bdc2e91ba68b71e26}{w} \hyperlink{document__category_8js_a575a805c0133bca471b88f30338cae1a}{find} (\textquotesingle{}textarea\mbox{[}\hyperlink{common_8js_a22c29d2aa8ed6161ce8faa718ef76e68}{name}=\char`\"{}category\+\_\+description\char`\"{}\mbox{]}\textquotesingle{}).val(data.\+category\+\_\+info.\+description).\hyperlink{jquery_8js_a3a2670632785d79909fadd16431e30f9}{trigger}(\textquotesingle{}\hyperlink{func_8inc_8php_aaf78eccbde1406d602a7c408a364be24}{reload}-\/multilingual\textquotesingle{})
+\item 
+\hyperlink{document__category_8js_aa303d4e538a4022d72a50a7ad8ee9799}{for} (var \hyperlink{jqplot_8barRenderer_8min_8js_ad34c35dd1d1578d93d112c22c7726e0f}{i} in data.\+category\+\_\+info.\+group\+\_\+srls)
+\item 
+\hyperlink{document__category_8js_a70e27e8c60c19572ad3a676732dd7ada}{if} (data.\+category\+\_\+info.\+expand== \textquotesingle{}Y\textquotesingle{})
+\item 
+function \hyperlink{document__category_8js_aa39c6387135346237679d3e61cd4da3a}{node\+Toggle\+All} ()
+\item 
+function \hyperlink{document__category_8js_a25be982bcd741d8e6785888de334dffe}{delete\+Node} (node)
+\item 
+function \hyperlink{document__category_8js_ae572d86a308bf9c1cfd85723d61a5498}{complete\+Insert\+Category} (ret\+\_\+obj)
+\item 
+function \hyperlink{document__category_8js_abf4e5ce399104a7e130aeb0add430c1a}{hide\+Category\+Info} ()
+\item 
+function \hyperlink{document__category_8js_a08011155f5c0e14510a3cd62e7083831}{do\+Reload\+Tree\+Category} (\hyperlink{ko_8install_8php_a370bb6450fab1da3e0ed9f484a38b761}{module\+\_\+srl})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+function \hyperlink{document__category_8js_a94b4f25375ac17cb917012e05bf514a7}{data}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+document 모듈의 category tree javascript 
+
+\begin{DoxyAuthor}{Author}
+N\+A\+V\+ER (\href{mailto:developers@xpressengine.com}{\tt developers@xpressengine.\+com}) 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\index{document\+\_\+category.\+js@{document\+\_\+category.\+js}!add\+Node@{add\+Node}}
+\index{add\+Node@{add\+Node}!document\+\_\+category.\+js@{document\+\_\+category.\+js}}
+\subsubsection[{\texorpdfstring{add\+Node(node, e)}{addNode(node, e)}}]{\setlength{\rightskip}{0pt plus 5cm}function add\+Node (
+\begin{DoxyParamCaption}
+\item[{}]{node, }
+\item[{}]{e}
+\end{DoxyParamCaption}
+)}\hypertarget{document__category_8js_a4411fe01797c4bd11725553832ac038e}{}\label{document__category_8js_a4411fe01797c4bd11725553832ac038e}
+
+
+Definition at line 155 of file document\+\_\+category.\+js.
+
+\index{document\+\_\+category.\+js@{document\+\_\+category.\+js}!clear\+Value@{clear\+Value}}
+\index{clear\+Value@{clear\+Value}!document\+\_\+category.\+js@{document\+\_\+category.\+js}}
+\subsubsection[{\texorpdfstring{clear\+Value()}{clearValue()}}]{\setlength{\rightskip}{0pt plus 5cm}function clear\+Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{document__category_8js_ad93a6c509bc6c784f99fdaf30df91e80}{}\label{document__category_8js_ad93a6c509bc6c784f99fdaf30df91e80}
+
+
+Definition at line 144 of file document\+\_\+category.\+js.
+
+\index{document\+\_\+category.\+js@{document\+\_\+category.\+js}!complete\+Insert\+Category@{complete\+Insert\+Category}}
+\index{complete\+Insert\+Category@{complete\+Insert\+Category}!document\+\_\+category.\+js@{document\+\_\+category.\+js}}
+\subsubsection[{\texorpdfstring{complete\+Insert\+Category(ret\+\_\+obj)}{completeInsertCategory(ret_obj)}}]{\setlength{\rightskip}{0pt plus 5cm}function complete\+Insert\+Category (
+\begin{DoxyParamCaption}
+\item[{}]{ret\+\_\+obj}
+\end{DoxyParamCaption}
+)}\hypertarget{document__category_8js_ae572d86a308bf9c1cfd85723d61a5498}{}\label{document__category_8js_ae572d86a308bf9c1cfd85723d61a5498}
+
+
+Definition at line 230 of file document\+\_\+category.\+js.
+
+\index{document\+\_\+category.\+js@{document\+\_\+category.\+js}!delete\+Node@{delete\+Node}}
+\index{delete\+Node@{delete\+Node}!document\+\_\+category.\+js@{document\+\_\+category.\+js}}
+\subsubsection[{\texorpdfstring{delete\+Node(node)}{deleteNode(node)}}]{\setlength{\rightskip}{0pt plus 5cm}function delete\+Node (
+\begin{DoxyParamCaption}
+\item[{}]{node}
+\end{DoxyParamCaption}
+)}\hypertarget{document__category_8js_a25be982bcd741d8e6785888de334dffe}{}\label{document__category_8js_a25be982bcd741d8e6785888de334dffe}
+
+
+Definition at line 214 of file document\+\_\+category.\+js.
+
+\index{document\+\_\+category.\+js@{document\+\_\+category.\+js}!do\+Reload\+Tree\+Category@{do\+Reload\+Tree\+Category}}
+\index{do\+Reload\+Tree\+Category@{do\+Reload\+Tree\+Category}!document\+\_\+category.\+js@{document\+\_\+category.\+js}}
+\subsubsection[{\texorpdfstring{do\+Reload\+Tree\+Category(module\+\_\+srl)}{doReloadTreeCategory(module_srl)}}]{\setlength{\rightskip}{0pt plus 5cm}function do\+Reload\+Tree\+Category (
+\begin{DoxyParamCaption}
+\item[{}]{module\+\_\+srl}
+\end{DoxyParamCaption}
+)}\hypertarget{document__category_8js_a08011155f5c0e14510a3cd62e7083831}{}\label{document__category_8js_a08011155f5c0e14510a3cd62e7083831}
+
+
+Definition at line 240 of file document\+\_\+category.\+js.
+
+\index{document\+\_\+category.\+js@{document\+\_\+category.\+js}!find@{find}}
+\index{find@{find}!document\+\_\+category.\+js@{document\+\_\+category.\+js}}
+\subsubsection[{\texorpdfstring{find(\textquotesingle{}input[name=""parent\+\_\+srl""]\textquotesingle{}).\+val(data.\+category\+\_\+info.\+parent\+\_\+srl)}{find('input[name="parent_srl"]').val(data.category_info.parent_srl)}}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf w} find (
+\begin{DoxyParamCaption}
+\item[{\textquotesingle{}input\textquotesingle{}}]{\mbox{[}name=\char`\"{}parent\+\_\+srl\char`\"{}\mbox{]}}
+\end{DoxyParamCaption}
+)}\hypertarget{document__category_8js_a375b0286e62fdc06f51007b717d6fc1c}{}\label{document__category_8js_a375b0286e62fdc06f51007b717d6fc1c}
+\index{document\+\_\+category.\+js@{document\+\_\+category.\+js}!find@{find}}
+\index{find@{find}!document\+\_\+category.\+js@{document\+\_\+category.\+js}}
+\subsubsection[{\texorpdfstring{find(\textquotesingle{}input[name=""category\+\_\+title""]\textquotesingle{}).\+val(data.\+category\+\_\+info.\+title).\+trigger(\textquotesingle{}reload-\/multilingual\textquotesingle{})}{find('input[name="category_title"]').val(data.category_info.title).trigger('reload-multilingual')}}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf w} find (
+\begin{DoxyParamCaption}
+\item[{\textquotesingle{}input\textquotesingle{}}]{\mbox{[}name=\char`\"{}category\+\_\+title\char`\"{}\mbox{]}}
+\end{DoxyParamCaption}
+)}\hypertarget{document__category_8js_a417647faff2d27481a0187cf49d15a3c}{}\label{document__category_8js_a417647faff2d27481a0187cf49d15a3c}
+\index{document\+\_\+category.\+js@{document\+\_\+category.\+js}!find@{find}}
+\index{find@{find}!document\+\_\+category.\+js@{document\+\_\+category.\+js}}
+\subsubsection[{\texorpdfstring{find(\textquotesingle{}input[name=""category\+\_\+color""]\textquotesingle{}).\+val(data.\+category\+\_\+info.\+color).\+trigger(\textquotesingle{}keyup\textquotesingle{})}{find('input[name="category_color"]').val(data.category_info.color).trigger('keyup')}}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf w} find (
+\begin{DoxyParamCaption}
+\item[{\textquotesingle{}input\textquotesingle{}}]{\mbox{[}name=\char`\"{}category\+\_\+color\char`\"{}\mbox{]}}
+\end{DoxyParamCaption}
+)}\hypertarget{document__category_8js_ad7f587c22f226814cfb97b7f240fd0e3}{}\label{document__category_8js_ad7f587c22f226814cfb97b7f240fd0e3}
+\index{document\+\_\+category.\+js@{document\+\_\+category.\+js}!find@{find}}
+\index{find@{find}!document\+\_\+category.\+js@{document\+\_\+category.\+js}}
+\subsubsection[{\texorpdfstring{find(\textquotesingle{}textarea[name=""category\+\_\+description""]\textquotesingle{}).\+val(data.\+category\+\_\+info.\+description).\+trigger(\textquotesingle{}reload-\/multilingual\textquotesingle{})}{find('textarea[name="category_description"]').val(data.category_info.description).trigger('reload-multilingual')}}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf w} find (
+\begin{DoxyParamCaption}
+\item[{\textquotesingle{}textarea\textquotesingle{}}]{\mbox{[}name=\char`\"{}category\+\_\+description\char`\"{}\mbox{]}}
+\end{DoxyParamCaption}
+)}\hypertarget{document__category_8js_a575a805c0133bca471b88f30338cae1a}{}\label{document__category_8js_a575a805c0133bca471b88f30338cae1a}
+\index{document\+\_\+category.\+js@{document\+\_\+category.\+js}!for@{for}}
+\index{for@{for}!document\+\_\+category.\+js@{document\+\_\+category.\+js}}
+\subsubsection[{\texorpdfstring{for(var i in data.\+category\+\_\+info.\+group\+\_\+srls)}{for(var i in data.category_info.group_srls)}}]{\setlength{\rightskip}{0pt plus 5cm}for (
+\begin{DoxyParamCaption}
+\item[{var {\bf i} in data.\+category\+\_\+info.}]{group\+\_\+srls}
+\end{DoxyParamCaption}
+)}\hypertarget{document__category_8js_aa303d4e538a4022d72a50a7ad8ee9799}{}\label{document__category_8js_aa303d4e538a4022d72a50a7ad8ee9799}
+
+
+Definition at line 195 of file document\+\_\+category.\+js.
+
+\index{document\+\_\+category.\+js@{document\+\_\+category.\+js}!hide\+Category\+Info@{hide\+Category\+Info}}
+\index{hide\+Category\+Info@{hide\+Category\+Info}!document\+\_\+category.\+js@{document\+\_\+category.\+js}}
+\subsubsection[{\texorpdfstring{hide\+Category\+Info()}{hideCategoryInfo()}}]{\setlength{\rightskip}{0pt plus 5cm}function hide\+Category\+Info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{document__category_8js_abf4e5ce399104a7e130aeb0add430c1a}{}\label{document__category_8js_abf4e5ce399104a7e130aeb0add430c1a}
+
+
+Definition at line 235 of file document\+\_\+category.\+js.
+
+\index{document\+\_\+category.\+js@{document\+\_\+category.\+js}!if@{if}}
+\index{if@{if}!document\+\_\+category.\+js@{document\+\_\+category.\+js}}
+\subsubsection[{\texorpdfstring{if(data.\+error)}{if(data.error)}}]{\setlength{\rightskip}{0pt plus 5cm}if (
+\begin{DoxyParamCaption}
+\item[{data.}]{error}
+\end{DoxyParamCaption}
+)}\hypertarget{document__category_8js_a53707b5155ed61ea2aee9801210f3efc}{}\label{document__category_8js_a53707b5155ed61ea2aee9801210f3efc}
+
+
+Definition at line 186 of file document\+\_\+category.\+js.
+
+\index{document\+\_\+category.\+js@{document\+\_\+category.\+js}!if@{if}}
+\index{if@{if}!document\+\_\+category.\+js@{document\+\_\+category.\+js}}
+\subsubsection[{\texorpdfstring{if(data.\+category\+\_\+info.\+expand== \textquotesingle{}\+Y\textquotesingle{})}{if(data.category_info.expand== 'Y')}}]{\setlength{\rightskip}{0pt plus 5cm}if (
+\begin{DoxyParamCaption}
+\item[{data.\+category\+\_\+info.}]{expand = {\ttfamily =~\textquotesingle{}Y\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{document__category_8js_a70e27e8c60c19572ad3a676732dd7ada}{}\label{document__category_8js_a70e27e8c60c19572ad3a676732dd7ada}
+
+
+Definition at line 199 of file document\+\_\+category.\+js.
+
+\index{document\+\_\+category.\+js@{document\+\_\+category.\+js}!modify\+Node@{modify\+Node}}
+\index{modify\+Node@{modify\+Node}!document\+\_\+category.\+js@{document\+\_\+category.\+js}}
+\subsubsection[{\texorpdfstring{modify\+Node(node, e)}{modifyNode(node, e)}}]{\setlength{\rightskip}{0pt plus 5cm}function modify\+Node (
+\begin{DoxyParamCaption}
+\item[{}]{node, }
+\item[{}]{e}
+\end{DoxyParamCaption}
+)}\hypertarget{document__category_8js_a150c6c1480e4f813bbef566bfe230d25}{}\label{document__category_8js_a150c6c1480e4f813bbef566bfe230d25}
+
+
+Definition at line 173 of file document\+\_\+category.\+js.
+
+\index{document\+\_\+category.\+js@{document\+\_\+category.\+js}!node\+Toggle\+All@{node\+Toggle\+All}}
+\index{node\+Toggle\+All@{node\+Toggle\+All}!document\+\_\+category.\+js@{document\+\_\+category.\+js}}
+\subsubsection[{\texorpdfstring{node\+Toggle\+All()}{nodeToggleAll()}}]{\setlength{\rightskip}{0pt plus 5cm}function node\+Toggle\+All (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{document__category_8js_aa39c6387135346237679d3e61cd4da3a}{}\label{document__category_8js_aa39c6387135346237679d3e61cd4da3a}
+
+
+Definition at line 208 of file document\+\_\+category.\+js.
+
+\index{document\+\_\+category.\+js@{document\+\_\+category.\+js}!Tree@{Tree}}
+\index{Tree@{Tree}!document\+\_\+category.\+js@{document\+\_\+category.\+js}}
+\subsubsection[{\texorpdfstring{Tree(url)}{Tree(url)}}]{\setlength{\rightskip}{0pt plus 5cm}function Tree (
+\begin{DoxyParamCaption}
+\item[{}]{url}
+\end{DoxyParamCaption}
+)}\hypertarget{document__category_8js_a322938c5d6541af637459ca326f4183e}{}\label{document__category_8js_a322938c5d6541af637459ca326f4183e}
+
+
+Definition at line 7 of file document\+\_\+category.\+js.
+
+
+
+\subsection{Variable Documentation}
+\index{document\+\_\+category.\+js@{document\+\_\+category.\+js}!data@{data}}
+\index{data@{data}!document\+\_\+category.\+js@{document\+\_\+category.\+js}}
+\subsubsection[{\texorpdfstring{data}{data}}]{\setlength{\rightskip}{0pt plus 5cm}function data}\hypertarget{document__category_8js_a94b4f25375ac17cb917012e05bf514a7}{}\label{document__category_8js_a94b4f25375ac17cb917012e05bf514a7}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{
+        \textcolor{keywordflow}{if}(!\hyperlink{document__category_8js_a94b4f25375ac17cb917012e05bf514a7}{data} || !\hyperlink{document__category_8js_a94b4f25375ac17cb917012e05bf514a7}{data}.category\_info) \textcolor{keywordflow}{return}
+\end{DoxyCode}
+
+
+Definition at line 183 of file document\+\_\+category.\+js.
+

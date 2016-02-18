@@ -3,59 +3,59 @@
 \subsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
-if(\$called\+\_\+position== \textquotesingle{}after\+\_\+module\+\_\+proc\textquotesingle{}) \hyperlink{blogapi_8addon_8php_ae00067f6d78515f89a86a2a7f42cdc80}{if} (\$\+\_\+\+R\+E\+Q\+U\+E\+S\+T\mbox{[}\textquotesingle{}act\textquotesingle{}\mbox{]}!= \textquotesingle{}api\textquotesingle{})
+if(\$called\+\_\+position== \textquotesingle{}after\+\_\+module\+\_\+proc\textquotesingle{}) \hyperlink{blogapi_8addon_8php_ae00067f6d78515f89a86a2a7f42cdc80}{if} (\$\+\_\+\+R\+E\+Q\+U\+E\+ST\mbox{[}\textquotesingle{}act\textquotesingle{}\mbox{]}!= \textquotesingle{}api\textquotesingle{})
 \item 
-\hyperlink{blogapi_8addon_8php_aa108d9d91e700ac530401dd363b0723b}{\$xml} = \$G\+L\+O\+B\+A\+L\+S\mbox{[}\textquotesingle{}H\+T\+T\+P\+\_\+\+R\+A\+W\+\_\+\+P\+O\+S\+T\+\_\+\+D\+A\+T\+A\textquotesingle{}\mbox{]}
+\hyperlink{blogapi_8addon_8php_aa108d9d91e700ac530401dd363b0723b}{\$xml} = \$G\+L\+O\+B\+A\+LS\mbox{[}\textquotesingle{}H\+T\+T\+P\+\_\+\+R\+A\+W\+\_\+\+P\+O\+S\+T\+\_\+\+D\+A\+TA\textquotesingle{}\mbox{]}
 \item 
 \hyperlink{blogapi_8addon_8php_a88c34f4701e451bbcef63e44e5902ebd}{\$method\+\_\+name} = (string)\$xml-\/$>$method\+Name
 \item 
-\hyperlink{blogapi_8addon_8php_afe68e6fbe7acfbffc0af0c84a1996466}{\$params} = \$xml-\/$>$params-\/$>$param
+\hyperlink{blogapi_8addon_8php_afe68e6fbe7acfbffc0af0c84a1996466}{\$params} = \$xml-\/$>$params-\/$>$\hyperlink{jquery-1_8x_8min_8js_ae8915303d11557d1b001bc56b6195251}{param}
 \item 
-\hyperlink{config_8inc_8php_ac202e21c80d0f28d495d074d3c23e1ca}{if}(in\+\_\+array(\$method\+\_\+name, array(\textquotesingle{}meta\+Weblog.\+delete\+Post\textquotesingle{}, \textquotesingle{}meta\+Weblog.\+get\+Users\+Blogs\textquotesingle{}, \textquotesingle{}meta\+Weblog.\+get\+User\+Info\textquotesingle{}))) \hyperlink{blogapi_8addon_8php_a6d0a036129b3030ce289a026c5e1eff2}{\$user\+\_\+id} = trim((string)\$params\mbox{[}1\mbox{]}-\/$>$value-\/$>$string)
+\hyperlink{menu_2tpl_2js_2jquery_8jstree_8js_acba95bef569cfaee32c4ed0212b2bb92}{if}(in\+\_\+array(\$method\+\_\+name, array(\textquotesingle{}meta\+Weblog.\+delete\+Post\textquotesingle{}, \textquotesingle{}meta\+Weblog.\+get\+Users\+Blogs\textquotesingle{}, \textquotesingle{}meta\+Weblog.\+get\+User\+Info\textquotesingle{}))) \hyperlink{blogapi_8addon_8php_a6d0a036129b3030ce289a026c5e1eff2}{\$user\+\_\+id} = \hyperlink{common_8js_aa2a2da3bb0be9a135cfe2898cb9aa8bc}{trim}((string)\$params\mbox{[}1\mbox{]}-\/$>$\hyperlink{jquery_8js_abe5393d870043cf6aaa1d5ad5fce755c}{value}-\/$>$string)
 \item 
-\hyperlink{blogapi_8addon_8php_a607686ef9f99ea7c42f4f3dd3dbb2b0d}{\$password} = trim((string)\$params\mbox{[}2\mbox{]}-\/$>$value-\/$>$string)
+\hyperlink{blogapi_8addon_8php_a607686ef9f99ea7c42f4f3dd3dbb2b0d}{\$password} = \hyperlink{common_8js_aa2a2da3bb0be9a135cfe2898cb9aa8bc}{trim}((string)\$params\mbox{[}2\mbox{]}-\/$>$\hyperlink{jquery_8js_abe5393d870043cf6aaa1d5ad5fce755c}{value}-\/$>$string)
 \end{DoxyCompactItemize}
 
 
 \subsection{Variable Documentation}
-\hypertarget{blogapi_8addon_8php_a88c34f4701e451bbcef63e44e5902ebd}{}\index{blogapi.\+addon.\+php@{blogapi.\+addon.\+php}!\$method\+\_\+name@{\$method\+\_\+name}}
+\index{blogapi.\+addon.\+php@{blogapi.\+addon.\+php}!\$method\+\_\+name@{\$method\+\_\+name}}
 \index{\$method\+\_\+name@{\$method\+\_\+name}!blogapi.\+addon.\+php@{blogapi.\+addon.\+php}}
-\subsubsection[{\$method\+\_\+name}]{\setlength{\rightskip}{0pt plus 5cm}\$method\+\_\+name = (string)\$xml-\/$>$method\+Name}\label{blogapi_8addon_8php_a88c34f4701e451bbcef63e44e5902ebd}
+\subsubsection[{\texorpdfstring{\$method\+\_\+name}{$method_name}}]{\setlength{\rightskip}{0pt plus 5cm}\$method\+\_\+name = (string)\$xml-\/$>$method\+Name}\hypertarget{blogapi_8addon_8php_a88c34f4701e451bbcef63e44e5902ebd}{}\label{blogapi_8addon_8php_a88c34f4701e451bbcef63e44e5902ebd}
 
 
 Definition at line 53 of file blogapi.\+addon.\+php.
 
-\hypertarget{blogapi_8addon_8php_afe68e6fbe7acfbffc0af0c84a1996466}{}\index{blogapi.\+addon.\+php@{blogapi.\+addon.\+php}!\$params@{\$params}}
+\index{blogapi.\+addon.\+php@{blogapi.\+addon.\+php}!\$params@{\$params}}
 \index{\$params@{\$params}!blogapi.\+addon.\+php@{blogapi.\+addon.\+php}}
-\subsubsection[{\$params}]{\setlength{\rightskip}{0pt plus 5cm}\$params = \$xml-\/$>$params-\/$>$param}\label{blogapi_8addon_8php_afe68e6fbe7acfbffc0af0c84a1996466}
+\subsubsection[{\texorpdfstring{\$params}{$params}}]{\setlength{\rightskip}{0pt plus 5cm}\$params = \$xml-\/$>$params-\/$>${\bf param}}\hypertarget{blogapi_8addon_8php_afe68e6fbe7acfbffc0af0c84a1996466}{}\label{blogapi_8addon_8php_afe68e6fbe7acfbffc0af0c84a1996466}
 
 
 Definition at line 54 of file blogapi.\+addon.\+php.
 
-\hypertarget{blogapi_8addon_8php_a607686ef9f99ea7c42f4f3dd3dbb2b0d}{}\index{blogapi.\+addon.\+php@{blogapi.\+addon.\+php}!\$password@{\$password}}
+\index{blogapi.\+addon.\+php@{blogapi.\+addon.\+php}!\$password@{\$password}}
 \index{\$password@{\$password}!blogapi.\+addon.\+php@{blogapi.\+addon.\+php}}
-\subsubsection[{\$password}]{\setlength{\rightskip}{0pt plus 5cm}\$password = trim((string)\$params\mbox{[}2\mbox{]}-\/$>$value-\/$>$string)}\label{blogapi_8addon_8php_a607686ef9f99ea7c42f4f3dd3dbb2b0d}
+\subsubsection[{\texorpdfstring{\$password}{$password}}]{\setlength{\rightskip}{0pt plus 5cm}\$password = {\bf trim}((string)\$params\mbox{[}2\mbox{]}-\/$>${\bf value}-\/$>$string)}\hypertarget{blogapi_8addon_8php_a607686ef9f99ea7c42f4f3dd3dbb2b0d}{}\label{blogapi_8addon_8php_a607686ef9f99ea7c42f4f3dd3dbb2b0d}
 
 
 Definition at line 64 of file blogapi.\+addon.\+php.
 
-\hypertarget{blogapi_8addon_8php_a6d0a036129b3030ce289a026c5e1eff2}{}\index{blogapi.\+addon.\+php@{blogapi.\+addon.\+php}!\$user\+\_\+id@{\$user\+\_\+id}}
+\index{blogapi.\+addon.\+php@{blogapi.\+addon.\+php}!\$user\+\_\+id@{\$user\+\_\+id}}
 \index{\$user\+\_\+id@{\$user\+\_\+id}!blogapi.\+addon.\+php@{blogapi.\+addon.\+php}}
-\subsubsection[{\$user\+\_\+id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} (in\+\_\+array(\$method\+\_\+name, array(\textquotesingle{}meta\+Weblog.\+delete\+Post\textquotesingle{}, \textquotesingle{}meta\+Weblog.\+get\+Users\+Blogs\textquotesingle{}, \textquotesingle{}meta\+Weblog.\+get\+User\+Info\textquotesingle{}))) \${\bf user\+\_\+id} = trim((string)\$params\mbox{[}1\mbox{]}-\/$>$value-\/$>$string)}\label{blogapi_8addon_8php_a6d0a036129b3030ce289a026c5e1eff2}
+\subsubsection[{\texorpdfstring{\$user\+\_\+id}{$user_id}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} (in\+\_\+array(\$method\+\_\+name, array(\textquotesingle{}meta\+Weblog.\+delete\+Post\textquotesingle{}, \textquotesingle{}meta\+Weblog.\+get\+Users\+Blogs\textquotesingle{}, \textquotesingle{}meta\+Weblog.\+get\+User\+Info\textquotesingle{}))) \${\bf user\+\_\+id} = {\bf trim}((string)\$params\mbox{[}1\mbox{]}-\/$>${\bf value}-\/$>$string)}\hypertarget{blogapi_8addon_8php_a6d0a036129b3030ce289a026c5e1eff2}{}\label{blogapi_8addon_8php_a6d0a036129b3030ce289a026c5e1eff2}
 
 
 Definition at line 63 of file blogapi.\+addon.\+php.
 
-\hypertarget{blogapi_8addon_8php_aa108d9d91e700ac530401dd363b0723b}{}\index{blogapi.\+addon.\+php@{blogapi.\+addon.\+php}!\$xml@{\$xml}}
+\index{blogapi.\+addon.\+php@{blogapi.\+addon.\+php}!\$xml@{\$xml}}
 \index{\$xml@{\$xml}!blogapi.\+addon.\+php@{blogapi.\+addon.\+php}}
-\subsubsection[{\$xml}]{\setlength{\rightskip}{0pt plus 5cm}\$xml = \$G\+L\+O\+B\+A\+L\+S\mbox{[}\textquotesingle{}H\+T\+T\+P\+\_\+\+R\+A\+W\+\_\+\+P\+O\+S\+T\+\_\+\+D\+A\+T\+A\textquotesingle{}\mbox{]}}\label{blogapi_8addon_8php_aa108d9d91e700ac530401dd363b0723b}
+\subsubsection[{\texorpdfstring{\$xml}{$xml}}]{\setlength{\rightskip}{0pt plus 5cm}\$xml = \$G\+L\+O\+B\+A\+LS\mbox{[}\textquotesingle{}H\+T\+T\+P\+\_\+\+R\+A\+W\+\_\+\+P\+O\+S\+T\+\_\+\+D\+A\+TA\textquotesingle{}\mbox{]}}\hypertarget{blogapi_8addon_8php_aa108d9d91e700ac530401dd363b0723b}{}\label{blogapi_8addon_8php_aa108d9d91e700ac530401dd363b0723b}
 
 
 Definition at line 33 of file blogapi.\+addon.\+php.
 
-\hypertarget{blogapi_8addon_8php_ae00067f6d78515f89a86a2a7f42cdc80}{}\index{blogapi.\+addon.\+php@{blogapi.\+addon.\+php}!if@{if}}
+\index{blogapi.\+addon.\+php@{blogapi.\+addon.\+php}!if@{if}}
 \index{if@{if}!blogapi.\+addon.\+php@{blogapi.\+addon.\+php}}
-\subsubsection[{if}]{\setlength{\rightskip}{0pt plus 5cm}if}\label{blogapi_8addon_8php_ae00067f6d78515f89a86a2a7f42cdc80}
+\subsubsection[{\texorpdfstring{if}{if}}]{\setlength{\rightskip}{0pt plus 5cm}if}\hypertarget{blogapi_8addon_8php_ae00067f6d78515f89a86a2a7f42cdc80}{}\label{blogapi_8addon_8php_ae00067f6d78515f89a86a2a7f42cdc80}
 {\bfseries Initial value\+:}
 \begin{DoxyCode}
 \{
@@ -65,7 +65,7 @@ Definition at line 33 of file blogapi.\+addon.\+php.
 function library files for convenience
 
 \begin{DoxyAuthor}{Author}
-N\+A\+V\+E\+R (\href{mailto:developers@xpressengine.com}{\tt developers@xpressengine.\+com}) Time zone 
+N\+A\+V\+ER (\href{mailto:developers@xpressengine.com}{\tt developers@xpressengine.\+com}) Time zone 
 \end{DoxyAuthor}
 
 

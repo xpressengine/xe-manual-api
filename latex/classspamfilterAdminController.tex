@@ -18,16 +18,16 @@ Inheritance diagram for spamfilter\+Admin\+Controller\+:\begin{figure}[H]
 \begin{DoxyCompactList}\small\item\em Initialization. \end{DoxyCompactList}\item 
 \hyperlink{classspamfilterAdminController_a34c10f8c63e96895ad110241d37577fa}{proc\+Spamfilter\+Admin\+Insert\+Config} ()
 \item 
-\hyperlink{classspamfilterAdminController_a9f0828d5ddc3b978a7f9de739a27e8c6}{proc\+Spamfilter\+Admin\+Insert\+Denied\+I\+P} ()
+\hyperlink{classspamfilterAdminController_a9f0828d5ddc3b978a7f9de739a27e8c6}{proc\+Spamfilter\+Admin\+Insert\+Denied\+IP} ()
 \item 
 \hyperlink{classspamfilterAdminController_a8cc8354d502de92a6413aec6be3c0376}{proc\+Spamfilter\+Admin\+Insert\+Denied\+Word} ()
 \item 
-\hyperlink{classspamfilterAdminController_a720e0592f60455d125b55ee797de2436}{proc\+Spamfilter\+Admin\+Delete\+Denied\+I\+P} ()
-\begin{DoxyCompactList}\small\item\em Delete the banned I\+P. \end{DoxyCompactList}\item 
+\hyperlink{classspamfilterAdminController_a720e0592f60455d125b55ee797de2436}{proc\+Spamfilter\+Admin\+Delete\+Denied\+IP} ()
+\begin{DoxyCompactList}\small\item\em Delete the banned IP. \end{DoxyCompactList}\item 
 \hyperlink{classspamfilterAdminController_aeb21ee58872bf61875be7e0fffabcf3a}{proc\+Spamfilter\+Admin\+Delete\+Denied\+Word} ()
 \begin{DoxyCompactList}\small\item\em Delete the prohibited Word. \end{DoxyCompactList}\item 
-\hyperlink{classspamfilterAdminController_a19442650a60b49972b158d12a978fcf9}{delete\+I\+P} (\$ipaddress)
-\begin{DoxyCompactList}\small\item\em Delete I\+P Remove the I\+P address which was previously registered as a spammers. \end{DoxyCompactList}\item 
+\hyperlink{classspamfilterAdminController_a19442650a60b49972b158d12a978fcf9}{delete\+IP} (\$ipaddress)
+\begin{DoxyCompactList}\small\item\em Delete IP Remove the IP address which was previously registered as a spammers. \end{DoxyCompactList}\item 
 \hyperlink{classspamfilterAdminController_ada3859c56fb148b0e4f33266121051c0}{insert\+Word} (\$word\+\_\+list)
 \begin{DoxyCompactList}\small\item\em Register the spam word The post, which contains the newly registered spam word, should be considered as a spam. \end{DoxyCompactList}\item 
 \hyperlink{classspamfilterAdminController_a57a1cc55622637f806f416da03952ccc}{delete\+Word} (\$word)
@@ -39,7 +39,7 @@ Inheritance diagram for spamfilter\+Admin\+Controller\+:\begin{figure}[H]
 The admin controller class of the spamfilter module. 
 
 \begin{DoxyAuthor}{Author}
-N\+A\+V\+E\+R (\href{mailto:developers@xpressengine.com}{\tt developers@xpressengine.\+com}) 
+N\+A\+V\+ER (\href{mailto:developers@xpressengine.com}{\tt developers@xpressengine.\+com}) 
 \end{DoxyAuthor}
 
 
@@ -48,28 +48,28 @@ Definition at line 8 of file spamfilter.\+admin.\+controller.\+php.
 
 
 \subsection{Member Function Documentation}
-\hypertarget{classspamfilterAdminController_a19442650a60b49972b158d12a978fcf9}{}\index{spamfilter\+Admin\+Controller@{spamfilter\+Admin\+Controller}!delete\+I\+P@{delete\+I\+P}}
-\index{delete\+I\+P@{delete\+I\+P}!spamfilter\+Admin\+Controller@{spamfilter\+Admin\+Controller}}
-\subsubsection[{delete\+I\+P}]{\setlength{\rightskip}{0pt plus 5cm}spamfilter\+Admin\+Controller\+::delete\+I\+P (
+\index{spamfilter\+Admin\+Controller@{spamfilter\+Admin\+Controller}!delete\+IP@{delete\+IP}}
+\index{delete\+IP@{delete\+IP}!spamfilter\+Admin\+Controller@{spamfilter\+Admin\+Controller}}
+\subsubsection[{\texorpdfstring{delete\+I\+P(\$ipaddress)}{deleteIP($ipaddress)}}]{\setlength{\rightskip}{0pt plus 5cm}spamfilter\+Admin\+Controller\+::delete\+IP (
 \begin{DoxyParamCaption}
 \item[{}]{\$ipaddress}
 \end{DoxyParamCaption}
-)}\label{classspamfilterAdminController_a19442650a60b49972b158d12a978fcf9}
+)}\hypertarget{classspamfilterAdminController_a19442650a60b49972b158d12a978fcf9}{}\label{classspamfilterAdminController_a19442650a60b49972b158d12a978fcf9}
 
 
-Delete I\+P Remove the I\+P address which was previously registered as a spammers. 
+Delete IP Remove the IP address which was previously registered as a spammers. 
 
 
 
 Definition at line 102 of file spamfilter.\+admin.\+controller.\+php.
 
-\hypertarget{classspamfilterAdminController_a57a1cc55622637f806f416da03952ccc}{}\index{spamfilter\+Admin\+Controller@{spamfilter\+Admin\+Controller}!delete\+Word@{delete\+Word}}
+\index{spamfilter\+Admin\+Controller@{spamfilter\+Admin\+Controller}!delete\+Word@{delete\+Word}}
 \index{delete\+Word@{delete\+Word}!spamfilter\+Admin\+Controller@{spamfilter\+Admin\+Controller}}
-\subsubsection[{delete\+Word}]{\setlength{\rightskip}{0pt plus 5cm}spamfilter\+Admin\+Controller\+::delete\+Word (
+\subsubsection[{\texorpdfstring{delete\+Word(\$word)}{deleteWord($word)}}]{\setlength{\rightskip}{0pt plus 5cm}spamfilter\+Admin\+Controller\+::delete\+Word (
 \begin{DoxyParamCaption}
 \item[{}]{\$word}
 \end{DoxyParamCaption}
-)}\label{classspamfilterAdminController_a57a1cc55622637f806f416da03952ccc}
+)}\hypertarget{classspamfilterAdminController_a57a1cc55622637f806f416da03952ccc}{}\label{classspamfilterAdminController_a57a1cc55622637f806f416da03952ccc}
 
 
 Remove the spam word Remove the word which was previously registered as a spam word. 
@@ -78,13 +78,13 @@ Remove the spam word Remove the word which was previously registered as a spam w
 
 Definition at line 145 of file spamfilter.\+admin.\+controller.\+php.
 
-\hypertarget{classspamfilterAdminController_a28483831891491011017a8527221e3f3}{}\index{spamfilter\+Admin\+Controller@{spamfilter\+Admin\+Controller}!init@{init}}
+\index{spamfilter\+Admin\+Controller@{spamfilter\+Admin\+Controller}!init@{init}}
 \index{init@{init}!spamfilter\+Admin\+Controller@{spamfilter\+Admin\+Controller}}
-\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}spamfilter\+Admin\+Controller\+::init (
+\subsubsection[{\texorpdfstring{init()}{init()}}]{\setlength{\rightskip}{0pt plus 5cm}spamfilter\+Admin\+Controller\+::init (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classspamfilterAdminController_a28483831891491011017a8527221e3f3}
+)}\hypertarget{classspamfilterAdminController_a28483831891491011017a8527221e3f3}{}\label{classspamfilterAdminController_a28483831891491011017a8527221e3f3}
 
 
 Initialization. 
@@ -93,13 +93,13 @@ Initialization.
 
 Definition at line 13 of file spamfilter.\+admin.\+controller.\+php.
 
-\hypertarget{classspamfilterAdminController_ada3859c56fb148b0e4f33266121051c0}{}\index{spamfilter\+Admin\+Controller@{spamfilter\+Admin\+Controller}!insert\+Word@{insert\+Word}}
+\index{spamfilter\+Admin\+Controller@{spamfilter\+Admin\+Controller}!insert\+Word@{insert\+Word}}
 \index{insert\+Word@{insert\+Word}!spamfilter\+Admin\+Controller@{spamfilter\+Admin\+Controller}}
-\subsubsection[{insert\+Word}]{\setlength{\rightskip}{0pt plus 5cm}spamfilter\+Admin\+Controller\+::insert\+Word (
+\subsubsection[{\texorpdfstring{insert\+Word(\$word\+\_\+list)}{insertWord($word_list)}}]{\setlength{\rightskip}{0pt plus 5cm}spamfilter\+Admin\+Controller\+::insert\+Word (
 \begin{DoxyParamCaption}
 \item[{}]{\$word\+\_\+list}
 \end{DoxyParamCaption}
-)}\label{classspamfilterAdminController_ada3859c56fb148b0e4f33266121051c0}
+)}\hypertarget{classspamfilterAdminController_ada3859c56fb148b0e4f33266121051c0}{}\label{classspamfilterAdminController_ada3859c56fb148b0e4f33266121051c0}
 
 
 Register the spam word The post, which contains the newly registered spam word, should be considered as a spam. 
@@ -108,28 +108,28 @@ Register the spam word The post, which contains the newly registered spam word, 
 
 Definition at line 115 of file spamfilter.\+admin.\+controller.\+php.
 
-\hypertarget{classspamfilterAdminController_a720e0592f60455d125b55ee797de2436}{}\index{spamfilter\+Admin\+Controller@{spamfilter\+Admin\+Controller}!proc\+Spamfilter\+Admin\+Delete\+Denied\+I\+P@{proc\+Spamfilter\+Admin\+Delete\+Denied\+I\+P}}
-\index{proc\+Spamfilter\+Admin\+Delete\+Denied\+I\+P@{proc\+Spamfilter\+Admin\+Delete\+Denied\+I\+P}!spamfilter\+Admin\+Controller@{spamfilter\+Admin\+Controller}}
-\subsubsection[{proc\+Spamfilter\+Admin\+Delete\+Denied\+I\+P}]{\setlength{\rightskip}{0pt plus 5cm}spamfilter\+Admin\+Controller\+::proc\+Spamfilter\+Admin\+Delete\+Denied\+I\+P (
+\index{spamfilter\+Admin\+Controller@{spamfilter\+Admin\+Controller}!proc\+Spamfilter\+Admin\+Delete\+Denied\+IP@{proc\+Spamfilter\+Admin\+Delete\+Denied\+IP}}
+\index{proc\+Spamfilter\+Admin\+Delete\+Denied\+IP@{proc\+Spamfilter\+Admin\+Delete\+Denied\+IP}!spamfilter\+Admin\+Controller@{spamfilter\+Admin\+Controller}}
+\subsubsection[{\texorpdfstring{proc\+Spamfilter\+Admin\+Delete\+Denied\+I\+P()}{procSpamfilterAdminDeleteDeniedIP()}}]{\setlength{\rightskip}{0pt plus 5cm}spamfilter\+Admin\+Controller\+::proc\+Spamfilter\+Admin\+Delete\+Denied\+IP (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classspamfilterAdminController_a720e0592f60455d125b55ee797de2436}
+)}\hypertarget{classspamfilterAdminController_a720e0592f60455d125b55ee797de2436}{}\label{classspamfilterAdminController_a720e0592f60455d125b55ee797de2436}
 
 
-Delete the banned I\+P. 
+Delete the banned IP. 
 
 
 
 Definition at line 73 of file spamfilter.\+admin.\+controller.\+php.
 
-\hypertarget{classspamfilterAdminController_aeb21ee58872bf61875be7e0fffabcf3a}{}\index{spamfilter\+Admin\+Controller@{spamfilter\+Admin\+Controller}!proc\+Spamfilter\+Admin\+Delete\+Denied\+Word@{proc\+Spamfilter\+Admin\+Delete\+Denied\+Word}}
+\index{spamfilter\+Admin\+Controller@{spamfilter\+Admin\+Controller}!proc\+Spamfilter\+Admin\+Delete\+Denied\+Word@{proc\+Spamfilter\+Admin\+Delete\+Denied\+Word}}
 \index{proc\+Spamfilter\+Admin\+Delete\+Denied\+Word@{proc\+Spamfilter\+Admin\+Delete\+Denied\+Word}!spamfilter\+Admin\+Controller@{spamfilter\+Admin\+Controller}}
-\subsubsection[{proc\+Spamfilter\+Admin\+Delete\+Denied\+Word}]{\setlength{\rightskip}{0pt plus 5cm}spamfilter\+Admin\+Controller\+::proc\+Spamfilter\+Admin\+Delete\+Denied\+Word (
+\subsubsection[{\texorpdfstring{proc\+Spamfilter\+Admin\+Delete\+Denied\+Word()}{procSpamfilterAdminDeleteDeniedWord()}}]{\setlength{\rightskip}{0pt plus 5cm}spamfilter\+Admin\+Controller\+::proc\+Spamfilter\+Admin\+Delete\+Denied\+Word (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classspamfilterAdminController_aeb21ee58872bf61875be7e0fffabcf3a}
+)}\hypertarget{classspamfilterAdminController_aeb21ee58872bf61875be7e0fffabcf3a}{}\label{classspamfilterAdminController_aeb21ee58872bf61875be7e0fffabcf3a}
 
 
 Delete the prohibited Word. 
@@ -138,35 +138,35 @@ Delete the prohibited Word.
 
 Definition at line 87 of file spamfilter.\+admin.\+controller.\+php.
 
-\hypertarget{classspamfilterAdminController_a34c10f8c63e96895ad110241d37577fa}{}\index{spamfilter\+Admin\+Controller@{spamfilter\+Admin\+Controller}!proc\+Spamfilter\+Admin\+Insert\+Config@{proc\+Spamfilter\+Admin\+Insert\+Config}}
+\index{spamfilter\+Admin\+Controller@{spamfilter\+Admin\+Controller}!proc\+Spamfilter\+Admin\+Insert\+Config@{proc\+Spamfilter\+Admin\+Insert\+Config}}
 \index{proc\+Spamfilter\+Admin\+Insert\+Config@{proc\+Spamfilter\+Admin\+Insert\+Config}!spamfilter\+Admin\+Controller@{spamfilter\+Admin\+Controller}}
-\subsubsection[{proc\+Spamfilter\+Admin\+Insert\+Config}]{\setlength{\rightskip}{0pt plus 5cm}spamfilter\+Admin\+Controller\+::proc\+Spamfilter\+Admin\+Insert\+Config (
+\subsubsection[{\texorpdfstring{proc\+Spamfilter\+Admin\+Insert\+Config()}{procSpamfilterAdminInsertConfig()}}]{\setlength{\rightskip}{0pt plus 5cm}spamfilter\+Admin\+Controller\+::proc\+Spamfilter\+Admin\+Insert\+Config (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classspamfilterAdminController_a34c10f8c63e96895ad110241d37577fa}
+)}\hypertarget{classspamfilterAdminController_a34c10f8c63e96895ad110241d37577fa}{}\label{classspamfilterAdminController_a34c10f8c63e96895ad110241d37577fa}
 
 
 Definition at line 17 of file spamfilter.\+admin.\+controller.\+php.
 
-\hypertarget{classspamfilterAdminController_a9f0828d5ddc3b978a7f9de739a27e8c6}{}\index{spamfilter\+Admin\+Controller@{spamfilter\+Admin\+Controller}!proc\+Spamfilter\+Admin\+Insert\+Denied\+I\+P@{proc\+Spamfilter\+Admin\+Insert\+Denied\+I\+P}}
-\index{proc\+Spamfilter\+Admin\+Insert\+Denied\+I\+P@{proc\+Spamfilter\+Admin\+Insert\+Denied\+I\+P}!spamfilter\+Admin\+Controller@{spamfilter\+Admin\+Controller}}
-\subsubsection[{proc\+Spamfilter\+Admin\+Insert\+Denied\+I\+P}]{\setlength{\rightskip}{0pt plus 5cm}spamfilter\+Admin\+Controller\+::proc\+Spamfilter\+Admin\+Insert\+Denied\+I\+P (
+\index{spamfilter\+Admin\+Controller@{spamfilter\+Admin\+Controller}!proc\+Spamfilter\+Admin\+Insert\+Denied\+IP@{proc\+Spamfilter\+Admin\+Insert\+Denied\+IP}}
+\index{proc\+Spamfilter\+Admin\+Insert\+Denied\+IP@{proc\+Spamfilter\+Admin\+Insert\+Denied\+IP}!spamfilter\+Admin\+Controller@{spamfilter\+Admin\+Controller}}
+\subsubsection[{\texorpdfstring{proc\+Spamfilter\+Admin\+Insert\+Denied\+I\+P()}{procSpamfilterAdminInsertDeniedIP()}}]{\setlength{\rightskip}{0pt plus 5cm}spamfilter\+Admin\+Controller\+::proc\+Spamfilter\+Admin\+Insert\+Denied\+IP (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classspamfilterAdminController_a9f0828d5ddc3b978a7f9de739a27e8c6}
+)}\hypertarget{classspamfilterAdminController_a9f0828d5ddc3b978a7f9de739a27e8c6}{}\label{classspamfilterAdminController_a9f0828d5ddc3b978a7f9de739a27e8c6}
 
 
 Definition at line 34 of file spamfilter.\+admin.\+controller.\+php.
 
-\hypertarget{classspamfilterAdminController_a8cc8354d502de92a6413aec6be3c0376}{}\index{spamfilter\+Admin\+Controller@{spamfilter\+Admin\+Controller}!proc\+Spamfilter\+Admin\+Insert\+Denied\+Word@{proc\+Spamfilter\+Admin\+Insert\+Denied\+Word}}
+\index{spamfilter\+Admin\+Controller@{spamfilter\+Admin\+Controller}!proc\+Spamfilter\+Admin\+Insert\+Denied\+Word@{proc\+Spamfilter\+Admin\+Insert\+Denied\+Word}}
 \index{proc\+Spamfilter\+Admin\+Insert\+Denied\+Word@{proc\+Spamfilter\+Admin\+Insert\+Denied\+Word}!spamfilter\+Admin\+Controller@{spamfilter\+Admin\+Controller}}
-\subsubsection[{proc\+Spamfilter\+Admin\+Insert\+Denied\+Word}]{\setlength{\rightskip}{0pt plus 5cm}spamfilter\+Admin\+Controller\+::proc\+Spamfilter\+Admin\+Insert\+Denied\+Word (
+\subsubsection[{\texorpdfstring{proc\+Spamfilter\+Admin\+Insert\+Denied\+Word()}{procSpamfilterAdminInsertDeniedWord()}}]{\setlength{\rightskip}{0pt plus 5cm}spamfilter\+Admin\+Controller\+::proc\+Spamfilter\+Admin\+Insert\+Denied\+Word (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classspamfilterAdminController_a8cc8354d502de92a6413aec6be3c0376}
+)}\hypertarget{classspamfilterAdminController_a8cc8354d502de92a6413aec6be3c0376}{}\label{classspamfilterAdminController_a8cc8354d502de92a6413aec6be3c0376}
 
 
 Definition at line 53 of file spamfilter.\+admin.\+controller.\+php.

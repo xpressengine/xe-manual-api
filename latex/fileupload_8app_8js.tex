@@ -1,0 +1,70 @@
+\hypertarget{fileupload_8app_8js}{}\section{modules/file/tpl/js/fileupload.app.\+js File Reference}
+\label{fileupload_8app_8js}\index{modules/file/tpl/js/fileupload.\+app.\+js@{modules/file/tpl/js/fileupload.\+app.\+js}}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \hyperlink{fileupload_8app_8js_a0a593a6f95d84c5009feb5cfa0808fc6}{Xe\+Uploader}
+\item 
+\hyperlink{jquery_8min_8js_af453dd93808e2e2826fd92ab8c394cfc}{fn} \hyperlink{fileupload_8app_8js_a25523291cbf91b51ee4f3fd3861f6419}{uploader}
+\item 
+\hyperlink{xe_8min_8js_a5c0791c8ea63d6ddcf0ef075790c7ccd}{xe} \hyperlink{fileupload_8app_8js_aa102cacfa2f6a3f3089a1efdb404bfd2}{create\+Uploader}
+\item 
+\hyperlink{fileupload_8app_8js_a2b1d6f9c448e3ce72f4e1865d6e38d2c}{j\+Query}
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\index{fileupload.\+app.\+js@{fileupload.\+app.\+js}!create\+Uploader@{create\+Uploader}}
+\index{create\+Uploader@{create\+Uploader}!fileupload.\+app.\+js@{fileupload.\+app.\+js}}
+\subsubsection[{\texorpdfstring{create\+Uploader}{createUploader}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf xe} create\+Uploader}\hypertarget{fileupload_8app_8js_aa102cacfa2f6a3f3089a1efdb404bfd2}{}\label{fileupload_8app_8js_aa102cacfa2f6a3f3089a1efdb404bfd2}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \textcolor{keyword}{function}(browseButton, opts) \{
+        var \hyperlink{jquery-1_8x_8min_8js_accb4ce8dd4113ac0f510653e31809106}{u} = \textcolor{keyword}{new} \hyperlink{fileupload_8app_8js_a0a593a6f95d84c5009feb5cfa0808fc6}{XeUploader}(browseButton, opts);
+        \textcolor{keywordflow}{if}(u) \hyperlink{namespacexe}{xe}.registerApp(u);
+
+        \textcolor{keywordflow}{return} \hyperlink{jquery-1_8x_8min_8js_accb4ce8dd4113ac0f510653e31809106}{u};
+    \}
+\end{DoxyCode}
+
+
+Definition at line 18 of file fileupload.\+app.\+js.
+
+\index{fileupload.\+app.\+js@{fileupload.\+app.\+js}!j\+Query@{j\+Query}}
+\index{j\+Query@{j\+Query}!fileupload.\+app.\+js@{fileupload.\+app.\+js}}
+\subsubsection[{\texorpdfstring{j\+Query}{jQuery}}]{\setlength{\rightskip}{0pt plus 5cm}j\+Query}\hypertarget{fileupload_8app_8js_a2b1d6f9c448e3ce72f4e1865d6e38d2c}{}\label{fileupload_8app_8js_a2b1d6f9c448e3ce72f4e1865d6e38d2c}
+
+
+Definition at line 24 of file fileupload.\+app.\+js.
+
+\index{fileupload.\+app.\+js@{fileupload.\+app.\+js}!uploader@{uploader}}
+\index{uploader@{uploader}!fileupload.\+app.\+js@{fileupload.\+app.\+js}}
+\subsubsection[{\texorpdfstring{uploader}{uploader}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf fn} uploader}\hypertarget{fileupload_8app_8js_a25523291cbf91b51ee4f3fd3861f6419}{}\label{fileupload_8app_8js_a25523291cbf91b51ee4f3fd3861f6419}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \textcolor{keyword}{function}(opts) \{
+        console.log();
+        var \hyperlink{jquery-1_8x_8min_8js_accb4ce8dd4113ac0f510653e31809106}{u} = \textcolor{keyword}{new} \hyperlink{fileupload_8app_8js_a0a593a6f95d84c5009feb5cfa0808fc6}{XeUploader}(this.eq(0), opts);
+        \textcolor{keywordflow}{if}(u) \hyperlink{namespacexe}{xe}.registerApp(u);
+
+        \textcolor{keywordflow}{return} \hyperlink{jquery-1_8x_8min_8js_accb4ce8dd4113ac0f510653e31809106}{u};
+    \}
+\end{DoxyCode}
+
+
+Definition at line 9 of file fileupload.\+app.\+js.
+
+\index{fileupload.\+app.\+js@{fileupload.\+app.\+js}!Xe\+Uploader@{Xe\+Uploader}}
+\index{Xe\+Uploader@{Xe\+Uploader}!fileupload.\+app.\+js@{fileupload.\+app.\+js}}
+\subsubsection[{\texorpdfstring{Xe\+Uploader}{XeUploader}}]{\setlength{\rightskip}{0pt plus 5cm}var Xe\+Uploader}\hypertarget{fileupload_8app_8js_a0a593a6f95d84c5009feb5cfa0808fc6}{}\label{fileupload_8app_8js_a0a593a6f95d84c5009feb5cfa0808fc6}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \hyperlink{namespacexe}{xe}.createApp(\textcolor{stringliteral}{'XeUploader'}, \{
+        \hyperlink{jquery-1_8x_8js_a4411a3d16c33c71210302860f22ba789}{init} : \textcolor{keyword}{function}() \{
+        \}
+    \})
+\end{DoxyCode}
+
+
+Definition at line 3 of file fileupload.\+app.\+js.
+

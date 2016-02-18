@@ -30,7 +30,7 @@ Inheritance diagram for Cache\+Base\+:\begin{figure}[H]
 Base class of Cache
 
 \begin{DoxyAuthor}{Author}
-N\+A\+V\+E\+R (\href{mailto:developer@xpressengine.com}{\tt developer@xpressengine.\+com}) 
+N\+A\+V\+ER (\href{mailto:developer@xpressengine.com}{\tt developer@xpressengine.\+com}) 
 \end{DoxyAuthor}
 
 
@@ -39,14 +39,14 @@ Definition at line 286 of file Cache\+Handler.\+class.\+php.
 
 
 \subsection{Member Function Documentation}
-\hypertarget{classCacheBase_afee31dcb9d33e4e87c102d828c4d8d26}{}\index{Cache\+Base@{Cache\+Base}!get@{get}}
+\index{Cache\+Base@{Cache\+Base}!get@{get}}
 \index{get@{get}!Cache\+Base@{Cache\+Base}}
-\subsubsection[{get}]{\setlength{\rightskip}{0pt plus 5cm}Cache\+Base\+::get (
+\subsubsection[{\texorpdfstring{get(\$key, \$modified\+\_\+time=0)}{get($key, $modified_time=0)}}]{\setlength{\rightskip}{0pt plus 5cm}Cache\+Base\+::get (
 \begin{DoxyParamCaption}
 \item[{}]{\$key, }
 \item[{}]{\$modified\+\_\+time = {\ttfamily 0}}
 \end{DoxyParamCaption}
-)}\label{classCacheBase_afee31dcb9d33e4e87c102d828c4d8d26}
+)}\hypertarget{classCacheBase_afee31dcb9d33e4e87c102d828c4d8d26}{}\label{classCacheBase_afee31dcb9d33e4e87c102d828c4d8d26}
 Get cached data
 
 
@@ -63,13 +63,13 @@ false$\vert$mixed Return false on failure or older then modified time. Return th
 
 Definition at line 302 of file Cache\+Handler.\+class.\+php.
 
-\hypertarget{classCacheBase_a302d6640565e56c4f8b927fcf605f62b}{}\index{Cache\+Base@{Cache\+Base}!is\+Support@{is\+Support}}
+\index{Cache\+Base@{Cache\+Base}!is\+Support@{is\+Support}}
 \index{is\+Support@{is\+Support}!Cache\+Base@{Cache\+Base}}
-\subsubsection[{is\+Support}]{\setlength{\rightskip}{0pt plus 5cm}Cache\+Base\+::is\+Support (
+\subsubsection[{\texorpdfstring{is\+Support()}{isSupport()}}]{\setlength{\rightskip}{0pt plus 5cm}Cache\+Base\+::is\+Support (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classCacheBase_a302d6640565e56c4f8b927fcf605f62b}
+)}\hypertarget{classCacheBase_a302d6640565e56c4f8b927fcf605f62b}{}\label{classCacheBase_a302d6640565e56c4f8b927fcf605f62b}
 Return whether support or not support cache
 
 \begin{DoxyReturn}{Returns}
@@ -79,14 +79,14 @@ boolean
 
 Definition at line 340 of file Cache\+Handler.\+class.\+php.
 
-\hypertarget{classCacheBase_a9a8227b929be86601f4570f787c22746}{}\index{Cache\+Base@{Cache\+Base}!is\+Valid@{is\+Valid}}
+\index{Cache\+Base@{Cache\+Base}!is\+Valid@{is\+Valid}}
 \index{is\+Valid@{is\+Valid}!Cache\+Base@{Cache\+Base}}
-\subsubsection[{is\+Valid}]{\setlength{\rightskip}{0pt plus 5cm}Cache\+Base\+::is\+Valid (
+\subsubsection[{\texorpdfstring{is\+Valid(\$key, \$modified\+\_\+time=0)}{isValid($key, $modified_time=0)}}]{\setlength{\rightskip}{0pt plus 5cm}Cache\+Base\+::is\+Valid (
 \begin{DoxyParamCaption}
 \item[{}]{\$key, }
 \item[{}]{\$modified\+\_\+time = {\ttfamily 0}}
 \end{DoxyParamCaption}
-)}\label{classCacheBase_a9a8227b929be86601f4570f787c22746}
+)}\hypertarget{classCacheBase_a9a8227b929be86601f4570f787c22746}{}\label{classCacheBase_a9a8227b929be86601f4570f787c22746}
 Return whether cache is valid or invalid
 
 
@@ -103,15 +103,15 @@ bool Return true on valid or false on invalid.
 
 Definition at line 330 of file Cache\+Handler.\+class.\+php.
 
-\hypertarget{classCacheBase_aa6729e608bf81ffc19825f3f38777667}{}\index{Cache\+Base@{Cache\+Base}!put@{put}}
+\index{Cache\+Base@{Cache\+Base}!put@{put}}
 \index{put@{put}!Cache\+Base@{Cache\+Base}}
-\subsubsection[{put}]{\setlength{\rightskip}{0pt plus 5cm}Cache\+Base\+::put (
+\subsubsection[{\texorpdfstring{put(\$key, \$obj, \$valid\+\_\+time=0)}{put($key, $obj, $valid_time=0)}}]{\setlength{\rightskip}{0pt plus 5cm}Cache\+Base\+::put (
 \begin{DoxyParamCaption}
 \item[{}]{\$key, }
 \item[{}]{\$obj, }
 \item[{}]{\$valid\+\_\+time = {\ttfamily 0}}
 \end{DoxyParamCaption}
-)}\label{classCacheBase_aa6729e608bf81ffc19825f3f38777667}
+)}\hypertarget{classCacheBase_aa6729e608bf81ffc19825f3f38777667}{}\label{classCacheBase_aa6729e608bf81ffc19825f3f38777667}
 Put data into cache
 
 
@@ -130,13 +130,13 @@ bool$\vert$void Returns true on success or false on failure. If use \hyperlink{c
 
 Definition at line 317 of file Cache\+Handler.\+class.\+php.
 
-\hypertarget{classCacheBase_ad4ef9d60ea844036b17364b6e30bcb39}{}\index{Cache\+Base@{Cache\+Base}!truncate@{truncate}}
+\index{Cache\+Base@{Cache\+Base}!truncate@{truncate}}
 \index{truncate@{truncate}!Cache\+Base@{Cache\+Base}}
-\subsubsection[{truncate}]{\setlength{\rightskip}{0pt plus 5cm}Cache\+Base\+::truncate (
+\subsubsection[{\texorpdfstring{truncate()}{truncate()}}]{\setlength{\rightskip}{0pt plus 5cm}Cache\+Base\+::truncate (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classCacheBase_ad4ef9d60ea844036b17364b6e30bcb39}
+)}\hypertarget{classCacheBase_ad4ef9d60ea844036b17364b6e30bcb39}{}\label{classCacheBase_ad4ef9d60ea844036b17364b6e30bcb39}
 Truncate all cache
 
 \begin{DoxyReturn}{Returns}
@@ -149,9 +149,9 @@ Definition at line 350 of file Cache\+Handler.\+class.\+php.
 
 
 \subsection{Member Data Documentation}
-\hypertarget{classCacheBase_ad4f01a1a34bce91cb38308028252b233}{}\index{Cache\+Base@{Cache\+Base}!\$valid\+\_\+time@{\$valid\+\_\+time}}
+\index{Cache\+Base@{Cache\+Base}!\$valid\+\_\+time@{\$valid\+\_\+time}}
 \index{\$valid\+\_\+time@{\$valid\+\_\+time}!Cache\+Base@{Cache\+Base}}
-\subsubsection[{\$valid\+\_\+time}]{\setlength{\rightskip}{0pt plus 5cm}Cache\+Base\+::\$valid\+\_\+time = 36000}\label{classCacheBase_ad4f01a1a34bce91cb38308028252b233}
+\subsubsection[{\texorpdfstring{\$valid\+\_\+time}{$valid_time}}]{\setlength{\rightskip}{0pt plus 5cm}Cache\+Base\+::\$valid\+\_\+time = 36000}\hypertarget{classCacheBase_ad4f01a1a34bce91cb38308028252b233}{}\label{classCacheBase_ad4f01a1a34bce91cb38308028252b233}
 
 
 Definition at line 292 of file Cache\+Handler.\+class.\+php.

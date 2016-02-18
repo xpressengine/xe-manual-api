@@ -15,9 +15,9 @@ Inheritance diagram for D\+B\+Mysql\+\_\+innodb\+:\begin{figure}[H]
 \item 
 \hyperlink{classDBMysql__innodb_a006f982aef8b7fd2909d3912e0afb032}{\+\_\+close} (\$connection)
 \item 
-\hyperlink{classDBMysql__innodb_a1554d09da5f13e46a812d0ecf7e2efcc}{\+\_\+begin} (\$transaction\+Level)
+\hyperlink{classDBMysql__innodb_a12c61046869744bc9df72753d6ca8348}{\+\_\+begin} (\$transaction\+Level=0)
 \item 
-\hyperlink{classDBMysql__innodb_af9c5a29501a0748f0b17a6a532008226}{\+\_\+rollback} (\$transaction\+Level)
+\hyperlink{classDBMysql__innodb_a36779df768253f967560eee5a8c1ae89}{\+\_\+rollback} (\$transaction\+Level=0)
 \item 
 \hyperlink{classDBMysql__innodb_a9ffbd5a0d262ae7dd7fb840822a7e543}{\+\_\+commit} ()
 \item 
@@ -36,14 +36,14 @@ Definition at line 16 of file D\+B\+Mysql\+\_\+innodb.\+class.\+php.
 
 
 \subsection{Member Function Documentation}
-\hypertarget{classDBMysql__innodb_a12af9ec87d5f630d282c2bc2571ee5fe}{}\index{D\+B\+Mysql\+\_\+innodb@{D\+B\+Mysql\+\_\+innodb}!\+\_\+\+\_\+query@{\+\_\+\+\_\+query}}
+\index{D\+B\+Mysql\+\_\+innodb@{D\+B\+Mysql\+\_\+innodb}!\+\_\+\+\_\+query@{\+\_\+\+\_\+query}}
 \index{\+\_\+\+\_\+query@{\+\_\+\+\_\+query}!D\+B\+Mysql\+\_\+innodb@{D\+B\+Mysql\+\_\+innodb}}
-\subsubsection[{\+\_\+\+\_\+query}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+\_\+innodb\+::\+\_\+\+\_\+query (
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+query(\$query, \$connection)}{__query($query, $connection)}}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+\_\+innodb\+::\+\_\+\+\_\+query (
 \begin{DoxyParamCaption}
 \item[{}]{\$query, }
 \item[{}]{\$connection}
 \end{DoxyParamCaption}
-)}\label{classDBMysql__innodb_a12af9ec87d5f630d282c2bc2571ee5fe}
+)}\hypertarget{classDBMysql__innodb_a12af9ec87d5f630d282c2bc2571ee5fe}{}\label{classDBMysql__innodb_a12af9ec87d5f630d282c2bc2571ee5fe}
 Execute the query this method is private 
 \begin{DoxyParams}[1]{Parameters}
 string & {\em \$query} & \\
@@ -58,28 +58,28 @@ resource
 
 Definition at line 110 of file D\+B\+Mysql\+\_\+innodb.\+class.\+php.
 
-\hypertarget{classDBMysql__innodb_a1554d09da5f13e46a812d0ecf7e2efcc}{}\index{D\+B\+Mysql\+\_\+innodb@{D\+B\+Mysql\+\_\+innodb}!\+\_\+begin@{\+\_\+begin}}
+\index{D\+B\+Mysql\+\_\+innodb@{D\+B\+Mysql\+\_\+innodb}!\+\_\+begin@{\+\_\+begin}}
 \index{\+\_\+begin@{\+\_\+begin}!D\+B\+Mysql\+\_\+innodb@{D\+B\+Mysql\+\_\+innodb}}
-\subsubsection[{\+\_\+begin}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+\_\+innodb\+::\+\_\+begin (
+\subsubsection[{\texorpdfstring{\+\_\+begin(\$transaction\+Level=0)}{_begin($transactionLevel=0)}}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+\_\+innodb\+::\+\_\+begin (
 \begin{DoxyParamCaption}
-\item[{}]{\$transaction\+Level}
+\item[{}]{\$transaction\+Level = {\ttfamily 0}}
 \end{DoxyParamCaption}
-)}\label{classDBMysql__innodb_a1554d09da5f13e46a812d0ecf7e2efcc}
-\hyperlink{classDB}{D\+B} transaction start this method is private \begin{DoxyReturn}{Returns}
+)}\hypertarget{classDBMysql__innodb_a12c61046869744bc9df72753d6ca8348}{}\label{classDBMysql__innodb_a12c61046869744bc9df72753d6ca8348}
+\hyperlink{classDB}{DB} transaction start this method is private \begin{DoxyReturn}{Returns}
 boolean 
 \end{DoxyReturn}
 
 
 Definition at line 54 of file D\+B\+Mysql\+\_\+innodb.\+class.\+php.
 
-\hypertarget{classDBMysql__innodb_a006f982aef8b7fd2909d3912e0afb032}{}\index{D\+B\+Mysql\+\_\+innodb@{D\+B\+Mysql\+\_\+innodb}!\+\_\+close@{\+\_\+close}}
+\index{D\+B\+Mysql\+\_\+innodb@{D\+B\+Mysql\+\_\+innodb}!\+\_\+close@{\+\_\+close}}
 \index{\+\_\+close@{\+\_\+close}!D\+B\+Mysql\+\_\+innodb@{D\+B\+Mysql\+\_\+innodb}}
-\subsubsection[{\+\_\+close}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+\_\+innodb\+::\+\_\+close (
+\subsubsection[{\texorpdfstring{\+\_\+close(\$connection)}{_close($connection)}}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+\_\+innodb\+::\+\_\+close (
 \begin{DoxyParamCaption}
 \item[{}]{\$connection}
 \end{DoxyParamCaption}
-)}\label{classDBMysql__innodb_a006f982aef8b7fd2909d3912e0afb032}
-\hyperlink{classDB}{D\+B} disconnection this method is private 
+)}\hypertarget{classDBMysql__innodb_a006f982aef8b7fd2909d3912e0afb032}{}\label{classDBMysql__innodb_a006f982aef8b7fd2909d3912e0afb032}
+\hyperlink{classDB}{DB} disconnection this method is private 
 \begin{DoxyParams}[1]{Parameters}
 resource & {\em \$connection} & \\
 \hline
@@ -91,27 +91,27 @@ void
 
 Definition at line 44 of file D\+B\+Mysql\+\_\+innodb.\+class.\+php.
 
-\hypertarget{classDBMysql__innodb_a9ffbd5a0d262ae7dd7fb840822a7e543}{}\index{D\+B\+Mysql\+\_\+innodb@{D\+B\+Mysql\+\_\+innodb}!\+\_\+commit@{\+\_\+commit}}
+\index{D\+B\+Mysql\+\_\+innodb@{D\+B\+Mysql\+\_\+innodb}!\+\_\+commit@{\+\_\+commit}}
 \index{\+\_\+commit@{\+\_\+commit}!D\+B\+Mysql\+\_\+innodb@{D\+B\+Mysql\+\_\+innodb}}
-\subsubsection[{\+\_\+commit}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+\_\+innodb\+::\+\_\+commit (
+\subsubsection[{\texorpdfstring{\+\_\+commit()}{_commit()}}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+\_\+innodb\+::\+\_\+commit (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classDBMysql__innodb_a9ffbd5a0d262ae7dd7fb840822a7e543}
-\hyperlink{classDB}{D\+B} transaction commit this method is private \begin{DoxyReturn}{Returns}
+)}\hypertarget{classDBMysql__innodb_a9ffbd5a0d262ae7dd7fb840822a7e543}{}\label{classDBMysql__innodb_a9ffbd5a0d262ae7dd7fb840822a7e543}
+\hyperlink{classDB}{DB} transaction commit this method is private \begin{DoxyReturn}{Returns}
 boolean 
 \end{DoxyReturn}
 
 
 Definition at line 96 of file D\+B\+Mysql\+\_\+innodb.\+class.\+php.
 
-\hypertarget{classDBMysql__innodb_aa2b634992fbfaaadea5c897b8810b87c}{}\index{D\+B\+Mysql\+\_\+innodb@{D\+B\+Mysql\+\_\+innodb}!\+\_\+create\+Table@{\+\_\+create\+Table}}
+\index{D\+B\+Mysql\+\_\+innodb@{D\+B\+Mysql\+\_\+innodb}!\+\_\+create\+Table@{\+\_\+create\+Table}}
 \index{\+\_\+create\+Table@{\+\_\+create\+Table}!D\+B\+Mysql\+\_\+innodb@{D\+B\+Mysql\+\_\+innodb}}
-\subsubsection[{\+\_\+create\+Table}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+\_\+innodb\+::\+\_\+create\+Table (
+\subsubsection[{\texorpdfstring{\+\_\+create\+Table(\$xml\+\_\+doc)}{_createTable($xml_doc)}}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+\_\+innodb\+::\+\_\+create\+Table (
 \begin{DoxyParamCaption}
 \item[{}]{\$xml\+\_\+doc}
 \end{DoxyParamCaption}
-)}\label{classDBMysql__innodb_aa2b634992fbfaaadea5c897b8810b87c}
+)}\hypertarget{classDBMysql__innodb_aa2b634992fbfaaadea5c897b8810b87c}{}\label{classDBMysql__innodb_aa2b634992fbfaaadea5c897b8810b87c}
 Create table by using the schema xml
 
 type \+: number, varchar, tinytext, text, bigtext, char, date, ~\newline
@@ -129,27 +129,27 @@ void$\vert$object
 
 Definition at line 136 of file D\+B\+Mysql\+\_\+innodb.\+class.\+php.
 
-\hypertarget{classDBMysql__innodb_af9c5a29501a0748f0b17a6a532008226}{}\index{D\+B\+Mysql\+\_\+innodb@{D\+B\+Mysql\+\_\+innodb}!\+\_\+rollback@{\+\_\+rollback}}
+\index{D\+B\+Mysql\+\_\+innodb@{D\+B\+Mysql\+\_\+innodb}!\+\_\+rollback@{\+\_\+rollback}}
 \index{\+\_\+rollback@{\+\_\+rollback}!D\+B\+Mysql\+\_\+innodb@{D\+B\+Mysql\+\_\+innodb}}
-\subsubsection[{\+\_\+rollback}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+\_\+innodb\+::\+\_\+rollback (
+\subsubsection[{\texorpdfstring{\+\_\+rollback(\$transaction\+Level=0)}{_rollback($transactionLevel=0)}}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+\_\+innodb\+::\+\_\+rollback (
 \begin{DoxyParamCaption}
-\item[{}]{\$transaction\+Level}
+\item[{}]{\$transaction\+Level = {\ttfamily 0}}
 \end{DoxyParamCaption}
-)}\label{classDBMysql__innodb_af9c5a29501a0748f0b17a6a532008226}
-\hyperlink{classDB}{D\+B} transaction rollback this method is private \begin{DoxyReturn}{Returns}
+)}\hypertarget{classDBMysql__innodb_a36779df768253f967560eee5a8c1ae89}{}\label{classDBMysql__innodb_a36779df768253f967560eee5a8c1ae89}
+\hyperlink{classDB}{DB} transaction rollback this method is private \begin{DoxyReturn}{Returns}
 boolean 
 \end{DoxyReturn}
 
 
 Definition at line 74 of file D\+B\+Mysql\+\_\+innodb.\+class.\+php.
 
-\hypertarget{classDBMysql__innodb_ac00d0e52855fb50fc453dd78367de102}{}\index{D\+B\+Mysql\+\_\+innodb@{D\+B\+Mysql\+\_\+innodb}!create@{create}}
+\index{D\+B\+Mysql\+\_\+innodb@{D\+B\+Mysql\+\_\+innodb}!create@{create}}
 \index{create@{create}!D\+B\+Mysql\+\_\+innodb@{D\+B\+Mysql\+\_\+innodb}}
-\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+\_\+innodb\+::create (
+\subsubsection[{\texorpdfstring{create()}{create()}}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+\_\+innodb\+::create (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classDBMysql__innodb_ac00d0e52855fb50fc453dd78367de102}
+)}\hypertarget{classDBMysql__innodb_ac00d0e52855fb50fc453dd78367de102}{}\label{classDBMysql__innodb_ac00d0e52855fb50fc453dd78367de102}
 Create an instance of this class \begin{DoxyReturn}{Returns}
 \hyperlink{classDBMysql__innodb}{D\+B\+Mysql\+\_\+innodb} return \hyperlink{classDBMysql__innodb}{D\+B\+Mysql\+\_\+innodb} object instance 
 \end{DoxyReturn}
@@ -157,13 +157,13 @@ Create an instance of this class \begin{DoxyReturn}{Returns}
 
 Definition at line 33 of file D\+B\+Mysql\+\_\+innodb.\+class.\+php.
 
-\hypertarget{classDBMysql__innodb_ad56600e5cbe42a0b26f40c2fd34dd4ea}{}\index{D\+B\+Mysql\+\_\+innodb@{D\+B\+Mysql\+\_\+innodb}!D\+B\+Mysql\+\_\+innodb@{D\+B\+Mysql\+\_\+innodb}}
 \index{D\+B\+Mysql\+\_\+innodb@{D\+B\+Mysql\+\_\+innodb}!D\+B\+Mysql\+\_\+innodb@{D\+B\+Mysql\+\_\+innodb}}
-\subsubsection[{D\+B\+Mysql\+\_\+innodb}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+\_\+innodb\+::\+D\+B\+Mysql\+\_\+innodb (
+\index{D\+B\+Mysql\+\_\+innodb@{D\+B\+Mysql\+\_\+innodb}!D\+B\+Mysql\+\_\+innodb@{D\+B\+Mysql\+\_\+innodb}}
+\subsubsection[{\texorpdfstring{D\+B\+Mysql\+\_\+innodb()}{DBMysql_innodb()}}]{\setlength{\rightskip}{0pt plus 5cm}D\+B\+Mysql\+\_\+innodb\+::\+D\+B\+Mysql\+\_\+innodb (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classDBMysql__innodb_ad56600e5cbe42a0b26f40c2fd34dd4ea}
+)}\hypertarget{classDBMysql__innodb_ad56600e5cbe42a0b26f40c2fd34dd4ea}{}\label{classDBMysql__innodb_ad56600e5cbe42a0b26f40c2fd34dd4ea}
 Constructor \begin{DoxyReturn}{Returns}
 void 
 \end{DoxyReturn}

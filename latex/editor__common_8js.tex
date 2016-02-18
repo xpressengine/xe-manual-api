@@ -1,0 +1,401 @@
+\hypertarget{editor__common_8js}{}\section{modules/editor/tpl/js/editor\+\_\+common.js File Reference}
+\label{editor__common_8js}\index{modules/editor/tpl/js/editor\+\_\+common.\+js@{modules/editor/tpl/js/editor\+\_\+common.\+js}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \hyperlink{editor__common_8js_a58673648198306274f3721254158d07e}{editor\+Get\+Content} (editor\+\_\+sequence)
+\item 
+function \hyperlink{editor__common_8js_a7f188febf06275cb356f1bf44d6b9fe2}{editor\+Focus} (editor\+\_\+sequence)
+\item 
+function \hyperlink{editor__common_8js_a493216c50b02e45914523b7f1aba4d88}{editor\+Enable\+Auto\+Save} (fo\+\_\+obj, editor\+\_\+sequence, callback)
+\item 
+function \hyperlink{editor__common_8js_a591b7575f1b1950bda8ef3c6b5339317}{\+\_\+editor\+Auto\+Save} (exe, callback)
+\item 
+function \hyperlink{editor__common_8js_a4eb48219a7e62e11219039145b0165c8}{editor\+Remove\+Saved\+Doc} ()
+\item 
+function \hyperlink{editor__common_8js_a4bde3d6ab450f2e043370a67299c6e80}{editor\+Get\+I\+Frame} (editor\+\_\+sequence)
+\item 
+function \hyperlink{editor__common_8js_a381e932e197c13e98376b3c675c7e57b}{editor\+Get\+Textarea} (editor\+\_\+sequence)
+\item 
+function \hyperlink{editor__common_8js_ae2cf611a537f1b8fa220a1344c8c953e}{e\+Option\+Over} (obj)
+\item 
+function \hyperlink{editor__common_8js_a1af805ee113155226da3829e49617e6f}{e\+Option\+Out} (obj)
+\item 
+function \hyperlink{editor__common_8js_a2c47687ff387bc1fdfe3e4079f9c6e41}{e\+Option\+Click} (obj)
+\item 
+function \hyperlink{editor__common_8js_af5f66675a8779a5b986e6ef141f3db92}{editor\+Event\+Check} (\hyperlink{jqplot_8barRenderer_8min_8js_a2ce90ea5f2a400a3a152319491a737ff}{e})
+\item 
+\hyperlink{editor__common_8js_a819b8e6e24514063b9b32878c36a180c}{j\+Query} (\hyperlink{classdocument}{document}).\hyperlink{layouts_2xedition_2js_2layout_8js_a36ec7864a007264541b9a389ce97d8a6}{click}(\hyperlink{editor__common_8js_af5f66675a8779a5b986e6ef141f3db92}{editor\+Event\+Check})
+\item 
+function \hyperlink{editor__common_8js_aefa1bbe206ace10cf6ebc63da9ef7219}{open\+Component} (component\+\_\+name, editor\+\_\+sequence, manual\+\_\+url)
+\item 
+function \hyperlink{editor__common_8js_ac692801886eb48a769730ecf1fbda4b3}{editor\+Search\+Component} (evt)
+\item 
+function \hyperlink{editor__common_8js_a3f7043160c8368914372aa5e4f356345}{editor\+Replace\+H\+T\+ML} (iframe\+\_\+obj, \hyperlink{JSSpec_8js_a28141bc89afb42a8f39e596105992271}{html})
+\item 
+function \hyperlink{editor__common_8js_aa98d40429e2a878334cebad7dba054e0}{editor\+Get\+Selected\+Html} (editor\+\_\+sequence)
+\item 
+function \hyperlink{editor__common_8js_a02c645de1293adea232083c3265020ba}{editor\+Drag\+Start} (\hyperlink{jqplot_8barRenderer_8min_8js_a2ce90ea5f2a400a3a152319491a737ff}{e})
+\item 
+function \hyperlink{editor__common_8js_a79e54d68a86a58705238298b5fae37e9}{editor\+Drag\+Move} (\hyperlink{jqplot_8barRenderer_8min_8js_a2ce90ea5f2a400a3a152319491a737ff}{e})
+\item 
+function \hyperlink{editor__common_8js_aa6e455213caf62176675b7003a508eb1}{editor\+Drag\+Stop} (\hyperlink{jqplot_8barRenderer_8min_8js_a2ce90ea5f2a400a3a152319491a737ff}{e})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \hyperlink{editor__common_8js_ad668b04a9c3ecac45098ab164c0fa592}{editor\+Mode} = \mbox{[}$\,$\mbox{]}
+\begin{DoxyCompactList}\small\item\em $<$ 에디터의 html편집 모드 flag 세팅 변수 (html or null) \end{DoxyCompactList}\item 
+var \hyperlink{editor__common_8js_ab38111291b59009341c110aa33dc668d}{editor\+Auto\+Save\+Obj} = \{fo\+\_\+obj\+:null, editor\+\_\+sequence\+:0, title\+:\textquotesingle{}\textquotesingle{}, content\+:\textquotesingle{}\textquotesingle{}, locked\+:false\}
+\begin{DoxyCompactList}\small\item\em 자동저장을 위한 정보를 가진 object \end{DoxyCompactList}\item 
+var \hyperlink{editor__common_8js_a739f7a56387e9a356b0ad21bd94e77b2}{editor\+Rel\+Keys} = \mbox{[}$\,$\mbox{]}
+\begin{DoxyCompactList}\small\item\em 에디터와 각 모듈과의 연동을 위한 key 값을 보관하는 변수 \end{DoxyCompactList}\item 
+var \hyperlink{editor__common_8js_a2a6f2466312a6631bcbf67f2c7340ddc}{editor\+Drag\+Obj} = \{is\+Drag\+:false, y\+:0, obj\+:null, id\+:\textquotesingle{}\textquotesingle{}, det\+:0, source\+\_\+height\+:0\}
+\item 
+\hyperlink{editor__common_8js_a493216c50b02e45914523b7f1aba4d88}{editor\+Enable\+Auto\+Save} \hyperlink{editor__common_8js_a3804ebe8d46eb64bc67a436e98f05b12}{timer} = \hyperlink{modernizr_8min_8js_a286f9ec831c5e676eeb493248eab9575}{null}
+\item 
+var \hyperlink{editor__common_8js_acf5c1fcf4ad0c58b1add0f6056adbbb0}{editor\+Prev\+Srl} = \hyperlink{modernizr_8min_8js_a286f9ec831c5e676eeb493248eab9575}{null}
+\item 
+var \hyperlink{editor__common_8js_ab93b882536c44fdf3619d68842133a5c}{editor\+Prev\+Node} = \hyperlink{modernizr_8min_8js_a286f9ec831c5e676eeb493248eab9575}{null}
+\item 
+var \hyperlink{editor__common_8js_a4c91a3b0b7acb404254887b2ab4062ba}{startY} = 0
+\item 
+var \hyperlink{editor__common_8js_a9b00baae69f1145ce5c9bf65f2a28c0c}{startH} = 0
+\item 
+var \hyperlink{editor__common_8js_a40940ccda6ea93b9c1ab70aa4a823bd3}{editor\+Id} = \textquotesingle{}\textquotesingle{}
+\item 
+var \hyperlink{editor__common_8js_a565de44b40e2cc3416284b12e7772309}{event\+Obj} = \hyperlink{modernizr_8min_8js_a286f9ec831c5e676eeb493248eab9575}{null}
+\item 
+var \hyperlink{editor__common_8js_a35ca17e0db68126c271a2cc24812bfc4}{target\+Obj} = \hyperlink{modernizr_8min_8js_a286f9ec831c5e676eeb493248eab9575}{null}
+\item 
+\hyperlink{editor__common_8js_a2b1d6f9c448e3ce72f4e1865d6e38d2c}{j\+Query}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{editor\+\_\+common.\+js@{editor\+\_\+common.\+js}!\+\_\+editor\+Auto\+Save@{\+\_\+editor\+Auto\+Save}}
+\index{\+\_\+editor\+Auto\+Save@{\+\_\+editor\+Auto\+Save}!editor\+\_\+common.\+js@{editor\+\_\+common.\+js}}
+\subsubsection[{\texorpdfstring{\+\_\+editor\+Auto\+Save(exe, callback)}{_editorAutoSave(exe, callback)}}]{\setlength{\rightskip}{0pt plus 5cm}function \+\_\+editor\+Auto\+Save (
+\begin{DoxyParamCaption}
+\item[{}]{exe, }
+\item[{}]{callback}
+\end{DoxyParamCaption}
+)}\hypertarget{editor__common_8js_a591b7575f1b1950bda8ef3c6b5339317}{}\label{editor__common_8js_a591b7575f1b1950bda8ef3c6b5339317}
+
+
+Definition at line 46 of file editor\+\_\+common.\+js.
+
+\index{editor\+\_\+common.\+js@{editor\+\_\+common.\+js}!editor\+Drag\+Move@{editor\+Drag\+Move}}
+\index{editor\+Drag\+Move@{editor\+Drag\+Move}!editor\+\_\+common.\+js@{editor\+\_\+common.\+js}}
+\subsubsection[{\texorpdfstring{editor\+Drag\+Move(e)}{editorDragMove(e)}}]{\setlength{\rightskip}{0pt plus 5cm}function editor\+Drag\+Move (
+\begin{DoxyParamCaption}
+\item[{}]{e}
+\end{DoxyParamCaption}
+)}\hypertarget{editor__common_8js_a79e54d68a86a58705238298b5fae37e9}{}\label{editor__common_8js_a79e54d68a86a58705238298b5fae37e9}
+
+
+Definition at line 401 of file editor\+\_\+common.\+js.
+
+\index{editor\+\_\+common.\+js@{editor\+\_\+common.\+js}!editor\+Drag\+Start@{editor\+Drag\+Start}}
+\index{editor\+Drag\+Start@{editor\+Drag\+Start}!editor\+\_\+common.\+js@{editor\+\_\+common.\+js}}
+\subsubsection[{\texorpdfstring{editor\+Drag\+Start(e)}{editorDragStart(e)}}]{\setlength{\rightskip}{0pt plus 5cm}function editor\+Drag\+Start (
+\begin{DoxyParamCaption}
+\item[{}]{e}
+\end{DoxyParamCaption}
+)}\hypertarget{editor__common_8js_a02c645de1293adea232083c3265020ba}{}\label{editor__common_8js_a02c645de1293adea232083c3265020ba}
+
+
+Definition at line 365 of file editor\+\_\+common.\+js.
+
+\index{editor\+\_\+common.\+js@{editor\+\_\+common.\+js}!editor\+Drag\+Stop@{editor\+Drag\+Stop}}
+\index{editor\+Drag\+Stop@{editor\+Drag\+Stop}!editor\+\_\+common.\+js@{editor\+\_\+common.\+js}}
+\subsubsection[{\texorpdfstring{editor\+Drag\+Stop(e)}{editorDragStop(e)}}]{\setlength{\rightskip}{0pt plus 5cm}function editor\+Drag\+Stop (
+\begin{DoxyParamCaption}
+\item[{}]{e}
+\end{DoxyParamCaption}
+)}\hypertarget{editor__common_8js_aa6e455213caf62176675b7003a508eb1}{}\label{editor__common_8js_aa6e455213caf62176675b7003a508eb1}
+
+
+Definition at line 413 of file editor\+\_\+common.\+js.
+
+\index{editor\+\_\+common.\+js@{editor\+\_\+common.\+js}!editor\+Enable\+Auto\+Save@{editor\+Enable\+Auto\+Save}}
+\index{editor\+Enable\+Auto\+Save@{editor\+Enable\+Auto\+Save}!editor\+\_\+common.\+js@{editor\+\_\+common.\+js}}
+\subsubsection[{\texorpdfstring{editor\+Enable\+Auto\+Save(fo\+\_\+obj, editor\+\_\+sequence, callback)}{editorEnableAutoSave(fo_obj, editor_sequence, callback)}}]{\setlength{\rightskip}{0pt plus 5cm}function editor\+Enable\+Auto\+Save (
+\begin{DoxyParamCaption}
+\item[{}]{fo\+\_\+obj, }
+\item[{}]{editor\+\_\+sequence, }
+\item[{}]{callback}
+\end{DoxyParamCaption}
+)}\hypertarget{editor__common_8js_a493216c50b02e45914523b7f1aba4d88}{}\label{editor__common_8js_a493216c50b02e45914523b7f1aba4d88}
+자동 저장 기능 
+
+Definition at line 34 of file editor\+\_\+common.\+js.
+
+\index{editor\+\_\+common.\+js@{editor\+\_\+common.\+js}!editor\+Event\+Check@{editor\+Event\+Check}}
+\index{editor\+Event\+Check@{editor\+Event\+Check}!editor\+\_\+common.\+js@{editor\+\_\+common.\+js}}
+\subsubsection[{\texorpdfstring{editor\+Event\+Check(e)}{editorEventCheck(e)}}]{\setlength{\rightskip}{0pt plus 5cm}function editor\+Event\+Check (
+\begin{DoxyParamCaption}
+\item[{}]{e}
+\end{DoxyParamCaption}
+)}\hypertarget{editor__common_8js_af5f66675a8779a5b986e6ef141f3db92}{}\label{editor__common_8js_af5f66675a8779a5b986e6ef141f3db92}
+
+
+Definition at line 150 of file editor\+\_\+common.\+js.
+
+\index{editor\+\_\+common.\+js@{editor\+\_\+common.\+js}!editor\+Focus@{editor\+Focus}}
+\index{editor\+Focus@{editor\+Focus}!editor\+\_\+common.\+js@{editor\+\_\+common.\+js}}
+\subsubsection[{\texorpdfstring{editor\+Focus(editor\+\_\+sequence)}{editorFocus(editor_sequence)}}]{\setlength{\rightskip}{0pt plus 5cm}function editor\+Focus (
+\begin{DoxyParamCaption}
+\item[{}]{editor\+\_\+sequence}
+\end{DoxyParamCaption}
+)}\hypertarget{editor__common_8js_a7f188febf06275cb356f1bf44d6b9fe2}{}\label{editor__common_8js_a7f188febf06275cb356f1bf44d6b9fe2}
+
+
+Definition at line 19 of file editor\+\_\+common.\+js.
+
+\index{editor\+\_\+common.\+js@{editor\+\_\+common.\+js}!editor\+Get\+Content@{editor\+Get\+Content}}
+\index{editor\+Get\+Content@{editor\+Get\+Content}!editor\+\_\+common.\+js@{editor\+\_\+common.\+js}}
+\subsubsection[{\texorpdfstring{editor\+Get\+Content(editor\+\_\+sequence)}{editorGetContent(editor_sequence)}}]{\setlength{\rightskip}{0pt plus 5cm}function editor\+Get\+Content (
+\begin{DoxyParamCaption}
+\item[{}]{editor\+\_\+sequence}
+\end{DoxyParamCaption}
+)}\hypertarget{editor__common_8js_a58673648198306274f3721254158d07e}{}\label{editor__common_8js_a58673648198306274f3721254158d07e}
+
+
+Definition at line 9 of file editor\+\_\+common.\+js.
+
+\index{editor\+\_\+common.\+js@{editor\+\_\+common.\+js}!editor\+Get\+I\+Frame@{editor\+Get\+I\+Frame}}
+\index{editor\+Get\+I\+Frame@{editor\+Get\+I\+Frame}!editor\+\_\+common.\+js@{editor\+\_\+common.\+js}}
+\subsubsection[{\texorpdfstring{editor\+Get\+I\+Frame(editor\+\_\+sequence)}{editorGetIFrame(editor_sequence)}}]{\setlength{\rightskip}{0pt plus 5cm}function editor\+Get\+I\+Frame (
+\begin{DoxyParamCaption}
+\item[{}]{editor\+\_\+sequence}
+\end{DoxyParamCaption}
+)}\hypertarget{editor__common_8js_a4bde3d6ab450f2e043370a67299c6e80}{}\label{editor__common_8js_a4bde3d6ab450f2e043370a67299c6e80}
+에디터의 상태나 객체를 구하기 위한 함수 
+
+Definition at line 119 of file editor\+\_\+common.\+js.
+
+\index{editor\+\_\+common.\+js@{editor\+\_\+common.\+js}!editor\+Get\+Selected\+Html@{editor\+Get\+Selected\+Html}}
+\index{editor\+Get\+Selected\+Html@{editor\+Get\+Selected\+Html}!editor\+\_\+common.\+js@{editor\+\_\+common.\+js}}
+\subsubsection[{\texorpdfstring{editor\+Get\+Selected\+Html(editor\+\_\+sequence)}{editorGetSelectedHtml(editor_sequence)}}]{\setlength{\rightskip}{0pt plus 5cm}function editor\+Get\+Selected\+Html (
+\begin{DoxyParamCaption}
+\item[{}]{editor\+\_\+sequence}
+\end{DoxyParamCaption}
+)}\hypertarget{editor__common_8js_aa98d40429e2a878334cebad7dba054e0}{}\label{editor__common_8js_aa98d40429e2a878334cebad7dba054e0}
+
+
+Definition at line 334 of file editor\+\_\+common.\+js.
+
+\index{editor\+\_\+common.\+js@{editor\+\_\+common.\+js}!editor\+Get\+Textarea@{editor\+Get\+Textarea}}
+\index{editor\+Get\+Textarea@{editor\+Get\+Textarea}!editor\+\_\+common.\+js@{editor\+\_\+common.\+js}}
+\subsubsection[{\texorpdfstring{editor\+Get\+Textarea(editor\+\_\+sequence)}{editorGetTextarea(editor_sequence)}}]{\setlength{\rightskip}{0pt plus 5cm}function editor\+Get\+Textarea (
+\begin{DoxyParamCaption}
+\item[{}]{editor\+\_\+sequence}
+\end{DoxyParamCaption}
+)}\hypertarget{editor__common_8js_a381e932e197c13e98376b3c675c7e57b}{}\label{editor__common_8js_a381e932e197c13e98376b3c675c7e57b}
+
+
+Definition at line 126 of file editor\+\_\+common.\+js.
+
+\index{editor\+\_\+common.\+js@{editor\+\_\+common.\+js}!editor\+Remove\+Saved\+Doc@{editor\+Remove\+Saved\+Doc}}
+\index{editor\+Remove\+Saved\+Doc@{editor\+Remove\+Saved\+Doc}!editor\+\_\+common.\+js@{editor\+\_\+common.\+js}}
+\subsubsection[{\texorpdfstring{editor\+Remove\+Saved\+Doc()}{editorRemoveSavedDoc()}}]{\setlength{\rightskip}{0pt plus 5cm}function editor\+Remove\+Saved\+Doc (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{editor__common_8js_a4eb48219a7e62e11219039145b0165c8}{}\label{editor__common_8js_a4eb48219a7e62e11219039145b0165c8}
+
+
+Definition at line 108 of file editor\+\_\+common.\+js.
+
+\index{editor\+\_\+common.\+js@{editor\+\_\+common.\+js}!editor\+Replace\+H\+T\+ML@{editor\+Replace\+H\+T\+ML}}
+\index{editor\+Replace\+H\+T\+ML@{editor\+Replace\+H\+T\+ML}!editor\+\_\+common.\+js@{editor\+\_\+common.\+js}}
+\subsubsection[{\texorpdfstring{editor\+Replace\+H\+T\+M\+L(iframe\+\_\+obj, html)}{editorReplaceHTML(iframe_obj, html)}}]{\setlength{\rightskip}{0pt plus 5cm}function editor\+Replace\+H\+T\+ML (
+\begin{DoxyParamCaption}
+\item[{}]{iframe\+\_\+obj, }
+\item[{}]{html}
+\end{DoxyParamCaption}
+)}\hypertarget{editor__common_8js_a3f7043160c8368914372aa5e4f356345}{}\label{editor__common_8js_a3f7043160c8368914372aa5e4f356345}
+
+
+Definition at line 290 of file editor\+\_\+common.\+js.
+
+\index{editor\+\_\+common.\+js@{editor\+\_\+common.\+js}!editor\+Search\+Component@{editor\+Search\+Component}}
+\index{editor\+Search\+Component@{editor\+Search\+Component}!editor\+\_\+common.\+js@{editor\+\_\+common.\+js}}
+\subsubsection[{\texorpdfstring{editor\+Search\+Component(evt)}{editorSearchComponent(evt)}}]{\setlength{\rightskip}{0pt plus 5cm}function editor\+Search\+Component (
+\begin{DoxyParamCaption}
+\item[{}]{evt}
+\end{DoxyParamCaption}
+)}\hypertarget{editor__common_8js_ac692801886eb48a769730ecf1fbda4b3}{}\label{editor__common_8js_ac692801886eb48a769730ecf1fbda4b3}
+
+
+Definition at line 218 of file editor\+\_\+common.\+js.
+
+\index{editor\+\_\+common.\+js@{editor\+\_\+common.\+js}!e\+Option\+Click@{e\+Option\+Click}}
+\index{e\+Option\+Click@{e\+Option\+Click}!editor\+\_\+common.\+js@{editor\+\_\+common.\+js}}
+\subsubsection[{\texorpdfstring{e\+Option\+Click(obj)}{eOptionClick(obj)}}]{\setlength{\rightskip}{0pt plus 5cm}function e\+Option\+Click (
+\begin{DoxyParamCaption}
+\item[{}]{obj}
+\end{DoxyParamCaption}
+)}\hypertarget{editor__common_8js_a2c47687ff387bc1fdfe3e4079f9c6e41}{}\label{editor__common_8js_a2c47687ff387bc1fdfe3e4079f9c6e41}
+
+
+Definition at line 139 of file editor\+\_\+common.\+js.
+
+\index{editor\+\_\+common.\+js@{editor\+\_\+common.\+js}!e\+Option\+Out@{e\+Option\+Out}}
+\index{e\+Option\+Out@{e\+Option\+Out}!editor\+\_\+common.\+js@{editor\+\_\+common.\+js}}
+\subsubsection[{\texorpdfstring{e\+Option\+Out(obj)}{eOptionOut(obj)}}]{\setlength{\rightskip}{0pt plus 5cm}function e\+Option\+Out (
+\begin{DoxyParamCaption}
+\item[{}]{obj}
+\end{DoxyParamCaption}
+)}\hypertarget{editor__common_8js_a1af805ee113155226da3829e49617e6f}{}\label{editor__common_8js_a1af805ee113155226da3829e49617e6f}
+
+
+Definition at line 135 of file editor\+\_\+common.\+js.
+
+\index{editor\+\_\+common.\+js@{editor\+\_\+common.\+js}!e\+Option\+Over@{e\+Option\+Over}}
+\index{e\+Option\+Over@{e\+Option\+Over}!editor\+\_\+common.\+js@{editor\+\_\+common.\+js}}
+\subsubsection[{\texorpdfstring{e\+Option\+Over(obj)}{eOptionOver(obj)}}]{\setlength{\rightskip}{0pt plus 5cm}function e\+Option\+Over (
+\begin{DoxyParamCaption}
+\item[{}]{obj}
+\end{DoxyParamCaption}
+)}\hypertarget{editor__common_8js_ae2cf611a537f1b8fa220a1344c8c953e}{}\label{editor__common_8js_ae2cf611a537f1b8fa220a1344c8c953e}
+
+
+Definition at line 131 of file editor\+\_\+common.\+js.
+
+\index{editor\+\_\+common.\+js@{editor\+\_\+common.\+js}!j\+Query@{j\+Query}}
+\index{j\+Query@{j\+Query}!editor\+\_\+common.\+js@{editor\+\_\+common.\+js}}
+\subsubsection[{\texorpdfstring{j\+Query(document).\+click(editor\+Event\+Check)}{jQuery(document).click(editorEventCheck)}}]{\setlength{\rightskip}{0pt plus 5cm}j\+Query (
+\begin{DoxyParamCaption}
+\item[{{\bf document}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{editor__common_8js_a819b8e6e24514063b9b32878c36a180c}{}\label{editor__common_8js_a819b8e6e24514063b9b32878c36a180c}
+
+\begin{DoxyParams}{Parameters}
+{\em document} & Create popup windows automatically. Find anchors that have the \textquotesingle{}\+\_\+xe\+\_\+popup\textquotesingle{} class, then add popup script to them. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 182 of file document\+\_\+admin.\+js.
+
+\index{editor\+\_\+common.\+js@{editor\+\_\+common.\+js}!open\+Component@{open\+Component}}
+\index{open\+Component@{open\+Component}!editor\+\_\+common.\+js@{editor\+\_\+common.\+js}}
+\subsubsection[{\texorpdfstring{open\+Component(component\+\_\+name, editor\+\_\+sequence, manual\+\_\+url)}{openComponent(component_name, editor_sequence, manual_url)}}]{\setlength{\rightskip}{0pt plus 5cm}function open\+Component (
+\begin{DoxyParamCaption}
+\item[{}]{component\+\_\+name, }
+\item[{}]{editor\+\_\+sequence, }
+\item[{}]{manual\+\_\+url}
+\end{DoxyParamCaption}
+)}\hypertarget{editor__common_8js_aefa1bbe206ace10cf6ebc63da9ef7219}{}\label{editor__common_8js_aefa1bbe206ace10cf6ebc63da9ef7219}
+
+
+Definition at line 205 of file editor\+\_\+common.\+js.
+
+
+
+\subsection{Variable Documentation}
+\index{editor\+\_\+common.\+js@{editor\+\_\+common.\+js}!editor\+Auto\+Save\+Obj@{editor\+Auto\+Save\+Obj}}
+\index{editor\+Auto\+Save\+Obj@{editor\+Auto\+Save\+Obj}!editor\+\_\+common.\+js@{editor\+\_\+common.\+js}}
+\subsubsection[{\texorpdfstring{editor\+Auto\+Save\+Obj}{editorAutoSaveObj}}]{\setlength{\rightskip}{0pt plus 5cm}var editor\+Auto\+Save\+Obj = \{fo\+\_\+obj\+:null, editor\+\_\+sequence\+:0, title\+:\textquotesingle{}\textquotesingle{}, content\+:\textquotesingle{}\textquotesingle{}, locked\+:false\}}\hypertarget{editor__common_8js_ab38111291b59009341c110aa33dc668d}{}\label{editor__common_8js_ab38111291b59009341c110aa33dc668d}
+
+
+자동저장을 위한 정보를 가진 object 
+
+
+
+Definition at line 5 of file editor\+\_\+common.\+js.
+
+\index{editor\+\_\+common.\+js@{editor\+\_\+common.\+js}!editor\+Drag\+Obj@{editor\+Drag\+Obj}}
+\index{editor\+Drag\+Obj@{editor\+Drag\+Obj}!editor\+\_\+common.\+js@{editor\+\_\+common.\+js}}
+\subsubsection[{\texorpdfstring{editor\+Drag\+Obj}{editorDragObj}}]{\setlength{\rightskip}{0pt plus 5cm}var editor\+Drag\+Obj = \{is\+Drag\+:false, y\+:0, obj\+:null, id\+:\textquotesingle{}\textquotesingle{}, det\+:0, source\+\_\+height\+:0\}}\hypertarget{editor__common_8js_a2a6f2466312a6631bcbf67f2c7340ddc}{}\label{editor__common_8js_a2a6f2466312a6631bcbf67f2c7340ddc}
+
+
+Definition at line 7 of file editor\+\_\+common.\+js.
+
+\index{editor\+\_\+common.\+js@{editor\+\_\+common.\+js}!editor\+Id@{editor\+Id}}
+\index{editor\+Id@{editor\+Id}!editor\+\_\+common.\+js@{editor\+\_\+common.\+js}}
+\subsubsection[{\texorpdfstring{editor\+Id}{editorId}}]{\setlength{\rightskip}{0pt plus 5cm}var editor\+Id = \textquotesingle{}\textquotesingle{}}\hypertarget{editor__common_8js_a40940ccda6ea93b9c1ab70aa4a823bd3}{}\label{editor__common_8js_a40940ccda6ea93b9c1ab70aa4a823bd3}
+
+
+Definition at line 361 of file editor\+\_\+common.\+js.
+
+\index{editor\+\_\+common.\+js@{editor\+\_\+common.\+js}!editor\+Mode@{editor\+Mode}}
+\index{editor\+Mode@{editor\+Mode}!editor\+\_\+common.\+js@{editor\+\_\+common.\+js}}
+\subsubsection[{\texorpdfstring{editor\+Mode}{editorMode}}]{\setlength{\rightskip}{0pt plus 5cm}var editor\+Mode = \mbox{[}$\,$\mbox{]}}\hypertarget{editor__common_8js_ad668b04a9c3ecac45098ab164c0fa592}{}\label{editor__common_8js_ad668b04a9c3ecac45098ab164c0fa592}
+
+
+$<$ 에디터의 html편집 모드 flag 세팅 변수 (html or null) 
+
+에디터에서 사용하기 위한 변수 
+
+Definition at line 4 of file editor\+\_\+common.\+js.
+
+\index{editor\+\_\+common.\+js@{editor\+\_\+common.\+js}!editor\+Prev\+Node@{editor\+Prev\+Node}}
+\index{editor\+Prev\+Node@{editor\+Prev\+Node}!editor\+\_\+common.\+js@{editor\+\_\+common.\+js}}
+\subsubsection[{\texorpdfstring{editor\+Prev\+Node}{editorPrevNode}}]{\setlength{\rightskip}{0pt plus 5cm}var editor\+Prev\+Node = {\bf null}}\hypertarget{editor__common_8js_ab93b882536c44fdf3619d68842133a5c}{}\label{editor__common_8js_ab93b882536c44fdf3619d68842133a5c}
+
+
+Definition at line 217 of file editor\+\_\+common.\+js.
+
+\index{editor\+\_\+common.\+js@{editor\+\_\+common.\+js}!editor\+Prev\+Srl@{editor\+Prev\+Srl}}
+\index{editor\+Prev\+Srl@{editor\+Prev\+Srl}!editor\+\_\+common.\+js@{editor\+\_\+common.\+js}}
+\subsubsection[{\texorpdfstring{editor\+Prev\+Srl}{editorPrevSrl}}]{\setlength{\rightskip}{0pt plus 5cm}var editor\+Prev\+Srl = {\bf null}}\hypertarget{editor__common_8js_acf5c1fcf4ad0c58b1add0f6056adbbb0}{}\label{editor__common_8js_acf5c1fcf4ad0c58b1add0f6056adbbb0}
+에디터 컴포넌트 구현 부분 
+
+Definition at line 149 of file editor\+\_\+common.\+js.
+
+\index{editor\+\_\+common.\+js@{editor\+\_\+common.\+js}!editor\+Rel\+Keys@{editor\+Rel\+Keys}}
+\index{editor\+Rel\+Keys@{editor\+Rel\+Keys}!editor\+\_\+common.\+js@{editor\+\_\+common.\+js}}
+\subsubsection[{\texorpdfstring{editor\+Rel\+Keys}{editorRelKeys}}]{\setlength{\rightskip}{0pt plus 5cm}var editor\+Rel\+Keys = \mbox{[}$\,$\mbox{]}}\hypertarget{editor__common_8js_a739f7a56387e9a356b0ad21bd94e77b2}{}\label{editor__common_8js_a739f7a56387e9a356b0ad21bd94e77b2}
+
+
+에디터와 각 모듈과의 연동을 위한 key 값을 보관하는 변수 
+
+
+
+Definition at line 6 of file editor\+\_\+common.\+js.
+
+\index{editor\+\_\+common.\+js@{editor\+\_\+common.\+js}!event\+Obj@{event\+Obj}}
+\index{event\+Obj@{event\+Obj}!editor\+\_\+common.\+js@{editor\+\_\+common.\+js}}
+\subsubsection[{\texorpdfstring{event\+Obj}{eventObj}}]{\setlength{\rightskip}{0pt plus 5cm}var event\+Obj = {\bf null}}\hypertarget{editor__common_8js_a565de44b40e2cc3416284b12e7772309}{}\label{editor__common_8js_a565de44b40e2cc3416284b12e7772309}
+
+
+Definition at line 362 of file editor\+\_\+common.\+js.
+
+\index{editor\+\_\+common.\+js@{editor\+\_\+common.\+js}!j\+Query@{j\+Query}}
+\index{j\+Query@{j\+Query}!editor\+\_\+common.\+js@{editor\+\_\+common.\+js}}
+\subsubsection[{\texorpdfstring{j\+Query}{jQuery}}]{\setlength{\rightskip}{0pt plus 5cm}j\+Query}\hypertarget{editor__common_8js_a2b1d6f9c448e3ce72f4e1865d6e38d2c}{}\label{editor__common_8js_a2b1d6f9c448e3ce72f4e1865d6e38d2c}
+
+
+Definition at line 440 of file editor\+\_\+common.\+js.
+
+\index{editor\+\_\+common.\+js@{editor\+\_\+common.\+js}!startH@{startH}}
+\index{startH@{startH}!editor\+\_\+common.\+js@{editor\+\_\+common.\+js}}
+\subsubsection[{\texorpdfstring{startH}{startH}}]{\setlength{\rightskip}{0pt plus 5cm}var startH = 0}\hypertarget{editor__common_8js_a9b00baae69f1145ce5c9bf65f2a28c0c}{}\label{editor__common_8js_a9b00baae69f1145ce5c9bf65f2a28c0c}
+
+
+Definition at line 360 of file editor\+\_\+common.\+js.
+
+\index{editor\+\_\+common.\+js@{editor\+\_\+common.\+js}!startY@{startY}}
+\index{startY@{startY}!editor\+\_\+common.\+js@{editor\+\_\+common.\+js}}
+\subsubsection[{\texorpdfstring{startY}{startY}}]{\setlength{\rightskip}{0pt plus 5cm}var startY = 0}\hypertarget{editor__common_8js_a4c91a3b0b7acb404254887b2ab4062ba}{}\label{editor__common_8js_a4c91a3b0b7acb404254887b2ab4062ba}
+
+
+Definition at line 359 of file editor\+\_\+common.\+js.
+
+\index{editor\+\_\+common.\+js@{editor\+\_\+common.\+js}!target\+Obj@{target\+Obj}}
+\index{target\+Obj@{target\+Obj}!editor\+\_\+common.\+js@{editor\+\_\+common.\+js}}
+\subsubsection[{\texorpdfstring{target\+Obj}{targetObj}}]{\setlength{\rightskip}{0pt plus 5cm}var target\+Obj = {\bf null}}\hypertarget{editor__common_8js_a35ca17e0db68126c271a2cc24812bfc4}{}\label{editor__common_8js_a35ca17e0db68126c271a2cc24812bfc4}
+
+
+Definition at line 363 of file editor\+\_\+common.\+js.
+
+\index{editor\+\_\+common.\+js@{editor\+\_\+common.\+js}!timer@{timer}}
+\index{timer@{timer}!editor\+\_\+common.\+js@{editor\+\_\+common.\+js}}
+\subsubsection[{\texorpdfstring{timer}{timer}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf editor\+Enable\+Auto\+Save} timer = {\bf null}}\hypertarget{editor__common_8js_a3804ebe8d46eb64bc67a436e98f05b12}{}\label{editor__common_8js_a3804ebe8d46eb64bc67a436e98f05b12}
+
+
+Definition at line 43 of file editor\+\_\+common.\+js.
+

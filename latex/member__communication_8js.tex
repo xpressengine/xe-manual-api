@@ -1,0 +1,47 @@
+\hypertarget{member__communication_8js}{}\section{addons/member\+\_\+communication/tpl/member\+\_\+communication.js File Reference}
+\label{member__communication_8js}\index{addons/member\+\_\+communication/tpl/member\+\_\+communication.\+js@{addons/member\+\_\+communication/tpl/member\+\_\+communication.\+js}}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+function \hyperlink{member__communication_8js_a1e853eabf9d8ee3ac2700c9a2ddda672}{j\+Query}
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\index{member\+\_\+communication.\+js@{member\+\_\+communication.\+js}!j\+Query@{j\+Query}}
+\index{j\+Query@{j\+Query}!member\+\_\+communication.\+js@{member\+\_\+communication.\+js}}
+\subsubsection[{\texorpdfstring{j\+Query}{jQuery}}]{\setlength{\rightskip}{0pt plus 5cm}function j\+Query}\hypertarget{member__communication_8js_a1e853eabf9d8ee3ac2700c9a2ddda672}{}\label{member__communication_8js_a1e853eabf9d8ee3ac2700c9a2ddda672}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{
+\hyperlink{jquery-1_8x_8js_ad55530ae1e5978df8e721017c1fc8466}{window}.xeNotifyMessage = \textcolor{keyword}{function}(text, count)\{
+    var $bar;
+    $bar = $(\textcolor{stringliteral}{'div.message.info'});
+    \textcolor{keywordflow}{if}(!$bar.length) \{
+        $bar = $(\textcolor{stringliteral}{'<div class="message info" />'})
+            .hide()
+            .css(\{
+                \textcolor{stringliteral}{'position'}   : \textcolor{stringliteral}{'absolute'},
+                \textcolor{stringliteral}{'z-index'} : \textcolor{stringliteral}{'100'},
+            \})
+            .prependTo(\hyperlink{classdocument}{document}.body);
+    \}
+    text = text.replace(\textcolor{stringliteral}{'%d'}, count);
+    var cur\_module = current\_url.getQuery(\textcolor{stringliteral}{'module'});
+    \textcolor{keywordflow}{if}( cur\_module == \textcolor{stringliteral}{"admin"} )
+        \hyperlink{jquery-1_8x_8min_8js_a79fe0eb780a2a4b5543b4dddf8b6188a}{h} = $bar.html(\textcolor{stringliteral}{'<p><a href="'}+current\_url.setQuery(\textcolor{stringliteral}{'module'},\textcolor{stringliteral}{''}).setQuery(\textcolor{stringliteral}{'act'},\textcolor{stringliteral}{'
+      dispCommunicationMessages'})+\textcolor{stringliteral}{'" target="\_blank">'}+text+\textcolor{stringliteral}{'</a></p>'}).height();
+    \textcolor{keywordflow}{else}
+        \hyperlink{jquery-1_8x_8min_8js_a79fe0eb780a2a4b5543b4dddf8b6188a}{h} = $bar.html(\textcolor{stringliteral}{'<p><a href="'}+current\_url.setQuery(\textcolor{stringliteral}{'module'},\textcolor{stringliteral}{''}).setQuery(\textcolor{stringliteral}{'act'},\textcolor{stringliteral}{'
+      dispCommunicationMessages'})+\textcolor{stringliteral}{'">'}+text+\textcolor{stringliteral}{'</a></p>'}).height();
+    $bar.show().animate(\{top:0\});
+    
+    setTimeout(\textcolor{keyword}{function}()\{
+        $bar.slideUp();
+    \}, 5000);
+\}
+\end{DoxyCode}
+
+
+Definition at line 1 of file member\+\_\+communication.\+js.
+

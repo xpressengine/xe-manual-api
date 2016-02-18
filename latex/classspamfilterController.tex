@@ -23,13 +23,13 @@ Inheritance diagram for spamfilter\+Controller\+:\begin{figure}[H]
 \hyperlink{classspamfilterController_ac01aa63960909cc5c95bfae15ded5d99}{trigger\+Insert\+Comment} (\&\$obj)
 \begin{DoxyCompactList}\small\item\em The routine process to check the time it takes to store a comment, and to ban I\+P/word. \end{DoxyCompactList}\item 
 \hyperlink{classspamfilterController_ace7cf6178aa16638526af5d73a9554eb}{trigger\+Insert\+Trackback} (\&\$obj)
-\begin{DoxyCompactList}\small\item\em Inspect the trackback creation time and I\+P. \end{DoxyCompactList}\item 
-\hyperlink{classspamfilterController_aab95351e0ebeffec58d24354aa92e3f5}{insert\+I\+P} (\$ipaddress\+\_\+list, \$description=null)
-\begin{DoxyCompactList}\small\item\em I\+P registration The registered I\+P address is considered as a spammer. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Inspect the trackback creation time and IP. \end{DoxyCompactList}\item 
+\hyperlink{classspamfilterController_aab95351e0ebeffec58d24354aa92e3f5}{insert\+IP} (\$ipaddress\+\_\+list, \$description=\hyperlink{modernizr_8min_8js_a286f9ec831c5e676eeb493248eab9575}{null})
+\begin{DoxyCompactList}\small\item\em IP registration The registered IP address is considered as a spammer. \end{DoxyCompactList}\item 
 \hyperlink{classspamfilterController_ab449e4ff64d26ae0ad3660522dbd396f}{trigger\+Send\+Message} (\&\$obj)
 \begin{DoxyCompactList}\small\item\em The routine process to check the time it takes to store a message, when writing it, and to ban I\+P/word. \end{DoxyCompactList}\item 
 \hyperlink{classspamfilterController_a14e2968cb7b9688a6b59b4f02a54a743}{insert\+Log} ()
-\begin{DoxyCompactList}\small\item\em Log registration Register the newly accessed I\+P address in the log. In case the log interval is withing a certain time, register it as a spammer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Log registration Register the newly accessed IP address in the log. In case the log interval is withing a certain time, register it as a spammer. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
 
@@ -37,7 +37,7 @@ Inheritance diagram for spamfilter\+Controller\+:\begin{figure}[H]
 The controller class for the spamfilter module. 
 
 \begin{DoxyAuthor}{Author}
-N\+A\+V\+E\+R (\href{mailto:developers@xpressengine.com}{\tt developers@xpressengine.\+com}) 
+N\+A\+V\+ER (\href{mailto:developers@xpressengine.com}{\tt developers@xpressengine.\+com}) 
 \end{DoxyAuthor}
 
 
@@ -46,13 +46,13 @@ Definition at line 8 of file spamfilter.\+controller.\+php.
 
 
 \subsection{Member Function Documentation}
-\hypertarget{classspamfilterController_a8204da601e789d60dbdfe0f692537e70}{}\index{spamfilter\+Controller@{spamfilter\+Controller}!init@{init}}
+\index{spamfilter\+Controller@{spamfilter\+Controller}!init@{init}}
 \index{init@{init}!spamfilter\+Controller@{spamfilter\+Controller}}
-\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}spamfilter\+Controller\+::init (
+\subsubsection[{\texorpdfstring{init()}{init()}}]{\setlength{\rightskip}{0pt plus 5cm}spamfilter\+Controller\+::init (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classspamfilterController_a8204da601e789d60dbdfe0f692537e70}
+)}\hypertarget{classspamfilterController_a8204da601e789d60dbdfe0f692537e70}{}\label{classspamfilterController_a8204da601e789d60dbdfe0f692537e70}
 
 
 Initialization. 
@@ -61,44 +61,44 @@ Initialization.
 
 Definition at line 13 of file spamfilter.\+controller.\+php.
 
-\hypertarget{classspamfilterController_aab95351e0ebeffec58d24354aa92e3f5}{}\index{spamfilter\+Controller@{spamfilter\+Controller}!insert\+I\+P@{insert\+I\+P}}
-\index{insert\+I\+P@{insert\+I\+P}!spamfilter\+Controller@{spamfilter\+Controller}}
-\subsubsection[{insert\+I\+P}]{\setlength{\rightskip}{0pt plus 5cm}spamfilter\+Controller\+::insert\+I\+P (
+\index{spamfilter\+Controller@{spamfilter\+Controller}!insert\+IP@{insert\+IP}}
+\index{insert\+IP@{insert\+IP}!spamfilter\+Controller@{spamfilter\+Controller}}
+\subsubsection[{\texorpdfstring{insert\+I\+P(\$ipaddress\+\_\+list, \$description=null)}{insertIP($ipaddress_list, $description=null)}}]{\setlength{\rightskip}{0pt plus 5cm}spamfilter\+Controller\+::insert\+IP (
 \begin{DoxyParamCaption}
 \item[{}]{\$ipaddress\+\_\+list, }
-\item[{}]{\$description = {\ttfamily null}}
+\item[{}]{\$description = {\ttfamily {\bf null}}}
 \end{DoxyParamCaption}
-)}\label{classspamfilterController_aab95351e0ebeffec58d24354aa92e3f5}
+)}\hypertarget{classspamfilterController_aab95351e0ebeffec58d24354aa92e3f5}{}\label{classspamfilterController_aab95351e0ebeffec58d24354aa92e3f5}
 
 
-I\+P registration The registered I\+P address is considered as a spammer. 
+IP registration The registered IP address is considered as a spammer. 
 
 
 
 Definition at line 165 of file spamfilter.\+controller.\+php.
 
-\hypertarget{classspamfilterController_a14e2968cb7b9688a6b59b4f02a54a743}{}\index{spamfilter\+Controller@{spamfilter\+Controller}!insert\+Log@{insert\+Log}}
+\index{spamfilter\+Controller@{spamfilter\+Controller}!insert\+Log@{insert\+Log}}
 \index{insert\+Log@{insert\+Log}!spamfilter\+Controller@{spamfilter\+Controller}}
-\subsubsection[{insert\+Log}]{\setlength{\rightskip}{0pt plus 5cm}spamfilter\+Controller\+::insert\+Log (
+\subsubsection[{\texorpdfstring{insert\+Log()}{insertLog()}}]{\setlength{\rightskip}{0pt plus 5cm}spamfilter\+Controller\+::insert\+Log (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classspamfilterController_a14e2968cb7b9688a6b59b4f02a54a743}
+)}\hypertarget{classspamfilterController_a14e2968cb7b9688a6b59b4f02a54a743}{}\label{classspamfilterController_a14e2968cb7b9688a6b59b4f02a54a743}
 
 
-Log registration Register the newly accessed I\+P address in the log. In case the log interval is withing a certain time, register it as a spammer. 
+Log registration Register the newly accessed IP address in the log. In case the log interval is withing a certain time, register it as a spammer. 
 
 
 
 Definition at line 221 of file spamfilter.\+controller.\+php.
 
-\hypertarget{classspamfilterController_a31282e59e182dca5e3f94e4c9122578d}{}\index{spamfilter\+Controller@{spamfilter\+Controller}!set\+Avoid\+Log@{set\+Avoid\+Log}}
+\index{spamfilter\+Controller@{spamfilter\+Controller}!set\+Avoid\+Log@{set\+Avoid\+Log}}
 \index{set\+Avoid\+Log@{set\+Avoid\+Log}!spamfilter\+Controller@{spamfilter\+Controller}}
-\subsubsection[{set\+Avoid\+Log}]{\setlength{\rightskip}{0pt plus 5cm}spamfilter\+Controller\+::set\+Avoid\+Log (
+\subsubsection[{\texorpdfstring{set\+Avoid\+Log()}{setAvoidLog()}}]{\setlength{\rightskip}{0pt plus 5cm}spamfilter\+Controller\+::set\+Avoid\+Log (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}\label{classspamfilterController_a31282e59e182dca5e3f94e4c9122578d}
+)}\hypertarget{classspamfilterController_a31282e59e182dca5e3f94e4c9122578d}{}\label{classspamfilterController_a31282e59e182dca5e3f94e4c9122578d}
 
 
 Call this function in case you need to stop the spam filter\textquotesingle{}s usage during the batch work. 
@@ -107,13 +107,13 @@ Call this function in case you need to stop the spam filter\textquotesingle{}s u
 
 Definition at line 20 of file spamfilter.\+controller.\+php.
 
-\hypertarget{classspamfilterController_ac01aa63960909cc5c95bfae15ded5d99}{}\index{spamfilter\+Controller@{spamfilter\+Controller}!trigger\+Insert\+Comment@{trigger\+Insert\+Comment}}
+\index{spamfilter\+Controller@{spamfilter\+Controller}!trigger\+Insert\+Comment@{trigger\+Insert\+Comment}}
 \index{trigger\+Insert\+Comment@{trigger\+Insert\+Comment}!spamfilter\+Controller@{spamfilter\+Controller}}
-\subsubsection[{trigger\+Insert\+Comment}]{\setlength{\rightskip}{0pt plus 5cm}spamfilter\+Controller\+::trigger\+Insert\+Comment (
+\subsubsection[{\texorpdfstring{trigger\+Insert\+Comment(\&\$obj)}{triggerInsertComment(&$obj)}}]{\setlength{\rightskip}{0pt plus 5cm}spamfilter\+Controller\+::trigger\+Insert\+Comment (
 \begin{DoxyParamCaption}
 \item[{\&}]{\$obj}
 \end{DoxyParamCaption}
-)}\label{classspamfilterController_ac01aa63960909cc5c95bfae15ded5d99}
+)}\hypertarget{classspamfilterController_ac01aa63960909cc5c95bfae15ded5d99}{}\label{classspamfilterController_ac01aa63960909cc5c95bfae15ded5d99}
 
 
 The routine process to check the time it takes to store a comment, and to ban I\+P/word. 
@@ -122,13 +122,13 @@ The routine process to check the time it takes to store a comment, and to ban I\
 
 Definition at line 73 of file spamfilter.\+controller.\+php.
 
-\hypertarget{classspamfilterController_a9ed78c37a603b06cb067ecdc523a2ae4}{}\index{spamfilter\+Controller@{spamfilter\+Controller}!trigger\+Insert\+Document@{trigger\+Insert\+Document}}
+\index{spamfilter\+Controller@{spamfilter\+Controller}!trigger\+Insert\+Document@{trigger\+Insert\+Document}}
 \index{trigger\+Insert\+Document@{trigger\+Insert\+Document}!spamfilter\+Controller@{spamfilter\+Controller}}
-\subsubsection[{trigger\+Insert\+Document}]{\setlength{\rightskip}{0pt plus 5cm}spamfilter\+Controller\+::trigger\+Insert\+Document (
+\subsubsection[{\texorpdfstring{trigger\+Insert\+Document(\&\$obj)}{triggerInsertDocument(&$obj)}}]{\setlength{\rightskip}{0pt plus 5cm}spamfilter\+Controller\+::trigger\+Insert\+Document (
 \begin{DoxyParamCaption}
 \item[{\&}]{\$obj}
 \end{DoxyParamCaption}
-)}\label{classspamfilterController_a9ed78c37a603b06cb067ecdc523a2ae4}
+)}\hypertarget{classspamfilterController_a9ed78c37a603b06cb067ecdc523a2ae4}{}\label{classspamfilterController_a9ed78c37a603b06cb067ecdc523a2ae4}
 
 
 The routine process to check the time it takes to store a document, when writing it, and to ban I\+P/word. 
@@ -137,28 +137,28 @@ The routine process to check the time it takes to store a document, when writing
 
 Definition at line 28 of file spamfilter.\+controller.\+php.
 
-\hypertarget{classspamfilterController_ace7cf6178aa16638526af5d73a9554eb}{}\index{spamfilter\+Controller@{spamfilter\+Controller}!trigger\+Insert\+Trackback@{trigger\+Insert\+Trackback}}
+\index{spamfilter\+Controller@{spamfilter\+Controller}!trigger\+Insert\+Trackback@{trigger\+Insert\+Trackback}}
 \index{trigger\+Insert\+Trackback@{trigger\+Insert\+Trackback}!spamfilter\+Controller@{spamfilter\+Controller}}
-\subsubsection[{trigger\+Insert\+Trackback}]{\setlength{\rightskip}{0pt plus 5cm}spamfilter\+Controller\+::trigger\+Insert\+Trackback (
+\subsubsection[{\texorpdfstring{trigger\+Insert\+Trackback(\&\$obj)}{triggerInsertTrackback(&$obj)}}]{\setlength{\rightskip}{0pt plus 5cm}spamfilter\+Controller\+::trigger\+Insert\+Trackback (
 \begin{DoxyParamCaption}
 \item[{\&}]{\$obj}
 \end{DoxyParamCaption}
-)}\label{classspamfilterController_ace7cf6178aa16638526af5d73a9554eb}
+)}\hypertarget{classspamfilterController_ace7cf6178aa16638526af5d73a9554eb}{}\label{classspamfilterController_ace7cf6178aa16638526af5d73a9554eb}
 
 
-Inspect the trackback creation time and I\+P. 
+Inspect the trackback creation time and IP. 
 
 
 
 Definition at line 119 of file spamfilter.\+controller.\+php.
 
-\hypertarget{classspamfilterController_ab449e4ff64d26ae0ad3660522dbd396f}{}\index{spamfilter\+Controller@{spamfilter\+Controller}!trigger\+Send\+Message@{trigger\+Send\+Message}}
+\index{spamfilter\+Controller@{spamfilter\+Controller}!trigger\+Send\+Message@{trigger\+Send\+Message}}
 \index{trigger\+Send\+Message@{trigger\+Send\+Message}!spamfilter\+Controller@{spamfilter\+Controller}}
-\subsubsection[{trigger\+Send\+Message}]{\setlength{\rightskip}{0pt plus 5cm}spamfilter\+Controller\+::trigger\+Send\+Message (
+\subsubsection[{\texorpdfstring{trigger\+Send\+Message(\&\$obj)}{triggerSendMessage(&$obj)}}]{\setlength{\rightskip}{0pt plus 5cm}spamfilter\+Controller\+::trigger\+Send\+Message (
 \begin{DoxyParamCaption}
 \item[{\&}]{\$obj}
 \end{DoxyParamCaption}
-)}\label{classspamfilterController_ab449e4ff64d26ae0ad3660522dbd396f}
+)}\hypertarget{classspamfilterController_ab449e4ff64d26ae0ad3660522dbd396f}{}\label{classspamfilterController_ab449e4ff64d26ae0ad3660522dbd396f}
 
 
 The routine process to check the time it takes to store a message, when writing it, and to ban I\+P/word. 
