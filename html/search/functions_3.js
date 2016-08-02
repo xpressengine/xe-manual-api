@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['b',['b',['../jqplot_8barRenderer_8min_8js.html#a2fc619a5cd76c0e5c2bd9f57a6fcbd3e',1,'jqplot.barRenderer.min.js']]],
+  ['b',['b',['../html_2jquery_8js.html#a2fa551895933fae935a0a6b87282241d',1,'b(function(){if(!b.support.reliableMarginRight){b.cssHooks.marginRight={get:function(bw, bv){var e;b.swap(bw,{display:&quot;inline-block&quot;}, function(){if(bv){e=Z(bw,&quot;margin-right&quot;,&quot;marginRight&quot;)}else{e=bw.style.marginRight}});return e}}}}):&#160;jquery.js'],['../jqplot_8barRenderer_8min_8js.html#a2fc619a5cd76c0e5c2bd9f57a6fcbd3e',1,'b(r, q, u, t, s):&#160;jqplot.barRenderer.min.js']]],
   ['bcrypt',['bcrypt',['../classPassword.html#a097e73abceaf4b976c92471f9b4a2cab',1,'Password']]],
   ['beforeunloadhandler',['beforeUnloadHandler',['../xml__handler_8js.html#a4a5e1ed4563f63d7f80e97a21cf27c2e',1,'xml_handler.js']]],
   ['begin',['begin',['../classDB.html#a41aea6b3a6787467fcfd16d28a302c54',1,'DB']]],

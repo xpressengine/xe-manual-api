@@ -53,6 +53,7 @@ var searchData=
   ['updatepackages',['updatePackages',['../classautoinstallAdminController.html#a1e697b55343500fc590a78c93cd8ee54',1,'autoinstallAdminController']]],
   ['updatereadedcount',['updateReadedCount',['../classdocumentController.html#a437461a6588e59e038ed54316bfa7893',1,'documentController\updateReadedCount()'],['../classdocumentItem.html#ac268c88d87f12155e5885510213028e3',1,'documentItem\updateReadedCount()']]],
   ['updatesite',['updateSite',['../classmoduleController.html#ae2fb61c8a558f0552202c51d2055eede',1,'moduleController']]],
+  ['updatestripes',['updateStripes',['../dynsections_8js.html#a8f7493ad859d4fbf2523917511ee7177',1,'dynsections.js']]],
   ['updatetrackbackcount',['updateTrackbackCount',['../classdocumentController.html#ab932f88ad36638495bb5db441737edef',1,'documentController']]],
   ['updateuploaedcount',['updateUploaedCount',['../classdocumentController.html#a2e3e591a2262e0fffc195456248b89ff',1,'documentController']]],
   ['updatevotedcount',['updateVotedCount',['../classcommentController.html#abe720cae94b04ba356b00f80f6880e91',1,'commentController\updateVotedCount()'],['../classdocumentController.html#aca82ae9abe825d3ee6182d3608e71e31',1,'documentController\updateVotedCount()']]],

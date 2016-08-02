@@ -667,6 +667,8 @@ var searchData=
   ['getxmlrpcfailure',['getXmlRpcFailure',['../blogapi_8func_8php.html#a7e46f8d2f9b3c3115d176926b68b6b09',1,'blogapi.func.php']]],
   ['getxmlrpcresponse',['getXmlRpcResponse',['../blogapi_8func_8php.html#a18b93e72ecaae5fdfcfe1f0f107238f6',1,'blogapi.func.php']]],
   ['getxmltree',['getXmlTree',['../classdocumentController.html#ad18d5e7c2cfbef82020548e13e00df7d',1,'documentController\getXmlTree()'],['../classmenuAdminController.html#ae924a4c2ac50c955e01e9c234d93c767',1,'menuAdminController\getXmlTree()']]],
+  ['getxpos',['getXPos',['../search_8js.html#a76d24aea0009f892f8ccc31d941c0a2b',1,'search.js']]],
+  ['getypos',['getYPos',['../search_8js.html#a8d7b405228661d7b6216b6925d2b8a69',1,'search.js']]],
   ['gn',['gn',['../jquery-1_8x_8min_8js.html#a52b2392dd08654e3e724f72921390090',1,'jquery-1.x.min.js']]],
   ['gnb',['GNB',['../ko_8install_8php.html#a9b1716b68fc04f3492448f38148dcbf5',1,'ko.install.php']]],
   ['gorestore',['goRestore',['../trash__admin_8js.html#a9db79d3ffe8956b9732962bd701c7aa3',1,'trash_admin.js']]],

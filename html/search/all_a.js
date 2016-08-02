@@ -19,7 +19,7 @@ var searchData=
   ['hk2str',['hk2str',['../ui_8hotkey_8js.html#ac068c49e86e64bf0f3455f97c4b342c1',1,'ui.hotkey.js']]],
   ['hn',['hn',['../jquery-1_8x_8min_8js.html#a703d7f6a2aadb540eb051a5f62674194',1,'jquery-1.x.min.js']]],
   ['hotkey',['hotkey',['../ui_8hotkey_8js.html#ae053f07105d65846587bedc4770b42a9',1,'hotkey():&#160;ui.hotkey.js'],['../xpresseditor_8min_8js.html#abb597e48e0204d944bc25547b16e0017',1,'Hotkey():&#160;xpresseditor.min.js'],['../ui_8hotkey_8js.html#a8329a672e3040dcb174348e931fb7dd7',1,'Hotkey():&#160;ui.hotkey.js']]],
-  ['hoverhack',['hoverHack',['../jquery-1_8x_8js.html#a645cef4bdf3fc1881c5272dacddb8917',1,'hoverHack():&#160;jquery-1.x.js'],['../jquery_8js.html#a645cef4bdf3fc1881c5272dacddb8917',1,'hoverHack():&#160;jquery.js']]],
+  ['hoverhack',['hoverHack',['../jquery-1_8x_8js.html#a645cef4bdf3fc1881c5272dacddb8917',1,'hoverHack():&#160;jquery-1.x.js'],['../common_2js_2jquery_8js.html#a645cef4bdf3fc1881c5272dacddb8917',1,'hoverHack():&#160;jquery.js']]],
   ['html',['html',['../JSSpec_8js.html#a28141bc89afb42a8f39e596105992271',1,'JSSpec.js']]],
   ['html5',['html5',['../html5_8js.html#a79c1605dfb417ef9cdeca3f39cc36719',1,'html5.js']]],
   ['html5_2ejs',['html5.js',['../html5_8js.html',1,'']]],

@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['dashboard_5fcounter_2ejs',['dashboard_counter.js',['../dashboard__counter_8js.html',1,'']]],
   ['db_2eclass_2ephp',['DB.class.php',['../DB_8class_8php.html',1,'']]],
   ['dbcubrid_2eclass_2ephp',['DBCubrid.class.php',['../DBCubrid_8class_8php.html',1,'']]],
   ['dbmssql_2eclass_2ephp',['DBMssql.class.php',['../DBMssql_8class_8php.html',1,'']]],
@@ -27,5 +28,6 @@ var searchData=
   ['document_2emodel_2ephp',['document.model.php',['../document_8model_8php.html',1,'']]],
   ['document_2eview_2ephp',['document.view.php',['../document_8view_8php.html',1,'']]],
   ['document_5fadmin_2ejs',['document_admin.js',['../document__admin_8js.html',1,'']]],
-  ['document_5fcategory_2ejs',['document_category.js',['../document__category_8js.html',1,'']]]
+  ['document_5fcategory_2ejs',['document_category.js',['../document__category_8js.html',1,'']]],
+  ['dynsections_2ejs',['dynsections.js',['../dynsections_8js.html',1,'']]]
 ];

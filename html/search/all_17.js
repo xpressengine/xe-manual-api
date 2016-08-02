@@ -1,7 +1,7 @@
 var searchData=
 [
   ['u',['u',['../jquery-1_8x_8min_8js.html#accb4ce8dd4113ac0f510653e31809106',1,'u():&#160;jquery-1.x.min.js'],['../respond_8min_8js.html#accb4ce8dd4113ac0f510653e31809106',1,'u():&#160;respond.min.js']]],
-  ['uamatch',['uaMatch',['../jquery-1_8x_8js.html#ab3da4eef6dbfe0aa1b00063be26f0cd7',1,'uaMatch():&#160;jquery-1.x.js'],['../jquery-1_8x_8min_8js.html#a83209627bbcd8e472c524d831c48cb9b',1,'uaMatch():&#160;jquery-1.x.min.js'],['../jquery_8js.html#ab3da4eef6dbfe0aa1b00063be26f0cd7',1,'uaMatch():&#160;jquery.js']]],
+  ['uamatch',['uaMatch',['../jquery-1_8x_8js.html#ab3da4eef6dbfe0aa1b00063be26f0cd7',1,'uaMatch():&#160;jquery-1.x.js'],['../jquery-1_8x_8min_8js.html#a83209627bbcd8e472c524d831c48cb9b',1,'uaMatch():&#160;jquery-1.x.min.js'],['../common_2js_2jquery_8js.html#ab3da4eef6dbfe0aa1b00063be26f0cd7',1,'uaMatch():&#160;jquery.js']]],
   ['ucfirst',['ucfirst',['../common_8js.html#aa187bbf9f9302aea8e3f0eeccaaea3cb',1,'common.js']]],
   ['uctc',['uctc',['../classuctc.html',1,'']]],
   ['uctc_2ephp',['uctc.php',['../uctc_8php.html',1,'']]],
@@ -9,7 +9,7 @@ var searchData=
   ['ui_2etoolbar_2ejs',['ui.toolbar.js',['../ui_8toolbar_8js.html',1,'']]],
   ['un',['un',['../jquery-1_8x_8min_8js.html#a0fc2cca04563be83e112872ffd700452',1,'jquery-1.x.min.js']]],
   ['unb',['UNB',['../ko_8install_8php.html#abc0cb1f57d83d4a106f4495c30e0df52',1,'ko.install.php']]],
-  ['undefined',['undefined',['../jquery-1_8x_8js.html#a08113a236cc18d2a9d5ce27e638012be',1,'undefined():&#160;jquery-1.x.js'],['../jquery_8js.html#a08113a236cc18d2a9d5ce27e638012be',1,'undefined():&#160;jquery.js'],['../jquery_8min_8js.html#a08113a236cc18d2a9d5ce27e638012be',1,'undefined():&#160;jquery.min.js'],['../xe_8min_8js.html#ae21cc36bf0d65014c717a481a3f8a468',1,'undefined():&#160;xe.min.js'],['../idangerous_8swiper_8min_8js.html#a8cdb71bda0907c3ceafc124eccadf829',1,'undefined():&#160;idangerous.swiper.min.js'],['../admin_2tpl_2js_2jquery_8tmpl_8js.html#a08113a236cc18d2a9d5ce27e638012be',1,'undefined():&#160;jquery.tmpl.js'],['../menu_2tpl_2js_2jquery_8tmpl_8js.html#a08113a236cc18d2a9d5ce27e638012be',1,'undefined():&#160;jquery.tmpl.js']]],
+  ['undefined',['undefined',['../jquery-1_8x_8js.html#a08113a236cc18d2a9d5ce27e638012be',1,'undefined():&#160;jquery-1.x.js'],['../common_2js_2jquery_8js.html#a08113a236cc18d2a9d5ce27e638012be',1,'undefined():&#160;jquery.js'],['../jquery_8min_8js.html#a08113a236cc18d2a9d5ce27e638012be',1,'undefined():&#160;jquery.min.js'],['../xe_8min_8js.html#ae21cc36bf0d65014c717a481a3f8a468',1,'undefined():&#160;xe.min.js'],['../idangerous_8swiper_8min_8js.html#a8cdb71bda0907c3ceafc124eccadf829',1,'undefined():&#160;idangerous.swiper.min.js'],['../admin_2tpl_2js_2jquery_8tmpl_8js.html#a08113a236cc18d2a9d5ce27e638012be',1,'undefined():&#160;jquery.tmpl.js'],['../menu_2tpl_2js_2jquery_8tmpl_8js.html#a08113a236cc18d2a9d5ce27e638012be',1,'undefined():&#160;jquery.tmpl.js']]],
   ['unescape',['unescape',['../admin_2tpl_2js_2jquery_8tmpl_8js.html#a7bc49e0067f94427aa645d548daf1f0a',1,'unescape(args):&#160;jquery.tmpl.js'],['../menu_2tpl_2js_2jquery_8tmpl_8js.html#a7bc49e0067f94427aa645d548daf1f0a',1,'unescape(args):&#160;jquery.tmpl.js']]],
   ['unescapefilepostparams',['unescapeFilePostParams',['../swfupload_8js.html#a4b18e3f5cb887ac45ee0cf66c9073163',1,'swfupload.js']]],
   ['uninstall',['uninstall',['../classModuleInstaller.html#a641ebe46305e7c320eec21a13d7e029f',1,'ModuleInstaller']]],
@@ -67,6 +67,7 @@ var searchData=
   ['updatepackages',['updatePackages',['../classautoinstallAdminController.html#a1e697b55343500fc590a78c93cd8ee54',1,'autoinstallAdminController']]],
   ['updatereadedcount',['updateReadedCount',['../classdocumentController.html#a437461a6588e59e038ed54316bfa7893',1,'documentController\updateReadedCount()'],['../classdocumentItem.html#ac268c88d87f12155e5885510213028e3',1,'documentItem\updateReadedCount()']]],
   ['updatesite',['updateSite',['../classmoduleController.html#ae2fb61c8a558f0552202c51d2055eede',1,'moduleController']]],
+  ['updatestripes',['updateStripes',['../dynsections_8js.html#a8f7493ad859d4fbf2523917511ee7177',1,'dynsections.js']]],
   ['updatetrackbackcount',['updateTrackbackCount',['../classdocumentController.html#ab932f88ad36638495bb5db441737edef',1,'documentController']]],
   ['updateuploaedcount',['updateUploaedCount',['../classdocumentController.html#a2e3e591a2262e0fffc195456248b89ff',1,'documentController']]],
   ['updatevotedcount',['updateVotedCount',['../classcommentController.html#abe720cae94b04ba356b00f80f6880e91',1,'commentController\updateVotedCount()'],['../classdocumentController.html#aca82ae9abe825d3ee6182d3608e71e31',1,'documentController\updateVotedCount()']]],
