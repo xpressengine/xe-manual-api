@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['q',['q',['../respond_8min_8js.html#aee3046c01d22ccd1efcb944608aec125',1,'q():&#160;respond.min.js'],['../html5_8js.html#a6ae92e1bc8099921cb6ca409c5d57b0b',1,'q(f)})(this:&#160;html5.js'],['../jquery-1_8x_8min_8js.html#a044ff3ae9eca11d4603780243cdfc911',1,'Q():&#160;jquery-1.x.min.js']]],
+  ['q',['Q',['../jquery-1_8x_8min_8js.html#a044ff3ae9eca11d4603780243cdfc911',1,'Q():&#160;jquery-1.x.min.js'],['../respond_8min_8js.html#aee3046c01d22ccd1efcb944608aec125',1,'q():&#160;respond.min.js'],['../html5_8js.html#a6ae92e1bc8099921cb6ca409c5d57b0b',1,'q(f)})(this:&#160;html5.js']]],
   ['query',['Query',['../classQuery.html',1,'Query'],['../classQuery.html#a18345a4b454ee480c261c15c4338768e',1,'Query\Query()']]],
   ['query_2eclass_2ephp',['Query.class.php',['../Query_8class_8php.html',1,'']]],
   ['queryargument',['QueryArgument',['../classQueryArgument.html',1,'QueryArgument'],['../classQueryArgument.html#afea147e5e68498289eb0b70a4ff18501',1,'QueryArgument\QueryArgument()']]],

@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['search_2ejs',['search.js',['../search_8js.html',1,'']]],
-  ['searchdata_2ejs',['searchdata.js',['../searchdata_8js.html',1,'']]],
   ['security_2eclass_2ephp',['Security.class.php',['../Security_8class_8php.html',1,'']]],
   ['selectcolumnstag_2eclass_2ephp',['SelectColumnsTag.class.php',['../SelectColumnsTag_8class_8php.html',1,'']]],
   ['selectcolumntag_2eclass_2ephp',['SelectColumnTag.class.php',['../SelectColumnTag_8class_8php.html',1,'']]],

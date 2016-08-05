@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['p',['p',['../html_2jquery_8js.html#a2335e57f79b6acfb6de59c235dc8a83e',1,'jquery.js']]],
   ['pagehandler',['PageHandler',['../classPageHandler.html#a98c8fc6b290d49c3880c323b263fe7e7',1,'PageHandler']]],
   ['parallax',['parallax',['../layouts_2xedition_2js_2layout_8js.html#a7d43856c053df0b42704b63143448de8',1,'layout.js']]],
   ['parse',['parse',['../classTemplateHandler.html#acf0023ac6383d43e9b0ab854c75c0694',1,'TemplateHandler\parse()'],['../classGeneralXmlParser.html#a908eec0715e2c7470a18e149a092f300',1,'GeneralXmlParser\parse()'],['../classXmlParser.html#aa7b52a3ab42568f6f49056d928688e7a',1,'XmlParser\parse()'],['../classXmlQueryParser.html#a73bf00a88a856f3acb99dba3f554aeb2',1,'XmlQueryParser\parse()']]],

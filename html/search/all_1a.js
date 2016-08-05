@@ -14,7 +14,7 @@ var searchData=
   ['xdeletecookie',['xDeleteCookie',['../x_8js.html#a2ef492e2a67dfeda5725dfb655d529c1',1,'xDeleteCookie(name, path):&#160;x.js'],['../x_8min_8js.html#a8d11bcc4a6cadbef723cad15fad437d1',1,'xDeleteCookie(a, b):&#160;x.min.js']]],
   ['xdeprecate',['xDeprecate',['../x_8js.html#ae16ec7c814f18dce01fb3fbd0b6f02d9',1,'xDeprecate(funcName):&#160;x.js'],['../x_8min_8js.html#ae97dda23f87017094e34b482c4a73a2d',1,'xDeprecate(a):&#160;x.min.js']]],
   ['xdisplay',['xDisplay',['../x_8js.html#ab20e464fded982d9ef7438ad45a6c2d0',1,'xDisplay(e, s):&#160;x.js'],['../x_8min_8js.html#a2136d7a75acf654306ed59b11f5d1e04',1,'xDisplay(a, b):&#160;x.min.js']]],
-  ['xe',['xe',['../namespacexe.html',1,'xe'],['../namespaceXE.html',1,'XE'],['../js__app_8js.html#a5c0791c8ea63d6ddcf0ef075790c7ccd',1,'xe():&#160;js_app.js'],['../xe_8min_8js.html#a5c0791c8ea63d6ddcf0ef075790c7ccd',1,'xe():&#160;xe.min.js'],['../common_8js.html#aaa263f22ef2edb148749b6e2ffeeeba0',1,'XE():&#160;common.js']]],
+  ['xe',['xe',['../namespacexe.html',1,'xe'],['../namespaceXE.html',1,'XE'],['../common_8js.html#aaa263f22ef2edb148749b6e2ffeeeba0',1,'XE():&#160;common.js'],['../js__app_8js.html#a5c0791c8ea63d6ddcf0ef075790c7ccd',1,'xe():&#160;js_app.js'],['../xe_8min_8js.html#a5c0791c8ea63d6ddcf0ef075790c7ccd',1,'xe():&#160;xe.min.js']]],
   ['xe_2ejs',['xe.js',['../xe_8js.html',1,'']]],
   ['xe_2emin_2ejs',['xe.min.js',['../xe_8min_8js.html',1,'']]],
   ['xe_5fbgcolor',['XE_BGColor',['../xpresseditor_8min_8js.html#a2cee4b113ec62d7487bf58fef259c00c',1,'xpresseditor.min.js']]],

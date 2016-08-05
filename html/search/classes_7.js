@@ -16,6 +16,7 @@ var searchData=
   ['http_5frequest2_5fmessageexception',['HTTP_Request2_MessageException',['../classHTTP__Request2__MessageException.html',1,'']]],
   ['http_5frequest2_5fmultipartbody',['HTTP_Request2_MultipartBody',['../classHTTP__Request2__MultipartBody.html',1,'']]],
   ['http_5frequest2_5fnotimplementedexception',['HTTP_Request2_NotImplementedException',['../classHTTP__Request2__NotImplementedException.html',1,'']]],
+  ['http_5frequest2_5fobserver_5fdownload',['HTTP_Request2_Observer_Download',['../classHTTP__Request2__Observer__Download.html',1,'']]],
   ['http_5frequest2_5fobserver_5flog',['HTTP_Request2_Observer_Log',['../classHTTP__Request2__Observer__Log.html',1,'']]],
   ['http_5frequest2_5fresponse',['HTTP_Request2_Response',['../classHTTP__Request2__Response.html',1,'']]],
   ['http_5frequest2_5fsocketwrapper',['HTTP_Request2_SocketWrapper',['../classHTTP__Request2__SocketWrapper.html',1,'']]],

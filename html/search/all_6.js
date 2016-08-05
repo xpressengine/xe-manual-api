@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['d',['d',['../jquery-1_8x_8min_8js.html#aeb337d295abaddb5ec3cb34cc2e2bbc9',1,'d():&#160;jquery-1.x.min.js'],['../respond_8min_8js.html#aeb337d295abaddb5ec3cb34cc2e2bbc9',1,'d():&#160;respond.min.js'],['../xe_8min_8js.html#a1aabac6d068eef6a7bad3fdf50a05cc8',1,'d():&#160;xe.min.js'],['../jquery_8parallax-scroll_8min_8js.html#aeb337d295abaddb5ec3cb34cc2e2bbc9',1,'d():&#160;jquery.parallax-scroll.min.js'],['../jqplot_8barRenderer_8min_8js.html#a36541169dfff685f807208881a4f0021',1,'d():&#160;jqplot.barRenderer.min.js'],['../jqplot_8pointLabels_8min_8js.html#aeb337d295abaddb5ec3cb34cc2e2bbc9',1,'d():&#160;jqplot.pointLabels.min.js'],['../xpresseditor_8min_8js.html#aa27188e30a5d2270a230edf44af69623',1,'d():&#160;xpresseditor.min.js']]],
+  ['d',['d',['../jquery-1_8x_8min_8js.html#aee5af4e0aaa2cfde6be1272633d18b59',1,'d():&#160;jquery-1.x.min.js'],['../respond_8min_8js.html#aeb337d295abaddb5ec3cb34cc2e2bbc9',1,'d():&#160;respond.min.js'],['../xe_8min_8js.html#a1aabac6d068eef6a7bad3fdf50a05cc8',1,'d():&#160;xe.min.js'],['../jquery_8parallax-scroll_8min_8js.html#aeb337d295abaddb5ec3cb34cc2e2bbc9',1,'d():&#160;jquery.parallax-scroll.min.js'],['../jqplot_8barRenderer_8min_8js.html#a36541169dfff685f807208881a4f0021',1,'d():&#160;jqplot.barRenderer.min.js'],['../jqplot_8pointLabels_8min_8js.html#aeb337d295abaddb5ec3cb34cc2e2bbc9',1,'d():&#160;jqplot.pointLabels.min.js'],['../xpresseditor_8min_8js.html#aa27188e30a5d2270a230edf44af69623',1,'d():&#160;xpresseditor.min.js']]],
   ['dashboard_5fcounter_2ejs',['dashboard_counter.js',['../dashboard__counter_8js.html',1,'']]],
-  ['data',['data',['../jquery-1_8x_8js.html#ad800f38c547e3a3ed2b14d23d10fc2b1',1,'data():&#160;jquery-1.x.js'],['../jquery-1_8x_8min_8js.html#a7f60fda3d1d4191e549df075eeacf25b',1,'data():&#160;jquery-1.x.min.js'],['../common_2js_2jquery_8js.html#ad800f38c547e3a3ed2b14d23d10fc2b1',1,'data():&#160;jquery.js'],['../document__category_8js.html#a94b4f25375ac17cb917012e05bf514a7',1,'data():&#160;document_category.js']]],
+  ['data',['data',['../jquery-1_8x_8js.html#ad800f38c547e3a3ed2b14d23d10fc2b1',1,'data():&#160;jquery-1.x.js'],['../jquery-1_8x_8min_8js.html#a7f60fda3d1d4191e549df075eeacf25b',1,'data():&#160;jquery-1.x.min.js'],['../jquery_8js.html#ad800f38c547e3a3ed2b14d23d10fc2b1',1,'data():&#160;jquery.js'],['../document__category_8js.html#a94b4f25375ac17cb917012e05bf514a7',1,'data():&#160;document_category.js']]],
   ['dataspace',['dataSpace',['../jquery_8jqplot_8min_8js.html#aa189256ed5c7afb64278a6c1d7a69929',1,'jquery.jqplot.min.js']]],
   ['dateequalitymatcher',['DateEqualityMatcher',['../JSSpec_8js.html#a055d7f059e9835a52f01a3a3c1c3396b',1,'JSSpec.js']]],
   ['db',['DB',['../classDB.html',1,'DB'],['../classDB.html#a29a603c52c10831cddee82518417f992',1,'DB\DB()']]],
@@ -113,7 +113,7 @@ var searchData=
   ['detectmimetype',['detectMimeType',['../classHTTP__Request2.html#ac1b8f0776d5faf41503d440350c8b6d6',1,'HTTP_Request2']]],
   ['detectutf8',['detectUTF8',['../func_8inc_8php.html#a97f60adff3c4bbb5a341a557eef742b0',1,'func.inc.php']]],
   ['dialoglayermanager',['DialogLayerManager',['../xpresseditor_8min_8js.html#a31cd302a86a96581ba8ae1ef74bf9341',1,'xpresseditor.min.js']]],
-  ['die',['die',['../jquery-1_8x_8js.html#af7e4e16696e8209560e9d5e304ea7628',1,'die():&#160;jquery-1.x.js'],['../jquery-1_8x_8min_8js.html#a8000af92246746444c1d08e9650d86af',1,'die():&#160;jquery-1.x.min.js'],['../common_2js_2jquery_8js.html#af7e4e16696e8209560e9d5e304ea7628',1,'die():&#160;jquery.js']]],
+  ['die',['die',['../jquery-1_8x_8js.html#af7e4e16696e8209560e9d5e304ea7628',1,'die():&#160;jquery-1.x.js'],['../jquery-1_8x_8min_8js.html#a8000af92246746444c1d08e9650d86af',1,'die():&#160;jquery-1.x.min.js'],['../jquery_8js.html#af7e4e16696e8209560e9d5e304ea7628',1,'die():&#160;jquery.js']]],
   ['diff_5faddindex',['diff_addIndex',['../diff__match__patch_8js.html#a9d48482f30c2aedee802c366decd331b',1,'diff_match_patch.js']]],
   ['diff_5fcharstolines',['diff_charsToLines',['../diff__match__patch_8js.html#af66e9eff08f6d8a51d48a57a04cd423c',1,'diff_match_patch.js']]],
   ['diff_5fcleanupefficiency',['diff_cleanupEfficiency',['../diff__match__patch_8js.html#a4d5c3121dd71aa8634b8d8b4551038f9',1,'diff_match_patch.js']]],
@@ -457,6 +457,7 @@ var searchData=
   ['douploadimagemark',['doUploadImageMark',['../member_8js.html#a901723065bed2983f0ef7f8de7f983e2',1,'member.js']]],
   ['douploadimagename',['doUploadImageName',['../member_8js.html#acc869c0f8532bb2d2783798cedc7ad1f',1,'member.js']]],
   ['douploadprofileimage',['doUploadProfileImage',['../member_8js.html#ad8e5d71f941425ae257a608105090f93',1,'member.js']]],
+  ['download_2ephp',['Download.php',['../Download_8php.html',1,'']]],
   ['draggablelayer',['DraggableLayer',['../xpresseditor_8min_8js.html#a7b03224a4dee3ac32ea8a265fdee9644',1,'xpresseditor.min.js']]],
   ['draw',['draw',['../jqplot_8barRenderer_8min_8js.html#aa8d732c6bf88131742afc17c85c7a973',1,'draw():&#160;jqplot.barRenderer.min.js'],['../jqplot_8categoryAxisRenderer_8min_8js.html#a2c433b45051b39e0baa1fb02244ea602',1,'draw():&#160;jqplot.categoryAxisRenderer.min.js'],['../jqplot_8pointLabels_8min_8js.html#abefa7fb61f3251e3e669db4f678360ee',1,'draw():&#160;jqplot.pointLabels.min.js']]],
   ['drawchart',['drawChart',['../dashboard__counter_8js.html#a4b6226e2c1a04569b262234dda762ea0',1,'dashboard_counter.js']]],
@@ -464,6 +465,5 @@ var searchData=
   ['dropcolumn',['dropColumn',['../classDBCubrid.html#ad0b269d73617c6de8b3135ee36ae43d2',1,'DBCubrid\dropColumn()'],['../classDBMssql.html#a802707618ed283cd4143c82972b3ade5',1,'DBMssql\dropColumn()'],['../classDBMysql.html#aa4cd80d663225f3cd7a539d7d7101b38',1,'DBMysql\dropColumn()']]],
   ['dropindex',['dropIndex',['../classDBCubrid.html#a11876878e4a688f8d3407aaa93ffd86e',1,'DBCubrid\dropIndex()'],['../classDBMssql.html#a83bea7f71705370699eac384c5f93088',1,'DBMssql\dropIndex()'],['../classDBMysql.html#a43937761dd37fa25ef0d373446d01d90',1,'DBMysql\dropIndex()']]],
   ['droptable',['dropTable',['../classDB.html#a63a3a5bdc8e30e1cee37cefddd5ce8de',1,'DB']]],
-  ['dsl',['DSL',['../JSSpec_8js.html#a2794505bd703910982da3214671f575a',1,'JSSpec.js']]],
-  ['dynsections_2ejs',['dynsections.js',['../dynsections_8js.html',1,'']]]
+  ['dsl',['DSL',['../JSSpec_8js.html#a2794505bd703910982da3214671f575a',1,'JSSpec.js']]]
 ];

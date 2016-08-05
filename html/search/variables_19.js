@@ -1,7 +1,7 @@
 var searchData=
 [
   ['x',['x',['../jquery-1_8x_8min_8js.html#a81e910173af87b1161e719a504d52407',1,'jquery-1.x.min.js']]],
-  ['xe',['xe',['../js__app_8js.html#a5c0791c8ea63d6ddcf0ef075790c7ccd',1,'xe():&#160;js_app.js'],['../xe_8min_8js.html#a5c0791c8ea63d6ddcf0ef075790c7ccd',1,'xe():&#160;xe.min.js'],['../common_8js.html#aaa263f22ef2edb148749b6e2ffeeeba0',1,'XE():&#160;common.js']]],
+  ['xe',['XE',['../common_8js.html#aaa263f22ef2edb148749b6e2ffeeeba0',1,'XE():&#160;common.js'],['../js__app_8js.html#a5c0791c8ea63d6ddcf0ef075790c7ccd',1,'xe():&#160;js_app.js'],['../xe_8min_8js.html#a5c0791c8ea63d6ddcf0ef075790c7ccd',1,'xe():&#160;xe.min.js']]],
   ['xe_5fbgcolor',['XE_BGColor',['../xpresseditor_8min_8js.html#a2cee4b113ec62d7487bf58fef259c00c',1,'xpresseditor.min.js']]],
   ['xe_5fcolorpalette',['XE_ColorPalette',['../xpresseditor_8min_8js.html#a8e25fd18a9b4b40cfd0dd757658a4a97',1,'xpresseditor.min.js']]],
   ['xe_5feditingarea_5fhtmlsrc',['XE_EditingArea_HTMLSrc',['../xpresseditor_8min_8js.html#a86c7f5c09177b2c9fc1319a686c9794e',1,'xpresseditor.min.js']]],
