@@ -231,6 +231,7 @@ var searchData=
   ['show_5fwaiting_5fmessage',['show_waiting_message',['../xe_8min_8js.html#af060e0ff51d24a95739944b0b716e4ca',1,'show_waiting_message():&#160;xe.min.js'],['../xml__handler_8js.html#af060e0ff51d24a95739944b0b716e4ca',1,'show_waiting_message():&#160;xml_handler.js']]],
   ['showhide',['showHide',['../jquery-1_8x_8js.html#a002b8e481f3ab2a83194366aceb7a706',1,'jquery-1.x.js']]],
   ['showsendenv',['showSendEnv',['../classadminAdminView.html#a4c4c900f637d618a7c8fbcbf523ad801',1,'adminAdminView']]],
+  ['shutdownhandler',['shutdownHandler',['../classModuleHandler.html#a6295c502e315baa6c563f48ddf08e233',1,'ModuleHandler']]],
   ['signup_5fcheck_2ejs',['signup_check.js',['../signup__check_8js.html',1,'']]],
   ['signup_5fconfig_2ejs',['signup_config.js',['../signup__config_8js.html',1,'']]],
   ['simpleselectionimpl_5fie',['SimpleSelectionImpl_IE',['../xpresseditor_8min_8js.html#a0a89e91f9d0485928b7909c073de4218',1,'xpresseditor.min.js']]],

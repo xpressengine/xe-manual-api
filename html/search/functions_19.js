@@ -10,6 +10,7 @@ var searchData=
   ['xdeletecookie',['xDeleteCookie',['../x_8js.html#a2ef492e2a67dfeda5725dfb655d529c1',1,'xDeleteCookie(name, path):&#160;x.js'],['../x_8min_8js.html#a8d11bcc4a6cadbef723cad15fad437d1',1,'xDeleteCookie(a, b):&#160;x.min.js']]],
   ['xdeprecate',['xDeprecate',['../x_8js.html#ae16ec7c814f18dce01fb3fbd0b6f02d9',1,'xDeprecate(funcName):&#160;x.js'],['../x_8min_8js.html#ae97dda23f87017094e34b482c4a73a2d',1,'xDeprecate(a):&#160;x.min.js']]],
   ['xdisplay',['xDisplay',['../x_8js.html#ab20e464fded982d9ef7438ad45a6c2d0',1,'xDisplay(e, s):&#160;x.js'],['../x_8min_8js.html#a2136d7a75acf654306ed59b11f5d1e04',1,'xDisplay(a, b):&#160;x.min.js']]],
+  ['xeerrorlog',['xeErrorLog',['../classModuleHandler.html#ae8a81ab7540edc526035f1375706dd7a',1,'ModuleHandler']]],
   ['xehttprequest',['XEHttpRequest',['../classXEHttpRequest.html#aa8a672ad4e5c3cc8d3b7a9cecc29d349',1,'XEHttpRequest']]],
   ['xevent',['xEvent',['../x_8js.html#a4af3da351244eb4a6f56ba2ad6510839',1,'xEvent(evt):&#160;x.js'],['../x_8min_8js.html#a60f7411d346ae9c9b6ec73c25e3f3be4',1,'xEvent(a):&#160;x.min.js']]],
   ['xfirstchild',['xFirstChild',['../x_8js.html#a52c1d440d8b22de89060b3cc2ae25e6f',1,'xFirstChild(e, t):&#160;x.js'],['../x_8min_8js.html#a63ff25b822293ac1ea10fce08fdd0d69',1,'xFirstChild(a, b):&#160;x.min.js']]],

@@ -46,6 +46,7 @@ var searchData=
   ['xe_5fwysiwygstylegetter',['XE_WYSIWYGStyleGetter',['../xpresseditor_8min_8js.html#ac90aa99287bf95049ea655607562c659',1,'xpresseditor.min.js']]],
   ['xe_5fwysiwygstyler',['XE_WYSIWYGStyler',['../xpresseditor_8min_8js.html#a4cba8109aad9dfc63b4706c21cbd40a7',1,'xpresseditor.min.js']]],
   ['xeckeditor',['XeCkEditor',['../editor_8app_8js.html#aa643c7978c375d1b10a652e59012c3d7',1,'editor.app.js']]],
+  ['xeerrorlog',['xeErrorLog',['../classModuleHandler.html#ae8a81ab7540edc526035f1375706dd7a',1,'ModuleHandler']]],
   ['xehttprequest',['XEHttpRequest',['../classXEHttpRequest.html',1,'XEHttpRequest'],['../classXEHttpRequest.html#aa8a672ad4e5c3cc8d3b7a9cecc29d349',1,'XEHttpRequest\XEHttpRequest()']]],
   ['xehttprequest_2eclass_2ephp',['XEHttpRequest.class.php',['../XEHttpRequest_8class_8php.html',1,'']]],
   ['xeuploader',['XeUploader',['../fileupload_8app_8js.html#a0a593a6f95d84c5009feb5cfa0808fc6',1,'fileupload.app.js']]],
