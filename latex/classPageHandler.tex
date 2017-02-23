@@ -13,7 +13,7 @@ Inheritance diagram for Page\+Handler\+:\begin{figure}[H]
 \item 
 \hyperlink{classPageHandler_a259d01838d005d854d4cc263ba524de7}{get\+Next\+Page} ()
 \item 
-\hyperlink{classPageHandler_a971f178609a0dd6e1a0fd07daa94782d}{get\+Page} (\$\hyperlink{jquery-1_8x_8js_a4a9f594d20d927164551fc7fa4751a2f}{offset})
+\hyperlink{classPageHandler_a971f178609a0dd6e1a0fd07daa94782d}{get\+Page} (\$offset)
 \end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
@@ -51,13 +51,12 @@ Definition at line 13 of file Page\+Handler.\+class.\+php.
 
 
 \subsection{Member Function Documentation}
+\hypertarget{classPageHandler_a259d01838d005d854d4cc263ba524de7}{}\label{classPageHandler_a259d01838d005d854d4cc263ba524de7} 
 \index{Page\+Handler@{Page\+Handler}!get\+Next\+Page@{get\+Next\+Page}}
 \index{get\+Next\+Page@{get\+Next\+Page}!Page\+Handler@{Page\+Handler}}
-\subsubsection[{\texorpdfstring{get\+Next\+Page()}{getNextPage()}}]{\setlength{\rightskip}{0pt plus 5cm}Page\+Handler\+::get\+Next\+Page (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classPageHandler_a259d01838d005d854d4cc263ba524de7}{}\label{classPageHandler_a259d01838d005d854d4cc263ba524de7}
+\subsubsection{\texorpdfstring{get\+Next\+Page()}{getNextPage()}}
+{\footnotesize\ttfamily Page\+Handler\+::get\+Next\+Page (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 request next page \begin{DoxyReturn}{Returns}
 int next page number 
 \end{DoxyReturn}
@@ -65,13 +64,12 @@ int next page number
 
 Definition at line 71 of file Page\+Handler.\+class.\+php.
 
+\hypertarget{classPageHandler_a971f178609a0dd6e1a0fd07daa94782d}{}\label{classPageHandler_a971f178609a0dd6e1a0fd07daa94782d} 
 \index{Page\+Handler@{Page\+Handler}!get\+Page@{get\+Page}}
 \index{get\+Page@{get\+Page}!Page\+Handler@{Page\+Handler}}
-\subsubsection[{\texorpdfstring{get\+Page(\$offset)}{getPage($offset)}}]{\setlength{\rightskip}{0pt plus 5cm}Page\+Handler\+::get\+Page (
-\begin{DoxyParamCaption}
-\item[{}]{\$offset}
-\end{DoxyParamCaption}
-)}\hypertarget{classPageHandler_a971f178609a0dd6e1a0fd07daa94782d}{}\label{classPageHandler_a971f178609a0dd6e1a0fd07daa94782d}
+\subsubsection{\texorpdfstring{get\+Page()}{getPage()}}
+{\footnotesize\ttfamily Page\+Handler\+::get\+Page (\begin{DoxyParamCaption}\item[{}]{\$offset }\end{DoxyParamCaption})}
+
 return number of page that added offset. 
 \begin{DoxyParams}[1]{Parameters}
 int & {\em \$offset} & \\
@@ -84,16 +82,12 @@ int
 
 Definition at line 86 of file Page\+Handler.\+class.\+php.
 
+\hypertarget{classPageHandler_a98c8fc6b290d49c3880c323b263fe7e7}{}\label{classPageHandler_a98c8fc6b290d49c3880c323b263fe7e7} 
 \index{Page\+Handler@{Page\+Handler}!Page\+Handler@{Page\+Handler}}
 \index{Page\+Handler@{Page\+Handler}!Page\+Handler@{Page\+Handler}}
-\subsubsection[{\texorpdfstring{Page\+Handler(\$total\+\_\+count, \$total\+\_\+page, \$cur\+\_\+page, \$page\+\_\+count=10)}{PageHandler($total_count, $total_page, $cur_page, $page_count=10)}}]{\setlength{\rightskip}{0pt plus 5cm}Page\+Handler\+::\+Page\+Handler (
-\begin{DoxyParamCaption}
-\item[{}]{\$total\+\_\+count, }
-\item[{}]{\$total\+\_\+page, }
-\item[{}]{\$cur\+\_\+page, }
-\item[{}]{\$page\+\_\+count = {\ttfamily 10}}
-\end{DoxyParamCaption}
-)}\hypertarget{classPageHandler_a98c8fc6b290d49c3880c323b263fe7e7}{}\label{classPageHandler_a98c8fc6b290d49c3880c323b263fe7e7}
+\subsubsection{\texorpdfstring{Page\+Handler()}{PageHandler()}}
+{\footnotesize\ttfamily Page\+Handler\+::\+Page\+Handler (\begin{DoxyParamCaption}\item[{}]{\$total\+\_\+count,  }\item[{}]{\$total\+\_\+page,  }\item[{}]{\$cur\+\_\+page,  }\item[{}]{\$page\+\_\+count = {\ttfamily 10} }\end{DoxyParamCaption})}
+
 constructor 
 \begin{DoxyParams}[1]{Parameters}
 int & {\em \$total\+\_\+count} & number of total items \\
@@ -115,9 +109,12 @@ Definition at line 33 of file Page\+Handler.\+class.\+php.
 
 
 \subsection{Member Data Documentation}
+\hypertarget{classPageHandler_acc2df2502fc0bcda4a9c9f9892e8581e}{}\label{classPageHandler_acc2df2502fc0bcda4a9c9f9892e8581e} 
 \index{Page\+Handler@{Page\+Handler}!\$cur\+\_\+page@{\$cur\+\_\+page}}
 \index{\$cur\+\_\+page@{\$cur\+\_\+page}!Page\+Handler@{Page\+Handler}}
-\subsubsection[{\texorpdfstring{\$cur\+\_\+page}{$cur_page}}]{\setlength{\rightskip}{0pt plus 5cm}Page\+Handler\+::\$cur\+\_\+page = 0}\hypertarget{classPageHandler_acc2df2502fc0bcda4a9c9f9892e8581e}{}\label{classPageHandler_acc2df2502fc0bcda4a9c9f9892e8581e}
+\subsubsection{\texorpdfstring{\$cur\+\_\+page}{$cur\_page}}
+{\footnotesize\ttfamily Page\+Handler\+::\$cur\+\_\+page = 0}
+
 
 
 current page number 
@@ -126,9 +123,12 @@ current page number
 
 Definition at line 18 of file Page\+Handler.\+class.\+php.
 
+\hypertarget{classPageHandler_adee671fac811b630df2886a43108b5ff}{}\label{classPageHandler_adee671fac811b630df2886a43108b5ff} 
 \index{Page\+Handler@{Page\+Handler}!\$first\+\_\+page@{\$first\+\_\+page}}
 \index{\$first\+\_\+page@{\$first\+\_\+page}!Page\+Handler@{Page\+Handler}}
-\subsubsection[{\texorpdfstring{\$first\+\_\+page}{$first_page}}]{\setlength{\rightskip}{0pt plus 5cm}Page\+Handler\+::\$first\+\_\+page = 1}\hypertarget{classPageHandler_adee671fac811b630df2886a43108b5ff}{}\label{classPageHandler_adee671fac811b630df2886a43108b5ff}
+\subsubsection{\texorpdfstring{\$first\+\_\+page}{$first\_page}}
+{\footnotesize\ttfamily Page\+Handler\+::\$first\+\_\+page = 1}
+
 
 
 first page number 
@@ -137,9 +137,12 @@ first page number
 
 Definition at line 20 of file Page\+Handler.\+class.\+php.
 
+\hypertarget{classPageHandler_ad0a035b1ac1f86fe173d5ea4e8c2bef7}{}\label{classPageHandler_ad0a035b1ac1f86fe173d5ea4e8c2bef7} 
 \index{Page\+Handler@{Page\+Handler}!\$last\+\_\+page@{\$last\+\_\+page}}
 \index{\$last\+\_\+page@{\$last\+\_\+page}!Page\+Handler@{Page\+Handler}}
-\subsubsection[{\texorpdfstring{\$last\+\_\+page}{$last_page}}]{\setlength{\rightskip}{0pt plus 5cm}Page\+Handler\+::\$last\+\_\+page = 1}\hypertarget{classPageHandler_ad0a035b1ac1f86fe173d5ea4e8c2bef7}{}\label{classPageHandler_ad0a035b1ac1f86fe173d5ea4e8c2bef7}
+\subsubsection{\texorpdfstring{\$last\+\_\+page}{$last\_page}}
+{\footnotesize\ttfamily Page\+Handler\+::\$last\+\_\+page = 1}
+
 
 
 last page number 
@@ -148,9 +151,12 @@ last page number
 
 Definition at line 21 of file Page\+Handler.\+class.\+php.
 
+\hypertarget{classPageHandler_a48a16aadd0c373c8856df7df954f90ff}{}\label{classPageHandler_a48a16aadd0c373c8856df7df954f90ff} 
 \index{Page\+Handler@{Page\+Handler}!\$page\+\_\+count@{\$page\+\_\+count}}
 \index{\$page\+\_\+count@{\$page\+\_\+count}!Page\+Handler@{Page\+Handler}}
-\subsubsection[{\texorpdfstring{\$page\+\_\+count}{$page_count}}]{\setlength{\rightskip}{0pt plus 5cm}Page\+Handler\+::\$page\+\_\+count = 10}\hypertarget{classPageHandler_a48a16aadd0c373c8856df7df954f90ff}{}\label{classPageHandler_a48a16aadd0c373c8856df7df954f90ff}
+\subsubsection{\texorpdfstring{\$page\+\_\+count}{$page\_count}}
+{\footnotesize\ttfamily Page\+Handler\+::\$page\+\_\+count = 10}
+
 
 
 number of page links displayed at one time 
@@ -159,9 +165,12 @@ number of page links displayed at one time
 
 Definition at line 19 of file Page\+Handler.\+class.\+php.
 
+\hypertarget{classPageHandler_a82a9b55cb98e79d46e6c6648cd2fca26}{}\label{classPageHandler_a82a9b55cb98e79d46e6c6648cd2fca26} 
 \index{Page\+Handler@{Page\+Handler}!\$point@{\$point}}
 \index{\$point@{\$point}!Page\+Handler@{Page\+Handler}}
-\subsubsection[{\texorpdfstring{\$point}{$point}}]{\setlength{\rightskip}{0pt plus 5cm}Page\+Handler\+::\$point = 0}\hypertarget{classPageHandler_a82a9b55cb98e79d46e6c6648cd2fca26}{}\label{classPageHandler_a82a9b55cb98e79d46e6c6648cd2fca26}
+\subsubsection{\texorpdfstring{\$point}{$point}}
+{\footnotesize\ttfamily Page\+Handler\+::\$point = 0}
+
 
 
 increments per \hyperlink{classPageHandler_a259d01838d005d854d4cc263ba524de7}{get\+Next\+Page()} 
@@ -170,9 +179,12 @@ increments per \hyperlink{classPageHandler_a259d01838d005d854d4cc263ba524de7}{ge
 
 Definition at line 22 of file Page\+Handler.\+class.\+php.
 
+\hypertarget{classPageHandler_ad0425a5e936db072a17956e4dada6f2b}{}\label{classPageHandler_ad0425a5e936db072a17956e4dada6f2b} 
 \index{Page\+Handler@{Page\+Handler}!\$total\+\_\+count@{\$total\+\_\+count}}
 \index{\$total\+\_\+count@{\$total\+\_\+count}!Page\+Handler@{Page\+Handler}}
-\subsubsection[{\texorpdfstring{\$total\+\_\+count}{$total_count}}]{\setlength{\rightskip}{0pt plus 5cm}Page\+Handler\+::\$total\+\_\+count = 0}\hypertarget{classPageHandler_ad0425a5e936db072a17956e4dada6f2b}{}\label{classPageHandler_ad0425a5e936db072a17956e4dada6f2b}
+\subsubsection{\texorpdfstring{\$total\+\_\+count}{$total\_count}}
+{\footnotesize\ttfamily Page\+Handler\+::\$total\+\_\+count = 0}
+
 
 
 number of total items 
@@ -181,9 +193,12 @@ number of total items
 
 Definition at line 16 of file Page\+Handler.\+class.\+php.
 
+\hypertarget{classPageHandler_adfb101b1d69a89c65cbe405e5d2be0ad}{}\label{classPageHandler_adfb101b1d69a89c65cbe405e5d2be0ad} 
 \index{Page\+Handler@{Page\+Handler}!\$total\+\_\+page@{\$total\+\_\+page}}
 \index{\$total\+\_\+page@{\$total\+\_\+page}!Page\+Handler@{Page\+Handler}}
-\subsubsection[{\texorpdfstring{\$total\+\_\+page}{$total_page}}]{\setlength{\rightskip}{0pt plus 5cm}Page\+Handler\+::\$total\+\_\+page = 0}\hypertarget{classPageHandler_adfb101b1d69a89c65cbe405e5d2be0ad}{}\label{classPageHandler_adfb101b1d69a89c65cbe405e5d2be0ad}
+\subsubsection{\texorpdfstring{\$total\+\_\+page}{$total\_page}}
+{\footnotesize\ttfamily Page\+Handler\+::\$total\+\_\+page = 0}
+
 
 
 number of total pages 

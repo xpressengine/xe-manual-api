@@ -16,7 +16,6 @@ var searchData=
   ['trash_2econtroller_2ephp',['trash.controller.php',['../trash_8controller_8php.html',1,'']]],
   ['trash_2emodel_2ephp',['trash.model.php',['../trash_8model_8php.html',1,'']]],
   ['trash_2eview_2ephp',['trash.view.php',['../trash_8view_8php.html',1,'']]],
-  ['trash_5fadmin_2ejs',['trash_admin.js',['../trash__admin_8js.html',1,'']]],
   ['trashvo_2ephp',['TrashVO.php',['../TrashVO_8php.html',1,'']]],
   ['ttimport_2eclass_2ephp',['ttimport.class.php',['../ttimport_8class_8php.html',1,'']]]
 ];

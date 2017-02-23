@@ -20,7 +20,7 @@ Inheritance diagram for H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl\+:
 \item 
 \hyperlink{classHTTP__Request2__Adapter__Curl_a3e62b54a633faf5aba9d0b4eb0a3c1d0}{workaround\+Php\+Bug47204} (\$ch, \&\$headers)
 \item 
-\hyperlink{classHTTP__Request2__Adapter__Curl_a02043fb25c4aa88dfe000cbb037011b0}{callback\+Read\+Body} (\$ch, \$fd, \$\hyperlink{xpresseditor_8min_8js_a8251a40bc2803d85bf8a918f1f288cce}{length})
+\hyperlink{classHTTP__Request2__Adapter__Curl_a02043fb25c4aa88dfe000cbb037011b0}{callback\+Read\+Body} (\$ch, \$fd, \$length)
 \item 
 \hyperlink{classHTTP__Request2__Adapter__Curl_a8279ebf99b6de452d163e747f34d6f11}{callback\+Write\+Header} (\$ch, \$string)
 \item 
@@ -63,15 +63,12 @@ Definition at line 36 of file Curl.\+php.
 
 
 \subsection{Member Function Documentation}
+\hypertarget{classHTTP__Request2__Adapter__Curl_a02043fb25c4aa88dfe000cbb037011b0}{}\label{classHTTP__Request2__Adapter__Curl_a02043fb25c4aa88dfe000cbb037011b0} 
 \index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl}!callback\+Read\+Body@{callback\+Read\+Body}}
 \index{callback\+Read\+Body@{callback\+Read\+Body}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl}}
-\subsubsection[{\texorpdfstring{callback\+Read\+Body(\$ch, \$fd, \$length)}{callbackReadBody($ch, $fd, $length)}}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl\+::callback\+Read\+Body (
-\begin{DoxyParamCaption}
-\item[{}]{\$ch, }
-\item[{}]{\$fd, }
-\item[{}]{\$length}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classHTTP__Request2__Adapter__Curl_a02043fb25c4aa88dfe000cbb037011b0}{}\label{classHTTP__Request2__Adapter__Curl_a02043fb25c4aa88dfe000cbb037011b0}
+\subsubsection{\texorpdfstring{callback\+Read\+Body()}{callbackReadBody()}}
+{\footnotesize\ttfamily H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl\+::callback\+Read\+Body (\begin{DoxyParamCaption}\item[{}]{\$ch,  }\item[{}]{\$fd,  }\item[{}]{\$length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
 Callback function called by c\+U\+RL for reading the request body
 
 
@@ -90,14 +87,12 @@ string part of the request body, up to \$length bytes
 
 Definition at line 436 of file Curl.\+php.
 
+\hypertarget{classHTTP__Request2__Adapter__Curl_ad1049b669850af2040d3360144f90e8c}{}\label{classHTTP__Request2__Adapter__Curl_ad1049b669850af2040d3360144f90e8c} 
 \index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl}!callback\+Write\+Body@{callback\+Write\+Body}}
 \index{callback\+Write\+Body@{callback\+Write\+Body}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl}}
-\subsubsection[{\texorpdfstring{callback\+Write\+Body(\$ch, \$string)}{callbackWriteBody($ch, $string)}}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl\+::callback\+Write\+Body (
-\begin{DoxyParamCaption}
-\item[{}]{\$ch, }
-\item[{}]{\$string}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classHTTP__Request2__Adapter__Curl_ad1049b669850af2040d3360144f90e8c}{}\label{classHTTP__Request2__Adapter__Curl_ad1049b669850af2040d3360144f90e8c}
+\subsubsection{\texorpdfstring{callback\+Write\+Body()}{callbackWriteBody()}}
+{\footnotesize\ttfamily H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl\+::callback\+Write\+Body (\begin{DoxyParamCaption}\item[{}]{\$ch,  }\item[{}]{\$string }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
 Callback function called by c\+U\+RL for saving the response body
 
 
@@ -122,14 +117,12 @@ integer number of bytes saved
 
 Definition at line 550 of file Curl.\+php.
 
+\hypertarget{classHTTP__Request2__Adapter__Curl_a8279ebf99b6de452d163e747f34d6f11}{}\label{classHTTP__Request2__Adapter__Curl_a8279ebf99b6de452d163e747f34d6f11} 
 \index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl}!callback\+Write\+Header@{callback\+Write\+Header}}
 \index{callback\+Write\+Header@{callback\+Write\+Header}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl}}
-\subsubsection[{\texorpdfstring{callback\+Write\+Header(\$ch, \$string)}{callbackWriteHeader($ch, $string)}}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl\+::callback\+Write\+Header (
-\begin{DoxyParamCaption}
-\item[{}]{\$ch, }
-\item[{}]{\$string}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classHTTP__Request2__Adapter__Curl_a8279ebf99b6de452d163e747f34d6f11}{}\label{classHTTP__Request2__Adapter__Curl_a8279ebf99b6de452d163e747f34d6f11}
+\subsubsection{\texorpdfstring{callback\+Write\+Header()}{callbackWriteHeader()}}
+{\footnotesize\ttfamily H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl\+::callback\+Write\+Header (\begin{DoxyParamCaption}\item[{}]{\$ch,  }\item[{}]{\$string }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
 Callback function called by c\+U\+RL for saving the response headers
 
 
@@ -149,13 +142,12 @@ integer number of bytes saved
 
 Definition at line 470 of file Curl.\+php.
 
+\hypertarget{classHTTP__Request2__Adapter__Curl_a905d9fdfe01867e54cbd696091d97516}{}\label{classHTTP__Request2__Adapter__Curl_a905d9fdfe01867e54cbd696091d97516} 
 \index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl}!create\+Curl\+Handle@{create\+Curl\+Handle}}
 \index{create\+Curl\+Handle@{create\+Curl\+Handle}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl}}
-\subsubsection[{\texorpdfstring{create\+Curl\+Handle()}{createCurlHandle()}}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl\+::create\+Curl\+Handle (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classHTTP__Request2__Adapter__Curl_a905d9fdfe01867e54cbd696091d97516}{}\label{classHTTP__Request2__Adapter__Curl_a905d9fdfe01867e54cbd696091d97516}
+\subsubsection{\texorpdfstring{create\+Curl\+Handle()}{createCurlHandle()}}
+{\footnotesize\ttfamily H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl\+::create\+Curl\+Handle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
 Creates a new c\+U\+RL handle and populates it with data from the request
 
 \begin{DoxyReturn}{Returns}
@@ -172,13 +164,12 @@ resource a c\+U\+RL handle, as created by curl\+\_\+init()
 
 Definition at line 220 of file Curl.\+php.
 
+\hypertarget{classHTTP__Request2__Adapter__Curl_a9c8c318ec7a6314f235ef4dfea89e6b2}{}\label{classHTTP__Request2__Adapter__Curl_a9c8c318ec7a6314f235ef4dfea89e6b2} 
 \index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl}!get\+Info@{get\+Info}}
 \index{get\+Info@{get\+Info}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl}}
-\subsubsection[{\texorpdfstring{get\+Info()}{getInfo()}}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl\+::get\+Info (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classHTTP__Request2__Adapter__Curl_a9c8c318ec7a6314f235ef4dfea89e6b2}{}\label{classHTTP__Request2__Adapter__Curl_a9c8c318ec7a6314f235ef4dfea89e6b2}
+\subsubsection{\texorpdfstring{get\+Info()}{getInfo()}}
+{\footnotesize\ttfamily H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl\+::get\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 Returns information about last transfer
 
 \begin{DoxyReturn}{Returns}
@@ -188,13 +179,12 @@ array associative array as returned by curl\+\_\+getinfo()
 
 Definition at line 208 of file Curl.\+php.
 
+\hypertarget{classHTTP__Request2__Adapter__Curl_a9da450eb1bb1492d1b39c22c2f29bb2b}{}\label{classHTTP__Request2__Adapter__Curl_a9da450eb1bb1492d1b39c22c2f29bb2b} 
 \index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl}!send\+Request@{send\+Request}}
 \index{send\+Request@{send\+Request}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl}}
-\subsubsection[{\texorpdfstring{send\+Request(\+H\+T\+T\+P\+\_\+\+Request2 \$request)}{sendRequest(HTTP_Request2 $request)}}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl\+::send\+Request (
-\begin{DoxyParamCaption}
-\item[{{\bf H\+T\+T\+P\+\_\+\+Request2}}]{\$request}
-\end{DoxyParamCaption}
-)}\hypertarget{classHTTP__Request2__Adapter__Curl_a9da450eb1bb1492d1b39c22c2f29bb2b}{}\label{classHTTP__Request2__Adapter__Curl_a9da450eb1bb1492d1b39c22c2f29bb2b}
+\subsubsection{\texorpdfstring{send\+Request()}{sendRequest()}}
+{\footnotesize\ttfamily H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl\+::send\+Request (\begin{DoxyParamCaption}\item[{\hyperlink{classHTTP__Request2}{H\+T\+T\+P\+\_\+\+Request2}}]{\$request }\end{DoxyParamCaption})}
+
 Sends request to the remote server and returns its response
 
 
@@ -214,14 +204,12 @@ Sends request to the remote server and returns its response
 
 Definition at line 161 of file Curl.\+php.
 
+\hypertarget{classHTTP__Request2__Adapter__Curl_a3e62b54a633faf5aba9d0b4eb0a3c1d0}{}\label{classHTTP__Request2__Adapter__Curl_a3e62b54a633faf5aba9d0b4eb0a3c1d0} 
 \index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl}!workaround\+Php\+Bug47204@{workaround\+Php\+Bug47204}}
 \index{workaround\+Php\+Bug47204@{workaround\+Php\+Bug47204}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl}}
-\subsubsection[{\texorpdfstring{workaround\+Php\+Bug47204(\$ch, \&\$headers)}{workaroundPhpBug47204($ch, &$headers)}}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl\+::workaround\+Php\+Bug47204 (
-\begin{DoxyParamCaption}
-\item[{}]{\$ch, }
-\item[{\&}]{\$headers}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classHTTP__Request2__Adapter__Curl_a3e62b54a633faf5aba9d0b4eb0a3c1d0}{}\label{classHTTP__Request2__Adapter__Curl_a3e62b54a633faf5aba9d0b4eb0a3c1d0}
+\subsubsection{\texorpdfstring{workaround\+Php\+Bug47204()}{workaroundPhpBug47204()}}
+{\footnotesize\ttfamily H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl\+::workaround\+Php\+Bug47204 (\begin{DoxyParamCaption}\item[{}]{\$ch,  }\item[{\&}]{\$headers }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
 Workaround for P\+HP bug \#47204 that prevents rewinding request body
 
 The workaround consists of reading the entire request body into memory and setting it as C\+U\+R\+L\+O\+P\+T\+\_\+\+P\+O\+S\+T\+F\+I\+E\+L\+DS, so it isn\textquotesingle{}t recommended for large file uploads, use Socket adapter instead.
@@ -237,13 +225,12 @@ array & {\em \&\$headers} & Request headers \\
 
 Definition at line 400 of file Curl.\+php.
 
+\hypertarget{classHTTP__Request2__Adapter__Curl_a1ac224c8ce10176a51e756419fc0e374}{}\label{classHTTP__Request2__Adapter__Curl_a1ac224c8ce10176a51e756419fc0e374} 
 \index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl}!wrap\+Curl\+Error@{wrap\+Curl\+Error}}
 \index{wrap\+Curl\+Error@{wrap\+Curl\+Error}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl}}
-\subsubsection[{\texorpdfstring{wrap\+Curl\+Error(\$ch)}{wrapCurlError($ch)}}]{\setlength{\rightskip}{0pt plus 5cm}static H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl\+::wrap\+Curl\+Error (
-\begin{DoxyParamCaption}
-\item[{}]{\$ch}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}\hypertarget{classHTTP__Request2__Adapter__Curl_a1ac224c8ce10176a51e756419fc0e374}{}\label{classHTTP__Request2__Adapter__Curl_a1ac224c8ce10176a51e756419fc0e374}
+\subsubsection{\texorpdfstring{wrap\+Curl\+Error()}{wrapCurlError()}}
+{\footnotesize\ttfamily static H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl\+::wrap\+Curl\+Error (\begin{DoxyParamCaption}\item[{}]{\$ch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
 Creates a subclass of \hyperlink{classHTTP__Request2__Exception}{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Exception} from curl error data
 
 
@@ -261,30 +248,42 @@ Definition at line 139 of file Curl.\+php.
 
 
 \subsection{Member Data Documentation}
+\hypertarget{classHTTP__Request2__Adapter__Curl_a00d7fddefc8d545b63dec0955bd99ae1}{}\label{classHTTP__Request2__Adapter__Curl_a00d7fddefc8d545b63dec0955bd99ae1} 
 \index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl}!\$error\+Map@{\$error\+Map}}
 \index{\$error\+Map@{\$error\+Map}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl}}
-\subsubsection[{\texorpdfstring{\$error\+Map}{$errorMap}}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl\+::\$error\+Map\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}\hypertarget{classHTTP__Request2__Adapter__Curl_a00d7fddefc8d545b63dec0955bd99ae1}{}\label{classHTTP__Request2__Adapter__Curl_a00d7fddefc8d545b63dec0955bd99ae1}
+\subsubsection{\texorpdfstring{\$error\+Map}{$errorMap}}
+{\footnotesize\ttfamily H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl\+::\$error\+Map\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
 
 
 Definition at line 65 of file Curl.\+php.
 
+\hypertarget{classHTTP__Request2__Adapter__Curl_adfd911404ba9642b18156c7e75c1574f}{}\label{classHTTP__Request2__Adapter__Curl_adfd911404ba9642b18156c7e75c1574f} 
 \index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl}!\$event\+Received\+Headers@{\$event\+Received\+Headers}}
 \index{\$event\+Received\+Headers@{\$event\+Received\+Headers}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl}}
-\subsubsection[{\texorpdfstring{\$event\+Received\+Headers}{$eventReceivedHeaders}}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl\+::\$event\+Received\+Headers = false\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classHTTP__Request2__Adapter__Curl_adfd911404ba9642b18156c7e75c1574f}{}\label{classHTTP__Request2__Adapter__Curl_adfd911404ba9642b18156c7e75c1574f}
+\subsubsection{\texorpdfstring{\$event\+Received\+Headers}{$eventReceivedHeaders}}
+{\footnotesize\ttfamily H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl\+::\$event\+Received\+Headers = false\hspace{0.3cm}{\ttfamily [protected]}}
+
 
 
 Definition at line 117 of file Curl.\+php.
 
+\hypertarget{classHTTP__Request2__Adapter__Curl_a7676f5068e7106d115b77107ac9b1531}{}\label{classHTTP__Request2__Adapter__Curl_a7676f5068e7106d115b77107ac9b1531} 
 \index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl}!\$event\+Sent\+Headers@{\$event\+Sent\+Headers}}
 \index{\$event\+Sent\+Headers@{\$event\+Sent\+Headers}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl}}
-\subsubsection[{\texorpdfstring{\$event\+Sent\+Headers}{$eventSentHeaders}}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl\+::\$event\+Sent\+Headers = false\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classHTTP__Request2__Adapter__Curl_a7676f5068e7106d115b77107ac9b1531}{}\label{classHTTP__Request2__Adapter__Curl_a7676f5068e7106d115b77107ac9b1531}
+\subsubsection{\texorpdfstring{\$event\+Sent\+Headers}{$eventSentHeaders}}
+{\footnotesize\ttfamily H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl\+::\$event\+Sent\+Headers = false\hspace{0.3cm}{\ttfamily [protected]}}
+
 
 
 Definition at line 111 of file Curl.\+php.
 
+\hypertarget{classHTTP__Request2__Adapter__Curl_a8878ed5fddb43b91450e9359f172838a}{}\label{classHTTP__Request2__Adapter__Curl_a8878ed5fddb43b91450e9359f172838a} 
 \index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl}!\$header\+Map@{\$header\+Map}}
 \index{\$header\+Map@{\$header\+Map}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl}}
-\subsubsection[{\texorpdfstring{\$header\+Map}{$headerMap}}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl\+::\$header\+Map\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}\hypertarget{classHTTP__Request2__Adapter__Curl_a8878ed5fddb43b91450e9359f172838a}{}\label{classHTTP__Request2__Adapter__Curl_a8878ed5fddb43b91450e9359f172838a}
+\subsubsection{\texorpdfstring{\$header\+Map}{$headerMap}}
+{\footnotesize\ttfamily H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl\+::\$header\+Map\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
 {\bfseries Initial value\+:}
 \begin{DoxyCode}
 = array(
@@ -298,30 +297,42 @@ Definition at line 111 of file Curl.\+php.
 
 Definition at line 42 of file Curl.\+php.
 
+\hypertarget{classHTTP__Request2__Adapter__Curl_afe416c840406d6cf510e0c1cb73afdea}{}\label{classHTTP__Request2__Adapter__Curl_afe416c840406d6cf510e0c1cb73afdea} 
 \index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl}!\$last\+Info@{\$last\+Info}}
 \index{\$last\+Info@{\$last\+Info}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl}}
-\subsubsection[{\texorpdfstring{\$last\+Info}{$lastInfo}}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl\+::\$last\+Info\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classHTTP__Request2__Adapter__Curl_afe416c840406d6cf510e0c1cb73afdea}{}\label{classHTTP__Request2__Adapter__Curl_afe416c840406d6cf510e0c1cb73afdea}
+\subsubsection{\texorpdfstring{\$last\+Info}{$lastInfo}}
+{\footnotesize\ttfamily H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl\+::\$last\+Info\hspace{0.3cm}{\ttfamily [protected]}}
+
 
 
 Definition at line 130 of file Curl.\+php.
 
+\hypertarget{classHTTP__Request2__Adapter__Curl_aa5d6a073e443ba06f4947ea1ab27643d}{}\label{classHTTP__Request2__Adapter__Curl_aa5d6a073e443ba06f4947ea1ab27643d} 
 \index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl}!\$position@{\$position}}
 \index{\$position@{\$position}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl}}
-\subsubsection[{\texorpdfstring{\$position}{$position}}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl\+::\$position = 0\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classHTTP__Request2__Adapter__Curl_aa5d6a073e443ba06f4947ea1ab27643d}{}\label{classHTTP__Request2__Adapter__Curl_aa5d6a073e443ba06f4947ea1ab27643d}
+\subsubsection{\texorpdfstring{\$position}{$position}}
+{\footnotesize\ttfamily H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl\+::\$position = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
 
 
 Definition at line 124 of file Curl.\+php.
 
+\hypertarget{classHTTP__Request2__Adapter__Curl_a4f2bb3a6dcac6b24cfcf36846921344c}{}\label{classHTTP__Request2__Adapter__Curl_a4f2bb3a6dcac6b24cfcf36846921344c} 
 \index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl}!\$response@{\$response}}
 \index{\$response@{\$response}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl}}
-\subsubsection[{\texorpdfstring{\$response}{$response}}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl\+::\$response\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classHTTP__Request2__Adapter__Curl_a4f2bb3a6dcac6b24cfcf36846921344c}{}\label{classHTTP__Request2__Adapter__Curl_a4f2bb3a6dcac6b24cfcf36846921344c}
+\subsubsection{\texorpdfstring{\$response}{$response}}
+{\footnotesize\ttfamily H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl\+::\$response\hspace{0.3cm}{\ttfamily [protected]}}
+
 
 
 Definition at line 105 of file Curl.\+php.
 
+\hypertarget{classHTTP__Request2__Adapter__Curl_add699383580a9aea455b7317d07bd5e5}{}\label{classHTTP__Request2__Adapter__Curl_add699383580a9aea455b7317d07bd5e5} 
 \index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl}!\$ssl\+Context\+Map@{\$ssl\+Context\+Map}}
 \index{\$ssl\+Context\+Map@{\$ssl\+Context\+Map}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl}}
-\subsubsection[{\texorpdfstring{\$ssl\+Context\+Map}{$sslContextMap}}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl\+::\$ssl\+Context\+Map\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}\hypertarget{classHTTP__Request2__Adapter__Curl_add699383580a9aea455b7317d07bd5e5}{}\label{classHTTP__Request2__Adapter__Curl_add699383580a9aea455b7317d07bd5e5}
+\subsubsection{\texorpdfstring{\$ssl\+Context\+Map}{$sslContextMap}}
+{\footnotesize\ttfamily H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Adapter\+\_\+\+Curl\+::\$ssl\+Context\+Map\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
 {\bfseries Initial value\+:}
 \begin{DoxyCode}
 = array(

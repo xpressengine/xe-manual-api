@@ -3,7 +3,7 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classNet__URL2_a4c12ff0ddce6621148a4917b8040e567}{\+\_\+\+\_\+construct} (\$\hyperlink{swfupload_8js_a440a52a9004fdab0700100a6ddb49f67}{url}, array \$options=array())
+\hyperlink{classNet__URL2_a4c12ff0ddce6621148a4917b8040e567}{\+\_\+\+\_\+construct} (\$url, array \$options=array())
 \item 
 \hyperlink{classNet__URL2_ae2489e2f59be30883c898bc46ffbf9a1}{\+\_\+\+\_\+set} (\$var, \$arg)
 \item 
@@ -49,9 +49,9 @@
 \item 
 \hyperlink{classNet__URL2_a2b93dbf912e578998c7447788400cc07}{set\+Query\+Variables} (array \$array)
 \item 
-\hyperlink{classNet__URL2_a30d2d35e20ee1391db08c5ab74ffb262}{set\+Query\+Variable} (\$\hyperlink{common_8js_a22c29d2aa8ed6161ce8faa718ef76e68}{name}, \$\hyperlink{jquery_8js_abe5393d870043cf6aaa1d5ad5fce755c}{value})
+\hyperlink{classNet__URL2_a30d2d35e20ee1391db08c5ab74ffb262}{set\+Query\+Variable} (\$name, \$value)
 \item 
-\hyperlink{classNet__URL2_a2841fc0817045ec33688490613d6e64c}{unset\+Query\+Variable} (\$\hyperlink{common_8js_a22c29d2aa8ed6161ce8faa718ef76e68}{name})
+\hyperlink{classNet__URL2_a2841fc0817045ec33688490613d6e64c}{unset\+Query\+Variable} (\$name)
 \item 
 \hyperlink{classNet__URL2_a77d3197589861087e09db160a78c7ee1}{get\+U\+RL} ()
 \item 
@@ -83,7 +83,7 @@ static \hyperlink{classNet__URL2_a57c171f9507f78aafbaba695f1220273}{get\+Request
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-const \hyperlink{classNet__URL2_a766955033bdccec7175d0694df62a1a9}{O\+P\+T\+I\+O\+N\+\_\+\+S\+T\+R\+I\+CT} = \textquotesingle{}\hyperlink{menu_2tpl_2js_2jquery_8jstree_8js_ae2475e10618961c050dcba04e8c42331}{strict}\textquotesingle{}
+const \hyperlink{classNet__URL2_a766955033bdccec7175d0694df62a1a9}{O\+P\+T\+I\+O\+N\+\_\+\+S\+T\+R\+I\+CT} = \textquotesingle{}strict\textquotesingle{}
 \item 
 const \hyperlink{classNet__URL2_a864182f067e5df22055afc3a0dfe5a57}{O\+P\+T\+I\+O\+N\+\_\+\+U\+S\+E\+\_\+\+B\+R\+A\+C\+K\+E\+TS} = \textquotesingle{}use\+\_\+brackets\textquotesingle{}
 \item 
@@ -98,9 +98,9 @@ const \hyperlink{classNet__URL2_a84719f522747f51638a9c8474d4abc39}{O\+P\+T\+I\+O
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classNet__URL2_a44d9ffd390931b846152080feb6a1740}{build\+Query} (array \$\hyperlink{document__category_8js_a94b4f25375ac17cb917012e05bf514a7}{data}, \$separator, \$key=\hyperlink{modernizr_8min_8js_a286f9ec831c5e676eeb493248eab9575}{null})
+\hyperlink{classNet__URL2_a44d9ffd390931b846152080feb6a1740}{build\+Query} (array \$data, \$separator, \$key=null)
 \item 
-\hyperlink{classNet__URL2_a498acb2786e9f3074c6d52432de4c9d4}{parse\+Url} (\$\hyperlink{swfupload_8js_a440a52a9004fdab0700100a6ddb49f67}{url})
+\hyperlink{classNet__URL2_a498acb2786e9f3074c6d52432de4c9d4}{parse\+Url} (\$url)
 \end{DoxyCompactItemize}
 
 
@@ -112,14 +112,12 @@ Definition at line 57 of file U\+R\+L2.\+php.
 
 
 \subsection{Constructor \& Destructor Documentation}
+\hypertarget{classNet__URL2_a4c12ff0ddce6621148a4917b8040e567}{}\label{classNet__URL2_a4c12ff0ddce6621148a4917b8040e567} 
 \index{Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
 \index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}}
-\subsubsection[{\texorpdfstring{\+\_\+\+\_\+construct(\$url, array \$options=array())}{__construct($url, array $options=array())}}]{\setlength{\rightskip}{0pt plus 5cm}Net\+\_\+\+U\+R\+L2\+::\+\_\+\+\_\+construct (
-\begin{DoxyParamCaption}
-\item[{}]{\$url, }
-\item[{array}]{\$options = {\ttfamily array()}}
-\end{DoxyParamCaption}
-)}\hypertarget{classNet__URL2_a4c12ff0ddce6621148a4917b8040e567}{}\label{classNet__URL2_a4c12ff0ddce6621148a4917b8040e567}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily Net\+\_\+\+U\+R\+L2\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$url,  }\item[{array}]{\$options = {\ttfamily array()} }\end{DoxyParamCaption})}
+
 Constructor.
 
 
@@ -136,13 +134,12 @@ Definition at line 148 of file U\+R\+L2.\+php.
 
 
 \subsection{Member Function Documentation}
+\hypertarget{classNet__URL2_a6f7109a2d04198fafac837cae9d5c3ff}{}\label{classNet__URL2_a6f7109a2d04198fafac837cae9d5c3ff} 
 \index{Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}!\+\_\+\+\_\+get@{\+\_\+\+\_\+get}}
 \index{\+\_\+\+\_\+get@{\+\_\+\+\_\+get}!Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}}
-\subsubsection[{\texorpdfstring{\+\_\+\+\_\+get(\$var)}{__get($var)}}]{\setlength{\rightskip}{0pt plus 5cm}Net\+\_\+\+U\+R\+L2\+::\+\_\+\+\_\+get (
-\begin{DoxyParamCaption}
-\item[{}]{\$var}
-\end{DoxyParamCaption}
-)}\hypertarget{classNet__URL2_a6f7109a2d04198fafac837cae9d5c3ff}{}\label{classNet__URL2_a6f7109a2d04198fafac837cae9d5c3ff}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+get()}{\_\_get()}}
+{\footnotesize\ttfamily Net\+\_\+\+U\+R\+L2\+::\+\_\+\+\_\+get (\begin{DoxyParamCaption}\item[{}]{\$var }\end{DoxyParamCaption})}
+
 Magic Getter.
 
 This is the magic get method to retrieve the private variable that was set by either \hyperlink{classNet__URL2_ae2489e2f59be30883c898bc46ffbf9a1}{\+\_\+\+\_\+set()} or it\textquotesingle{}s setter...
@@ -159,14 +156,12 @@ mixed \$this-\/$>$\$var Either a boolean false if the property is not set or the
 
 Definition at line 190 of file U\+R\+L2.\+php.
 
+\hypertarget{classNet__URL2_ae2489e2f59be30883c898bc46ffbf9a1}{}\label{classNet__URL2_ae2489e2f59be30883c898bc46ffbf9a1} 
 \index{Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}!\+\_\+\+\_\+set@{\+\_\+\+\_\+set}}
 \index{\+\_\+\+\_\+set@{\+\_\+\+\_\+set}!Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}}
-\subsubsection[{\texorpdfstring{\+\_\+\+\_\+set(\$var, \$arg)}{__set($var, $arg)}}]{\setlength{\rightskip}{0pt plus 5cm}Net\+\_\+\+U\+R\+L2\+::\+\_\+\+\_\+set (
-\begin{DoxyParamCaption}
-\item[{}]{\$var, }
-\item[{}]{\$arg}
-\end{DoxyParamCaption}
-)}\hypertarget{classNet__URL2_ae2489e2f59be30883c898bc46ffbf9a1}{}\label{classNet__URL2_ae2489e2f59be30883c898bc46ffbf9a1}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+set()}{\_\_set()}}
+{\footnotesize\ttfamily Net\+\_\+\+U\+R\+L2\+::\+\_\+\+\_\+set (\begin{DoxyParamCaption}\item[{}]{\$var,  }\item[{}]{\$arg }\end{DoxyParamCaption})}
+
 Magic Setter.
 
 This method will magically set the value of a private variable (\$var) with the value passed as the args
@@ -185,13 +180,12 @@ void
 
 Definition at line 170 of file U\+R\+L2.\+php.
 
+\hypertarget{classNet__URL2_ad3c022a53765e85dfc5b0cab01a09e03}{}\label{classNet__URL2_ad3c022a53765e85dfc5b0cab01a09e03} 
 \index{Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}!\+\_\+\+\_\+to\+String@{\+\_\+\+\_\+to\+String}}
 \index{\+\_\+\+\_\+to\+String@{\+\_\+\+\_\+to\+String}!Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}}
-\subsubsection[{\texorpdfstring{\+\_\+\+\_\+to\+String()}{__toString()}}]{\setlength{\rightskip}{0pt plus 5cm}Net\+\_\+\+U\+R\+L2\+::\+\_\+\+\_\+to\+String (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classNet__URL2_ad3c022a53765e85dfc5b0cab01a09e03}{}\label{classNet__URL2_ad3c022a53765e85dfc5b0cab01a09e03}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+to\+String()}{\_\_toString()}}
+{\footnotesize\ttfamily Net\+\_\+\+U\+R\+L2\+::\+\_\+\+\_\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 Returns a string representation of this U\+RL.
 
 \begin{DoxyReturn}{Returns}
@@ -201,15 +195,12 @@ string \hyperlink{}{https\+://php.\+net/language.\+oop5.\+magic\#object.\+tostri
 
 Definition at line 752 of file U\+R\+L2.\+php.
 
+\hypertarget{classNet__URL2_a44d9ffd390931b846152080feb6a1740}{}\label{classNet__URL2_a44d9ffd390931b846152080feb6a1740} 
 \index{Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}!build\+Query@{build\+Query}}
 \index{build\+Query@{build\+Query}!Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}}
-\subsubsection[{\texorpdfstring{build\+Query(array \$data, \$separator, \$key=null)}{buildQuery(array $data, $separator, $key=null)}}]{\setlength{\rightskip}{0pt plus 5cm}Net\+\_\+\+U\+R\+L2\+::build\+Query (
-\begin{DoxyParamCaption}
-\item[{array}]{\$data, }
-\item[{}]{\$separator, }
-\item[{}]{\$key = {\ttfamily {\bf null}}}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classNet__URL2_a44d9ffd390931b846152080feb6a1740}{}\label{classNet__URL2_a44d9ffd390931b846152080feb6a1740}
+\subsubsection{\texorpdfstring{build\+Query()}{buildQuery()}}
+{\footnotesize\ttfamily Net\+\_\+\+U\+R\+L2\+::build\+Query (\begin{DoxyParamCaption}\item[{array}]{\$data,  }\item[{}]{\$separator,  }\item[{}]{\$key = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
 A simple version of http\+\_\+build\+\_\+query in userland. The encoded string is percentage encoded according to R\+FC 3986.
 
 
@@ -228,13 +219,12 @@ string
 
 Definition at line 1128 of file U\+R\+L2.\+php.
 
+\hypertarget{classNet__URL2_af736dde13f102618a706c1cb47868b38}{}\label{classNet__URL2_af736dde13f102618a706c1cb47868b38} 
 \index{Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}!get\+Authority@{get\+Authority}}
 \index{get\+Authority@{get\+Authority}!Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}}
-\subsubsection[{\texorpdfstring{get\+Authority()}{getAuthority()}}]{\setlength{\rightskip}{0pt plus 5cm}Net\+\_\+\+U\+R\+L2\+::get\+Authority (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classNet__URL2_af736dde13f102618a706c1cb47868b38}{}\label{classNet__URL2_af736dde13f102618a706c1cb47868b38}
+\subsubsection{\texorpdfstring{get\+Authority()}{getAuthority()}}
+{\footnotesize\ttfamily Net\+\_\+\+U\+R\+L2\+::get\+Authority (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 Returns the authority part, i.\+e. \mbox{[} userinfo \char`\"{}@\char`\"{} \mbox{]} host \mbox{[} \char`\"{}\+:\char`\"{} port \mbox{]}, or false if there is no authority.
 
 \begin{DoxyReturn}{Returns}
@@ -244,13 +234,12 @@ string$\vert$bool
 
 Definition at line 346 of file U\+R\+L2.\+php.
 
+\hypertarget{classNet__URL2_ae11b6a2c904b4d60e63d75a1bfe508a9}{}\label{classNet__URL2_ae11b6a2c904b4d60e63d75a1bfe508a9} 
 \index{Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}!get\+Canonical@{get\+Canonical}}
 \index{get\+Canonical@{get\+Canonical}!Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}}
-\subsubsection[{\texorpdfstring{get\+Canonical()}{getCanonical()}}]{\setlength{\rightskip}{0pt plus 5cm}static Net\+\_\+\+U\+R\+L2\+::get\+Canonical (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classNet__URL2_ae11b6a2c904b4d60e63d75a1bfe508a9}{}\label{classNet__URL2_ae11b6a2c904b4d60e63d75a1bfe508a9}
+\subsubsection{\texorpdfstring{get\+Canonical()}{getCanonical()}}
+{\footnotesize\ttfamily static Net\+\_\+\+U\+R\+L2\+::get\+Canonical (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
 Returns a \hyperlink{classNet__URL2}{Net\+\_\+\+U\+R\+L2} instance representing the canonical U\+RL of the currently executing P\+HP script.
 
 
@@ -265,13 +254,12 @@ string
 
 Definition at line 1052 of file U\+R\+L2.\+php.
 
+\hypertarget{classNet__URL2_a4a72ed5275b63c5cc600a74ec33aa76c}{}\label{classNet__URL2_a4a72ed5275b63c5cc600a74ec33aa76c} 
 \index{Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}!get\+Fragment@{get\+Fragment}}
 \index{get\+Fragment@{get\+Fragment}!Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}}
-\subsubsection[{\texorpdfstring{get\+Fragment()}{getFragment()}}]{\setlength{\rightskip}{0pt plus 5cm}Net\+\_\+\+U\+R\+L2\+::get\+Fragment (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classNet__URL2_a4a72ed5275b63c5cc600a74ec33aa76c}{}\label{classNet__URL2_a4a72ed5275b63c5cc600a74ec33aa76c}
+\subsubsection{\texorpdfstring{get\+Fragment()}{getFragment()}}
+{\footnotesize\ttfamily Net\+\_\+\+U\+R\+L2\+::get\+Fragment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 Returns the fragment name, or false if \char`\"{}\#\char`\"{} is not present in the U\+RL.
 
 \begin{DoxyReturn}{Returns}
@@ -281,13 +269,12 @@ string$\vert$bool
 
 Definition at line 459 of file U\+R\+L2.\+php.
 
+\hypertarget{classNet__URL2_a55343faf36c62fb1942229c00c53e42c}{}\label{classNet__URL2_a55343faf36c62fb1942229c00c53e42c} 
 \index{Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}!get\+Host@{get\+Host}}
 \index{get\+Host@{get\+Host}!Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}}
-\subsubsection[{\texorpdfstring{get\+Host()}{getHost()}}]{\setlength{\rightskip}{0pt plus 5cm}Net\+\_\+\+U\+R\+L2\+::get\+Host (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classNet__URL2_a55343faf36c62fb1942229c00c53e42c}{}\label{classNet__URL2_a55343faf36c62fb1942229c00c53e42c}
+\subsubsection{\texorpdfstring{get\+Host()}{getHost()}}
+{\footnotesize\ttfamily Net\+\_\+\+U\+R\+L2\+::get\+Host (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 Returns the host part, or false if there is no authority part, e.\+g. relative U\+R\+Ls.
 
 \begin{DoxyReturn}{Returns}
@@ -297,13 +284,12 @@ string$\vert$bool a hostname, an IP address, or false
 
 Definition at line 296 of file U\+R\+L2.\+php.
 
+\hypertarget{classNet__URL2_ad52ea9577f6cf9ecc712e29498b686d4}{}\label{classNet__URL2_ad52ea9577f6cf9ecc712e29498b686d4} 
 \index{Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}!get\+Normalized\+U\+RL@{get\+Normalized\+U\+RL}}
 \index{get\+Normalized\+U\+RL@{get\+Normalized\+U\+RL}!Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}}
-\subsubsection[{\texorpdfstring{get\+Normalized\+U\+R\+L()}{getNormalizedURL()}}]{\setlength{\rightskip}{0pt plus 5cm}Net\+\_\+\+U\+R\+L2\+::get\+Normalized\+U\+RL (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classNet__URL2_ad52ea9577f6cf9ecc712e29498b686d4}{}\label{classNet__URL2_ad52ea9577f6cf9ecc712e29498b686d4}
+\subsubsection{\texorpdfstring{get\+Normalized\+U\+R\+L()}{getNormalizedURL()}}
+{\footnotesize\ttfamily Net\+\_\+\+U\+R\+L2\+::get\+Normalized\+U\+RL (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 Returns a normalized string representation of this U\+RL. This is useful for comparison of U\+R\+Ls.
 
 \begin{DoxyReturn}{Returns}
@@ -313,13 +299,12 @@ string
 
 Definition at line 763 of file U\+R\+L2.\+php.
 
+\hypertarget{classNet__URL2_a4da2891e3eac1700940ae6cf483a0dd3}{}\label{classNet__URL2_a4da2891e3eac1700940ae6cf483a0dd3} 
 \index{Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}!get\+Option@{get\+Option}}
 \index{get\+Option@{get\+Option}!Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}}
-\subsubsection[{\texorpdfstring{get\+Option(\$option\+Name)}{getOption($optionName)}}]{\setlength{\rightskip}{0pt plus 5cm}Net\+\_\+\+U\+R\+L2\+::get\+Option (
-\begin{DoxyParamCaption}
-\item[{}]{\$option\+Name}
-\end{DoxyParamCaption}
-)}\hypertarget{classNet__URL2_a4da2891e3eac1700940ae6cf483a0dd3}{}\label{classNet__URL2_a4da2891e3eac1700940ae6cf483a0dd3}
+\subsubsection{\texorpdfstring{get\+Option()}{getOption()}}
+{\footnotesize\ttfamily Net\+\_\+\+U\+R\+L2\+::get\+Option (\begin{DoxyParamCaption}\item[{}]{\$option\+Name }\end{DoxyParamCaption})}
+
 Returns the value of the specified option.
 
 
@@ -334,13 +319,12 @@ mixed
 
 Definition at line 1111 of file U\+R\+L2.\+php.
 
+\hypertarget{classNet__URL2_a8cfbc773d2c8bb6727da1526770c4b9a}{}\label{classNet__URL2_a8cfbc773d2c8bb6727da1526770c4b9a} 
 \index{Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}!get\+Password@{get\+Password}}
 \index{get\+Password@{get\+Password}!Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}}
-\subsubsection[{\texorpdfstring{get\+Password()}{getPassword()}}]{\setlength{\rightskip}{0pt plus 5cm}Net\+\_\+\+U\+R\+L2\+::get\+Password (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classNet__URL2_a8cfbc773d2c8bb6727da1526770c4b9a}{}\label{classNet__URL2_a8cfbc773d2c8bb6727da1526770c4b9a}
+\subsubsection{\texorpdfstring{get\+Password()}{getPassword()}}
+{\footnotesize\ttfamily Net\+\_\+\+U\+R\+L2\+::get\+Password (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 Returns the password part of the userinfo part (the part after the first \char`\"{}\+:\char`\"{}), or false if there is no userinfo part (i.\+e. the U\+RL does not contain \char`\"{}@\char`\"{} in front of the hostname) or the userinfo part does not contain \char`\"{}\+:\char`\"{}.
 
 \begin{DoxyReturn}{Returns}
@@ -350,13 +334,12 @@ string$\vert$bool
 
 Definition at line 249 of file U\+R\+L2.\+php.
 
+\hypertarget{classNet__URL2_a1c14da4e4da398c69ab0efcc80b183d2}{}\label{classNet__URL2_a1c14da4e4da398c69ab0efcc80b183d2} 
 \index{Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}!get\+Path@{get\+Path}}
 \index{get\+Path@{get\+Path}!Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}}
-\subsubsection[{\texorpdfstring{get\+Path()}{getPath()}}]{\setlength{\rightskip}{0pt plus 5cm}Net\+\_\+\+U\+R\+L2\+::get\+Path (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classNet__URL2_a1c14da4e4da398c69ab0efcc80b183d2}{}\label{classNet__URL2_a1c14da4e4da398c69ab0efcc80b183d2}
+\subsubsection{\texorpdfstring{get\+Path()}{getPath()}}
+{\footnotesize\ttfamily Net\+\_\+\+U\+R\+L2\+::get\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 Returns the path part (possibly an empty string).
 
 \begin{DoxyReturn}{Returns}
@@ -366,13 +349,12 @@ string
 
 Definition at line 409 of file U\+R\+L2.\+php.
 
+\hypertarget{classNet__URL2_a3684482beddce2747c3ef0cb5c3e9c64}{}\label{classNet__URL2_a3684482beddce2747c3ef0cb5c3e9c64} 
 \index{Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}!get\+Port@{get\+Port}}
 \index{get\+Port@{get\+Port}!Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}}
-\subsubsection[{\texorpdfstring{get\+Port()}{getPort()}}]{\setlength{\rightskip}{0pt plus 5cm}Net\+\_\+\+U\+R\+L2\+::get\+Port (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classNet__URL2_a3684482beddce2747c3ef0cb5c3e9c64}{}\label{classNet__URL2_a3684482beddce2747c3ef0cb5c3e9c64}
+\subsubsection{\texorpdfstring{get\+Port()}{getPort()}}
+{\footnotesize\ttfamily Net\+\_\+\+U\+R\+L2\+::get\+Port (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 Returns the port number, or false if there is no port number specified, i.\+e. if the default port is to be used.
 
 \begin{DoxyReturn}{Returns}
@@ -382,13 +364,12 @@ string$\vert$bool
 
 Definition at line 321 of file U\+R\+L2.\+php.
 
+\hypertarget{classNet__URL2_ab65997a75dae3ef237c80b57da4467f6}{}\label{classNet__URL2_ab65997a75dae3ef237c80b57da4467f6} 
 \index{Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}!get\+Query@{get\+Query}}
 \index{get\+Query@{get\+Query}!Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}}
-\subsubsection[{\texorpdfstring{get\+Query()}{getQuery()}}]{\setlength{\rightskip}{0pt plus 5cm}Net\+\_\+\+U\+R\+L2\+::get\+Query (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classNet__URL2_ab65997a75dae3ef237c80b57da4467f6}{}\label{classNet__URL2_ab65997a75dae3ef237c80b57da4467f6}
+\subsubsection{\texorpdfstring{get\+Query()}{getQuery()}}
+{\footnotesize\ttfamily Net\+\_\+\+U\+R\+L2\+::get\+Query (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 Returns the query string (excluding the leading \char`\"{}?\char`\"{}), or false if \char`\"{}?\char`\"{} is not present in the U\+RL.
 
 \begin{DoxyReturn}{Returns}
@@ -401,13 +382,12 @@ string$\vert$bool
 
 Definition at line 434 of file U\+R\+L2.\+php.
 
+\hypertarget{classNet__URL2_a92231f88e82f0551c1958af40f7cb88d}{}\label{classNet__URL2_a92231f88e82f0551c1958af40f7cb88d} 
 \index{Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}!get\+Query\+Variables@{get\+Query\+Variables}}
 \index{get\+Query\+Variables@{get\+Query\+Variables}!Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}}
-\subsubsection[{\texorpdfstring{get\+Query\+Variables()}{getQueryVariables()}}]{\setlength{\rightskip}{0pt plus 5cm}Net\+\_\+\+U\+R\+L2\+::get\+Query\+Variables (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classNet__URL2_a92231f88e82f0551c1958af40f7cb88d}{}\label{classNet__URL2_a92231f88e82f0551c1958af40f7cb88d}
+\subsubsection{\texorpdfstring{get\+Query\+Variables()}{getQueryVariables()}}
+{\footnotesize\ttfamily Net\+\_\+\+U\+R\+L2\+::get\+Query\+Variables (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 Returns the query string like an array as the variables would appear in \$\+\_\+\+G\+ET in a P\+HP script. If the U\+RL does not contain a \char`\"{}?\char`\"{}, an empty array is returned.
 
 \begin{DoxyReturn}{Returns}
@@ -417,13 +397,12 @@ array
 
 Definition at line 485 of file U\+R\+L2.\+php.
 
+\hypertarget{classNet__URL2_a57c171f9507f78aafbaba695f1220273}{}\label{classNet__URL2_a57c171f9507f78aafbaba695f1220273} 
 \index{Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}!get\+Requested@{get\+Requested}}
 \index{get\+Requested@{get\+Requested}!Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}}
-\subsubsection[{\texorpdfstring{get\+Requested()}{getRequested()}}]{\setlength{\rightskip}{0pt plus 5cm}static Net\+\_\+\+U\+R\+L2\+::get\+Requested (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classNet__URL2_a57c171f9507f78aafbaba695f1220273}{}\label{classNet__URL2_a57c171f9507f78aafbaba695f1220273}
+\subsubsection{\texorpdfstring{get\+Requested()}{getRequested()}}
+{\footnotesize\ttfamily static Net\+\_\+\+U\+R\+L2\+::get\+Requested (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
 Returns a \hyperlink{classNet__URL2}{Net\+\_\+\+U\+R\+L2} instance representing the U\+RL used to retrieve the current request.
 
 
@@ -438,13 +417,12 @@ Returns a \hyperlink{classNet__URL2}{Net\+\_\+\+U\+R\+L2} instance representing 
 
 Definition at line 1089 of file U\+R\+L2.\+php.
 
+\hypertarget{classNet__URL2_acc74a73bb075b3a500ded81b63799d59}{}\label{classNet__URL2_acc74a73bb075b3a500ded81b63799d59} 
 \index{Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}!get\+Requested\+U\+RL@{get\+Requested\+U\+RL}}
 \index{get\+Requested\+U\+RL@{get\+Requested\+U\+RL}!Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}}
-\subsubsection[{\texorpdfstring{get\+Requested\+U\+R\+L()}{getRequestedURL()}}]{\setlength{\rightskip}{0pt plus 5cm}static Net\+\_\+\+U\+R\+L2\+::get\+Requested\+U\+RL (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classNet__URL2_acc74a73bb075b3a500ded81b63799d59}{}\label{classNet__URL2_acc74a73bb075b3a500ded81b63799d59}
+\subsubsection{\texorpdfstring{get\+Requested\+U\+R\+L()}{getRequestedURL()}}
+{\footnotesize\ttfamily static Net\+\_\+\+U\+R\+L2\+::get\+Requested\+U\+RL (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
 Returns the U\+RL used to retrieve the current request.
 
 \begin{DoxyReturn}{Returns}
@@ -454,13 +432,12 @@ string
 
 Definition at line 1077 of file U\+R\+L2.\+php.
 
+\hypertarget{classNet__URL2_a9ebbd0b1bc71024ce48593cb1faeff41}{}\label{classNet__URL2_a9ebbd0b1bc71024ce48593cb1faeff41} 
 \index{Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}!get\+Scheme@{get\+Scheme}}
 \index{get\+Scheme@{get\+Scheme}!Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}}
-\subsubsection[{\texorpdfstring{get\+Scheme()}{getScheme()}}]{\setlength{\rightskip}{0pt plus 5cm}Net\+\_\+\+U\+R\+L2\+::get\+Scheme (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classNet__URL2_a9ebbd0b1bc71024ce48593cb1faeff41}{}\label{classNet__URL2_a9ebbd0b1bc71024ce48593cb1faeff41}
+\subsubsection{\texorpdfstring{get\+Scheme()}{getScheme()}}
+{\footnotesize\ttfamily Net\+\_\+\+U\+R\+L2\+::get\+Scheme (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 Returns the scheme, e.\+g. \char`\"{}http\char`\"{} or \char`\"{}urn\char`\"{}, or false if there is no scheme specified, i.\+e. if this is a relative U\+RL.
 
 \begin{DoxyReturn}{Returns}
@@ -470,13 +447,12 @@ string$\vert$bool
 
 Definition at line 206 of file U\+R\+L2.\+php.
 
+\hypertarget{classNet__URL2_a77d3197589861087e09db160a78c7ee1}{}\label{classNet__URL2_a77d3197589861087e09db160a78c7ee1} 
 \index{Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}!get\+U\+RL@{get\+U\+RL}}
 \index{get\+U\+RL@{get\+U\+RL}!Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}}
-\subsubsection[{\texorpdfstring{get\+U\+R\+L()}{getURL()}}]{\setlength{\rightskip}{0pt plus 5cm}Net\+\_\+\+U\+R\+L2\+::get\+U\+RL (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classNet__URL2_a77d3197589861087e09db160a78c7ee1}{}\label{classNet__URL2_a77d3197589861087e09db160a78c7ee1}
+\subsubsection{\texorpdfstring{get\+U\+R\+L()}{getURL()}}
+{\footnotesize\ttfamily Net\+\_\+\+U\+R\+L2\+::get\+U\+RL (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 Returns a string representation of this U\+RL.
 
 \begin{DoxyReturn}{Returns}
@@ -486,13 +462,12 @@ string
 
 Definition at line 699 of file U\+R\+L2.\+php.
 
+\hypertarget{classNet__URL2_ad06292db039e4723ce457f416fc61763}{}\label{classNet__URL2_ad06292db039e4723ce457f416fc61763} 
 \index{Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}!get\+User@{get\+User}}
 \index{get\+User@{get\+User}!Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}}
-\subsubsection[{\texorpdfstring{get\+User()}{getUser()}}]{\setlength{\rightskip}{0pt plus 5cm}Net\+\_\+\+U\+R\+L2\+::get\+User (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classNet__URL2_ad06292db039e4723ce457f416fc61763}{}\label{classNet__URL2_ad06292db039e4723ce457f416fc61763}
+\subsubsection{\texorpdfstring{get\+User()}{getUser()}}
+{\footnotesize\ttfamily Net\+\_\+\+U\+R\+L2\+::get\+User (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 Returns the user part of the userinfo part (the part preceding the first \char`\"{}\+:\char`\"{}), or false if there is no userinfo part.
 
 \begin{DoxyReturn}{Returns}
@@ -502,13 +477,12 @@ string$\vert$bool
 
 Definition at line 234 of file U\+R\+L2.\+php.
 
+\hypertarget{classNet__URL2_a9249aba1b6b07ac8f992033cc865a455}{}\label{classNet__URL2_a9249aba1b6b07ac8f992033cc865a455} 
 \index{Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}!get\+Userinfo@{get\+Userinfo}}
 \index{get\+Userinfo@{get\+Userinfo}!Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}}
-\subsubsection[{\texorpdfstring{get\+Userinfo()}{getUserinfo()}}]{\setlength{\rightskip}{0pt plus 5cm}Net\+\_\+\+U\+R\+L2\+::get\+Userinfo (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classNet__URL2_a9249aba1b6b07ac8f992033cc865a455}{}\label{classNet__URL2_a9249aba1b6b07ac8f992033cc865a455}
+\subsubsection{\texorpdfstring{get\+Userinfo()}{getUserinfo()}}
+{\footnotesize\ttfamily Net\+\_\+\+U\+R\+L2\+::get\+Userinfo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 Returns the userinfo part, or false if there is none, i.\+e. if the authority part does not contain \char`\"{}@\char`\"{}.
 
 \begin{DoxyReturn}{Returns}
@@ -518,13 +492,12 @@ string$\vert$bool
 
 Definition at line 262 of file U\+R\+L2.\+php.
 
+\hypertarget{classNet__URL2_adfb0cbaed0f947990271d8df410854e2}{}\label{classNet__URL2_adfb0cbaed0f947990271d8df410854e2} 
 \index{Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}!is\+Absolute@{is\+Absolute}}
 \index{is\+Absolute@{is\+Absolute}!Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}}
-\subsubsection[{\texorpdfstring{is\+Absolute()}{isAbsolute()}}]{\setlength{\rightskip}{0pt plus 5cm}Net\+\_\+\+U\+R\+L2\+::is\+Absolute (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classNet__URL2_adfb0cbaed0f947990271d8df410854e2}{}\label{classNet__URL2_adfb0cbaed0f947990271d8df410854e2}
+\subsubsection{\texorpdfstring{is\+Absolute()}{isAbsolute()}}
+{\footnotesize\ttfamily Net\+\_\+\+U\+R\+L2\+::is\+Absolute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 Returns whether this instance represents an absolute U\+RL.
 
 \begin{DoxyReturn}{Returns}
@@ -534,13 +507,12 @@ bool
 
 Definition at line 868 of file U\+R\+L2.\+php.
 
+\hypertarget{classNet__URL2_a1bde4a2650383694a88eb2f1f061fbc4}{}\label{classNet__URL2_a1bde4a2650383694a88eb2f1f061fbc4} 
 \index{Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}!normalize@{normalize}}
 \index{normalize@{normalize}!Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}}
-\subsubsection[{\texorpdfstring{normalize()}{normalize()}}]{\setlength{\rightskip}{0pt plus 5cm}Net\+\_\+\+U\+R\+L2\+::normalize (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classNet__URL2_a1bde4a2650383694a88eb2f1f061fbc4}{}\label{classNet__URL2_a1bde4a2650383694a88eb2f1f061fbc4}
+\subsubsection{\texorpdfstring{normalize()}{normalize()}}
+{\footnotesize\ttfamily Net\+\_\+\+U\+R\+L2\+::normalize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 Normalizes the U\+RL
 
 See R\+FC 3986, Section 6. Normalization and Comparison
@@ -549,13 +521,12 @@ See R\+FC 3986, Section 6. Normalization and Comparison
 
 Definition at line 779 of file U\+R\+L2.\+php.
 
+\hypertarget{classNet__URL2_a498acb2786e9f3074c6d52432de4c9d4}{}\label{classNet__URL2_a498acb2786e9f3074c6d52432de4c9d4} 
 \index{Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}!parse\+Url@{parse\+Url}}
 \index{parse\+Url@{parse\+Url}!Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}}
-\subsubsection[{\texorpdfstring{parse\+Url(\$url)}{parseUrl($url)}}]{\setlength{\rightskip}{0pt plus 5cm}Net\+\_\+\+U\+R\+L2\+::parse\+Url (
-\begin{DoxyParamCaption}
-\item[{}]{\$url}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classNet__URL2_a498acb2786e9f3074c6d52432de4c9d4}{}\label{classNet__URL2_a498acb2786e9f3074c6d52432de4c9d4}
+\subsubsection{\texorpdfstring{parse\+Url()}{parseUrl()}}
+{\footnotesize\ttfamily Net\+\_\+\+U\+R\+L2\+::parse\+Url (\begin{DoxyParamCaption}\item[{}]{\$url }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
 This method uses a regex to parse the url into the designated parts.
 
 
@@ -573,13 +544,12 @@ void  self\+::\$\+\_\+scheme, self\+::set\+Authority(), self\+::\$\+\_\+path, se
 
 Definition at line 1166 of file U\+R\+L2.\+php.
 
+\hypertarget{classNet__URL2_aa2ca379f950f6e7a3932121ad39c0e5a}{}\label{classNet__URL2_aa2ca379f950f6e7a3932121ad39c0e5a} 
 \index{Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}!remove\+Dot\+Segments@{remove\+Dot\+Segments}}
 \index{remove\+Dot\+Segments@{remove\+Dot\+Segments}!Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}}
-\subsubsection[{\texorpdfstring{remove\+Dot\+Segments(\$path)}{removeDotSegments($path)}}]{\setlength{\rightskip}{0pt plus 5cm}static Net\+\_\+\+U\+R\+L2\+::remove\+Dot\+Segments (
-\begin{DoxyParamCaption}
-\item[{}]{\$path}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classNet__URL2_aa2ca379f950f6e7a3932121ad39c0e5a}{}\label{classNet__URL2_aa2ca379f950f6e7a3932121ad39c0e5a}
+\subsubsection{\texorpdfstring{remove\+Dot\+Segments()}{removeDotSegments()}}
+{\footnotesize\ttfamily static Net\+\_\+\+U\+R\+L2\+::remove\+Dot\+Segments (\begin{DoxyParamCaption}\item[{}]{\$path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
 Removes dots as described in R\+FC 3986, section 5.\+2.\+4, e.\+g. \char`\"{}/foo/../bar/baz\char`\"{} =$>$ \char`\"{}/bar/baz\char`\"{}
 
 
@@ -594,13 +564,12 @@ string a path
 
 Definition at line 976 of file U\+R\+L2.\+php.
 
+\hypertarget{classNet__URL2_a8630ab79fad624b2fd5b0df2e9123c0a}{}\label{classNet__URL2_a8630ab79fad624b2fd5b0df2e9123c0a} 
 \index{Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}!resolve@{resolve}}
 \index{resolve@{resolve}!Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}}
-\subsubsection[{\texorpdfstring{resolve(\$reference)}{resolve($reference)}}]{\setlength{\rightskip}{0pt plus 5cm}Net\+\_\+\+U\+R\+L2\+::resolve (
-\begin{DoxyParamCaption}
-\item[{}]{\$reference}
-\end{DoxyParamCaption}
-)}\hypertarget{classNet__URL2_a8630ab79fad624b2fd5b0df2e9123c0a}{}\label{classNet__URL2_a8630ab79fad624b2fd5b0df2e9123c0a}
+\subsubsection{\texorpdfstring{resolve()}{resolve()}}
+{\footnotesize\ttfamily Net\+\_\+\+U\+R\+L2\+::resolve (\begin{DoxyParamCaption}\item[{}]{\$reference }\end{DoxyParamCaption})}
+
 Returns an \hyperlink{classNet__URL2}{Net\+\_\+\+U\+R\+L2} instance representing an absolute U\+RL relative to this U\+RL.
 
 
@@ -620,13 +589,12 @@ Returns an \hyperlink{classNet__URL2}{Net\+\_\+\+U\+R\+L2} instance representing
 
 Definition at line 882 of file U\+R\+L2.\+php.
 
+\hypertarget{classNet__URL2_a9da06e86831f84fa7fba91e81e051160}{}\label{classNet__URL2_a9da06e86831f84fa7fba91e81e051160} 
 \index{Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}!set\+Authority@{set\+Authority}}
 \index{set\+Authority@{set\+Authority}!Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}}
-\subsubsection[{\texorpdfstring{set\+Authority(\$authority)}{setAuthority($authority)}}]{\setlength{\rightskip}{0pt plus 5cm}Net\+\_\+\+U\+R\+L2\+::set\+Authority (
-\begin{DoxyParamCaption}
-\item[{}]{\$authority}
-\end{DoxyParamCaption}
-)}\hypertarget{classNet__URL2_a9da06e86831f84fa7fba91e81e051160}{}\label{classNet__URL2_a9da06e86831f84fa7fba91e81e051160}
+\subsubsection{\texorpdfstring{set\+Authority()}{setAuthority()}}
+{\footnotesize\ttfamily Net\+\_\+\+U\+R\+L2\+::set\+Authority (\begin{DoxyParamCaption}\item[{}]{\$authority }\end{DoxyParamCaption})}
+
 Sets the authority part, i.\+e. \mbox{[} userinfo \char`\"{}@\char`\"{} \mbox{]} host \mbox{[} \char`\"{}\+:\char`\"{} port \mbox{]}. Specify false if there is no authority.
 
 
@@ -641,13 +609,12 @@ string | bool & {\em \$authority} & a hostname or an IP address, possibly with u
 
 Definition at line 377 of file U\+R\+L2.\+php.
 
+\hypertarget{classNet__URL2_ac2b9fbed981333efd7cab6c42e47bc04}{}\label{classNet__URL2_ac2b9fbed981333efd7cab6c42e47bc04} 
 \index{Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}!set\+Fragment@{set\+Fragment}}
 \index{set\+Fragment@{set\+Fragment}!Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}}
-\subsubsection[{\texorpdfstring{set\+Fragment(\$fragment)}{setFragment($fragment)}}]{\setlength{\rightskip}{0pt plus 5cm}Net\+\_\+\+U\+R\+L2\+::set\+Fragment (
-\begin{DoxyParamCaption}
-\item[{}]{\$fragment}
-\end{DoxyParamCaption}
-)}\hypertarget{classNet__URL2_ac2b9fbed981333efd7cab6c42e47bc04}{}\label{classNet__URL2_ac2b9fbed981333efd7cab6c42e47bc04}
+\subsubsection{\texorpdfstring{set\+Fragment()}{setFragment()}}
+{\footnotesize\ttfamily Net\+\_\+\+U\+R\+L2\+::set\+Fragment (\begin{DoxyParamCaption}\item[{}]{\$fragment }\end{DoxyParamCaption})}
+
 Sets the fragment name. Specify false if \char`\"{}\#\char`\"{} is not present in the U\+RL.
 
 
@@ -662,13 +629,12 @@ string | bool & {\em \$fragment} & a fragment excluding the leading \char`\"{}\#
 
 Definition at line 472 of file U\+R\+L2.\+php.
 
+\hypertarget{classNet__URL2_afacc7bf64786203c167c2d771f1fddf9}{}\label{classNet__URL2_afacc7bf64786203c167c2d771f1fddf9} 
 \index{Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}!set\+Host@{set\+Host}}
 \index{set\+Host@{set\+Host}!Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}}
-\subsubsection[{\texorpdfstring{set\+Host(\$host)}{setHost($host)}}]{\setlength{\rightskip}{0pt plus 5cm}Net\+\_\+\+U\+R\+L2\+::set\+Host (
-\begin{DoxyParamCaption}
-\item[{}]{\$host}
-\end{DoxyParamCaption}
-)}\hypertarget{classNet__URL2_afacc7bf64786203c167c2d771f1fddf9}{}\label{classNet__URL2_afacc7bf64786203c167c2d771f1fddf9}
+\subsubsection{\texorpdfstring{set\+Host()}{setHost()}}
+{\footnotesize\ttfamily Net\+\_\+\+U\+R\+L2\+::set\+Host (\begin{DoxyParamCaption}\item[{}]{\$host }\end{DoxyParamCaption})}
+
 Sets the host part. Specify false if there is no authority part, e.\+g. relative U\+R\+Ls.
 
 
@@ -683,13 +649,12 @@ string | bool & {\em \$host} & a hostname, an IP address, or false\\
 
 Definition at line 309 of file U\+R\+L2.\+php.
 
+\hypertarget{classNet__URL2_aa893e3c250be4842cf21dc6aed0f46b0}{}\label{classNet__URL2_aa893e3c250be4842cf21dc6aed0f46b0} 
 \index{Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}!set\+Path@{set\+Path}}
 \index{set\+Path@{set\+Path}!Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}}
-\subsubsection[{\texorpdfstring{set\+Path(\$path)}{setPath($path)}}]{\setlength{\rightskip}{0pt plus 5cm}Net\+\_\+\+U\+R\+L2\+::set\+Path (
-\begin{DoxyParamCaption}
-\item[{}]{\$path}
-\end{DoxyParamCaption}
-)}\hypertarget{classNet__URL2_aa893e3c250be4842cf21dc6aed0f46b0}{}\label{classNet__URL2_aa893e3c250be4842cf21dc6aed0f46b0}
+\subsubsection{\texorpdfstring{set\+Path()}{setPath()}}
+{\footnotesize\ttfamily Net\+\_\+\+U\+R\+L2\+::set\+Path (\begin{DoxyParamCaption}\item[{}]{\$path }\end{DoxyParamCaption})}
+
 Sets the path part (possibly an empty string).
 
 
@@ -704,13 +669,12 @@ string & {\em \$path} & a path\\
 
 Definition at line 421 of file U\+R\+L2.\+php.
 
+\hypertarget{classNet__URL2_a4086e17a9dc2744b451ed0e5cc6fe113}{}\label{classNet__URL2_a4086e17a9dc2744b451ed0e5cc6fe113} 
 \index{Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}!set\+Port@{set\+Port}}
 \index{set\+Port@{set\+Port}!Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}}
-\subsubsection[{\texorpdfstring{set\+Port(\$port)}{setPort($port)}}]{\setlength{\rightskip}{0pt plus 5cm}Net\+\_\+\+U\+R\+L2\+::set\+Port (
-\begin{DoxyParamCaption}
-\item[{}]{\$port}
-\end{DoxyParamCaption}
-)}\hypertarget{classNet__URL2_a4086e17a9dc2744b451ed0e5cc6fe113}{}\label{classNet__URL2_a4086e17a9dc2744b451ed0e5cc6fe113}
+\subsubsection{\texorpdfstring{set\+Port()}{setPort()}}
+{\footnotesize\ttfamily Net\+\_\+\+U\+R\+L2\+::set\+Port (\begin{DoxyParamCaption}\item[{}]{\$port }\end{DoxyParamCaption})}
+
 Sets the port number. Specify false if there is no port number specified, i.\+e. if the default port is to be used.
 
 
@@ -725,13 +689,12 @@ string | bool & {\em \$port} & a port number, or false\\
 
 Definition at line 334 of file U\+R\+L2.\+php.
 
+\hypertarget{classNet__URL2_a8ef0c4583fcbc47e980f5facadc96295}{}\label{classNet__URL2_a8ef0c4583fcbc47e980f5facadc96295} 
 \index{Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}!set\+Query@{set\+Query}}
 \index{set\+Query@{set\+Query}!Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}}
-\subsubsection[{\texorpdfstring{set\+Query(\$query)}{setQuery($query)}}]{\setlength{\rightskip}{0pt plus 5cm}Net\+\_\+\+U\+R\+L2\+::set\+Query (
-\begin{DoxyParamCaption}
-\item[{}]{\$query}
-\end{DoxyParamCaption}
-)}\hypertarget{classNet__URL2_a8ef0c4583fcbc47e980f5facadc96295}{}\label{classNet__URL2_a8ef0c4583fcbc47e980f5facadc96295}
+\subsubsection{\texorpdfstring{set\+Query()}{setQuery()}}
+{\footnotesize\ttfamily Net\+\_\+\+U\+R\+L2\+::set\+Query (\begin{DoxyParamCaption}\item[{}]{\$query }\end{DoxyParamCaption})}
+
 Sets the query string (excluding the leading \char`\"{}?\char`\"{}). Specify false if \char`\"{}?\char`\"{} is not present in the U\+RL.
 
 
@@ -749,14 +712,12 @@ string | bool & {\em \$query} & a query string, e.\+g. \char`\"{}foo=1\&bar=2\ch
 
 Definition at line 448 of file U\+R\+L2.\+php.
 
+\hypertarget{classNet__URL2_a30d2d35e20ee1391db08c5ab74ffb262}{}\label{classNet__URL2_a30d2d35e20ee1391db08c5ab74ffb262} 
 \index{Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}!set\+Query\+Variable@{set\+Query\+Variable}}
 \index{set\+Query\+Variable@{set\+Query\+Variable}!Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}}
-\subsubsection[{\texorpdfstring{set\+Query\+Variable(\$name, \$value)}{setQueryVariable($name, $value)}}]{\setlength{\rightskip}{0pt plus 5cm}Net\+\_\+\+U\+R\+L2\+::set\+Query\+Variable (
-\begin{DoxyParamCaption}
-\item[{}]{\$name, }
-\item[{}]{\$value}
-\end{DoxyParamCaption}
-)}\hypertarget{classNet__URL2_a30d2d35e20ee1391db08c5ab74ffb262}{}\label{classNet__URL2_a30d2d35e20ee1391db08c5ab74ffb262}
+\subsubsection{\texorpdfstring{set\+Query\+Variable()}{setQueryVariable()}}
+{\footnotesize\ttfamily Net\+\_\+\+U\+R\+L2\+::set\+Query\+Variable (\begin{DoxyParamCaption}\item[{}]{\$name,  }\item[{}]{\$value }\end{DoxyParamCaption})}
+
 Sets the specified variable in the query string.
 
 
@@ -773,13 +734,12 @@ mixed & {\em \$value} & variable value\\
 
 Definition at line 672 of file U\+R\+L2.\+php.
 
+\hypertarget{classNet__URL2_a2b93dbf912e578998c7447788400cc07}{}\label{classNet__URL2_a2b93dbf912e578998c7447788400cc07} 
 \index{Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}!set\+Query\+Variables@{set\+Query\+Variables}}
 \index{set\+Query\+Variables@{set\+Query\+Variables}!Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}}
-\subsubsection[{\texorpdfstring{set\+Query\+Variables(array \$array)}{setQueryVariables(array $array)}}]{\setlength{\rightskip}{0pt plus 5cm}Net\+\_\+\+U\+R\+L2\+::set\+Query\+Variables (
-\begin{DoxyParamCaption}
-\item[{array}]{\$array}
-\end{DoxyParamCaption}
-)}\hypertarget{classNet__URL2_a2b93dbf912e578998c7447788400cc07}{}\label{classNet__URL2_a2b93dbf912e578998c7447788400cc07}
+\subsubsection{\texorpdfstring{set\+Query\+Variables()}{setQueryVariables()}}
+{\footnotesize\ttfamily Net\+\_\+\+U\+R\+L2\+::set\+Query\+Variables (\begin{DoxyParamCaption}\item[{array}]{\$array }\end{DoxyParamCaption})}
+
 Sets the query string to the specified variable in the query string.
 
 
@@ -794,13 +754,12 @@ array & {\em \$array} & (name =$>$ value) array\\
 
 Definition at line 651 of file U\+R\+L2.\+php.
 
+\hypertarget{classNet__URL2_aadd3865f996d98703ec9bbdecfda4ba1}{}\label{classNet__URL2_aadd3865f996d98703ec9bbdecfda4ba1} 
 \index{Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}!set\+Scheme@{set\+Scheme}}
 \index{set\+Scheme@{set\+Scheme}!Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}}
-\subsubsection[{\texorpdfstring{set\+Scheme(\$scheme)}{setScheme($scheme)}}]{\setlength{\rightskip}{0pt plus 5cm}Net\+\_\+\+U\+R\+L2\+::set\+Scheme (
-\begin{DoxyParamCaption}
-\item[{}]{\$scheme}
-\end{DoxyParamCaption}
-)}\hypertarget{classNet__URL2_aadd3865f996d98703ec9bbdecfda4ba1}{}\label{classNet__URL2_aadd3865f996d98703ec9bbdecfda4ba1}
+\subsubsection{\texorpdfstring{set\+Scheme()}{setScheme()}}
+{\footnotesize\ttfamily Net\+\_\+\+U\+R\+L2\+::set\+Scheme (\begin{DoxyParamCaption}\item[{}]{\$scheme }\end{DoxyParamCaption})}
+
 Sets the scheme, e.\+g. \char`\"{}http\char`\"{} or \char`\"{}urn\char`\"{}. Specify false if there is no scheme specified, i.\+e. if this is a relative U\+RL.
 
 
@@ -818,14 +777,12 @@ string | bool & {\em \$scheme} & e.\+g. \char`\"{}http\char`\"{} or \char`\"{}ur
 
 Definition at line 222 of file U\+R\+L2.\+php.
 
+\hypertarget{classNet__URL2_a0e71d3ae85320e8e3ee181b49a11721b}{}\label{classNet__URL2_a0e71d3ae85320e8e3ee181b49a11721b} 
 \index{Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}!set\+Userinfo@{set\+Userinfo}}
 \index{set\+Userinfo@{set\+Userinfo}!Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}}
-\subsubsection[{\texorpdfstring{set\+Userinfo(\$userinfo, \$password=false)}{setUserinfo($userinfo, $password=false)}}]{\setlength{\rightskip}{0pt plus 5cm}Net\+\_\+\+U\+R\+L2\+::set\+Userinfo (
-\begin{DoxyParamCaption}
-\item[{}]{\$userinfo, }
-\item[{}]{\$password = {\ttfamily false}}
-\end{DoxyParamCaption}
-)}\hypertarget{classNet__URL2_a0e71d3ae85320e8e3ee181b49a11721b}{}\label{classNet__URL2_a0e71d3ae85320e8e3ee181b49a11721b}
+\subsubsection{\texorpdfstring{set\+Userinfo()}{setUserinfo()}}
+{\footnotesize\ttfamily Net\+\_\+\+U\+R\+L2\+::set\+Userinfo (\begin{DoxyParamCaption}\item[{}]{\$userinfo,  }\item[{}]{\$password = {\ttfamily false} }\end{DoxyParamCaption})}
+
 Sets the userinfo part. If two arguments are passed, they are combined in the userinfo part as username \char`\"{}\+:\char`\"{} password.
 
 
@@ -842,13 +799,12 @@ string | bool & {\em \$password} & optional password, or false\\
 
 Definition at line 276 of file U\+R\+L2.\+php.
 
+\hypertarget{classNet__URL2_a2841fc0817045ec33688490613d6e64c}{}\label{classNet__URL2_a2841fc0817045ec33688490613d6e64c} 
 \index{Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}!unset\+Query\+Variable@{unset\+Query\+Variable}}
 \index{unset\+Query\+Variable@{unset\+Query\+Variable}!Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}}
-\subsubsection[{\texorpdfstring{unset\+Query\+Variable(\$name)}{unsetQueryVariable($name)}}]{\setlength{\rightskip}{0pt plus 5cm}Net\+\_\+\+U\+R\+L2\+::unset\+Query\+Variable (
-\begin{DoxyParamCaption}
-\item[{}]{\$name}
-\end{DoxyParamCaption}
-)}\hypertarget{classNet__URL2_a2841fc0817045ec33688490613d6e64c}{}\label{classNet__URL2_a2841fc0817045ec33688490613d6e64c}
+\subsubsection{\texorpdfstring{unset\+Query\+Variable()}{unsetQueryVariable()}}
+{\footnotesize\ttfamily Net\+\_\+\+U\+R\+L2\+::unset\+Query\+Variable (\begin{DoxyParamCaption}\item[{}]{\$name }\end{DoxyParamCaption})}
+
 Removes the specified variable from the query string.
 
 
@@ -863,13 +819,12 @@ void
 
 Definition at line 687 of file U\+R\+L2.\+php.
 
+\hypertarget{classNet__URL2_ab870de85228bfe185ce8a208c0438c43}{}\label{classNet__URL2_ab870de85228bfe185ce8a208c0438c43} 
 \index{Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}!urlencode@{urlencode}}
 \index{urlencode@{urlencode}!Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}}
-\subsubsection[{\texorpdfstring{urlencode(\$string)}{urlencode($string)}}]{\setlength{\rightskip}{0pt plus 5cm}static Net\+\_\+\+U\+R\+L2\+::urlencode (
-\begin{DoxyParamCaption}
-\item[{}]{\$string}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classNet__URL2_ab870de85228bfe185ce8a208c0438c43}{}\label{classNet__URL2_ab870de85228bfe185ce8a208c0438c43}
+\subsubsection{\texorpdfstring{urlencode()}{urlencode()}}
+{\footnotesize\ttfamily static Net\+\_\+\+U\+R\+L2\+::urlencode (\begin{DoxyParamCaption}\item[{}]{\$string }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
 Percent-\/encodes all non-\/alphanumeric characters except these\+: \+\_\+ . -\/ $\sim$ Similar to P\+HP\textquotesingle{}s rawurlencode(), except that it also encodes $\sim$ in P\+HP 5.\+2.\+x and earlier.
 
 
@@ -887,44 +842,62 @@ Definition at line 1036 of file U\+R\+L2.\+php.
 
 
 \subsection{Member Data Documentation}
+\hypertarget{classNet__URL2_af415684f1d85246c1132203142b86499}{}\label{classNet__URL2_af415684f1d85246c1132203142b86499} 
 \index{Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}!O\+P\+T\+I\+O\+N\+\_\+\+D\+R\+O\+P\+\_\+\+S\+E\+Q\+U\+E\+N\+CE@{O\+P\+T\+I\+O\+N\+\_\+\+D\+R\+O\+P\+\_\+\+S\+E\+Q\+U\+E\+N\+CE}}
 \index{O\+P\+T\+I\+O\+N\+\_\+\+D\+R\+O\+P\+\_\+\+S\+E\+Q\+U\+E\+N\+CE@{O\+P\+T\+I\+O\+N\+\_\+\+D\+R\+O\+P\+\_\+\+S\+E\+Q\+U\+E\+N\+CE}!Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}}
-\subsubsection[{\texorpdfstring{O\+P\+T\+I\+O\+N\+\_\+\+D\+R\+O\+P\+\_\+\+S\+E\+Q\+U\+E\+N\+CE}{OPTION_DROP_SEQUENCE}}]{\setlength{\rightskip}{0pt plus 5cm}const Net\+\_\+\+U\+R\+L2\+::\+O\+P\+T\+I\+O\+N\+\_\+\+D\+R\+O\+P\+\_\+\+S\+E\+Q\+U\+E\+N\+CE = \textquotesingle{}drop\+\_\+sequence\textquotesingle{}}\hypertarget{classNet__URL2_af415684f1d85246c1132203142b86499}{}\label{classNet__URL2_af415684f1d85246c1132203142b86499}
+\subsubsection{\texorpdfstring{O\+P\+T\+I\+O\+N\+\_\+\+D\+R\+O\+P\+\_\+\+S\+E\+Q\+U\+E\+N\+CE}{OPTION\_DROP\_SEQUENCE}}
+{\footnotesize\ttfamily const Net\+\_\+\+U\+R\+L2\+::\+O\+P\+T\+I\+O\+N\+\_\+\+D\+R\+O\+P\+\_\+\+S\+E\+Q\+U\+E\+N\+CE = \textquotesingle{}drop\+\_\+sequence\textquotesingle{}}
+
 Drop zero-\/based integer sequences in query using P\+HP\textquotesingle{}s \mbox{[}\mbox{]} notation. Default is true. 
 
 Definition at line 74 of file U\+R\+L2.\+php.
 
+\hypertarget{classNet__URL2_ae06ebc991de4ffe92644c5a8d37ad5ac}{}\label{classNet__URL2_ae06ebc991de4ffe92644c5a8d37ad5ac} 
 \index{Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}!O\+P\+T\+I\+O\+N\+\_\+\+E\+N\+C\+O\+D\+E\+\_\+\+K\+E\+YS@{O\+P\+T\+I\+O\+N\+\_\+\+E\+N\+C\+O\+D\+E\+\_\+\+K\+E\+YS}}
 \index{O\+P\+T\+I\+O\+N\+\_\+\+E\+N\+C\+O\+D\+E\+\_\+\+K\+E\+YS@{O\+P\+T\+I\+O\+N\+\_\+\+E\+N\+C\+O\+D\+E\+\_\+\+K\+E\+YS}!Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}}
-\subsubsection[{\texorpdfstring{O\+P\+T\+I\+O\+N\+\_\+\+E\+N\+C\+O\+D\+E\+\_\+\+K\+E\+YS}{OPTION_ENCODE_KEYS}}]{\setlength{\rightskip}{0pt plus 5cm}const Net\+\_\+\+U\+R\+L2\+::\+O\+P\+T\+I\+O\+N\+\_\+\+E\+N\+C\+O\+D\+E\+\_\+\+K\+E\+YS = \textquotesingle{}encode\+\_\+keys\textquotesingle{}}\hypertarget{classNet__URL2_ae06ebc991de4ffe92644c5a8d37ad5ac}{}\label{classNet__URL2_ae06ebc991de4ffe92644c5a8d37ad5ac}
+\subsubsection{\texorpdfstring{O\+P\+T\+I\+O\+N\+\_\+\+E\+N\+C\+O\+D\+E\+\_\+\+K\+E\+YS}{OPTION\_ENCODE\_KEYS}}
+{\footnotesize\ttfamily const Net\+\_\+\+U\+R\+L2\+::\+O\+P\+T\+I\+O\+N\+\_\+\+E\+N\+C\+O\+D\+E\+\_\+\+K\+E\+YS = \textquotesingle{}encode\+\_\+keys\textquotesingle{}}
+
 U\+R\+L-\/encode query variable keys. Default is true. 
 
 Definition at line 79 of file U\+R\+L2.\+php.
 
+\hypertarget{classNet__URL2_af5b6f766fae9600b3938e33c32893bce}{}\label{classNet__URL2_af5b6f766fae9600b3938e33c32893bce} 
 \index{Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}!O\+P\+T\+I\+O\+N\+\_\+\+S\+E\+P\+A\+R\+A\+T\+O\+R\+\_\+\+I\+N\+P\+UT@{O\+P\+T\+I\+O\+N\+\_\+\+S\+E\+P\+A\+R\+A\+T\+O\+R\+\_\+\+I\+N\+P\+UT}}
 \index{O\+P\+T\+I\+O\+N\+\_\+\+S\+E\+P\+A\+R\+A\+T\+O\+R\+\_\+\+I\+N\+P\+UT@{O\+P\+T\+I\+O\+N\+\_\+\+S\+E\+P\+A\+R\+A\+T\+O\+R\+\_\+\+I\+N\+P\+UT}!Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}}
-\subsubsection[{\texorpdfstring{O\+P\+T\+I\+O\+N\+\_\+\+S\+E\+P\+A\+R\+A\+T\+O\+R\+\_\+\+I\+N\+P\+UT}{OPTION_SEPARATOR_INPUT}}]{\setlength{\rightskip}{0pt plus 5cm}const Net\+\_\+\+U\+R\+L2\+::\+O\+P\+T\+I\+O\+N\+\_\+\+S\+E\+P\+A\+R\+A\+T\+O\+R\+\_\+\+I\+N\+P\+UT = \textquotesingle{}input\+\_\+separator\textquotesingle{}}\hypertarget{classNet__URL2_af5b6f766fae9600b3938e33c32893bce}{}\label{classNet__URL2_af5b6f766fae9600b3938e33c32893bce}
+\subsubsection{\texorpdfstring{O\+P\+T\+I\+O\+N\+\_\+\+S\+E\+P\+A\+R\+A\+T\+O\+R\+\_\+\+I\+N\+P\+UT}{OPTION\_SEPARATOR\_INPUT}}
+{\footnotesize\ttfamily const Net\+\_\+\+U\+R\+L2\+::\+O\+P\+T\+I\+O\+N\+\_\+\+S\+E\+P\+A\+R\+A\+T\+O\+R\+\_\+\+I\+N\+P\+UT = \textquotesingle{}input\+\_\+separator\textquotesingle{}}
+
 \hyperlink{classQuery}{Query} variable separators when parsing the query string. Every character is considered a separator. Default is \char`\"{}\&\char`\"{}. 
 
 Definition at line 85 of file U\+R\+L2.\+php.
 
+\hypertarget{classNet__URL2_a84719f522747f51638a9c8474d4abc39}{}\label{classNet__URL2_a84719f522747f51638a9c8474d4abc39} 
 \index{Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}!O\+P\+T\+I\+O\+N\+\_\+\+S\+E\+P\+A\+R\+A\+T\+O\+R\+\_\+\+O\+U\+T\+P\+UT@{O\+P\+T\+I\+O\+N\+\_\+\+S\+E\+P\+A\+R\+A\+T\+O\+R\+\_\+\+O\+U\+T\+P\+UT}}
 \index{O\+P\+T\+I\+O\+N\+\_\+\+S\+E\+P\+A\+R\+A\+T\+O\+R\+\_\+\+O\+U\+T\+P\+UT@{O\+P\+T\+I\+O\+N\+\_\+\+S\+E\+P\+A\+R\+A\+T\+O\+R\+\_\+\+O\+U\+T\+P\+UT}!Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}}
-\subsubsection[{\texorpdfstring{O\+P\+T\+I\+O\+N\+\_\+\+S\+E\+P\+A\+R\+A\+T\+O\+R\+\_\+\+O\+U\+T\+P\+UT}{OPTION_SEPARATOR_OUTPUT}}]{\setlength{\rightskip}{0pt plus 5cm}const Net\+\_\+\+U\+R\+L2\+::\+O\+P\+T\+I\+O\+N\+\_\+\+S\+E\+P\+A\+R\+A\+T\+O\+R\+\_\+\+O\+U\+T\+P\+UT = \textquotesingle{}output\+\_\+separator\textquotesingle{}}\hypertarget{classNet__URL2_a84719f522747f51638a9c8474d4abc39}{}\label{classNet__URL2_a84719f522747f51638a9c8474d4abc39}
+\subsubsection{\texorpdfstring{O\+P\+T\+I\+O\+N\+\_\+\+S\+E\+P\+A\+R\+A\+T\+O\+R\+\_\+\+O\+U\+T\+P\+UT}{OPTION\_SEPARATOR\_OUTPUT}}
+{\footnotesize\ttfamily const Net\+\_\+\+U\+R\+L2\+::\+O\+P\+T\+I\+O\+N\+\_\+\+S\+E\+P\+A\+R\+A\+T\+O\+R\+\_\+\+O\+U\+T\+P\+UT = \textquotesingle{}output\+\_\+separator\textquotesingle{}}
+
 \hyperlink{classQuery}{Query} variable separator used when generating the query string. Default is \char`\"{}\&\char`\"{}. 
 
 Definition at line 91 of file U\+R\+L2.\+php.
 
+\hypertarget{classNet__URL2_a766955033bdccec7175d0694df62a1a9}{}\label{classNet__URL2_a766955033bdccec7175d0694df62a1a9} 
 \index{Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}!O\+P\+T\+I\+O\+N\+\_\+\+S\+T\+R\+I\+CT@{O\+P\+T\+I\+O\+N\+\_\+\+S\+T\+R\+I\+CT}}
 \index{O\+P\+T\+I\+O\+N\+\_\+\+S\+T\+R\+I\+CT@{O\+P\+T\+I\+O\+N\+\_\+\+S\+T\+R\+I\+CT}!Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}}
-\subsubsection[{\texorpdfstring{O\+P\+T\+I\+O\+N\+\_\+\+S\+T\+R\+I\+CT}{OPTION_STRICT}}]{\setlength{\rightskip}{0pt plus 5cm}const Net\+\_\+\+U\+R\+L2\+::\+O\+P\+T\+I\+O\+N\+\_\+\+S\+T\+R\+I\+CT = \textquotesingle{}{\bf strict}\textquotesingle{}}\hypertarget{classNet__URL2_a766955033bdccec7175d0694df62a1a9}{}\label{classNet__URL2_a766955033bdccec7175d0694df62a1a9}
+\subsubsection{\texorpdfstring{O\+P\+T\+I\+O\+N\+\_\+\+S\+T\+R\+I\+CT}{OPTION\_STRICT}}
+{\footnotesize\ttfamily const Net\+\_\+\+U\+R\+L2\+::\+O\+P\+T\+I\+O\+N\+\_\+\+S\+T\+R\+I\+CT = \textquotesingle{}strict\textquotesingle{}}
+
 Do strict parsing in \hyperlink{classNet__URL2_a8630ab79fad624b2fd5b0df2e9123c0a}{resolve()} (see R\+FC 3986, section 5.\+2.\+2). Default is true. 
 
 Definition at line 63 of file U\+R\+L2.\+php.
 
+\hypertarget{classNet__URL2_a864182f067e5df22055afc3a0dfe5a57}{}\label{classNet__URL2_a864182f067e5df22055afc3a0dfe5a57} 
 \index{Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}!O\+P\+T\+I\+O\+N\+\_\+\+U\+S\+E\+\_\+\+B\+R\+A\+C\+K\+E\+TS@{O\+P\+T\+I\+O\+N\+\_\+\+U\+S\+E\+\_\+\+B\+R\+A\+C\+K\+E\+TS}}
 \index{O\+P\+T\+I\+O\+N\+\_\+\+U\+S\+E\+\_\+\+B\+R\+A\+C\+K\+E\+TS@{O\+P\+T\+I\+O\+N\+\_\+\+U\+S\+E\+\_\+\+B\+R\+A\+C\+K\+E\+TS}!Net\+\_\+\+U\+R\+L2@{Net\+\_\+\+U\+R\+L2}}
-\subsubsection[{\texorpdfstring{O\+P\+T\+I\+O\+N\+\_\+\+U\+S\+E\+\_\+\+B\+R\+A\+C\+K\+E\+TS}{OPTION_USE_BRACKETS}}]{\setlength{\rightskip}{0pt plus 5cm}const Net\+\_\+\+U\+R\+L2\+::\+O\+P\+T\+I\+O\+N\+\_\+\+U\+S\+E\+\_\+\+B\+R\+A\+C\+K\+E\+TS = \textquotesingle{}use\+\_\+brackets\textquotesingle{}}\hypertarget{classNet__URL2_a864182f067e5df22055afc3a0dfe5a57}{}\label{classNet__URL2_a864182f067e5df22055afc3a0dfe5a57}
+\subsubsection{\texorpdfstring{O\+P\+T\+I\+O\+N\+\_\+\+U\+S\+E\+\_\+\+B\+R\+A\+C\+K\+E\+TS}{OPTION\_USE\_BRACKETS}}
+{\footnotesize\ttfamily const Net\+\_\+\+U\+R\+L2\+::\+O\+P\+T\+I\+O\+N\+\_\+\+U\+S\+E\+\_\+\+B\+R\+A\+C\+K\+E\+TS = \textquotesingle{}use\+\_\+brackets\textquotesingle{}}
+
 Represent arrays in query using P\+HP\textquotesingle{}s \mbox{[}\mbox{]} notation. Default is true. 
 
 Definition at line 68 of file U\+R\+L2.\+php.

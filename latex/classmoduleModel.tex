@@ -16,7 +16,7 @@ Inheritance diagram for module\+Model\+:\begin{figure}[H]
 \item 
 \hyperlink{classmoduleModel_a1d6fb4cdd3dd5e068e71cacc551f517c}{init} ()
 \begin{DoxyCompactList}\small\item\em Initialization. \end{DoxyCompactList}\item 
-\hyperlink{classmoduleModel_a5f53ae1101876e8967cc3c40e54badcd}{is\+I\+D\+Exists} (\$\hyperlink{JSSpec_8js_ae8ddf9e890c62bf03be54143867a14a8}{id}, \$\hyperlink{ko_8install_8php_a8b1406b4ad1048041558dce6bfe89004}{site\+\_\+srl}=0)
+\hyperlink{classmoduleModel_a5f53ae1101876e8967cc3c40e54badcd}{is\+I\+D\+Exists} (\$id, \$\hyperlink{ko_8install_8php_a8b1406b4ad1048041558dce6bfe89004}{site\+\_\+srl}=0)
 \begin{DoxyCompactList}\small\item\em Check if mid, vid are available. \end{DoxyCompactList}\item 
 \hyperlink{classmoduleModel_a96446e3b8e031ec1264c7187cb1384a5}{get\+Site\+Info} (\$\hyperlink{ko_8install_8php_a8b1406b4ad1048041558dce6bfe89004}{site\+\_\+srl}, \$column\+List=array())
 \begin{DoxyCompactList}\small\item\em Get site information. \end{DoxyCompactList}\item 
@@ -38,9 +38,9 @@ Inheritance diagram for module\+Model\+:\begin{figure}[H]
 \begin{DoxyCompactList}\small\item\em Get module information corresponding to multiple module\+\_\+srls. \end{DoxyCompactList}\item 
 \hyperlink{classmoduleModel_ae8f36b54364eedca852624d015d99258}{add\+Module\+Extra\+Vars} (\$module\+\_\+info)
 \begin{DoxyCompactList}\small\item\em Add extra vars to the module basic information. \end{DoxyCompactList}\item 
-\hyperlink{classmoduleModel_a455828df6cdf405ba9b77d242faf8651}{get\+Mid\+List} (\$args=\hyperlink{modernizr_8min_8js_a286f9ec831c5e676eeb493248eab9575}{null}, \$column\+List=array())
+\hyperlink{classmoduleModel_a455828df6cdf405ba9b77d242faf8651}{get\+Mid\+List} (\$args=null, \$column\+List=array())
 \begin{DoxyCompactList}\small\item\em Get a complete list of mid, which is created in the \hyperlink{classDB}{DB}. \end{DoxyCompactList}\item 
-\hyperlink{classmoduleModel_ae63e7e551002fac4c01a330a76dd7244}{get\+Module\+Srl\+List} (\$args=\hyperlink{modernizr_8min_8js_a286f9ec831c5e676eeb493248eab9575}{null}, \$column\+List=array())
+\hyperlink{classmoduleModel_ae63e7e551002fac4c01a330a76dd7244}{get\+Module\+Srl\+List} (\$args=null, \$column\+List=array())
 \begin{DoxyCompactList}\small\item\em Get a complete list of module\+\_\+srl, which is created in the \hyperlink{classDB}{DB}. \end{DoxyCompactList}\item 
 \hyperlink{classmoduleModel_a857a241844d60b7678bd144175d23f29}{get\+Module\+Srl\+By\+Mid} (\$mid)
 \begin{DoxyCompactList}\small\item\em Return an array of module\+\_\+srl corresponding to a mid list. \end{DoxyCompactList}\item 
@@ -60,11 +60,11 @@ Inheritance diagram for module\+Model\+:\begin{figure}[H]
 \begin{DoxyCompactList}\small\item\em Return permisson and action data by conf/module.\+xml in the module Cache it because it takes too long to parse module.\+xml file When caching, add codes so to include it directly This is apparently good for performance, but not sure about its side-\/effects. \end{DoxyCompactList}\item 
 \hyperlink{classmoduleModel_a9fae8e7a41eda8e384cb46d25430ae82}{get\+Module\+Skin\+Info\+List} ()
 \item 
-\hyperlink{classmoduleModel_af48d0cb71ef8e732a67872f80d95f884}{get\+Skins} (\$path, \$dir= \textquotesingle{}skins\textquotesingle{})
+\hyperlink{classmoduleModel_abe2d53bb2e98a672c0a776537d7471cf}{get\+Skins} (\$path, \$dir=\textquotesingle{}skins\textquotesingle{})
 \begin{DoxyCompactList}\small\item\em Get a list of skins for the module Return file analysis of skin and skin.\+xml. \end{DoxyCompactList}\item 
-\hyperlink{classmoduleModel_af2f585723dfb8b8993f0e884136e45bb}{load\+Skin\+Info} (\$path, \$\hyperlink{ko_8install_8php_ab0f2b49fdb57754496b34f6b880cdeaf}{skin}, \$dir= \textquotesingle{}skins\textquotesingle{})
+\hyperlink{classmoduleModel_a2b655921c58fd41c547b78481d585275}{load\+Skin\+Info} (\$path, \$\hyperlink{ko_8install_8php_ab0f2b49fdb57754496b34f6b880cdeaf}{skin}, \$dir=\textquotesingle{}skins\textquotesingle{})
 \begin{DoxyCompactList}\small\item\em Get skin information on a specific location. \end{DoxyCompactList}\item 
-\hyperlink{classmoduleModel_a2b22943c4d212c8284ef9780e0ebf3bd}{get\+Module\+Count} (\$\hyperlink{ko_8install_8php_a8b1406b4ad1048041558dce6bfe89004}{site\+\_\+srl}, \$\hyperlink{classmodule}{module}=\hyperlink{modernizr_8min_8js_a286f9ec831c5e676eeb493248eab9575}{null})
+\hyperlink{classmoduleModel_a2b22943c4d212c8284ef9780e0ebf3bd}{get\+Module\+Count} (\$\hyperlink{ko_8install_8php_a8b1406b4ad1048041558dce6bfe89004}{site\+\_\+srl}, \$\hyperlink{classmodule}{module}=null)
 \begin{DoxyCompactList}\small\item\em Return the number of modules which are registered on a virtual site. \end{DoxyCompactList}\item 
 \hyperlink{classmoduleModel_ae8005c8ab7ee3b9e6ddd7f71bb2b4698}{get\+Module\+Config} (\$\hyperlink{classmodule}{module}, \$\hyperlink{ko_8install_8php_a8b1406b4ad1048041558dce6bfe89004}{site\+\_\+srl}=0)
 \begin{DoxyCompactList}\small\item\em Return module configurations Global configuration is used to manage board, member and others. \end{DoxyCompactList}\item 
@@ -84,9 +84,9 @@ Inheritance diagram for module\+Model\+:\begin{figure}[H]
 \item 
 \hyperlink{classmoduleModel_af51708f2ce0243f482bc92a453dd27c4}{get\+Module\+List} ()
 \begin{DoxyCompactList}\small\item\em Get a type and information of the module. \end{DoxyCompactList}\item 
-\hyperlink{classmoduleModel_ab51d556817682d653b92e09a34b138d6}{sync\+Module\+To\+Site} (\&\$\hyperlink{document__category_8js_a94b4f25375ac17cb917012e05bf514a7}{data})
-\begin{DoxyCompactList}\small\item\em Combine module\+\_\+srls with domain of sites Because \hyperlink{namespaceXE}{XE} D\+B\+Handler doesn\textquotesingle{}t support left outer join, it should be as same as \$\+Output-\/$>$data\mbox{[}\mbox{]}-\/$>$module\+\_\+srl. \end{DoxyCompactList}\item 
-\hyperlink{classmoduleModel_aae55c42d2818ffd09f81d6cb215c59ff}{is\+Site\+Admin} (\$member\+\_\+info, \$\hyperlink{ko_8install_8php_a8b1406b4ad1048041558dce6bfe89004}{site\+\_\+srl}=\hyperlink{modernizr_8min_8js_a286f9ec831c5e676eeb493248eab9575}{null})
+\hyperlink{classmoduleModel_ab51d556817682d653b92e09a34b138d6}{sync\+Module\+To\+Site} (\&\$data)
+\begin{DoxyCompactList}\small\item\em Combine module\+\_\+srls with domain of sites Because XE D\+B\+Handler doesn\textquotesingle{}t support left outer join, it should be as same as \$\+Output-\/$>$data\mbox{[}\mbox{]}-\/$>$module\+\_\+srl. \end{DoxyCompactList}\item 
+\hyperlink{classmoduleModel_aae55c42d2818ffd09f81d6cb215c59ff}{is\+Site\+Admin} (\$member\+\_\+info, \$\hyperlink{ko_8install_8php_a8b1406b4ad1048041558dce6bfe89004}{site\+\_\+srl}=null)
 \begin{DoxyCompactList}\small\item\em Check if it is an administrator of site\+\_\+module\+\_\+info. \end{DoxyCompactList}\item 
 \hyperlink{classmoduleModel_a6baa2faf83fc96fba51072276c9cb7c3}{get\+Site\+Admin} (\$\hyperlink{ko_8install_8php_a8b1406b4ad1048041558dce6bfe89004}{site\+\_\+srl})
 \begin{DoxyCompactList}\small\item\em Get admin information of the site. \end{DoxyCompactList}\item 
@@ -96,7 +96,7 @@ Inheritance diagram for module\+Model\+:\begin{figure}[H]
 \begin{DoxyCompactList}\small\item\em Get extra vars of the module Extra information, not in the modules table. \end{DoxyCompactList}\item 
 \hyperlink{classmoduleModel_aa3828c94af2b1c8b84fafd423038445d}{get\+Module\+Skin\+Vars} (\$\hyperlink{ko_8install_8php_a370bb6450fab1da3e0ed9f484a38b761}{module\+\_\+srl})
 \begin{DoxyCompactList}\small\item\em Get skin information of the module. \end{DoxyCompactList}\item 
-\hyperlink{classmoduleModel_a0a77bcbc85aa39eebe18687ab6e0b974}{get\+Module\+Default\+Skin} (\$module\+\_\+name, \$skin\+\_\+type= \textquotesingle{}P\textquotesingle{}, \$\hyperlink{ko_8install_8php_a8b1406b4ad1048041558dce6bfe89004}{site\+\_\+srl}=0, \$update\+Cache=true)
+\hyperlink{classmoduleModel_a740b445ffb57b7f7304cb7acf9f3f5b1}{get\+Module\+Default\+Skin} (\$module\+\_\+name, \$skin\+\_\+type=\textquotesingle{}P\textquotesingle{}, \$\hyperlink{ko_8install_8php_a8b1406b4ad1048041558dce6bfe89004}{site\+\_\+srl}=0, \$update\+Cache=true)
 \item 
 \hyperlink{classmoduleModel_af9179765de4796b45236b62be16eb8fb}{sync\+Skin\+Info\+To\+Module\+Info} (\&\$module\+\_\+info)
 \begin{DoxyCompactList}\small\item\em Combine skin information with module information. \end{DoxyCompactList}\item 
@@ -104,7 +104,7 @@ Inheritance diagram for module\+Model\+:\begin{figure}[H]
 \item 
 \hyperlink{classmoduleModel_ae90cd832480cf8c46e96d95c20a63387}{sync\+Mobile\+Skin\+Info\+To\+Module\+Info} (\&\$module\+\_\+info)
 \item 
-\hyperlink{classmoduleModel_a0d6431efeb3e3d377dbbb20b414ba074}{get\+Grant} (\$module\+\_\+info, \$member\+\_\+info, \$xml\+\_\+info= \textquotesingle{}\textquotesingle{})
+\hyperlink{classmoduleModel_a7ed08b703723a21e4d81b4aa89947264}{get\+Grant} (\$module\+\_\+info, \$member\+\_\+info, \$xml\+\_\+info=\textquotesingle{}\textquotesingle{})
 \begin{DoxyCompactList}\small\item\em Return permission by using module info, xml info and member info. \end{DoxyCompactList}\item 
 \hyperlink{classmoduleModel_a792e14b71d66044513a646a44216be17}{get\+Module\+File\+Box} (\$module\+\_\+filebox\+\_\+srl)
 \item 
@@ -116,7 +116,7 @@ Inheritance diagram for module\+Model\+:\begin{figure}[H]
 \item 
 \hyperlink{classmoduleModel_ac1183d568d6dab443a83c8618e6eb348}{get\+Module\+File\+Box\+Path} (\$module\+\_\+filebox\+\_\+srl)
 \item 
-\hyperlink{classmoduleModel_a240b4774ddaadc1ded08551120942ca3}{get\+Validator\+File\+Path} (\$\hyperlink{classmodule}{module}, \$ruleset, \$mid=\hyperlink{modernizr_8min_8js_a286f9ec831c5e676eeb493248eab9575}{null})
+\hyperlink{classmoduleModel_a240b4774ddaadc1ded08551120942ca3}{get\+Validator\+File\+Path} (\$\hyperlink{classmodule}{module}, \$ruleset, \$mid=null)
 \begin{DoxyCompactList}\small\item\em Return ruleset cache file path. \end{DoxyCompactList}\item 
 \hyperlink{classmoduleModel_aa0e34c0fdc868595793b10b6b4534c74}{get\+Lang\+List\+By\+Langcode\+For\+Auto\+Complete} ()
 \item 
@@ -140,13 +140,12 @@ Definition at line 8 of file module.\+model.\+php.
 
 
 \subsection{Member Function Documentation}
+\hypertarget{classmoduleModel_ae8f36b54364eedca852624d015d99258}{}\label{classmoduleModel_ae8f36b54364eedca852624d015d99258} 
 \index{module\+Model@{module\+Model}!add\+Module\+Extra\+Vars@{add\+Module\+Extra\+Vars}}
 \index{add\+Module\+Extra\+Vars@{add\+Module\+Extra\+Vars}!module\+Model@{module\+Model}}
-\subsubsection[{\texorpdfstring{add\+Module\+Extra\+Vars(\$module\+\_\+info)}{addModuleExtraVars($module_info)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Model\+::add\+Module\+Extra\+Vars (
-\begin{DoxyParamCaption}
-\item[{}]{\$module\+\_\+info}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleModel_ae8f36b54364eedca852624d015d99258}{}\label{classmoduleModel_ae8f36b54364eedca852624d015d99258}
+\subsubsection{\texorpdfstring{add\+Module\+Extra\+Vars()}{addModuleExtraVars()}}
+{\footnotesize\ttfamily module\+Model\+::add\+Module\+Extra\+Vars (\begin{DoxyParamCaption}\item[{}]{\$module\+\_\+info }\end{DoxyParamCaption})}
+
 
 
 Add extra vars to the module basic information. 
@@ -155,35 +154,32 @@ Add extra vars to the module basic information.
 
 Definition at line 465 of file module.\+model.\+php.
 
+\hypertarget{classmoduleModel_a0a2303f1634b4937509e9b21e811d1ad}{}\label{classmoduleModel_a0a2303f1634b4937509e9b21e811d1ad} 
 \index{module\+Model@{module\+Model}!check\+Need\+Install@{check\+Need\+Install}}
 \index{check\+Need\+Install@{check\+Need\+Install}!module\+Model@{module\+Model}}
-\subsubsection[{\texorpdfstring{check\+Need\+Install(\$module\+\_\+name)}{checkNeedInstall($module_name)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Model\+::check\+Need\+Install (
-\begin{DoxyParamCaption}
-\item[{}]{\$module\+\_\+name}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleModel_a0a2303f1634b4937509e9b21e811d1ad}{}\label{classmoduleModel_a0a2303f1634b4937509e9b21e811d1ad}
+\subsubsection{\texorpdfstring{check\+Need\+Install()}{checkNeedInstall()}}
+{\footnotesize\ttfamily module\+Model\+::check\+Need\+Install (\begin{DoxyParamCaption}\item[{}]{\$module\+\_\+name }\end{DoxyParamCaption})}
+
 
 
 Definition at line 1523 of file module.\+model.\+php.
 
+\hypertarget{classmoduleModel_adb7f7c6facce819f69ae5e29db2018cc}{}\label{classmoduleModel_adb7f7c6facce819f69ae5e29db2018cc} 
 \index{module\+Model@{module\+Model}!check\+Need\+Update@{check\+Need\+Update}}
 \index{check\+Need\+Update@{check\+Need\+Update}!module\+Model@{module\+Model}}
-\subsubsection[{\texorpdfstring{check\+Need\+Update(\$module\+\_\+name)}{checkNeedUpdate($module_name)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Model\+::check\+Need\+Update (
-\begin{DoxyParamCaption}
-\item[{}]{\$module\+\_\+name}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleModel_adb7f7c6facce819f69ae5e29db2018cc}{}\label{classmoduleModel_adb7f7c6facce819f69ae5e29db2018cc}
+\subsubsection{\texorpdfstring{check\+Need\+Update()}{checkNeedUpdate()}}
+{\footnotesize\ttfamily module\+Model\+::check\+Need\+Update (\begin{DoxyParamCaption}\item[{}]{\$module\+\_\+name }\end{DoxyParamCaption})}
+
 
 
 Definition at line 1547 of file module.\+model.\+php.
 
+\hypertarget{classmoduleModel_a2a06b59fa663c1e79f81aac571e2e5c8}{}\label{classmoduleModel_a2a06b59fa663c1e79f81aac571e2e5c8} 
 \index{module\+Model@{module\+Model}!get\+Action\+Forward@{get\+Action\+Forward}}
 \index{get\+Action\+Forward@{get\+Action\+Forward}!module\+Model@{module\+Model}}
-\subsubsection[{\texorpdfstring{get\+Action\+Forward(\$act)}{getActionForward($act)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Model\+::get\+Action\+Forward (
-\begin{DoxyParamCaption}
-\item[{}]{\$act}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleModel_a2a06b59fa663c1e79f81aac571e2e5c8}{}\label{classmoduleModel_a2a06b59fa663c1e79f81aac571e2e5c8}
+\subsubsection{\texorpdfstring{get\+Action\+Forward()}{getActionForward()}}
+{\footnotesize\ttfamily module\+Model\+::get\+Action\+Forward (\begin{DoxyParamCaption}\item[{}]{\$act }\end{DoxyParamCaption})}
+
 
 
 Get forward value by the value of act. 
@@ -192,13 +188,12 @@ Get forward value by the value of act.
 
 Definition at line 586 of file module.\+model.\+php.
 
+\hypertarget{classmoduleModel_a302d180d2acef6331f9123d60f76c8c1}{}\label{classmoduleModel_a302d180d2acef6331f9123d60f76c8c1} 
 \index{module\+Model@{module\+Model}!get\+Admin\+Id@{get\+Admin\+Id}}
 \index{get\+Admin\+Id@{get\+Admin\+Id}!module\+Model@{module\+Model}}
-\subsubsection[{\texorpdfstring{get\+Admin\+Id(\$module\+\_\+srl)}{getAdminId($module_srl)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Model\+::get\+Admin\+Id (
-\begin{DoxyParamCaption}
-\item[{}]{\$module\+\_\+srl}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleModel_a302d180d2acef6331f9123d60f76c8c1}{}\label{classmoduleModel_a302d180d2acef6331f9123d60f76c8c1}
+\subsubsection{\texorpdfstring{get\+Admin\+Id()}{getAdminId()}}
+{\footnotesize\ttfamily module\+Model\+::get\+Admin\+Id (\begin{DoxyParamCaption}\item[{}]{\$module\+\_\+srl }\end{DoxyParamCaption})}
+
 
 
 Get admin ID of the module. 
@@ -207,13 +202,12 @@ Get admin ID of the module.
 
 Definition at line 1706 of file module.\+model.\+php.
 
+\hypertarget{classmoduleModel_ae76b5be74783d11b676b167ba2c63523}{}\label{classmoduleModel_ae76b5be74783d11b676b167ba2c63523} 
 \index{module\+Model@{module\+Model}!get\+Default\+Mid@{get\+Default\+Mid}}
 \index{get\+Default\+Mid@{get\+Default\+Mid}!module\+Model@{module\+Model}}
-\subsubsection[{\texorpdfstring{get\+Default\+Mid()}{getDefaultMid()}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Model\+::get\+Default\+Mid (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleModel_ae76b5be74783d11b676b167ba2c63523}{}\label{classmoduleModel_ae76b5be74783d11b676b167ba2c63523}
+\subsubsection{\texorpdfstring{get\+Default\+Mid()}{getDefaultMid()}}
+{\footnotesize\ttfamily module\+Model\+::get\+Default\+Mid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 
 
 Get the default mid according to the domain. 
@@ -222,26 +216,22 @@ Get the default mid according to the domain.
 
 Definition at line 82 of file module.\+model.\+php.
 
+\hypertarget{classmoduleModel_acf3405bfe791d8bf7d8e7886b9481923}{}\label{classmoduleModel_acf3405bfe791d8bf7d8e7886b9481923} 
 \index{module\+Model@{module\+Model}!get\+File\+Box\+List\+Html@{get\+File\+Box\+List\+Html}}
 \index{get\+File\+Box\+List\+Html@{get\+File\+Box\+List\+Html}!module\+Model@{module\+Model}}
-\subsubsection[{\texorpdfstring{get\+File\+Box\+List\+Html()}{getFileBoxListHtml()}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Model\+::get\+File\+Box\+List\+Html (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleModel_acf3405bfe791d8bf7d8e7886b9481923}{}\label{classmoduleModel_acf3405bfe791d8bf7d8e7886b9481923}
+\subsubsection{\texorpdfstring{get\+File\+Box\+List\+Html()}{getFileBoxListHtml()}}
+{\footnotesize\ttfamily module\+Model\+::get\+File\+Box\+List\+Html (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 
 
 Definition at line 2187 of file module.\+model.\+php.
 
+\hypertarget{classmoduleModel_a7ed08b703723a21e4d81b4aa89947264}{}\label{classmoduleModel_a7ed08b703723a21e4d81b4aa89947264} 
 \index{module\+Model@{module\+Model}!get\+Grant@{get\+Grant}}
 \index{get\+Grant@{get\+Grant}!module\+Model@{module\+Model}}
-\subsubsection[{\texorpdfstring{get\+Grant(\$module\+\_\+info, \$member\+\_\+info, \$xml\+\_\+info= \textquotesingle{}\textquotesingle{})}{getGrant($module_info, $member_info, $xml_info= '')}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Model\+::get\+Grant (
-\begin{DoxyParamCaption}
-\item[{}]{\$module\+\_\+info, }
-\item[{}]{\$member\+\_\+info, }
-\item[{}]{\$xml\+\_\+info = {\ttfamily \textquotesingle{}\textquotesingle{}}}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleModel_a0d6431efeb3e3d377dbbb20b414ba074}{}\label{classmoduleModel_a0d6431efeb3e3d377dbbb20b414ba074}
+\subsubsection{\texorpdfstring{get\+Grant()}{getGrant()}}
+{\footnotesize\ttfamily module\+Model\+::get\+Grant (\begin{DoxyParamCaption}\item[{}]{\$module\+\_\+info,  }\item[{}]{\$member\+\_\+info,  }\item[{}]{\$xml\+\_\+info = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
 
 
 Return permission by using module info, xml info and member info. 
@@ -250,36 +240,32 @@ Return permission by using module info, xml info and member info.
 
 Definition at line 1979 of file module.\+model.\+php.
 
+\hypertarget{classmoduleModel_a4ea7187b04b26a98fe6d7fd138817b16}{}\label{classmoduleModel_a4ea7187b04b26a98fe6d7fd138817b16} 
 \index{module\+Model@{module\+Model}!get\+Lang\+By\+Langcode@{get\+Lang\+By\+Langcode}}
 \index{get\+Lang\+By\+Langcode@{get\+Lang\+By\+Langcode}!module\+Model@{module\+Model}}
-\subsubsection[{\texorpdfstring{get\+Lang\+By\+Langcode()}{getLangByLangcode()}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Model\+::get\+Lang\+By\+Langcode (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleModel_a4ea7187b04b26a98fe6d7fd138817b16}{}\label{classmoduleModel_a4ea7187b04b26a98fe6d7fd138817b16}
+\subsubsection{\texorpdfstring{get\+Lang\+By\+Langcode()}{getLangByLangcode()}}
+{\footnotesize\ttfamily module\+Model\+::get\+Lang\+By\+Langcode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 
 
 Definition at line 2302 of file module.\+model.\+php.
 
+\hypertarget{classmoduleModel_aa0e34c0fdc868595793b10b6b4534c74}{}\label{classmoduleModel_aa0e34c0fdc868595793b10b6b4534c74} 
 \index{module\+Model@{module\+Model}!get\+Lang\+List\+By\+Langcode\+For\+Auto\+Complete@{get\+Lang\+List\+By\+Langcode\+For\+Auto\+Complete}}
 \index{get\+Lang\+List\+By\+Langcode\+For\+Auto\+Complete@{get\+Lang\+List\+By\+Langcode\+For\+Auto\+Complete}!module\+Model@{module\+Model}}
-\subsubsection[{\texorpdfstring{get\+Lang\+List\+By\+Langcode\+For\+Auto\+Complete()}{getLangListByLangcodeForAutoComplete()}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Model\+::get\+Lang\+List\+By\+Langcode\+For\+Auto\+Complete (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleModel_aa0e34c0fdc868595793b10b6b4534c74}{}\label{classmoduleModel_aa0e34c0fdc868595793b10b6b4534c74}
+\subsubsection{\texorpdfstring{get\+Lang\+List\+By\+Langcode\+For\+Auto\+Complete()}{getLangListByLangcodeForAutoComplete()}}
+{\footnotesize\ttfamily module\+Model\+::get\+Lang\+List\+By\+Langcode\+For\+Auto\+Complete (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 
 
 Definition at line 2260 of file module.\+model.\+php.
 
+\hypertarget{classmoduleModel_a455828df6cdf405ba9b77d242faf8651}{}\label{classmoduleModel_a455828df6cdf405ba9b77d242faf8651} 
 \index{module\+Model@{module\+Model}!get\+Mid\+List@{get\+Mid\+List}}
 \index{get\+Mid\+List@{get\+Mid\+List}!module\+Model@{module\+Model}}
-\subsubsection[{\texorpdfstring{get\+Mid\+List(\$args=null, \$column\+List=array())}{getMidList($args=null, $columnList=array())}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Model\+::get\+Mid\+List (
-\begin{DoxyParamCaption}
-\item[{}]{\$args = {\ttfamily {\bf null}}, }
-\item[{}]{\$column\+List = {\ttfamily array()}}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleModel_a455828df6cdf405ba9b77d242faf8651}{}\label{classmoduleModel_a455828df6cdf405ba9b77d242faf8651}
+\subsubsection{\texorpdfstring{get\+Mid\+List()}{getMidList()}}
+{\footnotesize\ttfamily module\+Model\+::get\+Mid\+List (\begin{DoxyParamCaption}\item[{}]{\$args = {\ttfamily null},  }\item[{}]{\$column\+List = {\ttfamily array()} }\end{DoxyParamCaption})}
+
 
 
 Get a complete list of mid, which is created in the \hyperlink{classDB}{DB}. 
@@ -288,13 +274,12 @@ Get a complete list of mid, which is created in the \hyperlink{classDB}{DB}.
 
 Definition at line 499 of file module.\+model.\+php.
 
+\hypertarget{classmoduleModel_a2d53da77f2504357f99b93a2ad09981a}{}\label{classmoduleModel_a2d53da77f2504357f99b93a2ad09981a} 
 \index{module\+Model@{module\+Model}!get\+Module\+Action\+Xml@{get\+Module\+Action\+Xml}}
 \index{get\+Module\+Action\+Xml@{get\+Module\+Action\+Xml}!module\+Model@{module\+Model}}
-\subsubsection[{\texorpdfstring{get\+Module\+Action\+Xml(\$module)}{getModuleActionXml($module)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Model\+::get\+Module\+Action\+Xml (
-\begin{DoxyParamCaption}
-\item[{}]{\$module}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleModel_a2d53da77f2504357f99b93a2ad09981a}{}\label{classmoduleModel_a2d53da77f2504357f99b93a2ad09981a}
+\subsubsection{\texorpdfstring{get\+Module\+Action\+Xml()}{getModuleActionXml()}}
+{\footnotesize\ttfamily module\+Model\+::get\+Module\+Action\+Xml (\begin{DoxyParamCaption}\item[{}]{\$module }\end{DoxyParamCaption})}
+
 
 
 Return permisson and action data by conf/module.\+xml in the module Cache it because it takes too long to parse module.\+xml file When caching, add codes so to include it directly This is apparently good for performance, but not sure about its side-\/effects. 
@@ -303,13 +288,12 @@ Return permisson and action data by conf/module.\+xml in the module Cache it bec
 
 Definition at line 817 of file module.\+model.\+php.
 
+\hypertarget{classmoduleModel_a253e39c41e241e2f3fa914ce5d915963}{}\label{classmoduleModel_a253e39c41e241e2f3fa914ce5d915963} 
 \index{module\+Model@{module\+Model}!get\+Module\+Categories@{get\+Module\+Categories}}
 \index{get\+Module\+Categories@{get\+Module\+Categories}!module\+Model@{module\+Model}}
-\subsubsection[{\texorpdfstring{get\+Module\+Categories(\$module\+Category\+Srl=array())}{getModuleCategories($moduleCategorySrl=array())}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Model\+::get\+Module\+Categories (
-\begin{DoxyParamCaption}
-\item[{}]{\$module\+Category\+Srl = {\ttfamily array()}}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleModel_a253e39c41e241e2f3fa914ce5d915963}{}\label{classmoduleModel_a253e39c41e241e2f3fa914ce5d915963}
+\subsubsection{\texorpdfstring{get\+Module\+Categories()}{getModuleCategories()}}
+{\footnotesize\ttfamily module\+Model\+::get\+Module\+Categories (\begin{DoxyParamCaption}\item[{}]{\$module\+Category\+Srl = {\ttfamily array()} }\end{DoxyParamCaption})}
+
 
 
 Get a list of module category. 
@@ -318,13 +302,12 @@ Get a list of module category.
 
 Definition at line 1460 of file module.\+model.\+php.
 
+\hypertarget{classmoduleModel_a75669086647f78470306c840c22f36b1}{}\label{classmoduleModel_a75669086647f78470306c840c22f36b1} 
 \index{module\+Model@{module\+Model}!get\+Module\+Category@{get\+Module\+Category}}
 \index{get\+Module\+Category@{get\+Module\+Category}!module\+Model@{module\+Model}}
-\subsubsection[{\texorpdfstring{get\+Module\+Category(\$module\+\_\+category\+\_\+srl)}{getModuleCategory($module_category_srl)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Model\+::get\+Module\+Category (
-\begin{DoxyParamCaption}
-\item[{}]{\$module\+\_\+category\+\_\+srl}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleModel_a75669086647f78470306c840c22f36b1}{}\label{classmoduleModel_a75669086647f78470306c840c22f36b1}
+\subsubsection{\texorpdfstring{get\+Module\+Category()}{getModuleCategory()}}
+{\footnotesize\ttfamily module\+Model\+::get\+Module\+Category (\begin{DoxyParamCaption}\item[{}]{\$module\+\_\+category\+\_\+srl }\end{DoxyParamCaption})}
+
 
 
 Get content from the module category. 
@@ -333,14 +316,12 @@ Get content from the module category.
 
 Definition at line 1481 of file module.\+model.\+php.
 
+\hypertarget{classmoduleModel_ae8005c8ab7ee3b9e6ddd7f71bb2b4698}{}\label{classmoduleModel_ae8005c8ab7ee3b9e6ddd7f71bb2b4698} 
 \index{module\+Model@{module\+Model}!get\+Module\+Config@{get\+Module\+Config}}
 \index{get\+Module\+Config@{get\+Module\+Config}!module\+Model@{module\+Model}}
-\subsubsection[{\texorpdfstring{get\+Module\+Config(\$module, \$site\+\_\+srl=0)}{getModuleConfig($module, $site_srl=0)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Model\+::get\+Module\+Config (
-\begin{DoxyParamCaption}
-\item[{}]{\$module, }
-\item[{}]{\$site\+\_\+srl = {\ttfamily 0}}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleModel_ae8005c8ab7ee3b9e6ddd7f71bb2b4698}{}\label{classmoduleModel_ae8005c8ab7ee3b9e6ddd7f71bb2b4698}
+\subsubsection{\texorpdfstring{get\+Module\+Config()}{getModuleConfig()}}
+{\footnotesize\ttfamily module\+Model\+::get\+Module\+Config (\begin{DoxyParamCaption}\item[{}]{\$module,  }\item[{}]{\$site\+\_\+srl = {\ttfamily 0} }\end{DoxyParamCaption})}
+
 
 
 Return module configurations Global configuration is used to manage board, member and others. 
@@ -349,14 +330,12 @@ Return module configurations Global configuration is used to manage board, membe
 
 Definition at line 1363 of file module.\+model.\+php.
 
+\hypertarget{classmoduleModel_a2b22943c4d212c8284ef9780e0ebf3bd}{}\label{classmoduleModel_a2b22943c4d212c8284ef9780e0ebf3bd} 
 \index{module\+Model@{module\+Model}!get\+Module\+Count@{get\+Module\+Count}}
 \index{get\+Module\+Count@{get\+Module\+Count}!module\+Model@{module\+Model}}
-\subsubsection[{\texorpdfstring{get\+Module\+Count(\$site\+\_\+srl, \$module=null)}{getModuleCount($site_srl, $module=null)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Model\+::get\+Module\+Count (
-\begin{DoxyParamCaption}
-\item[{}]{\$site\+\_\+srl, }
-\item[{}]{\$module = {\ttfamily {\bf null}}}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleModel_a2b22943c4d212c8284ef9780e0ebf3bd}{}\label{classmoduleModel_a2b22943c4d212c8284ef9780e0ebf3bd}
+\subsubsection{\texorpdfstring{get\+Module\+Count()}{getModuleCount()}}
+{\footnotesize\ttfamily module\+Model\+::get\+Module\+Count (\begin{DoxyParamCaption}\item[{}]{\$site\+\_\+srl,  }\item[{}]{\$module = {\ttfamily null} }\end{DoxyParamCaption})}
+
 
 
 Return the number of modules which are registered on a virtual site. 
@@ -365,29 +344,22 @@ Return the number of modules which are registered on a virtual site.
 
 Definition at line 1350 of file module.\+model.\+php.
 
+\hypertarget{classmoduleModel_a740b445ffb57b7f7304cb7acf9f3f5b1}{}\label{classmoduleModel_a740b445ffb57b7f7304cb7acf9f3f5b1} 
 \index{module\+Model@{module\+Model}!get\+Module\+Default\+Skin@{get\+Module\+Default\+Skin}}
 \index{get\+Module\+Default\+Skin@{get\+Module\+Default\+Skin}!module\+Model@{module\+Model}}
-\subsubsection[{\texorpdfstring{get\+Module\+Default\+Skin(\$module\+\_\+name, \$skin\+\_\+type= \textquotesingle{}\+P\textquotesingle{}, \$site\+\_\+srl=0, \$update\+Cache=true)}{getModuleDefaultSkin($module_name, $skin_type= 'P', $site_srl=0, $updateCache=true)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Model\+::get\+Module\+Default\+Skin (
-\begin{DoxyParamCaption}
-\item[{}]{\$module\+\_\+name, }
-\item[{}]{\$skin\+\_\+type = {\ttfamily \textquotesingle{}P\textquotesingle{}}, }
-\item[{}]{\$site\+\_\+srl = {\ttfamily 0}, }
-\item[{}]{\$update\+Cache = {\ttfamily true}}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleModel_a0a77bcbc85aa39eebe18687ab6e0b974}{}\label{classmoduleModel_a0a77bcbc85aa39eebe18687ab6e0b974}
+\subsubsection{\texorpdfstring{get\+Module\+Default\+Skin()}{getModuleDefaultSkin()}}
+{\footnotesize\ttfamily module\+Model\+::get\+Module\+Default\+Skin (\begin{DoxyParamCaption}\item[{}]{\$module\+\_\+name,  }\item[{}]{\$skin\+\_\+type = {\ttfamily \textquotesingle{}P\textquotesingle{}},  }\item[{}]{\$site\+\_\+srl = {\ttfamily 0},  }\item[{}]{\$update\+Cache = {\ttfamily true} }\end{DoxyParamCaption})}
+
 Get default skin name 
 
 Definition at line 1828 of file module.\+model.\+php.
 
+\hypertarget{classmoduleModel_a1dd3c03b874a4f6e05f6b5e8ec283665}{}\label{classmoduleModel_a1dd3c03b874a4f6e05f6b5e8ec283665} 
 \index{module\+Model@{module\+Model}!get\+Module\+Extend@{get\+Module\+Extend}}
 \index{get\+Module\+Extend@{get\+Module\+Extend}!module\+Model@{module\+Model}}
-\subsubsection[{\texorpdfstring{get\+Module\+Extend(\$parent\+\_\+module, \$type, \$kind=\textquotesingle{}\textquotesingle{})}{getModuleExtend($parent_module, $type, $kind='')}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Model\+::get\+Module\+Extend (
-\begin{DoxyParamCaption}
-\item[{}]{\$parent\+\_\+module, }
-\item[{}]{\$type, }
-\item[{}]{\$kind = {\ttfamily \textquotesingle{}\textquotesingle{}}}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleModel_a1dd3c03b874a4f6e05f6b5e8ec283665}{}\label{classmoduleModel_a1dd3c03b874a4f6e05f6b5e8ec283665}
+\subsubsection{\texorpdfstring{get\+Module\+Extend()}{getModuleExtend()}}
+{\footnotesize\ttfamily module\+Model\+::get\+Module\+Extend (\begin{DoxyParamCaption}\item[{}]{\$parent\+\_\+module,  }\item[{}]{\$type,  }\item[{}]{\$kind = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
 
 
 Get module extend. 
@@ -396,13 +368,12 @@ Get module extend.
 
 Definition at line 683 of file module.\+model.\+php.
 
+\hypertarget{classmoduleModel_a4e93226573048a7b9c8e2cb842d0cb30}{}\label{classmoduleModel_a4e93226573048a7b9c8e2cb842d0cb30} 
 \index{module\+Model@{module\+Model}!get\+Module\+Extra\+Vars@{get\+Module\+Extra\+Vars}}
 \index{get\+Module\+Extra\+Vars@{get\+Module\+Extra\+Vars}!module\+Model@{module\+Model}}
-\subsubsection[{\texorpdfstring{get\+Module\+Extra\+Vars(\$list\+\_\+module\+\_\+srl)}{getModuleExtraVars($list_module_srl)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Model\+::get\+Module\+Extra\+Vars (
-\begin{DoxyParamCaption}
-\item[{}]{\$list\+\_\+module\+\_\+srl}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleModel_a4e93226573048a7b9c8e2cb842d0cb30}{}\label{classmoduleModel_a4e93226573048a7b9c8e2cb842d0cb30}
+\subsubsection{\texorpdfstring{get\+Module\+Extra\+Vars()}{getModuleExtraVars()}}
+{\footnotesize\ttfamily module\+Model\+::get\+Module\+Extra\+Vars (\begin{DoxyParamCaption}\item[{}]{\$list\+\_\+module\+\_\+srl }\end{DoxyParamCaption})}
+
 
 
 Get extra vars of the module Extra information, not in the modules table. 
@@ -411,46 +382,42 @@ Get extra vars of the module Extra information, not in the modules table.
 
 Definition at line 1720 of file module.\+model.\+php.
 
+\hypertarget{classmoduleModel_a792e14b71d66044513a646a44216be17}{}\label{classmoduleModel_a792e14b71d66044513a646a44216be17} 
 \index{module\+Model@{module\+Model}!get\+Module\+File\+Box@{get\+Module\+File\+Box}}
 \index{get\+Module\+File\+Box@{get\+Module\+File\+Box}!module\+Model@{module\+Model}}
-\subsubsection[{\texorpdfstring{get\+Module\+File\+Box(\$module\+\_\+filebox\+\_\+srl)}{getModuleFileBox($module_filebox_srl)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Model\+::get\+Module\+File\+Box (
-\begin{DoxyParamCaption}
-\item[{}]{\$module\+\_\+filebox\+\_\+srl}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleModel_a792e14b71d66044513a646a44216be17}{}\label{classmoduleModel_a792e14b71d66044513a646a44216be17}
+\subsubsection{\texorpdfstring{get\+Module\+File\+Box()}{getModuleFileBox()}}
+{\footnotesize\ttfamily module\+Model\+::get\+Module\+File\+Box (\begin{DoxyParamCaption}\item[{}]{\$module\+\_\+filebox\+\_\+srl }\end{DoxyParamCaption})}
+
 
 
 Definition at line 2136 of file module.\+model.\+php.
 
+\hypertarget{classmoduleModel_a8f3a098b40649594a591e5ea8bd15d96}{}\label{classmoduleModel_a8f3a098b40649594a591e5ea8bd15d96} 
 \index{module\+Model@{module\+Model}!get\+Module\+File\+Box\+List@{get\+Module\+File\+Box\+List}}
 \index{get\+Module\+File\+Box\+List@{get\+Module\+File\+Box\+List}!module\+Model@{module\+Model}}
-\subsubsection[{\texorpdfstring{get\+Module\+File\+Box\+List()}{getModuleFileBoxList()}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Model\+::get\+Module\+File\+Box\+List (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleModel_a8f3a098b40649594a591e5ea8bd15d96}{}\label{classmoduleModel_a8f3a098b40649594a591e5ea8bd15d96}
+\subsubsection{\texorpdfstring{get\+Module\+File\+Box\+List()}{getModuleFileBoxList()}}
+{\footnotesize\ttfamily module\+Model\+::get\+Module\+File\+Box\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 
 
 Definition at line 2143 of file module.\+model.\+php.
 
+\hypertarget{classmoduleModel_ac1183d568d6dab443a83c8618e6eb348}{}\label{classmoduleModel_ac1183d568d6dab443a83c8618e6eb348} 
 \index{module\+Model@{module\+Model}!get\+Module\+File\+Box\+Path@{get\+Module\+File\+Box\+Path}}
 \index{get\+Module\+File\+Box\+Path@{get\+Module\+File\+Box\+Path}!module\+Model@{module\+Model}}
-\subsubsection[{\texorpdfstring{get\+Module\+File\+Box\+Path(\$module\+\_\+filebox\+\_\+srl)}{getModuleFileBoxPath($module_filebox_srl)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Model\+::get\+Module\+File\+Box\+Path (
-\begin{DoxyParamCaption}
-\item[{}]{\$module\+\_\+filebox\+\_\+srl}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleModel_ac1183d568d6dab443a83c8618e6eb348}{}\label{classmoduleModel_ac1183d568d6dab443a83c8618e6eb348}
+\subsubsection{\texorpdfstring{get\+Module\+File\+Box\+Path()}{getModuleFileBoxPath()}}
+{\footnotesize\ttfamily module\+Model\+::get\+Module\+File\+Box\+Path (\begin{DoxyParamCaption}\item[{}]{\$module\+\_\+filebox\+\_\+srl }\end{DoxyParamCaption})}
+
 
 
 Definition at line 2220 of file module.\+model.\+php.
 
+\hypertarget{classmoduleModel_a6b3ba81393e32a934f7bff65f05663d5}{}\label{classmoduleModel_a6b3ba81393e32a934f7bff65f05663d5} 
 \index{module\+Model@{module\+Model}!get\+Module\+Info\+By\+Document\+Srl@{get\+Module\+Info\+By\+Document\+Srl}}
 \index{get\+Module\+Info\+By\+Document\+Srl@{get\+Module\+Info\+By\+Document\+Srl}!module\+Model@{module\+Model}}
-\subsubsection[{\texorpdfstring{get\+Module\+Info\+By\+Document\+Srl(\$document\+\_\+srl)}{getModuleInfoByDocumentSrl($document_srl)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Model\+::get\+Module\+Info\+By\+Document\+Srl (
-\begin{DoxyParamCaption}
-\item[{}]{\$document\+\_\+srl}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleModel_a6b3ba81393e32a934f7bff65f05663d5}{}\label{classmoduleModel_a6b3ba81393e32a934f7bff65f05663d5}
+\subsubsection{\texorpdfstring{get\+Module\+Info\+By\+Document\+Srl()}{getModuleInfoByDocumentSrl()}}
+{\footnotesize\ttfamily module\+Model\+::get\+Module\+Info\+By\+Document\+Srl (\begin{DoxyParamCaption}\item[{}]{\$document\+\_\+srl }\end{DoxyParamCaption})}
+
 
 
 Get module information with document\+\_\+srl In this case, it is unable to use the cache file. 
@@ -459,13 +426,12 @@ Get module information with document\+\_\+srl In this case, it is unable to use 
 
 Definition at line 70 of file module.\+model.\+php.
 
+\hypertarget{classmoduleModel_a48fc8aa25e189a13e7416d4c92e3aa04}{}\label{classmoduleModel_a48fc8aa25e189a13e7416d4c92e3aa04} 
 \index{module\+Model@{module\+Model}!get\+Module\+Info\+By\+Menu\+Item\+Srl@{get\+Module\+Info\+By\+Menu\+Item\+Srl}}
 \index{get\+Module\+Info\+By\+Menu\+Item\+Srl@{get\+Module\+Info\+By\+Menu\+Item\+Srl}!module\+Model@{module\+Model}}
-\subsubsection[{\texorpdfstring{get\+Module\+Info\+By\+Menu\+Item\+Srl(\$menu\+\_\+item\+\_\+srl=0)}{getModuleInfoByMenuItemSrl($menu_item_srl=0)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Model\+::get\+Module\+Info\+By\+Menu\+Item\+Srl (
-\begin{DoxyParamCaption}
-\item[{}]{\$menu\+\_\+item\+\_\+srl = {\ttfamily 0}}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleModel_a48fc8aa25e189a13e7416d4c92e3aa04}{}\label{classmoduleModel_a48fc8aa25e189a13e7416d4c92e3aa04}
+\subsubsection{\texorpdfstring{get\+Module\+Info\+By\+Menu\+Item\+Srl()}{getModuleInfoByMenuItemSrl()}}
+{\footnotesize\ttfamily module\+Model\+::get\+Module\+Info\+By\+Menu\+Item\+Srl (\begin{DoxyParamCaption}\item[{}]{\$menu\+\_\+item\+\_\+srl = {\ttfamily 0} }\end{DoxyParamCaption})}
+
 Get module info by menu\+\_\+item\+\_\+srl.
 
 int \$menu\+\_\+item\+\_\+srl
@@ -477,15 +443,12 @@ int \$menu\+\_\+item\+\_\+srl
 
 Definition at line 262 of file module.\+model.\+php.
 
+\hypertarget{classmoduleModel_a543ca661568188ef493ff138246de29c}{}\label{classmoduleModel_a543ca661568188ef493ff138246de29c} 
 \index{module\+Model@{module\+Model}!get\+Module\+Info\+By\+Mid@{get\+Module\+Info\+By\+Mid}}
 \index{get\+Module\+Info\+By\+Mid@{get\+Module\+Info\+By\+Mid}!module\+Model@{module\+Model}}
-\subsubsection[{\texorpdfstring{get\+Module\+Info\+By\+Mid(\$mid, \$site\+\_\+srl=0, \$column\+List=array())}{getModuleInfoByMid($mid, $site_srl=0, $columnList=array())}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Model\+::get\+Module\+Info\+By\+Mid (
-\begin{DoxyParamCaption}
-\item[{}]{\$mid, }
-\item[{}]{\$site\+\_\+srl = {\ttfamily 0}, }
-\item[{}]{\$column\+List = {\ttfamily array()}}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleModel_a543ca661568188ef493ff138246de29c}{}\label{classmoduleModel_a543ca661568188ef493ff138246de29c}
+\subsubsection{\texorpdfstring{get\+Module\+Info\+By\+Mid()}{getModuleInfoByMid()}}
+{\footnotesize\ttfamily module\+Model\+::get\+Module\+Info\+By\+Mid (\begin{DoxyParamCaption}\item[{}]{\$mid,  }\item[{}]{\$site\+\_\+srl = {\ttfamily 0},  }\item[{}]{\$column\+List = {\ttfamily array()} }\end{DoxyParamCaption})}
+
 
 
 Get module information by mid. 
@@ -494,14 +457,12 @@ Get module information by mid.
 
 Definition at line 208 of file module.\+model.\+php.
 
+\hypertarget{classmoduleModel_aa31240372b98008ff8a2ad689535d3a9}{}\label{classmoduleModel_aa31240372b98008ff8a2ad689535d3a9} 
 \index{module\+Model@{module\+Model}!get\+Module\+Info\+By\+Module\+Srl@{get\+Module\+Info\+By\+Module\+Srl}}
 \index{get\+Module\+Info\+By\+Module\+Srl@{get\+Module\+Info\+By\+Module\+Srl}!module\+Model@{module\+Model}}
-\subsubsection[{\texorpdfstring{get\+Module\+Info\+By\+Module\+Srl(\$module\+\_\+srl, \$column\+List=array())}{getModuleInfoByModuleSrl($module_srl, $columnList=array())}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Model\+::get\+Module\+Info\+By\+Module\+Srl (
-\begin{DoxyParamCaption}
-\item[{}]{\$module\+\_\+srl, }
-\item[{}]{\$column\+List = {\ttfamily array()}}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleModel_aa31240372b98008ff8a2ad689535d3a9}{}\label{classmoduleModel_aa31240372b98008ff8a2ad689535d3a9}
+\subsubsection{\texorpdfstring{get\+Module\+Info\+By\+Module\+Srl()}{getModuleInfoByModuleSrl()}}
+{\footnotesize\ttfamily module\+Model\+::get\+Module\+Info\+By\+Module\+Srl (\begin{DoxyParamCaption}\item[{}]{\$module\+\_\+srl,  }\item[{}]{\$column\+List = {\ttfamily array()} }\end{DoxyParamCaption})}
+
 
 
 Get module information corresponding to module\+\_\+srl. 
@@ -510,13 +471,12 @@ Get module information corresponding to module\+\_\+srl.
 
 Definition at line 367 of file module.\+model.\+php.
 
+\hypertarget{classmoduleModel_ae4e9287674bddc605dfc4cef77f8c1bb}{}\label{classmoduleModel_ae4e9287674bddc605dfc4cef77f8c1bb} 
 \index{module\+Model@{module\+Model}!get\+Module\+Info\+Xml@{get\+Module\+Info\+Xml}}
 \index{get\+Module\+Info\+Xml@{get\+Module\+Info\+Xml}!module\+Model@{module\+Model}}
-\subsubsection[{\texorpdfstring{get\+Module\+Info\+Xml(\$module)}{getModuleInfoXml($module)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Model\+::get\+Module\+Info\+Xml (
-\begin{DoxyParamCaption}
-\item[{}]{\$module}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleModel_ae4e9287674bddc605dfc4cef77f8c1bb}{}\label{classmoduleModel_ae4e9287674bddc605dfc4cef77f8c1bb}
+\subsubsection{\texorpdfstring{get\+Module\+Info\+Xml()}{getModuleInfoXml()}}
+{\footnotesize\ttfamily module\+Model\+::get\+Module\+Info\+Xml (\begin{DoxyParamCaption}\item[{}]{\$module }\end{DoxyParamCaption})}
+
 
 
 Get information from conf/info.\+xml. 
@@ -525,13 +485,12 @@ Get information from conf/info.\+xml.
 
 Definition at line 742 of file module.\+model.\+php.
 
+\hypertarget{classmoduleModel_af51708f2ce0243f482bc92a453dd27c4}{}\label{classmoduleModel_af51708f2ce0243f482bc92a453dd27c4} 
 \index{module\+Model@{module\+Model}!get\+Module\+List@{get\+Module\+List}}
 \index{get\+Module\+List@{get\+Module\+List}!module\+Model@{module\+Model}}
-\subsubsection[{\texorpdfstring{get\+Module\+List()}{getModuleList()}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Model\+::get\+Module\+List (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleModel_af51708f2ce0243f482bc92a453dd27c4}{}\label{classmoduleModel_af51708f2ce0243f482bc92a453dd27c4}
+\subsubsection{\texorpdfstring{get\+Module\+List()}{getModuleList()}}
+{\footnotesize\ttfamily module\+Model\+::get\+Module\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 
 
 Get a type and information of the module. 
@@ -540,14 +499,12 @@ Get a type and information of the module.
 
 Definition at line 1561 of file module.\+model.\+php.
 
+\hypertarget{classmoduleModel_a29d890e1acd36f429ff2411533104c8b}{}\label{classmoduleModel_a29d890e1acd36f429ff2411533104c8b} 
 \index{module\+Model@{module\+Model}!get\+Module\+List\+By\+Instance@{get\+Module\+List\+By\+Instance}}
 \index{get\+Module\+List\+By\+Instance@{get\+Module\+List\+By\+Instance}!module\+Model@{module\+Model}}
-\subsubsection[{\texorpdfstring{get\+Module\+List\+By\+Instance(\$site\+\_\+srl=0, \$column\+List=array())}{getModuleListByInstance($site_srl=0, $columnList=array())}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Model\+::get\+Module\+List\+By\+Instance (
-\begin{DoxyParamCaption}
-\item[{}]{\$site\+\_\+srl = {\ttfamily 0}, }
-\item[{}]{\$column\+List = {\ttfamily array()}}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleModel_a29d890e1acd36f429ff2411533104c8b}{}\label{classmoduleModel_a29d890e1acd36f429ff2411533104c8b}
+\subsubsection{\texorpdfstring{get\+Module\+List\+By\+Instance()}{getModuleListByInstance()}}
+{\footnotesize\ttfamily module\+Model\+::get\+Module\+List\+By\+Instance (\begin{DoxyParamCaption}\item[{}]{\$site\+\_\+srl = {\ttfamily 0},  }\item[{}]{\$column\+List = {\ttfamily array()} }\end{DoxyParamCaption})}
+
 
 
 already instance created module list 
@@ -556,13 +513,12 @@ already instance created module list
 
 Definition at line 2294 of file module.\+model.\+php.
 
+\hypertarget{classmoduleModel_aef7f4760b4c1864752d1042e1a0667c8}{}\label{classmoduleModel_aef7f4760b4c1864752d1042e1a0667c8} 
 \index{module\+Model@{module\+Model}!get\+Module\+Mobile\+Skin\+Vars@{get\+Module\+Mobile\+Skin\+Vars}}
 \index{get\+Module\+Mobile\+Skin\+Vars@{get\+Module\+Mobile\+Skin\+Vars}!module\+Model@{module\+Model}}
-\subsubsection[{\texorpdfstring{get\+Module\+Mobile\+Skin\+Vars(\$module\+\_\+srl)}{getModuleMobileSkinVars($module_srl)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Model\+::get\+Module\+Mobile\+Skin\+Vars (
-\begin{DoxyParamCaption}
-\item[{}]{\$module\+\_\+srl}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleModel_aef7f4760b4c1864752d1042e1a0667c8}{}\label{classmoduleModel_aef7f4760b4c1864752d1042e1a0667c8}
+\subsubsection{\texorpdfstring{get\+Module\+Mobile\+Skin\+Vars()}{getModuleMobileSkinVars()}}
+{\footnotesize\ttfamily module\+Model\+::get\+Module\+Mobile\+Skin\+Vars (\begin{DoxyParamCaption}\item[{}]{\$module\+\_\+srl }\end{DoxyParamCaption})}
+
 Get mobile skin information of the module 
 \begin{DoxyParams}{Parameters}
 {\em \$module\+\_\+srl} & Sequence of module \\
@@ -575,14 +531,12 @@ array
 
 Definition at line 1910 of file module.\+model.\+php.
 
+\hypertarget{classmoduleModel_acfd93d46c26d88c3833b0801085e69ba}{}\label{classmoduleModel_acfd93d46c26d88c3833b0801085e69ba} 
 \index{module\+Model@{module\+Model}!get\+Module\+Part\+Config@{get\+Module\+Part\+Config}}
 \index{get\+Module\+Part\+Config@{get\+Module\+Part\+Config}!module\+Model@{module\+Model}}
-\subsubsection[{\texorpdfstring{get\+Module\+Part\+Config(\$module, \$module\+\_\+srl)}{getModulePartConfig($module, $module_srl)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Model\+::get\+Module\+Part\+Config (
-\begin{DoxyParamCaption}
-\item[{}]{\$module, }
-\item[{}]{\$module\+\_\+srl}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleModel_acfd93d46c26d88c3833b0801085e69ba}{}\label{classmoduleModel_acfd93d46c26d88c3833b0801085e69ba}
+\subsubsection{\texorpdfstring{get\+Module\+Part\+Config()}{getModulePartConfig()}}
+{\footnotesize\ttfamily module\+Model\+::get\+Module\+Part\+Config (\begin{DoxyParamCaption}\item[{}]{\$module,  }\item[{}]{\$module\+\_\+srl }\end{DoxyParamCaption})}
+
 
 
 Return the module configuration of mid Manage mid configurations which depend on module. 
@@ -591,14 +545,12 @@ Return the module configuration of mid Manage mid configurations which depend on
 
 Definition at line 1403 of file module.\+model.\+php.
 
+\hypertarget{classmoduleModel_a3e50f170f709853c8adf5c8f759e08ca}{}\label{classmoduleModel_a3e50f170f709853c8adf5c8f759e08ca} 
 \index{module\+Model@{module\+Model}!get\+Module\+Part\+Configs@{get\+Module\+Part\+Configs}}
 \index{get\+Module\+Part\+Configs@{get\+Module\+Part\+Configs}!module\+Model@{module\+Model}}
-\subsubsection[{\texorpdfstring{get\+Module\+Part\+Configs(\$module, \$site\+\_\+srl=0)}{getModulePartConfigs($module, $site_srl=0)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Model\+::get\+Module\+Part\+Configs (
-\begin{DoxyParamCaption}
-\item[{}]{\$module, }
-\item[{}]{\$site\+\_\+srl = {\ttfamily 0}}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleModel_a3e50f170f709853c8adf5c8f759e08ca}{}\label{classmoduleModel_a3e50f170f709853c8adf5c8f759e08ca}
+\subsubsection{\texorpdfstring{get\+Module\+Part\+Configs()}{getModulePartConfigs()}}
+{\footnotesize\ttfamily module\+Model\+::get\+Module\+Part\+Configs (\begin{DoxyParamCaption}\item[{}]{\$module,  }\item[{}]{\$site\+\_\+srl = {\ttfamily 0} }\end{DoxyParamCaption})}
+
 
 
 Get all of module configurations for each mid. 
@@ -607,14 +559,12 @@ Get all of module configurations for each mid.
 
 Definition at line 1442 of file module.\+model.\+php.
 
+\hypertarget{classmoduleModel_afc4f6749feac12e176959c170ee25012}{}\label{classmoduleModel_afc4f6749feac12e176959c170ee25012} 
 \index{module\+Model@{module\+Model}!get\+Modules\+Info@{get\+Modules\+Info}}
 \index{get\+Modules\+Info@{get\+Modules\+Info}!module\+Model@{module\+Model}}
-\subsubsection[{\texorpdfstring{get\+Modules\+Info(\$module\+\_\+srls, \$column\+List=array())}{getModulesInfo($module_srls, $columnList=array())}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Model\+::get\+Modules\+Info (
-\begin{DoxyParamCaption}
-\item[{}]{\$module\+\_\+srls, }
-\item[{}]{\$column\+List = {\ttfamily array()}}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleModel_afc4f6749feac12e176959c170ee25012}{}\label{classmoduleModel_afc4f6749feac12e176959c170ee25012}
+\subsubsection{\texorpdfstring{get\+Modules\+Info()}{getModulesInfo()}}
+{\footnotesize\ttfamily module\+Model\+::get\+Modules\+Info (\begin{DoxyParamCaption}\item[{}]{\$module\+\_\+srls,  }\item[{}]{\$column\+List = {\ttfamily array()} }\end{DoxyParamCaption})}
+
 
 
 Get module information corresponding to multiple module\+\_\+srls. 
@@ -623,14 +573,12 @@ Get module information corresponding to multiple module\+\_\+srls.
 
 Definition at line 452 of file module.\+model.\+php.
 
+\hypertarget{classmoduleModel_a512433daf11267d2bcfafed99caea883}{}\label{classmoduleModel_a512433daf11267d2bcfafed99caea883} 
 \index{module\+Model@{module\+Model}!get\+Modules\+Info\+By\+Layout@{get\+Modules\+Info\+By\+Layout}}
 \index{get\+Modules\+Info\+By\+Layout@{get\+Modules\+Info\+By\+Layout}!module\+Model@{module\+Model}}
-\subsubsection[{\texorpdfstring{get\+Modules\+Info\+By\+Layout(\$layout\+\_\+srl, \$column\+List=array())}{getModulesInfoByLayout($layout_srl, $columnList=array())}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Model\+::get\+Modules\+Info\+By\+Layout (
-\begin{DoxyParamCaption}
-\item[{}]{\$layout\+\_\+srl, }
-\item[{}]{\$column\+List = {\ttfamily array()}}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleModel_a512433daf11267d2bcfafed99caea883}{}\label{classmoduleModel_a512433daf11267d2bcfafed99caea883}
+\subsubsection{\texorpdfstring{get\+Modules\+Info\+By\+Layout()}{getModulesInfoByLayout()}}
+{\footnotesize\ttfamily module\+Model\+::get\+Modules\+Info\+By\+Layout (\begin{DoxyParamCaption}\item[{}]{\$layout\+\_\+srl,  }\item[{}]{\$column\+List = {\ttfamily array()} }\end{DoxyParamCaption})}
+
 
 
 Get module information corresponding to layout\+\_\+srl. 
@@ -639,24 +587,22 @@ Get module information corresponding to layout\+\_\+srl.
 
 Definition at line 432 of file module.\+model.\+php.
 
+\hypertarget{classmoduleModel_a9fae8e7a41eda8e384cb46d25430ae82}{}\label{classmoduleModel_a9fae8e7a41eda8e384cb46d25430ae82} 
 \index{module\+Model@{module\+Model}!get\+Module\+Skin\+Info\+List@{get\+Module\+Skin\+Info\+List}}
 \index{get\+Module\+Skin\+Info\+List@{get\+Module\+Skin\+Info\+List}!module\+Model@{module\+Model}}
-\subsubsection[{\texorpdfstring{get\+Module\+Skin\+Info\+List()}{getModuleSkinInfoList()}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Model\+::get\+Module\+Skin\+Info\+List (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleModel_a9fae8e7a41eda8e384cb46d25430ae82}{}\label{classmoduleModel_a9fae8e7a41eda8e384cb46d25430ae82}
+\subsubsection{\texorpdfstring{get\+Module\+Skin\+Info\+List()}{getModuleSkinInfoList()}}
+{\footnotesize\ttfamily module\+Model\+::get\+Module\+Skin\+Info\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 Get a skin list for js A\+PI. return void 
 
 Definition at line 1017 of file module.\+model.\+php.
 
+\hypertarget{classmoduleModel_aa3828c94af2b1c8b84fafd423038445d}{}\label{classmoduleModel_aa3828c94af2b1c8b84fafd423038445d} 
 \index{module\+Model@{module\+Model}!get\+Module\+Skin\+Vars@{get\+Module\+Skin\+Vars}}
 \index{get\+Module\+Skin\+Vars@{get\+Module\+Skin\+Vars}!module\+Model@{module\+Model}}
-\subsubsection[{\texorpdfstring{get\+Module\+Skin\+Vars(\$module\+\_\+srl)}{getModuleSkinVars($module_srl)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Model\+::get\+Module\+Skin\+Vars (
-\begin{DoxyParamCaption}
-\item[{}]{\$module\+\_\+srl}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleModel_aa3828c94af2b1c8b84fafd423038445d}{}\label{classmoduleModel_aa3828c94af2b1c8b84fafd423038445d}
+\subsubsection{\texorpdfstring{get\+Module\+Skin\+Vars()}{getModuleSkinVars()}}
+{\footnotesize\ttfamily module\+Model\+::get\+Module\+Skin\+Vars (\begin{DoxyParamCaption}\item[{}]{\$module\+\_\+srl }\end{DoxyParamCaption})}
+
 
 
 Get skin information of the module. 
@@ -665,13 +611,12 @@ Get skin information of the module.
 
 Definition at line 1795 of file module.\+model.\+php.
 
+\hypertarget{classmoduleModel_a857a241844d60b7678bd144175d23f29}{}\label{classmoduleModel_a857a241844d60b7678bd144175d23f29} 
 \index{module\+Model@{module\+Model}!get\+Module\+Srl\+By\+Mid@{get\+Module\+Srl\+By\+Mid}}
 \index{get\+Module\+Srl\+By\+Mid@{get\+Module\+Srl\+By\+Mid}!module\+Model@{module\+Model}}
-\subsubsection[{\texorpdfstring{get\+Module\+Srl\+By\+Mid(\$mid)}{getModuleSrlByMid($mid)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Model\+::get\+Module\+Srl\+By\+Mid (
-\begin{DoxyParamCaption}
-\item[{}]{\$mid}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleModel_a857a241844d60b7678bd144175d23f29}{}\label{classmoduleModel_a857a241844d60b7678bd144175d23f29}
+\subsubsection{\texorpdfstring{get\+Module\+Srl\+By\+Mid()}{getModuleSrlByMid()}}
+{\footnotesize\ttfamily module\+Model\+::get\+Module\+Srl\+By\+Mid (\begin{DoxyParamCaption}\item[{}]{\$mid }\end{DoxyParamCaption})}
+
 
 
 Return an array of module\+\_\+srl corresponding to a mid list. 
@@ -680,14 +625,12 @@ Return an array of module\+\_\+srl corresponding to a mid list.
 
 Definition at line 558 of file module.\+model.\+php.
 
+\hypertarget{classmoduleModel_ae63e7e551002fac4c01a330a76dd7244}{}\label{classmoduleModel_ae63e7e551002fac4c01a330a76dd7244} 
 \index{module\+Model@{module\+Model}!get\+Module\+Srl\+List@{get\+Module\+Srl\+List}}
 \index{get\+Module\+Srl\+List@{get\+Module\+Srl\+List}!module\+Model@{module\+Model}}
-\subsubsection[{\texorpdfstring{get\+Module\+Srl\+List(\$args=null, \$column\+List=array())}{getModuleSrlList($args=null, $columnList=array())}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Model\+::get\+Module\+Srl\+List (
-\begin{DoxyParamCaption}
-\item[{}]{\$args = {\ttfamily {\bf null}}, }
-\item[{}]{\$column\+List = {\ttfamily array()}}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleModel_ae63e7e551002fac4c01a330a76dd7244}{}\label{classmoduleModel_ae63e7e551002fac4c01a330a76dd7244}
+\subsubsection{\texorpdfstring{get\+Module\+Srl\+List()}{getModuleSrlList()}}
+{\footnotesize\ttfamily module\+Model\+::get\+Module\+Srl\+List (\begin{DoxyParamCaption}\item[{}]{\$args = {\ttfamily null},  }\item[{}]{\$column\+List = {\ttfamily array()} }\end{DoxyParamCaption})}
+
 
 
 Get a complete list of module\+\_\+srl, which is created in the \hyperlink{classDB}{DB}. 
@@ -696,13 +639,12 @@ Get a complete list of module\+\_\+srl, which is created in the \hyperlink{class
 
 Definition at line 544 of file module.\+model.\+php.
 
+\hypertarget{classmoduleModel_ab0740093a121db65a8d65777fdcd8f00}{}\label{classmoduleModel_ab0740093a121db65a8d65777fdcd8f00} 
 \index{module\+Model@{module\+Model}!get\+Modules\+Xml\+Info@{get\+Modules\+Xml\+Info}}
 \index{get\+Modules\+Xml\+Info@{get\+Modules\+Xml\+Info}!module\+Model@{module\+Model}}
-\subsubsection[{\texorpdfstring{get\+Modules\+Xml\+Info()}{getModulesXmlInfo()}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Model\+::get\+Modules\+Xml\+Info (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleModel_ab0740093a121db65a8d65777fdcd8f00}{}\label{classmoduleModel_ab0740093a121db65a8d65777fdcd8f00}
+\subsubsection{\texorpdfstring{get\+Modules\+Xml\+Info()}{getModulesXmlInfo()}}
+{\footnotesize\ttfamily module\+Model\+::get\+Modules\+Xml\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 
 
 Get xml information of the module. 
@@ -711,13 +653,12 @@ Get xml information of the module.
 
 Definition at line 1494 of file module.\+model.\+php.
 
+\hypertarget{classmoduleModel_a6baa2faf83fc96fba51072276c9cb7c3}{}\label{classmoduleModel_a6baa2faf83fc96fba51072276c9cb7c3} 
 \index{module\+Model@{module\+Model}!get\+Site\+Admin@{get\+Site\+Admin}}
 \index{get\+Site\+Admin@{get\+Site\+Admin}!module\+Model@{module\+Model}}
-\subsubsection[{\texorpdfstring{get\+Site\+Admin(\$site\+\_\+srl)}{getSiteAdmin($site_srl)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Model\+::get\+Site\+Admin (
-\begin{DoxyParamCaption}
-\item[{}]{\$site\+\_\+srl}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleModel_a6baa2faf83fc96fba51072276c9cb7c3}{}\label{classmoduleModel_a6baa2faf83fc96fba51072276c9cb7c3}
+\subsubsection{\texorpdfstring{get\+Site\+Admin()}{getSiteAdmin()}}
+{\footnotesize\ttfamily module\+Model\+::get\+Site\+Admin (\begin{DoxyParamCaption}\item[{}]{\$site\+\_\+srl }\end{DoxyParamCaption})}
+
 
 
 Get admin information of the site. 
@@ -726,14 +667,12 @@ Get admin information of the site.
 
 Definition at line 1695 of file module.\+model.\+php.
 
+\hypertarget{classmoduleModel_a96446e3b8e031ec1264c7187cb1384a5}{}\label{classmoduleModel_a96446e3b8e031ec1264c7187cb1384a5} 
 \index{module\+Model@{module\+Model}!get\+Site\+Info@{get\+Site\+Info}}
 \index{get\+Site\+Info@{get\+Site\+Info}!module\+Model@{module\+Model}}
-\subsubsection[{\texorpdfstring{get\+Site\+Info(\$site\+\_\+srl, \$column\+List=array())}{getSiteInfo($site_srl, $columnList=array())}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Model\+::get\+Site\+Info (
-\begin{DoxyParamCaption}
-\item[{}]{\$site\+\_\+srl, }
-\item[{}]{\$column\+List = {\ttfamily array()}}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleModel_a96446e3b8e031ec1264c7187cb1384a5}{}\label{classmoduleModel_a96446e3b8e031ec1264c7187cb1384a5}
+\subsubsection{\texorpdfstring{get\+Site\+Info()}{getSiteInfo()}}
+{\footnotesize\ttfamily module\+Model\+::get\+Site\+Info (\begin{DoxyParamCaption}\item[{}]{\$site\+\_\+srl,  }\item[{}]{\$column\+List = {\ttfamily array()} }\end{DoxyParamCaption})}
+
 
 
 Get site information. 
@@ -742,26 +681,22 @@ Get site information.
 
 Definition at line 50 of file module.\+model.\+php.
 
+\hypertarget{classmoduleModel_a6c4e1496c55c3c15507bb9532cb01c7f}{}\label{classmoduleModel_a6c4e1496c55c3c15507bb9532cb01c7f} 
 \index{module\+Model@{module\+Model}!get\+Site\+Info\+By\+Domain@{get\+Site\+Info\+By\+Domain}}
 \index{get\+Site\+Info\+By\+Domain@{get\+Site\+Info\+By\+Domain}!module\+Model@{module\+Model}}
-\subsubsection[{\texorpdfstring{get\+Site\+Info\+By\+Domain(\$domain, \$column\+List=array())}{getSiteInfoByDomain($domain, $columnList=array())}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Model\+::get\+Site\+Info\+By\+Domain (
-\begin{DoxyParamCaption}
-\item[{}]{\$domain, }
-\item[{}]{\$column\+List = {\ttfamily array()}}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleModel_a6c4e1496c55c3c15507bb9532cb01c7f}{}\label{classmoduleModel_a6c4e1496c55c3c15507bb9532cb01c7f}
+\subsubsection{\texorpdfstring{get\+Site\+Info\+By\+Domain()}{getSiteInfoByDomain()}}
+{\footnotesize\ttfamily module\+Model\+::get\+Site\+Info\+By\+Domain (\begin{DoxyParamCaption}\item[{}]{\$domain,  }\item[{}]{\$column\+List = {\ttfamily array()} }\end{DoxyParamCaption})}
+
 
 
 Definition at line 58 of file module.\+model.\+php.
 
+\hypertarget{classmoduleModel_abe2d53bb2e98a672c0a776537d7471cf}{}\label{classmoduleModel_abe2d53bb2e98a672c0a776537d7471cf} 
 \index{module\+Model@{module\+Model}!get\+Skins@{get\+Skins}}
 \index{get\+Skins@{get\+Skins}!module\+Model@{module\+Model}}
-\subsubsection[{\texorpdfstring{get\+Skins(\$path, \$dir= \textquotesingle{}skins\textquotesingle{})}{getSkins($path, $dir= 'skins')}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Model\+::get\+Skins (
-\begin{DoxyParamCaption}
-\item[{}]{\$path, }
-\item[{}]{\$dir = {\ttfamily \textquotesingle{}skins\textquotesingle{}}}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleModel_af48d0cb71ef8e732a67872f80d95f884}{}\label{classmoduleModel_af48d0cb71ef8e732a67872f80d95f884}
+\subsubsection{\texorpdfstring{get\+Skins()}{getSkins()}}
+{\footnotesize\ttfamily module\+Model\+::get\+Skins (\begin{DoxyParamCaption}\item[{}]{\$path,  }\item[{}]{\$dir = {\ttfamily \textquotesingle{}skins\textquotesingle{}} }\end{DoxyParamCaption})}
+
 
 
 Get a list of skins for the module Return file analysis of skin and skin.\+xml. 
@@ -770,17 +705,12 @@ Get a list of skins for the module Return file analysis of skin and skin.\+xml.
 
 Definition at line 1039 of file module.\+model.\+php.
 
+\hypertarget{classmoduleModel_ae570716b47c7fd19b7fc0d217a155b22}{}\label{classmoduleModel_ae570716b47c7fd19b7fc0d217a155b22} 
 \index{module\+Model@{module\+Model}!get\+Trigger@{get\+Trigger}}
 \index{get\+Trigger@{get\+Trigger}!module\+Model@{module\+Model}}
-\subsubsection[{\texorpdfstring{get\+Trigger(\$trigger\+\_\+name, \$module, \$type, \$called\+\_\+method, \$called\+\_\+position)}{getTrigger($trigger_name, $module, $type, $called_method, $called_position)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Model\+::get\+Trigger (
-\begin{DoxyParamCaption}
-\item[{}]{\$trigger\+\_\+name, }
-\item[{}]{\$module, }
-\item[{}]{\$type, }
-\item[{}]{\$called\+\_\+method, }
-\item[{}]{\$called\+\_\+position}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleModel_ae570716b47c7fd19b7fc0d217a155b22}{}\label{classmoduleModel_ae570716b47c7fd19b7fc0d217a155b22}
+\subsubsection{\texorpdfstring{get\+Trigger()}{getTrigger()}}
+{\footnotesize\ttfamily module\+Model\+::get\+Trigger (\begin{DoxyParamCaption}\item[{}]{\$trigger\+\_\+name,  }\item[{}]{\$module,  }\item[{}]{\$type,  }\item[{}]{\$called\+\_\+method,  }\item[{}]{\$called\+\_\+position }\end{DoxyParamCaption})}
+
 
 
 Get specific triggers from the trigger\+\_\+name. 
@@ -789,14 +719,12 @@ Get specific triggers from the trigger\+\_\+name.
 
 Definition at line 662 of file module.\+model.\+php.
 
+\hypertarget{classmoduleModel_a979238a3b59bf52ccaa29ec3f7744808}{}\label{classmoduleModel_a979238a3b59bf52ccaa29ec3f7744808} 
 \index{module\+Model@{module\+Model}!get\+Triggers@{get\+Triggers}}
 \index{get\+Triggers@{get\+Triggers}!module\+Model@{module\+Model}}
-\subsubsection[{\texorpdfstring{get\+Triggers(\$trigger\+\_\+name, \$called\+\_\+position)}{getTriggers($trigger_name, $called_position)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Model\+::get\+Triggers (
-\begin{DoxyParamCaption}
-\item[{}]{\$trigger\+\_\+name, }
-\item[{}]{\$called\+\_\+position}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleModel_a979238a3b59bf52ccaa29ec3f7744808}{}\label{classmoduleModel_a979238a3b59bf52ccaa29ec3f7744808}
+\subsubsection{\texorpdfstring{get\+Triggers()}{getTriggers()}}
+{\footnotesize\ttfamily module\+Model\+::get\+Triggers (\begin{DoxyParamCaption}\item[{}]{\$trigger\+\_\+name,  }\item[{}]{\$called\+\_\+position }\end{DoxyParamCaption})}
+
 
 
 Get a list of all triggers on the trigger\+\_\+name. 
@@ -805,15 +733,12 @@ Get a list of all triggers on the trigger\+\_\+name.
 
 Definition at line 630 of file module.\+model.\+php.
 
+\hypertarget{classmoduleModel_a240b4774ddaadc1ded08551120942ca3}{}\label{classmoduleModel_a240b4774ddaadc1ded08551120942ca3} 
 \index{module\+Model@{module\+Model}!get\+Validator\+File\+Path@{get\+Validator\+File\+Path}}
 \index{get\+Validator\+File\+Path@{get\+Validator\+File\+Path}!module\+Model@{module\+Model}}
-\subsubsection[{\texorpdfstring{get\+Validator\+File\+Path(\$module, \$ruleset, \$mid=null)}{getValidatorFilePath($module, $ruleset, $mid=null)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Model\+::get\+Validator\+File\+Path (
-\begin{DoxyParamCaption}
-\item[{}]{\$module, }
-\item[{}]{\$ruleset, }
-\item[{}]{\$mid = {\ttfamily {\bf null}}}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleModel_a240b4774ddaadc1ded08551120942ca3}{}\label{classmoduleModel_a240b4774ddaadc1ded08551120942ca3}
+\subsubsection{\texorpdfstring{get\+Validator\+File\+Path()}{getValidatorFilePath()}}
+{\footnotesize\ttfamily module\+Model\+::get\+Validator\+File\+Path (\begin{DoxyParamCaption}\item[{}]{\$module,  }\item[{}]{\$ruleset,  }\item[{}]{\$mid = {\ttfamily null} }\end{DoxyParamCaption})}
+
 
 
 Return ruleset cache file path. 
@@ -827,13 +752,12 @@ Return ruleset cache file path.
 
 Definition at line 2229 of file module.\+model.\+php.
 
+\hypertarget{classmoduleModel_a1d6fb4cdd3dd5e068e71cacc551f517c}{}\label{classmoduleModel_a1d6fb4cdd3dd5e068e71cacc551f517c} 
 \index{module\+Model@{module\+Model}!init@{init}}
 \index{init@{init}!module\+Model@{module\+Model}}
-\subsubsection[{\texorpdfstring{init()}{init()}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Model\+::init (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleModel_a1d6fb4cdd3dd5e068e71cacc551f517c}{}\label{classmoduleModel_a1d6fb4cdd3dd5e068e71cacc551f517c}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily module\+Model\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 
 
 Initialization. 
@@ -842,14 +766,12 @@ Initialization.
 
 Definition at line 13 of file module.\+model.\+php.
 
+\hypertarget{classmoduleModel_a5f53ae1101876e8967cc3c40e54badcd}{}\label{classmoduleModel_a5f53ae1101876e8967cc3c40e54badcd} 
 \index{module\+Model@{module\+Model}!is\+I\+D\+Exists@{is\+I\+D\+Exists}}
 \index{is\+I\+D\+Exists@{is\+I\+D\+Exists}!module\+Model@{module\+Model}}
-\subsubsection[{\texorpdfstring{is\+I\+D\+Exists(\$id, \$site\+\_\+srl=0)}{isIDExists($id, $site_srl=0)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Model\+::is\+I\+D\+Exists (
-\begin{DoxyParamCaption}
-\item[{}]{\$id, }
-\item[{}]{\$site\+\_\+srl = {\ttfamily 0}}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleModel_a5f53ae1101876e8967cc3c40e54badcd}{}\label{classmoduleModel_a5f53ae1101876e8967cc3c40e54badcd}
+\subsubsection{\texorpdfstring{is\+I\+D\+Exists()}{isIDExists()}}
+{\footnotesize\ttfamily module\+Model\+::is\+I\+D\+Exists (\begin{DoxyParamCaption}\item[{}]{\$id,  }\item[{}]{\$site\+\_\+srl = {\ttfamily 0} }\end{DoxyParamCaption})}
+
 
 
 Check if mid, vid are available. 
@@ -858,14 +780,12 @@ Check if mid, vid are available.
 
 Definition at line 20 of file module.\+model.\+php.
 
+\hypertarget{classmoduleModel_aae55c42d2818ffd09f81d6cb215c59ff}{}\label{classmoduleModel_aae55c42d2818ffd09f81d6cb215c59ff} 
 \index{module\+Model@{module\+Model}!is\+Site\+Admin@{is\+Site\+Admin}}
 \index{is\+Site\+Admin@{is\+Site\+Admin}!module\+Model@{module\+Model}}
-\subsubsection[{\texorpdfstring{is\+Site\+Admin(\$member\+\_\+info, \$site\+\_\+srl=null)}{isSiteAdmin($member_info, $site_srl=null)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Model\+::is\+Site\+Admin (
-\begin{DoxyParamCaption}
-\item[{}]{\$member\+\_\+info, }
-\item[{}]{\$site\+\_\+srl = {\ttfamily {\bf null}}}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleModel_aae55c42d2818ffd09f81d6cb215c59ff}{}\label{classmoduleModel_aae55c42d2818ffd09f81d6cb215c59ff}
+\subsubsection{\texorpdfstring{is\+Site\+Admin()}{isSiteAdmin()}}
+{\footnotesize\ttfamily module\+Model\+::is\+Site\+Admin (\begin{DoxyParamCaption}\item[{}]{\$member\+\_\+info,  }\item[{}]{\$site\+\_\+srl = {\ttfamily null} }\end{DoxyParamCaption})}
+
 
 
 Check if it is an administrator of site\+\_\+module\+\_\+info. 
@@ -874,13 +794,12 @@ Check if it is an administrator of site\+\_\+module\+\_\+info.
 
 Definition at line 1669 of file module.\+model.\+php.
 
+\hypertarget{classmoduleModel_adfde81ebf0fcb2814ba49ad23ce803ff}{}\label{classmoduleModel_adfde81ebf0fcb2814ba49ad23ce803ff} 
 \index{module\+Model@{module\+Model}!load\+Module\+Extends@{load\+Module\+Extends}}
 \index{load\+Module\+Extends@{load\+Module\+Extends}!module\+Model@{module\+Model}}
-\subsubsection[{\texorpdfstring{load\+Module\+Extends()}{loadModuleExtends()}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Model\+::load\+Module\+Extends (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleModel_adfde81ebf0fcb2814ba49ad23ce803ff}{}\label{classmoduleModel_adfde81ebf0fcb2814ba49ad23ce803ff}
+\subsubsection{\texorpdfstring{load\+Module\+Extends()}{loadModuleExtends()}}
+{\footnotesize\ttfamily module\+Model\+::load\+Module\+Extends (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 
 
 Get all the module extend. 
@@ -889,15 +808,12 @@ Get all the module extend.
 
 Definition at line 699 of file module.\+model.\+php.
 
+\hypertarget{classmoduleModel_a2b655921c58fd41c547b78481d585275}{}\label{classmoduleModel_a2b655921c58fd41c547b78481d585275} 
 \index{module\+Model@{module\+Model}!load\+Skin\+Info@{load\+Skin\+Info}}
 \index{load\+Skin\+Info@{load\+Skin\+Info}!module\+Model@{module\+Model}}
-\subsubsection[{\texorpdfstring{load\+Skin\+Info(\$path, \$skin, \$dir= \textquotesingle{}skins\textquotesingle{})}{loadSkinInfo($path, $skin, $dir= 'skins')}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Model\+::load\+Skin\+Info (
-\begin{DoxyParamCaption}
-\item[{}]{\$path, }
-\item[{}]{\$skin, }
-\item[{}]{\$dir = {\ttfamily \textquotesingle{}skins\textquotesingle{}}}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleModel_af2f585723dfb8b8993f0e884136e45bb}{}\label{classmoduleModel_af2f585723dfb8b8993f0e884136e45bb}
+\subsubsection{\texorpdfstring{load\+Skin\+Info()}{loadSkinInfo()}}
+{\footnotesize\ttfamily module\+Model\+::load\+Skin\+Info (\begin{DoxyParamCaption}\item[{}]{\$path,  }\item[{}]{\$skin,  }\item[{}]{\$dir = {\ttfamily \textquotesingle{}skins\textquotesingle{}} }\end{DoxyParamCaption})}
+
 
 
 Get skin information on a specific location. 
@@ -906,13 +822,12 @@ Get skin information on a specific location.
 
 Definition at line 1128 of file module.\+model.\+php.
 
+\hypertarget{classmoduleModel_ae90cd832480cf8c46e96d95c20a63387}{}\label{classmoduleModel_ae90cd832480cf8c46e96d95c20a63387} 
 \index{module\+Model@{module\+Model}!sync\+Mobile\+Skin\+Info\+To\+Module\+Info@{sync\+Mobile\+Skin\+Info\+To\+Module\+Info}}
 \index{sync\+Mobile\+Skin\+Info\+To\+Module\+Info@{sync\+Mobile\+Skin\+Info\+To\+Module\+Info}!module\+Model@{module\+Model}}
-\subsubsection[{\texorpdfstring{sync\+Mobile\+Skin\+Info\+To\+Module\+Info(\&\$module\+\_\+info)}{syncMobileSkinInfoToModuleInfo(&$module_info)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Model\+::sync\+Mobile\+Skin\+Info\+To\+Module\+Info (
-\begin{DoxyParamCaption}
-\item[{\&}]{\$module\+\_\+info}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleModel_ae90cd832480cf8c46e96d95c20a63387}{}\label{classmoduleModel_ae90cd832480cf8c46e96d95c20a63387}
+\subsubsection{\texorpdfstring{sync\+Mobile\+Skin\+Info\+To\+Module\+Info()}{syncMobileSkinInfoToModuleInfo()}}
+{\footnotesize\ttfamily module\+Model\+::sync\+Mobile\+Skin\+Info\+To\+Module\+Info (\begin{DoxyParamCaption}\item[{\&}]{\$module\+\_\+info }\end{DoxyParamCaption})}
+
 Combine skin information with module information 
 \begin{DoxyParams}{Parameters}
 {\em \$module\+\_\+info} & Module information \\
@@ -922,28 +837,26 @@ Combine skin information with module information
 
 Definition at line 1944 of file module.\+model.\+php.
 
+\hypertarget{classmoduleModel_ab51d556817682d653b92e09a34b138d6}{}\label{classmoduleModel_ab51d556817682d653b92e09a34b138d6} 
 \index{module\+Model@{module\+Model}!sync\+Module\+To\+Site@{sync\+Module\+To\+Site}}
 \index{sync\+Module\+To\+Site@{sync\+Module\+To\+Site}!module\+Model@{module\+Model}}
-\subsubsection[{\texorpdfstring{sync\+Module\+To\+Site(\&\$data)}{syncModuleToSite(&$data)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Model\+::sync\+Module\+To\+Site (
-\begin{DoxyParamCaption}
-\item[{\&}]{\$data}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleModel_ab51d556817682d653b92e09a34b138d6}{}\label{classmoduleModel_ab51d556817682d653b92e09a34b138d6}
+\subsubsection{\texorpdfstring{sync\+Module\+To\+Site()}{syncModuleToSite()}}
+{\footnotesize\ttfamily module\+Model\+::sync\+Module\+To\+Site (\begin{DoxyParamCaption}\item[{\&}]{\$data }\end{DoxyParamCaption})}
 
 
-Combine module\+\_\+srls with domain of sites Because \hyperlink{namespaceXE}{XE} D\+B\+Handler doesn\textquotesingle{}t support left outer join, it should be as same as \$\+Output-\/$>$data\mbox{[}\mbox{]}-\/$>$module\+\_\+srl. 
+
+Combine module\+\_\+srls with domain of sites Because XE D\+B\+Handler doesn\textquotesingle{}t support left outer join, it should be as same as \$\+Output-\/$>$data\mbox{[}\mbox{]}-\/$>$module\+\_\+srl. 
 
 
 
 Definition at line 1627 of file module.\+model.\+php.
 
+\hypertarget{classmoduleModel_af9179765de4796b45236b62be16eb8fb}{}\label{classmoduleModel_af9179765de4796b45236b62be16eb8fb} 
 \index{module\+Model@{module\+Model}!sync\+Skin\+Info\+To\+Module\+Info@{sync\+Skin\+Info\+To\+Module\+Info}}
 \index{sync\+Skin\+Info\+To\+Module\+Info@{sync\+Skin\+Info\+To\+Module\+Info}!module\+Model@{module\+Model}}
-\subsubsection[{\texorpdfstring{sync\+Skin\+Info\+To\+Module\+Info(\&\$module\+\_\+info)}{syncSkinInfoToModuleInfo(&$module_info)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Model\+::sync\+Skin\+Info\+To\+Module\+Info (
-\begin{DoxyParamCaption}
-\item[{\&}]{\$module\+\_\+info}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleModel_af9179765de4796b45236b62be16eb8fb}{}\label{classmoduleModel_af9179765de4796b45236b62be16eb8fb}
+\subsubsection{\texorpdfstring{sync\+Skin\+Info\+To\+Module\+Info()}{syncSkinInfoToModuleInfo()}}
+{\footnotesize\ttfamily module\+Model\+::sync\+Skin\+Info\+To\+Module\+Info (\begin{DoxyParamCaption}\item[{\&}]{\$module\+\_\+info }\end{DoxyParamCaption})}
+
 
 
 Combine skin information with module information. 
@@ -952,13 +865,12 @@ Combine skin information with module information.
 
 Definition at line 1882 of file module.\+model.\+php.
 
+\hypertarget{classmoduleModel_a60ec88f0d61e7a44887bebba8048a18d}{}\label{classmoduleModel_a60ec88f0d61e7a44887bebba8048a18d} 
 \index{module\+Model@{module\+Model}!unserialize\+Attributes@{unserialize\+Attributes}}
 \index{unserialize\+Attributes@{unserialize\+Attributes}!module\+Model@{module\+Model}}
-\subsubsection[{\texorpdfstring{unserialize\+Attributes(\$module\+\_\+filebox\+\_\+list)}{unserializeAttributes($module_filebox_list)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Model\+::unserialize\+Attributes (
-\begin{DoxyParamCaption}
-\item[{}]{\$module\+\_\+filebox\+\_\+list}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleModel_a60ec88f0d61e7a44887bebba8048a18d}{}\label{classmoduleModel_a60ec88f0d61e7a44887bebba8048a18d}
+\subsubsection{\texorpdfstring{unserialize\+Attributes()}{unserializeAttributes()}}
+{\footnotesize\ttfamily module\+Model\+::unserialize\+Attributes (\begin{DoxyParamCaption}\item[{}]{\$module\+\_\+filebox\+\_\+list }\end{DoxyParamCaption})}
+
 
 
 Definition at line 2156 of file module.\+model.\+php.

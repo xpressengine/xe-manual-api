@@ -29,7 +29,7 @@ Inheritance diagram for importer\+Admin\+Controller\+:\begin{figure}[H]
 \item 
 \hyperlink{classimporterAdminController_a5a83e9fecd854dd75464d6f4cd63f344}{import\+Comments} (\$fp, \$\hyperlink{ko_8install_8php_a370bb6450fab1da3e0ed9f484a38b761}{module\+\_\+srl}, \$document\+\_\+srl)
 \item 
-\hyperlink{classimporterAdminController_a259bb7d8ae0b653dc45e544af3100753}{import\+Attaches} (\$fp, \$\hyperlink{ko_8install_8php_a370bb6450fab1da3e0ed9f484a38b761}{module\+\_\+srl}, \$upload\+\_\+target\+\_\+srl, \&\$\hyperlink{popup_8min_8js_a0742cac2750bccc2d88ac080fb9daa22}{files})
+\hyperlink{classimporterAdminController_a259bb7d8ae0b653dc45e544af3100753}{import\+Attaches} (\$fp, \$\hyperlink{ko_8install_8php_a370bb6450fab1da3e0ed9f484a38b761}{module\+\_\+srl}, \$upload\+\_\+target\+\_\+srl, \&\$files)
 \item 
 \hyperlink{classimporterAdminController_a007ae310ca94fb49d96bcdfa3688cb6d}{get\+Tmp\+Filename} ()
 \item 
@@ -42,7 +42,7 @@ Inheritance diagram for importer\+Admin\+Controller\+:\begin{figure}[H]
 \item 
 \hyperlink{classimporterAdminController_ac425370d30482b23546a0a16da75792c}{\$unit\+\_\+count} = 300
 \item 
-\hyperlink{classimporterAdminController_a7f08bd88a5e7eeea00c7f201438d1b1b}{\$o\+Xml\+Parser} = \hyperlink{modernizr_8min_8js_a286f9ec831c5e676eeb493248eab9575}{null}
+\hyperlink{classimporterAdminController_a7f08bd88a5e7eeea00c7f201438d1b1b}{\$o\+Xml\+Parser} = null
 \end{DoxyCompactItemize}
 
 
@@ -54,13 +54,12 @@ Definition at line 14 of file importer.\+admin.\+controller.\+php.
 
 
 \subsection{Member Function Documentation}
+\hypertarget{classimporterAdminController_a007ae310ca94fb49d96bcdfa3688cb6d}{}\label{classimporterAdminController_a007ae310ca94fb49d96bcdfa3688cb6d} 
 \index{importer\+Admin\+Controller@{importer\+Admin\+Controller}!get\+Tmp\+Filename@{get\+Tmp\+Filename}}
 \index{get\+Tmp\+Filename@{get\+Tmp\+Filename}!importer\+Admin\+Controller@{importer\+Admin\+Controller}}
-\subsubsection[{\texorpdfstring{get\+Tmp\+Filename()}{getTmpFilename()}}]{\setlength{\rightskip}{0pt plus 5cm}importer\+Admin\+Controller\+::get\+Tmp\+Filename (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classimporterAdminController_a007ae310ca94fb49d96bcdfa3688cb6d}{}\label{classimporterAdminController_a007ae310ca94fb49d96bcdfa3688cb6d}
+\subsubsection{\texorpdfstring{get\+Tmp\+Filename()}{getTmpFilename()}}
+{\footnotesize\ttfamily importer\+Admin\+Controller\+::get\+Tmp\+Filename (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 Return a filename to temporarily use \begin{DoxyReturn}{Returns}
 string 
 \end{DoxyReturn}
@@ -68,16 +67,12 @@ string
 
 Definition at line 1130 of file importer.\+admin.\+controller.\+php.
 
+\hypertarget{classimporterAdminController_a259bb7d8ae0b653dc45e544af3100753}{}\label{classimporterAdminController_a259bb7d8ae0b653dc45e544af3100753} 
 \index{importer\+Admin\+Controller@{importer\+Admin\+Controller}!import\+Attaches@{import\+Attaches}}
 \index{import\+Attaches@{import\+Attaches}!importer\+Admin\+Controller@{importer\+Admin\+Controller}}
-\subsubsection[{\texorpdfstring{import\+Attaches(\$fp, \$module\+\_\+srl, \$upload\+\_\+target\+\_\+srl, \&\$files)}{importAttaches($fp, $module_srl, $upload_target_srl, &$files)}}]{\setlength{\rightskip}{0pt plus 5cm}importer\+Admin\+Controller\+::import\+Attaches (
-\begin{DoxyParamCaption}
-\item[{}]{\$fp, }
-\item[{}]{\$module\+\_\+srl, }
-\item[{}]{\$upload\+\_\+target\+\_\+srl, }
-\item[{\&}]{\$files}
-\end{DoxyParamCaption}
-)}\hypertarget{classimporterAdminController_a259bb7d8ae0b653dc45e544af3100753}{}\label{classimporterAdminController_a259bb7d8ae0b653dc45e544af3100753}
+\subsubsection{\texorpdfstring{import\+Attaches()}{importAttaches()}}
+{\footnotesize\ttfamily importer\+Admin\+Controller\+::import\+Attaches (\begin{DoxyParamCaption}\item[{}]{\$fp,  }\item[{}]{\$module\+\_\+srl,  }\item[{}]{\$upload\+\_\+target\+\_\+srl,  }\item[{\&}]{\$files }\end{DoxyParamCaption})}
+
 Import attachment 
 \begin{DoxyParams}[1]{Parameters}
 resource & {\em \$fp} & \\
@@ -96,15 +91,12 @@ int
 
 Definition at line 1005 of file importer.\+admin.\+controller.\+php.
 
+\hypertarget{classimporterAdminController_a5a83e9fecd854dd75464d6f4cd63f344}{}\label{classimporterAdminController_a5a83e9fecd854dd75464d6f4cd63f344} 
 \index{importer\+Admin\+Controller@{importer\+Admin\+Controller}!import\+Comments@{import\+Comments}}
 \index{import\+Comments@{import\+Comments}!importer\+Admin\+Controller@{importer\+Admin\+Controller}}
-\subsubsection[{\texorpdfstring{import\+Comments(\$fp, \$module\+\_\+srl, \$document\+\_\+srl)}{importComments($fp, $module_srl, $document_srl)}}]{\setlength{\rightskip}{0pt plus 5cm}importer\+Admin\+Controller\+::import\+Comments (
-\begin{DoxyParamCaption}
-\item[{}]{\$fp, }
-\item[{}]{\$module\+\_\+srl, }
-\item[{}]{\$document\+\_\+srl}
-\end{DoxyParamCaption}
-)}\hypertarget{classimporterAdminController_a5a83e9fecd854dd75464d6f4cd63f344}{}\label{classimporterAdminController_a5a83e9fecd854dd75464d6f4cd63f344}
+\subsubsection{\texorpdfstring{import\+Comments()}{importComments()}}
+{\footnotesize\ttfamily importer\+Admin\+Controller\+::import\+Comments (\begin{DoxyParamCaption}\item[{}]{\$fp,  }\item[{}]{\$module\+\_\+srl,  }\item[{}]{\$document\+\_\+srl }\end{DoxyParamCaption})}
+
 Comments 
 \begin{DoxyParams}[1]{Parameters}
 resource & {\em \$fp} & \\
@@ -121,13 +113,12 @@ int
 
 Definition at line 879 of file importer.\+admin.\+controller.\+php.
 
+\hypertarget{classimporterAdminController_afa354c44da369a7d71f8d7556632705f}{}\label{classimporterAdminController_afa354c44da369a7d71f8d7556632705f} 
 \index{importer\+Admin\+Controller@{importer\+Admin\+Controller}!import\+Extra\+Vars@{import\+Extra\+Vars}}
 \index{import\+Extra\+Vars@{import\+Extra\+Vars}!importer\+Admin\+Controller@{importer\+Admin\+Controller}}
-\subsubsection[{\texorpdfstring{import\+Extra\+Vars(\$fp)}{importExtraVars($fp)}}]{\setlength{\rightskip}{0pt plus 5cm}importer\+Admin\+Controller\+::import\+Extra\+Vars (
-\begin{DoxyParamCaption}
-\item[{}]{\$fp}
-\end{DoxyParamCaption}
-)}\hypertarget{classimporterAdminController_afa354c44da369a7d71f8d7556632705f}{}\label{classimporterAdminController_afa354c44da369a7d71f8d7556632705f}
+\subsubsection{\texorpdfstring{import\+Extra\+Vars()}{importExtraVars()}}
+{\footnotesize\ttfamily importer\+Admin\+Controller\+::import\+Extra\+Vars (\begin{DoxyParamCaption}\item[{}]{\$fp }\end{DoxyParamCaption})}
+
 Set extra variables 
 \begin{DoxyParams}[1]{Parameters}
 resource & {\em \$fp} & \\
@@ -140,15 +131,12 @@ array
 
 Definition at line 1173 of file importer.\+admin.\+controller.\+php.
 
+\hypertarget{classimporterAdminController_a34c3708a45075ca44f1c1e274c5e002d}{}\label{classimporterAdminController_a34c3708a45075ca44f1c1e274c5e002d} 
 \index{importer\+Admin\+Controller@{importer\+Admin\+Controller}!import\+Member@{import\+Member}}
 \index{import\+Member@{import\+Member}!importer\+Admin\+Controller@{importer\+Admin\+Controller}}
-\subsubsection[{\texorpdfstring{import\+Member(\$key, \$cur, \$index\+\_\+file)}{importMember($key, $cur, $index_file)}}]{\setlength{\rightskip}{0pt plus 5cm}importer\+Admin\+Controller\+::import\+Member (
-\begin{DoxyParamCaption}
-\item[{}]{\$key, }
-\item[{}]{\$cur, }
-\item[{}]{\$index\+\_\+file}
-\end{DoxyParamCaption}
-)}\hypertarget{classimporterAdminController_a34c3708a45075ca44f1c1e274c5e002d}{}\label{classimporterAdminController_a34c3708a45075ca44f1c1e274c5e002d}
+\subsubsection{\texorpdfstring{import\+Member()}{importMember()}}
+{\footnotesize\ttfamily importer\+Admin\+Controller\+::import\+Member (\begin{DoxyParamCaption}\item[{}]{\$key,  }\item[{}]{\$cur,  }\item[{}]{\$index\+\_\+file }\end{DoxyParamCaption})}
+
 Import member information 
 \begin{DoxyParams}[1]{Parameters}
 int & {\em \$key} & \\
@@ -165,15 +153,12 @@ int
 
 Definition at line 345 of file importer.\+admin.\+controller.\+php.
 
+\hypertarget{classimporterAdminController_a604522c32bf020d51c1c6d868969cf7e}{}\label{classimporterAdminController_a604522c32bf020d51c1c6d868969cf7e} 
 \index{importer\+Admin\+Controller@{importer\+Admin\+Controller}!import\+Message@{import\+Message}}
 \index{import\+Message@{import\+Message}!importer\+Admin\+Controller@{importer\+Admin\+Controller}}
-\subsubsection[{\texorpdfstring{import\+Message(\$key, \$cur, \$index\+\_\+file)}{importMessage($key, $cur, $index_file)}}]{\setlength{\rightskip}{0pt plus 5cm}importer\+Admin\+Controller\+::import\+Message (
-\begin{DoxyParamCaption}
-\item[{}]{\$key, }
-\item[{}]{\$cur, }
-\item[{}]{\$index\+\_\+file}
-\end{DoxyParamCaption}
-)}\hypertarget{classimporterAdminController_a604522c32bf020d51c1c6d868969cf7e}{}\label{classimporterAdminController_a604522c32bf020d51c1c6d868969cf7e}
+\subsubsection{\texorpdfstring{import\+Message()}{importMessage()}}
+{\footnotesize\ttfamily importer\+Admin\+Controller\+::import\+Message (\begin{DoxyParamCaption}\item[{}]{\$key,  }\item[{}]{\$cur,  }\item[{}]{\$index\+\_\+file }\end{DoxyParamCaption})}
+
 Import message information parsed from a given xml file 
 \begin{DoxyParams}[1]{Parameters}
 int & {\em \$key} & \\
@@ -190,16 +175,12 @@ int
 
 Definition at line 500 of file importer.\+admin.\+controller.\+php.
 
+\hypertarget{classimporterAdminController_a7609f3f95b4c1e10be65dfcec57d0d27}{}\label{classimporterAdminController_a7609f3f95b4c1e10be65dfcec57d0d27} 
 \index{importer\+Admin\+Controller@{importer\+Admin\+Controller}!import\+Module@{import\+Module}}
 \index{import\+Module@{import\+Module}!importer\+Admin\+Controller@{importer\+Admin\+Controller}}
-\subsubsection[{\texorpdfstring{import\+Module(\$key, \$cur, \$index\+\_\+file, \$module\+\_\+srl)}{importModule($key, $cur, $index_file, $module_srl)}}]{\setlength{\rightskip}{0pt plus 5cm}importer\+Admin\+Controller\+::import\+Module (
-\begin{DoxyParamCaption}
-\item[{}]{\$key, }
-\item[{}]{\$cur, }
-\item[{}]{\$index\+\_\+file, }
-\item[{}]{\$module\+\_\+srl}
-\end{DoxyParamCaption}
-)}\hypertarget{classimporterAdminController_a7609f3f95b4c1e10be65dfcec57d0d27}{}\label{classimporterAdminController_a7609f3f95b4c1e10be65dfcec57d0d27}
+\subsubsection{\texorpdfstring{import\+Module()}{importModule()}}
+{\footnotesize\ttfamily importer\+Admin\+Controller\+::import\+Module (\begin{DoxyParamCaption}\item[{}]{\$key,  }\item[{}]{\$cur,  }\item[{}]{\$index\+\_\+file,  }\item[{}]{\$module\+\_\+srl }\end{DoxyParamCaption})}
+
 Import data in module.\+xml format 
 \begin{DoxyParams}[1]{Parameters}
 int & {\em \$key} & \\
@@ -218,15 +199,12 @@ int
 
 Definition at line 599 of file importer.\+admin.\+controller.\+php.
 
+\hypertarget{classimporterAdminController_a9f2397ca84ef0adb182cf2b63b941604}{}\label{classimporterAdminController_a9f2397ca84ef0adb182cf2b63b941604} 
 \index{importer\+Admin\+Controller@{importer\+Admin\+Controller}!import\+Trackbacks@{import\+Trackbacks}}
 \index{import\+Trackbacks@{import\+Trackbacks}!importer\+Admin\+Controller@{importer\+Admin\+Controller}}
-\subsubsection[{\texorpdfstring{import\+Trackbacks(\$fp, \$module\+\_\+srl, \$document\+\_\+srl)}{importTrackbacks($fp, $module_srl, $document_srl)}}]{\setlength{\rightskip}{0pt plus 5cm}importer\+Admin\+Controller\+::import\+Trackbacks (
-\begin{DoxyParamCaption}
-\item[{}]{\$fp, }
-\item[{}]{\$module\+\_\+srl, }
-\item[{}]{\$document\+\_\+srl}
-\end{DoxyParamCaption}
-)}\hypertarget{classimporterAdminController_a9f2397ca84ef0adb182cf2b63b941604}{}\label{classimporterAdminController_a9f2397ca84ef0adb182cf2b63b941604}
+\subsubsection{\texorpdfstring{import\+Trackbacks()}{importTrackbacks()}}
+{\footnotesize\ttfamily importer\+Admin\+Controller\+::import\+Trackbacks (\begin{DoxyParamCaption}\item[{}]{\$fp,  }\item[{}]{\$module\+\_\+srl,  }\item[{}]{\$document\+\_\+srl }\end{DoxyParamCaption})}
+
 Trackbacks 
 \begin{DoxyParams}[1]{Parameters}
 resource & {\em \$fp} & \\
@@ -243,13 +221,12 @@ int
 
 Definition at line 831 of file importer.\+admin.\+controller.\+php.
 
+\hypertarget{classimporterAdminController_a5b0172b0077de7de8b718b897b9fb562}{}\label{classimporterAdminController_a5b0172b0077de7de8b718b897b9fb562} 
 \index{importer\+Admin\+Controller@{importer\+Admin\+Controller}!init@{init}}
 \index{init@{init}!importer\+Admin\+Controller@{importer\+Admin\+Controller}}
-\subsubsection[{\texorpdfstring{init()}{init()}}]{\setlength{\rightskip}{0pt plus 5cm}importer\+Admin\+Controller\+::init (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classimporterAdminController_a5b0172b0077de7de8b718b897b9fb562}{}\label{classimporterAdminController_a5b0172b0077de7de8b718b897b9fb562}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily importer\+Admin\+Controller\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 Initialization \begin{DoxyReturn}{Returns}
 void 
 \end{DoxyReturn}
@@ -257,13 +234,12 @@ void
 
 Definition at line 31 of file importer.\+admin.\+controller.\+php.
 
+\hypertarget{classimporterAdminController_aa553a8db633713f858c1064a5b8fa621}{}\label{classimporterAdminController_aa553a8db633713f858c1064a5b8fa621} 
 \index{importer\+Admin\+Controller@{importer\+Admin\+Controller}!proc\+Importer\+Admin\+Check\+Xml\+File@{proc\+Importer\+Admin\+Check\+Xml\+File}}
 \index{proc\+Importer\+Admin\+Check\+Xml\+File@{proc\+Importer\+Admin\+Check\+Xml\+File}!importer\+Admin\+Controller@{importer\+Admin\+Controller}}
-\subsubsection[{\texorpdfstring{proc\+Importer\+Admin\+Check\+Xml\+File()}{procImporterAdminCheckXmlFile()}}]{\setlength{\rightskip}{0pt plus 5cm}importer\+Admin\+Controller\+::proc\+Importer\+Admin\+Check\+Xml\+File (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classimporterAdminController_aa553a8db633713f858c1064a5b8fa621}{}\label{classimporterAdminController_aa553a8db633713f858c1064a5b8fa621}
+\subsubsection{\texorpdfstring{proc\+Importer\+Admin\+Check\+Xml\+File()}{procImporterAdminCheckXmlFile()}}
+{\footnotesize\ttfamily importer\+Admin\+Controller\+::proc\+Importer\+Admin\+Check\+Xml\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 Check whether the passing filename exists or not. Detect the file type, too. \begin{DoxyReturn}{Returns}
 void 
 \end{DoxyReturn}
@@ -271,13 +247,12 @@ void
 
 Definition at line 39 of file importer.\+admin.\+controller.\+php.
 
+\hypertarget{classimporterAdminController_a51a0e3d1bccf3f7c539b119bf394d572}{}\label{classimporterAdminController_a51a0e3d1bccf3f7c539b119bf394d572} 
 \index{importer\+Admin\+Controller@{importer\+Admin\+Controller}!proc\+Importer\+Admin\+Import@{proc\+Importer\+Admin\+Import}}
 \index{proc\+Importer\+Admin\+Import@{proc\+Importer\+Admin\+Import}!importer\+Admin\+Controller@{importer\+Admin\+Controller}}
-\subsubsection[{\texorpdfstring{proc\+Importer\+Admin\+Import()}{procImporterAdminImport()}}]{\setlength{\rightskip}{0pt plus 5cm}importer\+Admin\+Controller\+::proc\+Importer\+Admin\+Import (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classimporterAdminController_a51a0e3d1bccf3f7c539b119bf394d572}{}\label{classimporterAdminController_a51a0e3d1bccf3f7c539b119bf394d572}
+\subsubsection{\texorpdfstring{proc\+Importer\+Admin\+Import()}{procImporterAdminImport()}}
+{\footnotesize\ttfamily importer\+Admin\+Controller\+::proc\+Importer\+Admin\+Import (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 Migrate data after completing xml file extraction \begin{DoxyReturn}{Returns}
 void 
 \end{DoxyReturn}
@@ -285,13 +260,12 @@ void
 
 Definition at line 281 of file importer.\+admin.\+controller.\+php.
 
+\hypertarget{classimporterAdminController_a112303ff9925d381a27f526b97909205}{}\label{classimporterAdminController_a112303ff9925d381a27f526b97909205} 
 \index{importer\+Admin\+Controller@{importer\+Admin\+Controller}!proc\+Importer\+Admin\+Pre\+Processing@{proc\+Importer\+Admin\+Pre\+Processing}}
 \index{proc\+Importer\+Admin\+Pre\+Processing@{proc\+Importer\+Admin\+Pre\+Processing}!importer\+Admin\+Controller@{importer\+Admin\+Controller}}
-\subsubsection[{\texorpdfstring{proc\+Importer\+Admin\+Pre\+Processing()}{procImporterAdminPreProcessing()}}]{\setlength{\rightskip}{0pt plus 5cm}importer\+Admin\+Controller\+::proc\+Importer\+Admin\+Pre\+Processing (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classimporterAdminController_a112303ff9925d381a27f526b97909205}{}\label{classimporterAdminController_a112303ff9925d381a27f526b97909205}
+\subsubsection{\texorpdfstring{proc\+Importer\+Admin\+Pre\+Processing()}{procImporterAdminPreProcessing()}}
+{\footnotesize\ttfamily importer\+Admin\+Controller\+::proc\+Importer\+Admin\+Pre\+Processing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 Pre-\/analyze the xml file and cache it \begin{DoxyReturn}{Returns}
 void 
 \end{DoxyReturn}
@@ -299,13 +273,12 @@ void
 
 Definition at line 172 of file importer.\+admin.\+controller.\+php.
 
+\hypertarget{classimporterAdminController_a979a756ae2a180270e08f72536c85d74}{}\label{classimporterAdminController_a979a756ae2a180270e08f72536c85d74} 
 \index{importer\+Admin\+Controller@{importer\+Admin\+Controller}!proc\+Importer\+Admin\+Sync@{proc\+Importer\+Admin\+Sync}}
 \index{proc\+Importer\+Admin\+Sync@{proc\+Importer\+Admin\+Sync}!importer\+Admin\+Controller@{importer\+Admin\+Controller}}
-\subsubsection[{\texorpdfstring{proc\+Importer\+Admin\+Sync()}{procImporterAdminSync()}}]{\setlength{\rightskip}{0pt plus 5cm}importer\+Admin\+Controller\+::proc\+Importer\+Admin\+Sync (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classimporterAdminController_a979a756ae2a180270e08f72536c85d74}{}\label{classimporterAdminController_a979a756ae2a180270e08f72536c85d74}
+\subsubsection{\texorpdfstring{proc\+Importer\+Admin\+Sync()}{procImporterAdminSync()}}
+{\footnotesize\ttfamily importer\+Admin\+Controller\+::proc\+Importer\+Admin\+Sync (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 Sync member information with document information \begin{DoxyReturn}{Returns}
 void 
 \end{DoxyReturn}
@@ -313,13 +286,12 @@ void
 
 Definition at line 99 of file importer.\+admin.\+controller.\+php.
 
+\hypertarget{classimporterAdminController_af263aba79294e35c2027b2e41ac2a198}{}\label{classimporterAdminController_af263aba79294e35c2027b2e41ac2a198} 
 \index{importer\+Admin\+Controller@{importer\+Admin\+Controller}!save\+Temporary\+File@{save\+Temporary\+File}}
 \index{save\+Temporary\+File@{save\+Temporary\+File}!importer\+Admin\+Controller@{importer\+Admin\+Controller}}
-\subsubsection[{\texorpdfstring{save\+Temporary\+File(\$fp)}{saveTemporaryFile($fp)}}]{\setlength{\rightskip}{0pt plus 5cm}importer\+Admin\+Controller\+::save\+Temporary\+File (
-\begin{DoxyParamCaption}
-\item[{}]{\$fp}
-\end{DoxyParamCaption}
-)}\hypertarget{classimporterAdminController_af263aba79294e35c2027b2e41ac2a198}{}\label{classimporterAdminController_af263aba79294e35c2027b2e41ac2a198}
+\subsubsection{\texorpdfstring{save\+Temporary\+File()}{saveTemporaryFile()}}
+{\footnotesize\ttfamily importer\+Admin\+Controller\+::save\+Temporary\+File (\begin{DoxyParamCaption}\item[{}]{\$fp }\end{DoxyParamCaption})}
+
 Read buff until key value comes out from a specific file point 
 \begin{DoxyParams}[1]{Parameters}
 resource & {\em \$fp} & \\
@@ -335,16 +307,22 @@ Definition at line 1144 of file importer.\+admin.\+controller.\+php.
 
 
 \subsection{Member Data Documentation}
+\hypertarget{classimporterAdminController_a7f08bd88a5e7eeea00c7f201438d1b1b}{}\label{classimporterAdminController_a7f08bd88a5e7eeea00c7f201438d1b1b} 
 \index{importer\+Admin\+Controller@{importer\+Admin\+Controller}!\$o\+Xml\+Parser@{\$o\+Xml\+Parser}}
 \index{\$o\+Xml\+Parser@{\$o\+Xml\+Parser}!importer\+Admin\+Controller@{importer\+Admin\+Controller}}
-\subsubsection[{\texorpdfstring{\$o\+Xml\+Parser}{$oXmlParser}}]{\setlength{\rightskip}{0pt plus 5cm}importer\+Admin\+Controller\+::\$o\+Xml\+Parser = {\bf null}}\hypertarget{classimporterAdminController_a7f08bd88a5e7eeea00c7f201438d1b1b}{}\label{classimporterAdminController_a7f08bd88a5e7eeea00c7f201438d1b1b}
+\subsubsection{\texorpdfstring{\$o\+Xml\+Parser}{$oXmlParser}}
+{\footnotesize\ttfamily importer\+Admin\+Controller\+::\$o\+Xml\+Parser = null}
+
 
 
 Definition at line 25 of file importer.\+admin.\+controller.\+php.
 
+\hypertarget{classimporterAdminController_ac425370d30482b23546a0a16da75792c}{}\label{classimporterAdminController_ac425370d30482b23546a0a16da75792c} 
 \index{importer\+Admin\+Controller@{importer\+Admin\+Controller}!\$unit\+\_\+count@{\$unit\+\_\+count}}
 \index{\$unit\+\_\+count@{\$unit\+\_\+count}!importer\+Admin\+Controller@{importer\+Admin\+Controller}}
-\subsubsection[{\texorpdfstring{\$unit\+\_\+count}{$unit_count}}]{\setlength{\rightskip}{0pt plus 5cm}importer\+Admin\+Controller\+::\$unit\+\_\+count = 300}\hypertarget{classimporterAdminController_ac425370d30482b23546a0a16da75792c}{}\label{classimporterAdminController_ac425370d30482b23546a0a16da75792c}
+\subsubsection{\texorpdfstring{\$unit\+\_\+count}{$unit\_count}}
+{\footnotesize\ttfamily importer\+Admin\+Controller\+::\$unit\+\_\+count = 300}
+
 
 
 Definition at line 20 of file importer.\+admin.\+controller.\+php.

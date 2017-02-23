@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['dashboard_5fcounter_2ejs',['dashboard_counter.js',['../dashboard__counter_8js.html',1,'']]],
   ['db_2eclass_2ephp',['DB.class.php',['../DB_8class_8php.html',1,'']]],
   ['dbcubrid_2eclass_2ephp',['DBCubrid.class.php',['../DBCubrid_8class_8php.html',1,'']]],
   ['dbmssql_2eclass_2ephp',['DBMssql.class.php',['../DBMssql_8class_8php.html',1,'']]],
@@ -9,15 +8,8 @@ var searchData=
   ['dbmysqli_2eclass_2ephp',['DBMysqli.class.php',['../DBMysqli_8class_8php.html',1,'']]],
   ['dbmysqli_5finnodb_2eclass_2ephp',['DBMysqli_innodb.class.php',['../DBMysqli__innodb_8class_8php.html',1,'']]],
   ['dbparser_2eclass_2ephp',['DBParser.class.php',['../DBParser_8class_8php.html',1,'']]],
-  ['default_2ejs',['default.js',['../default_8js.html',1,'']]],
-  ['default_2elayout_2ejs',['default.layout.js',['../default_8layout_8js.html',1,'']]],
-  ['default_2elogin_2ejs',['default.login.js',['../default_8login_8js.html',1,'']]],
-  ['default_2emin_2ejs',['default.min.js',['../default_8min_8js.html',1,'']]],
-  ['default_5fconfig_2ejs',['default_config.js',['../default__config_8js.html',1,'']]],
   ['defaultvalue_2eclass_2ephp',['DefaultValue.class.php',['../DefaultValue_8class_8php.html',1,'']]],
   ['deleteexpression_2eclass_2ephp',['DeleteExpression.class.php',['../DeleteExpression_8class_8php.html',1,'']]],
-  ['design_5fconfig_2ejs',['design_config.js',['../design__config_8js.html',1,'']]],
-  ['diff_5fmatch_5fpatch_2ejs',['diff_match_patch.js',['../diff__match__patch_8js.html',1,'']]],
   ['displayhandler_2eclass_2ephp',['DisplayHandler.class.php',['../DisplayHandler_8class_8php.html',1,'']]],
   ['document_2eadmin_2econtroller_2ephp',['document.admin.controller.php',['../document_8admin_8controller_8php.html',1,'']]],
   ['document_2eadmin_2emodel_2ephp',['document.admin.model.php',['../document_8admin_8model_8php.html',1,'']]],
@@ -27,7 +19,5 @@ var searchData=
   ['document_2eitem_2ephp',['document.item.php',['../document_8item_8php.html',1,'']]],
   ['document_2emodel_2ephp',['document.model.php',['../document_8model_8php.html',1,'']]],
   ['document_2eview_2ephp',['document.view.php',['../document_8view_8php.html',1,'']]],
-  ['document_5fadmin_2ejs',['document_admin.js',['../document__admin_8js.html',1,'']]],
-  ['document_5fcategory_2ejs',['document_category.js',['../document__category_8js.html',1,'']]],
   ['download_2ephp',['Download.php',['../Download_8php.html',1,'']]]
 ];

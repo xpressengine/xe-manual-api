@@ -9,13 +9,13 @@ Inheritance diagram for H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar\+:\begin{f
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classHTTP__Request2__CookieJar_a0df8fa6c7a4d383b595fa62a62d280f1}{\+\_\+\+\_\+construct} (\$\hyperlink{classHTTP__Request2__CookieJar_a2a81535d5a9762c3d6ae9229f2349813}{serialize\+Session\+Cookies}=false, \$\hyperlink{classHTTP__Request2__CookieJar_aa5754da6e9d23db800e091bc16fb3bc8}{use\+Public\+Suffix\+List}=true)
+\hyperlink{classHTTP__Request2__CookieJar_ad653775d228539017314173cb969464f}{\+\_\+\+\_\+construct} ( \$\hyperlink{classHTTP__Request2__CookieJar_a2a81535d5a9762c3d6ae9229f2349813}{serialize\+Session\+Cookies}=false, \$\hyperlink{classHTTP__Request2__CookieJar_aa5754da6e9d23db800e091bc16fb3bc8}{use\+Public\+Suffix\+List}=true)
 \item 
-\hyperlink{classHTTP__Request2__CookieJar_a282b74d495d895691cf2dd4e7a7d467e}{store} (array \$\hyperlink{jquery_8cookie_8js_afabd817194187de2e22c008dcedc6e9a}{cookie}, \hyperlink{classNet__URL2}{Net\+\_\+\+U\+R\+L2} \$setter=\hyperlink{modernizr_8min_8js_a286f9ec831c5e676eeb493248eab9575}{null})
+\hyperlink{classHTTP__Request2__CookieJar_a282b74d495d895691cf2dd4e7a7d467e}{store} (array \$cookie, \hyperlink{classNet__URL2}{Net\+\_\+\+U\+R\+L2} \$setter=null)
 \item 
 \hyperlink{classHTTP__Request2__CookieJar_ac36b125ea28edd3383bfc7122bfe3492}{add\+Cookies\+From\+Response} (\hyperlink{classHTTP__Request2__Response}{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response} \$response, \hyperlink{classNet__URL2}{Net\+\_\+\+U\+R\+L2} \$setter)
 \item 
-\hyperlink{classHTTP__Request2__CookieJar_a1a5ded22296cb2445004e579b8f38eab}{get\+Matching} (\hyperlink{classNet__URL2}{Net\+\_\+\+U\+R\+L2} \$\hyperlink{swfupload_8js_a440a52a9004fdab0700100a6ddb49f67}{url}, \$as\+String=false)
+\hyperlink{classHTTP__Request2__CookieJar_a1a5ded22296cb2445004e579b8f38eab}{get\+Matching} (\hyperlink{classNet__URL2}{Net\+\_\+\+U\+R\+L2} \$url, \$as\+String=false)
 \item 
 \hyperlink{classHTTP__Request2__CookieJar_ac38ab1d49f98cb8261b3fe8eeb482125}{get\+All} ()
 \item 
@@ -39,7 +39,7 @@ static \hyperlink{classHTTP__Request2__CookieJar_a66c53f8393c3562e58491105165e77
 \item 
 \hyperlink{classHTTP__Request2__CookieJar_af7f3ec95c4a5b2594004b455c82081d6}{now} ()
 \item 
-\hyperlink{classHTTP__Request2__CookieJar_a518f04b3620e71b98390e2915e6e6d20}{check\+And\+Update\+Fields} (array \$\hyperlink{jquery_8cookie_8js_afabd817194187de2e22c008dcedc6e9a}{cookie}, \hyperlink{classNet__URL2}{Net\+\_\+\+U\+R\+L2} \$setter=\hyperlink{modernizr_8min_8js_a286f9ec831c5e676eeb493248eab9575}{null})
+\hyperlink{classHTTP__Request2__CookieJar_a518f04b3620e71b98390e2915e6e6d20}{check\+And\+Update\+Fields} (array \$cookie, \hyperlink{classNet__URL2}{Net\+\_\+\+U\+R\+L2} \$setter=null)
 \end{DoxyCompactItemize}
 \subsection*{Static Protected Member Functions}
 \begin{DoxyCompactItemize}
@@ -70,14 +70,12 @@ Definition at line 34 of file Cookie\+Jar.\+php.
 
 
 \subsection{Constructor \& Destructor Documentation}
+\hypertarget{classHTTP__Request2__CookieJar_ad653775d228539017314173cb969464f}{}\label{classHTTP__Request2__CookieJar_ad653775d228539017314173cb969464f} 
 \index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
 \index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar}}
-\subsubsection[{\texorpdfstring{\+\_\+\+\_\+construct(\$serialize\+Session\+Cookies=false, \$use\+Public\+Suffix\+List=true)}{__construct($serializeSessionCookies=false, $usePublicSuffixList=true)}}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar\+::\+\_\+\+\_\+construct (
-\begin{DoxyParamCaption}
-\item[{}]{\$serialize\+Session\+Cookies = {\ttfamily false}, }
-\item[{}]{\$use\+Public\+Suffix\+List = {\ttfamily true}}
-\end{DoxyParamCaption}
-)}\hypertarget{classHTTP__Request2__CookieJar_a0df8fa6c7a4d383b595fa62a62d280f1}{}\label{classHTTP__Request2__CookieJar_a0df8fa6c7a4d383b595fa62a62d280f1}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+construct()}{\_\_construct()}}
+{\footnotesize\ttfamily H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$serialize\+Session\+Cookies = {\ttfamily false},  }\item[{}]{\$use\+Public\+Suffix\+List = {\ttfamily true} }\end{DoxyParamCaption})}
+
 Class constructor, sets various options
 
 
@@ -94,14 +92,12 @@ Definition at line 79 of file Cookie\+Jar.\+php.
 
 
 \subsection{Member Function Documentation}
+\hypertarget{classHTTP__Request2__CookieJar_ac36b125ea28edd3383bfc7122bfe3492}{}\label{classHTTP__Request2__CookieJar_ac36b125ea28edd3383bfc7122bfe3492} 
 \index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar}!add\+Cookies\+From\+Response@{add\+Cookies\+From\+Response}}
 \index{add\+Cookies\+From\+Response@{add\+Cookies\+From\+Response}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar}}
-\subsubsection[{\texorpdfstring{add\+Cookies\+From\+Response(\+H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response \$response, Net\+\_\+\+U\+R\+L2 \$setter)}{addCookiesFromResponse(HTTP_Request2_Response $response, Net_URL2 $setter)}}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar\+::add\+Cookies\+From\+Response (
-\begin{DoxyParamCaption}
-\item[{{\bf H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response}}]{\$response, }
-\item[{{\bf Net\+\_\+\+U\+R\+L2}}]{\$setter}
-\end{DoxyParamCaption}
-)}\hypertarget{classHTTP__Request2__CookieJar_ac36b125ea28edd3383bfc7122bfe3492}{}\label{classHTTP__Request2__CookieJar_ac36b125ea28edd3383bfc7122bfe3492}
+\subsubsection{\texorpdfstring{add\+Cookies\+From\+Response()}{addCookiesFromResponse()}}
+{\footnotesize\ttfamily H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar\+::add\+Cookies\+From\+Response (\begin{DoxyParamCaption}\item[{\hyperlink{classHTTP__Request2__Response}{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Response}}]{\$response,  }\item[{\hyperlink{classNet__URL2}{Net\+\_\+\+U\+R\+L2}}]{\$setter }\end{DoxyParamCaption})}
+
 Adds cookies set in H\+T\+TP response to the jar
 
 
@@ -115,14 +111,12 @@ Adds cookies set in H\+T\+TP response to the jar
 
 Definition at line 226 of file Cookie\+Jar.\+php.
 
+\hypertarget{classHTTP__Request2__CookieJar_a518f04b3620e71b98390e2915e6e6d20}{}\label{classHTTP__Request2__CookieJar_a518f04b3620e71b98390e2915e6e6d20} 
 \index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar}!check\+And\+Update\+Fields@{check\+And\+Update\+Fields}}
 \index{check\+And\+Update\+Fields@{check\+And\+Update\+Fields}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar}}
-\subsubsection[{\texorpdfstring{check\+And\+Update\+Fields(array \$cookie, Net\+\_\+\+U\+R\+L2 \$setter=null)}{checkAndUpdateFields(array $cookie, Net_URL2 $setter=null)}}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar\+::check\+And\+Update\+Fields (
-\begin{DoxyParamCaption}
-\item[{array}]{\$cookie, }
-\item[{{\bf Net\+\_\+\+U\+R\+L2}}]{\$setter = {\ttfamily {\bf null}}}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classHTTP__Request2__CookieJar_a518f04b3620e71b98390e2915e6e6d20}{}\label{classHTTP__Request2__CookieJar_a518f04b3620e71b98390e2915e6e6d20}
+\subsubsection{\texorpdfstring{check\+And\+Update\+Fields()}{checkAndUpdateFields()}}
+{\footnotesize\ttfamily H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar\+::check\+And\+Update\+Fields (\begin{DoxyParamCaption}\item[{array}]{\$cookie,  }\item[{\hyperlink{classNet__URL2}{Net\+\_\+\+U\+R\+L2}}]{\$setter = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
 Checks cookie array for correctness, possibly updating its \textquotesingle{}domain\textquotesingle{}, \textquotesingle{}path\textquotesingle{} and \textquotesingle{}expires\textquotesingle{} fields
 
 The checks are as follows\+:
@@ -157,14 +151,12 @@ array Updated cookie array
 
 Definition at line 122 of file Cookie\+Jar.\+php.
 
+\hypertarget{classHTTP__Request2__CookieJar_a7a04c4cd3170cbf23b42e2cdc1409e7a}{}\label{classHTTP__Request2__CookieJar_a7a04c4cd3170cbf23b42e2cdc1409e7a} 
 \index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar}!check\+Domains\+List@{check\+Domains\+List}}
 \index{check\+Domains\+List@{check\+Domains\+List}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar}}
-\subsubsection[{\texorpdfstring{check\+Domains\+List(array \$domain\+Parts, \$list\+Node)}{checkDomainsList(array $domainParts, $listNode)}}]{\setlength{\rightskip}{0pt plus 5cm}static H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar\+::check\+Domains\+List (
-\begin{DoxyParamCaption}
-\item[{array}]{\$domain\+Parts, }
-\item[{}]{\$list\+Node}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}\hypertarget{classHTTP__Request2__CookieJar_a7a04c4cd3170cbf23b42e2cdc1409e7a}{}\label{classHTTP__Request2__CookieJar_a7a04c4cd3170cbf23b42e2cdc1409e7a}
+\subsubsection{\texorpdfstring{check\+Domains\+List()}{checkDomainsList()}}
+{\footnotesize\ttfamily static H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar\+::check\+Domains\+List (\begin{DoxyParamCaption}\item[{array}]{\$domain\+Parts,  }\item[{}]{\$list\+Node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
 Recursive helper method for \hyperlink{classHTTP__Request2__CookieJar_a66c53f8393c3562e58491105165e77a9}{get\+Registered\+Domain()}
 
 
@@ -181,14 +173,12 @@ string$\vert$null concatenated domain parts, null in case of error
 
 Definition at line 471 of file Cookie\+Jar.\+php.
 
+\hypertarget{classHTTP__Request2__CookieJar_ad22bee9ce6d2c111120bf44c3e302401}{}\label{classHTTP__Request2__CookieJar_ad22bee9ce6d2c111120bf44c3e302401} 
 \index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar}!domain\+Match@{domain\+Match}}
 \index{domain\+Match@{domain\+Match}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar}}
-\subsubsection[{\texorpdfstring{domain\+Match(\$request\+Host, \$cookie\+Domain)}{domainMatch($requestHost, $cookieDomain)}}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar\+::domain\+Match (
-\begin{DoxyParamCaption}
-\item[{}]{\$request\+Host, }
-\item[{}]{\$cookie\+Domain}
-\end{DoxyParamCaption}
-)}\hypertarget{classHTTP__Request2__CookieJar_ad22bee9ce6d2c111120bf44c3e302401}{}\label{classHTTP__Request2__CookieJar_ad22bee9ce6d2c111120bf44c3e302401}
+\subsubsection{\texorpdfstring{domain\+Match()}{domainMatch()}}
+{\footnotesize\ttfamily H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar\+::domain\+Match (\begin{DoxyParamCaption}\item[{}]{\$request\+Host,  }\item[{}]{\$cookie\+Domain }\end{DoxyParamCaption})}
+
 Checks whether a cookie domain matches a request host.
 
 The method is used by \hyperlink{classHTTP__Request2__CookieJar_a282b74d495d895691cf2dd4e7a7d467e}{store()} to check for whether a document at given U\+RL can set a cookie with a given domain attribute and by \hyperlink{classHTTP__Request2__CookieJar_a1a5ded22296cb2445004e579b8f38eab}{get\+Matching()} to find cookies matching the request U\+RL.
@@ -207,13 +197,12 @@ bool match success
 
 Definition at line 398 of file Cookie\+Jar.\+php.
 
+\hypertarget{classHTTP__Request2__CookieJar_ac38ab1d49f98cb8261b3fe8eeb482125}{}\label{classHTTP__Request2__CookieJar_ac38ab1d49f98cb8261b3fe8eeb482125} 
 \index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar}!get\+All@{get\+All}}
 \index{get\+All@{get\+All}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar}}
-\subsubsection[{\texorpdfstring{get\+All()}{getAll()}}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar\+::get\+All (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classHTTP__Request2__CookieJar_ac38ab1d49f98cb8261b3fe8eeb482125}{}\label{classHTTP__Request2__CookieJar_ac38ab1d49f98cb8261b3fe8eeb482125}
+\subsubsection{\texorpdfstring{get\+All()}{getAll()}}
+{\footnotesize\ttfamily H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar\+::get\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 Returns all cookies stored in a jar
 
 \begin{DoxyReturn}{Returns}
@@ -223,14 +212,12 @@ array
 
 Definition at line 286 of file Cookie\+Jar.\+php.
 
+\hypertarget{classHTTP__Request2__CookieJar_a1a5ded22296cb2445004e579b8f38eab}{}\label{classHTTP__Request2__CookieJar_a1a5ded22296cb2445004e579b8f38eab} 
 \index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar}!get\+Matching@{get\+Matching}}
 \index{get\+Matching@{get\+Matching}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar}}
-\subsubsection[{\texorpdfstring{get\+Matching(\+Net\+\_\+\+U\+R\+L2 \$url, \$as\+String=false)}{getMatching(Net_URL2 $url, $asString=false)}}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar\+::get\+Matching (
-\begin{DoxyParamCaption}
-\item[{{\bf Net\+\_\+\+U\+R\+L2}}]{\$url, }
-\item[{}]{\$as\+String = {\ttfamily false}}
-\end{DoxyParamCaption}
-)}\hypertarget{classHTTP__Request2__CookieJar_a1a5ded22296cb2445004e579b8f38eab}{}\label{classHTTP__Request2__CookieJar_a1a5ded22296cb2445004e579b8f38eab}
+\subsubsection{\texorpdfstring{get\+Matching()}{getMatching()}}
+{\footnotesize\ttfamily H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar\+::get\+Matching (\begin{DoxyParamCaption}\item[{\hyperlink{classNet__URL2}{Net\+\_\+\+U\+R\+L2}}]{\$url,  }\item[{}]{\$as\+String = {\ttfamily false} }\end{DoxyParamCaption})}
+
 Returns all cookies matching a given request U\+RL
 
 The following checks are made\+:
@@ -254,13 +241,12 @@ array$\vert$string Matching cookies
 
 Definition at line 246 of file Cookie\+Jar.\+php.
 
+\hypertarget{classHTTP__Request2__CookieJar_a66c53f8393c3562e58491105165e77a9}{}\label{classHTTP__Request2__CookieJar_a66c53f8393c3562e58491105165e77a9} 
 \index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar}!get\+Registered\+Domain@{get\+Registered\+Domain}}
 \index{get\+Registered\+Domain@{get\+Registered\+Domain}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar}}
-\subsubsection[{\texorpdfstring{get\+Registered\+Domain(\$domain)}{getRegisteredDomain($domain)}}]{\setlength{\rightskip}{0pt plus 5cm}static H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar\+::get\+Registered\+Domain (
-\begin{DoxyParamCaption}
-\item[{}]{\$domain}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classHTTP__Request2__CookieJar_a66c53f8393c3562e58491105165e77a9}{}\label{classHTTP__Request2__CookieJar_a66c53f8393c3562e58491105165e77a9}
+\subsubsection{\texorpdfstring{get\+Registered\+Domain()}{getRegisteredDomain()}}
+{\footnotesize\ttfamily static H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar\+::get\+Registered\+Domain (\begin{DoxyParamCaption}\item[{}]{\$domain }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
 Removes subdomains to get the registered domain (the first after top-\/level)
 
 The method will check Public Suffix List to find out where top-\/level domain ends and registered domain starts. It will remove domain parts to the left of registered one.
@@ -277,13 +263,12 @@ string$\vert$bool registered domain, will return false if \$domain is either inv
 
 Definition at line 431 of file Cookie\+Jar.\+php.
 
+\hypertarget{classHTTP__Request2__CookieJar_af7f3ec95c4a5b2594004b455c82081d6}{}\label{classHTTP__Request2__CookieJar_af7f3ec95c4a5b2594004b455c82081d6} 
 \index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar}!now@{now}}
 \index{now@{now}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar}}
-\subsubsection[{\texorpdfstring{now()}{now()}}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar\+::now (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classHTTP__Request2__CookieJar_af7f3ec95c4a5b2594004b455c82081d6}{}\label{classHTTP__Request2__CookieJar_af7f3ec95c4a5b2594004b455c82081d6}
+\subsubsection{\texorpdfstring{now()}{now()}}
+{\footnotesize\ttfamily H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar\+::now (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
 Returns current time formatted in I\+S\+O-\/8601 at U\+TC timezone
 
 \begin{DoxyReturn}{Returns}
@@ -293,13 +278,12 @@ string
 
 Definition at line 91 of file Cookie\+Jar.\+php.
 
+\hypertarget{classHTTP__Request2__CookieJar_ac6fa68d8621d1aef56c0eb8231612839}{}\label{classHTTP__Request2__CookieJar_ac6fa68d8621d1aef56c0eb8231612839} 
 \index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar}!serialize@{serialize}}
 \index{serialize@{serialize}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar}}
-\subsubsection[{\texorpdfstring{serialize()}{serialize()}}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar\+::serialize (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classHTTP__Request2__CookieJar_ac6fa68d8621d1aef56c0eb8231612839}{}\label{classHTTP__Request2__CookieJar_ac6fa68d8621d1aef56c0eb8231612839}
+\subsubsection{\texorpdfstring{serialize()}{serialize()}}
+{\footnotesize\ttfamily H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar\+::serialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 Returns string representation of object
 
 \begin{DoxyReturn}{Returns}
@@ -312,13 +296,12 @@ Serializable\+::serialize()
 
 Definition at line 342 of file Cookie\+Jar.\+php.
 
+\hypertarget{classHTTP__Request2__CookieJar_a2a81535d5a9762c3d6ae9229f2349813}{}\label{classHTTP__Request2__CookieJar_a2a81535d5a9762c3d6ae9229f2349813} 
 \index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar}!serialize\+Session\+Cookies@{serialize\+Session\+Cookies}}
 \index{serialize\+Session\+Cookies@{serialize\+Session\+Cookies}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar}}
-\subsubsection[{\texorpdfstring{serialize\+Session\+Cookies(\$serialize)}{serializeSessionCookies($serialize)}}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar\+::serialize\+Session\+Cookies (
-\begin{DoxyParamCaption}
-\item[{}]{\$serialize}
-\end{DoxyParamCaption}
-)}\hypertarget{classHTTP__Request2__CookieJar_a2a81535d5a9762c3d6ae9229f2349813}{}\label{classHTTP__Request2__CookieJar_a2a81535d5a9762c3d6ae9229f2349813}
+\subsubsection{\texorpdfstring{serialize\+Session\+Cookies()}{serializeSessionCookies()}}
+{\footnotesize\ttfamily H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar\+::serialize\+Session\+Cookies (\begin{DoxyParamCaption}\item[{}]{\$serialize }\end{DoxyParamCaption})}
+
 Sets whether session cookies should be serialized when serializing the jar
 
 
@@ -330,14 +313,12 @@ boolean & {\em \$serialize} & serialize? \\
 
 Definition at line 304 of file Cookie\+Jar.\+php.
 
+\hypertarget{classHTTP__Request2__CookieJar_a282b74d495d895691cf2dd4e7a7d467e}{}\label{classHTTP__Request2__CookieJar_a282b74d495d895691cf2dd4e7a7d467e} 
 \index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar}!store@{store}}
 \index{store@{store}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar}}
-\subsubsection[{\texorpdfstring{store(array \$cookie, Net\+\_\+\+U\+R\+L2 \$setter=null)}{store(array $cookie, Net_URL2 $setter=null)}}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar\+::store (
-\begin{DoxyParamCaption}
-\item[{array}]{\$cookie, }
-\item[{{\bf Net\+\_\+\+U\+R\+L2}}]{\$setter = {\ttfamily {\bf null}}}
-\end{DoxyParamCaption}
-)}\hypertarget{classHTTP__Request2__CookieJar_a282b74d495d895691cf2dd4e7a7d467e}{}\label{classHTTP__Request2__CookieJar_a282b74d495d895691cf2dd4e7a7d467e}
+\subsubsection{\texorpdfstring{store()}{store()}}
+{\footnotesize\ttfamily H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar\+::store (\begin{DoxyParamCaption}\item[{array}]{\$cookie,  }\item[{\hyperlink{classNet__URL2}{Net\+\_\+\+U\+R\+L2}}]{\$setter = {\ttfamily null} }\end{DoxyParamCaption})}
+
 Stores a cookie in the jar
 
 
@@ -356,13 +337,12 @@ array & {\em \$cookie} & cookie data, as returned by \hyperlink{classHTTP__Reque
 
 Definition at line 199 of file Cookie\+Jar.\+php.
 
+\hypertarget{classHTTP__Request2__CookieJar_ae63b138701ec28ec7f7c7a2b90f0a3a7}{}\label{classHTTP__Request2__CookieJar_ae63b138701ec28ec7f7c7a2b90f0a3a7} 
 \index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar}!unserialize@{unserialize}}
 \index{unserialize@{unserialize}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar}}
-\subsubsection[{\texorpdfstring{unserialize(\$serialized)}{unserialize($serialized)}}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar\+::unserialize (
-\begin{DoxyParamCaption}
-\item[{}]{\$serialized}
-\end{DoxyParamCaption}
-)}\hypertarget{classHTTP__Request2__CookieJar_ae63b138701ec28ec7f7c7a2b90f0a3a7}{}\label{classHTTP__Request2__CookieJar_ae63b138701ec28ec7f7c7a2b90f0a3a7}
+\subsubsection{\texorpdfstring{unserialize()}{unserialize()}}
+{\footnotesize\ttfamily H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar\+::unserialize (\begin{DoxyParamCaption}\item[{}]{\$serialized }\end{DoxyParamCaption})}
+
 Constructs the object from serialized string
 
 
@@ -377,13 +357,12 @@ Serializable\+::unserialize()
 
 Definition at line 366 of file Cookie\+Jar.\+php.
 
+\hypertarget{classHTTP__Request2__CookieJar_aa5754da6e9d23db800e091bc16fb3bc8}{}\label{classHTTP__Request2__CookieJar_aa5754da6e9d23db800e091bc16fb3bc8} 
 \index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar}!use\+Public\+Suffix\+List@{use\+Public\+Suffix\+List}}
 \index{use\+Public\+Suffix\+List@{use\+Public\+Suffix\+List}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar}}
-\subsubsection[{\texorpdfstring{use\+Public\+Suffix\+List(\$use\+List)}{usePublicSuffixList($useList)}}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar\+::use\+Public\+Suffix\+List (
-\begin{DoxyParamCaption}
-\item[{}]{\$use\+List}
-\end{DoxyParamCaption}
-)}\hypertarget{classHTTP__Request2__CookieJar_aa5754da6e9d23db800e091bc16fb3bc8}{}\label{classHTTP__Request2__CookieJar_aa5754da6e9d23db800e091bc16fb3bc8}
+\subsubsection{\texorpdfstring{use\+Public\+Suffix\+List()}{usePublicSuffixList()}}
+{\footnotesize\ttfamily H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar\+::use\+Public\+Suffix\+List (\begin{DoxyParamCaption}\item[{}]{\$use\+List }\end{DoxyParamCaption})}
+
 Sets whether Public Suffix List should be used for restricting cookie-\/setting
 
 Without P\+SL \hyperlink{classHTTP__Request2__CookieJar_ad22bee9ce6d2c111120bf44c3e302401}{domain\+Match()} will only prevent setting cookies for top-\/level domains like \textquotesingle{}.com\textquotesingle{} or \textquotesingle{}.org\textquotesingle{}. However, it will not prevent setting a cookie for \textquotesingle{}.co.\+uk\textquotesingle{} even though only third-\/level registrations are possible in .uk domain.
@@ -404,30 +383,42 @@ Definition at line 330 of file Cookie\+Jar.\+php.
 
 
 \subsection{Member Data Documentation}
+\hypertarget{classHTTP__Request2__CookieJar_ab7bfdc0aa06d9b09b8050cfbdb1afacf}{}\label{classHTTP__Request2__CookieJar_ab7bfdc0aa06d9b09b8050cfbdb1afacf} 
 \index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar}!\$cookies@{\$cookies}}
 \index{\$cookies@{\$cookies}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar}}
-\subsubsection[{\texorpdfstring{\$cookies}{$cookies}}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar\+::\$cookies = array()\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classHTTP__Request2__CookieJar_ab7bfdc0aa06d9b09b8050cfbdb1afacf}{}\label{classHTTP__Request2__CookieJar_ab7bfdc0aa06d9b09b8050cfbdb1afacf}
+\subsubsection{\texorpdfstring{\$cookies}{$cookies}}
+{\footnotesize\ttfamily H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar\+::\$cookies = array()\hspace{0.3cm}{\ttfamily [protected]}}
+
 
 
 Definition at line 50 of file Cookie\+Jar.\+php.
 
+\hypertarget{classHTTP__Request2__CookieJar_a3ff030e15c5780c2812814e8e7d3131d}{}\label{classHTTP__Request2__CookieJar_a3ff030e15c5780c2812814e8e7d3131d} 
 \index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar}!\$psl@{\$psl}}
 \index{\$psl@{\$psl}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar}}
-\subsubsection[{\texorpdfstring{\$psl}{$psl}}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar\+::\$psl = array()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}\hypertarget{classHTTP__Request2__CookieJar_a3ff030e15c5780c2812814e8e7d3131d}{}\label{classHTTP__Request2__CookieJar_a3ff030e15c5780c2812814e8e7d3131d}
+\subsubsection{\texorpdfstring{\$psl}{$psl}}
+{\footnotesize\ttfamily H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar\+::\$psl = array()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
 
 
 Definition at line 69 of file Cookie\+Jar.\+php.
 
+\hypertarget{classHTTP__Request2__CookieJar_ae5e881693fdcfe8cdc23966be0d8a218}{}\label{classHTTP__Request2__CookieJar_ae5e881693fdcfe8cdc23966be0d8a218} 
 \index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar}!\$serialize\+Session@{\$serialize\+Session}}
 \index{\$serialize\+Session@{\$serialize\+Session}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar}}
-\subsubsection[{\texorpdfstring{\$serialize\+Session}{$serializeSession}}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar\+::\$serialize\+Session = false\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classHTTP__Request2__CookieJar_ae5e881693fdcfe8cdc23966be0d8a218}{}\label{classHTTP__Request2__CookieJar_ae5e881693fdcfe8cdc23966be0d8a218}
+\subsubsection{\texorpdfstring{\$serialize\+Session}{$serializeSession}}
+{\footnotesize\ttfamily H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar\+::\$serialize\+Session = false\hspace{0.3cm}{\ttfamily [protected]}}
+
 
 
 Definition at line 56 of file Cookie\+Jar.\+php.
 
+\hypertarget{classHTTP__Request2__CookieJar_a931db790fefc72638f7220fc45f16a55}{}\label{classHTTP__Request2__CookieJar_a931db790fefc72638f7220fc45f16a55} 
 \index{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar}!\$use\+List@{\$use\+List}}
 \index{\$use\+List@{\$use\+List}!H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar@{H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar}}
-\subsubsection[{\texorpdfstring{\$use\+List}{$useList}}]{\setlength{\rightskip}{0pt plus 5cm}H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar\+::\$use\+List = true\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classHTTP__Request2__CookieJar_a931db790fefc72638f7220fc45f16a55}{}\label{classHTTP__Request2__CookieJar_a931db790fefc72638f7220fc45f16a55}
+\subsubsection{\texorpdfstring{\$use\+List}{$useList}}
+{\footnotesize\ttfamily H\+T\+T\+P\+\_\+\+Request2\+\_\+\+Cookie\+Jar\+::\$use\+List = true\hspace{0.3cm}{\ttfamily [protected]}}
+
 
 
 Definition at line 62 of file Cookie\+Jar.\+php.

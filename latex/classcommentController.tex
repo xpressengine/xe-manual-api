@@ -45,7 +45,7 @@ Inheritance diagram for comment\+Controller\+:\begin{figure}[H]
 \item 
 \hyperlink{classcommentController_aaae1e5860a1e170a8fc3142f80bbcde6}{declared\+Comment} (\$comment\+\_\+srl)
 \item 
-\hyperlink{classcommentController_a27025d0f5cc53f58566493e6e33b924a}{add\+Comment\+Popup\+Menu} (\$\hyperlink{swfupload_8js_a440a52a9004fdab0700100a6ddb49f67}{url}, \$str, \$\hyperlink{config_8min_8js_a939508fb879a7e4dc00e07a67919400c}{icon}= \textquotesingle{}\textquotesingle{}, \$target= \textquotesingle{}self\textquotesingle{})
+\hyperlink{classcommentController_aa3ab9560f24f8343f241444a5432f857}{add\+Comment\+Popup\+Menu} (\$url, \$str, \$icon=\textquotesingle{}\textquotesingle{}, \$target=\textquotesingle{}self\textquotesingle{})
 \item 
 \hyperlink{classcommentController_ab4a71283244210be754cceb8511e8789}{proc\+Comment\+Insert\+Module\+Config} ()
 \item 
@@ -66,13 +66,12 @@ Definition at line 12 of file comment.\+controller.\+php.
 
 
 \subsection{Member Function Documentation}
+\hypertarget{classcommentController_a06a2f96cd357550dd0cd834d7e61f4bf}{}\label{classcommentController_a06a2f96cd357550dd0cd834d7e61f4bf} 
 \index{comment\+Controller@{comment\+Controller}!\+\_\+delete\+Declared\+Comments@{\+\_\+delete\+Declared\+Comments}}
 \index{\+\_\+delete\+Declared\+Comments@{\+\_\+delete\+Declared\+Comments}!comment\+Controller@{comment\+Controller}}
-\subsubsection[{\texorpdfstring{\+\_\+delete\+Declared\+Comments(\$comment\+Srls)}{_deleteDeclaredComments($commentSrls)}}]{\setlength{\rightskip}{0pt plus 5cm}comment\+Controller\+::\+\_\+delete\+Declared\+Comments (
-\begin{DoxyParamCaption}
-\item[{}]{\$comment\+Srls}
-\end{DoxyParamCaption}
-)}\hypertarget{classcommentController_a06a2f96cd357550dd0cd834d7e61f4bf}{}\label{classcommentController_a06a2f96cd357550dd0cd834d7e61f4bf}
+\subsubsection{\texorpdfstring{\+\_\+delete\+Declared\+Comments()}{\_deleteDeclaredComments()}}
+{\footnotesize\ttfamily comment\+Controller\+::\+\_\+delete\+Declared\+Comments (\begin{DoxyParamCaption}\item[{}]{\$comment\+Srls }\end{DoxyParamCaption})}
+
 delete declared comment, log 
 \begin{DoxyParams}[1]{Parameters}
 array | string & {\em \$comment\+Srls} & \+: srls string (ex\+: 1, 2,56, 88) \\
@@ -85,13 +84,12 @@ void
 
 Definition at line 1010 of file comment.\+controller.\+php.
 
+\hypertarget{classcommentController_a0e4216451f3bb1c02aeec98bb4f54ddc}{}\label{classcommentController_a0e4216451f3bb1c02aeec98bb4f54ddc} 
 \index{comment\+Controller@{comment\+Controller}!\+\_\+delete\+Voted\+Comments@{\+\_\+delete\+Voted\+Comments}}
 \index{\+\_\+delete\+Voted\+Comments@{\+\_\+delete\+Voted\+Comments}!comment\+Controller@{comment\+Controller}}
-\subsubsection[{\texorpdfstring{\+\_\+delete\+Voted\+Comments(\$comment\+Srls)}{_deleteVotedComments($commentSrls)}}]{\setlength{\rightskip}{0pt plus 5cm}comment\+Controller\+::\+\_\+delete\+Voted\+Comments (
-\begin{DoxyParamCaption}
-\item[{}]{\$comment\+Srls}
-\end{DoxyParamCaption}
-)}\hypertarget{classcommentController_a0e4216451f3bb1c02aeec98bb4f54ddc}{}\label{classcommentController_a0e4216451f3bb1c02aeec98bb4f54ddc}
+\subsubsection{\texorpdfstring{\+\_\+delete\+Voted\+Comments()}{\_deleteVotedComments()}}
+{\footnotesize\ttfamily comment\+Controller\+::\+\_\+delete\+Voted\+Comments (\begin{DoxyParamCaption}\item[{}]{\$comment\+Srls }\end{DoxyParamCaption})}
+
 delete voted comment log 
 \begin{DoxyParams}[1]{Parameters}
 array | string & {\em \$comment\+Srls} & \+: srls string (ex\+: 1, 2,56, 88) \\
@@ -104,16 +102,12 @@ void
 
 Definition at line 1021 of file comment.\+controller.\+php.
 
+\hypertarget{classcommentController_aa3ab9560f24f8343f241444a5432f857}{}\label{classcommentController_aa3ab9560f24f8343f241444a5432f857} 
 \index{comment\+Controller@{comment\+Controller}!add\+Comment\+Popup\+Menu@{add\+Comment\+Popup\+Menu}}
 \index{add\+Comment\+Popup\+Menu@{add\+Comment\+Popup\+Menu}!comment\+Controller@{comment\+Controller}}
-\subsubsection[{\texorpdfstring{add\+Comment\+Popup\+Menu(\$url, \$str, \$icon= \textquotesingle{}\textquotesingle{}, \$target= \textquotesingle{}self\textquotesingle{})}{addCommentPopupMenu($url, $str, $icon= '', $target= 'self')}}]{\setlength{\rightskip}{0pt plus 5cm}comment\+Controller\+::add\+Comment\+Popup\+Menu (
-\begin{DoxyParamCaption}
-\item[{}]{\$url, }
-\item[{}]{\$str, }
-\item[{}]{\$icon = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
-\item[{}]{\$target = {\ttfamily \textquotesingle{}self\textquotesingle{}}}
-\end{DoxyParamCaption}
-)}\hypertarget{classcommentController_a27025d0f5cc53f58566493e6e33b924a}{}\label{classcommentController_a27025d0f5cc53f58566493e6e33b924a}
+\subsubsection{\texorpdfstring{add\+Comment\+Popup\+Menu()}{addCommentPopupMenu()}}
+{\footnotesize\ttfamily comment\+Controller\+::add\+Comment\+Popup\+Menu (\begin{DoxyParamCaption}\item[{}]{\$url,  }\item[{}]{\$str,  }\item[{}]{\$icon = {\ttfamily \textquotesingle{}\textquotesingle{}},  }\item[{}]{\$target = {\ttfamily \textquotesingle{}self\textquotesingle{}} }\end{DoxyParamCaption})}
+
 Method to add a pop-\/up menu when clicking for displaying child comments 
 \begin{DoxyParams}[1]{Parameters}
 string & {\em \$url} & \\
@@ -132,13 +126,12 @@ void
 
 Definition at line 1279 of file comment.\+controller.\+php.
 
+\hypertarget{classcommentController_a429acbf0d176d50256f666ecf9364aa8}{}\label{classcommentController_a429acbf0d176d50256f666ecf9364aa8} 
 \index{comment\+Controller@{comment\+Controller}!add\+Grant@{add\+Grant}}
 \index{add\+Grant@{add\+Grant}!comment\+Controller@{comment\+Controller}}
-\subsubsection[{\texorpdfstring{add\+Grant(\$comment\+\_\+srl)}{addGrant($comment_srl)}}]{\setlength{\rightskip}{0pt plus 5cm}comment\+Controller\+::add\+Grant (
-\begin{DoxyParamCaption}
-\item[{}]{\$comment\+\_\+srl}
-\end{DoxyParamCaption}
-)}\hypertarget{classcommentController_a429acbf0d176d50256f666ecf9364aa8}{}\label{classcommentController_a429acbf0d176d50256f666ecf9364aa8}
+\subsubsection{\texorpdfstring{add\+Grant()}{addGrant()}}
+{\footnotesize\ttfamily comment\+Controller\+::add\+Grant (\begin{DoxyParamCaption}\item[{}]{\$comment\+\_\+srl }\end{DoxyParamCaption})}
+
 Authorization of the comments available only in the current connection of the session value \begin{DoxyReturn}{Returns}
 void 
 \end{DoxyReturn}
@@ -146,13 +139,12 @@ void
 
 Definition at line 156 of file comment.\+controller.\+php.
 
+\hypertarget{classcommentController_aaae1e5860a1e170a8fc3142f80bbcde6}{}\label{classcommentController_aaae1e5860a1e170a8fc3142f80bbcde6} 
 \index{comment\+Controller@{comment\+Controller}!declared\+Comment@{declared\+Comment}}
 \index{declared\+Comment@{declared\+Comment}!comment\+Controller@{comment\+Controller}}
-\subsubsection[{\texorpdfstring{declared\+Comment(\$comment\+\_\+srl)}{declaredComment($comment_srl)}}]{\setlength{\rightskip}{0pt plus 5cm}comment\+Controller\+::declared\+Comment (
-\begin{DoxyParamCaption}
-\item[{}]{\$comment\+\_\+srl}
-\end{DoxyParamCaption}
-)}\hypertarget{classcommentController_aaae1e5860a1e170a8fc3142f80bbcde6}{}\label{classcommentController_aaae1e5860a1e170a8fc3142f80bbcde6}
+\subsubsection{\texorpdfstring{declared\+Comment()}{declaredComment()}}
+{\footnotesize\ttfamily comment\+Controller\+::declared\+Comment (\begin{DoxyParamCaption}\item[{}]{\$comment\+\_\+srl }\end{DoxyParamCaption})}
+
 Report a blamed comment 
 \begin{DoxyParams}{Parameters}
 {\em \$comment\+\_\+srl} & \\
@@ -165,15 +157,12 @@ void
 
 Definition at line 1157 of file comment.\+controller.\+php.
 
+\hypertarget{classcommentController_adfd7bfdb249d109119f85e72aca2253c}{}\label{classcommentController_adfd7bfdb249d109119f85e72aca2253c} 
 \index{comment\+Controller@{comment\+Controller}!delete\+Comment@{delete\+Comment}}
 \index{delete\+Comment@{delete\+Comment}!comment\+Controller@{comment\+Controller}}
-\subsubsection[{\texorpdfstring{delete\+Comment(\$comment\+\_\+srl, \$is\+\_\+admin=\+F\+A\+L\+S\+E, \$is\+Move\+To\+Trash=\+F\+A\+L\+S\+E)}{deleteComment($comment_srl, $is_admin=FALSE, $isMoveToTrash=FALSE)}}]{\setlength{\rightskip}{0pt plus 5cm}comment\+Controller\+::delete\+Comment (
-\begin{DoxyParamCaption}
-\item[{}]{\$comment\+\_\+srl, }
-\item[{}]{\$is\+\_\+admin = {\ttfamily FALSE}, }
-\item[{}]{\$is\+Move\+To\+Trash = {\ttfamily FALSE}}
-\end{DoxyParamCaption}
-)}\hypertarget{classcommentController_adfd7bfdb249d109119f85e72aca2253c}{}\label{classcommentController_adfd7bfdb249d109119f85e72aca2253c}
+\subsubsection{\texorpdfstring{delete\+Comment()}{deleteComment()}}
+{\footnotesize\ttfamily comment\+Controller\+::delete\+Comment (\begin{DoxyParamCaption}\item[{}]{\$comment\+\_\+srl,  }\item[{}]{\$is\+\_\+admin = {\ttfamily FALSE},  }\item[{}]{\$is\+Move\+To\+Trash = {\ttfamily FALSE} }\end{DoxyParamCaption})}
+
 Delete comment 
 \begin{DoxyParams}[1]{Parameters}
 int & {\em \$comment\+\_\+srl} & \\
@@ -190,13 +179,12 @@ object
 
 Definition at line 787 of file comment.\+controller.\+php.
 
+\hypertarget{classcommentController_adc42c2f7d0cc2406cf38934bd38584ba}{}\label{classcommentController_adc42c2f7d0cc2406cf38934bd38584ba} 
 \index{comment\+Controller@{comment\+Controller}!delete\+Comment\+Log@{delete\+Comment\+Log}}
 \index{delete\+Comment\+Log@{delete\+Comment\+Log}!comment\+Controller@{comment\+Controller}}
-\subsubsection[{\texorpdfstring{delete\+Comment\+Log(\$args)}{deleteCommentLog($args)}}]{\setlength{\rightskip}{0pt plus 5cm}comment\+Controller\+::delete\+Comment\+Log (
-\begin{DoxyParamCaption}
-\item[{}]{\$args}
-\end{DoxyParamCaption}
-)}\hypertarget{classcommentController_adc42c2f7d0cc2406cf38934bd38584ba}{}\label{classcommentController_adc42c2f7d0cc2406cf38934bd38584ba}
+\subsubsection{\texorpdfstring{delete\+Comment\+Log()}{deleteCommentLog()}}
+{\footnotesize\ttfamily comment\+Controller\+::delete\+Comment\+Log (\begin{DoxyParamCaption}\item[{}]{\$args }\end{DoxyParamCaption})}
+
 Remove all comment relation log \begin{DoxyReturn}{Returns}
 \hyperlink{classObject}{Object} 
 \end{DoxyReturn}
@@ -204,14 +192,12 @@ Remove all comment relation log \begin{DoxyReturn}{Returns}
 
 Definition at line 921 of file comment.\+controller.\+php.
 
+\hypertarget{classcommentController_a40b5ccce875c41ce902c82ec622c938e}{}\label{classcommentController_a40b5ccce875c41ce902c82ec622c938e} 
 \index{comment\+Controller@{comment\+Controller}!delete\+Comments@{delete\+Comments}}
 \index{delete\+Comments@{delete\+Comments}!comment\+Controller@{comment\+Controller}}
-\subsubsection[{\texorpdfstring{delete\+Comments(\$document\+\_\+srl, \$obj=\+N\+U\+L\+L)}{deleteComments($document_srl, $obj=NULL)}}]{\setlength{\rightskip}{0pt plus 5cm}comment\+Controller\+::delete\+Comments (
-\begin{DoxyParamCaption}
-\item[{}]{\$document\+\_\+srl, }
-\item[{}]{\$obj = {\ttfamily NULL}}
-\end{DoxyParamCaption}
-)}\hypertarget{classcommentController_a40b5ccce875c41ce902c82ec622c938e}{}\label{classcommentController_a40b5ccce875c41ce902c82ec622c938e}
+\subsubsection{\texorpdfstring{delete\+Comments()}{deleteComments()}}
+{\footnotesize\ttfamily comment\+Controller\+::delete\+Comments (\begin{DoxyParamCaption}\item[{}]{\$document\+\_\+srl,  }\item[{}]{\$obj = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
 Remove all comments of the article 
 \begin{DoxyParams}[1]{Parameters}
 int & {\em \$document\+\_\+srl} & \\
@@ -224,13 +210,12 @@ object
 
 Definition at line 933 of file comment.\+controller.\+php.
 
+\hypertarget{classcommentController_aee7912001fe1896ca5440d22b42c626d}{}\label{classcommentController_aee7912001fe1896ca5440d22b42c626d} 
 \index{comment\+Controller@{comment\+Controller}!init@{init}}
 \index{init@{init}!comment\+Controller@{comment\+Controller}}
-\subsubsection[{\texorpdfstring{init()}{init()}}]{\setlength{\rightskip}{0pt plus 5cm}comment\+Controller\+::init (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classcommentController_aee7912001fe1896ca5440d22b42c626d}{}\label{classcommentController_aee7912001fe1896ca5440d22b42c626d}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily comment\+Controller\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 Initialization \begin{DoxyReturn}{Returns}
 void 
 \end{DoxyReturn}
@@ -238,14 +223,12 @@ void
 
 Definition at line 19 of file comment.\+controller.\+php.
 
+\hypertarget{classcommentController_adf4259b95832275119add098174c8816}{}\label{classcommentController_adf4259b95832275119add098174c8816} 
 \index{comment\+Controller@{comment\+Controller}!insert\+Comment@{insert\+Comment}}
 \index{insert\+Comment@{insert\+Comment}!comment\+Controller@{comment\+Controller}}
-\subsubsection[{\texorpdfstring{insert\+Comment(\$obj, \$manual\+\_\+inserted=\+F\+A\+L\+S\+E)}{insertComment($obj, $manual_inserted=FALSE)}}]{\setlength{\rightskip}{0pt plus 5cm}comment\+Controller\+::insert\+Comment (
-\begin{DoxyParamCaption}
-\item[{}]{\$obj, }
-\item[{}]{\$manual\+\_\+inserted = {\ttfamily FALSE}}
-\end{DoxyParamCaption}
-)}\hypertarget{classcommentController_adf4259b95832275119add098174c8816}{}\label{classcommentController_adf4259b95832275119add098174c8816}
+\subsubsection{\texorpdfstring{insert\+Comment()}{insertComment()}}
+{\footnotesize\ttfamily comment\+Controller\+::insert\+Comment (\begin{DoxyParamCaption}\item[{}]{\$obj,  }\item[{}]{\$manual\+\_\+inserted = {\ttfamily FALSE} }\end{DoxyParamCaption})}
+
 Enter comments 
 \begin{DoxyParams}[1]{Parameters}
 object & {\em \$obj} & \\
@@ -260,13 +243,12 @@ object
 
 Definition at line 191 of file comment.\+controller.\+php.
 
+\hypertarget{classcommentController_ad77fc43c9ea8beb6397d541f8ff44f93}{}\label{classcommentController_ad77fc43c9ea8beb6397d541f8ff44f93} 
 \index{comment\+Controller@{comment\+Controller}!is\+Module\+Using\+Publish\+Validation@{is\+Module\+Using\+Publish\+Validation}}
 \index{is\+Module\+Using\+Publish\+Validation@{is\+Module\+Using\+Publish\+Validation}!comment\+Controller@{comment\+Controller}}
-\subsubsection[{\texorpdfstring{is\+Module\+Using\+Publish\+Validation(\$module\+\_\+srl=\+N\+U\+L\+L)}{isModuleUsingPublishValidation($module_srl=NULL)}}]{\setlength{\rightskip}{0pt plus 5cm}comment\+Controller\+::is\+Module\+Using\+Publish\+Validation (
-\begin{DoxyParamCaption}
-\item[{}]{\$module\+\_\+srl = {\ttfamily NULL}}
-\end{DoxyParamCaption}
-)}\hypertarget{classcommentController_ad77fc43c9ea8beb6397d541f8ff44f93}{}\label{classcommentController_ad77fc43c9ea8beb6397d541f8ff44f93}
+\subsubsection{\texorpdfstring{is\+Module\+Using\+Publish\+Validation()}{isModuleUsingPublishValidation()}}
+{\footnotesize\ttfamily comment\+Controller\+::is\+Module\+Using\+Publish\+Validation (\begin{DoxyParamCaption}\item[{}]{\$module\+\_\+srl = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
 Check if module is using comment validation system 
 \begin{DoxyParams}[1]{Parameters}
 int & {\em \$document\+\_\+srl} & \\
@@ -281,13 +263,12 @@ bool
 
 Definition at line 167 of file comment.\+controller.\+php.
 
+\hypertarget{classcommentController_af2d31904b424b330a3f2710c16d55f7b}{}\label{classcommentController_af2d31904b424b330a3f2710c16d55f7b} 
 \index{comment\+Controller@{comment\+Controller}!proc\+Comment\+Declare@{proc\+Comment\+Declare}}
 \index{proc\+Comment\+Declare@{proc\+Comment\+Declare}!comment\+Controller@{comment\+Controller}}
-\subsubsection[{\texorpdfstring{proc\+Comment\+Declare()}{procCommentDeclare()}}]{\setlength{\rightskip}{0pt plus 5cm}comment\+Controller\+::proc\+Comment\+Declare (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classcommentController_af2d31904b424b330a3f2710c16d55f7b}{}\label{classcommentController_af2d31904b424b330a3f2710c16d55f7b}
+\subsubsection{\texorpdfstring{proc\+Comment\+Declare()}{procCommentDeclare()}}
+{\footnotesize\ttfamily comment\+Controller\+::proc\+Comment\+Declare (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 Action to be called when a comment posting is reported \begin{DoxyReturn}{Returns}
 void$\vert$\+Object 
 \end{DoxyReturn}
@@ -295,13 +276,12 @@ void$\vert$\+Object
 
 Definition at line 104 of file comment.\+controller.\+php.
 
+\hypertarget{classcommentController_ac9edb9826c8b07ceb1a4db29c5db514a}{}\label{classcommentController_ac9edb9826c8b07ceb1a4db29c5db514a} 
 \index{comment\+Controller@{comment\+Controller}!proc\+Comment\+Get\+List@{proc\+Comment\+Get\+List}}
 \index{proc\+Comment\+Get\+List@{proc\+Comment\+Get\+List}!comment\+Controller@{comment\+Controller}}
-\subsubsection[{\texorpdfstring{proc\+Comment\+Get\+List()}{procCommentGetList()}}]{\setlength{\rightskip}{0pt plus 5cm}comment\+Controller\+::proc\+Comment\+Get\+List (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classcommentController_ac9edb9826c8b07ceb1a4db29c5db514a}{}\label{classcommentController_ac9edb9826c8b07ceb1a4db29c5db514a}
+\subsubsection{\texorpdfstring{proc\+Comment\+Get\+List()}{procCommentGetList()}}
+{\footnotesize\ttfamily comment\+Controller\+::proc\+Comment\+Get\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 Get comment all list \begin{DoxyReturn}{Returns}
 void 
 \end{DoxyReturn}
@@ -309,13 +289,12 @@ void
 
 Definition at line 1373 of file comment.\+controller.\+php.
 
+\hypertarget{classcommentController_ab4a71283244210be754cceb8511e8789}{}\label{classcommentController_ab4a71283244210be754cceb8511e8789} 
 \index{comment\+Controller@{comment\+Controller}!proc\+Comment\+Insert\+Module\+Config@{proc\+Comment\+Insert\+Module\+Config}}
 \index{proc\+Comment\+Insert\+Module\+Config@{proc\+Comment\+Insert\+Module\+Config}!comment\+Controller@{comment\+Controller}}
-\subsubsection[{\texorpdfstring{proc\+Comment\+Insert\+Module\+Config()}{procCommentInsertModuleConfig()}}]{\setlength{\rightskip}{0pt plus 5cm}comment\+Controller\+::proc\+Comment\+Insert\+Module\+Config (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classcommentController_ab4a71283244210be754cceb8511e8789}{}\label{classcommentController_ab4a71283244210be754cceb8511e8789}
+\subsubsection{\texorpdfstring{proc\+Comment\+Insert\+Module\+Config()}{procCommentInsertModuleConfig()}}
+{\footnotesize\ttfamily comment\+Controller\+::proc\+Comment\+Insert\+Module\+Config (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 Save the comment extension form for each module \begin{DoxyReturn}{Returns}
 void 
 \end{DoxyReturn}
@@ -323,13 +302,12 @@ void
 
 Definition at line 1301 of file comment.\+controller.\+php.
 
+\hypertarget{classcommentController_ae5c2ce138a0c36f2d7fb4f1fdcfad800}{}\label{classcommentController_ae5c2ce138a0c36f2d7fb4f1fdcfad800} 
 \index{comment\+Controller@{comment\+Controller}!proc\+Comment\+Vote\+Down@{proc\+Comment\+Vote\+Down}}
 \index{proc\+Comment\+Vote\+Down@{proc\+Comment\+Vote\+Down}!comment\+Controller@{comment\+Controller}}
-\subsubsection[{\texorpdfstring{proc\+Comment\+Vote\+Down()}{procCommentVoteDown()}}]{\setlength{\rightskip}{0pt plus 5cm}comment\+Controller\+::proc\+Comment\+Vote\+Down (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classcommentController_ae5c2ce138a0c36f2d7fb4f1fdcfad800}{}\label{classcommentController_ae5c2ce138a0c36f2d7fb4f1fdcfad800}
+\subsubsection{\texorpdfstring{proc\+Comment\+Vote\+Down()}{procCommentVoteDown()}}
+{\footnotesize\ttfamily comment\+Controller\+::proc\+Comment\+Vote\+Down (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 Action to handle recommendation votes on comments (Down) \begin{DoxyReturn}{Returns}
 \hyperlink{classObject}{Object} 
 \end{DoxyReturn}
@@ -337,13 +315,12 @@ Action to handle recommendation votes on comments (Down) \begin{DoxyReturn}{Retu
 
 Definition at line 66 of file comment.\+controller.\+php.
 
+\hypertarget{classcommentController_a1ca216be683b8cedf6b5f71aaa23a0b3}{}\label{classcommentController_a1ca216be683b8cedf6b5f71aaa23a0b3} 
 \index{comment\+Controller@{comment\+Controller}!proc\+Comment\+Vote\+Up@{proc\+Comment\+Vote\+Up}}
 \index{proc\+Comment\+Vote\+Up@{proc\+Comment\+Vote\+Up}!comment\+Controller@{comment\+Controller}}
-\subsubsection[{\texorpdfstring{proc\+Comment\+Vote\+Up()}{procCommentVoteUp()}}]{\setlength{\rightskip}{0pt plus 5cm}comment\+Controller\+::proc\+Comment\+Vote\+Up (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classcommentController_a1ca216be683b8cedf6b5f71aaa23a0b3}{}\label{classcommentController_a1ca216be683b8cedf6b5f71aaa23a0b3}
+\subsubsection{\texorpdfstring{proc\+Comment\+Vote\+Up()}{procCommentVoteUp()}}
+{\footnotesize\ttfamily comment\+Controller\+::proc\+Comment\+Vote\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 Action to handle recommendation votes on comments (Up) \begin{DoxyReturn}{Returns}
 \hyperlink{classObject}{Object} 
 \end{DoxyReturn}
@@ -351,13 +328,12 @@ Action to handle recommendation votes on comments (Up) \begin{DoxyReturn}{Return
 
 Definition at line 28 of file comment.\+controller.\+php.
 
+\hypertarget{classcommentController_a36736562b092a021301ec11a61310e68}{}\label{classcommentController_a36736562b092a021301ec11a61310e68} 
 \index{comment\+Controller@{comment\+Controller}!send\+Email\+To\+Admin\+After\+Insert\+Comment@{send\+Email\+To\+Admin\+After\+Insert\+Comment}}
 \index{send\+Email\+To\+Admin\+After\+Insert\+Comment@{send\+Email\+To\+Admin\+After\+Insert\+Comment}!comment\+Controller@{comment\+Controller}}
-\subsubsection[{\texorpdfstring{send\+Email\+To\+Admin\+After\+Insert\+Comment(\$obj)}{sendEmailToAdminAfterInsertComment($obj)}}]{\setlength{\rightskip}{0pt plus 5cm}comment\+Controller\+::send\+Email\+To\+Admin\+After\+Insert\+Comment (
-\begin{DoxyParamCaption}
-\item[{}]{\$obj}
-\end{DoxyParamCaption}
-)}\hypertarget{classcommentController_a36736562b092a021301ec11a61310e68}{}\label{classcommentController_a36736562b092a021301ec11a61310e68}
+\subsubsection{\texorpdfstring{send\+Email\+To\+Admin\+After\+Insert\+Comment()}{sendEmailToAdminAfterInsertComment()}}
+{\footnotesize\ttfamily comment\+Controller\+::send\+Email\+To\+Admin\+After\+Insert\+Comment (\begin{DoxyParamCaption}\item[{}]{\$obj }\end{DoxyParamCaption})}
+
 Send email to module\textquotesingle{}s admins after a new comment was interted successfully if Comments Approval System is used 
 \begin{DoxyParams}[1]{Parameters}
 object & {\em \$obj} & \\
@@ -372,14 +348,12 @@ void
 
 Definition at line 503 of file comment.\+controller.\+php.
 
+\hypertarget{classcommentController_a3e4d45ad61f74541e1182c29924b625d}{}\label{classcommentController_a3e4d45ad61f74541e1182c29924b625d} 
 \index{comment\+Controller@{comment\+Controller}!set\+Comment\+Module\+Config@{set\+Comment\+Module\+Config}}
 \index{set\+Comment\+Module\+Config@{set\+Comment\+Module\+Config}!comment\+Controller@{comment\+Controller}}
-\subsubsection[{\texorpdfstring{set\+Comment\+Module\+Config(\$srl, \$comment\+\_\+config)}{setCommentModuleConfig($srl, $comment_config)}}]{\setlength{\rightskip}{0pt plus 5cm}comment\+Controller\+::set\+Comment\+Module\+Config (
-\begin{DoxyParamCaption}
-\item[{}]{\$srl, }
-\item[{}]{\$comment\+\_\+config}
-\end{DoxyParamCaption}
-)}\hypertarget{classcommentController_a3e4d45ad61f74541e1182c29924b625d}{}\label{classcommentController_a3e4d45ad61f74541e1182c29924b625d}
+\subsubsection{\texorpdfstring{set\+Comment\+Module\+Config()}{setCommentModuleConfig()}}
+{\footnotesize\ttfamily comment\+Controller\+::set\+Comment\+Module\+Config (\begin{DoxyParamCaption}\item[{}]{\$srl,  }\item[{}]{\$comment\+\_\+config }\end{DoxyParamCaption})}
+
 Comment module config setting 
 \begin{DoxyParams}[1]{Parameters}
 int & {\em \$srl} & \\
@@ -394,24 +368,22 @@ object & {\em \$comment\+\_\+config} & \\
 
 Definition at line 1362 of file comment.\+controller.\+php.
 
+\hypertarget{classcommentController_a5cf1c177c5cbdd0556363a0204d92f5f}{}\label{classcommentController_a5cf1c177c5cbdd0556363a0204d92f5f} 
 \index{comment\+Controller@{comment\+Controller}!trigger\+Copy\+Module@{trigger\+Copy\+Module}}
 \index{trigger\+Copy\+Module@{trigger\+Copy\+Module}!comment\+Controller@{comment\+Controller}}
-\subsubsection[{\texorpdfstring{trigger\+Copy\+Module(\&\$obj)}{triggerCopyModule(&$obj)}}]{\setlength{\rightskip}{0pt plus 5cm}comment\+Controller\+::trigger\+Copy\+Module (
-\begin{DoxyParamCaption}
-\item[{\&}]{\$obj}
-\end{DoxyParamCaption}
-)}\hypertarget{classcommentController_a5cf1c177c5cbdd0556363a0204d92f5f}{}\label{classcommentController_a5cf1c177c5cbdd0556363a0204d92f5f}
+\subsubsection{\texorpdfstring{trigger\+Copy\+Module()}{triggerCopyModule()}}
+{\footnotesize\ttfamily comment\+Controller\+::trigger\+Copy\+Module (\begin{DoxyParamCaption}\item[{\&}]{\$obj }\end{DoxyParamCaption})}
+
 
 
 Definition at line 1412 of file comment.\+controller.\+php.
 
+\hypertarget{classcommentController_ab209ef386bfb83c88a85bf4618237aca}{}\label{classcommentController_ab209ef386bfb83c88a85bf4618237aca} 
 \index{comment\+Controller@{comment\+Controller}!trigger\+Delete\+Document\+Comments@{trigger\+Delete\+Document\+Comments}}
 \index{trigger\+Delete\+Document\+Comments@{trigger\+Delete\+Document\+Comments}!comment\+Controller@{comment\+Controller}}
-\subsubsection[{\texorpdfstring{trigger\+Delete\+Document\+Comments(\&\$obj)}{triggerDeleteDocumentComments(&$obj)}}]{\setlength{\rightskip}{0pt plus 5cm}comment\+Controller\+::trigger\+Delete\+Document\+Comments (
-\begin{DoxyParamCaption}
-\item[{\&}]{\$obj}
-\end{DoxyParamCaption}
-)}\hypertarget{classcommentController_ab209ef386bfb83c88a85bf4618237aca}{}\label{classcommentController_ab209ef386bfb83c88a85bf4618237aca}
+\subsubsection{\texorpdfstring{trigger\+Delete\+Document\+Comments()}{triggerDeleteDocumentComments()}}
+{\footnotesize\ttfamily comment\+Controller\+::trigger\+Delete\+Document\+Comments (\begin{DoxyParamCaption}\item[{\&}]{\$obj }\end{DoxyParamCaption})}
+
 Trigger to delete its comments together with document deleted \begin{DoxyReturn}{Returns}
 \hyperlink{classObject}{Object} 
 \end{DoxyReturn}
@@ -419,13 +391,12 @@ Trigger to delete its comments together with document deleted \begin{DoxyReturn}
 
 Definition at line 124 of file comment.\+controller.\+php.
 
+\hypertarget{classcommentController_a8c9ad7337a8522f82a4010f9f0afa274}{}\label{classcommentController_a8c9ad7337a8522f82a4010f9f0afa274} 
 \index{comment\+Controller@{comment\+Controller}!trigger\+Delete\+Module\+Comments@{trigger\+Delete\+Module\+Comments}}
 \index{trigger\+Delete\+Module\+Comments@{trigger\+Delete\+Module\+Comments}!comment\+Controller@{comment\+Controller}}
-\subsubsection[{\texorpdfstring{trigger\+Delete\+Module\+Comments(\&\$obj)}{triggerDeleteModuleComments(&$obj)}}]{\setlength{\rightskip}{0pt plus 5cm}comment\+Controller\+::trigger\+Delete\+Module\+Comments (
-\begin{DoxyParamCaption}
-\item[{\&}]{\$obj}
-\end{DoxyParamCaption}
-)}\hypertarget{classcommentController_a8c9ad7337a8522f82a4010f9f0afa274}{}\label{classcommentController_a8c9ad7337a8522f82a4010f9f0afa274}
+\subsubsection{\texorpdfstring{trigger\+Delete\+Module\+Comments()}{triggerDeleteModuleComments()}}
+{\footnotesize\ttfamily comment\+Controller\+::trigger\+Delete\+Module\+Comments (\begin{DoxyParamCaption}\item[{\&}]{\$obj }\end{DoxyParamCaption})}
+
 Trigger to delete corresponding comments when deleting a module \begin{DoxyReturn}{Returns}
 object 
 \end{DoxyReturn}
@@ -433,15 +404,12 @@ object
 
 Definition at line 139 of file comment.\+controller.\+php.
 
+\hypertarget{classcommentController_af154ebfde1bfe279e6c9bc6cf2e4645f}{}\label{classcommentController_af154ebfde1bfe279e6c9bc6cf2e4645f} 
 \index{comment\+Controller@{comment\+Controller}!update\+Comment@{update\+Comment}}
 \index{update\+Comment@{update\+Comment}!comment\+Controller@{comment\+Controller}}
-\subsubsection[{\texorpdfstring{update\+Comment(\$obj, \$is\+\_\+admin=\+F\+A\+L\+S\+E, \$manual\+\_\+updated=\+F\+A\+L\+S\+E)}{updateComment($obj, $is_admin=FALSE, $manual_updated=FALSE)}}]{\setlength{\rightskip}{0pt plus 5cm}comment\+Controller\+::update\+Comment (
-\begin{DoxyParamCaption}
-\item[{}]{\$obj, }
-\item[{}]{\$is\+\_\+admin = {\ttfamily FALSE}, }
-\item[{}]{\$manual\+\_\+updated = {\ttfamily FALSE}}
-\end{DoxyParamCaption}
-)}\hypertarget{classcommentController_af154ebfde1bfe279e6c9bc6cf2e4645f}{}\label{classcommentController_af154ebfde1bfe279e6c9bc6cf2e4645f}
+\subsubsection{\texorpdfstring{update\+Comment()}{updateComment()}}
+{\footnotesize\ttfamily comment\+Controller\+::update\+Comment (\begin{DoxyParamCaption}\item[{}]{\$obj,  }\item[{}]{\$is\+\_\+admin = {\ttfamily FALSE},  }\item[{}]{\$manual\+\_\+updated = {\ttfamily FALSE} }\end{DoxyParamCaption})}
+
 Fix the comment 
 \begin{DoxyParams}[1]{Parameters}
 object & {\em \$obj} & \\
@@ -458,14 +426,12 @@ object
 
 Definition at line 647 of file comment.\+controller.\+php.
 
+\hypertarget{classcommentController_abe720cae94b04ba356b00f80f6880e91}{}\label{classcommentController_abe720cae94b04ba356b00f80f6880e91} 
 \index{comment\+Controller@{comment\+Controller}!update\+Voted\+Count@{update\+Voted\+Count}}
 \index{update\+Voted\+Count@{update\+Voted\+Count}!comment\+Controller@{comment\+Controller}}
-\subsubsection[{\texorpdfstring{update\+Voted\+Count(\$comment\+\_\+srl, \$point=1)}{updateVotedCount($comment_srl, $point=1)}}]{\setlength{\rightskip}{0pt plus 5cm}comment\+Controller\+::update\+Voted\+Count (
-\begin{DoxyParamCaption}
-\item[{}]{\$comment\+\_\+srl, }
-\item[{}]{\$point = {\ttfamily 1}}
-\end{DoxyParamCaption}
-)}\hypertarget{classcommentController_abe720cae94b04ba356b00f80f6880e91}{}\label{classcommentController_abe720cae94b04ba356b00f80f6880e91}
+\subsubsection{\texorpdfstring{update\+Voted\+Count()}{updateVotedCount()}}
+{\footnotesize\ttfamily comment\+Controller\+::update\+Voted\+Count (\begin{DoxyParamCaption}\item[{}]{\$comment\+\_\+srl,  }\item[{}]{\$point = {\ttfamily 1} }\end{DoxyParamCaption})}
+
 Increase vote-\/up counts of the comment 
 \begin{DoxyParams}[1]{Parameters}
 int & {\em \$comment\+\_\+srl} & \\

@@ -64,7 +64,7 @@ Inheritance diagram for module\+Controller\+:\begin{figure}[H]
 \begin{DoxyCompactList}\small\item\em Change the site administrator. \end{DoxyCompactList}\item 
 \hyperlink{classmoduleController_af50247418fd7c87424958e95ea466b00}{insert\+Admin\+Id} (\$\hyperlink{ko_8install_8php_a370bb6450fab1da3e0ed9f484a38b761}{module\+\_\+srl}, \$admin\+\_\+id)
 \begin{DoxyCompactList}\small\item\em Specify the admin ID to a module. \end{DoxyCompactList}\item 
-\hyperlink{classmoduleController_a3ba07d8a726a5f1d869480fa61a60487}{delete\+Admin\+Id} (\$\hyperlink{ko_8install_8php_a370bb6450fab1da3e0ed9f484a38b761}{module\+\_\+srl}, \$admin\+\_\+id= \textquotesingle{}\textquotesingle{})
+\hyperlink{classmoduleController_a1a9115a9e85acd2b26229e36ba29daf4}{delete\+Admin\+Id} (\$\hyperlink{ko_8install_8php_a370bb6450fab1da3e0ed9f484a38b761}{module\+\_\+srl}, \$admin\+\_\+id=\textquotesingle{}\textquotesingle{})
 \begin{DoxyCompactList}\small\item\em Remove the admin ID from a module. \end{DoxyCompactList}\item 
 \hyperlink{classmoduleController_ad044df4dde2053b5dcbaf5077822290c}{insert\+Module\+Skin\+Vars} (\$\hyperlink{ko_8install_8php_a370bb6450fab1da3e0ed9f484a38b761}{module\+\_\+srl}, \$obj)
 \item 
@@ -88,7 +88,7 @@ Inheritance diagram for module\+Controller\+:\begin{figure}[H]
 \begin{DoxyCompactList}\small\item\em Remove permission from the module. \end{DoxyCompactList}\item 
 \hyperlink{classmoduleController_ace764298e1aee4006ecd8dbf7aaf4007}{replace\+Defined\+Lang\+Code} (\&\$output, \$is\+Replace\+Lang\+Code=true)
 \begin{DoxyCompactList}\small\item\em Change user-\/defined language. \end{DoxyCompactList}\item 
-\hyperlink{classmoduleController_a0d4e5ad494cacf50288a3f6e9f013a5d}{\+\_\+replace\+Lang\+Code} (\$\hyperlink{jquery_8mobile_8customized_8min_8js_a0dd9fb10d0da7ad1a1c71aad2c6388f7}{matches})
+\hyperlink{classmoduleController_a0d4e5ad494cacf50288a3f6e9f013a5d}{\+\_\+replace\+Lang\+Code} (\$matches)
 \item 
 \hyperlink{classmoduleController_a456022e1fca3a204b9b2b828b501fefb}{proc\+Module\+File\+Box\+Add} ()
 \begin{DoxyCompactList}\small\item\em Add and update a file into the file box. \end{DoxyCompactList}\item 
@@ -100,7 +100,7 @@ Inheritance diagram for module\+Controller\+:\begin{figure}[H]
 \begin{DoxyCompactList}\small\item\em Delete a file from the file box. \end{DoxyCompactList}\item 
 \hyperlink{classmoduleController_a26ff8a052af05f873237f3023e3e1bde}{delete\+Module\+File\+Box} (\$vars)
 \item 
-\hyperlink{classmoduleController_a1395c1be0ebed50078212640fba409be}{lock} (\$lock\+\_\+name, \$timeout, \$\hyperlink{ko_8install_8php_aa61f9e08f0fe505094d26f8143f30bbd}{member\+\_\+srl}=\hyperlink{modernizr_8min_8js_a286f9ec831c5e676eeb493248eab9575}{null})
+\hyperlink{classmoduleController_a1395c1be0ebed50078212640fba409be}{lock} (\$lock\+\_\+name, \$timeout, \$\hyperlink{ko_8install_8php_aa61f9e08f0fe505094d26f8143f30bbd}{member\+\_\+srl}=null)
 \begin{DoxyCompactList}\small\item\em function of locking (timeout is in seconds) \end{DoxyCompactList}\item 
 \hyperlink{classmoduleController_aac97ab294279631cb3cf1078063e8b56}{unlock\+Timeout\+Passed} ()
 \item 
@@ -124,14 +124,12 @@ Definition at line 8 of file module.\+controller.\+php.
 
 
 \subsection{Member Function Documentation}
+\hypertarget{classmoduleController_a88baeaa3755f270af223e17e7a96d20a}{}\label{classmoduleController_a88baeaa3755f270af223e17e7a96d20a} 
 \index{module\+Controller@{module\+Controller}!\+\_\+delete\+Module\+Skin\+Vars@{\+\_\+delete\+Module\+Skin\+Vars}}
 \index{\+\_\+delete\+Module\+Skin\+Vars@{\+\_\+delete\+Module\+Skin\+Vars}!module\+Controller@{module\+Controller}}
-\subsubsection[{\texorpdfstring{\+\_\+delete\+Module\+Skin\+Vars(\$module\+\_\+srl, \$mode)}{_deleteModuleSkinVars($module_srl, $mode)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Controller\+::\+\_\+delete\+Module\+Skin\+Vars (
-\begin{DoxyParamCaption}
-\item[{}]{\$module\+\_\+srl, }
-\item[{}]{\$mode}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleController_a88baeaa3755f270af223e17e7a96d20a}{}\label{classmoduleController_a88baeaa3755f270af223e17e7a96d20a}
+\subsubsection{\texorpdfstring{\+\_\+delete\+Module\+Skin\+Vars()}{\_deleteModuleSkinVars()}}
+{\footnotesize\ttfamily module\+Controller\+::\+\_\+delete\+Module\+Skin\+Vars (\begin{DoxyParamCaption}\item[{}]{\$module\+\_\+srl,  }\item[{}]{\$mode }\end{DoxyParamCaption})}
+
 
 
 Remove skin vars of a module. 
@@ -140,15 +138,12 @@ Remove skin vars of a module.
 
 Definition at line 1010 of file module.\+controller.\+php.
 
+\hypertarget{classmoduleController_aea2dfb4f6a1d31acdbebf131058494cd}{}\label{classmoduleController_aea2dfb4f6a1d31acdbebf131058494cd} 
 \index{module\+Controller@{module\+Controller}!\+\_\+insert\+Module\+Skin\+Vars@{\+\_\+insert\+Module\+Skin\+Vars}}
 \index{\+\_\+insert\+Module\+Skin\+Vars@{\+\_\+insert\+Module\+Skin\+Vars}!module\+Controller@{module\+Controller}}
-\subsubsection[{\texorpdfstring{\+\_\+insert\+Module\+Skin\+Vars(\$module\+\_\+srl, \$obj, \$mode)}{_insertModuleSkinVars($module_srl, $obj, $mode)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Controller\+::\+\_\+insert\+Module\+Skin\+Vars (
-\begin{DoxyParamCaption}
-\item[{}]{\$module\+\_\+srl, }
-\item[{}]{\$obj, }
-\item[{}]{\$mode}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleController_aea2dfb4f6a1d31acdbebf131058494cd}{}\label{classmoduleController_aea2dfb4f6a1d31acdbebf131058494cd}
+\subsubsection{\texorpdfstring{\+\_\+insert\+Module\+Skin\+Vars()}{\_insertModuleSkinVars()}}
+{\footnotesize\ttfamily module\+Controller\+::\+\_\+insert\+Module\+Skin\+Vars (\begin{DoxyParamCaption}\item[{}]{\$module\+\_\+srl,  }\item[{}]{\$obj,  }\item[{}]{\$mode }\end{DoxyParamCaption})}
+
 
 
 Insert skin vars to a module. 
@@ -157,25 +152,22 @@ Insert skin vars to a module.
 
 Definition at line 937 of file module.\+controller.\+php.
 
+\hypertarget{classmoduleController_a0d4e5ad494cacf50288a3f6e9f013a5d}{}\label{classmoduleController_a0d4e5ad494cacf50288a3f6e9f013a5d} 
 \index{module\+Controller@{module\+Controller}!\+\_\+replace\+Lang\+Code@{\+\_\+replace\+Lang\+Code}}
 \index{\+\_\+replace\+Lang\+Code@{\+\_\+replace\+Lang\+Code}!module\+Controller@{module\+Controller}}
-\subsubsection[{\texorpdfstring{\+\_\+replace\+Lang\+Code(\$matches)}{_replaceLangCode($matches)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Controller\+::\+\_\+replace\+Lang\+Code (
-\begin{DoxyParamCaption}
-\item[{}]{\$matches}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleController_a0d4e5ad494cacf50288a3f6e9f013a5d}{}\label{classmoduleController_a0d4e5ad494cacf50288a3f6e9f013a5d}
+\subsubsection{\texorpdfstring{\+\_\+replace\+Lang\+Code()}{\_replaceLangCode()}}
+{\footnotesize\ttfamily module\+Controller\+::\+\_\+replace\+Lang\+Code (\begin{DoxyParamCaption}\item[{}]{\$matches }\end{DoxyParamCaption})}
+
 
 
 Definition at line 1134 of file module.\+controller.\+php.
 
+\hypertarget{classmoduleController_a4c5f4174ead13e475ea863184bf657d6}{}\label{classmoduleController_a4c5f4174ead13e475ea863184bf657d6} 
 \index{module\+Controller@{module\+Controller}!arrange\+Module\+Info@{arrange\+Module\+Info}}
 \index{arrange\+Module\+Info@{arrange\+Module\+Info}!module\+Controller@{module\+Controller}}
-\subsubsection[{\texorpdfstring{arrange\+Module\+Info(\&\$args, \&\$extra\+\_\+vars)}{arrangeModuleInfo(&$args, &$extra_vars)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Controller\+::arrange\+Module\+Info (
-\begin{DoxyParamCaption}
-\item[{\&}]{\$args, }
-\item[{\&}]{\$extra\+\_\+vars}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleController_a4c5f4174ead13e475ea863184bf657d6}{}\label{classmoduleController_a4c5f4174ead13e475ea863184bf657d6}
+\subsubsection{\texorpdfstring{arrange\+Module\+Info()}{arrangeModuleInfo()}}
+{\footnotesize\ttfamily module\+Controller\+::arrange\+Module\+Info (\begin{DoxyParamCaption}\item[{\&}]{\$args,  }\item[{\&}]{\$extra\+\_\+vars }\end{DoxyParamCaption})}
+
 
 
 Arrange module information. 
@@ -184,13 +176,12 @@ Arrange module information.
 
 Definition at line 341 of file module.\+controller.\+php.
 
+\hypertarget{classmoduleController_a2534f4a4108716e06d61eb984f700fdb}{}\label{classmoduleController_a2534f4a4108716e06d61eb984f700fdb} 
 \index{module\+Controller@{module\+Controller}!clear\+Default\+Module@{clear\+Default\+Module}}
 \index{clear\+Default\+Module@{clear\+Default\+Module}!module\+Controller@{module\+Controller}}
-\subsubsection[{\texorpdfstring{clear\+Default\+Module()}{clearDefaultModule()}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Controller\+::clear\+Default\+Module (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleController_a2534f4a4108716e06d61eb984f700fdb}{}\label{classmoduleController_a2534f4a4108716e06d61eb984f700fdb}
+\subsubsection{\texorpdfstring{clear\+Default\+Module()}{clearDefaultModule()}}
+{\footnotesize\ttfamily module\+Controller\+::clear\+Default\+Module (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 
 
 Set is\+\_\+default as N in all modules(the default module is disabled) 
@@ -199,15 +190,12 @@ Set is\+\_\+default as N in all modules(the default module is disabled)
 
 Definition at line 779 of file module.\+controller.\+php.
 
+\hypertarget{classmoduleController_ad256622e3b12acb2d96997315dc6fc45}{}\label{classmoduleController_ad256622e3b12acb2d96997315dc6fc45} 
 \index{module\+Controller@{module\+Controller}!delete\+Action\+Forward@{delete\+Action\+Forward}}
 \index{delete\+Action\+Forward@{delete\+Action\+Forward}!module\+Controller@{module\+Controller}}
-\subsubsection[{\texorpdfstring{delete\+Action\+Forward(\$module, \$type, \$act)}{deleteActionForward($module, $type, $act)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Controller\+::delete\+Action\+Forward (
-\begin{DoxyParamCaption}
-\item[{}]{\$module, }
-\item[{}]{\$type, }
-\item[{}]{\$act}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleController_ad256622e3b12acb2d96997315dc6fc45}{}\label{classmoduleController_ad256622e3b12acb2d96997315dc6fc45}
+\subsubsection{\texorpdfstring{delete\+Action\+Forward()}{deleteActionForward()}}
+{\footnotesize\ttfamily module\+Controller\+::delete\+Action\+Forward (\begin{DoxyParamCaption}\item[{}]{\$module,  }\item[{}]{\$type,  }\item[{}]{\$act }\end{DoxyParamCaption})}
+
 
 
 Delete action forward. 
@@ -216,14 +204,12 @@ Delete action forward.
 
 Definition at line 44 of file module.\+controller.\+php.
 
+\hypertarget{classmoduleController_a1a9115a9e85acd2b26229e36ba29daf4}{}\label{classmoduleController_a1a9115a9e85acd2b26229e36ba29daf4} 
 \index{module\+Controller@{module\+Controller}!delete\+Admin\+Id@{delete\+Admin\+Id}}
 \index{delete\+Admin\+Id@{delete\+Admin\+Id}!module\+Controller@{module\+Controller}}
-\subsubsection[{\texorpdfstring{delete\+Admin\+Id(\$module\+\_\+srl, \$admin\+\_\+id= \textquotesingle{}\textquotesingle{})}{deleteAdminId($module_srl, $admin_id= '')}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Controller\+::delete\+Admin\+Id (
-\begin{DoxyParamCaption}
-\item[{}]{\$module\+\_\+srl, }
-\item[{}]{\$admin\+\_\+id = {\ttfamily \textquotesingle{}\textquotesingle{}}}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleController_a3ba07d8a726a5f1d869480fa61a60487}{}\label{classmoduleController_a3ba07d8a726a5f1d869480fa61a60487}
+\subsubsection{\texorpdfstring{delete\+Admin\+Id()}{deleteAdminId()}}
+{\footnotesize\ttfamily module\+Controller\+::delete\+Admin\+Id (\begin{DoxyParamCaption}\item[{}]{\$module\+\_\+srl,  }\item[{}]{\$admin\+\_\+id = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
 
 
 Remove the admin ID from a module. 
@@ -232,28 +218,22 @@ Remove the admin ID from a module.
 
 Definition at line 899 of file module.\+controller.\+php.
 
+\hypertarget{classmoduleController_add52eeb3f4a3cb900376af8007c09655}{}\label{classmoduleController_add52eeb3f4a3cb900376af8007c09655} 
 \index{module\+Controller@{module\+Controller}!delete\+Module@{delete\+Module}}
 \index{delete\+Module@{delete\+Module}!module\+Controller@{module\+Controller}}
-\subsubsection[{\texorpdfstring{delete\+Module(\$module\+\_\+srl, \$site\+\_\+srl=0)}{deleteModule($module_srl, $site_srl=0)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Controller\+::delete\+Module (
-\begin{DoxyParamCaption}
-\item[{}]{\$module\+\_\+srl, }
-\item[{}]{\$site\+\_\+srl = {\ttfamily 0}}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleController_add52eeb3f4a3cb900376af8007c09655}{}\label{classmoduleController_add52eeb3f4a3cb900376af8007c09655}
+\subsubsection{\texorpdfstring{delete\+Module()}{deleteModule()}}
+{\footnotesize\ttfamily module\+Controller\+::delete\+Module (\begin{DoxyParamCaption}\item[{}]{\$module\+\_\+srl,  }\item[{}]{\$site\+\_\+srl = {\ttfamily 0} }\end{DoxyParamCaption})}
+
 Delete module Attempt to delete all related information when deleting a module. Origin method is changed. because menu validation check is needed 
 
 Definition at line 644 of file module.\+controller.\+php.
 
+\hypertarget{classmoduleController_a74f94763f4e60fef8a0e4e4dabf777e0}{}\label{classmoduleController_a74f94763f4e60fef8a0e4e4dabf777e0} 
 \index{module\+Controller@{module\+Controller}!delete\+Module\+Extend@{delete\+Module\+Extend}}
 \index{delete\+Module\+Extend@{delete\+Module\+Extend}!module\+Controller@{module\+Controller}}
-\subsubsection[{\texorpdfstring{delete\+Module\+Extend(\$parent\+\_\+module, \$extend\+\_\+module, \$type, \$kind=\textquotesingle{}\textquotesingle{})}{deleteModuleExtend($parent_module, $extend_module, $type, $kind='')}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Controller\+::delete\+Module\+Extend (
-\begin{DoxyParamCaption}
-\item[{}]{\$parent\+\_\+module, }
-\item[{}]{\$extend\+\_\+module, }
-\item[{}]{\$type, }
-\item[{}]{\$kind = {\ttfamily \textquotesingle{}\textquotesingle{}}}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleController_a74f94763f4e60fef8a0e4e4dabf777e0}{}\label{classmoduleController_a74f94763f4e60fef8a0e4e4dabf777e0}
+\subsubsection{\texorpdfstring{delete\+Module\+Extend()}{deleteModuleExtend()}}
+{\footnotesize\ttfamily module\+Controller\+::delete\+Module\+Extend (\begin{DoxyParamCaption}\item[{}]{\$parent\+\_\+module,  }\item[{}]{\$extend\+\_\+module,  }\item[{}]{\$type,  }\item[{}]{\$kind = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
 
 
 Delete module extend. 
@@ -262,13 +242,12 @@ Delete module extend.
 
 Definition at line 177 of file module.\+controller.\+php.
 
+\hypertarget{classmoduleController_aff9b45ce153dcad735896f56fe60516f}{}\label{classmoduleController_aff9b45ce153dcad735896f56fe60516f} 
 \index{module\+Controller@{module\+Controller}!delete\+Module\+Extra\+Vars@{delete\+Module\+Extra\+Vars}}
 \index{delete\+Module\+Extra\+Vars@{delete\+Module\+Extra\+Vars}!module\+Controller@{module\+Controller}}
-\subsubsection[{\texorpdfstring{delete\+Module\+Extra\+Vars(\$module\+\_\+srl)}{deleteModuleExtraVars($module_srl)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Controller\+::delete\+Module\+Extra\+Vars (
-\begin{DoxyParamCaption}
-\item[{}]{\$module\+\_\+srl}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleController_aff9b45ce153dcad735896f56fe60516f}{}\label{classmoduleController_aff9b45ce153dcad735896f56fe60516f}
+\subsubsection{\texorpdfstring{delete\+Module\+Extra\+Vars()}{deleteModuleExtraVars()}}
+{\footnotesize\ttfamily module\+Controller\+::delete\+Module\+Extra\+Vars (\begin{DoxyParamCaption}\item[{}]{\$module\+\_\+srl }\end{DoxyParamCaption})}
+
 
 
 Remove extra vars from the module. 
@@ -277,24 +256,22 @@ Remove extra vars from the module.
 
 Definition at line 1071 of file module.\+controller.\+php.
 
+\hypertarget{classmoduleController_a26ff8a052af05f873237f3023e3e1bde}{}\label{classmoduleController_a26ff8a052af05f873237f3023e3e1bde} 
 \index{module\+Controller@{module\+Controller}!delete\+Module\+File\+Box@{delete\+Module\+File\+Box}}
 \index{delete\+Module\+File\+Box@{delete\+Module\+File\+Box}!module\+Controller@{module\+Controller}}
-\subsubsection[{\texorpdfstring{delete\+Module\+File\+Box(\$vars)}{deleteModuleFileBox($vars)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Controller\+::delete\+Module\+File\+Box (
-\begin{DoxyParamCaption}
-\item[{}]{\$vars}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleController_a26ff8a052af05f873237f3023e3e1bde}{}\label{classmoduleController_a26ff8a052af05f873237f3023e3e1bde}
+\subsubsection{\texorpdfstring{delete\+Module\+File\+Box()}{deleteModuleFileBox()}}
+{\footnotesize\ttfamily module\+Controller\+::delete\+Module\+File\+Box (\begin{DoxyParamCaption}\item[{}]{\$vars }\end{DoxyParamCaption})}
+
 
 
 Definition at line 1339 of file module.\+controller.\+php.
 
+\hypertarget{classmoduleController_a34f1a44321986a8f4692be393d6a5c85}{}\label{classmoduleController_a34f1a44321986a8f4692be393d6a5c85} 
 \index{module\+Controller@{module\+Controller}!delete\+Module\+Grants@{delete\+Module\+Grants}}
 \index{delete\+Module\+Grants@{delete\+Module\+Grants}!module\+Controller@{module\+Controller}}
-\subsubsection[{\texorpdfstring{delete\+Module\+Grants(\$module\+\_\+srl)}{deleteModuleGrants($module_srl)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Controller\+::delete\+Module\+Grants (
-\begin{DoxyParamCaption}
-\item[{}]{\$module\+\_\+srl}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleController_a34f1a44321986a8f4692be393d6a5c85}{}\label{classmoduleController_a34f1a44321986a8f4692be393d6a5c85}
+\subsubsection{\texorpdfstring{delete\+Module\+Grants()}{deleteModuleGrants()}}
+{\footnotesize\ttfamily module\+Controller\+::delete\+Module\+Grants (\begin{DoxyParamCaption}\item[{}]{\$module\+\_\+srl }\end{DoxyParamCaption})}
+
 
 
 Remove permission from the module. 
@@ -303,13 +280,12 @@ Remove permission from the module.
 
 Definition at line 1116 of file module.\+controller.\+php.
 
+\hypertarget{classmoduleController_a16feed706aef2613cc417c68cb06ba8a}{}\label{classmoduleController_a16feed706aef2613cc417c68cb06ba8a} 
 \index{module\+Controller@{module\+Controller}!delete\+Module\+Mobile\+Skin\+Vars@{delete\+Module\+Mobile\+Skin\+Vars}}
 \index{delete\+Module\+Mobile\+Skin\+Vars@{delete\+Module\+Mobile\+Skin\+Vars}!module\+Controller@{module\+Controller}}
-\subsubsection[{\texorpdfstring{delete\+Module\+Mobile\+Skin\+Vars(\$module\+\_\+srl)}{deleteModuleMobileSkinVars($module_srl)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Controller\+::delete\+Module\+Mobile\+Skin\+Vars (
-\begin{DoxyParamCaption}
-\item[{}]{\$module\+\_\+srl}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleController_a16feed706aef2613cc417c68cb06ba8a}{}\label{classmoduleController_a16feed706aef2613cc417c68cb06ba8a}
+\subsubsection{\texorpdfstring{delete\+Module\+Mobile\+Skin\+Vars()}{deleteModuleMobileSkinVars()}}
+{\footnotesize\ttfamily module\+Controller\+::delete\+Module\+Mobile\+Skin\+Vars (\begin{DoxyParamCaption}\item[{}]{\$module\+\_\+srl }\end{DoxyParamCaption})}
+
 Remove mobile skin vars ofa module 
 \begin{DoxyParams}{Parameters}
 {\em \$module\+\_\+srl} & seqence of module \\
@@ -319,13 +295,12 @@ Remove mobile skin vars ofa module
 
 Definition at line 1002 of file module.\+controller.\+php.
 
+\hypertarget{classmoduleController_ad85915b5cf2a31804f673cfc3320ac75}{}\label{classmoduleController_ad85915b5cf2a31804f673cfc3320ac75} 
 \index{module\+Controller@{module\+Controller}!delete\+Module\+Skin\+Vars@{delete\+Module\+Skin\+Vars}}
 \index{delete\+Module\+Skin\+Vars@{delete\+Module\+Skin\+Vars}!module\+Controller@{module\+Controller}}
-\subsubsection[{\texorpdfstring{delete\+Module\+Skin\+Vars(\$module\+\_\+srl)}{deleteModuleSkinVars($module_srl)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Controller\+::delete\+Module\+Skin\+Vars (
-\begin{DoxyParamCaption}
-\item[{}]{\$module\+\_\+srl}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleController_ad85915b5cf2a31804f673cfc3320ac75}{}\label{classmoduleController_ad85915b5cf2a31804f673cfc3320ac75}
+\subsubsection{\texorpdfstring{delete\+Module\+Skin\+Vars()}{deleteModuleSkinVars()}}
+{\footnotesize\ttfamily module\+Controller\+::delete\+Module\+Skin\+Vars (\begin{DoxyParamCaption}\item[{}]{\$module\+\_\+srl }\end{DoxyParamCaption})}
+
 Remove skin vars ofa module 
 \begin{DoxyParams}{Parameters}
 {\em \$module\+\_\+srl} & seqence of module \\
@@ -335,13 +310,12 @@ Remove skin vars ofa module
 
 Definition at line 993 of file module.\+controller.\+php.
 
+\hypertarget{classmoduleController_a48fb7491a1b86e30895ff4be5df7587d}{}\label{classmoduleController_a48fb7491a1b86e30895ff4be5df7587d} 
 \index{module\+Controller@{module\+Controller}!delete\+Module\+Triggers@{delete\+Module\+Triggers}}
 \index{delete\+Module\+Triggers@{delete\+Module\+Triggers}!module\+Controller@{module\+Controller}}
-\subsubsection[{\texorpdfstring{delete\+Module\+Triggers(\$module)}{deleteModuleTriggers($module)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Controller\+::delete\+Module\+Triggers (
-\begin{DoxyParamCaption}
-\item[{}]{\$module}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleController_a48fb7491a1b86e30895ff4be5df7587d}{}\label{classmoduleController_a48fb7491a1b86e30895ff4be5df7587d}
+\subsubsection{\texorpdfstring{delete\+Module\+Triggers()}{deleteModuleTriggers()}}
+{\footnotesize\ttfamily module\+Controller\+::delete\+Module\+Triggers (\begin{DoxyParamCaption}\item[{}]{\$module }\end{DoxyParamCaption})}
+
 
 
 Delete module trigger. 
@@ -350,17 +324,12 @@ Delete module trigger.
 
 Definition at line 126 of file module.\+controller.\+php.
 
+\hypertarget{classmoduleController_a60dbf5d358cddb566b3d3e297a003d23}{}\label{classmoduleController_a60dbf5d358cddb566b3d3e297a003d23} 
 \index{module\+Controller@{module\+Controller}!delete\+Trigger@{delete\+Trigger}}
 \index{delete\+Trigger@{delete\+Trigger}!module\+Controller@{module\+Controller}}
-\subsubsection[{\texorpdfstring{delete\+Trigger(\$trigger\+\_\+name, \$module, \$type, \$called\+\_\+method, \$called\+\_\+position)}{deleteTrigger($trigger_name, $module, $type, $called_method, $called_position)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Controller\+::delete\+Trigger (
-\begin{DoxyParamCaption}
-\item[{}]{\$trigger\+\_\+name, }
-\item[{}]{\$module, }
-\item[{}]{\$type, }
-\item[{}]{\$called\+\_\+method, }
-\item[{}]{\$called\+\_\+position}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleController_a60dbf5d358cddb566b3d3e297a003d23}{}\label{classmoduleController_a60dbf5d358cddb566b3d3e297a003d23}
+\subsubsection{\texorpdfstring{delete\+Trigger()}{deleteTrigger()}}
+{\footnotesize\ttfamily module\+Controller\+::delete\+Trigger (\begin{DoxyParamCaption}\item[{}]{\$trigger\+\_\+name,  }\item[{}]{\$module,  }\item[{}]{\$type,  }\item[{}]{\$called\+\_\+method,  }\item[{}]{\$called\+\_\+position }\end{DoxyParamCaption})}
+
 
 
 Delete module trigger. 
@@ -369,13 +338,12 @@ Delete module trigger.
 
 Definition at line 97 of file module.\+controller.\+php.
 
+\hypertarget{classmoduleController_a589d3d74f4601ae495a33d001ad8ffa0}{}\label{classmoduleController_a589d3d74f4601ae495a33d001ad8ffa0} 
 \index{module\+Controller@{module\+Controller}!init@{init}}
 \index{init@{init}!module\+Controller@{module\+Controller}}
-\subsubsection[{\texorpdfstring{init()}{init()}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Controller\+::init (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleController_a589d3d74f4601ae495a33d001ad8ffa0}{}\label{classmoduleController_a589d3d74f4601ae495a33d001ad8ffa0}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily module\+Controller\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 
 
 Initialization. 
@@ -384,15 +352,12 @@ Initialization.
 
 Definition at line 13 of file module.\+controller.\+php.
 
+\hypertarget{classmoduleController_a9a5ff2def7412c659594c62a4615a0cd}{}\label{classmoduleController_a9a5ff2def7412c659594c62a4615a0cd} 
 \index{module\+Controller@{module\+Controller}!insert\+Action\+Forward@{insert\+Action\+Forward}}
 \index{insert\+Action\+Forward@{insert\+Action\+Forward}!module\+Controller@{module\+Controller}}
-\subsubsection[{\texorpdfstring{insert\+Action\+Forward(\$module, \$type, \$act)}{insertActionForward($module, $type, $act)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Controller\+::insert\+Action\+Forward (
-\begin{DoxyParamCaption}
-\item[{}]{\$module, }
-\item[{}]{\$type, }
-\item[{}]{\$act}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleController_a9a5ff2def7412c659594c62a4615a0cd}{}\label{classmoduleController_a9a5ff2def7412c659594c62a4615a0cd}
+\subsubsection{\texorpdfstring{insert\+Action\+Forward()}{insertActionForward()}}
+{\footnotesize\ttfamily module\+Controller\+::insert\+Action\+Forward (\begin{DoxyParamCaption}\item[{}]{\$module,  }\item[{}]{\$type,  }\item[{}]{\$act }\end{DoxyParamCaption})}
+
 
 
 Add action forward Action forward finds and forwards if an action is not in the requested module This is used when installing a module. 
@@ -401,14 +366,12 @@ Add action forward Action forward finds and forwards if an action is not in the 
 
 Definition at line 22 of file module.\+controller.\+php.
 
+\hypertarget{classmoduleController_af50247418fd7c87424958e95ea466b00}{}\label{classmoduleController_af50247418fd7c87424958e95ea466b00} 
 \index{module\+Controller@{module\+Controller}!insert\+Admin\+Id@{insert\+Admin\+Id}}
 \index{insert\+Admin\+Id@{insert\+Admin\+Id}!module\+Controller@{module\+Controller}}
-\subsubsection[{\texorpdfstring{insert\+Admin\+Id(\$module\+\_\+srl, \$admin\+\_\+id)}{insertAdminId($module_srl, $admin_id)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Controller\+::insert\+Admin\+Id (
-\begin{DoxyParamCaption}
-\item[{}]{\$module\+\_\+srl, }
-\item[{}]{\$admin\+\_\+id}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleController_af50247418fd7c87424958e95ea466b00}{}\label{classmoduleController_af50247418fd7c87424958e95ea466b00}
+\subsubsection{\texorpdfstring{insert\+Admin\+Id()}{insertAdminId()}}
+{\footnotesize\ttfamily module\+Controller\+::insert\+Admin\+Id (\begin{DoxyParamCaption}\item[{}]{\$module\+\_\+srl,  }\item[{}]{\$admin\+\_\+id }\end{DoxyParamCaption})}
+
 
 
 Specify the admin ID to a module. 
@@ -417,13 +380,12 @@ Specify the admin ID to a module.
 
 Definition at line 879 of file module.\+controller.\+php.
 
+\hypertarget{classmoduleController_a8876924470cbfa94679d73dc6fc61332}{}\label{classmoduleController_a8876924470cbfa94679d73dc6fc61332} 
 \index{module\+Controller@{module\+Controller}!insert\+Module@{insert\+Module}}
 \index{insert\+Module@{insert\+Module}!module\+Controller@{module\+Controller}}
-\subsubsection[{\texorpdfstring{insert\+Module(\$args)}{insertModule($args)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Controller\+::insert\+Module (
-\begin{DoxyParamCaption}
-\item[{}]{\$args}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleController_a8876924470cbfa94679d73dc6fc61332}{}\label{classmoduleController_a8876924470cbfa94679d73dc6fc61332}
+\subsubsection{\texorpdfstring{insert\+Module()}{insertModule()}}
+{\footnotesize\ttfamily module\+Controller\+::insert\+Module (\begin{DoxyParamCaption}\item[{}]{\$args }\end{DoxyParamCaption})}
+
 
 
 Insert module. 
@@ -432,15 +394,12 @@ Insert module.
 
 Definition at line 380 of file module.\+controller.\+php.
 
+\hypertarget{classmoduleController_a678c87caaf6b2d12e63237d87b11b7a9}{}\label{classmoduleController_a678c87caaf6b2d12e63237d87b11b7a9} 
 \index{module\+Controller@{module\+Controller}!insert\+Module\+Config@{insert\+Module\+Config}}
 \index{insert\+Module\+Config@{insert\+Module\+Config}!module\+Controller@{module\+Controller}}
-\subsubsection[{\texorpdfstring{insert\+Module\+Config(\$module, \$config, \$site\+\_\+srl=0)}{insertModuleConfig($module, $config, $site_srl=0)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Controller\+::insert\+Module\+Config (
-\begin{DoxyParamCaption}
-\item[{}]{\$module, }
-\item[{}]{\$config, }
-\item[{}]{\$site\+\_\+srl = {\ttfamily 0}}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleController_a678c87caaf6b2d12e63237d87b11b7a9}{}\label{classmoduleController_a678c87caaf6b2d12e63237d87b11b7a9}
+\subsubsection{\texorpdfstring{insert\+Module\+Config()}{insertModuleConfig()}}
+{\footnotesize\ttfamily module\+Controller\+::insert\+Module\+Config (\begin{DoxyParamCaption}\item[{}]{\$module,  }\item[{}]{\$config,  }\item[{}]{\$site\+\_\+srl = {\ttfamily 0} }\end{DoxyParamCaption})}
+
 
 
 Enter a specific set of modules In order to manage global configurations of modules such as board, member and so on. 
@@ -449,16 +408,12 @@ Enter a specific set of modules In order to manage global configurations of modu
 
 Definition at line 216 of file module.\+controller.\+php.
 
+\hypertarget{classmoduleController_a74076ed057c3d3671a364fa478aa1109}{}\label{classmoduleController_a74076ed057c3d3671a364fa478aa1109} 
 \index{module\+Controller@{module\+Controller}!insert\+Module\+Extend@{insert\+Module\+Extend}}
 \index{insert\+Module\+Extend@{insert\+Module\+Extend}!module\+Controller@{module\+Controller}}
-\subsubsection[{\texorpdfstring{insert\+Module\+Extend(\$parent\+\_\+module, \$extend\+\_\+module, \$type, \$kind=\textquotesingle{}\textquotesingle{})}{insertModuleExtend($parent_module, $extend_module, $type, $kind='')}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Controller\+::insert\+Module\+Extend (
-\begin{DoxyParamCaption}
-\item[{}]{\$parent\+\_\+module, }
-\item[{}]{\$extend\+\_\+module, }
-\item[{}]{\$type, }
-\item[{}]{\$kind = {\ttfamily \textquotesingle{}\textquotesingle{}}}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleController_a74076ed057c3d3671a364fa478aa1109}{}\label{classmoduleController_a74076ed057c3d3671a364fa478aa1109}
+\subsubsection{\texorpdfstring{insert\+Module\+Extend()}{insertModuleExtend()}}
+{\footnotesize\ttfamily module\+Controller\+::insert\+Module\+Extend (\begin{DoxyParamCaption}\item[{}]{\$parent\+\_\+module,  }\item[{}]{\$extend\+\_\+module,  }\item[{}]{\$type,  }\item[{}]{\$kind = {\ttfamily \textquotesingle{}\textquotesingle{}} }\end{DoxyParamCaption})}
+
 
 
 Add module extend. 
@@ -467,14 +422,12 @@ Add module extend.
 
 Definition at line 151 of file module.\+controller.\+php.
 
+\hypertarget{classmoduleController_a1a8373bfcd3e1e8bc88f41bb777ad486}{}\label{classmoduleController_a1a8373bfcd3e1e8bc88f41bb777ad486} 
 \index{module\+Controller@{module\+Controller}!insert\+Module\+Extra\+Vars@{insert\+Module\+Extra\+Vars}}
 \index{insert\+Module\+Extra\+Vars@{insert\+Module\+Extra\+Vars}!module\+Controller@{module\+Controller}}
-\subsubsection[{\texorpdfstring{insert\+Module\+Extra\+Vars(\$module\+\_\+srl, \$obj)}{insertModuleExtraVars($module_srl, $obj)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Controller\+::insert\+Module\+Extra\+Vars (
-\begin{DoxyParamCaption}
-\item[{}]{\$module\+\_\+srl, }
-\item[{}]{\$obj}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleController_a1a8373bfcd3e1e8bc88f41bb777ad486}{}\label{classmoduleController_a1a8373bfcd3e1e8bc88f41bb777ad486}
+\subsubsection{\texorpdfstring{insert\+Module\+Extra\+Vars()}{insertModuleExtraVars()}}
+{\footnotesize\ttfamily module\+Controller\+::insert\+Module\+Extra\+Vars (\begin{DoxyParamCaption}\item[{}]{\$module\+\_\+srl,  }\item[{}]{\$obj }\end{DoxyParamCaption})}
+
 
 
 Register extra vars to the module. 
@@ -483,13 +436,12 @@ Register extra vars to the module.
 
 Definition at line 1041 of file module.\+controller.\+php.
 
+\hypertarget{classmoduleController_a141cdf2d372314e8661c276cdb8bd889}{}\label{classmoduleController_a141cdf2d372314e8661c276cdb8bd889} 
 \index{module\+Controller@{module\+Controller}!insert\+Module\+File\+Box@{insert\+Module\+File\+Box}}
 \index{insert\+Module\+File\+Box@{insert\+Module\+File\+Box}!module\+Controller@{module\+Controller}}
-\subsubsection[{\texorpdfstring{insert\+Module\+File\+Box(\$vars)}{insertModuleFileBox($vars)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Controller\+::insert\+Module\+File\+Box (
-\begin{DoxyParamCaption}
-\item[{}]{\$vars}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleController_a141cdf2d372314e8661c276cdb8bd889}{}\label{classmoduleController_a141cdf2d372314e8661c276cdb8bd889}
+\subsubsection{\texorpdfstring{insert\+Module\+File\+Box()}{insertModuleFileBox()}}
+{\footnotesize\ttfamily module\+Controller\+::insert\+Module\+File\+Box (\begin{DoxyParamCaption}\item[{}]{\$vars }\end{DoxyParamCaption})}
+
 
 
 Add a file into the file box. 
@@ -498,14 +450,12 @@ Add a file into the file box.
 
 Definition at line 1287 of file module.\+controller.\+php.
 
+\hypertarget{classmoduleController_a551eda7765398673c806ca1def44c7ac}{}\label{classmoduleController_a551eda7765398673c806ca1def44c7ac} 
 \index{module\+Controller@{module\+Controller}!insert\+Module\+Grants@{insert\+Module\+Grants}}
 \index{insert\+Module\+Grants@{insert\+Module\+Grants}!module\+Controller@{module\+Controller}}
-\subsubsection[{\texorpdfstring{insert\+Module\+Grants(\$module\+\_\+srl, \$obj)}{insertModuleGrants($module_srl, $obj)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Controller\+::insert\+Module\+Grants (
-\begin{DoxyParamCaption}
-\item[{}]{\$module\+\_\+srl, }
-\item[{}]{\$obj}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleController_a551eda7765398673c806ca1def44c7ac}{}\label{classmoduleController_a551eda7765398673c806ca1def44c7ac}
+\subsubsection{\texorpdfstring{insert\+Module\+Grants()}{insertModuleGrants()}}
+{\footnotesize\ttfamily module\+Controller\+::insert\+Module\+Grants (\begin{DoxyParamCaption}\item[{}]{\$module\+\_\+srl,  }\item[{}]{\$obj }\end{DoxyParamCaption})}
+
 
 
 Grant permission to the module. 
@@ -514,14 +464,12 @@ Grant permission to the module.
 
 Definition at line 1092 of file module.\+controller.\+php.
 
+\hypertarget{classmoduleController_a6c7aab59734028d1c980053a75437a45}{}\label{classmoduleController_a6c7aab59734028d1c980053a75437a45} 
 \index{module\+Controller@{module\+Controller}!insert\+Module\+Mobile\+Skin\+Vars@{insert\+Module\+Mobile\+Skin\+Vars}}
 \index{insert\+Module\+Mobile\+Skin\+Vars@{insert\+Module\+Mobile\+Skin\+Vars}!module\+Controller@{module\+Controller}}
-\subsubsection[{\texorpdfstring{insert\+Module\+Mobile\+Skin\+Vars(\$module\+\_\+srl, \$obj)}{insertModuleMobileSkinVars($module_srl, $obj)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Controller\+::insert\+Module\+Mobile\+Skin\+Vars (
-\begin{DoxyParamCaption}
-\item[{}]{\$module\+\_\+srl, }
-\item[{}]{\$obj}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleController_a6c7aab59734028d1c980053a75437a45}{}\label{classmoduleController_a6c7aab59734028d1c980053a75437a45}
+\subsubsection{\texorpdfstring{insert\+Module\+Mobile\+Skin\+Vars()}{insertModuleMobileSkinVars()}}
+{\footnotesize\ttfamily module\+Controller\+::insert\+Module\+Mobile\+Skin\+Vars (\begin{DoxyParamCaption}\item[{}]{\$module\+\_\+srl,  }\item[{}]{\$obj }\end{DoxyParamCaption})}
+
 Insert mobile skin vars to a module 
 \begin{DoxyParams}{Parameters}
 {\em \$module\+\_\+srl} & Sequence of module \\
@@ -533,15 +481,12 @@ Insert mobile skin vars to a module
 
 Definition at line 928 of file module.\+controller.\+php.
 
+\hypertarget{classmoduleController_a7def19c7b7f3f3e0d97a2183d58d62eb}{}\label{classmoduleController_a7def19c7b7f3f3e0d97a2183d58d62eb} 
 \index{module\+Controller@{module\+Controller}!insert\+Module\+Part\+Config@{insert\+Module\+Part\+Config}}
 \index{insert\+Module\+Part\+Config@{insert\+Module\+Part\+Config}!module\+Controller@{module\+Controller}}
-\subsubsection[{\texorpdfstring{insert\+Module\+Part\+Config(\$module, \$module\+\_\+srl, \$config)}{insertModulePartConfig($module, $module_srl, $config)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Controller\+::insert\+Module\+Part\+Config (
-\begin{DoxyParamCaption}
-\item[{}]{\$module, }
-\item[{}]{\$module\+\_\+srl, }
-\item[{}]{\$config}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleController_a7def19c7b7f3f3e0d97a2183d58d62eb}{}\label{classmoduleController_a7def19c7b7f3f3e0d97a2183d58d62eb}
+\subsubsection{\texorpdfstring{insert\+Module\+Part\+Config()}{insertModulePartConfig()}}
+{\footnotesize\ttfamily module\+Controller\+::insert\+Module\+Part\+Config (\begin{DoxyParamCaption}\item[{}]{\$module,  }\item[{}]{\$module\+\_\+srl,  }\item[{}]{\$config }\end{DoxyParamCaption})}
+
 
 
 Save module configurations of the mid Manage mid configurations depending on module. 
@@ -550,14 +495,12 @@ Save module configurations of the mid Manage mid configurations depending on mod
 
 Definition at line 241 of file module.\+controller.\+php.
 
+\hypertarget{classmoduleController_ad044df4dde2053b5dcbaf5077822290c}{}\label{classmoduleController_ad044df4dde2053b5dcbaf5077822290c} 
 \index{module\+Controller@{module\+Controller}!insert\+Module\+Skin\+Vars@{insert\+Module\+Skin\+Vars}}
 \index{insert\+Module\+Skin\+Vars@{insert\+Module\+Skin\+Vars}!module\+Controller@{module\+Controller}}
-\subsubsection[{\texorpdfstring{insert\+Module\+Skin\+Vars(\$module\+\_\+srl, \$obj)}{insertModuleSkinVars($module_srl, $obj)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Controller\+::insert\+Module\+Skin\+Vars (
-\begin{DoxyParamCaption}
-\item[{}]{\$module\+\_\+srl, }
-\item[{}]{\$obj}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleController_ad044df4dde2053b5dcbaf5077822290c}{}\label{classmoduleController_ad044df4dde2053b5dcbaf5077822290c}
+\subsubsection{\texorpdfstring{insert\+Module\+Skin\+Vars()}{insertModuleSkinVars()}}
+{\footnotesize\ttfamily module\+Controller\+::insert\+Module\+Skin\+Vars (\begin{DoxyParamCaption}\item[{}]{\$module\+\_\+srl,  }\item[{}]{\$obj }\end{DoxyParamCaption})}
+
 Insert skin vars to a module 
 \begin{DoxyParams}{Parameters}
 {\em \$module\+\_\+srl} & Sequence of module \\
@@ -569,14 +512,12 @@ Insert skin vars to a module
 
 Definition at line 918 of file module.\+controller.\+php.
 
+\hypertarget{classmoduleController_acca9e2ce3fbb24f614816bb4c34a5506}{}\label{classmoduleController_acca9e2ce3fbb24f614816bb4c34a5506} 
 \index{module\+Controller@{module\+Controller}!insert\+Site@{insert\+Site}}
 \index{insert\+Site@{insert\+Site}!module\+Controller@{module\+Controller}}
-\subsubsection[{\texorpdfstring{insert\+Site(\$domain, \$index\+\_\+module\+\_\+srl)}{insertSite($domain, $index_module_srl)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Controller\+::insert\+Site (
-\begin{DoxyParamCaption}
-\item[{}]{\$domain, }
-\item[{}]{\$index\+\_\+module\+\_\+srl}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleController_acca9e2ce3fbb24f614816bb4c34a5506}{}\label{classmoduleController_acca9e2ce3fbb24f614816bb4c34a5506}
+\subsubsection{\texorpdfstring{insert\+Site()}{insertSite()}}
+{\footnotesize\ttfamily module\+Controller\+::insert\+Site (\begin{DoxyParamCaption}\item[{}]{\$domain,  }\item[{}]{\$index\+\_\+module\+\_\+srl }\end{DoxyParamCaption})}
+
 
 
 create virtual site 
@@ -585,14 +526,12 @@ create virtual site
 
 Definition at line 266 of file module.\+controller.\+php.
 
+\hypertarget{classmoduleController_a970ea23d2ebfdb1353139923a05a173a}{}\label{classmoduleController_a970ea23d2ebfdb1353139923a05a173a} 
 \index{module\+Controller@{module\+Controller}!insert\+Site\+Admin@{insert\+Site\+Admin}}
 \index{insert\+Site\+Admin@{insert\+Site\+Admin}!module\+Controller@{module\+Controller}}
-\subsubsection[{\texorpdfstring{insert\+Site\+Admin(\$site\+\_\+srl, \$arr\+\_\+admins)}{insertSiteAdmin($site_srl, $arr_admins)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Controller\+::insert\+Site\+Admin (
-\begin{DoxyParamCaption}
-\item[{}]{\$site\+\_\+srl, }
-\item[{}]{\$arr\+\_\+admins}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleController_a970ea23d2ebfdb1353139923a05a173a}{}\label{classmoduleController_a970ea23d2ebfdb1353139923a05a173a}
+\subsubsection{\texorpdfstring{insert\+Site\+Admin()}{insertSiteAdmin()}}
+{\footnotesize\ttfamily module\+Controller\+::insert\+Site\+Admin (\begin{DoxyParamCaption}\item[{}]{\$site\+\_\+srl,  }\item[{}]{\$arr\+\_\+admins }\end{DoxyParamCaption})}
+
 
 
 Change the site administrator. 
@@ -601,17 +540,12 @@ Change the site administrator.
 
 Definition at line 833 of file module.\+controller.\+php.
 
+\hypertarget{classmoduleController_ad4fb0e3cfddb064ffcc9d71f983066a9}{}\label{classmoduleController_ad4fb0e3cfddb064ffcc9d71f983066a9} 
 \index{module\+Controller@{module\+Controller}!insert\+Trigger@{insert\+Trigger}}
 \index{insert\+Trigger@{insert\+Trigger}!module\+Controller@{module\+Controller}}
-\subsubsection[{\texorpdfstring{insert\+Trigger(\$trigger\+\_\+name, \$module, \$type, \$called\+\_\+method, \$called\+\_\+position)}{insertTrigger($trigger_name, $module, $type, $called_method, $called_position)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Controller\+::insert\+Trigger (
-\begin{DoxyParamCaption}
-\item[{}]{\$trigger\+\_\+name, }
-\item[{}]{\$module, }
-\item[{}]{\$type, }
-\item[{}]{\$called\+\_\+method, }
-\item[{}]{\$called\+\_\+position}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleController_ad4fb0e3cfddb064ffcc9d71f983066a9}{}\label{classmoduleController_ad4fb0e3cfddb064ffcc9d71f983066a9}
+\subsubsection{\texorpdfstring{insert\+Trigger()}{insertTrigger()}}
+{\footnotesize\ttfamily module\+Controller\+::insert\+Trigger (\begin{DoxyParamCaption}\item[{}]{\$trigger\+\_\+name,  }\item[{}]{\$module,  }\item[{}]{\$type,  }\item[{}]{\$called\+\_\+method,  }\item[{}]{\$called\+\_\+position }\end{DoxyParamCaption})}
+
 
 
 Add module trigger module trigger is to call a trigger to a target module. 
@@ -620,15 +554,12 @@ Add module trigger module trigger is to call a trigger to a target module.
 
 Definition at line 68 of file module.\+controller.\+php.
 
+\hypertarget{classmoduleController_a1395c1be0ebed50078212640fba409be}{}\label{classmoduleController_a1395c1be0ebed50078212640fba409be} 
 \index{module\+Controller@{module\+Controller}!lock@{lock}}
 \index{lock@{lock}!module\+Controller@{module\+Controller}}
-\subsubsection[{\texorpdfstring{lock(\$lock\+\_\+name, \$timeout, \$member\+\_\+srl=null)}{lock($lock_name, $timeout, $member_srl=null)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Controller\+::lock (
-\begin{DoxyParamCaption}
-\item[{}]{\$lock\+\_\+name, }
-\item[{}]{\$timeout, }
-\item[{}]{\$member\+\_\+srl = {\ttfamily {\bf null}}}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleController_a1395c1be0ebed50078212640fba409be}{}\label{classmoduleController_a1395c1be0ebed50078212640fba409be}
+\subsubsection{\texorpdfstring{lock()}{lock()}}
+{\footnotesize\ttfamily module\+Controller\+::lock (\begin{DoxyParamCaption}\item[{}]{\$lock\+\_\+name,  }\item[{}]{\$timeout,  }\item[{}]{\$member\+\_\+srl = {\ttfamily null} }\end{DoxyParamCaption})}
+
 
 
 function of locking (timeout is in seconds) 
@@ -637,24 +568,22 @@ function of locking (timeout is in seconds)
 
 Definition at line 1354 of file module.\+controller.\+php.
 
+\hypertarget{classmoduleController_ae34115eaf3d3b4d7621592f7cbfb9c7c}{}\label{classmoduleController_ae34115eaf3d3b4d7621592f7cbfb9c7c} 
 \index{module\+Controller@{module\+Controller}!only\+Delete\+Module@{only\+Delete\+Module}}
 \index{only\+Delete\+Module@{only\+Delete\+Module}!module\+Controller@{module\+Controller}}
-\subsubsection[{\texorpdfstring{only\+Delete\+Module(\$module\+\_\+srl)}{onlyDeleteModule($module_srl)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Controller\+::only\+Delete\+Module (
-\begin{DoxyParamCaption}
-\item[{}]{\$module\+\_\+srl}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleController_ae34115eaf3d3b4d7621592f7cbfb9c7c}{}\label{classmoduleController_ae34115eaf3d3b4d7621592f7cbfb9c7c}
+\subsubsection{\texorpdfstring{only\+Delete\+Module()}{onlyDeleteModule()}}
+{\footnotesize\ttfamily module\+Controller\+::only\+Delete\+Module (\begin{DoxyParamCaption}\item[{}]{\$module\+\_\+srl }\end{DoxyParamCaption})}
+
 Delete module Attempt to delete all related information when deleting a module. 
 
 Definition at line 707 of file module.\+controller.\+php.
 
+\hypertarget{classmoduleController_a456022e1fca3a204b9b2b828b501fefb}{}\label{classmoduleController_a456022e1fca3a204b9b2b828b501fefb} 
 \index{module\+Controller@{module\+Controller}!proc\+Module\+File\+Box\+Add@{proc\+Module\+File\+Box\+Add}}
 \index{proc\+Module\+File\+Box\+Add@{proc\+Module\+File\+Box\+Add}!module\+Controller@{module\+Controller}}
-\subsubsection[{\texorpdfstring{proc\+Module\+File\+Box\+Add()}{procModuleFileBoxAdd()}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Controller\+::proc\+Module\+File\+Box\+Add (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleController_a456022e1fca3a204b9b2b828b501fefb}{}\label{classmoduleController_a456022e1fca3a204b9b2b828b501fefb}
+\subsubsection{\texorpdfstring{proc\+Module\+File\+Box\+Add()}{procModuleFileBoxAdd()}}
+{\footnotesize\ttfamily module\+Controller\+::proc\+Module\+File\+Box\+Add (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 
 
 Add and update a file into the file box. 
@@ -663,13 +592,12 @@ Add and update a file into the file box.
 
 Definition at line 1176 of file module.\+controller.\+php.
 
+\hypertarget{classmoduleController_a2b4e5ffa008e6a0a00bfe9844f475b0d}{}\label{classmoduleController_a2b4e5ffa008e6a0a00bfe9844f475b0d} 
 \index{module\+Controller@{module\+Controller}!proc\+Module\+File\+Box\+Delete@{proc\+Module\+File\+Box\+Delete}}
 \index{proc\+Module\+File\+Box\+Delete@{proc\+Module\+File\+Box\+Delete}!module\+Controller@{module\+Controller}}
-\subsubsection[{\texorpdfstring{proc\+Module\+File\+Box\+Delete()}{procModuleFileBoxDelete()}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Controller\+::proc\+Module\+File\+Box\+Delete (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleController_a2b4e5ffa008e6a0a00bfe9844f475b0d}{}\label{classmoduleController_a2b4e5ffa008e6a0a00bfe9844f475b0d}
+\subsubsection{\texorpdfstring{proc\+Module\+File\+Box\+Delete()}{procModuleFileBoxDelete()}}
+{\footnotesize\ttfamily module\+Controller\+::proc\+Module\+File\+Box\+Delete (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 
 
 Delete a file from the file box. 
@@ -678,14 +606,12 @@ Delete a file from the file box.
 
 Definition at line 1326 of file module.\+controller.\+php.
 
+\hypertarget{classmoduleController_ace764298e1aee4006ecd8dbf7aaf4007}{}\label{classmoduleController_ace764298e1aee4006ecd8dbf7aaf4007} 
 \index{module\+Controller@{module\+Controller}!replace\+Defined\+Lang\+Code@{replace\+Defined\+Lang\+Code}}
 \index{replace\+Defined\+Lang\+Code@{replace\+Defined\+Lang\+Code}!module\+Controller@{module\+Controller}}
-\subsubsection[{\texorpdfstring{replace\+Defined\+Lang\+Code(\&\$output, \$is\+Replace\+Lang\+Code=true)}{replaceDefinedLangCode(&$output, $isReplaceLangCode=true)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Controller\+::replace\+Defined\+Lang\+Code (
-\begin{DoxyParamCaption}
-\item[{\&}]{\$output, }
-\item[{}]{\$is\+Replace\+Lang\+Code = {\ttfamily true}}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleController_ace764298e1aee4006ecd8dbf7aaf4007}{}\label{classmoduleController_ace764298e1aee4006ecd8dbf7aaf4007}
+\subsubsection{\texorpdfstring{replace\+Defined\+Lang\+Code()}{replaceDefinedLangCode()}}
+{\footnotesize\ttfamily module\+Controller\+::replace\+Defined\+Lang\+Code (\begin{DoxyParamCaption}\item[{\&}]{\$output,  }\item[{}]{\$is\+Replace\+Lang\+Code = {\ttfamily true} }\end{DoxyParamCaption})}
+
 
 
 Change user-\/defined language. 
@@ -694,36 +620,32 @@ Change user-\/defined language.
 
 Definition at line 1126 of file module.\+controller.\+php.
 
+\hypertarget{classmoduleController_a79a5d8ecb0bc6186756e80144cbca92f}{}\label{classmoduleController_a79a5d8ecb0bc6186756e80144cbca92f} 
 \index{module\+Controller@{module\+Controller}!unlock@{unlock}}
 \index{unlock@{unlock}!module\+Controller@{module\+Controller}}
-\subsubsection[{\texorpdfstring{unlock(\$lock\+\_\+name, \$deadline)}{unlock($lock_name, $deadline)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Controller\+::unlock (
-\begin{DoxyParamCaption}
-\item[{}]{\$lock\+\_\+name, }
-\item[{}]{\$deadline}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleController_a79a5d8ecb0bc6186756e80144cbca92f}{}\label{classmoduleController_a79a5d8ecb0bc6186756e80144cbca92f}
+\subsubsection{\texorpdfstring{unlock()}{unlock()}}
+{\footnotesize\ttfamily module\+Controller\+::unlock (\begin{DoxyParamCaption}\item[{}]{\$lock\+\_\+name,  }\item[{}]{\$deadline }\end{DoxyParamCaption})}
+
 
 
 Definition at line 1376 of file module.\+controller.\+php.
 
+\hypertarget{classmoduleController_aac97ab294279631cb3cf1078063e8b56}{}\label{classmoduleController_aac97ab294279631cb3cf1078063e8b56} 
 \index{module\+Controller@{module\+Controller}!unlock\+Timeout\+Passed@{unlock\+Timeout\+Passed}}
 \index{unlock\+Timeout\+Passed@{unlock\+Timeout\+Passed}!module\+Controller@{module\+Controller}}
-\subsubsection[{\texorpdfstring{unlock\+Timeout\+Passed()}{unlockTimeoutPassed()}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Controller\+::unlock\+Timeout\+Passed (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleController_aac97ab294279631cb3cf1078063e8b56}{}\label{classmoduleController_aac97ab294279631cb3cf1078063e8b56}
+\subsubsection{\texorpdfstring{unlock\+Timeout\+Passed()}{unlockTimeoutPassed()}}
+{\footnotesize\ttfamily module\+Controller\+::unlock\+Timeout\+Passed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 
 
 Definition at line 1371 of file module.\+controller.\+php.
 
+\hypertarget{classmoduleController_ae4a1e785f41aa56a626b7f72346bbe0c}{}\label{classmoduleController_ae4a1e785f41aa56a626b7f72346bbe0c} 
 \index{module\+Controller@{module\+Controller}!update\+Module@{update\+Module}}
 \index{update\+Module@{update\+Module}!module\+Controller@{module\+Controller}}
-\subsubsection[{\texorpdfstring{update\+Module(\$args)}{updateModule($args)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Controller\+::update\+Module (
-\begin{DoxyParamCaption}
-\item[{}]{\$args}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleController_ae4a1e785f41aa56a626b7f72346bbe0c}{}\label{classmoduleController_ae4a1e785f41aa56a626b7f72346bbe0c}
+\subsubsection{\texorpdfstring{update\+Module()}{updateModule()}}
+{\footnotesize\ttfamily module\+Controller\+::update\+Module (\begin{DoxyParamCaption}\item[{}]{\$args }\end{DoxyParamCaption})}
+
 
 
 Modify module information. 
@@ -732,26 +654,22 @@ Modify module information.
 
 Definition at line 508 of file module.\+controller.\+php.
 
+\hypertarget{classmoduleController_aa6d6239d1fd7c1f64f7061778ad4127b}{}\label{classmoduleController_aa6d6239d1fd7c1f64f7061778ad4127b} 
 \index{module\+Controller@{module\+Controller}!update\+Module\+Config@{update\+Module\+Config}}
 \index{update\+Module\+Config@{update\+Module\+Config}!module\+Controller@{module\+Controller}}
-\subsubsection[{\texorpdfstring{update\+Module\+Config(\$module, \$config, \$site\+\_\+srl=0)}{updateModuleConfig($module, $config, $site_srl=0)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Controller\+::update\+Module\+Config (
-\begin{DoxyParamCaption}
-\item[{}]{\$module, }
-\item[{}]{\$config, }
-\item[{}]{\$site\+\_\+srl = {\ttfamily 0}}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleController_aa6d6239d1fd7c1f64f7061778ad4127b}{}\label{classmoduleController_aa6d6239d1fd7c1f64f7061778ad4127b}
+\subsubsection{\texorpdfstring{update\+Module\+Config()}{updateModuleConfig()}}
+{\footnotesize\ttfamily module\+Controller\+::update\+Module\+Config (\begin{DoxyParamCaption}\item[{}]{\$module,  }\item[{}]{\$config,  }\item[{}]{\$site\+\_\+srl = {\ttfamily 0} }\end{DoxyParamCaption})}
+
 
 
 Definition at line 193 of file module.\+controller.\+php.
 
+\hypertarget{classmoduleController_af1ea81da50538369f648be26252ddd26}{}\label{classmoduleController_af1ea81da50538369f648be26252ddd26} 
 \index{module\+Controller@{module\+Controller}!update\+Module\+File\+Box@{update\+Module\+File\+Box}}
 \index{update\+Module\+File\+Box@{update\+Module\+File\+Box}!module\+Controller@{module\+Controller}}
-\subsubsection[{\texorpdfstring{update\+Module\+File\+Box(\$vars)}{updateModuleFileBox($vars)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Controller\+::update\+Module\+File\+Box (
-\begin{DoxyParamCaption}
-\item[{}]{\$vars}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleController_af1ea81da50538369f648be26252ddd26}{}\label{classmoduleController_af1ea81da50538369f648be26252ddd26}
+\subsubsection{\texorpdfstring{update\+Module\+File\+Box()}{updateModuleFileBox()}}
+{\footnotesize\ttfamily module\+Controller\+::update\+Module\+File\+Box (\begin{DoxyParamCaption}\item[{}]{\$vars }\end{DoxyParamCaption})}
+
 
 
 Update a file into the file box. 
@@ -760,26 +678,22 @@ Update a file into the file box.
 
 Definition at line 1246 of file module.\+controller.\+php.
 
+\hypertarget{classmoduleController_a1d2d1c0845ee050c4f837dea9b9beab1}{}\label{classmoduleController_a1d2d1c0845ee050c4f837dea9b9beab1} 
 \index{module\+Controller@{module\+Controller}!update\+Module\+In\+Sites@{update\+Module\+In\+Sites}}
 \index{update\+Module\+In\+Sites@{update\+Module\+In\+Sites}!module\+Controller@{module\+Controller}}
-\subsubsection[{\texorpdfstring{update\+Module\+In\+Sites(\$site\+\_\+srls, \$args)}{updateModuleInSites($site_srls, $args)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Controller\+::update\+Module\+In\+Sites (
-\begin{DoxyParamCaption}
-\item[{}]{\$site\+\_\+srls, }
-\item[{}]{\$args}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleController_a1d2d1c0845ee050c4f837dea9b9beab1}{}\label{classmoduleController_a1d2d1c0845ee050c4f837dea9b9beab1}
+\subsubsection{\texorpdfstring{update\+Module\+In\+Sites()}{updateModuleInSites()}}
+{\footnotesize\ttfamily module\+Controller\+::update\+Module\+In\+Sites (\begin{DoxyParamCaption}\item[{}]{\$site\+\_\+srls,  }\item[{}]{\$args }\end{DoxyParamCaption})}
+
 
 
 Definition at line 1385 of file module.\+controller.\+php.
 
+\hypertarget{classmoduleController_a4789510265aa0276d79e29cb9d9ce24c}{}\label{classmoduleController_a4789510265aa0276d79e29cb9d9ce24c} 
 \index{module\+Controller@{module\+Controller}!update\+Module\+Layout@{update\+Module\+Layout}}
 \index{update\+Module\+Layout@{update\+Module\+Layout}!module\+Controller@{module\+Controller}}
-\subsubsection[{\texorpdfstring{update\+Module\+Layout(\$layout\+\_\+srl, \$menu\+\_\+srl\+\_\+list)}{updateModuleLayout($layout_srl, $menu_srl_list)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Controller\+::update\+Module\+Layout (
-\begin{DoxyParamCaption}
-\item[{}]{\$layout\+\_\+srl, }
-\item[{}]{\$menu\+\_\+srl\+\_\+list}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleController_a4789510265aa0276d79e29cb9d9ce24c}{}\label{classmoduleController_a4789510265aa0276d79e29cb9d9ce24c}
+\subsubsection{\texorpdfstring{update\+Module\+Layout()}{updateModuleLayout()}}
+{\footnotesize\ttfamily module\+Controller\+::update\+Module\+Layout (\begin{DoxyParamCaption}\item[{}]{\$layout\+\_\+srl,  }\item[{}]{\$menu\+\_\+srl\+\_\+list }\end{DoxyParamCaption})}
+
 
 
 Update layout\+\_\+srl of mid which belongs to menu\+\_\+srl. 
@@ -788,13 +702,12 @@ Update layout\+\_\+srl of mid which belongs to menu\+\_\+srl.
 
 Definition at line 812 of file module.\+controller.\+php.
 
+\hypertarget{classmoduleController_a7583bb9beb47ba3ecc1149546716e9f7}{}\label{classmoduleController_a7583bb9beb47ba3ecc1149546716e9f7} 
 \index{module\+Controller@{module\+Controller}!update\+Module\+Menu@{update\+Module\+Menu}}
 \index{update\+Module\+Menu@{update\+Module\+Menu}!module\+Controller@{module\+Controller}}
-\subsubsection[{\texorpdfstring{update\+Module\+Menu(\$args)}{updateModuleMenu($args)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Controller\+::update\+Module\+Menu (
-\begin{DoxyParamCaption}
-\item[{}]{\$args}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleController_a7583bb9beb47ba3ecc1149546716e9f7}{}\label{classmoduleController_a7583bb9beb47ba3ecc1149546716e9f7}
+\subsubsection{\texorpdfstring{update\+Module\+Menu()}{updateModuleMenu()}}
+{\footnotesize\ttfamily module\+Controller\+::update\+Module\+Menu (\begin{DoxyParamCaption}\item[{}]{\$args }\end{DoxyParamCaption})}
+
 
 
 Update menu\+\_\+srl of mid which belongs to menu\+\_\+srl. 
@@ -803,15 +716,12 @@ Update menu\+\_\+srl of mid which belongs to menu\+\_\+srl.
 
 Definition at line 796 of file module.\+controller.\+php.
 
+\hypertarget{classmoduleController_a9b1b3b8db4047c33882a9231c5eafb13}{}\label{classmoduleController_a9b1b3b8db4047c33882a9231c5eafb13} 
 \index{module\+Controller@{module\+Controller}!update\+Module\+Site@{update\+Module\+Site}}
 \index{update\+Module\+Site@{update\+Module\+Site}!module\+Controller@{module\+Controller}}
-\subsubsection[{\texorpdfstring{update\+Module\+Site(\$module\+\_\+srl, \$site\+\_\+srl, \$layout\+\_\+srl=0)}{updateModuleSite($module_srl, $site_srl, $layout_srl=0)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Controller\+::update\+Module\+Site (
-\begin{DoxyParamCaption}
-\item[{}]{\$module\+\_\+srl, }
-\item[{}]{\$site\+\_\+srl, }
-\item[{}]{\$layout\+\_\+srl = {\ttfamily 0}}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleController_a9b1b3b8db4047c33882a9231c5eafb13}{}\label{classmoduleController_a9b1b3b8db4047c33882a9231c5eafb13}
+\subsubsection{\texorpdfstring{update\+Module\+Site()}{updateModuleSite()}}
+{\footnotesize\ttfamily module\+Controller\+::update\+Module\+Site (\begin{DoxyParamCaption}\item[{}]{\$module\+\_\+srl,  }\item[{}]{\$site\+\_\+srl,  }\item[{}]{\$layout\+\_\+srl = {\ttfamily 0} }\end{DoxyParamCaption})}
+
 
 
 Change the module\textquotesingle{}s virtual site. 
@@ -820,14 +730,12 @@ Change the module\textquotesingle{}s virtual site.
 
 Definition at line 620 of file module.\+controller.\+php.
 
+\hypertarget{classmoduleController_aa877238508d8cde2ad00f40b8ff283c0}{}\label{classmoduleController_aa877238508d8cde2ad00f40b8ff283c0} 
 \index{module\+Controller@{module\+Controller}!update\+Module\+Skin\+Vars@{update\+Module\+Skin\+Vars}}
 \index{update\+Module\+Skin\+Vars@{update\+Module\+Skin\+Vars}!module\+Controller@{module\+Controller}}
-\subsubsection[{\texorpdfstring{update\+Module\+Skin\+Vars(\$module\+\_\+srl, \$skin\+\_\+vars)}{updateModuleSkinVars($module_srl, $skin_vars)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Controller\+::update\+Module\+Skin\+Vars (
-\begin{DoxyParamCaption}
-\item[{}]{\$module\+\_\+srl, }
-\item[{}]{\$skin\+\_\+vars}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleController_aa877238508d8cde2ad00f40b8ff283c0}{}\label{classmoduleController_aa877238508d8cde2ad00f40b8ff283c0}
+\subsubsection{\texorpdfstring{update\+Module\+Skin\+Vars()}{updateModuleSkinVars()}}
+{\footnotesize\ttfamily module\+Controller\+::update\+Module\+Skin\+Vars (\begin{DoxyParamCaption}\item[{}]{\$module\+\_\+srl,  }\item[{}]{\$skin\+\_\+vars }\end{DoxyParamCaption})}
+
 
 
 Change other information of the module. 
@@ -838,13 +746,12 @@ Change other information of the module.
 
 Definition at line 771 of file module.\+controller.\+php.
 
+\hypertarget{classmoduleController_ae2fb61c8a558f0552202c51d2055eede}{}\label{classmoduleController_ae2fb61c8a558f0552202c51d2055eede} 
 \index{module\+Controller@{module\+Controller}!update\+Site@{update\+Site}}
 \index{update\+Site@{update\+Site}!module\+Controller@{module\+Controller}}
-\subsubsection[{\texorpdfstring{update\+Site(\$args)}{updateSite($args)}}]{\setlength{\rightskip}{0pt plus 5cm}module\+Controller\+::update\+Site (
-\begin{DoxyParamCaption}
-\item[{}]{\$args}
-\end{DoxyParamCaption}
-)}\hypertarget{classmoduleController_ae2fb61c8a558f0552202c51d2055eede}{}\label{classmoduleController_ae2fb61c8a558f0552202c51d2055eede}
+\subsubsection{\texorpdfstring{update\+Site()}{updateSite()}}
+{\footnotesize\ttfamily module\+Controller\+::update\+Site (\begin{DoxyParamCaption}\item[{}]{\$args }\end{DoxyParamCaption})}
+
 
 
 modify virtual site 

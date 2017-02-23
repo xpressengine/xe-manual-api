@@ -9,11 +9,11 @@ Inheritance diagram for Argument\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classArgument_aa9089313bf5ad3d10939dc1e70ee84fe}{Argument} (\$\hyperlink{common_8js_a22c29d2aa8ed6161ce8faa718ef76e68}{name}, \$\hyperlink{jquery_8js_abe5393d870043cf6aaa1d5ad5fce755c}{value})
+\hyperlink{classArgument_aa9089313bf5ad3d10939dc1e70ee84fe}{Argument} (\$name, \$value)
 \item 
 \hyperlink{classArgument_a62ea3d6e7689c8a40f6f9722e76fa7a8}{get\+Type} ()
 \item 
-\hyperlink{classArgument_a849c6abe0d16f2fdf21c38db6844bd9d}{set\+Column\+Type} (\$\hyperlink{jquery_8js_abe5393d870043cf6aaa1d5ad5fce755c}{value})
+\hyperlink{classArgument_a849c6abe0d16f2fdf21c38db6844bd9d}{set\+Column\+Type} (\$value)
 \item 
 \hyperlink{classArgument_a3e737e0b4af5559f56b35c7c1b1b4f2a}{set\+Column\+Operation} (\$operation)
 \item 
@@ -29,11 +29,11 @@ Inheritance diagram for Argument\+:\begin{figure}[H]
 \item 
 \hyperlink{classArgument_a45a70c173c816e9cf2c7c5f396a92a6f}{get\+Unescaped\+Value} ()
 \item 
-\hyperlink{classArgument_a6fa3a8b473d05a02c7746a143e51ef81}{to\+String} (\$\hyperlink{jquery_8js_abe5393d870043cf6aaa1d5ad5fce755c}{value})
+\hyperlink{classArgument_a6fa3a8b473d05a02c7746a143e51ef81}{to\+String} (\$value)
 \item 
-\hyperlink{classArgument_a217bae48930e0208210aa7030a2f2b27}{escape\+Value} (\$\hyperlink{jquery_8js_abe5393d870043cf6aaa1d5ad5fce755c}{value})
+\hyperlink{classArgument_a217bae48930e0208210aa7030a2f2b27}{escape\+Value} (\$value)
 \item 
-\hyperlink{classArgument_afd7b071db98f0a4c8ef60cdd8db8a3b2}{\+\_\+escape\+String\+Value} (\$\hyperlink{jquery_8js_abe5393d870043cf6aaa1d5ad5fce755c}{value})
+\hyperlink{classArgument_afd7b071db98f0a4c8ef60cdd8db8a3b2}{\+\_\+escape\+String\+Value} (\$value)
 \item 
 \hyperlink{classArgument_aaf7f8b67195ed2e1b404339d107d6a1c}{utf8\+Replacer} (\$captures)
 \item 
@@ -47,9 +47,9 @@ Inheritance diagram for Argument\+:\begin{figure}[H]
 \item 
 \hyperlink{classArgument_a4bdf58953a9b85a8999edabe5d341d43}{check\+Filter} (\$filter\+\_\+type)
 \item 
-\hyperlink{classArgument_acc5f170121988acf71c50e5941320112}{check\+Max\+Length} (\$\hyperlink{xpresseditor_8min_8js_a8251a40bc2803d85bf8a918f1f288cce}{length})
+\hyperlink{classArgument_acc5f170121988acf71c50e5941320112}{check\+Max\+Length} (\$length)
 \item 
-\hyperlink{classArgument_ac44c716b86dc42d5c0f0e4717a510c74}{check\+Min\+Length} (\$\hyperlink{xpresseditor_8min_8js_a8251a40bc2803d85bf8a918f1f288cce}{length})
+\hyperlink{classArgument_ac44c716b86dc42d5c0f0e4717a510c74}{check\+Min\+Length} (\$length)
 \item 
 \hyperlink{classArgument_a09edcec0bf4dbfeedec2f7652e44e57d}{check\+Not\+Null} ()
 \end{DoxyCompactItemize}
@@ -82,13 +82,12 @@ Definition at line 10 of file Argument.\+class.\+php.
 
 
 \subsection{Member Function Documentation}
+\hypertarget{classArgument_afd7b071db98f0a4c8ef60cdd8db8a3b2}{}\label{classArgument_afd7b071db98f0a4c8ef60cdd8db8a3b2} 
 \index{Argument@{Argument}!\+\_\+escape\+String\+Value@{\+\_\+escape\+String\+Value}}
 \index{\+\_\+escape\+String\+Value@{\+\_\+escape\+String\+Value}!Argument@{Argument}}
-\subsubsection[{\texorpdfstring{\+\_\+escape\+String\+Value(\$value)}{_escapeStringValue($value)}}]{\setlength{\rightskip}{0pt plus 5cm}Argument\+::\+\_\+escape\+String\+Value (
-\begin{DoxyParamCaption}
-\item[{}]{\$value}
-\end{DoxyParamCaption}
-)}\hypertarget{classArgument_afd7b071db98f0a4c8ef60cdd8db8a3b2}{}\label{classArgument_afd7b071db98f0a4c8ef60cdd8db8a3b2}
+\subsubsection{\texorpdfstring{\+\_\+escape\+String\+Value()}{\_escapeStringValue()}}
+{\footnotesize\ttfamily Argument\+::\+\_\+escape\+String\+Value (\begin{DoxyParamCaption}\item[{}]{\$value }\end{DoxyParamCaption})}
+
 escape string value 
 \begin{DoxyParams}[1]{Parameters}
 string & {\em \$value} & \\
@@ -101,14 +100,12 @@ string
 
 Definition at line 222 of file Argument.\+class.\+php.
 
+\hypertarget{classArgument_aa9089313bf5ad3d10939dc1e70ee84fe}{}\label{classArgument_aa9089313bf5ad3d10939dc1e70ee84fe} 
 \index{Argument@{Argument}!Argument@{Argument}}
 \index{Argument@{Argument}!Argument@{Argument}}
-\subsubsection[{\texorpdfstring{Argument(\$name, \$value)}{Argument($name, $value)}}]{\setlength{\rightskip}{0pt plus 5cm}Argument\+::\+Argument (
-\begin{DoxyParamCaption}
-\item[{}]{\$name, }
-\item[{}]{\$value}
-\end{DoxyParamCaption}
-)}\hypertarget{classArgument_aa9089313bf5ad3d10939dc1e70ee84fe}{}\label{classArgument_aa9089313bf5ad3d10939dc1e70ee84fe}
+\subsubsection{\texorpdfstring{Argument()}{Argument()}}
+{\footnotesize\ttfamily Argument\+::\+Argument (\begin{DoxyParamCaption}\item[{}]{\$name,  }\item[{}]{\$value }\end{DoxyParamCaption})}
+
 constructor 
 \begin{DoxyParams}[1]{Parameters}
 string & {\em \$name} & \\
@@ -123,13 +120,12 @@ void
 
 Definition at line 67 of file Argument.\+class.\+php.
 
+\hypertarget{classArgument_a4bdf58953a9b85a8999edabe5d341d43}{}\label{classArgument_a4bdf58953a9b85a8999edabe5d341d43} 
 \index{Argument@{Argument}!check\+Filter@{check\+Filter}}
 \index{check\+Filter@{check\+Filter}!Argument@{Argument}}
-\subsubsection[{\texorpdfstring{check\+Filter(\$filter\+\_\+type)}{checkFilter($filter_type)}}]{\setlength{\rightskip}{0pt plus 5cm}Argument\+::check\+Filter (
-\begin{DoxyParamCaption}
-\item[{}]{\$filter\+\_\+type}
-\end{DoxyParamCaption}
-)}\hypertarget{classArgument_a4bdf58953a9b85a8999edabe5d341d43}{}\label{classArgument_a4bdf58953a9b85a8999edabe5d341d43}
+\subsubsection{\texorpdfstring{check\+Filter()}{checkFilter()}}
+{\footnotesize\ttfamily Argument\+::check\+Filter (\begin{DoxyParamCaption}\item[{}]{\$filter\+\_\+type }\end{DoxyParamCaption})}
+
 check filter by filter type 
 \begin{DoxyParams}[1]{Parameters}
 string & {\em \$filter\+\_\+type} & \\
@@ -142,57 +138,52 @@ void
 
 Definition at line 299 of file Argument.\+class.\+php.
 
+\hypertarget{classArgument_acc5f170121988acf71c50e5941320112}{}\label{classArgument_acc5f170121988acf71c50e5941320112} 
 \index{Argument@{Argument}!check\+Max\+Length@{check\+Max\+Length}}
 \index{check\+Max\+Length@{check\+Max\+Length}!Argument@{Argument}}
-\subsubsection[{\texorpdfstring{check\+Max\+Length(\$length)}{checkMaxLength($length)}}]{\setlength{\rightskip}{0pt plus 5cm}Argument\+::check\+Max\+Length (
-\begin{DoxyParamCaption}
-\item[{}]{\$length}
-\end{DoxyParamCaption}
-)}\hypertarget{classArgument_acc5f170121988acf71c50e5941320112}{}\label{classArgument_acc5f170121988acf71c50e5941320112}
+\subsubsection{\texorpdfstring{check\+Max\+Length()}{checkMaxLength()}}
+{\footnotesize\ttfamily Argument\+::check\+Max\+Length (\begin{DoxyParamCaption}\item[{}]{\$length }\end{DoxyParamCaption})}
+
 
 
 Definition at line 361 of file Argument.\+class.\+php.
 
+\hypertarget{classArgument_ac44c716b86dc42d5c0f0e4717a510c74}{}\label{classArgument_ac44c716b86dc42d5c0f0e4717a510c74} 
 \index{Argument@{Argument}!check\+Min\+Length@{check\+Min\+Length}}
 \index{check\+Min\+Length@{check\+Min\+Length}!Argument@{Argument}}
-\subsubsection[{\texorpdfstring{check\+Min\+Length(\$length)}{checkMinLength($length)}}]{\setlength{\rightskip}{0pt plus 5cm}Argument\+::check\+Min\+Length (
-\begin{DoxyParamCaption}
-\item[{}]{\$length}
-\end{DoxyParamCaption}
-)}\hypertarget{classArgument_ac44c716b86dc42d5c0f0e4717a510c74}{}\label{classArgument_ac44c716b86dc42d5c0f0e4717a510c74}
+\subsubsection{\texorpdfstring{check\+Min\+Length()}{checkMinLength()}}
+{\footnotesize\ttfamily Argument\+::check\+Min\+Length (\begin{DoxyParamCaption}\item[{}]{\$length }\end{DoxyParamCaption})}
+
 
 
 Definition at line 372 of file Argument.\+class.\+php.
 
+\hypertarget{classArgument_a09edcec0bf4dbfeedec2f7652e44e57d}{}\label{classArgument_a09edcec0bf4dbfeedec2f7652e44e57d} 
 \index{Argument@{Argument}!check\+Not\+Null@{check\+Not\+Null}}
 \index{check\+Not\+Null@{check\+Not\+Null}!Argument@{Argument}}
-\subsubsection[{\texorpdfstring{check\+Not\+Null()}{checkNotNull()}}]{\setlength{\rightskip}{0pt plus 5cm}Argument\+::check\+Not\+Null (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classArgument_a09edcec0bf4dbfeedec2f7652e44e57d}{}\label{classArgument_a09edcec0bf4dbfeedec2f7652e44e57d}
+\subsubsection{\texorpdfstring{check\+Not\+Null()}{checkNotNull()}}
+{\footnotesize\ttfamily Argument\+::check\+Not\+Null (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 
 
 Definition at line 383 of file Argument.\+class.\+php.
 
+\hypertarget{classArgument_a4af92bc005f3d9328c63c0722fd3aef7}{}\label{classArgument_a4af92bc005f3d9328c63c0722fd3aef7} 
 \index{Argument@{Argument}!ensure\+Default\+Value@{ensure\+Default\+Value}}
 \index{ensure\+Default\+Value@{ensure\+Default\+Value}!Argument@{Argument}}
-\subsubsection[{\texorpdfstring{ensure\+Default\+Value(\$default\+\_\+value)}{ensureDefaultValue($default_value)}}]{\setlength{\rightskip}{0pt plus 5cm}Argument\+::ensure\+Default\+Value (
-\begin{DoxyParamCaption}
-\item[{}]{\$default\+\_\+value}
-\end{DoxyParamCaption}
-)}\hypertarget{classArgument_a4af92bc005f3d9328c63c0722fd3aef7}{}\label{classArgument_a4af92bc005f3d9328c63c0722fd3aef7}
+\subsubsection{\texorpdfstring{ensure\+Default\+Value()}{ensureDefaultValue()}}
+{\footnotesize\ttfamily Argument\+::ensure\+Default\+Value (\begin{DoxyParamCaption}\item[{}]{\$default\+\_\+value }\end{DoxyParamCaption})}
+
 
 
 Definition at line 285 of file Argument.\+class.\+php.
 
+\hypertarget{classArgument_a217bae48930e0208210aa7030a2f2b27}{}\label{classArgument_a217bae48930e0208210aa7030a2f2b27} 
 \index{Argument@{Argument}!escape\+Value@{escape\+Value}}
 \index{escape\+Value@{escape\+Value}!Argument@{Argument}}
-\subsubsection[{\texorpdfstring{escape\+Value(\$value)}{escapeValue($value)}}]{\setlength{\rightskip}{0pt plus 5cm}Argument\+::escape\+Value (
-\begin{DoxyParamCaption}
-\item[{}]{\$value}
-\end{DoxyParamCaption}
-)}\hypertarget{classArgument_a217bae48930e0208210aa7030a2f2b27}{}\label{classArgument_a217bae48930e0208210aa7030a2f2b27}
+\subsubsection{\texorpdfstring{escape\+Value()}{escapeValue()}}
+{\footnotesize\ttfamily Argument\+::escape\+Value (\begin{DoxyParamCaption}\item[{}]{\$value }\end{DoxyParamCaption})}
+
 escape value 
 \begin{DoxyParams}[1]{Parameters}
 mixed & {\em \$value} & \\
@@ -205,145 +196,132 @@ mixed
 
 Definition at line 164 of file Argument.\+class.\+php.
 
+\hypertarget{classArgument_a8720ec6d3b4cccdb6dfdd072bb77c9d3}{}\label{classArgument_a8720ec6d3b4cccdb6dfdd072bb77c9d3} 
 \index{Argument@{Argument}!get\+Column\+Operation@{get\+Column\+Operation}}
 \index{get\+Column\+Operation@{get\+Column\+Operation}!Argument@{Argument}}
-\subsubsection[{\texorpdfstring{get\+Column\+Operation()}{getColumnOperation()}}]{\setlength{\rightskip}{0pt plus 5cm}Argument\+::get\+Column\+Operation (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classArgument_a8720ec6d3b4cccdb6dfdd072bb77c9d3}{}\label{classArgument_a8720ec6d3b4cccdb6dfdd072bb77c9d3}
+\subsubsection{\texorpdfstring{get\+Column\+Operation()}{getColumnOperation()}}
+{\footnotesize\ttfamily Argument\+::get\+Column\+Operation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 
 
 Definition at line 118 of file Argument.\+class.\+php.
 
+\hypertarget{classArgument_a6e75159f2fad478ff488bf9cff5ba139}{}\label{classArgument_a6e75159f2fad478ff488bf9cff5ba139} 
 \index{Argument@{Argument}!get\+Error\+Message@{get\+Error\+Message}}
 \index{get\+Error\+Message@{get\+Error\+Message}!Argument@{Argument}}
-\subsubsection[{\texorpdfstring{get\+Error\+Message()}{getErrorMessage()}}]{\setlength{\rightskip}{0pt plus 5cm}Argument\+::get\+Error\+Message (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classArgument_a6e75159f2fad478ff488bf9cff5ba139}{}\label{classArgument_a6e75159f2fad478ff488bf9cff5ba139}
+\subsubsection{\texorpdfstring{get\+Error\+Message()}{getErrorMessage()}}
+{\footnotesize\ttfamily Argument\+::get\+Error\+Message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 
 
 Definition at line 280 of file Argument.\+class.\+php.
 
+\hypertarget{classArgument_a02ee73fa63dd2cd754412f176dae54da}{}\label{classArgument_a02ee73fa63dd2cd754412f176dae54da} 
 \index{Argument@{Argument}!get\+Escaped\+Value@{get\+Escaped\+Value}}
 \index{get\+Escaped\+Value@{get\+Escaped\+Value}!Argument@{Argument}}
-\subsubsection[{\texorpdfstring{get\+Escaped\+Value()}{getEscapedValue()}}]{\setlength{\rightskip}{0pt plus 5cm}Argument\+::get\+Escaped\+Value (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classArgument_a02ee73fa63dd2cd754412f176dae54da}{}\label{classArgument_a02ee73fa63dd2cd754412f176dae54da}
+\subsubsection{\texorpdfstring{get\+Escaped\+Value()}{getEscapedValue()}}
+{\footnotesize\ttfamily Argument\+::get\+Escaped\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 
 
 Definition at line 123 of file Argument.\+class.\+php.
 
+\hypertarget{classArgument_a592176260424f46cf1b83bf2eb14014e}{}\label{classArgument_a592176260424f46cf1b83bf2eb14014e} 
 \index{Argument@{Argument}!get\+Name@{get\+Name}}
 \index{get\+Name@{get\+Name}!Argument@{Argument}}
-\subsubsection[{\texorpdfstring{get\+Name()}{getName()}}]{\setlength{\rightskip}{0pt plus 5cm}Argument\+::get\+Name (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classArgument_a592176260424f46cf1b83bf2eb14014e}{}\label{classArgument_a592176260424f46cf1b83bf2eb14014e}
+\subsubsection{\texorpdfstring{get\+Name()}{getName()}}
+{\footnotesize\ttfamily Argument\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 
 
 Definition at line 98 of file Argument.\+class.\+php.
 
+\hypertarget{classArgument_a54140067b590d8ce8dcd7d09f56519cd}{}\label{classArgument_a54140067b590d8ce8dcd7d09f56519cd} 
 \index{Argument@{Argument}!get\+Pure\+Value@{get\+Pure\+Value}}
 \index{get\+Pure\+Value@{get\+Pure\+Value}!Argument@{Argument}}
-\subsubsection[{\texorpdfstring{get\+Pure\+Value()}{getPureValue()}}]{\setlength{\rightskip}{0pt plus 5cm}Argument\+::get\+Pure\+Value (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classArgument_a54140067b590d8ce8dcd7d09f56519cd}{}\label{classArgument_a54140067b590d8ce8dcd7d09f56519cd}
+\subsubsection{\texorpdfstring{get\+Pure\+Value()}{getPureValue()}}
+{\footnotesize\ttfamily Argument\+::get\+Pure\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 
 
 Definition at line 113 of file Argument.\+class.\+php.
 
+\hypertarget{classArgument_a62ea3d6e7689c8a40f6f9722e76fa7a8}{}\label{classArgument_a62ea3d6e7689c8a40f6f9722e76fa7a8} 
 \index{Argument@{Argument}!get\+Type@{get\+Type}}
 \index{get\+Type@{get\+Type}!Argument@{Argument}}
-\subsubsection[{\texorpdfstring{get\+Type()}{getType()}}]{\setlength{\rightskip}{0pt plus 5cm}Argument\+::get\+Type (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classArgument_a62ea3d6e7689c8a40f6f9722e76fa7a8}{}\label{classArgument_a62ea3d6e7689c8a40f6f9722e76fa7a8}
+\subsubsection{\texorpdfstring{get\+Type()}{getType()}}
+{\footnotesize\ttfamily Argument\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 
 
 Definition at line 74 of file Argument.\+class.\+php.
 
+\hypertarget{classArgument_a45a70c173c816e9cf2c7c5f396a92a6f}{}\label{classArgument_a45a70c173c816e9cf2c7c5f396a92a6f} 
 \index{Argument@{Argument}!get\+Unescaped\+Value@{get\+Unescaped\+Value}}
 \index{get\+Unescaped\+Value@{get\+Unescaped\+Value}!Argument@{Argument}}
-\subsubsection[{\texorpdfstring{get\+Unescaped\+Value()}{getUnescapedValue()}}]{\setlength{\rightskip}{0pt plus 5cm}Argument\+::get\+Unescaped\+Value (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classArgument_a45a70c173c816e9cf2c7c5f396a92a6f}{}\label{classArgument_a45a70c173c816e9cf2c7c5f396a92a6f}
+\subsubsection{\texorpdfstring{get\+Unescaped\+Value()}{getUnescapedValue()}}
+{\footnotesize\ttfamily Argument\+::get\+Unescaped\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 
 
 Definition at line 128 of file Argument.\+class.\+php.
 
+\hypertarget{classArgument_a53b70d0071096047437015737d5d7728}{}\label{classArgument_a53b70d0071096047437015737d5d7728} 
 \index{Argument@{Argument}!get\+Value@{get\+Value}}
 \index{get\+Value@{get\+Value}!Argument@{Argument}}
-\subsubsection[{\texorpdfstring{get\+Value()}{getValue()}}]{\setlength{\rightskip}{0pt plus 5cm}Argument\+::get\+Value (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classArgument_a53b70d0071096047437015737d5d7728}{}\label{classArgument_a53b70d0071096047437015737d5d7728}
+\subsubsection{\texorpdfstring{get\+Value()}{getValue()}}
+{\footnotesize\ttfamily Argument\+::get\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 
 
 Definition at line 103 of file Argument.\+class.\+php.
 
+\hypertarget{classArgument_aced37db9a6cf1ec57e8acdea23797927}{}\label{classArgument_aced37db9a6cf1ec57e8acdea23797927} 
 \index{Argument@{Argument}!is\+Column\+Name@{is\+Column\+Name}}
 \index{is\+Column\+Name@{is\+Column\+Name}!Argument@{Argument}}
-\subsubsection[{\texorpdfstring{is\+Column\+Name()}{isColumnName()}}]{\setlength{\rightskip}{0pt plus 5cm}Argument\+::is\+Column\+Name (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classArgument_aced37db9a6cf1ec57e8acdea23797927}{}\label{classArgument_aced37db9a6cf1ec57e8acdea23797927}
+\subsubsection{\texorpdfstring{is\+Column\+Name()}{isColumnName()}}
+{\footnotesize\ttfamily Argument\+::is\+Column\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 
 
 Definition at line 261 of file Argument.\+class.\+php.
 
+\hypertarget{classArgument_a3e07b6c495166e96aea4e4f90bb0fe53}{}\label{classArgument_a3e07b6c495166e96aea4e4f90bb0fe53} 
 \index{Argument@{Argument}!is\+Valid@{is\+Valid}}
 \index{is\+Valid@{is\+Valid}!Argument@{Argument}}
-\subsubsection[{\texorpdfstring{is\+Valid()}{isValid()}}]{\setlength{\rightskip}{0pt plus 5cm}Argument\+::is\+Valid (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classArgument_a3e07b6c495166e96aea4e4f90bb0fe53}{}\label{classArgument_a3e07b6c495166e96aea4e4f90bb0fe53}
+\subsubsection{\texorpdfstring{is\+Valid()}{isValid()}}
+{\footnotesize\ttfamily Argument\+::is\+Valid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 
 
 Definition at line 256 of file Argument.\+class.\+php.
 
+\hypertarget{classArgument_a3e737e0b4af5559f56b35c7c1b1b4f2a}{}\label{classArgument_a3e737e0b4af5559f56b35c7c1b1b4f2a} 
 \index{Argument@{Argument}!set\+Column\+Operation@{set\+Column\+Operation}}
 \index{set\+Column\+Operation@{set\+Column\+Operation}!Argument@{Argument}}
-\subsubsection[{\texorpdfstring{set\+Column\+Operation(\$operation)}{setColumnOperation($operation)}}]{\setlength{\rightskip}{0pt plus 5cm}Argument\+::set\+Column\+Operation (
-\begin{DoxyParamCaption}
-\item[{}]{\$operation}
-\end{DoxyParamCaption}
-)}\hypertarget{classArgument_a3e737e0b4af5559f56b35c7c1b1b4f2a}{}\label{classArgument_a3e737e0b4af5559f56b35c7c1b1b4f2a}
+\subsubsection{\texorpdfstring{set\+Column\+Operation()}{setColumnOperation()}}
+{\footnotesize\ttfamily Argument\+::set\+Column\+Operation (\begin{DoxyParamCaption}\item[{}]{\$operation }\end{DoxyParamCaption})}
+
 
 
 Definition at line 93 of file Argument.\+class.\+php.
 
+\hypertarget{classArgument_a849c6abe0d16f2fdf21c38db6844bd9d}{}\label{classArgument_a849c6abe0d16f2fdf21c38db6844bd9d} 
 \index{Argument@{Argument}!set\+Column\+Type@{set\+Column\+Type}}
 \index{set\+Column\+Type@{set\+Column\+Type}!Argument@{Argument}}
-\subsubsection[{\texorpdfstring{set\+Column\+Type(\$value)}{setColumnType($value)}}]{\setlength{\rightskip}{0pt plus 5cm}Argument\+::set\+Column\+Type (
-\begin{DoxyParamCaption}
-\item[{}]{\$value}
-\end{DoxyParamCaption}
-)}\hypertarget{classArgument_a849c6abe0d16f2fdf21c38db6844bd9d}{}\label{classArgument_a849c6abe0d16f2fdf21c38db6844bd9d}
+\subsubsection{\texorpdfstring{set\+Column\+Type()}{setColumnType()}}
+{\footnotesize\ttfamily Argument\+::set\+Column\+Type (\begin{DoxyParamCaption}\item[{}]{\$value }\end{DoxyParamCaption})}
+
 
 
 Definition at line 88 of file Argument.\+class.\+php.
 
+\hypertarget{classArgument_a6fa3a8b473d05a02c7746a143e51ef81}{}\label{classArgument_a6fa3a8b473d05a02c7746a143e51ef81} 
 \index{Argument@{Argument}!to\+String@{to\+String}}
 \index{to\+String@{to\+String}!Argument@{Argument}}
-\subsubsection[{\texorpdfstring{to\+String(\$value)}{toString($value)}}]{\setlength{\rightskip}{0pt plus 5cm}Argument\+::to\+String (
-\begin{DoxyParamCaption}
-\item[{}]{\$value}
-\end{DoxyParamCaption}
-)}\hypertarget{classArgument_a6fa3a8b473d05a02c7746a143e51ef81}{}\label{classArgument_a6fa3a8b473d05a02c7746a143e51ef81}
+\subsubsection{\texorpdfstring{to\+String()}{toString()}}
+{\footnotesize\ttfamily Argument\+::to\+String (\begin{DoxyParamCaption}\item[{}]{\$value }\end{DoxyParamCaption})}
+
 mixed value to string 
 \begin{DoxyParams}[1]{Parameters}
 mixed & {\em \$value} & \\
@@ -356,13 +334,12 @@ string
 
 Definition at line 142 of file Argument.\+class.\+php.
 
+\hypertarget{classArgument_aaf7f8b67195ed2e1b404339d107d6a1c}{}\label{classArgument_aaf7f8b67195ed2e1b404339d107d6a1c} 
 \index{Argument@{Argument}!utf8\+Replacer@{utf8\+Replacer}}
 \index{utf8\+Replacer@{utf8\+Replacer}!Argument@{Argument}}
-\subsubsection[{\texorpdfstring{utf8\+Replacer(\$captures)}{utf8Replacer($captures)}}]{\setlength{\rightskip}{0pt plus 5cm}Argument\+::utf8\+Replacer (
-\begin{DoxyParamCaption}
-\item[{}]{\$captures}
-\end{DoxyParamCaption}
-)}\hypertarget{classArgument_aaf7f8b67195ed2e1b404339d107d6a1c}{}\label{classArgument_aaf7f8b67195ed2e1b404339d107d6a1c}
+\subsubsection{\texorpdfstring{utf8\+Replacer()}{utf8Replacer()}}
+{\footnotesize\ttfamily Argument\+::utf8\+Replacer (\begin{DoxyParamCaption}\item[{}]{\$captures }\end{DoxyParamCaption})}
+
 
 
 Definition at line 233 of file Argument.\+class.\+php.
@@ -370,58 +347,82 @@ Definition at line 233 of file Argument.\+class.\+php.
 
 
 \subsection{Member Data Documentation}
+\hypertarget{classArgument_aba96b050a81b62ccf10a78638d208353}{}\label{classArgument_aba96b050a81b62ccf10a78638d208353} 
 \index{Argument@{Argument}!\$\+\_\+value@{\$\+\_\+value}}
 \index{\$\+\_\+value@{\$\+\_\+value}!Argument@{Argument}}
-\subsubsection[{\texorpdfstring{\$\+\_\+value}{$_value}}]{\setlength{\rightskip}{0pt plus 5cm}Argument\+::\$\+\_\+value}\hypertarget{classArgument_aba96b050a81b62ccf10a78638d208353}{}\label{classArgument_aba96b050a81b62ccf10a78638d208353}
+\subsubsection{\texorpdfstring{\$\+\_\+value}{$\_value}}
+{\footnotesize\ttfamily Argument\+::\$\+\_\+value}
+
 
 
 Definition at line 58 of file Argument.\+class.\+php.
 
+\hypertarget{classArgument_a366cb3ac7d44ed1037c96ca2bfad6be4}{}\label{classArgument_a366cb3ac7d44ed1037c96ca2bfad6be4} 
 \index{Argument@{Argument}!\$column\+\_\+operation@{\$column\+\_\+operation}}
 \index{\$column\+\_\+operation@{\$column\+\_\+operation}!Argument@{Argument}}
-\subsubsection[{\texorpdfstring{\$column\+\_\+operation}{$column_operation}}]{\setlength{\rightskip}{0pt plus 5cm}Argument\+::\$column\+\_\+operation}\hypertarget{classArgument_a366cb3ac7d44ed1037c96ca2bfad6be4}{}\label{classArgument_a366cb3ac7d44ed1037c96ca2bfad6be4}
+\subsubsection{\texorpdfstring{\$column\+\_\+operation}{$column\_operation}}
+{\footnotesize\ttfamily Argument\+::\$column\+\_\+operation}
+
 column operation 
 
 Definition at line 46 of file Argument.\+class.\+php.
 
+\hypertarget{classArgument_ad0af83b11507626a9c95fd188e60b592}{}\label{classArgument_ad0af83b11507626a9c95fd188e60b592} 
 \index{Argument@{Argument}!\$error\+Message@{\$error\+Message}}
 \index{\$error\+Message@{\$error\+Message}!Argument@{Argument}}
-\subsubsection[{\texorpdfstring{\$error\+Message}{$errorMessage}}]{\setlength{\rightskip}{0pt plus 5cm}Argument\+::\$error\+Message}\hypertarget{classArgument_ad0af83b11507626a9c95fd188e60b592}{}\label{classArgument_ad0af83b11507626a9c95fd188e60b592}
+\subsubsection{\texorpdfstring{\$error\+Message}{$errorMessage}}
+{\footnotesize\ttfamily Argument\+::\$error\+Message}
+
 
 
 Definition at line 41 of file Argument.\+class.\+php.
 
+\hypertarget{classArgument_af1a5d4055fd3e16bea7951843a3bdd92}{}\label{classArgument_af1a5d4055fd3e16bea7951843a3bdd92} 
 \index{Argument@{Argument}!\$is\+Valid@{\$is\+Valid}}
 \index{\$is\+Valid@{\$is\+Valid}!Argument@{Argument}}
-\subsubsection[{\texorpdfstring{\$is\+Valid}{$isValid}}]{\setlength{\rightskip}{0pt plus 5cm}Argument\+::\$is\+Valid}\hypertarget{classArgument_af1a5d4055fd3e16bea7951843a3bdd92}{}\label{classArgument_af1a5d4055fd3e16bea7951843a3bdd92}
+\subsubsection{\texorpdfstring{\$is\+Valid}{$isValid}}
+{\footnotesize\ttfamily Argument\+::\$is\+Valid}
+
 
 
 Definition at line 35 of file Argument.\+class.\+php.
 
+\hypertarget{classArgument_ab37a45cb92464255505b2f4f35909da6}{}\label{classArgument_ab37a45cb92464255505b2f4f35909da6} 
 \index{Argument@{Argument}!\$name@{\$name}}
 \index{\$name@{\$name}!Argument@{Argument}}
-\subsubsection[{\texorpdfstring{\$name}{$name}}]{\setlength{\rightskip}{0pt plus 5cm}Argument\+::\$name}\hypertarget{classArgument_ab37a45cb92464255505b2f4f35909da6}{}\label{classArgument_ab37a45cb92464255505b2f4f35909da6}
+\subsubsection{\texorpdfstring{\$name}{$name}}
+{\footnotesize\ttfamily Argument\+::\$name}
+
 
 
 Definition at line 23 of file Argument.\+class.\+php.
 
+\hypertarget{classArgument_a7a2272bc3d12787f80143fbea01698f4}{}\label{classArgument_a7a2272bc3d12787f80143fbea01698f4} 
 \index{Argument@{Argument}!\$type@{\$type}}
 \index{\$type@{\$type}!Argument@{Argument}}
-\subsubsection[{\texorpdfstring{\$type}{$type}}]{\setlength{\rightskip}{0pt plus 5cm}Argument\+::\$type}\hypertarget{classArgument_a7a2272bc3d12787f80143fbea01698f4}{}\label{classArgument_a7a2272bc3d12787f80143fbea01698f4}
+\subsubsection{\texorpdfstring{\$type}{$type}}
+{\footnotesize\ttfamily Argument\+::\$type}
+
 
 
 Definition at line 29 of file Argument.\+class.\+php.
 
+\hypertarget{classArgument_a3f8f20477043da002ba9d48ede482baf}{}\label{classArgument_a3f8f20477043da002ba9d48ede482baf} 
 \index{Argument@{Argument}!\$uses\+\_\+default\+\_\+value@{\$uses\+\_\+default\+\_\+value}}
 \index{\$uses\+\_\+default\+\_\+value@{\$uses\+\_\+default\+\_\+value}!Argument@{Argument}}
-\subsubsection[{\texorpdfstring{\$uses\+\_\+default\+\_\+value}{$uses_default_value}}]{\setlength{\rightskip}{0pt plus 5cm}Argument\+::\$uses\+\_\+default\+\_\+value}\hypertarget{classArgument_a3f8f20477043da002ba9d48ede482baf}{}\label{classArgument_a3f8f20477043da002ba9d48ede482baf}
+\subsubsection{\texorpdfstring{\$uses\+\_\+default\+\_\+value}{$uses\_default\_value}}
+{\footnotesize\ttfamily Argument\+::\$uses\+\_\+default\+\_\+value}
+
 
 
 Definition at line 52 of file Argument.\+class.\+php.
 
+\hypertarget{classArgument_a762eb8881d615f61189bba09b9bd7300}{}\label{classArgument_a762eb8881d615f61189bba09b9bd7300} 
 \index{Argument@{Argument}!\$value@{\$value}}
 \index{\$value@{\$value}!Argument@{Argument}}
-\subsubsection[{\texorpdfstring{\$value}{$value}}]{\setlength{\rightskip}{0pt plus 5cm}Argument\+::\$value}\hypertarget{classArgument_a762eb8881d615f61189bba09b9bd7300}{}\label{classArgument_a762eb8881d615f61189bba09b9bd7300}
+\subsubsection{\texorpdfstring{\$value}{$value}}
+{\footnotesize\ttfamily Argument\+::\$value}
+
 
 
 Definition at line 17 of file Argument.\+class.\+php.

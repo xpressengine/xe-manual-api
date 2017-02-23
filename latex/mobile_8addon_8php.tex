@@ -2,20 +2,20 @@
 \label{mobile_8addon_8php}\index{addons/mobile/mobile.\+addon.\+php@{addons/mobile/mobile.\+addon.\+php}}
 
 
-\hyperlink{classMobile}{Mobile} \hyperlink{namespaceXE}{XE} add-\/on.  
+\hyperlink{classMobile}{Mobile} XE add-\/on.  
 
 
 \subsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
-if(\hyperlink{classContext_a90ce25d65fe6c9778421cbb36ab3def5}{Context\+::get}(\textquotesingle{}\hyperlink{classmodule}{module}\textquotesingle{})== \textquotesingle{}\hyperlink{classadmin}{admin}\textquotesingle{}) \hyperlink{mobile_8addon_8php_a13d720e0d3597438cb76873850ce4b63}{if} (\$called\+\_\+position!= \textquotesingle{}before\+\_\+module\+\_\+proc\textquotesingle{}\&\&\$called\+\_\+position!= \textquotesingle{}after\+\_\+module\+\_\+proc\textquotesingle{})
+if(\hyperlink{classContext_a90ce25d65fe6c9778421cbb36ab3def5}{Context\+::get}(\textquotesingle{}\hyperlink{classmodule}{module}\textquotesingle{})==\textquotesingle{}\hyperlink{classadmin}{admin}\textquotesingle{}) \hyperlink{mobile_8addon_8php_a0a3555ef5b81d612224aa52162bb40c6}{if} ( \$called\+\_\+position !=\textquotesingle{}before\+\_\+module\+\_\+proc\textquotesingle{} \&\&\$called\+\_\+position !=\textquotesingle{}after\+\_\+module\+\_\+proc\textquotesingle{})
 \item 
-\hyperlink{menu_2tpl_2js_2jquery_8jstree_8js_acba95bef569cfaee32c4ed0212b2bb92}{if}(!\hyperlink{classmobileXE_a462a4900af63aa2bfbcea2168afbe876}{mobile\+X\+E\+::get\+Browser\+Type}()) \hyperlink{mobile_8addon_8php_a2e1472c6f1bb5b341e95a632164904d0}{\$o\+Mobile} = \&\hyperlink{classmobileXE_a11db662f7f05a929e2559ee6d42fca2c}{mobile\+X\+E\+::get\+Instance}()
+\hyperlink{config_8inc_8php_a73b98c0274e28635a594091f9ca43cb4}{if}(!\hyperlink{classmobileXE_a462a4900af63aa2bfbcea2168afbe876}{mobile\+X\+E\+::get\+Browser\+Type}()) \hyperlink{mobile_8addon_8php_a2e1472c6f1bb5b341e95a632164904d0}{\$o\+Mobile} = \&\hyperlink{classmobileXE_a11db662f7f05a929e2559ee6d42fca2c}{mobile\+X\+E\+::get\+Instance}()
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-\hyperlink{classMobile}{Mobile} \hyperlink{namespaceXE}{XE} add-\/on. 
+\hyperlink{classMobile}{Mobile} XE add-\/on. 
 
 \begin{DoxyAuthor}{Author}
 N\+A\+V\+ER (\href{mailto:developers@xpressengine.com}{\tt developers@xpressengine.\+com}) If a mobile connection is made (see the header information), display contents with W\+AP tags
@@ -27,16 +27,22 @@ before\+\_\+module\+\_\+proc $>$ call when changing general settings for mobile
 after\+\_\+module\+\_\+proc $>$ display mobile content \hyperlink{classCondition}{Condition} 
 
 \subsection{Variable Documentation}
+\hypertarget{mobile_8addon_8php_a2e1472c6f1bb5b341e95a632164904d0}{}\label{mobile_8addon_8php_a2e1472c6f1bb5b341e95a632164904d0} 
 \index{mobile.\+addon.\+php@{mobile.\+addon.\+php}!\$o\+Mobile@{\$o\+Mobile}}
 \index{\$o\+Mobile@{\$o\+Mobile}!mobile.\+addon.\+php@{mobile.\+addon.\+php}}
-\subsubsection[{\texorpdfstring{\$o\+Mobile}{$oMobile}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} (!{\bf mobile\+X\+E\+::get\+Browser\+Type}()) \$o\+Mobile = \&{\bf mobile\+X\+E\+::get\+Instance}()}\hypertarget{mobile_8addon_8php_a2e1472c6f1bb5b341e95a632164904d0}{}\label{mobile_8addon_8php_a2e1472c6f1bb5b341e95a632164904d0}
+\subsubsection{\texorpdfstring{\$o\+Mobile}{$oMobile}}
+{\footnotesize\ttfamily \hyperlink{config_8inc_8php_a73b98c0274e28635a594091f9ca43cb4}{if} (!\hyperlink{classmobileXE_a462a4900af63aa2bfbcea2168afbe876}{mobile\+X\+E\+::get\+Browser\+Type}()) \$o\+Mobile = \&\hyperlink{classmobileXE_a11db662f7f05a929e2559ee6d42fca2c}{mobile\+X\+E\+::get\+Instance}()}
+
 
 
 Definition at line 38 of file mobile.\+addon.\+php.
 
+\hypertarget{mobile_8addon_8php_a0a3555ef5b81d612224aa52162bb40c6}{}\label{mobile_8addon_8php_a0a3555ef5b81d612224aa52162bb40c6} 
 \index{mobile.\+addon.\+php@{mobile.\+addon.\+php}!if@{if}}
 \index{if@{if}!mobile.\+addon.\+php@{mobile.\+addon.\+php}}
-\subsubsection[{\texorpdfstring{if}{if}}]{\setlength{\rightskip}{0pt plus 5cm}if ({\bf Context\+::get}(\textquotesingle{}{\bf module}\textquotesingle{})== \textquotesingle{}{\bf admin}\textquotesingle{}) if(\$called\+\_\+position!= \textquotesingle{}before\+\_\+module\+\_\+proc\textquotesingle{}\&\&\$called\+\_\+position!= \textquotesingle{}after\+\_\+module\+\_\+proc\textquotesingle{})}\hypertarget{mobile_8addon_8php_a13d720e0d3597438cb76873850ce4b63}{}\label{mobile_8addon_8php_a13d720e0d3597438cb76873850ce4b63}
+\subsubsection{\texorpdfstring{if}{if}}
+{\footnotesize\ttfamily if (\hyperlink{classContext_a90ce25d65fe6c9778421cbb36ab3def5}{Context\+::get}( \textquotesingle{}\hyperlink{classmodule}{module}\textquotesingle{})==\textquotesingle{}\hyperlink{classadmin}{admin}\textquotesingle{}) if(\$called\+\_\+position !=\textquotesingle{}before\+\_\+module\+\_\+proc\textquotesingle{} \&\& \$called\+\_\+position !=\textquotesingle{}after\+\_\+module\+\_\+proc\textquotesingle{})}
+
 
 
 Definition at line 27 of file mobile.\+addon.\+php.
