@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['readme_2emd',['README.md',['../doxygen_2README_8md.html',1,'']]],
-  ['readme_2emd',['README.md',['../xe-manual-api_2README_8md.html',1,'']]],
-  ['readme_2emd',['README.md',['../README_8md.html',1,'']]],
+  ['readme_2emd',['README.md',['../doxygen_2README_8md.html',1,'(Global Namespace)'],['../README_8md.html',1,'(Global Namespace)'],['../xe-manual-api_2README_8md.html',1,'(Global Namespace)']]],
   ['request_2ephp',['Request.php',['../Request_8php.html',1,'']]],
   ['request2_2ephp',['Request2.php',['../Request2_8php.html',1,'']]],
   ['resize_5fimage_2eaddon_2ephp',['resize_image.addon.php',['../resize__image_8addon_8php.html',1,'']]],
