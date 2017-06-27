@@ -1,45 +1,48 @@
-\hypertarget{classQueryParser}{}\section{Query\+Parser Class Reference}
-\label{classQueryParser}\index{Query\+Parser@{Query\+Parser}}
+\hypertarget{classQueryParser}{\section{Query\-Parser Class Reference}
+\label{classQueryParser}\index{Query\-Parser@{Query\-Parser}}
+}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classQueryParser_a4f47d1fe660e953922e2a2e086e9271f}{Query\+Parser} (\$query=N\+U\+LL, \$is\+Sub\+Query=F\+A\+L\+SE)
+\hyperlink{classQueryParser_a4f47d1fe660e953922e2a2e086e9271f}{Query\-Parser} (\$query=N\-U\-L\-L, \$is\-Sub\-Query=F\-A\-L\-S\-E)
 \item 
-\hyperlink{classQueryParser_a4d801af44f4929b30bebfefb81e6ec04}{get\+Table\+Info} (\$query\+\_\+id, \$table\+\_\+name)
+\hyperlink{classQueryParser_a4d801af44f4929b30bebfefb81e6ec04}{get\-Table\-Info} (\$query\-\_\-id, \$table\-\_\-name)
 \item 
-\hyperlink{classQueryParser_aba87968bb8c4ad2167e43fc1ba9ad448}{to\+String} ()
+\hyperlink{classQueryParser_aba87968bb8c4ad2167e43fc1ba9ad448}{to\-String} ()
 \end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classQueryParser_a802feca31cc80049e9d813915280ac85}{\$query\+Tag}
+\hyperlink{classQueryParser_a802feca31cc80049e9d813915280ac85}{\$query\-Tag}
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 
 
-Definition at line 16 of file Query\+Parser.\+class.\+php.
+Definition at line 16 of file Query\-Parser.\-class.\-php.
 
 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classQueryParser_a4d801af44f4929b30bebfefb81e6ec04}\label{classQueryParser_a4d801af44f4929b30bebfefb81e6ec04}} 
-\index{Query\+Parser@{Query\+Parser}!get\+Table\+Info@{get\+Table\+Info}}
-\index{get\+Table\+Info@{get\+Table\+Info}!Query\+Parser@{Query\+Parser}}
-\subsubsection{\texorpdfstring{get\+Table\+Info()}{getTableInfo()}}
-{\footnotesize\ttfamily Query\+Parser\+::get\+Table\+Info (\begin{DoxyParamCaption}\item[{}]{\$query\+\_\+id,  }\item[{}]{\$table\+\_\+name }\end{DoxyParamCaption})}
-
+\hypertarget{classQueryParser_a4d801af44f4929b30bebfefb81e6ec04}{\index{Query\-Parser@{Query\-Parser}!get\-Table\-Info@{get\-Table\-Info}}
+\index{get\-Table\-Info@{get\-Table\-Info}!QueryParser@{Query\-Parser}}
+\subsubsection[{get\-Table\-Info}]{\setlength{\rightskip}{0pt plus 5cm}Query\-Parser\-::get\-Table\-Info (
+\begin{DoxyParamCaption}
+\item[{}]{\$query\-\_\-id, }
+\item[{}]{\$table\-\_\-name}
+\end{DoxyParamCaption}
+)}}\label{classQueryParser_a4d801af44f4929b30bebfefb81e6ec04}
 Returns table information
 
-Used for finding column type info (string/numeric) ~\newline
- Obtains the table info from XE\textquotesingle{}s X\+ML schema files
+Used for finding column type info (string/numeric) \par
+ Obtains the table info from X\-E's X\-M\-L schema files
 
 
 \begin{DoxyParams}[1]{Parameters}
-object & {\em \$query\+\_\+id} & \\
+object & {\em \$query\-\_\-id} & \\
 \hline
-bool & {\em \$table\+\_\+name} & \\
+bool & {\em \$table\-\_\-name} & \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -47,21 +50,23 @@ array
 \end{DoxyReturn}
 
 
-Definition at line 51 of file Query\+Parser.\+class.\+php.
+Definition at line 51 of file Query\-Parser.\-class.\-php.
 
-\mbox{\Hypertarget{classQueryParser_a4f47d1fe660e953922e2a2e086e9271f}\label{classQueryParser_a4f47d1fe660e953922e2a2e086e9271f}} 
-\index{Query\+Parser@{Query\+Parser}!Query\+Parser@{Query\+Parser}}
-\index{Query\+Parser@{Query\+Parser}!Query\+Parser@{Query\+Parser}}
-\subsubsection{\texorpdfstring{Query\+Parser()}{QueryParser()}}
-{\footnotesize\ttfamily Query\+Parser\+::\+Query\+Parser (\begin{DoxyParamCaption}\item[{}]{\$query = {\ttfamily NULL},  }\item[{}]{\$is\+Sub\+Query = {\ttfamily FALSE} }\end{DoxyParamCaption})}
-
+\hypertarget{classQueryParser_a4f47d1fe660e953922e2a2e086e9271f}{\index{Query\-Parser@{Query\-Parser}!Query\-Parser@{Query\-Parser}}
+\index{Query\-Parser@{Query\-Parser}!QueryParser@{Query\-Parser}}
+\subsubsection[{Query\-Parser}]{\setlength{\rightskip}{0pt plus 5cm}Query\-Parser\-::\-Query\-Parser (
+\begin{DoxyParamCaption}
+\item[{}]{\$query = {\ttfamily NULL}, }
+\item[{}]{\$is\-Sub\-Query = {\ttfamily FALSE}}
+\end{DoxyParamCaption}
+)}}\label{classQueryParser_a4f47d1fe660e953922e2a2e086e9271f}
 Constructor
 
 
 \begin{DoxyParams}[1]{Parameters}
-object & {\em \$query} & X\+ML object obtained after reading the X\+ML \hyperlink{classQuery}{Query} file \\
+object & {\em \$query} & X\-M\-L object obtained after reading the X\-M\-L \hyperlink{classQuery}{Query} file \\
 \hline
-bool & {\em \$is\+Sub\+Query} & \\
+bool & {\em \$is\-Sub\-Query} & \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -69,14 +74,15 @@ void
 \end{DoxyReturn}
 
 
-Definition at line 33 of file Query\+Parser.\+class.\+php.
+Definition at line 33 of file Query\-Parser.\-class.\-php.
 
-\mbox{\Hypertarget{classQueryParser_aba87968bb8c4ad2167e43fc1ba9ad448}\label{classQueryParser_aba87968bb8c4ad2167e43fc1ba9ad448}} 
-\index{Query\+Parser@{Query\+Parser}!to\+String@{to\+String}}
-\index{to\+String@{to\+String}!Query\+Parser@{Query\+Parser}}
-\subsubsection{\texorpdfstring{to\+String()}{toString()}}
-{\footnotesize\ttfamily Query\+Parser\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
+\hypertarget{classQueryParser_aba87968bb8c4ad2167e43fc1ba9ad448}{\index{Query\-Parser@{Query\-Parser}!to\-String@{to\-String}}
+\index{to\-String@{to\-String}!QueryParser@{Query\-Parser}}
+\subsubsection[{to\-String}]{\setlength{\rightskip}{0pt plus 5cm}Query\-Parser\-::to\-String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classQueryParser_aba87968bb8c4ad2167e43fc1ba9ad448}
 Returns the contents for the query cache file
 
 \begin{DoxyReturn}{Returns}
@@ -84,23 +90,20 @@ string
 \end{DoxyReturn}
 
 
-Definition at line 118 of file Query\+Parser.\+class.\+php.
+Definition at line 118 of file Query\-Parser.\-class.\-php.
 
 
 
 \subsection{Member Data Documentation}
-\mbox{\Hypertarget{classQueryParser_a802feca31cc80049e9d813915280ac85}\label{classQueryParser_a802feca31cc80049e9d813915280ac85}} 
-\index{Query\+Parser@{Query\+Parser}!\$query\+Tag@{\$query\+Tag}}
-\index{\$query\+Tag@{\$query\+Tag}!Query\+Parser@{Query\+Parser}}
-\subsubsection{\texorpdfstring{\$query\+Tag}{$queryTag}}
-{\footnotesize\ttfamily Query\+Parser\+::\$query\+Tag}
+\hypertarget{classQueryParser_a802feca31cc80049e9d813915280ac85}{\index{Query\-Parser@{Query\-Parser}!\$query\-Tag@{\$query\-Tag}}
+\index{\$query\-Tag@{\$query\-Tag}!QueryParser@{Query\-Parser}}
+\subsubsection[{\$query\-Tag}]{\setlength{\rightskip}{0pt plus 5cm}Query\-Parser\-::\$query\-Tag}}\label{classQueryParser_a802feca31cc80049e9d813915280ac85}
+
+
+Definition at line 24 of file Query\-Parser.\-class.\-php.
 
 
 
-Definition at line 24 of file Query\+Parser.\+class.\+php.
-
-
-
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
 \item 
-classes/xml/xmlquery/\hyperlink{QueryParser_8class_8php}{Query\+Parser.\+class.\+php}\end{DoxyCompactItemize}
+classes/xml/xmlquery/\hyperlink{QueryParser_8class_8php}{Query\-Parser.\-class.\-php}\end{DoxyCompactItemize}

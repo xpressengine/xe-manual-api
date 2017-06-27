@@ -1,80 +1,65 @@
-\hypertarget{example_8php}{}\section{libs/idna\+\_\+convert/example.php File Reference}
-\label{example_8php}\index{libs/idna\+\_\+convert/example.\+php@{libs/idna\+\_\+convert/example.\+php}}
+\hypertarget{example_8php}{\section{libs/idna\-\_\-convert/example.php File Reference}
+\label{example_8php}\index{libs/idna\-\_\-convert/example.\-php@{libs/idna\-\_\-convert/example.\-php}}
+}
 \subsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{example_8php_af709b460501204e2ec7e34e96e7de576}{\$encoded} = \$decoded = \$add = \textquotesingle{}\textquotesingle{}
+\hyperlink{example_8php_af709b460501204e2ec7e34e96e7de576}{\$encoded} = \$decoded = \$add = ''
 \item 
-\hyperlink{example_8php_aaa64132973e10962c52265cfbee1cb9c}{\$idn\+\_\+version} = isset(\$\+\_\+\+R\+E\+Q\+U\+E\+ST\mbox{[}\textquotesingle{}idn\+\_\+version\textquotesingle{}\mbox{]}) \&\& \$\+\_\+\+R\+E\+Q\+U\+E\+ST\mbox{[}\textquotesingle{}idn\+\_\+version\textquotesingle{}\mbox{]} == 2003 ? 2003 \+: 2008
+\hyperlink{example_8php_aaa64132973e10962c52265cfbee1cb9c}{\$idn\-\_\-version} = isset(\$\-\_\-\-R\-E\-Q\-U\-E\-S\-T\mbox{[}'idn\-\_\-version'\mbox{]}) \&\& \$\-\_\-\-R\-E\-Q\-U\-E\-S\-T\mbox{[}'idn\-\_\-version'\mbox{]} == 2003 ? 2003 \-: 2008
 \item 
-\hyperlink{example_8php_aa45ac61e5ada434ea385befcd1aea16d}{\$\+I\+DN} = new \hyperlink{classidna__convert}{idna\+\_\+convert}(array(\textquotesingle{}idn\+\_\+version\textquotesingle{} =$>$ \$idn\+\_\+version))
+\hyperlink{example_8php_aa45ac61e5ada434ea385befcd1aea16d}{\$\-I\-D\-N} = new \hyperlink{classidna__convert}{idna\-\_\-convert}(array('idn\-\_\-version' =$>$ \$idn\-\_\-version))
 \item 
-\hyperlink{example_8php_ab3c48763ff07220eb755d181fa8916cb}{\$version\+\_\+select} = \textquotesingle{}$<$select size=\char`\"{}1\char`\"{} name=\char`\"{}idn\+\_\+version\char`\"{}$>$$<$option value=\char`\"{}2003\char`\"{}$>$I\+D\+NA 2003$<$/option$>$$<$option value=\char`\"{}2008\char`\"{}\textquotesingle{}
+\hyperlink{example_8php_a13d9753a348e3a016c3d8fb1ac173bbd}{\$version\-\_\-select} = '$<$select size=\char`\"{}1\char`\"{} name=\char`\"{}idn\-\_\-version\char`\"{}$>$$<$option value=\char`\"{}2003\char`\"{}$>$I\-D\-N\-A 2003$<$/option$>$$<$option value=\char`\"{}2008\char`\"{}'
 \item 
-\hyperlink{config_8inc_8php_a73b98c0274e28635a594091f9ca43cb4}{if}(isset(\$\+\_\+\+R\+E\+Q\+U\+E\+ST\mbox{[}\textquotesingle{}encode\textquotesingle{}\mbox{]})) \hyperlink{config_8inc_8php_a73b98c0274e28635a594091f9ca43cb4}{if}(isset(\$\+\_\+\+R\+E\+Q\+U\+E\+ST\mbox{[}\textquotesingle{}decode\textquotesingle{}\mbox{]})) \hyperlink{example_8php_a770b62b717ae588e5ed87bd3bbd165b4}{\$lang} = \textquotesingle{}en\textquotesingle{}
+\hyperlink{config_8inc_8php_aad1409caebafecab9504e38acf85fb5e}{if}(isset(\$\-\_\-\-R\-E\-Q\-U\-E\-S\-T\mbox{[}'encode'\mbox{]})) \\*
+\hyperlink{config_8inc_8php_aad1409caebafecab9504e38acf85fb5e}{if}(isset(\$\-\_\-\-R\-E\-Q\-U\-E\-S\-T\mbox{[}'decode'\mbox{]})) \hyperlink{example_8php_aef99014231eb219a8c774eb4b8463fd9}{\$lang} = 'en'
 \item 
-\hyperlink{config_8inc_8php_a73b98c0274e28635a594091f9ca43cb4}{if}(isset(\$\+\_\+\+R\+E\+Q\+U\+E\+ST\mbox{[}\textquotesingle{}lang\textquotesingle{}\mbox{]})) \hyperlink{config_8inc_8php_a73b98c0274e28635a594091f9ca43cb4}{if}(\$lang==\textquotesingle{}de\textquotesingle{}) \hyperlink{example_8php_a01fbb012a89302d84c18c2e82a15026a}{else} \{
+\hyperlink{config_8inc_8php_aad1409caebafecab9504e38acf85fb5e}{if}(isset(\$\-\_\-\-R\-E\-Q\-U\-E\-S\-T\mbox{[}'lang'\mbox{]})) \\*
+\hyperlink{config_8inc_8php_aad1409caebafecab9504e38acf85fb5e}{if}(\$lang== 'de') \hyperlink{example_8php_a62bf8b36de1aa08b54e9822dc49899aa}{else} \{
 \end{DoxyCompactItemize}
 
 
 \subsection{Variable Documentation}
-\mbox{\Hypertarget{example_8php_af709b460501204e2ec7e34e96e7de576}\label{example_8php_af709b460501204e2ec7e34e96e7de576}} 
-\index{example.\+php@{example.\+php}!\$encoded@{\$encoded}}
-\index{\$encoded@{\$encoded}!example.\+php@{example.\+php}}
-\subsubsection{\texorpdfstring{\$encoded}{$encoded}}
-{\footnotesize\ttfamily \$encoded = \$decoded = \$add = \textquotesingle{}\textquotesingle{}}
+\hypertarget{example_8php_af709b460501204e2ec7e34e96e7de576}{\index{example.\-php@{example.\-php}!\$encoded@{\$encoded}}
+\index{\$encoded@{\$encoded}!example.php@{example.\-php}}
+\subsubsection[{\$encoded}]{\setlength{\rightskip}{0pt plus 5cm}\$encoded = \$decoded = \$add = ''}}\label{example_8php_af709b460501204e2ec7e34e96e7de576}
 
 
+Definition at line 2 of file example.\-php.
 
-Definition at line 2 of file example.\+php.
-
-\mbox{\Hypertarget{example_8php_aa45ac61e5ada434ea385befcd1aea16d}\label{example_8php_aa45ac61e5ada434ea385befcd1aea16d}} 
-\index{example.\+php@{example.\+php}!\$\+I\+DN@{\$\+I\+DN}}
-\index{\$\+I\+DN@{\$\+I\+DN}!example.\+php@{example.\+php}}
-\subsubsection{\texorpdfstring{\$\+I\+DN}{$IDN}}
-{\footnotesize\ttfamily \$I\+DN = new \hyperlink{classidna__convert}{idna\+\_\+convert}(array(\textquotesingle{}idn\+\_\+version\textquotesingle{} =$>$ \$idn\+\_\+version))}
+\hypertarget{example_8php_aa45ac61e5ada434ea385befcd1aea16d}{\index{example.\-php@{example.\-php}!\$\-I\-D\-N@{\$\-I\-D\-N}}
+\index{\$\-I\-D\-N@{\$\-I\-D\-N}!example.php@{example.\-php}}
+\subsubsection[{\$\-I\-D\-N}]{\setlength{\rightskip}{0pt plus 5cm}\$I\-D\-N = new {\bf idna\-\_\-convert}(array('idn\-\_\-version' =$>$ \$idn\-\_\-version))}}\label{example_8php_aa45ac61e5ada434ea385befcd1aea16d}
 
 
+Definition at line 7 of file example.\-php.
 
-Definition at line 7 of file example.\+php.
-
-\mbox{\Hypertarget{example_8php_aaa64132973e10962c52265cfbee1cb9c}\label{example_8php_aaa64132973e10962c52265cfbee1cb9c}} 
-\index{example.\+php@{example.\+php}!\$idn\+\_\+version@{\$idn\+\_\+version}}
-\index{\$idn\+\_\+version@{\$idn\+\_\+version}!example.\+php@{example.\+php}}
-\subsubsection{\texorpdfstring{\$idn\+\_\+version}{$idn\_version}}
-{\footnotesize\ttfamily \$idn\+\_\+version = isset(\$\+\_\+\+R\+E\+Q\+U\+E\+ST\mbox{[}\textquotesingle{}idn\+\_\+version\textquotesingle{}\mbox{]}) \&\& \$\+\_\+\+R\+E\+Q\+U\+E\+ST\mbox{[}\textquotesingle{}idn\+\_\+version\textquotesingle{}\mbox{]} == 2003 ? 2003 \+: 2008}
+\hypertarget{example_8php_aaa64132973e10962c52265cfbee1cb9c}{\index{example.\-php@{example.\-php}!\$idn\-\_\-version@{\$idn\-\_\-version}}
+\index{\$idn\-\_\-version@{\$idn\-\_\-version}!example.php@{example.\-php}}
+\subsubsection[{\$idn\-\_\-version}]{\setlength{\rightskip}{0pt plus 5cm}\$idn\-\_\-version = isset(\$\-\_\-\-R\-E\-Q\-U\-E\-S\-T\mbox{[}'idn\-\_\-version'\mbox{]}) \&\& \$\-\_\-\-R\-E\-Q\-U\-E\-S\-T\mbox{[}'idn\-\_\-version'\mbox{]} == 2003 ? 2003 \-: 2008}}\label{example_8php_aaa64132973e10962c52265cfbee1cb9c}
 
 
+Definition at line 6 of file example.\-php.
 
-Definition at line 6 of file example.\+php.
-
-\mbox{\Hypertarget{example_8php_a770b62b717ae588e5ed87bd3bbd165b4}\label{example_8php_a770b62b717ae588e5ed87bd3bbd165b4}} 
-\index{example.\+php@{example.\+php}!\$lang@{\$lang}}
-\index{\$lang@{\$lang}!example.\+php@{example.\+php}}
-\subsubsection{\texorpdfstring{\$lang}{$lang}}
-{\footnotesize\ttfamily \hyperlink{config_8inc_8php_a73b98c0274e28635a594091f9ca43cb4}{if} (isset( \$\+\_\+\+R\+E\+Q\+U\+E\+ST\mbox{[} \textquotesingle{}encode\textquotesingle{}\mbox{]})) \hyperlink{config_8inc_8php_a73b98c0274e28635a594091f9ca43cb4}{if} (isset( \$\+\_\+\+R\+E\+Q\+U\+E\+ST\mbox{[} \textquotesingle{}decode\textquotesingle{}\mbox{]})) \$lang = \textquotesingle{}en\textquotesingle{}}
+\hypertarget{example_8php_aef99014231eb219a8c774eb4b8463fd9}{\index{example.\-php@{example.\-php}!\$lang@{\$lang}}
+\index{\$lang@{\$lang}!example.php@{example.\-php}}
+\subsubsection[{\$lang}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} (isset(\$\-\_\-\-R\-E\-Q\-U\-E\-S\-T\mbox{[}'encode'\mbox{]})) {\bf if} (isset(\$\-\_\-\-R\-E\-Q\-U\-E\-S\-T\mbox{[}'decode'\mbox{]})) \$lang = 'en'}}\label{example_8php_aef99014231eb219a8c774eb4b8463fd9}
 
 
+Definition at line 23 of file example.\-php.
 
-Definition at line 23 of file example.\+php.
-
-\mbox{\Hypertarget{example_8php_ab3c48763ff07220eb755d181fa8916cb}\label{example_8php_ab3c48763ff07220eb755d181fa8916cb}} 
-\index{example.\+php@{example.\+php}!\$version\+\_\+select@{\$version\+\_\+select}}
-\index{\$version\+\_\+select@{\$version\+\_\+select}!example.\+php@{example.\+php}}
-\subsubsection{\texorpdfstring{\$version\+\_\+select}{$version\_select}}
-{\footnotesize\ttfamily \hyperlink{config_8inc_8php_a73b98c0274e28635a594091f9ca43cb4}{if} ( \$idn\+\_\+version==2008) \$version\+\_\+select = \textquotesingle{}$<$select size=\char`\"{}1\char`\"{} name=\char`\"{}idn\+\_\+version\char`\"{}$>$$<$option value=\char`\"{}2003\char`\"{}$>$I\+D\+NA 2003$<$/option$>$$<$option value=\char`\"{}2008\char`\"{}\textquotesingle{}}
+\hypertarget{example_8php_a13d9753a348e3a016c3d8fb1ac173bbd}{\index{example.\-php@{example.\-php}!\$version\-\_\-select@{\$version\-\_\-select}}
+\index{\$version\-\_\-select@{\$version\-\_\-select}!example.php@{example.\-php}}
+\subsubsection[{\$version\-\_\-select}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} (\$idn\-\_\-version==2008) \$version\-\_\-select = '$<$select size=\char`\"{}1\char`\"{} name=\char`\"{}idn\-\_\-version\char`\"{}$>$$<$option value=\char`\"{}2003\char`\"{}$>$I\-D\-N\-A 2003$<$/option$>$$<$option value=\char`\"{}2008\char`\"{}'}}\label{example_8php_a13d9753a348e3a016c3d8fb1ac173bbd}
 
 
+Definition at line 9 of file example.\-php.
 
-Definition at line 9 of file example.\+php.
-
-\mbox{\Hypertarget{example_8php_a01fbb012a89302d84c18c2e82a15026a}\label{example_8php_a01fbb012a89302d84c18c2e82a15026a}} 
-\index{example.\+php@{example.\+php}!else@{else}}
-\index{else@{else}!example.\+php@{example.\+php}}
-\subsubsection{\texorpdfstring{else}{else}}
-{\footnotesize\ttfamily \hyperlink{config_8inc_8php_a73b98c0274e28635a594091f9ca43cb4}{if} (isset( \$\+\_\+\+R\+E\+Q\+U\+E\+ST\mbox{[} \textquotesingle{}lang\textquotesingle{}\mbox{]})) \hyperlink{config_8inc_8php_a73b98c0274e28635a594091f9ca43cb4}{if} ( \$lang==\textquotesingle{}de\textquotesingle{}) else \{}
+\hypertarget{example_8php_a62bf8b36de1aa08b54e9822dc49899aa}{\index{example.\-php@{example.\-php}!else@{else}}
+\index{else@{else}!example.php@{example.\-php}}
+\subsubsection[{else}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} (isset(\$\-\_\-\-R\-E\-Q\-U\-E\-S\-T\mbox{[}'lang'\mbox{]})) {\bf if} (\$lang== 'de') else \{}}\label{example_8php_a62bf8b36de1aa08b54e9822dc49899aa}
 
 
-
-Definition at line 84 of file example.\+php.
+Definition at line 84 of file example.\-php.
 

@@ -1,650 +1,499 @@
-\hypertarget{ko_8install_8php}{}\section{modules/install/script/ko.install.\+php File Reference}
-\label{ko_8install_8php}\index{modules/install/script/ko.\+install.\+php@{modules/install/script/ko.\+install.\+php}}
+\hypertarget{ko_8install_8php}{\section{modules/install/script/ko.install.\-php File Reference}
+\label{ko_8install_8php}\index{modules/install/script/ko.\-install.\-php@{modules/install/script/ko.\-install.\-php}}
+}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{ko_8install_8php_ad60c2cd76a2ed990ddee173225120808}{\+\_\+\+\_\+make\+Menu} (\&\$list, \$parent\+\_\+srl)
+\hyperlink{ko_8install_8php_ad60c2cd76a2ed990ddee173225120808}{\-\_\-\-\_\-make\-Menu} (\&\$list, \$parent\-\_\-srl)
 \end{DoxyCompactItemize}
 \subsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{ko_8install_8php_a7714b111b644017933931ec69a154102}{\$lang} = \hyperlink{classContext_ae75d6f4064d09e48d0d76614b6997e29}{Context\+::get\+Lang\+Type}()
+\hyperlink{ko_8install_8php_a7714b111b644017933931ec69a154102}{\$lang} = \hyperlink{classContext_ae75d6f4064d09e48d0d76614b6997e29}{Context\-::get\-Lang\-Type}()
 \item 
-\hyperlink{ko_8install_8php_a193c1593ceb216e9fb05b0bad01ebbc8}{\$logged\+\_\+info} = \hyperlink{classContext_a90ce25d65fe6c9778421cbb36ab3def5}{Context\+::get}(\textquotesingle{}logged\+\_\+info\textquotesingle{})
+\hyperlink{ko_8install_8php_a193c1593ceb216e9fb05b0bad01ebbc8}{\$logged\-\_\-info} = \hyperlink{classContext_a90ce25d65fe6c9778421cbb36ab3def5}{Context\-::get}('logged\-\_\-info')
 \item 
-\hyperlink{ko_8install_8php_a9062530c3b03479ca4530daee1c18887}{\$o\+Menu\+Admin\+Controller} = \hyperlink{func_8inc_8php_a2f7ca88a5226536aca3b2f5682bd7b2d}{get\+Admin\+Controller}(\textquotesingle{}\hyperlink{classmenu}{menu}\textquotesingle{})
+\hyperlink{ko_8install_8php_a9062530c3b03479ca4530daee1c18887}{\$o\-Menu\-Admin\-Controller} = \hyperlink{func_8inc_8php_a2f7ca88a5226536aca3b2f5682bd7b2d}{get\-Admin\-Controller}('\hyperlink{classmenu}{menu}')
 \item 
 \hyperlink{ko_8install_8php_ae7b8fee391a6d8b9162de5b69b9dc07f}{\$sitemap}
 \item 
-foreach(\$sitemap as \$id=$>$ \&\$val) \hyperlink{ko_8install_8php_a26886c066acce69293ed249c5b7b98fa}{\$extra\+\_\+vars} = new std\+Class()
+foreach(\$sitemap as \$id=$>$ \&\$val) \hyperlink{ko_8install_8php_a99863a9d4b597491e1a9c801f2e55c0b}{\$extra\-\_\-vars} = new std\-Class()
 \item 
-\$\hyperlink{ko_8install_8php_ae1dcb37fc34a8f312d2e6abd6f806743}{extra\+\_\+vars} \hyperlink{ko_8install_8php_a9b1716b68fc04f3492448f38148dcbf5}{G\+NB} = \$sitemap\mbox{[}\textquotesingle{}G\+NB\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}menu\+\_\+srl\textquotesingle{}\mbox{]}
+\$\hyperlink{ko_8install_8php_ae1dcb37fc34a8f312d2e6abd6f806743}{extra\-\_\-vars} \hyperlink{ko_8install_8php_a9b1716b68fc04f3492448f38148dcbf5}{G\-N\-B} = \$sitemap\mbox{[}'G\-N\-B'\mbox{]}\mbox{[}'menu\-\_\-srl'\mbox{]}
 \item 
-\$\hyperlink{ko_8install_8php_ae1dcb37fc34a8f312d2e6abd6f806743}{extra\+\_\+vars} \hyperlink{ko_8install_8php_abc0cb1f57d83d4a106f4495c30e0df52}{U\+NB} = \$sitemap\mbox{[}\textquotesingle{}U\+NB\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}menu\+\_\+srl\textquotesingle{}\mbox{]}
+\$\hyperlink{ko_8install_8php_ae1dcb37fc34a8f312d2e6abd6f806743}{extra\-\_\-vars} \hyperlink{ko_8install_8php_abc0cb1f57d83d4a106f4495c30e0df52}{U\-N\-B} = \$sitemap\mbox{[}'U\-N\-B'\mbox{]}\mbox{[}'menu\-\_\-srl'\mbox{]}
 \item 
-\$\hyperlink{ko_8install_8php_ae1dcb37fc34a8f312d2e6abd6f806743}{extra\+\_\+vars} \hyperlink{ko_8install_8php_a683e060c22be3e658be6f9751a2082f0}{F\+NB} = \$sitemap\mbox{[}\textquotesingle{}F\+NB\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}menu\+\_\+srl\textquotesingle{}\mbox{]}
+\$\hyperlink{ko_8install_8php_ae1dcb37fc34a8f312d2e6abd6f806743}{extra\-\_\-vars} \hyperlink{ko_8install_8php_a683e060c22be3e658be6f9751a2082f0}{F\-N\-B} = \$sitemap\mbox{[}'F\-N\-B'\mbox{]}\mbox{[}'menu\-\_\-srl'\mbox{]}
 \item 
-\hyperlink{ko_8install_8php_a67e94494731d99ed23b123e95175bc10}{\$args} = new std\+Class()
+\hyperlink{ko_8install_8php_a67e94494731d99ed23b123e95175bc10}{\$args} = new std\-Class()
 \item 
-\hyperlink{ko_8install_8php_a77889723c4aa360089caae223118d413}{\$layout\+\_\+srl} = \$args-\/$>$\hyperlink{ko_8install_8php_a70054876db09b2519a1726663c8dd9e7}{layout\+\_\+srl} = \hyperlink{func_8inc_8php_a5a97b458f9c5b4fe3574671840aee27c}{get\+Next\+Sequence}()
+\hyperlink{ko_8install_8php_a77889723c4aa360089caae223118d413}{\$layout\-\_\-srl} = \$args-\/$>$\hyperlink{ko_8install_8php_a70054876db09b2519a1726663c8dd9e7}{layout\-\_\-srl} = \hyperlink{func_8inc_8php_a5a97b458f9c5b4fe3574671840aee27c}{get\-Next\-Sequence}()
 \item 
-\$args \hyperlink{ko_8install_8php_a8b1406b4ad1048041558dce6bfe89004}{site\+\_\+srl} = 0
+\$args \hyperlink{ko_8install_8php_a8b1406b4ad1048041558dce6bfe89004}{site\-\_\-srl} = 0
 \item 
-\$args \hyperlink{ko_8install_8php_a0dc2cdff7167f362443808ff71ae5177}{layout} = \textquotesingle{}xedition\textquotesingle{}
+\$args \hyperlink{ko_8install_8php_a0dc2cdff7167f362443808ff71ae5177}{layout} = 'xedition'
 \item 
-\$args \hyperlink{ko_8install_8php_a5b072c5fd1d2228c6ba5cee13cd142e3}{title} = \textquotesingle{}X\+E\+D\+I\+T\+I\+ON\textquotesingle{}
+\$args \hyperlink{ko_8install_8php_a5b072c5fd1d2228c6ba5cee13cd142e3}{title} = 'X\-E\-D\-I\-T\-I\-O\-N'
 \item 
-\$args \hyperlink{ko_8install_8php_a0532d89570cfdaebc628afac2ff5a81b}{layout\+\_\+type} = \textquotesingle{}P\textquotesingle{}
+\$args \hyperlink{ko_8install_8php_a0532d89570cfdaebc628afac2ff5a81b}{layout\-\_\-type} = 'P'
 \item 
-\hyperlink{ko_8install_8php_a6a03496003da7df71cf94d9accb430be}{\$o\+Layout\+Admin\+Controller} = \hyperlink{func_8inc_8php_a2f7ca88a5226536aca3b2f5682bd7b2d}{get\+Admin\+Controller}(\textquotesingle{}\hyperlink{classlayout}{layout}\textquotesingle{})
+\hyperlink{ko_8install_8php_a6a03496003da7df71cf94d9accb430be}{\$o\-Layout\-Admin\-Controller} = \hyperlink{func_8inc_8php_a2f7ca88a5226536aca3b2f5682bd7b2d}{get\-Admin\-Controller}('\hyperlink{classlayout}{layout}')
 \item 
-\hyperlink{ko_8install_8php_a73004ce9cd673c1bfafd1dc351134797}{\$output} = \$o\+Layout\+Admin\+Controller-\/$>$insert\+Layout(\$args)
+\hyperlink{ko_8install_8php_a73004ce9cd673c1bfafd1dc351134797}{\$output} = \$o\-Layout\-Admin\-Controller-\/$>$insert\-Layout(\$args)
 \item 
-\$args \hyperlink{ko_8install_8php_ae1dcb37fc34a8f312d2e6abd6f806743}{extra\+\_\+vars} = serialize(\$extra\+\_\+vars)
+\$args \hyperlink{ko_8install_8php_ae1dcb37fc34a8f312d2e6abd6f806743}{extra\-\_\-vars} = serialize(\$extra\-\_\-vars)
 \item 
-\hyperlink{ko_8install_8php_a576210f0eec2e42df2c40e04a3972bb0}{\$mlayout\+\_\+srl} = \$args-\/$>$\hyperlink{ko_8install_8php_a70054876db09b2519a1726663c8dd9e7}{layout\+\_\+srl} = \hyperlink{func_8inc_8php_a5a97b458f9c5b4fe3574671840aee27c}{get\+Next\+Sequence}()
+\hyperlink{ko_8install_8php_a576210f0eec2e42df2c40e04a3972bb0}{\$mlayout\-\_\-srl} = \$args-\/$>$\hyperlink{ko_8install_8php_a70054876db09b2519a1726663c8dd9e7}{layout\-\_\-srl} = \hyperlink{func_8inc_8php_a5a97b458f9c5b4fe3574671840aee27c}{get\-Next\-Sequence}()
 \item 
-\$\hyperlink{ko_8install_8php_ae1dcb37fc34a8f312d2e6abd6f806743}{extra\+\_\+vars} \hyperlink{ko_8install_8php_ac71104c770b8ced3891f35849d3f2906}{main\+\_\+menu} = \$sitemap\mbox{[}\textquotesingle{}\hyperlink{ko_8install_8php_a9b1716b68fc04f3492448f38148dcbf5}{G\+NB}\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}menu\+\_\+srl\textquotesingle{}\mbox{]}
+\$\hyperlink{ko_8install_8php_ae1dcb37fc34a8f312d2e6abd6f806743}{extra\-\_\-vars} \hyperlink{ko_8install_8php_ac71104c770b8ced3891f35849d3f2906}{main\-\_\-menu} = \$sitemap\mbox{[}'\hyperlink{ko_8install_8php_a9b1716b68fc04f3492448f38148dcbf5}{G\-N\-B}'\mbox{]}\mbox{[}'menu\-\_\-srl'\mbox{]}
 \item 
-\hyperlink{ko_8install_8php_a0b79a974b91157b79d83cc0be7e3247c}{\$site\+Design\+Path} = \+\_\+\+X\+E\+\_\+\+P\+A\+T\+H\+\_\+.\textquotesingle{}files/site\+\_\+design/\textquotesingle{}
+\hyperlink{ko_8install_8php_a0b79a974b91157b79d83cc0be7e3247c}{\$site\-Design\-Path} = \-\_\-\-X\-E\-\_\-\-P\-A\-T\-H\-\_\-.'files/site\-\_\-design/'
 \item 
-\hyperlink{ko_8install_8php_a99e144f7d563ceb76b003d54739b3b0c}{\$design\+Info} = new std\+Class()
+\hyperlink{ko_8install_8php_a99e144f7d563ceb76b003d54739b3b0c}{\$design\-Info} = new std\-Class()
 \item 
-\$design\+Info \hyperlink{ko_8install_8php_a70054876db09b2519a1726663c8dd9e7}{layout\+\_\+srl} = \$layout\+\_\+srl
+\$design\-Info \hyperlink{ko_8install_8php_a70054876db09b2519a1726663c8dd9e7}{layout\-\_\-srl} = \$layout\-\_\-srl
 \item 
-\$design\+Info \hyperlink{ko_8install_8php_a9cf497537007b08c645bed35f564be54}{mlayout\+\_\+srl} = \$mlayout\+\_\+srl
+\$design\-Info \hyperlink{ko_8install_8php_a9cf497537007b08c645bed35f564be54}{mlayout\-\_\-srl} = \$mlayout\-\_\-srl
 \item 
-\hyperlink{ko_8install_8php_aaa80946d50e2d3677fbbc6d6c8a643c3}{\$module\+List} = array(\textquotesingle{}\hyperlink{classpage}{page}\textquotesingle{}, \textquotesingle{}\hyperlink{classboard}{board}\textquotesingle{}, \textquotesingle{}\hyperlink{classeditor}{editor}\textquotesingle{})
+\hyperlink{ko_8install_8php_aaa80946d50e2d3677fbbc6d6c8a643c3}{\$module\-List} = array('\hyperlink{classpage}{page}', '\hyperlink{classboard}{board}', '\hyperlink{classeditor}{editor}')
 \item 
-\hyperlink{ko_8install_8php_a2598d068355cca17645bc6bd70cc3a8c}{\$moutput} = \hyperlink{classModuleHandler_aa1b1f9eae91ccd76e6a81c9375c2e673}{Module\+Handler\+::trigger\+Call}(\textquotesingle{}menu.\+get\+Module\+List\+In\+Sitemap\textquotesingle{}, \textquotesingle{}after\textquotesingle{}, \$module\+List)
+\hyperlink{ko_8install_8php_a2598d068355cca17645bc6bd70cc3a8c}{\$moutput} = \hyperlink{classModuleHandler_aa1b1f9eae91ccd76e6a81c9375c2e673}{Module\-Handler\-::trigger\-Call}('menu.\-get\-Module\-List\-In\-Sitemap', 'after', \$module\-List)
 \item 
-\hyperlink{config_8inc_8php_a73b98c0274e28635a594091f9ca43cb4}{if}(\$moutput-\/$>$to\+Bool()) \hyperlink{ko_8install_8php_ae4a3fa2c4de23e619733a2b144521f54}{\$skin\+Types} = array(\textquotesingle{}\hyperlink{ko_8install_8php_ab0f2b49fdb57754496b34f6b880cdeaf}{skin}\textquotesingle{}=$>$\textquotesingle{}skins/\textquotesingle{}, \textquotesingle{}mskin\textquotesingle{}=$>$\textquotesingle{}m.\+skins/\textquotesingle{})
+\hyperlink{config_8inc_8php_aad1409caebafecab9504e38acf85fb5e}{if}(\$moutput-\/$>$to\-Bool()) \hyperlink{ko_8install_8php_aa61073b7b359568eb3459da113fd8cdf}{\$skin\-Types} = array('\hyperlink{ko_8install_8php_ab0f2b49fdb57754496b34f6b880cdeaf}{skin}'=$>$'skins/', 'mskin'=$>$'m.\-skins/')
 \item 
-\$design\+Info \hyperlink{ko_8install_8php_a5c3fc1968f94c2b6a7c60845f284de78}{module} = new std\+Class()
+\$design\-Info \hyperlink{ko_8install_8php_a5c3fc1968f94c2b6a7c60845f284de78}{module} = new std\-Class()
 \item 
-\hyperlink{ko_8install_8php_a8d7a87df524e7d6938f66f8e284cdd1e}{\$o\+Module\+Model} = \hyperlink{func_8inc_8php_aecdfcc5332bcf22df01fc21a03b64435}{get\+Model}(\textquotesingle{}\hyperlink{classmodule}{module}\textquotesingle{})
+\hyperlink{ko_8install_8php_a8d7a87df524e7d6938f66f8e284cdd1e}{\$o\-Module\-Model} = \hyperlink{func_8inc_8php_aecdfcc5332bcf22df01fc21a03b64435}{get\-Model}('\hyperlink{classmodule}{module}')
 \item 
-foreach(\$skin\+Types as \$key=$>$ \$dir) \$design\+Info \hyperlink{classmodule}{module} \hyperlink{classboard}{board} \hyperlink{ko_8install_8php_ab0f2b49fdb57754496b34f6b880cdeaf}{skin} = \textquotesingle{}xedition\textquotesingle{}
+foreach(\$skin\-Types as \$key=$>$\\*
+ \$dir) \$design\-Info \hyperlink{classmodule}{module} \\*
+\hyperlink{classboard}{board} \hyperlink{ko_8install_8php_ab0f2b49fdb57754496b34f6b880cdeaf}{skin} = 'xedition'
 \item 
-\hyperlink{ko_8install_8php_a52d90466dc7adee7d324b3ef032b8167}{\$o\+Admin\+Controller} = \hyperlink{func_8inc_8php_a2f7ca88a5226536aca3b2f5682bd7b2d}{get\+Admin\+Controller}(\textquotesingle{}\hyperlink{classadmin}{admin}\textquotesingle{})
+\hyperlink{ko_8install_8php_a52d90466dc7adee7d324b3ef032b8167}{\$o\-Admin\-Controller} = \hyperlink{func_8inc_8php_a2f7ca88a5226536aca3b2f5682bd7b2d}{get\-Admin\-Controller}('\hyperlink{classadmin}{admin}')
 \item 
-\hyperlink{ko_8install_8php_ae3552a6dd49f37a50e7858151f7c5cc2}{\$module\+Info} = \$o\+Module\+Model-\/$>$get\+Module\+Info\+By\+Menu\+Item\+Srl(\$sitemap\mbox{[}\textquotesingle{}\hyperlink{ko_8install_8php_a9b1716b68fc04f3492448f38148dcbf5}{G\+NB}\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}list\textquotesingle{}\mbox{]}\mbox{[}0\mbox{]}\mbox{[}\textquotesingle{}menu\+\_\+srl\textquotesingle{}\mbox{]})
+\hyperlink{ko_8install_8php_ae3552a6dd49f37a50e7858151f7c5cc2}{\$module\-Info} = \$o\-Module\-Model-\/$>$get\-Module\-Info\-By\-Menu\-Item\-Srl(\$sitemap\mbox{[}'\hyperlink{ko_8install_8php_a9b1716b68fc04f3492448f38148dcbf5}{G\-N\-B}'\mbox{]}\mbox{[}'list'\mbox{]}\mbox{[}0\mbox{]}\mbox{[}'menu\-\_\-srl'\mbox{]})
 \item 
-\hyperlink{ko_8install_8php_ae40aed4d7a99050245e66ca2a82949ed}{\$module\+\_\+srl} = \$module\+Info-\/$>$\hyperlink{ko_8install_8php_a370bb6450fab1da3e0ed9f484a38b761}{module\+\_\+srl}
+\hyperlink{ko_8install_8php_ae40aed4d7a99050245e66ca2a82949ed}{\$module\-\_\-srl} = \$module\-Info-\/$>$\hyperlink{ko_8install_8php_a370bb6450fab1da3e0ed9f484a38b761}{module\-\_\-srl}
 \item 
-\hyperlink{ko_8install_8php_abd57e3ab220291ea9b5c16c2a4e0670e}{\$o\+Template\+Handler} = \hyperlink{classTemplateHandler_a9745460c5daccfc48abf8652778b2718}{Template\+Handler\+::get\+Instance}()
+\hyperlink{ko_8install_8php_abd57e3ab220291ea9b5c16c2a4e0670e}{\$o\-Template\-Handler} = \hyperlink{classTemplateHandler_a9745460c5daccfc48abf8652778b2718}{Template\-Handler\-::get\-Instance}()
 \item 
-\hyperlink{ko_8install_8php_afb18aa87e5520385e76377e876e042af}{\$o\+Document\+Model} = \hyperlink{func_8inc_8php_aecdfcc5332bcf22df01fc21a03b64435}{get\+Model}(\textquotesingle{}\hyperlink{classdocument}{document}\textquotesingle{})
+\hyperlink{ko_8install_8php_afb18aa87e5520385e76377e876e042af}{\$o\-Document\-Model} = \hyperlink{func_8inc_8php_aecdfcc5332bcf22df01fc21a03b64435}{get\-Model}('\hyperlink{classdocument}{document}')
 \item 
-\hyperlink{ko_8install_8php_aac43fce682d4b7a05df6d3e44c2c54e6}{\$o\+Document\+Controller} = \hyperlink{func_8inc_8php_aa08f01e3bf130d770b373ca8493e3e9b}{get\+Controller}(\textquotesingle{}\hyperlink{classdocument}{document}\textquotesingle{})
+\hyperlink{ko_8install_8php_aac43fce682d4b7a05df6d3e44c2c54e6}{\$o\-Document\-Controller} = \hyperlink{func_8inc_8php_aa08f01e3bf130d770b373ca8493e3e9b}{get\-Controller}('\hyperlink{classdocument}{document}')
 \item 
-\hyperlink{ko_8install_8php_a9008ed94ba185855b1723e367744b87e}{\$obj} = new std\+Class()
+\hyperlink{ko_8install_8php_a9008ed94ba185855b1723e367744b87e}{\$obj} = new std\-Class()
 \item 
-\$obj \hyperlink{ko_8install_8php_aa61f9e08f0fe505094d26f8143f30bbd}{member\+\_\+srl} = \$logged\+\_\+info-\/$>$member\+\_\+srl
+\$obj \hyperlink{ko_8install_8php_aa61f9e08f0fe505094d26f8143f30bbd}{member\-\_\-srl} = \$logged\-\_\-info-\/$>$member\-\_\-srl
 \item 
-\$obj \hyperlink{ko_8install_8php_a74f1a394389d774e5b4cd5d1d15413f7}{user\+\_\+id} = htmlspecialchars\+\_\+decode(\$logged\+\_\+info-\/$>$user\+\_\+id)
+\$obj \hyperlink{ko_8install_8php_a74f1a394389d774e5b4cd5d1d15413f7}{user\-\_\-id} = htmlspecialchars\-\_\-decode(\$logged\-\_\-info-\/$>$user\-\_\-id)
 \item 
-\$obj \hyperlink{ko_8install_8php_a115401aff7da80e73c66e9f76505426b}{user\+\_\+name} = htmlspecialchars\+\_\+decode(\$logged\+\_\+info-\/$>$user\+\_\+name)
+\$obj \hyperlink{ko_8install_8php_a115401aff7da80e73c66e9f76505426b}{user\-\_\-name} = htmlspecialchars\-\_\-decode(\$logged\-\_\-info-\/$>$user\-\_\-name)
 \item 
-\$obj \hyperlink{ko_8install_8php_a151ecae87a1f3d7e257aa089803086bd}{nick\+\_\+name} = htmlspecialchars\+\_\+decode(\$logged\+\_\+info-\/$>$nick\+\_\+name)
+\$obj \hyperlink{ko_8install_8php_a151ecae87a1f3d7e257aa089803086bd}{nick\-\_\-name} = htmlspecialchars\-\_\-decode(\$logged\-\_\-info-\/$>$nick\-\_\-name)
 \item 
-\$obj \hyperlink{ko_8install_8php_a1dffea0d5ba8194f8ef01f414af0c831}{email\+\_\+address} = \$logged\+\_\+info-\/$>$email\+\_\+address
+\$obj \hyperlink{ko_8install_8php_a1dffea0d5ba8194f8ef01f414af0c831}{email\-\_\-address} = \$logged\-\_\-info-\/$>$email\-\_\-address
 \item 
-\$obj \hyperlink{ko_8install_8php_a370bb6450fab1da3e0ed9f484a38b761}{module\+\_\+srl} = \$module\+\_\+srl
+\$obj \hyperlink{ko_8install_8php_a370bb6450fab1da3e0ed9f484a38b761}{module\-\_\-srl} = \$module\-\_\-srl
 \item 
-\$obj \hyperlink{ko_8install_8php_a65dddc3e5e47cb506e6b5417ffb3bdef}{content} = \$o\+Template\+Handler-\/$>$compile(\hyperlink{config_8inc_8php_a5387c7a3f2aa38adf16f324cee88db88}{\+\_\+\+X\+E\+\_\+\+P\+A\+T\+H\+\_\+} . \textquotesingle{}modules/\hyperlink{classinstall}{install}/script/welcome\+\_\+content\textquotesingle{}, \textquotesingle{}welcome\+\_\+content\+\_\+\textquotesingle{}.\$lang)
+\$obj \hyperlink{ko_8install_8php_a65dddc3e5e47cb506e6b5417ffb3bdef}{content} = \$o\-Template\-Handler-\/$>$compile(\hyperlink{config_8inc_8php_a5387c7a3f2aa38adf16f324cee88db88}{\-\_\-\-X\-E\-\_\-\-P\-A\-T\-H\-\_\-} . 'modules/\hyperlink{classinstall}{install}/script/welcome\-\_\-content', 'welcome\-\_\-content\-\_\-'.\$lang)
 \item 
-\hyperlink{ko_8install_8php_a14522e7fff0604a8372c75b4a0fbc0fd}{\$document\+\_\+srl} = \$output-\/$>$get(\textquotesingle{}document\+\_\+srl\textquotesingle{})
+\hyperlink{ko_8install_8php_a14522e7fff0604a8372c75b4a0fbc0fd}{\$document\-\_\-srl} = \$output-\/$>$get('document\-\_\-srl')
 \item 
-\hyperlink{ko_8install_8php_a624bfa0dadce265c9df9279a5ddfbd8d}{\$o\+Module\+Controller} = \hyperlink{func_8inc_8php_aa08f01e3bf130d770b373ca8493e3e9b}{get\+Controller}(\textquotesingle{}\hyperlink{classmodule}{module}\textquotesingle{})
+\hyperlink{ko_8install_8php_a9fd93f6625cec4fd65bf6f412e28c015}{\$o\-Module\-Controller} = \hyperlink{func_8inc_8php_aa08f01e3bf130d770b373ca8493e3e9b}{get\-Controller}('\hyperlink{classmodule}{module}')
 \item 
-\hyperlink{ko_8install_8php_a27c211d9a984964f84c8ffb6ea7328fc}{\$mdocument\+\_\+srl} = \$output-\/$>$get(\textquotesingle{}document\+\_\+srl\textquotesingle{})
+\hyperlink{ko_8install_8php_a27c211d9a984964f84c8ffb6ea7328fc}{\$mdocument\-\_\-srl} = \$output-\/$>$get('document\-\_\-srl')
 \item 
-\hyperlink{ko_8install_8php_a5e701819149f6ea0893d4b79010417d3}{\$module\+\_\+info} = \$o\+Module\+Model-\/$>$get\+Module\+Info\+By\+Module\+Srl(\$\hyperlink{ko_8install_8php_a370bb6450fab1da3e0ed9f484a38b761}{module\+\_\+srl})
+\hyperlink{ko_8install_8php_a5e701819149f6ea0893d4b79010417d3}{\$module\-\_\-info} = \$o\-Module\-Model-\/$>$get\-Module\-Info\-By\-Module\-Srl(\$\hyperlink{ko_8install_8php_a370bb6450fab1da3e0ed9f484a38b761}{module\-\_\-srl})
 \item 
-\$module\+\_\+info \hyperlink{ko_8install_8php_a9da4bb6e77356bb68ae0e05dbd9f5e2f}{mcontent} = \textquotesingle{}$<$img has\+Content=\char`\"{}true\char`\"{} class=\char`\"{}zbxe\+\_\+widget\+\_\+output\char`\"{} widget=\char`\"{}widget\+Content\char`\"{} style=\char`\"{}width\+: 100\%; float\+: left;\char`\"{} body=\char`\"{}\char`\"{} document\+\_\+srl=\char`\"{}\textquotesingle{}.\$mdocument\+\_\+srl.\textquotesingle{}\char`\"{} widget\+\_\+padding\+\_\+left=\char`\"{}0\char`\"{} widget\+\_\+padding\+\_\+right=\char`\"{}0\char`\"{} widget\+\_\+padding\+\_\+top=\char`\"{}0\char`\"{} widget\+\_\+padding\+\_\+bottom=\char`\"{}0\char`\"{} /$>$\textquotesingle{}
+\$module\-\_\-info \hyperlink{ko_8install_8php_a9da4bb6e77356bb68ae0e05dbd9f5e2f}{mcontent} = '$<$img has\-Content=\char`\"{}true\char`\"{} class=\char`\"{}zbxe\-\_\-widget\-\_\-output\char`\"{} widget=\char`\"{}widget\-Content\char`\"{} style=\char`\"{}width\-: 100\%; float\-: left;\char`\"{} body=\char`\"{}\char`\"{} document\-\_\-srl=\char`\"{}'.\$mdocument\-\_\-srl.'\char`\"{} widget\-\_\-padding\-\_\-left=\char`\"{}0\char`\"{} widget\-\_\-padding\-\_\-right=\char`\"{}0\char`\"{} widget\-\_\-padding\-\_\-top=\char`\"{}0\char`\"{} widget\-\_\-padding\-\_\-bottom=\char`\"{}0\char`\"{} /$>$'
 \item 
-\hyperlink{ko_8install_8php_a19e0fcfacd69155c9cc255e5500f6ccc}{\$site\+\_\+args} = new std\+Class()
+\hyperlink{ko_8install_8php_a19e0fcfacd69155c9cc255e5500f6ccc}{\$site\-\_\-args} = new std\-Class()
 \item 
-\$site\+\_\+args \hyperlink{ko_8install_8php_acd0b17bfe6d14c82871d73fa39c9c22d}{index\+\_\+module\+\_\+srl} = \$\hyperlink{ko_8install_8php_a370bb6450fab1da3e0ed9f484a38b761}{module\+\_\+srl}
+\$site\-\_\-args \hyperlink{ko_8install_8php_acd0b17bfe6d14c82871d73fa39c9c22d}{index\-\_\-module\-\_\-srl} = \$\hyperlink{ko_8install_8php_a370bb6450fab1da3e0ed9f484a38b761}{module\-\_\-srl}
 \item 
-\hyperlink{ko_8install_8php_acf278a9931e1d1ea52b045c0fa42b9b3}{\$xeicon\+\_\+module\+\_\+srl} = \$module\+Info-\/$>$\hyperlink{ko_8install_8php_a370bb6450fab1da3e0ed9f484a38b761}{module\+\_\+srl}
+\hyperlink{ko_8install_8php_acf278a9931e1d1ea52b045c0fa42b9b3}{\$xeicon\-\_\-module\-\_\-srl} = \$module\-Info-\/$>$\hyperlink{ko_8install_8php_a370bb6450fab1da3e0ed9f484a38b761}{module\-\_\-srl}
 \item 
-\hyperlink{ko_8install_8php_a41d95a71ebf0758e83224ab4bb3a31c0}{\$xeicon\+\_\+document\+\_\+srl} = array()
+\hyperlink{ko_8install_8php_a41d95a71ebf0758e83224ab4bb3a31c0}{\$xeicon\-\_\-document\-\_\-srl} = array()
 \end{DoxyCompactItemize}
 
 
 \subsection{Function Documentation}
-\mbox{\Hypertarget{ko_8install_8php_ad60c2cd76a2ed990ddee173225120808}\label{ko_8install_8php_ad60c2cd76a2ed990ddee173225120808}} 
-\index{ko.\+install.\+php@{ko.\+install.\+php}!\+\_\+\+\_\+make\+Menu@{\+\_\+\+\_\+make\+Menu}}
-\index{\+\_\+\+\_\+make\+Menu@{\+\_\+\+\_\+make\+Menu}!ko.\+install.\+php@{ko.\+install.\+php}}
-\subsubsection{\texorpdfstring{\+\_\+\+\_\+make\+Menu()}{\_\_makeMenu()}}
-{\footnotesize\ttfamily \+\_\+\+\_\+make\+Menu (\begin{DoxyParamCaption}\item[{\&}]{\$list,  }\item[{}]{\$parent\+\_\+srl }\end{DoxyParamCaption})}
+\hypertarget{ko_8install_8php_ad60c2cd76a2ed990ddee173225120808}{\index{ko.\-install.\-php@{ko.\-install.\-php}!\-\_\-\-\_\-make\-Menu@{\-\_\-\-\_\-make\-Menu}}
+\index{\-\_\-\-\_\-make\-Menu@{\-\_\-\-\_\-make\-Menu}!ko.install.php@{ko.\-install.\-php}}
+\subsubsection[{\-\_\-\-\_\-make\-Menu}]{\setlength{\rightskip}{0pt plus 5cm}\-\_\-\-\_\-make\-Menu (
+\begin{DoxyParamCaption}
+\item[{\&}]{\$list, }
+\item[{}]{\$parent\-\_\-srl}
+\end{DoxyParamCaption}
+)}}\label{ko_8install_8php_ad60c2cd76a2ed990ddee173225120808}
 
 
-
-Definition at line 130 of file ko.\+install.\+php.
+Definition at line 130 of file ko.\-install.\-php.
 
 
 
 \subsection{Variable Documentation}
-\mbox{\Hypertarget{ko_8install_8php_a67e94494731d99ed23b123e95175bc10}\label{ko_8install_8php_a67e94494731d99ed23b123e95175bc10}} 
-\index{ko.\+install.\+php@{ko.\+install.\+php}!\$args@{\$args}}
-\index{\$args@{\$args}!ko.\+install.\+php@{ko.\+install.\+php}}
-\subsubsection{\texorpdfstring{\$args}{$args}}
-{\footnotesize\ttfamily \$args = new std\+Class()}
+\hypertarget{ko_8install_8php_a67e94494731d99ed23b123e95175bc10}{\index{ko.\-install.\-php@{ko.\-install.\-php}!\$args@{\$args}}
+\index{\$args@{\$args}!ko.install.php@{ko.\-install.\-php}}
+\subsubsection[{\$args}]{\setlength{\rightskip}{0pt plus 5cm}\$args = new std\-Class()}}\label{ko_8install_8php_a67e94494731d99ed23b123e95175bc10}
 
 
+Definition at line 185 of file ko.\-install.\-php.
 
-Definition at line 185 of file ko.\+install.\+php.
+\hypertarget{ko_8install_8php_a99e144f7d563ceb76b003d54739b3b0c}{\index{ko.\-install.\-php@{ko.\-install.\-php}!\$design\-Info@{\$design\-Info}}
+\index{\$design\-Info@{\$design\-Info}!ko.install.php@{ko.\-install.\-php}}
+\subsubsection[{\$design\-Info}]{\setlength{\rightskip}{0pt plus 5cm}\$design\-Info = new std\-Class()}}\label{ko_8install_8php_a99e144f7d563ceb76b003d54739b3b0c}
 
-\mbox{\Hypertarget{ko_8install_8php_a99e144f7d563ceb76b003d54739b3b0c}\label{ko_8install_8php_a99e144f7d563ceb76b003d54739b3b0c}} 
-\index{ko.\+install.\+php@{ko.\+install.\+php}!\$design\+Info@{\$design\+Info}}
-\index{\$design\+Info@{\$design\+Info}!ko.\+install.\+php@{ko.\+install.\+php}}
-\subsubsection{\texorpdfstring{\$design\+Info}{$designInfo}}
-{\footnotesize\ttfamily \$design\+Info = new std\+Class()}
 
+Definition at line 221 of file ko.\-install.\-php.
 
+\hypertarget{ko_8install_8php_a14522e7fff0604a8372c75b4a0fbc0fd}{\index{ko.\-install.\-php@{ko.\-install.\-php}!\$document\-\_\-srl@{\$document\-\_\-srl}}
+\index{\$document\-\_\-srl@{\$document\-\_\-srl}!ko.install.php@{ko.\-install.\-php}}
+\subsubsection[{\$document\-\_\-srl}]{\setlength{\rightskip}{0pt plus 5cm}\$document\-\_\-srl = \$output-\/$>$get('document\-\_\-srl')}}\label{ko_8install_8php_a14522e7fff0604a8372c75b4a0fbc0fd}
 
-Definition at line 221 of file ko.\+install.\+php.
 
-\mbox{\Hypertarget{ko_8install_8php_a14522e7fff0604a8372c75b4a0fbc0fd}\label{ko_8install_8php_a14522e7fff0604a8372c75b4a0fbc0fd}} 
-\index{ko.\+install.\+php@{ko.\+install.\+php}!\$document\+\_\+srl@{\$document\+\_\+srl}}
-\index{\$document\+\_\+srl@{\$document\+\_\+srl}!ko.\+install.\+php@{ko.\+install.\+php}}
-\subsubsection{\texorpdfstring{\$document\+\_\+srl}{$document\_srl}}
-{\footnotesize\ttfamily \$document\+\_\+srl = \$output-\/$>$get(\textquotesingle{}document\+\_\+srl\textquotesingle{})}
+Definition at line 279 of file ko.\-install.\-php.
 
+\hypertarget{ko_8install_8php_a99863a9d4b597491e1a9c801f2e55c0b}{\index{ko.\-install.\-php@{ko.\-install.\-php}!\$extra\-\_\-vars@{\$extra\-\_\-vars}}
+\index{\$extra\-\_\-vars@{\$extra\-\_\-vars}!ko.install.php@{ko.\-install.\-php}}
+\subsubsection[{\$extra\-\_\-vars}]{\setlength{\rightskip}{0pt plus 5cm}foreach (\$sitemap as \$id=$>$ \&\$val) \${\bf extra\-\_\-vars} = new std\-Class()}}\label{ko_8install_8php_a99863a9d4b597491e1a9c801f2e55c0b}
 
 
-Definition at line 279 of file ko.\+install.\+php.
+Definition at line 180 of file ko.\-install.\-php.
 
-\mbox{\Hypertarget{ko_8install_8php_a26886c066acce69293ed249c5b7b98fa}\label{ko_8install_8php_a26886c066acce69293ed249c5b7b98fa}} 
-\index{ko.\+install.\+php@{ko.\+install.\+php}!\$extra\+\_\+vars@{\$extra\+\_\+vars}}
-\index{\$extra\+\_\+vars@{\$extra\+\_\+vars}!ko.\+install.\+php@{ko.\+install.\+php}}
-\subsubsection{\texorpdfstring{\$extra\+\_\+vars}{$extra\_vars}}
-{\footnotesize\ttfamily foreach ( \$sitemap as \$id=$>$ \& \$val) \$\hyperlink{ko_8install_8php_ae1dcb37fc34a8f312d2e6abd6f806743}{extra\+\_\+vars} = new std\+Class()}
+\hypertarget{ko_8install_8php_a7714b111b644017933931ec69a154102}{\index{ko.\-install.\-php@{ko.\-install.\-php}!\$lang@{\$lang}}
+\index{\$lang@{\$lang}!ko.install.php@{ko.\-install.\-php}}
+\subsubsection[{\$lang}]{\setlength{\rightskip}{0pt plus 5cm}\$lang = {\bf Context\-::get\-Lang\-Type}()}}\label{ko_8install_8php_a7714b111b644017933931ec69a154102}
 
 
+Definition at line 4 of file ko.\-install.\-php.
 
-Definition at line 180 of file ko.\+install.\+php.
+\hypertarget{ko_8install_8php_a77889723c4aa360089caae223118d413}{\index{ko.\-install.\-php@{ko.\-install.\-php}!\$layout\-\_\-srl@{\$layout\-\_\-srl}}
+\index{\$layout\-\_\-srl@{\$layout\-\_\-srl}!ko.install.php@{ko.\-install.\-php}}
+\subsubsection[{\$layout\-\_\-srl}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf layout\-\_\-srl} = \$args-\/$>${\bf layout\-\_\-srl} = {\bf get\-Next\-Sequence}()}}\label{ko_8install_8php_a77889723c4aa360089caae223118d413}
 
-\mbox{\Hypertarget{ko_8install_8php_a7714b111b644017933931ec69a154102}\label{ko_8install_8php_a7714b111b644017933931ec69a154102}} 
-\index{ko.\+install.\+php@{ko.\+install.\+php}!\$lang@{\$lang}}
-\index{\$lang@{\$lang}!ko.\+install.\+php@{ko.\+install.\+php}}
-\subsubsection{\texorpdfstring{\$lang}{$lang}}
-{\footnotesize\ttfamily \$lang = \hyperlink{classContext_ae75d6f4064d09e48d0d76614b6997e29}{Context\+::get\+Lang\+Type}()}
 
+Definition at line 186 of file ko.\-install.\-php.
 
+\hypertarget{ko_8install_8php_a193c1593ceb216e9fb05b0bad01ebbc8}{\index{ko.\-install.\-php@{ko.\-install.\-php}!\$logged\-\_\-info@{\$logged\-\_\-info}}
+\index{\$logged\-\_\-info@{\$logged\-\_\-info}!ko.install.php@{ko.\-install.\-php}}
+\subsubsection[{\$logged\-\_\-info}]{\setlength{\rightskip}{0pt plus 5cm}\$logged\-\_\-info = {\bf Context\-::get}('logged\-\_\-info')}}\label{ko_8install_8php_a193c1593ceb216e9fb05b0bad01ebbc8}
 
-Definition at line 4 of file ko.\+install.\+php.
 
-\mbox{\Hypertarget{ko_8install_8php_a77889723c4aa360089caae223118d413}\label{ko_8install_8php_a77889723c4aa360089caae223118d413}} 
-\index{ko.\+install.\+php@{ko.\+install.\+php}!\$layout\+\_\+srl@{\$layout\+\_\+srl}}
-\index{\$layout\+\_\+srl@{\$layout\+\_\+srl}!ko.\+install.\+php@{ko.\+install.\+php}}
-\subsubsection{\texorpdfstring{\$layout\+\_\+srl}{$layout\_srl}}
-{\footnotesize\ttfamily \$\hyperlink{ko_8install_8php_a70054876db09b2519a1726663c8dd9e7}{layout\+\_\+srl} = \$args-\/$>$\hyperlink{ko_8install_8php_a70054876db09b2519a1726663c8dd9e7}{layout\+\_\+srl} = \hyperlink{func_8inc_8php_a5a97b458f9c5b4fe3574671840aee27c}{get\+Next\+Sequence}()}
+Definition at line 5 of file ko.\-install.\-php.
 
+\hypertarget{ko_8install_8php_a27c211d9a984964f84c8ffb6ea7328fc}{\index{ko.\-install.\-php@{ko.\-install.\-php}!\$mdocument\-\_\-srl@{\$mdocument\-\_\-srl}}
+\index{\$mdocument\-\_\-srl@{\$mdocument\-\_\-srl}!ko.install.php@{ko.\-install.\-php}}
+\subsubsection[{\$mdocument\-\_\-srl}]{\setlength{\rightskip}{0pt plus 5cm}\$mdocument\-\_\-srl = \$output-\/$>$get('document\-\_\-srl')}}\label{ko_8install_8php_a27c211d9a984964f84c8ffb6ea7328fc}
 
 
-Definition at line 186 of file ko.\+install.\+php.
+Definition at line 288 of file ko.\-install.\-php.
 
-\mbox{\Hypertarget{ko_8install_8php_a193c1593ceb216e9fb05b0bad01ebbc8}\label{ko_8install_8php_a193c1593ceb216e9fb05b0bad01ebbc8}} 
-\index{ko.\+install.\+php@{ko.\+install.\+php}!\$logged\+\_\+info@{\$logged\+\_\+info}}
-\index{\$logged\+\_\+info@{\$logged\+\_\+info}!ko.\+install.\+php@{ko.\+install.\+php}}
-\subsubsection{\texorpdfstring{\$logged\+\_\+info}{$logged\_info}}
-{\footnotesize\ttfamily \$logged\+\_\+info = \hyperlink{classContext_a90ce25d65fe6c9778421cbb36ab3def5}{Context\+::get}(\textquotesingle{}logged\+\_\+info\textquotesingle{})}
+\hypertarget{ko_8install_8php_a576210f0eec2e42df2c40e04a3972bb0}{\index{ko.\-install.\-php@{ko.\-install.\-php}!\$mlayout\-\_\-srl@{\$mlayout\-\_\-srl}}
+\index{\$mlayout\-\_\-srl@{\$mlayout\-\_\-srl}!ko.install.php@{ko.\-install.\-php}}
+\subsubsection[{\$mlayout\-\_\-srl}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf mlayout\-\_\-srl} = \$args-\/$>${\bf layout\-\_\-srl} = {\bf get\-Next\-Sequence}()}}\label{ko_8install_8php_a576210f0eec2e42df2c40e04a3972bb0}
 
 
+Definition at line 202 of file ko.\-install.\-php.
 
-Definition at line 5 of file ko.\+install.\+php.
+\hypertarget{ko_8install_8php_a5e701819149f6ea0893d4b79010417d3}{\index{ko.\-install.\-php@{ko.\-install.\-php}!\$module\-\_\-info@{\$module\-\_\-info}}
+\index{\$module\-\_\-info@{\$module\-\_\-info}!ko.install.php@{ko.\-install.\-php}}
+\subsubsection[{\$module\-\_\-info}]{\setlength{\rightskip}{0pt plus 5cm}\$module\-\_\-info = \$o\-Module\-Model-\/$>$get\-Module\-Info\-By\-Module\-Srl(\${\bf module\-\_\-srl})}}\label{ko_8install_8php_a5e701819149f6ea0893d4b79010417d3}
 
-\mbox{\Hypertarget{ko_8install_8php_a27c211d9a984964f84c8ffb6ea7328fc}\label{ko_8install_8php_a27c211d9a984964f84c8ffb6ea7328fc}} 
-\index{ko.\+install.\+php@{ko.\+install.\+php}!\$mdocument\+\_\+srl@{\$mdocument\+\_\+srl}}
-\index{\$mdocument\+\_\+srl@{\$mdocument\+\_\+srl}!ko.\+install.\+php@{ko.\+install.\+php}}
-\subsubsection{\texorpdfstring{\$mdocument\+\_\+srl}{$mdocument\_srl}}
-{\footnotesize\ttfamily \$mdocument\+\_\+srl = \$output-\/$>$get(\textquotesingle{}document\+\_\+srl\textquotesingle{})}
 
+Definition at line 289 of file ko.\-install.\-php.
 
+\hypertarget{ko_8install_8php_ae40aed4d7a99050245e66ca2a82949ed}{\index{ko.\-install.\-php@{ko.\-install.\-php}!\$module\-\_\-srl@{\$module\-\_\-srl}}
+\index{\$module\-\_\-srl@{\$module\-\_\-srl}!ko.install.php@{ko.\-install.\-php}}
+\subsubsection[{\$module\-\_\-srl}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf module\-\_\-srl} = \$module\-Info-\/$>${\bf module\-\_\-srl}}}\label{ko_8install_8php_ae40aed4d7a99050245e66ca2a82949ed}
 
-Definition at line 288 of file ko.\+install.\+php.
 
-\mbox{\Hypertarget{ko_8install_8php_a576210f0eec2e42df2c40e04a3972bb0}\label{ko_8install_8php_a576210f0eec2e42df2c40e04a3972bb0}} 
-\index{ko.\+install.\+php@{ko.\+install.\+php}!\$mlayout\+\_\+srl@{\$mlayout\+\_\+srl}}
-\index{\$mlayout\+\_\+srl@{\$mlayout\+\_\+srl}!ko.\+install.\+php@{ko.\+install.\+php}}
-\subsubsection{\texorpdfstring{\$mlayout\+\_\+srl}{$mlayout\_srl}}
-{\footnotesize\ttfamily \$\hyperlink{ko_8install_8php_a9cf497537007b08c645bed35f564be54}{mlayout\+\_\+srl} = \$args-\/$>$\hyperlink{ko_8install_8php_a70054876db09b2519a1726663c8dd9e7}{layout\+\_\+srl} = \hyperlink{func_8inc_8php_a5a97b458f9c5b4fe3574671840aee27c}{get\+Next\+Sequence}()}
+Definition at line 254 of file ko.\-install.\-php.
 
+\hypertarget{ko_8install_8php_ae3552a6dd49f37a50e7858151f7c5cc2}{\index{ko.\-install.\-php@{ko.\-install.\-php}!\$module\-Info@{\$module\-Info}}
+\index{\$module\-Info@{\$module\-Info}!ko.install.php@{ko.\-install.\-php}}
+\subsubsection[{\$module\-Info}]{\setlength{\rightskip}{0pt plus 5cm}\$module\-Info = \$o\-Module\-Model-\/$>$get\-Module\-Info\-By\-Menu\-Item\-Srl(\$sitemap\mbox{[}'{\bf G\-N\-B}'\mbox{]}\mbox{[}'list'\mbox{]}\mbox{[}0\mbox{]}\mbox{[}'menu\-\_\-srl'\mbox{]})}}\label{ko_8install_8php_ae3552a6dd49f37a50e7858151f7c5cc2}
 
 
-Definition at line 202 of file ko.\+install.\+php.
+Definition at line 253 of file ko.\-install.\-php.
 
-\mbox{\Hypertarget{ko_8install_8php_a5e701819149f6ea0893d4b79010417d3}\label{ko_8install_8php_a5e701819149f6ea0893d4b79010417d3}} 
-\index{ko.\+install.\+php@{ko.\+install.\+php}!\$module\+\_\+info@{\$module\+\_\+info}}
-\index{\$module\+\_\+info@{\$module\+\_\+info}!ko.\+install.\+php@{ko.\+install.\+php}}
-\subsubsection{\texorpdfstring{\$module\+\_\+info}{$module\_info}}
-{\footnotesize\ttfamily \$module\+\_\+info = \$o\+Module\+Model-\/$>$get\+Module\+Info\+By\+Module\+Srl(\$\hyperlink{ko_8install_8php_a370bb6450fab1da3e0ed9f484a38b761}{module\+\_\+srl})}
+\hypertarget{ko_8install_8php_aaa80946d50e2d3677fbbc6d6c8a643c3}{\index{ko.\-install.\-php@{ko.\-install.\-php}!\$module\-List@{\$module\-List}}
+\index{\$module\-List@{\$module\-List}!ko.install.php@{ko.\-install.\-php}}
+\subsubsection[{\$module\-List}]{\setlength{\rightskip}{0pt plus 5cm}\$module\-List = array('{\bf page}', '{\bf board}', '{\bf editor}')}}\label{ko_8install_8php_aaa80946d50e2d3677fbbc6d6c8a643c3}
 
 
+Definition at line 225 of file ko.\-install.\-php.
 
-Definition at line 289 of file ko.\+install.\+php.
+\hypertarget{ko_8install_8php_a2598d068355cca17645bc6bd70cc3a8c}{\index{ko.\-install.\-php@{ko.\-install.\-php}!\$moutput@{\$moutput}}
+\index{\$moutput@{\$moutput}!ko.install.php@{ko.\-install.\-php}}
+\subsubsection[{\$moutput}]{\setlength{\rightskip}{0pt plus 5cm}\$moutput = {\bf Module\-Handler\-::trigger\-Call}('menu.\-get\-Module\-List\-In\-Sitemap', 'after', \$module\-List)}}\label{ko_8install_8php_a2598d068355cca17645bc6bd70cc3a8c}
 
-\mbox{\Hypertarget{ko_8install_8php_ae40aed4d7a99050245e66ca2a82949ed}\label{ko_8install_8php_ae40aed4d7a99050245e66ca2a82949ed}} 
-\index{ko.\+install.\+php@{ko.\+install.\+php}!\$module\+\_\+srl@{\$module\+\_\+srl}}
-\index{\$module\+\_\+srl@{\$module\+\_\+srl}!ko.\+install.\+php@{ko.\+install.\+php}}
-\subsubsection{\texorpdfstring{\$module\+\_\+srl}{$module\_srl}}
-{\footnotesize\ttfamily \$\hyperlink{ko_8install_8php_a370bb6450fab1da3e0ed9f484a38b761}{module\+\_\+srl} = \$module\+Info-\/$>$\hyperlink{ko_8install_8php_a370bb6450fab1da3e0ed9f484a38b761}{module\+\_\+srl}}
 
+Definition at line 226 of file ko.\-install.\-php.
 
+\hypertarget{ko_8install_8php_a52d90466dc7adee7d324b3ef032b8167}{\index{ko.\-install.\-php@{ko.\-install.\-php}!\$o\-Admin\-Controller@{\$o\-Admin\-Controller}}
+\index{\$o\-Admin\-Controller@{\$o\-Admin\-Controller}!ko.install.php@{ko.\-install.\-php}}
+\subsubsection[{\$o\-Admin\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}\$o\-Admin\-Controller = {\bf get\-Admin\-Controller}('{\bf admin}')}}\label{ko_8install_8php_a52d90466dc7adee7d324b3ef032b8167}
 
-Definition at line 254 of file ko.\+install.\+php.
 
-\mbox{\Hypertarget{ko_8install_8php_ae3552a6dd49f37a50e7858151f7c5cc2}\label{ko_8install_8php_ae3552a6dd49f37a50e7858151f7c5cc2}} 
-\index{ko.\+install.\+php@{ko.\+install.\+php}!\$module\+Info@{\$module\+Info}}
-\index{\$module\+Info@{\$module\+Info}!ko.\+install.\+php@{ko.\+install.\+php}}
-\subsubsection{\texorpdfstring{\$module\+Info}{$moduleInfo}}
-{\footnotesize\ttfamily \$module\+Info = \$o\+Module\+Model-\/$>$get\+Module\+Info\+By\+Menu\+Item\+Srl(\$sitemap\mbox{[}\textquotesingle{}\hyperlink{ko_8install_8php_a9b1716b68fc04f3492448f38148dcbf5}{G\+NB}\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}list\textquotesingle{}\mbox{]}\mbox{[}0\mbox{]}\mbox{[}\textquotesingle{}menu\+\_\+srl\textquotesingle{}\mbox{]})}
+Definition at line 249 of file ko.\-install.\-php.
 
+\hypertarget{ko_8install_8php_a9008ed94ba185855b1723e367744b87e}{\index{ko.\-install.\-php@{ko.\-install.\-php}!\$obj@{\$obj}}
+\index{\$obj@{\$obj}!ko.install.php@{ko.\-install.\-php}}
+\subsubsection[{\$obj}]{\setlength{\rightskip}{0pt plus 5cm}\$obj = new std\-Class()}}\label{ko_8install_8php_a9008ed94ba185855b1723e367744b87e}
 
 
-Definition at line 253 of file ko.\+install.\+php.
+Definition at line 262 of file ko.\-install.\-php.
 
-\mbox{\Hypertarget{ko_8install_8php_aaa80946d50e2d3677fbbc6d6c8a643c3}\label{ko_8install_8php_aaa80946d50e2d3677fbbc6d6c8a643c3}} 
-\index{ko.\+install.\+php@{ko.\+install.\+php}!\$module\+List@{\$module\+List}}
-\index{\$module\+List@{\$module\+List}!ko.\+install.\+php@{ko.\+install.\+php}}
-\subsubsection{\texorpdfstring{\$module\+List}{$moduleList}}
-{\footnotesize\ttfamily \$module\+List = array(\textquotesingle{}\hyperlink{classpage}{page}\textquotesingle{}, \textquotesingle{}\hyperlink{classboard}{board}\textquotesingle{}, \textquotesingle{}\hyperlink{classeditor}{editor}\textquotesingle{})}
+\hypertarget{ko_8install_8php_aac43fce682d4b7a05df6d3e44c2c54e6}{\index{ko.\-install.\-php@{ko.\-install.\-php}!\$o\-Document\-Controller@{\$o\-Document\-Controller}}
+\index{\$o\-Document\-Controller@{\$o\-Document\-Controller}!ko.install.php@{ko.\-install.\-php}}
+\subsubsection[{\$o\-Document\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}\$o\-Document\-Controller = {\bf get\-Controller}('{\bf document}')}}\label{ko_8install_8php_aac43fce682d4b7a05df6d3e44c2c54e6}
 
 
+Definition at line 260 of file ko.\-install.\-php.
 
-Definition at line 225 of file ko.\+install.\+php.
+\hypertarget{ko_8install_8php_afb18aa87e5520385e76377e876e042af}{\index{ko.\-install.\-php@{ko.\-install.\-php}!\$o\-Document\-Model@{\$o\-Document\-Model}}
+\index{\$o\-Document\-Model@{\$o\-Document\-Model}!ko.install.php@{ko.\-install.\-php}}
+\subsubsection[{\$o\-Document\-Model}]{\setlength{\rightskip}{0pt plus 5cm}\$o\-Document\-Model = {\bf get\-Model}('{\bf document}')}}\label{ko_8install_8php_afb18aa87e5520385e76377e876e042af}
 
-\mbox{\Hypertarget{ko_8install_8php_a2598d068355cca17645bc6bd70cc3a8c}\label{ko_8install_8php_a2598d068355cca17645bc6bd70cc3a8c}} 
-\index{ko.\+install.\+php@{ko.\+install.\+php}!\$moutput@{\$moutput}}
-\index{\$moutput@{\$moutput}!ko.\+install.\+php@{ko.\+install.\+php}}
-\subsubsection{\texorpdfstring{\$moutput}{$moutput}}
-{\footnotesize\ttfamily \$moutput = \hyperlink{classModuleHandler_aa1b1f9eae91ccd76e6a81c9375c2e673}{Module\+Handler\+::trigger\+Call}(\textquotesingle{}menu.\+get\+Module\+List\+In\+Sitemap\textquotesingle{}, \textquotesingle{}after\textquotesingle{}, \$module\+List)}
 
+Definition at line 259 of file ko.\-install.\-php.
 
+\hypertarget{ko_8install_8php_a6a03496003da7df71cf94d9accb430be}{\index{ko.\-install.\-php@{ko.\-install.\-php}!\$o\-Layout\-Admin\-Controller@{\$o\-Layout\-Admin\-Controller}}
+\index{\$o\-Layout\-Admin\-Controller@{\$o\-Layout\-Admin\-Controller}!ko.install.php@{ko.\-install.\-php}}
+\subsubsection[{\$o\-Layout\-Admin\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}\$o\-Layout\-Admin\-Controller = {\bf get\-Admin\-Controller}('{\bf layout}')}}\label{ko_8install_8php_a6a03496003da7df71cf94d9accb430be}
 
-Definition at line 226 of file ko.\+install.\+php.
 
-\mbox{\Hypertarget{ko_8install_8php_a52d90466dc7adee7d324b3ef032b8167}\label{ko_8install_8php_a52d90466dc7adee7d324b3ef032b8167}} 
-\index{ko.\+install.\+php@{ko.\+install.\+php}!\$o\+Admin\+Controller@{\$o\+Admin\+Controller}}
-\index{\$o\+Admin\+Controller@{\$o\+Admin\+Controller}!ko.\+install.\+php@{ko.\+install.\+php}}
-\subsubsection{\texorpdfstring{\$o\+Admin\+Controller}{$oAdminController}}
-{\footnotesize\ttfamily \$o\+Admin\+Controller = \hyperlink{func_8inc_8php_a2f7ca88a5226536aca3b2f5682bd7b2d}{get\+Admin\+Controller}(\textquotesingle{}\hyperlink{classadmin}{admin}\textquotesingle{})}
+Definition at line 192 of file ko.\-install.\-php.
 
+\hypertarget{ko_8install_8php_a9062530c3b03479ca4530daee1c18887}{\index{ko.\-install.\-php@{ko.\-install.\-php}!\$o\-Menu\-Admin\-Controller@{\$o\-Menu\-Admin\-Controller}}
+\index{\$o\-Menu\-Admin\-Controller@{\$o\-Menu\-Admin\-Controller}!ko.install.php@{ko.\-install.\-php}}
+\subsubsection[{\$o\-Menu\-Admin\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}\$o\-Menu\-Admin\-Controller = {\bf get\-Admin\-Controller}('{\bf menu}')}}\label{ko_8install_8php_a9062530c3b03479ca4530daee1c18887}
 
 
-Definition at line 249 of file ko.\+install.\+php.
+Definition at line 7 of file ko.\-install.\-php.
 
-\mbox{\Hypertarget{ko_8install_8php_a9008ed94ba185855b1723e367744b87e}\label{ko_8install_8php_a9008ed94ba185855b1723e367744b87e}} 
-\index{ko.\+install.\+php@{ko.\+install.\+php}!\$obj@{\$obj}}
-\index{\$obj@{\$obj}!ko.\+install.\+php@{ko.\+install.\+php}}
-\subsubsection{\texorpdfstring{\$obj}{$obj}}
-{\footnotesize\ttfamily \$obj = new std\+Class()}
+\hypertarget{ko_8install_8php_a9fd93f6625cec4fd65bf6f412e28c015}{\index{ko.\-install.\-php@{ko.\-install.\-php}!\$o\-Module\-Controller@{\$o\-Module\-Controller}}
+\index{\$o\-Module\-Controller@{\$o\-Module\-Controller}!ko.install.php@{ko.\-install.\-php}}
+\subsubsection[{\$o\-Module\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}for (\$i=1;\$i$<$=4;\$i++) \$o\-Module\-Controller = {\bf get\-Controller}('{\bf module}')}}\label{ko_8install_8php_a9fd93f6625cec4fd65bf6f412e28c015}
 
 
+Definition at line 287 of file ko.\-install.\-php.
 
-Definition at line 262 of file ko.\+install.\+php.
+\hypertarget{ko_8install_8php_a8d7a87df524e7d6938f66f8e284cdd1e}{\index{ko.\-install.\-php@{ko.\-install.\-php}!\$o\-Module\-Model@{\$o\-Module\-Model}}
+\index{\$o\-Module\-Model@{\$o\-Module\-Model}!ko.install.php@{ko.\-install.\-php}}
+\subsubsection[{\$o\-Module\-Model}]{\setlength{\rightskip}{0pt plus 5cm}\$o\-Module\-Model = {\bf get\-Model}('{\bf module}')}}\label{ko_8install_8php_a8d7a87df524e7d6938f66f8e284cdd1e}
 
-\mbox{\Hypertarget{ko_8install_8php_aac43fce682d4b7a05df6d3e44c2c54e6}\label{ko_8install_8php_aac43fce682d4b7a05df6d3e44c2c54e6}} 
-\index{ko.\+install.\+php@{ko.\+install.\+php}!\$o\+Document\+Controller@{\$o\+Document\+Controller}}
-\index{\$o\+Document\+Controller@{\$o\+Document\+Controller}!ko.\+install.\+php@{ko.\+install.\+php}}
-\subsubsection{\texorpdfstring{\$o\+Document\+Controller}{$oDocumentController}}
-{\footnotesize\ttfamily \$o\+Document\+Controller = \hyperlink{func_8inc_8php_aa08f01e3bf130d770b373ca8493e3e9b}{get\+Controller}(\textquotesingle{}\hyperlink{classdocument}{document}\textquotesingle{})}
 
+Definition at line 236 of file ko.\-install.\-php.
 
+\hypertarget{ko_8install_8php_abd57e3ab220291ea9b5c16c2a4e0670e}{\index{ko.\-install.\-php@{ko.\-install.\-php}!\$o\-Template\-Handler@{\$o\-Template\-Handler}}
+\index{\$o\-Template\-Handler@{\$o\-Template\-Handler}!ko.install.php@{ko.\-install.\-php}}
+\subsubsection[{\$o\-Template\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}\$o\-Template\-Handler = {\bf Template\-Handler\-::get\-Instance}()}}\label{ko_8install_8php_abd57e3ab220291ea9b5c16c2a4e0670e}
 
-Definition at line 260 of file ko.\+install.\+php.
 
-\mbox{\Hypertarget{ko_8install_8php_afb18aa87e5520385e76377e876e042af}\label{ko_8install_8php_afb18aa87e5520385e76377e876e042af}} 
-\index{ko.\+install.\+php@{ko.\+install.\+php}!\$o\+Document\+Model@{\$o\+Document\+Model}}
-\index{\$o\+Document\+Model@{\$o\+Document\+Model}!ko.\+install.\+php@{ko.\+install.\+php}}
-\subsubsection{\texorpdfstring{\$o\+Document\+Model}{$oDocumentModel}}
-{\footnotesize\ttfamily \$o\+Document\+Model = \hyperlink{func_8inc_8php_aecdfcc5332bcf22df01fc21a03b64435}{get\+Model}(\textquotesingle{}\hyperlink{classdocument}{document}\textquotesingle{})}
+Definition at line 257 of file ko.\-install.\-php.
 
+\hypertarget{ko_8install_8php_a73004ce9cd673c1bfafd1dc351134797}{\index{ko.\-install.\-php@{ko.\-install.\-php}!\$output@{\$output}}
+\index{\$output@{\$output}!ko.install.php@{ko.\-install.\-php}}
+\subsubsection[{\$output}]{\setlength{\rightskip}{0pt plus 5cm}\$output = \$o\-Layout\-Admin\-Controller-\/$>$insert\-Layout(\$args)}}\label{ko_8install_8php_a73004ce9cd673c1bfafd1dc351134797}
 
 
-Definition at line 259 of file ko.\+install.\+php.
+Definition at line 193 of file ko.\-install.\-php.
 
-\mbox{\Hypertarget{ko_8install_8php_a6a03496003da7df71cf94d9accb430be}\label{ko_8install_8php_a6a03496003da7df71cf94d9accb430be}} 
-\index{ko.\+install.\+php@{ko.\+install.\+php}!\$o\+Layout\+Admin\+Controller@{\$o\+Layout\+Admin\+Controller}}
-\index{\$o\+Layout\+Admin\+Controller@{\$o\+Layout\+Admin\+Controller}!ko.\+install.\+php@{ko.\+install.\+php}}
-\subsubsection{\texorpdfstring{\$o\+Layout\+Admin\+Controller}{$oLayoutAdminController}}
-{\footnotesize\ttfamily \$o\+Layout\+Admin\+Controller = \hyperlink{func_8inc_8php_a2f7ca88a5226536aca3b2f5682bd7b2d}{get\+Admin\+Controller}(\textquotesingle{}\hyperlink{classlayout}{layout}\textquotesingle{})}
+\hypertarget{ko_8install_8php_a19e0fcfacd69155c9cc255e5500f6ccc}{\index{ko.\-install.\-php@{ko.\-install.\-php}!\$site\-\_\-args@{\$site\-\_\-args}}
+\index{\$site\-\_\-args@{\$site\-\_\-args}!ko.install.php@{ko.\-install.\-php}}
+\subsubsection[{\$site\-\_\-args}]{\setlength{\rightskip}{0pt plus 5cm}\$site\-\_\-args = new std\-Class()}}\label{ko_8install_8php_a19e0fcfacd69155c9cc255e5500f6ccc}
 
 
+Definition at line 296 of file ko.\-install.\-php.
 
-Definition at line 192 of file ko.\+install.\+php.
+\hypertarget{ko_8install_8php_a0b79a974b91157b79d83cc0be7e3247c}{\index{ko.\-install.\-php@{ko.\-install.\-php}!\$site\-Design\-Path@{\$site\-Design\-Path}}
+\index{\$site\-Design\-Path@{\$site\-Design\-Path}!ko.install.php@{ko.\-install.\-php}}
+\subsubsection[{\$site\-Design\-Path}]{\setlength{\rightskip}{0pt plus 5cm}\$site\-Design\-Path = \-\_\-\-X\-E\-\_\-\-P\-A\-T\-H\-\_\-.'files/site\-\_\-design/'}}\label{ko_8install_8php_a0b79a974b91157b79d83cc0be7e3247c}
 
-\mbox{\Hypertarget{ko_8install_8php_a9062530c3b03479ca4530daee1c18887}\label{ko_8install_8php_a9062530c3b03479ca4530daee1c18887}} 
-\index{ko.\+install.\+php@{ko.\+install.\+php}!\$o\+Menu\+Admin\+Controller@{\$o\+Menu\+Admin\+Controller}}
-\index{\$o\+Menu\+Admin\+Controller@{\$o\+Menu\+Admin\+Controller}!ko.\+install.\+php@{ko.\+install.\+php}}
-\subsubsection{\texorpdfstring{\$o\+Menu\+Admin\+Controller}{$oMenuAdminController}}
-{\footnotesize\ttfamily \$o\+Menu\+Admin\+Controller = \hyperlink{func_8inc_8php_a2f7ca88a5226536aca3b2f5682bd7b2d}{get\+Admin\+Controller}(\textquotesingle{}\hyperlink{classmenu}{menu}\textquotesingle{})}
 
+Definition at line 217 of file ko.\-install.\-php.
 
+\hypertarget{ko_8install_8php_ae7b8fee391a6d8b9162de5b69b9dc07f}{\index{ko.\-install.\-php@{ko.\-install.\-php}!\$sitemap@{\$sitemap}}
+\index{\$sitemap@{\$sitemap}!ko.install.php@{ko.\-install.\-php}}
+\subsubsection[{\$sitemap}]{\setlength{\rightskip}{0pt plus 5cm}\$sitemap}}\label{ko_8install_8php_ae7b8fee391a6d8b9162de5b69b9dc07f}
 
-Definition at line 7 of file ko.\+install.\+php.
 
-\mbox{\Hypertarget{ko_8install_8php_a624bfa0dadce265c9df9279a5ddfbd8d}\label{ko_8install_8php_a624bfa0dadce265c9df9279a5ddfbd8d}} 
-\index{ko.\+install.\+php@{ko.\+install.\+php}!\$o\+Module\+Controller@{\$o\+Module\+Controller}}
-\index{\$o\+Module\+Controller@{\$o\+Module\+Controller}!ko.\+install.\+php@{ko.\+install.\+php}}
-\subsubsection{\texorpdfstring{\$o\+Module\+Controller}{$oModuleController}}
-{\footnotesize\ttfamily for ( \$i=1;\$i$<$=4;\$i++) \$o\+Module\+Controller = \hyperlink{func_8inc_8php_aa08f01e3bf130d770b373ca8493e3e9b}{get\+Controller}(\textquotesingle{}\hyperlink{classmodule}{module}\textquotesingle{})}
+Definition at line 10 of file ko.\-install.\-php.
 
+\hypertarget{ko_8install_8php_aa61073b7b359568eb3459da113fd8cdf}{\index{ko.\-install.\-php@{ko.\-install.\-php}!\$skin\-Types@{\$skin\-Types}}
+\index{\$skin\-Types@{\$skin\-Types}!ko.install.php@{ko.\-install.\-php}}
+\subsubsection[{\$skin\-Types}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} (\$moutput-\/$>$to\-Bool()) \$skin\-Types = array('{\bf skin}'=$>$'skins/', 'mskin'=$>$'m.\-skins/')}}\label{ko_8install_8php_aa61073b7b359568eb3459da113fd8cdf}
 
 
-Definition at line 287 of file ko.\+install.\+php.
+Definition at line 232 of file ko.\-install.\-php.
 
-\mbox{\Hypertarget{ko_8install_8php_a8d7a87df524e7d6938f66f8e284cdd1e}\label{ko_8install_8php_a8d7a87df524e7d6938f66f8e284cdd1e}} 
-\index{ko.\+install.\+php@{ko.\+install.\+php}!\$o\+Module\+Model@{\$o\+Module\+Model}}
-\index{\$o\+Module\+Model@{\$o\+Module\+Model}!ko.\+install.\+php@{ko.\+install.\+php}}
-\subsubsection{\texorpdfstring{\$o\+Module\+Model}{$oModuleModel}}
-{\footnotesize\ttfamily \$o\+Module\+Model = \hyperlink{func_8inc_8php_aecdfcc5332bcf22df01fc21a03b64435}{get\+Model}(\textquotesingle{}\hyperlink{classmodule}{module}\textquotesingle{})}
+\hypertarget{ko_8install_8php_a41d95a71ebf0758e83224ab4bb3a31c0}{\index{ko.\-install.\-php@{ko.\-install.\-php}!\$xeicon\-\_\-document\-\_\-srl@{\$xeicon\-\_\-document\-\_\-srl}}
+\index{\$xeicon\-\_\-document\-\_\-srl@{\$xeicon\-\_\-document\-\_\-srl}!ko.install.php@{ko.\-install.\-php}}
+\subsubsection[{\$xeicon\-\_\-document\-\_\-srl}]{\setlength{\rightskip}{0pt plus 5cm}\$xeicon\-\_\-document\-\_\-srl = array()}}\label{ko_8install_8php_a41d95a71ebf0758e83224ab4bb3a31c0}
 
 
+Definition at line 306 of file ko.\-install.\-php.
 
-Definition at line 236 of file ko.\+install.\+php.
+\hypertarget{ko_8install_8php_acf278a9931e1d1ea52b045c0fa42b9b3}{\index{ko.\-install.\-php@{ko.\-install.\-php}!\$xeicon\-\_\-module\-\_\-srl@{\$xeicon\-\_\-module\-\_\-srl}}
+\index{\$xeicon\-\_\-module\-\_\-srl@{\$xeicon\-\_\-module\-\_\-srl}!ko.install.php@{ko.\-install.\-php}}
+\subsubsection[{\$xeicon\-\_\-module\-\_\-srl}]{\setlength{\rightskip}{0pt plus 5cm}\$xeicon\-\_\-module\-\_\-srl = \$module\-Info-\/$>${\bf module\-\_\-srl}}}\label{ko_8install_8php_acf278a9931e1d1ea52b045c0fa42b9b3}
 
-\mbox{\Hypertarget{ko_8install_8php_abd57e3ab220291ea9b5c16c2a4e0670e}\label{ko_8install_8php_abd57e3ab220291ea9b5c16c2a4e0670e}} 
-\index{ko.\+install.\+php@{ko.\+install.\+php}!\$o\+Template\+Handler@{\$o\+Template\+Handler}}
-\index{\$o\+Template\+Handler@{\$o\+Template\+Handler}!ko.\+install.\+php@{ko.\+install.\+php}}
-\subsubsection{\texorpdfstring{\$o\+Template\+Handler}{$oTemplateHandler}}
-{\footnotesize\ttfamily \$o\+Template\+Handler = \hyperlink{classTemplateHandler_a9745460c5daccfc48abf8652778b2718}{Template\+Handler\+::get\+Instance}()}
 
+Definition at line 304 of file ko.\-install.\-php.
 
+\hypertarget{ko_8install_8php_a65dddc3e5e47cb506e6b5417ffb3bdef}{\index{ko.\-install.\-php@{ko.\-install.\-php}!content@{content}}
+\index{content@{content}!ko.install.php@{ko.\-install.\-php}}
+\subsubsection[{content}]{\setlength{\rightskip}{0pt plus 5cm}\$module\-\_\-info {\bf content} = \$o\-Template\-Handler-\/$>$compile({\bf \-\_\-\-X\-E\-\_\-\-P\-A\-T\-H\-\_\-} . 'modules/{\bf install}/script/welcome\-\_\-content', 'welcome\-\_\-content\-\_\-'.\$lang)}}\label{ko_8install_8php_a65dddc3e5e47cb506e6b5417ffb3bdef}
 
-Definition at line 257 of file ko.\+install.\+php.
 
-\mbox{\Hypertarget{ko_8install_8php_a73004ce9cd673c1bfafd1dc351134797}\label{ko_8install_8php_a73004ce9cd673c1bfafd1dc351134797}} 
-\index{ko.\+install.\+php@{ko.\+install.\+php}!\$output@{\$output}}
-\index{\$output@{\$output}!ko.\+install.\+php@{ko.\+install.\+php}}
-\subsubsection{\texorpdfstring{\$output}{$output}}
-{\footnotesize\ttfamily \$output = \$o\+Layout\+Admin\+Controller-\/$>$insert\+Layout(\$args)}
+Definition at line 274 of file ko.\-install.\-php.
 
+\hypertarget{ko_8install_8php_a1dffea0d5ba8194f8ef01f414af0c831}{\index{ko.\-install.\-php@{ko.\-install.\-php}!email\-\_\-address@{email\-\_\-address}}
+\index{email\-\_\-address@{email\-\_\-address}!ko.install.php@{ko.\-install.\-php}}
+\subsubsection[{email\-\_\-address}]{\setlength{\rightskip}{0pt plus 5cm}\$obj email\-\_\-address = \$logged\-\_\-info-\/$>$email\-\_\-address}}\label{ko_8install_8php_a1dffea0d5ba8194f8ef01f414af0c831}
 
 
-Definition at line 193 of file ko.\+install.\+php.
+Definition at line 268 of file ko.\-install.\-php.
 
-\mbox{\Hypertarget{ko_8install_8php_a19e0fcfacd69155c9cc255e5500f6ccc}\label{ko_8install_8php_a19e0fcfacd69155c9cc255e5500f6ccc}} 
-\index{ko.\+install.\+php@{ko.\+install.\+php}!\$site\+\_\+args@{\$site\+\_\+args}}
-\index{\$site\+\_\+args@{\$site\+\_\+args}!ko.\+install.\+php@{ko.\+install.\+php}}
-\subsubsection{\texorpdfstring{\$site\+\_\+args}{$site\_args}}
-{\footnotesize\ttfamily \$site\+\_\+args = new std\+Class()}
+\hypertarget{ko_8install_8php_ae1dcb37fc34a8f312d2e6abd6f806743}{\index{ko.\-install.\-php@{ko.\-install.\-php}!extra\-\_\-vars@{extra\-\_\-vars}}
+\index{extra\-\_\-vars@{extra\-\_\-vars}!ko.install.php@{ko.\-install.\-php}}
+\subsubsection[{extra\-\_\-vars}]{\setlength{\rightskip}{0pt plus 5cm}\$args extra\-\_\-vars = serialize(\$extra\-\_\-vars)}}\label{ko_8install_8php_ae1dcb37fc34a8f312d2e6abd6f806743}
 
 
+Definition at line 197 of file ko.\-install.\-php.
 
-Definition at line 296 of file ko.\+install.\+php.
+\hypertarget{ko_8install_8php_a683e060c22be3e658be6f9751a2082f0}{\index{ko.\-install.\-php@{ko.\-install.\-php}!F\-N\-B@{F\-N\-B}}
+\index{F\-N\-B@{F\-N\-B}!ko.install.php@{ko.\-install.\-php}}
+\subsubsection[{F\-N\-B}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf extra\-\_\-vars} F\-N\-B = \$sitemap\mbox{[}'F\-N\-B'\mbox{]}\mbox{[}'menu\-\_\-srl'\mbox{]}}}\label{ko_8install_8php_a683e060c22be3e658be6f9751a2082f0}
 
-\mbox{\Hypertarget{ko_8install_8php_a0b79a974b91157b79d83cc0be7e3247c}\label{ko_8install_8php_a0b79a974b91157b79d83cc0be7e3247c}} 
-\index{ko.\+install.\+php@{ko.\+install.\+php}!\$site\+Design\+Path@{\$site\+Design\+Path}}
-\index{\$site\+Design\+Path@{\$site\+Design\+Path}!ko.\+install.\+php@{ko.\+install.\+php}}
-\subsubsection{\texorpdfstring{\$site\+Design\+Path}{$siteDesignPath}}
-{\footnotesize\ttfamily \$site\+Design\+Path = \+\_\+\+X\+E\+\_\+\+P\+A\+T\+H\+\_\+.\textquotesingle{}files/site\+\_\+design/\textquotesingle{}}
 
+Definition at line 183 of file ko.\-install.\-php.
 
+\hypertarget{ko_8install_8php_a9b1716b68fc04f3492448f38148dcbf5}{\index{ko.\-install.\-php@{ko.\-install.\-php}!G\-N\-B@{G\-N\-B}}
+\index{G\-N\-B@{G\-N\-B}!ko.install.php@{ko.\-install.\-php}}
+\subsubsection[{G\-N\-B}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf extra\-\_\-vars} G\-N\-B = \$sitemap\mbox{[}'G\-N\-B'\mbox{]}\mbox{[}'menu\-\_\-srl'\mbox{]}}}\label{ko_8install_8php_a9b1716b68fc04f3492448f38148dcbf5}
 
-Definition at line 217 of file ko.\+install.\+php.
 
-\mbox{\Hypertarget{ko_8install_8php_ae7b8fee391a6d8b9162de5b69b9dc07f}\label{ko_8install_8php_ae7b8fee391a6d8b9162de5b69b9dc07f}} 
-\index{ko.\+install.\+php@{ko.\+install.\+php}!\$sitemap@{\$sitemap}}
-\index{\$sitemap@{\$sitemap}!ko.\+install.\+php@{ko.\+install.\+php}}
-\subsubsection{\texorpdfstring{\$sitemap}{$sitemap}}
-{\footnotesize\ttfamily \$sitemap}
+Definition at line 181 of file ko.\-install.\-php.
 
+\hypertarget{ko_8install_8php_acd0b17bfe6d14c82871d73fa39c9c22d}{\index{ko.\-install.\-php@{ko.\-install.\-php}!index\-\_\-module\-\_\-srl@{index\-\_\-module\-\_\-srl}}
+\index{index\-\_\-module\-\_\-srl@{index\-\_\-module\-\_\-srl}!ko.install.php@{ko.\-install.\-php}}
+\subsubsection[{index\-\_\-module\-\_\-srl}]{\setlength{\rightskip}{0pt plus 5cm}\$site\-\_\-args index\-\_\-module\-\_\-srl = \${\bf module\-\_\-srl}}}\label{ko_8install_8php_acd0b17bfe6d14c82871d73fa39c9c22d}
 
 
-Definition at line 10 of file ko.\+install.\+php.
+Definition at line 298 of file ko.\-install.\-php.
 
-\mbox{\Hypertarget{ko_8install_8php_ae4a3fa2c4de23e619733a2b144521f54}\label{ko_8install_8php_ae4a3fa2c4de23e619733a2b144521f54}} 
-\index{ko.\+install.\+php@{ko.\+install.\+php}!\$skin\+Types@{\$skin\+Types}}
-\index{\$skin\+Types@{\$skin\+Types}!ko.\+install.\+php@{ko.\+install.\+php}}
-\subsubsection{\texorpdfstring{\$skin\+Types}{$skinTypes}}
-{\footnotesize\ttfamily \hyperlink{config_8inc_8php_a73b98c0274e28635a594091f9ca43cb4}{if} ( \$moutput-\/$>$to\+Bool()) \$skin\+Types = array(\textquotesingle{}\hyperlink{ko_8install_8php_ab0f2b49fdb57754496b34f6b880cdeaf}{skin}\textquotesingle{}=$>$\textquotesingle{}skins/\textquotesingle{}, \textquotesingle{}mskin\textquotesingle{}=$>$\textquotesingle{}m.\+skins/\textquotesingle{})}
+\hypertarget{ko_8install_8php_a0dc2cdff7167f362443808ff71ae5177}{\index{ko.\-install.\-php@{ko.\-install.\-php}!layout@{layout}}
+\index{layout@{layout}!ko.install.php@{ko.\-install.\-php}}
+\subsubsection[{layout}]{\setlength{\rightskip}{0pt plus 5cm}\$args {\bf layout} = 'xedition'}}\label{ko_8install_8php_a0dc2cdff7167f362443808ff71ae5177}
 
 
+Definition at line 188 of file ko.\-install.\-php.
 
-Definition at line 232 of file ko.\+install.\+php.
+\hypertarget{ko_8install_8php_a70054876db09b2519a1726663c8dd9e7}{\index{ko.\-install.\-php@{ko.\-install.\-php}!layout\-\_\-srl@{layout\-\_\-srl}}
+\index{layout\-\_\-srl@{layout\-\_\-srl}!ko.install.php@{ko.\-install.\-php}}
+\subsubsection[{layout\-\_\-srl}]{\setlength{\rightskip}{0pt plus 5cm}\$design\-Info layout\-\_\-srl = \$layout\-\_\-srl}}\label{ko_8install_8php_a70054876db09b2519a1726663c8dd9e7}
 
-\mbox{\Hypertarget{ko_8install_8php_a41d95a71ebf0758e83224ab4bb3a31c0}\label{ko_8install_8php_a41d95a71ebf0758e83224ab4bb3a31c0}} 
-\index{ko.\+install.\+php@{ko.\+install.\+php}!\$xeicon\+\_\+document\+\_\+srl@{\$xeicon\+\_\+document\+\_\+srl}}
-\index{\$xeicon\+\_\+document\+\_\+srl@{\$xeicon\+\_\+document\+\_\+srl}!ko.\+install.\+php@{ko.\+install.\+php}}
-\subsubsection{\texorpdfstring{\$xeicon\+\_\+document\+\_\+srl}{$xeicon\_document\_srl}}
-{\footnotesize\ttfamily \$xeicon\+\_\+document\+\_\+srl = array()}
 
+Definition at line 222 of file ko.\-install.\-php.
 
+\hypertarget{ko_8install_8php_a0532d89570cfdaebc628afac2ff5a81b}{\index{ko.\-install.\-php@{ko.\-install.\-php}!layout\-\_\-type@{layout\-\_\-type}}
+\index{layout\-\_\-type@{layout\-\_\-type}!ko.install.php@{ko.\-install.\-php}}
+\subsubsection[{layout\-\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}\$args layout\-\_\-type = 'P'}}\label{ko_8install_8php_a0532d89570cfdaebc628afac2ff5a81b}
 
-Definition at line 306 of file ko.\+install.\+php.
 
-\mbox{\Hypertarget{ko_8install_8php_acf278a9931e1d1ea52b045c0fa42b9b3}\label{ko_8install_8php_acf278a9931e1d1ea52b045c0fa42b9b3}} 
-\index{ko.\+install.\+php@{ko.\+install.\+php}!\$xeicon\+\_\+module\+\_\+srl@{\$xeicon\+\_\+module\+\_\+srl}}
-\index{\$xeicon\+\_\+module\+\_\+srl@{\$xeicon\+\_\+module\+\_\+srl}!ko.\+install.\+php@{ko.\+install.\+php}}
-\subsubsection{\texorpdfstring{\$xeicon\+\_\+module\+\_\+srl}{$xeicon\_module\_srl}}
-{\footnotesize\ttfamily \$xeicon\+\_\+module\+\_\+srl = \$module\+Info-\/$>$\hyperlink{ko_8install_8php_a370bb6450fab1da3e0ed9f484a38b761}{module\+\_\+srl}}
+Definition at line 190 of file ko.\-install.\-php.
 
+\hypertarget{ko_8install_8php_ac71104c770b8ced3891f35849d3f2906}{\index{ko.\-install.\-php@{ko.\-install.\-php}!main\-\_\-menu@{main\-\_\-menu}}
+\index{main\-\_\-menu@{main\-\_\-menu}!ko.install.php@{ko.\-install.\-php}}
+\subsubsection[{main\-\_\-menu}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf extra\-\_\-vars} main\-\_\-menu = \$sitemap\mbox{[}'{\bf G\-N\-B}'\mbox{]}\mbox{[}'menu\-\_\-srl'\mbox{]}}}\label{ko_8install_8php_ac71104c770b8ced3891f35849d3f2906}
 
 
-Definition at line 304 of file ko.\+install.\+php.
+Definition at line 206 of file ko.\-install.\-php.
 
-\mbox{\Hypertarget{ko_8install_8php_a65dddc3e5e47cb506e6b5417ffb3bdef}\label{ko_8install_8php_a65dddc3e5e47cb506e6b5417ffb3bdef}} 
-\index{ko.\+install.\+php@{ko.\+install.\+php}!content@{content}}
-\index{content@{content}!ko.\+install.\+php@{ko.\+install.\+php}}
-\subsubsection{\texorpdfstring{content}{content}}
-{\footnotesize\ttfamily \$module\+\_\+info \hyperlink{classcontent}{content} = \$o\+Template\+Handler-\/$>$compile(\hyperlink{config_8inc_8php_a5387c7a3f2aa38adf16f324cee88db88}{\+\_\+\+X\+E\+\_\+\+P\+A\+T\+H\+\_\+} . \textquotesingle{}modules/\hyperlink{classinstall}{install}/script/welcome\+\_\+content\textquotesingle{}, \textquotesingle{}welcome\+\_\+content\+\_\+\textquotesingle{}.\$lang)}
+\hypertarget{ko_8install_8php_a9da4bb6e77356bb68ae0e05dbd9f5e2f}{\index{ko.\-install.\-php@{ko.\-install.\-php}!mcontent@{mcontent}}
+\index{mcontent@{mcontent}!ko.install.php@{ko.\-install.\-php}}
+\subsubsection[{mcontent}]{\setlength{\rightskip}{0pt plus 5cm}\$module\-\_\-info {\bf mcontent} = '$<$img has\-Content=\char`\"{}true\char`\"{} class=\char`\"{}zbxe\-\_\-widget\-\_\-output\char`\"{} widget=\char`\"{}widget\-Content\char`\"{} style=\char`\"{}width\-: 100\%; float\-: left;\char`\"{} body=\char`\"{}\char`\"{} document\-\_\-srl=\char`\"{}'.\$mdocument\-\_\-srl.'\char`\"{} widget\-\_\-padding\-\_\-left=\char`\"{}0\char`\"{} widget\-\_\-padding\-\_\-right=\char`\"{}0\char`\"{} widget\-\_\-padding\-\_\-top=\char`\"{}0\char`\"{} widget\-\_\-padding\-\_\-bottom=\char`\"{}0\char`\"{} /$>$'}}\label{ko_8install_8php_a9da4bb6e77356bb68ae0e05dbd9f5e2f}
 
 
+Definition at line 291 of file ko.\-install.\-php.
 
-Definition at line 274 of file ko.\+install.\+php.
+\hypertarget{ko_8install_8php_aa61f9e08f0fe505094d26f8143f30bbd}{\index{ko.\-install.\-php@{ko.\-install.\-php}!member\-\_\-srl@{member\-\_\-srl}}
+\index{member\-\_\-srl@{member\-\_\-srl}!ko.install.php@{ko.\-install.\-php}}
+\subsubsection[{member\-\_\-srl}]{\setlength{\rightskip}{0pt plus 5cm}\$obj member\-\_\-srl = \$logged\-\_\-info-\/$>$member\-\_\-srl}}\label{ko_8install_8php_aa61f9e08f0fe505094d26f8143f30bbd}
 
-\mbox{\Hypertarget{ko_8install_8php_a1dffea0d5ba8194f8ef01f414af0c831}\label{ko_8install_8php_a1dffea0d5ba8194f8ef01f414af0c831}} 
-\index{ko.\+install.\+php@{ko.\+install.\+php}!email\+\_\+address@{email\+\_\+address}}
-\index{email\+\_\+address@{email\+\_\+address}!ko.\+install.\+php@{ko.\+install.\+php}}
-\subsubsection{\texorpdfstring{email\+\_\+address}{email\_address}}
-{\footnotesize\ttfamily \$obj email\+\_\+address = \$logged\+\_\+info-\/$>$email\+\_\+address}
 
+Definition at line 264 of file ko.\-install.\-php.
 
+\hypertarget{ko_8install_8php_a9cf497537007b08c645bed35f564be54}{\index{ko.\-install.\-php@{ko.\-install.\-php}!mlayout\-\_\-srl@{mlayout\-\_\-srl}}
+\index{mlayout\-\_\-srl@{mlayout\-\_\-srl}!ko.install.php@{ko.\-install.\-php}}
+\subsubsection[{mlayout\-\_\-srl}]{\setlength{\rightskip}{0pt plus 5cm}\$design\-Info mlayout\-\_\-srl = \$mlayout\-\_\-srl}}\label{ko_8install_8php_a9cf497537007b08c645bed35f564be54}
 
-Definition at line 268 of file ko.\+install.\+php.
 
-\mbox{\Hypertarget{ko_8install_8php_ae1dcb37fc34a8f312d2e6abd6f806743}\label{ko_8install_8php_ae1dcb37fc34a8f312d2e6abd6f806743}} 
-\index{ko.\+install.\+php@{ko.\+install.\+php}!extra\+\_\+vars@{extra\+\_\+vars}}
-\index{extra\+\_\+vars@{extra\+\_\+vars}!ko.\+install.\+php@{ko.\+install.\+php}}
-\subsubsection{\texorpdfstring{extra\+\_\+vars}{extra\_vars}}
-{\footnotesize\ttfamily \$args extra\+\_\+vars = serialize(\$extra\+\_\+vars)}
+Definition at line 223 of file ko.\-install.\-php.
 
+\hypertarget{ko_8install_8php_a5c3fc1968f94c2b6a7c60845f284de78}{\index{ko.\-install.\-php@{ko.\-install.\-php}!module@{module}}
+\index{module@{module}!ko.install.php@{ko.\-install.\-php}}
+\subsubsection[{module}]{\setlength{\rightskip}{0pt plus 5cm}\$design\-Info {\bf module} = new std\-Class()}}\label{ko_8install_8php_a5c3fc1968f94c2b6a7c60845f284de78}
 
 
-Definition at line 197 of file ko.\+install.\+php.
+Definition at line 234 of file ko.\-install.\-php.
 
-\mbox{\Hypertarget{ko_8install_8php_a683e060c22be3e658be6f9751a2082f0}\label{ko_8install_8php_a683e060c22be3e658be6f9751a2082f0}} 
-\index{ko.\+install.\+php@{ko.\+install.\+php}!F\+NB@{F\+NB}}
-\index{F\+NB@{F\+NB}!ko.\+install.\+php@{ko.\+install.\+php}}
-\subsubsection{\texorpdfstring{F\+NB}{FNB}}
-{\footnotesize\ttfamily \$\hyperlink{ko_8install_8php_ae1dcb37fc34a8f312d2e6abd6f806743}{extra\+\_\+vars} F\+NB = \$sitemap\mbox{[}\textquotesingle{}F\+NB\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}menu\+\_\+srl\textquotesingle{}\mbox{]}}
+\hypertarget{ko_8install_8php_a370bb6450fab1da3e0ed9f484a38b761}{\index{ko.\-install.\-php@{ko.\-install.\-php}!module\-\_\-srl@{module\-\_\-srl}}
+\index{module\-\_\-srl@{module\-\_\-srl}!ko.install.php@{ko.\-install.\-php}}
+\subsubsection[{module\-\_\-srl}]{\setlength{\rightskip}{0pt plus 5cm}\$obj module\-\_\-srl = \$module\-\_\-srl}}\label{ko_8install_8php_a370bb6450fab1da3e0ed9f484a38b761}
 
 
+Definition at line 270 of file ko.\-install.\-php.
 
-Definition at line 183 of file ko.\+install.\+php.
+\hypertarget{ko_8install_8php_a151ecae87a1f3d7e257aa089803086bd}{\index{ko.\-install.\-php@{ko.\-install.\-php}!nick\-\_\-name@{nick\-\_\-name}}
+\index{nick\-\_\-name@{nick\-\_\-name}!ko.install.php@{ko.\-install.\-php}}
+\subsubsection[{nick\-\_\-name}]{\setlength{\rightskip}{0pt plus 5cm}\$obj nick\-\_\-name = htmlspecialchars\-\_\-decode(\$logged\-\_\-info-\/$>$nick\-\_\-name)}}\label{ko_8install_8php_a151ecae87a1f3d7e257aa089803086bd}
 
-\mbox{\Hypertarget{ko_8install_8php_a9b1716b68fc04f3492448f38148dcbf5}\label{ko_8install_8php_a9b1716b68fc04f3492448f38148dcbf5}} 
-\index{ko.\+install.\+php@{ko.\+install.\+php}!G\+NB@{G\+NB}}
-\index{G\+NB@{G\+NB}!ko.\+install.\+php@{ko.\+install.\+php}}
-\subsubsection{\texorpdfstring{G\+NB}{GNB}}
-{\footnotesize\ttfamily \$\hyperlink{ko_8install_8php_ae1dcb37fc34a8f312d2e6abd6f806743}{extra\+\_\+vars} G\+NB = \$sitemap\mbox{[}\textquotesingle{}G\+NB\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}menu\+\_\+srl\textquotesingle{}\mbox{]}}
 
+Definition at line 267 of file ko.\-install.\-php.
 
+\hypertarget{ko_8install_8php_a8b1406b4ad1048041558dce6bfe89004}{\index{ko.\-install.\-php@{ko.\-install.\-php}!site\-\_\-srl@{site\-\_\-srl}}
+\index{site\-\_\-srl@{site\-\_\-srl}!ko.install.php@{ko.\-install.\-php}}
+\subsubsection[{site\-\_\-srl}]{\setlength{\rightskip}{0pt plus 5cm}\$site\-\_\-args site\-\_\-srl = 0}}\label{ko_8install_8php_a8b1406b4ad1048041558dce6bfe89004}
 
-Definition at line 181 of file ko.\+install.\+php.
 
-\mbox{\Hypertarget{ko_8install_8php_acd0b17bfe6d14c82871d73fa39c9c22d}\label{ko_8install_8php_acd0b17bfe6d14c82871d73fa39c9c22d}} 
-\index{ko.\+install.\+php@{ko.\+install.\+php}!index\+\_\+module\+\_\+srl@{index\+\_\+module\+\_\+srl}}
-\index{index\+\_\+module\+\_\+srl@{index\+\_\+module\+\_\+srl}!ko.\+install.\+php@{ko.\+install.\+php}}
-\subsubsection{\texorpdfstring{index\+\_\+module\+\_\+srl}{index\_module\_srl}}
-{\footnotesize\ttfamily \$site\+\_\+args index\+\_\+module\+\_\+srl = \$\hyperlink{ko_8install_8php_a370bb6450fab1da3e0ed9f484a38b761}{module\+\_\+srl}}
+Definition at line 187 of file ko.\-install.\-php.
 
+\hypertarget{ko_8install_8php_ab0f2b49fdb57754496b34f6b880cdeaf}{\index{ko.\-install.\-php@{ko.\-install.\-php}!skin@{skin}}
+\index{skin@{skin}!ko.install.php@{ko.\-install.\-php}}
+\subsubsection[{skin}]{\setlength{\rightskip}{0pt plus 5cm}\$design\-Info {\bf module} {\bf editor} skin = 'xedition'}}\label{ko_8install_8php_ab0f2b49fdb57754496b34f6b880cdeaf}
 
 
-Definition at line 298 of file ko.\+install.\+php.
+Definition at line 246 of file ko.\-install.\-php.
 
-\mbox{\Hypertarget{ko_8install_8php_a0dc2cdff7167f362443808ff71ae5177}\label{ko_8install_8php_a0dc2cdff7167f362443808ff71ae5177}} 
-\index{ko.\+install.\+php@{ko.\+install.\+php}!layout@{layout}}
-\index{layout@{layout}!ko.\+install.\+php@{ko.\+install.\+php}}
-\subsubsection{\texorpdfstring{layout}{layout}}
-{\footnotesize\ttfamily \$args \hyperlink{classlayout}{layout} = \textquotesingle{}xedition\textquotesingle{}}
+\hypertarget{ko_8install_8php_a5b072c5fd1d2228c6ba5cee13cd142e3}{\index{ko.\-install.\-php@{ko.\-install.\-php}!title@{title}}
+\index{title@{title}!ko.install.php@{ko.\-install.\-php}}
+\subsubsection[{title}]{\setlength{\rightskip}{0pt plus 5cm}\$obj title = 'X\-E\-D\-I\-T\-I\-O\-N'}}\label{ko_8install_8php_a5b072c5fd1d2228c6ba5cee13cd142e3}
 
 
+Definition at line 189 of file ko.\-install.\-php.
 
-Definition at line 188 of file ko.\+install.\+php.
+\hypertarget{ko_8install_8php_abc0cb1f57d83d4a106f4495c30e0df52}{\index{ko.\-install.\-php@{ko.\-install.\-php}!U\-N\-B@{U\-N\-B}}
+\index{U\-N\-B@{U\-N\-B}!ko.install.php@{ko.\-install.\-php}}
+\subsubsection[{U\-N\-B}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf extra\-\_\-vars} U\-N\-B = \$sitemap\mbox{[}'U\-N\-B'\mbox{]}\mbox{[}'menu\-\_\-srl'\mbox{]}}}\label{ko_8install_8php_abc0cb1f57d83d4a106f4495c30e0df52}
 
-\mbox{\Hypertarget{ko_8install_8php_a70054876db09b2519a1726663c8dd9e7}\label{ko_8install_8php_a70054876db09b2519a1726663c8dd9e7}} 
-\index{ko.\+install.\+php@{ko.\+install.\+php}!layout\+\_\+srl@{layout\+\_\+srl}}
-\index{layout\+\_\+srl@{layout\+\_\+srl}!ko.\+install.\+php@{ko.\+install.\+php}}
-\subsubsection{\texorpdfstring{layout\+\_\+srl}{layout\_srl}}
-{\footnotesize\ttfamily \$design\+Info layout\+\_\+srl = \$layout\+\_\+srl}
 
+Definition at line 182 of file ko.\-install.\-php.
 
+\hypertarget{ko_8install_8php_a74f1a394389d774e5b4cd5d1d15413f7}{\index{ko.\-install.\-php@{ko.\-install.\-php}!user\-\_\-id@{user\-\_\-id}}
+\index{user\-\_\-id@{user\-\_\-id}!ko.install.php@{ko.\-install.\-php}}
+\subsubsection[{user\-\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}\$obj user\-\_\-id = htmlspecialchars\-\_\-decode(\$logged\-\_\-info-\/$>$user\-\_\-id)}}\label{ko_8install_8php_a74f1a394389d774e5b4cd5d1d15413f7}
 
-Definition at line 222 of file ko.\+install.\+php.
 
-\mbox{\Hypertarget{ko_8install_8php_a0532d89570cfdaebc628afac2ff5a81b}\label{ko_8install_8php_a0532d89570cfdaebc628afac2ff5a81b}} 
-\index{ko.\+install.\+php@{ko.\+install.\+php}!layout\+\_\+type@{layout\+\_\+type}}
-\index{layout\+\_\+type@{layout\+\_\+type}!ko.\+install.\+php@{ko.\+install.\+php}}
-\subsubsection{\texorpdfstring{layout\+\_\+type}{layout\_type}}
-{\footnotesize\ttfamily \$args layout\+\_\+type = \textquotesingle{}P\textquotesingle{}}
+Definition at line 265 of file ko.\-install.\-php.
 
+\hypertarget{ko_8install_8php_a115401aff7da80e73c66e9f76505426b}{\index{ko.\-install.\-php@{ko.\-install.\-php}!user\-\_\-name@{user\-\_\-name}}
+\index{user\-\_\-name@{user\-\_\-name}!ko.install.php@{ko.\-install.\-php}}
+\subsubsection[{user\-\_\-name}]{\setlength{\rightskip}{0pt plus 5cm}\$obj user\-\_\-name = htmlspecialchars\-\_\-decode(\$logged\-\_\-info-\/$>$user\-\_\-name)}}\label{ko_8install_8php_a115401aff7da80e73c66e9f76505426b}
 
 
-Definition at line 190 of file ko.\+install.\+php.
-
-\mbox{\Hypertarget{ko_8install_8php_ac71104c770b8ced3891f35849d3f2906}\label{ko_8install_8php_ac71104c770b8ced3891f35849d3f2906}} 
-\index{ko.\+install.\+php@{ko.\+install.\+php}!main\+\_\+menu@{main\+\_\+menu}}
-\index{main\+\_\+menu@{main\+\_\+menu}!ko.\+install.\+php@{ko.\+install.\+php}}
-\subsubsection{\texorpdfstring{main\+\_\+menu}{main\_menu}}
-{\footnotesize\ttfamily \$\hyperlink{ko_8install_8php_ae1dcb37fc34a8f312d2e6abd6f806743}{extra\+\_\+vars} main\+\_\+menu = \$sitemap\mbox{[}\textquotesingle{}\hyperlink{ko_8install_8php_a9b1716b68fc04f3492448f38148dcbf5}{G\+NB}\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}menu\+\_\+srl\textquotesingle{}\mbox{]}}
-
-
-
-Definition at line 206 of file ko.\+install.\+php.
-
-\mbox{\Hypertarget{ko_8install_8php_a9da4bb6e77356bb68ae0e05dbd9f5e2f}\label{ko_8install_8php_a9da4bb6e77356bb68ae0e05dbd9f5e2f}} 
-\index{ko.\+install.\+php@{ko.\+install.\+php}!mcontent@{mcontent}}
-\index{mcontent@{mcontent}!ko.\+install.\+php@{ko.\+install.\+php}}
-\subsubsection{\texorpdfstring{mcontent}{mcontent}}
-{\footnotesize\ttfamily \$module\+\_\+info \hyperlink{classmcontent}{mcontent} = \textquotesingle{}$<$img has\+Content=\char`\"{}true\char`\"{} class=\char`\"{}zbxe\+\_\+widget\+\_\+output\char`\"{} widget=\char`\"{}widget\+Content\char`\"{} style=\char`\"{}width\+: 100\%; float\+: left;\char`\"{} body=\char`\"{}\char`\"{} document\+\_\+srl=\char`\"{}\textquotesingle{}.\$mdocument\+\_\+srl.\textquotesingle{}\char`\"{} widget\+\_\+padding\+\_\+left=\char`\"{}0\char`\"{} widget\+\_\+padding\+\_\+right=\char`\"{}0\char`\"{} widget\+\_\+padding\+\_\+top=\char`\"{}0\char`\"{} widget\+\_\+padding\+\_\+bottom=\char`\"{}0\char`\"{} /$>$\textquotesingle{}}
-
-
-
-Definition at line 291 of file ko.\+install.\+php.
-
-\mbox{\Hypertarget{ko_8install_8php_aa61f9e08f0fe505094d26f8143f30bbd}\label{ko_8install_8php_aa61f9e08f0fe505094d26f8143f30bbd}} 
-\index{ko.\+install.\+php@{ko.\+install.\+php}!member\+\_\+srl@{member\+\_\+srl}}
-\index{member\+\_\+srl@{member\+\_\+srl}!ko.\+install.\+php@{ko.\+install.\+php}}
-\subsubsection{\texorpdfstring{member\+\_\+srl}{member\_srl}}
-{\footnotesize\ttfamily \$obj member\+\_\+srl = \$logged\+\_\+info-\/$>$member\+\_\+srl}
-
-
-
-Definition at line 264 of file ko.\+install.\+php.
-
-\mbox{\Hypertarget{ko_8install_8php_a9cf497537007b08c645bed35f564be54}\label{ko_8install_8php_a9cf497537007b08c645bed35f564be54}} 
-\index{ko.\+install.\+php@{ko.\+install.\+php}!mlayout\+\_\+srl@{mlayout\+\_\+srl}}
-\index{mlayout\+\_\+srl@{mlayout\+\_\+srl}!ko.\+install.\+php@{ko.\+install.\+php}}
-\subsubsection{\texorpdfstring{mlayout\+\_\+srl}{mlayout\_srl}}
-{\footnotesize\ttfamily \$design\+Info mlayout\+\_\+srl = \$mlayout\+\_\+srl}
-
-
-
-Definition at line 223 of file ko.\+install.\+php.
-
-\mbox{\Hypertarget{ko_8install_8php_a5c3fc1968f94c2b6a7c60845f284de78}\label{ko_8install_8php_a5c3fc1968f94c2b6a7c60845f284de78}} 
-\index{ko.\+install.\+php@{ko.\+install.\+php}!module@{module}}
-\index{module@{module}!ko.\+install.\+php@{ko.\+install.\+php}}
-\subsubsection{\texorpdfstring{module}{module}}
-{\footnotesize\ttfamily \$design\+Info \hyperlink{classmodule}{module} = new std\+Class()}
-
-
-
-Definition at line 234 of file ko.\+install.\+php.
-
-\mbox{\Hypertarget{ko_8install_8php_a370bb6450fab1da3e0ed9f484a38b761}\label{ko_8install_8php_a370bb6450fab1da3e0ed9f484a38b761}} 
-\index{ko.\+install.\+php@{ko.\+install.\+php}!module\+\_\+srl@{module\+\_\+srl}}
-\index{module\+\_\+srl@{module\+\_\+srl}!ko.\+install.\+php@{ko.\+install.\+php}}
-\subsubsection{\texorpdfstring{module\+\_\+srl}{module\_srl}}
-{\footnotesize\ttfamily \$obj module\+\_\+srl = \$module\+\_\+srl}
-
-
-
-Definition at line 270 of file ko.\+install.\+php.
-
-\mbox{\Hypertarget{ko_8install_8php_a151ecae87a1f3d7e257aa089803086bd}\label{ko_8install_8php_a151ecae87a1f3d7e257aa089803086bd}} 
-\index{ko.\+install.\+php@{ko.\+install.\+php}!nick\+\_\+name@{nick\+\_\+name}}
-\index{nick\+\_\+name@{nick\+\_\+name}!ko.\+install.\+php@{ko.\+install.\+php}}
-\subsubsection{\texorpdfstring{nick\+\_\+name}{nick\_name}}
-{\footnotesize\ttfamily \$obj nick\+\_\+name = htmlspecialchars\+\_\+decode(\$logged\+\_\+info-\/$>$nick\+\_\+name)}
-
-
-
-Definition at line 267 of file ko.\+install.\+php.
-
-\mbox{\Hypertarget{ko_8install_8php_a8b1406b4ad1048041558dce6bfe89004}\label{ko_8install_8php_a8b1406b4ad1048041558dce6bfe89004}} 
-\index{ko.\+install.\+php@{ko.\+install.\+php}!site\+\_\+srl@{site\+\_\+srl}}
-\index{site\+\_\+srl@{site\+\_\+srl}!ko.\+install.\+php@{ko.\+install.\+php}}
-\subsubsection{\texorpdfstring{site\+\_\+srl}{site\_srl}}
-{\footnotesize\ttfamily \$site\+\_\+args site\+\_\+srl = 0}
-
-
-
-Definition at line 187 of file ko.\+install.\+php.
-
-\mbox{\Hypertarget{ko_8install_8php_ab0f2b49fdb57754496b34f6b880cdeaf}\label{ko_8install_8php_ab0f2b49fdb57754496b34f6b880cdeaf}} 
-\index{ko.\+install.\+php@{ko.\+install.\+php}!skin@{skin}}
-\index{skin@{skin}!ko.\+install.\+php@{ko.\+install.\+php}}
-\subsubsection{\texorpdfstring{skin}{skin}}
-{\footnotesize\ttfamily \$design\+Info \hyperlink{classmodule}{module} \hyperlink{classeditor}{editor} skin = \textquotesingle{}xedition\textquotesingle{}}
-
-
-
-Definition at line 246 of file ko.\+install.\+php.
-
-\mbox{\Hypertarget{ko_8install_8php_a5b072c5fd1d2228c6ba5cee13cd142e3}\label{ko_8install_8php_a5b072c5fd1d2228c6ba5cee13cd142e3}} 
-\index{ko.\+install.\+php@{ko.\+install.\+php}!title@{title}}
-\index{title@{title}!ko.\+install.\+php@{ko.\+install.\+php}}
-\subsubsection{\texorpdfstring{title}{title}}
-{\footnotesize\ttfamily \$obj title = \textquotesingle{}X\+E\+D\+I\+T\+I\+ON\textquotesingle{}}
-
-
-
-Definition at line 189 of file ko.\+install.\+php.
-
-\mbox{\Hypertarget{ko_8install_8php_abc0cb1f57d83d4a106f4495c30e0df52}\label{ko_8install_8php_abc0cb1f57d83d4a106f4495c30e0df52}} 
-\index{ko.\+install.\+php@{ko.\+install.\+php}!U\+NB@{U\+NB}}
-\index{U\+NB@{U\+NB}!ko.\+install.\+php@{ko.\+install.\+php}}
-\subsubsection{\texorpdfstring{U\+NB}{UNB}}
-{\footnotesize\ttfamily \$\hyperlink{ko_8install_8php_ae1dcb37fc34a8f312d2e6abd6f806743}{extra\+\_\+vars} U\+NB = \$sitemap\mbox{[}\textquotesingle{}U\+NB\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}menu\+\_\+srl\textquotesingle{}\mbox{]}}
-
-
-
-Definition at line 182 of file ko.\+install.\+php.
-
-\mbox{\Hypertarget{ko_8install_8php_a74f1a394389d774e5b4cd5d1d15413f7}\label{ko_8install_8php_a74f1a394389d774e5b4cd5d1d15413f7}} 
-\index{ko.\+install.\+php@{ko.\+install.\+php}!user\+\_\+id@{user\+\_\+id}}
-\index{user\+\_\+id@{user\+\_\+id}!ko.\+install.\+php@{ko.\+install.\+php}}
-\subsubsection{\texorpdfstring{user\+\_\+id}{user\_id}}
-{\footnotesize\ttfamily \$obj user\+\_\+id = htmlspecialchars\+\_\+decode(\$logged\+\_\+info-\/$>$user\+\_\+id)}
-
-
-
-Definition at line 265 of file ko.\+install.\+php.
-
-\mbox{\Hypertarget{ko_8install_8php_a115401aff7da80e73c66e9f76505426b}\label{ko_8install_8php_a115401aff7da80e73c66e9f76505426b}} 
-\index{ko.\+install.\+php@{ko.\+install.\+php}!user\+\_\+name@{user\+\_\+name}}
-\index{user\+\_\+name@{user\+\_\+name}!ko.\+install.\+php@{ko.\+install.\+php}}
-\subsubsection{\texorpdfstring{user\+\_\+name}{user\_name}}
-{\footnotesize\ttfamily \$obj user\+\_\+name = htmlspecialchars\+\_\+decode(\$logged\+\_\+info-\/$>$user\+\_\+name)}
-
-
-
-Definition at line 266 of file ko.\+install.\+php.
+Definition at line 266 of file ko.\-install.\-php.
 

@@ -1,33 +1,36 @@
-\hypertarget{openid__delegation__id_8addon_8php}{}\section{addons/openid\+\_\+delegation\+\_\+id/openid\+\_\+delegation\+\_\+id.addon.\+php File Reference}
-\label{openid__delegation__id_8addon_8php}\index{addons/openid\+\_\+delegation\+\_\+id/openid\+\_\+delegation\+\_\+id.\+addon.\+php@{addons/openid\+\_\+delegation\+\_\+id/openid\+\_\+delegation\+\_\+id.\+addon.\+php}}
+\hypertarget{openid__delegation__id_8addon_8php}{\section{addons/openid\-\_\-delegation\-\_\-id/openid\-\_\-delegation\-\_\-id.addon.\-php File Reference}
+\label{openid__delegation__id_8addon_8php}\index{addons/openid\-\_\-delegation\-\_\-id/openid\-\_\-delegation\-\_\-id.\-addon.\-php@{addons/openid\-\_\-delegation\-\_\-id/openid\-\_\-delegation\-\_\-id.\-addon.\-php}}
+}
 
 
-Open\+ID Delegation ID Add-\/on.  
+Open\-I\-D Delegation I\-D Add-\/on.  
 
 
 \subsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{config_8inc_8php_a73b98c0274e28635a594091f9ca43cb4}{if}(\$called\+\_\+position !=\textquotesingle{}before\+\_\+module\+\_\+init\textquotesingle{}) \hyperlink{config_8inc_8php_a73b98c0274e28635a594091f9ca43cb4}{if}(! \$addon\+\_\+info-\/$>$server$\vert$$\vert$! \$addon\+\_\+info-\/$>$delegate$\vert$$\vert$! \$addon\+\_\+info-\/$>$xrds) \hyperlink{openid__delegation__id_8addon_8php_accbe833cdba0e2efb425bd7ea757bb4b}{\$header\+\_\+script}
+\hyperlink{config_8inc_8php_aad1409caebafecab9504e38acf85fb5e}{if}(\$called\-\_\-position!= \\*
+'before\-\_\-module\-\_\-init') \hyperlink{config_8inc_8php_aad1409caebafecab9504e38acf85fb5e}{if}(!\$addon\-\_\-info-\/$>$\\*
+server$|$$|$!\$addon\-\_\-info-\/$>$delegate$|$$|$!\$addon\-\_\-info-\/$>$\\*
+xrds) \hyperlink{openid__delegation__id_8addon_8php_aee516fc492038096250a555b5f8bc880}{\$header\-\_\-script}
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-Open\+ID Delegation ID Add-\/on. 
-
-\begin{DoxyAuthor}{Author}
-N\+A\+V\+ER (\href{mailto:developers@xpressengine.com}{\tt developers@xpressengine.\+com}) This enables to use open\+ID as user\textquotesingle{}s homepage or blog url. Enter your open ID service information on the configuration. 
+Open\-I\-D Delegation I\-D Add-\/on. \begin{DoxyAuthor}{Author}
+N\-A\-V\-E\-R (\href{mailto:developers@xpressengine.com}{\tt developers@xpressengine.\-com}) This enables to use open\-I\-D as user's homepage or blog url. Enter your open I\-D service information on the configuration. 
 \end{DoxyAuthor}
 
 
-\subsection{Variable Documentation}
-\mbox{\Hypertarget{openid__delegation__id_8addon_8php_accbe833cdba0e2efb425bd7ea757bb4b}\label{openid__delegation__id_8addon_8php_accbe833cdba0e2efb425bd7ea757bb4b}} 
-\index{openid\+\_\+delegation\+\_\+id.\+addon.\+php@{openid\+\_\+delegation\+\_\+id.\+addon.\+php}!\$header\+\_\+script@{\$header\+\_\+script}}
-\index{\$header\+\_\+script@{\$header\+\_\+script}!openid\+\_\+delegation\+\_\+id.\+addon.\+php@{openid\+\_\+delegation\+\_\+id.\+addon.\+php}}
-\subsubsection{\texorpdfstring{\$header\+\_\+script}{$header\_script}}
-{\footnotesize\ttfamily \hyperlink{config_8inc_8php_a73b98c0274e28635a594091f9ca43cb4}{if} ( \$called\+\_\+position !=\textquotesingle{}before\+\_\+module\+\_\+init\textquotesingle{}) \hyperlink{config_8inc_8php_a73b98c0274e28635a594091f9ca43cb4}{if} (! \$addon\+\_\+info-\/$>$server$\vert$$\vert$! \$addon\+\_\+info-\/$>$delegate$\vert$$\vert$! \$addon\+\_\+info-\/$>$xrds) \$header\+\_\+script}
+Definition in file \hyperlink{openid__delegation__id_8addon_8php_source}{openid\-\_\-delegation\-\_\-id.\-addon.\-php}.
 
-{\bfseries Initial value\+:}
+
+
+\subsection{Variable Documentation}
+\hypertarget{openid__delegation__id_8addon_8php_aee516fc492038096250a555b5f8bc880}{\index{openid\-\_\-delegation\-\_\-id.\-addon.\-php@{openid\-\_\-delegation\-\_\-id.\-addon.\-php}!\$header\-\_\-script@{\$header\-\_\-script}}
+\index{\$header\-\_\-script@{\$header\-\_\-script}!openid_delegation_id.addon.php@{openid\-\_\-delegation\-\_\-id.\-addon.\-php}}
+\subsubsection[{\$header\-\_\-script}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} (\$called\-\_\-position!= 'before\-\_\-module\-\_\-init') {\bf if} (!\$addon\-\_\-info-\/$>$server$|$$|$!\$addon\-\_\-info-\/$>$delegate$|$$|$!\$addon\-\_\-info-\/$>$xrds) \$header\-\_\-script}}\label{openid__delegation__id_8addon_8php_aee516fc492038096250a555b5f8bc880}
+{\bfseries Initial value\-:}
 \begin{DoxyCode}
 = sprintf(
         \textcolor{stringliteral}{'<link rel="openid.server" href="%s" />'} . \textcolor{stringliteral}{"\(\backslash\)n"} .
@@ -40,5 +43,5 @@ N\+A\+V\+ER (\href{mailto:developers@xpressengine.com}{\tt developers@xpressengi
 \end{DoxyCode}
 
 
-Definition at line 26 of file openid\+\_\+delegation\+\_\+id.\+addon.\+php.
+Definition at line 26 of file openid\-\_\-delegation\-\_\-id.\-addon.\-php.
 
