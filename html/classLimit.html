@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.8.41</span>
+   &#160;<span id="projectnumber">1.8.42</span>
    </div>
   </td>
  </tr>
@@ -70,8 +70,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a45e8c675dc77b863b87590c76b4113ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLimit.html#a45e8c675dc77b863b87590c76b4113ad">Limit</a> ($list_count, $<a class="el" href="classpage.html">page</a>=NULL, $page_count=NULL)</td></tr>
-<tr class="separator:a45e8c675dc77b863b87590c76b4113ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f29df69e167ae9fe5ae3f6b4adebb34"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLimit.html#a3f29df69e167ae9fe5ae3f6b4adebb34">Limit</a> ($list_count, $<a class="el" href="classpage.html">page</a>=NULL, $page_count=NULL, $offset=NULL)</td></tr>
+<tr class="separator:a3f29df69e167ae9fe5ae3f6b4adebb34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a30a3752791c509c01ee9b52e774a3c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLimit.html#a3a30a3752791c509c01ee9b52e774a3c">isPageHandler</a> ()</td></tr>
 <tr class="separator:a3a30a3752791c509c01ee9b52e774a3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5dfd9d778f1cfbdaee6114f707a82b48"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLimit.html#a5dfd9d778f1cfbdaee6114f707a82b48">getOffset</a> ()</td></tr>
@@ -111,7 +111,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Limit_8class_8php_source.html#l00077">77</a> of file <a class="el" href="Limit_8class_8php_source.html">Limit.class.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Limit_8class_8php_source.html#l00082">82</a> of file <a class="el" href="Limit_8class_8php_source.html">Limit.class.php</a>.</p>
 
 </div>
 </div>
@@ -130,7 +130,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Limit_8class_8php_source.html#l00072">72</a> of file <a class="el" href="Limit_8class_8php_source.html">Limit.class.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Limit_8class_8php_source.html#l00077">77</a> of file <a class="el" href="Limit_8class_8php_source.html">Limit.class.php</a>.</p>
 
 </div>
 </div>
@@ -150,12 +150,12 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>In case you choose to use query limit in other cases than page select </p><dl class="section return"><dt>Returns</dt><dd>boolean </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Limit_8class_8php_source.html#l00060">60</a> of file <a class="el" href="Limit_8class_8php_source.html">Limit.class.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Limit_8class_8php_source.html#l00065">65</a> of file <a class="el" href="Limit_8class_8php_source.html">Limit.class.php</a>.</p>
 
 </div>
 </div>
-<a id="a45e8c675dc77b863b87590c76b4113ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a45e8c675dc77b863b87590c76b4113ad">&#9670;&nbsp;</a></span>Limit()</h2>
+<a id="a3f29df69e167ae9fe5ae3f6b4adebb34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f29df69e167ae9fe5ae3f6b4adebb34">&#9670;&nbsp;</a></span>Limit()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -176,7 +176,13 @@ Public Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$page_count</em> = <code>NULL</code>&#160;</td>
+          <td class="paramname"><em>$page_count</em> = <code>NULL</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$offset</em> = <code>NULL</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -190,12 +196,13 @@ Public Attributes</h2></td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$list_count</td><td></td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$page</td><td></td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$page_count</td><td></td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$offset</td><td></td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Limit_8class_8php_source.html#l00043">43</a> of file <a class="el" href="Limit_8class_8php_source.html">Limit.class.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Limit_8class_8php_source.html#l00044">44</a> of file <a class="el" href="Limit_8class_8php_source.html">Limit.class.php</a>.</p>
 
 </div>
 </div>
@@ -214,7 +221,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Limit_8class_8php_source.html#l00082">82</a> of file <a class="el" href="Limit_8class_8php_source.html">Limit.class.php</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Limit_8class_8php_source.html#l00087">87</a> of file <a class="el" href="Limit_8class_8php_source.html">Limit.class.php</a>.</p>
 
 </div>
 </div>
@@ -289,7 +296,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 13 2017 14:03:49 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 27 2017 17:28:39 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

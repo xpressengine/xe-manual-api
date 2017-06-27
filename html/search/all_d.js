@@ -16,7 +16,7 @@ var searchData=
   ['layoutadminview',['layoutAdminView',['../classlayoutAdminView.html',1,'']]],
   ['layoutmodel',['layoutModel',['../classlayoutModel.html',1,'']]],
   ['layoutview',['layoutView',['../classlayoutView.html',1,'']]],
-  ['limit',['Limit',['../classLimit.html',1,'Limit'],['../classLimit.html#a45e8c675dc77b863b87590c76b4113ad',1,'Limit\Limit()'],['../classQuery.html#af2e290d02d3e8c157f9b85b9da1ac08c',1,'Query\limit()']]],
+  ['limit',['Limit',['../classLimit.html',1,'Limit'],['../classLimit.html#a3f29df69e167ae9fe5ae3f6b4adebb34',1,'Limit\Limit()'],['../classQuery.html#af2e290d02d3e8c157f9b85b9da1ac08c',1,'Query\limit()']]],
   ['limit_2eclass_2ephp',['Limit.class.php',['../Limit_8class_8php.html',1,'']]],
   ['limittag',['LimitTag',['../classLimitTag.html',1,'LimitTag'],['../classLimitTag.html#a9b5dbee572b93d0ae32089e8deed7462',1,'LimitTag\LimitTag()']]],
   ['limittag_2eclass_2ephp',['LimitTag.class.php',['../LimitTag_8class_8php.html',1,'']]],

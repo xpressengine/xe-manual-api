@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['readme',['README',['../md_doxygen_README.html',1,'']]],
-  ['readme',['README',['../md_xe-manual-api_README.html',1,'']]],
   ['raiseerror',['raiseError',['../classPEAR.html#add7f8b82b573935527decd2e1af6065d',1,'PEAR']]],
   ['read',['read',['../classFileObject.html#af345fcd2d619a3e13b1f95f744964617',1,'FileObject\read()'],['../classHTTP__Request2__MultipartBody.html#aa392b34f91cbaf97962b7f77ea287cad',1,'HTTP_Request2_MultipartBody\read()'],['../classHTTP__Request2__SocketWrapper.html#a5e483244689fefacb4b774fde087c60d',1,'HTTP_Request2_SocketWrapper\read()'],['../classsessionModel.html#a1cae587d88bb84dc32c1c7b751b11528',1,'sessionModel\read()']]],
   ['read_5ferror',['READ_ERROR',['../classHTTP__Request2__Exception.html#a9167d1901f61ab9f5ec9271b41fe340e',1,'HTTP_Request2_Exception']]],
@@ -10,7 +8,7 @@ var searchData=
   ['readfile',['readFile',['../classFileHandler.html#ac0bd2431461ad2bc04c093bfbb826bea',1,'FileHandler']]],
   ['readinifile',['readIniFile',['../classFileHandler.html#a58a8bbae1ab4acb358599db38a47db4d',1,'FileHandler']]],
   ['readline',['readLine',['../classHTTP__Request2__SocketWrapper.html#a7b6d59527741b687f3de869bdd6bb1bf',1,'HTTP_Request2_SocketWrapper']]],
-  ['readme_2emd',['README.md',['../doxygen_2README_8md.html',1,'(Global Namespace)'],['../README_8md.html',1,'(Global Namespace)'],['../xe-manual-api_2README_8md.html',1,'(Global Namespace)']]],
+  ['readme_2emd',['README.md',['../README_8md.html',1,'']]],
   ['readresponse',['readResponse',['../classHTTP__Request2__Adapter__Socket.html#ace322a437e3d44b48bd44c2d452e0ad0',1,'HTTP_Request2_Adapter_Socket']]],
   ['rearrange',['rearrange',['../classautoinstallAdminView.html#a55e52a58461106215866abf53264edb5',1,'autoinstallAdminView']]],
   ['rearranges',['rearranges',['../classautoinstallAdminView.html#a16c6adf0c6d6f8bb24851dd5b68416f5',1,'autoinstallAdminView']]],
