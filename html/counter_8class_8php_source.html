@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.8.42</span>
+   &#160;<span id="projectnumber">1.8.43</span>
    </div>
   </td>
  </tr>
@@ -114,58 +114,78 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    {</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="comment">// Add site_srl to the counter</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        $oDB = <a class="code" href="classDB.html#a36df3da4b06cd9d45feccb6b82e612c8">DB::getInstance</a>();</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordflow">if</span>(!$oDB-&gt;isColumnExists(<span class="stringliteral">&#39;counter_log&#39;</span>, <span class="stringliteral">&#39;site_srl&#39;</span>))</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <span class="keywordflow">return</span> TRUE;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        }</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">if</span>(!$oDB-&gt;isIndexExists(<span class="stringliteral">&#39;counter_log&#39;</span>, <span class="stringliteral">&#39;idx_site_counter_log&#39;</span>))</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <span class="keywordflow">return</span> TRUE;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        }</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <a class="code" href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a> = <a class="code" href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a>(<span class="stringliteral">&#39;module&#39;</span>);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <a class="code" href="ko_8install_8php.html#a9fd93f6625cec4fd65bf6f412e28c015">$oModuleController</a> = <a class="code" href="func_8inc_8php.html#aa08f01e3bf130d770b373ca8493e3e9b">getController</a>(<span class="stringliteral">&#39;module&#39;</span>);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        $version_update_id = implode(<span class="charliteral">&#39;.&#39;</span>, array(__CLASS__, <a class="code" href="config_8inc_8php.html#afceaaec30d0e5b6a78d0ae28bcbfc8f3">__XE_VERSION__</a>, <span class="stringliteral">&#39;updated&#39;</span>));</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a>-&gt;needUpdate($version_update_id))</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <span class="keywordflow">if</span>(!$oDB-&gt;isColumnExists(<span class="stringliteral">&#39;counter_log&#39;</span>, <span class="stringliteral">&#39;site_srl&#39;</span>))</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                <span class="keywordflow">return</span> TRUE;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            }</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordflow">return</span> FALSE;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classcounter.html#a7c2e176fb177033a303aca925cddb046">   56</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classcounter.html#a7c2e176fb177033a303aca925cddb046">moduleUpdate</a>()</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    {</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="comment">// Add site_srl to the counter</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        $oDB = <a class="code" href="classDB.html#a36df3da4b06cd9d45feccb6b82e612c8">DB::getInstance</a>();</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">if</span>(!$oDB-&gt;isColumnExists(<span class="stringliteral">&#39;counter_log&#39;</span>, <span class="stringliteral">&#39;site_srl&#39;</span>))</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            $oDB-&gt;addColumn(<span class="stringliteral">&#39;counter_log&#39;</span>, <span class="stringliteral">&#39;site_srl&#39;</span>, <span class="stringliteral">&#39;number&#39;</span>, 11, 0, TRUE);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        }</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">if</span>(!$oDB-&gt;isIndexExists(<span class="stringliteral">&#39;counter_log&#39;</span>, <span class="stringliteral">&#39;idx_site_counter_log&#39;</span>))</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            $oDB-&gt;addIndex(<span class="stringliteral">&#39;counter_log&#39;</span>, <span class="stringliteral">&#39;idx_site_counter_log&#39;</span>, array(<span class="stringliteral">&#39;site_srl&#39;</span>, <span class="stringliteral">&#39;ipaddress&#39;</span>), FALSE);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        }</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(0, <span class="stringliteral">&#39;success_updated&#39;</span>);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    }</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="classcounter.html#a44bf39e02c7cb7c4a3c3000f9b8fba27">   79</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classcounter.html#a44bf39e02c7cb7c4a3c3000f9b8fba27">recompileCache</a>()</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    {</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="keywordflow">if</span>(!$oDB-&gt;isIndexExists(<span class="stringliteral">&#39;counter_log&#39;</span>, <span class="stringliteral">&#39;idx_site_counter_log&#39;</span>))</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                <span class="keywordflow">return</span> TRUE;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <a class="code" href="ko_8install_8php.html#a9fd93f6625cec4fd65bf6f412e28c015">$oModuleController</a>-&gt;insertUpdatedLog($version_update_id);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">return</span> FALSE;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classcounter.html#a7c2e176fb177033a303aca925cddb046">   64</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classcounter.html#a7c2e176fb177033a303aca925cddb046">moduleUpdate</a>()</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="comment">// Add site_srl to the counter</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        $oDB = <a class="code" href="classDB.html#a36df3da4b06cd9d45feccb6b82e612c8">DB::getInstance</a>();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <a class="code" href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a> = <a class="code" href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a>(<span class="stringliteral">&#39;module&#39;</span>);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <a class="code" href="ko_8install_8php.html#a9fd93f6625cec4fd65bf6f412e28c015">$oModuleController</a> = <a class="code" href="func_8inc_8php.html#aa08f01e3bf130d770b373ca8493e3e9b">getController</a>(<span class="stringliteral">&#39;module&#39;</span>);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        $version_update_id = implode(<span class="charliteral">&#39;.&#39;</span>, array(__CLASS__, <a class="code" href="config_8inc_8php.html#afceaaec30d0e5b6a78d0ae28bcbfc8f3">__XE_VERSION__</a>, <span class="stringliteral">&#39;updated&#39;</span>));</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a>-&gt;needUpdate($version_update_id))</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <span class="keywordflow">if</span>(!$oDB-&gt;isColumnExists(<span class="stringliteral">&#39;counter_log&#39;</span>, <span class="stringliteral">&#39;site_srl&#39;</span>))</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            {</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                $oDB-&gt;addColumn(<span class="stringliteral">&#39;counter_log&#39;</span>, <span class="stringliteral">&#39;site_srl&#39;</span>, <span class="stringliteral">&#39;number&#39;</span>, 11, 0, TRUE);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <span class="keywordflow">if</span>(!$oDB-&gt;isIndexExists(<span class="stringliteral">&#39;counter_log&#39;</span>, <span class="stringliteral">&#39;idx_site_counter_log&#39;</span>))</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                $oDB-&gt;addIndex(<span class="stringliteral">&#39;counter_log&#39;</span>, <span class="stringliteral">&#39;idx_site_counter_log&#39;</span>, array(<span class="stringliteral">&#39;site_srl&#39;</span>, <span class="stringliteral">&#39;ipaddress&#39;</span>), FALSE);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            }</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment">/* End of file counter.class.php */</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment">/* Location: ./modules/counter/counter.class.php */</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            <a class="code" href="ko_8install_8php.html#a9fd93f6625cec4fd65bf6f412e28c015">$oModuleController</a>-&gt;insertUpdatedLog($version_update_id);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(0, <span class="stringliteral">&#39;success_updated&#39;</span>);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    }</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="classcounter.html#a44bf39e02c7cb7c4a3c3000f9b8fba27">   95</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classcounter.html#a44bf39e02c7cb7c4a3c3000f9b8fba27">recompileCache</a>()</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    {</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    }</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment">/* End of file counter.class.php */</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment">/* Location: ./modules/counter/counter.class.php */</span></div>
+<div class="ttc" id="ko_8install_8php_html_a8d7a87df524e7d6938f66f8e284cdd1e"><div class="ttname"><a href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a></div><div class="ttdeci">$oModuleModel</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00236">ko.install.php:236</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_aa08f01e3bf130d770b373ca8493e3e9b"><div class="ttname"><a href="func_8inc_8php.html#aa08f01e3bf130d770b373ca8493e3e9b">getController</a></div><div class="ttdeci">getController($module_name)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00090">func.inc.php:90</a></div></div>
 <div class="ttc" id="classcounter_html_a41683d96129e79d63ce63ccde0efa2f0"><div class="ttname"><a href="classcounter.html#a41683d96129e79d63ce63ccde0efa2f0">counter\checkUpdate</a></div><div class="ttdeci">checkUpdate()</div><div class="ttdef"><b>Definition:</b> <a href="counter_8class_8php_source.html#l00034">counter.class.php:34</a></div></div>
+<div class="ttc" id="config_8inc_8php_html_afceaaec30d0e5b6a78d0ae28bcbfc8f3"><div class="ttname"><a href="config_8inc_8php.html#afceaaec30d0e5b6a78d0ae28bcbfc8f3">__XE_VERSION__</a></div><div class="ttdeci">const __XE_VERSION__</div><div class="ttdef"><b>Definition:</b> <a href="config_8inc_8php_source.html#l00032">config.inc.php:32</a></div></div>
 <div class="ttc" id="classcounter_html_a05510fe21e12390a3cdee668b42cab5b"><div class="ttname"><a href="classcounter.html#a05510fe21e12390a3cdee668b42cab5b">counter\moduleInstall</a></div><div class="ttdeci">moduleInstall()</div><div class="ttdef"><b>Definition:</b> <a href="counter_8class_8php_source.html#l00016">counter.class.php:16</a></div></div>
-<div class="ttc" id="classcounter_html_a44bf39e02c7cb7c4a3c3000f9b8fba27"><div class="ttname"><a href="classcounter.html#a44bf39e02c7cb7c4a3c3000f9b8fba27">counter\recompileCache</a></div><div class="ttdeci">recompileCache()</div><div class="ttdef"><b>Definition:</b> <a href="counter_8class_8php_source.html#l00079">counter.class.php:79</a></div></div>
+<div class="ttc" id="classcounter_html_a44bf39e02c7cb7c4a3c3000f9b8fba27"><div class="ttname"><a href="classcounter.html#a44bf39e02c7cb7c4a3c3000f9b8fba27">counter\recompileCache</a></div><div class="ttdeci">recompileCache()</div><div class="ttdef"><b>Definition:</b> <a href="counter_8class_8php_source.html#l00095">counter.class.php:95</a></div></div>
 <div class="ttc" id="classObject_html_a9c1f4bf33208a5c858c0722afce90f30"><div class="ttname"><a href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object\Object</a></div><div class="ttdeci">Object($error=0, $message= 'success')</div><div class="ttdef"><b>Definition:</b> <a href="Object_8class_8php_source.html#l00043">Object.class.php:43</a></div></div>
 <div class="ttc" id="classDB_html_a36df3da4b06cd9d45feccb6b82e612c8"><div class="ttname"><a href="classDB.html#a36df3da4b06cd9d45feccb6b82e612c8">DB\getInstance</a></div><div class="ttdeci">getInstance($db_type=NULL)</div><div class="ttdef"><b>Definition:</b> <a href="DB_8class_8php_source.html#l00142">DB.class.php:142</a></div></div>
-<div class="ttc" id="classcounter_html_a7c2e176fb177033a303aca925cddb046"><div class="ttname"><a href="classcounter.html#a7c2e176fb177033a303aca925cddb046">counter\moduleUpdate</a></div><div class="ttdeci">moduleUpdate()</div><div class="ttdef"><b>Definition:</b> <a href="counter_8class_8php_source.html#l00056">counter.class.php:56</a></div></div>
+<div class="ttc" id="classcounter_html_a7c2e176fb177033a303aca925cddb046"><div class="ttname"><a href="classcounter.html#a7c2e176fb177033a303aca925cddb046">counter\moduleUpdate</a></div><div class="ttdeci">moduleUpdate()</div><div class="ttdef"><b>Definition:</b> <a href="counter_8class_8php_source.html#l00064">counter.class.php:64</a></div></div>
+<div class="ttc" id="func_8inc_8php_html_aecdfcc5332bcf22df01fc21a03b64435"><div class="ttname"><a href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a></div><div class="ttdeci">getModel($module_name)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00145">func.inc.php:145</a></div></div>
 <div class="ttc" id="classcounter_html"><div class="ttname"><a href="classcounter.html">counter</a></div><div class="ttdef"><b>Definition:</b> <a href="counter_8class_8php_source.html#l00009">counter.class.php:9</a></div></div>
 <div class="ttc" id="classModuleObject_html"><div class="ttname"><a href="classModuleObject.html">ModuleObject</a></div><div class="ttdef"><b>Definition:</b> <a href="ModuleObject_8class_8php_source.html#l00009">ModuleObject.class.php:9</a></div></div>
+<div class="ttc" id="ko_8install_8php_html_a9fd93f6625cec4fd65bf6f412e28c015"><div class="ttname"><a href="ko_8install_8php.html#a9fd93f6625cec4fd65bf6f412e28c015">$oModuleController</a></div><div class="ttdeci">$oModuleController</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00287">ko.install.php:287</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 19 2017 16:30:56 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Aug 17 2017 16:14:21 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

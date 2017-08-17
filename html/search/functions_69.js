@@ -58,6 +58,7 @@ var searchData=
   ['inserttrash',['insertTrash',['../classtrashAdminController.html#af1c07b97582130b96d72fa6d397d7740',1,'trashAdminController']]],
   ['inserttrigger',['insertTrigger',['../classmoduleController.html#ad4fb0e3cfddb064ffcc9d71f983066a9',1,'moduleController']]],
   ['insertuniquevisitor',['insertUniqueVisitor',['../classcounterController.html#a5801722c5ab169c3d698fa596686c459',1,'counterController']]],
+  ['insertupdatedlog',['insertUpdatedLog',['../classmoduleController.html#a6edd6c52143fc2f1b818f677dbc54176',1,'moduleController']]],
   ['insertuserlayoutimage',['insertUserLayoutImage',['../classlayoutAdminController.html#acf8d291755db711c0d6fe4209154a998',1,'layoutAdminController']]],
   ['insertuserlayoutvalue',['insertUserLayoutValue',['../classlayoutAdminController.html#aac54b67b3c534c9f900ac729c637fe75',1,'layoutAdminController']]],
   ['insertword',['insertWord',['../classspamfilterAdminController.html#ada3859c56fb148b0e4f33266121051c0',1,'spamfilterAdminController']]],

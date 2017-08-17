@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.8.42</span>
+   &#160;<span id="projectnumber">1.8.43</span>
    </div>
   </td>
  </tr>
@@ -572,8 +572,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;                }</div>
 <div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;                <span class="keywordflow">else</span> <span class="keywordflow">if</span>($formInfo-&gt;name == <span class="stringliteral">&#39;find_account_question&#39;</span>)</div>
 <div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;                {</div>
-<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;                    $fields[] = <span class="stringliteral">&#39;&lt;field name=&quot;find_account_question&quot; required=&quot;true&quot; /&gt;&#39;</span>;</div>
-<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;                    $fields[] = <span class="stringliteral">&#39;&lt;field name=&quot;find_account_answer&quot; required=&quot;true&quot; length=&quot;:250&quot; /&gt;&#39;</span>;</div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;                    $fields[] = <span class="stringliteral">&#39;&lt;field name=&quot;find_account_question&quot;&gt;&lt;if test=&quot;$modify_find_account_answer&quot; attr=&quot;required&quot; value=&quot;true&quot; /&gt;&lt;/field&gt;&#39;</span>;</div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;                    $fields[] = <span class="stringliteral">&#39;&lt;field name=&quot;find_account_answer&quot; length=&quot;:250&quot;&gt;&lt;if test=&quot;$modify_find_account_answer&quot; attr=&quot;required&quot; value=&quot;true&quot; /&gt;&lt;/field&gt;&#39;</span>;</div>
 <div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;                }</div>
 <div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;                <span class="keywordflow">else</span> <span class="keywordflow">if</span>($formInfo-&gt;name == <span class="stringliteral">&#39;email_address&#39;</span>)</div>
 <div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;                {</div>
@@ -1477,7 +1477,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 19 2017 16:30:57 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Aug 17 2017 16:14:21 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>
