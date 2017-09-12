@@ -102,20 +102,24 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        $variables = $oModule-&gt;getVariables();</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        $variables[<span class="stringliteral">&#39;error&#39;</span>] = $oModule-&gt;getError();</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        $variables[<span class="stringliteral">&#39;message&#39;</span>] = $oModule-&gt;getMessage();</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        $json = str_replace(array(<span class="stringliteral">&quot;\r\n&quot;</span>, <span class="stringliteral">&quot;\n&quot;</span>, <span class="stringliteral">&quot;\t&quot;</span>), array(<span class="charliteral">&#39;\n&#39;</span>, <span class="charliteral">&#39;\n&#39;</span>, <span class="charliteral">&#39;\t&#39;</span>), <a class="code" href="func_8inc_8php.html#a3c49ddc63881e57fc5dd1aa4f923ef0c">json_encode2</a>($variables));</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keywordflow">return</span> $json;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    }</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">/* End of file JSONDisplayHandler.class.php */</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">/* Location: ./classes/display/JSONDisplayHandler.class.php */</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        $json = <a class="code" href="func_8inc_8php.html#a3c49ddc63881e57fc5dd1aa4f923ef0c">json_encode2</a>($variables);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        $json = str_replace(array(<span class="stringliteral">&quot;\r\n&quot;</span>, <span class="stringliteral">&quot;\n&quot;</span>, <span class="stringliteral">&quot;\t&quot;</span>), array(<span class="charliteral">&#39;\n&#39;</span>, <span class="charliteral">&#39;\n&#39;</span>, <span class="charliteral">&#39;\t&#39;</span>), $json);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        $json = filter_var($json, FILTER_UNSAFE_RAW, FILTER_FLAG_ENCODE_LOW);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordflow">return</span> $json;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    }</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">/* End of file JSONDisplayHandler.class.php */</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">/* Location: ./classes/display/JSONDisplayHandler.class.php */</span></div>
 <div class="ttc" id="func_8inc_8php_html_a3c49ddc63881e57fc5dd1aa4f923ef0c"><div class="ttname"><a href="func_8inc_8php.html#a3c49ddc63881e57fc5dd1aa4f923ef0c">json_encode2</a></div><div class="ttdeci">json_encode2($data)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l01481">func.inc.php:1481</a></div></div>
 <div class="ttc" id="classJSONDisplayHandler_html"><div class="ttname"><a href="classJSONDisplayHandler.html">JSONDisplayHandler</a></div><div class="ttdef"><b>Definition:</b> <a href="JSONDisplayHandler_8php_source.html#l00004">JSONDisplayHandler.php:4</a></div></div>
 <div class="ttc" id="classJSONDisplayHandler_html_aa2009f11e58e7c8206c9694d6d8b9ecf"><div class="ttname"><a href="classJSONDisplayHandler.html#aa2009f11e58e7c8206c9694d6d8b9ecf">JSONDisplayHandler\toDoc</a></div><div class="ttdeci">toDoc(&amp;$oModule)</div><div class="ttdef"><b>Definition:</b> <a href="JSONDisplayHandler_8php_source.html#l00012">JSONDisplayHandler.php:12</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 24 2017 14:16:17 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 12 2017 12:10:52 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>
