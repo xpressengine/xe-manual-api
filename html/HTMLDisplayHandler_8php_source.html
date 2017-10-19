@@ -258,8 +258,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            $url = parse_url(<a class="code" href="classContext.html#aa79578cfccee4d7f7c4890dc6e36ff90">Context::getRequestUri</a>());</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;            $real_path = $url[<span class="stringliteral">&#39;path&#39;</span>];</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;            $pattern = <span class="stringliteral">&#39;/src=(&quot;|\&#39;){1}(\.\/)?(files\/attach|files\/cache|files\/faceOff|files\/member_extra_info|modules|common|widgets|widgetstyle|layouts|addons)\/([^&quot;\&#39;]+)\.(jpg|jpeg|png|gif)(&quot;|\&#39;){1}/s&#39;</span>;</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;            <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = preg_replace($pattern, <span class="stringliteral">&#39;src=$1&#39;</span> . $real_path . <span class="stringliteral">&#39;$3/$4.$5$6&#39;</span>, <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>);</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;            $pattern = <span class="stringliteral">&#39;/src=(&quot;|\&#39;){1}(?:\.\/)?((?:files\/(?:attach|cache|faceOff|member_extra_info|thumbnails)|addons|common|(?:m\.)?layouts|modules|widgets|widgetstyle)\/[^&quot;\&#39;]+)(&quot;|\&#39;){1}/s&#39;</span>;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;            <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = preg_replace($pattern, <span class="stringliteral">&#39;src=$1&#39;</span> . $real_path . <span class="stringliteral">&#39;$2$3&#39;</span>, <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>);</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;            $pattern = <span class="stringliteral">&#39;/href=(&quot;|\&#39;){1}(\?[^&quot;\&#39;]+)/s&#39;</span>;</div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;            <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = preg_replace($pattern, <span class="stringliteral">&#39;href=$1&#39;</span> . $real_path . <span class="stringliteral">&#39;$2&#39;</span>, <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>);</div>
@@ -581,7 +581,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2017 23:42:53 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 19 2017 14:10:22 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

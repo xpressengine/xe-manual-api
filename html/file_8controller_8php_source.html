@@ -655,7 +655,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;        $random = <span class="keyword">new</span> <a class="code" href="classPassword.html">Password</a>();</div>
 <div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;</div>
 <div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;        <span class="comment">// Set upload path by checking if the attachement is an image or other kinds of file</span></div>
-<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;        <span class="keywordflow">if</span>(preg_match(<span class="stringliteral">&quot;/\.(jpe?g|gif|png|wm[va]|mpe?g|avi|swf|flv|mp[1-4]|as[fx]|wav|midi?|moo?v|qt|r[am]{1,2}|m4v)$/i&quot;</span>, $file_info[<span class="stringliteral">&#39;name&#39;</span>]))</div>
+<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;        <span class="keywordflow">if</span>(preg_match(<span class="stringliteral">&quot;/\.(jpe?g|gif|png|wm[va]|mpe?g|avi|flv|mp[1-4]|as[fx]|wav|midi?|moo?v|qt|r[am]{1,2}|m4v)$/i&quot;</span>, $file_info[<span class="stringliteral">&#39;name&#39;</span>]))</div>
 <div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;        {</div>
 <div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;            $path = sprintf(<span class="stringliteral">&quot;./files/attach/images/%s/%s&quot;</span>, <a class="code" href="classModuleObject.html#a0da50016ddc31513f563206fdf6f413d">$module_srl</a>,<a class="code" href="func_8inc_8php.html#ae1a0ad24dbf34de227ffd2eb0d1f8da3">getNumberingPath</a>($upload_target_srl,3));</div>
 <div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;</div>
@@ -845,14 +845,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00948"></a><span class="lineno">  948</span>&#160;        <span class="keywordflow">if</span>(!$file_list) <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00949"></a><span class="lineno">  949</span>&#160;</div>
 <div class="line"><a name="l00950"></a><span class="lineno">  950</span>&#160;        $file_count = count($file_list);</div>
-<div class="line"><a name="l00951"></a><span class="lineno">  951</span>&#160;</div>
+<div class="line"><a name="l00951"></a><span class="lineno">  951</span>&#160; </div>
 <div class="line"><a name="l00952"></a><span class="lineno">  952</span>&#160;        <span class="keywordflow">for</span>($i=0;$i&lt;$file_count;$i++)</div>
 <div class="line"><a name="l00953"></a><span class="lineno">  953</span>&#160;        {</div>
 <div class="line"><a name="l00954"></a><span class="lineno">  954</span>&#160;            unset($file_info);</div>
 <div class="line"><a name="l00955"></a><span class="lineno">  955</span>&#160;            $file_info = $file_list[$i];</div>
 <div class="line"><a name="l00956"></a><span class="lineno">  956</span>&#160;            $old_file = $file_info-&gt;uploaded_filename;</div>
 <div class="line"><a name="l00957"></a><span class="lineno">  957</span>&#160;            <span class="comment">// Determine the file path by checking if the file is an image or other kinds</span></div>
-<div class="line"><a name="l00958"></a><span class="lineno">  958</span>&#160;            <span class="keywordflow">if</span>(preg_match(<span class="stringliteral">&quot;/\.(asf|asf|asx|avi|flv|gif|jpeg|jpg|m4a|m4v|mid|midi|moov|mov|mp1|mp2|mp3|mp4|mpeg|mpg|ogg|png|qt|ra|ram|rm|rmm|swf|wav|webm|webp|wma|wmv)$/i&quot;</span>, $file_info-&gt;source_filename))</div>
+<div class="line"><a name="l00958"></a><span class="lineno">  958</span>&#160;            <span class="keywordflow">if</span>(preg_match(<span class="stringliteral">&quot;/\.(asf|asf|asx|avi|flv|gif|jpeg|jpg|m4a|m4v|mid|midi|moov|mov|mp1|mp2|mp3|mp4|mpeg|mpg|ogg|png|qt|ra|ram|rm|rmm|wav|webm|webp|wma|wmv)$/i&quot;</span>, $file_info-&gt;source_filename))</div>
 <div class="line"><a name="l00959"></a><span class="lineno">  959</span>&#160;            {</div>
 <div class="line"><a name="l00960"></a><span class="lineno">  960</span>&#160;                $path = sprintf(<span class="stringliteral">&quot;./files/attach/images/%s/%s/&quot;</span>, $target_module_srl,$target_srl);</div>
 <div class="line"><a name="l00961"></a><span class="lineno">  961</span>&#160;                $new_file = $path.$file_info-&gt;source_filename;</div>
@@ -1025,7 +1025,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 12 2017 23:42:56 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 19 2017 14:10:26 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>
