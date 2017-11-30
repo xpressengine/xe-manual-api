@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['baseobject',['BaseObject',['../classBaseObject.html',1,'']]],
+  ['baseobject_2eclass_2ephp',['BaseObject.class.php',['../BaseObject_8class_8php.html',1,'']]],
   ['bcrypt',['bcrypt',['../classPassword.html#a097e73abceaf4b976c92471f9b4a2cab',1,'Password']]],
   ['begin',['begin',['../classDB.html#a41aea6b3a6787467fcfd16d28a302c54',1,'DB']]],
   ['blockwidgetcode',['blockWidgetCode',['../func_8inc_8php.html#a3e4480709a0bb53f6478ae6521cda6f3',1,'func.inc.php']]],

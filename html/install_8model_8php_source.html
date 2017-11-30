@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.8.45</span>
+   &#160;<span id="projectnumber">1.8.46</span>
    </div>
   </td>
  </tr>
@@ -108,13 +108,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        $connection = ssh2_connect($ftp_info-&gt;ftp_host, $ftp_info-&gt;ftp_port);</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="keywordflow">if</span>(!ssh2_auth_password($connection, $ftp_info-&gt;ftp_user, $ftp_info-&gt;ftp_password))</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        {</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1,<span class="stringliteral">&#39;msg_ftp_invalid_auth_info&#39;</span>);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>(-1,<span class="stringliteral">&#39;msg_ftp_invalid_auth_info&#39;</span>);</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        }</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        $sftp = ssh2_sftp($connection);</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        $curpwd = <span class="stringliteral">&quot;ssh2.sftp://$sftp&quot;</span>.$this-&gt;pwd;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        $dh = @opendir($curpwd);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keywordflow">if</span>(!$dh) <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1, <span class="stringliteral">&#39;msg_ftp_invalid_path&#39;</span>);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keywordflow">if</span>(!$dh) <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>(-1, <span class="stringliteral">&#39;msg_ftp_invalid_path&#39;</span>);</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        $list = array();</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordflow">while</span>(($file = readdir($dh)) !== <span class="keyword">false</span>)</div>
@@ -123,14 +123,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            $list[] = $file . <span class="stringliteral">&quot;/&quot;</span>;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        }</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        closedir($dh);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        $this-&gt;<a class="code" href="classObject.html#a4f8a7fa8794663b7625fc15c9589797b">add</a>(<span class="stringliteral">&#39;list&#39;</span>, $list);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        $this-&gt;<a class="code" href="classBaseObject.html#ac53ea9b2ac26d103f2b0217e9496a93d">add</a>(<span class="stringliteral">&#39;list&#39;</span>, $list);</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    }</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
 <div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classinstallModel.html#a684579a29ff70929baa4ac64012f0bdf">   36</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classinstallModel.html#a684579a29ff70929baa4ac64012f0bdf">getInstallFTPList</a>()</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    {</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordflow">if</span>(!($ftp_info = <a class="code" href="classContext.html#a9ddbc79a7ba5892d1ea2d793f6ad52c2">Context::getRequestVars</a>()) || !$ftp_info-&gt;ftp_user || !$ftp_info-&gt;ftp_password) </div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1, <span class="stringliteral">&#39;msg_ftp_invalid_auth_info&#39;</span>);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>(-1, <span class="stringliteral">&#39;msg_ftp_invalid_auth_info&#39;</span>);</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        }</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        $this-&gt;pwd = $ftp_info-&gt;ftp_root_path;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">if</span>(!$ftp_info-&gt;ftp_host)</div>
@@ -147,11 +147,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">if</span>(function_exists(<span class="stringliteral">&#39;ftp_connect&#39;</span>))</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        {</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            $connection = ftp_connect($ftp_info-&gt;ftp_host, $ftp_info-&gt;ftp_port);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="keywordflow">if</span>(!$connection) <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1, sprintf(<a class="code" href="classContext.html#a9af9269b04542f7462d27a63226e0ff3">Context::getLang</a>(<span class="stringliteral">&#39;msg_ftp_not_connected&#39;</span>), <span class="stringliteral">&#39;host&#39;</span>));</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="keywordflow">if</span>(!$connection) <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>(-1, sprintf(<a class="code" href="classContext.html#a9af9269b04542f7462d27a63226e0ff3">Context::getLang</a>(<span class="stringliteral">&#39;msg_ftp_not_connected&#39;</span>), <span class="stringliteral">&#39;host&#39;</span>));</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="keywordflow">if</span>(! @ftp_login($connection, $ftp_info-&gt;ftp_user, $ftp_info-&gt;ftp_password))</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            {</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                ftp_close($connection); </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1,<span class="stringliteral">&#39;msg_ftp_invalid_auth_info&#39;</span>);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>(-1,<span class="stringliteral">&#39;msg_ftp_invalid_auth_info&#39;</span>);</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            }</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keywordflow">if</span>($ftp_info-&gt;ftp_pasv != <span class="stringliteral">&quot;N&quot;</span>) </div>
@@ -176,7 +176,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                {</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                    $oFtp-&gt;ftp_quit();</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1,<span class="stringliteral">&#39;msg_ftp_invalid_auth_info&#39;</span>);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>(-1,<span class="stringliteral">&#39;msg_ftp_invalid_auth_info&#39;</span>);</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                }</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            }</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        }</div>
@@ -193,27 +193,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                <span class="keywordflow">if</span>(strpos($v,<span class="charliteral">&#39;d&#39;</span>) === 0 || strpos($v, <span class="stringliteral">&#39;&lt;DIR&gt;&#39;</span>)) $list[] = substr(strrchr($v,<span class="charliteral">&#39; &#39;</span>),1) . <span class="charliteral">&#39;/&#39;</span>;</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            }</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        }</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        $this-&gt;<a class="code" href="classObject.html#a4f8a7fa8794663b7625fc15c9589797b">add</a>(<span class="stringliteral">&#39;list&#39;</span>, $list);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        $this-&gt;<a class="code" href="classBaseObject.html#ac53ea9b2ac26d103f2b0217e9496a93d">add</a>(<span class="stringliteral">&#39;list&#39;</span>, $list);</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    }</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;}</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="comment">/* End of file install.model.php */</span></div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="comment">/* Location: ./modules/install/install.model.php */</span></div>
 <div class="ttc" id="classinstallModel_html_a684579a29ff70929baa4ac64012f0bdf"><div class="ttname"><a href="classinstallModel.html#a684579a29ff70929baa4ac64012f0bdf">installModel\getInstallFTPList</a></div><div class="ttdeci">getInstallFTPList()</div><div class="ttdef"><b>Definition:</b> <a href="install_8model_8php_source.html#l00036">install.model.php:36</a></div></div>
 <div class="ttc" id="classftp_html"><div class="ttname"><a href="classftp.html">ftp</a></div><div class="ttdef"><b>Definition:</b> <a href="ftp_8class_8php_source.html#l00044">ftp.class.php:44</a></div></div>
-<div class="ttc" id="classObject_html_a4f8a7fa8794663b7625fc15c9589797b"><div class="ttname"><a href="classObject.html#a4f8a7fa8794663b7625fc15c9589797b">Object\add</a></div><div class="ttdeci">add($key, $val)</div><div class="ttdef"><b>Definition:</b> <a href="Object_8class_8php_source.html#l00129">Object.class.php:129</a></div></div>
-<div class="ttc" id="classObject_html_a9c1f4bf33208a5c858c0722afce90f30"><div class="ttname"><a href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object\Object</a></div><div class="ttdeci">Object($error=0, $message= 'success')</div><div class="ttdef"><b>Definition:</b> <a href="Object_8class_8php_source.html#l00043">Object.class.php:43</a></div></div>
+<div class="ttc" id="classBaseObject_html_ac53ea9b2ac26d103f2b0217e9496a93d"><div class="ttname"><a href="classBaseObject.html#ac53ea9b2ac26d103f2b0217e9496a93d">BaseObject\add</a></div><div class="ttdeci">add($key, $val)</div><div class="ttdef"><b>Definition:</b> <a href="BaseObject_8class_8php_source.html#l00128">BaseObject.class.php:128</a></div></div>
+<div class="ttc" id="classBaseObject_html"><div class="ttname"><a href="classBaseObject.html">BaseObject</a></div><div class="ttdef"><b>Definition:</b> <a href="BaseObject_8class_8php_source.html#l00009">BaseObject.class.php:9</a></div></div>
 <div class="ttc" id="classinstallModel_html_acf556177e975e834524be848f14d5348"><div class="ttname"><a href="classinstallModel.html#acf556177e975e834524be848f14d5348">installModel\getSFTPList</a></div><div class="ttdeci">getSFTPList()</div><div class="ttdef"><b>Definition:</b> <a href="install_8model_8php_source.html#l00007">install.model.php:7</a></div></div>
 <div class="ttc" id="classinstall_html"><div class="ttname"><a href="classinstall.html">install</a></div><div class="ttdoc">install module of the high class </div><div class="ttdef"><b>Definition:</b> <a href="install_8class_8php_source.html#l00008">install.class.php:8</a></div></div>
-<div class="ttc" id="classContext_html_a9af9269b04542f7462d27a63226e0ff3"><div class="ttname"><a href="classContext.html#a9af9269b04542f7462d27a63226e0ff3">Context\getLang</a></div><div class="ttdeci">getLang($code)</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l00996">Context.class.php:996</a></div></div>
+<div class="ttc" id="classContext_html_a9af9269b04542f7462d27a63226e0ff3"><div class="ttname"><a href="classContext.html#a9af9269b04542f7462d27a63226e0ff3">Context\getLang</a></div><div class="ttdeci">getLang($code)</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l00998">Context.class.php:998</a></div></div>
 <div class="ttc" id="config_8inc_8php_html_a5387c7a3f2aa38adf16f324cee88db88"><div class="ttname"><a href="config_8inc_8php.html#a5387c7a3f2aa38adf16f324cee88db88">_XE_PATH_</a></div><div class="ttdeci">const _XE_PATH_</div><div class="ttdef"><b>Definition:</b> <a href="config_8inc_8php_source.html#l00049">config.inc.php:49</a></div></div>
-<div class="ttc" id="classContext_html_a9ef4f41a9ae7108ea7560162399c77a8"><div class="ttname"><a href="classContext.html#a9ef4f41a9ae7108ea7560162399c77a8">Context\convertEncoding</a></div><div class="ttdeci">convertEncoding($source_obj)</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l01031">Context.class.php:1031</a></div></div>
+<div class="ttc" id="classContext_html_a9ef4f41a9ae7108ea7560162399c77a8"><div class="ttname"><a href="classContext.html#a9ef4f41a9ae7108ea7560162399c77a8">Context\convertEncoding</a></div><div class="ttdeci">convertEncoding($source_obj)</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l01033">Context.class.php:1033</a></div></div>
 <div class="ttc" id="classinstallModel_html_ae8a1df73f1708ec17897f21a40ab6c15"><div class="ttname"><a href="classinstallModel.html#ae8a1df73f1708ec17897f21a40ab6c15">installModel\$pwd</a></div><div class="ttdeci">$pwd</div><div class="ttdef"><b>Definition:</b> <a href="install_8model_8php_source.html#l00005">install.model.php:5</a></div></div>
-<div class="ttc" id="classContext_html_a9ddbc79a7ba5892d1ea2d793f6ad52c2"><div class="ttname"><a href="classContext.html#a9ddbc79a7ba5892d1ea2d793f6ad52c2">Context\getRequestVars</a></div><div class="ttdeci">getRequestVars()</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l02001">Context.class.php:2001</a></div></div>
+<div class="ttc" id="classContext_html_a9ddbc79a7ba5892d1ea2d793f6ad52c2"><div class="ttname"><a href="classContext.html#a9ddbc79a7ba5892d1ea2d793f6ad52c2">Context\getRequestVars</a></div><div class="ttdeci">getRequestVars()</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l02003">Context.class.php:2003</a></div></div>
 <div class="ttc" id="classinstallModel_html"><div class="ttname"><a href="classinstallModel.html">installModel</a></div><div class="ttdef"><b>Definition:</b> <a href="install_8model_8php_source.html#l00003">install.model.php:3</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 19 2017 14:10:26 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Nov 30 2017 13:09:59 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -1,0 +1,389 @@
+\hypertarget{classBaseObject}{\section{Base\-Object Class Reference}
+\label{classBaseObject}\index{Base\-Object@{Base\-Object}}
+}
+Inheritance diagram for Base\-Object\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=9.000000cm]{classBaseObject}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBaseObject_a827fd6c7d66ed5a1058cead90f65f0af}{\-\_\-\-\_\-construct} (\$error=0, \$\hyperlink{classmessage}{message}= 'success')
+\item 
+\hyperlink{classBaseObject_a577cc2f5a02da2517064d5ef2b7ccb10}{set\-Error} (\$error=0)
+\item 
+\hyperlink{classBaseObject_ac1db37d493b5c57a66d305e3cbe46ac0}{get\-Error} ()
+\item 
+\hyperlink{classBaseObject_a262e90f548db2253329e59c85a2bcf25}{set\-Http\-Status\-Code} (\$code= '200')
+\item 
+\hyperlink{classBaseObject_a3ebcd21b0d840ae7d24c98281ac19477}{get\-Http\-Status\-Code} ()
+\item 
+\hyperlink{classBaseObject_abf6832e1ef289490457ed894f4a90464}{set\-Message} (\$\hyperlink{classmessage}{message}= 'success', \$type=N\-U\-L\-L)
+\item 
+\hyperlink{classBaseObject_a2b3adbab6ff8d15803155626b32d7148}{get\-Message} ()
+\item 
+\hyperlink{classBaseObject_ac53ea9b2ac26d103f2b0217e9496a93d}{add} (\$key, \$val)
+\item 
+\hyperlink{classBaseObject_aff5d8051f1103233227d961e7afbdf86}{adds} (\$object)
+\item 
+\hyperlink{classBaseObject_ae3d773eeb5f3c304272906c7e82b3ad2}{get} (\$key)
+\item 
+\hyperlink{classBaseObject_a203fa9ac086bbd6954d91a92112b6960}{gets} ()
+\item 
+\hyperlink{classBaseObject_a1bfae4a5df64b81bebbe9c5a2ad4753c}{get\-Variables} ()
+\item 
+\hyperlink{classBaseObject_af807e6781ea33295f27d2b63b2b0cda5}{get\-Object\-Vars} ()
+\item 
+\hyperlink{classBaseObject_ab87cf5d350ef2a146e1ec3af90b62187}{to\-Bool} ()
+\item 
+\hyperlink{classBaseObject_ad0751b0da3686f08ff9b3bc031776d4d}{to\-Boolean} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBaseObject_a631aef600744fc45e54696f0aa31de40}{\$error} = 0
+\item 
+\hyperlink{classBaseObject_a74c72729f60c2ba14879a9311ac77419}{\$message} = 'success'
+\item 
+\hyperlink{classBaseObject_a4b5e3eabeb5a42286650df6636001a0b}{\$variables} = array()
+\item 
+\hyperlink{classBaseObject_aa84e26782db1a911815cd6b9a5a093f9}{\$http\-Status\-Code} = N\-U\-L\-L
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Every modules inherits from \hyperlink{classBaseObject}{Base\-Object} class. It includes error, message, and other variables for communicatin purpose.
+
+\begin{DoxyAuthor}{Author}
+N\-A\-V\-E\-R (\href{mailto:developers@xpressengine.com}{\tt developers@xpressengine.\-com}) 
+\end{DoxyAuthor}
+
+
+Definition at line 9 of file Base\-Object.\-class.\-php.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classBaseObject_a827fd6c7d66ed5a1058cead90f65f0af}{\index{Base\-Object@{Base\-Object}!\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}}
+\index{\-\_\-\-\_\-construct@{\-\_\-\-\_\-construct}!BaseObject@{Base\-Object}}
+\subsubsection[{\-\_\-\-\_\-construct}]{\setlength{\rightskip}{0pt plus 5cm}Base\-Object\-::\-\_\-\-\_\-construct (
+\begin{DoxyParamCaption}
+\item[{}]{\$error = {\ttfamily 0}, }
+\item[{}]{\$message = {\ttfamily 'success'}}
+\end{DoxyParamCaption}
+)}}\label{classBaseObject_a827fd6c7d66ed5a1058cead90f65f0af}
+Constructor
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$error} & Error code \\
+\hline
+string & {\em \$message} & Error message \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 42 of file Base\-Object.\-class.\-php.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classBaseObject_ac53ea9b2ac26d103f2b0217e9496a93d}{\index{Base\-Object@{Base\-Object}!add@{add}}
+\index{add@{add}!BaseObject@{Base\-Object}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}Base\-Object\-::add (
+\begin{DoxyParamCaption}
+\item[{}]{\$key, }
+\item[{}]{\$val}
+\end{DoxyParamCaption}
+)}}\label{classBaseObject_ac53ea9b2ac26d103f2b0217e9496a93d}
+Setter to set a key/value pair as an additional variable
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & A variable name \\
+\hline
+mixed & {\em \$val} & A value for the variable \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 128 of file Base\-Object.\-class.\-php.
+
+\hypertarget{classBaseObject_aff5d8051f1103233227d961e7afbdf86}{\index{Base\-Object@{Base\-Object}!adds@{adds}}
+\index{adds@{adds}!BaseObject@{Base\-Object}}
+\subsubsection[{adds}]{\setlength{\rightskip}{0pt plus 5cm}Base\-Object\-::adds (
+\begin{DoxyParamCaption}
+\item[{}]{\$object}
+\end{DoxyParamCaption}
+)}}\label{classBaseObject_aff5d8051f1103233227d961e7afbdf86}
+Method to set multiple key/value pairs as an additional variables
+
+
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{classBaseObject}{Base\-Object} | array & {\em \$object} & Either object or array containg key/value pairs to be added \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 139 of file Base\-Object.\-class.\-php.
+
+\hypertarget{classBaseObject_ae3d773eeb5f3c304272906c7e82b3ad2}{\index{Base\-Object@{Base\-Object}!get@{get}}
+\index{get@{get}!BaseObject@{Base\-Object}}
+\subsubsection[{get}]{\setlength{\rightskip}{0pt plus 5cm}Base\-Object\-::get (
+\begin{DoxyParamCaption}
+\item[{}]{\$key}
+\end{DoxyParamCaption}
+)}}\label{classBaseObject_ae3d773eeb5f3c304272906c7e82b3ad2}
+Method to retrieve a corresponding value to a given key
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Returns value to a given key 
+\end{DoxyReturn}
+
+
+Definition at line 161 of file Base\-Object.\-class.\-php.
+
+\hypertarget{classBaseObject_ac1db37d493b5c57a66d305e3cbe46ac0}{\index{Base\-Object@{Base\-Object}!get\-Error@{get\-Error}}
+\index{get\-Error@{get\-Error}!BaseObject@{Base\-Object}}
+\subsubsection[{get\-Error}]{\setlength{\rightskip}{0pt plus 5cm}Base\-Object\-::get\-Error (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classBaseObject_ac1db37d493b5c57a66d305e3cbe46ac0}
+Getter to retrieve error code
+
+\begin{DoxyReturn}{Returns}
+int Returns an error code 
+\end{DoxyReturn}
+
+
+Definition at line 64 of file Base\-Object.\-class.\-php.
+
+\hypertarget{classBaseObject_a3ebcd21b0d840ae7d24c98281ac19477}{\index{Base\-Object@{Base\-Object}!get\-Http\-Status\-Code@{get\-Http\-Status\-Code}}
+\index{get\-Http\-Status\-Code@{get\-Http\-Status\-Code}!BaseObject@{Base\-Object}}
+\subsubsection[{get\-Http\-Status\-Code}]{\setlength{\rightskip}{0pt plus 5cm}Base\-Object\-::get\-Http\-Status\-Code (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classBaseObject_a3ebcd21b0d840ae7d24c98281ac19477}
+Getter to retrieve H\-T\-T\-P status code
+
+\begin{DoxyReturn}{Returns}
+int Returns H\-T\-T\-P status code 
+\end{DoxyReturn}
+
+
+Definition at line 85 of file Base\-Object.\-class.\-php.
+
+\hypertarget{classBaseObject_a2b3adbab6ff8d15803155626b32d7148}{\index{Base\-Object@{Base\-Object}!get\-Message@{get\-Message}}
+\index{get\-Message@{get\-Message}!BaseObject@{Base\-Object}}
+\subsubsection[{get\-Message}]{\setlength{\rightskip}{0pt plus 5cm}Base\-Object\-::get\-Message (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classBaseObject_a2b3adbab6ff8d15803155626b32d7148}
+Getter to retrieve an error message
+
+\begin{DoxyReturn}{Returns}
+string Returns message 
+\end{DoxyReturn}
+
+
+Definition at line 116 of file Base\-Object.\-class.\-php.
+
+\hypertarget{classBaseObject_af807e6781ea33295f27d2b63b2b0cda5}{\index{Base\-Object@{Base\-Object}!get\-Object\-Vars@{get\-Object\-Vars}}
+\index{get\-Object\-Vars@{get\-Object\-Vars}!BaseObject@{Base\-Object}}
+\subsubsection[{get\-Object\-Vars}]{\setlength{\rightskip}{0pt plus 5cm}Base\-Object\-::get\-Object\-Vars (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classBaseObject_af807e6781ea33295f27d2b63b2b0cda5}
+Method to retrieve an object of key/value pairs
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classBaseObject}{Base\-Object} 
+\end{DoxyReturn}
+
+
+Definition at line 197 of file Base\-Object.\-class.\-php.
+
+\hypertarget{classBaseObject_a203fa9ac086bbd6954d91a92112b6960}{\index{Base\-Object@{Base\-Object}!gets@{gets}}
+\index{gets@{gets}!BaseObject@{Base\-Object}}
+\subsubsection[{gets}]{\setlength{\rightskip}{0pt plus 5cm}Base\-Object\-::gets (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classBaseObject_a203fa9ac086bbd6954d91a92112b6960}
+Method to retrieve an object containing a key/value pairs
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classBaseObject}{Base\-Object} Returns an object containing key/value pairs 
+\end{DoxyReturn}
+
+
+Definition at line 171 of file Base\-Object.\-class.\-php.
+
+\hypertarget{classBaseObject_a1bfae4a5df64b81bebbe9c5a2ad4753c}{\index{Base\-Object@{Base\-Object}!get\-Variables@{get\-Variables}}
+\index{get\-Variables@{get\-Variables}!BaseObject@{Base\-Object}}
+\subsubsection[{get\-Variables}]{\setlength{\rightskip}{0pt plus 5cm}Base\-Object\-::get\-Variables (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classBaseObject_a1bfae4a5df64b81bebbe9c5a2ad4753c}
+Method to retrieve an array of key/value pairs
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Definition at line 187 of file Base\-Object.\-class.\-php.
+
+\hypertarget{classBaseObject_a577cc2f5a02da2517064d5ef2b7ccb10}{\index{Base\-Object@{Base\-Object}!set\-Error@{set\-Error}}
+\index{set\-Error@{set\-Error}!BaseObject@{Base\-Object}}
+\subsubsection[{set\-Error}]{\setlength{\rightskip}{0pt plus 5cm}Base\-Object\-::set\-Error (
+\begin{DoxyParamCaption}
+\item[{}]{\$error = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classBaseObject_a577cc2f5a02da2517064d5ef2b7ccb10}
+Setter to set error code
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$error} & error code \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 54 of file Base\-Object.\-class.\-php.
+
+\hypertarget{classBaseObject_a262e90f548db2253329e59c85a2bcf25}{\index{Base\-Object@{Base\-Object}!set\-Http\-Status\-Code@{set\-Http\-Status\-Code}}
+\index{set\-Http\-Status\-Code@{set\-Http\-Status\-Code}!BaseObject@{Base\-Object}}
+\subsubsection[{set\-Http\-Status\-Code}]{\setlength{\rightskip}{0pt plus 5cm}Base\-Object\-::set\-Http\-Status\-Code (
+\begin{DoxyParamCaption}
+\item[{}]{\$code = {\ttfamily '200'}}
+\end{DoxyParamCaption}
+)}}\label{classBaseObject_a262e90f548db2253329e59c85a2bcf25}
+Setter to set H\-T\-T\-P status code
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$code} & H\-T\-T\-P status code. Default value is {\ttfamily 200} that means successful \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 75 of file Base\-Object.\-class.\-php.
+
+\hypertarget{classBaseObject_abf6832e1ef289490457ed894f4a90464}{\index{Base\-Object@{Base\-Object}!set\-Message@{set\-Message}}
+\index{set\-Message@{set\-Message}!BaseObject@{Base\-Object}}
+\subsubsection[{set\-Message}]{\setlength{\rightskip}{0pt plus 5cm}Base\-Object\-::set\-Message (
+\begin{DoxyParamCaption}
+\item[{}]{\$message = {\ttfamily 'success'}, }
+\item[{}]{\$type = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}}\label{classBaseObject_abf6832e1ef289490457ed894f4a90464}
+Setter to set set the error message
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$message} & Error message \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool Alaways returns true. 
+\end{DoxyReturn}
+
+
+Definition at line 96 of file Base\-Object.\-class.\-php.
+
+\hypertarget{classBaseObject_ab87cf5d350ef2a146e1ec3af90b62187}{\index{Base\-Object@{Base\-Object}!to\-Bool@{to\-Bool}}
+\index{to\-Bool@{to\-Bool}!BaseObject@{Base\-Object}}
+\subsubsection[{to\-Bool}]{\setlength{\rightskip}{0pt plus 5cm}Base\-Object\-::to\-Bool (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classBaseObject_ab87cf5d350ef2a146e1ec3af90b62187}
+Method to return either true or false depnding on the value in a 'error' variable
+
+\begin{DoxyReturn}{Returns}
+bool Retruns true \-: error isn't 0 or false \-: otherwise. 
+\end{DoxyReturn}
+
+
+Definition at line 212 of file Base\-Object.\-class.\-php.
+
+\hypertarget{classBaseObject_ad0751b0da3686f08ff9b3bc031776d4d}{\index{Base\-Object@{Base\-Object}!to\-Boolean@{to\-Boolean}}
+\index{to\-Boolean@{to\-Boolean}!BaseObject@{Base\-Object}}
+\subsubsection[{to\-Boolean}]{\setlength{\rightskip}{0pt plus 5cm}Base\-Object\-::to\-Boolean (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classBaseObject_ad0751b0da3686f08ff9b3bc031776d4d}
+Method to return either true or false depnding on the value in a 'error' variable
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Definition at line 223 of file Base\-Object.\-class.\-php.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classBaseObject_a631aef600744fc45e54696f0aa31de40}{\index{Base\-Object@{Base\-Object}!\$error@{\$error}}
+\index{\$error@{\$error}!BaseObject@{Base\-Object}}
+\subsubsection[{\$error}]{\setlength{\rightskip}{0pt plus 5cm}Base\-Object\-::\$error = 0}}\label{classBaseObject_a631aef600744fc45e54696f0aa31de40}
+
+
+Definition at line 15 of file Base\-Object.\-class.\-php.
+
+\hypertarget{classBaseObject_aa84e26782db1a911815cd6b9a5a093f9}{\index{Base\-Object@{Base\-Object}!\$http\-Status\-Code@{\$http\-Status\-Code}}
+\index{\$http\-Status\-Code@{\$http\-Status\-Code}!BaseObject@{Base\-Object}}
+\subsubsection[{\$http\-Status\-Code}]{\setlength{\rightskip}{0pt plus 5cm}Base\-Object\-::\$http\-Status\-Code = N\-U\-L\-L}}\label{classBaseObject_aa84e26782db1a911815cd6b9a5a093f9}
+
+
+Definition at line 33 of file Base\-Object.\-class.\-php.
+
+\hypertarget{classBaseObject_a74c72729f60c2ba14879a9311ac77419}{\index{Base\-Object@{Base\-Object}!\$message@{\$message}}
+\index{\$message@{\$message}!BaseObject@{Base\-Object}}
+\subsubsection[{\$message}]{\setlength{\rightskip}{0pt plus 5cm}Base\-Object\-::\$message = 'success'}}\label{classBaseObject_a74c72729f60c2ba14879a9311ac77419}
+
+
+Definition at line 21 of file Base\-Object.\-class.\-php.
+
+\hypertarget{classBaseObject_a4b5e3eabeb5a42286650df6636001a0b}{\index{Base\-Object@{Base\-Object}!\$variables@{\$variables}}
+\index{\$variables@{\$variables}!BaseObject@{Base\-Object}}
+\subsubsection[{\$variables}]{\setlength{\rightskip}{0pt plus 5cm}Base\-Object\-::\$variables = array()}}\label{classBaseObject_a4b5e3eabeb5a42286650df6636001a0b}
+
+
+Definition at line 27 of file Base\-Object.\-class.\-php.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+classes/object/\hyperlink{BaseObject_8class_8php}{Base\-Object.\-class.\-php}\end{DoxyCompactItemize}

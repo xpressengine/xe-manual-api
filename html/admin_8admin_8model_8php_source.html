@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.8.45</span>
+   &#160;<span id="projectnumber">1.8.46</span>
    </div>
   </td>
  </tr>
@@ -118,7 +118,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        $connection = ssh2_connect($ftp_info-&gt;ftp_host, $ftp_info-&gt;ftp_port);</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordflow">if</span>(!ssh2_auth_password($connection, $ftp_info-&gt;ftp_user, $ftp_info-&gt;ftp_password))</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        {</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1, <span class="stringliteral">&#39;msg_ftp_invalid_auth_info&#39;</span>);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>(-1, <span class="stringliteral">&#39;msg_ftp_invalid_auth_info&#39;</span>);</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        }</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        $sftp = ssh2_sftp($connection);</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
@@ -166,7 +166,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keywordflow">if</span>($found_path)</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        {</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            $this-&gt;<a class="code" href="classObject.html#a4f8a7fa8794663b7625fc15c9589797b">add</a>(<span class="stringliteral">&#39;found_path&#39;</span>, $found_path);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            $this-&gt;<a class="code" href="classBaseObject.html#ac53ea9b2ac26d103f2b0217e9496a93d">add</a>(<span class="stringliteral">&#39;found_path&#39;</span>, $found_path);</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        }</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    }</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
@@ -187,14 +187,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        $connection = ftp_connect($ftp_info-&gt;ftp_host, $ftp_info-&gt;ftp_port);</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="keywordflow">if</span>(!$connection)</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        {</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1, sprintf(<a class="code" href="classContext.html#a9af9269b04542f7462d27a63226e0ff3">Context::getLang</a>(<span class="stringliteral">&#39;msg_ftp_not_connected&#39;</span>), <span class="stringliteral">&#39;host&#39;</span>));</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>(-1, sprintf(<a class="code" href="classContext.html#a9af9269b04542f7462d27a63226e0ff3">Context::getLang</a>(<span class="stringliteral">&#39;msg_ftp_not_connected&#39;</span>), <span class="stringliteral">&#39;host&#39;</span>));</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        }</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        $login_result = @ftp_login($connection, $ftp_info-&gt;ftp_user, $ftp_info-&gt;ftp_password);</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="keywordflow">if</span>(!$login_result)</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        {</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            ftp_close($connection);</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1, <span class="stringliteral">&#39;msg_ftp_invalid_auth_info&#39;</span>);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>(-1, <span class="stringliteral">&#39;msg_ftp_invalid_auth_info&#39;</span>);</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        }</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="comment">// create temp file</span></div>
@@ -241,7 +241,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        <span class="keywordflow">if</span>($found_path)</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        {</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            $this-&gt;<a class="code" href="classObject.html#a4f8a7fa8794663b7625fc15c9589797b">add</a>(<span class="stringliteral">&#39;found_path&#39;</span>, $found_path);</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            $this-&gt;<a class="code" href="classBaseObject.html#ac53ea9b2ac26d103f2b0217e9496a93d">add</a>(<span class="stringliteral">&#39;found_path&#39;</span>, $found_path);</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        }</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    }</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
@@ -255,7 +255,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;</div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        <span class="keywordflow">if</span>(!$ftp_info-&gt;ftp_user || !$ftp_info-&gt;ftp_password)</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        {</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(1, <span class="stringliteral">&#39;msg_ftp_invalid_auth_info&#39;</span>);</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>(1, <span class="stringliteral">&#39;msg_ftp_invalid_auth_info&#39;</span>);</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        }</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        <span class="keywordflow">if</span>(!$ftp_info-&gt;ftp_host)</div>
@@ -272,7 +272,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        {</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;            <span class="keywordflow">if</span>(!function_exists(<span class="stringliteral">&#39;ssh2_sftp&#39;</span>))</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;            {</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1, <span class="stringliteral">&#39;disable_sftp_support&#39;</span>);</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>(-1, <span class="stringliteral">&#39;disable_sftp_support&#39;</span>);</div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;            }</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;            <span class="keywordflow">return</span> $this-&gt;<a class="code" href="classadminAdminModel.html#aaeac1a0a11439dfb4faa74751da8747e">getSFTPPath</a>();</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        }</div>
@@ -289,12 +289,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        $oFTP = <span class="keyword">new</span> <a class="code" href="classftp.html">ftp</a>();</div>
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        <span class="keywordflow">if</span>(!$oFTP-&gt;ftp_connect($ftp_info-&gt;ftp_host, $ftp_info-&gt;ftp_port))</div>
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        {</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(1, sprintf(<a class="code" href="classContext.html#a9af9269b04542f7462d27a63226e0ff3">Context::getLang</a>(<span class="stringliteral">&#39;msg_ftp_not_connected&#39;</span>), <span class="stringliteral">&#39;host&#39;</span>));</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>(1, sprintf(<a class="code" href="classContext.html#a9af9269b04542f7462d27a63226e0ff3">Context::getLang</a>(<span class="stringliteral">&#39;msg_ftp_not_connected&#39;</span>), <span class="stringliteral">&#39;host&#39;</span>));</div>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        }</div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        <span class="keywordflow">if</span>(!$oFTP-&gt;ftp_login($ftp_info-&gt;ftp_user, $ftp_info-&gt;ftp_password))</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        {</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(1, <span class="stringliteral">&#39;msg_ftp_invalid_auth_info&#39;</span>);</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>(1, <span class="stringliteral">&#39;msg_ftp_invalid_auth_info&#39;</span>);</div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        }</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;</div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        <span class="comment">// create temp file</span></div>
@@ -341,7 +341,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;</div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        <span class="keywordflow">if</span>($found_path)</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        {</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;            $this-&gt;<a class="code" href="classObject.html#a4f8a7fa8794663b7625fc15c9589797b">add</a>(<span class="stringliteral">&#39;found_path&#39;</span>, $found_path);</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;            $this-&gt;<a class="code" href="classBaseObject.html#ac53ea9b2ac26d103f2b0217e9496a93d">add</a>(<span class="stringliteral">&#39;found_path&#39;</span>, $found_path);</div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        }</div>
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    }</div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;</div>
@@ -355,7 +355,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        $connection = ssh2_connect($ftp_info-&gt;ftp_host, $ftp_info-&gt;ftp_port);</div>
 <div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        <span class="keywordflow">if</span>(!ssh2_auth_password($connection, $ftp_info-&gt;ftp_user, $ftp_info-&gt;ftp_password))</div>
 <div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        {</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1, <span class="stringliteral">&#39;msg_ftp_invalid_auth_info&#39;</span>);</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>(-1, <span class="stringliteral">&#39;msg_ftp_invalid_auth_info&#39;</span>);</div>
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        }</div>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;</div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        $sftp = ssh2_sftp($connection);</div>
@@ -363,7 +363,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        $dh = @opendir($curpwd);</div>
 <div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        <span class="keywordflow">if</span>(!$dh)</div>
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        {</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1, <span class="stringliteral">&#39;msg_ftp_invalid_path&#39;</span>);</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>(-1, <span class="stringliteral">&#39;msg_ftp_invalid_path&#39;</span>);</div>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        }</div>
 <div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;        $list = array();</div>
 <div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        <span class="keywordflow">while</span>(($file = readdir($dh)) !== FALSE)</div>
@@ -379,7 +379,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;            $list[] = $file;</div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;        }</div>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;        closedir($dh);</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;        $this-&gt;<a class="code" href="classObject.html#a4f8a7fa8794663b7625fc15c9589797b">add</a>(<span class="stringliteral">&#39;list&#39;</span>, $list);</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;        $this-&gt;<a class="code" href="classBaseObject.html#ac53ea9b2ac26d103f2b0217e9496a93d">add</a>(<span class="stringliteral">&#39;list&#39;</span>, $list);</div>
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    }</div>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;</div>
 <div class="line"><a name="l00321"></a><span class="lineno"><a class="line" href="classadminAdminModel.html#a9e944aba1586e011811993745738728e">  321</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classadminAdminModel.html#a9e944aba1586e011811993745738728e">getAdminFTPList</a>()</div>
@@ -392,7 +392,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        $ftp_info = <a class="code" href="classContext.html#a9ddbc79a7ba5892d1ea2d793f6ad52c2">Context::getRequestVars</a>();</div>
 <div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        <span class="keywordflow">if</span>(!$ftp_info-&gt;ftp_user || !$ftp_info-&gt;ftp_password)</div>
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        {</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1, <span class="stringliteral">&#39;msg_ftp_invalid_auth_info&#39;</span>);</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>(-1, <span class="stringliteral">&#39;msg_ftp_invalid_auth_info&#39;</span>);</div>
 <div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        }</div>
 <div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;</div>
 <div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        $this-&gt;pwd = $ftp_info-&gt;ftp_root_path;</div>
@@ -411,7 +411,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;        {</div>
 <div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;            <span class="keywordflow">if</span>(!function_exists(<span class="stringliteral">&#39;ssh2_sftp&#39;</span>))</div>
 <div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;            {</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1, <span class="stringliteral">&#39;disable_sftp_support&#39;</span>);</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>(-1, <span class="stringliteral">&#39;disable_sftp_support&#39;</span>);</div>
 <div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;            }</div>
 <div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;            <span class="keywordflow">return</span> $this-&gt;<a class="code" href="classadminAdminModel.html#adea58838b8595a28dc84d562bd1816ed">getSFTPList</a>();</div>
 <div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;        }</div>
@@ -426,7 +426,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;            }</div>
 <div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;            <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;            {</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1, <span class="stringliteral">&#39;msg_ftp_invalid_auth_info&#39;</span>);</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>(-1, <span class="stringliteral">&#39;msg_ftp_invalid_auth_info&#39;</span>);</div>
 <div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;            }</div>
 <div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;        }</div>
 <div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;        $list = array();</div>
@@ -447,9 +447,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;        }</div>
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;        <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;        {</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1, <span class="stringliteral">&#39;msg_ftp_no_directory&#39;</span>);</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>(-1, <span class="stringliteral">&#39;msg_ftp_no_directory&#39;</span>);</div>
 <div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;        }</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;        $this-&gt;<a class="code" href="classObject.html#a4f8a7fa8794663b7625fc15c9589797b">add</a>(<span class="stringliteral">&#39;list&#39;</span>, $list);</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;        $this-&gt;<a class="code" href="classBaseObject.html#ac53ea9b2ac26d103f2b0217e9496a93d">add</a>(<span class="stringliteral">&#39;list&#39;</span>, $list);</div>
 <div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    }</div>
 <div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;</div>
 <div class="line"><a name="l00396"></a><span class="lineno"><a class="line" href="classadminAdminModel.html#afbd791a2932cb6f9f3d0550f4377829a">  396</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classadminAdminModel.html#afbd791a2932cb6f9f3d0550f4377829a">getEnv</a>($type = <span class="stringliteral">&#39;WORKING&#39;</span>)</div>
@@ -789,212 +789,213 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;</div>
 <div class="line"><a name="l00749"></a><span class="lineno"><a class="line" href="classadminAdminModel.html#a6e21a5731925dc94cce1859dd96e7f25">  749</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classadminAdminModel.html#a6e21a5731925dc94cce1859dd96e7f25">getAdminMenuLang</a>()</div>
 <div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;    {</div>
-<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;        $currentLang = <a class="code" href="classContext.html#ae75d6f4064d09e48d0d76614b6997e29">Context::getLangType</a>();</div>
-<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;        $cacheFile = sprintf(<span class="stringliteral">&#39;./files/cache/menu/admin_lang/adminMenu.%s.lang.php&#39;</span>, $currentLang);</div>
-<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;</div>
-<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;        <span class="comment">// Update if no cache file exists or it is older than xml file</span></div>
-<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;        <span class="keywordflow">if</span>(!is_readable($cacheFile))</div>
-<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;        {</div>
-<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;            <a class="code" href="example_8php.html#aef99014231eb219a8c774eb4b8463fd9">$lang</a> = <span class="keyword">new</span> stdClass();</div>
-<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;            <a class="code" href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a> = <a class="code" href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a>(<span class="stringliteral">&#39;module&#39;</span>);</div>
-<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;            $installed_module_list = <a class="code" href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a>-&gt;getModulesXmlInfo();</div>
-<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;</div>
-<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;            $this-&gt;gnbLangBuffer = <span class="stringliteral">&#39;&lt;?php $lang = new stdClass();&#39;</span>;</div>
-<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;            <span class="keywordflow">foreach</span>($installed_module_list AS $key =&gt; $value)</div>
-<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;            {</div>
-<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;                $moduleActionInfo = <a class="code" href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a>-&gt;getModuleActionXml($value-&gt;module);</div>
-<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;                <span class="keywordflow">if</span>(is_object($moduleActionInfo-&gt;menu))</div>
+<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;        <span class="keyword">static</span> <a class="code" href="example_8php.html#aef99014231eb219a8c774eb4b8463fd9">$lang</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;</div>
+<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;        $oCacheHandler = <a class="code" href="classCacheHandler.html#a2fce85cb82ab180ce9d6bcea61a54eec">CacheHandler::getInstance</a>(<span class="stringliteral">&#39;object&#39;</span>, null, <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="example_8php.html#aef99014231eb219a8c774eb4b8463fd9">$lang</a> === <span class="keyword">false</span> &amp;&amp; $oCacheHandler-&gt;isSupport())</div>
+<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;        {</div>
+<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;            $cache_key = <span class="stringliteral">&#39;admin_menu_langs:&#39;</span> . <a class="code" href="classContext.html#ae75d6f4064d09e48d0d76614b6997e29">Context::getLangType</a>();</div>
+<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;            <a class="code" href="example_8php.html#aef99014231eb219a8c774eb4b8463fd9">$lang</a> = $oCacheHandler-&gt;get($cache_key);</div>
+<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;</div>
+<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="example_8php.html#aef99014231eb219a8c774eb4b8463fd9">$lang</a> === <span class="keyword">false</span>)</div>
+<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;            {</div>
+<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;                <a class="code" href="example_8php.html#aef99014231eb219a8c774eb4b8463fd9">$lang</a> = array();</div>
+<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;                <a class="code" href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a> = <a class="code" href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a>(<span class="stringliteral">&#39;module&#39;</span>);</div>
+<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;                $installed_module_list = <a class="code" href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a>-&gt;getModulesXmlInfo();</div>
+<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;</div>
+<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;                <span class="keywordflow">foreach</span>($installed_module_list as $key =&gt; $value)</div>
 <div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;                {</div>
-<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;                    <span class="keywordflow">foreach</span>($moduleActionInfo-&gt;menu AS $key2 =&gt; $value2)</div>
-<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;                    {</div>
-<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;                        <a class="code" href="example_8php.html#aef99014231eb219a8c774eb4b8463fd9">$lang</a>-&gt;menu_gnb_sub[$key2] = $value2-&gt;title;</div>
-<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;                        $this-&gt;gnbLangBuffer .=sprintf(<span class="stringliteral">&#39;$lang-&gt;menu_gnb_sub[\&#39;%s\&#39;] = \&#39;%s\&#39;;&#39;</span>, $key2, $value2-&gt;title);</div>
-<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;                    }</div>
-<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;                }</div>
-<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;            }</div>
-<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;            $this-&gt;gnbLangBuffer .= <span class="stringliteral">&#39; ?&gt;&#39;</span>;</div>
-<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;            <a class="code" href="classFileHandler.html#ad90c10a81460f437bc68952427606155">FileHandler::writeFile</a>($cacheFile, $this-&gt;gnbLangBuffer);</div>
-<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;        }</div>
-<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;        {</div>
-<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;            include $cacheFile;</div>
-<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;        }</div>
-<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;</div>
-<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="example_8php.html#aef99014231eb219a8c774eb4b8463fd9">$lang</a>-&gt;menu_gnb_sub;</div>
-<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;    }</div>
-<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;</div>
-<div class="line"><a name="l00791"></a><span class="lineno"><a class="line" href="classadminAdminModel.html#aa50a1de27a9e8431e5a17fffc053dc1e">  791</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classadminAdminModel.html#aa50a1de27a9e8431e5a17fffc053dc1e">getFavoriteList</a>($siteSrl = 0, $isGetModuleInfo = FALSE)</div>
-<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;    {</div>
-<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a> = <span class="keyword">new</span> stdClass();</div>
-<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;site_srl = $siteSrl;</div>
-<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;        <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = <a class="code" href="func_8inc_8php.html#ace5cc06ee6c5d655a1bdcc15846a779e">executeQueryArray</a>(<span class="stringliteral">&#39;admin.getFavoriteList&#39;</span>, <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>);</div>
-<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;toBool())</div>
-<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;        {</div>
-<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>;</div>
-<div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;        }</div>
-<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;data)</div>
-<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;        {</div>
-<div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>();</div>
-<div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;        }</div>
-<div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;</div>
-<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;        <span class="keywordflow">if</span>($isGetModuleInfo &amp;&amp; is_array(<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;data))</div>
-<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;        {</div>
-<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;            <a class="code" href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a> = <a class="code" href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a>(<span class="stringliteral">&#39;module&#39;</span>);</div>
-<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;            <span class="keywordflow">foreach</span>(<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;data AS $key =&gt; $value)</div>
-<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;            {</div>
-<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;                <a class="code" href="ko_8install_8php.html#ae3552a6dd49f37a50e7858151f7c5cc2">$moduleInfo</a> = <a class="code" href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a>-&gt;getModuleInfoXml($value-&gt;module);</div>
-<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;                <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;data[$key]-&gt;admin_index_act = <a class="code" href="ko_8install_8php.html#ae3552a6dd49f37a50e7858151f7c5cc2">$moduleInfo</a>-&gt;admin_index_act;</div>
-<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;                <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;data[$key]-&gt;title = <a class="code" href="ko_8install_8php.html#ae3552a6dd49f37a50e7858151f7c5cc2">$moduleInfo</a>-&gt;title;</div>
-<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;            }</div>
-<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;        }</div>
-<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;</div>
-<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;        $returnObject = <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>();</div>
-<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;        $returnObject-&gt;add(<span class="stringliteral">&#39;favoriteList&#39;</span>, <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;data);</div>
-<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;        <span class="keywordflow">return</span> $returnObject;</div>
-<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;    }</div>
-<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;</div>
-<div class="line"><a name="l00827"></a><span class="lineno"><a class="line" href="classadminAdminModel.html#a6ba3dfaa5f5f1cc41284676b9e0b7b9d">  827</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classadminAdminModel.html#a6ba3dfaa5f5f1cc41284676b9e0b7b9d">isExistsFavorite</a>($siteSrl, <a class="code" href="classModuleObject.html#a2809af79b38269089ba46bc922061ae8">$module</a>)</div>
-<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;    {</div>
-<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a> = <span class="keyword">new</span> stdClass();</div>
-<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;site_srl = $siteSrl;</div>
-<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;module = <a class="code" href="classModuleObject.html#a2809af79b38269089ba46bc922061ae8">$module</a>;</div>
-<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;        <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = <a class="code" href="func_8inc_8php.html#a418bc23855eebc0d90190dd625ac4474">executeQuery</a>(<span class="stringliteral">&#39;admin.getFavorite&#39;</span>, <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>);</div>
-<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;toBool())</div>
-<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;        {</div>
-<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>;</div>
-<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;        }</div>
-<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;</div>
-<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;        $returnObject = <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>();</div>
-<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;data)</div>
-<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;        {</div>
-<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;            $returnObject-&gt;add(<span class="stringliteral">&#39;result&#39;</span>, TRUE);</div>
-<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;            $returnObject-&gt;add(<span class="stringliteral">&#39;favoriteSrl&#39;</span>, <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;data-&gt;admin_favorite_srl);</div>
-<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;        }</div>
-<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;        {</div>
-<div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;            $returnObject-&gt;add(<span class="stringliteral">&#39;result&#39;</span>, FALSE);</div>
-<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;        }</div>
-<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;</div>
-<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;        <span class="keywordflow">return</span> $returnObject;</div>
-<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;    }</div>
-<div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;</div>
-<div class="line"><a name="l00856"></a><span class="lineno"><a class="line" href="classadminAdminModel.html#a12f25a1c61e11bf727019171564b1cad">  856</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classadminAdminModel.html#a12f25a1c61e11bf727019171564b1cad">getSiteAllList</a>()</div>
-<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;    {</div>
-<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;domain&#39;</span>))</div>
-<div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;        {</div>
-<div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;            $domain = <a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;domain&#39;</span>);</div>
-<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;        }</div>
-<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;        $siteList = $this-&gt;<a class="code" href="classadminAdminModel.html#afca5a07a3f42ccc8c2f635557c668b44">getAllSitesThatHaveModules</a>($domain);</div>
-<div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;        $this-&gt;<a class="code" href="classObject.html#a4f8a7fa8794663b7625fc15c9589797b">add</a>(<span class="stringliteral">&#39;site_list&#39;</span>, $siteList);</div>
-<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;    }</div>
-<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;</div>
-<div class="line"><a name="l00872"></a><span class="lineno"><a class="line" href="classadminAdminModel.html#afca5a07a3f42ccc8c2f635557c668b44">  872</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classadminAdminModel.html#afca5a07a3f42ccc8c2f635557c668b44">getAllSitesThatHaveModules</a>($domain = NULL)</div>
-<div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;    {</div>
-<div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a> = <span class="keyword">new</span> stdClass();</div>
-<div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;        <span class="keywordflow">if</span>($domain)</div>
-<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;        {</div>
-<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;            <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;domain = $domain;</div>
-<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;        }</div>
-<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;        $columnList = array(<span class="stringliteral">&#39;domain&#39;</span>, <span class="stringliteral">&#39;site_srl&#39;</span>);</div>
-<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;</div>
-<div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;        $siteList = array();</div>
-<div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;        <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = <a class="code" href="func_8inc_8php.html#ace5cc06ee6c5d655a1bdcc15846a779e">executeQueryArray</a>(<span class="stringliteral">&#39;admin.getSiteAllList&#39;</span>, <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>, $columnList);</div>
-<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;toBool())</div>
-<div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;        {</div>
-<div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;            $siteList = <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;data;</div>
-<div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;        }</div>
-<div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;</div>
-<div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;        <a class="code" href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a> = <a class="code" href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a>(<span class="stringliteral">&#39;module&#39;</span>);</div>
-<div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;        <span class="keywordflow">foreach</span>($siteList as $key =&gt; $value)</div>
-<div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;        {</div>
-<div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;            <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;site_srl = $value-&gt;site_srl;</div>
-<div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;            $list = <a class="code" href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a>-&gt;getModuleSrlList(<a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>);</div>
-<div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;</div>
-<div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;            <span class="keywordflow">if</span>(!is_array($list))</div>
-<div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;            {</div>
-<div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;                $list = array($list);</div>
-<div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;            }</div>
-<div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;</div>
-<div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;            <span class="keywordflow">foreach</span>($list as $k =&gt; $v)</div>
-<div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;            {</div>
-<div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;                <span class="keywordflow">if</span>(!is_dir(<a class="code" href="config_8inc_8php.html#a5387c7a3f2aa38adf16f324cee88db88">_XE_PATH_</a> . <span class="stringliteral">&#39;modules/&#39;</span> . $v-&gt;module))</div>
-<div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;                {</div>
-<div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;                    unset($list[$k]);</div>
-<div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;                }</div>
-<div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160;            }</div>
-<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;</div>
-<div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;            <span class="keywordflow">if</span>(!count($list))</div>
-<div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;            {</div>
-<div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;                unset($siteList[$key]);</div>
-<div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;            }</div>
-<div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;        }</div>
-<div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160;        <span class="keywordflow">return</span> $siteList;</div>
-<div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;    }</div>
-<div class="line"><a name="l00914"></a><span class="lineno">  914</span>&#160;</div>
-<div class="line"><a name="l00920"></a><span class="lineno"><a class="line" href="classadminAdminModel.html#a7123fd762d0fbefec95c0fa6263ffd62">  920</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classadminAdminModel.html#a7123fd762d0fbefec95c0fa6263ffd62">getSiteCountByDate</a>($date = <span class="stringliteral">&#39;&#39;</span>)</div>
-<div class="line"><a name="l00921"></a><span class="lineno">  921</span>&#160;    {</div>
-<div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a> = <span class="keyword">new</span> stdClass();</div>
-<div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160;</div>
-<div class="line"><a name="l00924"></a><span class="lineno">  924</span>&#160;        <span class="keywordflow">if</span>($date)</div>
-<div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160;        {</div>
-<div class="line"><a name="l00926"></a><span class="lineno">  926</span>&#160;            <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;regDate = date(<span class="stringliteral">&#39;Ymd&#39;</span>, strtotime($date));</div>
-<div class="line"><a name="l00927"></a><span class="lineno">  927</span>&#160;        }</div>
-<div class="line"><a name="l00928"></a><span class="lineno">  928</span>&#160;</div>
-<div class="line"><a name="l00929"></a><span class="lineno">  929</span>&#160;        <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = <a class="code" href="func_8inc_8php.html#a418bc23855eebc0d90190dd625ac4474">executeQuery</a>(<span class="stringliteral">&#39;admin.getSiteCountByDate&#39;</span>, <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>);</div>
-<div class="line"><a name="l00930"></a><span class="lineno">  930</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;toBool())</div>
-<div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;        {</div>
-<div class="line"><a name="l00932"></a><span class="lineno">  932</span>&#160;            <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00933"></a><span class="lineno">  933</span>&#160;        }</div>
-<div class="line"><a name="l00934"></a><span class="lineno">  934</span>&#160;</div>
-<div class="line"><a name="l00935"></a><span class="lineno">  935</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;data-&gt;count;</div>
-<div class="line"><a name="l00936"></a><span class="lineno">  936</span>&#160;    }</div>
-<div class="line"><a name="l00937"></a><span class="lineno">  937</span>&#160;</div>
-<div class="line"><a name="l00938"></a><span class="lineno"><a class="line" href="classadminAdminModel.html#a94cadc80816d875f0713507d356c422b">  938</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classadminAdminModel.html#a94cadc80816d875f0713507d356c422b">getFaviconUrl</a>($default = <span class="keyword">true</span>)</div>
-<div class="line"><a name="l00939"></a><span class="lineno">  939</span>&#160;    {</div>
-<div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160;        <span class="keywordflow">return</span> $this-&gt;<a class="code" href="classadminAdminModel.html#ab77b7dd452e81ca285debe37a159e0d7">iconUrlCheck</a>(<span class="stringliteral">&#39;favicon.ico&#39;</span>, <span class="stringliteral">&#39;faviconSample.png&#39;</span>, $default);</div>
-<div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160;    }</div>
-<div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160;</div>
-<div class="line"><a name="l00943"></a><span class="lineno"><a class="line" href="classadminAdminModel.html#a3ebcb91feca1cf88d6ed0bce9355ca6b">  943</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classadminAdminModel.html#a3ebcb91feca1cf88d6ed0bce9355ca6b">getMobileIconUrl</a>($default = <span class="keyword">true</span>)</div>
-<div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160;    {</div>
-<div class="line"><a name="l00945"></a><span class="lineno">  945</span>&#160;        <span class="keywordflow">return</span> $this-&gt;<a class="code" href="classadminAdminModel.html#ab77b7dd452e81ca285debe37a159e0d7">iconUrlCheck</a>(<span class="stringliteral">&#39;mobicon.png&#39;</span>, <span class="stringliteral">&#39;mobiconSample.png&#39;</span>, $default);</div>
-<div class="line"><a name="l00946"></a><span class="lineno">  946</span>&#160;    }</div>
-<div class="line"><a name="l00947"></a><span class="lineno">  947</span>&#160;</div>
-<div class="line"><a name="l00948"></a><span class="lineno"><a class="line" href="classadminAdminModel.html#ab77b7dd452e81ca285debe37a159e0d7">  948</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classadminAdminModel.html#ab77b7dd452e81ca285debe37a159e0d7">iconUrlCheck</a>($iconname, $default_icon_name, $default)</div>
-<div class="line"><a name="l00949"></a><span class="lineno">  949</span>&#160;    {</div>
-<div class="line"><a name="l00950"></a><span class="lineno">  950</span>&#160;        $site_info = <a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;site_module_info&#39;</span>);</div>
-<div class="line"><a name="l00951"></a><span class="lineno">  951</span>&#160;        $virtual_site = <span class="stringliteral">&#39;&#39;</span>;</div>
-<div class="line"><a name="l00952"></a><span class="lineno">  952</span>&#160;        <span class="keywordflow">if</span>($site_info-&gt;site_srl) </div>
-<div class="line"><a name="l00953"></a><span class="lineno">  953</span>&#160;        {</div>
-<div class="line"><a name="l00954"></a><span class="lineno">  954</span>&#160;            $virtual_site = $site_info-&gt;site_srl . <span class="charliteral">&#39;/&#39;</span>;</div>
-<div class="line"><a name="l00955"></a><span class="lineno">  955</span>&#160;        }</div>
-<div class="line"><a name="l00956"></a><span class="lineno">  956</span>&#160;</div>
-<div class="line"><a name="l00957"></a><span class="lineno">  957</span>&#160;        $file_exsit = <a class="code" href="classFileHandler.html#ac0bd2431461ad2bc04c093bfbb826bea">FileHandler::readFile</a>(<a class="code" href="config_8inc_8php.html#a5387c7a3f2aa38adf16f324cee88db88">_XE_PATH_</a> . <span class="stringliteral">&#39;files/attach/xeicon/&#39;</span> . $virtual_site . $iconname);</div>
-<div class="line"><a name="l00958"></a><span class="lineno">  958</span>&#160;        <span class="keywordflow">if</span>(!$file_exsit &amp;&amp; $default === <span class="keyword">true</span>)</div>
-<div class="line"><a name="l00959"></a><span class="lineno">  959</span>&#160;        {</div>
-<div class="line"><a name="l00960"></a><span class="lineno">  960</span>&#160;            $icon_url = <span class="stringliteral">&#39;./modules/admin/tpl/img/&#39;</span> . $default_icon_name;</div>
-<div class="line"><a name="l00961"></a><span class="lineno">  961</span>&#160;        }</div>
-<div class="line"><a name="l00962"></a><span class="lineno">  962</span>&#160;        elseif($file_exsit)</div>
-<div class="line"><a name="l00963"></a><span class="lineno">  963</span>&#160;        {</div>
-<div class="line"><a name="l00964"></a><span class="lineno">  964</span>&#160;            $default_url = <a class="code" href="classContext.html#abf99203a93b0b0de0da3fbeced6ce333">Context::getDefaultUrl</a>();</div>
-<div class="line"><a name="l00965"></a><span class="lineno">  965</span>&#160;            <span class="keywordflow">if</span>($default_url &amp;&amp; substr_compare($default_url, <span class="charliteral">&#39;/&#39;</span>, -1) === 0) $default_url = substr($default_url, 0, -1);</div>
-<div class="line"><a name="l00966"></a><span class="lineno">  966</span>&#160;            $icon_url = $default_url . <span class="stringliteral">&#39;/files/attach/xeicon/&#39;</span> . $virtual_site . $iconname;</div>
-<div class="line"><a name="l00967"></a><span class="lineno">  967</span>&#160;        }</div>
-<div class="line"><a name="l00968"></a><span class="lineno">  968</span>&#160;        <span class="keywordflow">return</span> $icon_url;</div>
-<div class="line"><a name="l00969"></a><span class="lineno">  969</span>&#160;    }</div>
-<div class="line"><a name="l00970"></a><span class="lineno">  970</span>&#160;</div>
-<div class="line"><a name="l00971"></a><span class="lineno">  971</span>&#160;}</div>
-<div class="line"><a name="l00972"></a><span class="lineno">  972</span>&#160;<span class="comment">/* End of file admin.admin.model.php */</span></div>
-<div class="line"><a name="l00973"></a><span class="lineno">  973</span>&#160;<span class="comment">/* Location: ./modules/admin/admin.admin.model.php */</span></div>
+<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;                    $moduleActionInfo = <a class="code" href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a>-&gt;getModuleActionXml($value-&gt;module);</div>
+<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;                    <span class="keywordflow">if</span>(is_object($moduleActionInfo-&gt;menu))</div>
+<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;                    {</div>
+<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;                        <span class="keywordflow">foreach</span>($moduleActionInfo-&gt;menu as $key2 =&gt; $value2)</div>
+<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;                        {</div>
+<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;                            <a class="code" href="example_8php.html#aef99014231eb219a8c774eb4b8463fd9">$lang</a>[$key2] = $value2-&gt;title;</div>
+<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;                        }</div>
+<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;                    }</div>
+<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;                }</div>
+<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;</div>
+<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;                $oCacheHandler-&gt;put($cache_key, <a class="code" href="example_8php.html#aef99014231eb219a8c774eb4b8463fd9">$lang</a>);</div>
+<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;            }</div>
+<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;        }</div>
+<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;</div>
+<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="example_8php.html#aef99014231eb219a8c774eb4b8463fd9">$lang</a>;</div>
+<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;    }</div>
+<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;</div>
+<div class="line"><a name="l00790"></a><span class="lineno"><a class="line" href="classadminAdminModel.html#aa50a1de27a9e8431e5a17fffc053dc1e">  790</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classadminAdminModel.html#aa50a1de27a9e8431e5a17fffc053dc1e">getFavoriteList</a>($siteSrl = 0, $isGetModuleInfo = FALSE)</div>
+<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;    {</div>
+<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a> = <span class="keyword">new</span> stdClass();</div>
+<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;site_srl = $siteSrl;</div>
+<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;        <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = <a class="code" href="func_8inc_8php.html#ace5cc06ee6c5d655a1bdcc15846a779e">executeQueryArray</a>(<span class="stringliteral">&#39;admin.getFavoriteList&#39;</span>, <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>);</div>
+<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;toBool())</div>
+<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;        {</div>
+<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>;</div>
+<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;        }</div>
+<div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;data)</div>
+<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;        {</div>
+<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>();</div>
+<div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;        }</div>
+<div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;</div>
+<div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;        <span class="keywordflow">if</span>($isGetModuleInfo &amp;&amp; is_array(<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;data))</div>
+<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;        {</div>
+<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;            <a class="code" href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a> = <a class="code" href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a>(<span class="stringliteral">&#39;module&#39;</span>);</div>
+<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;            <span class="keywordflow">foreach</span>(<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;data AS $key =&gt; $value)</div>
+<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;            {</div>
+<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;                <a class="code" href="ko_8install_8php.html#ae3552a6dd49f37a50e7858151f7c5cc2">$moduleInfo</a> = <a class="code" href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a>-&gt;getModuleInfoXml($value-&gt;module);</div>
+<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;                <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;data[$key]-&gt;admin_index_act = <a class="code" href="ko_8install_8php.html#ae3552a6dd49f37a50e7858151f7c5cc2">$moduleInfo</a>-&gt;admin_index_act;</div>
+<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;                <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;data[$key]-&gt;title = <a class="code" href="ko_8install_8php.html#ae3552a6dd49f37a50e7858151f7c5cc2">$moduleInfo</a>-&gt;title;</div>
+<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;            }</div>
+<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;        }</div>
+<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;</div>
+<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;        $returnObject = <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>();</div>
+<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;        $returnObject-&gt;add(<span class="stringliteral">&#39;favoriteList&#39;</span>, <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;data);</div>
+<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;        <span class="keywordflow">return</span> $returnObject;</div>
+<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;    }</div>
+<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;</div>
+<div class="line"><a name="l00826"></a><span class="lineno"><a class="line" href="classadminAdminModel.html#a6ba3dfaa5f5f1cc41284676b9e0b7b9d">  826</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classadminAdminModel.html#a6ba3dfaa5f5f1cc41284676b9e0b7b9d">isExistsFavorite</a>($siteSrl, <a class="code" href="classModuleObject.html#a2809af79b38269089ba46bc922061ae8">$module</a>)</div>
+<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;    {</div>
+<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a> = <span class="keyword">new</span> stdClass();</div>
+<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;site_srl = $siteSrl;</div>
+<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;module = <a class="code" href="classModuleObject.html#a2809af79b38269089ba46bc922061ae8">$module</a>;</div>
+<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;        <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = <a class="code" href="func_8inc_8php.html#a418bc23855eebc0d90190dd625ac4474">executeQuery</a>(<span class="stringliteral">&#39;admin.getFavorite&#39;</span>, <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>);</div>
+<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;toBool())</div>
+<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;        {</div>
+<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>;</div>
+<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;        }</div>
+<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;</div>
+<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;        $returnObject = <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>();</div>
+<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;data)</div>
+<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;        {</div>
+<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;            $returnObject-&gt;add(<span class="stringliteral">&#39;result&#39;</span>, TRUE);</div>
+<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;            $returnObject-&gt;add(<span class="stringliteral">&#39;favoriteSrl&#39;</span>, <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;data-&gt;admin_favorite_srl);</div>
+<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;        }</div>
+<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;        {</div>
+<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;            $returnObject-&gt;add(<span class="stringliteral">&#39;result&#39;</span>, FALSE);</div>
+<div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;        }</div>
+<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;</div>
+<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;        <span class="keywordflow">return</span> $returnObject;</div>
+<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;    }</div>
+<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;</div>
+<div class="line"><a name="l00855"></a><span class="lineno"><a class="line" href="classadminAdminModel.html#a12f25a1c61e11bf727019171564b1cad">  855</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classadminAdminModel.html#a12f25a1c61e11bf727019171564b1cad">getSiteAllList</a>()</div>
+<div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;    {</div>
+<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;domain&#39;</span>))</div>
+<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;        {</div>
+<div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;            $domain = <a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;domain&#39;</span>);</div>
+<div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;        }</div>
+<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;        $siteList = $this-&gt;<a class="code" href="classadminAdminModel.html#afca5a07a3f42ccc8c2f635557c668b44">getAllSitesThatHaveModules</a>($domain);</div>
+<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;        $this-&gt;<a class="code" href="classBaseObject.html#ac53ea9b2ac26d103f2b0217e9496a93d">add</a>(<span class="stringliteral">&#39;site_list&#39;</span>, $siteList);</div>
+<div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;    }</div>
+<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;</div>
+<div class="line"><a name="l00871"></a><span class="lineno"><a class="line" href="classadminAdminModel.html#afca5a07a3f42ccc8c2f635557c668b44">  871</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classadminAdminModel.html#afca5a07a3f42ccc8c2f635557c668b44">getAllSitesThatHaveModules</a>($domain = NULL)</div>
+<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;    {</div>
+<div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a> = <span class="keyword">new</span> stdClass();</div>
+<div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;        <span class="keywordflow">if</span>($domain)</div>
+<div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;        {</div>
+<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;            <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;domain = $domain;</div>
+<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;        }</div>
+<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;        $columnList = array(<span class="stringliteral">&#39;domain&#39;</span>, <span class="stringliteral">&#39;site_srl&#39;</span>);</div>
+<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;</div>
+<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;        $siteList = array();</div>
+<div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;        <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = <a class="code" href="func_8inc_8php.html#ace5cc06ee6c5d655a1bdcc15846a779e">executeQueryArray</a>(<span class="stringliteral">&#39;admin.getSiteAllList&#39;</span>, <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>, $columnList);</div>
+<div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;toBool())</div>
+<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;        {</div>
+<div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;            $siteList = <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;data;</div>
+<div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;        }</div>
+<div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;</div>
+<div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;        <a class="code" href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a> = <a class="code" href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a>(<span class="stringliteral">&#39;module&#39;</span>);</div>
+<div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;        <span class="keywordflow">foreach</span>($siteList as $key =&gt; $value)</div>
+<div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;        {</div>
+<div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;            <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;site_srl = $value-&gt;site_srl;</div>
+<div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;            $list = <a class="code" href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a>-&gt;getModuleSrlList(<a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>);</div>
+<div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;</div>
+<div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;            <span class="keywordflow">if</span>(!is_array($list))</div>
+<div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;            {</div>
+<div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;                $list = array($list);</div>
+<div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;            }</div>
+<div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;</div>
+<div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;            <span class="keywordflow">foreach</span>($list as $k =&gt; $v)</div>
+<div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;            {</div>
+<div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;                <span class="keywordflow">if</span>(!is_dir(<a class="code" href="config_8inc_8php.html#a5387c7a3f2aa38adf16f324cee88db88">_XE_PATH_</a> . <span class="stringliteral">&#39;modules/&#39;</span> . $v-&gt;module))</div>
+<div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;                {</div>
+<div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;                    unset($list[$k]);</div>
+<div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;                }</div>
+<div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;            }</div>
+<div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160;</div>
+<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;            <span class="keywordflow">if</span>(!count($list))</div>
+<div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;            {</div>
+<div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;                unset($siteList[$key]);</div>
+<div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;            }</div>
+<div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;        }</div>
+<div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;        <span class="keywordflow">return</span> $siteList;</div>
+<div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160;    }</div>
+<div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;</div>
+<div class="line"><a name="l00919"></a><span class="lineno"><a class="line" href="classadminAdminModel.html#a7123fd762d0fbefec95c0fa6263ffd62">  919</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classadminAdminModel.html#a7123fd762d0fbefec95c0fa6263ffd62">getSiteCountByDate</a>($date = <span class="stringliteral">&#39;&#39;</span>)</div>
+<div class="line"><a name="l00920"></a><span class="lineno">  920</span>&#160;    {</div>
+<div class="line"><a name="l00921"></a><span class="lineno">  921</span>&#160;        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a> = <span class="keyword">new</span> stdClass();</div>
+<div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160;</div>
+<div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160;        <span class="keywordflow">if</span>($date)</div>
+<div class="line"><a name="l00924"></a><span class="lineno">  924</span>&#160;        {</div>
+<div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160;            <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;regDate = date(<span class="stringliteral">&#39;Ymd&#39;</span>, strtotime($date));</div>
+<div class="line"><a name="l00926"></a><span class="lineno">  926</span>&#160;        }</div>
+<div class="line"><a name="l00927"></a><span class="lineno">  927</span>&#160;</div>
+<div class="line"><a name="l00928"></a><span class="lineno">  928</span>&#160;        <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = <a class="code" href="func_8inc_8php.html#a418bc23855eebc0d90190dd625ac4474">executeQuery</a>(<span class="stringliteral">&#39;admin.getSiteCountByDate&#39;</span>, <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>);</div>
+<div class="line"><a name="l00929"></a><span class="lineno">  929</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;toBool())</div>
+<div class="line"><a name="l00930"></a><span class="lineno">  930</span>&#160;        {</div>
+<div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;            <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00932"></a><span class="lineno">  932</span>&#160;        }</div>
+<div class="line"><a name="l00933"></a><span class="lineno">  933</span>&#160;</div>
+<div class="line"><a name="l00934"></a><span class="lineno">  934</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;data-&gt;count;</div>
+<div class="line"><a name="l00935"></a><span class="lineno">  935</span>&#160;    }</div>
+<div class="line"><a name="l00936"></a><span class="lineno">  936</span>&#160;</div>
+<div class="line"><a name="l00937"></a><span class="lineno"><a class="line" href="classadminAdminModel.html#a94cadc80816d875f0713507d356c422b">  937</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classadminAdminModel.html#a94cadc80816d875f0713507d356c422b">getFaviconUrl</a>($default = <span class="keyword">true</span>)</div>
+<div class="line"><a name="l00938"></a><span class="lineno">  938</span>&#160;    {</div>
+<div class="line"><a name="l00939"></a><span class="lineno">  939</span>&#160;        <span class="keywordflow">return</span> $this-&gt;<a class="code" href="classadminAdminModel.html#ab77b7dd452e81ca285debe37a159e0d7">iconUrlCheck</a>(<span class="stringliteral">&#39;favicon.ico&#39;</span>, <span class="stringliteral">&#39;faviconSample.png&#39;</span>, $default);</div>
+<div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160;    }</div>
+<div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160;</div>
+<div class="line"><a name="l00942"></a><span class="lineno"><a class="line" href="classadminAdminModel.html#a3ebcb91feca1cf88d6ed0bce9355ca6b">  942</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classadminAdminModel.html#a3ebcb91feca1cf88d6ed0bce9355ca6b">getMobileIconUrl</a>($default = <span class="keyword">true</span>)</div>
+<div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160;    {</div>
+<div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160;        <span class="keywordflow">return</span> $this-&gt;<a class="code" href="classadminAdminModel.html#ab77b7dd452e81ca285debe37a159e0d7">iconUrlCheck</a>(<span class="stringliteral">&#39;mobicon.png&#39;</span>, <span class="stringliteral">&#39;mobiconSample.png&#39;</span>, $default);</div>
+<div class="line"><a name="l00945"></a><span class="lineno">  945</span>&#160;    }</div>
+<div class="line"><a name="l00946"></a><span class="lineno">  946</span>&#160;</div>
+<div class="line"><a name="l00947"></a><span class="lineno"><a class="line" href="classadminAdminModel.html#ab77b7dd452e81ca285debe37a159e0d7">  947</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classadminAdminModel.html#ab77b7dd452e81ca285debe37a159e0d7">iconUrlCheck</a>($iconname, $default_icon_name, $default)</div>
+<div class="line"><a name="l00948"></a><span class="lineno">  948</span>&#160;    {</div>
+<div class="line"><a name="l00949"></a><span class="lineno">  949</span>&#160;        $site_info = <a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;site_module_info&#39;</span>);</div>
+<div class="line"><a name="l00950"></a><span class="lineno">  950</span>&#160;        $virtual_site = <span class="stringliteral">&#39;&#39;</span>;</div>
+<div class="line"><a name="l00951"></a><span class="lineno">  951</span>&#160;        <span class="keywordflow">if</span>($site_info-&gt;site_srl) </div>
+<div class="line"><a name="l00952"></a><span class="lineno">  952</span>&#160;        {</div>
+<div class="line"><a name="l00953"></a><span class="lineno">  953</span>&#160;            $virtual_site = $site_info-&gt;site_srl . <span class="charliteral">&#39;/&#39;</span>;</div>
+<div class="line"><a name="l00954"></a><span class="lineno">  954</span>&#160;        }</div>
+<div class="line"><a name="l00955"></a><span class="lineno">  955</span>&#160;</div>
+<div class="line"><a name="l00956"></a><span class="lineno">  956</span>&#160;        $file_exsit = <a class="code" href="classFileHandler.html#ac0bd2431461ad2bc04c093bfbb826bea">FileHandler::readFile</a>(<a class="code" href="config_8inc_8php.html#a5387c7a3f2aa38adf16f324cee88db88">_XE_PATH_</a> . <span class="stringliteral">&#39;files/attach/xeicon/&#39;</span> . $virtual_site . $iconname);</div>
+<div class="line"><a name="l00957"></a><span class="lineno">  957</span>&#160;        <span class="keywordflow">if</span>(!$file_exsit &amp;&amp; $default === <span class="keyword">true</span>)</div>
+<div class="line"><a name="l00958"></a><span class="lineno">  958</span>&#160;        {</div>
+<div class="line"><a name="l00959"></a><span class="lineno">  959</span>&#160;            $icon_url = <span class="stringliteral">&#39;./modules/admin/tpl/img/&#39;</span> . $default_icon_name;</div>
+<div class="line"><a name="l00960"></a><span class="lineno">  960</span>&#160;        }</div>
+<div class="line"><a name="l00961"></a><span class="lineno">  961</span>&#160;        elseif($file_exsit)</div>
+<div class="line"><a name="l00962"></a><span class="lineno">  962</span>&#160;        {</div>
+<div class="line"><a name="l00963"></a><span class="lineno">  963</span>&#160;            $default_url = <a class="code" href="classContext.html#abf99203a93b0b0de0da3fbeced6ce333">Context::getDefaultUrl</a>();</div>
+<div class="line"><a name="l00964"></a><span class="lineno">  964</span>&#160;            <span class="keywordflow">if</span>($default_url &amp;&amp; substr_compare($default_url, <span class="charliteral">&#39;/&#39;</span>, -1) === 0) $default_url = substr($default_url, 0, -1);</div>
+<div class="line"><a name="l00965"></a><span class="lineno">  965</span>&#160;            $icon_url = $default_url . <span class="stringliteral">&#39;/files/attach/xeicon/&#39;</span> . $virtual_site . $iconname;</div>
+<div class="line"><a name="l00966"></a><span class="lineno">  966</span>&#160;        }</div>
+<div class="line"><a name="l00967"></a><span class="lineno">  967</span>&#160;        <span class="keywordflow">return</span> $icon_url;</div>
+<div class="line"><a name="l00968"></a><span class="lineno">  968</span>&#160;    }</div>
+<div class="line"><a name="l00969"></a><span class="lineno">  969</span>&#160;</div>
+<div class="line"><a name="l00970"></a><span class="lineno">  970</span>&#160;}</div>
+<div class="line"><a name="l00971"></a><span class="lineno">  971</span>&#160;<span class="comment">/* End of file admin.admin.model.php */</span></div>
+<div class="line"><a name="l00972"></a><span class="lineno">  972</span>&#160;<span class="comment">/* Location: ./modules/admin/admin.admin.model.php */</span></div>
 <div class="ttc" id="ko_8install_8php_html_a8d7a87df524e7d6938f66f8e284cdd1e"><div class="ttname"><a href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a></div><div class="ttdeci">$oModuleModel</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00236">ko.install.php:236</a></div></div>
-<div class="ttc" id="classadminAdminModel_html_aa50a1de27a9e8431e5a17fffc053dc1e"><div class="ttname"><a href="classadminAdminModel.html#aa50a1de27a9e8431e5a17fffc053dc1e">adminAdminModel\getFavoriteList</a></div><div class="ttdeci">getFavoriteList($siteSrl=0, $isGetModuleInfo=FALSE)</div><div class="ttdef"><b>Definition:</b> <a href="admin_8admin_8model_8php_source.html#l00791">admin.admin.model.php:791</a></div></div>
-<div class="ttc" id="classadminAdminModel_html_a7123fd762d0fbefec95c0fa6263ffd62"><div class="ttname"><a href="classadminAdminModel.html#a7123fd762d0fbefec95c0fa6263ffd62">adminAdminModel\getSiteCountByDate</a></div><div class="ttdeci">getSiteCountByDate($date= '')</div><div class="ttdef"><b>Definition:</b> <a href="admin_8admin_8model_8php_source.html#l00920">admin.admin.model.php:920</a></div></div>
+<div class="ttc" id="classadminAdminModel_html_aa50a1de27a9e8431e5a17fffc053dc1e"><div class="ttname"><a href="classadminAdminModel.html#aa50a1de27a9e8431e5a17fffc053dc1e">adminAdminModel\getFavoriteList</a></div><div class="ttdeci">getFavoriteList($siteSrl=0, $isGetModuleInfo=FALSE)</div><div class="ttdef"><b>Definition:</b> <a href="admin_8admin_8model_8php_source.html#l00790">admin.admin.model.php:790</a></div></div>
+<div class="ttc" id="classadminAdminModel_html_a7123fd762d0fbefec95c0fa6263ffd62"><div class="ttname"><a href="classadminAdminModel.html#a7123fd762d0fbefec95c0fa6263ffd62">adminAdminModel\getSiteCountByDate</a></div><div class="ttdeci">getSiteCountByDate($date= '')</div><div class="ttdef"><b>Definition:</b> <a href="admin_8admin_8model_8php_source.html#l00919">admin.admin.model.php:919</a></div></div>
 <div class="ttc" id="classadminAdminModel_html_adde903c6e5edecd8b68b1afb232c92fe"><div class="ttname"><a href="classadminAdminModel.html#adde903c6e5edecd8b68b1afb232c92fe">adminAdminModel\getModulesSkinList</a></div><div class="ttdeci">getModulesSkinList()</div><div class="ttdef"><b>Definition:</b> <a href="admin_8admin_8model_8php_source.html#l00706">admin.admin.model.php:706</a></div></div>
 <div class="ttc" id="classFileHandler_html_aa5969f9fe0ce869fc736c4da384959e9"><div class="ttname"><a href="classFileHandler.html#aa5969f9fe0ce869fc736c4da384959e9">FileHandler\removeFile</a></div><div class="ttdeci">removeFile($filename)</div><div class="ttdef"><b>Definition:</b> <a href="FileHandler_8class_8php_source.html#l00167">FileHandler.class.php:167</a></div></div>
 <div class="ttc" id="config_8inc_8php_html_afceaaec30d0e5b6a78d0ae28bcbfc8f3"><div class="ttname"><a href="config_8inc_8php.html#afceaaec30d0e5b6a78d0ae28bcbfc8f3">__XE_VERSION__</a></div><div class="ttdeci">const __XE_VERSION__</div><div class="ttdef"><b>Definition:</b> <a href="config_8inc_8php_source.html#l00032">config.inc.php:32</a></div></div>
-<div class="ttc" id="classContext_html_a7b22a741ff804e5cdaafd952273bd70c"><div class="ttname"><a href="classContext.html#a7b22a741ff804e5cdaafd952273bd70c">Context\loadLang</a></div><div class="ttdeci">loadLang($path)</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l00846">Context.class.php:846</a></div></div>
+<div class="ttc" id="classContext_html_a7b22a741ff804e5cdaafd952273bd70c"><div class="ttname"><a href="classContext.html#a7b22a741ff804e5cdaafd952273bd70c">Context\loadLang</a></div><div class="ttdeci">loadLang($path)</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l00848">Context.class.php:848</a></div></div>
 <div class="ttc" id="classftp_html"><div class="ttname"><a href="classftp.html">ftp</a></div><div class="ttdef"><b>Definition:</b> <a href="ftp_8class_8php_source.html#l00044">ftp.class.php:44</a></div></div>
 <div class="ttc" id="ko_8install_8php_html_a73004ce9cd673c1bfafd1dc351134797"><div class="ttname"><a href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a></div><div class="ttdeci">$output</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00193">ko.install.php:193</a></div></div>
-<div class="ttc" id="classObject_html_a4f8a7fa8794663b7625fc15c9589797b"><div class="ttname"><a href="classObject.html#a4f8a7fa8794663b7625fc15c9589797b">Object\add</a></div><div class="ttdeci">add($key, $val)</div><div class="ttdef"><b>Definition:</b> <a href="Object_8class_8php_source.html#l00129">Object.class.php:129</a></div></div>
+<div class="ttc" id="classBaseObject_html_ac53ea9b2ac26d103f2b0217e9496a93d"><div class="ttname"><a href="classBaseObject.html#ac53ea9b2ac26d103f2b0217e9496a93d">BaseObject\add</a></div><div class="ttdeci">add($key, $val)</div><div class="ttdef"><b>Definition:</b> <a href="BaseObject_8class_8php_source.html#l00128">BaseObject.class.php:128</a></div></div>
+<div class="ttc" id="classCacheHandler_html_a2fce85cb82ab180ce9d6bcea61a54eec"><div class="ttname"><a href="classCacheHandler.html#a2fce85cb82ab180ce9d6bcea61a54eec">CacheHandler\getInstance</a></div><div class="ttdeci">&amp; getInstance($target= 'object', $info=null, $always_use_file=false)</div><div class="ttdef"><b>Definition:</b> <a href="CacheHandler_8class_8php_source.html#l00031">CacheHandler.class.php:31</a></div></div>
+<div class="ttc" id="classBaseObject_html"><div class="ttname"><a href="classBaseObject.html">BaseObject</a></div><div class="ttdef"><b>Definition:</b> <a href="BaseObject_8class_8php_source.html#l00009">BaseObject.class.php:9</a></div></div>
 <div class="ttc" id="classadminAdminModel_html"><div class="ttname"><a href="classadminAdminModel.html">adminAdminModel</a></div><div class="ttdef"><b>Definition:</b> <a href="admin_8admin_8model_8php_source.html#l00011">admin.admin.model.php:11</a></div></div>
 <div class="ttc" id="classFileHandler_html_ad90c10a81460f437bc68952427606155"><div class="ttname"><a href="classFileHandler.html#ad90c10a81460f437bc68952427606155">FileHandler\writeFile</a></div><div class="ttdeci">writeFile($filename, $buff, $mode=&quot;w&quot;)</div><div class="ttdef"><b>Definition:</b> <a href="FileHandler_8class_8php_source.html#l00145">FileHandler.class.php:145</a></div></div>
 <div class="ttc" id="config_8inc_8php_html_a7330debbfb3a027cdd5f3d3dd1dfbdd0"><div class="ttname"><a href="config_8inc_8php.html#a7330debbfb3a027cdd5f3d3dd1dfbdd0">_XE_LOCATION_</a></div><div class="ttdeci">const _XE_LOCATION_</div><div class="ttdef"><b>Definition:</b> <a href="config_8inc_8php_source.html#l00070">config.inc.php:70</a></div></div>
@@ -1003,39 +1004,38 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classadminAdminModel_html_afbd791a2932cb6f9f3d0550f4377829a"><div class="ttname"><a href="classadminAdminModel.html#afbd791a2932cb6f9f3d0550f4377829a">adminAdminModel\getEnv</a></div><div class="ttdeci">getEnv($type= 'WORKING')</div><div class="ttdef"><b>Definition:</b> <a href="admin_8admin_8model_8php_source.html#l00396">admin.admin.model.php:396</a></div></div>
 <div class="ttc" id="classadminAdminModel_html_a388c46fe906b6658eda70407ff9cdadb"><div class="ttname"><a href="classadminAdminModel.html#a388c46fe906b6658eda70407ff9cdadb">adminAdminModel\getFTPPath</a></div><div class="ttdeci">getFTPPath()</div><div class="ttdef"><b>Definition:</b> <a href="admin_8admin_8model_8php_source.html#l00098">admin.admin.model.php:98</a></div></div>
 <div class="ttc" id="classadminAdminModel_html_afa7d3525c94669a9cdd141051213a765"><div class="ttname"><a href="classadminAdminModel.html#afa7d3525c94669a9cdd141051213a765">adminAdminModel\getThemeInfo</a></div><div class="ttdeci">getThemeInfo($theme_name, $layout_list=NULL)</div><div class="ttdef"><b>Definition:</b> <a href="admin_8admin_8model_8php_source.html#l00539">admin.admin.model.php:539</a></div></div>
-<div class="ttc" id="classContext_html_ae75d6f4064d09e48d0d76614b6997e29"><div class="ttname"><a href="classContext.html#ae75d6f4064d09e48d0d76614b6997e29">Context\getLangType</a></div><div class="ttdeci">getLangType()</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l00984">Context.class.php:984</a></div></div>
+<div class="ttc" id="classContext_html_ae75d6f4064d09e48d0d76614b6997e29"><div class="ttname"><a href="classContext.html#ae75d6f4064d09e48d0d76614b6997e29">Context\getLangType</a></div><div class="ttdeci">getLangType()</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l00986">Context.class.php:986</a></div></div>
 <div class="ttc" id="config_8inc_8php_html_a2843c2516649b5d9554f09b06b7b810a"><div class="ttname"><a href="config_8inc_8php.html#a2843c2516649b5d9554f09b06b7b810a">$GLOBALS</a></div><div class="ttdeci">if(__DEBUG__) if(__DEBUG__) $GLOBALS['__xe_autoload_file_map']</div><div class="ttdef"><b>Definition:</b> <a href="config_8inc_8php_source.html#l00322">config.inc.php:322</a></div></div>
 <div class="ttc" id="classFileHandler_html_a602c039b415c15d9d6866e586282faf7"><div class="ttname"><a href="classFileHandler.html#a602c039b415c15d9d6866e586282faf7">FileHandler\getRemoteResource</a></div><div class="ttdeci">getRemoteResource($url, $body=null, $timeout=3, $method= 'GET', $content_type=null, $headers=array(), $cookies=array(), $post_data=array(), $request_config=array())</div><div class="ttdef"><b>Definition:</b> <a href="FileHandler_8class_8php_source.html#l00518">FileHandler.class.php:518</a></div></div>
-<div class="ttc" id="classadminAdminModel_html_ab77b7dd452e81ca285debe37a159e0d7"><div class="ttname"><a href="classadminAdminModel.html#ab77b7dd452e81ca285debe37a159e0d7">adminAdminModel\iconUrlCheck</a></div><div class="ttdeci">iconUrlCheck($iconname, $default_icon_name, $default)</div><div class="ttdef"><b>Definition:</b> <a href="admin_8admin_8model_8php_source.html#l00948">admin.admin.model.php:948</a></div></div>
-<div class="ttc" id="classContext_html_a2e90e7083bcc220daeec3d4d8d3bb427"><div class="ttname"><a href="classContext.html#a2e90e7083bcc220daeec3d4d8d3bb427">Context\getDBType</a></div><div class="ttdeci">getDBType()</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l00526">Context.class.php:526</a></div></div>
-<div class="ttc" id="classContext_html_a54dd61c7b035a12697db8ca3f1c6849c"><div class="ttname"><a href="classContext.html#a54dd61c7b035a12697db8ca3f1c6849c">Context\getDBInfo</a></div><div class="ttdeci">getDBInfo()</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l00549">Context.class.php:549</a></div></div>
+<div class="ttc" id="classadminAdminModel_html_ab77b7dd452e81ca285debe37a159e0d7"><div class="ttname"><a href="classadminAdminModel.html#ab77b7dd452e81ca285debe37a159e0d7">adminAdminModel\iconUrlCheck</a></div><div class="ttdeci">iconUrlCheck($iconname, $default_icon_name, $default)</div><div class="ttdef"><b>Definition:</b> <a href="admin_8admin_8model_8php_source.html#l00947">admin.admin.model.php:947</a></div></div>
+<div class="ttc" id="classContext_html_a2e90e7083bcc220daeec3d4d8d3bb427"><div class="ttname"><a href="classContext.html#a2e90e7083bcc220daeec3d4d8d3bb427">Context\getDBType</a></div><div class="ttdeci">getDBType()</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l00528">Context.class.php:528</a></div></div>
+<div class="ttc" id="classContext_html_a54dd61c7b035a12697db8ca3f1c6849c"><div class="ttname"><a href="classContext.html#a54dd61c7b035a12697db8ca3f1c6849c">Context\getDBInfo</a></div><div class="ttdeci">getDBInfo()</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l00551">Context.class.php:551</a></div></div>
 <div class="ttc" id="ko_8install_8php_html_a67e94494731d99ed23b123e95175bc10"><div class="ttname"><a href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a></div><div class="ttdeci">$args</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00185">ko.install.php:185</a></div></div>
 <div class="ttc" id="classadminAdminModel_html_aaeac1a0a11439dfb4faa74751da8747e"><div class="ttname"><a href="classadminAdminModel.html#aaeac1a0a11439dfb4faa74751da8747e">adminAdminModel\getSFTPPath</a></div><div class="ttdeci">getSFTPPath()</div><div class="ttdef"><b>Definition:</b> <a href="admin_8admin_8model_8php_source.html#l00029">admin.admin.model.php:29</a></div></div>
 <div class="ttc" id="classModuleObject_html_ada660958e777413d332337fba67d657f"><div class="ttname"><a href="classModuleObject.html#ada660958e777413d332337fba67d657f">ModuleObject\$layout_path</a></div><div class="ttdeci">$layout_path</div><div class="ttdoc">a path of directory where layout files reside </div><div class="ttdef"><b>Definition:</b> <a href="ModuleObject_8class_8php_source.html#l00022">ModuleObject.class.php:22</a></div></div>
-<div class="ttc" id="classObject_html_a9c1f4bf33208a5c858c0722afce90f30"><div class="ttname"><a href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object\Object</a></div><div class="ttdeci">Object($error=0, $message= 'success')</div><div class="ttdef"><b>Definition:</b> <a href="Object_8class_8php_source.html#l00043">Object.class.php:43</a></div></div>
 <div class="ttc" id="package_8inc_8php_html_ac4384cdc784342cd44d75952334decb4"><div class="ttname"><a href="package_8inc_8php.html#ac4384cdc784342cd44d75952334decb4">_XE_PACKAGE_</a></div><div class="ttdeci">const _XE_PACKAGE_</div><div class="ttdef"><b>Definition:</b> <a href="package_8inc_8php_source.html#l00004">package.inc.php:4</a></div></div>
-<div class="ttc" id="classadminAdminModel_html_a12f25a1c61e11bf727019171564b1cad"><div class="ttname"><a href="classadminAdminModel.html#a12f25a1c61e11bf727019171564b1cad">adminAdminModel\getSiteAllList</a></div><div class="ttdeci">getSiteAllList()</div><div class="ttdef"><b>Definition:</b> <a href="admin_8admin_8model_8php_source.html#l00856">admin.admin.model.php:856</a></div></div>
+<div class="ttc" id="classadminAdminModel_html_a12f25a1c61e11bf727019171564b1cad"><div class="ttname"><a href="classadminAdminModel.html#a12f25a1c61e11bf727019171564b1cad">adminAdminModel\getSiteAllList</a></div><div class="ttdeci">getSiteAllList()</div><div class="ttdef"><b>Definition:</b> <a href="admin_8admin_8model_8php_source.html#l00855">admin.admin.model.php:855</a></div></div>
 <div class="ttc" id="classadminAdminModel_html_a155e29f18f17c6c657a457fcd65fd24b"><div class="ttname"><a href="classadminAdminModel.html#a155e29f18f17c6c657a457fcd65fd24b">adminAdminModel\getAdminFTPPath</a></div><div class="ttdeci">getAdminFTPPath()</div><div class="ttdef"><b>Definition:</b> <a href="admin_8admin_8model_8php_source.html#l00176">admin.admin.model.php:176</a></div></div>
 <div class="ttc" id="classFileHandler_html_a862c4f6349792ae8f094ec456c9a26ed"><div class="ttname"><a href="classFileHandler.html#a862c4f6349792ae8f094ec456c9a26ed">FileHandler\exists</a></div><div class="ttdeci">exists($filename)</div><div class="ttdef"><b>Definition:</b> <a href="FileHandler_8class_8php_source.html#l01065">FileHandler.class.php:1065</a></div></div>
-<div class="ttc" id="classadminAdminModel_html_a6ba3dfaa5f5f1cc41284676b9e0b7b9d"><div class="ttname"><a href="classadminAdminModel.html#a6ba3dfaa5f5f1cc41284676b9e0b7b9d">adminAdminModel\isExistsFavorite</a></div><div class="ttdeci">isExistsFavorite($siteSrl, $module)</div><div class="ttdef"><b>Definition:</b> <a href="admin_8admin_8model_8php_source.html#l00827">admin.admin.model.php:827</a></div></div>
+<div class="ttc" id="classadminAdminModel_html_a6ba3dfaa5f5f1cc41284676b9e0b7b9d"><div class="ttname"><a href="classadminAdminModel.html#a6ba3dfaa5f5f1cc41284676b9e0b7b9d">adminAdminModel\isExistsFavorite</a></div><div class="ttdeci">isExistsFavorite($siteSrl, $module)</div><div class="ttdef"><b>Definition:</b> <a href="admin_8admin_8model_8php_source.html#l00826">admin.admin.model.php:826</a></div></div>
 <div class="ttc" id="classadminAdminModel_html_a2a331c8f7fea9c12f56f5f5f75a3960c"><div class="ttname"><a href="classadminAdminModel.html#a2a331c8f7fea9c12f56f5f5f75a3960c">adminAdminModel\getThemeList</a></div><div class="ttdeci">getThemeList()</div><div class="ttdef"><b>Definition:</b> <a href="admin_8admin_8model_8php_source.html#l00516">admin.admin.model.php:516</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_a902cd0c884e75afab2682fdd3ae3791f"><div class="ttname"><a href="func_8inc_8php.html#a902cd0c884e75afab2682fdd3ae3791f">getAdminModel</a></div><div class="ttdeci">getAdminModel($module_name)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00156">func.inc.php:156</a></div></div>
 <div class="ttc" id="classadminAdminModel_html_adea58838b8595a28dc84d562bd1816ed"><div class="ttname"><a href="classadminAdminModel.html#adea58838b8595a28dc84d562bd1816ed">adminAdminModel\getSFTPList</a></div><div class="ttdeci">getSFTPList()</div><div class="ttdef"><b>Definition:</b> <a href="admin_8admin_8model_8php_source.html#l00280">admin.admin.model.php:280</a></div></div>
 <div class="ttc" id="classFileHandler_html_a6370b3eeddb705be04d9f60902a746e0"><div class="ttname"><a href="classFileHandler.html#a6370b3eeddb705be04d9f60902a746e0">FileHandler\getRealPath</a></div><div class="ttdeci">getRealPath($source)</div><div class="ttdef"><b>Definition:</b> <a href="FileHandler_8class_8php_source.html#l00018">FileHandler.class.php:18</a></div></div>
-<div class="ttc" id="classadminAdminModel_html_a94cadc80816d875f0713507d356c422b"><div class="ttname"><a href="classadminAdminModel.html#a94cadc80816d875f0713507d356c422b">adminAdminModel\getFaviconUrl</a></div><div class="ttdeci">getFaviconUrl($default=true)</div><div class="ttdef"><b>Definition:</b> <a href="admin_8admin_8model_8php_source.html#l00938">admin.admin.model.php:938</a></div></div>
-<div class="ttc" id="classadminAdminModel_html_a3ebcb91feca1cf88d6ed0bce9355ca6b"><div class="ttname"><a href="classadminAdminModel.html#a3ebcb91feca1cf88d6ed0bce9355ca6b">adminAdminModel\getMobileIconUrl</a></div><div class="ttdeci">getMobileIconUrl($default=true)</div><div class="ttdef"><b>Definition:</b> <a href="admin_8admin_8model_8php_source.html#l00943">admin.admin.model.php:943</a></div></div>
-<div class="ttc" id="classContext_html_a9af9269b04542f7462d27a63226e0ff3"><div class="ttname"><a href="classContext.html#a9af9269b04542f7462d27a63226e0ff3">Context\getLang</a></div><div class="ttdeci">getLang($code)</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l00996">Context.class.php:996</a></div></div>
+<div class="ttc" id="classadminAdminModel_html_a94cadc80816d875f0713507d356c422b"><div class="ttname"><a href="classadminAdminModel.html#a94cadc80816d875f0713507d356c422b">adminAdminModel\getFaviconUrl</a></div><div class="ttdeci">getFaviconUrl($default=true)</div><div class="ttdef"><b>Definition:</b> <a href="admin_8admin_8model_8php_source.html#l00937">admin.admin.model.php:937</a></div></div>
+<div class="ttc" id="classadminAdminModel_html_a3ebcb91feca1cf88d6ed0bce9355ca6b"><div class="ttname"><a href="classadminAdminModel.html#a3ebcb91feca1cf88d6ed0bce9355ca6b">adminAdminModel\getMobileIconUrl</a></div><div class="ttdeci">getMobileIconUrl($default=true)</div><div class="ttdef"><b>Definition:</b> <a href="admin_8admin_8model_8php_source.html#l00942">admin.admin.model.php:942</a></div></div>
+<div class="ttc" id="classContext_html_a9af9269b04542f7462d27a63226e0ff3"><div class="ttname"><a href="classContext.html#a9af9269b04542f7462d27a63226e0ff3">Context\getLang</a></div><div class="ttdeci">getLang($code)</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l00998">Context.class.php:998</a></div></div>
 <div class="ttc" id="config_8inc_8php_html_a5387c7a3f2aa38adf16f324cee88db88"><div class="ttname"><a href="config_8inc_8php.html#a5387c7a3f2aa38adf16f324cee88db88">_XE_PATH_</a></div><div class="ttdeci">const _XE_PATH_</div><div class="ttdef"><b>Definition:</b> <a href="config_8inc_8php_source.html#l00049">config.inc.php:49</a></div></div>
 <div class="ttc" id="ko_8install_8php_html_ae3552a6dd49f37a50e7858151f7c5cc2"><div class="ttname"><a href="ko_8install_8php.html#ae3552a6dd49f37a50e7858151f7c5cc2">$moduleInfo</a></div><div class="ttdeci">$moduleInfo</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00253">ko.install.php:253</a></div></div>
 <div class="ttc" id="classFileHandler_html_ac0bd2431461ad2bc04c093bfbb826bea"><div class="ttname"><a href="classFileHandler.html#ac0bd2431461ad2bc04c093bfbb826bea">FileHandler\readFile</a></div><div class="ttdeci">readFile($filename)</div><div class="ttdef"><b>Definition:</b> <a href="FileHandler_8class_8php_source.html#l00127">FileHandler.class.php:127</a></div></div>
-<div class="ttc" id="classContext_html_a9ef4f41a9ae7108ea7560162399c77a8"><div class="ttname"><a href="classContext.html#a9ef4f41a9ae7108ea7560162399c77a8">Context\convertEncoding</a></div><div class="ttdeci">convertEncoding($source_obj)</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l01031">Context.class.php:1031</a></div></div>
+<div class="ttc" id="classContext_html_a9ef4f41a9ae7108ea7560162399c77a8"><div class="ttname"><a href="classContext.html#a9ef4f41a9ae7108ea7560162399c77a8">Context\convertEncoding</a></div><div class="ttdeci">convertEncoding($source_obj)</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l01033">Context.class.php:1033</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_a5a97b458f9c5b4fe3574671840aee27c"><div class="ttname"><a href="func_8inc_8php.html#a5a97b458f9c5b4fe3574671840aee27c">getNextSequence</a></div><div class="ttdeci">getNextSequence()</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00236">func.inc.php:236</a></div></div>
 <div class="ttc" id="classadminAdminModel_html_a9e944aba1586e011811993745738728e"><div class="ttname"><a href="classadminAdminModel.html#a9e944aba1586e011811993745738728e">adminAdminModel\getAdminFTPList</a></div><div class="ttdeci">getAdminFTPList()</div><div class="ttdef"><b>Definition:</b> <a href="admin_8admin_8model_8php_source.html#l00321">admin.admin.model.php:321</a></div></div>
 <div class="ttc" id="classadminAdminModel_html_a6e21a5731925dc94cce1859dd96e7f25"><div class="ttname"><a href="classadminAdminModel.html#a6e21a5731925dc94cce1859dd96e7f25">adminAdminModel\getAdminMenuLang</a></div><div class="ttdeci">getAdminMenuLang()</div><div class="ttdef"><b>Definition:</b> <a href="admin_8admin_8model_8php_source.html#l00749">admin.admin.model.php:749</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_aecdfcc5332bcf22df01fc21a03b64435"><div class="ttname"><a href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a></div><div class="ttdeci">getModel($module_name)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00145">func.inc.php:145</a></div></div>
-<div class="ttc" id="classContext_html_abf99203a93b0b0de0da3fbeced6ce333"><div class="ttname"><a href="classContext.html#abf99203a93b0b0de0da3fbeced6ce333">Context\getDefaultUrl</a></div><div class="ttdeci">getDefaultUrl()</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l00571">Context.class.php:571</a></div></div>
+<div class="ttc" id="classContext_html_abf99203a93b0b0de0da3fbeced6ce333"><div class="ttname"><a href="classContext.html#abf99203a93b0b0de0da3fbeced6ce333">Context\getDefaultUrl</a></div><div class="ttdeci">getDefaultUrl()</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l00573">Context.class.php:573</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_ace5cc06ee6c5d655a1bdcc15846a779e"><div class="ttname"><a href="func_8inc_8php.html#ace5cc06ee6c5d655a1bdcc15846a779e">executeQueryArray</a></div><div class="ttdeci">executeQueryArray($query_id, $args=NULL, $arg_columns=NULL)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00219">func.inc.php:219</a></div></div>
-<div class="ttc" id="classContext_html_a90ce25d65fe6c9778421cbb36ab3def5"><div class="ttname"><a href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context\get</a></div><div class="ttdeci">get($key)</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l01951">Context.class.php:1951</a></div></div>
+<div class="ttc" id="classContext_html_a90ce25d65fe6c9778421cbb36ab3def5"><div class="ttname"><a href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context\get</a></div><div class="ttdeci">get($key)</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l01953">Context.class.php:1953</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_a2f7ca88a5226536aca3b2f5682bd7b2d"><div class="ttname"><a href="func_8inc_8php.html#a2f7ca88a5226536aca3b2f5682bd7b2d">getAdminController</a></div><div class="ttdeci">getAdminController($module_name)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00101">func.inc.php:101</a></div></div>
 <div class="ttc" id="classFileHandler_html_a02d0cada88becf977968d961df2f864b"><div class="ttname"><a href="classFileHandler.html#a02d0cada88becf977968d961df2f864b">FileHandler\readDir</a></div><div class="ttdeci">readDir($path, $filter= '', $to_lower=FALSE, $concat_prefix=FALSE)</div><div class="ttdef"><b>Definition:</b> <a href="FileHandler_8class_8php_source.html#l00228">FileHandler.class.php:228</a></div></div>
 <div class="ttc" id="classadminAdminModel_html_a0c3f3a9ef22f7f5b6ed159a11d8d8e45"><div class="ttname"><a href="classadminAdminModel.html#a0c3f3a9ef22f7f5b6ed159a11d8d8e45">adminAdminModel\$pwd</a></div><div class="ttdeci">$pwd</div><div class="ttdef"><b>Definition:</b> <a href="admin_8admin_8model_8php_source.html#l00018">admin.admin.model.php:18</a></div></div>
@@ -1044,13 +1044,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classadmin_html"><div class="ttname"><a href="classadmin.html">admin</a></div><div class="ttdef"><b>Definition:</b> <a href="admin_8class_8php_source.html#l00012">admin.class.php:12</a></div></div>
 <div class="ttc" id="classXmlParser_html"><div class="ttname"><a href="classXmlParser.html">XmlParser</a></div><div class="ttdef"><b>Definition:</b> <a href="XmlParser_8class_8php_source.html#l00038">XmlParser.class.php:38</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_acaf8f155dd27e065b7fb0f5c3f702027"><div class="ttname"><a href="func_8inc_8php.html#acaf8f155dd27e065b7fb0f5c3f702027">getFullUrl</a></div><div class="ttdeci">getFullUrl()</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00358">func.inc.php:358</a></div></div>
-<div class="ttc" id="classadminAdminModel_html_afca5a07a3f42ccc8c2f635557c668b44"><div class="ttname"><a href="classadminAdminModel.html#afca5a07a3f42ccc8c2f635557c668b44">adminAdminModel\getAllSitesThatHaveModules</a></div><div class="ttdeci">getAllSitesThatHaveModules($domain=NULL)</div><div class="ttdef"><b>Definition:</b> <a href="admin_8admin_8model_8php_source.html#l00872">admin.admin.model.php:872</a></div></div>
+<div class="ttc" id="classadminAdminModel_html_afca5a07a3f42ccc8c2f635557c668b44"><div class="ttname"><a href="classadminAdminModel.html#afca5a07a3f42ccc8c2f635557c668b44">adminAdminModel\getAllSitesThatHaveModules</a></div><div class="ttdeci">getAllSitesThatHaveModules($domain=NULL)</div><div class="ttdef"><b>Definition:</b> <a href="admin_8admin_8model_8php_source.html#l00871">admin.admin.model.php:871</a></div></div>
 <div class="ttc" id="example_8php_html_aef99014231eb219a8c774eb4b8463fd9"><div class="ttname"><a href="example_8php.html#aef99014231eb219a8c774eb4b8463fd9">$lang</a></div><div class="ttdeci">if(isset($_REQUEST['encode'])) if(isset($_REQUEST['decode'])) $lang</div><div class="ttdef"><b>Definition:</b> <a href="example_8php_source.html#l00023">example.php:23</a></div></div>
-<div class="ttc" id="classContext_html_a9ddbc79a7ba5892d1ea2d793f6ad52c2"><div class="ttname"><a href="classContext.html#a9ddbc79a7ba5892d1ea2d793f6ad52c2">Context\getRequestVars</a></div><div class="ttdeci">getRequestVars()</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l02001">Context.class.php:2001</a></div></div>
+<div class="ttc" id="classContext_html_a9ddbc79a7ba5892d1ea2d793f6ad52c2"><div class="ttname"><a href="classContext.html#a9ddbc79a7ba5892d1ea2d793f6ad52c2">Context\getRequestVars</a></div><div class="ttdeci">getRequestVars()</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l02003">Context.class.php:2003</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 19 2017 14:10:25 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Nov 30 2017 13:09:59 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

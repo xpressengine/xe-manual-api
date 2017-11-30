@@ -56,7 +56,7 @@ Definition at line 8 of file autoinstall.\-admin.\-view.\-php.
 Display package list
 
 \begin{DoxyReturn}{Returns}
-\hyperlink{classObject}{Object} 
+\hyperlink{classBaseObject}{Base\-Object} 
 \end{DoxyReturn}
 
 
@@ -72,7 +72,7 @@ Definition at line 389 of file autoinstall.\-admin.\-view.\-php.
 Display install package
 
 \begin{DoxyReturn}{Returns}
-\hyperlink{classObject}{Object} 
+\hyperlink{classBaseObject}{Base\-Object} 
 \end{DoxyReturn}
 
 
@@ -88,7 +88,7 @@ Definition at line 352 of file autoinstall.\-admin.\-view.\-php.
 Display installed packages
 
 \begin{DoxyReturn}{Returns}
-\hyperlink{classObject}{Object} 
+\hyperlink{classBaseObject}{Base\-Object} 
 \end{DoxyReturn}
 
 
@@ -104,7 +104,7 @@ Definition at line 297 of file autoinstall.\-admin.\-view.\-php.
 Display uninstall package
 
 \begin{DoxyReturn}{Returns}
-\hyperlink{classObject}{Object} 
+\hyperlink{classBaseObject}{Base\-Object} 
 \end{DoxyReturn}
 
 
@@ -155,18 +155,18 @@ Rearrange one item
 
 \begin{DoxyPre}
 $item:
-stdClass \hyperlink{classObject}{Object}
+stdClass Object
 (
-    [category\_srl] => stdClass \hyperlink{classObject}{Object}
+    [category\_srl] => stdClass Object
         (
             [body] => xxx
         )
-    [package\_srl] => stdClass \hyperlink{classObject}{Object}
+    [package\_srl] => stdClass Object
         (
             [body] => xxx
         )
     ...
-    [depfrom] => stdClass \hyperlink{classObject}{Object}
+    [depfrom] => stdClass Object
         (
             [body] => xxx
         )
@@ -180,7 +180,7 @@ array('category\_srl', 'package\_srl', 'item\_screenshot\_url', 'package\_voted'
 
 
 \begin{DoxyPre}returns:
-stdClass \hyperlink{classObject}{Object}
+stdClass Object
 (
     [category\_srl] => xxx
     [package\_srl] => xxx
@@ -219,23 +219,23 @@ Rearrage all item
 $items:
 Array
 (
-    [0] => stdClass \hyperlink{classObject}{Object}
+    [0] => stdClass Object
         (
-            [category\_srl] => stdClass \hyperlink{classObject}{Object}
+            [category\_srl] => stdClass Object
                 (
                     [body] => xxx
                 )
-            [package\_srl] => stdClass \hyperlink{classObject}{Object}
+            [package\_srl] => stdClass Object
                 (
                     [body] => xxx
                 )
             ...
-            [depfrom] => stdClass \hyperlink{classObject}{Object}
+            [depfrom] => stdClass Object
                 (
                     [body] => xxx
                 )
         )
-    [1] => stdClass \hyperlink{classObject}{Object}
+    [1] => stdClass Object
         (
             ...
         )
@@ -247,7 +247,7 @@ Array
 \begin{DoxyPre}$packages:
 Array
 (
-    [{\itshape package\_srl}] => stdClass \hyperlink{classObject}{Object}
+    [{\itshape package\_srl}] => stdClass Object
         (
             [current\_version] => xxx
             [need\_update] => xxx
@@ -262,7 +262,7 @@ Array
 \begin{DoxyPre}return:
 Array
 (
-    [{\itshape package\_srl}] => stdClass \hyperlink{classObject}{Object}
+    [{\itshape package\_srl}] => stdClass Object
         (
             [category\_srl] => xxx
             [package\_srl] => xxx

@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.8.45</span>
+   &#160;<span id="projectnumber">1.8.46</span>
    </div>
   </td>
  </tr>
@@ -136,139 +136,141 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        $this-&gt;_config-&gt;set(<span class="stringliteral">&#39;URI.SafeIframeRegexp&#39;</span>, $whiteDomainRegex);</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        $this-&gt;_config-&gt;set(<span class="stringliteral">&#39;Cache.SerializerPath&#39;</span>, $this-&gt;_cacheDir);</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        $this-&gt;_config-&gt;set(<span class="stringliteral">&#39;Attr.AllowedFrameTargets&#39;</span>, array(<span class="stringliteral">&#39;_blank&#39;</span>));</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="comment">//$this-&gt;_config-&gt;set(&#39;Attr.AllowedClasses&#39;, $allowdClasses);</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        $this-&gt;_def = $this-&gt;_config-&gt;getHTMLDefinition(TRUE);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">private</span> <span class="keyword">function</span> _setDefinition(&amp;$content)</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="comment">// add attribute for edit component</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        $editComponentAttrs = $this-&gt;_searchEditComponent($content);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordflow">if</span>(is_array($editComponentAttrs))</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="keywordflow">foreach</span>($editComponentAttrs AS $k =&gt; $v)</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                $this-&gt;_def-&gt;addAttribute(<span class="stringliteral">&#39;img&#39;</span>, $v, <span class="stringliteral">&#39;CDATA&#39;</span>);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                $this-&gt;_def-&gt;addAttribute(<span class="stringliteral">&#39;div&#39;</span>, $v, <span class="stringliteral">&#39;CDATA&#39;</span>);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            }</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        }</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="comment">// add attribute for widget component</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        $widgetAttrs = $this-&gt;_searchWidget($content);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">if</span>(is_array($widgetAttrs))</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <span class="keywordflow">foreach</span>($widgetAttrs AS $k =&gt; $v)</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            {</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                $this-&gt;_def-&gt;addAttribute(<span class="stringliteral">&#39;img&#39;</span>, $v, <span class="stringliteral">&#39;CDATA&#39;</span>);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            }</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        }</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">private</span> <span class="keyword">function</span> _searchEditComponent($content)</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    {</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        preg_match_all(<span class="stringliteral">&#39;!&lt;(?:(div)|img)([^&gt;]*)editor_component=([^&gt;]*)&gt;(?(1)(.*?)&lt;/div&gt;)!is&#39;</span>, $content, $m);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        $attributeList = array();</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordflow">if</span>(is_array($m[2]))</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        {</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            <span class="keywordflow">foreach</span>($m[2] as $key =&gt; $value)</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            {</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                unset($script, $m2);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                $script = <span class="stringliteral">&quot; {$m[2][$key]} editor_component={$m[3][$key]}&quot;</span>;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                <span class="keywordflow">if</span>(preg_match_all(<span class="stringliteral">&#39;/([a-z0-9_-]+)=&quot;([^&quot;]+)&quot;/is&#39;</span>, $script, $m2))</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                {</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                    <span class="keywordflow">foreach</span>($m2[1] as $value2)</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                    {</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                        <span class="comment">//SECISSUE check style attr</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                        <span class="keywordflow">if</span>($value2 == <span class="stringliteral">&#39;style&#39;</span>)</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                        {</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                            <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                        }</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                        $attributeList[] = $value2;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                    }</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                }</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            }</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        }</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keywordflow">return</span> array_unique($attributeList);</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    }</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keyword">private</span> <span class="keyword">function</span> _searchWidget(&amp;$content)</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    {</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        preg_match_all(<span class="stringliteral">&#39;!&lt;(?:(div)|img)([^&gt;]*)class=&quot;zbxe_widget_output&quot;([^&gt;]*)&gt;(?(1)(.*?)&lt;/div&gt;)!is&#39;</span>, $content, $m);</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        $attributeList = array();</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordflow">if</span>(is_array($m[3]))</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        {</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            $content = str_replace(<span class="stringliteral">&#39;&lt;img class=&quot;zbxe_widget_output&quot;&#39;</span>, <span class="stringliteral">&#39;&lt;img src=&quot;&quot; class=&quot;zbxe_widget_output&quot;&#39;</span>, $content);</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            <span class="keywordflow">foreach</span>($m[3] as $key =&gt; $value)</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;            {</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                <span class="keywordflow">if</span> (preg_match_all(<span class="stringliteral">&#39;/([a-z0-9_-]+)=&quot;([^&quot;]+)&quot;/is&#39;</span>, $m[3][$key], $m2))</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                {</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                    <span class="keywordflow">foreach</span>($m2[1] as $value2)</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                    {</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                        <span class="comment">//SECISSUE check style attr</span></div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                        <span class="keywordflow">if</span>($value2 == <span class="stringliteral">&#39;style&#39;</span>)</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                        {</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                            <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                        }</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                        $attributeList[] = $value2;</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                    }</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;                }</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;            }</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        }</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        <span class="keywordflow">return</span> array_unique($attributeList);</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    }</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keyword">private</span> <span class="keyword">function</span> _getWhiteDomainRegx()</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    {</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        $oEmbedFilter = <a class="code" href="classEmbedFilter.html#af8a43e4bc0161225381536c133792463">EmbedFilter::getInstance</a>();</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        $whiteIframeUrlList = $oEmbedFilter-&gt;getWhiteIframeUrlList();</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        $whiteDomain = array();</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <span class="keywordflow">foreach</span>($whiteIframeUrlList as $value)</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        {</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            $whiteDomain[] = preg_quote($value, <span class="charliteral">&#39;%&#39;</span>);</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        }</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        $whiteDomainRegex = <span class="stringliteral">&#39;%^(&#39;</span> . implode(<span class="charliteral">&#39;|&#39;</span>, $whiteDomain) . <span class="stringliteral">&#39;)%&#39;</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="comment">// @see https://github.com/xpressengine/xe-core/issues/2138</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        $this-&gt;_config-&gt;set(<span class="stringliteral">&#39;Attr.IDPrefix&#39;</span>, <span class="stringliteral">&#39;user_content_&#39;</span>);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        $this-&gt;_def = $this-&gt;_config-&gt;getHTMLDefinition(TRUE);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">private</span> <span class="keyword">function</span> _setDefinition(&amp;$content)</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="comment">// add attribute for edit component</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        $editComponentAttrs = $this-&gt;_searchEditComponent($content);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordflow">if</span>(is_array($editComponentAttrs))</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <span class="keywordflow">foreach</span>($editComponentAttrs AS $k =&gt; $v)</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                $this-&gt;_def-&gt;addAttribute(<span class="stringliteral">&#39;img&#39;</span>, $v, <span class="stringliteral">&#39;CDATA&#39;</span>);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                $this-&gt;_def-&gt;addAttribute(<span class="stringliteral">&#39;div&#39;</span>, $v, <span class="stringliteral">&#39;CDATA&#39;</span>);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="comment">// add attribute for widget component</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        $widgetAttrs = $this-&gt;_searchWidget($content);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordflow">if</span>(is_array($widgetAttrs))</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <span class="keywordflow">foreach</span>($widgetAttrs AS $k =&gt; $v)</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                $this-&gt;_def-&gt;addAttribute(<span class="stringliteral">&#39;img&#39;</span>, $v, <span class="stringliteral">&#39;CDATA&#39;</span>);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">private</span> <span class="keyword">function</span> _searchEditComponent($content)</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    {</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        preg_match_all(<span class="stringliteral">&#39;!&lt;(?:(div)|img)([^&gt;]*)editor_component=([^&gt;]*)&gt;(?(1)(.*?)&lt;/div&gt;)!is&#39;</span>, $content, $m);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        $attributeList = array();</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keywordflow">if</span>(is_array($m[2]))</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <span class="keywordflow">foreach</span>($m[2] as $key =&gt; $value)</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            {</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                unset($script, $m2);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                $script = <span class="stringliteral">&quot; {$m[2][$key]} editor_component={$m[3][$key]}&quot;</span>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                <span class="keywordflow">if</span>(preg_match_all(<span class="stringliteral">&#39;/([a-z0-9_-]+)=&quot;([^&quot;]+)&quot;/is&#39;</span>, $script, $m2))</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                    <span class="keywordflow">foreach</span>($m2[1] as $value2)</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                    {</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                        <span class="comment">//SECISSUE check style attr</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                        <span class="keywordflow">if</span>($value2 == <span class="stringliteral">&#39;style&#39;</span>)</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                        {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                        }</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                        $attributeList[] = $value2;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                    }</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                }</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            }</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        }</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="keywordflow">return</span> array_unique($attributeList);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    }</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keyword">private</span> <span class="keyword">function</span> _searchWidget(&amp;$content)</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    {</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        preg_match_all(<span class="stringliteral">&#39;!&lt;(?:(div)|img)([^&gt;]*)class=&quot;zbxe_widget_output&quot;([^&gt;]*)&gt;(?(1)(.*?)&lt;/div&gt;)!is&#39;</span>, $content, $m);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        $attributeList = array();</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keywordflow">if</span>(is_array($m[3]))</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        {</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            $content = str_replace(<span class="stringliteral">&#39;&lt;img class=&quot;zbxe_widget_output&quot;&#39;</span>, <span class="stringliteral">&#39;&lt;img src=&quot;&quot; class=&quot;zbxe_widget_output&quot;&#39;</span>, $content);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            <span class="keywordflow">foreach</span>($m[3] as $key =&gt; $value)</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            {</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                <span class="keywordflow">if</span> (preg_match_all(<span class="stringliteral">&#39;/([a-z0-9_-]+)=&quot;([^&quot;]+)&quot;/is&#39;</span>, $m[3][$key], $m2))</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                {</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                    <span class="keywordflow">foreach</span>($m2[1] as $value2)</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                    {</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                        <span class="comment">//SECISSUE check style attr</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                        <span class="keywordflow">if</span>($value2 == <span class="stringliteral">&#39;style&#39;</span>)</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                        {</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                        }</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;                        $attributeList[] = $value2;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;                    }</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;                }</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;            }</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        }</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <span class="keywordflow">return</span> array_unique($attributeList);</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    }</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="keyword">private</span> <span class="keyword">function</span> _getWhiteDomainRegx()</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    {</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        $oEmbedFilter = <a class="code" href="classEmbedFilter.html#af8a43e4bc0161225381536c133792463">EmbedFilter::getInstance</a>();</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        $whiteIframeUrlList = $oEmbedFilter-&gt;getWhiteIframeUrlList();</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        $whiteDomain = array();</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <span class="keywordflow">foreach</span>($whiteIframeUrlList as $value)</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        {</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            $whiteDomain[] = preg_quote($value, <span class="charliteral">&#39;%&#39;</span>);</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        }</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        <span class="keywordflow">return</span> $whiteDomainRegex;</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    }</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keyword">private</span> <span class="keyword">function</span> _checkCacheDir()</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    {</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <span class="comment">// check htmlpurifier cache directory</span></div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        $this-&gt;_cacheDir = <a class="code" href="config_8inc_8php.html#a5387c7a3f2aa38adf16f324cee88db88">_XE_PATH_</a> . <span class="stringliteral">&#39;files/cache/htmlpurifier&#39;</span>;</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        <a class="code" href="classFileHandler.html#a9c2502d10c34a3996f1d6927624a7824">FileHandler::makeDir</a>($this-&gt;_cacheDir);</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    }</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
-<div class="line"><a name="l00166"></a><span class="lineno"><a class="line" href="classPurifier.html#a8ef72146a37ba4e10453c9465835bd67">  166</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="classPurifier.html#a8ef72146a37ba4e10453c9465835bd67">purify</a>(&amp;$content)</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    {</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        $this-&gt;_setDefinition($content);</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        $this-&gt;_htmlPurifier = <span class="keyword">new</span> HTMLPurifier($this-&gt;_config);</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        $content = $this-&gt;_htmlPurifier-&gt;purify($content);</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    }</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;}</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="comment">/* End of file : Purifier.class.php */</span></div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="comment">/* Location: ./classes/security/Purifier.class.php */</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        $whiteDomainRegex = <span class="stringliteral">&#39;%^(&#39;</span> . implode(<span class="charliteral">&#39;|&#39;</span>, $whiteDomain) . <span class="stringliteral">&#39;)%&#39;</span>;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="keywordflow">return</span> $whiteDomainRegex;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    }</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keyword">private</span> <span class="keyword">function</span> _checkCacheDir()</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    {</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        <span class="comment">// check htmlpurifier cache directory</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        $this-&gt;_cacheDir = <a class="code" href="config_8inc_8php.html#a5387c7a3f2aa38adf16f324cee88db88">_XE_PATH_</a> . <span class="stringliteral">&#39;files/cache/htmlpurifier&#39;</span>;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        <a class="code" href="classFileHandler.html#a9c2502d10c34a3996f1d6927624a7824">FileHandler::makeDir</a>($this-&gt;_cacheDir);</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    }</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
+<div class="line"><a name="l00168"></a><span class="lineno"><a class="line" href="classPurifier.html#a8ef72146a37ba4e10453c9465835bd67">  168</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="classPurifier.html#a8ef72146a37ba4e10453c9465835bd67">purify</a>(&amp;$content)</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    {</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        $this-&gt;_setDefinition($content);</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        $this-&gt;_htmlPurifier = <span class="keyword">new</span> HTMLPurifier($this-&gt;_config);</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        $content = $this-&gt;_htmlPurifier-&gt;purify($content);</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    }</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;}</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="comment">/* End of file : Purifier.class.php */</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="comment">/* Location: ./classes/security/Purifier.class.php */</span></div>
 <div class="ttc" id="config_8inc_8php_html_a2843c2516649b5d9554f09b06b7b810a"><div class="ttname"><a href="config_8inc_8php.html#a2843c2516649b5d9554f09b06b7b810a">$GLOBALS</a></div><div class="ttdeci">if(__DEBUG__) if(__DEBUG__) $GLOBALS['__xe_autoload_file_map']</div><div class="ttdef"><b>Definition:</b> <a href="config_8inc_8php_source.html#l00322">config.inc.php:322</a></div></div>
 <div class="ttc" id="classEmbedFilter_html_af8a43e4bc0161225381536c133792463"><div class="ttname"><a href="classEmbedFilter.html#af8a43e4bc0161225381536c133792463">EmbedFilter\getInstance</a></div><div class="ttdeci">getInstance()</div><div class="ttdef"><b>Definition:</b> <a href="EmbedFilter_8class_8php_source.html#l00277">EmbedFilter.class.php:277</a></div></div>
 <div class="ttc" id="classPurifier_html"><div class="ttname"><a href="classPurifier.html">Purifier</a></div><div class="ttdef"><b>Definition:</b> <a href="Purifier_8class_8php_source.html#l00004">Purifier.class.php:4</a></div></div>
 <div class="ttc" id="classFileHandler_html_a9c2502d10c34a3996f1d6927624a7824"><div class="ttname"><a href="classFileHandler.html#a9c2502d10c34a3996f1d6927624a7824">FileHandler\makeDir</a></div><div class="ttdeci">makeDir($path_string)</div><div class="ttdef"><b>Definition:</b> <a href="FileHandler_8class_8php_source.html#l00280">FileHandler.class.php:280</a></div></div>
 <div class="ttc" id="config_8inc_8php_html_a5387c7a3f2aa38adf16f324cee88db88"><div class="ttname"><a href="config_8inc_8php.html#a5387c7a3f2aa38adf16f324cee88db88">_XE_PATH_</a></div><div class="ttdeci">const _XE_PATH_</div><div class="ttdef"><b>Definition:</b> <a href="config_8inc_8php_source.html#l00049">config.inc.php:49</a></div></div>
 <div class="ttc" id="classPurifier_html_a78c509e67fef53f3fabefb7a8ded9db6"><div class="ttname"><a href="classPurifier.html#a78c509e67fef53f3fabefb7a8ded9db6">Purifier\Purifier</a></div><div class="ttdeci">Purifier()</div><div class="ttdef"><b>Definition:</b> <a href="Purifier_8class_8php_source.html#l00012">Purifier.class.php:12</a></div></div>
-<div class="ttc" id="classPurifier_html_a8ef72146a37ba4e10453c9465835bd67"><div class="ttname"><a href="classPurifier.html#a8ef72146a37ba4e10453c9465835bd67">Purifier\purify</a></div><div class="ttdeci">purify(&amp;$content)</div><div class="ttdef"><b>Definition:</b> <a href="Purifier_8class_8php_source.html#l00166">Purifier.class.php:166</a></div></div>
+<div class="ttc" id="classPurifier_html_a8ef72146a37ba4e10453c9465835bd67"><div class="ttname"><a href="classPurifier.html#a8ef72146a37ba4e10453c9465835bd67">Purifier\purify</a></div><div class="ttdeci">purify(&amp;$content)</div><div class="ttdef"><b>Definition:</b> <a href="Purifier_8class_8php_source.html#l00168">Purifier.class.php:168</a></div></div>
 <div class="ttc" id="classPurifier_html_ae552670dfe204024862ecd73c3082586"><div class="ttname"><a href="classPurifier.html#ae552670dfe204024862ecd73c3082586">Purifier\getInstance</a></div><div class="ttdeci">getInstance()</div><div class="ttdef"><b>Definition:</b> <a href="Purifier_8class_8php_source.html#l00023">Purifier.class.php:23</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 19 2017 14:10:22 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Nov 30 2017 13:09:56 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

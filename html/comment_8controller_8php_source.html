@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.8.45</span>
+   &#160;<span id="projectnumber">1.8.46</span>
    </div>
   </td>
  </tr>
@@ -106,13 +106,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    {</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;is_logged&#39;</span>))</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1, <span class="stringliteral">&#39;msg_invalid_request&#39;</span>);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>(-1, <span class="stringliteral">&#39;msg_invalid_request&#39;</span>);</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        }</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        $comment_srl = <a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;target_srl&#39;</span>);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordflow">if</span>(!$comment_srl)</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1, <span class="stringliteral">&#39;msg_invalid_request&#39;</span>);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>(-1, <span class="stringliteral">&#39;msg_invalid_request&#39;</span>);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        }</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        $oCommentModel = <a class="code" href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a>(<span class="stringliteral">&#39;comment&#39;</span>);</div>
@@ -120,19 +120,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <a class="code" href="classModuleObject.html#a0da50016ddc31513f563206fdf6f413d">$module_srl</a> = $oComment-&gt;get(<span class="stringliteral">&#39;module_srl&#39;</span>);</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="classModuleObject.html#a0da50016ddc31513f563206fdf6f413d">$module_srl</a>)</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        {</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1, <span class="stringliteral">&#39;msg_invalid_request&#39;</span>);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>(-1, <span class="stringliteral">&#39;msg_invalid_request&#39;</span>);</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        }</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <a class="code" href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a> = <a class="code" href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a>(<span class="stringliteral">&#39;module&#39;</span>);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        $comment_config = <a class="code" href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a>-&gt;getModulePartConfig(<span class="stringliteral">&#39;comment&#39;</span>, <a class="code" href="classModuleObject.html#a0da50016ddc31513f563206fdf6f413d">$module_srl</a>);</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">if</span>($comment_config-&gt;use_vote_up == <span class="charliteral">&#39;N&#39;</span>)</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1, <span class="stringliteral">&#39;msg_invalid_request&#39;</span>);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>(-1, <span class="stringliteral">&#39;msg_invalid_request&#39;</span>);</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        }</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        $point = 1;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = $this-&gt;<a class="code" href="classcommentController.html#abe720cae94b04ba356b00f80f6880e91">updateVotedCount</a>($comment_srl, $point);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        $this-&gt;<a class="code" href="classObject.html#a4f8a7fa8794663b7625fc15c9589797b">add</a>(<span class="stringliteral">&#39;voted_count&#39;</span>, <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;get(<span class="stringliteral">&#39;voted_count&#39;</span>));</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        $this-&gt;<a class="code" href="classBaseObject.html#ac53ea9b2ac26d103f2b0217e9496a93d">add</a>(<span class="stringliteral">&#39;voted_count&#39;</span>, <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;get(<span class="stringliteral">&#39;voted_count&#39;</span>));</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
@@ -140,13 +140,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    {</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;is_logged&#39;</span>))</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        {</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1, <span class="stringliteral">&#39;msg_invalid_request&#39;</span>);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>(-1, <span class="stringliteral">&#39;msg_invalid_request&#39;</span>);</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        }</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        $comment_srl = <a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;target_srl&#39;</span>);</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordflow">if</span>(!$comment_srl)</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1, <span class="stringliteral">&#39;msg_invalid_request&#39;</span>);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>(-1, <span class="stringliteral">&#39;msg_invalid_request&#39;</span>);</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        }</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        $oCommentModel = <a class="code" href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a>(<span class="stringliteral">&#39;comment&#39;</span>);</div>
@@ -154,19 +154,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <a class="code" href="classModuleObject.html#a0da50016ddc31513f563206fdf6f413d">$module_srl</a> = $oComment-&gt;get(<span class="stringliteral">&#39;module_srl&#39;</span>);</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="classModuleObject.html#a0da50016ddc31513f563206fdf6f413d">$module_srl</a>)</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        {</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1, <span class="stringliteral">&#39;msg_invalid_request&#39;</span>);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>(-1, <span class="stringliteral">&#39;msg_invalid_request&#39;</span>);</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        }</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <a class="code" href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a> = <a class="code" href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a>(<span class="stringliteral">&#39;module&#39;</span>);</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        $comment_config = <a class="code" href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a>-&gt;getModulePartConfig(<span class="stringliteral">&#39;comment&#39;</span>, <a class="code" href="classModuleObject.html#a0da50016ddc31513f563206fdf6f413d">$module_srl</a>);</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordflow">if</span>($comment_config-&gt;use_vote_down == <span class="charliteral">&#39;N&#39;</span>)</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        {</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1, <span class="stringliteral">&#39;msg_invalid_request&#39;</span>);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>(-1, <span class="stringliteral">&#39;msg_invalid_request&#39;</span>);</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        }</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        $point = -1;</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = $this-&gt;<a class="code" href="classcommentController.html#abe720cae94b04ba356b00f80f6880e91">updateVotedCount</a>($comment_srl, $point);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        $this-&gt;<a class="code" href="classObject.html#a4f8a7fa8794663b7625fc15c9589797b">add</a>(<span class="stringliteral">&#39;blamed_count&#39;</span>, <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;get(<span class="stringliteral">&#39;blamed_count&#39;</span>));</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        $this-&gt;<a class="code" href="classBaseObject.html#ac53ea9b2ac26d103f2b0217e9496a93d">add</a>(<span class="stringliteral">&#39;blamed_count&#39;</span>, <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;get(<span class="stringliteral">&#39;blamed_count&#39;</span>));</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>;</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    }</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
@@ -174,13 +174,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    {</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;is_logged&#39;</span>))</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        {</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1, <span class="stringliteral">&#39;msg_invalid_request&#39;</span>);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>(-1, <span class="stringliteral">&#39;msg_invalid_request&#39;</span>);</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        }</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        $comment_srl = <a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;target_srl&#39;</span>);</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keywordflow">if</span>(!$comment_srl)</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        {</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1, <span class="stringliteral">&#39;msg_invalid_request&#39;</span>);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>(-1, <span class="stringliteral">&#39;msg_invalid_request&#39;</span>);</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        }</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <span class="keywordflow">return</span> $this-&gt;<a class="code" href="classcommentController.html#aaae1e5860a1e170a8fc3142f80bbcde6">declaredComment</a>($comment_srl);</div>
@@ -191,7 +191,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <a class="code" href="ko_8install_8php.html#a14522e7fff0604a8372c75b4a0fbc0fd">$document_srl</a> = <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;document_srl;</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="ko_8install_8php.html#a14522e7fff0604a8372c75b4a0fbc0fd">$document_srl</a>)</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        {</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>();</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>();</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        }</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="keywordflow">return</span> $this-&gt;<a class="code" href="classcommentController.html#a40b5ccce875c41ce902c82ec622c938e">deleteComments</a>(<a class="code" href="ko_8install_8php.html#a14522e7fff0604a8372c75b4a0fbc0fd">$document_srl</a>, <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>);</div>
@@ -202,7 +202,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        <a class="code" href="classModuleObject.html#a0da50016ddc31513f563206fdf6f413d">$module_srl</a> = <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;module_srl;</div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="classModuleObject.html#a0da50016ddc31513f563206fdf6f413d">$module_srl</a>)</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        {</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>();</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>();</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        }</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        $oCommentController = <a class="code" href="func_8inc_8php.html#a2f7ca88a5226536aca3b2f5682bd7b2d">getAdminController</a>(<span class="stringliteral">&#39;comment&#39;</span>);</div>
@@ -236,7 +236,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    {</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        <span class="keywordflow">if</span>(!$manual_inserted &amp;&amp; !<a class="code" href="func_8inc_8php.html#a887fd7fe841f5dac3179296ae770172a">checkCSRF</a>())</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        {</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1, <span class="stringliteral">&#39;msg_invalid_request&#39;</span>);</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>(-1, <span class="stringliteral">&#39;msg_invalid_request&#39;</span>);</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        }</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        <span class="keywordflow">if</span>(!is_object(<a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>))</div>
@@ -295,7 +295,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        <a class="code" href="ko_8install_8php.html#a14522e7fff0604a8372c75b4a0fbc0fd">$document_srl</a> = <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;document_srl;</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="ko_8install_8php.html#a14522e7fff0604a8372c75b4a0fbc0fd">$document_srl</a>)</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        {</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1, <span class="stringliteral">&#39;msg_invalid_document&#39;</span>);</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>(-1, <span class="stringliteral">&#39;msg_invalid_document&#39;</span>);</div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        }</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        <span class="comment">// get a object of document model</span></div>
@@ -314,11 +314,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="ko_8install_8php.html#a14522e7fff0604a8372c75b4a0fbc0fd">$document_srl</a> != $oDocument-&gt;document_srl)</div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;            {</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1, <span class="stringliteral">&#39;msg_invalid_document&#39;</span>);</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>(-1, <span class="stringliteral">&#39;msg_invalid_document&#39;</span>);</div>
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;            }</div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;            <span class="keywordflow">if</span>($oDocument-&gt;isLocked())</div>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;            {</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1, <span class="stringliteral">&#39;msg_invalid_request&#39;</span>);</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>(-1, <span class="stringliteral">&#39;msg_invalid_request&#39;</span>);</div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;            }</div>
 <div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;</div>
 <div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;homepage)</div>
@@ -348,7 +348,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        <span class="comment">// error display if neither of log-in info and user name exist.</span></div>
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="adminlogging_8addon_8php.html#a193c1593ceb216e9fb05b0bad01ebbc8">$logged_info</a>-&gt;member_srl &amp;&amp; !<a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;nick_name)</div>
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;        {</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1, <span class="stringliteral">&#39;msg_invalid_request&#39;</span>);</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>(-1, <span class="stringliteral">&#39;msg_invalid_request&#39;</span>);</div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;        }</div>
 <div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;</div>
 <div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;comment_srl)</div>
@@ -357,7 +357,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;        }</div>
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;        elseif(!$is_admin &amp;&amp; !$manual_inserted &amp;&amp; !<a class="code" href="func_8inc_8php.html#a56536fb66de4e320aaac07b82e6c2e21">checkUserSequence</a>(<a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;comment_srl)) </div>
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;        {</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1, <span class="stringliteral">&#39;msg_not_permitted&#39;</span>);</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>(-1, <span class="stringliteral">&#39;msg_not_permitted&#39;</span>);</div>
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;        }</div>
 <div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;</div>
 <div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        <span class="comment">// determine the order</span></div>
@@ -676,7 +676,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;    {</div>
 <div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;        <span class="keywordflow">if</span>(!$manual_updated &amp;&amp; !<a class="code" href="func_8inc_8php.html#a887fd7fe841f5dac3179296ae770172a">checkCSRF</a>())</div>
 <div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;        {</div>
-<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1, <span class="stringliteral">&#39;msg_invalid_request&#39;</span>);</div>
+<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>(-1, <span class="stringliteral">&#39;msg_invalid_request&#39;</span>);</div>
 <div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;        }</div>
 <div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;</div>
 <div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;        <span class="keywordflow">if</span>(!is_object(<a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>))</div>
@@ -710,7 +710,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;        <span class="comment">// check if permission is granted</span></div>
 <div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;        <span class="keywordflow">if</span>(!$is_admin &amp;&amp; !$source_obj-&gt;isGranted())</div>
 <div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;        {</div>
-<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1, <span class="stringliteral">&#39;msg_not_permitted&#39;</span>);</div>
+<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>(-1, <span class="stringliteral">&#39;msg_not_permitted&#39;</span>);</div>
 <div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;        }</div>
 <div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;</div>
 <div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;password)</div>
@@ -814,7 +814,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;        $comment = $oCommentModel-&gt;getComment($comment_srl);</div>
 <div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;        <span class="keywordflow">if</span>($comment-&gt;comment_srl != $comment_srl)</div>
 <div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;        {</div>
-<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1, <span class="stringliteral">&#39;msg_invalid_request&#39;</span>);</div>
+<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>(-1, <span class="stringliteral">&#39;msg_invalid_request&#39;</span>);</div>
 <div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;        }</div>
 <div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;</div>
 <div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;        <a class="code" href="ko_8install_8php.html#a14522e7fff0604a8372c75b4a0fbc0fd">$document_srl</a> = $comment-&gt;document_srl;</div>
@@ -829,7 +829,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;        <span class="comment">// check if permission is granted</span></div>
 <div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;        <span class="keywordflow">if</span>(!$is_admin &amp;&amp; !$comment-&gt;isGranted())</div>
 <div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;        {</div>
-<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1, <span class="stringliteral">&#39;msg_not_permitted&#39;</span>);</div>
+<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>(-1, <span class="stringliteral">&#39;msg_not_permitted&#39;</span>);</div>
 <div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;        }</div>
 <div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;</div>
 <div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;        <span class="comment">// check if child comment exists on the comment</span></div>
@@ -852,7 +852,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;</div>
 <div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;            <span class="keywordflow">if</span>(!$deleteAllComment)</div>
 <div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;            {</div>
-<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1, <span class="stringliteral">&#39;fail_to_delete_have_children&#39;</span>);</div>
+<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>(-1, <span class="stringliteral">&#39;fail_to_delete_have_children&#39;</span>);</div>
 <div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;            }</div>
 <div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;            <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;            {</div>
@@ -939,7 +939,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160;    {</div>
 <div class="line"><a name="l00923"></a><span class="lineno">  923</span>&#160;        $this-&gt;<a class="code" href="classcommentController.html#a06a2f96cd357550dd0cd834d7e61f4bf">_deleteDeclaredComments</a>(<a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>);</div>
 <div class="line"><a name="l00924"></a><span class="lineno">  924</span>&#160;        $this-&gt;<a class="code" href="classcommentController.html#a0e4216451f3bb1c02aeec98bb4f54ddc">_deleteVotedComments</a>(<a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>);</div>
-<div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(0, <span class="stringliteral">&#39;success&#39;</span>);</div>
+<div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>(0, <span class="stringliteral">&#39;success&#39;</span>);</div>
 <div class="line"><a name="l00926"></a><span class="lineno">  926</span>&#160;    }</div>
 <div class="line"><a name="l00927"></a><span class="lineno">  927</span>&#160;</div>
 <div class="line"><a name="l00933"></a><span class="lineno"><a class="line" href="classcommentController.html#a40b5ccce875c41ce902c82ec622c938e">  933</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classcommentController.html#a40b5ccce875c41ce902c82ec622c938e">deleteComments</a>(<a class="code" href="ko_8install_8php.html#a14522e7fff0604a8372c75b4a0fbc0fd">$document_srl</a>, <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a> = NULL)</div>
@@ -961,7 +961,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00949"></a><span class="lineno">  949</span>&#160;</div>
 <div class="line"><a name="l00950"></a><span class="lineno">  950</span>&#160;        <span class="keywordflow">if</span>(!$oDocument-&gt;isExists() || !$oDocument-&gt;isGranted())</div>
 <div class="line"><a name="l00951"></a><span class="lineno">  951</span>&#160;        {</div>
-<div class="line"><a name="l00952"></a><span class="lineno">  952</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1, <span class="stringliteral">&#39;msg_not_permitted&#39;</span>);</div>
+<div class="line"><a name="l00952"></a><span class="lineno">  952</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>(-1, <span class="stringliteral">&#39;msg_not_permitted&#39;</span>);</div>
 <div class="line"><a name="l00953"></a><span class="lineno">  953</span>&#160;        }</div>
 <div class="line"><a name="l00954"></a><span class="lineno">  954</span>&#160;</div>
 <div class="line"><a name="l00955"></a><span class="lineno">  955</span>&#160;        <span class="comment">// get a list of comments and then execute a trigger(way to reduce the processing cost for delete all)</span></div>
@@ -1041,7 +1041,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01045"></a><span class="lineno"> 1045</span>&#160;        <span class="comment">// invalid vote if vote info exists in the session info.</span></div>
 <div class="line"><a name="l01046"></a><span class="lineno"> 1046</span>&#160;        <span class="keywordflow">if</span>($_SESSION[<span class="stringliteral">&#39;voted_comment&#39;</span>][$comment_srl])</div>
 <div class="line"><a name="l01047"></a><span class="lineno"> 1047</span>&#160;        {</div>
-<div class="line"><a name="l01048"></a><span class="lineno"> 1048</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1, $failed_voted);</div>
+<div class="line"><a name="l01048"></a><span class="lineno"> 1048</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>(-1, $failed_voted);</div>
 <div class="line"><a name="l01049"></a><span class="lineno"> 1049</span>&#160;        }</div>
 <div class="line"><a name="l01050"></a><span class="lineno"> 1050</span>&#160;</div>
 <div class="line"><a name="l01051"></a><span class="lineno"> 1051</span>&#160;        $oCommentModel = <a class="code" href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a>(<span class="stringliteral">&#39;comment&#39;</span>);</div>
@@ -1051,7 +1051,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01055"></a><span class="lineno"> 1055</span>&#160;        <span class="keywordflow">if</span>($oComment-&gt;get(<span class="stringliteral">&#39;ipaddress&#39;</span>) == $_SERVER[<span class="stringliteral">&#39;REMOTE_ADDR&#39;</span>])</div>
 <div class="line"><a name="l01056"></a><span class="lineno"> 1056</span>&#160;        {</div>
 <div class="line"><a name="l01057"></a><span class="lineno"> 1057</span>&#160;            $_SESSION[<span class="stringliteral">&#39;voted_comment&#39;</span>][$comment_srl] = TRUE;</div>
-<div class="line"><a name="l01058"></a><span class="lineno"> 1058</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1, $failed_voted);</div>
+<div class="line"><a name="l01058"></a><span class="lineno"> 1058</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>(-1, $failed_voted);</div>
 <div class="line"><a name="l01059"></a><span class="lineno"> 1059</span>&#160;        }</div>
 <div class="line"><a name="l01060"></a><span class="lineno"> 1060</span>&#160;</div>
 <div class="line"><a name="l01061"></a><span class="lineno"> 1061</span>&#160;        <span class="comment">// if the comment author is a member</span></div>
@@ -1065,7 +1065,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01069"></a><span class="lineno"> 1069</span>&#160;            <span class="keywordflow">if</span>($member_srl &amp;&amp; $member_srl == abs($oComment-&gt;get(<span class="stringliteral">&#39;member_srl&#39;</span>)))</div>
 <div class="line"><a name="l01070"></a><span class="lineno"> 1070</span>&#160;            {</div>
 <div class="line"><a name="l01071"></a><span class="lineno"> 1071</span>&#160;                $_SESSION[<span class="stringliteral">&#39;voted_comment&#39;</span>][$comment_srl] = TRUE;</div>
-<div class="line"><a name="l01072"></a><span class="lineno"> 1072</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1, $failed_voted);</div>
+<div class="line"><a name="l01072"></a><span class="lineno"> 1072</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>(-1, $failed_voted);</div>
 <div class="line"><a name="l01073"></a><span class="lineno"> 1073</span>&#160;            }</div>
 <div class="line"><a name="l01074"></a><span class="lineno"> 1074</span>&#160;        }</div>
 <div class="line"><a name="l01075"></a><span class="lineno"> 1075</span>&#160;</div>
@@ -1088,7 +1088,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01092"></a><span class="lineno"> 1092</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;data-&gt;count)</div>
 <div class="line"><a name="l01093"></a><span class="lineno"> 1093</span>&#160;        {</div>
 <div class="line"><a name="l01094"></a><span class="lineno"> 1094</span>&#160;            $_SESSION[<span class="stringliteral">&#39;voted_comment&#39;</span>][$comment_srl] = TRUE;</div>
-<div class="line"><a name="l01095"></a><span class="lineno"> 1095</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1, $failed_voted);</div>
+<div class="line"><a name="l01095"></a><span class="lineno"> 1095</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>(-1, $failed_voted);</div>
 <div class="line"><a name="l01096"></a><span class="lineno"> 1096</span>&#160;        }</div>
 <div class="line"><a name="l01097"></a><span class="lineno"> 1097</span>&#160;</div>
 <div class="line"><a name="l01098"></a><span class="lineno"> 1098</span>&#160;        <span class="comment">// begin transaction</span></div>
@@ -1132,7 +1132,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01136"></a><span class="lineno"> 1136</span>&#160;        $_SESSION[<span class="stringliteral">&#39;voted_comment&#39;</span>][$comment_srl] = TRUE;</div>
 <div class="line"><a name="l01137"></a><span class="lineno"> 1137</span>&#160;</div>
 <div class="line"><a name="l01138"></a><span class="lineno"> 1138</span>&#160;        <span class="comment">// Return the result</span></div>
-<div class="line"><a name="l01139"></a><span class="lineno"> 1139</span>&#160;        <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(0, $success_message);</div>
+<div class="line"><a name="l01139"></a><span class="lineno"> 1139</span>&#160;        <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>(0, $success_message);</div>
 <div class="line"><a name="l01140"></a><span class="lineno"> 1140</span>&#160;        <span class="keywordflow">if</span>($point &gt; 0)</div>
 <div class="line"><a name="l01141"></a><span class="lineno"> 1141</span>&#160;        {</div>
 <div class="line"><a name="l01142"></a><span class="lineno"> 1142</span>&#160;            <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;add(<span class="stringliteral">&#39;voted_count&#39;</span>, <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;after_point);</div>
@@ -1150,7 +1150,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01159"></a><span class="lineno"> 1159</span>&#160;        <span class="comment">// Fail if session information already has a reported document</span></div>
 <div class="line"><a name="l01160"></a><span class="lineno"> 1160</span>&#160;        <span class="keywordflow">if</span>($_SESSION[<span class="stringliteral">&#39;declared_comment&#39;</span>][$comment_srl])</div>
 <div class="line"><a name="l01161"></a><span class="lineno"> 1161</span>&#160;        {</div>
-<div class="line"><a name="l01162"></a><span class="lineno"> 1162</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1, <span class="stringliteral">&#39;failed_declared&#39;</span>);</div>
+<div class="line"><a name="l01162"></a><span class="lineno"> 1162</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>(-1, <span class="stringliteral">&#39;failed_declared&#39;</span>);</div>
 <div class="line"><a name="l01163"></a><span class="lineno"> 1163</span>&#160;        }</div>
 <div class="line"><a name="l01164"></a><span class="lineno"> 1164</span>&#160;</div>
 <div class="line"><a name="l01165"></a><span class="lineno"> 1165</span>&#160;        <span class="comment">// check if already reported</span></div>
@@ -1182,7 +1182,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01191"></a><span class="lineno"> 1191</span>&#160;        <span class="keywordflow">if</span>($oComment-&gt;get(<span class="stringliteral">&#39;ipaddress&#39;</span>) == $_SERVER[<span class="stringliteral">&#39;REMOTE_ADDR&#39;</span>])</div>
 <div class="line"><a name="l01192"></a><span class="lineno"> 1192</span>&#160;        {</div>
 <div class="line"><a name="l01193"></a><span class="lineno"> 1193</span>&#160;            $_SESSION[<span class="stringliteral">&#39;declared_comment&#39;</span>][$comment_srl] = TRUE;</div>
-<div class="line"><a name="l01194"></a><span class="lineno"> 1194</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1, <span class="stringliteral">&#39;failed_declared&#39;</span>);</div>
+<div class="line"><a name="l01194"></a><span class="lineno"> 1194</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>(-1, <span class="stringliteral">&#39;failed_declared&#39;</span>);</div>
 <div class="line"><a name="l01195"></a><span class="lineno"> 1195</span>&#160;        }</div>
 <div class="line"><a name="l01196"></a><span class="lineno"> 1196</span>&#160;</div>
 <div class="line"><a name="l01197"></a><span class="lineno"> 1197</span>&#160;        <span class="comment">// if the comment author is a member</span></div>
@@ -1196,7 +1196,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01205"></a><span class="lineno"> 1205</span>&#160;            <span class="keywordflow">if</span>($member_srl &amp;&amp; $member_srl == abs($oComment-&gt;get(<span class="stringliteral">&#39;member_srl&#39;</span>)))</div>
 <div class="line"><a name="l01206"></a><span class="lineno"> 1206</span>&#160;            {</div>
 <div class="line"><a name="l01207"></a><span class="lineno"> 1207</span>&#160;                $_SESSION[<span class="stringliteral">&#39;declared_comment&#39;</span>][$comment_srl] = TRUE;</div>
-<div class="line"><a name="l01208"></a><span class="lineno"> 1208</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1, <span class="stringliteral">&#39;failed_declared&#39;</span>);</div>
+<div class="line"><a name="l01208"></a><span class="lineno"> 1208</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>(-1, <span class="stringliteral">&#39;failed_declared&#39;</span>);</div>
 <div class="line"><a name="l01209"></a><span class="lineno"> 1209</span>&#160;            }</div>
 <div class="line"><a name="l01210"></a><span class="lineno"> 1210</span>&#160;        }</div>
 <div class="line"><a name="l01211"></a><span class="lineno"> 1211</span>&#160;</div>
@@ -1216,7 +1216,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01225"></a><span class="lineno"> 1225</span>&#160;        <span class="keywordflow">if</span>($log_output-&gt;data-&gt;count)</div>
 <div class="line"><a name="l01226"></a><span class="lineno"> 1226</span>&#160;        {</div>
 <div class="line"><a name="l01227"></a><span class="lineno"> 1227</span>&#160;            $_SESSION[<span class="stringliteral">&#39;declared_comment&#39;</span>][$comment_srl] = TRUE;</div>
-<div class="line"><a name="l01228"></a><span class="lineno"> 1228</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1, <span class="stringliteral">&#39;failed_declared&#39;</span>);</div>
+<div class="line"><a name="l01228"></a><span class="lineno"> 1228</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>(-1, <span class="stringliteral">&#39;failed_declared&#39;</span>);</div>
 <div class="line"><a name="l01229"></a><span class="lineno"> 1229</span>&#160;        }</div>
 <div class="line"><a name="l01230"></a><span class="lineno"> 1230</span>&#160;</div>
 <div class="line"><a name="l01231"></a><span class="lineno"> 1231</span>&#160;        <span class="comment">// begin transaction</span></div>
@@ -1325,7 +1325,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01346"></a><span class="lineno"> 1346</span>&#160;            <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = $this-&gt;<a class="code" href="classcommentController.html#a3e4d45ad61f74541e1182c29924b625d">setCommentModuleConfig</a>($srl, $comment_config);</div>
 <div class="line"><a name="l01347"></a><span class="lineno"> 1347</span>&#160;        }</div>
 <div class="line"><a name="l01348"></a><span class="lineno"> 1348</span>&#160;</div>
-<div class="line"><a name="l01349"></a><span class="lineno"> 1349</span>&#160;        $this-&gt;<a class="code" href="classObject.html#a12f7ac70214558a1774ca010865c798e">setError</a>(-1);</div>
+<div class="line"><a name="l01349"></a><span class="lineno"> 1349</span>&#160;        $this-&gt;<a class="code" href="classBaseObject.html#a577cc2f5a02da2517064d5ef2b7ccb10">setError</a>(-1);</div>
 <div class="line"><a name="l01350"></a><span class="lineno"> 1350</span>&#160;        $this-&gt;<a class="code" href="classModuleObject.html#a90eb9095539a8905d73695afbbebbe24">setMessage</a>(<span class="stringliteral">&#39;success_updated&#39;</span>, <span class="stringliteral">&#39;info&#39;</span>);</div>
 <div class="line"><a name="l01351"></a><span class="lineno"> 1351</span>&#160;</div>
 <div class="line"><a name="l01352"></a><span class="lineno"> 1352</span>&#160;        $returnUrl = <a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;success_return_url&#39;</span>) ? <a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;success_return_url&#39;</span>) : <a class="code" href="func_8inc_8php.html#aa73dbeb07c5bcac26c24fe4c6b05d8d2">getNotEncodedUrl</a>(<span class="stringliteral">&#39;&#39;</span>, <span class="stringliteral">&#39;module&#39;</span>, <span class="stringliteral">&#39;admin&#39;</span>, <span class="stringliteral">&#39;act&#39;</span>, <span class="stringliteral">&#39;dispBoardAdminContent&#39;</span>);</div>
@@ -1336,14 +1336,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01363"></a><span class="lineno"> 1363</span>&#160;    {</div>
 <div class="line"><a name="l01364"></a><span class="lineno"> 1364</span>&#160;        <a class="code" href="ko_8install_8php.html#a9fd93f6625cec4fd65bf6f412e28c015">$oModuleController</a> = <a class="code" href="func_8inc_8php.html#aa08f01e3bf130d770b373ca8493e3e9b">getController</a>(<span class="stringliteral">&#39;module&#39;</span>);</div>
 <div class="line"><a name="l01365"></a><span class="lineno"> 1365</span>&#160;        <a class="code" href="ko_8install_8php.html#a9fd93f6625cec4fd65bf6f412e28c015">$oModuleController</a>-&gt;insertModulePartConfig(<span class="stringliteral">&#39;comment&#39;</span>, $srl, $comment_config);</div>
-<div class="line"><a name="l01366"></a><span class="lineno"> 1366</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>();</div>
+<div class="line"><a name="l01366"></a><span class="lineno"> 1366</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>();</div>
 <div class="line"><a name="l01367"></a><span class="lineno"> 1367</span>&#160;    }</div>
 <div class="line"><a name="l01368"></a><span class="lineno"> 1368</span>&#160;</div>
 <div class="line"><a name="l01373"></a><span class="lineno"><a class="line" href="classcommentController.html#ac9edb9826c8b07ceb1a4db29c5db514a"> 1373</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classcommentController.html#ac9edb9826c8b07ceb1a4db29c5db514a">procCommentGetList</a>()</div>
 <div class="line"><a name="l01374"></a><span class="lineno"> 1374</span>&#160;    {</div>
 <div class="line"><a name="l01375"></a><span class="lineno"> 1375</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;is_logged&#39;</span>))</div>
 <div class="line"><a name="l01376"></a><span class="lineno"> 1376</span>&#160;        {</div>
-<div class="line"><a name="l01377"></a><span class="lineno"> 1377</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(-1, <span class="stringliteral">&#39;msg_not_permitted&#39;</span>);</div>
+<div class="line"><a name="l01377"></a><span class="lineno"> 1377</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>(-1, <span class="stringliteral">&#39;msg_not_permitted&#39;</span>);</div>
 <div class="line"><a name="l01378"></a><span class="lineno"> 1378</span>&#160;        }</div>
 <div class="line"><a name="l01379"></a><span class="lineno"> 1379</span>&#160;</div>
 <div class="line"><a name="l01380"></a><span class="lineno"> 1380</span>&#160;        $commentSrls = <a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;comment_srls&#39;</span>);</div>
@@ -1375,7 +1375,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01406"></a><span class="lineno"> 1406</span>&#160;        $oSecurity = <span class="keyword">new</span> <a class="code" href="classSecurity.html">Security</a>($commentList);</div>
 <div class="line"><a name="l01407"></a><span class="lineno"> 1407</span>&#160;        $oSecurity-&gt;encodeHTML(<span class="stringliteral">&#39;..variables.&#39;</span>, <span class="stringliteral">&#39;..&#39;</span>);</div>
 <div class="line"><a name="l01408"></a><span class="lineno"> 1408</span>&#160;</div>
-<div class="line"><a name="l01409"></a><span class="lineno"> 1409</span>&#160;        $this-&gt;<a class="code" href="classObject.html#a4f8a7fa8794663b7625fc15c9589797b">add</a>(<span class="stringliteral">&#39;comment_list&#39;</span>, $commentList);</div>
+<div class="line"><a name="l01409"></a><span class="lineno"> 1409</span>&#160;        $this-&gt;<a class="code" href="classBaseObject.html#ac53ea9b2ac26d103f2b0217e9496a93d">add</a>(<span class="stringliteral">&#39;comment_list&#39;</span>, $commentList);</div>
 <div class="line"><a name="l01410"></a><span class="lineno"> 1410</span>&#160;    }</div>
 <div class="line"><a name="l01411"></a><span class="lineno"> 1411</span>&#160;</div>
 <div class="line"><a name="l01412"></a><span class="lineno"><a class="line" href="classcommentController.html#a5cf1c177c5cbdd0556363a0204d92f5f"> 1412</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classcommentController.html#a5cf1c177c5cbdd0556363a0204d92f5f">triggerCopyModule</a>(&amp;<a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>)</div>
@@ -1404,12 +1404,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="ko_8install_8php_html_a9008ed94ba185855b1723e367744b87e"><div class="ttname"><a href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a></div><div class="ttdeci">$obj</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00262">ko.install.php:262</a></div></div>
 <div class="ttc" id="ko_8install_8php_html_a73004ce9cd673c1bfafd1dc351134797"><div class="ttname"><a href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a></div><div class="ttdeci">$output</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00193">ko.install.php:193</a></div></div>
 <div class="ttc" id="classcommentController_html_a36736562b092a021301ec11a61310e68"><div class="ttname"><a href="classcommentController.html#a36736562b092a021301ec11a61310e68">commentController\sendEmailToAdminAfterInsertComment</a></div><div class="ttdeci">sendEmailToAdminAfterInsertComment($obj)</div><div class="ttdef"><b>Definition:</b> <a href="comment_8controller_8php_source.html#l00503">comment.controller.php:503</a></div></div>
-<div class="ttc" id="classObject_html_a4f8a7fa8794663b7625fc15c9589797b"><div class="ttname"><a href="classObject.html#a4f8a7fa8794663b7625fc15c9589797b">Object\add</a></div><div class="ttdeci">add($key, $val)</div><div class="ttdef"><b>Definition:</b> <a href="Object_8class_8php_source.html#l00129">Object.class.php:129</a></div></div>
+<div class="ttc" id="classBaseObject_html_ac53ea9b2ac26d103f2b0217e9496a93d"><div class="ttname"><a href="classBaseObject.html#ac53ea9b2ac26d103f2b0217e9496a93d">BaseObject\add</a></div><div class="ttdeci">add($key, $val)</div><div class="ttdef"><b>Definition:</b> <a href="BaseObject_8class_8php_source.html#l00128">BaseObject.class.php:128</a></div></div>
 <div class="ttc" id="classcommentController_html_a8c9ad7337a8522f82a4010f9f0afa274"><div class="ttname"><a href="classcommentController.html#a8c9ad7337a8522f82a4010f9f0afa274">commentController\triggerDeleteModuleComments</a></div><div class="ttdeci">triggerDeleteModuleComments(&amp;$obj)</div><div class="ttdef"><b>Definition:</b> <a href="comment_8controller_8php_source.html#l00139">comment.controller.php:139</a></div></div>
 <div class="ttc" id="classcommentController_html_af154ebfde1bfe279e6c9bc6cf2e4645f"><div class="ttname"><a href="classcommentController.html#af154ebfde1bfe279e6c9bc6cf2e4645f">commentController\updateComment</a></div><div class="ttdeci">updateComment($obj, $is_admin=FALSE, $manual_updated=FALSE)</div><div class="ttdef"><b>Definition:</b> <a href="comment_8controller_8php_source.html#l00647">comment.controller.php:647</a></div></div>
-<div class="ttc" id="classContext_html_a9f79aa7aecf2e4d8006e517844523fc2"><div class="ttname"><a href="classContext.html#a9f79aa7aecf2e4d8006e517844523fc2">Context\set</a></div><div class="ttdeci">set($key, $val, $set_to_get_vars=0)</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l01926">Context.class.php:1926</a></div></div>
+<div class="ttc" id="classBaseObject_html"><div class="ttname"><a href="classBaseObject.html">BaseObject</a></div><div class="ttdef"><b>Definition:</b> <a href="BaseObject_8class_8php_source.html#l00009">BaseObject.class.php:9</a></div></div>
+<div class="ttc" id="classContext_html_a9f79aa7aecf2e4d8006e517844523fc2"><div class="ttname"><a href="classContext.html#a9f79aa7aecf2e4d8006e517844523fc2">Context\set</a></div><div class="ttdeci">set($key, $val, $set_to_get_vars=0)</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l01928">Context.class.php:1928</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_aa73dbeb07c5bcac26c24fe4c6b05d8d2"><div class="ttname"><a href="func_8inc_8php.html#aa73dbeb07c5bcac26c24fe4c6b05d8d2">getNotEncodedUrl</a></div><div class="ttdeci">getNotEncodedUrl()</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00313">func.inc.php:313</a></div></div>
-<div class="ttc" id="classObject_html_a12f7ac70214558a1774ca010865c798e"><div class="ttname"><a href="classObject.html#a12f7ac70214558a1774ca010865c798e">Object\setError</a></div><div class="ttdeci">setError($error=0)</div><div class="ttdef"><b>Definition:</b> <a href="Object_8class_8php_source.html#l00055">Object.class.php:55</a></div></div>
 <div class="ttc" id="classcommentController_html_aee7912001fe1896ca5440d22b42c626d"><div class="ttname"><a href="classcommentController.html#aee7912001fe1896ca5440d22b42c626d">commentController\init</a></div><div class="ttdeci">init()</div><div class="ttdef"><b>Definition:</b> <a href="comment_8controller_8php_source.html#l00019">comment.controller.php:19</a></div></div>
 <div class="ttc" id="classcommentController_html_a06a2f96cd357550dd0cd834d7e61f4bf"><div class="ttname"><a href="classcommentController.html#a06a2f96cd357550dd0cd834d7e61f4bf">commentController\_deleteDeclaredComments</a></div><div class="ttdeci">_deleteDeclaredComments($commentSrls)</div><div class="ttdef"><b>Definition:</b> <a href="comment_8controller_8php_source.html#l01010">comment.controller.php:1010</a></div></div>
 <div class="ttc" id="classdocumentItem_html"><div class="ttname"><a href="classdocumentItem.html">documentItem</a></div><div class="ttdef"><b>Definition:</b> <a href="document_8item_8php_source.html#l00011">document.item.php:11</a></div></div>
@@ -1418,11 +1418,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classcommentController_html_adf4259b95832275119add098174c8816"><div class="ttname"><a href="classcommentController.html#adf4259b95832275119add098174c8816">commentController\insertComment</a></div><div class="ttdeci">insertComment($obj, $manual_inserted=FALSE)</div><div class="ttdef"><b>Definition:</b> <a href="comment_8controller_8php_source.html#l00191">comment.controller.php:191</a></div></div>
 <div class="ttc" id="classModuleObject_html_a0da50016ddc31513f563206fdf6f413d"><div class="ttname"><a href="classModuleObject.html#a0da50016ddc31513f563206fdf6f413d">ModuleObject\$module_srl</a></div><div class="ttdeci">$module_srl</div><div class="ttdoc">integer value to represent a run-time instance of Module (XE Module) </div><div class="ttdef"><b>Definition:</b> <a href="ModuleObject_8class_8php_source.html#l00014">ModuleObject.class.php:14</a></div></div>
 <div class="ttc" id="classcomment_html"><div class="ttname"><a href="classcomment.html">comment</a></div><div class="ttdef"><b>Definition:</b> <a href="comment_8class_8php_source.html#l00014">comment.class.php:14</a></div></div>
+<div class="ttc" id="classBaseObject_html_a577cc2f5a02da2517064d5ef2b7ccb10"><div class="ttname"><a href="classBaseObject.html#a577cc2f5a02da2517064d5ef2b7ccb10">BaseObject\setError</a></div><div class="ttdeci">setError($error=0)</div><div class="ttdef"><b>Definition:</b> <a href="BaseObject_8class_8php_source.html#l00054">BaseObject.class.php:54</a></div></div>
 <div class="ttc" id="classcommentController_html_abe720cae94b04ba356b00f80f6880e91"><div class="ttname"><a href="classcommentController.html#abe720cae94b04ba356b00f80f6880e91">commentController\updateVotedCount</a></div><div class="ttdeci">updateVotedCount($comment_srl, $point=1)</div><div class="ttdef"><b>Definition:</b> <a href="comment_8controller_8php_source.html#l01032">comment.controller.php:1032</a></div></div>
 <div class="ttc" id="ko_8install_8php_html_a67e94494731d99ed23b123e95175bc10"><div class="ttname"><a href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a></div><div class="ttdeci">$args</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00185">ko.install.php:185</a></div></div>
 <div class="ttc" id="classModuleObject_html_ac1c9807e77270f2e2abe4f79e1cd2987"><div class="ttname"><a href="classModuleObject.html#ac1c9807e77270f2e2abe4f79e1cd2987">ModuleObject\$module_info</a></div><div class="ttdeci">$module_info</div><div class="ttdoc">an object containing the module information </div><div class="ttdef"><b>Definition:</b> <a href="ModuleObject_8class_8php_source.html#l00015">ModuleObject.class.php:15</a></div></div>
 <div class="ttc" id="classcommentController_html_ab209ef386bfb83c88a85bf4618237aca"><div class="ttname"><a href="classcommentController.html#ab209ef386bfb83c88a85bf4618237aca">commentController\triggerDeleteDocumentComments</a></div><div class="ttdeci">triggerDeleteDocumentComments(&amp;$obj)</div><div class="ttdef"><b>Definition:</b> <a href="comment_8controller_8php_source.html#l00124">comment.controller.php:124</a></div></div>
-<div class="ttc" id="classObject_html_a9c1f4bf33208a5c858c0722afce90f30"><div class="ttname"><a href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object\Object</a></div><div class="ttdeci">Object($error=0, $message= 'success')</div><div class="ttdef"><b>Definition:</b> <a href="Object_8class_8php_source.html#l00043">Object.class.php:43</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_a887fd7fe841f5dac3179296ae770172a"><div class="ttname"><a href="func_8inc_8php.html#a887fd7fe841f5dac3179296ae770172a">checkCSRF</a></div><div class="ttdeci">checkCSRF()</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l01609">func.inc.php:1609</a></div></div>
 <div class="ttc" id="classModuleObject_html_ac5126aa7f57a52e7f26b18b9040f5501"><div class="ttname"><a href="classModuleObject.html#ac5126aa7f57a52e7f26b18b9040f5501">ModuleObject\setRedirectUrl</a></div><div class="ttdeci">setRedirectUrl($url= './', $output=NULL)</div><div class="ttdef"><b>Definition:</b> <a href="ModuleObject_8class_8php_source.html#l00060">ModuleObject.class.php:60</a></div></div>
 <div class="ttc" id="classcommentController_html_a0e4216451f3bb1c02aeec98bb4f54ddc"><div class="ttname"><a href="classcommentController.html#a0e4216451f3bb1c02aeec98bb4f54ddc">commentController\_deleteVotedComments</a></div><div class="ttdeci">_deleteVotedComments($commentSrls)</div><div class="ttdef"><b>Definition:</b> <a href="comment_8controller_8php_source.html#l01021">comment.controller.php:1021</a></div></div>
@@ -1431,7 +1431,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classDB_html_a36df3da4b06cd9d45feccb6b82e612c8"><div class="ttname"><a href="classDB.html#a36df3da4b06cd9d45feccb6b82e612c8">DB\getInstance</a></div><div class="ttdeci">getInstance($db_type=NULL)</div><div class="ttdef"><b>Definition:</b> <a href="DB_8class_8php_source.html#l00142">DB.class.php:142</a></div></div>
 <div class="ttc" id="classMobile_html_a9978671e8463a94130a6733f2d0fa0a4"><div class="ttname"><a href="classMobile.html#a9978671e8463a94130a6733f2d0fa0a4">Mobile\isFromMobilePhone</a></div><div class="ttdeci">isFromMobilePhone()</div><div class="ttdef"><b>Definition:</b> <a href="Mobile_8class_8php_source.html#l00038">Mobile.class.php:38</a></div></div>
 <div class="ttc" id="classcommentController_html_af2d31904b424b330a3f2710c16d55f7b"><div class="ttname"><a href="classcommentController.html#af2d31904b424b330a3f2710c16d55f7b">commentController\procCommentDeclare</a></div><div class="ttdeci">procCommentDeclare()</div><div class="ttdef"><b>Definition:</b> <a href="comment_8controller_8php_source.html#l00104">comment.controller.php:104</a></div></div>
-<div class="ttc" id="classContext_html_a9af9269b04542f7462d27a63226e0ff3"><div class="ttname"><a href="classContext.html#a9af9269b04542f7462d27a63226e0ff3">Context\getLang</a></div><div class="ttdeci">getLang($code)</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l00996">Context.class.php:996</a></div></div>
+<div class="ttc" id="classContext_html_a9af9269b04542f7462d27a63226e0ff3"><div class="ttname"><a href="classContext.html#a9af9269b04542f7462d27a63226e0ff3">Context\getLang</a></div><div class="ttdeci">getLang($code)</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l00998">Context.class.php:998</a></div></div>
 <div class="ttc" id="classSecurity_html"><div class="ttname"><a href="classSecurity.html">Security</a></div><div class="ttdef"><b>Definition:</b> <a href="Security_8class_8php_source.html#l00011">Security.class.php:11</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_a56536fb66de4e320aaac07b82e6c2e21"><div class="ttname"><a href="func_8inc_8php.html#a56536fb66de4e320aaac07b82e6c2e21">checkUserSequence</a></div><div class="ttdeci">checkUserSequence($seq)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00267">func.inc.php:267</a></div></div>
 <div class="ttc" id="classcommentController_html_a40b5ccce875c41ce902c82ec622c938e"><div class="ttname"><a href="classcommentController.html#a40b5ccce875c41ce902c82ec622c938e">commentController\deleteComments</a></div><div class="ttdeci">deleteComments($document_srl, $obj=NULL)</div><div class="ttdef"><b>Definition:</b> <a href="comment_8controller_8php_source.html#l00933">comment.controller.php:933</a></div></div>
@@ -1443,7 +1443,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classcommentController_html_a429acbf0d176d50256f666ecf9364aa8"><div class="ttname"><a href="classcommentController.html#a429acbf0d176d50256f666ecf9364aa8">commentController\addGrant</a></div><div class="ttdeci">addGrant($comment_srl)</div><div class="ttdef"><b>Definition:</b> <a href="comment_8controller_8php_source.html#l00156">comment.controller.php:156</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_aecdfcc5332bcf22df01fc21a03b64435"><div class="ttname"><a href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a></div><div class="ttdeci">getModel($module_name)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00145">func.inc.php:145</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_ace5cc06ee6c5d655a1bdcc15846a779e"><div class="ttname"><a href="func_8inc_8php.html#ace5cc06ee6c5d655a1bdcc15846a779e">executeQueryArray</a></div><div class="ttdeci">executeQueryArray($query_id, $args=NULL, $arg_columns=NULL)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00219">func.inc.php:219</a></div></div>
-<div class="ttc" id="classContext_html_a90ce25d65fe6c9778421cbb36ab3def5"><div class="ttname"><a href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context\get</a></div><div class="ttdeci">get($key)</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l01951">Context.class.php:1951</a></div></div>
+<div class="ttc" id="classContext_html_a90ce25d65fe6c9778421cbb36ab3def5"><div class="ttname"><a href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context\get</a></div><div class="ttdeci">get($key)</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l01953">Context.class.php:1953</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_a2f7ca88a5226536aca3b2f5682bd7b2d"><div class="ttname"><a href="func_8inc_8php.html#a2f7ca88a5226536aca3b2f5682bd7b2d">getAdminController</a></div><div class="ttdeci">getAdminController($module_name)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00101">func.inc.php:101</a></div></div>
 <div class="ttc" id="classcommentController_html_aaae1e5860a1e170a8fc3142f80bbcde6"><div class="ttname"><a href="classcommentController.html#aaae1e5860a1e170a8fc3142f80bbcde6">commentController\declaredComment</a></div><div class="ttdeci">declaredComment($comment_srl)</div><div class="ttdef"><b>Definition:</b> <a href="comment_8controller_8php_source.html#l01157">comment.controller.php:1157</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_a418bc23855eebc0d90190dd625ac4474"><div class="ttname"><a href="func_8inc_8php.html#a418bc23855eebc0d90190dd625ac4474">executeQuery</a></div><div class="ttdeci">executeQuery($query_id, $args=NULL, $arg_columns=NULL)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00203">func.inc.php:203</a></div></div>
@@ -1461,7 +1461,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 19 2017 14:10:25 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Nov 30 2017 13:09:59 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

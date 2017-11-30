@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.8.45</span>
+   &#160;<span id="projectnumber">1.8.46</span>
    </div>
   </td>
  </tr>
@@ -104,7 +104,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <a class="code" href="ko_8install_8php.html#a9fd93f6625cec4fd65bf6f412e28c015">$oModuleController</a> = <a class="code" href="func_8inc_8php.html#aa08f01e3bf130d770b373ca8493e3e9b">getController</a>(<span class="stringliteral">&#39;module&#39;</span>);</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <a class="code" href="ko_8install_8php.html#a9fd93f6625cec4fd65bf6f412e28c015">$oModuleController</a>-&gt;insertTrigger(<span class="stringliteral">&#39;display&#39;</span>, <span class="stringliteral">&#39;widget&#39;</span>, <span class="stringliteral">&#39;controller&#39;</span>, <span class="stringliteral">&#39;triggerWidgetCompile&#39;</span>, <span class="stringliteral">&#39;before&#39;</span>);</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>();</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    }</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
 <div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classwidget.html#a40ce2841fc3aa0dade2ce5609c08ea9e">   28</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classwidget.html#a40ce2841fc3aa0dade2ce5609c08ea9e">checkUpdate</a>()</div>
@@ -139,7 +139,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <a class="code" href="ko_8install_8php.html#a9fd93f6625cec4fd65bf6f412e28c015">$oModuleController</a>-&gt;insertUpdatedLog($version_update_id);</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        }</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(0, <span class="stringliteral">&#39;success_updated&#39;</span>);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>(0, <span class="stringliteral">&#39;success_updated&#39;</span>);</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
 <div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="classwidget.html#a958eb4fd79b5c9834f04d866bc6b5d02">   69</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classwidget.html#a958eb4fd79b5c9834f04d866bc6b5d02">recompileCache</a>()</div>
@@ -152,9 +152,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="func_8inc_8php_html_aa08f01e3bf130d770b373ca8493e3e9b"><div class="ttname"><a href="func_8inc_8php.html#aa08f01e3bf130d770b373ca8493e3e9b">getController</a></div><div class="ttdeci">getController($module_name)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00090">func.inc.php:90</a></div></div>
 <div class="ttc" id="classwidget_html_a958eb4fd79b5c9834f04d866bc6b5d02"><div class="ttname"><a href="classwidget.html#a958eb4fd79b5c9834f04d866bc6b5d02">widget\recompileCache</a></div><div class="ttdeci">recompileCache()</div><div class="ttdoc">Re-generate the cache file. </div><div class="ttdef"><b>Definition:</b> <a href="widget_8class_8php_source.html#l00069">widget.class.php:69</a></div></div>
 <div class="ttc" id="config_8inc_8php_html_afceaaec30d0e5b6a78d0ae28bcbfc8f3"><div class="ttname"><a href="config_8inc_8php.html#afceaaec30d0e5b6a78d0ae28bcbfc8f3">__XE_VERSION__</a></div><div class="ttdeci">const __XE_VERSION__</div><div class="ttdef"><b>Definition:</b> <a href="config_8inc_8php_source.html#l00032">config.inc.php:32</a></div></div>
+<div class="ttc" id="classBaseObject_html"><div class="ttname"><a href="classBaseObject.html">BaseObject</a></div><div class="ttdef"><b>Definition:</b> <a href="BaseObject_8class_8php_source.html#l00009">BaseObject.class.php:9</a></div></div>
 <div class="ttc" id="classwidget_html_ae5a0f29ef320000b10196c8ce3d1bcdc"><div class="ttname"><a href="classwidget.html#ae5a0f29ef320000b10196c8ce3d1bcdc">widget\moduleInstall</a></div><div class="ttdeci">moduleInstall()</div><div class="ttdoc">Implement if additional tasks are necessary when installing. </div><div class="ttdef"><b>Definition:</b> <a href="widget_8class_8php_source.html#l00013">widget.class.php:13</a></div></div>
 <div class="ttc" id="classwidget_html"><div class="ttname"><a href="classwidget.html">widget</a></div><div class="ttdoc">widget module&amp;#39;s high class </div><div class="ttdef"><b>Definition:</b> <a href="widget_8class_8php_source.html#l00008">widget.class.php:8</a></div></div>
-<div class="ttc" id="classObject_html_a9c1f4bf33208a5c858c0722afce90f30"><div class="ttname"><a href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object\Object</a></div><div class="ttdeci">Object($error=0, $message= 'success')</div><div class="ttdef"><b>Definition:</b> <a href="Object_8class_8php_source.html#l00043">Object.class.php:43</a></div></div>
 <div class="ttc" id="classwidget_html_a40ce2841fc3aa0dade2ce5609c08ea9e"><div class="ttname"><a href="classwidget.html#a40ce2841fc3aa0dade2ce5609c08ea9e">widget\checkUpdate</a></div><div class="ttdeci">checkUpdate()</div><div class="ttdoc">a method to check if successfully installed </div><div class="ttdef"><b>Definition:</b> <a href="widget_8class_8php_source.html#l00028">widget.class.php:28</a></div></div>
 <div class="ttc" id="classFileHandler_html_a9c2502d10c34a3996f1d6927624a7824"><div class="ttname"><a href="classFileHandler.html#a9c2502d10c34a3996f1d6927624a7824">FileHandler\makeDir</a></div><div class="ttdeci">makeDir($path_string)</div><div class="ttdef"><b>Definition:</b> <a href="FileHandler_8class_8php_source.html#l00280">FileHandler.class.php:280</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_aecdfcc5332bcf22df01fc21a03b64435"><div class="ttname"><a href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a></div><div class="ttdeci">getModel($module_name)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00145">func.inc.php:145</a></div></div>
@@ -164,7 +164,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 19 2017 14:10:26 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Nov 30 2017 13:10:00 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

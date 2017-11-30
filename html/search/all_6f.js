@@ -1,8 +1,6 @@
 var searchData=
 [
   ['obj2xml',['obj2xml',['../classXmlGenerator.html#ae887d13949d0ec6537feb11f6d9aa00f',1,'XmlGenerator']]],
-  ['object',['Object',['../classObject.html',1,'Object'],['../classObject.html#a9c1f4bf33208a5c858c0722afce90f30',1,'Object\Object()']]],
-  ['object_2eclass_2ephp',['Object.class.php',['../Object_8class_8php.html',1,'']]],
   ['observer_5fdie',['OBSERVER_DIE',['../classPEAR__Exception.html#ad3ee7214450c1e14de99dbde12b8a60c',1,'PEAR_Exception']]],
   ['observer_5fprint',['OBSERVER_PRINT',['../classPEAR__Exception.html#afaa71d35f3fab453da2cef325b210423',1,'PEAR_Exception']]],
   ['observer_5ftrigger',['OBSERVER_TRIGGER',['../classPEAR__Exception.html#a0bf6d43a80c7f3bc2c7cfae062ff4477',1,'PEAR_Exception']]],

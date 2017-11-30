@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.8.45</span>
+   &#160;<span id="projectnumber">1.8.46</span>
    </div>
   </td>
  </tr>
@@ -785,7 +785,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;            $with_values = FALSE;</div>
 <div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;        }</div>
 <div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;        $query = $this-&gt;getInsertSql($queryObject, $with_values);</div>
-<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;        <span class="keywordflow">if</span>(is_a($query, <span class="stringliteral">&#39;Object&#39;</span>))</div>
+<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;        <span class="keywordflow">if</span>(is_a($query, <span class="stringliteral">&#39;BaseObject&#39;</span>))</div>
 <div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;        {</div>
 <div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;            unset($this-&gt;param);</div>
 <div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;            <span class="keywordflow">return</span>;</div>
@@ -810,7 +810,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;            $with_values = FALSE;</div>
 <div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;        }</div>
 <div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;        $query = $this-&gt;getUpdateSql($queryObject, $with_values);</div>
-<div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;        <span class="keywordflow">if</span>(is_a($query, <span class="stringliteral">&#39;Object&#39;</span>))</div>
+<div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;        <span class="keywordflow">if</span>(is_a($query, <span class="stringliteral">&#39;BaseObject&#39;</span>))</div>
 <div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;        {</div>
 <div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;            unset($this-&gt;param);</div>
 <div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;            <span class="keywordflow">return</span>;</div>
@@ -836,7 +836,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00925"></a><span class="lineno">  925</span>&#160;            $with_values = FALSE;</div>
 <div class="line"><a name="l00926"></a><span class="lineno">  926</span>&#160;        }</div>
 <div class="line"><a name="l00927"></a><span class="lineno">  927</span>&#160;        $query = $this-&gt;getDeleteSql($queryObject, $with_values);</div>
-<div class="line"><a name="l00928"></a><span class="lineno">  928</span>&#160;        <span class="keywordflow">if</span>(is_a($query, <span class="stringliteral">&#39;Object&#39;</span>))</div>
+<div class="line"><a name="l00928"></a><span class="lineno">  928</span>&#160;        <span class="keywordflow">if</span>(is_a($query, <span class="stringliteral">&#39;BaseObject&#39;</span>))</div>
 <div class="line"><a name="l00929"></a><span class="lineno">  929</span>&#160;        {</div>
 <div class="line"><a name="l00930"></a><span class="lineno">  930</span>&#160;            unset($this-&gt;param);</div>
 <div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;            <span class="keywordflow">return</span>;</div>
@@ -870,7 +870,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00968"></a><span class="lineno">  968</span>&#160;        <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00969"></a><span class="lineno">  969</span>&#160;        {</div>
 <div class="line"><a name="l00970"></a><span class="lineno">  970</span>&#160;            $query = $this-&gt;getSelectSql($queryObject, $with_values);</div>
-<div class="line"><a name="l00971"></a><span class="lineno">  971</span>&#160;            <span class="keywordflow">if</span>(is_a($query, <span class="stringliteral">&#39;Object&#39;</span>))</div>
+<div class="line"><a name="l00971"></a><span class="lineno">  971</span>&#160;            <span class="keywordflow">if</span>(is_a($query, <span class="stringliteral">&#39;BaseObject&#39;</span>))</div>
 <div class="line"><a name="l00972"></a><span class="lineno">  972</span>&#160;            {</div>
 <div class="line"><a name="l00973"></a><span class="lineno">  973</span>&#160;                unset($this-&gt;param);</div>
 <div class="line"><a name="l00974"></a><span class="lineno">  974</span>&#160;                <span class="keywordflow">return</span>;</div>
@@ -886,7 +886,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00984"></a><span class="lineno">  984</span>&#160;            }</div>
 <div class="line"><a name="l00985"></a><span class="lineno">  985</span>&#160;</div>
 <div class="line"><a name="l00986"></a><span class="lineno">  986</span>&#160;            $data = $this-&gt;_fetch($result);</div>
-<div class="line"><a name="l00987"></a><span class="lineno">  987</span>&#160;            $buff = <span class="keyword">new</span> <a class="code" href="classObject.html">Object</a> ();</div>
+<div class="line"><a name="l00987"></a><span class="lineno">  987</span>&#160;            $buff = <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>();</div>
 <div class="line"><a name="l00988"></a><span class="lineno">  988</span>&#160;            $buff-&gt;data = $data;</div>
 <div class="line"><a name="l00989"></a><span class="lineno">  989</span>&#160;</div>
 <div class="line"><a name="l00990"></a><span class="lineno">  990</span>&#160;            unset($this-&gt;param);</div>
@@ -899,7 +899,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01002"></a><span class="lineno"> 1002</span>&#160;        $limit = $queryObject-&gt;getLimit();</div>
 <div class="line"><a name="l01003"></a><span class="lineno"> 1003</span>&#160;        <span class="keywordflow">if</span>($limit &amp;&amp; $limit-&gt;isPageHandler())</div>
 <div class="line"><a name="l01004"></a><span class="lineno"> 1004</span>&#160;        {</div>
-<div class="line"><a name="l01005"></a><span class="lineno"> 1005</span>&#160;            $buff = <span class="keyword">new</span> <a class="code" href="classObject.html">Object</a> ();</div>
+<div class="line"><a name="l01005"></a><span class="lineno"> 1005</span>&#160;            $buff = <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a> ();</div>
 <div class="line"><a name="l01006"></a><span class="lineno"> 1006</span>&#160;            $buff-&gt;total_count = 0;</div>
 <div class="line"><a name="l01007"></a><span class="lineno"> 1007</span>&#160;            $buff-&gt;total_page = 0;</div>
 <div class="line"><a name="l01008"></a><span class="lineno"> 1008</span>&#160;            $buff-&gt;page = 1;</div>
@@ -970,7 +970,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01080"></a><span class="lineno"> 1080</span>&#160;        {</div>
 <div class="line"><a name="l01081"></a><span class="lineno"> 1081</span>&#160;            <span class="comment">// If requested page is bigger than total number of pages, return empty list</span></div>
 <div class="line"><a name="l01082"></a><span class="lineno"> 1082</span>&#160;</div>
-<div class="line"><a name="l01083"></a><span class="lineno"> 1083</span>&#160;            $buff = <span class="keyword">new</span> <a class="code" href="classObject.html">Object</a> ();</div>
+<div class="line"><a name="l01083"></a><span class="lineno"> 1083</span>&#160;            $buff = <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>();</div>
 <div class="line"><a name="l01084"></a><span class="lineno"> 1084</span>&#160;            $buff-&gt;total_count = $total_count;</div>
 <div class="line"><a name="l01085"></a><span class="lineno"> 1085</span>&#160;            $buff-&gt;total_page = $total_page;</div>
 <div class="line"><a name="l01086"></a><span class="lineno"> 1086</span>&#160;            $buff-&gt;page = $page;</div>
@@ -993,7 +993,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01103"></a><span class="lineno"> 1103</span>&#160;        $virtual_no = $total_count - ($page - 1) * $list_count;</div>
 <div class="line"><a name="l01104"></a><span class="lineno"> 1104</span>&#160;        $data = $this-&gt;_fetch($result, $virtual_no);</div>
 <div class="line"><a name="l01105"></a><span class="lineno"> 1105</span>&#160;</div>
-<div class="line"><a name="l01106"></a><span class="lineno"> 1106</span>&#160;        $buff = <span class="keyword">new</span> <a class="code" href="classObject.html">Object</a> ();</div>
+<div class="line"><a name="l01106"></a><span class="lineno"> 1106</span>&#160;        $buff = <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>();</div>
 <div class="line"><a name="l01107"></a><span class="lineno"> 1107</span>&#160;        $buff-&gt;total_count = $total_count;</div>
 <div class="line"><a name="l01108"></a><span class="lineno"> 1108</span>&#160;        $buff-&gt;total_page = $total_page;</div>
 <div class="line"><a name="l01109"></a><span class="lineno"> 1109</span>&#160;        $buff-&gt;page = $page;</div>
@@ -1014,14 +1014,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01137"></a><span class="lineno"> 1137</span>&#160;        $select = $query-&gt;getSelectString($with_values);</div>
 <div class="line"><a name="l01138"></a><span class="lineno"> 1138</span>&#160;        <span class="keywordflow">if</span>($select == <span class="stringliteral">&#39;&#39;</span>)</div>
 <div class="line"><a name="l01139"></a><span class="lineno"> 1139</span>&#160;        {</div>
-<div class="line"><a name="l01140"></a><span class="lineno"> 1140</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html">Object</a>(-1, <span class="stringliteral">&quot;Invalid query&quot;</span>);</div>
+<div class="line"><a name="l01140"></a><span class="lineno"> 1140</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>(-1, <span class="stringliteral">&quot;Invalid query&quot;</span>);</div>
 <div class="line"><a name="l01141"></a><span class="lineno"> 1141</span>&#160;        }</div>
 <div class="line"><a name="l01142"></a><span class="lineno"> 1142</span>&#160;        $select = <span class="stringliteral">&#39;SELECT &#39;</span> . $select;</div>
 <div class="line"><a name="l01143"></a><span class="lineno"> 1143</span>&#160;</div>
 <div class="line"><a name="l01144"></a><span class="lineno"> 1144</span>&#160;        $from = $query-&gt;getFromString($with_values);</div>
 <div class="line"><a name="l01145"></a><span class="lineno"> 1145</span>&#160;        <span class="keywordflow">if</span>($from == <span class="stringliteral">&#39;&#39;</span>)</div>
 <div class="line"><a name="l01146"></a><span class="lineno"> 1146</span>&#160;        {</div>
-<div class="line"><a name="l01147"></a><span class="lineno"> 1147</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html">Object</a>(-1, <span class="stringliteral">&quot;Invalid query&quot;</span>);</div>
+<div class="line"><a name="l01147"></a><span class="lineno"> 1147</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>(-1, <span class="stringliteral">&quot;Invalid query&quot;</span>);</div>
 <div class="line"><a name="l01148"></a><span class="lineno"> 1148</span>&#160;        }</div>
 <div class="line"><a name="l01149"></a><span class="lineno"> 1149</span>&#160;        $from = <span class="stringliteral">&#39; FROM &#39;</span> . $from;</div>
 <div class="line"><a name="l01150"></a><span class="lineno"> 1150</span>&#160;</div>
@@ -1058,7 +1058,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01181"></a><span class="lineno"> 1181</span>&#160;</div>
 <div class="line"><a name="l01182"></a><span class="lineno"> 1182</span>&#160;<span class="comment">/* End of file DBCubrid.class.php */</span></div>
 <div class="line"><a name="l01183"></a><span class="lineno"> 1183</span>&#160;<span class="comment">/* Location: ./classes/db/DBCubrid.class.php */</span></div>
-<div class="ttc" id="classObject_html"><div class="ttname"><a href="classObject.html">Object</a></div><div class="ttdef"><b>Definition:</b> <a href="Object_8class_8php_source.html#l00009">Object.class.php:9</a></div></div>
 <div class="ttc" id="classDB_html_af2584546ee78d07a40cc16493f8797cc"><div class="ttname"><a href="classDB.html#af2584546ee78d07a40cc16493f8797cc">DB\setError</a></div><div class="ttdeci">setError($errno=0, $errstr= 'success')</div><div class="ttdef"><b>Definition:</b> <a href="DB_8class_8php_source.html#l00476">DB.class.php:476</a></div></div>
 <div class="ttc" id="classDBCubrid_html_a76c8d9dd51a3e64f18b8d1f4da318ac7"><div class="ttname"><a href="classDBCubrid.html#a76c8d9dd51a3e64f18b8d1f4da318ac7">DBCubrid\isColumnExists</a></div><div class="ttdeci">isColumnExists($table_name, $column_name)</div><div class="ttdef"><b>Definition:</b> <a href="DBCubrid_8class_8php_source.html#l00548">DBCubrid.class.php:548</a></div></div>
 <div class="ttc" id="classDBCubrid_html_ab9aea745152a86b3852101aa3225f26d"><div class="ttname"><a href="classDBCubrid.html#ab9aea745152a86b3852101aa3225f26d">DBCubrid\addQuotes</a></div><div class="ttdeci">addQuotes($string)</div><div class="ttdef"><b>Definition:</b> <a href="DBCubrid_8class_8php_source.html#l00117">DBCubrid.class.php:117</a></div></div>
@@ -1072,6 +1071,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classDB_html_a217cc2096613d1758a9851f1dd990d71"><div class="ttname"><a href="classDB.html#a217cc2096613d1758a9851f1dd990d71">DB\isConnected</a></div><div class="ttdeci">isConnected($type= 'master', $indx=0)</div><div class="ttdef"><b>Definition:</b> <a href="DB_8class_8php_source.html#l00360">DB.class.php:360</a></div></div>
 <div class="ttc" id="classDBCubrid_html_a92995e5eed892ec4076cb3c1f5fdb2f1"><div class="ttname"><a href="classDBCubrid.html#a92995e5eed892ec4076cb3c1f5fdb2f1">DBCubrid\$column_type</a></div><div class="ttdeci">$column_type</div><div class="ttdef"><b>Definition:</b> <a href="DBCubrid_8class_8php_source.html#l00036">DBCubrid.class.php:36</a></div></div>
 <div class="ttc" id="classDBCubrid_html_a56780e480de62dfca8d67c7bccb4791c"><div class="ttname"><a href="classDBCubrid.html#a56780e480de62dfca8d67c7bccb4791c">DBCubrid\getNextSequence</a></div><div class="ttdeci">getNextSequence()</div><div class="ttdef"><b>Definition:</b> <a href="DBCubrid_8class_8php_source.html#l00381">DBCubrid.class.php:381</a></div></div>
+<div class="ttc" id="classBaseObject_html"><div class="ttname"><a href="classBaseObject.html">BaseObject</a></div><div class="ttdef"><b>Definition:</b> <a href="BaseObject_8class_8php_source.html#l00009">BaseObject.class.php:9</a></div></div>
 <div class="ttc" id="classDBCubrid_html_ac1173f02246bee40975fe2a96973abd0"><div class="ttname"><a href="classDBCubrid.html#ac1173f02246bee40975fe2a96973abd0">DBCubrid\_rollback</a></div><div class="ttdeci">_rollback($transactionLevel=0)</div><div class="ttdef"><b>Definition:</b> <a href="DBCubrid_8class_8php_source.html#l00170">DBCubrid.class.php:170</a></div></div>
 <div class="ttc" id="classDBCubrid_html_abe5eb360cf9f08ecb9114d082dd24660"><div class="ttname"><a href="classDBCubrid.html#abe5eb360cf9f08ecb9114d082dd24660">DBCubrid\_createTable</a></div><div class="ttdeci">_createTable($xml_doc)</div><div class="ttdef"><b>Definition:</b> <a href="DBCubrid_8class_8php_source.html#l00728">DBCubrid.class.php:728</a></div></div>
 <div class="ttc" id="classDBCubrid_html_aaf7dd65f4cdfea9903ab641163058936"><div class="ttname"><a href="classDBCubrid.html#aaf7dd65f4cdfea9903ab641163058936">DBCubrid\_setError</a></div><div class="ttdeci">_setError()</div><div class="ttdef"><b>Definition:</b> <a href="DBCubrid_8class_8php_source.html#l00292">DBCubrid.class.php:292</a></div></div>
@@ -1116,7 +1116,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 19 2017 14:10:22 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Nov 30 2017 13:09:56 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['baseobject',['BaseObject',['../classBaseObject.html',1,'']]],
   ['board',['board',['../classboard.html',1,'']]],
   ['boardadmincontroller',['boardAdminController',['../classboardAdminController.html',1,'']]],
   ['boardadminmodel',['boardAdminModel',['../classboardAdminModel.html',1,'']]],

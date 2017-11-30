@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.8.45</span>
+   &#160;<span id="projectnumber">1.8.46</span>
    </div>
   </td>
  </tr>
@@ -167,7 +167,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        $sock = @fsockopen($scheme . $this-&gt;m_host, $this-&gt;m_port, $errno, $errstr, $timeout);</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <span class="keywordflow">if</span>(!$sock)</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        {</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html">Object</a>(-1, <span class="stringliteral">&#39;socket_connect_failed&#39;</span>);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>(-1, <span class="stringliteral">&#39;socket_connect_failed&#39;</span>);</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        }</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        $headers = $this-&gt;m_headers + array();</div>
@@ -276,7 +276,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        $body = curl_exec($ch);</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        <span class="keywordflow">if</span>(curl_errno($ch))</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        {</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html">Object</a>(-1, <span class="stringliteral">&#39;socket_connect_failed&#39;</span>);</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>(-1, <span class="stringliteral">&#39;socket_connect_failed&#39;</span>);</div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        }</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        $code = curl_getinfo($ch, CURLINFO_HTTP_CODE);</div>
@@ -291,10 +291,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;}</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="comment">/* End of file XEHttpRequest.class.php */</span></div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="comment">/* Location: ./classes/httprequest/XEHttpRequest.class.php */</span></div>
-<div class="ttc" id="classObject_html"><div class="ttname"><a href="classObject.html">Object</a></div><div class="ttdef"><b>Definition:</b> <a href="Object_8class_8php_source.html#l00009">Object.class.php:9</a></div></div>
 <div class="ttc" id="classXEHttpRequest_html_aa8a672ad4e5c3cc8d3b7a9cecc29d349"><div class="ttname"><a href="classXEHttpRequest.html#aa8a672ad4e5c3cc8d3b7a9cecc29d349">XEHttpRequest\XEHttpRequest</a></div><div class="ttdeci">XEHttpRequest($host, $port, $scheme='')</div><div class="ttdef"><b>Definition:</b> <a href="XEHttpRequest_8class_8php_source.html#l00044">XEHttpRequest.class.php:44</a></div></div>
 <div class="ttc" id="classXEHttpRequest_html_a8f75aef64b09a7b2d007bdce562eaaf6"><div class="ttname"><a href="classXEHttpRequest.html#a8f75aef64b09a7b2d007bdce562eaaf6">XEHttpRequest\send</a></div><div class="ttdeci">send($target= '/', $method= 'GET', $timeout=3, $post_vars=NULL)</div><div class="ttdef"><b>Definition:</b> <a href="XEHttpRequest_8class_8php_source.html#l00071">XEHttpRequest.class.php:71</a></div></div>
 <div class="ttc" id="classXEHttpRequest_html_a35c62f61b5ad2c200c53a58dd43a2784"><div class="ttname"><a href="classXEHttpRequest.html#a35c62f61b5ad2c200c53a58dd43a2784">XEHttpRequest\$m_port</a></div><div class="ttdeci">$m_port</div><div class="ttdef"><b>Definition:</b> <a href="XEHttpRequest_8class_8php_source.html#l00026">XEHttpRequest.class.php:26</a></div></div>
+<div class="ttc" id="classBaseObject_html"><div class="ttname"><a href="classBaseObject.html">BaseObject</a></div><div class="ttdef"><b>Definition:</b> <a href="BaseObject_8class_8php_source.html#l00009">BaseObject.class.php:9</a></div></div>
 <div class="ttc" id="classXEHttpRequest_html_ae6412b6f079b88a67f43602d3cdae2d7"><div class="ttname"><a href="classXEHttpRequest.html#ae6412b6f079b88a67f43602d3cdae2d7">XEHttpRequest\sendWithCurl</a></div><div class="ttdeci">sendWithCurl($target, $method, $timeout, $post_vars)</div><div class="ttdef"><b>Definition:</b> <a href="XEHttpRequest_8class_8php_source.html#l00205">XEHttpRequest.class.php:205</a></div></div>
 <div class="ttc" id="classXEHttpRequest_html_af936bdc66e6dcabbd8934afc5e210063"><div class="ttname"><a href="classXEHttpRequest.html#af936bdc66e6dcabbd8934afc5e210063">XEHttpRequest\addToHeader</a></div><div class="ttdeci">addToHeader($key, $value)</div><div class="ttdef"><b>Definition:</b> <a href="XEHttpRequest_8class_8php_source.html#l00058">XEHttpRequest.class.php:58</a></div></div>
 <div class="ttc" id="classXEHttpRequest_html_a9e316ec4c68dfe9a124327287dae2754"><div class="ttname"><a href="classXEHttpRequest.html#a9e316ec4c68dfe9a124327287dae2754">XEHttpRequest\sendWithSock</a></div><div class="ttdeci">sendWithSock($target, $method, $timeout, $post_vars)</div><div class="ttdef"><b>Definition:</b> <a href="XEHttpRequest_8class_8php_source.html#l00115">XEHttpRequest.class.php:115</a></div></div>
@@ -305,7 +305,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 19 2017 14:10:22 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Nov 30 2017 13:09:56 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

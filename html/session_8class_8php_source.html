@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.8.45</span>
+   &#160;<span id="projectnumber">1.8.46</span>
    </div>
   </td>
  </tr>
@@ -108,7 +108,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        $oDB = &amp;<a class="code" href="classDB.html#a36df3da4b06cd9d45feccb6b82e612c8">DB::getInstance</a>();</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        $oDB-&gt;addIndex(<span class="stringliteral">&quot;session&quot;</span>,<span class="stringliteral">&quot;idx_session_update_mid&quot;</span>, array(<span class="stringliteral">&quot;member_srl&quot;</span>,<span class="stringliteral">&quot;last_update&quot;</span>,<span class="stringliteral">&quot;cur_mid&quot;</span>));</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>();</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    }</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
 <div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classsession.html#a30f6cc95b00bd35757aa882abce7ac34">   35</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classsession.html#a30f6cc95b00bd35757aa882abce7ac34">checkUpdate</a>()</div>
@@ -153,7 +153,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <a class="code" href="ko_8install_8php.html#a9fd93f6625cec4fd65bf6f412e28c015">$oModuleController</a>-&gt;insertUpdatedLog($version_update_id);</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        }</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object</a>(0, <span class="stringliteral">&#39;success_updated&#39;</span>);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>(0, <span class="stringliteral">&#39;success_updated&#39;</span>);</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
 <div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="classsession.html#a97462709868f87d6cb050956c7b7da6d">   86</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classsession.html#a97462709868f87d6cb050956c7b7da6d">unSerializeSession</a>($val)</div>
@@ -187,8 +187,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classsession_html_aae3391920555707a71e14e15f2929825"><div class="ttname"><a href="classsession.html#aae3391920555707a71e14e15f2929825">session\$session_started</a></div><div class="ttdeci">$session_started</div><div class="ttdef"><b>Definition:</b> <a href="session_8class_8php_source.html#l00014">session.class.php:14</a></div></div>
 <div class="ttc" id="classsession_html_af6b13ec50160d63aca04f689e5cac9dd"><div class="ttname"><a href="classsession.html#af6b13ec50160d63aca04f689e5cac9dd">session\moduleInstall</a></div><div class="ttdeci">moduleInstall()</div><div class="ttdoc">Additional tasks required to accomplish during the installation. </div><div class="ttdef"><b>Definition:</b> <a href="session_8class_8php_source.html#l00024">session.class.php:24</a></div></div>
 <div class="ttc" id="classsession_html_ad1eb77a85d7765620658071e49d16cff"><div class="ttname"><a href="classsession.html#ad1eb77a85d7765620658071e49d16cff">session\moduleUpdate</a></div><div class="ttdeci">moduleUpdate()</div><div class="ttdoc">Execute update. </div><div class="ttdef"><b>Definition:</b> <a href="session_8class_8php_source.html#l00056">session.class.php:56</a></div></div>
+<div class="ttc" id="classBaseObject_html"><div class="ttname"><a href="classBaseObject.html">BaseObject</a></div><div class="ttdef"><b>Definition:</b> <a href="BaseObject_8class_8php_source.html#l00009">BaseObject.class.php:9</a></div></div>
 <div class="ttc" id="classsession_html_aea7dba13f8bc60c916840c66b2bc28ba"><div class="ttname"><a href="classsession.html#aea7dba13f8bc60c916840c66b2bc28ba">session\serializeSession</a></div><div class="ttdeci">serializeSession($data)</div><div class="ttdoc">session string encode </div><div class="ttdef"><b>Definition:</b> <a href="session_8class_8php_source.html#l00096">session.class.php:96</a></div></div>
-<div class="ttc" id="classObject_html_a9c1f4bf33208a5c858c0722afce90f30"><div class="ttname"><a href="classObject.html#a9c1f4bf33208a5c858c0722afce90f30">Object\Object</a></div><div class="ttdeci">Object($error=0, $message= 'success')</div><div class="ttdef"><b>Definition:</b> <a href="Object_8class_8php_source.html#l00043">Object.class.php:43</a></div></div>
 <div class="ttc" id="classDB_html_a36df3da4b06cd9d45feccb6b82e612c8"><div class="ttname"><a href="classDB.html#a36df3da4b06cd9d45feccb6b82e612c8">DB\getInstance</a></div><div class="ttdeci">getInstance($db_type=NULL)</div><div class="ttdef"><b>Definition:</b> <a href="DB_8class_8php_source.html#l00142">DB.class.php:142</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_aecdfcc5332bcf22df01fc21a03b64435"><div class="ttname"><a href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a></div><div class="ttdeci">getModel($module_name)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00145">func.inc.php:145</a></div></div>
 <div class="ttc" id="classsession_html_a30f6cc95b00bd35757aa882abce7ac34"><div class="ttname"><a href="classsession.html#a30f6cc95b00bd35757aa882abce7ac34">session\checkUpdate</a></div><div class="ttdeci">checkUpdate()</div><div class="ttdoc">A method to check if the installation has been successful. </div><div class="ttdef"><b>Definition:</b> <a href="session_8class_8php_source.html#l00035">session.class.php:35</a></div></div>
@@ -196,11 +196,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="ko_8install_8php_html_a9fd93f6625cec4fd65bf6f412e28c015"><div class="ttname"><a href="ko_8install_8php.html#a9fd93f6625cec4fd65bf6f412e28c015">$oModuleController</a></div><div class="ttdeci">$oModuleController</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00287">ko.install.php:287</a></div></div>
 <div class="ttc" id="classsession_html_af73b8d0d1528237504be7b85f05c97ed"><div class="ttname"><a href="classsession.html#af73b8d0d1528237504be7b85f05c97ed">session\$lifetime</a></div><div class="ttdeci">$lifetime</div><div class="ttdef"><b>Definition:</b> <a href="session_8class_8php_source.html#l00013">session.class.php:13</a></div></div>
 <div class="ttc" id="classsession_html_a08f5190f8867dc2c0d5c23435b236f15"><div class="ttname"><a href="classsession.html#a08f5190f8867dc2c0d5c23435b236f15">session\recompileCache</a></div><div class="ttdeci">recompileCache()</div><div class="ttdoc">Re-generate the cache file. </div><div class="ttdef"><b>Definition:</b> <a href="session_8class_8php_source.html#l00108">session.class.php:108</a></div></div>
-<div class="ttc" id="classContext_html_a5a8714e3a0f9d4722a31ce73017c6613"><div class="ttname"><a href="classContext.html#a5a8714e3a0f9d4722a31ce73017c6613">Context\isInstalled</a></div><div class="ttdeci">isInstalled()</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l02601">Context.class.php:2601</a></div></div>
+<div class="ttc" id="classContext_html_a5a8714e3a0f9d4722a31ce73017c6613"><div class="ttname"><a href="classContext.html#a5a8714e3a0f9d4722a31ce73017c6613">Context\isInstalled</a></div><div class="ttdeci">isInstalled()</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l02603">Context.class.php:2603</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 19 2017 14:10:26 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Nov 30 2017 13:10:00 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>
