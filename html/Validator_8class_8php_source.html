@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.8.46</span>
+   &#160;<span id="projectnumber">1.9.0</span>
    </div>
   </td>
  </tr>
@@ -655,7 +655,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;            <span class="keywordflow">return</span> FALSE;</div>
 <div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;        }</div>
 <div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;</div>
-<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;        @file_put_contents($filepath, $content, LOCK_EX);</div>
+<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;        <a class="code" href="classFileHandler.html#ad90c10a81460f437bc68952427606155">FileHandler::writeFile</a>($filepath, $content);</div>
 <div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;</div>
 <div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;        <span class="keywordflow">return</span> $filepath;</div>
 <div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;    }</div>
@@ -806,7 +806,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="blogapi_8addon_8php_html_aa108d9d91e700ac530401dd363b0723b"><div class="ttname"><a href="blogapi_8addon_8php.html#aa108d9d91e700ac530401dd363b0723b">$xml</a></div><div class="ttdeci">$xml</div><div class="ttdef"><b>Definition:</b> <a href="blogapi_8addon_8php_source.html#l00033">blogapi.addon.php:33</a></div></div>
 <div class="ttc" id="classValidator_html_a1630131530dca60428e72dd4dd2d4af3"><div class="ttname"><a href="classValidator.html#a1630131530dca60428e72dd4dd2d4af3">Validator\setCacheDir</a></div><div class="ttdeci">setCacheDir($cache_dir)</div><div class="ttdef"><b>Definition:</b> <a href="Validator_8class_8php_source.html#l00233">Validator.class.php:233</a></div></div>
 <div class="ttc" id="classValidator_html"><div class="ttname"><a href="classValidator.html">Validator</a></div><div class="ttdef"><b>Definition:</b> <a href="Validator_8class_8php_source.html#l00010">Validator.class.php:10</a></div></div>
-<div class="ttc" id="classContext_html_a9f79aa7aecf2e4d8006e517844523fc2"><div class="ttname"><a href="classContext.html#a9f79aa7aecf2e4d8006e517844523fc2">Context\set</a></div><div class="ttdeci">set($key, $val, $set_to_get_vars=0)</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l01928">Context.class.php:1928</a></div></div>
+<div class="ttc" id="classContext_html_a9f79aa7aecf2e4d8006e517844523fc2"><div class="ttname"><a href="classContext.html#a9f79aa7aecf2e4d8006e517844523fc2">Context\set</a></div><div class="ttdeci">set($key, $val, $set_to_get_vars=0)</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l01925">Context.class.php:1925</a></div></div>
+<div class="ttc" id="classFileHandler_html_ad90c10a81460f437bc68952427606155"><div class="ttname"><a href="classFileHandler.html#ad90c10a81460f437bc68952427606155">FileHandler\writeFile</a></div><div class="ttdeci">writeFile($filename, $buff, $mode=&quot;w&quot;)</div><div class="ttdef"><b>Definition:</b> <a href="FileHandler_8class_8php_source.html#l00145">FileHandler.class.php:145</a></div></div>
 <div class="ttc" id="classValidator_html_a43de0eb69cae01eee855f825324ffc39"><div class="ttname"><a href="classValidator.html#a43de0eb69cae01eee855f825324ffc39">Validator\load</a></div><div class="ttdeci">load($xml_path)</div><div class="ttdef"><b>Definition:</b> <a href="Validator_8class_8php_source.html#l00117">Validator.class.php:117</a></div></div>
 <div class="ttc" id="classValidator_html_a8a8be8c74216e9d0ebbd99eb1e29b8d2"><div class="ttname"><a href="classValidator.html#a8a8be8c74216e9d0ebbd99eb1e29b8d2">Validator\applyRule</a></div><div class="ttdeci">applyRule($name, $value)</div><div class="ttdef"><b>Definition:</b> <a href="Validator_8class_8php_source.html#l00608">Validator.class.php:608</a></div></div>
 <div class="ttc" id="classValidator_html_abfd7a6c58dc8cedae5bef76325b7bf6e"><div class="ttname"><a href="classValidator.html#abfd7a6c58dc8cedae5bef76325b7bf6e">Validator\__construct</a></div><div class="ttdeci">__construct($xml_path= '')</div><div class="ttdef"><b>Definition:</b> <a href="Validator_8class_8php_source.html#l00078">Validator.class.php:78</a></div></div>
@@ -836,12 +837,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classValidator_html_a46de77869676b1b027a076c2106653e2"><div class="ttname"><a href="classValidator.html#a46de77869676b1b027a076c2106653e2">Validator\mbStrLen</a></div><div class="ttdeci">mbStrLen($str)</div><div class="ttdef"><b>Definition:</b> <a href="Validator_8class_8php_source.html#l00639">Validator.class.php:639</a></div></div>
 <div class="ttc" id="example_8php_html_aef99014231eb219a8c774eb4b8463fd9"><div class="ttname"><a href="example_8php.html#aef99014231eb219a8c774eb4b8463fd9">$lang</a></div><div class="ttdeci">if(isset($_REQUEST['encode'])) if(isset($_REQUEST['decode'])) $lang</div><div class="ttdef"><b>Definition:</b> <a href="example_8php_source.html#l00023">example.php:23</a></div></div>
 <div class="ttc" id="classValidator_html_a69a5bdd50a59f7d9daab2ea702036277"><div class="ttname"><a href="classValidator.html#a69a5bdd50a59f7d9daab2ea702036277">Validator\$_xml_path</a></div><div class="ttdeci">$_xml_path</div><div class="ttdef"><b>Definition:</b> <a href="Validator_8class_8php_source.html#l00071">Validator.class.php:71</a></div></div>
-<div class="ttc" id="classContext_html_a9ddbc79a7ba5892d1ea2d793f6ad52c2"><div class="ttname"><a href="classContext.html#a9ddbc79a7ba5892d1ea2d793f6ad52c2">Context\getRequestVars</a></div><div class="ttdeci">getRequestVars()</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l02003">Context.class.php:2003</a></div></div>
+<div class="ttc" id="classContext_html_a9ddbc79a7ba5892d1ea2d793f6ad52c2"><div class="ttname"><a href="classContext.html#a9ddbc79a7ba5892d1ea2d793f6ad52c2">Context\getRequestVars</a></div><div class="ttdeci">getRequestVars()</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l02000">Context.class.php:2000</a></div></div>
 <div class="ttc" id="classValidator_html_aa076d09e847e8461281d4912688a9388"><div class="ttname"><a href="classValidator.html#aa076d09e847e8461281d4912688a9388">Validator\__destruct</a></div><div class="ttdeci">__destruct()</div><div class="ttdef"><b>Definition:</b> <a href="Validator_8class_8php_source.html#l00106">Validator.class.php:106</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Nov 30 2017 13:09:56 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 7 2017 12:28:11 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.8.46</span>
+   &#160;<span id="projectnumber">1.9.0</span>
    </div>
   </td>
  </tr>
@@ -87,6 +87,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classFileHandler-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">FileHandler Class Reference</div>  </div>
@@ -151,6 +152,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5fd371542d6f1a86269d0b8795e74471"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9494e34a28f27b6a1ab2e032aada2bbb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFileHandler.html#a9494e34a28f27b6a1ab2e032aada2bbb">isWritableDir</a> ($path)</td></tr>
 <tr class="separator:a9494e34a28f27b6a1ab2e032aada2bbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a7e4462e976955e4dad6093e5ee89f6e3"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFileHandler.html#a7e4462e976955e4dad6093e5ee89f6e3">clearStatCache</a> ($target, $include=false)</td></tr>
+<tr class="separator:a7e4462e976955e4dad6093e5ee89f6e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd6bbc5690c4bd11c11e6e0ad26c6d48"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFileHandler.html#afd6bbc5690c4bd11c11e6e0ad26c6d48">invalidateOpcache</a> ($target, $force=true)</td></tr>
+<tr class="separator:afd6bbc5690c4bd11c11e6e0ad26c6d48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Contains methods for accessing file system</p>
@@ -180,7 +188,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string </dd></dl>
 
-<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l01002">1002</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
+<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l01004">1004</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
 
 </div>
 </div>
@@ -206,7 +214,51 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>bool TRUE: it's ok, FALSE: otherwise </dd></dl>
 
-<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l00723">723</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
+<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l00725">725</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7e4462e976955e4dad6093e5ee89f6e3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static FileHandler::clearStatCache </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$target</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$include</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Clears file status cache</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string&#160;|&#160;array</td><td class="paramname">$target</td><td>filename or directory </td></tr>
+    <tr><td class="paramtype">boolean</td><td class="paramname">$include</td><td>include files in the directory </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l01118">1118</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
 
 </div>
 </div>
@@ -367,7 +419,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>bool TRUE: success, FALSE: failed </dd></dl>
 
-<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l00752">752</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
+<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l00754">754</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
 
 </div>
 </div>
@@ -393,7 +445,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>bool Returns FALSE if the file does not exists, or Returns full path <a class="el" href="classfile.html">file(string)</a>. </dd></dl>
 
-<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l01065">1065</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
+<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l01067">1067</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
 
 </div>
 </div>
@@ -420,7 +472,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string File size string </dd></dl>
 
-<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l00478">478</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
+<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l00480">480</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
 
 </div>
 </div>
@@ -536,7 +588,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>bool TRUE: success, FALSE: failed </dd></dl>
 
-<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l00674">674</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
+<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l00676">676</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
 
 </div>
 </div>
@@ -622,7 +674,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string If success, the content of the target file. Otherwise: none </dd></dl>
 
-<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l00518">518</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
+<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l00520">520</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
 
 </div>
 </div>
@@ -648,7 +700,51 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>bool Returns TRUE if the file exists and contains something. </dd></dl>
 
-<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l01054">1054</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
+<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l01056">1056</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afd6bbc5690c4bd11c11e6e0ad26c6d48"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static FileHandler::invalidateOpcache </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$target</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$force</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Invalidates a cached script of OPcache</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string&#160;|&#160;array</td><td class="paramname">$target</td><td>filename or directory </td></tr>
+    <tr><td class="paramtype">boolean</td><td class="paramname">$force</td><td>force </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l01142">1142</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
 
 </div>
 </div>
@@ -674,7 +770,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>bool Returns FALSE if the dir is not dir, or Returns full path of dir(string). </dd></dl>
 
-<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l01077">1077</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
+<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l01079">1079</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
 
 </div>
 </div>
@@ -700,7 +796,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>bool </dd></dl>
 
-<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l01089">1089</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
+<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l01091">1091</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
 
 </div>
 </div>
@@ -727,7 +823,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>bool TRUE if success. It might return nothing when ftp is used and connection to the ftp address failed. </dd></dl>
 
-<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l00280">280</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
+<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l00282">282</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
 
 </div>
 </div>
@@ -765,7 +861,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l00212">212</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
+<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l00214">214</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
 
 </div>
 </div>
@@ -802,7 +898,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>bool Returns TRUE on success or FALSE on failure. </dd></dl>
 
-<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l00193">193</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
+<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l00195">195</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
 
 </div>
 </div>
@@ -840,7 +936,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classFileObject.html">FileObject</a> File object </dd></dl>
 
-<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l01039">1039</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
+<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l01041">1041</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
 
 </div>
 </div>
@@ -892,7 +988,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string[] Array of the filenames in the path </dd></dl>
 
-<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l00228">228</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
+<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l00230">230</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
 
 </div>
 </div>
@@ -945,7 +1041,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array ini array (if the target file does not exist, it returns FALSE) </dd></dl>
 
-<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l00955">955</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
+<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l00957">957</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
 
 </div>
 </div>
@@ -971,7 +1067,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l00402">402</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
+<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l00404">404</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
 
 </div>
 </div>
@@ -997,7 +1093,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l00361">361</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
+<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l00363">363</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
 
 </div>
 </div>
@@ -1023,7 +1119,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>bool Returns TRUE on success or FALSE on failure. </dd></dl>
 
-<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l00167">167</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
+<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l00169">169</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
 
 </div>
 </div>
@@ -1050,7 +1146,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l00436">436</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
+<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l00438">438</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
 
 </div>
 </div>
@@ -1088,7 +1184,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>bool Returns TRUE on success or FALSE on failure. </dd></dl>
 
-<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l00181">181</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
+<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l00183">183</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
 
 </div>
 </div>
@@ -1115,7 +1211,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>int converted size </dd></dl>
 
-<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l00702">702</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
+<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l00704">704</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
 
 </div>
 </div>
@@ -1202,7 +1298,7 @@ self::writeIniFile('exmple.ini', $ini);
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>bool if array contains nothing it returns FALSE, otherwise TRUE </dd></dl>
 
-<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l00986">986</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
+<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l00988">988</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
 
 </div>
 </div>
@@ -1212,7 +1308,7 @@ self::writeIniFile('exmple.ini', $ini);
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Nov 30 2017 13:10:01 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 7 2017 12:28:16 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

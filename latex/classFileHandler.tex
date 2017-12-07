@@ -60,6 +60,13 @@
 \item 
 \hyperlink{classFileHandler_a9494e34a28f27b6a1ab2e032aada2bbb}{is\-Writable\-Dir} (\$path)
 \end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classFileHandler_a7e4462e976955e4dad6093e5ee89f6e3}{clear\-Stat\-Cache} (\$target, \$include=false)
+\item 
+static \hyperlink{classFileHandler_afd6bbc5690c4bd11c11e6e0ad26c6d48}{invalidate\-Opcache} (\$target, \$force=true)
+\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -94,7 +101,7 @@ string
 \end{DoxyReturn}
 
 
-Definition at line 1002 of file File\-Handler.\-class.\-php.
+Definition at line 1004 of file File\-Handler.\-class.\-php.
 
 \hypertarget{classFileHandler_a0b240e89b6ce57cb94e855fc25e5e9f3}{\index{File\-Handler@{File\-Handler}!check\-Memory\-Load\-Image@{check\-Memory\-Load\-Image}}
 \index{check\-Memory\-Load\-Image@{check\-Memory\-Load\-Image}!FileHandler@{File\-Handler}}
@@ -115,7 +122,28 @@ bool T\-R\-U\-E\-: it's ok, F\-A\-L\-S\-E\-: otherwise
 \end{DoxyReturn}
 
 
-Definition at line 723 of file File\-Handler.\-class.\-php.
+Definition at line 725 of file File\-Handler.\-class.\-php.
+
+\hypertarget{classFileHandler_a7e4462e976955e4dad6093e5ee89f6e3}{\index{File\-Handler@{File\-Handler}!clear\-Stat\-Cache@{clear\-Stat\-Cache}}
+\index{clear\-Stat\-Cache@{clear\-Stat\-Cache}!FileHandler@{File\-Handler}}
+\subsubsection[{clear\-Stat\-Cache}]{\setlength{\rightskip}{0pt plus 5cm}static File\-Handler\-::clear\-Stat\-Cache (
+\begin{DoxyParamCaption}
+\item[{}]{\$target, }
+\item[{}]{\$include = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classFileHandler_a7e4462e976955e4dad6093e5ee89f6e3}
+Clears file status cache
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | array & {\em \$target} & filename or directory \\
+\hline
+boolean & {\em \$include} & include files in the directory \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 1118 of file File\-Handler.\-class.\-php.
 
 \hypertarget{classFileHandler_a01289213af2a57f07018e7a84c8b9e87}{\index{File\-Handler@{File\-Handler}!copy\-Dir@{copy\-Dir}}
 \index{copy\-Dir@{copy\-Dir}!FileHandler@{File\-Handler}}
@@ -210,7 +238,7 @@ bool T\-R\-U\-E\-: success, F\-A\-L\-S\-E\-: failed
 \end{DoxyReturn}
 
 
-Definition at line 752 of file File\-Handler.\-class.\-php.
+Definition at line 754 of file File\-Handler.\-class.\-php.
 
 \hypertarget{classFileHandler_a862c4f6349792ae8f094ec456c9a26ed}{\index{File\-Handler@{File\-Handler}!exists@{exists}}
 \index{exists@{exists}!FileHandler@{File\-Handler}}
@@ -231,7 +259,7 @@ bool Returns F\-A\-L\-S\-E if the file does not exists, or Returns full path \hy
 \end{DoxyReturn}
 
 
-Definition at line 1065 of file File\-Handler.\-class.\-php.
+Definition at line 1067 of file File\-Handler.\-class.\-php.
 
 \hypertarget{classFileHandler_ae235b4ded589fb13caed260fabc0a30c}{\index{File\-Handler@{File\-Handler}!filesize@{filesize}}
 \index{filesize@{filesize}!FileHandler@{File\-Handler}}
@@ -255,7 +283,7 @@ string File size string
 \end{DoxyReturn}
 
 
-Definition at line 478 of file File\-Handler.\-class.\-php.
+Definition at line 480 of file File\-Handler.\-class.\-php.
 
 \hypertarget{classFileHandler_a6370b3eeddb705be04d9f60902a746e0}{\index{File\-Handler@{File\-Handler}!get\-Real\-Path@{get\-Real\-Path}}
 \index{get\-Real\-Path@{get\-Real\-Path}!FileHandler@{File\-Handler}}
@@ -318,7 +346,7 @@ bool T\-R\-U\-E\-: success, F\-A\-L\-S\-E\-: failed
 \end{DoxyReturn}
 
 
-Definition at line 674 of file File\-Handler.\-class.\-php.
+Definition at line 676 of file File\-Handler.\-class.\-php.
 
 \hypertarget{classFileHandler_a602c039b415c15d9d6866e586282faf7}{\index{File\-Handler@{File\-Handler}!get\-Remote\-Resource@{get\-Remote\-Resource}}
 \index{get\-Remote\-Resource@{get\-Remote\-Resource}!FileHandler@{File\-Handler}}
@@ -363,7 +391,7 @@ string If success, the content of the target file. Otherwise\-: none
 \end{DoxyReturn}
 
 
-Definition at line 518 of file File\-Handler.\-class.\-php.
+Definition at line 520 of file File\-Handler.\-class.\-php.
 
 \hypertarget{classFileHandler_ad872016e83b1f62a03d54e359ce31f73}{\index{File\-Handler@{File\-Handler}!has\-Content@{has\-Content}}
 \index{has\-Content@{has\-Content}!FileHandler@{File\-Handler}}
@@ -384,7 +412,28 @@ bool Returns T\-R\-U\-E if the file exists and contains something.
 \end{DoxyReturn}
 
 
-Definition at line 1054 of file File\-Handler.\-class.\-php.
+Definition at line 1056 of file File\-Handler.\-class.\-php.
+
+\hypertarget{classFileHandler_afd6bbc5690c4bd11c11e6e0ad26c6d48}{\index{File\-Handler@{File\-Handler}!invalidate\-Opcache@{invalidate\-Opcache}}
+\index{invalidate\-Opcache@{invalidate\-Opcache}!FileHandler@{File\-Handler}}
+\subsubsection[{invalidate\-Opcache}]{\setlength{\rightskip}{0pt plus 5cm}static File\-Handler\-::invalidate\-Opcache (
+\begin{DoxyParamCaption}
+\item[{}]{\$target, }
+\item[{}]{\$force = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classFileHandler_afd6bbc5690c4bd11c11e6e0ad26c6d48}
+Invalidates a cached script of O\-Pcache
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | array & {\em \$target} & filename or directory \\
+\hline
+boolean & {\em \$force} & force \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 1142 of file File\-Handler.\-class.\-php.
 
 \hypertarget{classFileHandler_a5fd371542d6f1a86269d0b8795e74471}{\index{File\-Handler@{File\-Handler}!is\-Dir@{is\-Dir}}
 \index{is\-Dir@{is\-Dir}!FileHandler@{File\-Handler}}
@@ -405,7 +454,7 @@ bool Returns F\-A\-L\-S\-E if the dir is not dir, or Returns full path of dir(st
 \end{DoxyReturn}
 
 
-Definition at line 1077 of file File\-Handler.\-class.\-php.
+Definition at line 1079 of file File\-Handler.\-class.\-php.
 
 \hypertarget{classFileHandler_a9494e34a28f27b6a1ab2e032aada2bbb}{\index{File\-Handler@{File\-Handler}!is\-Writable\-Dir@{is\-Writable\-Dir}}
 \index{is\-Writable\-Dir@{is\-Writable\-Dir}!FileHandler@{File\-Handler}}
@@ -426,7 +475,7 @@ bool
 \end{DoxyReturn}
 
 
-Definition at line 1089 of file File\-Handler.\-class.\-php.
+Definition at line 1091 of file File\-Handler.\-class.\-php.
 
 \hypertarget{classFileHandler_a9c2502d10c34a3996f1d6927624a7824}{\index{File\-Handler@{File\-Handler}!make\-Dir@{make\-Dir}}
 \index{make\-Dir@{make\-Dir}!FileHandler@{File\-Handler}}
@@ -449,7 +498,7 @@ bool T\-R\-U\-E if success. It might return nothing when ftp is used and connect
 \end{DoxyReturn}
 
 
-Definition at line 280 of file File\-Handler.\-class.\-php.
+Definition at line 282 of file File\-Handler.\-class.\-php.
 
 \hypertarget{classFileHandler_acb0c863aeb4f29a5ee89eb8f47d576ca}{\index{File\-Handler@{File\-Handler}!move\-Dir@{move\-Dir}}
 \index{move\-Dir@{move\-Dir}!FileHandler@{File\-Handler}}
@@ -475,7 +524,7 @@ void
 \end{DoxyReturn}
 
 
-Definition at line 212 of file File\-Handler.\-class.\-php.
+Definition at line 214 of file File\-Handler.\-class.\-php.
 
 \hypertarget{classFileHandler_aa558697af5a900f8594e1013f8d8b2c8}{\index{File\-Handler@{File\-Handler}!move\-File@{move\-File}}
 \index{move\-File@{move\-File}!FileHandler@{File\-Handler}}
@@ -499,7 +548,7 @@ bool Returns T\-R\-U\-E on success or F\-A\-L\-S\-E on failure.
 \end{DoxyReturn}
 
 
-Definition at line 193 of file File\-Handler.\-class.\-php.
+Definition at line 195 of file File\-Handler.\-class.\-php.
 
 \hypertarget{classFileHandler_a690753d8cf8ff837f28a811cdfbfa069}{\index{File\-Handler@{File\-Handler}!open\-File@{open\-File}}
 \index{open\-File@{open\-File}!FileHandler@{File\-Handler}}
@@ -525,7 +574,7 @@ string & {\em \$mode} & File mode for fopen \\
 \end{DoxyReturn}
 
 
-Definition at line 1039 of file File\-Handler.\-class.\-php.
+Definition at line 1041 of file File\-Handler.\-class.\-php.
 
 \hypertarget{classFileHandler_a02d0cada88becf977968d961df2f864b}{\index{File\-Handler@{File\-Handler}!read\-Dir@{read\-Dir}}
 \index{read\-Dir@{read\-Dir}!FileHandler@{File\-Handler}}
@@ -557,7 +606,7 @@ string\mbox{[}\mbox{]} Array of the filenames in the path
 \end{DoxyReturn}
 
 
-Definition at line 228 of file File\-Handler.\-class.\-php.
+Definition at line 230 of file File\-Handler.\-class.\-php.
 
 \hypertarget{classFileHandler_ac0bd2431461ad2bc04c093bfbb826bea}{\index{File\-Handler@{File\-Handler}!read\-File@{read\-File}}
 \index{read\-File@{read\-File}!FileHandler@{File\-Handler}}
@@ -602,7 +651,7 @@ array ini array (if the target file does not exist, it returns F\-A\-L\-S\-E)
 \end{DoxyReturn}
 
 
-Definition at line 955 of file File\-Handler.\-class.\-php.
+Definition at line 957 of file File\-Handler.\-class.\-php.
 
 \hypertarget{classFileHandler_a538bfd50008250786985c7da4ff768f1}{\index{File\-Handler@{File\-Handler}!remove\-Blank\-Dir@{remove\-Blank\-Dir}}
 \index{remove\-Blank\-Dir@{remove\-Blank\-Dir}!FileHandler@{File\-Handler}}
@@ -623,7 +672,7 @@ void
 \end{DoxyReturn}
 
 
-Definition at line 402 of file File\-Handler.\-class.\-php.
+Definition at line 404 of file File\-Handler.\-class.\-php.
 
 \hypertarget{classFileHandler_a55015d030d3773d96281b0fa4bda986e}{\index{File\-Handler@{File\-Handler}!remove\-Dir@{remove\-Dir}}
 \index{remove\-Dir@{remove\-Dir}!FileHandler@{File\-Handler}}
@@ -644,7 +693,7 @@ void
 \end{DoxyReturn}
 
 
-Definition at line 361 of file File\-Handler.\-class.\-php.
+Definition at line 363 of file File\-Handler.\-class.\-php.
 
 \hypertarget{classFileHandler_aa5969f9fe0ce869fc736c4da384959e9}{\index{File\-Handler@{File\-Handler}!remove\-File@{remove\-File}}
 \index{remove\-File@{remove\-File}!FileHandler@{File\-Handler}}
@@ -665,7 +714,7 @@ bool Returns T\-R\-U\-E on success or F\-A\-L\-S\-E on failure.
 \end{DoxyReturn}
 
 
-Definition at line 167 of file File\-Handler.\-class.\-php.
+Definition at line 169 of file File\-Handler.\-class.\-php.
 
 \hypertarget{classFileHandler_a07839b4971e9ef40039d23ea65977d69}{\index{File\-Handler@{File\-Handler}!remove\-Files\-In\-Dir@{remove\-Files\-In\-Dir}}
 \index{remove\-Files\-In\-Dir@{remove\-Files\-In\-Dir}!FileHandler@{File\-Handler}}
@@ -688,7 +737,7 @@ void
 \end{DoxyReturn}
 
 
-Definition at line 436 of file File\-Handler.\-class.\-php.
+Definition at line 438 of file File\-Handler.\-class.\-php.
 
 \hypertarget{classFileHandler_abfeaad5fe3c937fdbfed73f2138b3d48}{\index{File\-Handler@{File\-Handler}!rename@{rename}}
 \index{rename@{rename}!FileHandler@{File\-Handler}}
@@ -714,7 +763,7 @@ bool Returns T\-R\-U\-E on success or F\-A\-L\-S\-E on failure.
 \end{DoxyReturn}
 
 
-Definition at line 181 of file File\-Handler.\-class.\-php.
+Definition at line 183 of file File\-Handler.\-class.\-php.
 
 \hypertarget{classFileHandler_a79dd068137470965b560f4d23d978e7d}{\index{File\-Handler@{File\-Handler}!return\-Bytes@{return\-Bytes}}
 \index{return\-Bytes@{return\-Bytes}!FileHandler@{File\-Handler}}
@@ -738,7 +787,7 @@ int converted size
 \end{DoxyReturn}
 
 
-Definition at line 702 of file File\-Handler.\-class.\-php.
+Definition at line 704 of file File\-Handler.\-class.\-php.
 
 \hypertarget{classFileHandler_ad90c10a81460f437bc68952427606155}{\index{File\-Handler@{File\-Handler}!write\-File@{write\-File}}
 \index{write\-File@{write\-File}!FileHandler@{File\-Handler}}
@@ -798,7 +847,7 @@ bool if array contains nothing it returns F\-A\-L\-S\-E, otherwise T\-R\-U\-E
 \end{DoxyReturn}
 
 
-Definition at line 986 of file File\-Handler.\-class.\-php.
+Definition at line 988 of file File\-Handler.\-class.\-php.
 
 
 

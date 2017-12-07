@@ -55,6 +55,7 @@ var searchData=
   ['cleanfavorite',['cleanFavorite',['../classadminAdminController.html#a774b7d9260572f5d6391adc624e6b810',1,'adminAdminController']]],
   ['cleardefaultmodule',['clearDefaultModule',['../classmoduleController.html#a2534f4a4108716e06d61eb984f700fdb',1,'moduleController']]],
   ['clearhtmlheader',['clearHtmlHeader',['../classContext.html#a5f0332b30b4ad65c0374ebd848c1dd98',1,'Context']]],
+  ['clearstatcache',['clearStatCache',['../classFileHandler.html#a7e4462e976955e4dad6093e5ee89f6e3',1,'FileHandler']]],
   ['clickcountexpression',['ClickCountExpression',['../classClickCountExpression.html#afc3cb0cccfbcad19bf50ef591d77318b',1,'ClickCountExpression']]],
   ['close',['close',['../classContext.html#ad59031e45d21ad27eb7d06e0ee76f008',1,'Context\close()'],['../classDB.html#a99ab404981e46ae5b48e11ce46290500',1,'DB\close()'],['../classFileObject.html#a14dcc624814271fb3f91a2a20a23ab24',1,'FileObject\close()'],['../classsessionController.html#af48b21176f7a2d12c859bb8421e04f82',1,'sessionController\close()']]],
   ['closefile',['closeFile',['../classextract.html#a6f2e15680bdecf195711ac7e6663be6f',1,'extract']]],

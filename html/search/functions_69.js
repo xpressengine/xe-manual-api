@@ -67,6 +67,7 @@ var searchData=
   ['installdownloadedmodule',['installDownloadedModule',['../classinstallController.html#ad7919cd4745794ee4f57db53e8105190',1,'installController']]],
   ['installmodule',['installModule',['../classModuleInstaller.html#a07eb4b03dfd704124e05142cef5c9e82',1,'ModuleInstaller\installModule()'],['../classinstallController.html#a97c582da1e115f0db5256f02d22efc88',1,'installController\installModule()']]],
   ['invalidategroupkey',['invalidateGroupKey',['../classCacheHandler.html#a43118f91508ad5695a13f7a332cc9389',1,'CacheHandler']]],
+  ['invalidateopcache',['invalidateOpcache',['../classFileHandler.html#afd6bbc5690c4bd11c11e6e0ad26c6d48',1,'FileHandler']]],
   ['is',['IS',['../classintegration__searchView.html#a271296176ae955cb88c55c5eac511a23',1,'integration_searchView']]],
   ['isabsolute',['isAbsolute',['../classNet__URL2.html#adfb0cbaed0f947990271d8df410854e2',1,'Net_URL2']]],
   ['isaccessible',['isAccessible',['../classcommentItem.html#a5a175cf38e7a6dd7b1b771b198388e25',1,'commentItem\isAccessible()'],['../classdocumentItem.html#a560fb40cd322ef5b8b3aa7d298730fcd',1,'documentItem\isAccessible()']]],

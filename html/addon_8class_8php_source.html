@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.8.46</span>
+   &#160;<span id="projectnumber">1.9.0</span>
    </div>
   </td>
  </tr>
@@ -116,93 +116,94 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a> = <a class="code" href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a>(<span class="stringliteral">&#39;module&#39;</span>);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <a class="code" href="ko_8install_8php.html#a9fd93f6625cec4fd65bf6f412e28c015">$oModuleController</a> = <a class="code" href="func_8inc_8php.html#aa08f01e3bf130d770b373ca8493e3e9b">getController</a>(<span class="stringliteral">&#39;module&#39;</span>);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        $version_update_id = implode(<span class="charliteral">&#39;.&#39;</span>, array(__CLASS__, <a class="code" href="config_8inc_8php.html#afceaaec30d0e5b6a78d0ae28bcbfc8f3">__XE_VERSION__</a>, <span class="stringliteral">&#39;updated&#39;</span>));</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <span class="keywordflow">if</span>(!$oDB-&gt;isColumnExists(<span class="stringliteral">&quot;addons&quot;</span>, <span class="stringliteral">&quot;is_used_m&quot;</span>))</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                <span class="keywordflow">return</span> TRUE;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            }</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <span class="keywordflow">if</span>(!$oDB-&gt;isColumnExists(<span class="stringliteral">&quot;addons_site&quot;</span>, <span class="stringliteral">&quot;is_used_m&quot;</span>))</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                <span class="keywordflow">return</span> TRUE;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            }</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <span class="comment">// 2011. 7. 29. add is_fixed column</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <span class="keywordflow">if</span>(!$oDB-&gt;isColumnExists(<span class="stringliteral">&#39;addons&#39;</span>, <span class="stringliteral">&#39;is_fixed&#39;</span>))</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                <span class="keywordflow">return</span> TRUE;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            }</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <a class="code" href="ko_8install_8php.html#a9fd93f6625cec4fd65bf6f412e28c015">$oModuleController</a>-&gt;insertUpdatedLog($version_update_id);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        }</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">return</span> FALSE;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classaddon.html#af26212943701043993c73a5e81e93ca1">   67</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classaddon.html#af26212943701043993c73a5e81e93ca1">moduleUpdate</a>()</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    {</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        $oDB = <a class="code" href="classDB.html#a36df3da4b06cd9d45feccb6b82e612c8">DB::getInstance</a>();</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <a class="code" href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a> = <a class="code" href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a>(<span class="stringliteral">&#39;module&#39;</span>);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <a class="code" href="ko_8install_8php.html#a9fd93f6625cec4fd65bf6f412e28c015">$oModuleController</a> = <a class="code" href="func_8inc_8php.html#aa08f01e3bf130d770b373ca8493e3e9b">getController</a>(<span class="stringliteral">&#39;module&#39;</span>);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        $version_update_id = implode(<span class="charliteral">&#39;.&#39;</span>, array(__CLASS__, <a class="code" href="config_8inc_8php.html#afceaaec30d0e5b6a78d0ae28bcbfc8f3">__XE_VERSION__</a>, <span class="stringliteral">&#39;updated&#39;</span>));</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a>-&gt;needUpdate($version_update_id))</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            <span class="keywordflow">if</span>(!$oDB-&gt;isColumnExists(<span class="stringliteral">&quot;addons&quot;</span>, <span class="stringliteral">&quot;is_used_m&quot;</span>))</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            {</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                $oDB-&gt;addColumn(<span class="stringliteral">&quot;addons&quot;</span>, <span class="stringliteral">&quot;is_used_m&quot;</span>, <span class="stringliteral">&quot;char&quot;</span>, 1, <span class="stringliteral">&quot;N&quot;</span>, TRUE);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            }</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <span class="keywordflow">if</span>(!$oDB-&gt;isColumnExists(<span class="stringliteral">&quot;addons_site&quot;</span>, <span class="stringliteral">&quot;is_used_m&quot;</span>))</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            {</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                $oDB-&gt;addColumn(<span class="stringliteral">&quot;addons_site&quot;</span>, <span class="stringliteral">&quot;is_used_m&quot;</span>, <span class="stringliteral">&quot;char&quot;</span>, 1, <span class="stringliteral">&quot;N&quot;</span>, TRUE);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            }</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <span class="comment">// 2011. 7. 29. add is_fixed column</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keywordflow">if</span>(!$oDB-&gt;isColumnExists(<span class="stringliteral">&#39;addons&#39;</span>, <span class="stringliteral">&#39;is_fixed&#39;</span>))</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            {</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                $oDB-&gt;addColumn(<span class="stringliteral">&#39;addons&#39;</span>, <span class="stringliteral">&#39;is_fixed&#39;</span>, <span class="stringliteral">&#39;char&#39;</span>, 1, <span class="charliteral">&#39;N&#39;</span>, TRUE);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                <span class="comment">// move addon info to addon_site table</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = <a class="code" href="func_8inc_8php.html#ace5cc06ee6c5d655a1bdcc15846a779e">executeQueryArray</a>(<span class="stringliteral">&#39;addon.getAddons&#39;</span>);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                <span class="keywordflow">if</span>(<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;data)</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                {</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                    <span class="keywordflow">foreach</span>(<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;data as $row)</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                    {</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a> = <span class="keyword">new</span> stdClass();</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;site_srl = 0;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;addon = $row-&gt;addon;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;is_used = $row-&gt;is_used;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;is_used_m = $row-&gt;is_used_m;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;extra_vars = $row-&gt;extra_vars;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                        <a class="code" href="func_8inc_8php.html#a418bc23855eebc0d90190dd625ac4474">executeQuery</a>(<span class="stringliteral">&#39;addon.insertSiteAddon&#39;</span>, <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>);</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                    }</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                }</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            }</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            <a class="code" href="ko_8install_8php.html#a9fd93f6625cec4fd65bf6f412e28c015">$oModuleController</a>-&gt;insertUpdatedLog($version_update_id);</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        }</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>(0, <span class="stringliteral">&#39;success_updated&#39;</span>);</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    }</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
-<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="classaddon.html#ad2d70e001c5ec84c799e31c4fa761d9c">  117</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classaddon.html#ad2d70e001c5ec84c799e31c4fa761d9c">recompileCache</a>()</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    {</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    }</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;}</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="comment">/* End of file addon.class.php */</span></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="comment">/* Location: ./modules/addon/addon.class.php */</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a>-&gt;needUpdate($version_update_id))</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <span class="keywordflow">if</span>(!$oDB-&gt;isColumnExists(<span class="stringliteral">&quot;addons&quot;</span>, <span class="stringliteral">&quot;is_used_m&quot;</span>))</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                <span class="keywordflow">return</span> TRUE;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <span class="keywordflow">if</span>(!$oDB-&gt;isColumnExists(<span class="stringliteral">&quot;addons_site&quot;</span>, <span class="stringliteral">&quot;is_used_m&quot;</span>))</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                <span class="keywordflow">return</span> TRUE;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <span class="comment">// 2011. 7. 29. add is_fixed column</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <span class="keywordflow">if</span>(!$oDB-&gt;isColumnExists(<span class="stringliteral">&#39;addons&#39;</span>, <span class="stringliteral">&#39;is_fixed&#39;</span>))</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                <span class="keywordflow">return</span> TRUE;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <a class="code" href="ko_8install_8php.html#a9fd93f6625cec4fd65bf6f412e28c015">$oModuleController</a>-&gt;insertUpdatedLog($version_update_id);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">return</span> FALSE;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classaddon.html#af26212943701043993c73a5e81e93ca1">   68</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classaddon.html#af26212943701043993c73a5e81e93ca1">moduleUpdate</a>()</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        $oDB = <a class="code" href="classDB.html#a36df3da4b06cd9d45feccb6b82e612c8">DB::getInstance</a>();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <a class="code" href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a> = <a class="code" href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a>(<span class="stringliteral">&#39;module&#39;</span>);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <a class="code" href="ko_8install_8php.html#a9fd93f6625cec4fd65bf6f412e28c015">$oModuleController</a> = <a class="code" href="func_8inc_8php.html#aa08f01e3bf130d770b373ca8493e3e9b">getController</a>(<span class="stringliteral">&#39;module&#39;</span>);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        $version_update_id = implode(<span class="charliteral">&#39;.&#39;</span>, array(__CLASS__, <a class="code" href="config_8inc_8php.html#afceaaec30d0e5b6a78d0ae28bcbfc8f3">__XE_VERSION__</a>, <span class="stringliteral">&#39;updated&#39;</span>));</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a>-&gt;needUpdate($version_update_id))</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <span class="keywordflow">if</span>(!$oDB-&gt;isColumnExists(<span class="stringliteral">&quot;addons&quot;</span>, <span class="stringliteral">&quot;is_used_m&quot;</span>))</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                $oDB-&gt;addColumn(<span class="stringliteral">&quot;addons&quot;</span>, <span class="stringliteral">&quot;is_used_m&quot;</span>, <span class="stringliteral">&quot;char&quot;</span>, 1, <span class="stringliteral">&quot;N&quot;</span>, TRUE);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            }</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <span class="keywordflow">if</span>(!$oDB-&gt;isColumnExists(<span class="stringliteral">&quot;addons_site&quot;</span>, <span class="stringliteral">&quot;is_used_m&quot;</span>))</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                $oDB-&gt;addColumn(<span class="stringliteral">&quot;addons_site&quot;</span>, <span class="stringliteral">&quot;is_used_m&quot;</span>, <span class="stringliteral">&quot;char&quot;</span>, 1, <span class="stringliteral">&quot;N&quot;</span>, TRUE);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="comment">// 2011. 7. 29. add is_fixed column</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            <span class="keywordflow">if</span>(!$oDB-&gt;isColumnExists(<span class="stringliteral">&#39;addons&#39;</span>, <span class="stringliteral">&#39;is_fixed&#39;</span>))</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                $oDB-&gt;addColumn(<span class="stringliteral">&#39;addons&#39;</span>, <span class="stringliteral">&#39;is_fixed&#39;</span>, <span class="stringliteral">&#39;char&#39;</span>, 1, <span class="charliteral">&#39;N&#39;</span>, TRUE);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                <span class="comment">// move addon info to addon_site table</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = <a class="code" href="func_8inc_8php.html#ace5cc06ee6c5d655a1bdcc15846a779e">executeQueryArray</a>(<span class="stringliteral">&#39;addon.getAddons&#39;</span>);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                <span class="keywordflow">if</span>(<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;data)</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                    <span class="keywordflow">foreach</span>(<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;data as $row)</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                    {</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a> = <span class="keyword">new</span> stdClass();</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;site_srl = 0;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;addon = $row-&gt;addon;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;is_used = $row-&gt;is_used;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;is_used_m = $row-&gt;is_used_m;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                        <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>-&gt;extra_vars = $row-&gt;extra_vars;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                        <a class="code" href="func_8inc_8php.html#a418bc23855eebc0d90190dd625ac4474">executeQuery</a>(<span class="stringliteral">&#39;addon.insertSiteAddon&#39;</span>, <a class="code" href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a>);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                    }</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                }</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            }</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            <a class="code" href="ko_8install_8php.html#a9fd93f6625cec4fd65bf6f412e28c015">$oModuleController</a>-&gt;insertUpdatedLog($version_update_id);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        }</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>(0, <span class="stringliteral">&#39;success_updated&#39;</span>);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    }</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="classaddon.html#ad2d70e001c5ec84c799e31c4fa761d9c">  118</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classaddon.html#ad2d70e001c5ec84c799e31c4fa761d9c">recompileCache</a>()</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    {</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    }</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;}</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="comment">/* End of file addon.class.php */</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="comment">/* Location: ./modules/addon/addon.class.php */</span></div>
 <div class="ttc" id="ko_8install_8php_html_a8d7a87df524e7d6938f66f8e284cdd1e"><div class="ttname"><a href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a></div><div class="ttdeci">$oModuleModel</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00236">ko.install.php:236</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_aa08f01e3bf130d770b373ca8493e3e9b"><div class="ttname"><a href="func_8inc_8php.html#aa08f01e3bf130d770b373ca8493e3e9b">getController</a></div><div class="ttdeci">getController($module_name)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00090">func.inc.php:90</a></div></div>
 <div class="ttc" id="config_8inc_8php_html_afceaaec30d0e5b6a78d0ae28bcbfc8f3"><div class="ttname"><a href="config_8inc_8php.html#afceaaec30d0e5b6a78d0ae28bcbfc8f3">__XE_VERSION__</a></div><div class="ttdeci">const __XE_VERSION__</div><div class="ttdef"><b>Definition:</b> <a href="config_8inc_8php_source.html#l00032">config.inc.php:32</a></div></div>
 <div class="ttc" id="ko_8install_8php_html_a73004ce9cd673c1bfafd1dc351134797"><div class="ttname"><a href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a></div><div class="ttdeci">$output</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00193">ko.install.php:193</a></div></div>
 <div class="ttc" id="classaddon_html"><div class="ttname"><a href="classaddon.html">addon</a></div><div class="ttdef"><b>Definition:</b> <a href="addon_8class_8php_source.html#l00008">addon.class.php:8</a></div></div>
 <div class="ttc" id="classBaseObject_html"><div class="ttname"><a href="classBaseObject.html">BaseObject</a></div><div class="ttdef"><b>Definition:</b> <a href="BaseObject_8class_8php_source.html#l00009">BaseObject.class.php:9</a></div></div>
-<div class="ttc" id="classaddon_html_af26212943701043993c73a5e81e93ca1"><div class="ttname"><a href="classaddon.html#af26212943701043993c73a5e81e93ca1">addon\moduleUpdate</a></div><div class="ttdeci">moduleUpdate()</div><div class="ttdef"><b>Definition:</b> <a href="addon_8class_8php_source.html#l00067">addon.class.php:67</a></div></div>
+<div class="ttc" id="classaddon_html_af26212943701043993c73a5e81e93ca1"><div class="ttname"><a href="classaddon.html#af26212943701043993c73a5e81e93ca1">addon\moduleUpdate</a></div><div class="ttdeci">moduleUpdate()</div><div class="ttdef"><b>Definition:</b> <a href="addon_8class_8php_source.html#l00068">addon.class.php:68</a></div></div>
 <div class="ttc" id="ko_8install_8php_html_a67e94494731d99ed23b123e95175bc10"><div class="ttname"><a href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a></div><div class="ttdeci">$args</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00185">ko.install.php:185</a></div></div>
 <div class="ttc" id="classaddon_html_a7ac2ab52a9e9cdc5c890b38a958b74ab"><div class="ttname"><a href="classaddon.html#a7ac2ab52a9e9cdc5c890b38a958b74ab">addon\moduleInstall</a></div><div class="ttdeci">moduleInstall()</div><div class="ttdef"><b>Definition:</b> <a href="addon_8class_8php_source.html#l00016">addon.class.php:16</a></div></div>
 <div class="ttc" id="classDB_html_a36df3da4b06cd9d45feccb6b82e612c8"><div class="ttname"><a href="classDB.html#a36df3da4b06cd9d45feccb6b82e612c8">DB\getInstance</a></div><div class="ttdeci">getInstance($db_type=NULL)</div><div class="ttdef"><b>Definition:</b> <a href="DB_8class_8php_source.html#l00142">DB.class.php:142</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_aecdfcc5332bcf22df01fc21a03b64435"><div class="ttname"><a href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a></div><div class="ttdeci">getModel($module_name)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00145">func.inc.php:145</a></div></div>
-<div class="ttc" id="classaddon_html_ad2d70e001c5ec84c799e31c4fa761d9c"><div class="ttname"><a href="classaddon.html#ad2d70e001c5ec84c799e31c4fa761d9c">addon\recompileCache</a></div><div class="ttdeci">recompileCache()</div><div class="ttdef"><b>Definition:</b> <a href="addon_8class_8php_source.html#l00117">addon.class.php:117</a></div></div>
+<div class="ttc" id="classaddon_html_ad2d70e001c5ec84c799e31c4fa761d9c"><div class="ttname"><a href="classaddon.html#ad2d70e001c5ec84c799e31c4fa761d9c">addon\recompileCache</a></div><div class="ttdeci">recompileCache()</div><div class="ttdef"><b>Definition:</b> <a href="addon_8class_8php_source.html#l00118">addon.class.php:118</a></div></div>
 <div class="ttc" id="classModuleObject_html"><div class="ttname"><a href="classModuleObject.html">ModuleObject</a></div><div class="ttdef"><b>Definition:</b> <a href="ModuleObject_8class_8php_source.html#l00009">ModuleObject.class.php:9</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_ace5cc06ee6c5d655a1bdcc15846a779e"><div class="ttname"><a href="func_8inc_8php.html#ace5cc06ee6c5d655a1bdcc15846a779e">executeQueryArray</a></div><div class="ttdeci">executeQueryArray($query_id, $args=NULL, $arg_columns=NULL)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00219">func.inc.php:219</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_a2f7ca88a5226536aca3b2f5682bd7b2d"><div class="ttname"><a href="func_8inc_8php.html#a2f7ca88a5226536aca3b2f5682bd7b2d">getAdminController</a></div><div class="ttdeci">getAdminController($module_name)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00101">func.inc.php:101</a></div></div>
@@ -212,7 +213,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Nov 30 2017 13:09:59 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 7 2017 12:28:14 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.8.46</span>
+   &#160;<span id="projectnumber">1.9.0</span>
    </div>
   </td>
  </tr>
@@ -352,11 +352,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;</div>
 <div class="line"><a name="l00277"></a><span class="lineno"><a class="line" href="classEmbedFilter.html#af8a43e4bc0161225381536c133792463">  277</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classEmbedFilter.html#af8a43e4bc0161225381536c133792463">getInstance</a>()</div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    {</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        <span class="keywordflow">if</span>(!isset(<a class="code" href="config_8inc_8php.html#a2843c2516649b5d9554f09b06b7b810a">$GLOBALS</a>[<span class="stringliteral">&#39;__EMBEDFILTER_INSTANCE__&#39;</span>]))</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        <span class="keywordflow">if</span>(!isset(<a class="code" href="config_8inc_8php.html#a38f1c3c542a43174a268208f45dca44e">$GLOBALS</a>[<span class="stringliteral">&#39;__EMBEDFILTER_INSTANCE__&#39;</span>]))</div>
 <div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;        {</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;            <a class="code" href="config_8inc_8php.html#a2843c2516649b5d9554f09b06b7b810a">$GLOBALS</a>[<span class="stringliteral">&#39;__EMBEDFILTER_INSTANCE__&#39;</span>] = <span class="keyword">new</span> <a class="code" href="classEmbedFilter.html#a62571fb9caf83a1ce168e20887709309">EmbedFilter</a>();</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;            <a class="code" href="config_8inc_8php.html#a38f1c3c542a43174a268208f45dca44e">$GLOBALS</a>[<span class="stringliteral">&#39;__EMBEDFILTER_INSTANCE__&#39;</span>] = <span class="keyword">new</span> <a class="code" href="classEmbedFilter.html#a62571fb9caf83a1ce168e20887709309">EmbedFilter</a>();</div>
 <div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;        }</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="config_8inc_8php.html#a2843c2516649b5d9554f09b06b7b810a">$GLOBALS</a>[<span class="stringliteral">&#39;__EMBEDFILTER_INSTANCE__&#39;</span>];</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="config_8inc_8php.html#a38f1c3c542a43174a268208f45dca44e">$GLOBALS</a>[<span class="stringliteral">&#39;__EMBEDFILTER_INSTANCE__&#39;</span>];</div>
 <div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    }</div>
 <div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;</div>
 <div class="line"><a name="l00286"></a><span class="lineno"><a class="line" href="classEmbedFilter.html#a7e931adc623954f9a372b4ea4976f44f">  286</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="classEmbedFilter.html#a7e931adc623954f9a372b4ea4976f44f">getWhiteUrlList</a>()</div>
@@ -747,9 +747,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classFileHandler_html_ad90c10a81460f437bc68952427606155"><div class="ttname"><a href="classFileHandler.html#ad90c10a81460f437bc68952427606155">FileHandler\writeFile</a></div><div class="ttdeci">writeFile($filename, $buff, $mode=&quot;w&quot;)</div><div class="ttdef"><b>Definition:</b> <a href="FileHandler_8class_8php_source.html#l00145">FileHandler.class.php:145</a></div></div>
 <div class="ttc" id="classEmbedFilter_html_a3c703c014813fb916c72d95e964a3e0d"><div class="ttname"><a href="classEmbedFilter.html#a3c703c014813fb916c72d95e964a3e0d">EmbedFilter\checkObjectTag</a></div><div class="ttdeci">checkObjectTag(&amp;$content)</div><div class="ttdef"><b>Definition:</b> <a href="EmbedFilter_8class_8php_source.html#l00315">EmbedFilter.class.php:315</a></div></div>
 <div class="ttc" id="classEmbedFilter_html_a6b0bba8c1ef91ae9afe7f26675216cb3"><div class="ttname"><a href="classEmbedFilter.html#a6b0bba8c1ef91ae9afe7f26675216cb3">EmbedFilter\checkEmbedTag</a></div><div class="ttdeci">checkEmbedTag(&amp;$content)</div><div class="ttdef"><b>Definition:</b> <a href="EmbedFilter_8class_8php_source.html#l00363">EmbedFilter.class.php:363</a></div></div>
+<div class="ttc" id="config_8inc_8php_html_a38f1c3c542a43174a268208f45dca44e"><div class="ttname"><a href="config_8inc_8php.html#a38f1c3c542a43174a268208f45dca44e">$GLOBALS</a></div><div class="ttdeci">if(file_exists(_XE_PATH_. 'config/config.user.inc.php')) if(!defined('__DEBUG__')) if(!defined('__DEBUG_OUTPUT__')) if(!defined('__DEBUG_PROTECT__')) if(!defined('__DEBUG_PROTECT_IP__')) if(!defined('__DEBUG_DB_OUTPUT__')) if(!defined('__LOG_SLOW_QUERY__')) if(!defined('__LOG_SLOW_TRIGGER__')) if(!defined('__LOG_SLOW_ADDON__')) if(!defined('__LOG_SLOW_WIDGET__')) if(!defined('__DEBUG_QUERY__')) if(!defined('__OB_GZHANDLER_ENABLE__')) if(!defined('__ENABLE_PHPUNIT_TEST__')) if(!defined('__PROXY_SERVER__')) if(!defined('__ERROR_LOG__')) if(!defined('__DISABLE_DEFAULT_CSS__')) if((__DEBUG_OUTPUT__==2)&amp;&amp;version_compare(PHP_VERSION, '6.0.0')===-1) if(version_compare(PHP_VERSION, '5.3.0') &gt;=0) $GLOBALS['__xe_autoload_file_map']</div><div class="ttdef"><b>Definition:</b> <a href="config_8inc_8php_source.html#l00310">config.inc.php:310</a></div></div>
 <div class="ttc" id="classEmbedFilter_html_ad1a091dd6db8753f50b269bac16e2868"><div class="ttname"><a href="classEmbedFilter.html#ad1a091dd6db8753f50b269bac16e2868">EmbedFilter\$whiteIframeUrlList</a></div><div class="ttdeci">$whiteIframeUrlList</div><div class="ttdef"><b>Definition:</b> <a href="EmbedFilter_8class_8php_source.html#l00023">EmbedFilter.class.php:23</a></div></div>
 <div class="ttc" id="classEmbedFilter_html_ae4ef00ed26254ca247a83d91b021a928"><div class="ttname"><a href="classEmbedFilter.html#ae4ef00ed26254ca247a83d91b021a928">EmbedFilter\$extList</a></div><div class="ttdeci">$extList</div><div class="ttdef"><b>Definition:</b> <a href="EmbedFilter_8class_8php_source.html#l00203">EmbedFilter.class.php:203</a></div></div>
-<div class="ttc" id="config_8inc_8php_html_a2843c2516649b5d9554f09b06b7b810a"><div class="ttname"><a href="config_8inc_8php.html#a2843c2516649b5d9554f09b06b7b810a">$GLOBALS</a></div><div class="ttdeci">if(__DEBUG__) if(__DEBUG__) $GLOBALS['__xe_autoload_file_map']</div><div class="ttdef"><b>Definition:</b> <a href="config_8inc_8php_source.html#l00322">config.inc.php:322</a></div></div>
 <div class="ttc" id="classEmbedFilter_html_a62571fb9caf83a1ce168e20887709309"><div class="ttname"><a href="classEmbedFilter.html#a62571fb9caf83a1ce168e20887709309">EmbedFilter\EmbedFilter</a></div><div class="ttdeci">EmbedFilter()</div><div class="ttdef"><b>Definition:</b> <a href="EmbedFilter_8class_8php_source.html#l00263">EmbedFilter.class.php:263</a></div></div>
 <div class="ttc" id="classContext_html_a54dd61c7b035a12697db8ca3f1c6849c"><div class="ttname"><a href="classContext.html#a54dd61c7b035a12697db8ca3f1c6849c">Context\getDBInfo</a></div><div class="ttdeci">getDBInfo()</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l00551">Context.class.php:551</a></div></div>
 <div class="ttc" id="classEmbedFilter_html_ab67db1799d818d46e47006592b4e7695"><div class="ttname"><a href="classEmbedFilter.html#ab67db1799d818d46e47006592b4e7695">EmbedFilter\getWhiteIframeUrlList</a></div><div class="ttdeci">getWhiteIframeUrlList()</div><div class="ttdef"><b>Definition:</b> <a href="EmbedFilter_8class_8php_source.html#l00291">EmbedFilter.class.php:291</a></div></div>
@@ -776,7 +776,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Nov 30 2017 13:09:56 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 7 2017 12:28:11 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>
