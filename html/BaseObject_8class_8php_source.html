@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.9.0</span>
+   &#160;<span id="projectnumber">1.9.1</span>
    </div>
   </td>
  </tr>
@@ -212,10 +212,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    {</div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        <span class="keywordflow">return</span> $this-&gt;toBool();</div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    }</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;}</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;<span class="comment">/* End of file BaseObject.class.php */</span></div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;<span class="comment">/* Location: ./classes/object/BaseObject.class.php */</span></div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;}</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;<span class="keywordflow">if</span>(version_compare(PHP_VERSION, <span class="stringliteral">&#39;7.2&#39;</span>, <span class="charliteral">&#39;&lt;&#39;</span>) &amp;&amp; !class_exists(<span class="stringliteral">&#39;Object&#39;</span>, <span class="keyword">false</span>))</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;{</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    class_alias(<span class="stringliteral">&#39;BaseObject&#39;</span>, <span class="stringliteral">&#39;Object&#39;</span>);</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;}</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;<span class="comment">/* End of file BaseObject.class.php */</span></div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;<span class="comment">/* Location: ./classes/object/BaseObject.class.php */</span></div>
 <div class="ttc" id="classBaseObject_html_aff5d8051f1103233227d961e7afbdf86"><div class="ttname"><a href="classBaseObject.html#aff5d8051f1103233227d961e7afbdf86">BaseObject\adds</a></div><div class="ttdeci">adds($object)</div><div class="ttdef"><b>Definition:</b> <a href="BaseObject_8class_8php_source.html#l00139">BaseObject.class.php:139</a></div></div>
 <div class="ttc" id="ko_8install_8php_html_a73004ce9cd673c1bfafd1dc351134797"><div class="ttname"><a href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a></div><div class="ttdeci">$output</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00193">ko.install.php:193</a></div></div>
 <div class="ttc" id="classBaseObject_html_ac53ea9b2ac26d103f2b0217e9496a93d"><div class="ttname"><a href="classBaseObject.html#ac53ea9b2ac26d103f2b0217e9496a93d">BaseObject\add</a></div><div class="ttdeci">add($key, $val)</div><div class="ttdef"><b>Definition:</b> <a href="BaseObject_8class_8php_source.html#l00128">BaseObject.class.php:128</a></div></div>
@@ -242,7 +246,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 7 2017 12:28:11 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 7 2017 14:32:47 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.9.0</span>
+   &#160;<span id="projectnumber">1.9.1</span>
    </div>
   </td>
  </tr>
@@ -1801,13 +1801,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01961"></a><span class="lineno"> 1961</span>&#160;<span class="stringliteral">            // Get data of the child nodes</span></div>
 <div class="line"><a name="l01962"></a><span class="lineno"> 1962</span>&#160;<span class="stringliteral">            if($category_srl &amp;&amp; $tree[$category_srl]) $child_buff = $this-&gt;getXmlTree($tree[$category_srl], $tree, $site_srl, $xml_header_buff);</span></div>
 <div class="line"><a name="l01963"></a><span class="lineno"> 1963</span>&#160;<span class="stringliteral">            // List variables</span></div>
-<div class="line"><a name="l01964"></a><span class="lineno"> 1964</span>&#160;<span class="stringliteral">            $expand = $node-&gt;expand;</span></div>
-<div class="line"><a name="l01965"></a><span class="lineno"> 1965</span>&#160;<span class="stringliteral">            $group_srls = $node-&gt;group_srls;</span></div>
-<div class="line"><a name="l01966"></a><span class="lineno"> 1966</span>&#160;<span class="stringliteral">            $mid = $node-&gt;mid;</span></div>
-<div class="line"><a name="l01967"></a><span class="lineno"> 1967</span>&#160;<span class="stringliteral">            $module_srl = $node-&gt;module_srl;</span></div>
-<div class="line"><a name="l01968"></a><span class="lineno"> 1968</span>&#160;<span class="stringliteral">            $parent_srl = $node-&gt;parent_srl;</span></div>
-<div class="line"><a name="l01969"></a><span class="lineno"> 1969</span>&#160;<span class="stringliteral">            $color = $node-&gt;color;</span></div>
-<div class="line"><a name="l01970"></a><span class="lineno"> 1970</span>&#160;<span class="stringliteral">            $description = $node-&gt;description;</span></div>
+<div class="line"><a name="l01964"></a><span class="lineno"> 1964</span>&#160;<span class="stringliteral">            $expand = ($node-&gt;expand) ? $node-&gt;expand : &#39;</span>N<span class="stringliteral">&#39;;</span></div>
+<div class="line"><a name="l01965"></a><span class="lineno"> 1965</span>&#160;<span class="stringliteral">            $group_srls = ($node-&gt;group_srls) ? $node-&gt;group_srls : &#39;</span><span class="stringliteral">&#39;;</span></div>
+<div class="line"><a name="l01966"></a><span class="lineno"> 1966</span>&#160;<span class="stringliteral">            $mid = ($node-&gt;mid) ? $node-&gt;mid : &#39;</span><span class="stringliteral">&#39;;</span></div>
+<div class="line"><a name="l01967"></a><span class="lineno"> 1967</span>&#160;<span class="stringliteral">            $module_srl = ($node-&gt;module_srl) ? $node-&gt;parent_srl : &#39;</span><span class="stringliteral">&#39;;</span></div>
+<div class="line"><a name="l01968"></a><span class="lineno"> 1968</span>&#160;<span class="stringliteral">            $parent_srl = ($node-&gt;parent_srl) ? $node-&gt;parent_srl : &#39;</span><span class="stringliteral">&#39;;</span></div>
+<div class="line"><a name="l01969"></a><span class="lineno"> 1969</span>&#160;<span class="stringliteral">            $color = ($node-&gt;color) ? $node-&gt;color : &#39;</span><span class="stringliteral">&#39;;</span></div>
+<div class="line"><a name="l01970"></a><span class="lineno"> 1970</span>&#160;<span class="stringliteral">            $description = ($node-&gt;description) ? $node-&gt;description : &#39;</span><span class="stringliteral">&#39;;</span></div>
 <div class="line"><a name="l01971"></a><span class="lineno"> 1971</span>&#160;<span class="stringliteral">            // If node-&gt;group_srls value exists</span></div>
 <div class="line"><a name="l01972"></a><span class="lineno"> 1972</span>&#160;<span class="stringliteral">            if($group_srls) $group_check_code = sprintf(&#39;</span>($is_admin==<span class="keyword">true</span>||(is_array($group_srls)&amp;&amp;count(array_intersect($group_srls, array(%s)))))<span class="stringliteral">&#39;,$group_srls);</span></div>
 <div class="line"><a name="l01973"></a><span class="lineno"> 1973</span>&#160;<span class="stringliteral">            else $group_check_code = &quot;true&quot;;</span></div>
@@ -2446,7 +2446,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 7 2017 12:28:14 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 7 2017 14:32:50 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>
