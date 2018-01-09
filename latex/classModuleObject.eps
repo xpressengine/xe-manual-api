@@ -5,7 +5,7 @@
 %%For: 
 %Magnification: 1.00
 %%Orientation: Portrait
-%%BoundingBox: 0 0 500 2400.000000
+%%BoundingBox: 0 0 500 2640.000000
 %%Pages: 0
 %%BeginSetup
 %%EndSetup
@@ -19,12 +19,12 @@
 /marginwidth 10 def
 /distx 20 def
 /disty 40 def
-/boundaspect 0.208333 def  % aspect ratio of the BoundingBox (width/height)
+/boundaspect 0.189394 def  % aspect ratio of the BoundingBox (width/height)
 /boundx 500 def
 /boundy boundx boundaspect div def
 /xspacing 0 def
 /yspacing 0 def
-/rows 30 def
+/rows 33 def
 /cols 2 def
 /scalefactor 0 def
 /boxfont /Times-Roman findfont fontheight scalefont def
@@ -189,6 +189,7 @@ boxfont setfont
 (importer) cw
 (install) cw
 (integration_search) cw
+(krzip) cw
 (layout) cw
 (member) cw
 (menu) cw
@@ -198,8 +199,10 @@ boxfont setfont
 (point) cw
 (poll) cw
 (rss) cw
+(seo) cw
 (session) cw
 (spamfilter) cw
+(syndication) cw
 (tag) cw
 (trash) cw
 (widget) cw
@@ -214,57 +217,63 @@ boundx scalefactor div boundy scalefactor div scale
 
 % ----- classes -----
 
- (ModuleObject) 0.000000 28.000000 box
- (BaseObject) 0.000000 29.000000 box
- (addon) 1.000000 27.000000 box
+ (ModuleObject) 0.000000 31.000000 box
+ (BaseObject) 0.000000 32.000000 box
+ (addon) 1.000000 30.000000 box
+1.000000 30.000000 mark
+ (admin) 1.000000 29.000000 box
+1.000000 29.000000 mark
+ (adminlogging) 1.000000 28.000000 box
+1.000000 28.000000 mark
+ (autoinstall) 1.000000 27.000000 box
 1.000000 27.000000 mark
- (admin) 1.000000 26.000000 box
+ (board) 1.000000 26.000000 box
 1.000000 26.000000 mark
- (adminlogging) 1.000000 25.000000 box
+ (comment) 1.000000 25.000000 box
 1.000000 25.000000 mark
- (autoinstall) 1.000000 24.000000 box
+ (communication) 1.000000 24.000000 box
 1.000000 24.000000 mark
- (board) 1.000000 23.000000 box
+ (counter) 1.000000 23.000000 box
 1.000000 23.000000 mark
- (comment) 1.000000 22.000000 box
+ (document) 1.000000 22.000000 box
 1.000000 22.000000 mark
- (communication) 1.000000 21.000000 box
+ (editor) 1.000000 21.000000 box
 1.000000 21.000000 mark
- (counter) 1.000000 20.000000 box
+ (file) 1.000000 20.000000 box
 1.000000 20.000000 mark
- (document) 1.000000 19.000000 box
+ (importer) 1.000000 19.000000 box
 1.000000 19.000000 mark
- (editor) 1.000000 18.000000 box
+ (install) 1.000000 18.000000 box
 1.000000 18.000000 mark
- (file) 1.000000 17.000000 box
+ (integration_search) 1.000000 17.000000 box
 1.000000 17.000000 mark
- (importer) 1.000000 16.000000 box
+ (krzip) 1.000000 16.000000 box
 1.000000 16.000000 mark
- (install) 1.000000 15.000000 box
+ (layout) 1.000000 15.000000 box
 1.000000 15.000000 mark
- (integration_search) 1.000000 14.000000 box
+ (member) 1.000000 14.000000 box
 1.000000 14.000000 mark
- (layout) 1.000000 13.000000 box
+ (menu) 1.000000 13.000000 box
 1.000000 13.000000 mark
- (member) 1.000000 12.000000 box
+ (message) 1.000000 12.000000 box
 1.000000 12.000000 mark
- (menu) 1.000000 11.000000 box
+ (module) 1.000000 11.000000 box
 1.000000 11.000000 mark
- (message) 1.000000 10.000000 box
+ (page) 1.000000 10.000000 box
 1.000000 10.000000 mark
- (module) 1.000000 9.000000 box
+ (point) 1.000000 9.000000 box
 1.000000 9.000000 mark
- (page) 1.000000 8.000000 box
+ (poll) 1.000000 8.000000 box
 1.000000 8.000000 mark
- (point) 1.000000 7.000000 box
+ (rss) 1.000000 7.000000 box
 1.000000 7.000000 mark
- (poll) 1.000000 6.000000 box
+ (seo) 1.000000 6.000000 box
 1.000000 6.000000 mark
- (rss) 1.000000 5.000000 box
+ (session) 1.000000 5.000000 box
 1.000000 5.000000 mark
- (session) 1.000000 4.000000 box
+ (spamfilter) 1.000000 4.000000 box
 1.000000 4.000000 mark
- (spamfilter) 1.000000 3.000000 box
+ (syndication) 1.000000 3.000000 box
 1.000000 3.000000 mark
  (tag) 1.000000 2.000000 box
 1.000000 2.000000 mark
@@ -276,11 +285,17 @@ boundx scalefactor div boundy scalefactor div scale
 % ----- relations -----
 
 solid
-0 0.000000 28.000000 out
+0 0.000000 31.000000 out
 solid
-1 0.000000 29.000000 in
+1 0.000000 32.000000 in
 solid
-1 0.000000 27.250000 out
+1 0.000000 30.250000 out
+solid
+0 0.000000 30.500000 hedge
+solid
+0 0.000000 29.500000 hedge
+solid
+0 0.000000 28.500000 hedge
 solid
 0 0.000000 27.500000 hedge
 solid
@@ -338,4 +353,4 @@ solid
 solid
 0 0.000000 0.500000 hedge
 solid
-0.000000 28.000000 0.500000 vedge
+0.000000 31.000000 0.500000 vedge

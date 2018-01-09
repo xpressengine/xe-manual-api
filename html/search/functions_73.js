@@ -120,6 +120,7 @@ var searchData=
   ['setremoversrl',['setRemoverSrl',['../classTrashVO.html#a3bd22cfa2e432561f1fc50dfcdeb4983',1,'TrashVO']]],
   ['setreplyto',['setReplyTo',['../classMail.html#a8c2b05357bfaf3cb8dc165fbd5c9d8e2',1,'Mail']]],
   ['setrequestmethod',['setRequestMethod',['../classContext.html#aa47d184757d451009f0597153d323ccc',1,'Context']]],
+  ['setresentpinglog',['setResentPingLog',['../classsyndicationModel.html#a05022120122ddcf5531c64cc5485f541',1,'syndicationModel']]],
   ['setresponsemethod',['setResponseMethod',['../classContext.html#afc58a19e296dfc70a95648f35bb0f3a9',1,'Context']]],
   ['setrssmoduleconfig',['setRssModuleConfig',['../classrssAdminController.html#a4dfe5a37da285c2421b574923a5bcbf8',1,'rssAdminController']]],
   ['setscheme',['setScheme',['../classNet__URL2.html#aadd3865f996d98703ec9bbdecfda4ba1',1,'Net_URL2']]],

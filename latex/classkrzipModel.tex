@@ -1,0 +1,164 @@
+\hypertarget{classkrzipModel}{\section{krzip\-Model Class Reference}
+\label{classkrzipModel}\index{krzip\-Model@{krzip\-Model}}
+}
+
+
+Krzip module model class.  
+
+
+Inheritance diagram for krzip\-Model\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classkrzipModel}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classkrzipModel_aaa67f6f01ab9e1aa5669e72d09e226f6}{get\-Config} ()
+\begin{DoxyCompactList}\small\item\em 한국 우편번호 모듈 설정 반환 \end{DoxyCompactList}\item 
+\hyperlink{classkrzipModel_ae9354004fb46bf08a4aca8804d673a1f}{get\-Migrated\-Postcode} (\$values)
+\begin{DoxyCompactList}\small\item\em 여러 포맷의 우편번호를 모듈 표준 포맷으로 변환 \end{DoxyCompactList}\item 
+\hyperlink{classkrzipModel_ab2f9d00c14d4e20656d8becc96fd372a}{get\-Krzip\-Code\-List} (\$query)
+\begin{DoxyCompactList}\small\item\em 외부 서버로부터 주소 검색 결과 반환 \end{DoxyCompactList}\item 
+\hyperlink{classkrzipModel_afb582a09da409c25522376276acdebbd}{get\-Epostapi\-Search} (\$query= '')
+\begin{DoxyCompactList}\small\item\em 우체국 우편번호 A\-P\-I 검색 결과 반환 \end{DoxyCompactList}\item 
+\hyperlink{classkrzipModel_ae56ba8c6c1a46bb366e8a02692bd53ba}{get\-Krzip\-Code\-Search\-Html} (\$column\-\_\-name, \$values)
+\begin{DoxyCompactList}\small\item\em H\-T\-M\-L 입력 폼 반환 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Krzip module model class. 
+
+\begin{DoxyAuthor}{Author}
+N\-A\-V\-E\-R (\href{mailto:developers@xpressengine.com}{\tt developers@xpressengine.\-com}) 
+\end{DoxyAuthor}
+
+
+Definition at line 9 of file krzip.\-model.\-php.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classkrzipModel_aaa67f6f01ab9e1aa5669e72d09e226f6}{\index{krzip\-Model@{krzip\-Model}!get\-Config@{get\-Config}}
+\index{get\-Config@{get\-Config}!krzipModel@{krzip\-Model}}
+\subsubsection[{get\-Config}]{\setlength{\rightskip}{0pt plus 5cm}krzip\-Model\-::get\-Config (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classkrzipModel_aaa67f6f01ab9e1aa5669e72d09e226f6}
+
+
+한국 우편번호 모듈 설정 반환 
+
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 15 of file krzip.\-model.\-php.
+
+\hypertarget{classkrzipModel_afb582a09da409c25522376276acdebbd}{\index{krzip\-Model@{krzip\-Model}!get\-Epostapi\-Search@{get\-Epostapi\-Search}}
+\index{get\-Epostapi\-Search@{get\-Epostapi\-Search}!krzipModel@{krzip\-Model}}
+\subsubsection[{get\-Epostapi\-Search}]{\setlength{\rightskip}{0pt plus 5cm}krzip\-Model\-::get\-Epostapi\-Search (
+\begin{DoxyParamCaption}
+\item[{}]{\$query = {\ttfamily ''}}
+\end{DoxyParamCaption}
+)}}\label{classkrzipModel_afb582a09da409c25522376276acdebbd}
+
+
+우체국 우편번호 A\-P\-I 검색 결과 반환 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$query} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+문자열 인코딩 변환 \begin{DoxyNote}{Note}
+우체국 우편번호 A\-P\-I는 검색어를 E\-U\-C-\/\-K\-R로 넘겨주어야 함
+\end{DoxyNote}
+
+
+Definition at line 132 of file krzip.\-model.\-php.
+
+\hypertarget{classkrzipModel_ab2f9d00c14d4e20656d8becc96fd372a}{\index{krzip\-Model@{krzip\-Model}!get\-Krzip\-Code\-List@{get\-Krzip\-Code\-List}}
+\index{get\-Krzip\-Code\-List@{get\-Krzip\-Code\-List}!krzipModel@{krzip\-Model}}
+\subsubsection[{get\-Krzip\-Code\-List}]{\setlength{\rightskip}{0pt plus 5cm}krzip\-Model\-::get\-Krzip\-Code\-List (
+\begin{DoxyParamCaption}
+\item[{}]{\$query}
+\end{DoxyParamCaption}
+)}}\label{classkrzipModel_ab2f9d00c14d4e20656d8becc96fd372a}
+
+
+외부 서버로부터 주소 검색 결과 반환 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$query} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+
+
+Definition at line 100 of file krzip.\-model.\-php.
+
+\hypertarget{classkrzipModel_ae56ba8c6c1a46bb366e8a02692bd53ba}{\index{krzip\-Model@{krzip\-Model}!get\-Krzip\-Code\-Search\-Html@{get\-Krzip\-Code\-Search\-Html}}
+\index{get\-Krzip\-Code\-Search\-Html@{get\-Krzip\-Code\-Search\-Html}!krzipModel@{krzip\-Model}}
+\subsubsection[{get\-Krzip\-Code\-Search\-Html}]{\setlength{\rightskip}{0pt plus 5cm}krzip\-Model\-::get\-Krzip\-Code\-Search\-Html (
+\begin{DoxyParamCaption}
+\item[{}]{\$column\-\_\-name, }
+\item[{}]{\$values}
+\end{DoxyParamCaption}
+)}}\label{classkrzipModel_ae56ba8c6c1a46bb366e8a02692bd53ba}
+
+
+H\-T\-M\-L 입력 폼 반환 
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column\-\_\-name} & \\
+\hline
+mixed & {\em \$values} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 254 of file krzip.\-model.\-php.
+
+\hypertarget{classkrzipModel_ae9354004fb46bf08a4aca8804d673a1f}{\index{krzip\-Model@{krzip\-Model}!get\-Migrated\-Postcode@{get\-Migrated\-Postcode}}
+\index{get\-Migrated\-Postcode@{get\-Migrated\-Postcode}!krzipModel@{krzip\-Model}}
+\subsubsection[{get\-Migrated\-Postcode}]{\setlength{\rightskip}{0pt plus 5cm}krzip\-Model\-::get\-Migrated\-Postcode (
+\begin{DoxyParamCaption}
+\item[{}]{\$values}
+\end{DoxyParamCaption}
+)}}\label{classkrzipModel_ae9354004fb46bf08a4aca8804d673a1f}
+
+
+여러 포맷의 우편번호를 모듈 표준 포맷으로 변환 
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$values} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Definition at line 47 of file krzip.\-model.\-php.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+modules/krzip/\hyperlink{krzip_8model_8php}{krzip.\-model.\-php}\end{DoxyCompactItemize}

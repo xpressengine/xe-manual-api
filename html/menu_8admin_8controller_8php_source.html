@@ -1905,7 +1905,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l02004"></a><span class="lineno"> 2004</span>&#160;            unset($name_arr_str);</div>
 <div class="line"><a name="l02005"></a><span class="lineno"> 2005</span>&#160;            <span class="keywordflow">foreach</span>($names as $key =&gt; $val)</div>
 <div class="line"><a name="l02006"></a><span class="lineno"> 2006</span>&#160;            {</div>
-<div class="line"><a name="l02007"></a><span class="lineno"> 2007</span>&#160;                <span class="keywordflow">if</span>(preg_match(<span class="stringliteral">&#39;/\{\$lang-&gt;menu_gnb(?:_sub)?\[\&#39;([a-zA-Z_]+)\&#39;\]\}/&#39;</span>, $val) === 1)</div>
+<div class="line"><a name="l02007"></a><span class="lineno"> 2007</span>&#160;                <span class="keywordflow">if</span>(preg_match(<span class="stringliteral">&#39;/\{\$lang-&gt;menu_gnb(?:_sub)?\[\&#39;([a-zA-Z_]?[a-zA-Z_0-9]*)\&#39;\]\}/&#39;</span>, $val) === 1)</div>
 <div class="line"><a name="l02008"></a><span class="lineno"> 2008</span>&#160;                {</div>
 <div class="line"><a name="l02009"></a><span class="lineno"> 2009</span>&#160;                    $name_arr_str .= sprintf(<span class="stringliteral">&#39;&quot;%s&quot;=&gt;&quot;%s&quot;,&#39;</span>, $key, $val);</div>
 <div class="line"><a name="l02010"></a><span class="lineno"> 2010</span>&#160;                }</div>
@@ -2256,7 +2256,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 2 2018 18:12:34 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 9 2018 16:05:44 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

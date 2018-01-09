@@ -1,6 +1,7 @@
 var searchData=
 [
   ['xpressengine',['XpressEngine',['../index.html',1,'']]],
+  ['xpressengine_20seo',['XpressEngine SEO',['../md_modules_seo_README.html',1,'']]],
   ['xpressengine',['XpressEngine',['../md_README.html',1,'']]],
   ['xeerrorlog',['xeErrorLog',['../classModuleHandler.html#ae8a81ab7540edc526035f1375706dd7a',1,'ModuleHandler']]],
   ['xehttprequest',['XEHttpRequest',['../classXEHttpRequest.html',1,'XEHttpRequest'],['../classXEHttpRequest.html#aa8a672ad4e5c3cc8d3b7a9cecc29d349',1,'XEHttpRequest\XEHttpRequest()']]],

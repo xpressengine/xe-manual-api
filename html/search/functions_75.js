@@ -25,6 +25,7 @@ var searchData=
   ['updatecolumntag',['UpdateColumnTag',['../classUpdateColumnTag.html#a08118f413b38890ca779e44974447854',1,'UpdateColumnTag']]],
   ['updatecomment',['updateComment',['../classcommentController.html#af154ebfde1bfe279e6c9bc6cf2e4645f',1,'commentController']]],
   ['updatecommentcount',['updateCommentCount',['../classdocumentController.html#a1813c01d82596b3ddb48c1bde746428e',1,'documentController']]],
+  ['updateconfig',['updateConfig',['../classkrzipController.html#a53974b4e42bf9bd44027df2ab45c15ee',1,'krzipController']]],
   ['updatedefaultdesigninfo',['updateDefaultDesignInfo',['../classadminAdminController.html#ab0f984cd55d52455a818323404efb974',1,'adminAdminController']]],
   ['updatedocument',['updateDocument',['../classdocumentController.html#a09cde49e8c89e2b580f302a459831cee',1,'documentController']]],
   ['updateexpectheader',['updateExpectHeader',['../classHTTP__Request2__Adapter__Socket.html#a7a547941e41ce97677f3217284a0c447',1,'HTTP_Request2_Adapter_Socket']]],

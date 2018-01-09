@@ -111,7 +111,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        $dbType = ucfirst(<a class="code" href="classContext.html#a2e90e7083bcc220daeec3d4d8d3bb427">Context::getDBType</a>());</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        $result = sprintf(<span class="stringliteral">&#39;new %sTableWithHint(\&#39;%s\&#39;%s, array(&#39;</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                , $dbType == <span class="stringliteral">&#39;Mysqli&#39;</span> ? <span class="stringliteral">&#39;Mysql&#39;</span> : $dbType</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                , !strncasecmp($dbType, <span class="stringliteral">&#39;Mysql&#39;</span>, 5) ? <span class="stringliteral">&#39;Mysql&#39;</span> : $dbType</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                , $dbParser-&gt;escape($this-&gt;name)</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                , $this-&gt;alias ? <span class="stringliteral">&#39;, \&#39;&#39;</span> . $dbParser-&gt;escape($this-&gt;alias) . <span class="charliteral">&#39;\&#39;&#39;</span> : <span class="stringliteral">&#39;, null&#39;</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                <span class="comment">//, &#39;, \&#39;&#39; . $dbParser-&gt;escape($this-&gt;index-&gt;name) .&#39;\&#39;, \&#39;&#39; . $this-&gt;index-&gt;type .&#39;\&#39;&#39;</span></div>
@@ -149,7 +149,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 2 2018 18:12:31 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 9 2018 16:05:40 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

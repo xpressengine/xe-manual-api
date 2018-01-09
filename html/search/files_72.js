@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['readme_2emd',['README.md',['../modules_2krzip_2README_8md.html',1,'']]],
+  ['readme_2emd',['README.md',['../modules_2seo_2README_8md.html',1,'']]],
   ['readme_2emd',['README.md',['../README_8md.html',1,'']]],
   ['request_2ephp',['Request.php',['../Request_8php.html',1,'']]],
   ['request2_2ephp',['Request2.php',['../Request2_8php.html',1,'']]],
