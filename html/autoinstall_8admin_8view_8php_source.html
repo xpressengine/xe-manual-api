@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.9.5</span>
+   &#160;<span id="projectnumber">1.9.7</span>
    </div>
   </td>
  </tr>
@@ -216,8 +216,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;                    <span class="keywordflow">continue</span>;</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;                }</div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;                <a class="code" href="blogapi_8addon_8php.html#aa108d9d91e700ac530401dd363b0723b">$xml</a> = <span class="keyword">new</span> <a class="code" href="classXmlParser.html">XmlParser</a>();</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;                $xmlDoc = <a class="code" href="blogapi_8addon_8php.html#aa108d9d91e700ac530401dd363b0723b">$xml</a>-&gt;loadXmlFile(<a class="code" href="classFileHandler.html#a6370b3eeddb705be04d9f60902a746e0">FileHandler::getRealPath</a>($path) . $config_file);</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;                $xml = <span class="keyword">new</span> <a class="code" href="classXmlParser.html">XmlParser</a>();</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;                $xmlDoc = $xml-&gt;loadXmlFile(<a class="code" href="classFileHandler.html#a6370b3eeddb705be04d9f60902a746e0">FileHandler::getRealPath</a>($path) . $config_file);</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;                <span class="keywordflow">if</span>(!$xmlDoc)</div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;                {</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;                    <span class="keywordflow">continue</span>;</div>
@@ -269,9 +269,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;        <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = $oModel-&gt;getInstalledPackageList($page);</div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;        $package_list = <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;data;</div>
 <div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        <a class="code" href="blogapi_8addon_8php.html#afe68e6fbe7acfbffc0af0c84a1996466">$params</a>[<span class="stringliteral">&quot;act&quot;</span>] = <span class="stringliteral">&quot;getResourceapiPackages&quot;</span>;</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;        <a class="code" href="blogapi_8addon_8php.html#afe68e6fbe7acfbffc0af0c84a1996466">$params</a>[<span class="stringliteral">&quot;package_srls&quot;</span>] = implode(<span class="stringliteral">&quot;,&quot;</span>, array_keys($package_list));</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;        $body = <a class="code" href="classXmlGenerater.html#a550936fddc7d2954e46b1e72846e4d89">XmlGenerater::generate</a>(<a class="code" href="blogapi_8addon_8php.html#afe68e6fbe7acfbffc0af0c84a1996466">$params</a>);</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        $params[<span class="stringliteral">&quot;act&quot;</span>] = <span class="stringliteral">&quot;getResourceapiPackages&quot;</span>;</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;        $params[<span class="stringliteral">&quot;package_srls&quot;</span>] = implode(<span class="stringliteral">&quot;,&quot;</span>, array_keys($package_list));</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;        $body = <a class="code" href="classXmlGenerater.html#a550936fddc7d2954e46b1e72846e4d89">XmlGenerater::generate</a>($params);</div>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;        $buff = <a class="code" href="classFileHandler.html#a602c039b415c15d9d6866e586282faf7">FileHandler::getRemoteResource</a>(<a class="code" href="config_8inc_8php.html#a22df32d3e0eae0d60d6cddb9ec99d5ec">_XE_DOWNLOAD_SERVER_</a>, $body, 3, <span class="stringliteral">&quot;POST&quot;</span>, <span class="stringliteral">&quot;application/xml&quot;</span>);</div>
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;        $xml_lUpdate = <span class="keyword">new</span> <a class="code" href="classXmlParser.html">XmlParser</a>();</div>
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;        $xmlDoc = $xml_lUpdate-&gt;parse($buff);</div>
@@ -350,9 +350,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;</div>
 <div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;        $this-&gt;setTemplateFile(<span class="stringliteral">&#39;index&#39;</span>);</div>
 <div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;        <a class="code" href="blogapi_8addon_8php.html#afe68e6fbe7acfbffc0af0c84a1996466">$params</a> = array();</div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;        <a class="code" href="blogapi_8addon_8php.html#afe68e6fbe7acfbffc0af0c84a1996466">$params</a>[<span class="stringliteral">&quot;act&quot;</span>] = <span class="stringliteral">&quot;getResourceapiLastupdate&quot;</span>;</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;        $body = <a class="code" href="classXmlGenerater.html#a550936fddc7d2954e46b1e72846e4d89">XmlGenerater::generate</a>(<a class="code" href="blogapi_8addon_8php.html#afe68e6fbe7acfbffc0af0c84a1996466">$params</a>);</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;        $params = array();</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;        $params[<span class="stringliteral">&quot;act&quot;</span>] = <span class="stringliteral">&quot;getResourceapiLastupdate&quot;</span>;</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;        $body = <a class="code" href="classXmlGenerater.html#a550936fddc7d2954e46b1e72846e4d89">XmlGenerater::generate</a>($params);</div>
 <div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;        $buff = <a class="code" href="classFileHandler.html#a602c039b415c15d9d6866e586282faf7">FileHandler::getRemoteResource</a>(<a class="code" href="config_8inc_8php.html#a22df32d3e0eae0d60d6cddb9ec99d5ec">_XE_DOWNLOAD_SERVER_</a>, $body, 3, <span class="stringliteral">&quot;POST&quot;</span>, <span class="stringliteral">&quot;application/xml&quot;</span>);</div>
 <div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;        $xml_lUpdate = <span class="keyword">new</span> <a class="code" href="classXmlParser.html">XmlParser</a>();</div>
 <div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;        $lUpdateDoc = $xml_lUpdate-&gt;parse($buff);</div>
@@ -406,22 +406,22 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;        $category_srl = <a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;category_srl&#39;</span>);</div>
 <div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;        <span class="keywordflow">if</span>($childrenList)</div>
 <div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;        {</div>
-<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;            <a class="code" href="blogapi_8addon_8php.html#afe68e6fbe7acfbffc0af0c84a1996466">$params</a>[<span class="stringliteral">&quot;category_srl&quot;</span>] = $childrenList;</div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;            $params[<span class="stringliteral">&quot;category_srl&quot;</span>] = $childrenList;</div>
 <div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;        }</div>
 <div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span>($category_srl)</div>
 <div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;        {</div>
-<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;            <a class="code" href="blogapi_8addon_8php.html#afe68e6fbe7acfbffc0af0c84a1996466">$params</a>[<span class="stringliteral">&quot;category_srl&quot;</span>] = $category_srl;</div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;            $params[<span class="stringliteral">&quot;category_srl&quot;</span>] = $category_srl;</div>
 <div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;        }</div>
 <div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;</div>
-<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;        <a class="code" href="blogapi_8addon_8php.html#afe68e6fbe7acfbffc0af0c84a1996466">$params</a>[<span class="stringliteral">&quot;act&quot;</span>] = <span class="stringliteral">&quot;getResourceapiPackagelist&quot;</span>;</div>
-<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;        <a class="code" href="blogapi_8addon_8php.html#afe68e6fbe7acfbffc0af0c84a1996466">$params</a>[<span class="stringliteral">&quot;order_target&quot;</span>] = $order_target;</div>
-<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;        <a class="code" href="blogapi_8addon_8php.html#afe68e6fbe7acfbffc0af0c84a1996466">$params</a>[<span class="stringliteral">&quot;order_type&quot;</span>] = $order_type;</div>
-<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;        <a class="code" href="blogapi_8addon_8php.html#afe68e6fbe7acfbffc0af0c84a1996466">$params</a>[<span class="stringliteral">&quot;page&quot;</span>] = $page;</div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;        $params[<span class="stringliteral">&quot;act&quot;</span>] = <span class="stringliteral">&quot;getResourceapiPackagelist&quot;</span>;</div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;        $params[<span class="stringliteral">&quot;order_target&quot;</span>] = $order_target;</div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;        $params[<span class="stringliteral">&quot;order_type&quot;</span>] = $order_type;</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;        $params[<span class="stringliteral">&quot;page&quot;</span>] = $page;</div>
 <div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;        <span class="keywordflow">if</span>($search_keyword)</div>
 <div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;        {</div>
-<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;            <a class="code" href="blogapi_8addon_8php.html#afe68e6fbe7acfbffc0af0c84a1996466">$params</a>[<span class="stringliteral">&quot;search_keyword&quot;</span>] = $search_keyword;</div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;            $params[<span class="stringliteral">&quot;search_keyword&quot;</span>] = $search_keyword;</div>
 <div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;        }</div>
-<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;        $xmlDoc = <a class="code" href="classXmlGenerater.html#a2c76cbd93596f5f7d48ff2ff0b9213ce">XmlGenerater::getXmlDoc</a>(<a class="code" href="blogapi_8addon_8php.html#afe68e6fbe7acfbffc0af0c84a1996466">$params</a>);</div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;        $xmlDoc = <a class="code" href="classXmlGenerater.html#a2c76cbd93596f5f7d48ff2ff0b9213ce">XmlGenerater::getXmlDoc</a>($params);</div>
 <div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;        <span class="keywordflow">if</span>($xmlDoc &amp;&amp; $xmlDoc-&gt;response-&gt;packagelist-&gt;item)</div>
 <div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;        {</div>
 <div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;            $item_list = $this-&gt;rearranges($xmlDoc-&gt;response-&gt;packagelist-&gt;item);</div>
@@ -487,9 +487,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;        }</div>
 <div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;        <a class="code" href="classContext.html#a9f79aa7aecf2e4d8006e517844523fc2">Context::set</a>(<span class="stringliteral">&#39;directModuleInstall&#39;</span>, <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>);</div>
 <div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;</div>
-<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;        <a class="code" href="blogapi_8addon_8php.html#afe68e6fbe7acfbffc0af0c84a1996466">$params</a>[<span class="stringliteral">&quot;act&quot;</span>] = <span class="stringliteral">&quot;getResourceapiPackages&quot;</span>;</div>
-<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;        <a class="code" href="blogapi_8addon_8php.html#afe68e6fbe7acfbffc0af0c84a1996466">$params</a>[<span class="stringliteral">&quot;package_srls&quot;</span>] = $package_srl;</div>
-<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;        $body = <a class="code" href="classXmlGenerater.html#a550936fddc7d2954e46b1e72846e4d89">XmlGenerater::generate</a>(<a class="code" href="blogapi_8addon_8php.html#afe68e6fbe7acfbffc0af0c84a1996466">$params</a>);</div>
+<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;        $params[<span class="stringliteral">&quot;act&quot;</span>] = <span class="stringliteral">&quot;getResourceapiPackages&quot;</span>;</div>
+<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;        $params[<span class="stringliteral">&quot;package_srls&quot;</span>] = $package_srl;</div>
+<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;        $body = <a class="code" href="classXmlGenerater.html#a550936fddc7d2954e46b1e72846e4d89">XmlGenerater::generate</a>($params);</div>
 <div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;        $buff = <a class="code" href="classFileHandler.html#a602c039b415c15d9d6866e586282faf7">FileHandler::getRemoteResource</a>(<a class="code" href="config_8inc_8php.html#a22df32d3e0eae0d60d6cddb9ec99d5ec">_XE_DOWNLOAD_SERVER_</a>, $body, 3, <span class="stringliteral">&quot;POST&quot;</span>, <span class="stringliteral">&quot;application/xml&quot;</span>);</div>
 <div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;        $xml_lUpdate = <span class="keyword">new</span> <a class="code" href="classXmlParser.html">XmlParser</a>();</div>
 <div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;        $xmlDoc = $xml_lUpdate-&gt;parse($buff);</div>
@@ -519,7 +519,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;<span class="comment">/* End of file autoinstall.admin.view.php */</span></div>
 <div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;<span class="comment">/* Location: ./modules/autoinstall/autoinstall.admin.view.php */</span></div>
 <div class="ttc" id="ko_8install_8php_html_a8d7a87df524e7d6938f66f8e284cdd1e"><div class="ttname"><a href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a></div><div class="ttdeci">$oModuleModel</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00236">ko.install.php:236</a></div></div>
-<div class="ttc" id="blogapi_8addon_8php_html_aa108d9d91e700ac530401dd363b0723b"><div class="ttname"><a href="blogapi_8addon_8php.html#aa108d9d91e700ac530401dd363b0723b">$xml</a></div><div class="ttdeci">$xml</div><div class="ttdef"><b>Definition:</b> <a href="blogapi_8addon_8php_source.html#l00033">blogapi.addon.php:33</a></div></div>
 <div class="ttc" id="classautoinstallAdminView_html_a5f7303fa7b93ab464b65e0917b8d75ca"><div class="ttname"><a href="classautoinstallAdminView.html#a5f7303fa7b93ab464b65e0917b8d75ca">autoinstallAdminView\dispAutoinstallAdminUninstall</a></div><div class="ttdeci">dispAutoinstallAdminUninstall()</div><div class="ttdef"><b>Definition:</b> <a href="autoinstall_8admin_8view_8php_source.html#l00505">autoinstall.admin.view.php:505</a></div></div>
 <div class="ttc" id="classModuleObject_html_a8a632bae853adef8e2ab9596a3a86661"><div class="ttname"><a href="classModuleObject.html#a8a632bae853adef8e2ab9596a3a86661">ModuleObject\$template_path</a></div><div class="ttdeci">$template_path</div><div class="ttdoc">a path of directory where template files reside </div><div class="ttdef"><b>Definition:</b> <a href="ModuleObject_8class_8php_source.html#l00020">ModuleObject.class.php:20</a></div></div>
 <div class="ttc" id="ko_8install_8php_html_a73004ce9cd673c1bfafd1dc351134797"><div class="ttname"><a href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a></div><div class="ttdeci">$output</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00193">ko.install.php:193</a></div></div>
@@ -527,7 +526,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="func_8inc_8php_html_aa73dbeb07c5bcac26c24fe4c6b05d8d2"><div class="ttname"><a href="func_8inc_8php.html#aa73dbeb07c5bcac26c24fe4c6b05d8d2">getNotEncodedUrl</a></div><div class="ttdeci">getNotEncodedUrl()</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00313">func.inc.php:313</a></div></div>
 <div class="ttc" id="classautoinstallAdminView_html_a55e52a58461106215866abf53264edb5"><div class="ttname"><a href="classautoinstallAdminView.html#a55e52a58461106215866abf53264edb5">autoinstallAdminView\rearrange</a></div><div class="ttdeci">rearrange(&amp;$item, &amp;$targets)</div><div class="ttdef"><b>Definition:</b> <a href="autoinstall_8admin_8view_8php_source.html#l00090">autoinstall.admin.view.php:90</a></div></div>
 <div class="ttc" id="classContext_html_a4f3473f93028ce5f422135106f125f31"><div class="ttname"><a href="classContext.html#a4f3473f93028ce5f422135106f125f31">Context\getFTPInfo</a></div><div class="ttdeci">getFTPInfo()</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l00748">Context.class.php:748</a></div></div>
-<div class="ttc" id="blogapi_8addon_8php_html_afe68e6fbe7acfbffc0af0c84a1996466"><div class="ttname"><a href="blogapi_8addon_8php.html#afe68e6fbe7acfbffc0af0c84a1996466">$params</a></div><div class="ttdeci">$params</div><div class="ttdef"><b>Definition:</b> <a href="blogapi_8addon_8php_source.html#l00054">blogapi.addon.php:54</a></div></div>
 <div class="ttc" id="classFileHandler_html_a602c039b415c15d9d6866e586282faf7"><div class="ttname"><a href="classFileHandler.html#a602c039b415c15d9d6866e586282faf7">FileHandler\getRemoteResource</a></div><div class="ttdeci">getRemoteResource($url, $body=null, $timeout=3, $method= 'GET', $content_type=null, $headers=array(), $cookies=array(), $post_data=array(), $request_config=array())</div><div class="ttdef"><b>Definition:</b> <a href="FileHandler_8class_8php_source.html#l00520">FileHandler.class.php:520</a></div></div>
 <div class="ttc" id="classautoinstallAdminView_html_ac3b285aaf0eb96bbfb2986917ca3571b"><div class="ttname"><a href="classautoinstallAdminView.html#ac3b285aaf0eb96bbfb2986917ca3571b">autoinstallAdminView\dispCategory</a></div><div class="ttdeci">dispCategory()</div><div class="ttdef"><b>Definition:</b> <a href="autoinstall_8admin_8view_8php_source.html#l00493">autoinstall.admin.view.php:493</a></div></div>
 <div class="ttc" id="classautoinstallAdminView_html_a57de04bc93c4b62ad0c8fff257b4a837"><div class="ttname"><a href="classautoinstallAdminView.html#a57de04bc93c4b62ad0c8fff257b4a837">autoinstallAdminView\dispAutoinstallAdminInstalledPackages</a></div><div class="ttdeci">dispAutoinstallAdminInstalledPackages()</div><div class="ttdef"><b>Definition:</b> <a href="autoinstall_8admin_8view_8php_source.html#l00297">autoinstall.admin.view.php:297</a></div></div>
@@ -556,7 +554,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 7 2018 19:23:03 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 7 2018 16:06:48 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

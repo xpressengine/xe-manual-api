@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.9.5</span>
+   &#160;<span id="projectnumber">1.9.7</span>
    </div>
   </td>
  </tr>
@@ -158,16 +158,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        }</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        $parser = <span class="keyword">new</span> <a class="code" href="classXmlParser.html">XmlParser</a>();</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <a class="code" href="blogapi_8addon_8php.html#aa108d9d91e700ac530401dd363b0723b">$xml</a> = $parser-&gt;loadXmlFile($xml_path);</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="keywordflow">if</span>(!isset(<a class="code" href="blogapi_8addon_8php.html#aa108d9d91e700ac530401dd363b0723b">$xml</a>-&gt;ruleset) || !isset(<a class="code" href="blogapi_8addon_8php.html#aa108d9d91e700ac530401dd363b0723b">$xml</a>-&gt;ruleset-&gt;fields) || !isset(<a class="code" href="blogapi_8addon_8php.html#aa108d9d91e700ac530401dd363b0723b">$xml</a>-&gt;ruleset-&gt;fields-&gt;field))</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        $xml = $parser-&gt;loadXmlFile($xml_path);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="keywordflow">if</span>(!isset($xml-&gt;ruleset) || !isset($xml-&gt;ruleset-&gt;fields) || !isset($xml-&gt;ruleset-&gt;fields-&gt;field))</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        {</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            <span class="keywordflow">return</span> FALSE;</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        }</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        <span class="comment">// custom rules</span></div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        <span class="keywordflow">if</span>(isset(<a class="code" href="blogapi_8addon_8php.html#aa108d9d91e700ac530401dd363b0723b">$xml</a>-&gt;ruleset-&gt;customrules) &amp;&amp; isset(<a class="code" href="blogapi_8addon_8php.html#aa108d9d91e700ac530401dd363b0723b">$xml</a>-&gt;ruleset-&gt;customrules-&gt;rule))</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        <span class="keywordflow">if</span>(isset($xml-&gt;ruleset-&gt;customrules) &amp;&amp; isset($xml-&gt;ruleset-&gt;customrules-&gt;rule))</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        {</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;            $customrules = <a class="code" href="blogapi_8addon_8php.html#aa108d9d91e700ac530401dd363b0723b">$xml</a>-&gt;ruleset-&gt;customrules-&gt;rule;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;            $customrules = $xml-&gt;ruleset-&gt;customrules-&gt;rule;</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;            <span class="keywordflow">if</span>(!is_array($customrules))</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;            {</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;                $customrules = array($customrules);</div>
@@ -201,7 +201,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        }</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        <span class="comment">// filters</span></div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        $fields = <a class="code" href="blogapi_8addon_8php.html#aa108d9d91e700ac530401dd363b0723b">$xml</a>-&gt;ruleset-&gt;fields-&gt;field;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        $fields = $xml-&gt;ruleset-&gt;fields-&gt;field;</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        <span class="keywordflow">if</span>(!is_array($fields))</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        {</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;            $fields = array($fields);</div>
@@ -249,7 +249,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;            $filters[$name] = $filter;</div>
 <div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        }</div>
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        $this-&gt;_xml_ruleset = <a class="code" href="blogapi_8addon_8php.html#aa108d9d91e700ac530401dd363b0723b">$xml</a>-&gt;ruleset;</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        $this-&gt;_xml_ruleset = $xml-&gt;ruleset;</div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        $this-&gt;_filters = $filters;</div>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        $this-&gt;_message = $messages;</div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        $this-&gt;_fieldNames = $fieldsNames;</div>
@@ -803,7 +803,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;<span class="comment">/* End of file Validator.class.php */</span></div>
 <div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;<span class="comment">/* Location: ./classes/validator/Validator.class.php */</span></div>
 <div class="ttc" id="classValidator_html_ad46fa003b320d64ef656b22de870782c"><div class="ttname"><a href="classValidator.html#ad46fa003b320d64ef656b22de870782c">Validator\error</a></div><div class="ttdeci">error($field, $msg)</div><div class="ttdef"><b>Definition:</b> <a href="Validator_8class_8php_source.html#l00463">Validator.class.php:463</a></div></div>
-<div class="ttc" id="blogapi_8addon_8php_html_aa108d9d91e700ac530401dd363b0723b"><div class="ttname"><a href="blogapi_8addon_8php.html#aa108d9d91e700ac530401dd363b0723b">$xml</a></div><div class="ttdeci">$xml</div><div class="ttdef"><b>Definition:</b> <a href="blogapi_8addon_8php_source.html#l00033">blogapi.addon.php:33</a></div></div>
 <div class="ttc" id="classValidator_html_a1630131530dca60428e72dd4dd2d4af3"><div class="ttname"><a href="classValidator.html#a1630131530dca60428e72dd4dd2d4af3">Validator\setCacheDir</a></div><div class="ttdeci">setCacheDir($cache_dir)</div><div class="ttdef"><b>Definition:</b> <a href="Validator_8class_8php_source.html#l00233">Validator.class.php:233</a></div></div>
 <div class="ttc" id="classValidator_html"><div class="ttname"><a href="classValidator.html">Validator</a></div><div class="ttdef"><b>Definition:</b> <a href="Validator_8class_8php_source.html#l00010">Validator.class.php:10</a></div></div>
 <div class="ttc" id="classContext_html_a9f79aa7aecf2e4d8006e517844523fc2"><div class="ttname"><a href="classContext.html#a9f79aa7aecf2e4d8006e517844523fc2">Context\set</a></div><div class="ttdeci">set($key, $val, $set_to_get_vars=0)</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l01925">Context.class.php:1925</a></div></div>
@@ -842,7 +841,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 7 2018 19:22:59 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 7 2018 16:06:45 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

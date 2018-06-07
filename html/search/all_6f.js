@@ -8,7 +8,6 @@ var searchData=
   ['onlydeletemodule',['onlyDeleteModule',['../classmoduleController.html#ae34115eaf3d3b4d7621592f7cbfb9c7c',1,'moduleController']]],
   ['open',['open',['../classFileObject.html#af54e058c79d19dca6ef4c6e2bb54831f',1,'FileObject\open()'],['../classsessionController.html#a6d695e575646db3c90300eb6da7eb69d',1,'sessionController\open()']]],
   ['openfile',['openFile',['../classFileHandler.html#a690753d8cf8ff837f28a811cdfbfa069',1,'FileHandler\openFile()'],['../classextract.html#afe5c47d4a18adeb1cb9fb0e7450def78',1,'extract\openFile()']]],
-  ['openid_5fdelegation_5fid_2eaddon_2ephp',['openid_delegation_id.addon.php',['../openid__delegation__id_8addon_8php.html',1,'']]],
   ['opentar',['openTAR',['../classtar.html#a62fc429d1e33de90d1ce65c3c16a4193',1,'tar']]],
   ['option_5fdrop_5fsequence',['OPTION_DROP_SEQUENCE',['../classNet__URL2.html#af415684f1d85246c1132203142b86499',1,'Net_URL2']]],
   ['option_5fencode_5fkeys',['OPTION_ENCODE_KEYS',['../classNet__URL2.html#ae06ebc991de4ffe92644c5a8d37ad5ac',1,'Net_URL2']]],

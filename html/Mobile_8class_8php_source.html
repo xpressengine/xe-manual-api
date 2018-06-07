@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.9.5</span>
+   &#160;<span id="projectnumber">1.9.7</span>
    </div>
   </td>
  </tr>
@@ -111,8 +111,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
 <div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classMobile.html#a9978671e8463a94130a6733f2d0fa0a4">   38</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classMobile.html#a9978671e8463a94130a6733f2d0fa0a4">isFromMobilePhone</a>()</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <a class="code" href="mobile_8addon_8php.html#a2e1472c6f1bb5b341e95a632164904d0">$oMobile</a> = &amp; <a class="code" href="classMobile.html#a303f0bf07eb32a56769009c12c70d954">Mobile::getInstance</a>();</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="mobile_8addon_8php.html#a2e1472c6f1bb5b341e95a632164904d0">$oMobile</a>-&gt;_isFromMobilePhone();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        $oMobile = &amp; <a class="code" href="classMobile.html#a303f0bf07eb32a56769009c12c70d954">Mobile::getInstance</a>();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordflow">return</span> $oMobile-&gt;_isFromMobilePhone();</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
 <div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classMobile.html#a5f539dee62a4a3e83db1df0f2d9573e4">   49</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classMobile.html#a5f539dee62a4a3e83db1df0f2d9573e4">_isFromMobilePhone</a>()</div>
@@ -215,10 +215,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            <span class="keywordflow">return</span> $UACheck;</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        }</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        <a class="code" href="mobile_8addon_8php.html#a2e1472c6f1bb5b341e95a632164904d0">$oMobile</a> = <a class="code" href="classMobile.html#a303f0bf07eb32a56769009c12c70d954">Mobile::getInstance</a>();</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        $oMobile = <a class="code" href="classMobile.html#a303f0bf07eb32a56769009c12c70d954">Mobile::getInstance</a>();</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        $mobileAgent = array(<span class="stringliteral">&#39;iPod&#39;</span>, <span class="stringliteral">&#39;iPhone&#39;</span>, <span class="stringliteral">&#39;Android&#39;</span>, <span class="stringliteral">&#39;BlackBerry&#39;</span>, <span class="stringliteral">&#39;SymbianOS&#39;</span>, <span class="stringliteral">&#39;Bada&#39;</span>, <span class="stringliteral">&#39;Tizen&#39;</span>, <span class="stringliteral">&#39;Kindle&#39;</span>, <span class="stringliteral">&#39;Wii&#39;</span>, <span class="stringliteral">&#39;SCH-&#39;</span>, <span class="stringliteral">&#39;SPH-&#39;</span>, <span class="stringliteral">&#39;CANU-&#39;</span>, <span class="stringliteral">&#39;Windows Phone&#39;</span>, <span class="stringliteral">&#39;Windows CE&#39;</span>, <span class="stringliteral">&#39;POLARIS&#39;</span>, <span class="stringliteral">&#39;Palm&#39;</span>, <span class="stringliteral">&#39;Dorothy Browser&#39;</span>, <span class="stringliteral">&#39;Mobile&#39;</span>, <span class="stringliteral">&#39;Opera Mobi&#39;</span>, <span class="stringliteral">&#39;Opera Mini&#39;</span>, <span class="stringliteral">&#39;Minimo&#39;</span>, <span class="stringliteral">&#39;AvantGo&#39;</span>, <span class="stringliteral">&#39;NetFront&#39;</span>, <span class="stringliteral">&#39;Nokia&#39;</span>, <span class="stringliteral">&#39;LGPlayer&#39;</span>, <span class="stringliteral">&#39;SonyEricsson&#39;</span>, <span class="stringliteral">&#39;HTC&#39;</span>);</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="mobile_8addon_8php.html#a2e1472c6f1bb5b341e95a632164904d0">$oMobile</a>-&gt;isMobilePadCheckByAgent())</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <span class="keywordflow">if</span>($oMobile-&gt;isMobilePadCheckByAgent())</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        {</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            $UACheck = TRUE;</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            <span class="keywordflow">return</span> TRUE;</div>
@@ -281,8 +281,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div>
 <div class="line"><a name="l00229"></a><span class="lineno"><a class="line" href="classMobile.html#a82db2bb3415147c24d429bb065542053">  229</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classMobile.html#a82db2bb3415147c24d429bb065542053">setMobile</a>(<a class="code" href="classMobile.html#a321b198b13267ac948fb78b6dc09de4e">$ismobile</a>)</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    {</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        <a class="code" href="mobile_8addon_8php.html#a2e1472c6f1bb5b341e95a632164904d0">$oMobile</a> = <a class="code" href="classMobile.html#a303f0bf07eb32a56769009c12c70d954">Mobile::getInstance</a>();</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        <a class="code" href="mobile_8addon_8php.html#a2e1472c6f1bb5b341e95a632164904d0">$oMobile</a>-&gt;ismobile = <a class="code" href="classMobile.html#a321b198b13267ac948fb78b6dc09de4e">$ismobile</a>;</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        $oMobile = <a class="code" href="classMobile.html#a303f0bf07eb32a56769009c12c70d954">Mobile::getInstance</a>();</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        $oMobile-&gt;ismobile = <a class="code" href="classMobile.html#a321b198b13267ac948fb78b6dc09de4e">$ismobile</a>;</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    }</div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;</div>
 <div class="line"><a name="l00235"></a><span class="lineno"><a class="line" href="classMobile.html#aadc14b13b20ae9dc9b4dd96a45e04a3d">  235</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classMobile.html#aadc14b13b20ae9dc9b4dd96a45e04a3d">isMobileEnabled</a>()</div>
@@ -305,11 +305,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="config_8inc_8php_html_a5387c7a3f2aa38adf16f324cee88db88"><div class="ttname"><a href="config_8inc_8php.html#a5387c7a3f2aa38adf16f324cee88db88">_XE_PATH_</a></div><div class="ttdeci">const _XE_PATH_</div><div class="ttdef"><b>Definition:</b> <a href="config_8inc_8php_source.html#l00049">config.inc.php:49</a></div></div>
 <div class="ttc" id="classContext_html_a90ce25d65fe6c9778421cbb36ab3def5"><div class="ttname"><a href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context\get</a></div><div class="ttdeci">get($key)</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l01950">Context.class.php:1950</a></div></div>
 <div class="ttc" id="classMobile_html_aadc14b13b20ae9dc9b4dd96a45e04a3d"><div class="ttname"><a href="classMobile.html#aadc14b13b20ae9dc9b4dd96a45e04a3d">Mobile\isMobileEnabled</a></div><div class="ttdeci">isMobileEnabled()</div><div class="ttdef"><b>Definition:</b> <a href="Mobile_8class_8php_source.html#l00235">Mobile.class.php:235</a></div></div>
-<div class="ttc" id="mobile_8addon_8php_html_a2e1472c6f1bb5b341e95a632164904d0"><div class="ttname"><a href="mobile_8addon_8php.html#a2e1472c6f1bb5b341e95a632164904d0">$oMobile</a></div><div class="ttdeci">if(!mobileXE::getBrowserType()) $oMobile</div><div class="ttdef"><b>Definition:</b> <a href="mobile_8addon_8php_source.html#l00038">mobile.addon.php:38</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 7 2018 19:22:59 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 7 2018 16:06:45 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

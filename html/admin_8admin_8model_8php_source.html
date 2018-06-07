@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.9.5</span>
+   &#160;<span id="projectnumber">1.9.7</span>
    </div>
   </td>
  </tr>
@@ -974,7 +974,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00960"></a><span class="lineno">  960</span>&#160;        }</div>
 <div class="line"><a name="l00961"></a><span class="lineno">  961</span>&#160;        elseif($file_exsit)</div>
 <div class="line"><a name="l00962"></a><span class="lineno">  962</span>&#160;        {</div>
-<div class="line"><a name="l00963"></a><span class="lineno">  963</span>&#160;            $default_url = <a class="code" href="classContext.html#abf99203a93b0b0de0da3fbeced6ce333">Context::getDefaultUrl</a>();</div>
+<div class="line"><a name="l00963"></a><span class="lineno">  963</span>&#160;            $default_url = Context::GetUrl();</div>
 <div class="line"><a name="l00964"></a><span class="lineno">  964</span>&#160;            <span class="keywordflow">if</span>($default_url &amp;&amp; substr_compare($default_url, <span class="charliteral">&#39;/&#39;</span>, -1) === 0) $default_url = substr($default_url, 0, -1);</div>
 <div class="line"><a name="l00965"></a><span class="lineno">  965</span>&#160;            $icon_url = $default_url . <span class="stringliteral">&#39;/files/attach/xeicon/&#39;</span> . $virtual_site . $iconname;</div>
 <div class="line"><a name="l00966"></a><span class="lineno">  966</span>&#160;        }</div>
@@ -1016,7 +1016,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="package_8inc_8php_html_ac4384cdc784342cd44d75952334decb4"><div class="ttname"><a href="package_8inc_8php.html#ac4384cdc784342cd44d75952334decb4">_XE_PACKAGE_</a></div><div class="ttdeci">const _XE_PACKAGE_</div><div class="ttdef"><b>Definition:</b> <a href="package_8inc_8php_source.html#l00004">package.inc.php:4</a></div></div>
 <div class="ttc" id="classadminAdminModel_html_a12f25a1c61e11bf727019171564b1cad"><div class="ttname"><a href="classadminAdminModel.html#a12f25a1c61e11bf727019171564b1cad">adminAdminModel\getSiteAllList</a></div><div class="ttdeci">getSiteAllList()</div><div class="ttdef"><b>Definition:</b> <a href="admin_8admin_8model_8php_source.html#l00855">admin.admin.model.php:855</a></div></div>
 <div class="ttc" id="classadminAdminModel_html_a155e29f18f17c6c657a457fcd65fd24b"><div class="ttname"><a href="classadminAdminModel.html#a155e29f18f17c6c657a457fcd65fd24b">adminAdminModel\getAdminFTPPath</a></div><div class="ttdeci">getAdminFTPPath()</div><div class="ttdef"><b>Definition:</b> <a href="admin_8admin_8model_8php_source.html#l00176">admin.admin.model.php:176</a></div></div>
-<div class="ttc" id="classFileHandler_html_a862c4f6349792ae8f094ec456c9a26ed"><div class="ttname"><a href="classFileHandler.html#a862c4f6349792ae8f094ec456c9a26ed">FileHandler\exists</a></div><div class="ttdeci">exists($filename)</div><div class="ttdef"><b>Definition:</b> <a href="FileHandler_8class_8php_source.html#l01069">FileHandler.class.php:1069</a></div></div>
+<div class="ttc" id="classFileHandler_html_a862c4f6349792ae8f094ec456c9a26ed"><div class="ttname"><a href="classFileHandler.html#a862c4f6349792ae8f094ec456c9a26ed">FileHandler\exists</a></div><div class="ttdeci">exists($filename)</div><div class="ttdef"><b>Definition:</b> <a href="FileHandler_8class_8php_source.html#l01095">FileHandler.class.php:1095</a></div></div>
 <div class="ttc" id="classadminAdminModel_html_a6ba3dfaa5f5f1cc41284676b9e0b7b9d"><div class="ttname"><a href="classadminAdminModel.html#a6ba3dfaa5f5f1cc41284676b9e0b7b9d">adminAdminModel\isExistsFavorite</a></div><div class="ttdeci">isExistsFavorite($siteSrl, $module)</div><div class="ttdef"><b>Definition:</b> <a href="admin_8admin_8model_8php_source.html#l00826">admin.admin.model.php:826</a></div></div>
 <div class="ttc" id="classadminAdminModel_html_a2a331c8f7fea9c12f56f5f5f75a3960c"><div class="ttname"><a href="classadminAdminModel.html#a2a331c8f7fea9c12f56f5f5f75a3960c">adminAdminModel\getThemeList</a></div><div class="ttdeci">getThemeList()</div><div class="ttdef"><b>Definition:</b> <a href="admin_8admin_8model_8php_source.html#l00516">admin.admin.model.php:516</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_a902cd0c884e75afab2682fdd3ae3791f"><div class="ttname"><a href="func_8inc_8php.html#a902cd0c884e75afab2682fdd3ae3791f">getAdminModel</a></div><div class="ttdeci">getAdminModel($module_name)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00156">func.inc.php:156</a></div></div>
@@ -1033,7 +1033,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classadminAdminModel_html_a9e944aba1586e011811993745738728e"><div class="ttname"><a href="classadminAdminModel.html#a9e944aba1586e011811993745738728e">adminAdminModel\getAdminFTPList</a></div><div class="ttdeci">getAdminFTPList()</div><div class="ttdef"><b>Definition:</b> <a href="admin_8admin_8model_8php_source.html#l00321">admin.admin.model.php:321</a></div></div>
 <div class="ttc" id="classadminAdminModel_html_a6e21a5731925dc94cce1859dd96e7f25"><div class="ttname"><a href="classadminAdminModel.html#a6e21a5731925dc94cce1859dd96e7f25">adminAdminModel\getAdminMenuLang</a></div><div class="ttdeci">getAdminMenuLang()</div><div class="ttdef"><b>Definition:</b> <a href="admin_8admin_8model_8php_source.html#l00749">admin.admin.model.php:749</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_aecdfcc5332bcf22df01fc21a03b64435"><div class="ttname"><a href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a></div><div class="ttdeci">getModel($module_name)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00145">func.inc.php:145</a></div></div>
-<div class="ttc" id="classContext_html_abf99203a93b0b0de0da3fbeced6ce333"><div class="ttname"><a href="classContext.html#abf99203a93b0b0de0da3fbeced6ce333">Context\getDefaultUrl</a></div><div class="ttdeci">getDefaultUrl()</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l00573">Context.class.php:573</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_ace5cc06ee6c5d655a1bdcc15846a779e"><div class="ttname"><a href="func_8inc_8php.html#ace5cc06ee6c5d655a1bdcc15846a779e">executeQueryArray</a></div><div class="ttdeci">executeQueryArray($query_id, $args=NULL, $arg_columns=NULL)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00219">func.inc.php:219</a></div></div>
 <div class="ttc" id="classContext_html_a90ce25d65fe6c9778421cbb36ab3def5"><div class="ttname"><a href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context\get</a></div><div class="ttdeci">get($key)</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l01950">Context.class.php:1950</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_a2f7ca88a5226536aca3b2f5682bd7b2d"><div class="ttname"><a href="func_8inc_8php.html#a2f7ca88a5226536aca3b2f5682bd7b2d">getAdminController</a></div><div class="ttdeci">getAdminController($module_name)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00101">func.inc.php:101</a></div></div>
@@ -1050,7 +1049,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 7 2018 19:23:03 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 7 2018 16:06:48 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

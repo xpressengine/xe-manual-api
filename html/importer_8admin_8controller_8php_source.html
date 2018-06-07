@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.9.5</span>
+   &#160;<span id="projectnumber">1.9.7</span>
    </div>
   </td>
  </tr>
@@ -342,7 +342,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        $total = <a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;total&#39;</span>);</div>
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        $cur = <a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;cur&#39;</span>);</div>
 <div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        $key = <a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;key&#39;</span>);</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        <a class="code" href="blogapi_8addon_8php.html#a6d0a036129b3030ce289a026c5e1eff2">$user_id</a> = <a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;user_id&#39;</span>);</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        $user_id = <a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;user_id&#39;</span>);</div>
 <div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        $target_module = <a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;target_module&#39;</span>);</div>
 <div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        $guestbook_target_module = <a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;guestbook_target_module&#39;</span>);</div>
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        $this-&gt;unit_count = <a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;unit_count&#39;</span>);</div>
@@ -363,7 +363,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;                <span class="keywordflow">if</span>($ttimporter) require_once($ttimporter);</div>
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;</div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;                $oTT = <span class="keyword">new</span> <a class="code" href="classttimport.html">ttimport</a>();</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;                $cur = $oTT-&gt;importModule($key, $cur, $index_file, $this-&gt;unit_count, $target_module, $guestbook_target_module, <a class="code" href="blogapi_8addon_8php.html#a6d0a036129b3030ce289a026c5e1eff2">$user_id</a>, $target_module_info-&gt;module);</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;                $cur = $oTT-&gt;importModule($key, $cur, $index_file, $this-&gt;unit_count, $target_module, $guestbook_target_module, $user_id, $target_module_info-&gt;module);</div>
 <div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;                <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;            <span class="keywordflow">case</span> <span class="stringliteral">&#39;message&#39;</span> :</div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;                $cur = $this-&gt;<a class="code" href="classimporterAdminController.html#a604522c32bf020d51c1c6d868969cf7e">importMessage</a>($key, $cur, $index_file);</div>
@@ -1225,7 +1225,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classBaseObject_html_ac53ea9b2ac26d103f2b0217e9496a93d"><div class="ttname"><a href="classBaseObject.html#ac53ea9b2ac26d103f2b0217e9496a93d">BaseObject\add</a></div><div class="ttdeci">add($key, $val)</div><div class="ttdef"><b>Definition:</b> <a href="BaseObject_8class_8php_source.html#l00128">BaseObject.class.php:128</a></div></div>
 <div class="ttc" id="classimporterAdminController_html_af263aba79294e35c2027b2e41ac2a198"><div class="ttname"><a href="classimporterAdminController.html#af263aba79294e35c2027b2e41ac2a198">importerAdminController\saveTemporaryFile</a></div><div class="ttdeci">saveTemporaryFile($fp)</div><div class="ttdef"><b>Definition:</b> <a href="importer_8admin_8controller_8php_source.html#l01144">importer.admin.controller.php:1144</a></div></div>
 <div class="ttc" id="ko_8install_8php_html_a99863a9d4b597491e1a9c801f2e55c0b"><div class="ttname"><a href="ko_8install_8php.html#a99863a9d4b597491e1a9c801f2e55c0b">$extra_vars</a></div><div class="ttdeci">foreach($sitemap as $id=&gt; &amp;$val) $extra_vars</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00180">ko.install.php:180</a></div></div>
-<div class="ttc" id="blogapi_8addon_8php_html_a6d0a036129b3030ce289a026c5e1eff2"><div class="ttname"><a href="blogapi_8addon_8php.html#a6d0a036129b3030ce289a026c5e1eff2">$user_id</a></div><div class="ttdeci">if(in_array($method_name, array('metaWeblog.deletePost', 'metaWeblog.getUsersBlogs', 'metaWeblog.getUserInfo'))) $user_id</div><div class="ttdef"><b>Definition:</b> <a href="blogapi_8addon_8php_source.html#l00063">blogapi.addon.php:63</a></div></div>
 <div class="ttc" id="classBaseObject_html"><div class="ttname"><a href="classBaseObject.html">BaseObject</a></div><div class="ttdef"><b>Definition:</b> <a href="BaseObject_8class_8php_source.html#l00009">BaseObject.class.php:9</a></div></div>
 <div class="ttc" id="classFileHandler_html_ad90c10a81460f437bc68952427606155"><div class="ttname"><a href="classFileHandler.html#ad90c10a81460f437bc68952427606155">FileHandler\writeFile</a></div><div class="ttdeci">writeFile($filename, $buff, $mode=&quot;w&quot;)</div><div class="ttdef"><b>Definition:</b> <a href="FileHandler_8class_8php_source.html#l00145">FileHandler.class.php:145</a></div></div>
 <div class="ttc" id="classContext_html_ae75d6f4064d09e48d0d76614b6997e29"><div class="ttname"><a href="classContext.html#ae75d6f4064d09e48d0d76614b6997e29">Context\getLangType</a></div><div class="ttdeci">getLangType()</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l00986">Context.class.php:986</a></div></div>
@@ -1242,7 +1241,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="ko_8install_8php_html_a14522e7fff0604a8372c75b4a0fbc0fd"><div class="ttname"><a href="ko_8install_8php.html#a14522e7fff0604a8372c75b4a0fbc0fd">$document_srl</a></div><div class="ttdeci">$document_srl</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00279">ko.install.php:279</a></div></div>
 <div class="ttc" id="classttimport_html"><div class="ttname"><a href="classttimport.html">ttimport</a></div><div class="ttdef"><b>Definition:</b> <a href="ttimport_8class_8php_source.html#l00014">ttimport.class.php:14</a></div></div>
 <div class="ttc" id="classextract_html"><div class="ttname"><a href="classextract.html">extract</a></div><div class="ttdef"><b>Definition:</b> <a href="extract_8class_8php_source.html#l00011">extract.class.php:11</a></div></div>
-<div class="ttc" id="classFileHandler_html_a862c4f6349792ae8f094ec456c9a26ed"><div class="ttname"><a href="classFileHandler.html#a862c4f6349792ae8f094ec456c9a26ed">FileHandler\exists</a></div><div class="ttdeci">exists($filename)</div><div class="ttdef"><b>Definition:</b> <a href="FileHandler_8class_8php_source.html#l01069">FileHandler.class.php:1069</a></div></div>
+<div class="ttc" id="classFileHandler_html_a862c4f6349792ae8f094ec456c9a26ed"><div class="ttname"><a href="classFileHandler.html#a862c4f6349792ae8f094ec456c9a26ed">FileHandler\exists</a></div><div class="ttdeci">exists($filename)</div><div class="ttdef"><b>Definition:</b> <a href="FileHandler_8class_8php_source.html#l01095">FileHandler.class.php:1095</a></div></div>
 <div class="ttc" id="ko_8install_8php_html_afb18aa87e5520385e76377e876e042af"><div class="ttname"><a href="ko_8install_8php.html#afb18aa87e5520385e76377e876e042af">$oDocumentModel</a></div><div class="ttdeci">$oDocumentModel</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00259">ko.install.php:259</a></div></div>
 <div class="ttc" id="classimporterAdminController_html_a604522c32bf020d51c1c6d868969cf7e"><div class="ttname"><a href="classimporterAdminController.html#a604522c32bf020d51c1c6d868969cf7e">importerAdminController\importMessage</a></div><div class="ttdeci">importMessage($key, $cur, $index_file)</div><div class="ttdef"><b>Definition:</b> <a href="importer_8admin_8controller_8php_source.html#l00500">importer.admin.controller.php:500</a></div></div>
 <div class="ttc" id="classFileHandler_html_a6370b3eeddb705be04d9f60902a746e0"><div class="ttname"><a href="classFileHandler.html#a6370b3eeddb705be04d9f60902a746e0">FileHandler\getRealPath</a></div><div class="ttdeci">getRealPath($source)</div><div class="ttdef"><b>Definition:</b> <a href="FileHandler_8class_8php_source.html#l00018">FileHandler.class.php:18</a></div></div>
@@ -1274,7 +1273,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 7 2018 19:23:03 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 7 2018 16:06:49 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

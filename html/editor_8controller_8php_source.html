@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.9.5</span>
+   &#160;<span id="projectnumber">1.9.7</span>
    </div>
   </td>
  </tr>
@@ -531,51 +531,52 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;        <span class="comment">// Get xml_info of downloaded list</span></div>
 <div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;        <span class="keywordflow">foreach</span>($downloaded_list as $component_name)</div>
 <div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;        {</div>
-<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;            <span class="keywordflow">if</span>(in_array($component_name, array(<span class="stringliteral">&#39;colorpicker_text&#39;</span>,<span class="stringliteral">&#39;colorpicker_bg&#39;</span>))) <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;            <span class="comment">// Pass if configured</span></div>
-<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;            <span class="keywordflow">if</span>($component_list-&gt;{$component_name}) <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;            <span class="comment">// Insert data into the DB</span></div>
-<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;            $oEditorController = <a class="code" href="func_8inc_8php.html#a2f7ca88a5226536aca3b2f5682bd7b2d">getAdminController</a>(<span class="stringliteral">&#39;editor&#39;</span>);</div>
-<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;            $oEditorController-&gt;insertComponent($component_name, <span class="keyword">false</span>, $site_srl);</div>
-<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;            <span class="comment">// Add to component_list</span></div>
-<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;            unset($xml_info);</div>
-<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;            $xml_info = $oEditorModel-&gt;getComponentXmlInfo($component_name);</div>
-<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;            $xml_info-&gt;enabled = <span class="charliteral">&#39;N&#39;</span>;</div>
-<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;</div>
-<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;            $component_list-&gt;{$component_name} = $xml_info;</div>
-<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;        }</div>
-<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;</div>
-<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;        $cache_file = $oEditorModel-&gt;getCacheFile($filter_enabled, $site_srl);</div>
-<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;        $buff = sprintf(<span class="stringliteral">&#39;&lt;?php if(!defined(&quot;__XE__&quot;)) exit(); $component_list = unserialize(&quot;%s&quot;); ?&gt;&#39;</span>, str_replace(<span class="charliteral">&#39;&quot;&#39;</span>,<span class="stringliteral">&#39;\\&quot;&#39;</span>,serialize($component_list)));</div>
-<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;        <a class="code" href="classFileHandler.html#ad90c10a81460f437bc68952427606155">FileHandler::writeFile</a>($cache_file, $buff);</div>
-<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;</div>
-<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;        <span class="keywordflow">return</span> $component_list;</div>
-<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;    }</div>
-<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;</div>
-<div class="line"><a name="l00514"></a><span class="lineno"><a class="line" href="classeditorController.html#a0a512fff61d647692ad254eacafb8f0b">  514</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classeditorController.html#a0a512fff61d647692ad254eacafb8f0b">removeCache</a>($site_srl = 0)</div>
-<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;    {</div>
-<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;        $oEditorModel = <a class="code" href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a>(<span class="stringliteral">&#39;editor&#39;</span>);</div>
-<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;        <a class="code" href="classFileHandler.html#aa5969f9fe0ce869fc736c4da384959e9">FileHandler::removeFile</a>($oEditorModel-&gt;getCacheFile(<span class="keyword">true</span>, $site_srl));</div>
-<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;        <a class="code" href="classFileHandler.html#aa5969f9fe0ce869fc736c4da384959e9">FileHandler::removeFile</a>($oEditorModel-&gt;getCacheFile(<span class="keyword">false</span>, $site_srl));</div>
-<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;    }</div>
-<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;</div>
-<div class="line"><a name="l00521"></a><span class="lineno"><a class="line" href="classeditorController.html#acccfd1dab6c8c48a2eb232ae2e46e6bf">  521</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classeditorController.html#acccfd1dab6c8c48a2eb232ae2e46e6bf">triggerCopyModule</a>(&amp;<a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>)</div>
-<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;    {</div>
-<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;        <a class="code" href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a> = <a class="code" href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a>(<span class="stringliteral">&#39;module&#39;</span>);</div>
-<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;        $editorConfig = <a class="code" href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a>-&gt;getModulePartConfig(<span class="stringliteral">&#39;editor&#39;</span>, <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;originModuleSrl);</div>
-<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;</div>
-<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;        <a class="code" href="ko_8install_8php.html#a9fd93f6625cec4fd65bf6f412e28c015">$oModuleController</a> = <a class="code" href="func_8inc_8php.html#aa08f01e3bf130d770b373ca8493e3e9b">getController</a>(<span class="stringliteral">&#39;module&#39;</span>);</div>
-<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;        <span class="keywordflow">if</span>(is_array(<a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;moduleSrlList))</div>
-<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;        {</div>
-<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;            <span class="keywordflow">foreach</span>(<a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;moduleSrlList AS $key=&gt;$moduleSrl)</div>
-<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;            {</div>
-<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;                <a class="code" href="ko_8install_8php.html#a9fd93f6625cec4fd65bf6f412e28c015">$oModuleController</a>-&gt;insertModulePartConfig(<span class="stringliteral">&#39;editor&#39;</span>, $moduleSrl, $editorConfig);</div>
-<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;            }</div>
-<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;        }</div>
-<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;    }</div>
-<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;}</div>
-<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;<span class="comment">/* End of file editor.controller.php */</span></div>
-<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;<span class="comment">/* Location: ./modules/editor/editor.controller.php */</span></div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;            <span class="keywordflow">if</span>(!is_dir(<a class="code" href="config_8inc_8php.html#a5387c7a3f2aa38adf16f324cee88db88">_XE_PATH_</a>.<span class="stringliteral">&#39;modules/editor/components/&#39;</span>.$component_name)) <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;            <span class="keywordflow">if</span>(in_array($component_name, array(<span class="stringliteral">&#39;colorpicker_text&#39;</span>,<span class="stringliteral">&#39;colorpicker_bg&#39;</span>))) <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;            <span class="comment">// Pass if configured</span></div>
+<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;            <span class="keywordflow">if</span>($component_list-&gt;{$component_name}) <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;            <span class="comment">// Insert data into the DB</span></div>
+<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;            $oEditorController = <a class="code" href="func_8inc_8php.html#a2f7ca88a5226536aca3b2f5682bd7b2d">getAdminController</a>(<span class="stringliteral">&#39;editor&#39;</span>);</div>
+<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;            $oEditorController-&gt;insertComponent($component_name, <span class="keyword">false</span>, $site_srl);</div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;            <span class="comment">// Add to component_list</span></div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;            unset($xml_info);</div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;            $xml_info = $oEditorModel-&gt;getComponentXmlInfo($component_name);</div>
+<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;            $xml_info-&gt;enabled = <span class="charliteral">&#39;N&#39;</span>;</div>
+<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;</div>
+<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;            $component_list-&gt;{$component_name} = $xml_info;</div>
+<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;        }</div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;</div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;        $cache_file = $oEditorModel-&gt;getCacheFile($filter_enabled, $site_srl);</div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;        $buff = sprintf(<span class="stringliteral">&#39;&lt;?php if(!defined(&quot;__XE__&quot;)) exit(); $component_list = unserialize(&quot;%s&quot;); ?&gt;&#39;</span>, str_replace(<span class="charliteral">&#39;&quot;&#39;</span>,<span class="stringliteral">&#39;\\&quot;&#39;</span>,serialize($component_list)));</div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;        <a class="code" href="classFileHandler.html#ad90c10a81460f437bc68952427606155">FileHandler::writeFile</a>($cache_file, $buff);</div>
+<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;</div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;        <span class="keywordflow">return</span> $component_list;</div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;    }</div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;</div>
+<div class="line"><a name="l00515"></a><span class="lineno"><a class="line" href="classeditorController.html#a0a512fff61d647692ad254eacafb8f0b">  515</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classeditorController.html#a0a512fff61d647692ad254eacafb8f0b">removeCache</a>($site_srl = 0)</div>
+<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;    {</div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;        $oEditorModel = <a class="code" href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a>(<span class="stringliteral">&#39;editor&#39;</span>);</div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;        <a class="code" href="classFileHandler.html#aa5969f9fe0ce869fc736c4da384959e9">FileHandler::removeFile</a>($oEditorModel-&gt;getCacheFile(<span class="keyword">true</span>, $site_srl));</div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;        <a class="code" href="classFileHandler.html#aa5969f9fe0ce869fc736c4da384959e9">FileHandler::removeFile</a>($oEditorModel-&gt;getCacheFile(<span class="keyword">false</span>, $site_srl));</div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;    }</div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;</div>
+<div class="line"><a name="l00522"></a><span class="lineno"><a class="line" href="classeditorController.html#acccfd1dab6c8c48a2eb232ae2e46e6bf">  522</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classeditorController.html#acccfd1dab6c8c48a2eb232ae2e46e6bf">triggerCopyModule</a>(&amp;<a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>)</div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;    {</div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;        <a class="code" href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a> = <a class="code" href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a>(<span class="stringliteral">&#39;module&#39;</span>);</div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;        $editorConfig = <a class="code" href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a>-&gt;getModulePartConfig(<span class="stringliteral">&#39;editor&#39;</span>, <a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;originModuleSrl);</div>
+<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;</div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;        <a class="code" href="ko_8install_8php.html#a9fd93f6625cec4fd65bf6f412e28c015">$oModuleController</a> = <a class="code" href="func_8inc_8php.html#aa08f01e3bf130d770b373ca8493e3e9b">getController</a>(<span class="stringliteral">&#39;module&#39;</span>);</div>
+<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;        <span class="keywordflow">if</span>(is_array(<a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;moduleSrlList))</div>
+<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;        {</div>
+<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;            <span class="keywordflow">foreach</span>(<a class="code" href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a>-&gt;moduleSrlList AS $key=&gt;$moduleSrl)</div>
+<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;            {</div>
+<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;                <a class="code" href="ko_8install_8php.html#a9fd93f6625cec4fd65bf6f412e28c015">$oModuleController</a>-&gt;insertModulePartConfig(<span class="stringliteral">&#39;editor&#39;</span>, $moduleSrl, $editorConfig);</div>
+<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;            }</div>
+<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;        }</div>
+<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;    }</div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;}</div>
+<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;<span class="comment">/* End of file editor.controller.php */</span></div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;<span class="comment">/* Location: ./modules/editor/editor.controller.php */</span></div>
 <div class="ttc" id="ko_8install_8php_html_a8d7a87df524e7d6938f66f8e284cdd1e"><div class="ttname"><a href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a></div><div class="ttdeci">$oModuleModel</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00236">ko.install.php:236</a></div></div>
 <div class="ttc" id="classModuleObject_html_a90eb9095539a8905d73695afbbebbe24"><div class="ttname"><a href="classModuleObject.html#a90eb9095539a8905d73695afbbebbe24">ModuleObject\setMessage</a></div><div class="ttdeci">setMessage($message= 'success', $type=NULL)</div><div class="ttdef"><b>Definition:</b> <a href="ModuleObject_8class_8php_source.html#l00089">ModuleObject.class.php:89</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_aa08f01e3bf130d770b373ca8493e3e9b"><div class="ttname"><a href="func_8inc_8php.html#aa08f01e3bf130d770b373ca8493e3e9b">getController</a></div><div class="ttdeci">getController($module_name)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00090">func.inc.php:90</a></div></div>
@@ -585,7 +586,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classFileHandler_html_aa5969f9fe0ce869fc736c4da384959e9"><div class="ttname"><a href="classFileHandler.html#aa5969f9fe0ce869fc736c4da384959e9">FileHandler\removeFile</a></div><div class="ttdeci">removeFile($filename)</div><div class="ttdef"><b>Definition:</b> <a href="FileHandler_8class_8php_source.html#l00169">FileHandler.class.php:169</a></div></div>
 <div class="ttc" id="classeditorController_html_a40838d463bafa5863b5f966b8828738b"><div class="ttname"><a href="classeditorController.html#a40838d463bafa5863b5f966b8828738b">editorController\init</a></div><div class="ttdeci">init()</div><div class="ttdoc">Initialization. </div><div class="ttdef"><b>Definition:</b> <a href="editor_8controller_8php_source.html#l00013">editor.controller.php:13</a></div></div>
 <div class="ttc" id="ko_8install_8php_html_a9008ed94ba185855b1723e367744b87e"><div class="ttname"><a href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a></div><div class="ttdeci">$obj</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00262">ko.install.php:262</a></div></div>
-<div class="ttc" id="classeditorController_html_a0a512fff61d647692ad254eacafb8f0b"><div class="ttname"><a href="classeditorController.html#a0a512fff61d647692ad254eacafb8f0b">editorController\removeCache</a></div><div class="ttdeci">removeCache($site_srl=0)</div><div class="ttdoc">Delete cache files. </div><div class="ttdef"><b>Definition:</b> <a href="editor_8controller_8php_source.html#l00514">editor.controller.php:514</a></div></div>
+<div class="ttc" id="classeditorController_html_a0a512fff61d647692ad254eacafb8f0b"><div class="ttname"><a href="classeditorController.html#a0a512fff61d647692ad254eacafb8f0b">editorController\removeCache</a></div><div class="ttdeci">removeCache($site_srl=0)</div><div class="ttdoc">Delete cache files. </div><div class="ttdef"><b>Definition:</b> <a href="editor_8controller_8php_source.html#l00515">editor.controller.php:515</a></div></div>
 <div class="ttc" id="classContext_html_a26a1aea944ae54bb826500f544a67950"><div class="ttname"><a href="classContext.html#a26a1aea944ae54bb826500f544a67950">Context\addHtmlHeader</a></div><div class="ttdeci">addHtmlHeader($header)</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l02484">Context.class.php:2484</a></div></div>
 <div class="ttc" id="ko_8install_8php_html_a73004ce9cd673c1bfafd1dc351134797"><div class="ttname"><a href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a></div><div class="ttdeci">$output</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00193">ko.install.php:193</a></div></div>
 <div class="ttc" id="classBaseObject_html_ac53ea9b2ac26d103f2b0217e9496a93d"><div class="ttname"><a href="classBaseObject.html#ac53ea9b2ac26d103f2b0217e9496a93d">BaseObject\add</a></div><div class="ttdeci">add($key, $val)</div><div class="ttdef"><b>Definition:</b> <a href="BaseObject_8class_8php_source.html#l00128">BaseObject.class.php:128</a></div></div>
@@ -604,7 +605,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classBaseObject_html_a577cc2f5a02da2517064d5ef2b7ccb10"><div class="ttname"><a href="classBaseObject.html#a577cc2f5a02da2517064d5ef2b7ccb10">BaseObject\setError</a></div><div class="ttdeci">setError($error=0)</div><div class="ttdef"><b>Definition:</b> <a href="BaseObject_8class_8php_source.html#l00054">BaseObject.class.php:54</a></div></div>
 <div class="ttc" id="classeditorController_html_a6003487c398eae0676e15f5437cebdf8"><div class="ttname"><a href="classeditorController.html#a6003487c398eae0676e15f5437cebdf8">editorController\triggerEditorComponentCompile</a></div><div class="ttdeci">triggerEditorComponentCompile(&amp;$content)</div><div class="ttdoc">convert editor component codes to be returned and specify content style. </div><div class="ttdef"><b>Definition:</b> <a href="editor_8controller_8php_source.html#l00170">editor.controller.php:170</a></div></div>
 <div class="ttc" id="ko_8install_8php_html_a67e94494731d99ed23b123e95175bc10"><div class="ttname"><a href="ko_8install_8php.html#a67e94494731d99ed23b123e95175bc10">$args</a></div><div class="ttdeci">$args</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00185">ko.install.php:185</a></div></div>
-<div class="ttc" id="classeditorController_html_acccfd1dab6c8c48a2eb232ae2e46e6bf"><div class="ttname"><a href="classeditorController.html#acccfd1dab6c8c48a2eb232ae2e46e6bf">editorController\triggerCopyModule</a></div><div class="ttdeci">triggerCopyModule(&amp;$obj)</div><div class="ttdef"><b>Definition:</b> <a href="editor_8controller_8php_source.html#l00521">editor.controller.php:521</a></div></div>
+<div class="ttc" id="classeditorController_html_acccfd1dab6c8c48a2eb232ae2e46e6bf"><div class="ttname"><a href="classeditorController.html#acccfd1dab6c8c48a2eb232ae2e46e6bf">editorController\triggerCopyModule</a></div><div class="ttdeci">triggerCopyModule(&amp;$obj)</div><div class="ttdef"><b>Definition:</b> <a href="editor_8controller_8php_source.html#l00522">editor.controller.php:522</a></div></div>
 <div class="ttc" id="classContext_html_a69807c3ced3f97920b233a3fce3bb492"><div class="ttname"><a href="classContext.html#a69807c3ced3f97920b233a3fce3bb492">Context\addJsFile</a></div><div class="ttdeci">addJsFile($file, $optimized=FALSE, $targetie= '', $index=0, $type= 'head', $isRuleset=FALSE, $autoPath=null)</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l02214">Context.class.php:2214</a></div></div>
 <div class="ttc" id="classContext_html_ac024e3744d631bf487ded23c2c6c7e24"><div class="ttname"><a href="classContext.html#ac024e3744d631bf487ded23c2c6c7e24">Context\addCSSFile</a></div><div class="ttdeci">addCSSFile($file, $optimized=FALSE, $media= 'all', $targetie= '', $index=0)</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l02322">Context.class.php:2322</a></div></div>
 <div class="ttc" id="classPassword_html_a76fa768628b67c0f841b2c9acab9d678"><div class="ttname"><a href="classPassword.html#a76fa768628b67c0f841b2c9acab9d678">Password\createSecureSalt</a></div><div class="ttdeci">createSecureSalt($length, $format= 'hex')</div><div class="ttdoc">Generate a cryptographically secure random string to use as a salt. </div><div class="ttdef"><b>Definition:</b> <a href="Password_8class_8php_source.html#l00229">Password.class.php:229</a></div></div>
@@ -629,7 +630,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 7 2018 19:23:03 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 7 2018 16:06:49 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

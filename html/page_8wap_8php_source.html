@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.9.5</span>
+   &#160;<span id="projectnumber">1.9.7</span>
    </div>
   </td>
  </tr>
@@ -95,14 +95,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">/* Copyright (C) NAVER &lt;http://www.navercorp.com&gt; */</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="classpageWap.html">    8</a></span>&#160;<span class="keyword">class </span><a class="code" href="classpageWap.html">pageWap</a> <span class="keyword">extends</span> <a class="code" href="classpage.html">page</a></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classpageWap.html#a7ee56942979074bd2b79621dfc7349e9">   15</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classpageWap.html#a7ee56942979074bd2b79621dfc7349e9">procWAP</a>(&amp;<a class="code" href="mobile_8addon_8php.html#a2e1472c6f1bb5b341e95a632164904d0">$oMobile</a>)</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classpageWap.html#a7ee56942979074bd2b79621dfc7349e9">   15</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classpageWap.html#a7ee56942979074bd2b79621dfc7349e9">procWAP</a>(&amp;$oMobile)</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    {</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="comment">// Check permissions</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keywordflow">if</span>(!$this-&gt;grant-&gt;access) <span class="keywordflow">return</span> <a class="code" href="mobile_8addon_8php.html#a2e1472c6f1bb5b341e95a632164904d0">$oMobile</a>-&gt;setContent(<a class="code" href="classContext.html#a9af9269b04542f7462d27a63226e0ff3">Context::getLang</a>(<span class="stringliteral">&#39;msg_not_permitted&#39;</span>));</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keywordflow">if</span>(!$this-&gt;grant-&gt;access) <span class="keywordflow">return</span> $oMobile-&gt;setContent(<a class="code" href="classContext.html#a9af9269b04542f7462d27a63226e0ff3">Context::getLang</a>(<span class="stringliteral">&#39;msg_not_permitted&#39;</span>));</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="comment">// The contents of the widget chuchulham</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        $oWidgetController = <a class="code" href="func_8inc_8php.html#aa08f01e3bf130d770b373ca8493e3e9b">getController</a>(<span class="stringliteral">&#39;widget&#39;</span>);</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        $content = $oWidgetController-&gt;transWidgetCode($this-&gt;module_info-&gt;content);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <a class="code" href="mobile_8addon_8php.html#a2e1472c6f1bb5b341e95a632164904d0">$oMobile</a>-&gt;setContent($content);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        $oMobile-&gt;setContent($content);</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    }</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">/* End of file page.wap.php */</span></div>
@@ -112,11 +112,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classpageWap_html"><div class="ttname"><a href="classpageWap.html">pageWap</a></div><div class="ttdoc">wap class page of the module </div><div class="ttdef"><b>Definition:</b> <a href="page_8wap_8php_source.html#l00008">page.wap.php:8</a></div></div>
 <div class="ttc" id="classpageWap_html_a7ee56942979074bd2b79621dfc7349e9"><div class="ttname"><a href="classpageWap.html#a7ee56942979074bd2b79621dfc7349e9">pageWap\procWAP</a></div><div class="ttdeci">procWAP(&amp;$oMobile)</div><div class="ttdoc">wap procedure method </div><div class="ttdef"><b>Definition:</b> <a href="page_8wap_8php_source.html#l00015">page.wap.php:15</a></div></div>
 <div class="ttc" id="classContext_html_a9af9269b04542f7462d27a63226e0ff3"><div class="ttname"><a href="classContext.html#a9af9269b04542f7462d27a63226e0ff3">Context\getLang</a></div><div class="ttdeci">getLang($code)</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l00998">Context.class.php:998</a></div></div>
-<div class="ttc" id="mobile_8addon_8php_html_a2e1472c6f1bb5b341e95a632164904d0"><div class="ttname"><a href="mobile_8addon_8php.html#a2e1472c6f1bb5b341e95a632164904d0">$oMobile</a></div><div class="ttdeci">if(!mobileXE::getBrowserType()) $oMobile</div><div class="ttdef"><b>Definition:</b> <a href="mobile_8addon_8php_source.html#l00038">mobile.addon.php:38</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 7 2018 19:23:03 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 7 2018 16:06:49 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

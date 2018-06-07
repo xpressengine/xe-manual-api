@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.9.5</span>
+   &#160;<span id="projectnumber">1.9.7</span>
    </div>
   </td>
  </tr>
@@ -134,8 +134,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a79dd068137470965b560f4d23d978e7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b240e89b6ce57cb94e855fc25e5e9f3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFileHandler.html#a0b240e89b6ce57cb94e855fc25e5e9f3">checkMemoryLoadImage</a> (&amp;$imageInfo)</td></tr>
 <tr class="separator:a0b240e89b6ce57cb94e855fc25e5e9f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a171948d79c14415ad45b7581a011c593"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFileHandler.html#a171948d79c14415ad45b7581a011c593">createImageFile</a> ($source_file, $target_file, $resize_width=0, $resize_height=0, $target_type= '', $thumbnail_type= 'crop')</td></tr>
-<tr class="separator:a171948d79c14415ad45b7581a011c593"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a515ef94bb71bc28540e3792ccc234457"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFileHandler.html#a515ef94bb71bc28540e3792ccc234457">createImageFile</a> ($source_file, $target_file, $resize_width=0, $resize_height=0, $target_type= '', $thumbnail_type= 'crop', $thumbnail_transparent=FALSE)</td></tr>
+<tr class="separator:a515ef94bb71bc28540e3792ccc234457"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58a8bbae1ab4acb358599db38a47db4d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFileHandler.html#a58a8bbae1ab4acb358599db38a47db4d">readIniFile</a> ($filename)</td></tr>
 <tr class="separator:a58a8bbae1ab4acb358599db38a47db4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0fd9ce8f2c81bee472a403e75b578bd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFileHandler.html#aa0fd9ce8f2c81bee472a403e75b578bd">writeIniFile</a> ($filename, $arr)</td></tr>
@@ -188,7 +188,7 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string </dd></dl>
 
-<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l01006">1006</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
+<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l01032">1032</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
 
 </div>
 </div>
@@ -258,7 +258,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l01120">1120</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
+<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l01146">1146</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
 
 </div>
 </div>
@@ -358,7 +358,7 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a171948d79c14415ad45b7581a011c593"></a>
+<a class="anchor" id="a515ef94bb71bc28540e3792ccc234457"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -396,7 +396,13 @@ Static Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$thumbnail_type</em> = <code>'crop'</code>&#160;</td>
+          <td class="paramname"><em>$thumbnail_type</em> = <code>'crop'</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$thumbnail_transparent</em> = <code>FALSE</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -414,12 +420,13 @@ Static Public Member Functions</h2></td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$resize_height</td><td>Height to resize </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$target_type</td><td>If $target_type is set (gif, jpg, png, bmp), result image will be saved as target type </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$thumbnail_type</td><td>Thumbnail type(crop, ratio) </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$thumbnail_transparent</td><td>If $target_type is png, set background set transparent color </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>bool TRUE: success, FALSE: failed </dd></dl>
 
-<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l00756">756</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
+<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l00765">765</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
 
 </div>
 </div>
@@ -445,7 +452,7 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>bool Returns FALSE if the file does not exists, or Returns full path <a class="el" href="classfile.html">file(string)</a>. </dd></dl>
 
-<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l01069">1069</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
+<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l01095">1095</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
 
 </div>
 </div>
@@ -700,7 +707,7 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>bool Returns TRUE if the file exists and contains something. </dd></dl>
 
-<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l01058">1058</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
+<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l01084">1084</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
 
 </div>
 </div>
@@ -744,7 +751,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l01144">1144</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
+<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l01170">1170</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
 
 </div>
 </div>
@@ -770,7 +777,7 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>bool Returns FALSE if the dir is not dir, or Returns full path of dir(string). </dd></dl>
 
-<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l01081">1081</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
+<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l01107">1107</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
 
 </div>
 </div>
@@ -796,7 +803,7 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>bool </dd></dl>
 
-<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l01093">1093</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
+<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l01119">1119</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
 
 </div>
 </div>
@@ -936,7 +943,7 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classFileObject.html">FileObject</a> File object </dd></dl>
 
-<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l01043">1043</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
+<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l01069">1069</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
 
 </div>
 </div>
@@ -1041,7 +1048,7 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>array ini array (if the target file does not exist, it returns FALSE) </dd></dl>
 
-<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l00959">959</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
+<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l00985">985</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
 
 </div>
 </div>
@@ -1298,7 +1305,7 @@ self::writeIniFile('exmple.ini', $ini);
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>bool if array contains nothing it returns FALSE, otherwise TRUE </dd></dl>
 
-<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l00990">990</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
+<p>Definition at line <a class="el" href="FileHandler_8class_8php_source.html#l01016">1016</a> of file <a class="el" href="FileHandler_8class_8php_source.html">FileHandler.class.php</a>.</p>
 
 </div>
 </div>
@@ -1308,7 +1315,7 @@ self::writeIniFile('exmple.ini', $ini);
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 7 2018 19:23:04 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 7 2018 16:06:50 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -24,7 +24,6 @@ var searchData=
   ['messagemobile',['messageMobile',['../classmessageMobile.html',1,'']]],
   ['messageview',['messageView',['../classmessageView.html',1,'']]],
   ['mobile',['Mobile',['../classMobile.html',1,'']]],
-  ['mobilexe',['mobileXE',['../classmobileXE.html',1,'']]],
   ['module',['module',['../classmodule.html',1,'']]],
   ['moduleadmincontroller',['moduleAdminController',['../classmoduleAdminController.html',1,'']]],
   ['moduleadminmodel',['moduleAdminModel',['../classmoduleAdminModel.html',1,'']]],

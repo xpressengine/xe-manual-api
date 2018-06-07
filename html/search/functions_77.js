@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['wap',['wap',['../classwap.html#a7b4befeef8257c63a0ffe3012a84560b',1,'wap\wap()'],['../classwap.html#a7b4befeef8257c63a0ffe3012a84560b',1,'wap\wap()'],['../classwap.html#a7b4befeef8257c63a0ffe3012a84560b',1,'wap\wap()']]],
   ['where',['where',['../classQuery.html#a0ed9a48e6619d83211d0b81907fa8d6b',1,'Query']]],
   ['workaroundphpbug47204',['workaroundPhpBug47204',['../classHTTP__Request2__Adapter__Curl.html#a3e62b54a633faf5aba9d0b4eb0a3c1d0',1,'HTTP_Request2_Adapter_Curl']]],
   ['wrapcurlerror',['wrapCurlError',['../classHTTP__Request2__Adapter__Curl.html#a1ac224c8ce10176a51e756419fc0e374',1,'HTTP_Request2_Adapter_Curl']]],

@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.9.5</span>
+   &#160;<span id="projectnumber">1.9.7</span>
    </div>
   </td>
  </tr>
@@ -202,8 +202,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        <span class="comment">// URL contains username / password?</span></div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classHTTP__Request2.html#acf16b4d76ebd04a80dc8e140303ad895">$url</a>-&gt;getUserinfo()) {</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;            $username = <a class="code" href="classHTTP__Request2.html#acf16b4d76ebd04a80dc8e140303ad895">$url</a>-&gt;getUser();</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;            <a class="code" href="blogapi_8addon_8php.html#a607686ef9f99ea7c42f4f3dd3dbb2b0d">$password</a> = <a class="code" href="classHTTP__Request2.html#acf16b4d76ebd04a80dc8e140303ad895">$url</a>-&gt;getPassword();</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;            $this-&gt;<a class="code" href="classHTTP__Request2.html#a3ed0781251e632a15aadaaff960ec854">setAuth</a>(rawurldecode($username), <a class="code" href="blogapi_8addon_8php.html#a607686ef9f99ea7c42f4f3dd3dbb2b0d">$password</a>? rawurldecode(<a class="code" href="blogapi_8addon_8php.html#a607686ef9f99ea7c42f4f3dd3dbb2b0d">$password</a>): <span class="stringliteral">&#39;&#39;</span>);</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;            $password = <a class="code" href="classHTTP__Request2.html#acf16b4d76ebd04a80dc8e140303ad895">$url</a>-&gt;getPassword();</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;            $this-&gt;<a class="code" href="classHTTP__Request2.html#a3ed0781251e632a15aadaaff960ec854">setAuth</a>(rawurldecode($username), $password? rawurldecode($password): <span class="stringliteral">&#39;&#39;</span>);</div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;            <a class="code" href="classHTTP__Request2.html#acf16b4d76ebd04a80dc8e140303ad895">$url</a>-&gt;setUserinfo(<span class="stringliteral">&#39;&#39;</span>);</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        }</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        <span class="keywordflow">if</span> (<span class="stringliteral">&#39;&#39;</span> == <a class="code" href="classHTTP__Request2.html#acf16b4d76ebd04a80dc8e140303ad895">$url</a>-&gt;getPath()) {</div>
@@ -281,14 +281,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;        <span class="keywordflow">return</span> $this-&gt;config[$name];</div>
 <div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    }</div>
 <div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;</div>
-<div class="line"><a name="l00418"></a><span class="lineno"><a class="line" href="classHTTP__Request2.html#a3ed0781251e632a15aadaaff960ec854">  418</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="classHTTP__Request2.html#a3ed0781251e632a15aadaaff960ec854">setAuth</a>($user, <a class="code" href="blogapi_8addon_8php.html#a607686ef9f99ea7c42f4f3dd3dbb2b0d">$password</a> = <span class="stringliteral">&#39;&#39;</span>, $scheme = self::AUTH_BASIC)</div>
+<div class="line"><a name="l00418"></a><span class="lineno"><a class="line" href="classHTTP__Request2.html#a3ed0781251e632a15aadaaff960ec854">  418</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="classHTTP__Request2.html#a3ed0781251e632a15aadaaff960ec854">setAuth</a>($user, $password = <span class="stringliteral">&#39;&#39;</span>, $scheme = self::AUTH_BASIC)</div>
 <div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;    {</div>
 <div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;        <span class="keywordflow">if</span> (empty($user)) {</div>
 <div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;            $this-&gt;auth = null;</div>
 <div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;        } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;            $this-&gt;auth = array(</div>
 <div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;                <span class="stringliteral">&#39;user&#39;</span>     =&gt; (<span class="keywordtype">string</span>)$user,</div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;                <span class="stringliteral">&#39;password&#39;</span> =&gt; (<span class="keywordtype">string</span>)<a class="code" href="blogapi_8addon_8php.html#a607686ef9f99ea7c42f4f3dd3dbb2b0d">$password</a>,</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;                <span class="stringliteral">&#39;password&#39;</span> =&gt; (<span class="keywordtype">string</span>)$password,</div>
 <div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;                <span class="stringliteral">&#39;scheme&#39;</span>   =&gt; $scheme</div>
 <div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;            );</div>
 <div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;        }</div>
@@ -721,7 +721,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classHTTP__Request2_html_a65c57cec36149d220f6cd30d43eb59b7"><div class="ttname"><a href="classHTTP__Request2.html#a65c57cec36149d220f6cd30d43eb59b7">HTTP_Request2\METHOD_OPTIONS</a></div><div class="ttdeci">const METHOD_OPTIONS</div><div class="ttdef"><b>Definition:</b> <a href="Request2_8php_source.html#l00049">Request2.php:49</a></div></div>
 <div class="ttc" id="classHTTP__Request2_html_a1c05aea3c3857ad8f4c6a0a9eb33911d"><div class="ttname"><a href="classHTTP__Request2.html#a1c05aea3c3857ad8f4c6a0a9eb33911d">HTTP_Request2\setLastEvent</a></div><div class="ttdeci">setLastEvent($name, $data=null)</div><div class="ttdef"><b>Definition:</b> <a href="Request2_8php_source.html#l00765">Request2.php:765</a></div></div>
 <div class="ttc" id="classHTTP__Request2_html_ac8e89d3a20ba389c4781f1e5adf58e04"><div class="ttname"><a href="classHTTP__Request2.html#ac8e89d3a20ba389c4781f1e5adf58e04">HTTP_Request2\addUpload</a></div><div class="ttdeci">addUpload($fieldName, $filename, $sendFilename=null, $contentType=null)</div><div class="ttdef"><b>Definition:</b> <a href="Request2_8php_source.html#l00654">Request2.php:654</a></div></div>
-<div class="ttc" id="blogapi_8addon_8php_html_a607686ef9f99ea7c42f4f3dd3dbb2b0d"><div class="ttname"><a href="blogapi_8addon_8php.html#a607686ef9f99ea7c42f4f3dd3dbb2b0d">$password</a></div><div class="ttdeci">$password</div><div class="ttdef"><b>Definition:</b> <a href="blogapi_8addon_8php_source.html#l00064">blogapi.addon.php:64</a></div></div>
 <div class="ttc" id="classHTTP__Request2_html_a4043f1c6f00d8b92d2b3dcb5ecd2861e"><div class="ttname"><a href="classHTTP__Request2.html#a4043f1c6f00d8b92d2b3dcb5ecd2861e">HTTP_Request2\$config</a></div><div class="ttdeci">$config</div><div class="ttdef"><b>Definition:</b> <a href="Request2_8php_source.html#l00124">Request2.php:124</a></div></div>
 <div class="ttc" id="classHTTP__Request2_html_a27fadfa673c3317675ab78b5df99264a"><div class="ttname"><a href="classHTTP__Request2.html#a27fadfa673c3317675ab78b5df99264a">HTTP_Request2\setAdapter</a></div><div class="ttdeci">setAdapter($adapter)</div><div class="ttdef"><b>Definition:</b> <a href="Request2_8php_source.html#l00825">Request2.php:825</a></div></div>
 <div class="ttc" id="classHTTP__Request2_html"><div class="ttname"><a href="classHTTP__Request2.html">HTTP_Request2</a></div><div class="ttdef"><b>Definition:</b> <a href="Request2_8php_source.html#l00042">Request2.php:42</a></div></div>
@@ -736,7 +735,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 7 2018 19:23:02 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 7 2018 16:06:48 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

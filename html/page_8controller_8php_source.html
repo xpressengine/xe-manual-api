@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.9.5</span>
+   &#160;<span id="projectnumber">1.9.7</span>
    </div>
   </td>
  </tr>
@@ -117,7 +117,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        {</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            $tmp_str = trim($link_buff[0][$i]);</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <span class="keywordflow">if</span>(!$tmp_str) <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <a class="code" href="openid__delegation__id_8addon_8php.html#aee516fc492038096250a555b5f8bc880">$header_script</a> .=  $tmp_str.<span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            $header_script .=  $tmp_str.<span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        }</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        preg_match_all(<span class="stringliteral">&#39;!&lt;(style|script)(.*?)&lt;\/(style|script)&gt;!is&#39;</span>, $content, $script_buff);</div>
@@ -125,10 +125,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        {</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            $tmp_str = trim($script_buff[0][$i]);</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="keywordflow">if</span>(!$tmp_str) <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <a class="code" href="openid__delegation__id_8addon_8php.html#aee516fc492038096250a555b5f8bc880">$header_script</a> .=  $tmp_str.<span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            $header_script .=  $tmp_str.<span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        }</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="openid__delegation__id_8addon_8php.html#aee516fc492038096250a555b5f8bc880">$header_script</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordflow">return</span> $header_script;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
 <div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classpageController.html#a8c5c1bd477ffc4beda5af3b6d3cee63f">   58</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classpageController.html#a8c5c1bd477ffc4beda5af3b6d3cee63f">getBodyScript</a>($content)</div>
@@ -193,13 +193,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classpageController_html_a7fc1046874a92835813b27613857890c"><div class="ttname"><a href="classpageController.html#a7fc1046874a92835813b27613857890c">pageController\getHeadScript</a></div><div class="ttdeci">getHeadScript($content)</div><div class="ttdoc">Extract header script. </div><div class="ttdef"><b>Definition:</b> <a href="page_8controller_8php_source.html#l00029">page.controller.php:29</a></div></div>
 <div class="ttc" id="classpageController_html_a8c5c1bd477ffc4beda5af3b6d3cee63f"><div class="ttname"><a href="classpageController.html#a8c5c1bd477ffc4beda5af3b6d3cee63f">pageController\getBodyScript</a></div><div class="ttdeci">getBodyScript($content)</div><div class="ttdoc">Extract the contents of the body. </div><div class="ttdef"><b>Definition:</b> <a href="page_8controller_8php_source.html#l00058">page.controller.php:58</a></div></div>
 <div class="ttc" id="classpageController_html"><div class="ttname"><a href="classpageController.html">pageController</a></div><div class="ttdef"><b>Definition:</b> <a href="page_8controller_8php_source.html#l00008">page.controller.php:8</a></div></div>
-<div class="ttc" id="openid__delegation__id_8addon_8php_html_aee516fc492038096250a555b5f8bc880"><div class="ttname"><a href="openid__delegation__id_8addon_8php.html#aee516fc492038096250a555b5f8bc880">$header_script</a></div><div class="ttdeci">if($called_position!= 'before_module_init') if(!$addon_info-&gt;server||!$addon_info-&gt;delegate||!$addon_info-&gt;xrds) $header_script</div><div class="ttdef"><b>Definition:</b> <a href="openid__delegation__id_8addon_8php_source.html#l00026">openid_delegation_id.addon.php:26</a></div></div>
 <div class="ttc" id="classpageController_html_ace5123ac45ab7dc1c9c39f3e1901e0a0"><div class="ttname"><a href="classpageController.html#ace5123ac45ab7dc1c9c39f3e1901e0a0">pageController\init</a></div><div class="ttdeci">init()</div><div class="ttdoc">Initialization. </div><div class="ttdef"><b>Definition:</b> <a href="page_8controller_8php_source.html#l00015">page.controller.php:15</a></div></div>
 <div class="ttc" id="classpageController_html_abd8a05c83337866bd8e06057c0e6dc4f"><div class="ttname"><a href="classpageController.html#abd8a05c83337866bd8e06057c0e6dc4f">pageController\_replacePath</a></div><div class="ttdeci">_replacePath($matches)</div><div class="ttdef"><b>Definition:</b> <a href="page_8controller_8php_source.html#l00095">page.controller.php:95</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 7 2018 19:23:03 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 7 2018 16:06:49 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

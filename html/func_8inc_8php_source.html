@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.9.5</span>
+   &#160;<span id="projectnumber">1.9.7</span>
    </div>
   </td>
  </tr>
@@ -1077,21 +1077,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01300"></a><span class="lineno"> 1300</span>&#160;</div>
 <div class="line"><a name="l01301"></a><span class="lineno"> 1301</span>&#160;}</div>
 <div class="line"><a name="l01302"></a><span class="lineno"> 1302</span>&#160;</div>
-<div class="line"><a name="l01311"></a><span class="lineno"><a class="line" href="func_8inc_8php.html#a8aaacd0e74786b585aaf170fe505d5f2"> 1311</a></span>&#160;<span class="keyword">function</span> <a class="code" href="func_8inc_8php.html#a8aaacd0e74786b585aaf170fe505d5f2">mysql_pre4_hash_password</a>(<a class="code" href="blogapi_8addon_8php.html#a607686ef9f99ea7c42f4f3dd3dbb2b0d">$password</a>)</div>
+<div class="line"><a name="l01311"></a><span class="lineno"><a class="line" href="func_8inc_8php.html#a8aaacd0e74786b585aaf170fe505d5f2"> 1311</a></span>&#160;<span class="keyword">function</span> <a class="code" href="func_8inc_8php.html#a8aaacd0e74786b585aaf170fe505d5f2">mysql_pre4_hash_password</a>($password)</div>
 <div class="line"><a name="l01312"></a><span class="lineno"> 1312</span>&#160;{</div>
 <div class="line"><a name="l01313"></a><span class="lineno"> 1313</span>&#160;    $nr = 1345345333;</div>
 <div class="line"><a name="l01314"></a><span class="lineno"> 1314</span>&#160;    $add = 7;</div>
 <div class="line"><a name="l01315"></a><span class="lineno"> 1315</span>&#160;    $nr2 = 0x12345671;</div>
 <div class="line"><a name="l01316"></a><span class="lineno"> 1316</span>&#160;</div>
-<div class="line"><a name="l01317"></a><span class="lineno"> 1317</span>&#160;    settype(<a class="code" href="blogapi_8addon_8php.html#a607686ef9f99ea7c42f4f3dd3dbb2b0d">$password</a>, <span class="stringliteral">&quot;string&quot;</span>);</div>
+<div class="line"><a name="l01317"></a><span class="lineno"> 1317</span>&#160;    settype($password, <span class="stringliteral">&quot;string&quot;</span>);</div>
 <div class="line"><a name="l01318"></a><span class="lineno"> 1318</span>&#160;</div>
-<div class="line"><a name="l01319"></a><span class="lineno"> 1319</span>&#160;    <span class="keywordflow">for</span>($i = 0; $i &lt; strlen(<a class="code" href="blogapi_8addon_8php.html#a607686ef9f99ea7c42f4f3dd3dbb2b0d">$password</a>); $i++)</div>
+<div class="line"><a name="l01319"></a><span class="lineno"> 1319</span>&#160;    <span class="keywordflow">for</span>($i = 0; $i &lt; strlen($password); $i++)</div>
 <div class="line"><a name="l01320"></a><span class="lineno"> 1320</span>&#160;    {</div>
-<div class="line"><a name="l01321"></a><span class="lineno"> 1321</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="blogapi_8addon_8php.html#a607686ef9f99ea7c42f4f3dd3dbb2b0d">$password</a>[$i] == <span class="charliteral">&#39; &#39;</span> || <a class="code" href="blogapi_8addon_8php.html#a607686ef9f99ea7c42f4f3dd3dbb2b0d">$password</a>[$i] == <span class="charliteral">&#39;\t&#39;</span>)</div>
+<div class="line"><a name="l01321"></a><span class="lineno"> 1321</span>&#160;        <span class="keywordflow">if</span>($password[$i] == <span class="charliteral">&#39; &#39;</span> || $password[$i] == <span class="charliteral">&#39;\t&#39;</span>)</div>
 <div class="line"><a name="l01322"></a><span class="lineno"> 1322</span>&#160;        {</div>
 <div class="line"><a name="l01323"></a><span class="lineno"> 1323</span>&#160;            <span class="keywordflow">continue</span>;</div>
 <div class="line"><a name="l01324"></a><span class="lineno"> 1324</span>&#160;        }</div>
-<div class="line"><a name="l01325"></a><span class="lineno"> 1325</span>&#160;        $tmp = ord(<a class="code" href="blogapi_8addon_8php.html#a607686ef9f99ea7c42f4f3dd3dbb2b0d">$password</a>[$i]);</div>
+<div class="line"><a name="l01325"></a><span class="lineno"> 1325</span>&#160;        $tmp = ord($password[$i]);</div>
 <div class="line"><a name="l01326"></a><span class="lineno"> 1326</span>&#160;        $nr ^= ((($nr &amp; 63) + $add) * $tmp) + ($nr &lt;&lt; 8);</div>
 <div class="line"><a name="l01327"></a><span class="lineno"> 1327</span>&#160;        $nr2 += ($nr2 &lt;&lt; 8) ^ $nr;</div>
 <div class="line"><a name="l01328"></a><span class="lineno"> 1328</span>&#160;        $add += $tmp;</div>
@@ -1524,7 +1524,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="func_8inc_8php_html_a2f7ca88a5226536aca3b2f5682bd7b2d"><div class="ttname"><a href="func_8inc_8php.html#a2f7ca88a5226536aca3b2f5682bd7b2d">getAdminController</a></div><div class="ttdeci">getAdminController($module_name)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00101">func.inc.php:101</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_ad7b240a38cc63f3a576d4b7c391fda16"><div class="ttname"><a href="func_8inc_8php.html#ad7b240a38cc63f3a576d4b7c391fda16">cut_str</a></div><div class="ttdeci">cut_str($string, $cut_size=0, $tail= '...')</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00505">func.inc.php:505</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_a418bc23855eebc0d90190dd625ac4474"><div class="ttname"><a href="func_8inc_8php.html#a418bc23855eebc0d90190dd625ac4474">executeQuery</a></div><div class="ttdeci">executeQuery($query_id, $args=NULL, $arg_columns=NULL)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00203">func.inc.php:203</a></div></div>
-<div class="ttc" id="blogapi_8addon_8php_html_a607686ef9f99ea7c42f4f3dd3dbb2b0d"><div class="ttname"><a href="blogapi_8addon_8php.html#a607686ef9f99ea7c42f4f3dd3dbb2b0d">$password</a></div><div class="ttdeci">$password</div><div class="ttdef"><b>Definition:</b> <a href="blogapi_8addon_8php_source.html#l00064">blogapi.addon.php:64</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_ad04b6facc446291dbbb292553250a4a6"><div class="ttname"><a href="func_8inc_8php.html#ad04b6facc446291dbbb292553250a4a6">writeSlowlog</a></div><div class="ttdeci">writeSlowlog($type, $elapsed_time, $obj)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00902">func.inc.php:902</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_af1649820887f052ce1f1c9ca623f2db3"><div class="ttname"><a href="func_8inc_8php.html#af1649820887f052ce1f1c9ca623f2db3">utf8RawUrlDecode</a></div><div class="ttdeci">utf8RawUrlDecode($source)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l01379">func.inc.php:1379</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_accd14bda49a1044b4d8dd93f020f11ee"><div class="ttname"><a href="func_8inc_8php.html#accd14bda49a1044b4d8dd93f020f11ee">getUrl</a></div><div class="ttdeci">getUrl()</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00294">func.inc.php:294</a></div></div>
@@ -1544,7 +1543,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 7 2018 19:22:59 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 7 2018 16:06:45 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

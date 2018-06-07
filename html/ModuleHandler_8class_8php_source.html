@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.9.5</span>
+   &#160;<span id="projectnumber">1.9.7</span>
    </div>
   </td>
  </tr>
@@ -887,7 +887,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;            <a class="code" href="classContext.html#aa81925b1cc7e991c1c798e739fe048a4">Context::addHtmlFooter</a>($footer);</div>
 <div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;        }</div>
 <div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;</div>
-<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;        <span class="keywordflow">if</span>($type == <span class="stringliteral">&quot;view&quot;</span> &amp;&amp; $kind != <span class="stringliteral">&#39;admin&#39;</span>)</div>
+<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;        <span class="keywordflow">if</span>(($type == <span class="stringliteral">&#39;view&#39;</span> || $type == <span class="stringliteral">&#39;mobile&#39;</span>) &amp;&amp; $kind != <span class="stringliteral">&#39;admin&#39;</span>)</div>
 <div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;        {</div>
 <div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;            $module_config = <a class="code" href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a>-&gt;getModuleConfig(<span class="stringliteral">&#39;module&#39;</span>);</div>
 <div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;            <span class="keywordflow">if</span>($module_config-&gt;htmlFooter)</div>
@@ -1483,7 +1483,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classContext_html_a19f432349a41af2ed36b2cd5e6ba96a5"><div class="ttname"><a href="classContext.html#a19f432349a41af2ed36b2cd5e6ba96a5">Context\getBrowserTitle</a></div><div class="ttdeci">getBrowserTitle()</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l00807">Context.class.php:807</a></div></div>
 <div class="ttc" id="classContext_html_a6912ff86e08ef782a296b77ff1307481"><div class="ttname"><a href="classContext.html#a6912ff86e08ef782a296b77ff1307481">Context\getRequestMethod</a></div><div class="ttdeci">getRequestMethod()</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l01514">Context.class.php:1514</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_a887fd7fe841f5dac3179296ae770172a"><div class="ttname"><a href="func_8inc_8php.html#a887fd7fe841f5dac3179296ae770172a">checkCSRF</a></div><div class="ttdeci">checkCSRF()</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l01609">func.inc.php:1609</a></div></div>
-<div class="ttc" id="classFileHandler_html_a862c4f6349792ae8f094ec456c9a26ed"><div class="ttname"><a href="classFileHandler.html#a862c4f6349792ae8f094ec456c9a26ed">FileHandler\exists</a></div><div class="ttdeci">exists($filename)</div><div class="ttdef"><b>Definition:</b> <a href="FileHandler_8class_8php_source.html#l01069">FileHandler.class.php:1069</a></div></div>
+<div class="ttc" id="classFileHandler_html_a862c4f6349792ae8f094ec456c9a26ed"><div class="ttname"><a href="classFileHandler.html#a862c4f6349792ae8f094ec456c9a26ed">FileHandler\exists</a></div><div class="ttdeci">exists($filename)</div><div class="ttdef"><b>Definition:</b> <a href="FileHandler_8class_8php_source.html#l01095">FileHandler.class.php:1095</a></div></div>
 <div class="ttc" id="classHandler_html"><div class="ttname"><a href="classHandler.html">Handler</a></div><div class="ttdef"><b>Definition:</b> <a href="Handler_8class_8php_source.html#l00009">Handler.class.php:9</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_aa09cef59156d4afaeee54a675605f95d"><div class="ttname"><a href="func_8inc_8php.html#aa09cef59156d4afaeee54a675605f95d">getNotEncodedSiteUrl</a></div><div class="ttdeci">getNotEncodedSiteUrl()</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00430">func.inc.php:430</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_a902cd0c884e75afab2682fdd3ae3791f"><div class="ttname"><a href="func_8inc_8php.html#a902cd0c884e75afab2682fdd3ae3791f">getAdminModel</a></div><div class="ttdeci">getAdminModel($module_name)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00156">func.inc.php:156</a></div></div>
@@ -1531,7 +1531,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 7 2018 19:22:59 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 7 2018 16:06:45 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

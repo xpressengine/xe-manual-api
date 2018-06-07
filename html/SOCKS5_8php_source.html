@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.9.5</span>
+   &#160;<span id="projectnumber">1.9.7</span>
    </div>
   </td>
  </tr>
@@ -98,7 +98,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
 <div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classHTTP__Request2__SOCKS5.html#a5d609d207d0fe50e541200736ad356f0">   51</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="classHTTP__Request2__SOCKS5.html#a5d609d207d0fe50e541200736ad356f0">__construct</a>(</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        $address, <a class="code" href="classHTTP__Request2__SocketWrapper.html#a1ad0716141ad4c8eaa0da661a4471fe7">$timeout</a> = 10, array $contextOptions = array(),</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        $username = null, <a class="code" href="blogapi_8addon_8php.html#a607686ef9f99ea7c42f4f3dd3dbb2b0d">$password</a> = null</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        $username = null, $password = null</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    ) {</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        parent::__construct($address, <a class="code" href="classHTTP__Request2__SocketWrapper.html#a1ad0716141ad4c8eaa0da661a4471fe7">$timeout</a>, $contextOptions);</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
@@ -117,7 +117,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        }</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keywordflow">switch</span> ($response[<span class="stringliteral">&#39;method&#39;</span>]) {</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordflow">case</span> 2:</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            $this-&gt;<a class="code" href="classHTTP__Request2__SOCKS5.html#ad01bee6f8681e480282bd055468c1dde">performAuthentication</a>($username, <a class="code" href="blogapi_8addon_8php.html#a607686ef9f99ea7c42f4f3dd3dbb2b0d">$password</a>);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            $this-&gt;<a class="code" href="classHTTP__Request2__SOCKS5.html#ad01bee6f8681e480282bd055468c1dde">performAuthentication</a>($username, $password);</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">case</span> 0:</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordflow">default</span>:</div>
@@ -127,10 +127,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        }</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    }</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="classHTTP__Request2__SOCKS5.html#ad01bee6f8681e480282bd055468c1dde">   92</a></span>&#160;    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code" href="classHTTP__Request2__SOCKS5.html#ad01bee6f8681e480282bd055468c1dde">performAuthentication</a>($username, <a class="code" href="blogapi_8addon_8php.html#a607686ef9f99ea7c42f4f3dd3dbb2b0d">$password</a>)</div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="classHTTP__Request2__SOCKS5.html#ad01bee6f8681e480282bd055468c1dde">   92</a></span>&#160;    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code" href="classHTTP__Request2__SOCKS5.html#ad01bee6f8681e480282bd055468c1dde">performAuthentication</a>($username, $password)</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    {</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        $request  = pack(<span class="stringliteral">&#39;C2&#39;</span>, 1, strlen($username)) . $username</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                    . pack(<span class="charliteral">&#39;C&#39;</span>, strlen(<a class="code" href="blogapi_8addon_8php.html#a607686ef9f99ea7c42f4f3dd3dbb2b0d">$password</a>)) . <a class="code" href="blogapi_8addon_8php.html#a607686ef9f99ea7c42f4f3dd3dbb2b0d">$password</a>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                    . pack(<span class="charliteral">&#39;C&#39;</span>, strlen($password)) . $password;</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        $this-&gt;<a class="code" href="classHTTP__Request2__SocketWrapper.html#ac0c9f5044043c4e55efe5f1d71ac63a1">write</a>($request);</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        $response = unpack(<span class="stringliteral">&#39;Cvn/Cstatus&#39;</span>, $this-&gt;<a class="code" href="classHTTP__Request2__SocketWrapper.html#a5e483244689fefacb4b774fde087c60d">read</a>(3));</div>
@@ -170,14 +170,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classHTTP__Request2__SOCKS5_html_ace8abd1469bf004bc8b0f9edc9915d59"><div class="ttname"><a href="classHTTP__Request2__SOCKS5.html#ace8abd1469bf004bc8b0f9edc9915d59">HTTP_Request2_SOCKS5\connect</a></div><div class="ttdeci">connect($remoteHost, $remotePort)</div><div class="ttdef"><b>Definition:</b> <a href="SOCKS5_8php_source.html#l00115">SOCKS5.php:115</a></div></div>
 <div class="ttc" id="classHTTP__Request2__SOCKS5_html"><div class="ttname"><a href="classHTTP__Request2__SOCKS5.html">HTTP_Request2_SOCKS5</a></div><div class="ttdef"><b>Definition:</b> <a href="SOCKS5_8php_source.html#l00036">SOCKS5.php:36</a></div></div>
 <div class="ttc" id="classHTTP__Request2__Exception_html_a7c38b52fa885536cee022254f8984ac6"><div class="ttname"><a href="classHTTP__Request2__Exception.html#a7c38b52fa885536cee022254f8984ac6">HTTP_Request2_Exception\MALFORMED_RESPONSE</a></div><div class="ttdeci">const MALFORMED_RESPONSE</div><div class="ttdef"><b>Definition:</b> <a href="HTTP_2Request2_2Exception_8php_source.html#l00049">Exception.php:49</a></div></div>
-<div class="ttc" id="blogapi_8addon_8php_html_a607686ef9f99ea7c42f4f3dd3dbb2b0d"><div class="ttname"><a href="blogapi_8addon_8php.html#a607686ef9f99ea7c42f4f3dd3dbb2b0d">$password</a></div><div class="ttdeci">$password</div><div class="ttdef"><b>Definition:</b> <a href="blogapi_8addon_8php_source.html#l00064">blogapi.addon.php:64</a></div></div>
 <div class="ttc" id="classHTTP__Request2__SocketWrapper_html"><div class="ttname"><a href="classHTTP__Request2__SocketWrapper.html">HTTP_Request2_SocketWrapper</a></div><div class="ttdef"><b>Definition:</b> <a href="SocketWrapper_8php_source.html#l00039">SocketWrapper.php:39</a></div></div>
 <div class="ttc" id="classHTTP__Request2__SocketWrapper_html_a5e483244689fefacb4b774fde087c60d"><div class="ttname"><a href="classHTTP__Request2__SocketWrapper.html#a5e483244689fefacb4b774fde087c60d">HTTP_Request2_SocketWrapper\read</a></div><div class="ttdeci">read($length)</div><div class="ttdef"><b>Definition:</b> <a href="SocketWrapper_8php_source.html#l00130">SocketWrapper.php:130</a></div></div>
 <div class="ttc" id="classHTTP__Request2__SocketWrapper_html_a1ad0716141ad4c8eaa0da661a4471fe7"><div class="ttname"><a href="classHTTP__Request2__SocketWrapper.html#a1ad0716141ad4c8eaa0da661a4471fe7">HTTP_Request2_SocketWrapper\$timeout</a></div><div class="ttdeci">$timeout</div><div class="ttdef"><b>Definition:</b> <a href="SocketWrapper_8php_source.html#l00063">SocketWrapper.php:63</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 7 2018 19:23:02 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 7 2018 16:06:48 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

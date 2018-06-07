@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.9.5</span>
+   &#160;<span id="projectnumber">1.9.7</span>
    </div>
   </td>
  </tr>
@@ -1065,10 +1065,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01282"></a><span class="lineno"> 1282</span>&#160;            <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l01283"></a><span class="lineno"> 1283</span>&#160;        }</div>
 <div class="line"><a name="l01284"></a><span class="lineno"> 1284</span>&#160;</div>
-<div class="line"><a name="l01285"></a><span class="lineno"> 1285</span>&#160;        <a class="code" href="blogapi_8addon_8php.html#afe68e6fbe7acfbffc0af0c84a1996466">$params</a> = array();</div>
-<div class="line"><a name="l01286"></a><span class="lineno"> 1286</span>&#160;        parse_str(<a class="code" href="config_8inc_8php.html#a38f1c3c542a43174a268208f45dca44e">$GLOBALS</a>[<span class="stringliteral">&#39;HTTP_RAW_POST_DATA&#39;</span>], <a class="code" href="blogapi_8addon_8php.html#afe68e6fbe7acfbffc0af0c84a1996466">$params</a>);</div>
+<div class="line"><a name="l01285"></a><span class="lineno"> 1285</span>&#160;        $params = array();</div>
+<div class="line"><a name="l01286"></a><span class="lineno"> 1286</span>&#160;        parse_str(<a class="code" href="config_8inc_8php.html#a38f1c3c542a43174a268208f45dca44e">$GLOBALS</a>[<span class="stringliteral">&#39;HTTP_RAW_POST_DATA&#39;</span>], $params);</div>
 <div class="line"><a name="l01287"></a><span class="lineno"> 1287</span>&#160;</div>
-<div class="line"><a name="l01288"></a><span class="lineno"> 1288</span>&#160;        <span class="keywordflow">foreach</span>(<a class="code" href="blogapi_8addon_8php.html#afe68e6fbe7acfbffc0af0c84a1996466">$params</a> as $key =&gt; $val)</div>
+<div class="line"><a name="l01288"></a><span class="lineno"> 1288</span>&#160;        <span class="keywordflow">foreach</span>($params as $key =&gt; $val)</div>
 <div class="line"><a name="l01289"></a><span class="lineno"> 1289</span>&#160;        {</div>
 <div class="line"><a name="l01290"></a><span class="lineno"> 1290</span>&#160;            $this-&gt;set($key, $this-&gt;_filterRequestVar($key, $val, 1), TRUE);</div>
 <div class="line"><a name="l01291"></a><span class="lineno"> 1291</span>&#160;        }</div>
@@ -1081,25 +1081,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01303"></a><span class="lineno"> 1303</span>&#160;            <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l01304"></a><span class="lineno"> 1304</span>&#160;        }</div>
 <div class="line"><a name="l01305"></a><span class="lineno"> 1305</span>&#160;</div>
-<div class="line"><a name="l01306"></a><span class="lineno"> 1306</span>&#160;        <a class="code" href="blogapi_8addon_8php.html#aa108d9d91e700ac530401dd363b0723b">$xml</a> = <a class="code" href="config_8inc_8php.html#a38f1c3c542a43174a268208f45dca44e">$GLOBALS</a>[<span class="stringliteral">&#39;HTTP_RAW_POST_DATA&#39;</span>];</div>
-<div class="line"><a name="l01307"></a><span class="lineno"> 1307</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="classSecurity.html#a6de571a78c6e950bdcaf2e61583418a0">Security::detectingXEE</a>(<a class="code" href="blogapi_8addon_8php.html#aa108d9d91e700ac530401dd363b0723b">$xml</a>))</div>
+<div class="line"><a name="l01306"></a><span class="lineno"> 1306</span>&#160;        $xml = <a class="code" href="config_8inc_8php.html#a38f1c3c542a43174a268208f45dca44e">$GLOBALS</a>[<span class="stringliteral">&#39;HTTP_RAW_POST_DATA&#39;</span>];</div>
+<div class="line"><a name="l01307"></a><span class="lineno"> 1307</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="classSecurity.html#a6de571a78c6e950bdcaf2e61583418a0">Security::detectingXEE</a>($xml))</div>
 <div class="line"><a name="l01308"></a><span class="lineno"> 1308</span>&#160;        {</div>
 <div class="line"><a name="l01309"></a><span class="lineno"> 1309</span>&#160;            header(<span class="stringliteral">&quot;HTTP/1.0 400 Bad Request&quot;</span>);</div>
 <div class="line"><a name="l01310"></a><span class="lineno"> 1310</span>&#160;            exit;</div>
 <div class="line"><a name="l01311"></a><span class="lineno"> 1311</span>&#160;        }</div>
 <div class="line"><a name="l01312"></a><span class="lineno"> 1312</span>&#160;</div>
 <div class="line"><a name="l01313"></a><span class="lineno"> 1313</span>&#160;        $oXml = <span class="keyword">new</span> <a class="code" href="classXmlParser.html">XmlParser</a>();</div>
-<div class="line"><a name="l01314"></a><span class="lineno"> 1314</span>&#160;        $xml_obj = $oXml-&gt;parse(<a class="code" href="blogapi_8addon_8php.html#aa108d9d91e700ac530401dd363b0723b">$xml</a>);</div>
+<div class="line"><a name="l01314"></a><span class="lineno"> 1314</span>&#160;        $xml_obj = $oXml-&gt;parse($xml);</div>
 <div class="line"><a name="l01315"></a><span class="lineno"> 1315</span>&#160;</div>
-<div class="line"><a name="l01316"></a><span class="lineno"> 1316</span>&#160;        <a class="code" href="blogapi_8addon_8php.html#afe68e6fbe7acfbffc0af0c84a1996466">$params</a> = $xml_obj-&gt;methodcall-&gt;params;</div>
-<div class="line"><a name="l01317"></a><span class="lineno"> 1317</span>&#160;        unset(<a class="code" href="blogapi_8addon_8php.html#afe68e6fbe7acfbffc0af0c84a1996466">$params</a>-&gt;node_name, <a class="code" href="blogapi_8addon_8php.html#afe68e6fbe7acfbffc0af0c84a1996466">$params</a>-&gt;attrs, <a class="code" href="blogapi_8addon_8php.html#afe68e6fbe7acfbffc0af0c84a1996466">$params</a>-&gt;body);</div>
+<div class="line"><a name="l01316"></a><span class="lineno"> 1316</span>&#160;        $params = $xml_obj-&gt;methodcall-&gt;params;</div>
+<div class="line"><a name="l01317"></a><span class="lineno"> 1317</span>&#160;        unset($params-&gt;node_name, $params-&gt;attrs, $params-&gt;body);</div>
 <div class="line"><a name="l01318"></a><span class="lineno"> 1318</span>&#160;</div>
-<div class="line"><a name="l01319"></a><span class="lineno"> 1319</span>&#160;        <span class="keywordflow">if</span>(!count(get_object_vars(<a class="code" href="blogapi_8addon_8php.html#afe68e6fbe7acfbffc0af0c84a1996466">$params</a>)))</div>
+<div class="line"><a name="l01319"></a><span class="lineno"> 1319</span>&#160;        <span class="keywordflow">if</span>(!count(get_object_vars($params)))</div>
 <div class="line"><a name="l01320"></a><span class="lineno"> 1320</span>&#160;        {</div>
 <div class="line"><a name="l01321"></a><span class="lineno"> 1321</span>&#160;            <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l01322"></a><span class="lineno"> 1322</span>&#160;        }</div>
 <div class="line"><a name="l01323"></a><span class="lineno"> 1323</span>&#160;</div>
-<div class="line"><a name="l01324"></a><span class="lineno"> 1324</span>&#160;        <span class="keywordflow">foreach</span>(<a class="code" href="blogapi_8addon_8php.html#afe68e6fbe7acfbffc0af0c84a1996466">$params</a> as $key =&gt; $val)</div>
+<div class="line"><a name="l01324"></a><span class="lineno"> 1324</span>&#160;        <span class="keywordflow">foreach</span>($params as $key =&gt; $val)</div>
 <div class="line"><a name="l01325"></a><span class="lineno"> 1325</span>&#160;        {</div>
 <div class="line"><a name="l01326"></a><span class="lineno"> 1326</span>&#160;            $this-&gt;set($key, $this-&gt;_filterXmlVars($key, $val), TRUE);</div>
 <div class="line"><a name="l01327"></a><span class="lineno"> 1327</span>&#160;        }</div>
@@ -2177,7 +2177,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classContext_html_abaa9eeef192a9e4b48a06d0af9b1fd05"><div class="ttname"><a href="classContext.html#abaa9eeef192a9e4b48a06d0af9b1fd05">Context\_setXmlRpcArgument</a></div><div class="ttdeci">_setXmlRpcArgument()</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l01299">Context.class.php:1299</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_aa08f01e3bf130d770b373ca8493e3e9b"><div class="ttname"><a href="func_8inc_8php.html#aa08f01e3bf130d770b373ca8493e3e9b">getController</a></div><div class="ttdeci">getController($module_name)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00090">func.inc.php:90</a></div></div>
 <div class="ttc" id="classContext_html_afab39232525ca876120253feee0fe3a1"><div class="ttname"><a href="classContext.html#afab39232525ca876120253feee0fe3a1">Context\unloadFile</a></div><div class="ttdeci">unloadFile($file, $targetIe= '', $media= 'all')</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l02183">Context.class.php:2183</a></div></div>
-<div class="ttc" id="blogapi_8addon_8php_html_aa108d9d91e700ac530401dd363b0723b"><div class="ttname"><a href="blogapi_8addon_8php.html#aa108d9d91e700ac530401dd363b0723b">$xml</a></div><div class="ttdeci">$xml</div><div class="ttdef"><b>Definition:</b> <a href="blogapi_8addon_8php_source.html#l00033">blogapi.addon.php:33</a></div></div>
 <div class="ttc" id="classContext_html_a01ddbd076a74f16dc46d3c7b358daea6"><div class="ttname"><a href="classContext.html#a01ddbd076a74f16dc46d3c7b358daea6">Context\loadFile</a></div><div class="ttdeci">loadFile($args)</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l02168">Context.class.php:2168</a></div></div>
 <div class="ttc" id="classfile_html"><div class="ttname"><a href="classfile.html">file</a></div><div class="ttdef"><b>Definition:</b> <a href="file_8class_8php_source.html#l00007">file.class.php:7</a></div></div>
 <div class="ttc" id="ko_8install_8php_html_a9008ed94ba185855b1723e367744b87e"><div class="ttname"><a href="ko_8install_8php.html#a9008ed94ba185855b1723e367744b87e">$obj</a></div><div class="ttdeci">$obj</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00262">ko.install.php:262</a></div></div>
@@ -2218,7 +2217,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classIpFilter_html_a7952160536fa7d5dc9a762c2d122a631"><div class="ttname"><a href="classIpFilter.html#a7952160536fa7d5dc9a762c2d122a631">IpFilter\filter</a></div><div class="ttdeci">filter($ip_list, $ip=NULL)</div><div class="ttdef"><b>Definition:</b> <a href="IpFilter_8class_8php_source.html#l00006">IpFilter.class.php:6</a></div></div>
 <div class="ttc" id="classContext_html_ab2acd5415515b232b7cf9f0130f4efa3"><div class="ttname"><a href="classContext.html#ab2acd5415515b232b7cf9f0130f4efa3">Context\addSSLActions</a></div><div class="ttdeci">addSSLActions($action_array)</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l02040">Context.class.php:2040</a></div></div>
 <div class="ttc" id="classContext_html_a3615e0bc64da445f6165e97785c7d94c"><div class="ttname"><a href="classContext.html#a3615e0bc64da445f6165e97785c7d94c">Context\setLang</a></div><div class="ttdeci">setLang($code, $val)</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l01018">Context.class.php:1018</a></div></div>
-<div class="ttc" id="blogapi_8addon_8php_html_afe68e6fbe7acfbffc0af0c84a1996466"><div class="ttname"><a href="blogapi_8addon_8php.html#afe68e6fbe7acfbffc0af0c84a1996466">$params</a></div><div class="ttdeci">$params</div><div class="ttdef"><b>Definition:</b> <a href="blogapi_8addon_8php_source.html#l00054">blogapi.addon.php:54</a></div></div>
 <div class="ttc" id="classContext_html_a0ee79330d3ee12c811cd784e24a7b017"><div class="ttname"><a href="classContext.html#a0ee79330d3ee12c811cd784e24a7b017">Context\getSiteTitle</a></div><div class="ttdeci">getSiteTitle()</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l00821">Context.class.php:821</a></div></div>
 <div class="ttc" id="classContext_html_acaea76bdc1334df9c2f088103d619593"><div class="ttname"><a href="classContext.html#acaea76bdc1334df9c2f088103d619593">Context\loadJavascriptPlugin</a></div><div class="ttdeci">loadJavascriptPlugin($plugin_name)</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l02426">Context.class.php:2426</a></div></div>
 <div class="ttc" id="classContext_html_ac2bf2f97195aae6b2cd6ba559bbcb18f"><div class="ttname"><a href="classContext.html#ac2bf2f97195aae6b2cd6ba559bbcb18f">Context\checkConvertFlag</a></div><div class="ttdeci">checkConvertFlag(&amp;$val, $key=null, $charset=null)</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l01071">Context.class.php:1071</a></div></div>
@@ -2247,7 +2245,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="func_8inc_8php_html_a1086859329d03f8830d51d254c18e47e"><div class="ttname"><a href="func_8inc_8php.html#a1086859329d03f8830d51d254c18e47e">getScriptPath</a></div><div class="ttdeci">getScriptPath()</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l01350">func.inc.php:1350</a></div></div>
 <div class="ttc" id="classContext_html_a587652913f4784dc8ad4a1cd4e3ee408"><div class="ttname"><a href="classContext.html#a587652913f4784dc8ad4a1cd4e3ee408">Context\$get_vars</a></div><div class="ttdeci">$get_vars</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l00135">Context.class.php:135</a></div></div>
 <div class="ttc" id="classContext_html_a69807c3ced3f97920b233a3fce3bb492"><div class="ttname"><a href="classContext.html#a69807c3ced3f97920b233a3fce3bb492">Context\addJsFile</a></div><div class="ttdeci">addJsFile($file, $optimized=FALSE, $targetie= '', $index=0, $type= 'head', $isRuleset=FALSE, $autoPath=null)</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l02214">Context.class.php:2214</a></div></div>
-<div class="ttc" id="classFileHandler_html_a862c4f6349792ae8f094ec456c9a26ed"><div class="ttname"><a href="classFileHandler.html#a862c4f6349792ae8f094ec456c9a26ed">FileHandler\exists</a></div><div class="ttdeci">exists($filename)</div><div class="ttdef"><b>Definition:</b> <a href="FileHandler_8class_8php_source.html#l01069">FileHandler.class.php:1069</a></div></div>
+<div class="ttc" id="classFileHandler_html_a862c4f6349792ae8f094ec456c9a26ed"><div class="ttname"><a href="classFileHandler.html#a862c4f6349792ae8f094ec456c9a26ed">FileHandler\exists</a></div><div class="ttdeci">exists($filename)</div><div class="ttdef"><b>Definition:</b> <a href="FileHandler_8class_8php_source.html#l01095">FileHandler.class.php:1095</a></div></div>
 <div class="ttc" id="classContext_html_ac024e3744d631bf487ded23c2c6c7e24"><div class="ttname"><a href="classContext.html#ac024e3744d631bf487ded23c2c6c7e24">Context\addCSSFile</a></div><div class="ttdeci">addCSSFile($file, $optimized=FALSE, $media= 'all', $targetie= '', $index=0)</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l02322">Context.class.php:2322</a></div></div>
 <div class="ttc" id="classContext_html_a8b9cb334c451f773d75db73b01f86ccc"><div class="ttname"><a href="classContext.html#a8b9cb334c451f773d75db73b01f86ccc">Context\$ftp_info</a></div><div class="ttdeci">$ftp_info</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l00057">Context.class.php:57</a></div></div>
 <div class="ttc" id="classContext_html_af0bb833a3157d6d2153d7858cb60e435"><div class="ttname"><a href="classContext.html#af0bb833a3157d6d2153d7858cb60e435">Context\$body_class</a></div><div class="ttdeci">$body_class</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l00087">Context.class.php:87</a></div></div>
@@ -2318,11 +2316,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classContext_html_a5a8714e3a0f9d4722a31ce73017c6613"><div class="ttname"><a href="classContext.html#a5a8714e3a0f9d4722a31ce73017c6613">Context\isInstalled</a></div><div class="ttdeci">isInstalled()</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l02600">Context.class.php:2600</a></div></div>
 <div class="ttc" id="classContext_html_a5554b6376a0703ebfbdf2bf79800bfee"><div class="ttname"><a href="classContext.html#a5554b6376a0703ebfbdf2bf79800bfee">Context\$sslActionCacheFile</a></div><div class="ttdeci">$sslActionCacheFile</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l00063">Context.class.php:63</a></div></div>
 <div class="ttc" id="classContext_html_ae7bb6879f84366eea76da3a7bf6a40bd"><div class="ttname"><a href="classContext.html#ae7bb6879f84366eea76da3a7bf6a40bd">Context\getHtmlFooter</a></div><div class="ttdeci">getHtmlFooter()</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l02569">Context.class.php:2569</a></div></div>
-<div class="ttc" id="classFileHandler_html_ad872016e83b1f62a03d54e359ce31f73"><div class="ttname"><a href="classFileHandler.html#ad872016e83b1f62a03d54e359ce31f73">FileHandler\hasContent</a></div><div class="ttdeci">hasContent($filename)</div><div class="ttdef"><b>Definition:</b> <a href="FileHandler_8class_8php_source.html#l01058">FileHandler.class.php:1058</a></div></div>
+<div class="ttc" id="classFileHandler_html_ad872016e83b1f62a03d54e359ce31f73"><div class="ttname"><a href="classFileHandler.html#ad872016e83b1f62a03d54e359ce31f73">FileHandler\hasContent</a></div><div class="ttdeci">hasContent($filename)</div><div class="ttdef"><b>Definition:</b> <a href="FileHandler_8class_8php_source.html#l01084">FileHandler.class.php:1084</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 7 2018 19:22:59 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 7 2018 16:06:45 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

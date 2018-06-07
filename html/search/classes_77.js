@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['wap',['wap',['../classwap.html',1,'']]],
   ['widget',['widget',['../classwidget.html',1,'']]],
   ['widgetadminview',['widgetAdminView',['../classwidgetAdminView.html',1,'']]],
   ['widgetcontroller',['widgetController',['../classwidgetController.html',1,'']]],

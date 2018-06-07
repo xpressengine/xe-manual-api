@@ -5,8 +5,6 @@ var searchData=
   ['bcrypt',['bcrypt',['../classPassword.html#a097e73abceaf4b976c92471f9b4a2cab',1,'Password']]],
   ['begin',['begin',['../classDB.html#a41aea6b3a6787467fcfd16d28a302c54',1,'DB']]],
   ['blockwidgetcode',['blockWidgetCode',['../func_8inc_8php.html#a3e4480709a0bb53f6478ae6521cda6f3',1,'func.inc.php']]],
-  ['blogapi_2eaddon_2ephp',['blogapi.addon.php',['../blogapi_8addon_8php.html',1,'']]],
-  ['blogapi_2efunc_2ephp',['blogapi.func.php',['../blogapi_8func_8php.html',1,'']]],
   ['board',['board',['../classboard.html',1,'board'],['../classboard.html#a2a97f34e7c9ed8ace6a2508bb2c6e2a2',1,'board\board()']]],
   ['board_2eadmin_2econtroller_2ephp',['board.admin.controller.php',['../board_8admin_8controller_8php.html',1,'']]],
   ['board_2eadmin_2emodel_2ephp',['board.admin.model.php',['../board_8admin_8model_8php.html',1,'']]],

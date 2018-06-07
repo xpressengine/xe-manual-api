@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.9.5</span>
+   &#160;<span id="projectnumber">1.9.7</span>
    </div>
   </td>
  </tr>
@@ -929,18 +929,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01015"></a><span class="lineno"> 1015</span>&#160;        <span class="keywordflow">return</span> strlen((binary) $string);</div>
 <div class="line"><a name="l01016"></a><span class="lineno"> 1016</span>&#160;    }</div>
 <div class="line"><a name="l01017"></a><span class="lineno"> 1017</span>&#160;</div>
-<div class="line"><a name="l01025"></a><span class="lineno"><a class="line" href="classidna__convert.html#aff2ec039994038d13c8000addff58de3"> 1025</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="classidna__convert.html#aff2ec039994038d13c8000addff58de3">getInstance</a>(<a class="code" href="blogapi_8addon_8php.html#afe68e6fbe7acfbffc0af0c84a1996466">$params</a> = array())</div>
+<div class="line"><a name="l01025"></a><span class="lineno"><a class="line" href="classidna__convert.html#aff2ec039994038d13c8000addff58de3"> 1025</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="classidna__convert.html#aff2ec039994038d13c8000addff58de3">getInstance</a>($params = array())</div>
 <div class="line"><a name="l01026"></a><span class="lineno"> 1026</span>&#160;    {</div>
-<div class="line"><a name="l01027"></a><span class="lineno"> 1027</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classidna__convert.html">idna_convert</a>(<a class="code" href="blogapi_8addon_8php.html#afe68e6fbe7acfbffc0af0c84a1996466">$params</a>);</div>
+<div class="line"><a name="l01027"></a><span class="lineno"> 1027</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classidna__convert.html">idna_convert</a>($params);</div>
 <div class="line"><a name="l01028"></a><span class="lineno"> 1028</span>&#160;    }</div>
 <div class="line"><a name="l01029"></a><span class="lineno"> 1029</span>&#160;</div>
-<div class="line"><a name="l01040"></a><span class="lineno"><a class="line" href="classidna__convert.html#a899f287645e43d1fd44a627cdb6b0e79"> 1040</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="classidna__convert.html#a899f287645e43d1fd44a627cdb6b0e79">singleton</a>(<a class="code" href="blogapi_8addon_8php.html#afe68e6fbe7acfbffc0af0c84a1996466">$params</a> = array())</div>
+<div class="line"><a name="l01040"></a><span class="lineno"><a class="line" href="classidna__convert.html#a899f287645e43d1fd44a627cdb6b0e79"> 1040</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code" href="classidna__convert.html#a899f287645e43d1fd44a627cdb6b0e79">singleton</a>($params = array())</div>
 <div class="line"><a name="l01041"></a><span class="lineno"> 1041</span>&#160;    {</div>
 <div class="line"><a name="l01042"></a><span class="lineno"> 1042</span>&#160;        <span class="keyword">static</span> $instances = array();</div>
 <div class="line"><a name="l01043"></a><span class="lineno"> 1043</span>&#160;</div>
-<div class="line"><a name="l01044"></a><span class="lineno"> 1044</span>&#160;        $signature = serialize(<a class="code" href="blogapi_8addon_8php.html#afe68e6fbe7acfbffc0af0c84a1996466">$params</a>);</div>
+<div class="line"><a name="l01044"></a><span class="lineno"> 1044</span>&#160;        $signature = serialize($params);</div>
 <div class="line"><a name="l01045"></a><span class="lineno"> 1045</span>&#160;        <span class="keywordflow">if</span> (!isset($instances[$signature])) {</div>
-<div class="line"><a name="l01046"></a><span class="lineno"> 1046</span>&#160;            $instances[$signature] = <a class="code" href="classidna__convert.html#aff2ec039994038d13c8000addff58de3">idna_convert::getInstance</a>(<a class="code" href="blogapi_8addon_8php.html#afe68e6fbe7acfbffc0af0c84a1996466">$params</a>);</div>
+<div class="line"><a name="l01046"></a><span class="lineno"> 1046</span>&#160;            $instances[$signature] = <a class="code" href="classidna__convert.html#aff2ec039994038d13c8000addff58de3">idna_convert::getInstance</a>($params);</div>
 <div class="line"><a name="l01047"></a><span class="lineno"> 1047</span>&#160;        }</div>
 <div class="line"><a name="l01048"></a><span class="lineno"> 1048</span>&#160;        <span class="keywordflow">return</span> $instances[$signature];</div>
 <div class="line"><a name="l01049"></a><span class="lineno"> 1049</span>&#160;    }</div>
@@ -3369,7 +3369,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classidna__convert_html_a59d30af851a16b87ac00a96931fe7e61"><div class="ttname"><a href="classidna__convert.html#a59d30af851a16b87ac00a96931fe7e61">idna_convert\get_version</a></div><div class="ttdeci">get_version()</div><div class="ttdef"><b>Definition:</b> <a href="idna__convert_8class_8php_source.html#l00108">idna_convert.class.php:108</a></div></div>
 <div class="ttc" id="classidna__convert_html_a899f287645e43d1fd44a627cdb6b0e79"><div class="ttname"><a href="classidna__convert.html#a899f287645e43d1fd44a627cdb6b0e79">idna_convert\singleton</a></div><div class="ttdeci">singleton($params=array())</div><div class="ttdef"><b>Definition:</b> <a href="idna__convert_8class_8php_source.html#l01040">idna_convert.class.php:1040</a></div></div>
 <div class="ttc" id="classidna__convert_html_a5b728e6ff6e15773c914383a66651826"><div class="ttname"><a href="classidna__convert.html#a5b728e6ff6e15773c914383a66651826">idna_convert\$_tbase</a></div><div class="ttdeci">$_tbase</div><div class="ttdef"><b>Definition:</b> <a href="idna__convert_8class_8php_source.html#l00072">idna_convert.class.php:72</a></div></div>
-<div class="ttc" id="blogapi_8addon_8php_html_afe68e6fbe7acfbffc0af0c84a1996466"><div class="ttname"><a href="blogapi_8addon_8php.html#afe68e6fbe7acfbffc0af0c84a1996466">$params</a></div><div class="ttdeci">$params</div><div class="ttdef"><b>Definition:</b> <a href="blogapi_8addon_8php_source.html#l00054">blogapi.addon.php:54</a></div></div>
 <div class="ttc" id="classidna__convert_html_a2e984a3fe1e2e4d5192dd9a5220e9c29"><div class="ttname"><a href="classidna__convert.html#a2e984a3fe1e2e4d5192dd9a5220e9c29">idna_convert\$_vbase</a></div><div class="ttdeci">$_vbase</div><div class="ttdef"><b>Definition:</b> <a href="idna__convert_8class_8php_source.html#l00071">idna_convert.class.php:71</a></div></div>
 <div class="ttc" id="classidna__convert_html_a50c50cda465aefe78b8ed69ae6cd6247"><div class="ttname"><a href="classidna__convert.html#a50c50cda465aefe78b8ed69ae6cd6247">idna_convert\$_lbase</a></div><div class="ttdeci">$_lbase</div><div class="ttdef"><b>Definition:</b> <a href="idna__convert_8class_8php_source.html#l00070">idna_convert.class.php:70</a></div></div>
 <div class="ttc" id="classidna__convert_html_a36aba0d7717782343396a25026107dc7"><div class="ttname"><a href="classidna__convert.html#a36aba0d7717782343396a25026107dc7">idna_convert\$_mb_string_overload</a></div><div class="ttdeci">static $_mb_string_overload</div><div class="ttdef"><b>Definition:</b> <a href="idna__convert_8class_8php_source.html#l00079">idna_convert.class.php:79</a></div></div>
@@ -3409,7 +3408,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 7 2018 19:23:02 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 7 2018 16:06:48 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

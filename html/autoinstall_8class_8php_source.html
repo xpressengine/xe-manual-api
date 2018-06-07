@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.9.5</span>
+   &#160;<span id="projectnumber">1.9.7</span>
    </div>
   </td>
  </tr>
@@ -97,16 +97,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="classXmlGenerater.html">    8</a></span>&#160;<span class="keyword">class </span><a class="code" href="classXmlGenerater.html">XmlGenerater</a></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classXmlGenerater.html#a550936fddc7d2954e46b1e72846e4d89">   17</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classXmlGenerater.html#a550936fddc7d2954e46b1e72846e4d89">generate</a>(&amp;<a class="code" href="blogapi_8addon_8php.html#afe68e6fbe7acfbffc0af0c84a1996466">$params</a>)</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classXmlGenerater.html#a550936fddc7d2954e46b1e72846e4d89">   17</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classXmlGenerater.html#a550936fddc7d2954e46b1e72846e4d89">generate</a>(&amp;$params)</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    {</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        $xmlDoc = <span class="stringliteral">&#39;&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;&lt;methodCall&gt;&lt;params&gt;&#39;</span>;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keywordflow">if</span>(!is_array(<a class="code" href="blogapi_8addon_8php.html#afe68e6fbe7acfbffc0af0c84a1996466">$params</a>))</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keywordflow">if</span>(!is_array($params))</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        {</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            <span class="keywordflow">return</span> NULL;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        }</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <a class="code" href="blogapi_8addon_8php.html#afe68e6fbe7acfbffc0af0c84a1996466">$params</a>[<span class="stringliteral">&quot;module&quot;</span>] = <span class="stringliteral">&quot;resourceapi&quot;</span>;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordflow">foreach</span>(<a class="code" href="blogapi_8addon_8php.html#afe68e6fbe7acfbffc0af0c84a1996466">$params</a> as $key =&gt; $val)</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        $params[<span class="stringliteral">&quot;module&quot;</span>] = <span class="stringliteral">&quot;resourceapi&quot;</span>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordflow">foreach</span>($params as $key =&gt; $val)</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        {</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            $xmlDoc .= sprintf(<span class="stringliteral">&quot;&lt;%s&gt;&lt;![CDATA[%s]]&gt;&lt;/%s&gt;&quot;</span>, $key, $val, $key);</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        }</div>
@@ -114,17 +114,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordflow">return</span> $xmlDoc;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classXmlGenerater.html#a2c76cbd93596f5f7d48ff2ff0b9213ce">   40</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classXmlGenerater.html#a2c76cbd93596f5f7d48ff2ff0b9213ce">getXmlDoc</a>(&amp;<a class="code" href="blogapi_8addon_8php.html#afe68e6fbe7acfbffc0af0c84a1996466">$params</a>)</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classXmlGenerater.html#a2c76cbd93596f5f7d48ff2ff0b9213ce">   40</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classXmlGenerater.html#a2c76cbd93596f5f7d48ff2ff0b9213ce">getXmlDoc</a>(&amp;$params)</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        $body = <a class="code" href="classXmlGenerater.html#a550936fddc7d2954e46b1e72846e4d89">XmlGenerater::generate</a>(<a class="code" href="blogapi_8addon_8php.html#afe68e6fbe7acfbffc0af0c84a1996466">$params</a>);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        $body = <a class="code" href="classXmlGenerater.html#a550936fddc7d2954e46b1e72846e4d89">XmlGenerater::generate</a>($params);</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        $buff = <a class="code" href="classFileHandler.html#a602c039b415c15d9d6866e586282faf7">FileHandler::getRemoteResource</a>(<a class="code" href="config_8inc_8php.html#a22df32d3e0eae0d60d6cddb9ec99d5ec">_XE_DOWNLOAD_SERVER_</a>, $body, 3, <span class="stringliteral">&quot;POST&quot;</span>, <span class="stringliteral">&quot;application/xml&quot;</span>);</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordflow">if</span>(!$buff)</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        {</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        }</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <a class="code" href="blogapi_8addon_8php.html#aa108d9d91e700ac530401dd363b0723b">$xml</a> = <span class="keyword">new</span> <a class="code" href="classXmlParser.html">XmlParser</a>();</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        $xmlDoc = <a class="code" href="blogapi_8addon_8php.html#aa108d9d91e700ac530401dd363b0723b">$xml</a>-&gt;parse($buff);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        $xml = <span class="keyword">new</span> <a class="code" href="classXmlParser.html">XmlParser</a>();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        $xmlDoc = $xml-&gt;parse($buff);</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">return</span> $xmlDoc;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
@@ -254,19 +254,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="comment">/* Location: ./modules/autoinstall/autoinstall.class.php */</span></div>
 <div class="ttc" id="ko_8install_8php_html_a8d7a87df524e7d6938f66f8e284cdd1e"><div class="ttname"><a href="ko_8install_8php.html#a8d7a87df524e7d6938f66f8e284cdd1e">$oModuleModel</a></div><div class="ttdeci">$oModuleModel</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00236">ko.install.php:236</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_aa08f01e3bf130d770b373ca8493e3e9b"><div class="ttname"><a href="func_8inc_8php.html#aa08f01e3bf130d770b373ca8493e3e9b">getController</a></div><div class="ttdeci">getController($module_name)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00090">func.inc.php:90</a></div></div>
-<div class="ttc" id="blogapi_8addon_8php_html_aa108d9d91e700ac530401dd363b0723b"><div class="ttname"><a href="blogapi_8addon_8php.html#aa108d9d91e700ac530401dd363b0723b">$xml</a></div><div class="ttdeci">$xml</div><div class="ttdef"><b>Definition:</b> <a href="blogapi_8addon_8php_source.html#l00033">blogapi.addon.php:33</a></div></div>
 <div class="ttc" id="config_8inc_8php_html_afceaaec30d0e5b6a78d0ae28bcbfc8f3"><div class="ttname"><a href="config_8inc_8php.html#afceaaec30d0e5b6a78d0ae28bcbfc8f3">__XE_VERSION__</a></div><div class="ttdeci">const __XE_VERSION__</div><div class="ttdef"><b>Definition:</b> <a href="config_8inc_8php_source.html#l00032">config.inc.php:32</a></div></div>
 <div class="ttc" id="classautoinstall_html_aa76d5fcbf6ac9450b810acefa4b85a51"><div class="ttname"><a href="classautoinstall.html#aa76d5fcbf6ac9450b810acefa4b85a51">autoinstall\autoinstall</a></div><div class="ttdeci">autoinstall()</div><div class="ttdef"><b>Definition:</b> <a href="autoinstall_8class_8php_source.html#l00073">autoinstall.class.php:73</a></div></div>
 <div class="ttc" id="classModuleObject_html_ac4c2bac7917c3ab3a0e816b99574727c"><div class="ttname"><a href="classModuleObject.html#ac4c2bac7917c3ab3a0e816b99574727c">ModuleObject\stop</a></div><div class="ttdeci">stop($msg_code)</div><div class="ttdef"><b>Definition:</b> <a href="ModuleObject_8class_8php_source.html#l00227">ModuleObject.class.php:227</a></div></div>
 <div class="ttc" id="classBaseObject_html"><div class="ttname"><a href="classBaseObject.html">BaseObject</a></div><div class="ttdef"><b>Definition:</b> <a href="BaseObject_8class_8php_source.html#l00009">BaseObject.class.php:9</a></div></div>
 <div class="ttc" id="classautoinstall_html_a74f260b0d1254c8e4dbd69b532072a95"><div class="ttname"><a href="classautoinstall.html#a74f260b0d1254c8e4dbd69b532072a95">autoinstall\checkUpdate</a></div><div class="ttdeci">checkUpdate()</div><div class="ttdef"><b>Definition:</b> <a href="autoinstall_8class_8php_source.html#l00102">autoinstall.class.php:102</a></div></div>
-<div class="ttc" id="blogapi_8addon_8php_html_afe68e6fbe7acfbffc0af0c84a1996466"><div class="ttname"><a href="blogapi_8addon_8php.html#afe68e6fbe7acfbffc0af0c84a1996466">$params</a></div><div class="ttdeci">$params</div><div class="ttdef"><b>Definition:</b> <a href="blogapi_8addon_8php_source.html#l00054">blogapi.addon.php:54</a></div></div>
 <div class="ttc" id="classFileHandler_html_a602c039b415c15d9d6866e586282faf7"><div class="ttname"><a href="classFileHandler.html#a602c039b415c15d9d6866e586282faf7">FileHandler\getRemoteResource</a></div><div class="ttdeci">getRemoteResource($url, $body=null, $timeout=3, $method= 'GET', $content_type=null, $headers=array(), $cookies=array(), $post_data=array(), $request_config=array())</div><div class="ttdef"><b>Definition:</b> <a href="FileHandler_8class_8php_source.html#l00520">FileHandler.class.php:520</a></div></div>
 <div class="ttc" id="config_8inc_8php_html_a22df32d3e0eae0d60d6cddb9ec99d5ec"><div class="ttname"><a href="config_8inc_8php.html#a22df32d3e0eae0d60d6cddb9ec99d5ec">_XE_DOWNLOAD_SERVER_</a></div><div class="ttdeci">const _XE_DOWNLOAD_SERVER_</div><div class="ttdef"><b>Definition:</b> <a href="config_8inc_8php_source.html#l00079">config.inc.php:79</a></div></div>
 <div class="ttc" id="classXmlGenerater_html"><div class="ttname"><a href="classXmlGenerater.html">XmlGenerater</a></div><div class="ttdef"><b>Definition:</b> <a href="autoinstall_8class_8php_source.html#l00008">autoinstall.class.php:8</a></div></div>
 <div class="ttc" id="classautoinstall_html_ad783aa6031577dca5fdcc7f6ea61f452"><div class="ttname"><a href="classautoinstall.html#ad783aa6031577dca5fdcc7f6ea61f452">autoinstall\moduleInstall</a></div><div class="ttdeci">moduleInstall()</div><div class="ttdef"><b>Definition:</b> <a href="autoinstall_8class_8php_source.html#l00088">autoinstall.class.php:88</a></div></div>
 <div class="ttc" id="classXmlGenerater_html_a2c76cbd93596f5f7d48ff2ff0b9213ce"><div class="ttname"><a href="classXmlGenerater.html#a2c76cbd93596f5f7d48ff2ff0b9213ce">XmlGenerater\getXmlDoc</a></div><div class="ttdeci">getXmlDoc(&amp;$params)</div><div class="ttdef"><b>Definition:</b> <a href="autoinstall_8class_8php_source.html#l00040">autoinstall.class.php:40</a></div></div>
-<div class="ttc" id="classFileHandler_html_a862c4f6349792ae8f094ec456c9a26ed"><div class="ttname"><a href="classFileHandler.html#a862c4f6349792ae8f094ec456c9a26ed">FileHandler\exists</a></div><div class="ttdeci">exists($filename)</div><div class="ttdef"><b>Definition:</b> <a href="FileHandler_8class_8php_source.html#l01069">FileHandler.class.php:1069</a></div></div>
+<div class="ttc" id="classFileHandler_html_a862c4f6349792ae8f094ec456c9a26ed"><div class="ttname"><a href="classFileHandler.html#a862c4f6349792ae8f094ec456c9a26ed">FileHandler\exists</a></div><div class="ttdeci">exists($filename)</div><div class="ttdef"><b>Definition:</b> <a href="FileHandler_8class_8php_source.html#l01095">FileHandler.class.php:1095</a></div></div>
 <div class="ttc" id="classDB_html_a36df3da4b06cd9d45feccb6b82e612c8"><div class="ttname"><a href="classDB.html#a36df3da4b06cd9d45feccb6b82e612c8">DB\getInstance</a></div><div class="ttdeci">getInstance($db_type=NULL)</div><div class="ttdef"><b>Definition:</b> <a href="DB_8class_8php_source.html#l00142">DB.class.php:142</a></div></div>
 <div class="ttc" id="classXmlGenerater_html_a550936fddc7d2954e46b1e72846e4d89"><div class="ttname"><a href="classXmlGenerater.html#a550936fddc7d2954e46b1e72846e4d89">XmlGenerater\generate</a></div><div class="ttdeci">generate(&amp;$params)</div><div class="ttdef"><b>Definition:</b> <a href="autoinstall_8class_8php_source.html#l00017">autoinstall.class.php:17</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_aecdfcc5332bcf22df01fc21a03b64435"><div class="ttname"><a href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a></div><div class="ttdeci">getModel($module_name)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00145">func.inc.php:145</a></div></div>
@@ -280,7 +278,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 7 2018 19:23:03 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 7 2018 16:06:48 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.9.5</span>
+   &#160;<span id="projectnumber">1.9.7</span>
    </div>
   </td>
  </tr>
@@ -869,10 +869,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>-&gt;toBool()) <span class="keywordflow">return</span> <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a>;</div>
 <div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;        <span class="comment">// Get user id of an administrator</span></div>
 <div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;        <span class="keywordflow">if</span>(!is_array($arr_admins) || !count($arr_admins)) <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>();</div>
-<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;        <span class="keywordflow">foreach</span>($arr_admins as $key =&gt; <a class="code" href="blogapi_8addon_8php.html#a6d0a036129b3030ce289a026c5e1eff2">$user_id</a>)</div>
+<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;        <span class="keywordflow">foreach</span>($arr_admins as $key =&gt; $user_id)</div>
 <div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;        {</div>
-<div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;            <span class="keywordflow">if</span>(!trim(<a class="code" href="blogapi_8addon_8php.html#a6d0a036129b3030ce289a026c5e1eff2">$user_id</a>)) <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;            $admins[] = trim(<a class="code" href="blogapi_8addon_8php.html#a6d0a036129b3030ce289a026c5e1eff2">$user_id</a>);</div>
+<div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;            <span class="keywordflow">if</span>(!trim($user_id)) <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;            $admins[] = trim($user_id);</div>
 <div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;        }</div>
 <div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;        <span class="keywordflow">if</span>(!count($admins)) <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>();</div>
 <div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;</div>
@@ -1381,7 +1381,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="ko_8install_8php_html_a99863a9d4b597491e1a9c801f2e55c0b"><div class="ttname"><a href="ko_8install_8php.html#a99863a9d4b597491e1a9c801f2e55c0b">$extra_vars</a></div><div class="ttdeci">foreach($sitemap as $id=&gt; &amp;$val) $extra_vars</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00180">ko.install.php:180</a></div></div>
 <div class="ttc" id="classmoduleController_html_aea2dfb4f6a1d31acdbebf131058494cd"><div class="ttname"><a href="classmoduleController.html#aea2dfb4f6a1d31acdbebf131058494cd">moduleController\_insertModuleSkinVars</a></div><div class="ttdeci">_insertModuleSkinVars($module_srl, $obj, $mode)</div><div class="ttdoc">Insert skin vars to a module. </div><div class="ttdef"><b>Definition:</b> <a href="module_8controller_8php_source.html#l00965">module.controller.php:965</a></div></div>
 <div class="ttc" id="ko_8install_8php_html_a77889723c4aa360089caae223118d413"><div class="ttname"><a href="ko_8install_8php.html#a77889723c4aa360089caae223118d413">$layout_srl</a></div><div class="ttdeci">$layout_srl</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00186">ko.install.php:186</a></div></div>
-<div class="ttc" id="blogapi_8addon_8php_html_a6d0a036129b3030ce289a026c5e1eff2"><div class="ttname"><a href="blogapi_8addon_8php.html#a6d0a036129b3030ce289a026c5e1eff2">$user_id</a></div><div class="ttdeci">if(in_array($method_name, array('metaWeblog.deletePost', 'metaWeblog.getUsersBlogs', 'metaWeblog.getUserInfo'))) $user_id</div><div class="ttdef"><b>Definition:</b> <a href="blogapi_8addon_8php_source.html#l00063">blogapi.addon.php:63</a></div></div>
 <div class="ttc" id="classBaseObject_html"><div class="ttname"><a href="classBaseObject.html">BaseObject</a></div><div class="ttdef"><b>Definition:</b> <a href="BaseObject_8class_8php_source.html#l00009">BaseObject.class.php:9</a></div></div>
 <div class="ttc" id="classContext_html_a9f79aa7aecf2e4d8006e517844523fc2"><div class="ttname"><a href="classContext.html#a9f79aa7aecf2e4d8006e517844523fc2">Context\set</a></div><div class="ttdeci">set($key, $val, $set_to_get_vars=0)</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l01925">Context.class.php:1925</a></div></div>
 <div class="ttc" id="classmoduleController_html_a9b1b3b8db4047c33882a9231c5eafb13"><div class="ttname"><a href="classmoduleController.html#a9b1b3b8db4047c33882a9231c5eafb13">moduleController\updateModuleSite</a></div><div class="ttdeci">updateModuleSite($module_srl, $site_srl, $layout_srl=0)</div><div class="ttdoc">Change the module&amp;#39;s virtual site. </div><div class="ttdef"><b>Definition:</b> <a href="module_8controller_8php_source.html#l00648">module.controller.php:648</a></div></div>
@@ -1452,7 +1451,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 7 2018 19:23:03 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 7 2018 16:06:49 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>
