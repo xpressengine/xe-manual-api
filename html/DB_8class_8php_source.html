@@ -398,7 +398,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;                    $buff[] = <span class="stringliteral">&#39;&lt;?php exit(); ?&#39;</span> . <span class="charliteral">&#39;&gt;&#39;</span>;</div>
 <div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;                }</div>
 <div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;                $buff[] = print_r($log, TRUE);</div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;                @file_put_contents($log_file, implode(<span class="stringliteral">&quot;\n&quot;</span>, $buff) . <span class="stringliteral">&quot;\n\n&quot;</span>, FILE_APPEND|LOCK_EX);</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;                @file_put_contents($debug_file, implode(<span class="stringliteral">&quot;\n&quot;</span>, $buff) . <span class="stringliteral">&quot;\n\n&quot;</span>, FILE_APPEND|LOCK_EX);</div>
 <div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;            }</div>
 <div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;        }</div>
 <div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;        <span class="keywordflow">else</span></div>
@@ -1194,7 +1194,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 7 2018 16:06:45 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 1 2018 16:57:50 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>
