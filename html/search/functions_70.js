@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['pagehandler',['PageHandler',['../classPageHandler.html#a98c8fc6b290d49c3880c323b263fe7e7',1,'PageHandler']]],
   ['parse',['parse',['../classTemplateHandler.html#acf0023ac6383d43e9b0ab854c75c0694',1,'TemplateHandler\parse()'],['../classGeneralXmlParser.html#a908eec0715e2c7470a18e149a092f300',1,'GeneralXmlParser\parse()'],['../classXmlParser.html#aa7b52a3ab42568f6f49056d928688e7a',1,'XmlParser\parse()'],['../classXmlQueryParser.html#a73bf00a88a856f3acb99dba3f554aeb2',1,'XmlQueryParser\parse()']]],
   ['parse_5fxml_5fquery',['parse_xml_query',['../classXmlQueryParser.html#ada0b24aac541d493f8344a74776664cb',1,'XmlQueryParser']]],
   ['parsecolumnname',['parseColumnName',['../classDBParser.html#a4e9d7229c290a48fddd26c278f964dab',1,'DBParser']]],
@@ -15,10 +14,8 @@ var searchData=
   ['pear',['PEAR',['../classPEAR.html#a1dc6fd8c04eca33173cc78556178b980',1,'PEAR']]],
   ['pear_5ferror',['PEAR_Error',['../classPEAR__Error.html#a4df056a45879501a8b563c896fe608a3',1,'PEAR_Error']]],
   ['performauthentication',['performAuthentication',['../classHTTP__Request2__SOCKS5.html#ad01bee6f8681e480282bd055468c1dde',1,'HTTP_Request2_SOCKS5']]],
-  ['phpftpmoduleinstaller',['PHPFTPModuleInstaller',['../classPHPFTPModuleInstaller.html#a8bd8f79d6614af9e7d28ee497dc9eea1',1,'PHPFTPModuleInstaller']]],
   ['ping',['ping',['../classsyndicationController.html#a34c1cc51ba4d16b88b0b0135ec6d360f',1,'syndicationController']]],
   ['pointlevelicontrans',['pointLevelIconTrans',['../point__level__icon_8lib_8php.html#a6581bcaf11de4c31924e7a5de3d6887d',1,'point_level_icon.lib.php']]],
-  ['poll_5fmaker',['poll_maker',['../classpoll__maker.html#ae8956a214b15ddd49a3e7538a15791ba',1,'poll_maker']]],
   ['poperrorhandling',['popErrorHandling',['../classPEAR.html#adc1bc0e4afb5652ad5c42bbd82b7a353',1,'PEAR']]],
   ['popexpect',['popExpect',['../classPEAR.html#a3ea2df43e39214a29f77f8773a5afcc4',1,'PEAR']]],
   ['prepareheaders',['prepareHeaders',['../classHTTP__Request2__Adapter__Socket.html#a8715074a6226005aa4db694a899c759b',1,'HTTP_Request2_Adapter_Socket']]],
@@ -269,6 +266,7 @@ var searchData=
   ['procrssadmindeletefeedimage',['procRssAdminDeleteFeedImage',['../classrssAdminController.html#a37eed33f761ae0a1cdcce49562bed601',1,'rssAdminController']]],
   ['procrssadmininsertconfig',['procRssAdminInsertConfig',['../classrssAdminController.html#abacdc1717d07ac5cfe2d4bb83f08d310',1,'rssAdminController']]],
   ['procrssadmininsertmoduleconfig',['procRssAdminInsertModuleConfig',['../classrssAdminController.html#ae07c8748cdccb2d13dfb4140e9c13aeb',1,'rssAdminController']]],
+  ['procseoadmininsertmoduleconfig',['procSeoAdminInsertModuleConfig',['../classseoAdminController.html#abdc874902bcde0a2049fd341278c6615',1,'seoAdminController']]],
   ['procseoadminsavesetting',['procSeoAdminSaveSetting',['../classseoAdminController.html#a842f81e0996f909e3ce75bf751cb4255',1,'seoAdminController']]],
   ['procsessionadminclear',['procSessionAdminClear',['../classsessionAdminController.html#a502f604c9f27f92d5a6fb8e1c7409ca4',1,'sessionAdminController']]],
   ['procspamfilteradmindeletedeniedip',['procSpamfilterAdminDeleteDeniedIP',['../classspamfilterAdminController.html#a720e0592f60455d125b55ee797de2436',1,'spamfilterAdminController']]],
@@ -291,7 +289,6 @@ var searchData=
   ['procwidgetgetcolorsetlist',['procWidgetGetColorsetList',['../classwidgetController.html#a1ea3fa6a1799d8d1190eeeba8424df04',1,'widgetController']]],
   ['procwidgetinsertdocument',['procWidgetInsertDocument',['../classwidgetController.html#a2704aca7d4721e2f48c87c47fd2f192b',1,'widgetController']]],
   ['procwidgetstyleextraimageupload',['procWidgetStyleExtraImageUpload',['../classwidgetController.html#a0abe619fbf8376e7829ade6996c3f707',1,'widgetController']]],
-  ['purifier',['Purifier',['../classPurifier.html#a78c509e67fef53f3fabefb7a8ded9db6',1,'Purifier']]],
   ['purifierhtml',['purifierHtml',['../func_8inc_8php.html#af8504615daee340af724f099cc69662f',1,'func.inc.php']]],
   ['purify',['purify',['../classPurifier.html#a8ef72146a37ba4e10453c9465835bd67',1,'Purifier']]],
   ['pusherrorhandling',['pushErrorHandling',['../classPEAR.html#a44c791bbf9e490da1b053dcd075fd285',1,'PEAR']]],

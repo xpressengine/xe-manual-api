@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.9.7</span>
+   &#160;<span id="projectnumber">1.9.8</span>
    </div>
   </td>
  </tr>
@@ -105,8 +105,8 @@ Inheritance diagram for FileObject:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab910aa1514ad470442e6b1adc236bb8f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFileObject.html#ab910aa1514ad470442e6b1adc236bb8f">FileObject</a> ($path, $mode)</td></tr>
-<tr class="separator:ab910aa1514ad470442e6b1adc236bb8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace5800d0760a871cc61f0de34b7937ff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFileObject.html#ace5800d0760a871cc61f0de34b7937ff">__construct</a> ($path, $mode)</td></tr>
+<tr class="separator:ace5800d0760a871cc61f0de34b7937ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add062e05a5efc8c4c5947cbf3ff120a7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFileObject.html#add062e05a5efc8c4c5947cbf3ff120a7">append</a> ($file_name)</td></tr>
 <tr class="separator:add062e05a5efc8c4c5947cbf3ff120a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83ecf26332ee98598e0d45cae59b8e63"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFileObject.html#a83ecf26332ee98598e0d45cae59b8e63">feof</a> ()</td></tr>
@@ -176,7 +176,45 @@ Public Attributes</h2></td></tr>
 <dl class="section author"><dt>Author</dt><dd>NAVER (<a href="#" onclick="location.href='mai'+'lto:'+'dev'+'el'+'ope'+'rs'+'@xp'+'re'+'sse'+'ng'+'ine'+'.c'+'om'; return false;">devel<span style="display: none;">.nosp@m.</span>oper<span style="display: none;">.nosp@m.</span>s@xpr<span style="display: none;">.nosp@m.</span>esse<span style="display: none;">.nosp@m.</span>ngine<span style="display: none;">.nosp@m.</span>.com</a>) </dd></dl>
 
 <p>Definition at line <a class="el" href="FileObject_8class_8php_source.html#l00009">9</a> of file <a class="el" href="FileObject_8class_8php_source.html">FileObject.class.php</a>.</p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="ace5800d0760a871cc61f0de34b7937ff"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FileObject::__construct </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Constructor</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$path</td><td>Path of target file </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$mode</td><td>File open mode </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p>Definition at line <a class="el" href="FileObject_8class_8php_source.html#l00037">37</a> of file <a class="el" href="FileObject_8class_8php_source.html">FileObject.class.php</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="add062e05a5efc8c4c5947cbf3ff120a7"></a>
 <div class="memitem">
 <div class="memproto">
@@ -238,43 +276,6 @@ Public Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>bool true: if eof. false: otherwise </dd></dl>
 
 <p>Definition at line <a class="el" href="FileObject_8class_8php_source.html#l00067">67</a> of file <a class="el" href="FileObject_8class_8php_source.html">FileObject.class.php</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ab910aa1514ad470442e6b1adc236bb8f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">FileObject::FileObject </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$path</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$mode</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Constructor</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$path</td><td>Path of target file </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$mode</td><td>File open mode </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-
-<p>Definition at line <a class="el" href="FileObject_8class_8php_source.html#l00037">37</a> of file <a class="el" href="FileObject_8class_8php_source.html">FileObject.class.php</a>.</p>
 
 </div>
 </div>
@@ -436,7 +437,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Aug 1 2018 16:57:55 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 10 2018 15:46:01 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

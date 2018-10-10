@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.9.7</span>
+   &#160;<span id="projectnumber">1.9.8</span>
    </div>
   </td>
  </tr>
@@ -164,26 +164,50 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            $this-&gt;<a class="code" href="classModuleObject.html#ac5126aa7f57a52e7f26b18b9040f5501">setRedirectUrl</a>(<a class="code" href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context::get</a>(<span class="stringliteral">&#39;success_return_url&#39;</span>));</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        }</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">/* !End of file */</span></div>
-<div class="ttc" id="classseo_html_abb0927c5d29b6109753207a9919773ac"><div class="ttname"><a href="classseo.html#abb0927c5d29b6109753207a9919773ac">seo\getConfig</a></div><div class="ttdeci">getConfig()</div><div class="ttdef"><b>Definition:</b> <a href="seo_8class_8php_source.html#l00018">seo.class.php:18</a></div></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="classseoAdminController.html#abdc874902bcde0a2049fd341278c6615">   75</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classseoAdminController.html#abdc874902bcde0a2049fd341278c6615">procSeoAdminInsertModuleConfig</a>()</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        $vars = <a class="code" href="classContext.html#a9ddbc79a7ba5892d1ea2d793f6ad52c2">Context::getRequestVars</a>();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        $oModule = <a class="code" href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a>(<span class="stringliteral">&#39;module&#39;</span>);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        $modulePartConfig = $oModule-&gt;getModulePartConfig(<span class="stringliteral">&#39;seo&#39;</span>, $vars-&gt;target_module_srl);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordflow">if</span> (!$modulePartConfig) {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            $modulePartConfig = <span class="keyword">new</span> stdClass();</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        $modulePartConfig-&gt;meta_description = htmlspecialchars($vars-&gt;meta_description, ENT_COMPAT | ENT_HTML401, <span class="stringliteral">&#39;UTF-8&#39;</span>, FALSE);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <a class="code" href="ko_8install_8php.html#a9fd93f6625cec4fd65bf6f412e28c015">$oModuleController</a> = <a class="code" href="func_8inc_8php.html#aa08f01e3bf130d770b373ca8493e3e9b">getController</a>(<span class="stringliteral">&#39;module&#39;</span>);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <a class="code" href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a> = <a class="code" href="ko_8install_8php.html#a9fd93f6625cec4fd65bf6f412e28c015">$oModuleController</a>-&gt;insertModulePartConfig(<span class="stringliteral">&#39;seo&#39;</span>, $vars-&gt;target_module_srl, $modulePartConfig);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        $this-&gt;<a class="code" href="classModuleObject.html#a90eb9095539a8905d73695afbbebbe24">setMessage</a>(<span class="stringliteral">&#39;success_updated&#39;</span>, <span class="stringliteral">&#39;info&#39;</span>);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        $this-&gt;<a class="code" href="classModuleObject.html#ac5126aa7f57a52e7f26b18b9040f5501">setRedirectUrl</a>($vars-&gt;success_return_url);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    }</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment">/* !End of file */</span></div>
+<div class="ttc" id="classseo_html_abb0927c5d29b6109753207a9919773ac"><div class="ttname"><a href="classseo.html#abb0927c5d29b6109753207a9919773ac">seo\getConfig</a></div><div class="ttdeci">getConfig()</div><div class="ttdef"><b>Definition:</b> <a href="seo_8class_8php_source.html#l00019">seo.class.php:19</a></div></div>
 <div class="ttc" id="classModuleObject_html_a90eb9095539a8905d73695afbbebbe24"><div class="ttname"><a href="classModuleObject.html#a90eb9095539a8905d73695afbbebbe24">ModuleObject\setMessage</a></div><div class="ttdeci">setMessage($message= 'success', $type=NULL)</div><div class="ttdef"><b>Definition:</b> <a href="ModuleObject_8class_8php_source.html#l00089">ModuleObject.class.php:89</a></div></div>
 <div class="ttc" id="func_8inc_8php_html_aa08f01e3bf130d770b373ca8493e3e9b"><div class="ttname"><a href="func_8inc_8php.html#aa08f01e3bf130d770b373ca8493e3e9b">getController</a></div><div class="ttdeci">getController($module_name)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00090">func.inc.php:90</a></div></div>
+<div class="ttc" id="ko_8install_8php_html_a73004ce9cd673c1bfafd1dc351134797"><div class="ttname"><a href="ko_8install_8php.html#a73004ce9cd673c1bfafd1dc351134797">$output</a></div><div class="ttdeci">$output</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00193">ko.install.php:193</a></div></div>
 <div class="ttc" id="classCacheHandler_html_a2fce85cb82ab180ce9d6bcea61a54eec"><div class="ttname"><a href="classCacheHandler.html#a2fce85cb82ab180ce9d6bcea61a54eec">CacheHandler\getInstance</a></div><div class="ttdeci">&amp; getInstance($target= 'object', $info=null, $always_use_file=false)</div><div class="ttdef"><b>Definition:</b> <a href="CacheHandler_8class_8php_source.html#l00031">CacheHandler.class.php:31</a></div></div>
 <div class="ttc" id="classseoAdminController_html"><div class="ttname"><a href="classseoAdminController.html">seoAdminController</a></div><div class="ttdef"><b>Definition:</b> <a href="seo_8admin_8controller_8php_source.html#l00002">seo.admin.controller.php:2</a></div></div>
+<div class="ttc" id="classseoAdminController_html_abdc874902bcde0a2049fd341278c6615"><div class="ttname"><a href="classseoAdminController.html#abdc874902bcde0a2049fd341278c6615">seoAdminController\procSeoAdminInsertModuleConfig</a></div><div class="ttdeci">procSeoAdminInsertModuleConfig()</div><div class="ttdef"><b>Definition:</b> <a href="seo_8admin_8controller_8php_source.html#l00075">seo.admin.controller.php:75</a></div></div>
 <div class="ttc" id="classModuleObject_html_ac5126aa7f57a52e7f26b18b9040f5501"><div class="ttname"><a href="classModuleObject.html#ac5126aa7f57a52e7f26b18b9040f5501">ModuleObject\setRedirectUrl</a></div><div class="ttdeci">setRedirectUrl($url= './', $output=NULL)</div><div class="ttdef"><b>Definition:</b> <a href="ModuleObject_8class_8php_source.html#l00060">ModuleObject.class.php:60</a></div></div>
 <div class="ttc" id="classseoAdminController_html_a842f81e0996f909e3ce75bf751cb4255"><div class="ttname"><a href="classseoAdminController.html#a842f81e0996f909e3ce75bf751cb4255">seoAdminController\procSeoAdminSaveSetting</a></div><div class="ttdeci">procSeoAdminSaveSetting()</div><div class="ttdef"><b>Definition:</b> <a href="seo_8admin_8controller_8php_source.html#l00004">seo.admin.controller.php:4</a></div></div>
-<div class="ttc" id="classseo_html_a7ca6b6de7368cc0ec8e1e0c21e3f93ae"><div class="ttname"><a href="classseo.html#a7ca6b6de7368cc0ec8e1e0c21e3f93ae">seo\moduleUpdate</a></div><div class="ttdeci">moduleUpdate()</div><div class="ttdef"><b>Definition:</b> <a href="seo_8class_8php_source.html#l00151">seo.class.php:151</a></div></div>
+<div class="ttc" id="classseo_html_a7ca6b6de7368cc0ec8e1e0c21e3f93ae"><div class="ttname"><a href="classseo.html#a7ca6b6de7368cc0ec8e1e0c21e3f93ae">seo\moduleUpdate</a></div><div class="ttdeci">moduleUpdate()</div><div class="ttdef"><b>Definition:</b> <a href="seo_8class_8php_source.html#l00152">seo.class.php:152</a></div></div>
 <div class="ttc" id="classFileHandler_html_a60d38b90a939a687ca5fde243936ff79"><div class="ttname"><a href="classFileHandler.html#a60d38b90a939a687ca5fde243936ff79">FileHandler\copyFile</a></div><div class="ttdeci">copyFile($source, $target, $force= 'Y')</div><div class="ttdef"><b>Definition:</b> <a href="FileHandler_8class_8php_source.html#l00104">FileHandler.class.php:104</a></div></div>
 <div class="ttc" id="config_8inc_8php_html_a5387c7a3f2aa38adf16f324cee88db88"><div class="ttname"><a href="config_8inc_8php.html#a5387c7a3f2aa38adf16f324cee88db88">_XE_PATH_</a></div><div class="ttdeci">const _XE_PATH_</div><div class="ttdef"><b>Definition:</b> <a href="config_8inc_8php_source.html#l00049">config.inc.php:49</a></div></div>
-<div class="ttc" id="classContext_html_a90ce25d65fe6c9778421cbb36ab3def5"><div class="ttname"><a href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context\get</a></div><div class="ttdeci">get($key)</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l01950">Context.class.php:1950</a></div></div>
+<div class="ttc" id="func_8inc_8php_html_aecdfcc5332bcf22df01fc21a03b64435"><div class="ttname"><a href="func_8inc_8php.html#aecdfcc5332bcf22df01fc21a03b64435">getModel</a></div><div class="ttdeci">getModel($module_name)</div><div class="ttdef"><b>Definition:</b> <a href="func_8inc_8php_source.html#l00145">func.inc.php:145</a></div></div>
+<div class="ttc" id="classContext_html_a90ce25d65fe6c9778421cbb36ab3def5"><div class="ttname"><a href="classContext.html#a90ce25d65fe6c9778421cbb36ab3def5">Context\get</a></div><div class="ttdeci">get($key)</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l01962">Context.class.php:1962</a></div></div>
 <div class="ttc" id="classseo_html"><div class="ttname"><a href="classseo.html">seo</a></div><div class="ttdef"><b>Definition:</b> <a href="seo_8class_8php_source.html#l00002">seo.class.php:2</a></div></div>
 <div class="ttc" id="ko_8install_8php_html_a9fd93f6625cec4fd65bf6f412e28c015"><div class="ttname"><a href="ko_8install_8php.html#a9fd93f6625cec4fd65bf6f412e28c015">$oModuleController</a></div><div class="ttdeci">$oModuleController</div><div class="ttdef"><b>Definition:</b> <a href="ko_8install_8php_source.html#l00287">ko.install.php:287</a></div></div>
-<div class="ttc" id="classContext_html_a9ddbc79a7ba5892d1ea2d793f6ad52c2"><div class="ttname"><a href="classContext.html#a9ddbc79a7ba5892d1ea2d793f6ad52c2">Context\getRequestVars</a></div><div class="ttdeci">getRequestVars()</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l02000">Context.class.php:2000</a></div></div>
+<div class="ttc" id="classContext_html_a9ddbc79a7ba5892d1ea2d793f6ad52c2"><div class="ttname"><a href="classContext.html#a9ddbc79a7ba5892d1ea2d793f6ad52c2">Context\getRequestVars</a></div><div class="ttdeci">getRequestVars()</div><div class="ttdef"><b>Definition:</b> <a href="Context_8class_8php_source.html#l02012">Context.class.php:2012</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Aug 1 2018 16:57:54 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 10 2018 15:46:00 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

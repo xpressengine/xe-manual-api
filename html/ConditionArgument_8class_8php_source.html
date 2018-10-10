@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.9.7</span>
+   &#160;<span id="projectnumber">1.9.8</span>
    </div>
   </td>
  </tr>
@@ -99,7 +99,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
 <div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classConditionArgument.html#acfccaada47560781bfbdf51086ce3869">   17</a></span>&#160;    var <a class="code" href="classConditionArgument.html#acfccaada47560781bfbdf51086ce3869">$operation</a>;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classConditionArgument.html#a9adc8c95c5f227954e7b6c46e89a5b65">   26</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classConditionArgument.html#a9adc8c95c5f227954e7b6c46e89a5b65">ConditionArgument</a>(<a class="code" href="classArgument.html#ab37a45cb92464255505b2f4f35909da6">$name</a>, <a class="code" href="classArgument.html#a762eb8881d615f61189bba09b9bd7300">$value</a>, <a class="code" href="classConditionArgument.html#acfccaada47560781bfbdf51086ce3869">$operation</a>)</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classConditionArgument.html#a91e5771ef525141e6ef9b11def712e04">   26</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classConditionArgument.html#a91e5771ef525141e6ef9b11def712e04">__construct</a>(<a class="code" href="classArgument.html#ab37a45cb92464255505b2f4f35909da6">$name</a>, <a class="code" href="classArgument.html#a762eb8881d615f61189bba09b9bd7300">$value</a>, <a class="code" href="classConditionArgument.html#acfccaada47560781bfbdf51086ce3869">$operation</a>)</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    {</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        $operationList = array(<span class="stringliteral">&#39;in&#39;</span> =&gt; 1, <span class="stringliteral">&#39;notin&#39;</span> =&gt; 1, <span class="stringliteral">&#39;not_in&#39;</span> =&gt; 1, <span class="stringliteral">&#39;between&#39;</span> =&gt; 1);</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordflow">if</span>(isset(<a class="code" href="classArgument.html#a762eb8881d615f61189bba09b9bd7300">$value</a>) &amp;&amp; isset($operationList[<a class="code" href="classConditionArgument.html#acfccaada47560781bfbdf51086ce3869">$operation</a>]) &amp;&amp; !is_array(<a class="code" href="classArgument.html#a762eb8881d615f61189bba09b9bd7300">$value</a>) &amp;&amp; <a class="code" href="classArgument.html#a762eb8881d615f61189bba09b9bd7300">$value</a> != <span class="stringliteral">&#39;&#39;</span>)</div>
@@ -108,7 +108,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            <a class="code" href="classArgument.html#a762eb8881d615f61189bba09b9bd7300">$value</a> = str_replace(<span class="charliteral">&#39;\&#39;&#39;</span>, <span class="stringliteral">&#39;&#39;</span>, <a class="code" href="classArgument.html#a762eb8881d615f61189bba09b9bd7300">$value</a>);</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            <a class="code" href="classArgument.html#a762eb8881d615f61189bba09b9bd7300">$value</a> = explode(<span class="charliteral">&#39;,&#39;</span>, <a class="code" href="classArgument.html#a762eb8881d615f61189bba09b9bd7300">$value</a>);</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        }</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        parent::Argument(<a class="code" href="classArgument.html#ab37a45cb92464255505b2f4f35909da6">$name</a>, <a class="code" href="classArgument.html#a762eb8881d615f61189bba09b9bd7300">$value</a>);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        parent::__construct(<a class="code" href="classArgument.html#ab37a45cb92464255505b2f4f35909da6">$name</a>, <a class="code" href="classArgument.html#a762eb8881d615f61189bba09b9bd7300">$value</a>);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        $this-&gt;operation = <a class="code" href="classConditionArgument.html#acfccaada47560781bfbdf51086ce3869">$operation</a>;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
@@ -213,6 +213,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="comment">/* End of file ConditionArgument.class.php */</span></div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="comment">/* Location: ./classes/xml/xmlquery/argument/ConditionArgument.class.php */</span></div>
 <div class="ttc" id="classArgument_html"><div class="ttname"><a href="classArgument.html">Argument</a></div><div class="ttdef"><b>Definition:</b> <a href="Argument_8class_8php_source.html#l00010">Argument.class.php:10</a></div></div>
+<div class="ttc" id="classConditionArgument_html_a91e5771ef525141e6ef9b11def712e04"><div class="ttname"><a href="classConditionArgument.html#a91e5771ef525141e6ef9b11def712e04">ConditionArgument\__construct</a></div><div class="ttdeci">__construct($name, $value, $operation)</div><div class="ttdef"><b>Definition:</b> <a href="ConditionArgument_8class_8php_source.html#l00026">ConditionArgument.class.php:26</a></div></div>
 <div class="ttc" id="classArgument_html_ab37a45cb92464255505b2f4f35909da6"><div class="ttname"><a href="classArgument.html#ab37a45cb92464255505b2f4f35909da6">Argument\$name</a></div><div class="ttdeci">$name</div><div class="ttdef"><b>Definition:</b> <a href="Argument_8class_8php_source.html#l00023">Argument.class.php:23</a></div></div>
 <div class="ttc" id="classConditionArgument_html_acfccaada47560781bfbdf51086ce3869"><div class="ttname"><a href="classConditionArgument.html#acfccaada47560781bfbdf51086ce3869">ConditionArgument\$operation</a></div><div class="ttdeci">$operation</div><div class="ttdef"><b>Definition:</b> <a href="ConditionArgument_8class_8php_source.html#l00017">ConditionArgument.class.php:17</a></div></div>
 <div class="ttc" id="classConditionArgument_html_a39922137cc67e751a5577850bce3cac7"><div class="ttname"><a href="classConditionArgument.html#a39922137cc67e751a5577850bce3cac7">ConditionArgument\getType</a></div><div class="ttdeci">getType()</div><div class="ttdef"><b>Definition:</b> <a href="ConditionArgument_8class_8php_source.html#l00121">ConditionArgument.class.php:121</a></div></div>
@@ -220,12 +221,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classArgument_html_a7a2272bc3d12787f80143fbea01698f4"><div class="ttname"><a href="classArgument.html#a7a2272bc3d12787f80143fbea01698f4">Argument\$type</a></div><div class="ttdeci">$type</div><div class="ttdef"><b>Definition:</b> <a href="Argument_8class_8php_source.html#l00029">Argument.class.php:29</a></div></div>
 <div class="ttc" id="classConditionArgument_html_a2f1c182c8765ebc62d2d50f575954982"><div class="ttname"><a href="classConditionArgument.html#a2f1c182c8765ebc62d2d50f575954982">ConditionArgument\createConditionValue</a></div><div class="ttdeci">createConditionValue()</div><div class="ttdef"><b>Definition:</b> <a href="ConditionArgument_8class_8php_source.html#l00043">ConditionArgument.class.php:43</a></div></div>
 <div class="ttc" id="classArgument_html_a762eb8881d615f61189bba09b9bd7300"><div class="ttname"><a href="classArgument.html#a762eb8881d615f61189bba09b9bd7300">Argument\$value</a></div><div class="ttdeci">$value</div><div class="ttdef"><b>Definition:</b> <a href="Argument_8class_8php_source.html#l00017">Argument.class.php:17</a></div></div>
-<div class="ttc" id="classConditionArgument_html_a9adc8c95c5f227954e7b6c46e89a5b65"><div class="ttname"><a href="classConditionArgument.html#a9adc8c95c5f227954e7b6c46e89a5b65">ConditionArgument\ConditionArgument</a></div><div class="ttdeci">ConditionArgument($name, $value, $operation)</div><div class="ttdef"><b>Definition:</b> <a href="ConditionArgument_8class_8php_source.html#l00026">ConditionArgument.class.php:26</a></div></div>
 <div class="ttc" id="classConditionArgument_html_a7ee8444a1bfa4763458a006e0fd6ef1e"><div class="ttname"><a href="classConditionArgument.html#a7ee8444a1bfa4763458a006e0fd6ef1e">ConditionArgument\setColumnType</a></div><div class="ttdeci">setColumnType($column_type)</div><div class="ttdef"><b>Definition:</b> <a href="ConditionArgument_8class_8php_source.html#l00137">ConditionArgument.class.php:137</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Aug 1 2018 16:57:50 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 10 2018 15:45:56 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['joinconditionstag',['JoinConditionsTag',['../classJoinConditionsTag.html',1,'JoinConditionsTag'],['../classJoinConditionsTag.html#aa482f0c93e57933796566139e1b74f0e',1,'JoinConditionsTag\JoinConditionsTag()']]],
+  ['joinconditionstag',['JoinConditionsTag',['../classJoinConditionsTag.html',1,'']]],
   ['joinconditionstag_2eclass_2ephp',['JoinConditionsTag.class.php',['../JoinConditionsTag_8class_8php.html',1,'']]],
-  ['jointable',['JoinTable',['../classJoinTable.html',1,'JoinTable'],['../classJoinTable.html#a70859ad638b9149e97b8209d4f73610e',1,'JoinTable\JoinTable()']]],
+  ['jointable',['JoinTable',['../classJoinTable.html',1,'']]],
   ['jointable_2eclass_2ephp',['JoinTable.class.php',['../JoinTable_8class_8php.html',1,'']]],
   ['jscallbackdisplayhandler',['JSCallbackDisplayHandler',['../classJSCallbackDisplayHandler.html',1,'']]],
   ['jscallbackdisplayhandler_2ephp',['JSCallbackDisplayHandler.php',['../JSCallbackDisplayHandler_8php.html',1,'']]],

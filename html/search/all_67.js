@@ -592,7 +592,7 @@ var searchData=
   ['getuploadconfig',['getUploadConfig',['../classfileModel.html#a0d268e1f840c7495de96ed511c7053fc',1,'fileModel']]],
   ['getuploadedfiles',['getUploadedFiles',['../classcommentItem.html#aaa9c1ef5cfd0ce69fd83d8d980360ee5',1,'commentItem\getUploadedFiles()'],['../classdocumentItem.html#a47ef433ba4e5147842df6c83f341d5d4',1,'documentItem\getUploadedFiles()']]],
   ['getuploadstatus',['getUploadStatus',['../classfileModel.html#a63c3d6b41db33e55521cd3f0b10ab493',1,'fileModel']]],
-  ['geturl',['getUrl',['../classContext.html#aa60b75d32d4923bb3b9854985a82ce36',1,'Context\getUrl()'],['../classHTTP__Request2.html#a35d9ef6e266d90ad52a5037b70850694',1,'HTTP_Request2\getUrl()'],['../classNet__URL2.html#a77d3197589861087e09db160a78c7ee1',1,'Net_URL2\getURL()'],['../func_8inc_8php.html#accd14bda49a1044b4d8dd93f020f11ee',1,'getUrl():&#160;func.inc.php']]],
+  ['geturl',['getURL',['../classNet__URL2.html#a77d3197589861087e09db160a78c7ee1',1,'Net_URL2\getURL()'],['../classContext.html#aa60b75d32d4923bb3b9854985a82ce36',1,'Context\getUrl()'],['../classHTTP__Request2.html#a35d9ef6e266d90ad52a5037b70850694',1,'HTTP_Request2\getUrl()'],['../func_8inc_8php.html#accd14bda49a1044b4d8dd93f020f11ee',1,'getUrl():&#160;func.inc.php']]],
   ['getusedjoinformlist',['getUsedJoinFormList',['../classmemberModel.html#ab249b6e54c0b7d472d3cd50ad3b658dc',1,'memberModel']]],
   ['getuser',['getUser',['../classNet__URL2.html#ad06292db039e4723ce457f416fc61763',1,'Net_URL2']]],
   ['getuserid',['getUserId',['../classTrashVO.html#a2e999529c316982b83362d5e3af98675',1,'TrashVO\getUserId()'],['../classcommentItem.html#a5c793e6542e731da5d465c35c77b42fd',1,'commentItem\getUserID()'],['../classdocumentItem.html#a66a8157a3cc7c82325eadcefe6390a58',1,'documentItem\getUserID()']]],
@@ -637,6 +637,6 @@ var searchData=
   ['getxmltree',['getXmlTree',['../classdocumentController.html#ad18d5e7c2cfbef82020548e13e00df7d',1,'documentController\getXmlTree()'],['../classmenuAdminController.html#ae924a4c2ac50c955e01e9c234d93c767',1,'menuAdminController\getXmlTree()']]],
   ['gnb',['GNB',['../ko_8install_8php.html#a9b1716b68fc04f3492448f38148dcbf5',1,'ko.install.php']]],
   ['groupby',['groupBy',['../classQuery.html#afeca4abb4534e8aa58db00dac98e7082',1,'Query']]],
-  ['groupstag',['GroupsTag',['../classGroupsTag.html',1,'GroupsTag'],['../classGroupsTag.html#a6e715e4a1666d864895755c14ce94980',1,'GroupsTag\GroupsTag()']]],
+  ['groupstag',['GroupsTag',['../classGroupsTag.html',1,'']]],
   ['groupstag_2eclass_2ephp',['GroupsTag.class.php',['../GroupsTag_8class_8php.html',1,'']]]
 ];

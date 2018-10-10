@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['limit',['Limit',['../classLimit.html#a3f29df69e167ae9fe5ae3f6b4adebb34',1,'Limit\Limit()'],['../classQuery.html#af2e290d02d3e8c157f9b85b9da1ac08c',1,'Query\limit()']]],
-  ['limittag',['LimitTag',['../classLimitTag.html#a9b5dbee572b93d0ae32089e8deed7462',1,'LimitTag']]],
+  ['limit',['limit',['../classQuery.html#af2e290d02d3e8c157f9b85b9da1ac08c',1,'Query']]],
   ['linkallmoduleinstancestositemap',['linkAllModuleInstancesToSitemap',['../classmenuAdminController.html#a49adc0f822800b87a3419fc4d0d48005',1,'menuAdminController']]],
   ['load',['load',['../classValidator.html#a43de0eb69cae01eee855f825324ffc39',1,'Validator']]],
   ['loaddbinfo',['loadDBInfo',['../classContext.html#af9a710b382c01e18ddabc728d04f5667',1,'Context']]],

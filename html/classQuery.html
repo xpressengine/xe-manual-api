@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.9.7</span>
+   &#160;<span id="projectnumber">1.9.8</span>
    </div>
   </td>
  </tr>
@@ -106,8 +106,8 @@ Inheritance diagram for Query:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a18345a4b454ee480c261c15c4338768e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuery.html#a18345a4b454ee480c261c15c4338768e">Query</a> ($queryID=NULL, $action=NULL, $columns=NULL, $tables=NULL, $conditions=NULL, $groups=NULL, $orderby=NULL, $<a class="el" href="classQuery.html#af2e290d02d3e8c157f9b85b9da1ac08c">limit</a>=NULL, $priority=NULL)</td></tr>
-<tr class="separator:a18345a4b454ee480c261c15c4338768e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dbf3be72bbd9a240e408e5056353349"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuery.html#a6dbf3be72bbd9a240e408e5056353349">__construct</a> ($queryID=NULL, $action=NULL, $columns=NULL, $tables=NULL, $conditions=NULL, $groups=NULL, $orderby=NULL, $<a class="el" href="classQuery.html#af2e290d02d3e8c157f9b85b9da1ac08c">limit</a>=NULL, $priority=NULL)</td></tr>
+<tr class="separator:a6dbf3be72bbd9a240e408e5056353349"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab191941325776f3475aeea910167a116"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuery.html#ab191941325776f3475aeea910167a116">show</a> ()</td></tr>
 <tr class="separator:ab191941325776f3475aeea910167a116"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad02b39cd751359208514261f7d320d3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQuery.html#aad02b39cd751359208514261f7d320d3">setQueryId</a> ($queryID)</td></tr>
@@ -249,7 +249,94 @@ Public Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
 <p>Definition at line <a class="el" href="Query_8class_8php_source.html#l00009">9</a> of file <a class="el" href="Query_8class_8php_source.html">Query.class.php</a>.</p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a6dbf3be72bbd9a240e408e5056353349"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Query::__construct </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$queryID</em> = <code>NULL</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$action</em> = <code>NULL</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$columns</em> = <code>NULL</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$tables</em> = <code>NULL</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$conditions</em> = <code>NULL</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$groups</em> = <code>NULL</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$orderby</em> = <code>NULL</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$limit</em> = <code>NULL</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$priority</em> = <code>NULL</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>constructor </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$queryID</td><td></td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$action</td><td></td></tr>
+    <tr><td class="paramtype">string&#160;|&#160;array</td><td class="paramname">$columns</td><td></td></tr>
+    <tr><td class="paramtype">string&#160;|&#160;array</td><td class="paramname">$tables</td><td></td></tr>
+    <tr><td class="paramtype">string&#160;|&#160;array</td><td class="paramname">$conditions</td><td></td></tr>
+    <tr><td class="paramtype">string&#160;|&#160;array</td><td class="paramname">$groups</td><td></td></tr>
+    <tr><td class="paramtype">string&#160;|&#160;array</td><td class="paramname">$orderby</td><td></td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$limit</td><td></td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$priority</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p>Definition at line <a class="el" href="Query_8class_8php_source.html#l00097">97</a> of file <a class="el" href="Query_8class_8php_source.html">Query.class.php</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a8c48087275e1fb408298c5c6295bbf20"></a>
 <div class="memitem">
 <div class="memproto">
@@ -687,92 +774,6 @@ Public Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classQuery.html">Query</a> return <a class="el" href="classQuery.html">Query</a> instance </dd></dl>
 
 <p>Definition at line <a class="el" href="Query_8class_8php_source.html#l00314">314</a> of file <a class="el" href="Query_8class_8php_source.html">Query.class.php</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a18345a4b454ee480c261c15c4338768e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Query::Query </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$queryID</em> = <code>NULL</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$action</em> = <code>NULL</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$columns</em> = <code>NULL</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$tables</em> = <code>NULL</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$conditions</em> = <code>NULL</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$groups</em> = <code>NULL</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$orderby</em> = <code>NULL</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$limit</em> = <code>NULL</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$priority</em> = <code>NULL</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>constructor </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$queryID</td><td></td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$action</td><td></td></tr>
-    <tr><td class="paramtype">string&#160;|&#160;array</td><td class="paramname">$columns</td><td></td></tr>
-    <tr><td class="paramtype">string&#160;|&#160;array</td><td class="paramname">$tables</td><td></td></tr>
-    <tr><td class="paramtype">string&#160;|&#160;array</td><td class="paramname">$conditions</td><td></td></tr>
-    <tr><td class="paramtype">string&#160;|&#160;array</td><td class="paramname">$groups</td><td></td></tr>
-    <tr><td class="paramtype">string&#160;|&#160;array</td><td class="paramname">$orderby</td><td></td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$limit</td><td></td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$priority</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-
-<p>Definition at line <a class="el" href="Query_8class_8php_source.html#l00097">97</a> of file <a class="el" href="Query_8class_8php_source.html">Query.class.php</a>.</p>
 
 </div>
 </div>
@@ -1236,7 +1237,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Aug 1 2018 16:57:56 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 10 2018 15:46:02 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

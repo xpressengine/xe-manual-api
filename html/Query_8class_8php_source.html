@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.9.7</span>
+   &#160;<span id="projectnumber">1.9.8</span>
    </div>
   </td>
  </tr>
@@ -121,7 +121,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
 <div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="classQuery.html#aaf035e5cfac7afe46163a6ba4c55c34b">   82</a></span>&#160;    var <a class="code" href="classQuery.html#aaf035e5cfac7afe46163a6ba4c55c34b">$_orderByString</a>;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="classQuery.html#a18345a4b454ee480c261c15c4338768e">   97</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classQuery.html#a18345a4b454ee480c261c15c4338768e">Query</a>(<a class="code" href="classQuery.html#a67666b2fcd6c60e73d8329f7d22044dc">$queryID</a> = NULL</div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="classQuery.html#a6dbf3be72bbd9a240e408e5056353349">   97</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classQuery.html#a6dbf3be72bbd9a240e408e5056353349">__construct</a>(<a class="code" href="classQuery.html#a67666b2fcd6c60e73d8329f7d22044dc">$queryID</a> = NULL</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    , <a class="code" href="classQuery.html#a62c36010085369fc0508ea548660be9f">$action</a> = NULL</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    , <a class="code" href="classQuery.html#a7cf97254cbd55fdbb9e149723498d9ba">$columns</a> = NULL</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    , <a class="code" href="classQuery.html#a5c74163d1615b141456b123c11fa9d92">$tables</a> = NULL</div>
@@ -636,6 +636,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classBaseObject_html"><div class="ttname"><a href="classBaseObject.html">BaseObject</a></div><div class="ttdef"><b>Definition:</b> <a href="BaseObject_8class_8php_source.html#l00009">BaseObject.class.php:9</a></div></div>
 <div class="ttc" id="classQuery_html_ab32d5ecb27ebf9facac7ba9c28fc22f6"><div class="ttname"><a href="classQuery.html#ab32d5ecb27ebf9facac7ba9c28fc22f6">Query\setGroups</a></div><div class="ttdeci">setGroups($groups)</div><div class="ttdef"><b>Definition:</b> <a href="Query_8class_8php_source.html#l00221">Query.class.php:221</a></div></div>
 <div class="ttc" id="classQuery_html_aa955216a83dfe57cdd9600b44b38ebac"><div class="ttname"><a href="classQuery.html#aa955216a83dfe57cdd9600b44b38ebac">Query\$orderby</a></div><div class="ttdeci">$orderby</div><div class="ttdef"><b>Definition:</b> <a href="Query_8class_8php_source.html#l00058">Query.class.php:58</a></div></div>
+<div class="ttc" id="classQuery_html_a6dbf3be72bbd9a240e408e5056353349"><div class="ttname"><a href="classQuery.html#a6dbf3be72bbd9a240e408e5056353349">Query\__construct</a></div><div class="ttdeci">__construct($queryID=NULL, $action=NULL, $columns=NULL, $tables=NULL, $conditions=NULL, $groups=NULL, $orderby=NULL, $limit=NULL, $priority=NULL)</div><div class="ttdef"><b>Definition:</b> <a href="Query_8class_8php_source.html#l00097">Query.class.php:97</a></div></div>
 <div class="ttc" id="classQuery_html_a41f8624567819ead73e5b57935e526c7"><div class="ttname"><a href="classQuery.html#a41f8624567819ead73e5b57935e526c7">Query\getOrder</a></div><div class="ttdeci">getOrder()</div><div class="ttdef"><b>Definition:</b> <a href="Query_8class_8php_source.html#l00249">Query.class.php:249</a></div></div>
 <div class="ttc" id="classQuery_html_ad322b30b75af5b7b2e0c0ab17f30cc9d"><div class="ttname"><a href="classQuery.html#ad322b30b75af5b7b2e0c0ab17f30cc9d">Query\getUpdateString</a></div><div class="ttdeci">getUpdateString($with_values=TRUE)</div><div class="ttdef"><b>Definition:</b> <a href="Query_8class_8php_source.html#l00396">Query.class.php:396</a></div></div>
 <div class="ttc" id="classQuery_html_a6bb27fe96006304e408d51171301c4b9"><div class="ttname"><a href="classQuery.html#a6bb27fe96006304e408d51171301c4b9">Query\setPriority</a></div><div class="ttdeci">setPriority($priority)</div><div class="ttdef"><b>Definition:</b> <a href="Query_8class_8php_source.html#l00139">Query.class.php:139</a></div></div>
@@ -675,13 +676,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classQuery_html_a2437f6f8524dfc487794270a11778388"><div class="ttname"><a href="classQuery.html#a2437f6f8524dfc487794270a11778388">Query\setColumns</a></div><div class="ttdeci">setColumns($columns)</div><div class="ttdef"><b>Definition:</b> <a href="Query_8class_8php_source.html#l00162">Query.class.php:162</a></div></div>
 <div class="ttc" id="classQuery_html_abe481cf8b7f42b513a4f64cf7fb0ffea"><div class="ttname"><a href="classQuery.html#abe481cf8b7f42b513a4f64cf7fb0ffea">Query\$limit</a></div><div class="ttdeci">$limit</div><div class="ttdef"><b>Definition:</b> <a href="Query_8class_8php_source.html#l00064">Query.class.php:64</a></div></div>
 <div class="ttc" id="classQuery_html_a804cc37929736e0fea414721b90af410"><div class="ttname"><a href="classQuery.html#a804cc37929736e0fea414721b90af410">Query\getFromString</a></div><div class="ttdeci">getFromString($with_values=TRUE)</div><div class="ttdef"><b>Definition:</b> <a href="Query_8class_8php_source.html#l00459">Query.class.php:459</a></div></div>
-<div class="ttc" id="classQuery_html_a18345a4b454ee480c261c15c4338768e"><div class="ttname"><a href="classQuery.html#a18345a4b454ee480c261c15c4338768e">Query\Query</a></div><div class="ttdeci">Query($queryID=NULL, $action=NULL, $columns=NULL, $tables=NULL, $conditions=NULL, $groups=NULL, $orderby=NULL, $limit=NULL, $priority=NULL)</div><div class="ttdef"><b>Definition:</b> <a href="Query_8class_8php_source.html#l00097">Query.class.php:97</a></div></div>
 <div class="ttc" id="classStarExpression_html"><div class="ttname"><a href="classStarExpression.html">StarExpression</a></div><div class="ttdef"><b>Definition:</b> <a href="StarExpression_8class_8php_source.html#l00012">StarExpression.class.php:12</a></div></div>
 <div class="ttc" id="classQuery_html_aad02b39cd751359208514261f7d320d3"><div class="ttname"><a href="classQuery.html#aad02b39cd751359208514261f7d320d3">Query\setQueryId</a></div><div class="ttdeci">setQueryId($queryID)</div><div class="ttdef"><b>Definition:</b> <a href="Query_8class_8php_source.html#l00129">Query.class.php:129</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Aug 1 2018 16:57:50 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 10 2018 15:45:56 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

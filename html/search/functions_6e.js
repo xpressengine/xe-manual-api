@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['navigationtag',['NavigationTag',['../classNavigationTag.html#a91495b131102c08b0e926ec2df903c1f',1,'NavigationTag']]],
   ['needupdate',['needUpdate',['../classmoduleModel.html#a4841df3865fb0937cb817c03fcb3d4b3',1,'moduleModel']]],
   ['normalize',['normalize',['../classNet__URL2.html#a1bde4a2650383694a88eb2f1f061fbc4',1,'Net_URL2']]],
   ['normalizefilepath',['normalizeFilePath',['../classContext.html#a47a8a7878385f0d5cb7085f933157128',1,'Context']]],

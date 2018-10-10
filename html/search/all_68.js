@@ -9,7 +9,7 @@ var searchData=
   ['hashpassword',['hashPassword',['../classmemberModel.html#a0183c4c53c2eadc045ba27d82b94412a',1,'memberModel']]],
   ['hasuploadedfiles',['hasUploadedFiles',['../classcommentItem.html#abe1774ffe4e8c0f5c14822c5698433da',1,'commentItem\hasUploadedFiles()'],['../classdocumentItem.html#af031d09271c9099d26b6619f9c436f68',1,'documentItem\hasUploadedFiles()']]],
   ['havefirstthumbnail',['haveFirstThumbnail',['../classcontentItem.html#a9e7fa4b2b4b3ce4a066d89b7f862be5a',1,'contentItem\haveFirstThumbnail()'],['../classmcontentItem.html#ac8b5fb3d84cdc8a96a8c02e9472e25dd',1,'mcontentItem\haveFirstThumbnail()']]],
-  ['hinttabletag',['HintTableTag',['../classHintTableTag.html',1,'HintTableTag'],['../classHintTableTag.html#ab06d4290d105fc2f64d5a4835aed9130',1,'HintTableTag\HintTableTag()']]],
+  ['hinttabletag',['HintTableTag',['../classHintTableTag.html',1,'']]],
   ['hinttabletag_2eclass_2ephp',['HintTableTag.class.php',['../HintTableTag_8class_8php.html',1,'']]],
   ['htmldisplayhandler',['HTMLDisplayHandler',['../classHTMLDisplayHandler.html',1,'']]],
   ['htmldisplayhandler_2ephp',['HTMLDisplayHandler.php',['../HTMLDisplayHandler_8php.html',1,'']]],

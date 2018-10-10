@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.9.7</span>
+   &#160;<span id="projectnumber">1.9.8</span>
    </div>
   </td>
  </tr>
@@ -106,8 +106,8 @@ Inheritance diagram for ModuleHandler:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:abfb13533d16d60323823189ccca73237"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleHandler.html#abfb13533d16d60323823189ccca73237">ModuleHandler</a> ($<a class="el" href="classmodule.html">module</a>= '', $act= '', $mid= '', $document_srl= '', $<a class="el" href="ko_8install_8php.html#a370bb6450fab1da3e0ed9f484a38b761">module_srl</a>= '')</td></tr>
-<tr class="separator:abfb13533d16d60323823189ccca73237"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa04a9dbd59a9f64d62260227cdf18acd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleHandler.html#aa04a9dbd59a9f64d62260227cdf18acd">__construct</a> ($<a class="el" href="classmodule.html">module</a>= '', $act= '', $mid= '', $document_srl= '', $<a class="el" href="ko_8install_8php.html#a370bb6450fab1da3e0ed9f484a38b761">module_srl</a>= '')</td></tr>
+<tr class="separator:aa04a9dbd59a9f64d62260227cdf18acd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6295c502e315baa6c563f48ddf08e233"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleHandler.html#a6295c502e315baa6c563f48ddf08e233">shutdownHandler</a> ()</td></tr>
 <tr class="separator:a6295c502e315baa6c563f48ddf08e233"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a4671c196a893207c38af84c8ee7da8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleHandler.html#a4a4671c196a893207c38af84c8ee7da8">init</a> ()</td></tr>
@@ -172,7 +172,66 @@ Public Attributes</h2></td></tr>
 <dl class="section remark"><dt>Remarks</dt><dd>This class is to excute actions of modules. Constructing an instance without any parameterconstructor, it finds the target module based on <a class="el" href="classContext.html">Context</a>. If there is no act on the found module, excute an action referencing action_forward. </dd></dl>
 
 <p>Definition at line <a class="el" href="ModuleHandler_8class_8php_source.html#l00013">13</a> of file <a class="el" href="ModuleHandler_8class_8php_source.html">ModuleHandler.class.php</a>.</p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="aa04a9dbd59a9f64d62260227cdf18acd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ModuleHandler::__construct </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$module</em> = <code>''</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$act</em> = <code>''</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$mid</em> = <code>''</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$document_srl</em> = <code>''</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$module_srl</em> = <code>''</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>prepares variables to use in moduleHandler </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$module</td><td>name of module </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$act</td><td>name of action </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$mid</td><td></td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$document_srl</td><td></td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$module_srl</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p>Definition at line <a class="el" href="ModuleHandler_8class_8php_source.html#l00035">35</a> of file <a class="el" href="ModuleHandler_8class_8php_source.html">ModuleHandler.class.php</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a45c91a72acccf3ee8139538ef5aa1c1d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -188,7 +247,7 @@ Public Attributes</h2></td></tr>
 <p>clear error message to Session. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p>Definition at line <a class="el" href="ModuleHandler_8class_8php_source.html#l00925">925</a> of file <a class="el" href="ModuleHandler_8class_8php_source.html">ModuleHandler.class.php</a>.</p>
+<p>Definition at line <a class="el" href="ModuleHandler_8class_8php_source.html#l00938">938</a> of file <a class="el" href="ModuleHandler_8class_8php_source.html">ModuleHandler.class.php</a>.</p>
 
 </div>
 </div>
@@ -246,7 +305,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ModuleHandler_8class_8php_source.html#l01242">1242</a> of file <a class="el" href="ModuleHandler_8class_8php_source.html">ModuleHandler.class.php</a>.</p>
+<p>Definition at line <a class="el" href="ModuleHandler_8class_8php_source.html#l01255">1255</a> of file <a class="el" href="ModuleHandler_8class_8php_source.html">ModuleHandler.class.php</a>.</p>
 
 </div>
 </div>
@@ -272,7 +331,7 @@ Public Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string </dd></dl>
 
-<p>Definition at line <a class="el" href="ModuleHandler_8class_8php_source.html#l01344">1344</a> of file <a class="el" href="ModuleHandler_8class_8php_source.html">ModuleHandler.class.php</a>.</p>
+<p>Definition at line <a class="el" href="ModuleHandler_8class_8php_source.html#l01357">1357</a> of file <a class="el" href="ModuleHandler_8class_8php_source.html">ModuleHandler.class.php</a>.</p>
 
 </div>
 </div>
@@ -291,7 +350,7 @@ Public Attributes</h2></td></tr>
 <p>set error message to Session. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p>Definition at line <a class="el" href="ModuleHandler_8class_8php_source.html#l00891">891</a> of file <a class="el" href="ModuleHandler_8class_8php_source.html">ModuleHandler.class.php</a>.</p>
+<p>Definition at line <a class="el" href="ModuleHandler_8class_8php_source.html#l00904">904</a> of file <a class="el" href="ModuleHandler_8class_8php_source.html">ModuleHandler.class.php</a>.</p>
 
 </div>
 </div>
@@ -310,7 +369,7 @@ Public Attributes</h2></td></tr>
 <p>occured error when, set input values to session. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p>Definition at line <a class="el" href="ModuleHandler_8class_8php_source.html#l00939">939</a> of file <a class="el" href="ModuleHandler_8class_8php_source.html">ModuleHandler.class.php</a>.</p>
+<p>Definition at line <a class="el" href="ModuleHandler_8class_8php_source.html#l00952">952</a> of file <a class="el" href="ModuleHandler_8class_8php_source.html">ModuleHandler.class.php</a>.</p>
 
 </div>
 </div>
@@ -336,7 +395,7 @@ Public Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p>Definition at line <a class="el" href="ModuleHandler_8class_8php_source.html#l00954">954</a> of file <a class="el" href="ModuleHandler_8class_8php_source.html">ModuleHandler.class.php</a>.</p>
+<p>Definition at line <a class="el" href="ModuleHandler_8class_8php_source.html#l00967">967</a> of file <a class="el" href="ModuleHandler_8class_8php_source.html">ModuleHandler.class.php</a>.</p>
 
 </div>
 </div>
@@ -362,7 +421,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ModuleHandler_8class_8php_source.html#l00187">187</a> of file <a class="el" href="ModuleHandler_8class_8php_source.html">ModuleHandler.class.php</a>.</p>
+<p>Definition at line <a class="el" href="ModuleHandler_8class_8php_source.html#l00184">184</a> of file <a class="el" href="ModuleHandler_8class_8php_source.html">ModuleHandler.class.php</a>.</p>
 
 </div>
 </div>
@@ -407,7 +466,7 @@ Public Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classModuleObject.html">ModuleObject</a> module instance (if failed it returns null) </dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>if there exists a module instance created before, returns it. </dd></dl>
 
-<p>Definition at line <a class="el" href="ModuleHandler_8class_8php_source.html#l01155">1155</a> of file <a class="el" href="ModuleHandler_8class_8php_source.html">ModuleHandler.class.php</a>.</p>
+<p>Definition at line <a class="el" href="ModuleHandler_8class_8php_source.html#l01168">1168</a> of file <a class="el" href="ModuleHandler_8class_8php_source.html">ModuleHandler.class.php</a>.</p>
 
 </div>
 </div>
@@ -433,7 +492,7 @@ Public Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string path of the module </dd></dl>
 
-<p>Definition at line <a class="el" href="ModuleHandler_8class_8php_source.html#l01142">1142</a> of file <a class="el" href="ModuleHandler_8class_8php_source.html">ModuleHandler.class.php</a>.</p>
+<p>Definition at line <a class="el" href="ModuleHandler_8class_8php_source.html#l01155">1155</a> of file <a class="el" href="ModuleHandler_8class_8php_source.html">ModuleHandler.class.php</a>.</p>
 
 </div>
 </div>
@@ -452,65 +511,7 @@ Public Attributes</h2></td></tr>
 <p>Initialization. It finds the target module based on module, mid, document_srl, and prepares to execute an action </p>
 <dl class="section return"><dt>Returns</dt><dd>boolean true: OK, false: redirected </dd></dl>
 
-<p>Definition at line <a class="el" href="ModuleHandler_8class_8php_source.html#l00214">214</a> of file <a class="el" href="ModuleHandler_8class_8php_source.html">ModuleHandler.class.php</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="abfb13533d16d60323823189ccca73237"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ModuleHandler::ModuleHandler </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$module</em> = <code>''</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$act</em> = <code>''</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$mid</em> = <code>''</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$document_srl</em> = <code>''</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$module_srl</em> = <code>''</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>prepares variables to use in moduleHandler </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$module</td><td>name of module </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$act</td><td>name of action </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$mid</td><td></td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$document_srl</td><td></td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$module_srl</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-
-<p>Definition at line <a class="el" href="ModuleHandler_8class_8php_source.html#l00035">35</a> of file <a class="el" href="ModuleHandler_8class_8php_source.html">ModuleHandler.class.php</a>.</p>
+<p>Definition at line <a class="el" href="ModuleHandler_8class_8php_source.html#l00211">211</a> of file <a class="el" href="ModuleHandler_8class_8php_source.html">ModuleHandler.class.php</a>.</p>
 
 </div>
 </div>
@@ -529,7 +530,7 @@ Public Attributes</h2></td></tr>
 <p>get a module instance and execute an action </p>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classModuleObject.html">ModuleObject</a> executed module instance </dd></dl>
 
-<p>Definition at line <a class="el" href="ModuleHandler_8class_8php_source.html#l00413">413</a> of file <a class="el" href="ModuleHandler_8class_8php_source.html">ModuleHandler.class.php</a>.</p>
+<p>Definition at line <a class="el" href="ModuleHandler_8class_8php_source.html#l00410">410</a> of file <a class="el" href="ModuleHandler_8class_8php_source.html">ModuleHandler.class.php</a>.</p>
 
 </div>
 </div>
@@ -546,7 +547,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ModuleHandler_8class_8php_source.html#l00157">157</a> of file <a class="el" href="ModuleHandler_8class_8php_source.html">ModuleHandler.class.php</a>.</p>
+<p>Definition at line <a class="el" href="ModuleHandler_8class_8php_source.html#l00154">154</a> of file <a class="el" href="ModuleHandler_8class_8php_source.html">ModuleHandler.class.php</a>.</p>
 
 </div>
 </div>
@@ -590,7 +591,7 @@ Public Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classBaseObject.html">BaseObject</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="ModuleHandler_8class_8php_source.html#l01281">1281</a> of file <a class="el" href="ModuleHandler_8class_8php_source.html">ModuleHandler.class.php</a>.</p>
+<p>Definition at line <a class="el" href="ModuleHandler_8class_8php_source.html#l01294">1294</a> of file <a class="el" href="ModuleHandler_8class_8php_source.html">ModuleHandler.class.php</a>.</p>
 
 </div>
 </div>
@@ -644,7 +645,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ModuleHandler_8class_8php_source.html#l00121">121</a> of file <a class="el" href="ModuleHandler_8class_8php_source.html">ModuleHandler.class.php</a>.</p>
+<p>Definition at line <a class="el" href="ModuleHandler_8class_8php_source.html#l00118">118</a> of file <a class="el" href="ModuleHandler_8class_8php_source.html">ModuleHandler.class.php</a>.</p>
 
 </div>
 </div>
@@ -783,7 +784,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Aug 1 2018 16:57:56 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 10 2018 15:46:02 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

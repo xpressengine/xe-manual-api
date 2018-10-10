@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['navigationtag',['NavigationTag',['../classNavigationTag.html',1,'NavigationTag'],['../classNavigationTag.html#a91495b131102c08b0e926ec2df903c1f',1,'NavigationTag\NavigationTag()']]],
+  ['navigationtag',['NavigationTag',['../classNavigationTag.html',1,'']]],
   ['navigationtag_2eclass_2ephp',['NavigationTag.class.php',['../NavigationTag_8class_8php.html',1,'']]],
   ['needupdate',['needUpdate',['../classmoduleModel.html#a4841df3865fb0937cb817c03fcb3d4b3',1,'moduleModel']]],
   ['net_5furl2',['Net_URL2',['../classNet__URL2.html',1,'Net_URL2'],['../namespaceNet__URL2.html',1,'Net_URL2']]],

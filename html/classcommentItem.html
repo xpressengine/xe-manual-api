@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.9.7</span>
+   &#160;<span id="projectnumber">1.9.8</span>
    </div>
   </td>
  </tr>
@@ -105,8 +105,8 @@ Inheritance diagram for commentItem:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5635b46a07b8788e7d2c31ed5b6968d2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcommentItem.html#a5635b46a07b8788e7d2c31ed5b6968d2">commentItem</a> ($comment_srl=0, $columnList=array())</td></tr>
-<tr class="separator:a5635b46a07b8788e7d2c31ed5b6968d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf741eaec2c765de9db5a46f073903e0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcommentItem.html#aaf741eaec2c765de9db5a46f073903e0">__construct</a> ($comment_srl=0, $columnList=array())</td></tr>
+<tr class="separator:aaf741eaec2c765de9db5a46f073903e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98724f23e262a80b73355f5b25f9c2b0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcommentItem.html#a98724f23e262a80b73355f5b25f9c2b0">setComment</a> ($comment_srl)</td></tr>
 <tr class="separator:a98724f23e262a80b73355f5b25f9c2b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c2c15c69b3584aadf79446147752d80"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcommentItem.html#a0c2c15c69b3584aadf79446147752d80">_loadFromDB</a> ()</td></tr>
@@ -234,32 +234,13 @@ Public Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
 <p>Definition at line <a class="el" href="comment_8item_8php_source.html#l00012">12</a> of file <a class="el" href="comment_8item_8php_source.html">comment.item.php</a>.</p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a0c2c15c69b3584aadf79446147752d80"></a>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="aaf741eaec2c765de9db5a46f073903e0"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">commentItem::_loadFromDB </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Load comment data from <a class="el" href="classDB.html">DB</a> and set to <a class="el" href="classcommentItem.html">commentItem</a> object </p>
-<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-
-<p>Definition at line <a class="el" href="comment_8item_8php_source.html#l00050">50</a> of file <a class="el" href="comment_8item_8php_source.html">comment.item.php</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a5635b46a07b8788e7d2c31ed5b6968d2"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">commentItem::commentItem </td>
+          <td class="memname">commentItem::__construct </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>$comment_srl</em> = <code>0</code>, </td>
@@ -291,6 +272,26 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a0c2c15c69b3584aadf79446147752d80"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">commentItem::_loadFromDB </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Load comment data from <a class="el" href="classDB.html">DB</a> and set to <a class="el" href="classcommentItem.html">commentItem</a> object </p>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p>Definition at line <a class="el" href="comment_8item_8php_source.html#l00050">50</a> of file <a class="el" href="comment_8item_8php_source.html">comment.item.php</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ade6e5c8ad3846e0475e89083e2de4669"></a>
 <div class="memitem">
 <div class="memproto">
@@ -306,7 +307,7 @@ Public Attributes</h2></td></tr>
 <p>Returns the comment's mid in order to construct SEO friendly URLs </p>
 <dl class="section return"><dt>Returns</dt><dd>string </dd></dl>
 
-<p>Definition at line <a class="el" href="comment_8item_8php_source.html#l00711">711</a> of file <a class="el" href="comment_8item_8php_source.html">comment.item.php</a>.</p>
+<p>Definition at line <a class="el" href="comment_8item_8php_source.html#l00706">706</a> of file <a class="el" href="comment_8item_8php_source.html">comment.item.php</a>.</p>
 
 </div>
 </div>
@@ -774,7 +775,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="comment_8item_8php_source.html#l00702">702</a> of file <a class="el" href="comment_8item_8php_source.html">comment.item.php</a>.</p>
+<p>Definition at line <a class="el" href="comment_8item_8php_source.html#l00697">697</a> of file <a class="el" href="comment_8item_8php_source.html">comment.item.php</a>.</p>
 
 </div>
 </div>
@@ -1051,7 +1052,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Aug 1 2018 16:57:54 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 10 2018 15:46:00 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

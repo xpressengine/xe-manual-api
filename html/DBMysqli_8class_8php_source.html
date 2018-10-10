@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.9.7</span>
+   &#160;<span id="projectnumber">1.9.8</span>
    </div>
   </td>
  </tr>
@@ -99,7 +99,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classDBMysqli.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDBMysqli.html">DBMysqli</a> <span class="keyword">extends</span> <a class="code" href="classDBMysql.html">DBMysql</a></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classDBMysqli.html#ab3cb2172fa087e11c06968914090b71d">   23</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classDBMysqli.html#ab3cb2172fa087e11c06968914090b71d">DBMysqli</a>($auto_connect = TRUE)</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classDBMysqli.html#a39ddc29a5ed6665dfaa85b69a8d00e53">   23</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classDBMysqli.html#a39ddc29a5ed6665dfaa85b69a8d00e53">__construct</a>($auto_connect = TRUE)</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    {</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        $this-&gt;<a class="code" href="classDB.html#a92f2478aeb03b00432332ad4e4a3d700">_setDBInfo</a>();</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordflow">if</span>($auto_connect) $this-&gt;<a class="code" href="classDB.html#aaa2d517ff3b233e36c7873f288cb38ba">_connect</a>();</div>
@@ -107,7 +107,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
 <div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classDBMysqli.html#a589dd45054eb50e666c3a57815631111">   33</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classDBMysqli.html#a589dd45054eb50e666c3a57815631111">create</a>()</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classDBMysqli.html#ab3cb2172fa087e11c06968914090b71d">DBMysqli</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classDBMysqli.html">DBMysqli</a>;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
 <div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classDBMysqli.html#a7c041395f7926e0ec84186aa9eabc138">   44</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classDBMysqli.html#a7c041395f7926e0ec84186aa9eabc138">__connect</a>(<a class="code" href="classDB.html#ac9071e31f8241ad644430537f39a16ce">$connection</a>)</div>
@@ -444,10 +444,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classDBMysqli_html_a8639ebaca8bae119797a084af68750cc"><div class="ttname"><a href="classDBMysqli.html#a8639ebaca8bae119797a084af68750cc">DBMysqli\db_free_result</a></div><div class="ttdeci">db_free_result(&amp;$result)</div><div class="ttdef"><b>Definition:</b> <a href="DBMysqli_8class_8php_source.html#l00427">DBMysqli.class.php:427</a></div></div>
 <div class="ttc" id="classDBMysqli_html_acc5f5408c3717c88411a238e1e176785"><div class="ttname"><a href="classDBMysqli.html#acc5f5408c3717c88411a238e1e176785">DBMysqli\_executeUpdateAct</a></div><div class="ttdeci">_executeUpdateAct($queryObject, $with_values=false)</div><div class="ttdef"><b>Definition:</b> <a href="DBMysqli_8class_8php_source.html#l00349">DBMysqli.class.php:349</a></div></div>
 <div class="ttc" id="classDBMysqli_html_ab884208e90c71708faca2e56c5da0666"><div class="ttname"><a href="classDBMysqli.html#ab884208e90c71708faca2e56c5da0666">DBMysqli\_prepareQueryParameters</a></div><div class="ttdeci">_prepareQueryParameters(&amp;$types, &amp;$params)</div><div class="ttdef"><b>Definition:</b> <a href="DBMysqli_8class_8php_source.html#l00173">DBMysqli.class.php:173</a></div></div>
+<div class="ttc" id="classDBMysqli_html_a39ddc29a5ed6665dfaa85b69a8d00e53"><div class="ttname"><a href="classDBMysqli.html#a39ddc29a5ed6665dfaa85b69a8d00e53">DBMysqli\__construct</a></div><div class="ttdeci">__construct($auto_connect=TRUE)</div><div class="ttdef"><b>Definition:</b> <a href="DBMysqli_8class_8php_source.html#l00023">DBMysqli.class.php:23</a></div></div>
 <div class="ttc" id="classDB_html_aaa2d517ff3b233e36c7873f288cb38ba"><div class="ttname"><a href="classDB.html#aaa2d517ff3b233e36c7873f288cb38ba">DB\_connect</a></div><div class="ttdeci">_connect($type= 'master', $indx=0)</div><div class="ttdef"><b>Definition:</b> <a href="DB_8class_8php_source.html#l01266">DB.class.php:1266</a></div></div>
 <div class="ttc" id="classDB_html_a52b496d073cecfd2ca6e14897b559819"><div class="ttname"><a href="classDB.html#a52b496d073cecfd2ca6e14897b559819">DB\_getConnection</a></div><div class="ttdeci">_getConnection($type= 'master', $indx=NULL)</div><div class="ttdef"><b>Definition:</b> <a href="DB_8class_8php_source.html#l01001">DB.class.php:1001</a></div></div>
 <div class="ttc" id="classDBMysqli_html_a3dc572c5b452c7a2e0e150f6b8af622e"><div class="ttname"><a href="classDBMysqli.html#a3dc572c5b452c7a2e0e150f6b8af622e">DBMysqli\_executeDeleteAct</a></div><div class="ttdeci">_executeDeleteAct($queryObject, $with_values=false)</div><div class="ttdef"><b>Definition:</b> <a href="DBMysqli_8class_8php_source.html#l00367">DBMysqli.class.php:367</a></div></div>
-<div class="ttc" id="classDBMysqli_html_ab3cb2172fa087e11c06968914090b71d"><div class="ttname"><a href="classDBMysqli.html#ab3cb2172fa087e11c06968914090b71d">DBMysqli\DBMysqli</a></div><div class="ttdeci">DBMysqli($auto_connect=TRUE)</div><div class="ttdef"><b>Definition:</b> <a href="DBMysqli_8class_8php_source.html#l00023">DBMysqli.class.php:23</a></div></div>
 <div class="ttc" id="classDBMysql_html"><div class="ttname"><a href="classDBMysql.html">DBMysql</a></div><div class="ttdef"><b>Definition:</b> <a href="DBMysql_8class_8php_source.html#l00014">DBMysql.class.php:14</a></div></div>
 <div class="ttc" id="classDBMysqli_html_afd6324d65eaf95dbd8e6fa2f97b9b9db"><div class="ttname"><a href="classDBMysqli.html#afd6324d65eaf95dbd8e6fa2f97b9b9db">DBMysqli\_close</a></div><div class="ttdeci">_close($connection)</div><div class="ttdef"><b>Definition:</b> <a href="DBMysqli_8class_8php_source.html#l00078">DBMysqli.class.php:78</a></div></div>
 <div class="ttc" id="classDB_html_a74e74ee9d3311aa1e8107b8accd05e29"><div class="ttname"><a href="classDB.html#a74e74ee9d3311aa1e8107b8accd05e29">DB\$result</a></div><div class="ttdeci">$result</div><div class="ttdef"><b>Definition:</b> <a href="DB_8class_8php_source.html#l00066">DB.class.php:66</a></div></div>
@@ -457,7 +457,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Aug 1 2018 16:57:50 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 10 2018 15:45:56 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

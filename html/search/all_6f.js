@@ -16,7 +16,7 @@ var searchData=
   ['option_5fstrict',['OPTION_STRICT',['../classNet__URL2.html#a766955033bdccec7175d0694df62a1a9',1,'Net_URL2']]],
   ['option_5fuse_5fbrackets',['OPTION_USE_BRACKETS',['../classNet__URL2.html#a864182f067e5df22055afc3a0dfe5a57',1,'Net_URL2']]],
   ['orderby',['orderBy',['../classQuery.html#a47d03784bf5f79d270e0f56f9ada6560',1,'Query']]],
-  ['orderbycolumn',['OrderByColumn',['../classOrderByColumn.html',1,'OrderByColumn'],['../classOrderByColumn.html#a42a97dd505843873eb5cac1ea67e85a1',1,'OrderByColumn\OrderByColumn()']]],
+  ['orderbycolumn',['OrderByColumn',['../classOrderByColumn.html',1,'']]],
   ['orderbycolumn_2eclass_2ephp',['OrderByColumn.class.php',['../OrderByColumn_8class_8php.html',1,'']]],
   ['os_5funix',['OS_UNIX',['../PEAR_8php.html#aac9eed8b1212799624da961df2b7469f',1,'PEAR.php']]]
 ];

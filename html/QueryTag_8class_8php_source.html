@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.9.7</span>
+   &#160;<span id="projectnumber">1.9.8</span>
    </div>
   </td>
  </tr>
@@ -131,7 +131,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
 <div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="classQueryTag.html#a86de241a75c3037c30272c7eb4a2cfbc">  114</a></span>&#160;    var <a class="code" href="classQueryTag.html#a86de241a75c3037c30272c7eb4a2cfbc">$alias</a>;</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
-<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="classQueryTag.html#a1f7df91f1227af5dabcdcc10abe88989">  122</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classQueryTag.html#a1f7df91f1227af5dabcdcc10abe88989">QueryTag</a>(<a class="code" href="classQueryTag.html#a40fbf27ebaa31f5430080152164c3bae">$query</a>, <a class="code" href="classQueryTag.html#ac657cdbbef0ca8f1907197cbf91f1040">$isSubQuery</a> = FALSE)</div>
+<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="classQueryTag.html#a3f0f7315cca9c7199bf37c4f346cc09c">  122</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classQueryTag.html#a3f0f7315cca9c7199bf37c4f346cc09c">__construct</a>(<a class="code" href="classQueryTag.html#a40fbf27ebaa31f5430080152164c3bae">$query</a>, <a class="code" href="classQueryTag.html#ac657cdbbef0ca8f1907197cbf91f1040">$isSubQuery</a> = FALSE)</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    {</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        $this-&gt;action = <a class="code" href="classQueryTag.html#a40fbf27ebaa31f5430080152164c3bae">$query</a>-&gt;attrs-&gt;action;</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        $this-&gt;query_id = <a class="code" href="classQueryTag.html#a40fbf27ebaa31f5430080152164c3bae">$query</a>-&gt;attrs-&gt;id;</div>
@@ -433,6 +433,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classQueryTag_html_aa456465c5358ae400751727cd943683e"><div class="ttname"><a href="classQueryTag.html#aa456465c5358ae400751727cd943683e">QueryTag\$groups</a></div><div class="ttdeci">$groups</div><div class="ttdef"><b>Definition:</b> <a href="QueryTag_8class_8php_source.html#l00072">QueryTag.class.php:72</a></div></div>
 <div class="ttc" id="classUpdateColumnsTag_html"><div class="ttname"><a href="classUpdateColumnsTag.html">UpdateColumnsTag</a></div><div class="ttdef"><b>Definition:</b> <a href="UpdateColumnsTag_8class_8php_source.html#l00011">UpdateColumnsTag.class.php:11</a></div></div>
 <div class="ttc" id="classQueryTag_html_a0ee36c6d269e79842fb5e234405b9e3b"><div class="ttname"><a href="classQueryTag.html#a0ee36c6d269e79842fb5e234405b9e3b">QueryTag\getConditions</a></div><div class="ttdeci">getConditions()</div><div class="ttdef"><b>Definition:</b> <a href="QueryTag_8class_8php_source.html#l00334">QueryTag.class.php:334</a></div></div>
+<div class="ttc" id="classQueryTag_html_a3f0f7315cca9c7199bf37c4f346cc09c"><div class="ttname"><a href="classQueryTag.html#a3f0f7315cca9c7199bf37c4f346cc09c">QueryTag\__construct</a></div><div class="ttdeci">__construct($query, $isSubQuery=FALSE)</div><div class="ttdef"><b>Definition:</b> <a href="QueryTag_8class_8php_source.html#l00122">QueryTag.class.php:122</a></div></div>
 <div class="ttc" id="classQueryTag_html_a93b8852f75ce2f6df45efe2742eb2b48"><div class="ttname"><a href="classQueryTag.html#a93b8852f75ce2f6df45efe2742eb2b48">QueryTag\getSubquery</a></div><div class="ttdeci">getSubquery()</div><div class="ttdef"><b>Definition:</b> <a href="QueryTag_8class_8php_source.html#l00326">QueryTag.class.php:326</a></div></div>
 <div class="ttc" id="classQueryTag_html_a449bdb9218e0ea9058720e539a99268e"><div class="ttname"><a href="classQueryTag.html#a449bdb9218e0ea9058720e539a99268e">QueryTag\getQueryId</a></div><div class="ttdeci">getQueryId()</div><div class="ttdef"><b>Definition:</b> <a href="QueryTag_8class_8php_source.html#l00157">QueryTag.class.php:157</a></div></div>
 <div class="ttc" id="classQueryTag_html_a0c0f1e47dfb8ef88370c400235992d00"><div class="ttname"><a href="classQueryTag.html#a0c0f1e47dfb8ef88370c400235992d00">QueryTag\getPriority</a></div><div class="ttdeci">getPriority()</div><div class="ttdef"><b>Definition:</b> <a href="QueryTag_8class_8php_source.html#l00162">QueryTag.class.php:162</a></div></div>
@@ -443,11 +444,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classQueryTag_html_a5e2e78261306a4a4db69c643e9524e60"><div class="ttname"><a href="classQueryTag.html#a5e2e78261306a4a4db69c643e9524e60">QueryTag\$action</a></div><div class="ttdeci">$action</div><div class="ttdef"><b>Definition:</b> <a href="QueryTag_8class_8php_source.html#l00018">QueryTag.class.php:18</a></div></div>
 <div class="ttc" id="classQueryTag_html_abe10d8fd334fac380dd5540b2c0bdcc8"><div class="ttname"><a href="classQueryTag.html#abe10d8fd334fac380dd5540b2c0bdcc8">QueryTag\$buff</a></div><div class="ttdeci">$buff</div><div class="ttdef"><b>Definition:</b> <a href="QueryTag_8class_8php_source.html#l00096">QueryTag.class.php:96</a></div></div>
 <div class="ttc" id="classQueryTag_html_aee7e1d09d7e7dbb192989c8011160a9c"><div class="ttname"><a href="classQueryTag.html#aee7e1d09d7e7dbb192989c8011160a9c">QueryTag\getAction</a></div><div class="ttdeci">getAction()</div><div class="ttdef"><b>Definition:</b> <a href="QueryTag_8class_8php_source.html#l00167">QueryTag.class.php:167</a></div></div>
-<div class="ttc" id="classQueryTag_html_a1f7df91f1227af5dabcdcc10abe88989"><div class="ttname"><a href="classQueryTag.html#a1f7df91f1227af5dabcdcc10abe88989">QueryTag\QueryTag</a></div><div class="ttdeci">QueryTag($query, $isSubQuery=FALSE)</div><div class="ttdef"><b>Definition:</b> <a href="QueryTag_8class_8php_source.html#l00122">QueryTag.class.php:122</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Aug 1 2018 16:57:50 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 10 2018 15:45:56 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

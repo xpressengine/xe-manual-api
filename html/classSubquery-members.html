@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.9.7</span>
+   &#160;<span id="projectnumber">1.9.8</span>
    </div>
   </td>
  </tr>
@@ -110,7 +110,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <tr><td class="entry"><a class="el" href="classQuery.html#a67666b2fcd6c60e73d8329f7d22044dc">$queryID</a></td><td class="entry"><a class="el" href="classQuery.html">Query</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classQuery.html#a5c74163d1615b141456b123c11fa9d92">$tables</a></td><td class="entry"><a class="el" href="classQuery.html">Query</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classBaseObject.html#a4b5e3eabeb5a42286650df6636001a0b">$variables</a></td><td class="entry"><a class="el" href="classBaseObject.html">BaseObject</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classBaseObject.html#a827fd6c7d66ed5a1058cead90f65f0af">__construct</a>($error=0, $message= 'success')</td><td class="entry"><a class="el" href="classBaseObject.html">BaseObject</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classSubquery.html#af29e00d9bcd8b4aeb17b36fd99293441">__construct</a>($alias, $columns, $tables, $conditions, $groups, $orderby, $limit, $join_type=null)</td><td class="entry"><a class="el" href="classSubquery.html">Subquery</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classQuery.html#a6dbf3be72bbd9a240e408e5056353349">Query::__construct</a>($queryID=NULL, $action=NULL, $columns=NULL, $tables=NULL, $conditions=NULL, $groups=NULL, $orderby=NULL, $limit=NULL, $priority=NULL)</td><td class="entry"><a class="el" href="classQuery.html">Query</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classBaseObject.html#a827fd6c7d66ed5a1058cead90f65f0af">BaseObject::__construct</a>($error=0, $message= 'success')</td><td class="entry"><a class="el" href="classBaseObject.html">BaseObject</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classBaseObject.html#ac53ea9b2ac26d103f2b0217e9496a93d">add</a>($key, $val)</td><td class="entry"><a class="el" href="classBaseObject.html">BaseObject</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classBaseObject.html#aff5d8051f1103233227d961e7afbdf86">adds</a>($object)</td><td class="entry"><a class="el" href="classBaseObject.html">BaseObject</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classQuery.html#a8c48087275e1fb408298c5c6295bbf20">from</a>($tables)</td><td class="entry"><a class="el" href="classQuery.html">Query</a></td><td class="entry"></td></tr>
@@ -143,24 +145,22 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <tr class="even"><td class="entry"><a class="el" href="classSubquery.html#adea0bfe78ba0f6318fa9f181286e1482">isSubquery</a>()</td><td class="entry"><a class="el" href="classSubquery.html">Subquery</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classQuery.html#af2e290d02d3e8c157f9b85b9da1ac08c">limit</a>($limit)</td><td class="entry"><a class="el" href="classQuery.html">Query</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classQuery.html#a47d03784bf5f79d270e0f56f9ada6560">orderBy</a>($order)</td><td class="entry"><a class="el" href="classQuery.html">Query</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classQuery.html#a18345a4b454ee480c261c15c4338768e">Query</a>($queryID=NULL, $action=NULL, $columns=NULL, $tables=NULL, $conditions=NULL, $groups=NULL, $orderby=NULL, $limit=NULL, $priority=NULL)</td><td class="entry"><a class="el" href="classQuery.html">Query</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classQuery.html#a90a4c6f16abc24f107cd9cbc8db6baea">select</a>($columns=NULL)</td><td class="entry"><a class="el" href="classQuery.html">Query</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classQuery.html#a7039862d8a88c94733b4ffabd655ade6">setAction</a>($action)</td><td class="entry"><a class="el" href="classQuery.html">Query</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classQuery.html#a514b84890d27f9252a9002f562b17654">setColumnList</a>($columnList)</td><td class="entry"><a class="el" href="classQuery.html">Query</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classQuery.html#a2437f6f8524dfc487794270a11778388">setColumns</a>($columns)</td><td class="entry"><a class="el" href="classQuery.html">Query</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classQuery.html#a5355ddd61a8e4dc129f5f3dd24d39bc9">setConditions</a>($conditions)</td><td class="entry"><a class="el" href="classQuery.html">Query</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classBaseObject.html#a577cc2f5a02da2517064d5ef2b7ccb10">setError</a>($error=0)</td><td class="entry"><a class="el" href="classBaseObject.html">BaseObject</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classQuery.html#ab32d5ecb27ebf9facac7ba9c28fc22f6">setGroups</a>($groups)</td><td class="entry"><a class="el" href="classQuery.html">Query</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classBaseObject.html#a262e90f548db2253329e59c85a2bcf25">setHttpStatusCode</a>($code= '200')</td><td class="entry"><a class="el" href="classBaseObject.html">BaseObject</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classQuery.html#a16a55fd5666868a39a7a93f7b98d4de0">setLimit</a>($limit=NULL)</td><td class="entry"><a class="el" href="classQuery.html">Query</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classBaseObject.html#abf6832e1ef289490457ed894f4a90464">setMessage</a>($message= 'success', $type=NULL)</td><td class="entry"><a class="el" href="classBaseObject.html">BaseObject</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classQuery.html#a712d4ae76fa0efafa198d2e1fe23a222">setOrder</a>($order)</td><td class="entry"><a class="el" href="classQuery.html">Query</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classQuery.html#a6bb27fe96006304e408d51171301c4b9">setPriority</a>($priority)</td><td class="entry"><a class="el" href="classQuery.html">Query</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classQuery.html#aad02b39cd751359208514261f7d320d3">setQueryId</a>($queryID)</td><td class="entry"><a class="el" href="classQuery.html">Query</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classQuery.html#a98af3910bfaf6ed001572c954f28e1a5">setSubquery</a>($subquery)</td><td class="entry"><a class="el" href="classQuery.html">Query</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classQuery.html#a883baff577719a7108a3acc202d2db00">setTables</a>($tables)</td><td class="entry"><a class="el" href="classQuery.html">Query</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classQuery.html#ab191941325776f3475aeea910167a116">show</a>()</td><td class="entry"><a class="el" href="classQuery.html">Query</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classSubquery.html#a9751ca36266ff88cab76d76e73011ea5">Subquery</a>($alias, $columns, $tables, $conditions, $groups, $orderby, $limit, $join_type=null)</td><td class="entry"><a class="el" href="classSubquery.html">Subquery</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classQuery.html#a90a4c6f16abc24f107cd9cbc8db6baea">select</a>($columns=NULL)</td><td class="entry"><a class="el" href="classQuery.html">Query</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classQuery.html#a7039862d8a88c94733b4ffabd655ade6">setAction</a>($action)</td><td class="entry"><a class="el" href="classQuery.html">Query</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classQuery.html#a514b84890d27f9252a9002f562b17654">setColumnList</a>($columnList)</td><td class="entry"><a class="el" href="classQuery.html">Query</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classQuery.html#a2437f6f8524dfc487794270a11778388">setColumns</a>($columns)</td><td class="entry"><a class="el" href="classQuery.html">Query</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classQuery.html#a5355ddd61a8e4dc129f5f3dd24d39bc9">setConditions</a>($conditions)</td><td class="entry"><a class="el" href="classQuery.html">Query</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classBaseObject.html#a577cc2f5a02da2517064d5ef2b7ccb10">setError</a>($error=0)</td><td class="entry"><a class="el" href="classBaseObject.html">BaseObject</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classQuery.html#ab32d5ecb27ebf9facac7ba9c28fc22f6">setGroups</a>($groups)</td><td class="entry"><a class="el" href="classQuery.html">Query</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classBaseObject.html#a262e90f548db2253329e59c85a2bcf25">setHttpStatusCode</a>($code= '200')</td><td class="entry"><a class="el" href="classBaseObject.html">BaseObject</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classQuery.html#a16a55fd5666868a39a7a93f7b98d4de0">setLimit</a>($limit=NULL)</td><td class="entry"><a class="el" href="classQuery.html">Query</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classBaseObject.html#abf6832e1ef289490457ed894f4a90464">setMessage</a>($message= 'success', $type=NULL)</td><td class="entry"><a class="el" href="classBaseObject.html">BaseObject</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classQuery.html#a712d4ae76fa0efafa198d2e1fe23a222">setOrder</a>($order)</td><td class="entry"><a class="el" href="classQuery.html">Query</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classQuery.html#a6bb27fe96006304e408d51171301c4b9">setPriority</a>($priority)</td><td class="entry"><a class="el" href="classQuery.html">Query</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classQuery.html#aad02b39cd751359208514261f7d320d3">setQueryId</a>($queryID)</td><td class="entry"><a class="el" href="classQuery.html">Query</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classQuery.html#a98af3910bfaf6ed001572c954f28e1a5">setSubquery</a>($subquery)</td><td class="entry"><a class="el" href="classQuery.html">Query</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classQuery.html#a883baff577719a7108a3acc202d2db00">setTables</a>($tables)</td><td class="entry"><a class="el" href="classQuery.html">Query</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classQuery.html#ab191941325776f3475aeea910167a116">show</a>()</td><td class="entry"><a class="el" href="classQuery.html">Query</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classBaseObject.html#ab87cf5d350ef2a146e1ec3af90b62187">toBool</a>()</td><td class="entry"><a class="el" href="classBaseObject.html">BaseObject</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classBaseObject.html#ad0751b0da3686f08ff9b3bc031776d4d">toBoolean</a>()</td><td class="entry"><a class="el" href="classBaseObject.html">BaseObject</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classSubquery.html#a3a5a5fe8693b68cb0b2745d75fe134fc">toString</a>($with_values=true)</td><td class="entry"><a class="el" href="classSubquery.html">Subquery</a></td><td class="entry"></td></tr>
@@ -169,7 +169,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Aug 1 2018 16:57:56 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 10 2018 15:46:02 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

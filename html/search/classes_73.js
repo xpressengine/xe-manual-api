@@ -8,6 +8,7 @@ var searchData=
   ['seoadmincontroller',['seoAdminController',['../classseoAdminController.html',1,'']]],
   ['seoadminview',['seoAdminView',['../classseoAdminView.html',1,'']]],
   ['seocontroller',['seoController',['../classseoController.html',1,'']]],
+  ['seoview',['seoView',['../classseoView.html',1,'']]],
   ['session',['session',['../classsession.html',1,'']]],
   ['sessionadmincontroller',['sessionAdminController',['../classsessionAdminController.html',1,'']]],
   ['sessionadminview',['sessionAdminView',['../classsessionAdminView.html',1,'']]],

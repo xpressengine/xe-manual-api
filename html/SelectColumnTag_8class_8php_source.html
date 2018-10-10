@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.9.7</span>
+   &#160;<span id="projectnumber">1.9.8</span>
    </div>
   </td>
  </tr>
@@ -101,16 +101,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
 <div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classSelectColumnTag.html#a5965b8a6c68685c6b99dd88f4fd87f52">   26</a></span>&#160;    var <a class="code" href="classSelectColumnTag.html#a5965b8a6c68685c6b99dd88f4fd87f52">$click_count</a>;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classSelectColumnTag.html#a05e82794cb692f0af9a7da2eb41a229d">   34</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classSelectColumnTag.html#a05e82794cb692f0af9a7da2eb41a229d">SelectColumnTag</a>($column)</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classSelectColumnTag.html#a222c8bbb7607092bf5ddab1911e70896">   34</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classSelectColumnTag.html#a222c8bbb7607092bf5ddab1911e70896">__construct</a>($column)</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    {</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordflow">if</span>($column == <span class="stringliteral">&quot;*&quot;</span> || $column-&gt;attrs-&gt;name == <span class="charliteral">&#39;*&#39;</span>)</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            parent::ColumnTag(NULL);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            parent::__construct(NULL);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            $this-&gt;name = <span class="stringliteral">&quot;*&quot;</span>;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        }</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            parent::ColumnTag($column-&gt;attrs-&gt;name);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            parent::__construct($column-&gt;attrs-&gt;name);</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            $dbParser = <a class="code" href="classDB.html#abbcecd47d956cd069e3caa45c600dda4">DB::getParser</a>();</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            $this-&gt;name = $dbParser-&gt;parseExpression($this-&gt;name);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
@@ -140,17 +140,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment">/* End of file SelectColumnTag.class.php */</span></div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment">/* Location: ./classes/xml/xmlquery/tags/column/SelectColumnTag.class.php */</span></div>
-<div class="ttc" id="classSelectColumnTag_html_a05e82794cb692f0af9a7da2eb41a229d"><div class="ttname"><a href="classSelectColumnTag.html#a05e82794cb692f0af9a7da2eb41a229d">SelectColumnTag\SelectColumnTag</a></div><div class="ttdeci">SelectColumnTag($column)</div><div class="ttdef"><b>Definition:</b> <a href="SelectColumnTag_8class_8php_source.html#l00034">SelectColumnTag.class.php:34</a></div></div>
 <div class="ttc" id="classSelectColumnTag_html_a152fca9e152d65e4697ad823ffaa101b"><div class="ttname"><a href="classSelectColumnTag.html#a152fca9e152d65e4697ad823ffaa101b">SelectColumnTag\$alias</a></div><div class="ttdeci">$alias</div><div class="ttdef"><b>Definition:</b> <a href="SelectColumnTag_8class_8php_source.html#l00019">SelectColumnTag.class.php:19</a></div></div>
 <div class="ttc" id="classSelectColumnTag_html_a5965b8a6c68685c6b99dd88f4fd87f52"><div class="ttname"><a href="classSelectColumnTag.html#a5965b8a6c68685c6b99dd88f4fd87f52">SelectColumnTag\$click_count</a></div><div class="ttdeci">$click_count</div><div class="ttdef"><b>Definition:</b> <a href="SelectColumnTag_8class_8php_source.html#l00026">SelectColumnTag.class.php:26</a></div></div>
 <div class="ttc" id="classDB_html_abbcecd47d956cd069e3caa45c600dda4"><div class="ttname"><a href="classDB.html#abbcecd47d956cd069e3caa45c600dda4">DB\getParser</a></div><div class="ttdeci">getParser($force=FALSE)</div><div class="ttdef"><b>Definition:</b> <a href="DB_8class_8php_source.html#l01345">DB.class.php:1345</a></div></div>
 <div class="ttc" id="classSelectColumnTag_html"><div class="ttname"><a href="classSelectColumnTag.html">SelectColumnTag</a></div><div class="ttdef"><b>Definition:</b> <a href="SelectColumnTag_8class_8php_source.html#l00011">SelectColumnTag.class.php:11</a></div></div>
 <div class="ttc" id="classColumnTag_html"><div class="ttname"><a href="classColumnTag.html">ColumnTag</a></div><div class="ttdef"><b>Definition:</b> <a href="ColumnTag_8class_8php_source.html#l00014">ColumnTag.class.php:14</a></div></div>
 <div class="ttc" id="classSelectColumnTag_html_a4e4b646d742cb51b7c72f0d953717e3a"><div class="ttname"><a href="classSelectColumnTag.html#a4e4b646d742cb51b7c72f0d953717e3a">SelectColumnTag\getExpressionString</a></div><div class="ttdeci">getExpressionString()</div><div class="ttdef"><b>Definition:</b> <a href="SelectColumnTag_8class_8php_source.html#l00064">SelectColumnTag.class.php:64</a></div></div>
+<div class="ttc" id="classSelectColumnTag_html_a222c8bbb7607092bf5ddab1911e70896"><div class="ttname"><a href="classSelectColumnTag.html#a222c8bbb7607092bf5ddab1911e70896">SelectColumnTag\__construct</a></div><div class="ttdeci">__construct($column)</div><div class="ttdef"><b>Definition:</b> <a href="SelectColumnTag_8class_8php_source.html#l00034">SelectColumnTag.class.php:34</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Aug 1 2018 16:57:50 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 10 2018 15:45:56 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.9.7</span>
+   &#160;<span id="projectnumber">1.9.8</span>
    </div>
   </td>
  </tr>
@@ -103,7 +103,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
 <div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classFileObject.html#aa4cff8a1b117de6986c0765ae2284dab">   28</a></span>&#160;    var <a class="code" href="classFileObject.html#aa4cff8a1b117de6986c0765ae2284dab">$mode</a> = <span class="stringliteral">&quot;r&quot;</span>;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classFileObject.html#ab910aa1514ad470442e6b1adc236bb8f">   37</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classFileObject.html#ab910aa1514ad470442e6b1adc236bb8f">FileObject</a>(<a class="code" href="classFileObject.html#aeaea5fd423f0c1349ad151f7da63f0e8">$path</a>, <a class="code" href="classFileObject.html#aa4cff8a1b117de6986c0765ae2284dab">$mode</a>)</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classFileObject.html#ace5800d0760a871cc61f0de34b7937ff">   37</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classFileObject.html#ace5800d0760a871cc61f0de34b7937ff">__construct</a>(<a class="code" href="classFileObject.html#aeaea5fd423f0c1349ad151f7da63f0e8">$path</a>, <a class="code" href="classFileObject.html#aa4cff8a1b117de6986c0765ae2284dab">$mode</a>)</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    {</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="classFileObject.html#aeaea5fd423f0c1349ad151f7da63f0e8">$path</a> != NULL)</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        {</div>
@@ -113,7 +113,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
 <div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classFileObject.html#add062e05a5efc8c4c5947cbf3ff120a7">   51</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classFileObject.html#add062e05a5efc8c4c5947cbf3ff120a7">append</a>($file_name)</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        $target = <span class="keyword">new</span> <a class="code" href="classFileObject.html#ab910aa1514ad470442e6b1adc236bb8f">FileObject</a>($file_name, <span class="stringliteral">&quot;r&quot;</span>);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        $target = <span class="keyword">new</span> <a class="code" href="classFileObject.html">FileObject</a>($file_name, <span class="stringliteral">&quot;r&quot;</span>);</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">while</span>(!$target-&gt;feof())</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        {</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            $readstr = $target-&gt;read();</div>
@@ -188,10 +188,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="comment">/* End of file FileObject.class.php */</span></div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="comment">/* Location: ./classes/file/FileObject.class.php */</span></div>
 <div class="ttc" id="classFileObject_html"><div class="ttname"><a href="classFileObject.html">FileObject</a></div><div class="ttdef"><b>Definition:</b> <a href="FileObject_8class_8php_source.html#l00009">FileObject.class.php:9</a></div></div>
+<div class="ttc" id="classFileObject_html_ace5800d0760a871cc61f0de34b7937ff"><div class="ttname"><a href="classFileObject.html#ace5800d0760a871cc61f0de34b7937ff">FileObject\__construct</a></div><div class="ttdeci">__construct($path, $mode)</div><div class="ttdef"><b>Definition:</b> <a href="FileObject_8class_8php_source.html#l00037">FileObject.class.php:37</a></div></div>
 <div class="ttc" id="classFileObject_html_aeaea5fd423f0c1349ad151f7da63f0e8"><div class="ttname"><a href="classFileObject.html#aeaea5fd423f0c1349ad151f7da63f0e8">FileObject\$path</a></div><div class="ttdeci">$path</div><div class="ttdef"><b>Definition:</b> <a href="FileObject_8class_8php_source.html#l00022">FileObject.class.php:22</a></div></div>
 <div class="ttc" id="classBaseObject_html"><div class="ttname"><a href="classBaseObject.html">BaseObject</a></div><div class="ttdef"><b>Definition:</b> <a href="BaseObject_8class_8php_source.html#l00009">BaseObject.class.php:9</a></div></div>
 <div class="ttc" id="classFileObject_html_aa4cff8a1b117de6986c0765ae2284dab"><div class="ttname"><a href="classFileObject.html#aa4cff8a1b117de6986c0765ae2284dab">FileObject\$mode</a></div><div class="ttdeci">$mode</div><div class="ttdef"><b>Definition:</b> <a href="FileObject_8class_8php_source.html#l00028">FileObject.class.php:28</a></div></div>
-<div class="ttc" id="classFileObject_html_ab910aa1514ad470442e6b1adc236bb8f"><div class="ttname"><a href="classFileObject.html#ab910aa1514ad470442e6b1adc236bb8f">FileObject\FileObject</a></div><div class="ttdeci">FileObject($path, $mode)</div><div class="ttdef"><b>Definition:</b> <a href="FileObject_8class_8php_source.html#l00037">FileObject.class.php:37</a></div></div>
 <div class="ttc" id="classFileObject_html_af54e058c79d19dca6ef4c6e2bb54831f"><div class="ttname"><a href="classFileObject.html#af54e058c79d19dca6ef4c6e2bb54831f">FileObject\open</a></div><div class="ttdeci">open($path, $mode)</div><div class="ttdef"><b>Definition:</b> <a href="FileObject_8class_8php_source.html#l00113">FileObject.class.php:113</a></div></div>
 <div class="ttc" id="classFileObject_html_a6bfe97d0df5b57183c0816fb013b7fb2"><div class="ttname"><a href="classFileObject.html#a6bfe97d0df5b57183c0816fb013b7fb2">FileObject\write</a></div><div class="ttdeci">write($str)</div><div class="ttdef"><b>Definition:</b> <a href="FileObject_8class_8php_source.html#l00089">FileObject.class.php:89</a></div></div>
 <div class="ttc" id="classFileObject_html_a3c8f4eff2c65c91f6ae36bb57ab332c5"><div class="ttname"><a href="classFileObject.html#a3c8f4eff2c65c91f6ae36bb57ab332c5">FileObject\getPath</a></div><div class="ttdeci">getPath()</div><div class="ttdef"><b>Definition:</b> <a href="FileObject_8class_8php_source.html#l00134">FileObject.class.php:134</a></div></div>
@@ -203,7 +203,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Aug 1 2018 16:57:50 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 10 2018 15:45:56 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

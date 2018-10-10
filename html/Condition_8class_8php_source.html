@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">XpressEngine Core
-   &#160;<span id="projectnumber">1.9.7</span>
+   &#160;<span id="projectnumber">1.9.8</span>
    </div>
   </td>
  </tr>
@@ -107,7 +107,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classCondition.html#ae631b5f7e9a50ca781bd034edaf5e059">   33</a></span>&#160;    var <a class="code" href="classCondition.html#ae631b5f7e9a50ca781bd034edaf5e059">$_show</a>;</div>
 <div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classCondition.html#afcfd7fce951a699f3b065e227dbbacc9">   34</a></span>&#160;    var <a class="code" href="classCondition.html#afcfd7fce951a699f3b065e227dbbacc9">$_value_to_string</a>;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classCondition.html#aaf108d388895d9fe832a52e5586c0ecb">   44</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classCondition.html#aaf108d388895d9fe832a52e5586c0ecb">Condition</a>(<a class="code" href="classCondition.html#ae34f9b605299c7142f5c9daa61b338fe">$column_name</a>, <a class="code" href="classCondition.html#ab2171308c722d4d35f37369762d78175">$argument</a>, <a class="code" href="classCondition.html#aa8fbf3bdbbea0c57d3822ac585eb75a4">$operation</a>, <a class="code" href="classCondition.html#a19b2472b462fc19e44b8fcbf1898b9cc">$pipe</a>)</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classCondition.html#ab5a9bc2ffebac7d932b22edcc83481fa">   44</a></span>&#160;    <span class="keyword">function</span> <a class="code" href="classCondition.html#ab5a9bc2ffebac7d932b22edcc83481fa">__construct</a>(<a class="code" href="classCondition.html#ae34f9b605299c7142f5c9daa61b338fe">$column_name</a>, <a class="code" href="classCondition.html#ab2171308c722d4d35f37369762d78175">$argument</a>, <a class="code" href="classCondition.html#aa8fbf3bdbbea0c57d3822ac585eb75a4">$operation</a>, <a class="code" href="classCondition.html#a19b2472b462fc19e44b8fcbf1898b9cc">$pipe</a>)</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    {</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        $this-&gt;column_name = <a class="code" href="classCondition.html#ae34f9b605299c7142f5c9daa61b338fe">$column_name</a>;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        $this-&gt;argument = <a class="code" href="classCondition.html#ab2171308c722d4d35f37369762d78175">$argument</a>;</div>
@@ -301,7 +301,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;}</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="comment">/* End of file Condition.class.php */</span></div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="comment">/* Location: ./classes/db/queryparts/condition/Condition.class.php */</span></div>
-<div class="ttc" id="classCondition_html_aaf108d388895d9fe832a52e5586c0ecb"><div class="ttname"><a href="classCondition.html#aaf108d388895d9fe832a52e5586c0ecb">Condition\Condition</a></div><div class="ttdeci">Condition($column_name, $argument, $operation, $pipe)</div><div class="ttdef"><b>Definition:</b> <a href="Condition_8class_8php_source.html#l00044">Condition.class.php:44</a></div></div>
 <div class="ttc" id="classCondition_html_ae631b5f7e9a50ca781bd034edaf5e059"><div class="ttname"><a href="classCondition.html#ae631b5f7e9a50ca781bd034edaf5e059">Condition\$_show</a></div><div class="ttdeci">$_show</div><div class="ttdef"><b>Definition:</b> <a href="Condition_8class_8php_source.html#l00033">Condition.class.php:33</a></div></div>
 <div class="ttc" id="classCondition_html_afcfd7fce951a699f3b065e227dbbacc9"><div class="ttname"><a href="classCondition.html#afcfd7fce951a699f3b065e227dbbacc9">Condition\$_value_to_string</a></div><div class="ttdeci">$_value_to_string</div><div class="ttdef"><b>Definition:</b> <a href="Condition_8class_8php_source.html#l00034">Condition.class.php:34</a></div></div>
 <div class="ttc" id="classCondition_html_ac15dfd53b971b98fd34b7cfff99ab4c8"><div class="ttname"><a href="classCondition.html#ac15dfd53b971b98fd34b7cfff99ab4c8">Condition\toStringWithValue</a></div><div class="ttdeci">toStringWithValue()</div><div class="ttdef"><b>Definition:</b> <a href="Condition_8class_8php_source.html#l00095">Condition.class.php:95</a></div></div>
@@ -316,11 +315,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classCondition_html_aa4072b1db0e4f4d3a1dae0f1982781e1"><div class="ttname"><a href="classCondition.html#aa4072b1db0e4f4d3a1dae0f1982781e1">Condition\toString</a></div><div class="ttdeci">toString($withValue=true)</div><div class="ttdef"><b>Definition:</b> <a href="Condition_8class_8php_source.html#l00062">Condition.class.php:62</a></div></div>
 <div class="ttc" id="classCondition_html_ae34f9b605299c7142f5c9daa61b338fe"><div class="ttname"><a href="classCondition.html#ae34f9b605299c7142f5c9daa61b338fe">Condition\$column_name</a></div><div class="ttdeci">$column_name</div><div class="ttdef"><b>Definition:</b> <a href="Condition_8class_8php_source.html#l00016">Condition.class.php:16</a></div></div>
 <div class="ttc" id="classCondition_html_a19b2472b462fc19e44b8fcbf1898b9cc"><div class="ttname"><a href="classCondition.html#a19b2472b462fc19e44b8fcbf1898b9cc">Condition\$pipe</a></div><div class="ttdeci">$pipe</div><div class="ttdef"><b>Definition:</b> <a href="Condition_8class_8php_source.html#l00031">Condition.class.php:31</a></div></div>
+<div class="ttc" id="classCondition_html_ab5a9bc2ffebac7d932b22edcc83481fa"><div class="ttname"><a href="classCondition.html#ab5a9bc2ffebac7d932b22edcc83481fa">Condition\__construct</a></div><div class="ttdeci">__construct($column_name, $argument, $operation, $pipe)</div><div class="ttdef"><b>Definition:</b> <a href="Condition_8class_8php_source.html#l00044">Condition.class.php:44</a></div></div>
 <div class="ttc" id="classCondition_html_a29b59a5ef75db900c012dc5111fb24cf"><div class="ttname"><a href="classCondition.html#a29b59a5ef75db900c012dc5111fb24cf">Condition\getConditionPart</a></div><div class="ttdeci">getConditionPart($value)</div><div class="ttdef"><b>Definition:</b> <a href="Condition_8class_8php_source.html#l00186">Condition.class.php:186</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Aug 1 2018 16:57:50 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 10 2018 15:45:56 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

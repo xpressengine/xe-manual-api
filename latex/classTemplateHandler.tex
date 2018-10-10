@@ -13,6 +13,10 @@
 \hyperlink{classTemplateHandler_a6d8e3da7128be8bded89dc9edc4a1bc8}{\-\_\-get\-Relative\-Dir} (\$path)
 \item 
 \hyperlink{classTemplateHandler_a10cb255c35e1e617f182e349b80cc335}{\-\_\-replace\-Var} (\$php)
+\item 
+\hyperlink{classTemplateHandler_a5fc6e22637e893189c769c4824b624ff}{is\-Autoescape} ()
+\item 
+\hyperlink{classTemplateHandler_a27cb0b297f6cc2e2c6846515e35aa48b}{set\-Autoescape} (\$val=true)
 \end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -57,7 +61,7 @@ void
 \end{DoxyReturn}
 
 
-Definition at line 30 of file Template\-Handler.\-class.\-php.
+Definition at line 32 of file Template\-Handler.\-class.\-php.
 
 
 
@@ -79,7 +83,7 @@ string
 \end{DoxyReturn}
 
 
-Definition at line 787 of file Template\-Handler.\-class.\-php.
+Definition at line 1007 of file Template\-Handler.\-class.\-php.
 
 \hypertarget{classTemplateHandler_a10cb255c35e1e617f182e349b80cc335}{\index{Template\-Handler@{Template\-Handler}!\-\_\-replace\-Var@{\-\_\-replace\-Var}}
 \index{\-\_\-replace\-Var@{\-\_\-replace\-Var}!TemplateHandler@{Template\-Handler}}
@@ -88,7 +92,7 @@ Definition at line 787 of file Template\-Handler.\-class.\-php.
 \item[{}]{\$php}
 \end{DoxyParamCaption}
 )}}\label{classTemplateHandler_a10cb255c35e1e617f182e349b80cc335}
-replace P\-H\-P variables of \$ character 
+Replace P\-H\-P variables of \$ character 
 \begin{DoxyParams}[1]{Parameters}
 string & {\em \$php} & \\
 \hline
@@ -98,7 +102,7 @@ string \$\-\_\-\-\_\-\-Context-\/$>$varname
 \end{DoxyReturn}
 
 
-Definition at line 825 of file Template\-Handler.\-class.\-php.
+Definition at line 1056 of file Template\-Handler.\-class.\-php.
 
 \hypertarget{classTemplateHandler_ae2e69591d815bb49316bb85adbaff581}{\index{Template\-Handler@{Template\-Handler}!compile@{compile}}
 \index{compile@{compile}!TemplateHandler@{Template\-Handler}}
@@ -123,7 +127,7 @@ string Returns compiled result in case of success, N\-U\-L\-L otherwise
 \end{DoxyReturn}
 
 
-Definition at line 118 of file Template\-Handler.\-class.\-php.
+Definition at line 139 of file Template\-Handler.\-class.\-php.
 
 \hypertarget{classTemplateHandler_a1fe9c84873c23970ea7779be59dcb2d5}{\index{Template\-Handler@{Template\-Handler}!compile\-Direct@{compile\-Direct}}
 \index{compile\-Direct@{compile\-Direct}!TemplateHandler@{Template\-Handler}}
@@ -145,7 +149,7 @@ string Returns compiled content in case of success or N\-U\-L\-L in case of fail
 \end{DoxyReturn}
 
 
-Definition at line 198 of file Template\-Handler.\-class.\-php.
+Definition at line 219 of file Template\-Handler.\-class.\-php.
 
 \hypertarget{classTemplateHandler_a9745460c5daccfc48abf8652778b2718}{\index{Template\-Handler@{Template\-Handler}!get\-Instance@{get\-Instance}}
 \index{get\-Instance@{get\-Instance}!TemplateHandler@{Template\-Handler}}
@@ -159,7 +163,7 @@ returns \hyperlink{classTemplateHandler}{Template\-Handler}'s singleton object \
 \end{DoxyReturn}
 
 
-Definition at line 41 of file Template\-Handler.\-class.\-php.
+Definition at line 60 of file Template\-Handler.\-class.\-php.
 
 \hypertarget{classTemplateHandler_a783df180d319abe3722862ed6edacb9d}{\index{Template\-Handler@{Template\-Handler}!init@{init}}
 \index{init@{init}!TemplateHandler@{Template\-Handler}}
@@ -184,7 +188,18 @@ void
 \end{DoxyReturn}
 
 
-Definition at line 72 of file Template\-Handler.\-class.\-php.
+Definition at line 91 of file Template\-Handler.\-class.\-php.
+
+\hypertarget{classTemplateHandler_a5fc6e22637e893189c769c4824b624ff}{\index{Template\-Handler@{Template\-Handler}!is\-Autoescape@{is\-Autoescape}}
+\index{is\-Autoescape@{is\-Autoescape}!TemplateHandler@{Template\-Handler}}
+\subsubsection[{is\-Autoescape}]{\setlength{\rightskip}{0pt plus 5cm}Template\-Handler\-::is\-Autoescape (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classTemplateHandler_a5fc6e22637e893189c769c4824b624ff}
+
+
+Definition at line 1065 of file Template\-Handler.\-class.\-php.
 
 \hypertarget{classTemplateHandler_acf0023ac6383d43e9b0ab854c75c0694}{\index{Template\-Handler@{Template\-Handler}!parse@{parse}}
 \index{parse@{parse}!TemplateHandler@{Template\-Handler}}
@@ -203,7 +218,18 @@ string compiled result in case of success or N\-U\-L\-L in case of error
 \end{DoxyReturn}
 
 
-Definition at line 217 of file Template\-Handler.\-class.\-php.
+Definition at line 238 of file Template\-Handler.\-class.\-php.
+
+\hypertarget{classTemplateHandler_a27cb0b297f6cc2e2c6846515e35aa48b}{\index{Template\-Handler@{Template\-Handler}!set\-Autoescape@{set\-Autoescape}}
+\index{set\-Autoescape@{set\-Autoescape}!TemplateHandler@{Template\-Handler}}
+\subsubsection[{set\-Autoescape}]{\setlength{\rightskip}{0pt plus 5cm}Template\-Handler\-::set\-Autoescape (
+\begin{DoxyParamCaption}
+\item[{}]{\$val = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{classTemplateHandler_a27cb0b297f6cc2e2c6846515e35aa48b}
+
+
+Definition at line 1086 of file Template\-Handler.\-class.\-php.
 
 
 
