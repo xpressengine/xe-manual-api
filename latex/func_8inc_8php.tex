@@ -136,7 +136,9 @@
 \item 
 \hyperlink{func_8inc_8php_aaf78eccbde1406d602a7c408a364be24}{reload} (\$is\-Opener=F\-A\-L\-S\-E)
 \item 
-\hyperlink{func_8inc_8php_aae9d74f601e24cdb2ffa06ab3458eea1}{escape} (\$str, \$double\-\_\-escape=true)
+\hyperlink{func_8inc_8php_ae8cde5329bde1011f16fcc3f84b16746}{is\-Defined\-Lang\-Code} (\$str)
+\item 
+\hyperlink{func_8inc_8php_acb717598795f01349811ca8db7ac702a}{escape} (\$str, \$double\-\_\-escape=true, \$escape\-\_\-defined\-\_\-lang\-\_\-code=false)
 \item 
 \hyperlink{func_8inc_8php_ad708cd76d593e65f389c562d82837f65}{escape\-\_\-css} (\$str)
 \item 
@@ -430,14 +432,15 @@ bool$|$string
 
 Definition at line 1466 of file func.\-inc.\-php.
 
-\hypertarget{func_8inc_8php_aae9d74f601e24cdb2ffa06ab3458eea1}{\index{func.\-inc.\-php@{func.\-inc.\-php}!escape@{escape}}
+\hypertarget{func_8inc_8php_acb717598795f01349811ca8db7ac702a}{\index{func.\-inc.\-php@{func.\-inc.\-php}!escape@{escape}}
 \index{escape@{escape}!func.inc.php@{func.\-inc.\-php}}
 \subsubsection[{escape}]{\setlength{\rightskip}{0pt plus 5cm}escape (
 \begin{DoxyParamCaption}
 \item[{}]{\$str, }
-\item[{}]{\$double\-\_\-escape = {\ttfamily true}}
+\item[{}]{\$double\-\_\-escape = {\ttfamily true}, }
+\item[{}]{\$escape\-\_\-defined\-\_\-lang\-\_\-code = {\ttfamily false}}
 \end{DoxyParamCaption}
-)}}\label{func_8inc_8php_aae9d74f601e24cdb2ffa06ab3458eea1}
+)}}\label{func_8inc_8php_acb717598795f01349811ca8db7ac702a}
 This function is a shortcut to htmlspecialchars().
 
 \begin{DoxyCopyright}{Copyright}
@@ -445,7 +448,7 @@ Rhymix Developers and Contributors \hyperlink{}{string \$str The string to escap
 \end{DoxyCopyright}
 
 
-Definition at line 1793 of file func.\-inc.\-php.
+Definition at line 1799 of file func.\-inc.\-php.
 
 \hypertarget{func_8inc_8php_ad708cd76d593e65f389c562d82837f65}{\index{func.\-inc.\-php@{func.\-inc.\-php}!escape\-\_\-css@{escape\-\_\-css}}
 \index{escape\-\_\-css@{escape\-\_\-css}!func.inc.php@{func.\-inc.\-php}}
@@ -461,7 +464,7 @@ Rhymix Developers and Contributors \hyperlink{}{string \$str The string to escap
 \end{DoxyCopyright}
 
 
-Definition at line 1808 of file func.\-inc.\-php.
+Definition at line 1816 of file func.\-inc.\-php.
 
 \hypertarget{func_8inc_8php_a09e9f6208a796e9e1cf1d41e9223deae}{\index{func.\-inc.\-php@{func.\-inc.\-php}!escape\-\_\-dqstr@{escape\-\_\-dqstr}}
 \index{escape\-\_\-dqstr@{escape\-\_\-dqstr}!func.inc.php@{func.\-inc.\-php}}
@@ -477,7 +480,7 @@ Rhymix Developers and Contributors \hyperlink{}{string \$str The string to escap
 \end{DoxyCopyright}
 
 
-Definition at line 1854 of file func.\-inc.\-php.
+Definition at line 1862 of file func.\-inc.\-php.
 
 \hypertarget{func_8inc_8php_aa89b033d98548a91c05ddbcba1075848}{\index{func.\-inc.\-php@{func.\-inc.\-php}!escape\-\_\-js@{escape\-\_\-js}}
 \index{escape\-\_\-js@{escape\-\_\-js}!func.inc.php@{func.\-inc.\-php}}
@@ -493,7 +496,7 @@ Rhymix Developers and Contributors \hyperlink{}{string \$str The string to escap
 \end{DoxyCopyright}
 
 
-Definition at line 1822 of file func.\-inc.\-php.
+Definition at line 1830 of file func.\-inc.\-php.
 
 \hypertarget{func_8inc_8php_a56e413261fe1d0ebffbad74c242b881e}{\index{func.\-inc.\-php@{func.\-inc.\-php}!escape\-\_\-sqstr@{escape\-\_\-sqstr}}
 \index{escape\-\_\-sqstr@{escape\-\_\-sqstr}!func.inc.php@{func.\-inc.\-php}}
@@ -509,7 +512,7 @@ Rhymix Developers and Contributors \hyperlink{}{string \$str The string to escap
 \end{DoxyCopyright}
 
 
-Definition at line 1839 of file func.\-inc.\-php.
+Definition at line 1847 of file func.\-inc.\-php.
 
 \hypertarget{func_8inc_8php_a418bc23855eebc0d90190dd625ac4474}{\index{func.\-inc.\-php@{func.\-inc.\-php}!execute\-Query@{execute\-Query}}
 \index{execute\-Query@{execute\-Query}!func.inc.php@{func.\-inc.\-php}}
@@ -590,7 +593,7 @@ Rhymix Developers and Contributors \hyperlink{}{string \$delimiter The delimiter
 \end{DoxyCopyright}
 
 
-Definition at line 1873 of file func.\-inc.\-php.
+Definition at line 1881 of file func.\-inc.\-php.
 
 \hypertarget{func_8inc_8php_aafb6a81a912bf5b857fdc1e8528bc853}{\index{func.\-inc.\-php@{func.\-inc.\-php}!flush\-Slowlog@{flush\-Slowlog}}
 \index{flush\-Slowlog@{flush\-Slowlog}!func.inc.php@{func.\-inc.\-php}}
@@ -1253,6 +1256,17 @@ bool
 
 
 Definition at line 1538 of file func.\-inc.\-php.
+
+\hypertarget{func_8inc_8php_ae8cde5329bde1011f16fcc3f84b16746}{\index{func.\-inc.\-php@{func.\-inc.\-php}!is\-Defined\-Lang\-Code@{is\-Defined\-Lang\-Code}}
+\index{is\-Defined\-Lang\-Code@{is\-Defined\-Lang\-Code}!func.inc.php@{func.\-inc.\-php}}
+\subsubsection[{is\-Defined\-Lang\-Code}]{\setlength{\rightskip}{0pt plus 5cm}is\-Defined\-Lang\-Code (
+\begin{DoxyParamCaption}
+\item[{}]{\$str}
+\end{DoxyParamCaption}
+)}}\label{func_8inc_8php_ae8cde5329bde1011f16fcc3f84b16746}
+
+
+Definition at line 1784 of file func.\-inc.\-php.
 
 \hypertarget{func_8inc_8php_aa85a46b82e60cc2c64682ea6464eeeff}{\index{func.\-inc.\-php@{func.\-inc.\-php}!is\-Site\-I\-D@{is\-Site\-I\-D}}
 \index{is\-Site\-I\-D@{is\-Site\-I\-D}!func.inc.php@{func.\-inc.\-php}}

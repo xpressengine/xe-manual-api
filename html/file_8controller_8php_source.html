@@ -684,7 +684,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="classFileHandler.html#a9c2502d10c34a3996f1d6927624a7824">FileHandler::makeDir</a>($path)) <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>(-1,<span class="stringliteral">&#39;msg_not_permitted_create&#39;</span>);</div>
 <div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;</div>
 <div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;        <span class="comment">// Check uploaded file</span></div>
-<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="func_8inc_8php.html#a771c122bb7a5b7038f7f751f5e2129b9">checkUploadedFile</a>($file_info[<span class="stringliteral">&#39;tmp_name&#39;</span>]))  <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>(-1,<span class="stringliteral">&#39;msg_file_upload_error&#39;</span>);</div>
+<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;        <span class="keywordflow">if</span>(!$manual_insert &amp;&amp; !<a class="code" href="func_8inc_8php.html#a771c122bb7a5b7038f7f751f5e2129b9">checkUploadedFile</a>($file_info[<span class="stringliteral">&#39;tmp_name&#39;</span>]))  <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classBaseObject.html">BaseObject</a>(-1,<span class="stringliteral">&#39;msg_file_upload_error&#39;</span>);</div>
 <div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;</div>
 <div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;        <span class="comment">// Get random number generator</span></div>
 <div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;        $random = <span class="keyword">new</span> <a class="code" href="classPassword.html">Password</a>();</div>
@@ -1026,7 +1026,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Oct 10 2018 15:48:53 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 17 2018 14:28:08 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

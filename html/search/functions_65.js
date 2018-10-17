@@ -11,7 +11,7 @@ var searchData=
   ['ensuredefaultvalue',['ensureDefaultValue',['../classArgument.html#a4af92bc005f3d9328c63c0722fd3aef7',1,'Argument']]],
   ['eof',['eof',['../classHTTP__Request2__SocketWrapper.html#a25df9e4044072eabf76add57013b205e',1,'HTTP_Request2_SocketWrapper']]],
   ['error',['error',['../classValidator.html#ad46fa003b320d64ef656b22de870782c',1,'Validator']]],
-  ['escape',['escape',['../classDBParser.html#ac2807a8b1ef18ebf574078e60e1754c6',1,'DBParser\escape()'],['../func_8inc_8php.html#aae9d74f601e24cdb2ffa06ab3458eea1',1,'escape():&#160;func.inc.php']]],
+  ['escape',['escape',['../classDBParser.html#ac2807a8b1ef18ebf574078e60e1754c6',1,'DBParser\escape()'],['../func_8inc_8php.html#acb717598795f01349811ca8db7ac702a',1,'escape():&#160;func.inc.php']]],
   ['escape_5fcss',['escape_css',['../func_8inc_8php.html#ad708cd76d593e65f389c562d82837f65',1,'func.inc.php']]],
   ['escape_5fdqstr',['escape_dqstr',['../func_8inc_8php.html#a09e9f6208a796e9e1cf1d41e9223deae',1,'func.inc.php']]],
   ['escape_5fjs',['escape_js',['../func_8inc_8php.html#aa89b033d98548a91c05ddbcba1075848',1,'func.inc.php']]],

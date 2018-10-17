@@ -216,7 +216,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            $na_script = &lt;&lt;&lt; NASCRIPT</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;&lt;!-- NAVER Analytics --&gt;</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;&lt;script src=<span class="stringliteral">&quot;//wcs.naver.net/wcslog.js&quot;</span>&gt;&lt;/script&gt;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;&lt;script&gt;<span class="keywordflow">if</span>(!wcs_add){var wcs_add={wa:<span class="stringliteral">&#39;{$config-&gt;na_id}&#39;</span>};}<span class="keywordflow">if</span>(typeof wcs_do!=<span class="stringliteral">&quot;undefined&quot;</span>){wcs_do();}&lt;/script&gt;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;&lt;script&gt;<span class="keywordflow">if</span>(!wcs_add){var wcs_add={};};wcs_add[<span class="stringliteral">&#39;wa&#39;</span>]=<span class="stringliteral">&#39;{$config-&gt;na_id}&#39;</span>;<span class="keywordflow">if</span>(typeof wcs_do!=<span class="stringliteral">&quot;undefined&quot;</span>){wcs_do();}&lt;/script&gt;</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;NASCRIPT;</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            <a class="code" href="classContext.html#aa81925b1cc7e991c1c798e739fe048a4">Context::addHtmlFooter</a>($na_script . PHP_EOL);</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        }</div>
@@ -308,7 +308,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Oct 10 2018 15:48:53 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 17 2018 14:28:08 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

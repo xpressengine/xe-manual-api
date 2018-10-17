@@ -231,8 +231,10 @@ Functions</h2></td></tr>
 <tr class="separator:a11562ea030a5d83564d0fbfcfabc8af9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf78eccbde1406d602a7c408a364be24"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="func_8inc_8php.html#aaf78eccbde1406d602a7c408a364be24">reload</a> ($isOpener=FALSE)</td></tr>
 <tr class="separator:aaf78eccbde1406d602a7c408a364be24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae9d74f601e24cdb2ffa06ab3458eea1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="func_8inc_8php.html#aae9d74f601e24cdb2ffa06ab3458eea1">escape</a> ($str, $double_escape=true)</td></tr>
-<tr class="separator:aae9d74f601e24cdb2ffa06ab3458eea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8cde5329bde1011f16fcc3f84b16746"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="func_8inc_8php.html#ae8cde5329bde1011f16fcc3f84b16746">isDefinedLangCode</a> ($str)</td></tr>
+<tr class="separator:ae8cde5329bde1011f16fcc3f84b16746"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb717598795f01349811ca8db7ac702a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="func_8inc_8php.html#acb717598795f01349811ca8db7ac702a">escape</a> ($str, $double_escape=true, $escape_defined_lang_code=false)</td></tr>
+<tr class="separator:acb717598795f01349811ca8db7ac702a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad708cd76d593e65f389c562d82837f65"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="func_8inc_8php.html#ad708cd76d593e65f389c562d82837f65">escape_css</a> ($str)</td></tr>
 <tr class="separator:ad708cd76d593e65f389c562d82837f65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa89b033d98548a91c05ddbcba1075848"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="func_8inc_8php.html#aa89b033d98548a91c05ddbcba1075848">escape_js</a> ($str)</td></tr>
@@ -652,7 +654,7 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aae9d74f601e24cdb2ffa06ab3458eea1"></a>
+<a class="anchor" id="acb717598795f01349811ca8db7ac702a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -666,7 +668,13 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$double_escape</em> = <code>true</code>&#160;</td>
+          <td class="paramname"><em>$double_escape</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$escape_defined_lang_code</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -678,7 +686,7 @@ Variables</h2></td></tr>
 <p>This function is a shortcut to htmlspecialchars().</p>
 <dl class="section copyright"><dt>Copyright</dt><dd>Rhymix Developers and Contributors <a class="el" href="">string $str The string to escape  bool $double_escape Set this to false to skip symbols that are already escaped (default: true)  string </a></dd></dl>
 
-<p>Definition at line <a class="el" href="func_8inc_8php_source.html#l01793">1793</a> of file <a class="el" href="func_8inc_8php_source.html">func.inc.php</a>.</p>
+<p>Definition at line <a class="el" href="func_8inc_8php_source.html#l01799">1799</a> of file <a class="el" href="func_8inc_8php_source.html">func.inc.php</a>.</p>
 
 </div>
 </div>
@@ -698,7 +706,7 @@ Variables</h2></td></tr>
 <p>This function escapes a string to be used in a CSS property.</p>
 <dl class="section copyright"><dt>Copyright</dt><dd>Rhymix Developers and Contributors <a class="el" href="">string $str The string to escape  string </a></dd></dl>
 
-<p>Definition at line <a class="el" href="func_8inc_8php_source.html#l01808">1808</a> of file <a class="el" href="func_8inc_8php_source.html">func.inc.php</a>.</p>
+<p>Definition at line <a class="el" href="func_8inc_8php_source.html#l01816">1816</a> of file <a class="el" href="func_8inc_8php_source.html">func.inc.php</a>.</p>
 
 </div>
 </div>
@@ -718,7 +726,7 @@ Variables</h2></td></tr>
 <p>This function escapes a string to be used in a "double-quoted" PHP string literal. Null bytes are removed.</p>
 <dl class="section copyright"><dt>Copyright</dt><dd>Rhymix Developers and Contributors <a class="el" href="">string $str The string to escape  string </a></dd></dl>
 
-<p>Definition at line <a class="el" href="func_8inc_8php_source.html#l01854">1854</a> of file <a class="el" href="func_8inc_8php_source.html">func.inc.php</a>.</p>
+<p>Definition at line <a class="el" href="func_8inc_8php_source.html#l01862">1862</a> of file <a class="el" href="func_8inc_8php_source.html">func.inc.php</a>.</p>
 
 </div>
 </div>
@@ -738,7 +746,7 @@ Variables</h2></td></tr>
 <p>This function escapes a string to be used in a JavaScript string literal.</p>
 <dl class="section copyright"><dt>Copyright</dt><dd>Rhymix Developers and Contributors <a class="el" href="">string $str The string to escape  string </a></dd></dl>
 
-<p>Definition at line <a class="el" href="func_8inc_8php_source.html#l01822">1822</a> of file <a class="el" href="func_8inc_8php_source.html">func.inc.php</a>.</p>
+<p>Definition at line <a class="el" href="func_8inc_8php_source.html#l01830">1830</a> of file <a class="el" href="func_8inc_8php_source.html">func.inc.php</a>.</p>
 
 </div>
 </div>
@@ -758,7 +766,7 @@ Variables</h2></td></tr>
 <p>This function escapes a string to be used in a 'single-quoted' PHP string literal. Null bytes are removed.</p>
 <dl class="section copyright"><dt>Copyright</dt><dd>Rhymix Developers and Contributors <a class="el" href="">string $str The string to escape  string </a></dd></dl>
 
-<p>Definition at line <a class="el" href="func_8inc_8php_source.html#l01839">1839</a> of file <a class="el" href="func_8inc_8php_source.html">func.inc.php</a>.</p>
+<p>Definition at line <a class="el" href="func_8inc_8php_source.html#l01847">1847</a> of file <a class="el" href="func_8inc_8php_source.html">func.inc.php</a>.</p>
 
 </div>
 </div>
@@ -892,7 +900,7 @@ Variables</h2></td></tr>
 <p>This function splits a string into an array, but allows the delimter to be escaped. For example, 'A|B|C|D' will be split into 'A', 'B|C', and 'D' because the bar between B and C is escaped.</p>
 <dl class="section copyright"><dt>Copyright</dt><dd>Rhymix Developers and Contributors <a class="el" href="">string $delimiter The delimiter  string $str The string to split  int $limit The maximum number of items to return, 0 for unlimited (default: 0)  string $escape_char The escape character (default: backslash)  array </a></dd></dl>
 
-<p>Definition at line <a class="el" href="func_8inc_8php_source.html#l01873">1873</a> of file <a class="el" href="func_8inc_8php_source.html">func.inc.php</a>.</p>
+<p>Definition at line <a class="el" href="func_8inc_8php_source.html#l01881">1881</a> of file <a class="el" href="func_8inc_8php_source.html">func.inc.php</a>.</p>
 
 </div>
 </div>
@@ -1752,6 +1760,24 @@ URL made of args_list added to RequestUri if the first argument value is ''. </l
 
 </div>
 </div>
+<a class="anchor" id="ae8cde5329bde1011f16fcc3f84b16746"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">isDefinedLangCode </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="func_8inc_8php_source.html#l01784">1784</a> of file <a class="el" href="func_8inc_8php_source.html">func.inc.php</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="aa85a46b82e60cc2c64682ea6464eeeff"></a>
 <div class="memitem">
 <div class="memproto">
@@ -2247,7 +2273,7 @@ URL made of args_list added to RequestUri if the first argument value is ''. </l
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Oct 10 2018 15:48:53 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 17 2018 14:28:08 for XpressEngine Core by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

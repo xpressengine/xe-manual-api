@@ -124,6 +124,7 @@ var searchData=
   ['isconditionargument',['isConditionArgument',['../classQueryArgument.html#af45c774e9b260c62bfa0a4a9e8e5b10d',1,'QueryArgument']]],
   ['isconnected',['isConnected',['../classDB.html#a217cc2096613d1758a9851f1dd990d71',1,'DB']]],
   ['iscrawler',['isCrawler',['../func_8inc_8php.html#a490ffbd4821da1995c76c381553d5b3d',1,'func.inc.php']]],
+  ['isdefinedlangcode',['isDefinedLangCode',['../func_8inc_8php.html#ae8cde5329bde1011f16fcc3f84b16746',1,'func.inc.php']]],
   ['isdeniedid',['isDeniedID',['../classmemberModel.html#ac0ba5ea00ecf3113fe50947243a6be20',1,'memberModel']]],
   ['isdeniedip',['isDeniedIP',['../classspamfilterModel.html#a4f657cf632890244b2664acff0ee8706',1,'spamfilterModel']]],
   ['isdeniednickname',['isDeniedNickName',['../classmemberModel.html#a8d1d937176417d4d29a48404feb7f32f',1,'memberModel']]],
