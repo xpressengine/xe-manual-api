@@ -25,10 +25,5 @@ var searchData=
   ['spamfilter_2econtroller_2ephp',['spamfilter.controller.php',['../spamfilter_8controller_8php.html',1,'']]],
   ['spamfilter_2emodel_2ephp',['spamfilter.model.php',['../spamfilter_8model_8php.html',1,'']]],
   ['starexpression_2eclass_2ephp',['StarExpression.class.php',['../StarExpression_8class_8php.html',1,'']]],
-  ['subquery_2eclass_2ephp',['Subquery.class.php',['../Subquery_8class_8php.html',1,'']]],
-  ['syndication_2eadmin_2econtroller_2ephp',['syndication.admin.controller.php',['../syndication_8admin_8controller_8php.html',1,'']]],
-  ['syndication_2eadmin_2eview_2ephp',['syndication.admin.view.php',['../syndication_8admin_8view_8php.html',1,'']]],
-  ['syndication_2eclass_2ephp',['syndication.class.php',['../syndication_8class_8php.html',1,'']]],
-  ['syndication_2econtroller_2ephp',['syndication.controller.php',['../syndication_8controller_8php.html',1,'']]],
-  ['syndication_2emodel_2ephp',['syndication.model.php',['../syndication_8model_8php.html',1,'']]]
+  ['subquery_2eclass_2ephp',['Subquery.class.php',['../Subquery_8class_8php.html',1,'']]]
 ];

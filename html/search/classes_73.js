@@ -23,10 +23,5 @@ var searchData=
   ['spamfiltercontroller',['spamfilterController',['../classspamfilterController.html',1,'']]],
   ['spamfiltermodel',['spamfilterModel',['../classspamfilterModel.html',1,'']]],
   ['starexpression',['StarExpression',['../classStarExpression.html',1,'']]],
-  ['subquery',['Subquery',['../classSubquery.html',1,'']]],
-  ['syndication',['syndication',['../classsyndication.html',1,'']]],
-  ['syndicationadmincontroller',['syndicationAdminController',['../classsyndicationAdminController.html',1,'']]],
-  ['syndicationadminview',['syndicationAdminView',['../classsyndicationAdminView.html',1,'']]],
-  ['syndicationcontroller',['syndicationController',['../classsyndicationController.html',1,'']]],
-  ['syndicationmodel',['syndicationModel',['../classsyndicationModel.html',1,'']]]
+  ['subquery',['Subquery',['../classSubquery.html',1,'']]]
 ];

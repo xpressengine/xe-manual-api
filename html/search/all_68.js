@@ -1,7 +1,6 @@
 var searchData=
 [
   ['handleerror',['handleError',['../func_8inc_8php.html#a4d13a097a6f6c56eadda408e9af13497',1,'func.inc.php']]],
-  ['handlelang',['handleLang',['../classsyndicationModel.html#a3020582efc1d3d049bbd8fc983ce73e5',1,'syndicationModel']]],
   ['handler',['Handler',['../classHandler.html',1,'']]],
   ['handler_2eclass_2ephp',['Handler.class.php',['../Handler_8class_8php.html',1,'']]],
   ['handleredirect',['handleRedirect',['../classHTTP__Request2__Adapter__Socket.html#aa60407169d7f2faee49d32a6d48d1f3e',1,'HTTP_Request2_Adapter_Socket']]],

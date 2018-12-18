@@ -33,6 +33,8 @@ Inheritance diagram for editor\-Model\-:\begin{figure}[H]
 \begin{DoxyCompactList}\small\item\em Return a list of the editor skin. \end{DoxyCompactList}\item 
 \hyperlink{classeditorModel_ab125348dd5be10fdafe6e38922254d5e}{get\-Cache\-File} (\$filter\-\_\-enabled=true, \$\hyperlink{ko_8install_8php_a8b1406b4ad1048041558dce6bfe89004}{site\-\_\-srl}=0)
 \begin{DoxyCompactList}\small\item\em Return the cache file name of editor component list. \end{DoxyCompactList}\item 
+\hyperlink{classeditorModel_a482e455526707ee16d4bd97786c72a2f}{get\-Component\-List\-Cache\-Key} (\$filter\-\_\-enabled=true, \$\hyperlink{ko_8install_8php_a8b1406b4ad1048041558dce6bfe89004}{site\-\_\-srl}=0)
+\item 
 \hyperlink{classeditorModel_a24cf5d2f9bc9783dd2efd85fb0f89408}{get\-Component\-List} (\$filter\-\_\-enabled=true, \$\hyperlink{ko_8install_8php_a8b1406b4ad1048041558dce6bfe89004}{site\-\_\-srl}=0, \$from\-\_\-db=false)
 \begin{DoxyCompactList}\small\item\em Return a component list (\hyperlink{classDB}{D\-B} Information included) \end{DoxyCompactList}\item 
 \hyperlink{classeditorModel_a6330fcddc7363899989bfe4128010236}{get\-Component} (\$component\-\_\-name, \$\hyperlink{ko_8install_8php_a8b1406b4ad1048041558dce6bfe89004}{site\-\_\-srl}=0)
@@ -73,7 +75,7 @@ Return the cache file name of editor component list.
 
 
 
-Definition at line 585 of file editor.\-model.\-php.
+Definition at line 588 of file editor.\-model.\-php.
 
 \hypertarget{classeditorModel_a6330fcddc7363899989bfe4128010236}{\index{editor\-Model@{editor\-Model}!get\-Component@{get\-Component}}
 \index{get\-Component@{get\-Component}!editorModel@{editor\-Model}}
@@ -89,7 +91,7 @@ Get xml and db information of the component.
 
 
 
-Definition at line 672 of file editor.\-model.\-php.
+Definition at line 693 of file editor.\-model.\-php.
 
 \hypertarget{classeditorModel_a24cf5d2f9bc9783dd2efd85fb0f89408}{\index{editor\-Model@{editor\-Model}!get\-Component\-List@{get\-Component\-List}}
 \index{get\-Component\-List@{get\-Component\-List}!editorModel@{editor\-Model}}
@@ -104,6 +106,18 @@ Definition at line 672 of file editor.\-model.\-php.
 
 Return a component list (\hyperlink{classDB}{D\-B} Information included) 
 
+
+
+Definition at line 613 of file editor.\-model.\-php.
+
+\hypertarget{classeditorModel_a482e455526707ee16d4bd97786c72a2f}{\index{editor\-Model@{editor\-Model}!get\-Component\-List\-Cache\-Key@{get\-Component\-List\-Cache\-Key}}
+\index{get\-Component\-List\-Cache\-Key@{get\-Component\-List\-Cache\-Key}!editorModel@{editor\-Model}}
+\subsubsection[{get\-Component\-List\-Cache\-Key}]{\setlength{\rightskip}{0pt plus 5cm}editor\-Model\-::get\-Component\-List\-Cache\-Key (
+\begin{DoxyParamCaption}
+\item[{}]{\$filter\-\_\-enabled = {\ttfamily true}, }
+\item[{}]{\$site\-\_\-srl = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{classeditorModel_a482e455526707ee16d4bd97786c72a2f}
 
 
 Definition at line 600 of file editor.\-model.\-php.
@@ -123,7 +137,7 @@ create objects of the component
 
 
 
-Definition at line 551 of file editor.\-model.\-php.
+Definition at line 554 of file editor.\-model.\-php.
 
 \hypertarget{classeditorModel_ade91abf13956321e293195f2f14b4e2b}{\index{editor\-Model@{editor\-Model}!get\-Component\-Xml\-Info@{get\-Component\-Xml\-Info}}
 \index{get\-Component\-Xml\-Info@{get\-Component\-Xml\-Info}!editorModel@{editor\-Model}}
@@ -138,7 +152,7 @@ Read xml information of the component.
 
 
 
-Definition at line 731 of file editor.\-model.\-php.
+Definition at line 752 of file editor.\-model.\-php.
 
 \hypertarget{classeditorModel_a580e31ed0fff869a97d5fe598975e960}{\index{editor\-Model@{editor\-Model}!get\-Dr\-Component\-Xml\-Info@{get\-Dr\-Component\-Xml\-Info}}
 \index{get\-Dr\-Component\-Xml\-Info@{get\-Dr\-Component\-Xml\-Info}!editorModel@{editor\-Model}}
@@ -211,7 +225,7 @@ Return a list of the editor skin.
 
 
 
-Definition at line 577 of file editor.\-model.\-php.
+Definition at line 580 of file editor.\-model.\-php.
 
 \hypertarget{classeditorModel_a7870d2a76cbc33a9dbaea3f865edd313}{\index{editor\-Model@{editor\-Model}!get\-Module\-Editor@{get\-Module\-Editor}}
 \index{get\-Module\-Editor@{get\-Module\-Editor}!editorModel@{editor\-Model}}
@@ -230,7 +244,7 @@ Return editor template which contains settings of each module Result of \hyperli
 
 2 types of editors supported; document and comment. 2 types of editors can be used on a single module. For instance each for original post and reply port. 
 
-Definition at line 358 of file editor.\-model.\-php.
+Definition at line 361 of file editor.\-model.\-php.
 
 \hypertarget{classeditorModel_af9c4c2f7ba2d377b087cac08412b0baa}{\index{editor\-Model@{editor\-Model}!get\-Saved\-Doc@{get\-Saved\-Doc}}
 \index{get\-Saved\-Doc@{get\-Saved\-Doc}!editorModel@{editor\-Model}}
@@ -245,7 +259,7 @@ Get information which has been auto-\/saved.
 
 
 
-Definition at line 490 of file editor.\-model.\-php.
+Definition at line 493 of file editor.\-model.\-php.
 
 \hypertarget{classeditorModel_a1ad866d4c1ab454b9d0b72c8d3cc29bd}{\index{editor\-Model@{editor\-Model}!load\-Dr\-Components@{load\-Dr\-Components}}
 \index{load\-Dr\-Components@{load\-Dr\-Components}!editorModel@{editor\-Model}}
